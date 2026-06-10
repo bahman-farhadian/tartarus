@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#11111b">
+  <title>LexiLoop</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <h1>LexiLoop</h1>
+    <nav>
+      <button data-view="practice" class="active">Practice</button>
+      <button data-view="report">Report</button>
+      <button data-view="lists">Word Lists</button>
+      <button data-view="about">About</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Practice -->
+    <section id="view-practice" class="view active">
+      <div id="practice-setup" class="card">
+        <h2>Start a practice session</h2>
+        <div id="practice-error"></div>
+        <div class="field-row">
+          <div class="field">
+            <label for="practice-user">User</label>
+            <input id="practice-user" type="text" placeholder="bahman" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+          </div>
+          <div class="field">
+            <label for="practice-lang">Language</label>
+            <input id="practice-lang" type="text" placeholder="german" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+          </div>
+          <div class="field" style="max-width: 110px;">
+            <label for="practice-number">Words</label>
+            <input id="practice-number" type="number" min="1" max="100" value="20">
+          </div>
+        </div>
+        <div class="field">
+          <label><input id="practice-audio" type="checkbox" checked style="width: auto; margin-right: 0.4rem;">Play audio (Web Speech API)</label>
+        </div>
+        <button id="start-session" class="primary">Start session</button>
+      </div>
+
+      <div id="practice-session" class="card" style="display: none;">
+        <div class="session-header">
+          <span id="session-progress"></span>
+          <span id="session-gauge" class="gauge"></span>
+        </div>
+        <div id="session-type" class="question-type"></div>
+
+        <div id="word-block">
+          <div id="word-display" class="word-display"></div>
+          <div id="definition-lines" class="definition-lines"></div>
+        </div>
+
+        <div id="options-block" class="options" style="display: none;"></div>
+
+        <div id="answer-block" class="answer-row">
+          <input id="answer-input" type="text" placeholder="Type your answer..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+          <button id="submit-answer" class="primary">Submit</button>
+        </div>
+
+        <div id="drill-block" class="drill-box" style="display: none;">
+          <div class="drill-progress">
+            Repetition <span id="drill-rep"></span> &mdash;
+            <span id="drill-streak"></span>/9 in a row
+          </div>
+          <div id="drill-dots" class="drill-dots"></div>
+        </div>
+
+        <div id="feedback" class="feedback"></div>
+
+        <div class="action-bar">
+          <button id="btn-replay" class="shortcut" title="Replay audio">+</button>
+          <button id="btn-reveal" class="shortcut" title="Reveal the word">?</button>
+          <button id="btn-flag" class="shortcut" title="Flag as difficult (score &rarr; 1.0)">!</button>
+          <button id="btn-master" class="shortcut" title="Mark as known (score &rarr; 9.0)">@</button>
+          <button id="btn-drill" class="shortcut" title="Drill 9x in a row (score &rarr; 5.0)">$</button>
+          <button id="btn-end" class="shortcut" title="End session">!!</button>
+        </div>
+        <div class="shortcut-hint">
+          Tip: type <code>+</code>/<code>?</code>/<code>!</code>/<code>@</code>/<code>$</code>/<code>!!</code>
+          as your answer too &mdash; same as the CLI.
+        </div>
+      </div>
+
+      <div id="practice-summary" class="card" style="display: none;">
+        <h2>Session summary</h2>
+        <div id="summary-body"></div>
+        <button id="summary-restart" class="primary">Back to setup</button>
+      </div>
+    </section>
+
+    <!-- Report -->
+    <section id="view-report" class="view">
+      <div class="card">
+        <h2>Progress report</h2>
+        <div id="report-error"></div>
+        <div class="field-row">
+          <div class="field">
+            <label for="report-user">User</label>
+            <input id="report-user" type="text" placeholder="bahman" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+          </div>
+          <div class="field">
+            <label for="report-lang">Language (optional)</label>
+            <input id="report-lang" type="text" placeholder="all languages" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+          </div>
+        </div>
+        <button id="load-report" class="primary">Load report</button>
+      </div>
+      <div id="report-results"></div>
+    </section>
+
+    <!-- Word lists -->
+    <section id="view-lists" class="view">
+      <div class="card">
+        <h2>Existing word lists</h2>
+        <div id="lists-body" class="muted">Loading...</div>
+      </div>
+      <div class="card">
+        <h2>Create a new word list</h2>
+        <div id="init-message"></div>
+        <div class="field-row">
+          <div class="field">
+            <label for="init-user">User</label>
+            <input id="init-user" type="text" placeholder="bahman" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+          </div>
+          <div class="field">
+            <label for="init-lang">Language</label>
+            <input id="init-lang" type="text" placeholder="french" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+          </div>
+        </div>
+        <button id="init-create" class="primary">Create</button>
+      </div>
+
+      <div class="card">
+        <h2>Edit word list</h2>
+        <div id="editor-message"></div>
+        <div class="field-row">
+          <div class="field">
+            <label for="editor-user">User</label>
+            <input id="editor-user" type="text" placeholder="bahman" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+          </div>
+          <div class="field">
+            <label for="editor-lang">Language</label>
+            <input id="editor-lang" type="text" placeholder="german" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+          </div>
+        </div>
+        <button id="editor-load" class="secondary">Load</button>
+        <div id="editor-table-wrap" style="display: none;">
+          <table id="editor-table" class="editor-table">
+            <thead>
+              <tr><th>Word</th><th>Definition 1</th><th>Definition 2</th><th></th></tr>
+            </thead>
+            <tbody id="editor-body"></tbody>
+          </table>
+          <div class="editor-actions">
+            <button id="editor-add-row" class="secondary">+ Add word</button>
+            <button id="editor-save" class="primary">Save</button>
+          </div>
+          <p class="muted">
+            Saves directly to <code>data/word_lists/&lt;user&gt;_&lt;lang&gt;.json</code>
+            and re-syncs the database (the source of truth).
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="view-about" class="view">
+      <div class="card">
+        <h2>About LexiLoop</h2>
+        <p>
+          LexiLoop is a self-hosted, Memrise-style vocabulary trainer, written
+          by <strong>Bahman Farhadian</strong>. It keeps everything &mdash;
+          your word lists, scores, and practice history &mdash; in a single
+          local SQLite database that you fully own and control.
+        </p>
+        <p>
+          Unlike Memrise, there's no account, no cloud, and no pre-recorded
+          audio to wait for: every word is spoken on the fly using your
+          browser's built-in text-to-speech (or <code>say</code> on macOS for
+          the CLI), in the right language automatically. Just write your own
+          word list as a simple JSON file and start practicing.
+        </p>
+
+        <h3>How practice works</h3>
+        <p>
+          Every word has a score from <strong>1.0</strong> (struggling) to
+          <strong>9.0</strong> (mastered). The score decides what kind of
+          question you get &mdash; Learning, Audio, or Meaning &mdash; so a
+          single session naturally mixes new words with ones you're
+          reviewing. Get it right and the score goes up (and the question
+          gets harder); get it wrong and it drops back down. See the
+          <button class="link-btn" data-view-link="report">Report</button>
+          tab for your history, or read the full scoring breakdown in the
+          project's README.
+        </p>
+
+        <h3>The database is the source of truth</h3>
+        <p>
+          The CLI (<code>lexiloop.sh</code>) and this web UI
+          (<code>lexiloop_web.sh</code>) both read and write the exact same
+          <code>data/lexiloop.db</code> SQLite file. Every answer updates the
+          database immediately, and ending a session &mdash; whether by
+          clicking <strong>!!</strong> here, pressing <code>Ctrl+C</code> in
+          the terminal, or letting a session finish naturally &mdash; writes
+          the session summary to the database too. You can freely switch
+          between the CLI and the web UI; nothing is ever lost.
+        </p>
+
+        <h3>Customizing your word lists</h3>
+        <p>
+          Use the <button class="link-btn" data-view-link="lists">Word
+          Lists</button> tab to create a new list and edit its words and
+          definitions directly &mdash; no JSON editing required. Each word
+          can have up to two definitions (e.g. an English meaning and a
+          German one), and German nouns written with their article
+          (<code>der</code>/<code>die</code>/<code>das</code>) are
+          color-coded by gender automatically.
+        </p>
+
+        <h3>This web UI</h3>
+        <p>
+          Runs entirely on <code>127.0.0.1:9999</code> &mdash; standard
+          library Python only, no external dependencies, no data ever leaves
+          your machine.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>

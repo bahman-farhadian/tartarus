@@ -32,17 +32,22 @@ flash-and-hide spelling test for "Learning", and the listening test for
 points for whichever band it's in.
 
 ```mermaid
-stateDiagram-v2
-    [*] --> Learning : word added/synced (score 1.0)
-    Learning --> Learning : correct (+1, max 3) / incorrect (-2, floor 1)
-    Learning --> Audio : score reaches 4-6
-    Audio --> Audio : correct (+2, max 6) / incorrect (-2)
-    Audio --> Meaning : score reaches 7-9
-    Meaning --> Meaning : correct (+3, capped 9) / incorrect (-2)
-    Meaning --> Audio : incorrect drops score to 4-6
-    Audio --> Learning : incorrect drops score to 1-3
-    Meaning --> Learning : @ (master, ->9.0) / ! (flag, ->1.0) / $ (drill, ->5.0)
+flowchart LR
+    L["Learning\nscore 1-3"]
+    A["Audio\nscore 4-6"]
+    M["Meaning\nscore 7-9"]
+
+    L -- "score >= 4" --> A
+    A -- "score >= 7" --> M
+    A -- "score <= 3" --> L
+    M -- "score <= 6" --> A
 ```
+
+A correct answer adds points (+1 in Learning, +2 in Audio, +3 in Meaning,
+capped at 9); an incorrect answer subtracts 2 (floored at 1) — see the table
+above. Either can move a word into a neighboring band, as shown. Manual
+overrides jump straight to a band regardless of score: `@` master -> 9.0
+(Meaning), `$` drill -> 5.0 (Audio), `!` flag -> 1.0 (Learning).
 
 - Every word left untouched for **a week or more automatically loses 1.0
   point per idle week** (floored at `1.0`), pulling neglected words back
@@ -213,11 +218,44 @@ Every command and flag is also documented in the CLI itself:
 ```
 lexiloop.py               # main script (single file)
 lexiloop.sh                # run through this wrapper, not python3 directly
+lexiloop_web.py            # web server (JSON API + static frontend)
+lexiloop_web.sh             # run through this wrapper, not python3 directly
+web/
+  index.html                # frontend markup
+  style.css                 # Catppuccin Mocha dark theme
+  app.js                     # frontend logic
 data/
   lexiloop.db               # SQLite database (auto-created)
   word_lists/
     <user>_<lang>.json      # one word list per user per language
 ```
+
+## Web UI
+
+LexiLoop also ships with a localhost-only web UI that uses the same
+SQLite database and scoring logic as the CLI - standard library only, no
+`pip install` or virtualenv needed.
+
+```bash
+chmod +x lexiloop_web.sh   # one-time, if not already executable
+./lexiloop_web.sh
+```
+
+This starts a server at **http://127.0.0.1:9999/** (bound to localhost
+only). Open it in a browser for:
+
+- **Practice** - the same Learning/Audio/Meaning question types and growth
+  gauge as the CLI, with the same special commands available as buttons
+  (`!!` end, `!` flag, `@` master, `$` drill, `?` reveal, `+` replay audio).
+  Audio is played via the browser's built-in Web Speech API
+  (`speechSynthesis`), so no `say`/macOS dependency is needed.
+- **Report** - per-language daily and total summaries, same data as
+  `report --user`.
+- **Word Lists** - see existing `<user>_<lang>` word lists and create new
+  ones (equivalent to `init --user --lang`).
+
+The theme is dark, using the
+[Catppuccin Mocha](https://catppuccin.com/palette/) palette.
 
 ## Audio / pronunciation (macOS)
 
