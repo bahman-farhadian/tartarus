@@ -213,11 +213,44 @@ Every command and flag is also documented in the CLI itself:
 ```
 lexiloop.py               # main script (single file)
 lexiloop.sh                # run through this wrapper, not python3 directly
+lexiloop_web.py            # web server (JSON API + static frontend)
+lexiloop_web.sh             # run through this wrapper, not python3 directly
+web/
+  index.html                # frontend markup
+  style.css                 # Catppuccin Mocha dark theme
+  app.js                     # frontend logic
 data/
   lexiloop.db               # SQLite database (auto-created)
   word_lists/
     <user>_<lang>.json      # one word list per user per language
 ```
+
+## Web UI
+
+LexiLoop also ships with a localhost-only web UI that uses the same
+SQLite database and scoring logic as the CLI - standard library only, no
+`pip install` or virtualenv needed.
+
+```bash
+chmod +x lexiloop_web.sh   # one-time, if not already executable
+./lexiloop_web.sh
+```
+
+This starts a server at **http://127.0.0.1:9999/** (bound to localhost
+only). Open it in a browser for:
+
+- **Practice** - the same Learning/Audio/Meaning question types and growth
+  gauge as the CLI, with the same special commands available as buttons
+  (`!!` end, `!` flag, `@` master, `$` drill, `?` reveal, `+` replay audio).
+  Audio is played via the browser's built-in Web Speech API
+  (`speechSynthesis`), so no `say`/macOS dependency is needed.
+- **Report** - per-language daily and total summaries, same data as
+  `report --user`.
+- **Word Lists** - see existing `<user>_<lang>` word lists and create new
+  ones (equivalent to `init --user --lang`).
+
+The theme is dark, using the
+[Catppuccin Mocha](https://catppuccin.com/palette/) palette.
 
 ## Audio / pronunciation (macOS)
 
