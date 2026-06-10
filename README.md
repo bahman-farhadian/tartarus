@@ -33,15 +33,27 @@ points for whichever band it's in.
 
 ```mermaid
 stateDiagram-v2
-    [*] --> Learning : word added/synced (score 1.0)
-    Learning --> Learning : correct (+1, max 3) / incorrect (-2, floor 1)
-    Learning --> Audio : score reaches 4-6
-    Audio --> Audio : correct (+2, max 6) / incorrect (-2)
-    Audio --> Meaning : score reaches 7-9
-    Meaning --> Meaning : correct (+3, capped 9) / incorrect (-2)
-    Meaning --> Audio : incorrect drops score to 4-6
-    Audio --> Learning : incorrect drops score to 1-3
-    Meaning --> Learning : @ (master, ->9.0) / ! (flag, ->1.0) / $ (drill, ->5.0)
+    [*] --> Learning : new word (score 1.0)
+
+    state "Learning (1-3)" as Learning
+    state "Audio (4-6)" as Audio
+    state "Meaning (7-9)" as Meaning
+
+    Learning --> Learning : answer (+1 / -2)
+    Audio --> Audio : answer (+2 / -2)
+    Meaning --> Meaning : answer (+3, capped 9 / -2)
+
+    Learning --> Audio : score rises to 4+
+    Audio --> Meaning : score rises to 7+
+    Audio --> Learning : score drops to 3-
+    Meaning --> Audio : score drops to 6-
+
+    note right of Meaning
+        Manual overrides, any band:
+        @ master  -> 9.0 (Meaning)
+        $ drill   -> 5.0 (Audio)
+        ! flag    -> 1.0 (Learning)
+    end note
 ```
 
 - Every word left untouched for **a week or more automatically loses 1.0

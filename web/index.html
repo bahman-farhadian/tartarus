@@ -57,7 +57,7 @@
         <div id="options-block" class="options" style="display: none;"></div>
 
         <div id="answer-block" class="answer-row">
-          <input id="answer-input" type="text" placeholder="Type your answer..." autocomplete="off">
+          <input id="answer-input" type="text" placeholder="Type your answer..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
           <button id="submit-answer" class="primary">Submit</button>
         </div>
 
@@ -77,11 +77,13 @@
           <button id="btn-flag" class="shortcut" title="Flag as difficult (score &rarr; 1.0)">!</button>
           <button id="btn-master" class="shortcut" title="Mark as known (score &rarr; 9.0)">@</button>
           <button id="btn-drill" class="shortcut" title="Drill 9x in a row (score &rarr; 5.0)">$</button>
-          <button id="btn-end" class="shortcut" title="End session">!!</button>
+          <button id="btn-end" class="shortcut" title="End session (Esc)">!!</button>
         </div>
         <div class="shortcut-hint">
           Tip: type <code>+</code>/<code>?</code>/<code>!</code>/<code>@</code>/<code>$</code>/<code>!!</code>
-          as your answer too &mdash; same as the CLI.
+          as your answer too &mdash; same as the CLI. When the answer box isn't
+          focused, <code>+</code> <code>?</code> <code>!</code> <code>@</code>
+          <code>$</code> and <code>Esc</code> (end) work as keyboard shortcuts.
         </div>
       </div>
 

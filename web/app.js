@@ -121,6 +121,48 @@
   btnDrill.addEventListener('click', () => sendAnswer('$'));
   btnEnd.addEventListener('click', () => sendAnswer('!!'));
 
+  // --- Keyboard shortcuts ---
+  // Only act when the answer box isn't focused, so typing (including '@'
+  // via Shift+2, '!', '$', etc.) always goes into the text field as normal
+  // text, just like the CLI's input prompt.
+  document.addEventListener('keydown', (e) => {
+    if (sessionCard.style.display !== 'none' && currentQuestion
+        && document.activeElement !== answerInput) {
+      switch (e.key) {
+        case '+':
+          replayAudio();
+          e.preventDefault();
+          return;
+        case '?':
+          revealWord();
+          e.preventDefault();
+          return;
+        case '!':
+          if (!btnFlag.disabled) sendAnswer('!');
+          e.preventDefault();
+          return;
+        case '@':
+          if (!btnMaster.disabled) sendAnswer('@');
+          e.preventDefault();
+          return;
+        case '$':
+          if (!btnDrill.disabled) sendAnswer('$');
+          e.preventDefault();
+          return;
+        case 'Escape':
+          sendAnswer('!!');
+          e.preventDefault();
+          return;
+      }
+    }
+
+    // After a session ends, Enter goes back to setup (same as clicking
+    // "Back to setup").
+    if (e.key === 'Enter' && summaryCard.style.display !== 'none') {
+      document.getElementById('summary-restart').click();
+    }
+  });
+
   async function startSession() {
     showError(practiceError, '');
     const user = document.getElementById('practice-user').value.trim();
