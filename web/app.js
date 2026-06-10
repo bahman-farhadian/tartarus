@@ -392,16 +392,24 @@
 
   // --- Report ---
   document.getElementById('load-report').addEventListener('click', loadReport);
+  ['report-user', 'report-lang'].forEach((id) => {
+    document.getElementById(id).addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') loadReport();
+    });
+  });
 
   async function loadReport() {
     const reportError = document.getElementById('report-error');
     const resultsEl = document.getElementById('report-results');
     showError(reportError, '');
     resultsEl.innerHTML = '';
-    const user = document.getElementById('report-user').value.trim();
-    const lang = document.getElementById('report-lang').value.trim();
+    const userInput = document.getElementById('report-user');
+    const langInput = document.getElementById('report-lang');
+    const user = userInput.value.trim();
+    const lang = langInput.value.trim();
     if (!user) {
       showError(reportError, 'User is required.');
+      userInput.focus();
       return;
     }
     try {
@@ -410,14 +418,46 @@
       const data = await api(`/api/report?${params.toString()}`);
       if (!data.reports.length) {
         resultsEl.innerHTML = '<div class="card muted">No practice sessions found.</div>';
-        return;
+      } else {
+        data.reports.forEach((report) => {
+          resultsEl.appendChild(renderReportTable(report));
+        });
       }
-      data.reports.forEach((report) => {
-        resultsEl.appendChild(renderReportTable(report));
-      });
+      if (lang) {
+        await loadWordListStats(user, lang, resultsEl);
+      }
     } catch (err) {
       showError(reportError, err.message);
     }
+  }
+
+  async function loadWordListStats(user, lang, container) {
+    try {
+      const params = new URLSearchParams({ user, lang });
+      const data = await api(`/api/wordlist/stats?${params.toString()}`);
+      if (data.words.length) {
+        container.appendChild(renderWordStatsTable(lang, data.words));
+      }
+    } catch (err) {
+      // No word list for this user/language yet - nothing to show.
+    }
+  }
+
+  function renderWordStatsTable(lang, words) {
+    const card = document.createElement('div');
+    card.className = 'card';
+    let html = `<table><caption>Word list: ${escapeHtml(lang)}</caption>`;
+    html += '<thead><tr><th>Word</th><th>Score</th><th>Gauge</th><th>Practiced</th>'
+      + '<th>Correct</th><th>Wrong</th><th>Drilled</th><th>Flagged</th><th>Mastered</th></tr></thead><tbody>';
+    words.forEach((w) => {
+      html += `<tr${w.active ? '' : ' class="muted"'}><td>${escapeHtml(w.word)}</td>`
+        + `<td>${w.score.toFixed(1)}</td><td class="gauge band-${w.band}">${w.gauge}</td>`
+        + `<td>${w.times_practiced}</td><td>${w.times_correct}</td><td>${w.times_incorrect}</td>`
+        + `<td>${w.times_drilled}</td><td>${w.times_flagged}</td><td>${w.times_mastered}</td></tr>`;
+    });
+    html += '</tbody></table>';
+    card.innerHTML = html;
+    return card;
   }
 
   function renderReportTable(report) {
@@ -484,6 +524,11 @@
   document.getElementById('editor-load').addEventListener('click', loadEditor);
   document.getElementById('editor-add-row').addEventListener('click', () => addEditorRow({}));
   document.getElementById('editor-save').addEventListener('click', saveEditor);
+  ['editor-user', 'editor-lang'].forEach((id) => {
+    document.getElementById(id).addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') loadEditor();
+    });
+  });
 
   async function loadEditor() {
     showError(editorMessage, '');
@@ -491,6 +536,7 @@
     const lang = editorLang.value.trim();
     if (!user || !lang) {
       showError(editorMessage, 'User and language are required.');
+      (user ? editorLang : editorUser).focus();
       return;
     }
     try {
@@ -552,13 +598,16 @@
     }
   }
 
-  document.getElementById('init-create').addEventListener('click', async () => {
+  async function createWordList() {
     const initMessage = document.getElementById('init-message');
     showError(initMessage, '');
-    const user = document.getElementById('init-user').value.trim();
-    const lang = document.getElementById('init-lang').value.trim();
+    const userInput = document.getElementById('init-user');
+    const langInput = document.getElementById('init-lang');
+    const user = userInput.value.trim();
+    const lang = langInput.value.trim();
     if (!user || !lang) {
       showError(initMessage, 'User and language are required.');
+      (user ? langInput : userInput).focus();
       return;
     }
     try {
@@ -572,5 +621,12 @@
     } catch (err) {
       showError(initMessage, err.message);
     }
+  }
+
+  document.getElementById('init-create').addEventListener('click', createWordList);
+  ['init-user', 'init-lang'].forEach((id) => {
+    document.getElementById(id).addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') createWordList();
+    });
   });
 })();

@@ -28,11 +28,11 @@
         <div class="field-row">
           <div class="field">
             <label for="practice-user">User</label>
-            <input id="practice-user" type="text" placeholder="bahman" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+            <input id="practice-user" type="text" placeholder="your username" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
           </div>
           <div class="field">
             <label for="practice-lang">Language</label>
-            <input id="practice-lang" type="text" placeholder="german" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+            <input id="practice-lang" type="text" placeholder="your language" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
           </div>
           <div class="field" style="max-width: 110px;">
             <label for="practice-number">Words</label>
@@ -103,14 +103,18 @@
         <div class="field-row">
           <div class="field">
             <label for="report-user">User</label>
-            <input id="report-user" type="text" placeholder="bahman" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+            <input id="report-user" type="text" placeholder="your username" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
           </div>
           <div class="field">
             <label for="report-lang">Language (optional)</label>
-            <input id="report-lang" type="text" placeholder="all languages" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+            <input id="report-lang" type="text" placeholder="your language, or leave empty for all" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
           </div>
         </div>
         <button id="load-report" class="primary">Load report</button>
+        <p class="muted" style="margin-top: 0.75rem;">
+          Add a language to also see that word list's words, scores, and
+          practice stats below.
+        </p>
       </div>
       <div id="report-results"></div>
     </section>
@@ -127,11 +131,11 @@
         <div class="field-row">
           <div class="field">
             <label for="init-user">User</label>
-            <input id="init-user" type="text" placeholder="bahman" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+            <input id="init-user" type="text" placeholder="your username" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
           </div>
           <div class="field">
             <label for="init-lang">Language</label>
-            <input id="init-lang" type="text" placeholder="french" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+            <input id="init-lang" type="text" placeholder="your language" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
           </div>
         </div>
         <button id="init-create" class="primary">Create</button>
@@ -143,11 +147,11 @@
         <div class="field-row">
           <div class="field">
             <label for="editor-user">User</label>
-            <input id="editor-user" type="text" placeholder="bahman" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+            <input id="editor-user" type="text" placeholder="your username" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
           </div>
           <div class="field">
             <label for="editor-lang">Language</label>
-            <input id="editor-lang" type="text" placeholder="german" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+            <input id="editor-lang" type="text" placeholder="your language" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
           </div>
         </div>
         <button id="editor-load" class="secondary">Load</button>
@@ -213,6 +217,17 @@
           between the CLI and the web UI; nothing is ever lost.
         </p>
 
+        <h3>Tracking your progress</h3>
+        <p>
+          The <button class="link-btn" data-view-link="report">Report</button>
+          tab shows your session history &mdash; sessions, time spent, words
+          practiced, and correct/incorrect/drilled counts, per day and in
+          total. Add a language there too, and you'll also see that word
+          list's current words: each one's score, growth gauge, and full
+          practice history (times practiced, correct, incorrect, drilled,
+          flagged, and mastered).
+        </p>
+
         <h3>Customizing your word lists</h3>
         <p>
           Use the <button class="link-btn" data-view-link="lists">Word
@@ -222,6 +237,15 @@
           German one), and German nouns written with their article
           (<code>der</code>/<code>die</code>/<code>das</code>) are
           color-coded by gender automatically.
+        </p>
+
+        <h3>Keyboard-friendly</h3>
+        <p>
+          Every page's main button doubles as the <code>Enter</code> key on
+          its input fields &mdash; start a session, load a report, or create
+          and load a word list without touching the mouse. If you press
+          <code>Enter</code> while a required field is empty, focus jumps to
+          that field instead of submitting.
         </p>
 
         <h3>This web UI</h3>

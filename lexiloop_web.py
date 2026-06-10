@@ -335,6 +335,39 @@ def report_data(user, lang=None):
     return reports
 
 
+def word_list_stats(user, lang):
+    table = ll.words_table_name(user, lang)
+    conn = ll.get_connection()
+    cursor = conn.execute("SELECT name FROM sqlite_master WHERE type='table' AND name = ?", (table,))
+    if cursor.fetchone() is None:
+        conn.close()
+        return None
+    rows = conn.execute(
+        f'SELECT text, score, active, times_practiced, times_correct, times_incorrect, '
+        f'times_drilled, times_flagged, times_mastered, last_practiced '
+        f'FROM "{table}" ORDER BY active DESC, score ASC, text ASC'
+    ).fetchall()
+    conn.close()
+    words = []
+    for (text, score, active, practiced, correct, incorrect,
+         drilled, flagged, mastered, last_practiced) in rows:
+        words.append({
+            'word': text,
+            'score': round(score, 1),
+            'gauge': gauge_dots(score),
+            'band': ll.score_band(score),
+            'active': bool(active),
+            'times_practiced': practiced,
+            'times_correct': correct,
+            'times_incorrect': incorrect,
+            'times_drilled': drilled,
+            'times_flagged': flagged,
+            'times_mastered': mastered,
+            'last_practiced': last_practiced,
+        })
+    return words
+
+
 def load_word_list(user, lang):
     path = ll.word_list_path(user, lang)
     if not os.path.exists(path):
@@ -458,6 +491,20 @@ class Handler(http.server.BaseHTTPRequestHandler):
                 return self._send_json({'words': load_word_list(user, lang)})
             except ValueError as e:
                 return self._send_json({'error': str(e)}, 400)
+
+        if parsed.path == '/api/wordlist/stats':
+            qs = urllib.parse.parse_qs(parsed.query)
+            user = qs.get('user', [''])[0]
+            lang = qs.get('lang', [''])[0]
+            if not user or not lang:
+                return self._send_json({'error': "'user' and 'lang' are required"}, 400)
+            try:
+                words = word_list_stats(user, lang)
+            except ValueError as e:
+                return self._send_json({'error': str(e)}, 400)
+            if words is None:
+                return self._send_json({'error': 'no such word list'}, 404)
+            return self._send_json({'words': words})
 
         self.send_error(404)
 

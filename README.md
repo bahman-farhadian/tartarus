@@ -250,9 +250,19 @@ only). Open it in a browser for:
   Audio is played via the browser's built-in Web Speech API
   (`speechSynthesis`), so no `say`/macOS dependency is needed.
 - **Report** - per-language daily and total summaries, same data as
-  `report --user`.
-- **Word Lists** - see existing `<user>_<lang>` word lists and create new
-  ones (equivalent to `init --user --lang`).
+  `report --user`. Add a language to also see that word list's words,
+  current scores/gauges, and per-word practice stats (times practiced,
+  correct, incorrect, drilled, flagged, mastered).
+- **Word Lists** - see existing `<user>_<lang>` word lists, create new ones
+  (equivalent to `init --user --lang`), and edit a list's words and
+  definitions directly in the browser - saved straight to
+  `data/word_lists/<user>_<lang>.json` and re-synced into the database.
+- **About** - an overview of the project and how the CLI and web UI share
+  the same database as their single source of truth.
+
+Every page's main button doubles as the `Enter` key shortcut on its input
+fields, and pressing `Enter` with a required field empty moves focus there
+instead of submitting.
 
 The theme is dark, using the
 [Catppuccin Mocha](https://catppuccin.com/palette/) palette.
