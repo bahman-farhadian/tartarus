@@ -7,6 +7,8 @@ library only - no extra packages needed.
 Run via: ./lexiloop_web.sh   (serves http://127.0.0.1:9999)
 """
 import os
+import sys
+import errno
 import json
 import time
 import random
@@ -569,7 +571,17 @@ class Handler(http.server.BaseHTTPRequestHandler):
 
 
 def main():
-    httpd = http.server.ThreadingHTTPServer((HOST, PORT), Handler)
+    try:
+        httpd = http.server.ThreadingHTTPServer((HOST, PORT), Handler)
+    except OSError as e:
+        if e.errno == errno.EADDRINUSE:
+            print(f"Error: port {PORT} is already in use.")
+            print(f"  Another LexiLoop web server (or another process) is "
+                  f"probably already listening on http://{HOST}:{PORT}/.")
+            print(f"  Find it with: lsof -i :{PORT}")
+            print(f"  Stop it with: kill <PID>")
+            sys.exit(1)
+        raise
     db_path = os.path.abspath(ll.DATABASE_FILE)
     print("LexiLoop web server starting...")
     print(f"  Listening on : http://{HOST}:{PORT}/")
