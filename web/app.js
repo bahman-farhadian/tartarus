@@ -94,6 +94,11 @@
   };
 
   document.getElementById('start-session').addEventListener('click', startSession);
+  ['practice-user', 'practice-lang', 'practice-number'].forEach((id) => {
+    document.getElementById(id).addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') startSession();
+    });
+  });
   document.getElementById('summary-restart').addEventListener('click', () => {
     summaryCard.style.display = 'none';
     setupCard.style.display = 'block';
@@ -151,11 +156,14 @@
 
   async function startSession() {
     showError(practiceError, '');
-    const user = document.getElementById('practice-user').value.trim();
-    const lang = document.getElementById('practice-lang').value.trim();
+    const userInput = document.getElementById('practice-user');
+    const langInput = document.getElementById('practice-lang');
+    const user = userInput.value.trim();
+    const lang = langInput.value.trim();
     const number = parseInt(document.getElementById('practice-number').value, 10) || 20;
     if (!user || !lang) {
       showError(practiceError, 'User and language are required.');
+      (user ? langInput : userInput).focus();
       return;
     }
     try {
