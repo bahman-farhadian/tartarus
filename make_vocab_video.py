@@ -25,7 +25,8 @@ import lexiloop as ll
 FONT_FILE = "/System/Library/Fonts/Supplemental/Arial Unicode.ttf"
 VIDEO_SIZE = "1280x720"
 BACKGROUND_COLOR = "0x303030"
-GAP_SECONDS = 0.4
+REPEAT_GAP_SECONDS = 1.0
+WORD_GAP_SECONDS = 2.0
 
 
 def escape_drawtext(text):
@@ -44,6 +45,23 @@ def run(cmd):
     return result
 
 
+def atempo_filter(speed):
+    """Builds an ffmpeg atempo filter chain for an arbitrary speed factor.
+
+    A single atempo filter only accepts 0.5-2.0, so factors outside that
+    range are split across multiple chained atempo filters."""
+    if speed <= 0:
+        raise ValueError("speed must be > 0")
+    factors = []
+    remaining = speed
+    while remaining < 0.5 or remaining > 2.0:
+        step = 0.5 if remaining < 0.5 else 2.0
+        factors.append(step)
+        remaining /= step
+    factors.append(remaining)
+    return ",".join(f"atempo={f}" for f in factors)
+
+
 def meaning_for(entry):
     definition = entry.get("definition")
     if isinstance(definition, list):
@@ -53,7 +71,7 @@ def meaning_for(entry):
     return ""
 
 
-def make_word_clip(entry, voice, repeats, tmpdir, index):
+def make_word_clip(entry, voice, repeats, speed, tmpdir, index):
     word = entry["word"]
     meaning = meaning_for(entry)
 
@@ -65,16 +83,20 @@ def make_word_clip(entry, voice, repeats, tmpdir, index):
     run(say_cmd)
 
     raw_wav = os.path.join(tmpdir, f"{index}_raw.wav")
-    run(["ffmpeg", "-y", "-i", raw_aiff, "-ar", "44100", "-ac", "1", raw_wav])
+    run([
+        "ffmpeg", "-y", "-i", raw_aiff,
+        "-filter:a", atempo_filter(speed),
+        "-ar", "44100", "-ac", "1", raw_wav,
+    ])
 
     silence_wav = os.path.join(tmpdir, f"{index}_silence.wav")
     run([
         "ffmpeg", "-y",
         "-f", "lavfi", "-i", "anullsrc=channel_layout=mono:sample_rate=44100",
-        "-t", str(GAP_SECONDS), "-c:a", "pcm_s16le", silence_wav,
+        "-t", str(REPEAT_GAP_SECONDS), "-c:a", "pcm_s16le", silence_wav,
     ])
 
-    # Repeat the word's audio `repeats` times, with a short silence between.
+    # Repeat the word's audio `repeats` times, with a 1-second hold between.
     concat_list = os.path.join(tmpdir, f"{index}_concat.txt")
     with open(concat_list, "w", encoding="utf-8") as f:
         for i in range(repeats):
@@ -119,6 +141,20 @@ def make_word_clip(entry, voice, repeats, tmpdir, index):
     return clip_path
 
 
+def make_blank_clip(duration, tmpdir, index):
+    """A clip showing only the background (no text), used between words."""
+    clip_path = os.path.join(tmpdir, f"{index}_blank.mp4")
+    run([
+        "ffmpeg", "-y",
+        "-f", "lavfi", "-i", f"color=c={BACKGROUND_COLOR}:s={VIDEO_SIZE}:d={duration}",
+        "-f", "lavfi", "-i", f"anullsrc=channel_layout=mono:sample_rate=44100",
+        "-c:v", "libx264", "-pix_fmt", "yuv420p",
+        "-c:a", "aac",
+        "-t", str(duration), clip_path,
+    ])
+    return clip_path
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--user", required=True, help="Username (word list owner).")
@@ -127,6 +163,7 @@ def main():
     parser.add_argument("--output", default="vocab_video.mp4", help="Output video path.")
     parser.add_argument("--limit", type=int, help="Only process the first N words.")
     parser.add_argument("--repeats", type=int, default=4, help="How many times to say each word (default: 4).")
+    parser.add_argument("--speed", type=float, default=1.0, help="Audio playback speed, e.g. 0.8 for slower (default: 1.0).")
     args = parser.parse_args()
 
     user = ll.sanitize_name(args.user, "user")
@@ -155,7 +192,9 @@ def main():
         clip_paths = []
         for i, entry in enumerate(entries):
             print(f"  [{i + 1}/{len(entries)}] {entry['word']}")
-            clip_paths.append(make_word_clip(entry, voice, args.repeats, tmpdir, i))
+            if i != 0:
+                clip_paths.append(make_blank_clip(WORD_GAP_SECONDS, tmpdir, f"{i}_gap"))
+            clip_paths.append(make_word_clip(entry, voice, args.repeats, args.speed, tmpdir, i))
 
         concat_list = os.path.join(tmpdir, "concat.txt")
         with open(concat_list, "w", encoding="utf-8") as f:

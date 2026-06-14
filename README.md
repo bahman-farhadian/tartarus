@@ -377,6 +377,10 @@ independent of the CLI/web UI and doesn't touch the database.
 python3 make_vocab_video.py --user bahman --lang german --output drill.mp4
 ```
 
+Each word is repeated (default `4` times), with a 1-second hold between
+repeats. Between words there's a 2-second gap showing only the background
+(no text), to mark the transition to the next word.
+
 | Option | Description |
 |---|---|
 | `--user <name>` | Required. Whose word list to use. |
@@ -385,6 +389,7 @@ python3 make_vocab_video.py --user bahman --lang german --output drill.mp4
 | `--output <path>` | Output video file (default: `vocab_video.mp4`). |
 | `--limit <n>` | Only process the first `n` words (useful for a quick test). |
 | `--repeats <n>` | How many times to say each word (default: `4`). |
+| `--speed <factor>` | Audio playback speed, e.g. `0.8` for slower, `1.2` for faster (default: `1.0`). |
 
 ### Requirements
 
