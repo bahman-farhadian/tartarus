@@ -78,7 +78,7 @@ def build_mc_options(word_text, definition, definition_pool):
     random.shuffle(distractors)
     options = [correct_def] + distractors[:3]
     random.shuffle(options)
-    correct_letter = chr(ord('a') + options.index(correct_def))
+    correct_letter = str(options.index(correct_def) + 1)  # '1', '2', '3', or '4'
     return options, correct_letter
 
 
@@ -95,7 +95,10 @@ def build_question(session, word_id, word_text, definition, score):
         'gender': gender_class(word_text),
     }
     correct_letter = None
-    if band == 1:
+    if session.get('drill_mode'):
+        # Drill mode: show definition + play audio; user types the word.
+        question['type'] = 'production'
+    elif band == 1:
         question['type'] = 'learning' if has_def else 'spelling'
     elif band == 2:
         question['type'] = 'audio'
@@ -169,14 +172,38 @@ def next_question(session):
         session['batch'].append(session['pool'].pop(0))
 
     batch = session['batch']
+
+    # If both batch and pool are exhausted, refetch from DB so we always
+    # reach MAX_QUESTIONS even when the word list is very short.
     if not batch:
-        return None
-    if len(batch) == 1 and not session['pool']:
-        return None  # word list too small to rotate; end rather than repeat
+        remaining = session['max_questions'] - session['practiced']
+        fresh = ll.get_words_for_practice(
+            session['user'], session['lang'],
+            max(BATCH_SIZE, BATCH_SIZE + remaining),
+            drill_mode=session.get('drill_mode', False))
+        if not fresh:
+            return None  # no words at all in the list
+        n = min(BATCH_SIZE, len(fresh))
+        session['batch'] = [
+            {'word_id': r[0], 'word_text': r[1], 'definition': r[2], 'score': r[3]}
+            for r in fresh[:n]
+        ]
+        session['pool'] = [
+            {'word_id': r[0], 'word_text': r[1], 'definition': r[2], 'score': r[3]}
+            for r in fresh[n:]
+        ]
+        session['definition_pool'] = ll.build_definition_pool(fresh)
+        session['last_word_id'] = None
+        batch = session['batch']
+
+    if not batch:
+        return None  # truly no words anywhere
 
     last_id = session['last_word_id']
 
     # Pick lowest-scored word; never the same word as the previous question.
+    # When only one word is left and pool is empty, no-repeat is impossible —
+    # 16 questions take priority over the constraint.
     min_score = min(e['score'] for e in batch)
     candidates = [e for e in batch if e['score'] == min_score]
     without_last = [e for e in candidates if e['word_id'] != last_id]
@@ -314,7 +341,7 @@ def process_answer(session, answer):
                        f"Flagged '{cur['word_text']}' for more practice.")
 
     if cur['type'] == 'meaning':
-        correct = answer.lower()[:1] == cur['correct_letter']
+        correct = answer.strip()[:1] == cur['correct_letter']
     else:
         correct = ll.answer_matches(answer, cur['word_text'])
 

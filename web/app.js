@@ -91,6 +91,7 @@
     audio: 'Audio',
     meaning: 'Meaning',
     spelling: 'Learning',
+    production: 'Drill',
   };
 
   document.getElementById('start-session').addEventListener('click', startSession);
@@ -125,6 +126,7 @@
         }
       }, 1200);
     }
+    // 'production' (drill): only replay audio, never reveal the word.
   }
 
   btnFlag.addEventListener('click', () => sendAnswer('!'));
@@ -140,14 +142,12 @@
     }
   });
 
-  // a/b/c/d keyboard shortcuts for meaning (multiple-choice) questions.
+  // 1/2/3/4 keyboard shortcuts for meaning (multiple-choice) questions.
   document.addEventListener('keydown', (e) => {
     if (!currentQuestion || currentQuestion.type !== 'meaning') return;
     if (drillActive) return;
-    const tag = document.activeElement?.tagName;
-    if (tag === 'INPUT' || tag === 'TEXTAREA') return;
-    const idx = e.key.toLowerCase().charCodeAt(0) - 97; // 'a'=0, 'b'=1, 'c'=2, 'd'=3
-    if (idx < 0 || idx > 3) return;
+    const idx = ['1', '2', '3', '4'].indexOf(e.key);
+    if (idx === -1) return;
     e.preventDefault();
     const btns = optionsBlock.querySelectorAll('.option-btn');
     if (btns[idx]) btns[idx].click();
@@ -233,20 +233,39 @@
       answerBlock.style.display = 'none';
       optionsBlock.innerHTML = '';
       question.options.forEach((opt, i) => {
-        const letter = String.fromCharCode(97 + i);
+        const num = String(i + 1); // '1', '2', '3', '4'
         const btn = document.createElement('button');
         btn.className = 'option-btn';
-        btn.innerHTML = `<span class="option-letter">${letter})</span> ${escapeHtml(opt)}`;
+        btn.innerHTML = `<span class="option-letter">${num})</span> ${escapeHtml(opt)}`;
         btn.addEventListener('click', () => {
           optionsBlock.querySelectorAll('.option-btn').forEach((b) => b.classList.remove('selected'));
           btn.classList.add('selected');
-          selectedOption = letter;
-          submitAnswer(letter);
+          selectedOption = num;
+          submitAnswer(num);
         });
         optionsBlock.appendChild(btn);
       });
       wordDisplay.classList.remove('hidden-word');
       speak(question.word, langLocale);
+      // Focus first option so there's always a focused element; prevents the
+      // macOS system ding that fires when keypresses have nowhere to go.
+      const firstBtn = optionsBlock.querySelector('.option-btn');
+      if (firstBtn) firstBtn.focus();
+    } else if (question.type === 'production') {
+      // Drill mode: show definition + play audio; user types the word.
+      optionsBlock.style.display = 'none';
+      answerBlock.style.display = 'flex';
+      wordDisplay.classList.add('hidden-word');
+      if (question.definition && question.definition.length) {
+        question.definition.forEach((line) => {
+          const div = document.createElement('div');
+          div.textContent = line;
+          definitionLines.appendChild(div);
+        });
+      }
+      speak(question.word, langLocale);
+      answerInput.value = '';
+      answerInput.focus();
     } else if (question.type === 'audio') {
       optionsBlock.style.display = 'none';
       answerBlock.style.display = 'flex';

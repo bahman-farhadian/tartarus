@@ -35,11 +35,11 @@ def split_word_forms(word_text):
 
 def answer_matches(answer, word_text):
     """Checks a typed answer against every accepted form of a word
-    (case-insensitive, comma-separated forms like "das Haus, die Häuser").
+    (case-sensitive, comma-separated forms like "das Haus, die Häuser").
     Also accepts the full text with all forms typed out, e.g.
     "das Haus, die Häuser", however the commas/spacing are written."""
-    forms = [form.lower() for form in split_word_forms(word_text)]
-    answer_forms = [form.lower() for form in split_word_forms(answer)]
+    forms = [form.strip() for form in split_word_forms(word_text)]
+    answer_forms = [form.strip() for form in split_word_forms(answer)]
     if len(answer_forms) == 1 and answer_forms[0] in forms:
         return True
     return answer_forms == forms
@@ -628,11 +628,11 @@ def ask_meaning(user, lang, word_id, word_text, definition, score, definition_po
     random.shuffle(distractors)
     options = [correct_def] + distractors[:3]
     random.shuffle(options)
-    correct_letter = chr(ord('a') + options.index(correct_def))
+    correct_letter = str(options.index(correct_def) + 1)  # '1', '2', '3', or '4'
 
     print("What does it mean?")
     for i, option in enumerate(options):
-        print(f"  {chr(ord('a') + i)}) {option}")
+        print(f"  {i + 1}) {option}")
 
     while True:
         answer = input("\nYour answer: ").strip()
@@ -646,7 +646,7 @@ def ask_meaning(user, lang, word_id, word_text, definition, score, definition_po
     if special:
         return special + (None,)
 
-    correct = answer.lower()[:1] == correct_letter
+    correct = answer.strip()[:1] == correct_letter
     if update_score:
         update_word_score(user, lang, word_id, 'correct' if correct else 'incorrect', score)
     if audio:
@@ -654,6 +654,51 @@ def ask_meaning(user, lang, word_id, word_text, definition, score, definition_po
     if correct:
         return 'correct', f"{Colors.GREEN}Correct!{Colors.ENDC}", None
     return 'incorrect', f"Incorrect. The right answer was {correct_letter}) {correct_def}", answer
+
+
+def ask_production(user, lang, word_id, word_text, definition, score, audio, header_text, word_header, audio_lang=None):
+    """
+    Drill-mode question: definition is shown and audio plays; the user must
+    type the word from memory. Case-sensitive. Score is not updated here —
+    the caller handles record_as_drilled().
+    """
+    clear_screen()
+    print(header_text)
+    print(f"\n{Colors.YELLOW}Type the word from the definition and audio.{Colors.ENDC} ('?' to replay)\n")
+    if definition:
+        show_definition(definition)
+    print("")
+
+    while True:
+        sys.stdout.write(f"{ERASE_LINE}{word_header} ")
+        sys.stdout.flush()
+        if audio:
+            speak(word_text, audio_lang or lang)
+        answer = input("").strip()
+        sys.stdout.write('\033[A' + ERASE_LINE)
+        if answer == '?':
+            if definition:
+                show_definition(definition)
+            if audio:
+                speak(word_text, audio_lang or lang)
+            continue
+        if answer == '+':
+            if audio:
+                speak(word_text, audio_lang or lang)
+            continue
+        break
+
+    special = handle_special_commands(user, lang, word_id, word_text, definition, header_text, audio, answer, audio_lang=audio_lang)
+    if special:
+        return special + (None,)
+
+    if audio:
+        speak(word_text, audio_lang or lang)  # replay after answer
+
+    correct = answer_matches(answer, word_text)
+    if correct:
+        return 'correct', f"{Colors.GREEN}{word_text}{Colors.ENDC}", None
+    return 'incorrect', f"Incorrect. The word was: {Colors.RED}{word_text}{Colors.ENDC}", answer
 
 
 def _score_after(status, current_score):
@@ -715,12 +760,27 @@ def start_practice_session(user, lang, audio, audio_lang=None, drill_all=False, 
                 r = pool.pop(0)
                 active_batch.append({'id': r[0], 'word': r[1], 'def': r[2], 'score': r[3]})
 
+            # If batch AND pool are exhausted, refetch from DB so we always
+            # reach MAX_QUESTIONS even when the word list is very short.
             if not active_batch:
-                break  # word list fully exhausted
-            if len(active_batch) == 1 and not pool:
-                break  # only 1 word left, can't rotate; word list too small
+                fresh = get_words_for_practice(
+                    user, lang, BATCH_SIZE + (MAX_QUESTIONS - questions_count),
+                    drill_mode=drill_mode)
+                if not fresh:
+                    break  # truly no words at all in this list
+                n = min(BATCH_SIZE, len(fresh))
+                active_batch = [{'id': r[0], 'word': r[1], 'def': r[2], 'score': r[3]}
+                                for r in fresh[:n]]
+                pool = list(fresh[n:])
+                definition_pool = build_definition_pool(fresh)
+                last_word_id = None
+
+            if not active_batch:
+                break  # should be unreachable; guard only
 
             # Lowest-scored first; never ask the same word twice in a row.
+            # When only one word remains and pool is empty, no-repeat is
+            # impossible — 16 questions take priority over the constraint.
             min_score = min(e['score'] for e in active_batch)
             candidates = [e for e in active_batch if e['score'] == min_score]
             without_last = [e for e in candidates if e['id'] != last_word_id]
@@ -737,21 +797,23 @@ def start_practice_session(user, lang, audio, audio_lang=None, drill_all=False, 
                 drill_word(user, lang, word_text, word_id, definition,
                            header_text(), True, audio, audio_lang=audio_lang)
                 status, message, attempt = 'drilled', None, None
+            elif drill_mode:
+                status, message, attempt = ask_production(
+                    user, lang, word_id, word_text, definition, score,
+                    audio, header_text(), word_header, audio_lang=audio_lang)
             elif score_band(score) == 1:
                 status, message, attempt = ask_learning(
                     user, lang, word_id, word_text, definition, score,
-                    audio, header_text(), word_header, audio_lang=audio_lang,
-                    update_score=not drill_mode)
+                    audio, header_text(), word_header, audio_lang=audio_lang)
             elif score_band(score) == 2:
                 status, message, attempt = ask_audio(
                     user, lang, word_id, word_text, definition, score,
-                    audio, header_text(), word_header, audio_lang=audio_lang,
-                    update_score=not drill_mode)
+                    audio, header_text(), word_header, audio_lang=audio_lang)
             else:
                 status, message, attempt = ask_meaning(
                     user, lang, word_id, word_text, definition, score,
                     definition_pool, audio, header_text(), word_header,
-                    audio_lang=audio_lang, update_score=not drill_mode)
+                    audio_lang=audio_lang)
 
             if status == 'end':
                 print("\n\nSession ended early. Saving progress...")
