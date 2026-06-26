@@ -127,23 +127,60 @@ sense to you (e.g. `german_home`, `english_b2`).
 - `data/word_lists/bahman_german.json` — 20 A1 German words (with articles
   and plural forms) and English definitions.
 
-**German GCSE vocabulary** (OCR GCSE German, parsed from the PDF in
-`data/word_lists/pdf/`):
-- `bahman_german_general.json` — 310 general/grammar words
-- `bahman_german_home.json` — 656 words: home, relationships, local area
-- `bahman_german_health.json` — 357 words: health, sport, food
-- `bahman_german_leisure.json` — 177 words: socialising, TV, music
-- `bahman_german_travel.json` — 274 words: travel, environment, culture
-- `bahman_german_education.json` — 267 words: school, work, jobs
+**Generated from the Language Learning decks**
+([github.com/vbvss199/Language-Learning-decks](https://github.com/vbvss199/Language-Learning-decks)):
+- `bahman_german_a1.json` — 681 German words (A1)
+- `bahman_german_a2.json` — 2 060 German words (A2)
+- `bahman_german_b1.json` — 6 449 German words (B1)
+- `bahman_german_b2.json` — 8 288 German words (B2)
+- `bahman_german_c1.json` — 2 771 German words (C1)
+- `bahman_english_a1.json` — 634 English words (A1)
+- `bahman_english_a2.json` — 1 694 English words (A2)
+- `bahman_english_b1.json` — 4 667 English words (B1)
+- `bahman_english_b2.json` — 8 549 English words (B2)
+- `bahman_english_c1.json` — 4 857 English words (C1)
 
-**Oxford 5000 English** (advanced learners, parsed from the PDF in
-`data/word_lists/pdf/`):
-- `bahman_english_b2.json` — 700 B2-level words (with part of speech)
-- `bahman_english_c1.json` — 1315 C1-level words (with part of speech)
+Each entry has the English translation and a bilingual example sentence
+(German deck) or an English example sentence (English deck). German nouns are
+prefixed with their article (`der`/`die`/`das`). You can regenerate or extend
+these files with `utils/generate_lexiloop_json.py` — see
+[Generating word lists from the source decks](#generating-word-lists-from-the-source-decks) below.
 
 For sub-list names that don't auto-detect as a language (e.g.
-`german_home`), pass `--audio-lang german` (CLI) or fill in the **Audio
+`german_a1`), pass `--audio-lang german` (CLI) or fill in the **Audio
 language** field (web UI) to get the correct voice.
+
+## Generating word lists from the source decks
+
+The source files `data/word_lists/german.json` and `data/word_lists/english.json`
+come from [github.com/vbvss199/Language-Learning-decks](https://github.com/vbvss199/Language-Learning-decks)
+and contain **20 280 German** and **20 708 English** words — every single one
+with an English translation, a CEFR level (A1–C2), and an example sentence.
+German nouns also carry their grammatical gender.
+
+`utils/generate_lexiloop_json.py` turns these into LexiLoop-compatible JSON
+files, one per CEFR level:
+
+```bash
+# Generate all CEFR levels for German
+python3 utils/generate_lexiloop_json.py --lang german --user bahman
+
+# Generate all CEFR levels for English
+python3 utils/generate_lexiloop_json.py --lang english --user bahman
+
+# One level only
+python3 utils/generate_lexiloop_json.py --lang german --user bahman --cefr B1
+```
+
+Output files land in `data/word_lists/` as `<user>_<lang>_<level>.json`
+(e.g. `bahman_german_b1.json`). Each entry has:
+- **word** — bare word for verbs/adjectives/etc.; `der`/`die`/`das` +
+  word for German nouns.
+- **definition** — English translation on line 1; bilingual example
+  sentence (`native sentence — English sentence`) on line 2.
+
+To update the source decks, replace `german.json` / `english.json` with the
+latest versions from the GitHub repository above, then re-run the script.
 
 ## Renewing word lists
 
@@ -253,7 +290,8 @@ lexiloop.sh               # run through this wrapper, not python3 directly
 lexiloop_web.py           # web server (JSON API + static frontend)
 lexiloop_web.sh           # run through this wrapper, not python3 directly
 utils/
-  make_vocab_video.py     # standalone: generate a vocab-drill video
+  make_vocab_video.py         # standalone: generate a vocab-drill video
+  generate_lexiloop_json.py   # generate word lists from source decks
 make_vocab_video.sh       # run through this wrapper
 web/
   index.html              # frontend markup
@@ -262,7 +300,9 @@ web/
 data/
   lexiloop.db             # SQLite database (auto-created)
   word_lists/
-    <user>_<lang>.json    # one word list per user per language
+    german.json           # source deck: 20 280 German words (A1–C2)
+    english.json          # source deck: 20 708 English words (A1–C2)
+    <user>_<lang>.json    # generated / hand-curated word lists
 ```
 
 ## Web UI
