@@ -121,15 +121,16 @@ def build_question(session, word_id, word_text, definition, score):
 
 
 # --- Session lifecycle ---
-def start_session(user, lang, number):
+def start_session(user, lang, number, audio_lang=None):
     ll.sync_word_list(user, lang)
     words = ll.get_words_for_practice(user, lang, number)
+    voice_lang = audio_lang or lang
 
     session_id = uuid.uuid4().hex
     session = {
         'user': user,
         'lang': lang,
-        'lang_locale': SPEECH_LOCALES.get(ll.LANGUAGE_LOCALES.get(lang.lower(), ''), ''),
+        'lang_locale': SPEECH_LOCALES.get(ll.LANGUAGE_LOCALES.get(voice_lang.lower(), ''), ''),
         'queue': collections.deque(words),
         'definition_pool': ll.build_definition_pool(words),
         'total': len(words),
@@ -529,12 +530,13 @@ class Handler(http.server.BaseHTTPRequestHandler):
         if parsed.path == '/api/practice/start':
             user = str(payload.get('user', '')).strip()
             lang = str(payload.get('lang', '')).strip()
+            audio_lang = str(payload.get('audio_lang', '')).strip() or None
             try:
                 number = int(payload.get('number', 20))
             except (TypeError, ValueError):
                 number = 20
             try:
-                session_id, session = start_session(user, lang, number)
+                session_id, session = start_session(user, lang, number, audio_lang=audio_lang)
             except (ValueError, FileNotFoundError) as e:
                 return self._send_json({'error': str(e)}, 400)
             question = next_question(session)

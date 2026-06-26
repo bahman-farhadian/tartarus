@@ -407,7 +407,7 @@ def show_definition(definition):
         print(f"  {Colors.CYAN}{line}{Colors.ENDC}")
 
 
-def drill_word(user, lang, word_to_drill, word_id, definition, header_text, show_def, audio):
+def drill_word(user, lang, word_to_drill, word_id, definition, header_text, show_def, audio, audio_lang=None):
     """Initiates a strict 9-repetition drill with a consistent single-line UI."""
     clear_screen()
     print(header_text)
@@ -423,7 +423,7 @@ def drill_word(user, lang, word_to_drill, word_id, definition, header_text, show
         sys.stdout.write(f"{erase_line}{drill_header} ")
         sys.stdout.flush()
         if audio:
-            speak(word_to_drill, lang)
+            speak(word_to_drill, audio_lang or lang)
         answer = input("").strip()
         sys.stdout.write('\033[A' + erase_line)
         if answer_matches(answer, word_to_drill):
@@ -455,7 +455,7 @@ def build_definition_pool(words_for_session):
     return pool
 
 
-def handle_special_commands(user, lang, word_id, word_text, definition, header_text, audio, answer):
+def handle_special_commands(user, lang, word_id, word_text, definition, header_text, audio, answer, audio_lang=None):
     """
     Checks an answer for the session-level special commands. Returns
     (status, message) if one matched ('end'/'drilled'/'mastered'/'flagged'),
@@ -464,7 +464,7 @@ def handle_special_commands(user, lang, word_id, word_text, definition, header_t
     if answer == '!!':
         return 'end', None
     if answer.startswith('$'):
-        drill_word(user, lang, word_text, word_id, definition, header_text, True, audio)
+        drill_word(user, lang, word_text, word_id, definition, header_text, True, audio, audio_lang=audio_lang)
         return 'drilled', None
     if answer.startswith('@'):
         update_word_score(user, lang, word_id, 'mastered')
@@ -475,7 +475,7 @@ def handle_special_commands(user, lang, word_id, word_text, definition, header_t
     return None
 
 
-def ask_learning(user, lang, word_id, word_text, definition, score, audio, header_text, word_header):
+def ask_learning(user, lang, word_id, word_text, definition, score, audio, header_text, word_header, audio_lang=None):
     """
     Band 1 (score 1-3): the word and its definition(s) are both shown - this
     is recognition practice for words you're still learning. If the word has
@@ -494,7 +494,7 @@ def ask_learning(user, lang, word_id, word_text, definition, score, audio, heade
             sys.stdout.write(f"{ERASE_LINE}{word_header} ")
             sys.stdout.flush()
             if audio:
-                speak(word_text, lang)
+                speak(word_text, audio_lang or lang)
             answer = input("").strip()
             sys.stdout.write('\033[A' + ERASE_LINE)
             if answer == '?':
@@ -511,7 +511,7 @@ def ask_learning(user, lang, word_id, word_text, definition, score, audio, heade
             sys.stdout.write(f"{ERASE_LINE}{word_header} {get_gender_color(word_text)}{word_text}{Colors.ENDC}")
             sys.stdout.flush()
             if audio:
-                speak(word_text, lang)
+                speak(word_text, audio_lang or lang)
             time.sleep(0.6)
             sys.stdout.write(f"{ERASE_LINE}{word_header} ")
             sys.stdout.flush()
@@ -521,7 +521,7 @@ def ask_learning(user, lang, word_id, word_text, definition, score, audio, heade
                 continue
             break
 
-    special = handle_special_commands(user, lang, word_id, word_text, definition, header_text, audio, answer)
+    special = handle_special_commands(user, lang, word_id, word_text, definition, header_text, audio, answer, audio_lang=audio_lang)
     if special:
         return special + (None,)
 
@@ -532,7 +532,7 @@ def ask_learning(user, lang, word_id, word_text, definition, score, audio, heade
     return 'incorrect', f"Incorrect. The word was: {Colors.RED}{word_text}{Colors.ENDC}", answer
 
 
-def ask_audio(user, lang, word_id, word_text, definition, score, audio, header_text, word_header):
+def ask_audio(user, lang, word_id, word_text, definition, score, audio, header_text, word_header, audio_lang=None):
     """
     Band 2 (score 4-6): nothing is shown - listen to the word's audio and
     type it from memory. '?' replays the audio and briefly shows the word.
@@ -546,7 +546,7 @@ def ask_audio(user, lang, word_id, word_text, definition, score, audio, header_t
         sys.stdout.write(f"{ERASE_LINE}{word_header} ")
         sys.stdout.flush()
         if audio:
-            speak(word_text, lang)
+            speak(word_text, audio_lang or lang)
         answer = input("").strip()
         sys.stdout.write('\033[A' + ERASE_LINE)
         if answer == '?':
@@ -559,7 +559,7 @@ def ask_audio(user, lang, word_id, word_text, definition, score, audio, header_t
             continue
         break
 
-    special = handle_special_commands(user, lang, word_id, word_text, definition, header_text, audio, answer)
+    special = handle_special_commands(user, lang, word_id, word_text, definition, header_text, audio, answer, audio_lang=audio_lang)
     if special:
         return special + (None,)
 
@@ -570,7 +570,7 @@ def ask_audio(user, lang, word_id, word_text, definition, score, audio, header_t
     return 'incorrect', f"Incorrect. The word was: {Colors.RED}{word_text}{Colors.ENDC}", answer
 
 
-def ask_meaning(user, lang, word_id, word_text, definition, score, definition_pool, audio, header_text, word_header):
+def ask_meaning(user, lang, word_id, word_text, definition, score, definition_pool, audio, header_text, word_header, audio_lang=None):
     """
     Band 3 (score 7-9): the word (and its audio) is shown, and you pick its
     meaning from a multiple-choice list. If the word has no definition,
@@ -578,14 +578,14 @@ def ask_meaning(user, lang, word_id, word_text, definition, score, definition_po
     score delta still applies. Correct -> +3 (capped at 9), incorrect -> -2.
     """
     if not definition:
-        return ask_audio(user, lang, word_id, word_text, definition, score, audio, header_text, word_header)
+        return ask_audio(user, lang, word_id, word_text, definition, score, audio, header_text, word_header, audio_lang=audio_lang)
 
     clear_screen()
     print(header_text)
     print("")
     print(f"{word_header} {get_gender_color(word_text)}{word_text}{Colors.ENDC}")
     if audio:
-        speak(word_text, lang)
+        speak(word_text, audio_lang or lang)
     print("")
 
     own_lines = [line.strip() for line in definition.split('\n') if line.strip()]
@@ -606,11 +606,11 @@ def ask_meaning(user, lang, word_id, word_text, definition, score, definition_po
         answer = input("\nYour answer: ").strip()
         if answer == '?' or answer == '+':
             if audio:
-                speak(word_text, lang)
+                speak(word_text, audio_lang or lang)
             continue
         break
 
-    special = handle_special_commands(user, lang, word_id, word_text, definition, header_text, audio, answer)
+    special = handle_special_commands(user, lang, word_id, word_text, definition, header_text, audio, answer, audio_lang=audio_lang)
     if special:
         return special + (None,)
 
@@ -622,17 +622,23 @@ def ask_meaning(user, lang, word_id, word_text, definition, score, definition_po
     return 'incorrect', f"Incorrect. The right answer was {correct_letter}) {correct_def}", answer
 
 
-def start_practice_session(user, lang, words_for_session, audio):
+def start_practice_session(user, lang, words_for_session, audio, audio_lang=None, drill_all=False):
     """
     Single-pass practice session: each word's current score selects which
     question type it gets (Band 1 'Learning', Band 2 'Audio', Band 3
     'Meaning' - see ask_learning/ask_audio/ask_meaning), so a session over a
     mix of new and practiced words naturally mixes all three question types.
+
+    audio_lang overrides the voice-selection language for TTS (useful when
+    --lang is a sub-list name like 'german_home' but the voice should still
+    be German). drill_all forces every word through a 9-rep drill regardless
+    of its score band.
     """
     correct_count, words_practiced_count, drilled_words_count = 0, 0, 0
     incorrect_list = []
     total_words = len(words_for_session)
-    header_text = f"--- Practice Session ({total_words} words) ---\n{SESSION_HELP}"
+    mode_label = " [DRILL ALL]" if drill_all else ""
+    header_text = f"--- Practice Session ({total_words} words){mode_label} ---\n{SESSION_HELP}"
     definition_pool = build_definition_pool(words_for_session)
     start_time = time.time()
     queue = collections.deque(words_for_session)
@@ -641,17 +647,20 @@ def start_practice_session(user, lang, words_for_session, audio):
             word_id, word_text, definition, score = queue.popleft()
             word_header = f"Word {words_practiced_count + 1}/{total_words} {score_gauge(score)} (score: {score:.1f}):"
             band = score_band(score)
-            if band == 1:
+            if drill_all:
+                drill_word(user, lang, word_text, word_id, definition, header_text, True, audio, audio_lang=audio_lang)
+                status, message, attempt = 'drilled', None, None
+            elif band == 1:
                 status, message, attempt = ask_learning(
-                    user, lang, word_id, word_text, definition, score, audio, header_text, word_header
+                    user, lang, word_id, word_text, definition, score, audio, header_text, word_header, audio_lang=audio_lang
                 )
             elif band == 2:
                 status, message, attempt = ask_audio(
-                    user, lang, word_id, word_text, definition, score, audio, header_text, word_header
+                    user, lang, word_id, word_text, definition, score, audio, header_text, word_header, audio_lang=audio_lang
                 )
             else:
                 status, message, attempt = ask_meaning(
-                    user, lang, word_id, word_text, definition, score, definition_pool, audio, header_text, word_header
+                    user, lang, word_id, word_text, definition, score, definition_pool, audio, header_text, word_header, audio_lang=audio_lang
                 )
 
             if status == 'end':
@@ -796,9 +805,11 @@ def cmd_init(args):
 
 def cmd_practice(args):
     audio = sys.platform == 'darwin' and not args.no_audio
+    audio_lang = args.audio_lang or None
     sync_word_list(args.user, args.lang)
     words_for_session = get_words_for_practice(args.user, args.lang, args.number)
-    start_practice_session(args.user, args.lang, words_for_session, audio)
+    start_practice_session(args.user, args.lang, words_for_session, audio,
+                           audio_lang=audio_lang, drill_all=args.drill)
 
 
 def cmd_report(args):
@@ -862,6 +873,14 @@ Developed by Bahman Farhadian.
                                   help="Disable speaking each word aloud (audio is on by default on macOS, via 'say';\n"
                                        "has no effect on other platforms). LexiLoop tries to use a 'say' voice that\n"
                                        "matches --lang (e.g. a German voice for --lang german).")
+    practice_parser.add_argument('--audio-lang',
+                                  help="Override the language used for voice/audio selection.\n"
+                                       "Useful when --lang is a sub-list name (e.g. 'german_home') that doesn't\n"
+                                       "auto-detect as a language: pass --audio-lang german to still use the\n"
+                                       "German 'say' voice. Accepts the same values as --lang (e.g. 'german', 'de').")
+    practice_parser.add_argument('--drill', action='store_true',
+                                  help="Drill-mode: every word in the session is put through the 9-repetition\n"
+                                       "drill automatically, regardless of its score band.")
 
     report_parser = subparsers.add_parser('report', help="Show practice history.")
     report_parser.add_argument('--user', required=True, help="Username.")

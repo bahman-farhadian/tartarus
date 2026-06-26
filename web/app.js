@@ -94,7 +94,7 @@
   };
 
   document.getElementById('start-session').addEventListener('click', startSession);
-  ['practice-user', 'practice-lang', 'practice-number'].forEach((id) => {
+  ['practice-user', 'practice-lang', 'practice-audio-lang', 'practice-number'].forEach((id) => {
     document.getElementById(id).addEventListener('keydown', (e) => {
       if (e.key === 'Enter') startSession();
     });
@@ -160,6 +160,7 @@
     const langInput = document.getElementById('practice-lang');
     const user = userInput.value.trim();
     const lang = langInput.value.trim();
+    const audioLang = document.getElementById('practice-audio-lang').value.trim() || undefined;
     const number = parseInt(document.getElementById('practice-number').value, 10) || 20;
     if (!user || !lang) {
       showError(practiceError, 'User and language are required.');
@@ -167,10 +168,12 @@
       return;
     }
     try {
+      const body = { user, lang, number };
+      if (audioLang) body.audio_lang = audioLang;
       const data = await api('/api/practice/start', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ user, lang, number }),
+        body: JSON.stringify(body),
       });
       sessionId = data.session_id;
       langLocale = data.lang_locale || '';

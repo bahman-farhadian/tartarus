@@ -31,8 +31,12 @@
             <input id="practice-user" type="text" placeholder="your username" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
           </div>
           <div class="field">
-            <label for="practice-lang">Language</label>
-            <input id="practice-lang" type="text" placeholder="your language" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+            <label for="practice-lang">Word list</label>
+            <input id="practice-lang" type="text" placeholder="e.g. german_home" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+          </div>
+          <div class="field">
+            <label for="practice-audio-lang">Audio language <span class="muted" style="font-weight:400;">(optional)</span></label>
+            <input id="practice-audio-lang" type="text" placeholder="e.g. german" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
           </div>
           <div class="field" style="max-width: 110px;">
             <label for="practice-number">Words</label>
@@ -226,6 +230,20 @@
           list's current words: each one's score, growth gauge, and full
           practice history (times practiced, correct, incorrect, drilled,
           flagged, and mastered).
+        </p>
+
+        <h3>Multiple word lists per language</h3>
+        <p>
+          A single user can have as many word lists as they like. The
+          <strong>Word list</strong> field on the Practice page is just a
+          list name &mdash; you can use anything: <code>german_home</code>,
+          <code>german_health</code>, <code>english_b2</code>. Each name
+          gets its own JSON file and its own score history in the database,
+          so you can practice each topic independently. If the list name
+          doesn't auto-detect as a language for audio (e.g.
+          <code>german_home</code>), fill in the optional
+          <strong>Audio language</strong> field (e.g. <code>german</code>)
+          to get the right voice.
         </p>
 
         <h3>Customizing your word lists</h3>
