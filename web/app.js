@@ -94,7 +94,8 @@
   };
 
   document.getElementById('start-session').addEventListener('click', startSession);
-  ['practice-user', 'practice-lang', 'practice-audio-lang', 'practice-number'].forEach((id) => {
+  // Only text/number inputs get Enter-to-submit; selects use their native behaviour.
+  ['practice-audio-lang', 'practice-number'].forEach((id) => {
     document.getElementById(id).addEventListener('keydown', (e) => {
       if (e.key === 'Enter') startSession();
     });
@@ -395,11 +396,6 @@
 
   // --- Report ---
   document.getElementById('load-report').addEventListener('click', loadReport);
-  ['report-user', 'report-lang'].forEach((id) => {
-    document.getElementById(id).addEventListener('keydown', (e) => {
-      if (e.key === 'Enter') loadReport();
-    });
-  });
 
   async function loadReport() {
     const reportError = document.getElementById('report-error');
@@ -487,18 +483,90 @@
     return card;
   }
 
-  // --- Word lists ---
+  // --- Word lists + cascading dropdowns ---
+
+  let allWordLists = [];
+
+  const KNOWN_BASE_LANGS = new Set([
+    'german', 'english', 'french', 'spanish', 'italian', 'dutch', 'portuguese',
+    'russian', 'japanese', 'chinese', 'korean', 'turkish', 'polish', 'swedish',
+    'norwegian', 'danish', 'arabic',
+  ]);
+
+  // Populate a lang <select> for the currently chosen user.
+  function refreshLangSelect(userSelId, langSelId, { allLangsDefault = false } = {}) {
+    const user = document.getElementById(userSelId).value;
+    const langSel = document.getElementById(langSelId);
+    const prev = langSel.value;
+    langSel.innerHTML = allLangsDefault
+      ? '<option value="">All languages</option>'
+      : '<option value="">Select word list…</option>';
+    allWordLists
+      .filter((w) => w.user === user)
+      .forEach((w) => {
+        const opt = document.createElement('option');
+        opt.value = w.lang;
+        opt.textContent = w.lang;
+        if (w.lang === prev) opt.selected = true;
+        langSel.appendChild(opt);
+      });
+  }
+
+  // Populate a user <select> and rebuild the corresponding lang <select>.
+  function refreshUserSelect(userSelId, langSelId, opts = {}) {
+    const userSel = document.getElementById(userSelId);
+    const prev = userSel.value;
+    const users = [...new Set(allWordLists.map((w) => w.user))].sort();
+    userSel.innerHTML = '<option value="">Select user…</option>';
+    users.forEach((u) => {
+      const opt = document.createElement('option');
+      opt.value = u;
+      opt.textContent = u;
+      if (u === prev) opt.selected = true;
+      userSel.appendChild(opt);
+    });
+    refreshLangSelect(userSelId, langSelId, opts);
+  }
+
+  // Wire up user→lang cascade for a section (call once at init).
+  function setupCascade(userSelId, langSelId, opts = {}) {
+    document.getElementById(userSelId).addEventListener('change', () => {
+      refreshLangSelect(userSelId, langSelId, opts);
+    });
+  }
+
+  // Auto-fill practice audio-lang when the word list changes.
+  document.getElementById('practice-lang').addEventListener('change', function () {
+    const lang = this.value;
+    const audioEl = document.getElementById('practice-audio-lang');
+    if (!lang) { audioEl.value = ''; return; }
+    const base = lang.split('_')[0].toLowerCase();
+    audioEl.value = (lang.includes('_') && KNOWN_BASE_LANGS.has(base)) ? base : '';
+  });
+
+  setupCascade('practice-user', 'practice-lang');
+  setupCascade('report-user',   'report-lang',  { allLangsDefault: true });
+  setupCascade('editor-user',   'editor-lang');
+
   async function loadWordLists() {
     const listsBody = document.getElementById('lists-body');
     listsBody.textContent = 'Loading...';
     try {
       const data = await api('/api/wordlists');
-      if (!data.wordlists.length) {
+      allWordLists = data.wordlists || [];
+
+      // Refresh all cascading dropdowns across the app.
+      refreshUserSelect('practice-user', 'practice-lang');
+      refreshUserSelect('report-user',   'report-lang',  { allLangsDefault: true });
+      refreshUserSelect('editor-user',   'editor-lang');
+
+      // Render the Word Lists tab.
+      if (!allWordLists.length) {
         listsBody.innerHTML = '<span class="muted">No word lists yet. Create one below.</span>';
         return;
       }
       let html = '<ul class="summary-list">';
-      data.wordlists.forEach((wl) => {
+      allWordLists.forEach((wl) => {
         html += `<li><button class="link-btn" data-user="${escapeHtml(wl.user)}" data-lang="${escapeHtml(wl.lang)}">`
           + `<strong>${escapeHtml(wl.user)}</strong> / ${escapeHtml(wl.lang)}</button> `
           + `&mdash; <code>data/word_lists/${escapeHtml(wl.user)}_${escapeHtml(wl.lang)}.json</code></li>`;
@@ -507,8 +575,12 @@
       listsBody.innerHTML = html;
       listsBody.querySelectorAll('.link-btn').forEach((btn) => {
         btn.addEventListener('click', () => {
-          editorUser.value = btn.dataset.user;
-          editorLang.value = btn.dataset.lang;
+          // Pre-select user & lang in the editor dropdowns then load.
+          const uSel = document.getElementById('editor-user');
+          const lSel = document.getElementById('editor-lang');
+          uSel.value = btn.dataset.user;
+          refreshLangSelect('editor-user', 'editor-lang');
+          lSel.value = btn.dataset.lang;
           loadEditor();
         });
       });
@@ -516,6 +588,9 @@
       listsBody.innerHTML = `<span class="error">${escapeHtml(err.message)}</span>`;
     }
   }
+
+  // Load word lists immediately so dropdowns are populated on first page load.
+  loadWordLists();
 
   // --- Word list editor ---
   const editorUser = document.getElementById('editor-user');
@@ -527,11 +602,6 @@
   document.getElementById('editor-load').addEventListener('click', loadEditor);
   document.getElementById('editor-add-row').addEventListener('click', () => addEditorRow({}));
   document.getElementById('editor-save').addEventListener('click', saveEditor);
-  ['editor-user', 'editor-lang'].forEach((id) => {
-    document.getElementById(id).addEventListener('keydown', (e) => {
-      if (e.key === 'Enter') loadEditor();
-    });
-  });
 
   async function loadEditor() {
     showError(editorMessage, '');

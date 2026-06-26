@@ -157,11 +157,27 @@ input, select {
   border-radius: 0.5rem;
   padding: 0.65rem 0.85rem;
   font-size: 1rem;
+  width: 100%;
 }
 
 input:focus, select:focus {
   outline: none;
   border-color: var(--mauve);
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23cdd6f4' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  padding-right: 2.5rem;
+  cursor: pointer;
+}
+
+select option {
+  background: var(--surface0);
+  color: var(--text);
 }
 
 button {

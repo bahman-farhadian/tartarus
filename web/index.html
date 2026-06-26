@@ -28,11 +28,15 @@
         <div class="field-row">
           <div class="field">
             <label for="practice-user">User</label>
-            <input id="practice-user" type="text" placeholder="your username" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+            <select id="practice-user">
+              <option value="">Select user…</option>
+            </select>
           </div>
           <div class="field">
             <label for="practice-lang">Word list</label>
-            <input id="practice-lang" type="text" placeholder="e.g. german_home" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+            <select id="practice-lang">
+              <option value="">Select word list…</option>
+            </select>
           </div>
           <div class="field">
             <label for="practice-audio-lang">Audio language <span class="muted" style="font-weight:400;">(optional)</span></label>
@@ -107,11 +111,15 @@
         <div class="field-row">
           <div class="field">
             <label for="report-user">User</label>
-            <input id="report-user" type="text" placeholder="your username" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+            <select id="report-user">
+              <option value="">Select user…</option>
+            </select>
           </div>
           <div class="field">
-            <label for="report-lang">Language (optional)</label>
-            <input id="report-lang" type="text" placeholder="your language, or leave empty for all" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+            <label for="report-lang">Language <span class="muted" style="font-weight:400;">(optional)</span></label>
+            <select id="report-lang">
+              <option value="">All languages</option>
+            </select>
           </div>
         </div>
         <button id="load-report" class="primary">Load report</button>
@@ -151,11 +159,15 @@
         <div class="field-row">
           <div class="field">
             <label for="editor-user">User</label>
-            <input id="editor-user" type="text" placeholder="your username" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+            <select id="editor-user">
+              <option value="">Select user…</option>
+            </select>
           </div>
           <div class="field">
-            <label for="editor-lang">Language</label>
-            <input id="editor-lang" type="text" placeholder="your language" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+            <label for="editor-lang">Word list</label>
+            <select id="editor-lang">
+              <option value="">Select word list…</option>
+            </select>
           </div>
         </div>
         <button id="editor-load" class="secondary">Load</button>
