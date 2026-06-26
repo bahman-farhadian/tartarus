@@ -71,6 +71,7 @@ LANGUAGE_LOCALES = {
     'portuguese': 'pt', 'pt': 'pt',
     'russian': 'ru', 'ru': 'ru',
     'japanese': 'ja', 'ja': 'ja',
+    'hiragana': 'ja', 'kanji': 'ja', 'katakana': 'ja',
     'chinese': 'zh', 'zh': 'zh',
     'korean': 'ko', 'ko': 'ko',
     'turkish': 'tr', 'tr': 'tr',
@@ -104,7 +105,8 @@ def voice_for_language(lang):
     English uses the system default voice (no '-v' flag). Other languages
     prefer a voice from VOICE_PREFERENCES if one is installed, otherwise the
     first installed voice matching the locale prefix (e.g. "de_DE")."""
-    locale_prefix = LANGUAGE_LOCALES.get(lang.lower())
+    lang_lower = lang.lower()
+    locale_prefix = LANGUAGE_LOCALES.get(lang_lower) or LANGUAGE_LOCALES.get(lang_lower.split('_')[0])
     if not locale_prefix or locale_prefix == 'en':
         return None
     if locale_prefix not in _VOICE_CACHE:
