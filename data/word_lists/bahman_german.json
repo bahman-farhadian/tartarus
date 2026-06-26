@@ -1,12 +1,12 @@
 [
-  {"word": "der Hund", "definition": "dog"},
-  {"word": "die Katze", "definition": "cat"},
-  {"word": "das Haus", "definition": "house"},
-  {"word": "das Auto", "definition": "car"},
-  {"word": "das Buch", "definition": "book"},
-  {"word": "das Wasser", "definition": "water"},
-  {"word": "das Essen", "definition": "food / meal"},
-  {"word": "der Freund", "definition": "friend (male)"},
-  {"word": "die Familie", "definition": "family"},
-  {"word": "die Schule", "definition": "school"}
+  {"word": "der Hund, die Hunde", "definition": "dog"},
+  {"word": "die Katze, die Katzen", "definition": "cat"},
+  {"word": "das Haus, die Häuser", "definition": "house"},
+  {"word": "das Auto, die Autos", "definition": "car"},
+  {"word": "das Buch, die Bücher", "definition": "book"},
+  {"word": "das Wasser", "definition": "water (uncountable, no plural)"},
+  {"word": "das Essen", "definition": "food / meal (uncountable, no plural)"},
+  {"word": "der Freund, die Freunde", "definition": "friend (male)"},
+  {"word": "die Familie, die Familien", "definition": "family"},
+  {"word": "die Schule, die Schulen", "definition": "school"}
 ]
