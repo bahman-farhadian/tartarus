@@ -43,8 +43,13 @@
             <input id="practice-audio-lang" type="text" placeholder="e.g. german" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
           </div>
         </div>
-        <div class="field">
-          <label><input id="practice-audio" type="checkbox" checked style="width: auto; margin-right: 0.4rem;">Play audio (Web Speech API)</label>
+        <div class="field-row" style="gap: 2rem;">
+          <div class="field" style="flex: none;">
+            <label><input id="practice-audio" type="checkbox" checked style="width: auto; margin-right: 0.4rem;">Play audio (Web Speech API)</label>
+          </div>
+          <div class="field" style="flex: none;">
+            <label><input id="practice-drill-mode" type="checkbox" style="width: auto; margin-right: 0.4rem;">Drill mode <span class="muted" style="font-weight:400;">(review high-score words, scores unchanged)</span></label>
+          </div>
         </div>
         <button id="start-session" class="primary">Start session</button>
       </div>

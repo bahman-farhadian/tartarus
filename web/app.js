@@ -173,6 +173,7 @@
     const user = userInput.value.trim();
     const lang = langInput.value.trim();
     const audioLang = (document.getElementById('practice-audio-lang')?.value ?? '').trim() || undefined;
+    const drillMode = document.getElementById('practice-drill-mode')?.checked ?? false;
     if (!user || !lang) {
       showError(practiceError, 'User and language are required.');
       (user ? langInput : userInput).focus();
@@ -181,6 +182,7 @@
     try {
       const body = { user, lang };
       if (audioLang) body.audio_lang = audioLang;
+      if (drillMode) body.drill_mode = true;
       const data = await api('/api/practice/start', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -335,13 +337,20 @@
       feedback.className = 'feedback info';
     }
 
+    // Replay the word's audio after every correct/incorrect answer.
+    const replayAudio = (data.result === 'correct' || data.result === 'incorrect')
+      && currentQuestion && document.getElementById('practice-audio')?.checked;
+    if (replayAudio) speak(currentQuestion.word, langLocale);
+
+    const delay = replayAudio ? 1400 : 700;
+
     if (data.done) {
-      setTimeout(() => showSummary(data.session), 800);
+      setTimeout(() => showSummary(data.session), delay);
       return;
     }
 
     setActionButtons(true);
-    setTimeout(() => renderQuestion(data.question, data.progress), 700);
+    setTimeout(() => renderQuestion(data.question, data.progress), delay);
   }
 
   function showDrill(drill) {

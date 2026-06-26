@@ -124,9 +124,9 @@ MAX_QUESTIONS = ll.MAX_QUESTIONS
 
 
 # --- Session lifecycle ---
-def start_session(user, lang, audio_lang=None):
+def start_session(user, lang, audio_lang=None, drill_mode=False):
     ll.sync_word_list(user, lang)
-    words = ll.get_words_for_practice(user, lang, BATCH_SIZE + MAX_QUESTIONS)
+    words = ll.get_words_for_practice(user, lang, BATCH_SIZE + MAX_QUESTIONS, drill_mode=drill_mode)
     voice_lang = audio_lang or lang
 
     n = min(BATCH_SIZE, len(words))
@@ -152,6 +152,7 @@ def start_session(user, lang, audio_lang=None):
         'practiced': 0,
         'max_questions': MAX_QUESTIONS,
         'last_word_id': None,
+        'drill_mode': drill_mode,
         'correct': 0,
         'drilled': 0,
         'incorrect': [],
@@ -316,6 +317,13 @@ def process_answer(session, answer):
         correct = answer.lower()[:1] == cur['correct_letter']
     else:
         correct = ll.answer_matches(answer, cur['word_text'])
+
+    if session.get('drill_mode'):
+        # Drill mode: show correct/incorrect feedback but never change the score.
+        ll.record_as_drilled(session['user'], session['lang'], cur['word_id'])
+        msg = None if correct else f"Incorrect. The word was: {cur['word_text']}"
+        return advance(session, 'correct' if correct else 'incorrect',
+                       cur['score'], msg, attempt=answer)
 
     if correct:
         ll.update_word_score(session['user'], session['lang'], cur['word_id'], 'correct', cur['score'])
@@ -592,8 +600,9 @@ class Handler(http.server.BaseHTTPRequestHandler):
             user = str(payload.get('user', '')).strip()
             lang = str(payload.get('lang', '')).strip()
             audio_lang = str(payload.get('audio_lang', '')).strip() or None
+            drill_mode = bool(payload.get('drill_mode', False))
             try:
-                session_id, session = start_session(user, lang, audio_lang=audio_lang)
+                session_id, session = start_session(user, lang, audio_lang=audio_lang, drill_mode=drill_mode)
             except (ValueError, FileNotFoundError) as e:
                 return self._send_json({'error': str(e)}, 400)
             question = next_question(session)

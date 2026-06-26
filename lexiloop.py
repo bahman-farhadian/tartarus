@@ -344,6 +344,19 @@ def score_gauge(score):
     return f"{Colors.RED}○○○{Colors.ENDC}"
 
 
+def record_as_drilled(user, lang, word_id):
+    """Increment times_drilled without touching the word's score (used by drill-mode sessions)."""
+    table = words_table_name(user, lang)
+    conn = get_connection()
+    conn.execute(
+        f'UPDATE "{table}" SET times_drilled = times_drilled + 1, '
+        f'times_practiced = times_practiced + 1, last_practiced = ? WHERE id = ?',
+        (date.today().isoformat(), word_id)
+    )
+    conn.commit()
+    conn.close()
+
+
 def update_word_score(user, lang, word_id, result_status, current_score=None):
     """Updates a word's score and increments its history counters.
 
@@ -370,29 +383,39 @@ def update_word_score(user, lang, word_id, result_status, current_score=None):
     conn.close()
 
 
-def get_words_for_practice(user, lang, num_words=BATCH_SIZE):
+def get_words_for_practice(user, lang, num_words=BATCH_SIZE, drill_mode=False):
     """
-    Returns the next `num_words` words to practice, in priority order:
-      1. Practiced-but-not-mastered (last_practiced IS NOT NULL, score < 9):
-         lowest score first — words in progress take priority over new words.
-      2. Never-yet-started (last_practiced IS NULL, score < 9): lowest score
-         first — new words introduced only after in-progress words.
+    Normal mode — priority order:
+      1. Practiced-but-not-mastered (last_practiced NOT NULL, score < 9): lowest first.
+      2. Never-yet-started (score < 9, last_practiced NULL): new words come after in-progress.
       3. Mastered (score >= 9): oldest-practiced first, as review filler.
+
+    Drill mode — highest score first, practiced words only (no brand-new words).
+    Score is never changed in drill mode; only times_drilled is incremented.
     """
     table = words_table_name(user, lang)
     conn = get_connection()
-    cursor = conn.execute(
-        f'''SELECT id, text, definition, score FROM "{table}"
-            WHERE active = 1
-            ORDER BY
-              CASE WHEN score >= 9             THEN 2
-                   WHEN last_practiced IS NULL  THEN 1
-                   ELSE 0 END,
-              score ASC,
-              last_practiced ASC
-            LIMIT ?''',
-        (num_words,)
-    )
+    if drill_mode:
+        cursor = conn.execute(
+            f'''SELECT id, text, definition, score FROM "{table}"
+                WHERE active = 1 AND last_practiced IS NOT NULL
+                ORDER BY score DESC, last_practiced DESC
+                LIMIT ?''',
+            (num_words,)
+        )
+    else:
+        cursor = conn.execute(
+            f'''SELECT id, text, definition, score FROM "{table}"
+                WHERE active = 1
+                ORDER BY
+                  CASE WHEN score >= 9             THEN 2
+                       WHEN last_practiced IS NULL  THEN 1
+                       ELSE 0 END,
+                  score ASC,
+                  last_practiced ASC
+                LIMIT ?''',
+            (num_words,)
+        )
     rows = cursor.fetchall()
     conn.close()
     if not rows:
@@ -478,7 +501,7 @@ def handle_special_commands(user, lang, word_id, word_text, definition, header_t
     return None
 
 
-def ask_learning(user, lang, word_id, word_text, definition, score, audio, header_text, word_header, audio_lang=None):
+def ask_learning(user, lang, word_id, word_text, definition, score, audio, header_text, word_header, audio_lang=None, update_score=True):
     """
     Band 1 (score 1-3): the word and its definition(s) are both shown - this
     is recognition practice for words you're still learning. If the word has
@@ -528,14 +551,17 @@ def ask_learning(user, lang, word_id, word_text, definition, score, audio, heade
     if special:
         return special + (None,)
 
-    if answer_matches(answer, word_text):
-        update_word_score(user, lang, word_id, 'correct', score)
+    correct = answer_matches(answer, word_text)
+    if update_score:
+        update_word_score(user, lang, word_id, 'correct' if correct else 'incorrect', score)
+    if audio:
+        speak(word_text, audio_lang or lang)
+    if correct:
         return 'correct', f"{Colors.GREEN}{word_text}{Colors.ENDC}", None
-    update_word_score(user, lang, word_id, 'incorrect', score)
     return 'incorrect', f"Incorrect. The word was: {Colors.RED}{word_text}{Colors.ENDC}", answer
 
 
-def ask_audio(user, lang, word_id, word_text, definition, score, audio, header_text, word_header, audio_lang=None):
+def ask_audio(user, lang, word_id, word_text, definition, score, audio, header_text, word_header, audio_lang=None, update_score=True):
     """
     Band 2 (score 4-6): nothing is shown - listen to the word's audio and
     type it from memory. '?' replays the audio and briefly shows the word.
@@ -566,14 +592,17 @@ def ask_audio(user, lang, word_id, word_text, definition, score, audio, header_t
     if special:
         return special + (None,)
 
-    if answer_matches(answer, word_text):
-        update_word_score(user, lang, word_id, 'correct', score)
+    correct = answer_matches(answer, word_text)
+    if update_score:
+        update_word_score(user, lang, word_id, 'correct' if correct else 'incorrect', score)
+    if audio:
+        speak(word_text, audio_lang or lang)
+    if correct:
         return 'correct', f"{Colors.GREEN}{word_text}{Colors.ENDC}", None
-    update_word_score(user, lang, word_id, 'incorrect', score)
     return 'incorrect', f"Incorrect. The word was: {Colors.RED}{word_text}{Colors.ENDC}", answer
 
 
-def ask_meaning(user, lang, word_id, word_text, definition, score, definition_pool, audio, header_text, word_header, audio_lang=None):
+def ask_meaning(user, lang, word_id, word_text, definition, score, definition_pool, audio, header_text, word_header, audio_lang=None, update_score=True):
     """
     Band 3 (score 7-9): the word (and its audio) is shown, and you pick its
     meaning from a multiple-choice list. If the word has no definition,
@@ -581,7 +610,7 @@ def ask_meaning(user, lang, word_id, word_text, definition, score, definition_po
     score delta still applies. Correct -> +3 (capped at 9), incorrect -> -2.
     """
     if not definition:
-        return ask_audio(user, lang, word_id, word_text, definition, score, audio, header_text, word_header, audio_lang=audio_lang)
+        return ask_audio(user, lang, word_id, word_text, definition, score, audio, header_text, word_header, audio_lang=audio_lang, update_score=update_score)
 
     clear_screen()
     print(header_text)
@@ -617,11 +646,13 @@ def ask_meaning(user, lang, word_id, word_text, definition, score, definition_po
     if special:
         return special + (None,)
 
-    choice = answer.lower()[:1]
-    if choice == correct_letter:
-        update_word_score(user, lang, word_id, 'correct', score)
+    correct = answer.lower()[:1] == correct_letter
+    if update_score:
+        update_word_score(user, lang, word_id, 'correct' if correct else 'incorrect', score)
+    if audio:
+        speak(word_text, audio_lang or lang)
+    if correct:
         return 'correct', f"{Colors.GREEN}Correct!{Colors.ENDC}", None
-    update_word_score(user, lang, word_id, 'incorrect', score)
     return 'incorrect', f"Incorrect. The right answer was {correct_letter}) {correct_def}", answer
 
 
@@ -634,22 +665,22 @@ def _score_after(status, current_score):
     return FIXED_SCORES.get(status, current_score)
 
 
-def start_practice_session(user, lang, audio, audio_lang=None, drill_all=False):
+def start_practice_session(user, lang, audio, audio_lang=None, drill_all=False, drill_mode=False):
     """
     Focused-batch practice: 4 active words, exactly 16 questions per session.
 
-    Session word flow:
-      1. Fetch up to BATCH_SIZE + MAX_QUESTIONS words from DB in priority order
-         (in-progress words first, then brand-new, then mastered-for-review).
-      2. First BATCH_SIZE words become the active batch; the rest form a pool.
-      3. Each turn: ask the lowest-scored word in the batch. Never the same word
-         twice in a row (ties broken randomly among non-last candidates).
-      4. When a word reaches score 9: graduate it and immediately promote the
-         next word from the pool so the batch stays at BATCH_SIZE.
-      5. Session ends after exactly MAX_QUESTIONS questions (or if the word list
-         is fully exhausted and the batch drops below 2 words).
+    Normal mode — session word flow:
+      1. Fetch up to BATCH_SIZE + MAX_QUESTIONS words ordered by priority
+         (in-progress first, then brand-new, then mastered-for-review).
+      2. First BATCH_SIZE words → active batch; rest → pool.
+      3. Each turn: ask lowest-scored word in batch; never same word twice in a row.
+      4. When a word reaches score 9: graduate and promote next from pool.
+      5. Session ends after MAX_QUESTIONS questions or word list exhausted.
+
+    Drill mode — same structure but highest-scored practiced words come first,
+    scores are never changed, and only times_drilled is incremented.
     """
-    words = get_words_for_practice(user, lang, BATCH_SIZE + MAX_QUESTIONS)
+    words = get_words_for_practice(user, lang, BATCH_SIZE + MAX_QUESTIONS, drill_mode=drill_mode)
     n = min(BATCH_SIZE, len(words))
     active_batch = [{'id': r[0], 'word': r[1], 'def': r[2], 'score': r[3]}
                     for r in words[:n]]
@@ -709,22 +740,34 @@ def start_practice_session(user, lang, audio, audio_lang=None, drill_all=False):
             elif score_band(score) == 1:
                 status, message, attempt = ask_learning(
                     user, lang, word_id, word_text, definition, score,
-                    audio, header_text(), word_header, audio_lang=audio_lang)
+                    audio, header_text(), word_header, audio_lang=audio_lang,
+                    update_score=not drill_mode)
             elif score_band(score) == 2:
                 status, message, attempt = ask_audio(
                     user, lang, word_id, word_text, definition, score,
-                    audio, header_text(), word_header, audio_lang=audio_lang)
+                    audio, header_text(), word_header, audio_lang=audio_lang,
+                    update_score=not drill_mode)
             else:
                 status, message, attempt = ask_meaning(
                     user, lang, word_id, word_text, definition, score,
                     definition_pool, audio, header_text(), word_header,
-                    audio_lang=audio_lang)
+                    audio_lang=audio_lang, update_score=not drill_mode)
 
             if status == 'end':
                 print("\n\nSession ended early. Saving progress...")
                 break
 
             questions_count += 1
+
+            if drill_mode:
+                # Drill mode: record as drilled, never change score or graduate.
+                record_as_drilled(user, lang, word_id)
+                drilled_words_count += 1
+                if message:
+                    print(f"{word_header} {message}")
+                    time.sleep(1.2)
+                continue
+
             new_score = _score_after(status, score)
             entry['score'] = new_score
 
@@ -879,7 +922,8 @@ def cmd_practice(args):
     sync_word_list(args.user, args.lang)
     start_practice_session(args.user, args.lang, audio,
                            audio_lang=args.audio_lang or None,
-                           drill_all=args.drill)
+                           drill_all=args.drill,
+                           drill_mode=args.drill_mode)
 
 
 def cmd_report(args):
@@ -950,6 +994,10 @@ Developed by Bahman Farhadian.
     practice_parser.add_argument('--drill', action='store_true',
                                   help="Drill-mode: every word in the session is put through the 9-repetition\n"
                                        "drill automatically, regardless of its score band.")
+    practice_parser.add_argument('--drill-mode', action='store_true',
+                                  help="Review drill: practice your highest-scored words without changing\n"
+                                       "their scores. Only times_drilled is incremented. Good for reinforcing\n"
+                                       "words you already know well.")
 
     report_parser = subparsers.add_parser('report', help="Show practice history.")
     report_parser.add_argument('--user', required=True, help="Username.")
