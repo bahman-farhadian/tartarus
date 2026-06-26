@@ -1,0 +1,1242 @@
+[
+  {
+    "word": "ab",
+    "definition": "from (e.g. time)"
+  },
+  {
+    "word": "ab und zu",
+    "definition": "now and again"
+  },
+  {
+    "word": "Abend (abends)",
+    "definition": "(in the) evening"
+  },
+  {
+    "word": "als/ wenn",
+    "definition": "when (conj)"
+  },
+  {
+    "word": "bald (bis bald)",
+    "definition": "soon (see you…soon!)"
+  },
+  {
+    "word": "bevor",
+    "definition": "before"
+  },
+  {
+    "word": "damals",
+    "definition": "then (= at that time)"
+  },
+  {
+    "word": "dann",
+    "definition": "then (= at that time)"
+  },
+  {
+    "word": "endlich / zuletzt",
+    "definition": "finally / at last"
+  },
+  {
+    "word": "erst (um)",
+    "definition": "not until"
+  },
+  {
+    "word": "früh (früher)",
+    "definition": "early (previously)"
+  },
+  {
+    "word": "gestern",
+    "definition": "yesterday"
+  },
+  {
+    "word": "gewöhnlich",
+    "definition": "usually"
+  },
+  {
+    "word": "heute",
+    "definition": "today"
+  },
+  {
+    "word": "immer (noch)",
+    "definition": "always (still)"
+  },
+  {
+    "word": "manchmal",
+    "definition": "sometime(s)"
+  },
+  {
+    "word": "Mittag (mittags)",
+    "definition": "midday (at midday)"
+  },
+  {
+    "word": "Mitte (mitten in)",
+    "definition": "middle (in the middle of)"
+  },
+  {
+    "word": "Mitternacht",
+    "definition": "midnight"
+  },
+  {
+    "word": "Monat (monatlich)",
+    "definition": "month(ly)"
+  },
+  {
+    "word": "morgen",
+    "definition": "tomorrow"
+  },
+  {
+    "word": "Morgen (morgens)",
+    "definition": "(in the) morning"
+  },
+  {
+    "word": "nachdem",
+    "definition": "after"
+  },
+  {
+    "word": "nachher",
+    "definition": "afterwards"
+  },
+  {
+    "word": "Nachmittag (nachmittags)",
+    "definition": "(in the) afternoon"
+  },
+  {
+    "word": "nächst",
+    "definition": "following/next (e.g.day/week)"
+  },
+  {
+    "word": "neulich",
+    "definition": "recently"
+  },
+  {
+    "word": "nicht mehr",
+    "definition": "no longer"
+  },
+  {
+    "word": "nie",
+    "definition": "never"
+  },
+  {
+    "word": "noch",
+    "definition": "still (=even now)"
+  },
+  {
+    "word": "noch nicht",
+    "definition": "not yet"
+  },
+  {
+    "word": "plötzlich",
+    "definition": "suddenly"
+  },
+  {
+    "word": "schon",
+    "definition": "already"
+  },
+  {
+    "word": "sobald",
+    "definition": "as soon as"
+  },
+  {
+    "word": "sofort",
+    "definition": "immediately"
+  },
+  {
+    "word": "täglich",
+    "definition": "daily"
+  },
+  {
+    "word": "übermorgen",
+    "definition": "day after tomorrow"
+  },
+  {
+    "word": "vorgestern",
+    "definition": "day before yesterday"
+  },
+  {
+    "word": "vorher",
+    "definition": "beforehand/ previously"
+  },
+  {
+    "word": "Vormittag (vormittags)",
+    "definition": "morning (in the morning)"
+  },
+  {
+    "word": "zuerst",
+    "definition": "at first"
+  },
+  {
+    "word": "aber",
+    "definition": "but / however"
+  },
+  {
+    "word": "alle",
+    "definition": "all / everyone"
+  },
+  {
+    "word": "allein",
+    "definition": "alone"
+  },
+  {
+    "word": "also / so",
+    "definition": "therefore / so"
+  },
+  {
+    "word": "andere",
+    "definition": "other"
+  },
+  {
+    "word": "anderthalb",
+    "definition": "one and a half"
+  },
+  {
+    "word": "anfangen",
+    "definition": "to begin/ start"
+  },
+  {
+    "word": "Antwort",
+    "definition": "answer"
+  },
+  {
+    "word": "antworten",
+    "definition": "to answer"
+  },
+  {
+    "word": "Art",
+    "definition": "sort / kind"
+  },
+  {
+    "word": "auch",
+    "definition": "also"
+  },
+  {
+    "word": "Auf Wiedersehen",
+    "definition": "good-bye!"
+  },
+  {
+    "word": "Augenblick",
+    "definition": "moment"
+  },
+  {
+    "word": "ausgezeichnet",
+    "definition": "excellent"
+  },
+  {
+    "word": "außer",
+    "definition": "except for"
+  },
+  {
+    "word": "befriedigend",
+    "definition": "satisfactory"
+  },
+  {
+    "word": "beginnen",
+    "definition": "to begin/start"
+  },
+  {
+    "word": "begrüßen",
+    "definition": "to greet"
+  },
+  {
+    "word": "behalten",
+    "definition": "to keep"
+  },
+  {
+    "word": "behandeln",
+    "definition": "to treat"
+  },
+  {
+    "word": "Behandlung",
+    "definition": "treatment"
+  },
+  {
+    "word": "beide",
+    "definition": "both"
+  },
+  {
+    "word": "Beispiel",
+    "definition": "example"
+  },
+  {
+    "word": "bekommen",
+    "definition": "to receive"
+  },
+  {
+    "word": "beliebt",
+    "definition": "popular"
+  },
+  {
+    "word": "bemerken",
+    "definition": "to notice"
+  },
+  {
+    "word": "benutzen",
+    "definition": "to use"
+  },
+  {
+    "word": "bequem",
+    "definition": "comfortable"
+  },
+  {
+    "word": "besitzen",
+    "definition": "to own"
+  },
+  {
+    "word": "besonders",
+    "definition": "particular(ly)"
+  },
+  {
+    "word": "besser",
+    "definition": "better"
+  },
+  {
+    "word": "besprechen",
+    "definition": "to discuss"
+  },
+  {
+    "word": "bestimmt",
+    "definition": "definitely"
+  },
+  {
+    "word": "bestrafen",
+    "definition": "to punish"
+  },
+  {
+    "word": "besuchen",
+    "definition": "to visit"
+  },
+  {
+    "word": "bieten / anbieten",
+    "definition": "to offer"
+  },
+  {
+    "word": "billig",
+    "definition": "cheap"
+  },
+  {
+    "word": "bisschen (ein)",
+    "definition": "a little"
+  },
+  {
+    "word": "bitte",
+    "definition": "please"
+  },
+  {
+    "word": "brauchen",
+    "definition": "to need"
+  },
+  {
+    "word": "brechen",
+    "definition": "to break"
+  },
+  {
+    "word": "breit",
+    "definition": "wide"
+  },
+  {
+    "word": "bringen",
+    "definition": "to bring"
+  },
+  {
+    "word": "d.h.",
+    "definition": "i.e."
+  },
+  {
+    "word": "danke(n)",
+    "definition": "thank you (to thank)"
+  },
+  {
+    "word": "dass",
+    "definition": "that"
+  },
+  {
+    "word": "Datum",
+    "definition": "date"
+  },
+  {
+    "word": "dauern",
+    "definition": "to last"
+  },
+  {
+    "word": "denken",
+    "definition": "to think"
+  },
+  {
+    "word": "dies",
+    "definition": "this"
+  },
+  {
+    "word": "Ding",
+    "definition": "thing"
+  },
+  {
+    "word": "doch",
+    "definition": "yes (contradicting)"
+  },
+  {
+    "word": "drücken",
+    "definition": "to press / push"
+  },
+  {
+    "word": "dürfen",
+    "definition": "to be allowed to / “may”"
+  },
+  {
+    "word": "Dutzend",
+    "definition": "a dozen"
+  },
+  {
+    "word": "eben",
+    "definition": "just"
+  },
+  {
+    "word": "ebenso",
+    "definition": "just as"
+  },
+  {
+    "word": "egal (das ist mir egal)",
+    "definition": "(I don’t care!)"
+  },
+  {
+    "word": "ehemalig",
+    "definition": "former / previous"
+  },
+  {
+    "word": "eigen",
+    "definition": "own"
+  },
+  {
+    "word": "eilen (sich beeilen)",
+    "definition": "to hurry (up)"
+  },
+  {
+    "word": "einander",
+    "definition": "one another/ each other"
+  },
+  {
+    "word": "einige",
+    "definition": "some / a few"
+  },
+  {
+    "word": "einmal (noch einmal)",
+    "definition": "once (more)"
+  },
+  {
+    "word": "einverstanden",
+    "definition": "agreed"
+  },
+  {
+    "word": "Ende",
+    "definition": "end / finish"
+  },
+  {
+    "word": "eng",
+    "definition": "narrow / tight"
+  },
+  {
+    "word": "entfernt",
+    "definition": "away / distant"
+  },
+  {
+    "word": "entschuldigen Sie! (sich entschuldigen)",
+    "definition": "excuse me! (to apologise)"
+  },
+  {
+    "word": "Entschuldigung!",
+    "definition": "sorry!"
+  },
+  {
+    "word": "entweder … oder",
+    "definition": "either … or"
+  },
+  {
+    "word": "erinnern (sich)",
+    "definition": "to remind (remember)"
+  },
+  {
+    "word": "erkennen",
+    "definition": "to recognise"
+  },
+  {
+    "word": "erzählen (Erzählung)",
+    "definition": "to tell / recount (story)"
+  },
+  {
+    "word": "es gibt",
+    "definition": "there is / are"
+  },
+  {
+    "word": "es macht nichts",
+    "definition": "it doesn't matter"
+  },
+  {
+    "word": "etwa / ungefähr",
+    "definition": "about / roughly / approximately"
+  },
+  {
+    "word": "etwas (irgend etwas)",
+    "definition": "something (or other)"
+  },
+  {
+    "word": "fallen (lassen)",
+    "definition": "to fall (to drop)"
+  },
+  {
+    "word": "falsch",
+    "definition": "wrong"
+  },
+  {
+    "word": "fast",
+    "definition": "almost"
+  },
+  {
+    "word": "fehlen",
+    "definition": "to be missing"
+  },
+  {
+    "word": "Fehler",
+    "definition": "mistake"
+  },
+  {
+    "word": "fertig",
+    "definition": "ready / finished"
+  },
+  {
+    "word": "finden",
+    "definition": "to find"
+  },
+  {
+    "word": "folgen",
+    "definition": "to follow"
+  },
+  {
+    "word": "Frage (eine Frage stellen)",
+    "definition": "question (to ask a question)"
+  },
+  {
+    "word": "fragen",
+    "definition": "to ask"
+  },
+  {
+    "word": "gar nicht",
+    "definition": "not at all"
+  },
+  {
+    "word": "geben (es gibt)",
+    "definition": "to give (there is)"
+  },
+  {
+    "word": "genau",
+    "definition": "exactly"
+  },
+  {
+    "word": "genug",
+    "definition": "enough"
+  },
+  {
+    "word": "gern",
+    "definition": "glad(ly)"
+  },
+  {
+    "word": "geschlossen",
+    "definition": "closed"
+  },
+  {
+    "word": "getrennt",
+    "definition": "separate(ly)"
+  },
+  {
+    "word": "glauben",
+    "definition": "to think / believe"
+  },
+  {
+    "word": "gleich (der/das/die gleiche)",
+    "definition": "immediately (the same)"
+  },
+  {
+    "word": "glücklich (Glück)",
+    "definition": "happy (good luck)"
+  },
+  {
+    "word": "Gott",
+    "definition": "God"
+  },
+  {
+    "word": "gratulieren",
+    "definition": "to congratulate"
+  },
+  {
+    "word": "Grund",
+    "definition": "ground / reason"
+  },
+  {
+    "word": "Gruss",
+    "definition": "greeting"
+  },
+  {
+    "word": "günstig",
+    "definition": "favourable"
+  },
+  {
+    "word": "gut",
+    "definition": "good"
+  },
+  {
+    "word": "guten Tag",
+    "definition": "hello"
+  },
+  {
+    "word": "haben",
+    "definition": "to have"
+  },
+  {
+    "word": "halb",
+    "definition": "half"
+  },
+  {
+    "word": "Hälfte",
+    "definition": "a half"
+  },
+  {
+    "word": "halten",
+    "definition": "to hold / to stop (moving)"
+  },
+  {
+    "word": "hier",
+    "definition": "here"
+  },
+  {
+    "word": "hochachtungsvoll",
+    "definition": "yours faithfully"
+  },
+  {
+    "word": "hoffen",
+    "definition": "to hope"
+  },
+  {
+    "word": "Idee",
+    "definition": "idea"
+  },
+  {
+    "word": "in Ordnung / klar!",
+    "definition": "O.K.!"
+  },
+  {
+    "word": "inbegriffen",
+    "definition": "included"
+  },
+  {
+    "word": "irgendwo",
+    "definition": "somewhere (or other)"
+  },
+  {
+    "word": "ja",
+    "definition": "yes"
+  },
+  {
+    "word": "je / das Stück",
+    "definition": "each (=per item)"
+  },
+  {
+    "word": "jeder",
+    "definition": "each / every / everybody"
+  },
+  {
+    "word": "jemand",
+    "definition": "someone/ somebody"
+  },
+  {
+    "word": "jener",
+    "definition": "that"
+  },
+  {
+    "word": "jetzt",
+    "definition": "now"
+  },
+  {
+    "word": "kaputt",
+    "definition": "broken"
+  },
+  {
+    "word": "kein",
+    "definition": "no (= not any)"
+  },
+  {
+    "word": "klar",
+    "definition": "clear"
+  },
+  {
+    "word": "können",
+    "definition": "to be able to/ \"can\""
+  },
+  {
+    "word": "kriegen",
+    "definition": "to get"
+  },
+  {
+    "word": "lang",
+    "definition": "long"
+  },
+  {
+    "word": "lange",
+    "definition": "long (e.g. a long time)"
+  },
+  {
+    "word": "langsam",
+    "definition": "slow"
+  },
+  {
+    "word": "lassen",
+    "definition": "to let / leave (s.th)"
+  },
+  {
+    "word": "leider",
+    "definition": "unfortunately"
+  },
+  {
+    "word": "leid tun (es tut mir leid)",
+    "definition": "to feel sorry for (I’m sorry)"
+  },
+  {
+    "word": "leihen (sich)",
+    "definition": "to lend (to borrow)"
+  },
+  {
+    "word": "letzt",
+    "definition": "last (adj)"
+  },
+  {
+    "word": "machen",
+    "definition": "to do / make"
+  },
+  {
+    "word": "mal e.g. zweimal",
+    "definition": "times e.g. twice"
+  },
+  {
+    "word": "mäßig",
+    "definition": "moderate"
+  },
+  {
+    "word": "mehr",
+    "definition": "more"
+  },
+  {
+    "word": "mehrere",
+    "definition": "several"
+  },
+  {
+    "word": "Meinung",
+    "definition": "opinion"
+  },
+  {
+    "word": "mit freundlichen Grüßen",
+    "definition": "yours sincerely"
+  },
+  {
+    "word": "mögen",
+    "definition": "to like (to)"
+  },
+  {
+    "word": "möglich",
+    "definition": "possible"
+  },
+  {
+    "word": "müssen",
+    "definition": "to have to / \"must\""
+  },
+  {
+    "word": "natürlich",
+    "definition": "of course"
+  },
+  {
+    "word": "nehmen",
+    "definition": "to take"
+  },
+  {
+    "word": "nein",
+    "definition": "no"
+  },
+  {
+    "word": "neu",
+    "definition": "new"
+  },
+  {
+    "word": "nicht",
+    "definition": "not"
+  },
+  {
+    "word": "nichts",
+    "definition": "nothing"
+  },
+  {
+    "word": "niemand",
+    "definition": "no-one / nobody"
+  },
+  {
+    "word": "Nummer",
+    "definition": "number"
+  },
+  {
+    "word": "nur",
+    "definition": "only"
+  },
+  {
+    "word": "oder",
+    "definition": "or"
+  },
+  {
+    "word": "offen",
+    "definition": "open"
+  },
+  {
+    "word": "öffnen",
+    "definition": "to open"
+  },
+  {
+    "word": "oft",
+    "definition": "often"
+  },
+  {
+    "word": "ohne",
+    "definition": "without"
+  },
+  {
+    "word": "Paar (ein)",
+    "definition": "a pair / couple"
+  },
+  {
+    "word": "prima!",
+    "definition": "great! / cool!"
+  },
+  {
+    "word": "pro",
+    "definition": "per"
+  },
+  {
+    "word": "Prost!",
+    "definition": "Cheers!"
+  },
+  {
+    "word": "Prozent",
+    "definition": "per cent"
+  },
+  {
+    "word": "Qualität",
+    "definition": "quality"
+  },
+  {
+    "word": "Quatsch",
+    "definition": "nonsense"
+  },
+  {
+    "word": "rufen",
+    "definition": "to call / shout"
+  },
+  {
+    "word": "ruhig (Ruhe)",
+    "definition": "quiet (rest / quiet)"
+  },
+  {
+    "word": "rund",
+    "definition": "round (=shape)"
+  },
+  {
+    "word": "sagen",
+    "definition": "to say / tell"
+  },
+  {
+    "word": "Schade!",
+    "definition": "a pity!"
+  },
+  {
+    "word": "schlecht",
+    "definition": "bad"
+  },
+  {
+    "word": "schließen (abschließen)",
+    "definition": "to close (lock)"
+  },
+  {
+    "word": "schließlich",
+    "definition": "finally"
+  },
+  {
+    "word": "schlimm",
+    "definition": "bad"
+  },
+  {
+    "word": "schrecklich",
+    "definition": "terrible"
+  },
+  {
+    "word": "schreien",
+    "definition": "to shout/ scream"
+  },
+  {
+    "word": "sehr",
+    "definition": "very"
+  },
+  {
+    "word": "sein",
+    "definition": "to be"
+  },
+  {
+    "word": "seitdem",
+    "definition": "since"
+  },
+  {
+    "word": "Sekunde",
+    "definition": "second"
+  },
+  {
+    "word": "selbe (der/das/dieselbe)",
+    "definition": "same"
+  },
+  {
+    "word": "sicher",
+    "definition": "certain(ly) / sure(ly)"
+  },
+  {
+    "word": "sogar",
+    "definition": "even"
+  },
+  {
+    "word": "sollen (\"sollte\")",
+    "definition": "(ought to / should)"
+  },
+  {
+    "word": "sonst",
+    "definition": "otherwise"
+  },
+  {
+    "word": "sowohl ... als auch",
+    "definition": "both ... and"
+  },
+  {
+    "word": "toll!",
+    "definition": "great! cool!"
+  },
+  {
+    "word": "Tschüs(s) !",
+    "definition": "cheerio!/ bye!/ see you!"
+  },
+  {
+    "word": "tun",
+    "definition": "to do"
+  },
+  {
+    "word": "überall",
+    "definition": "everywhere"
+  },
+  {
+    "word": "Uhr",
+    "definition": "clock / watch / o'clock"
+  },
+  {
+    "word": "um ... zu",
+    "definition": "to (=in order to)"
+  },
+  {
+    "word": "und",
+    "definition": "and"
+  },
+  {
+    "word": "unmöglich",
+    "definition": "impossible"
+  },
+  {
+    "word": "verschieden",
+    "definition": "different/ various"
+  },
+  {
+    "word": "Verzeihung!",
+    "definition": "Sorry!"
+  },
+  {
+    "word": "viel",
+    "definition": "a lot / much / many"
+  },
+  {
+    "word": "vielleicht",
+    "definition": "perhaps"
+  },
+  {
+    "word": "Viertel",
+    "definition": "a quarter"
+  },
+  {
+    "word": "voll",
+    "definition": "full"
+  },
+  {
+    "word": "wahr (nicht wahr?)",
+    "definition": "true (isn't it?)"
+  },
+  {
+    "word": "wechseln",
+    "definition": "to change"
+  },
+  {
+    "word": "weil",
+    "definition": "because"
+  },
+  {
+    "word": "Weise (auf diese Weise)",
+    "definition": "way (in this way)"
+  },
+  {
+    "word": "wenig(er)",
+    "definition": "little (less)"
+  },
+  {
+    "word": "wenigstens",
+    "definition": "at least"
+  },
+  {
+    "word": "wenn",
+    "definition": "when / if"
+  },
+  {
+    "word": "werden",
+    "definition": "to become / get"
+  },
+  {
+    "word": "wichtig",
+    "definition": "important"
+  },
+  {
+    "word": "wie",
+    "definition": "as / like"
+  },
+  {
+    "word": "Wie bitte?",
+    "definition": "pardon?"
+  },
+  {
+    "word": "Wie geht's?",
+    "definition": "how are you?"
+  },
+  {
+    "word": "wieder",
+    "definition": "again"
+  },
+  {
+    "word": "wiederholen",
+    "definition": "to repeat"
+  },
+  {
+    "word": "willkommen",
+    "definition": "welcome"
+  },
+  {
+    "word": "wirklich",
+    "definition": "really"
+  },
+  {
+    "word": "wollen",
+    "definition": "to want to"
+  },
+  {
+    "word": "wunderbar",
+    "definition": "wonderful"
+  },
+  {
+    "word": "Wunsch",
+    "definition": "wish"
+  },
+  {
+    "word": "wünschen",
+    "definition": "to wish"
+  },
+  {
+    "word": "Zahl",
+    "definition": "figure / number"
+  },
+  {
+    "word": "ziehen",
+    "definition": "to pull"
+  },
+  {
+    "word": "Ziel",
+    "definition": "aim"
+  },
+  {
+    "word": "ziemlich",
+    "definition": "quite / fairly"
+  },
+  {
+    "word": "zu",
+    "definition": "too (e.g. too old) / closed"
+  },
+  {
+    "word": "zufrieden",
+    "definition": "contented"
+  },
+  {
+    "word": "zumachen",
+    "definition": "to close"
+  },
+  {
+    "word": "zusammen",
+    "definition": "together"
+  },
+  {
+    "word": "Absicht",
+    "definition": "intention"
+  },
+  {
+    "word": "Achtung",
+    "definition": "attention"
+  },
+  {
+    "word": "ähnlich",
+    "definition": "similar"
+  },
+  {
+    "word": "ahnen",
+    "definition": "to suspect"
+  },
+  {
+    "word": "Ahnung",
+    "definition": "idea"
+  },
+  {
+    "word": "außer(dem)",
+    "definition": "except (besides)"
+  },
+  {
+    "word": "äußerst",
+    "definition": "extremely"
+  },
+  {
+    "word": "bedeuten",
+    "definition": "to mean"
+  },
+  {
+    "word": "damit",
+    "definition": "so that"
+  },
+  {
+    "word": "enttäuschen",
+    "definition": "to disappoint"
+  },
+  {
+    "word": "enttäuscht",
+    "definition": "disappointed"
+  },
+  {
+    "word": "erklären",
+    "definition": "to explain"
+  },
+  {
+    "word": "erlauben",
+    "definition": "to allow / permit"
+  },
+  {
+    "word": "es kommt darauf an",
+    "definition": "to depend (it depends)"
+  },
+  {
+    "word": "fließend",
+    "definition": "fluently"
+  },
+  {
+    "word": "Folge",
+    "definition": "consequence"
+  },
+  {
+    "word": "gehören",
+    "definition": "to belong to"
+  },
+  {
+    "word": "genügen",
+    "definition": "to suffice"
+  },
+  {
+    "word": "geschehen",
+    "definition": "to happen"
+  },
+  {
+    "word": "häufig",
+    "definition": "frequently"
+  },
+  {
+    "word": "heutzutage",
+    "definition": "nowadays"
+  },
+  {
+    "word": "höchstens",
+    "definition": "at most"
+  },
+  {
+    "word": "im voraus",
+    "definition": "in advance"
+  },
+  {
+    "word": "insgesamt",
+    "definition": "altogether"
+  },
+  {
+    "word": "irren (sich)",
+    "definition": "to be wrong"
+  },
+  {
+    "word": "kaum",
+    "definition": "hardly / scarcely"
+  },
+  {
+    "word": "ob",
+    "definition": "whether"
+  },
+  {
+    "word": "obgleich / obwohl",
+    "definition": "although"
+  },
+  {
+    "word": "statt",
+    "definition": "instead of"
+  },
+  {
+    "word": "umsonst",
+    "definition": "in vain / free"
+  },
+  {
+    "word": "völlig",
+    "definition": "completely / fully"
+  },
+  {
+    "word": "vor allem",
+    "definition": "above all"
+  },
+  {
+    "word": "vor kurzem",
+    "definition": "recently / a short time ago"
+  },
+  {
+    "word": "Vorsicht (vorsichtig)",
+    "definition": "careful(!)"
+  },
+  {
+    "word": "wagen",
+    "definition": "to dare"
+  },
+  {
+    "word": "während",
+    "definition": "while"
+  },
+  {
+    "word": "weder … noch",
+    "definition": "neither ... nor"
+  },
+  {
+    "word": "wertvoll / wertlos",
+    "definition": "valuable / worthless"
+  },
+  {
+    "word": "zusätzlich",
+    "definition": "additional"
+  },
+  {
+    "word": "zwar",
+    "definition": "indeed"
+  }
+]

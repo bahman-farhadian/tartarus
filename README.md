@@ -105,15 +105,34 @@ Each word list is a JSON array of `{word, definition}` objects, stored at
 > "Learning", and to the listening test for "Meaning" (no meaning to quiz).
 > For the best experience, give every word at least one definition.
 
-Sample lists are included for user `bahman`:
+Sample lists are included for user `bahman`. A single user can have as many
+word lists as they like — the `--lang` value (or **Word list** field in the
+web UI) is just a label, not a fixed language name. Use any name that makes
+sense to you (e.g. `german_home`, `english_b2`).
 
+**Starter lists (hand-curated):**
 - `data/word_lists/bahman_english.json` — 20 A1 English words with
-  English-only definitions, for an English speaker reviewing their own
-  language. Only irregular plurals (e.g. `"child, children"`) are given as
-  multi-form entries; regular `-s`/`-es` plurals are omitted.
+  English-only definitions.
 - `data/word_lists/bahman_german.json` — 20 A1 German words (with articles
-  and plural forms) and English definitions, for an English speaker learning
-  German.
+  and plural forms) and English definitions.
+
+**German GCSE vocabulary** (OCR GCSE German, parsed from the PDF in
+`data/word_lists/pdf/`):
+- `bahman_german_general.json` — 310 general/grammar words
+- `bahman_german_home.json` — 656 words: home, relationships, local area
+- `bahman_german_health.json` — 357 words: health, sport, food
+- `bahman_german_leisure.json` — 177 words: socialising, TV, music
+- `bahman_german_travel.json` — 274 words: travel, environment, culture
+- `bahman_german_education.json` — 267 words: school, work, jobs
+
+**Oxford 5000 English** (advanced learners, parsed from the PDF in
+`data/word_lists/pdf/`):
+- `bahman_english_b2.json` — 699 B2-level words (with part of speech)
+- `bahman_english_c1.json` — 1305 C1-level words (with part of speech)
+
+For sub-list names that don't auto-detect as a language (e.g.
+`german_home`), pass `--audio-lang german` (CLI) or fill in the **Audio
+language** field (web UI) to get the correct voice.
 
 ## Renewing word lists
 
@@ -153,9 +172,11 @@ flowchart TD
 | Option | Description |
 |---|---|
 | `--user <name>` | Required. Username (lowercase letters, digits, underscores). |
-| `--lang <name>` | Required. Which word list to practice. |
+| `--lang <name>` | Required. Which word list to practice (the full list identifier, e.g. `german_home`). |
 | `--number <n>` | Number of words for the session (default: 20). |
 | `--no-audio` | Disable speaking each word aloud. On **macOS**, audio (via `say`) is **on by default**; this flag turns it off. Has no effect on other platforms, where audio is never available. |
+| `--audio-lang <lang>` | Override the language used for voice/TTS selection. Useful when `--lang` is a sub-list name like `german_home` that doesn't auto-detect as German: pass `--audio-lang german` to use the German `say` voice regardless. Accepts the same values as `--lang` (e.g. `german`, `de`). |
+| `--drill` | Drill mode: every word in the session goes through the 9-repetition drill automatically, regardless of its score band. |
 
 Run `./lexiloop.sh practice --help` (or `report`/`init --help`) at any
 time to see this same reference from the CLI itself.
