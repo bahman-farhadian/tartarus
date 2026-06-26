@@ -3,3 +3,4 @@ __pycache__/
 data/lexiloop.db
 .DS_Store
 videos/
+data/word_lists/.build_german_vocab_progress.json

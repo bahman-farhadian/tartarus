@@ -151,6 +151,85 @@ For sub-list names that don't auto-detect as a language (e.g.
 `german_home`), pass `--audio-lang german` (CLI) or fill in the **Audio
 language** field (web UI) to get the correct voice.
 
+## Building a vocabulary list from a CSV or text file
+
+`build_german_vocab.py` enriches a raw list of German words (or word stems)
+with English definitions and grammatical articles (`der`/`die`/`das`) by
+querying the public [English Wiktionary](https://en.wiktionary.org/) and
+[German Wiktionary](https://de.wiktionary.org/) APIs — no API key, no
+external dependencies.
+
+### Plain text input (one word per line)
+
+Create a `.txt` file with one German word (or stem) per line. You can
+optionally prefix lines with a CEFR level:
+
+```text
+# my_words.txt
+Abend
+abbiegen
+Katze
+A1: Hund
+B1: abbiegen
+```
+
+Lines starting with `#` are ignored. Words without a level tag are grouped
+into a single output file. Words with a level tag produce one file per level.
+
+```bash
+# No levels: produces data/word_lists/bahman_german.json
+python3 build_german_vocab.py my_words.txt bahman
+
+# With a custom list name:
+python3 build_german_vocab.py my_words.txt bahman german_travel
+
+# Level-tagged: produces bahman_german_travel_a1.json and bahman_german_travel_b1.json
+python3 build_german_vocab.py my_words.txt bahman german_travel
+```
+
+### Stem CSV input (CEFR dictionary format)
+
+The bundled `data/word_lists/dictionary_a1a2b1_onlystems.csv` has ~5 500
+German stems with A1/A2/B1 levels. The script reads a CSV with columns
+`""`, `level`, `stem` (the format produced by many academic word-frequency
+lists):
+
+```csv
+"","level","stem"
+"1","A1","abend"
+"2","B1","abbieg"
+```
+
+```bash
+python3 build_german_vocab.py data/word_lists/dictionary_a1a2b1_onlystems.csv bahman
+```
+
+This produces three files:
+- `data/word_lists/bahman_german_a1.json` — A1 words
+- `data/word_lists/bahman_german_a2.json` — A2 words
+- `data/word_lists/bahman_german_b1.json` — B1 words
+
+### How it works
+
+For each word/stem, the script:
+
+1. Tries a sequence of candidate full forms in order: capitalized →
+   stem + `-en` (verb infinitive) → capitalized + `-en` → stem + `-e` →
+   capitalized + `-e` → stem as-is. The first form that exists on Wiktionary
+   wins (so `abbieg` → `abbiegen`, `adress` → `Adresse`, `abend` → `Abend`).
+2. Fetches the English definition from the English Wiktionary REST API.
+3. For nouns, fetches the grammatical gender from the German Wiktionary and
+   prepends the article — so nouns come out as `der Abend`, `die Adresse`,
+   `das Angebot`.
+
+Words not found on Wiktionary (~10–15% for common vocabulary) appear in the
+JSON with an empty `definition` — you can fill those in via the web editor.
+
+**Progress is checkpointed** after every word in
+`data/word_lists/.build_german_vocab_progress.json`, so you can interrupt
+with `Ctrl+C` at any time and re-run to continue. Estimated run time for
+the full stem CSV: ~45 minutes at 0.5 s per request.
+
 ## Renewing word lists
 
 Every time you run `practice` or `report --lang <lang>`, LexiLoop "renews"
@@ -261,6 +340,7 @@ lexiloop_web.py           # web server (JSON API + static frontend)
 lexiloop_web.sh           # run through this wrapper, not python3 directly
 make_vocab_video.py       # standalone: generate a vocab-drill video
 make_vocab_video.sh       # run through this wrapper
+build_german_vocab.py     # standalone: enrich a word list with Wiktionary definitions
 web/
   index.html                # frontend markup
   style.css                 # Catppuccin Mocha dark theme
