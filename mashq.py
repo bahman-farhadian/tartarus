@@ -411,37 +411,47 @@ def update_word_score(user, lang, word_id, result_status, current_score=None, cu
 
 def get_words_for_practice(user, lang, num_words=MAX_QUESTIONS, drill_mode=False):
     """
-    Normal mode — only words whose Leitner interval has elapsed are returned:
-      1st: in-progress (score < 9), higher score first, oldest last_practiced first.
-      2nd: mastered (score >= 9) due for review, oldest first.
-    A word is due when: never practiced, practiced today (same-day repeat), or
-    julianday gap >= box interval (1/2/4/9/14 days for boxes 1-5).
+    Normal mode — priority designed to maximise words reaching score 9 each day:
+      0. In-progress (score < 9) AND (new / practiced today / Leitner-due): score DESC.
+      1. Mastered (score 9) AND Leitner-due: review filler, oldest first.
+      2. Not-yet-due: last resort filler, score DESC.
 
-    Drill mode — highest-incorrect words first, scores unchanged.
+    Same-day re-practice is intentional: a word stays in group 0 across all
+    sessions on the same day until its score hits 9.
+
+    Drill mode — highest score first, practiced words only (scores unchanged).
     """
     table = words_table_name(user, lang)
     conn = get_connection()
-    due_condition = '''(
-        last_practiced IS NULL
-        OR date(last_practiced) = date('now')
-        OR julianday('now') - julianday(last_practiced) >=
-           CASE leitner_box WHEN 1 THEN 1 WHEN 2 THEN 2
-                            WHEN 3 THEN 4 WHEN 4 THEN 9 ELSE 14 END
-    )'''
     if drill_mode:
         cursor = conn.execute(
             f'''SELECT id, text, definition, score, leitner_box FROM "{table}"
-                WHERE active = 1 AND times_incorrect > 0
-                ORDER BY times_incorrect DESC, last_practiced ASC
+                WHERE active = 1 AND last_practiced IS NOT NULL
+                ORDER BY score DESC, last_practiced DESC
                 LIMIT ?''',
             (num_words,)
         )
     else:
         cursor = conn.execute(
             f'''SELECT id, text, definition, score, leitner_box FROM "{table}"
-                WHERE active = 1 AND {due_condition}
+                WHERE active = 1
                 ORDER BY
-                  CASE WHEN score < 9 THEN 0 ELSE 1 END,
+                  CASE
+                    WHEN score < 9 AND (
+                      last_practiced IS NULL
+                      OR date(last_practiced) = date('now')
+                      OR julianday('now') - julianday(last_practiced) >=
+                         CASE leitner_box WHEN 1 THEN 1 WHEN 2 THEN 2
+                                          WHEN 3 THEN 4 WHEN 4 THEN 9 ELSE 14 END
+                    ) THEN 0
+                    WHEN score >= 9 AND (
+                      last_practiced IS NULL
+                      OR julianday('now') - julianday(last_practiced) >=
+                         CASE leitner_box WHEN 1 THEN 1 WHEN 2 THEN 2
+                                          WHEN 3 THEN 4 WHEN 4 THEN 9 ELSE 14 END
+                    ) THEN 1
+                    ELSE 2
+                  END,
                   score DESC,
                   last_practiced ASC
                 LIMIT ?''',
@@ -455,7 +465,7 @@ def get_words_for_practice(user, lang, num_words=MAX_QUESTIONS, drill_mode=False
                 "No words with mistakes to drill. Keep practicing and errors will show up here."
             )
         raise ValueError(
-            "Nothing due for review today. Come back tomorrow!"
+            "No active words found for this list. Add words to your word list file and try again."
         )
     return rows
 

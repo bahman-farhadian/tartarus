@@ -296,7 +296,7 @@
       const data = await api('/api/practice/answer', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ session_id: sessionId, answer, audio: document.getElementById('practice-audio').checked }),
+        body: JSON.stringify({ session_id: sessionId, answer }),
       });
       handleAnswerResult(data);
     } catch (err) {
@@ -327,17 +327,19 @@
       feedback.className = 'feedback info';
     }
 
-    // Always pause after correct/incorrect so the user can read the feedback.
-    // Audio already finished server-side before this response arrived.
-    const delay = (data.result === 'correct' || data.result === 'incorrect') ? 700 : 0;
+    // Play audio for the answered word concurrently (fire-and-forget) so
+    // feedback is visible immediately and the 700ms is purely for reading time.
+    if (data.result === 'correct' || data.result === 'incorrect') {
+      speak(data.word);
+    }
 
     if (data.done) {
-      setTimeout(() => showSummary(data.session), delay);
+      setTimeout(() => showSummary(data.session), 700);
       return;
     }
 
     setActionButtons(true);
-    setTimeout(() => renderQuestion(data.question, data.progress), delay);
+    setTimeout(() => renderQuestion(data.question, data.progress), 700);
   }
 
   function showDrill(drill) {

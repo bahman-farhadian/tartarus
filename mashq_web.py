@@ -715,8 +715,6 @@ class Handler(http.server.BaseHTTPRequestHandler):
                 return self._send_json({'error': 'Internal error processing answer'}, 500)
             if result.get('done'):
                 SESSIONS.pop(session_id, None)
-            if payload.get('audio') and result.get('result') in ('correct', 'incorrect'):
-                ll.speak(result.get('word', ''), session.get('voice_lang'), block=True)
             return self._send_json(result)
 
         self.send_error(404)
