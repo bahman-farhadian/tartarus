@@ -43,19 +43,16 @@
     }[c]));
   }
 
-  // --- Speech (backend TTS via macOS say + ffmpeg) ---
-  // Returns a Promise that resolves when playback finishes (or immediately
-  // if audio is disabled). Voice selection happens server-side so the
-  // system default voice (incl. Siri voices) is used correctly.
+  // --- Speech (backend TTS via macOS say) ---
+  // Fire-and-forget: POSTs text to the server which calls 'say' and returns
+  // when done. Voice selection is server-side so Siri/system voices work.
   function speak(text) {
-    if (!document.getElementById('practice-audio').checked) return Promise.resolve();
-    return new Promise((resolve) => {
-      const url = '/api/tts?text=' + encodeURIComponent(text) + '&lang=' + encodeURIComponent(sessionLang);
-      const audio = new Audio(url);
-      audio.onended = resolve;
-      audio.onerror = resolve;
-      audio.play().catch(resolve);
-    });
+    if (!document.getElementById('practice-audio').checked) return;
+    fetch('/api/tts', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ text, lang: sessionLang }),
+    }).catch(() => {});
   }
 
   // --- Practice state ---
@@ -299,7 +296,7 @@
       const data = await api('/api/practice/answer', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ session_id: sessionId, answer }),
+        body: JSON.stringify({ session_id: sessionId, answer, audio: document.getElementById('practice-audio').checked }),
       });
       handleAnswerResult(data);
     } catch (err) {
@@ -330,27 +327,20 @@
       feedback.className = 'feedback info';
     }
 
-    // Replay the word's audio after every correct/incorrect answer,
-    // then advance only after the utterance finishes — so long sentences
-    // aren't cut off by a hardcoded timer.
-    const shouldPlayAudio = (data.result === 'correct' || data.result === 'incorrect')
-      && currentQuestion && document.getElementById('practice-audio')?.checked;
+    // Audio for correct/incorrect is spoken server-side (blocking) before
+    // the response is sent, so the page naturally waits. For non-audio or
+    // other result types, keep a brief visual pause.
+    const audioPlayed = (data.result === 'correct' || data.result === 'incorrect')
+      && document.getElementById('practice-audio').checked;
+    const delay = audioPlayed ? 0 : 700;
 
     if (data.done) {
-      if (shouldPlayAudio) {
-        speak(currentQuestion.word).then(() => showSummary(data.session));
-      } else {
-        setTimeout(() => showSummary(data.session), 700);
-      }
+      setTimeout(() => showSummary(data.session), delay);
       return;
     }
 
     setActionButtons(true);
-    if (shouldPlayAudio) {
-      speak(currentQuestion.word).then(() => renderQuestion(data.question, data.progress));
-    } else {
-      setTimeout(() => renderQuestion(data.question, data.progress), 700);
-    }
+    setTimeout(() => renderQuestion(data.question, data.progress), delay);
   }
 
   function showDrill(drill) {

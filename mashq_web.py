@@ -12,8 +12,6 @@ import errno
 import json
 import time
 import random
-import tempfile
-import subprocess
 import urllib.parse
 import http.server
 import uuid
@@ -141,6 +139,7 @@ def start_session(user, lang, audio_lang=None, drill_mode=False):
     session = {
         'user': user,
         'lang': lang,
+        'voice_lang': voice_lang,
         'lang_locale': SPEECH_LOCALES.get(_resolve_locale(voice_lang), ''),
         'queue': queue,
         'total': len(queue),
@@ -634,41 +633,6 @@ class Handler(http.server.BaseHTTPRequestHandler):
                 return self._send_json({'error': "'user' is required"}, 400)
             return self._send_json({'lists': user_progress_data(user)})
 
-        if parsed.path == '/api/tts':
-            qs = urllib.parse.parse_qs(parsed.query)
-            text = qs.get('text', [''])[0]
-            lang = qs.get('lang', [''])[0]
-            if not text:
-                return self._send_json({'error': "'text' is required"}, 400)
-            voice = ll.voice_for_language(lang) if lang else None
-            aiff = tempfile.NamedTemporaryFile(suffix='.aiff', delete=False)
-            aiff.close()
-            try:
-                say_cmd = ['say', '-o', aiff.name]
-                if voice:
-                    say_cmd += ['-v', voice]
-                say_cmd.append(text)
-                subprocess.run(say_cmd, timeout=15, check=True)
-                result = subprocess.run(
-                    ['ffmpeg', '-y', '-i', aiff.name, '-f', 'mp3', 'pipe:1'],
-                    capture_output=True, timeout=15,
-                )
-                audio = result.stdout
-            except Exception:
-                return self._send_json({'error': 'tts failed'}, 500)
-            finally:
-                try:
-                    os.unlink(aiff.name)
-                except OSError:
-                    pass
-            self.send_response(200)
-            self.send_header('Content-Type', 'audio/mpeg')
-            self.send_header('Content-Length', str(len(audio)))
-            self.send_header('Cache-Control', 'no-cache')
-            self.end_headers()
-            self.wfile.write(audio)
-            return
-
         if parsed.path == '/api/wordlist':
             qs = urllib.parse.parse_qs(parsed.query)
             user = qs.get('user', [''])[0]
@@ -702,6 +666,13 @@ class Handler(http.server.BaseHTTPRequestHandler):
             payload = self._read_json_body()
         except (ValueError, json.JSONDecodeError):
             return self._send_json({'error': 'invalid JSON body'}, 400)
+
+        if parsed.path == '/api/tts':
+            text = str(payload.get('text', '')).strip()
+            lang = str(payload.get('lang', '')).strip()
+            if text:
+                ll.speak(text, lang or None, block=True)
+            return self._send_json({})
 
         if parsed.path == '/api/init':
             user = str(payload.get('user', '')).strip()
@@ -760,6 +731,8 @@ class Handler(http.server.BaseHTTPRequestHandler):
                 return self._send_json({'error': 'Internal error processing answer'}, 500)
             if result.get('done'):
                 SESSIONS.pop(session_id, None)
+            if payload.get('audio') and result.get('result') in ('correct', 'incorrect'):
+                ll.speak(result.get('word', ''), session.get('voice_lang'), block=True)
             return self._send_json(result)
 
         self.send_error(404)

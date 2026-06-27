@@ -133,9 +133,9 @@ def voice_for_language(lang):
     return _VOICE_CACHE[locale_prefix]
 
 
-def speak(text, lang=None):
-    """Pipes text to the macOS 'say' command in the background, using a
-    voice matching lang's locale if one is installed."""
+def speak(text, lang=None, block=False):
+    """Pipes text to the macOS 'say' command, using a voice matching lang's
+    locale if one is installed. block=True waits for speech to finish."""
     cmd = ['say']
     if lang:
         voice = voice_for_language(lang)
@@ -143,7 +143,10 @@ def speak(text, lang=None):
             cmd += ['-v', voice]
     cmd.append(text)
     try:
-        subprocess.Popen(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        if block:
+            subprocess.run(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        else:
+            subprocess.Popen(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     except FileNotFoundError:
         pass
 
