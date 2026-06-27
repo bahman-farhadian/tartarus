@@ -34,12 +34,12 @@ def split_word_forms(word_text):
 
 
 def answer_matches(answer, word_text):
-    """Checks a typed answer against every accepted form of a word
-    (case-sensitive, comma-separated forms like "das Haus, die Häuser").
+    """Checks a typed answer against every accepted form of a word,
+    case-insensitively (comma-separated forms like "das Haus, die Häuser").
     Also accepts the full text with all forms typed out, e.g.
     "das Haus, die Häuser", however the commas/spacing are written."""
-    forms = [form.strip() for form in split_word_forms(word_text)]
-    answer_forms = [form.strip() for form in split_word_forms(answer)]
+    forms = [form.strip().lower() for form in split_word_forms(word_text)]
+    answer_forms = [form.strip().lower() for form in split_word_forms(answer)]
     if len(answer_forms) == 1 and answer_forms[0] in forms:
         return True
     return sorted(answer_forms) == sorted(forms)
