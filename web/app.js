@@ -282,19 +282,9 @@
 
   function submitTextAnswer() {
     const value = answerInput.value;
-    // '?' and '+' are repeat/replay commands, handled locally - just like
-    // the CLI, they never count as an answer attempt (except during drill,
-    // where any input is checked against the word).
-    if (!drillActive && (value.trim() === '?' || value.trim() === '+')) {
-      if (value.trim() === '?') revealWord();
-      else replayAudio();
-      answerInput.value = '';
-      return;
-    }
-    if (drillActive) {
-      sendAnswer(value);
-      return;
-    }
+    // '+' and '?' are always local commands — never submitted as answers.
+    if (value.trim() === '+') { replayAudio(); answerInput.value = ''; return; }
+    if (value.trim() === '?') { revealWord(); answerInput.value = ''; return; }
     sendAnswer(value);
   }
 
@@ -359,7 +349,7 @@
     answerBlock.style.display = 'flex';
     setActionButtons(false);
 
-    wordDisplay.classList.add('hidden-word');
+    wordDisplay.classList.remove('hidden-word');
     if (drill.definition && drill.definition.length) {
       definitionLines.innerHTML = '';
       drill.definition.forEach((line) => {

@@ -250,11 +250,22 @@ def process_answer(session, answer):
     answer = (answer or '').strip()
     cur = session['current']
 
-    if cur['drill'] is not None:
-        return process_drill_answer(session, answer)
-
+    # Session-level commands are always honoured, even mid-drill.
     if answer == '!!':
         return {'done': True, 'result': 'end', 'session': finalize_session(session, ended_early=True)}
+
+    if answer.startswith('@'):
+        if not session.get('drill_mode'):
+            ll.update_word_score(session['user'], session['lang'], cur['word_id'], 'mastered')
+        return advance(session, 'mastered', f"Marked '{cur['word_text']}' as known.")
+
+    if answer.startswith('!'):
+        if not session.get('drill_mode'):
+            ll.update_word_score(session['user'], session['lang'], cur['word_id'], 'flagged')
+        return advance(session, 'flagged', f"Flagged '{cur['word_text']}' for more practice.")
+
+    if cur['drill'] is not None:
+        return process_drill_answer(session, answer)
 
     if answer.startswith('$'):
         cur['drill'] = {'correct_in_a_row': 0, 'repetition': 1}
@@ -269,16 +280,6 @@ def process_answer(session, answer):
                 'target': DRILL_TARGET,
             },
         }
-
-    if answer.startswith('@'):
-        if not session.get('drill_mode'):
-            ll.update_word_score(session['user'], session['lang'], cur['word_id'], 'mastered')
-        return advance(session, 'mastered', f"Marked '{cur['word_text']}' as known.")
-
-    if answer.startswith('!'):
-        if not session.get('drill_mode'):
-            ll.update_word_score(session['user'], session['lang'], cur['word_id'], 'flagged')
-        return advance(session, 'flagged', f"Flagged '{cur['word_text']}' for more practice.")
 
     correct = ll.answer_matches(answer, cur['word_text'])
 
