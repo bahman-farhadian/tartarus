@@ -42,11 +42,9 @@ SPEECH_LOCALES = {
 
 def _resolve_locale(lang):
     """Map a lang name (e.g. 'kanji_a1') to a locale prefix (e.g. 'ja'),
-    trying exact match first, then the first underscore-segment.
-    Returns '' for English so the browser uses its system default voice."""
+    trying exact match first, then the first underscore-segment."""
     lang_lower = lang.lower()
-    prefix = ll.LANGUAGE_LOCALES.get(lang_lower) or ll.LANGUAGE_LOCALES.get(lang_lower.split('_')[0], '')
-    return '' if prefix == 'en' else prefix
+    return ll.LANGUAGE_LOCALES.get(lang_lower) or ll.LANGUAGE_LOCALES.get(lang_lower.split('_')[0], '')
 
 DRILL_TARGET = 9
 
