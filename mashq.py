@@ -86,8 +86,6 @@ LANGUAGE_LOCALES = {
 # one found installed (via 'say -v ?') is used; if none are installed, falls
 # back to the first voice matching the locale prefix (see voice_for_language).
 VOICE_PREFERENCES = {
-    'en': ['Samantha (Premium)', 'Samantha (Enhanced)', 'Samantha',
-           'Daniel (Premium)', 'Daniel (Enhanced)', 'Daniel'],
     'de': ['Anna (Premium)', 'Anna (Enhanced)', 'Anna'],
     'ja': ['Otoya (Enhanced)', 'Kyoko (Enhanced)', 'Otoya', 'Kyoko'],
 }
@@ -104,11 +102,12 @@ def clear_screen():
 def voice_for_language(lang):
     """Finds an installed macOS 'say' voice for lang, if any.
 
-    Prefers a voice from VOICE_PREFERENCES if one is installed, otherwise the
-    first installed voice matching the locale prefix (e.g. "en_US", "de_DE")."""
+    English uses the system default voice (no '-v' flag). Other languages
+    prefer a voice from VOICE_PREFERENCES if one is installed, otherwise the
+    first installed voice matching the locale prefix (e.g. "de_DE")."""
     lang_lower = lang.lower()
     locale_prefix = LANGUAGE_LOCALES.get(lang_lower) or LANGUAGE_LOCALES.get(lang_lower.split('_')[0])
-    if not locale_prefix:
+    if not locale_prefix or locale_prefix == 'en':
         return None
     if locale_prefix not in _VOICE_CACHE:
         voice = None
