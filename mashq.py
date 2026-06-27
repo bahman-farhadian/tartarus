@@ -311,6 +311,7 @@ def sync_word_list(user, lang):
 # the lower a word's score, the more support it gets; the higher, the
 # harder the question and the bigger the reward for getting it right.
 MAX_QUESTIONS = 16   # unique words per session (each asked exactly once)
+DRILL_WORDS = 10     # top-N most-incorrect words shown in drill mode
 
 LEITNER_INTERVALS = {1: 1, 2: 2, 3: 4, 4: 9, 5: 14}  # box -> days until next review
 
@@ -352,12 +353,15 @@ def score_gauge(score):
 
 
 def record_as_drilled(user, lang, word_id):
-    """Increment times_drilled without touching the word's score (used by drill-mode sessions)."""
+    """Record a completed drill: increment times_drilled and erase one incorrect mark."""
     table = words_table_name(user, lang)
     conn = get_connection()
     conn.execute(
-        f'UPDATE "{table}" SET times_drilled = times_drilled + 1, '
-        f'times_practiced = times_practiced + 1, last_practiced = ? WHERE id = ?',
+        f'UPDATE "{table}" SET '
+        f'times_drilled = times_drilled + 1, '
+        f'times_practiced = times_practiced + 1, '
+        f'times_incorrect = MAX(0, times_incorrect - 1), '
+        f'last_practiced = ? WHERE id = ?',
         (date.today().isoformat(), word_id)
     )
     conn.commit()
@@ -419,8 +423,8 @@ def get_words_for_practice(user, lang, num_words=MAX_QUESTIONS, drill_mode=False
     if drill_mode:
         cursor = conn.execute(
             f'''SELECT id, text, definition, score, leitner_box FROM "{table}"
-                WHERE active = 1 AND last_practiced IS NOT NULL
-                ORDER BY score DESC, last_practiced DESC
+                WHERE active = 1 AND times_incorrect > 0
+                ORDER BY times_incorrect DESC, last_practiced ASC
                 LIMIT ?''',
             (num_words,)
         )
@@ -453,6 +457,10 @@ def get_words_for_practice(user, lang, num_words=MAX_QUESTIONS, drill_mode=False
     rows = cursor.fetchall()
     conn.close()
     if not rows:
+        if drill_mode:
+            raise ValueError(
+                "No words with mistakes to drill. Keep practicing and errors will show up here."
+            )
         raise ValueError(
             "No active words found for this list. Add words to your word list file and try again."
         )
@@ -678,7 +686,7 @@ def start_practice_session(user, lang, audio, audio_lang=None, drill_all=False, 
     Due words (box interval elapsed) come first; each word is asked exactly once.
     Correct → advance one Leitner box. Incorrect → reset to box 1.
     """
-    words = get_words_for_practice(user, lang, MAX_QUESTIONS, drill_mode=drill_mode)
+    words = get_words_for_practice(user, lang, DRILL_WORDS if drill_mode else MAX_QUESTIONS, drill_mode=drill_mode)
     queue = [{'id': r[0], 'word': r[1], 'def': r[2], 'score': r[3], 'box': r[4]}
              for r in words]
 
@@ -710,16 +718,10 @@ def start_practice_session(user, lang, audio, audio_lang=None, drill_all=False, 
                            header_text(), audio, audio_lang=audio_lang)
                 status, message, attempt = 'drilled', None, None
             elif drill_mode:
-                if band == 3:
-                    status, message, attempt = ask_production(
-                        user, lang, word_id, word_text, definition, score,
-                        audio, header_text(), word_header, audio_lang=audio_lang,
-                        update_score=False)
-                else:
-                    drill_word(user, lang, word_text, word_id, definition,
-                               header_text(), audio, audio_lang=audio_lang,
-                               update_score=False)
-                    status, message, attempt = 'drilled', None, None
+                drill_word(user, lang, word_text, word_id, definition,
+                           header_text(), audio, audio_lang=audio_lang,
+                           update_score=False)
+                status, message, attempt = 'drilled', None, None
             elif band == 1:
                 status, message, attempt = ask_learning(
                     user, lang, word_id, word_text, definition, score,

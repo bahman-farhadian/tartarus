@@ -97,8 +97,8 @@ def build_question(session, word_id, word_text, definition, score, leitner_box=1
         # Band 3: definition + audio → type the word (no more MCQ).
         question['type'] = 'production'
 
-    if session.get('drill_mode') and band < 3:
-        # Drill mode for lower-band words: pre-start a 9x repetition drill.
+    if session.get('drill_mode'):
+        # Drill mode: every word requires 9 correct in a row, regardless of band.
         initial_drill = {'correct_in_a_row': 0, 'repetition': 1}
         question['drill_start'] = {
             'word': word_text,
@@ -121,12 +121,13 @@ def build_question(session, word_id, word_text, definition, score, leitner_box=1
 
 
 MAX_QUESTIONS = ll.MAX_QUESTIONS
+DRILL_WORDS = ll.DRILL_WORDS
 
 
 # --- Session lifecycle ---
 def start_session(user, lang, audio_lang=None, drill_mode=False):
     ll.sync_word_list(user, lang)
-    words = ll.get_words_for_practice(user, lang, MAX_QUESTIONS, drill_mode=drill_mode)
+    words = ll.get_words_for_practice(user, lang, DRILL_WORDS if drill_mode else MAX_QUESTIONS, drill_mode=drill_mode)
     voice_lang = audio_lang or lang
 
     queue = [
