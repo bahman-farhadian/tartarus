@@ -451,6 +451,24 @@
         });
       }
       if (lang) {
+        // Dashboard analytics cards (before the word-by-word stats table)
+        try {
+          const dParams = new URLSearchParams({ user, lang });
+          const dash = await api(`/api/dashboard?${dParams}`);
+          resultsEl.appendChild(renderDashCard1(dash.overview));
+          const g1 = document.createElement('div');
+          g1.className = 'dashboard-grid';
+          g1.appendChild(renderDashCard4(dash.velocity, user, lang));
+          if (dash.mastery) g1.appendChild(renderDashCard2(dash.mastery));
+          resultsEl.appendChild(g1);
+          if (dash.nemesis !== null && dash.prediction !== null) {
+            const g2 = document.createElement('div');
+            g2.className = 'dashboard-grid';
+            g2.appendChild(renderDashCard3(dash.nemesis, user, lang));
+            g2.appendChild(renderDashCard5(dash.prediction, lang));
+            resultsEl.appendChild(g2);
+          }
+        } catch (_) {}
         await loadWordListStats(user, lang, resultsEl);
       }
     } catch (err) {
@@ -731,7 +749,7 @@
 
   setupCascade('practice-user', 'practice-lang');
   setupCascade('report-user',   'report-lang',  { allLangsDefault: true });
-  setupCascade('dash-user',     'dash-lang',    { allLangsDefault: true });
+
   setupCascade('editor-user',   'editor-lang');
 
   async function loadWordLists() {
@@ -744,7 +762,7 @@
       // Refresh all cascading dropdowns across the app.
       refreshUserSelect('practice-user', 'practice-lang');
       refreshUserSelect('report-user',   'report-lang',  { allLangsDefault: true });
-      refreshUserSelect('dash-user',     'dash-lang',    { allLangsDefault: true });
+
       refreshUserSelect('editor-user',   'editor-lang');
 
       // Render the Word Lists tab.
@@ -783,41 +801,7 @@
     if (user) loadUserProgress(user);
   });
 
-  // --- Analytics Dashboard ---
-  document.getElementById('load-dashboard').addEventListener('click', loadDashboard);
-
-  async function loadDashboard() {
-    const errEl = document.getElementById('dashboard-error');
-    const resEl = document.getElementById('dashboard-results');
-    showError(errEl, '');
-    resEl.innerHTML = '';
-    const user = document.getElementById('dash-user').value.trim();
-    const lang = document.getElementById('dash-lang').value.trim();
-    if (!user) { showError(errEl, 'User is required.'); return; }
-    try {
-      const params = new URLSearchParams({ user });
-      if (lang) params.set('lang', lang);
-      const data = await api(`/api/dashboard?${params}`);
-
-      resEl.appendChild(renderDashCard1(data.overview));
-
-      const row1 = document.createElement('div');
-      row1.className = 'dashboard-grid';
-      row1.appendChild(renderDashCard4(data.velocity, user, lang));
-      if (data.mastery) row1.appendChild(renderDashCard2(data.mastery));
-      resEl.appendChild(row1);
-
-      if (data.nemesis !== null && data.prediction !== null) {
-        const row2 = document.createElement('div');
-        row2.className = 'dashboard-grid';
-        row2.appendChild(renderDashCard3(data.nemesis, user, lang));
-        row2.appendChild(renderDashCard5(data.prediction, lang));
-        resEl.appendChild(row2);
-      }
-    } catch (e) {
-      showError(errEl, e.message);
-    }
-  }
+  // --- Dashboard card renderers (used inside loadReport) ---
 
   // Card 1 — Current Status (user-wide)
   function renderDashCard1(overview) {
