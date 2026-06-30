@@ -433,6 +433,13 @@
         if (summaryData.summary) {
           resultsEl.appendChild(renderUserSummaryCard(summaryData.summary));
         }
+        // Progress overview: per-list bars with due-today counts
+        try {
+          const progressData = await api(`/api/user/progress?user=${encodeURIComponent(user)}`);
+          if (progressData.lists && progressData.lists.length) {
+            resultsEl.appendChild(renderProgressOverview(progressData.lists));
+          }
+        } catch (_) {}
       }
 
       const data = await api(`/api/report?${params.toString()}`);
@@ -451,12 +458,28 @@
     }
   }
 
+  function renderDailyChart(days) {
+    if (!days || days.length === 0) return '';
+    // Oldest-to-newest for left→right bars, cap at 60 days
+    const chartDays = [...days].reverse().slice(-60);
+    const maxVal = Math.max(...chartDays.map((d) => d.practiced), 1);
+    const bars = chartDays.map((day) => {
+      const pct = day.practiced > 0 ? Math.max(4, Math.round(100 * day.practiced / maxVal)) : 0;
+      return `<div class="day-bar${pct === 0 ? ' day-bar-empty' : ''}" style="height:${pct}%" title="${day.date}: ${day.practiced} words"></div>`;
+    }).join('');
+    return `<div class="daily-chart-wrap">
+      <div class="daily-chart-label muted">Words practiced per day (last ${chartDays.length} day${chartDays.length !== 1 ? 's' : ''})</div>
+      <div class="daily-chart">${bars}</div>
+    </div>`;
+  }
+
   function renderUserSummaryCard(summary) {
     const card = document.createElement('div');
     card.className = 'card';
     const streak = summary.streak;
     let html = `<h3>User Overview: ${escapeHtml(summary.user)}</h3>`;
     html += `<p class="muted">Streak &rsaquo; Current: <strong>${streak.current}</strong> day${streak.current !== 1 ? 's' : ''} &nbsp;&middot;&nbsp; Best: <strong>${streak.best}</strong> day${streak.best !== 1 ? 's' : ''}</p>`;
+    html += renderDailyChart(summary.days);
     html += '<table><caption>Daily Summary (All Languages)</caption>';
     html += '<thead><tr><th>Date</th><th>Sessions</th><th>Languages</th><th>Time</th>'
       + '<th>Words</th><th>Correct</th><th>Wrong</th><th>Accuracy</th><th>Avg/Word</th></tr></thead><tbody>';
@@ -479,15 +502,20 @@
   }
 
   async function loadWordListStats(user, lang, container) {
+    const params = new URLSearchParams({ user, lang });
+    // Leitner stats card first, then word-by-word table
     try {
-      const params = new URLSearchParams({ user, lang });
+      const leitnerData = await api(`/api/wordlist/leitner?${params.toString()}`);
+      if (leitnerData.leitner) {
+        container.appendChild(renderLeitnerCard(lang, leitnerData.leitner));
+      }
+    } catch (_) {}
+    try {
       const data = await api(`/api/wordlist/stats?${params.toString()}`);
       if (data.words.length) {
         container.appendChild(renderWordStatsTable(lang, data.words));
       }
-    } catch (err) {
-      // No word list for this user/language yet - nothing to show.
-    }
+    } catch (_) {}
   }
 
   function renderWordStatsTable(lang, words) {
@@ -612,6 +640,9 @@
         <div class="progress-bar-wrap"><div class="progress-bar-fill" style="width:${pct}%"></div></div>
         <div class="progress-meta">
           <span>${item.learned} / ${item.total} learned</span>`;
+      if (item.due_today > 0) {
+        html += `<span class="due-today-badge">${item.due_today} due today</span>`;
+      }
       if (item.to_drill > 0) {
         html += `<span class="drill-badge">${item.to_drill} to drill</span>`;
       }
@@ -619,6 +650,70 @@
     });
     html += '</div></div>';
     return html;
+  }
+
+  // Progress overview card used in the Report view (no specific lang selected).
+  function renderProgressOverview(lists) {
+    const card = document.createElement('div');
+    card.className = 'card';
+    let html = '<h3>Word List Progress</h3><div class="progress-list">';
+    lists.forEach((item) => {
+      const pct = Math.min(item.progress, 100);
+      html += `<div class="progress-row">
+        <div class="progress-header">
+          <span class="progress-lang">${escapeHtml(item.lang)}</span>
+          <span class="progress-pct">${item.progress.toFixed(1)}%</span>
+        </div>
+        <div class="progress-bar-wrap"><div class="progress-bar-fill" style="width:${pct}%"></div></div>
+        <div class="progress-meta">
+          <span>${item.learned} / ${item.total} learned</span>`;
+      if (item.due_today > 0) {
+        html += `<span class="due-today-badge">${item.due_today} due today</span>`;
+      }
+      if (item.to_drill > 0) {
+        html += `<span class="drill-badge">${item.to_drill} to drill</span>`;
+      }
+      html += '</div></div>';
+    });
+    html += '</div>';
+    card.innerHTML = html;
+    return card;
+  }
+
+  function renderLeitnerCard(lang, stats) {
+    const card = document.createElement('div');
+    card.className = 'card';
+    const INTERVAL_LABEL = ['', 'Daily', 'Every 2 days', 'Every 4 days', 'Every 9 days', 'Every 14 days'];
+    let html = `<h3>Leitner Flashcard Status &mdash; ${escapeHtml(lang)}</h3>`;
+
+    // Top-level summary: four stat tiles
+    html += '<div class="leitner-summary">';
+    html += `<div class="leitner-stat-item"><span class="leitner-stat-num">${stats.total}</span><span class="muted">total</span></div>`;
+    html += `<div class="leitner-stat-item lsi-learned"><span class="leitner-stat-num">${stats.learned}</span><span class="muted">learned</span></div>`;
+    html += `<div class="leitner-stat-item lsi-new"><span class="leitner-stat-num">${stats.never_practiced}</span><span class="muted">new</span></div>`;
+    html += `<div class="leitner-stat-item lsi-due"><span class="leitner-stat-num">${stats.due_today}</span><span class="muted">due today</span></div>`;
+    html += '</div>';
+
+    // Per-box breakdown
+    html += '<div class="leitner-boxes">';
+    for (let b = 1; b <= 5; b++) {
+      const box = stats.boxes.find((x) => x.box === b) || { box: b, total: 0, learned: 0, due: 0 };
+      const fillPct = stats.total > 0 ? Math.min(100, Math.round(100 * box.total / stats.total)) : 0;
+      html += `<div class="leitner-box-row">
+        <div class="leitner-box-meta">
+          <span>Box ${b}</span>
+          <span class="muted" style="font-size:0.78rem">${INTERVAL_LABEL[b]}</span>
+        </div>
+        <div class="leitner-bar-wrap"><div class="leitner-bar-fill" style="width:${fillPct}%"></div></div>
+        <div class="leitner-box-counts">
+          <span class="muted">${box.total} word${box.total !== 1 ? 's' : ''}</span>
+          ${box.due > 0 ? `<span class="due-today-badge">${box.due} due</span>` : ''}
+        </div>
+      </div>`;
+    }
+    html += '</div>';
+    card.innerHTML = html;
+    return card;
   }
 
   document.getElementById('practice-user').addEventListener('change', function () {

@@ -411,7 +411,7 @@ def user_summary_data(user):
 
 
 def user_progress_data(user):
-    """Return per-word-list progress stats for a user (total, learned, to_drill)."""
+    """Return per-word-list progress stats for a user (total, learned, to_drill, due_today)."""
     user_s = ll.sanitize_name(user, 'user')
     prefix = f"words_{user_s}_"
     conn = ll.get_connection()
@@ -425,22 +425,77 @@ def user_progress_data(user):
         row = conn.execute(
             f'SELECT COUNT(*), '
             f'SUM(CASE WHEN score >= 9.0 THEN 1 ELSE 0 END), '
-            f'SUM(CASE WHEN times_incorrect > 0 THEN 1 ELSE 0 END) '
+            f'SUM(CASE WHEN times_incorrect > 0 THEN 1 ELSE 0 END), '
+            f'SUM(CASE WHEN last_practiced IS NULL OR '
+            f'julianday(\'now\', \'localtime\') - julianday(last_practiced) >= '
+            f'CASE leitner_box WHEN 1 THEN 1 WHEN 2 THEN 2 WHEN 3 THEN 4 WHEN 4 THEN 9 ELSE 14 END '
+            f'THEN 1 ELSE 0 END) '
             f'FROM "{table_name}" WHERE active = 1'
         ).fetchone()
-        total, learned, to_drill = row
+        total, learned, to_drill, due_today = row
         total = total or 0
         learned = learned or 0
         to_drill = to_drill or 0
+        due_today = due_today or 0
         lists.append({
             'lang': lang,
             'total': total,
             'learned': learned,
             'to_drill': to_drill,
+            'due_today': due_today,
             'progress': round(100 * learned / total, 1) if total > 0 else 0.0,
         })
     conn.close()
     return lists
+
+
+def leitner_stats_data(user, lang):
+    """Per-box word counts and due-today totals for one word list."""
+    table = ll.words_table_name(user, lang)
+    conn = ll.get_connection()
+    cursor = conn.execute("SELECT name FROM sqlite_master WHERE type='table' AND name = ?", (table,))
+    if cursor.fetchone() is None:
+        conn.close()
+        return None
+
+    rows = conn.execute(f'''
+        SELECT leitner_box, COUNT(*) AS total,
+            SUM(CASE WHEN score >= 9.0 THEN 1 ELSE 0 END) AS learned,
+            SUM(CASE WHEN last_practiced IS NULL OR
+                julianday('now', 'localtime') - julianday(last_practiced) >=
+                CASE leitner_box WHEN 1 THEN 1 WHEN 2 THEN 2
+                                 WHEN 3 THEN 4 WHEN 4 THEN 9 ELSE 14 END
+                THEN 1 ELSE 0 END) AS due
+        FROM "{table}" WHERE active = 1
+        GROUP BY leitner_box ORDER BY leitner_box
+    ''').fetchall()
+
+    summary = conn.execute(f'''
+        SELECT COUNT(*),
+            SUM(CASE WHEN score >= 9.0 THEN 1 ELSE 0 END),
+            SUM(CASE WHEN last_practiced IS NULL THEN 1 ELSE 0 END),
+            SUM(CASE WHEN last_practiced IS NULL OR
+                julianday('now', 'localtime') - julianday(last_practiced) >=
+                CASE leitner_box WHEN 1 THEN 1 WHEN 2 THEN 2
+                                 WHEN 3 THEN 4 WHEN 4 THEN 9 ELSE 14 END
+                THEN 1 ELSE 0 END)
+        FROM "{table}" WHERE active = 1
+    ''').fetchone()
+    conn.close()
+
+    INTERVALS = {1: '1 day', 2: '2 days', 3: '4 days', 4: '9 days', 5: '14 days'}
+    boxes = [
+        {'box': b, 'total': t or 0, 'learned': l or 0, 'due': d or 0, 'interval': INTERVALS.get(b, '?')}
+        for b, t, l, d in rows
+    ]
+    total, learned, never_practiced, due_today = summary
+    return {
+        'total': total or 0,
+        'learned': learned or 0,
+        'never_practiced': never_practiced or 0,
+        'due_today': due_today or 0,
+        'boxes': boxes,
+    }
 
 
 def word_list_stats(user, lang):
@@ -642,6 +697,20 @@ class Handler(http.server.BaseHTTPRequestHandler):
             if words is None:
                 return self._send_json({'error': 'no such word list'}, 404)
             return self._send_json({'words': words})
+
+        if parsed.path == '/api/wordlist/leitner':
+            qs = urllib.parse.parse_qs(parsed.query)
+            user = qs.get('user', [''])[0]
+            lang = qs.get('lang', [''])[0]
+            if not user or not lang:
+                return self._send_json({'error': "'user' and 'lang' are required"}, 400)
+            try:
+                stats = leitner_stats_data(user, lang)
+            except ValueError as e:
+                return self._send_json({'error': str(e)}, 400)
+            if stats is None:
+                return self._send_json({'error': 'no such word list'}, 404)
+            return self._send_json({'leitner': stats})
 
         self.send_error(404)
 

@@ -465,6 +465,119 @@ button.shortcut:hover {
   color: var(--peach);
 }
 
+.due-today-badge {
+  background: rgba(250, 179, 135, 0.12);
+  color: var(--peach);
+  border: 1px solid rgba(250, 179, 135, 0.5);
+  border-radius: 999px;
+  padding: 0.05rem 0.5rem;
+  font-size: 0.75rem;
+}
+
+/* --- Daily practice chart --- */
+.daily-chart-wrap {
+  margin: 1rem 0 1.5rem;
+}
+
+.daily-chart-label {
+  font-size: 0.78rem;
+  margin-bottom: 0.4rem;
+}
+
+.daily-chart {
+  display: flex;
+  align-items: flex-end;
+  height: 72px;
+  gap: 2px;
+  background: var(--surface0);
+  border-radius: 0.5rem;
+  padding: 0.35rem 0.4rem 0.2rem;
+}
+
+.day-bar {
+  flex: 1;
+  min-width: 3px;
+  background: var(--mauve);
+  border-radius: 2px 2px 0 0;
+  cursor: default;
+  transition: opacity 0.15s;
+}
+
+.day-bar:hover {
+  opacity: 0.6;
+}
+
+.day-bar-empty {
+  background: var(--surface1);
+}
+
+/* --- Leitner stats card --- */
+.leitner-summary {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.leitner-stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.leitner-stat-num {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.lsi-learned .leitner-stat-num { color: var(--green); }
+.lsi-new .leitner-stat-num { color: var(--blue); }
+.lsi-due .leitner-stat-num { color: var(--peach); }
+
+.leitner-boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.leitner-box-row {
+  display: grid;
+  grid-template-columns: 130px 1fr auto;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.leitner-box-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.05rem;
+  font-size: 0.9rem;
+}
+
+.leitner-bar-wrap {
+  background: var(--surface0);
+  border-radius: 999px;
+  height: 0.55rem;
+  overflow: hidden;
+}
+
+.leitner-bar-fill {
+  height: 100%;
+  background: var(--sapphire);
+  border-radius: 999px;
+}
+
+.leitner-box-counts {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  min-width: 130px;
+  justify-content: flex-end;
+}
+
 /* --- Report view --- */
 table {
   width: 100%;
