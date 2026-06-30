@@ -14,7 +14,6 @@
     <nav>
       <button type="button" data-view="practice" class="active">Practice</button>
       <button type="button" data-view="report">Report</button>
-      <button type="button" data-view="dashboard">Dashboard</button>
       <button type="button" data-view="lists">Word Lists</button>
       <button type="button" data-view="about">About</button>
     </nav>
@@ -131,30 +130,6 @@
         </p>
       </div>
       <div id="report-results"></div>
-    </section>
-
-    <!-- Dashboard -->
-    <section id="view-dashboard" class="view">
-      <div class="card">
-        <h2>Learning Dashboard</h2>
-        <div id="dashboard-error"></div>
-        <div class="field-row">
-          <div class="field">
-            <label for="dash-user">User</label>
-            <select id="dash-user">
-              <option value="">Select user…</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="dash-lang">Word list <span class="muted" style="font-weight:400;">(required for word-level cards)</span></label>
-            <select id="dash-lang">
-              <option value="">All lists</option>
-            </select>
-          </div>
-        </div>
-        <button id="load-dashboard" type="button" class="primary">Load Dashboard</button>
-      </div>
-      <div id="dashboard-results"></div>
     </section>
 
     <!-- Word lists -->
