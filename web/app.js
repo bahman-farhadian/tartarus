@@ -455,6 +455,10 @@
         try {
           const dParams = new URLSearchParams({ user, lang });
           const dash = await api(`/api/dashboard?${dParams}`);
+          const secHeader = document.createElement('div');
+          secHeader.className = 'dash-section-header';
+          secHeader.innerHTML = '<h2>Analytics</h2>';
+          resultsEl.appendChild(secHeader);
           resultsEl.appendChild(renderDashCard1(dash.overview));
           const g1 = document.createElement('div');
           g1.className = 'dashboard-grid';
@@ -803,10 +807,10 @@
 
   // --- Dashboard card renderers (used inside loadReport) ---
 
-  // Card 1 — Current Status (user-wide)
+  // Card 1 — Current Status (scoped to selected list)
   function renderDashCard1(overview) {
     const card = document.createElement('div');
-    card.className = 'card dash-card-full';
+    card.className = 'card dash-card-full dash-card-overview';
     const h = Math.floor(overview.total_seconds / 3600);
     const m = Math.floor((overview.total_seconds % 3600) / 60);
     const accuracy = overview.overall_accuracy;
@@ -832,7 +836,7 @@
         </div>
         <div class="stat-tile stat-ring-tile">
           <svg width="90" height="90" viewBox="0 0 90 90" class="accuracy-ring">
-            <circle cx="45" cy="45" r="${r}" fill="none" stroke="var(--surface0)" stroke-width="9"/>
+            <circle cx="45" cy="45" r="${r}" fill="none" stroke="var(--surface1)" stroke-width="9"/>
             <circle cx="45" cy="45" r="${r}" fill="none" stroke="${arcColor}" stroke-width="9"
               stroke-dasharray="${filled} ${circ - filled}" stroke-linecap="round"
               transform="rotate(-90 45 45)"/>
@@ -848,7 +852,7 @@
   // Card 2 — Mastery Funnel (per list)
   function renderDashCard2(mastery) {
     const card = document.createElement('div');
-    card.className = 'card';
+    card.className = 'card dash-card-mastery';
     const { learning, familiar, mastered, total } = mastery;
     const lPct = total ? Math.round(100 * learning / total) : 0;
     const fPct = total ? Math.round(100 * familiar / total) : 0;
@@ -876,7 +880,7 @@
   // Card 3 — Nemesis Words (per list)
   function renderDashCard3(nemesis, user, lang) {
     const card = document.createElement('div');
-    card.className = 'card';
+    card.className = 'card dash-card-nemesis';
     if (!nemesis.length) {
       card.innerHTML = '<h3>Hardest Words</h3><p class="muted">No words with incorrect answers yet — great work!</p>';
       return card;
@@ -903,10 +907,10 @@
     return card;
   }
 
-  // Card 4 — Velocity & Efficiency (user-wide)
+  // Card 4 — Velocity & Efficiency (scoped to selected list)
   function renderDashCard4(velocity, user, lang) {
     const card = document.createElement('div');
-    card.className = 'card';
+    card.className = 'card dash-card-velocity';
     const { avg_seconds_per_word, avg_words_per_day_7d, avg_minutes_per_day_7d, benchmark, enough_data } = velocity;
     const benchmarkColors = {
       'Hyper-Learner': 'var(--green)',
@@ -937,10 +941,10 @@
     return card;
   }
 
-  // Card 5 — Prediction (per list)
+  // Card 5 — Completion Forecast (per list)
   function renderDashCard5(prediction, lang) {
     const card = document.createElement('div');
-    card.className = 'card';
+    card.className = 'card dash-card-forecast';
     if (!prediction.enough_data) {
       const need = prediction.sessions_needed ?? 3;
       card.innerHTML = `

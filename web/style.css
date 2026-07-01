@@ -582,11 +582,38 @@ button.shortcut:hover {
    Analytics Dashboard
    ============================================================ */
 
+/* --- Dashboard section header --- */
+.dash-section-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0.25rem 0 1rem;
+  padding: 0 0.1rem;
+}
+
+.dash-section-header h2 {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--subtext0);
+  margin: 0;
+}
+
+.dash-section-header::before,
+.dash-section-header::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--surface1);
+}
+
+/* --- Dashboard grid layout --- */
 .dashboard-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
-  margin-bottom: 1.5rem;
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
 @media (max-width: 700px) {
@@ -596,37 +623,51 @@ button.shortcut:hover {
 }
 
 .dash-card-full {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
+
+/* Card accent borders */
+.dash-card-overview { border-top: 2px solid var(--mauve); }
+.dash-card-velocity { border-top: 2px solid var(--blue); }
+.dash-card-mastery  { border-top: 2px solid var(--green); }
+.dash-card-nemesis  { border-top: 2px solid var(--red); }
+.dash-card-forecast { border-top: 2px solid var(--lavender); }
 
 /* --- Card 1: Status stat tiles --- */
 .stat-tiles {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: stretch;
+  margin-top: 0.5rem;
 }
 
 .stat-tile {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 0.3rem;
-  min-width: 80px;
+  align-items: flex-start;
+  gap: 0.35rem;
+  flex: 1;
+  min-width: 90px;
+  background: var(--surface0);
+  border-radius: 0.7rem;
+  padding: 0.85rem 1rem;
 }
 
 .stat-num {
-  font-size: 2.4rem;
-  font-weight: 700;
+  font-size: 2rem;
+  font-weight: 800;
   line-height: 1;
   color: var(--text);
+  letter-spacing: -0.03em;
 }
 
 .stat-unit {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 400;
   color: var(--subtext0);
-  margin-left: 0.2rem;
+  margin-left: 0.15rem;
+  letter-spacing: 0;
 }
 
 .stat-due {
@@ -634,28 +675,33 @@ button.shortcut:hover {
 }
 
 .stat-label {
-  font-size: 0.78rem;
+  font-size: 0.73rem;
   color: var(--subtext0);
-  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  font-weight: 500;
 }
 
 .stat-ring-tile {
-  gap: 0.2rem;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  padding: 0.75rem 1.25rem;
 }
 
 /* --- Card 2: Mastery funnel stacked bar --- */
 .stacked-bar {
   display: flex;
-  height: 1.4rem;
+  height: 1.2rem;
   border-radius: 999px;
   overflow: hidden;
   background: var(--surface0);
-  margin: 0.75rem 0 0.6rem;
+  margin: 0.85rem 0 0.65rem;
 }
 
 .stacked-seg {
   height: 100%;
-  transition: width 0.3s;
+  transition: width 0.4s ease;
 }
 
 .seg-learning { background: var(--red); }
@@ -666,15 +712,15 @@ button.shortcut:hover {
   display: flex;
   gap: 1.25rem;
   flex-wrap: wrap;
-  font-size: 0.82rem;
+  font-size: 0.8rem;
   color: var(--subtext0);
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.85rem;
 }
 
 .legend-dot {
   display: inline-block;
-  width: 0.55rem;
-  height: 0.55rem;
+  width: 0.5rem;
+  height: 0.5rem;
   border-radius: 50%;
   margin-right: 0.3rem;
   vertical-align: middle;
@@ -685,15 +731,16 @@ button.shortcut:hover {
 .dot-mastered { background: var(--green); }
 
 .insight-text {
-  font-size: 0.88rem;
+  font-size: 0.85rem;
   color: var(--subtext0);
   margin: 0;
+  line-height: 1.5;
 }
 
 /* --- Card 3: Nemesis table --- */
 .nemesis-table {
   margin-bottom: 0;
-  font-size: 0.85rem;
+  font-size: 0.83rem;
 }
 
 .nemesis-table th:first-child,
@@ -708,71 +755,84 @@ button.shortcut:hover {
 /* --- Card 4: Velocity tiles --- */
 .velocity-tiles {
   display: flex;
-  gap: 1.5rem;
+  gap: 0.75rem;
   flex-wrap: wrap;
-  margin-bottom: 0.75rem;
+  margin: 0.5rem 0 0.85rem;
 }
 
 .vel-tile {
   display: flex;
   flex-direction: column;
-  gap: 0.2rem;
+  gap: 0.3rem;
+  flex: 1;
+  min-width: 70px;
+  background: var(--surface0);
+  border-radius: 0.65rem;
+  padding: 0.75rem 1rem;
 }
 
 .vel-num {
-  font-size: 1.7rem;
-  font-weight: 700;
+  font-size: 1.6rem;
+  font-weight: 800;
   color: var(--text);
   line-height: 1;
+  letter-spacing: -0.02em;
 }
 
 .vel-label {
-  font-size: 0.78rem;
+  font-size: 0.73rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 500;
 }
 
 .benchmark-badge {
   display: inline-block;
-  border: 1px solid;
+  border: 1.5px solid;
   border-radius: 999px;
-  padding: 0.2rem 0.75rem;
-  font-size: 0.82rem;
-  font-weight: 600;
-  letter-spacing: 0.03em;
+  padding: 0.25rem 0.85rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 
 /* --- Card 5: Prediction --- */
 .prediction-rows {
   display: flex;
   flex-direction: column;
-  gap: 0.9rem;
-  margin: 0.75rem 0 0.75rem;
+  gap: 0.75rem;
+  margin: 0.75rem 0;
 }
 
 .pred-row {
   display: flex;
   flex-direction: column;
-  gap: 0.15rem;
-  padding: 0.65rem 0.9rem;
+  gap: 0.2rem;
+  padding: 0.75rem 1rem;
   background: var(--surface0);
-  border-radius: 0.6rem;
+  border-radius: 0.65rem;
 }
 
 .pred-label {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   color: var(--subtext0);
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
+  font-weight: 500;
 }
 
 .pred-value {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-weight: 600;
   color: var(--text);
 }
 
 .pred-date {
   color: var(--mauve);
-  font-size: 1.3rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
 }
 
 /* --- Report view --- */

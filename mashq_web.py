@@ -524,10 +524,10 @@ def dashboard_data(user, lang=None):
     """All analytics data for the dashboard: overview, velocity, and (if lang
     given) mastery funnel, nemesis words, and per-list completion prediction."""
     user_s = ll.sanitize_name(user, 'user')
+    lang_s = ll.sanitize_name(lang, 'language') if lang else None
     sessions_table = f"sessions_{user_s}"
     conn = ll.get_connection()
 
-    # --- Session-level aggregates (user-wide) ---
     has_sessions = conn.execute(
         "SELECT name FROM sqlite_master WHERE type='table' AND name=?",
         (sessions_table,)
@@ -538,10 +538,16 @@ def dashboard_data(user, lang=None):
     avg_seconds_per_word = avg_words_7d = avg_seconds_7d = 0.0
     session_count = distinct_days = 0
 
+    # Scope session queries to the selected list when lang is given
+    s_where = f'WHERE language = ?' if lang_s else ''
+    s_params = (lang_s,) if lang_s else ()
+    s_and_lang = f'AND language = ?' if lang_s else ''
+
     if has_sessions:
         t = conn.execute(
             f'SELECT SUM(duration_seconds), SUM(words_practiced), '
-            f'SUM(correct_count), SUM(incorrect_count) FROM "{sessions_table}"'
+            f'SUM(correct_count), SUM(incorrect_count) FROM "{sessions_table}" {s_where}',
+            s_params
         ).fetchone()
         total_seconds = t[0] or 0
         total_practiced = t[1] or 0
@@ -549,14 +555,15 @@ def dashboard_data(user, lang=None):
         total_incorrect = t[3] or 0
 
         all_dates = [r[0] for r in conn.execute(
-            f'SELECT session_date FROM "{sessions_table}"').fetchall()]
+            f'SELECT session_date FROM "{sessions_table}" {s_where}', s_params).fetchall()]
         current_streak, best_streak = ll.compute_streak(all_dates)
         distinct_days = len(set(all_dates))
         session_count = len(all_dates)
 
         last_7 = conn.execute(
             f"SELECT SUM(words_practiced), SUM(duration_seconds) FROM \"{sessions_table}\" "
-            f"WHERE session_date >= date('now', '-6 days', 'localtime')"
+            f"WHERE session_date >= date('now', '-6 days', 'localtime') {s_and_lang}",
+            (lang_s,) if lang_s else ()
         ).fetchone()
         avg_words_7d = (last_7[0] or 0) / 7.0
         avg_seconds_7d = (last_7[1] or 0) / 7.0
@@ -566,27 +573,48 @@ def dashboard_data(user, lang=None):
     total_answers = total_correct + total_incorrect
     overall_accuracy = round(100 * total_correct / total_answers, 1) if total_answers > 0 else None
 
-    # --- Due today across all word lists ---
-    prefix = f"words_{user_s}_"
-    word_tables = conn.execute(
-        "SELECT name FROM sqlite_master WHERE type='table' AND name LIKE ? ORDER BY name",
-        (f"{prefix}%",)
-    ).fetchall()
-    due_today_total = 0
-    for (tname,) in word_tables:
-        cols = {r[1] for r in conn.execute(f'PRAGMA table_info("{tname}")').fetchall()}
-        if 'leitner_box' in cols:
-            due_today_total += conn.execute(
-                f"SELECT COUNT(*) FROM \"{tname}\" WHERE active=1 AND ("
-                f"last_practiced IS NULL OR "
-                f"julianday('now','localtime') - julianday(last_practiced) >= "
-                f"CASE leitner_box WHEN 1 THEN 1 WHEN 2 THEN 2 WHEN 3 THEN 4 "
-                f"WHEN 4 THEN 9 ELSE 14 END)"
-            ).fetchone()[0]
+    # --- Due today: scoped to selected list, or all lists if no lang ---
+    if lang_s:
+        tname = f"words_{user_s}_{lang_s}"
+        if conn.execute(
+            "SELECT name FROM sqlite_master WHERE type='table' AND name=?", (tname,)
+        ).fetchone():
+            cols = {r[1] for r in conn.execute(f'PRAGMA table_info("{tname}")').fetchall()}
+            if 'leitner_box' in cols:
+                due_today_total = conn.execute(
+                    f"SELECT COUNT(*) FROM \"{tname}\" WHERE active=1 AND ("
+                    f"last_practiced IS NULL OR "
+                    f"julianday('now','localtime') - julianday(last_practiced) >= "
+                    f"CASE leitner_box WHEN 1 THEN 1 WHEN 2 THEN 2 WHEN 3 THEN 4 "
+                    f"WHEN 4 THEN 9 ELSE 14 END)"
+                ).fetchone()[0]
+            else:
+                due_today_total = conn.execute(
+                    f"SELECT COUNT(*) FROM \"{tname}\" WHERE active=1"
+                ).fetchone()[0]
         else:
-            due_today_total += conn.execute(
-                f"SELECT COUNT(*) FROM \"{tname}\" WHERE active=1"
-            ).fetchone()[0]
+            due_today_total = 0
+    else:
+        prefix = f"words_{user_s}_"
+        word_tables = conn.execute(
+            "SELECT name FROM sqlite_master WHERE type='table' AND name LIKE ? ORDER BY name",
+            (f"{prefix}%",)
+        ).fetchall()
+        due_today_total = 0
+        for (tname,) in word_tables:
+            cols = {r[1] for r in conn.execute(f'PRAGMA table_info("{tname}")').fetchall()}
+            if 'leitner_box' in cols:
+                due_today_total += conn.execute(
+                    f"SELECT COUNT(*) FROM \"{tname}\" WHERE active=1 AND ("
+                    f"last_practiced IS NULL OR "
+                    f"julianday('now','localtime') - julianday(last_practiced) >= "
+                    f"CASE leitner_box WHEN 1 THEN 1 WHEN 2 THEN 2 WHEN 3 THEN 4 "
+                    f"WHEN 4 THEN 9 ELSE 14 END)"
+                ).fetchone()[0]
+            else:
+                due_today_total += conn.execute(
+                    f"SELECT COUNT(*) FROM \"{tname}\" WHERE active=1"
+                ).fetchone()[0]
 
     # Benchmark pace vs. 20 words/day standard
     if avg_words_7d >= 40:
@@ -620,8 +648,7 @@ def dashboard_data(user, lang=None):
     }
 
     # --- Per-list data (requires lang) ---
-    if lang:
-        lang_s = ll.sanitize_name(lang, 'language')
+    if lang_s:
         wtable = f"words_{user_s}_{lang_s}"
         has_wtable = conn.execute(
             "SELECT name FROM sqlite_master WHERE type='table' AND name=?", (wtable,)
