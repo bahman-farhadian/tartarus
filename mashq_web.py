@@ -62,45 +62,72 @@ def gender_class(word_text):
     return 'none'
 
 
+def prompt_definition_lines(cur):
+    prompt = cur.get('prompt_definition') or cur.get('definition') or ''
+    return prompt.split('\n') if prompt else []
+
+
+def drill_definition_lines(cur):
+    prompt = cur.get('drill_definition') or cur.get('prompt_definition') or cur.get('definition') or ''
+    return prompt.split('\n') if prompt else []
+
+
 def build_question(session, word_id, word_text, definition, score, leitner_box=1):
     band = ll.score_band(score)
     has_def = bool(definition)
+    if band == 1:
+        question_type = 'learning' if has_def else 'spelling'
+    elif band == 2:
+        question_type = 'audio'
+    else:
+        # Band 3: definition + audio → type the word (no more MCQ).
+        question_type = 'production'
+
+    if session.get('known_drill_mode'):
+        question_type = 'known_review'
+
+    full_definition_lines = definition.split('\n') if definition else []
+    primary_definition = ll.english_definition_only(definition)
+    prompt_definition_lines = [primary_definition] if primary_definition else []
+    definition_lines = full_definition_lines if question_type == 'learning' else prompt_definition_lines
+
     question = {
         'word_id': word_id,
         'word': word_text,
-        'definition': definition.split('\n') if definition else [],
+        'definition': definition_lines,
         'score': round(score, 1),
         'gauge': gauge_dots(score),
         'band': band,
         'gender': gender_class(word_text),
+        'type': question_type,
     }
     initial_drill = None
-    if band == 1:
-        question['type'] = 'learning' if has_def else 'spelling'
-    elif band == 2:
-        question['type'] = 'audio'
-    else:
-        # Band 3: definition + audio → type the word (no more MCQ).
-        question['type'] = 'production'
 
     if session.get('drill_mode'):
+        definition_lines = prompt_definition_lines
+        question['definition'] = definition_lines
+        question['type'] = 'drill'
+        question_type = 'drill'
         # Drill mode: every word requires 9 correct in a row, regardless of band.
         initial_drill = {'correct_in_a_row': 0, 'repetition': 1}
         question['drill_start'] = {
             'word': word_text,
-            'definition': definition.split('\n') if definition else [],
+            'definition': definition_lines,
             'repetition': 1,
             'correct_in_a_row': 0,
             'target': DRILL_TARGET,
+            'show_word': True,
         }
 
     session['current'] = {
         'word_id': word_id,
         'word_text': word_text,
         'definition': definition,
+        'prompt_definition': '\n'.join(definition_lines),
+        'drill_definition': '\n'.join(prompt_definition_lines),
         'score': score,
         'leitner_box': leitner_box,
-        'type': question['type'],
+        'type': question_type,
         'drill': initial_drill,
     }
     return question
@@ -111,9 +138,14 @@ DRILL_WORDS = ll.DRILL_WORDS
 
 
 # --- Session lifecycle ---
-def start_session(user, lang, audio_lang=None, drill_mode=False):
+def start_session(user, lang, audio_lang=None, drill_mode=False, known_drill_mode=False):
     ll.sync_word_list(user, lang)
-    words = ll.get_words_for_practice(user, lang, DRILL_WORDS if drill_mode else MAX_QUESTIONS, drill_mode=drill_mode)
+    words = ll.get_words_for_practice(
+        user, lang,
+        DRILL_WORDS if drill_mode else MAX_QUESTIONS,
+        drill_mode=drill_mode,
+        known_drill_mode=known_drill_mode,
+    )
     voice_lang = audio_lang or lang
 
     queue = [
@@ -131,6 +163,7 @@ def start_session(user, lang, audio_lang=None, drill_mode=False):
         'practiced': 0,
         'max_questions': DRILL_WORDS if drill_mode else MAX_QUESTIONS,
         'drill_mode': drill_mode,
+        'known_drill_mode': known_drill_mode,
         'correct': 0,
         'drilled': 0,
         'incorrect': [],
@@ -207,8 +240,11 @@ def process_drill_answer(session, answer):
         drill['correct_in_a_row'] += 1
         if drill['correct_in_a_row'] >= DRILL_TARGET:
             cur['drill'] = None
-            if session.get('drill_mode'):
-                ll.record_as_drilled(session['user'], session['lang'], cur['word_id'])
+            if session.get('drill_mode') or session.get('known_drill_mode'):
+                ll.record_as_drilled(
+                    session['user'], session['lang'], cur['word_id'],
+                    known_review=session.get('known_drill_mode', False)
+                )
                 return advance(session, 'drilled', "Drill complete.")
             ll.update_word_score(session['user'], session['lang'], cur['word_id'], 'drilled')
             return advance(session, 'drilled', "Drill complete. Score set to 5.0.")
@@ -223,11 +259,12 @@ def process_drill_answer(session, answer):
         'done': False,
         'drill': {
             'word': cur['word_text'],
-            'definition': cur['definition'].split('\n') if cur['definition'] else [],
+            'definition': drill_definition_lines(cur),
             'repetition': drill['repetition'],
             'correct_in_a_row': drill['correct_in_a_row'],
             'target': DRILL_TARGET,
             'correct': correct,
+            'show_word': not session.get('known_drill_mode'),
         },
     }
 
@@ -241,13 +278,17 @@ def process_answer(session, answer):
         return {'done': True, 'result': 'end', 'session': finalize_session(session, ended_early=True)}
 
     if answer.startswith('@'):
-        if not session.get('drill_mode'):
+        if not (session.get('drill_mode') or session.get('known_drill_mode')):
             ll.update_word_score(session['user'], session['lang'], cur['word_id'], 'mastered')
+        elif session.get('known_drill_mode'):
+            ll.record_known_review_seen(session['user'], session['lang'], cur['word_id'])
         return advance(session, 'mastered', f"Marked '{cur['word_text']}' as known.")
 
     if answer.startswith('!'):
-        if not session.get('drill_mode'):
+        if not (session.get('drill_mode') or session.get('known_drill_mode')):
             ll.update_word_score(session['user'], session['lang'], cur['word_id'], 'flagged')
+        elif session.get('known_drill_mode'):
+            ll.record_known_review_seen(session['user'], session['lang'], cur['word_id'])
         return advance(session, 'flagged', f"Flagged '{cur['word_text']}' for more practice.")
 
     if cur['drill'] is not None:
@@ -260,14 +301,35 @@ def process_answer(session, answer):
             'done': False,
             'drill': {
                 'word': cur['word_text'],
-                'definition': cur['definition'].split('\n') if cur['definition'] else [],
+                'definition': drill_definition_lines(cur),
                 'repetition': 1,
                 'correct_in_a_row': 0,
                 'target': DRILL_TARGET,
+                'show_word': not session.get('known_drill_mode'),
             },
         }
 
     correct = ll.answer_matches(answer, cur['word_text'])
+
+    if session.get('known_drill_mode'):
+        ll.record_review_result(session['user'], session['lang'], cur['word_id'], correct)
+        if correct:
+            return advance(session, 'correct', None, attempt=answer)
+        session['incorrect'].append({'word': cur['word_text'], 'attempt': answer})
+        cur['drill'] = {'correct_in_a_row': 0, 'repetition': 1}
+        return {
+            'result': 'drill_start',
+            'done': False,
+            'drill': {
+                'word': cur['word_text'],
+                'definition': drill_definition_lines(cur),
+                'repetition': 1,
+                'correct_in_a_row': 0,
+                'target': DRILL_TARGET,
+                'correct': False,
+                'show_word': False,
+            },
+        }
 
     if correct:
         ll.update_word_score(session['user'], session['lang'], cur['word_id'],
@@ -738,16 +800,17 @@ def word_list_stats(user, lang):
     if cursor.fetchone() is None:
         conn.close()
         return None
+    ll.ensure_word_table(conn, user, lang)
     rows = conn.execute(
         f'SELECT text, score, active, times_practiced, times_correct, times_incorrect, '
-        f'times_drilled, times_flagged, times_mastered, last_practiced, leitner_box '
+        f'times_drilled, times_flagged, times_mastered, last_practiced, leitner_box, last_known_review_at '
         f'FROM "{table}" ORDER BY active DESC, score ASC, text ASC'
     ).fetchall()
     conn.close()
     today = date.today()
     words = []
     for (text, score, active, practiced, correct, incorrect,
-         drilled, flagged, mastered, last_practiced, leitner_box) in rows:
+         drilled, flagged, mastered, last_practiced, leitner_box, last_known_review_at) in rows:
         box = leitner_box or 1
         if last_practiced:
             interval = ll.LEITNER_INTERVALS.get(box, 1)
@@ -769,6 +832,7 @@ def word_list_stats(user, lang):
             'times_flagged': flagged,
             'times_mastered': mastered,
             'last_practiced': last_practiced,
+            'last_known_review_at': last_known_review_at,
         })
     return words
 
@@ -986,8 +1050,14 @@ class Handler(http.server.BaseHTTPRequestHandler):
             lang = str(payload.get('lang', '')).strip()
             audio_lang = str(payload.get('audio_lang', '')).strip() or None
             drill_mode = bool(payload.get('drill_mode', False))
+            known_drill_mode = bool(payload.get('known_drill_mode', False))
             try:
-                session_id, session = start_session(user, lang, audio_lang=audio_lang, drill_mode=drill_mode)
+                session_id, session = start_session(
+                    user, lang,
+                    audio_lang=audio_lang,
+                    drill_mode=drill_mode and not known_drill_mode,
+                    known_drill_mode=known_drill_mode,
+                )
             except (ValueError, FileNotFoundError) as e:
                 return self._send_json({'error': str(e)}, 400)
             question = next_question(session)

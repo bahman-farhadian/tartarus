@@ -93,9 +93,18 @@
     audio: 'Audio',
     spelling: 'Learning',
     production: 'Production',
+    known_review: 'Known review',
   };
 
   document.getElementById('start-session').addEventListener('click', startSession);
+  const drillModeInput = document.getElementById('practice-drill-mode');
+  const knownDrillModeInput = document.getElementById('practice-known-drill-mode');
+  drillModeInput.addEventListener('change', () => {
+    if (drillModeInput.checked) knownDrillModeInput.checked = false;
+  });
+  knownDrillModeInput.addEventListener('change', () => {
+    if (knownDrillModeInput.checked) drillModeInput.checked = false;
+  });
   // Only text inputs get Enter-to-submit; selects use their native behaviour.
   document.getElementById('practice-audio-lang').addEventListener('keydown', (e) => {
     if (e.key === 'Enter') { e.preventDefault(); startSession(); }
@@ -165,7 +174,8 @@
     const user = userInput.value.trim();
     const lang = langInput.value.trim();
     const audioLang = (document.getElementById('practice-audio-lang')?.value ?? '').trim() || undefined;
-    const drillMode = document.getElementById('practice-drill-mode')?.checked ?? false;
+    const drillMode = drillModeInput?.checked ?? false;
+    const knownDrillMode = knownDrillModeInput?.checked ?? false;
     if (!user || !lang) {
       showError(practiceError, 'User and language are required.');
       (user ? langInput : userInput).focus();
@@ -175,6 +185,7 @@
       const body = { user, lang };
       if (audioLang) body.audio_lang = audioLang;
       if (drillMode) body.drill_mode = true;
+      if (knownDrillMode) body.known_drill_mode = true;
       const data = await api('/api/practice/start', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -199,7 +210,7 @@
     feedback.className = 'feedback';
     drillBlock.style.display = 'none';
 
-    // Drill mode, band 1/2: auto-enter drill UI immediately.
+    // Full drill mode: auto-enter drill UI immediately.
     if (question.drill_start) {
       const q = progress.questions ?? 0;
       const maxQ = progress.max_questions ?? '?';
@@ -236,7 +247,7 @@
 
     setActionButtons(true);
 
-    if (question.type === 'production') {
+    if (question.type === 'production' || question.type === 'known_review') {
       // Band 3: show definition + play audio; user types the word.
       answerBlock.style.display = 'flex';
       wordDisplay.classList.add('hidden-word');
@@ -351,9 +362,9 @@
     answerBlock.style.display = 'flex';
     setActionButtons(false);
 
-    wordDisplay.classList.remove('hidden-word');
+    wordDisplay.classList.toggle('hidden-word', drill.show_word === false);
+    definitionLines.innerHTML = '';
     if (drill.definition && drill.definition.length) {
-      definitionLines.innerHTML = '';
       drill.definition.forEach((line) => {
         const div = document.createElement('div');
         div.textContent = line;
@@ -544,19 +555,25 @@
     const card = document.createElement('div');
     card.className = 'card';
     let html = `<table><caption>Word list: ${escapeHtml(lang)}</caption>`;
-    html += '<thead><tr><th>Word</th><th>Score</th><th>Gauge</th><th>Box</th><th>Next Review</th>'
+    html += '<thead><tr><th>Word</th><th>Score</th><th>Gauge</th><th>Box</th><th>Next Review</th><th>Known Review</th>'
       + '<th>Practiced</th><th>Correct</th><th>Wrong</th><th>Drilled</th><th>Flagged</th><th>Mastered</th></tr></thead><tbody>';
     words.forEach((w) => {
       const nextReview = w.next_review ?? 'now';
+      const knownReview = formatDateTime(w.last_known_review_at);
       html += `<tr${w.active ? '' : ' class="muted"'}><td>${escapeHtml(w.word)}</td>`
         + `<td>${w.score.toFixed(1)}</td><td class="gauge band-${w.band}">${w.gauge}</td>`
-        + `<td>${w.leitner_box ?? 1}</td><td>${nextReview}</td>`
+        + `<td>${w.leitner_box ?? 1}</td><td>${nextReview}</td><td>${knownReview}</td>`
         + `<td>${w.times_practiced}</td><td>${w.times_correct}</td><td>${w.times_incorrect}</td>`
         + `<td>${w.times_drilled}</td><td>${w.times_flagged}</td><td>${w.times_mastered}</td></tr>`;
     });
     html += '</tbody></table>';
     card.innerHTML = html;
     return card;
+  }
+
+  function formatDateTime(value) {
+    if (!value) return 'never';
+    return String(value).replace('T', ' ').split('.')[0];
   }
 
   function renderReportTable(report) {

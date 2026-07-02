@@ -43,13 +43,30 @@
             <input id="practice-audio-lang" type="text" placeholder="e.g. german" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
           </div>
         </div>
-        <div class="field-row" style="gap: 2rem;">
-          <div class="field" style="flex: none;">
-            <label><input id="practice-audio" type="checkbox" checked style="width: auto; margin-right: 0.4rem;">Play audio</label>
-          </div>
-          <div class="field" style="flex: none;">
-            <label><input id="practice-drill-mode" type="checkbox" style="width: auto; margin-right: 0.4rem;">Drill mode <span class="muted" style="font-weight:400;">(review high-score words, scores unchanged)</span></label>
-          </div>
+        <div class="practice-options">
+          <label class="check-option">
+            <input id="practice-audio" type="checkbox" checked>
+            <span class="check-mark"></span>
+            <span class="check-copy">
+              <span class="check-title">Play audio</span>
+            </span>
+          </label>
+          <label class="check-option">
+            <input id="practice-drill-mode" type="checkbox">
+            <span class="check-mark"></span>
+            <span class="check-copy">
+              <span class="check-title">Drill mode</span>
+              <span class="check-detail">High-mistake words, scores unchanged</span>
+            </span>
+          </label>
+          <label class="check-option">
+            <input id="practice-known-drill-mode" type="checkbox">
+            <span class="check-mark"></span>
+            <span class="check-copy">
+              <span class="check-title">Drill mode</span>
+              <span class="check-detail">Known words, mistake triggers drill</span>
+            </span>
+          </label>
         </div>
         <button id="start-session" class="primary" type="button">Start session</button>
       </div>
