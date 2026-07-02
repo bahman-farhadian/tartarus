@@ -8,7 +8,7 @@ import random
 import sqlite3
 import argparse
 import subprocess
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta
 
 # --- Configuration ---
 DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data')
@@ -198,6 +198,8 @@ def ensure_word_table(conn, user, lang):
         conn.execute(f'ALTER TABLE "{table}" ADD COLUMN last_decay_at DATE')
     if 'leitner_box' not in columns:
         conn.execute(f'ALTER TABLE "{table}" ADD COLUMN leitner_box INTEGER NOT NULL DEFAULT 1')
+    if 'last_known_review_at' not in columns:
+        conn.execute(f'ALTER TABLE "{table}" ADD COLUMN last_known_review_at TEXT')
     conn.execute(
         f'UPDATE "{table}" SET last_decay_at = COALESCE(last_practiced, ?) WHERE last_decay_at IS NULL',
         (date.today().isoformat(),)
@@ -355,17 +357,27 @@ def score_gauge(score):
     return f"{Colors.RED}○○○{Colors.ENDC}"
 
 
-def record_as_drilled(user, lang, word_id):
+def record_as_drilled(user, lang, word_id, known_review=False):
     """Record a completed drill: increment times_drilled and erase one incorrect mark."""
     table = words_table_name(user, lang)
     conn = get_connection()
+    today = date.today().isoformat()
+    now = datetime.now().isoformat(timespec='microseconds')
+    set_clauses = [
+        'times_drilled = times_drilled + 1',
+        'times_practiced = times_practiced + 1',
+        'times_incorrect = MAX(0, times_incorrect - 1)',
+        'last_practiced = ?',
+        'last_decay_at = ?',
+    ]
+    params = [today, today]
+    if known_review:
+        set_clauses.append('last_known_review_at = ?')
+        params.append(now)
+    params.append(word_id)
     conn.execute(
-        f'UPDATE "{table}" SET '
-        f'times_drilled = times_drilled + 1, '
-        f'times_practiced = times_practiced + 1, '
-        f'times_incorrect = MAX(0, times_incorrect - 1), '
-        f'last_practiced = ? WHERE id = ?',
-        (date.today().isoformat(), word_id)
+        f'UPDATE "{table}" SET {", ".join(set_clauses)} WHERE id = ?',
+        params
     )
     conn.commit()
     conn.close()
@@ -377,13 +389,31 @@ def record_review_result(user, lang, word_id, correct):
     conn = get_connection()
     counter = 'times_correct' if correct else 'times_incorrect'
     today = date.today().isoformat()
+    now = datetime.now().isoformat(timespec='microseconds')
     conn.execute(
         f'UPDATE "{table}" SET '
         f'times_practiced = times_practiced + 1, '
         f'{counter} = {counter} + 1, '
-        f'last_practiced = ?, last_decay_at = ? '
+        f'last_practiced = ?, last_decay_at = ?, last_known_review_at = ? '
         f'WHERE id = ?',
-        (today, today, word_id)
+        (today, today, now, word_id)
+    )
+    conn.commit()
+    conn.close()
+
+
+def record_known_review_seen(user, lang, word_id):
+    """Mark a known-review word as seen without changing score or answer counters."""
+    table = words_table_name(user, lang)
+    conn = get_connection()
+    today = date.today().isoformat()
+    now = datetime.now().isoformat(timespec='microseconds')
+    conn.execute(
+        f'UPDATE "{table}" SET '
+        f'times_practiced = times_practiced + 1, '
+        f'last_practiced = ?, last_decay_at = ?, last_known_review_at = ? '
+        f'WHERE id = ?',
+        (today, today, now, word_id)
     )
     conn.commit()
     conn.close()
@@ -438,7 +468,8 @@ def get_words_for_practice(user, lang, num_words=MAX_QUESTIONS, drill_mode=False
     sessions on the same day until its score hits 9.
 
     Drill mode — most mistaken words first (scores unchanged).
-    Known drill mode — known, practiced words ordered from oldest trained to newest trained.
+    Known drill mode — never-reviewed known words first from oldest trained to
+    newest trained, then previously reviewed words from oldest review to newest.
     """
     table = words_table_name(user, lang)
     conn = get_connection()
@@ -446,7 +477,13 @@ def get_words_for_practice(user, lang, num_words=MAX_QUESTIONS, drill_mode=False
         cursor = conn.execute(
             f'''SELECT id, text, definition, score, leitner_box FROM "{table}"
                 WHERE active = 1 AND score >= 9.0 AND times_practiced > 0
-                ORDER BY date(last_practiced) ASC, id ASC
+                ORDER BY
+                  CASE WHEN last_known_review_at IS NULL THEN 0 ELSE 1 END,
+                  CASE
+                    WHEN last_known_review_at IS NULL THEN datetime(last_practiced)
+                    ELSE datetime(last_known_review_at)
+                  END ASC,
+                  id ASC
                 LIMIT ?''',
             (num_words,)
         )

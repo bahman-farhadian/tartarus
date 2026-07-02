@@ -241,7 +241,10 @@ def process_drill_answer(session, answer):
         if drill['correct_in_a_row'] >= DRILL_TARGET:
             cur['drill'] = None
             if session.get('drill_mode') or session.get('known_drill_mode'):
-                ll.record_as_drilled(session['user'], session['lang'], cur['word_id'])
+                ll.record_as_drilled(
+                    session['user'], session['lang'], cur['word_id'],
+                    known_review=session.get('known_drill_mode', False)
+                )
                 return advance(session, 'drilled', "Drill complete.")
             ll.update_word_score(session['user'], session['lang'], cur['word_id'], 'drilled')
             return advance(session, 'drilled', "Drill complete. Score set to 5.0.")
@@ -277,11 +280,15 @@ def process_answer(session, answer):
     if answer.startswith('@'):
         if not (session.get('drill_mode') or session.get('known_drill_mode')):
             ll.update_word_score(session['user'], session['lang'], cur['word_id'], 'mastered')
+        elif session.get('known_drill_mode'):
+            ll.record_known_review_seen(session['user'], session['lang'], cur['word_id'])
         return advance(session, 'mastered', f"Marked '{cur['word_text']}' as known.")
 
     if answer.startswith('!'):
         if not (session.get('drill_mode') or session.get('known_drill_mode')):
             ll.update_word_score(session['user'], session['lang'], cur['word_id'], 'flagged')
+        elif session.get('known_drill_mode'):
+            ll.record_known_review_seen(session['user'], session['lang'], cur['word_id'])
         return advance(session, 'flagged', f"Flagged '{cur['word_text']}' for more practice.")
 
     if cur['drill'] is not None:
