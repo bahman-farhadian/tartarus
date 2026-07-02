@@ -371,6 +371,24 @@ def record_as_drilled(user, lang, word_id):
     conn.close()
 
 
+def record_review_result(user, lang, word_id, correct):
+    """Record a review-only answer without changing score or Leitner state."""
+    table = words_table_name(user, lang)
+    conn = get_connection()
+    counter = 'times_correct' if correct else 'times_incorrect'
+    today = date.today().isoformat()
+    conn.execute(
+        f'UPDATE "{table}" SET '
+        f'times_practiced = times_practiced + 1, '
+        f'{counter} = {counter} + 1, '
+        f'last_practiced = ?, last_decay_at = ? '
+        f'WHERE id = ?',
+        (today, today, word_id)
+    )
+    conn.commit()
+    conn.close()
+
+
 def update_word_score(user, lang, word_id, result_status, current_score=None, current_box=None):
     """Updates a word's score + Leitner box and increments its history counters.
 
@@ -409,7 +427,7 @@ def update_word_score(user, lang, word_id, result_status, current_score=None, cu
     conn.close()
 
 
-def get_words_for_practice(user, lang, num_words=MAX_QUESTIONS, drill_mode=False):
+def get_words_for_practice(user, lang, num_words=MAX_QUESTIONS, drill_mode=False, known_drill_mode=False):
     """
     Normal mode — priority designed to maximise words reaching score 9 each day:
       0. In-progress (score < 9) AND (new / practiced today / Leitner-due): score DESC.
@@ -419,11 +437,20 @@ def get_words_for_practice(user, lang, num_words=MAX_QUESTIONS, drill_mode=False
     Same-day re-practice is intentional: a word stays in group 0 across all
     sessions on the same day until its score hits 9.
 
-    Drill mode — highest score first, practiced words only (scores unchanged).
+    Drill mode — most mistaken words first (scores unchanged).
+    Known drill mode — known, practiced words oldest first (scores unchanged).
     """
     table = words_table_name(user, lang)
     conn = get_connection()
-    if drill_mode:
+    if known_drill_mode:
+        cursor = conn.execute(
+            f'''SELECT id, text, definition, score, leitner_box FROM "{table}"
+                WHERE active = 1 AND score >= 9.0 AND times_practiced > 0
+                ORDER BY last_practiced ASC, id ASC
+                LIMIT ?''',
+            (num_words,)
+        )
+    elif drill_mode:
         cursor = conn.execute(
             f'''SELECT id, text, definition, score, leitner_box FROM "{table}"
                 WHERE active = 1 AND times_incorrect > 0
@@ -460,6 +487,10 @@ def get_words_for_practice(user, lang, num_words=MAX_QUESTIONS, drill_mode=False
     rows = cursor.fetchall()
     conn.close()
     if not rows:
+        if known_drill_mode:
+            raise ValueError(
+                "No known practiced words to review. Master some words first, then try this mode again."
+            )
         if drill_mode:
             raise ValueError(
                 "No words with mistakes to drill. Keep practicing and errors will show up here."
@@ -476,6 +507,24 @@ def show_definition(definition):
         return
     for line in definition.split('\n'):
         print(f"  {Colors.CYAN}{line}{Colors.ENDC}")
+
+
+def english_definition_only(definition):
+    """
+    Returns the primary English prompt line, excluding sample sentences.
+    Generated vocabulary lists store the core definition first and examples
+    later; lines with " — " keep only the English side.
+    """
+    if not definition:
+        return ''
+    for line in definition.split('\n'):
+        line = line.strip()
+        if not line:
+            continue
+        if ' — ' in line:
+            return line.rsplit(' — ', 1)[1].strip()
+        return line
+    return ''
 
 
 def drill_word(user, lang, word_to_drill, word_id, definition, header_text, audio, audio_lang=None, update_score=True):
@@ -1079,9 +1128,8 @@ Developed by Bahman Farhadian.
                                   help="Drill-mode: every word in the session is put through the 9-repetition\n"
                                        "drill automatically, regardless of its score band.")
     practice_parser.add_argument('--drill-mode', action='store_true',
-                                  help="Review drill: practice your highest-scored words without changing\n"
-                                       "their scores. Only times_drilled is incremented. Good for reinforcing\n"
-                                       "words you already know well.")
+                                  help="Review drill: practice your high-mistake words without changing\n"
+                                       "their scores. Completing a drill reduces that word's mistake count.")
 
     report_parser = subparsers.add_parser('report', help="Show practice history.")
     report_parser.add_argument('--user', required=True, help="Username.")
