@@ -438,7 +438,7 @@ def get_words_for_practice(user, lang, num_words=MAX_QUESTIONS, drill_mode=False
     sessions on the same day until its score hits 9.
 
     Drill mode — most mistaken words first (scores unchanged).
-    Known drill mode — known, practiced words oldest first (scores unchanged).
+    Known drill mode — known, practiced words ordered from oldest trained to newest trained.
     """
     table = words_table_name(user, lang)
     conn = get_connection()
@@ -446,7 +446,7 @@ def get_words_for_practice(user, lang, num_words=MAX_QUESTIONS, drill_mode=False
         cursor = conn.execute(
             f'''SELECT id, text, definition, score, leitner_box FROM "{table}"
                 WHERE active = 1 AND score >= 9.0 AND times_practiced > 0
-                ORDER BY last_practiced ASC, id ASC
+                ORDER BY date(last_practiced) ASC, id ASC
                 LIMIT ?''',
             (num_words,)
         )

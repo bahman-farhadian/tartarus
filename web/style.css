@@ -240,6 +240,98 @@ button:disabled {
 }
 
 /* --- Practice view --- */
+.practice-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 0.75rem;
+  margin: 0.3rem 0 1.4rem;
+}
+
+.check-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  min-height: 58px;
+  background: var(--surface0);
+  border: 1px solid var(--surface1);
+  border-radius: 0.5rem;
+  padding: 0.75rem 0.85rem;
+  color: var(--text);
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.check-option:hover {
+  background: var(--surface1);
+  border-color: var(--mauve);
+}
+
+.check-option:has(input:checked) {
+  border-color: var(--mauve);
+  background: rgba(203, 166, 247, 0.13);
+}
+
+.check-option input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.check-mark {
+  flex: 0 0 auto;
+  width: 1.1rem;
+  height: 1.1rem;
+  margin-top: 0.1rem;
+  border: 2px solid var(--overlay1);
+  border-radius: 0.25rem;
+  background: var(--crust);
+  position: relative;
+}
+
+.check-option input:checked + .check-mark {
+  background: var(--mauve);
+  border-color: var(--mauve);
+}
+
+.check-option input:checked + .check-mark::after {
+  content: '';
+  position: absolute;
+  left: 0.28rem;
+  top: 0.08rem;
+  width: 0.32rem;
+  height: 0.58rem;
+  border: solid var(--crust);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.check-option:focus-within {
+  border-color: var(--mauve);
+  box-shadow: 0 0 0 2px rgba(203, 166, 247, 0.22);
+}
+
+.check-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 0;
+}
+
+.check-title {
+  color: var(--text);
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.check-detail {
+  color: var(--subtext0);
+  font-size: 0.78rem;
+  line-height: 1.35;
+}
+
 .session-header {
   display: flex;
   justify-content: space-between;
