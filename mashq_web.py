@@ -800,16 +800,17 @@ def word_list_stats(user, lang):
     if cursor.fetchone() is None:
         conn.close()
         return None
+    ll.ensure_word_table(conn, user, lang)
     rows = conn.execute(
         f'SELECT text, score, active, times_practiced, times_correct, times_incorrect, '
-        f'times_drilled, times_flagged, times_mastered, last_practiced, leitner_box '
+        f'times_drilled, times_flagged, times_mastered, last_practiced, leitner_box, last_known_review_at '
         f'FROM "{table}" ORDER BY active DESC, score ASC, text ASC'
     ).fetchall()
     conn.close()
     today = date.today()
     words = []
     for (text, score, active, practiced, correct, incorrect,
-         drilled, flagged, mastered, last_practiced, leitner_box) in rows:
+         drilled, flagged, mastered, last_practiced, leitner_box, last_known_review_at) in rows:
         box = leitner_box or 1
         if last_practiced:
             interval = ll.LEITNER_INTERVALS.get(box, 1)
@@ -831,6 +832,7 @@ def word_list_stats(user, lang):
             'times_flagged': flagged,
             'times_mastered': mastered,
             'last_practiced': last_practiced,
+            'last_known_review_at': last_known_review_at,
         })
     return words
 

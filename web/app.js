@@ -555,19 +555,25 @@
     const card = document.createElement('div');
     card.className = 'card';
     let html = `<table><caption>Word list: ${escapeHtml(lang)}</caption>`;
-    html += '<thead><tr><th>Word</th><th>Score</th><th>Gauge</th><th>Box</th><th>Next Review</th>'
+    html += '<thead><tr><th>Word</th><th>Score</th><th>Gauge</th><th>Box</th><th>Next Review</th><th>Known Review</th>'
       + '<th>Practiced</th><th>Correct</th><th>Wrong</th><th>Drilled</th><th>Flagged</th><th>Mastered</th></tr></thead><tbody>';
     words.forEach((w) => {
       const nextReview = w.next_review ?? 'now';
+      const knownReview = formatDateTime(w.last_known_review_at);
       html += `<tr${w.active ? '' : ' class="muted"'}><td>${escapeHtml(w.word)}</td>`
         + `<td>${w.score.toFixed(1)}</td><td class="gauge band-${w.band}">${w.gauge}</td>`
-        + `<td>${w.leitner_box ?? 1}</td><td>${nextReview}</td>`
+        + `<td>${w.leitner_box ?? 1}</td><td>${nextReview}</td><td>${knownReview}</td>`
         + `<td>${w.times_practiced}</td><td>${w.times_correct}</td><td>${w.times_incorrect}</td>`
         + `<td>${w.times_drilled}</td><td>${w.times_flagged}</td><td>${w.times_mastered}</td></tr>`;
     });
     html += '</tbody></table>';
     card.innerHTML = html;
     return card;
+  }
+
+  function formatDateTime(value) {
+    if (!value) return 'never';
+    return String(value).replace('T', ' ').split('.')[0];
   }
 
   function renderReportTable(report) {
