@@ -241,10 +241,9 @@ button:disabled {
 
 /* --- Practice view --- */
 .practice-options {
-  display: flex;
-  align-items: stretch;
-  flex-wrap: wrap;
-  gap: 0.6rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
   margin: 0.2rem 0 1.25rem;
 }
 
@@ -252,7 +251,7 @@ button:disabled {
   display: flex;
   align-items: flex-start;
   gap: 0.55rem;
-  width: 240px;
+  width: 100%;
   min-height: 46px;
   background: var(--surface0);
   border: 1px solid var(--surface1);
@@ -335,8 +334,9 @@ button:disabled {
 }
 
 @media (max-width: 760px) {
-  .check-option {
-    width: 100%;
+  .practice-options {
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
   }
 }
 
