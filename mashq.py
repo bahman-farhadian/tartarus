@@ -532,8 +532,9 @@ def drill_word(user, lang, word_to_drill, word_id, definition, header_text, audi
     clear_screen()
     print(header_text)
     print(f"--- Drill Mode: '{get_gender_color(word_to_drill)}{word_to_drill}{Colors.ENDC}' ---")
-    if definition:
-        show_definition(definition)
+    prompt_definition = english_definition_only(definition)
+    if prompt_definition:
+        show_definition(prompt_definition)
     print("")
     correct_in_a_row = 0
     while correct_in_a_row < 9:
@@ -695,8 +696,9 @@ def ask_production(user, lang, word_id, word_text, definition, score, audio, hea
     clear_screen()
     print(header_text)
     print(f"\n{Colors.YELLOW}Type the word from the definition and audio.{Colors.ENDC} ('?' to replay)\n")
-    if definition:
-        show_definition(definition)
+    prompt_definition = english_definition_only(definition)
+    if prompt_definition:
+        show_definition(prompt_definition)
     print("")
 
     while True:
@@ -707,8 +709,8 @@ def ask_production(user, lang, word_id, word_text, definition, score, audio, hea
         answer = input("").strip()
         sys.stdout.write('\033[A' + ERASE_LINE)
         if answer == '?':
-            if definition:
-                show_definition(definition)
+            if prompt_definition:
+                show_definition(prompt_definition)
             if audio:
                 speak(word_text, audio_lang or lang)
             continue

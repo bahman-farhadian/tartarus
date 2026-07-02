@@ -67,13 +67,30 @@ def prompt_definition_lines(cur):
     return prompt.split('\n') if prompt else []
 
 
+def drill_definition_lines(cur):
+    prompt = cur.get('drill_definition') or cur.get('prompt_definition') or cur.get('definition') or ''
+    return prompt.split('\n') if prompt else []
+
+
 def build_question(session, word_id, word_text, definition, score, leitner_box=1):
     band = ll.score_band(score)
     has_def = bool(definition)
-    definition_lines = definition.split('\n') if definition else []
+    if band == 1:
+        question_type = 'learning' if has_def else 'spelling'
+    elif band == 2:
+        question_type = 'audio'
+    else:
+        # Band 3: definition + audio → type the word (no more MCQ).
+        question_type = 'production'
+
     if session.get('known_drill_mode'):
-        primary_definition = ll.english_definition_only(definition)
-        definition_lines = [primary_definition] if primary_definition else []
+        question_type = 'known_review'
+
+    full_definition_lines = definition.split('\n') if definition else []
+    primary_definition = ll.english_definition_only(definition)
+    prompt_definition_lines = [primary_definition] if primary_definition else []
+    definition_lines = full_definition_lines if question_type == 'learning' else prompt_definition_lines
+
     question = {
         'word_id': word_id,
         'word': word_text,
@@ -82,19 +99,15 @@ def build_question(session, word_id, word_text, definition, score, leitner_box=1
         'gauge': gauge_dots(score),
         'band': band,
         'gender': gender_class(word_text),
+        'type': question_type,
     }
     initial_drill = None
-    if band == 1:
-        question['type'] = 'learning' if has_def else 'spelling'
-    elif band == 2:
-        question['type'] = 'audio'
-    else:
-        # Band 3: definition + audio → type the word (no more MCQ).
-        question['type'] = 'production'
 
-    if session.get('known_drill_mode'):
-        question['type'] = 'known_review'
-    elif session.get('drill_mode'):
+    if session.get('drill_mode'):
+        definition_lines = prompt_definition_lines
+        question['definition'] = definition_lines
+        question['type'] = 'drill'
+        question_type = 'drill'
         # Drill mode: every word requires 9 correct in a row, regardless of band.
         initial_drill = {'correct_in_a_row': 0, 'repetition': 1}
         question['drill_start'] = {
@@ -111,9 +124,10 @@ def build_question(session, word_id, word_text, definition, score, leitner_box=1
         'word_text': word_text,
         'definition': definition,
         'prompt_definition': '\n'.join(definition_lines),
+        'drill_definition': '\n'.join(prompt_definition_lines),
         'score': score,
         'leitner_box': leitner_box,
-        'type': question['type'],
+        'type': question_type,
         'drill': initial_drill,
     }
     return question
@@ -242,7 +256,7 @@ def process_drill_answer(session, answer):
         'done': False,
         'drill': {
             'word': cur['word_text'],
-            'definition': prompt_definition_lines(cur),
+            'definition': drill_definition_lines(cur),
             'repetition': drill['repetition'],
             'correct_in_a_row': drill['correct_in_a_row'],
             'target': DRILL_TARGET,
@@ -280,7 +294,7 @@ def process_answer(session, answer):
             'done': False,
             'drill': {
                 'word': cur['word_text'],
-                'definition': prompt_definition_lines(cur),
+                'definition': drill_definition_lines(cur),
                 'repetition': 1,
                 'correct_in_a_row': 0,
                 'target': DRILL_TARGET,
@@ -301,7 +315,7 @@ def process_answer(session, answer):
             'done': False,
             'drill': {
                 'word': cur['word_text'],
-                'definition': prompt_definition_lines(cur),
+                'definition': drill_definition_lines(cur),
                 'repetition': 1,
                 'correct_in_a_row': 0,
                 'target': DRILL_TARGET,
