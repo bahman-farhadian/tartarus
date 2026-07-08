@@ -423,14 +423,43 @@ def update_word_score(user, lang, word_id, result_status, current_score=None, cu
     """Updates a word's score + Leitner box and increments its history counters.
 
     correct/incorrect: score computed from current_score; box advances or resets.
-    mastered/flagged/drilled: fixed score; box set to 5/1/unchanged respectively."""
+    mastered/flagged/drilled: fixed score; box set to 5/1/unchanged respectively.
+
+    Leitner integrity: a word already mastered (score 9) that is practiced again
+    on the SAME day is NOT a genuine review. Its box must not advance and its
+    last_practiced timestamp (the anchor for the box's review schedule) must not
+    be overwritten. Only the first transition into mastery, or a real due review
+    (last practiced on a prior day), may advance the box. This prevents gaming
+    the system by re-practicing a word repeatedly within one day to fast-forward
+    it through the boxes."""
     table = words_table_name(user, lang)
     conn = get_connection()
+    today = date.today().isoformat()
+
+    row = conn.execute(f'SELECT last_practiced FROM "{table}" WHERE id = ?', (word_id,)).fetchone()
+    stored_last_practiced = row[0] if row else None
+    practiced_today = (stored_last_practiced == today)
+
+    preserve_box_timestamp = False
+
     if result_status == 'correct':
         new_score = min(9.0, current_score + SCORE_DELTAS[score_band(current_score)])
-        # Box advances only when the word reaches full mastery (score 9).
-        # Intermediate correct answers improve the score but leave the box unchanged.
-        new_box = min((current_box or 1) + 1, 5) if new_score >= 9.0 else (current_box or 1)
+        just_mastered = (current_score < 9.0) and (new_score >= 9.0)
+        if just_mastered:
+            # First transition into mastery: advance the box and stamp today.
+            new_box = min((current_box or 1) + 1, 5)
+        elif current_score >= 9.0:
+            # Already mastered — this is a review. Only a genuine due review
+            # (practiced on a prior day) advances the box. Same-day re-practice
+            # must NOT advance the box or overwrite last_practiced.
+            if practiced_today:
+                new_box = current_box or 1
+                preserve_box_timestamp = True
+            else:
+                new_box = min((current_box or 1) + 1, 5)
+        else:
+            # Intermediate correct: score improves, box unchanged.
+            new_box = current_box or 1
     elif result_status == 'incorrect':
         delta = BAND3_INCORRECT_DELTA if score_band(current_score) == 3 else INCORRECT_DELTA
         new_score = max(1.0, current_score - delta)
@@ -440,11 +469,15 @@ def update_word_score(user, lang, word_id, result_status, current_score=None, cu
         new_box = {'mastered': 5, 'flagged': 1}.get(result_status)  # None = preserve for drilled
 
     counter = RESULT_COUNTERS.get(result_status)
-    today = date.today().isoformat()
-    if new_box is not None:
+    if new_box is not None and not preserve_box_timestamp:
         set_clauses = ['score = ?', 'leitner_box = ?', 'last_practiced = ?', 'last_decay_at = ?',
                        'times_practiced = times_practiced + 1']
         params = [new_score, new_box, today, today]
+    elif preserve_box_timestamp:
+        # Same-day re-practice of an already-mastered word: bump counters only.
+        # Do NOT touch leitner_box, last_practiced or last_decay_at.
+        set_clauses = ['score = ?', 'times_practiced = times_practiced + 1']
+        params = [new_score]
     else:
         set_clauses = ['score = ?', 'last_practiced = ?', 'last_decay_at = ?',
                        'times_practiced = times_practiced + 1']
