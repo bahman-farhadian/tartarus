@@ -576,13 +576,17 @@ def update_sentence_score(user, lang, word_id, correct, current_score=None, curr
 
 def get_words_for_practice(user, lang, num_words=MAX_QUESTIONS, drill_mode=False, known_drill_mode=False):
     """
-    Normal mode — priority designed to maximise words reaching score 9 each day:
-      0. In-progress (score < 9) AND (new / practiced today / Leitner-due): score DESC.
-      1. Mastered (score 9) AND Leitner-due: review filler, oldest first.
-      2. Not-yet-due: last resort filler, score DESC.
-
-    Same-day re-practice is intentional: a word stays in group 0 across all
-    sessions on the same day until its score hits 9.
+    Normal mode — daily practice is capped per file:
+      Priority 0: In-progress words (score < 9) that are new, practiced today,
+                  or Leitner-due — ordered by score DESC. These are the words
+                  the user is actively learning today. Once a word hits 9 it
+                  leaves this group for the day (it was mastered today and
+                  last_practiced = today, so it won't match here again).
+      Priority 1: Mastered words (score 9) whose Leitner interval has elapsed
+                   AND were NOT practiced today — genuine scheduled reviews.
+      No filler: mastered words that were practiced today, or whose interval
+      hasn't elapsed yet, are excluded. This forces the user to move to another
+      file or use drill/known-drill once they're done with today's words.
 
     Drill mode — most mistaken words first (scores unchanged).
     Known drill mode — never-reviewed known words first from oldest trained to
@@ -613,26 +617,37 @@ def get_words_for_practice(user, lang, num_words=MAX_QUESTIONS, drill_mode=False
             (num_words,)
         )
     else:
+        # Normal mode: only show words that are legitimately practiceable today.
+        # A word is practiceable if:
+        #   - it's in-progress (score < 9) AND (new, practiced today, or Leitner-due), OR
+        #   - it's mastered (score >= 9) AND Leitner-due AND not practiced today.
+        # Mastered words practiced today are excluded (they're done for the day).
+        # Not-yet-due mastered words are excluded (their interval hasn't elapsed).
+        # This caps daily practice per file and pushes the user to other files
+        # or drill modes once today's words are done.
         cursor = conn.execute(
             f'''SELECT id, text, definition, score, leitner_box FROM "{table}"
-                WHERE active = 1
+                WHERE active = 1 AND (
+                  (score < 9 AND (
+                    last_practiced IS NULL
+                    OR date(last_practiced) = date('now', 'localtime')
+                    OR julianday('now', 'localtime') - julianday(last_practiced) >=
+                       CASE leitner_box WHEN 1 THEN 1 WHEN 2 THEN 2
+                                        WHEN 3 THEN 4 WHEN 4 THEN 9 ELSE 14 END
+                  ))
+                  OR
+                  (score >= 9 AND (
+                    last_practiced IS NULL
+                    OR date(last_practiced) < date('now', 'localtime')
+                  ) AND (
+                    last_practiced IS NULL
+                    OR julianday('now', 'localtime') - julianday(last_practiced) >=
+                       CASE leitner_box WHEN 1 THEN 1 WHEN 2 THEN 2
+                                        WHEN 3 THEN 4 WHEN 4 THEN 9 ELSE 14 END
+                  ))
+                )
                 ORDER BY
-                  CASE
-                    WHEN score < 9 AND (
-                      last_practiced IS NULL
-                      OR date(last_practiced) = date('now', 'localtime')
-                      OR julianday('now', 'localtime') - julianday(last_practiced) >=
-                         CASE leitner_box WHEN 1 THEN 1 WHEN 2 THEN 2
-                                          WHEN 3 THEN 4 WHEN 4 THEN 9 ELSE 14 END
-                    ) THEN 0
-                    WHEN score >= 9 AND (
-                      last_practiced IS NULL
-                      OR julianday('now', 'localtime') - julianday(last_practiced) >=
-                         CASE leitner_box WHEN 1 THEN 1 WHEN 2 THEN 2
-                                          WHEN 3 THEN 4 WHEN 4 THEN 9 ELSE 14 END
-                    ) THEN 1
-                    ELSE 2
-                  END,
+                  CASE WHEN score < 9 THEN 0 ELSE 1 END,
                   score DESC,
                   last_practiced ASC
                 LIMIT ?''',
@@ -648,6 +663,19 @@ def get_words_for_practice(user, lang, num_words=MAX_QUESTIONS, drill_mode=False
         if drill_mode:
             raise ValueError(
                 "No words with mistakes to drill. Keep practicing and errors will show up here."
+            )
+        # Normal mode: no practiceable words. Check if there are active words
+        # at all, to give the user a more helpful message.
+        check_conn = get_connection()
+        has_active = check_conn.execute(
+            f'SELECT 1 FROM "{table}" WHERE active = 1 LIMIT 1'
+        ).fetchone()
+        check_conn.close()
+        if has_active:
+            raise ValueError(
+                "All words in this list are mastered for today.\n"
+                "Come back tomorrow to review them, or use drill mode / known-drill\n"
+                "to keep practicing. You can also switch to another word list."
             )
         raise ValueError(
             "No active words found for this list. Add words to your word list file and try again."

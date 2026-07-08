@@ -34,7 +34,8 @@
   }
 
   function showError(el, message) {
-    el.innerHTML = message ? `<div class="error">${escapeHtml(message)}</div>` : '';
+    if (!message) { el.innerHTML = ''; return; }
+    el.innerHTML = `<div class="error">${escapeHtml(message).replace(/\n/g, '<br>')}</div>`;
   }
 
   function escapeHtml(s) {
