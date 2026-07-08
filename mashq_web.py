@@ -75,7 +75,11 @@ def drill_definition_lines(cur):
 def build_question(session, word_id, word_text, definition, score, leitner_box=1):
     band = ll.score_band(score)
     has_def = bool(definition)
-    if band == 1:
+    sentence_mode = session.get('sentence_mode', False)
+
+    if sentence_mode and not session.get('drill_mode') and not session.get('known_drill_mode'):
+        question_type = 'learning' if has_def else 'spelling'
+    elif band == 1:
         question_type = 'learning' if has_def else 'spelling'
     elif band == 2:
         question_type = 'audio'
@@ -100,6 +104,7 @@ def build_question(session, word_id, word_text, definition, score, leitner_box=1
         'band': band,
         'gender': gender_class(word_text),
         'type': question_type,
+        'sentence_mode': sentence_mode,
     }
     initial_drill = None
 
@@ -164,6 +169,7 @@ def start_session(user, lang, audio_lang=None, drill_mode=False, known_drill_mod
         'max_questions': DRILL_WORDS if drill_mode else MAX_QUESTIONS,
         'drill_mode': drill_mode,
         'known_drill_mode': known_drill_mode,
+        'sentence_mode': ll.is_sentence_list(lang),
         'correct': 0,
         'drilled': 0,
         'incorrect': [],
@@ -272,6 +278,7 @@ def process_drill_answer(session, answer):
 def process_answer(session, answer):
     answer = (answer or '').strip()
     cur = session['current']
+    sentence_mode = session.get('sentence_mode', False)
 
     # Session-level commands are always honoured, even mid-drill.
     if answer == '!!':
@@ -295,6 +302,14 @@ def process_answer(session, answer):
         return process_drill_answer(session, answer)
 
     if answer.startswith('$'):
+        # Drill is disabled for sentence practice (sentences are too long to drill).
+        if sentence_mode:
+            correct = ll.answer_matches(answer, cur['word_text'], sentence_mode=True)
+            ll.update_sentence_score(session['user'], session['lang'], cur['word_id'],
+                                     correct, cur['score'], cur['leitner_box'])
+            if correct:
+                return advance(session, 'correct', None, attempt=answer)
+            return advance(session, 'incorrect', f"Incorrect. The word was: {cur['word_text']}", attempt=answer)
         cur['drill'] = {'correct_in_a_row': 0, 'repetition': 1}
         return {
             'result': 'drill_start',
@@ -309,7 +324,7 @@ def process_answer(session, answer):
             },
         }
 
-    correct = ll.answer_matches(answer, cur['word_text'])
+    correct = ll.answer_matches(answer, cur['word_text'], sentence_mode=sentence_mode)
 
     if session.get('known_drill_mode'):
         ll.record_review_result(session['user'], session['lang'], cur['word_id'], correct)
@@ -330,6 +345,13 @@ def process_answer(session, answer):
                 'show_word': False,
             },
         }
+
+    if sentence_mode:
+        ll.update_sentence_score(session['user'], session['lang'], cur['word_id'],
+                                 correct, cur['score'], cur['leitner_box'])
+        if correct:
+            return advance(session, 'correct', None, attempt=answer)
+        return advance(session, 'incorrect', f"Incorrect. The word was: {cur['word_text']}", attempt=answer)
 
     if correct:
         ll.update_word_score(session['user'], session['lang'], cur['word_id'],

@@ -289,7 +289,10 @@
   }
 
   function setActionButtons(enabled) {
-    [btnFlag, btnMaster, btnDrill].forEach((b) => { b.disabled = !enabled; });
+    btnFlag.disabled = !enabled;
+    btnMaster.disabled = !enabled;
+    // Drill is disabled for sentence practice (sentences are too long to drill).
+    btnDrill.disabled = !enabled || (currentQuestion && currentQuestion.sentence_mode);
   }
 
   function submitTextAnswer() {

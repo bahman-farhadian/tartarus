@@ -33,11 +33,17 @@ def split_word_forms(word_text):
     return [form.strip() for form in word_text.split(',') if form.strip()]
 
 
-def answer_matches(answer, word_text):
+def answer_matches(answer, word_text, sentence_mode=False):
     """Checks a typed answer against every accepted form of a word,
     case-insensitively (comma-separated forms like "das Haus, die Häuser").
     Also accepts the full text with all forms typed out, e.g.
-    "das Haus, die Häuser", however the commas/spacing are written."""
+    "das Haus, die Häuser", however the commas/spacing are written.
+
+    In sentence_mode, commas are part of the sentence and must NOT be treated
+    as form separators — a simple case-insensitive full-string comparison is
+    used instead."""
+    if sentence_mode:
+        return answer.strip().lower() == word_text.strip().lower()
     forms = [form.strip().lower() for form in split_word_forms(word_text)]
     answer_forms = [form.strip().lower() for form in split_word_forms(answer)]
     if len(answer_forms) == 1 and answer_forms[0] in forms:
@@ -135,8 +141,10 @@ def voice_for_language(lang):
 
 def speak(text, lang=None, block=False):
     """Pipes text to the macOS 'say' command, using a voice matching lang's
-    locale if one is installed. block=True waits for speech to finish."""
-    cmd = ['say']
+    locale if one is installed. block=True waits for speech to finish.
+    The rate is slowed to 64 words per minute for all languages to make
+    pronunciation clear and easy to follow for language learners."""
+    cmd = ['say', '-r', '64']
     if lang:
         voice = voice_for_language(lang)
         if voice:
@@ -245,10 +253,15 @@ def apply_decay(conn, table):
     Applies time-based decay: any active word not practiced for one or more
     days loses 1.0 score per idle day (floored at 1.0). This pulls neglected
     words back into easier question bands automatically.
+
+    Mastered words (score >= 9.0) are exempt: they are governed by the Leitner
+    spaced-repetition schedule, not by decay. Decaying them while they wait for
+    their scheduled review would pull them back into easier bands before the
+    review interval has elapsed, defeating the purpose of the box system.
     """
     today = date.today()
     cursor = conn.execute(
-        f'SELECT id, score, last_decay_at FROM "{table}" WHERE active = 1 AND score > 1 AND last_decay_at IS NOT NULL'
+        f'SELECT id, score, last_decay_at FROM "{table}" WHERE active = 1 AND score > 1 AND score < 9 AND last_decay_at IS NOT NULL'
     )
     for word_id, score, last_decay_at in cursor.fetchall():
         last_decay_date = date.fromisoformat(last_decay_at)
@@ -335,6 +348,19 @@ RESULT_COUNTERS = {
     'mastered': 'times_mastered',
     'drilled': 'times_drilled',
 }
+
+# --- Sentence practice ---
+# Sentence lists (lang name contains "sentences") use a different practice
+# flow from single-word lists: the native sentence is always shown, each
+# sentence needs 10 correct answers to reach mastery (score 9.0), and
+# mistakes do not trigger drills since sentences are too long to drill.
+SENTENCE_CORRECTS_TO_MASTER = 10
+SENTENCE_CORRECT_DELTA = 8.0 / SENTENCE_CORRECTS_TO_MASTER  # 0.8 per correct -> 9.0 after 10
+
+
+def is_sentence_list(lang):
+    """Returns True if the lang name identifies a sentence practice list."""
+    return 'sentences' in (lang or '').lower()
 
 
 def score_band(score):
@@ -490,6 +516,63 @@ def update_word_score(user, lang, word_id, result_status, current_score=None, cu
     conn.close()
 
 
+def update_sentence_score(user, lang, word_id, correct, current_score=None, current_box=None):
+    """Sentence-specific scoring: 10 correct answers to reach mastery.
+
+    - Correct: score += 0.8 (capped at 9.0). When score first hits 9.0, the
+      Leitner box advances. Same-day re-practice of an already-mastered
+      sentence does NOT advance the box or overwrite last_practiced (same
+      anti-cheating rule as update_word_score).
+    - Incorrect: score is NOT reduced (sentences are long; a single typo
+      should not erase progress). The box resets to 1 only if the sentence
+      was already mastered (score >= 9).
+    """
+    table = words_table_name(user, lang)
+    conn = get_connection()
+    today = date.today().isoformat()
+
+    row = conn.execute(f'SELECT last_practiced FROM "{table}" WHERE id = ?', (word_id,)).fetchone()
+    stored_last_practiced = row[0] if row else None
+    practiced_today = (stored_last_practiced == today)
+
+    preserve_box_timestamp = False
+
+    if correct:
+        new_score = min(9.0, (current_score or 1.0) + SENTENCE_CORRECT_DELTA)
+        just_mastered = (current_score or 1.0) < 9.0 and new_score >= 9.0
+        if just_mastered:
+            new_box = min((current_box or 1) + 1, 5)
+        elif (current_score or 1.0) >= 9.0:
+            if practiced_today:
+                new_box = current_box or 1
+                preserve_box_timestamp = True
+            else:
+                new_box = min((current_box or 1) + 1, 5)
+        else:
+            new_box = current_box or 1
+        counter = 'times_correct'
+    else:
+        new_score = current_score or 1.0
+        if (current_score or 1.0) >= 9.0:
+            new_box = 1
+        else:
+            new_box = current_box or 1
+        counter = 'times_incorrect'
+
+    if preserve_box_timestamp:
+        set_clauses = ['score = ?', 'times_practiced = times_practiced + 1']
+        params = [new_score]
+    else:
+        set_clauses = ['score = ?', 'leitner_box = ?', 'last_practiced = ?', 'last_decay_at = ?',
+                       'times_practiced = times_practiced + 1']
+        params = [new_score, new_box, today, today]
+    set_clauses.append(f'{counter} = {counter} + 1')
+    params.append(word_id)
+    conn.execute(f'UPDATE "{table}" SET {", ".join(set_clauses)} WHERE id = ?', params)
+    conn.commit()
+    conn.close()
+
+
 def get_words_for_practice(user, lang, num_words=MAX_QUESTIONS, drill_mode=False, known_drill_mode=False):
     """
     Normal mode — priority designed to maximise words reaching score 9 each day:
@@ -632,19 +715,25 @@ def drill_word(user, lang, word_to_drill, word_id, definition, header_text, audi
 
 ERASE_LINE = "\r\033[K"
 
+SESSION_HELP_SENTENCE = "Commands: '!!' or Ctrl+C (end), '!' (flag), '@' (master), '?' (repeat), '+' (replay audio)."
 SESSION_HELP = "Commands: '!!' or Ctrl+C (end), '!' (flag), '@' (master), '$' (drill), '?' (repeat), '+' (replay audio)."
 
 
 
-def handle_special_commands(user, lang, word_id, word_text, definition, header_text, audio, answer, audio_lang=None):
+def handle_special_commands(user, lang, word_id, word_text, definition, header_text, audio, answer, audio_lang=None, sentence_mode=False):
     """
     Checks an answer for the session-level special commands. Returns
     (status, message) if one matched ('end'/'drilled'/'mastered'/'flagged'),
     or None if the answer should be checked normally for correctness.
+
+    In sentence_mode the '$' drill command is disabled (sentences are too
+    long to drill).
     """
     if answer == '!!':
         return 'end', None, None
     if answer.startswith('$'):
+        if sentence_mode:
+            return None
         drill_word(user, lang, word_text, word_id, definition, header_text, audio, audio_lang=audio_lang)
         return 'drilled', None, None
     if answer.startswith('@'):
@@ -656,12 +745,16 @@ def handle_special_commands(user, lang, word_id, word_text, definition, header_t
     return None
 
 
-def ask_learning(user, lang, word_id, word_text, definition, score, audio, header_text, word_header, audio_lang=None, update_score=True, current_box=1):
+def ask_learning(user, lang, word_id, word_text, definition, score, audio, header_text, word_header, audio_lang=None, update_score=True, current_box=1, sentence_mode=False):
     """
     Band 1 (score 1-3): the word and its definition(s) are both shown - this
     is recognition practice for words you're still learning. If the word has
     no definition, falls back to a flash-then-hide spelling test instead.
     Correct -> +1, incorrect -> -2.
+
+    In sentence_mode: the native sentence is always shown (never hidden), each
+    correct answer adds SENTENCE_CORRECT_DELTA, and incorrect answers do not
+    reduce the score. Drill ('$') is disabled.
     """
     clear_screen()
     print(header_text)
@@ -702,13 +795,16 @@ def ask_learning(user, lang, word_id, word_text, definition, score, audio, heade
                 continue
             break
 
-    special = handle_special_commands(user, lang, word_id, word_text, definition, header_text, audio, answer, audio_lang=audio_lang)
+    special = handle_special_commands(user, lang, word_id, word_text, definition, header_text, audio, answer, audio_lang=audio_lang, sentence_mode=sentence_mode)
     if special:
         return special
 
-    correct = answer_matches(answer, word_text)
+    correct = answer_matches(answer, word_text, sentence_mode=sentence_mode)
     if update_score:
-        update_word_score(user, lang, word_id, 'correct' if correct else 'incorrect', score, current_box)
+        if sentence_mode:
+            update_sentence_score(user, lang, word_id, correct, score, current_box)
+        else:
+            update_word_score(user, lang, word_id, 'correct' if correct else 'incorrect', score, current_box)
     if audio:
         speak(word_text, audio_lang or lang)
     if correct:
@@ -809,7 +905,12 @@ def start_practice_session(user, lang, audio, audio_lang=None, drill_all=False, 
     Up to MAX_QUESTIONS unique words per session using Leitner spaced repetition.
     Due words (box interval elapsed) come first; each word is asked exactly once.
     Correct → advance one Leitner box. Incorrect → reset to box 1.
+
+    Sentence lists (lang contains "sentences") always use the "learning"
+    question flow regardless of score: the native sentence is shown, 10
+    corrects are needed for mastery, and drill is disabled.
     """
+    sentence_mode = is_sentence_list(lang)
     words = get_words_for_practice(user, lang, DRILL_WORDS if drill_mode else MAX_QUESTIONS, drill_mode=drill_mode)
     queue = [{'id': r[0], 'word': r[1], 'def': r[2], 'score': r[3], 'box': r[4]}
              for r in words]
@@ -821,12 +922,13 @@ def start_practice_session(user, lang, audio, audio_lang=None, drill_all=False, 
     start_time = time.time()
     total = len(queue)
     mode_label = " [DRILL ALL]" if drill_all else ""
+    help_text = SESSION_HELP_SENTENCE if (sentence_mode and not drill_all and not drill_mode) else SESSION_HELP
 
     def header_text():
         return (
             f"--- Practice{mode_label} | "
             f"Q{questions_count}/{total} | "
-            f"Correct: {correct_count} ---\n{SESSION_HELP}"
+            f"Correct: {correct_count} ---\n{help_text}"
         )
 
     try:
@@ -846,6 +948,11 @@ def start_practice_session(user, lang, audio, audio_lang=None, drill_all=False, 
                            header_text(), audio, audio_lang=audio_lang,
                            update_score=False)
                 status, message, attempt = 'drilled', None, None
+            elif sentence_mode:
+                status, message, attempt = ask_learning(
+                    user, lang, word_id, word_text, definition, score,
+                    audio, header_text(), word_header, audio_lang=audio_lang,
+                    current_box=current_box, sentence_mode=True)
             elif band == 1:
                 status, message, attempt = ask_learning(
                     user, lang, word_id, word_text, definition, score,
