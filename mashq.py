@@ -139,12 +139,13 @@ def voice_for_language(lang):
     return _VOICE_CACHE[locale_prefix]
 
 
-def speak(text, lang=None, block=False):
+def speak(text, lang=None, block=False, wpm=64):
     """Pipes text to the macOS 'say' command, using a voice matching lang's
     locale if one is installed. block=True waits for speech to finish.
-    The rate is slowed to 64 words per minute for all languages to make
-    pronunciation clear and easy to follow for language learners."""
-    cmd = ['say', '-r', '64']
+    wpm sets the speech rate in words per minute (default 64, slow and clear
+    for language learners)."""
+    rate = str(int(wpm)) if wpm else '64'
+    cmd = ['say', '-r', rate]
     if lang:
         voice = voice_for_language(lang)
         if voice:
@@ -680,7 +681,7 @@ def english_definition_only(definition):
     return ''
 
 
-def drill_word(user, lang, word_to_drill, word_id, definition, header_text, audio, audio_lang=None, update_score=True):
+def drill_word(user, lang, word_to_drill, word_id, definition, header_text, audio, audio_lang=None, update_score=True, wpm=64):
     """Initiates a strict 9-repetition drill with a consistent single-line UI."""
     clear_screen()
     print(header_text)
@@ -697,7 +698,7 @@ def drill_word(user, lang, word_to_drill, word_id, definition, header_text, audi
         sys.stdout.write(f"{erase_line}{drill_header} ")
         sys.stdout.flush()
         if audio:
-            speak(word_to_drill, audio_lang or lang)
+            speak(word_to_drill, audio_lang or lang, wpm=wpm)
         answer = input("").strip()
         sys.stdout.write('\033[A' + erase_line)
         if answer_matches(answer, word_to_drill):
@@ -745,7 +746,7 @@ def handle_special_commands(user, lang, word_id, word_text, definition, header_t
     return None
 
 
-def ask_learning(user, lang, word_id, word_text, definition, score, audio, header_text, word_header, audio_lang=None, update_score=True, current_box=1, sentence_mode=False):
+def ask_learning(user, lang, word_id, word_text, definition, score, audio, header_text, word_header, audio_lang=None, update_score=True, current_box=1, sentence_mode=False, wpm=64):
     """
     Band 1 (score 1-3): the word and its definition(s) are both shown - this
     is recognition practice for words you're still learning. If the word has
@@ -768,7 +769,7 @@ def ask_learning(user, lang, word_id, word_text, definition, score, audio, heade
             sys.stdout.write(f"{ERASE_LINE}{word_header} ")
             sys.stdout.flush()
             if audio:
-                speak(word_text, audio_lang or lang)
+                speak(word_text, audio_lang or lang, wpm=wpm)
             answer = input("").strip()
             sys.stdout.write('\033[A' + ERASE_LINE)
             if answer == '?':
@@ -785,7 +786,7 @@ def ask_learning(user, lang, word_id, word_text, definition, score, audio, heade
             sys.stdout.write(f"{ERASE_LINE}{word_header} {get_gender_color(word_text)}{word_text}{Colors.ENDC}")
             sys.stdout.flush()
             if audio:
-                speak(word_text, audio_lang or lang)
+                speak(word_text, audio_lang or lang, wpm=wpm)
             time.sleep(0.6)
             sys.stdout.write(f"{ERASE_LINE}{word_header} ")
             sys.stdout.flush()
@@ -806,13 +807,13 @@ def ask_learning(user, lang, word_id, word_text, definition, score, audio, heade
         else:
             update_word_score(user, lang, word_id, 'correct' if correct else 'incorrect', score, current_box)
     if audio:
-        speak(word_text, audio_lang or lang)
+        speak(word_text, audio_lang or lang, wpm=wpm)
     if correct:
         return 'correct', f"{Colors.GREEN}{word_text}{Colors.ENDC}", None
     return 'incorrect', f"Incorrect. The word was: {Colors.RED}{word_text}{Colors.ENDC}", answer
 
 
-def ask_audio(user, lang, word_id, word_text, definition, score, audio, header_text, word_header, audio_lang=None, update_score=True, current_box=1):
+def ask_audio(user, lang, word_id, word_text, definition, score, audio, header_text, word_header, audio_lang=None, update_score=True, current_box=1, wpm=64):
     """
     Band 2 (score 4-6): nothing is shown - listen to the word's audio and
     type it from memory. '?' replays the audio and briefly shows the word.
@@ -826,7 +827,7 @@ def ask_audio(user, lang, word_id, word_text, definition, score, audio, header_t
         sys.stdout.write(f"{ERASE_LINE}{word_header} ")
         sys.stdout.flush()
         if audio:
-            speak(word_text, audio_lang or lang)
+            speak(word_text, audio_lang or lang, wpm=wpm)
         answer = input("").strip()
         sys.stdout.write('\033[A' + ERASE_LINE)
         if answer == '?':
@@ -847,13 +848,13 @@ def ask_audio(user, lang, word_id, word_text, definition, score, audio, header_t
     if update_score:
         update_word_score(user, lang, word_id, 'correct' if correct else 'incorrect', score, current_box)
     if audio:
-        speak(word_text, audio_lang or lang)
+        speak(word_text, audio_lang or lang, wpm=wpm)
     if correct:
         return 'correct', f"{Colors.GREEN}{word_text}{Colors.ENDC}", None
     return 'incorrect', f"Incorrect. The word was: {Colors.RED}{word_text}{Colors.ENDC}", answer
 
 
-def ask_production(user, lang, word_id, word_text, definition, score, audio, header_text, word_header, audio_lang=None, update_score=True, current_box=1):
+def ask_production(user, lang, word_id, word_text, definition, score, audio, header_text, word_header, audio_lang=None, update_score=True, current_box=1, wpm=64):
     """
     Band 3 / drill-mode question: definition is shown and audio plays; the
     user must type the word from memory (case-sensitive). When update_score
@@ -871,18 +872,18 @@ def ask_production(user, lang, word_id, word_text, definition, score, audio, hea
         sys.stdout.write(f"{ERASE_LINE}{word_header} ")
         sys.stdout.flush()
         if audio:
-            speak(word_text, audio_lang or lang)
+            speak(word_text, audio_lang or lang, wpm=wpm)
         answer = input("").strip()
         sys.stdout.write('\033[A' + ERASE_LINE)
         if answer == '?':
             if prompt_definition:
                 show_definition(prompt_definition)
             if audio:
-                speak(word_text, audio_lang or lang)
+                speak(word_text, audio_lang or lang, wpm=wpm)
             continue
         if answer == '+':
             if audio:
-                speak(word_text, audio_lang or lang)
+                speak(word_text, audio_lang or lang, wpm=wpm)
             continue
         break
 
@@ -894,13 +895,13 @@ def ask_production(user, lang, word_id, word_text, definition, score, audio, hea
     if update_score:
         update_word_score(user, lang, word_id, 'correct' if correct else 'incorrect', score, current_box)
     if audio:
-        speak(word_text, audio_lang or lang)  # replay after answer
+        speak(word_text, audio_lang or lang, wpm=wpm)  # replay after answer
     if correct:
         return 'correct', f"{Colors.GREEN}{word_text}{Colors.ENDC}", None
     return 'incorrect', f"Incorrect. The word was: {Colors.RED}{word_text}{Colors.ENDC}", answer
 
 
-def start_practice_session(user, lang, audio, audio_lang=None, drill_all=False, drill_mode=False):
+def start_practice_session(user, lang, audio, audio_lang=None, drill_all=False, drill_mode=False, wpm=64):
     """
     Up to MAX_QUESTIONS unique words per session using Leitner spaced repetition.
     Due words (box interval elapsed) come first; each word is asked exactly once.
@@ -941,33 +942,33 @@ def start_practice_session(user, lang, audio, audio_lang=None, drill_all=False, 
 
             if drill_all:
                 drill_word(user, lang, word_text, word_id, definition,
-                           header_text(), audio, audio_lang=audio_lang)
+                           header_text(), audio, audio_lang=audio_lang, wpm=wpm)
                 status, message, attempt = 'drilled', None, None
             elif drill_mode:
                 drill_word(user, lang, word_text, word_id, definition,
                            header_text(), audio, audio_lang=audio_lang,
-                           update_score=False)
+                           update_score=False, wpm=wpm)
                 status, message, attempt = 'drilled', None, None
             elif sentence_mode:
                 status, message, attempt = ask_learning(
                     user, lang, word_id, word_text, definition, score,
                     audio, header_text(), word_header, audio_lang=audio_lang,
-                    current_box=current_box, sentence_mode=True)
+                    current_box=current_box, sentence_mode=True, wpm=wpm)
             elif band == 1:
                 status, message, attempt = ask_learning(
                     user, lang, word_id, word_text, definition, score,
                     audio, header_text(), word_header, audio_lang=audio_lang,
-                    current_box=current_box)
+                    current_box=current_box, wpm=wpm)
             elif band == 2:
                 status, message, attempt = ask_audio(
                     user, lang, word_id, word_text, definition, score,
                     audio, header_text(), word_header, audio_lang=audio_lang,
-                    current_box=current_box)
+                    current_box=current_box, wpm=wpm)
             else:
                 status, message, attempt = ask_production(
                     user, lang, word_id, word_text, definition, score,
                     audio, header_text(), word_header, audio_lang=audio_lang,
-                    update_score=True, current_box=current_box)
+                    update_score=True, current_box=current_box, wpm=wpm)
 
             if status == 'end':
                 print("\n\nSession ended early. Saving progress...")
@@ -1235,7 +1236,8 @@ def cmd_practice(args):
     start_practice_session(args.user, args.lang, audio,
                            audio_lang=args.audio_lang or None,
                            drill_all=args.drill,
-                           drill_mode=args.drill_mode)
+                           drill_mode=args.drill_mode,
+                           wpm=args.wpm)
 
 
 def cmd_report(args):
@@ -1309,6 +1311,9 @@ Developed by Bahman Farhadian.
     practice_parser.add_argument('--drill-mode', action='store_true',
                                   help="Review drill: practice your high-mistake words without changing\n"
                                        "their scores. Completing a drill reduces that word's mistake count.")
+    practice_parser.add_argument('--wpm', type=int, default=64,
+                                  help="Speech rate in words per minute for macOS 'say' (default 64, slow and\n"
+                                       "clear for language learners; lower = slower, higher = faster).")
 
     report_parser = subparsers.add_parser('report', help="Show practice history.")
     report_parser.add_argument('--user', required=True, help="Username.")

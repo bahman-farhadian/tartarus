@@ -49,16 +49,23 @@
   // don't (question display, drill, replay) just call it without awaiting.
   function speak(text) {
     if (!document.getElementById('practice-audio').checked) return Promise.resolve();
+    const wpmInput = document.getElementById('practice-wpm');
+    let wpm = 64;
+    if (wpmInput) {
+      const parsed = parseInt(wpmInput.value, 10);
+      if (!Number.isNaN(parsed) && parsed >= 30 && parsed <= 400) wpm = parsed;
+    }
     return fetch('/api/tts', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ text, lang: sessionLang }),
+      body: JSON.stringify({ text, lang: sessionLang, wpm }),
     }).then(() => {}).catch(() => {});
   }
 
   // --- Practice state ---
   let sessionId = null;
   let sessionLang = '';
+  let sessionWpm = 64;
   let currentQuestion = null;
   let drillActive = false;
   let answering = false;
@@ -176,13 +183,19 @@
     const audioLang = (document.getElementById('practice-audio-lang')?.value ?? '').trim() || undefined;
     const drillMode = drillModeInput?.checked ?? false;
     const knownDrillMode = knownDrillModeInput?.checked ?? false;
+    const wpmInput = document.getElementById('practice-wpm');
+    let wpm = 64;
+    if (wpmInput) {
+      const parsed = parseInt(wpmInput.value, 10);
+      if (!Number.isNaN(parsed) && parsed >= 30 && parsed <= 400) wpm = parsed;
+    }
     if (!user || !lang) {
       showError(practiceError, 'User and language are required.');
       (user ? langInput : userInput).focus();
       return;
     }
     try {
-      const body = { user, lang };
+      const body = { user, lang, wpm };
       if (audioLang) body.audio_lang = audioLang;
       if (drillMode) body.drill_mode = true;
       if (knownDrillMode) body.known_drill_mode = true;
@@ -193,6 +206,7 @@
       });
       sessionId = data.session_id;
       sessionLang = data.lang || '';
+      sessionWpm = wpm;
       setupCard.style.display = 'none';
       summaryCard.style.display = 'none';
       sessionCard.style.display = 'block';

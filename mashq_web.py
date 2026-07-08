@@ -143,7 +143,7 @@ DRILL_WORDS = ll.DRILL_WORDS
 
 
 # --- Session lifecycle ---
-def start_session(user, lang, audio_lang=None, drill_mode=False, known_drill_mode=False):
+def start_session(user, lang, audio_lang=None, drill_mode=False, known_drill_mode=False, wpm=64):
     ll.sync_word_list(user, lang)
     words = ll.get_words_for_practice(
         user, lang,
@@ -163,6 +163,7 @@ def start_session(user, lang, audio_lang=None, drill_mode=False, known_drill_mod
         'user': user,
         'lang': lang,
         'voice_lang': voice_lang,
+        'wpm': wpm,
         'queue': queue,
         'total': len(queue),
         'practiced': 0,
@@ -595,9 +596,18 @@ def leitner_stats_data(user, lang):
     }
 
 
-def _corrects_to_mastery(score):
-    """Number of correct answers needed to bring score from current value to 9.0."""
+def _corrects_to_mastery(score, sentence_mode=False):
+    """Number of correct answers needed to bring score from current value to 9.0.
+
+    Word mode: +1 in band 1 (score 1-3), +2 in band 2 (4-6), +3 in band 3 (7-9).
+    Sentence mode: +0.8 per correct, so a word needs 10 corrects from 1.0 to 9.0.
+    """
     s, count = float(score), 0
+    if sentence_mode:
+        while s < 9.0:
+            s = min(9.0, s + ll.SENTENCE_CORRECT_DELTA)
+            count += 1
+        return count
     while s < 9.0:
         s = min(9.0, s + (3.0 if s >= 7 else 2.0 if s >= 4 else 1.0))
         count += 1
@@ -770,6 +780,7 @@ def dashboard_data(user, lang=None):
 
             # Prediction: grind hours + calendar date when all words reach box 5
             enough_data = session_count >= 3 and avg_seconds_per_word and avg_seconds_per_word > 0
+            sentence_mode = ll.is_sentence_list(lang_s)
             if enough_data:
                 box_col = 'leitner_box' if has_leitner else '1'
                 word_rows = conn.execute(
@@ -777,7 +788,7 @@ def dashboard_data(user, lang=None):
                 ).fetchall()
 
                 # Total corrects needed → grind hours
-                total_corrects = sum(_corrects_to_mastery(s) for s, _ in word_rows)
+                total_corrects = sum(_corrects_to_mastery(s, sentence_mode=sentence_mode) for s, _ in word_rows)
                 grind_hours = round(total_corrects * avg_seconds_per_word / 3600, 1)
 
                 # Calendar date: today + max(grind_days + leitner_days) over all words
@@ -787,7 +798,7 @@ def dashboard_data(user, lang=None):
                 max_days = 0.0
                 for score, box in word_rows:
                     b = int(box) if box else 1
-                    corrects = _corrects_to_mastery(score)
+                    corrects = _corrects_to_mastery(score, sentence_mode=sentence_mode)
                     grind_days = corrects * avg_seconds_per_word / avg_secs_per_day
                     # After reaching score 9, words advance through remaining Leitner boxes
                     leitner_days = sum(
@@ -1054,8 +1065,13 @@ class Handler(http.server.BaseHTTPRequestHandler):
         if parsed.path == '/api/tts':
             text = str(payload.get('text', '')).strip()
             lang = str(payload.get('lang', '')).strip()
+            wpm = payload.get('wpm', 64)
+            try:
+                wpm = int(wpm)
+            except (TypeError, ValueError):
+                wpm = 64
             if text:
-                ll.speak(text, lang or None, block=True)
+                ll.speak(text, lang or None, block=True, wpm=wpm)
             return self._send_json({})
 
         if parsed.path == '/api/init':
@@ -1074,11 +1090,16 @@ class Handler(http.server.BaseHTTPRequestHandler):
             drill_mode = bool(payload.get('drill_mode', False))
             known_drill_mode = bool(payload.get('known_drill_mode', False))
             try:
+                wpm = int(payload.get('wpm', 64))
+            except (TypeError, ValueError):
+                wpm = 64
+            try:
                 session_id, session = start_session(
                     user, lang,
                     audio_lang=audio_lang,
                     drill_mode=drill_mode and not known_drill_mode,
                     known_drill_mode=known_drill_mode,
+                    wpm=wpm,
                 )
             except (ValueError, FileNotFoundError) as e:
                 return self._send_json({'error': str(e)}, 400)
