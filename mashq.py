@@ -213,6 +213,15 @@ def ensure_word_table(conn, user, lang):
         f'UPDATE "{table}" SET last_decay_at = COALESCE(last_practiced, ?) WHERE last_decay_at IS NULL',
         (date.today().isoformat(),)
     )
+    # One-time repair: reset leitner_box to 1 for any word with score < 9.
+    # The box only advances on mastery (score = 9) and resets on incorrect.
+    # A word with score < 9 and box > 1 is stale data from the old decay code
+    # that lowered scores without resetting boxes. This is safe and idempotent:
+    # it only runs when there's actually a mismatch, and it never touches
+    # mastered words (score >= 9).
+    conn.execute(
+        f'UPDATE "{table}" SET leitner_box = 1 WHERE score < 9.0 AND leitner_box > 1'
+    )
     return table
 
 
@@ -259,20 +268,33 @@ def apply_decay(conn, table):
     spaced-repetition schedule, not by decay. Decaying them while they wait for
     their scheduled review would pull them back into easier bands before the
     review interval has elapsed, defeating the purpose of the box system.
+
+    Leitner box integrity: any word with score < 9 must be in box 1. The box
+    only advances on mastery (score reaching 9) and resets on an incorrect
+    answer (which drops the score below 9). Since decay now only affects
+    words already below 9, the box should already be 1 — but we enforce it
+    here as a safety net to repair any stale boxes left over from the old
+    decay code that lowered scores without resetting boxes.
     """
     today = date.today()
     cursor = conn.execute(
-        f'SELECT id, score, last_decay_at FROM "{table}" WHERE active = 1 AND score > 1 AND score < 9 AND last_decay_at IS NOT NULL'
+        f'SELECT id, score, last_decay_at, leitner_box FROM "{table}" WHERE active = 1 AND score > 1 AND score < 9 AND last_decay_at IS NOT NULL'
     )
-    for word_id, score, last_decay_at in cursor.fetchall():
+    for word_id, score, last_decay_at, box in cursor.fetchall():
         last_decay_date = date.fromisoformat(last_decay_at)
         days = (today - last_decay_date).days
         if days >= 1:
             new_score = max(1.0, score - days)
-            conn.execute(
-                f'UPDATE "{table}" SET score = ?, last_decay_at = ? WHERE id = ?',
-                (new_score, today.isoformat(), word_id)
-            )
+            if box and box > 1:
+                conn.execute(
+                    f'UPDATE "{table}" SET score = ?, last_decay_at = ?, leitner_box = 1 WHERE id = ?',
+                    (new_score, today.isoformat(), word_id)
+                )
+            else:
+                conn.execute(
+                    f'UPDATE "{table}" SET score = ?, last_decay_at = ? WHERE id = ?',
+                    (new_score, today.isoformat(), word_id)
+                )
 
 
 def sync_word_list(user, lang):
@@ -493,7 +515,14 @@ def update_word_score(user, lang, word_id, result_status, current_score=None, cu
         new_box = 1
     else:
         new_score = FIXED_SCORES[result_status]
-        new_box = {'mastered': 5, 'flagged': 1}.get(result_status)  # None = preserve for drilled
+        # Box rules for manual overrides:
+        #   mastered -> 5 (long-term memory, 14-day review)
+        #   flagged  -> 1 (struggling, daily review)
+        #   drilled  -> 1 (score drops to 5.0 which is below mastery, so the
+        #                  box must reset to 1 — otherwise the word would have
+        #                  score < 9 with a high box, and re-mastering it would
+        #                  skip Leitner boxes)
+        new_box = {'mastered': 5, 'flagged': 1, 'drilled': 1}[result_status]
 
     counter = RESULT_COUNTERS.get(result_status)
     if new_box is not None and not preserve_box_timestamp:
