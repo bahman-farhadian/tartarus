@@ -619,7 +619,11 @@ def get_words_for_practice(user, lang, num_words=MAX_QUESTIONS, drill_mode=False
     else:
         # Normal mode: only show words that are legitimately practiceable today.
         # A word is practiceable if:
-        #   - it's in-progress (score < 9) AND (new, practiced today, or Leitner-due), OR
+        #   - it's in-progress (score < 9): ALWAYS practiceable. In-progress
+        #     words are never gated by the Leitner interval — the box only
+        #     controls when a MASTERED word comes back for review. A word that
+        #     decayed back below 9 must be practiced again regardless of how
+        #     recently it was last practiced.
         #   - it's mastered (score >= 9) AND Leitner-due AND not practiced today.
         # Mastered words practiced today are excluded (they're done for the day).
         # Not-yet-due mastered words are excluded (their interval hasn't elapsed).
@@ -628,13 +632,7 @@ def get_words_for_practice(user, lang, num_words=MAX_QUESTIONS, drill_mode=False
         cursor = conn.execute(
             f'''SELECT id, text, definition, score, leitner_box FROM "{table}"
                 WHERE active = 1 AND (
-                  (score < 9 AND (
-                    last_practiced IS NULL
-                    OR date(last_practiced) = date('now', 'localtime')
-                    OR julianday('now', 'localtime') - julianday(last_practiced) >=
-                       CASE leitner_box WHEN 1 THEN 1 WHEN 2 THEN 2
-                                        WHEN 3 THEN 4 WHEN 4 THEN 9 ELSE 14 END
-                  ))
+                  score < 9
                   OR
                   (score >= 9 AND (
                     last_practiced IS NULL
