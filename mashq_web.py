@@ -144,7 +144,7 @@ DRILL_WORDS = ll.DRILL_WORDS
 
 
 # --- Session lifecycle ---
-def start_session(user, lang, audio_lang=None, drill_mode=False, known_drill_mode=False, instant_drill=False, wpm=64):
+def start_session(user, lang, audio_lang=None, drill_mode=False, known_drill_mode=False, instant_drill=False, wpm=128):
     ll.sync_word_list(user, lang)
     sentence_mode = ll.is_sentence_list(lang)
     if sentence_mode and (drill_mode or known_drill_mode or instant_drill):
@@ -252,7 +252,7 @@ def process_drill_answer(session, answer):
         drill['correct_in_a_row'] += 1
         if drill['correct_in_a_row'] >= DRILL_TARGET:
             cur['drill'] = None
-            if session.get('drill_mode') or session.get('known_drill_mode'):
+            if session.get('drill_mode') or session.get('known_drill_mode') or drill.get('instant'):
                 ll.record_as_drilled(
                     session['user'], session['lang'], cur['word_id'],
                     known_review=session.get('known_drill_mode', False)
@@ -377,7 +377,7 @@ def process_answer(session, answer):
                          'incorrect', cur['score'], cur['leitner_box'])
     if session.get('instant_drill'):
         session['incorrect'].append({'word': cur['word_text'], 'attempt': answer})
-        cur['drill'] = {'correct_in_a_row': 0, 'repetition': 1}
+        cur['drill'] = {'correct_in_a_row': 0, 'repetition': 1, 'instant': True}
         return {
             'result': 'drill_start',
             'done': False,
@@ -1098,11 +1098,11 @@ class Handler(http.server.BaseHTTPRequestHandler):
         if parsed.path == '/api/tts':
             text = str(payload.get('text', '')).strip()
             lang = str(payload.get('lang', '')).strip()
-            wpm = payload.get('wpm', 64)
+            wpm = payload.get('wpm', 128)
             try:
                 wpm = int(wpm)
             except (TypeError, ValueError):
-                wpm = 64
+                wpm = 128
             if text:
                 ll.speak(text, lang or None, block=True, wpm=wpm)
             return self._send_json({})
@@ -1124,9 +1124,9 @@ class Handler(http.server.BaseHTTPRequestHandler):
             known_drill_mode = bool(payload.get('known_drill_mode', False))
             instant_drill = bool(payload.get('instant_drill', False))
             try:
-                wpm = int(payload.get('wpm', 64))
+                wpm = int(payload.get('wpm', 128))
             except (TypeError, ValueError):
-                wpm = 64
+                wpm = 128
             try:
                 session_id, session = start_session(
                     user, lang,

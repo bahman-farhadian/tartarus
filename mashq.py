@@ -139,12 +139,12 @@ def voice_for_language(lang):
     return _VOICE_CACHE[locale_prefix]
 
 
-def speak(text, lang=None, block=False, wpm=64):
+def speak(text, lang=None, block=False, wpm=128):
     """Pipes text to the macOS 'say' command, using a voice matching lang's
     locale if one is installed. block=True waits for speech to finish.
-    wpm sets the speech rate in words per minute (default 64, slow and clear
+    wpm sets the speech rate in words per minute (default 128, clear
     for language learners)."""
-    rate = str(int(wpm)) if wpm else '64'
+    rate = str(int(wpm)) if wpm else '128'
     cmd = ['say', '-r', rate]
     if lang:
         voice = voice_for_language(lang)
@@ -786,7 +786,7 @@ def english_definition_only(definition):
     return ''
 
 
-def drill_word(user, lang, word_to_drill, word_id, definition, header_text, audio, audio_lang=None, update_score=True, wpm=64):
+def drill_word(user, lang, word_to_drill, word_id, definition, header_text, audio, audio_lang=None, update_score=True, wpm=128):
     """Initiates a strict 9-repetition drill with a consistent single-line UI."""
     clear_screen()
     print(header_text)
@@ -851,7 +851,7 @@ def handle_special_commands(user, lang, word_id, word_text, definition, header_t
     return None
 
 
-def ask_learning(user, lang, word_id, word_text, definition, score, audio, header_text, word_header, audio_lang=None, update_score=True, current_box=1, sentence_mode=False, wpm=64):
+def ask_learning(user, lang, word_id, word_text, definition, score, audio, header_text, word_header, audio_lang=None, update_score=True, current_box=1, sentence_mode=False, wpm=128):
     """
     Band 1 (score 1-3): the word and its definition(s) are both shown - this
     is recognition practice for words you're still learning. If the word has
@@ -922,7 +922,7 @@ def ask_learning(user, lang, word_id, word_text, definition, score, audio, heade
         time.sleep(1.2)
 
 
-def ask_audio(user, lang, word_id, word_text, definition, score, audio, header_text, word_header, audio_lang=None, update_score=True, current_box=1, wpm=64):
+def ask_audio(user, lang, word_id, word_text, definition, score, audio, header_text, word_header, audio_lang=None, update_score=True, current_box=1, wpm=128):
     """
     Band 2 (score 4-6): nothing is shown - listen to the word's audio and
     type it from memory. '?' replays the audio and briefly shows the word.
@@ -963,7 +963,7 @@ def ask_audio(user, lang, word_id, word_text, definition, score, audio, header_t
     return 'incorrect', f"Incorrect. The word was: {Colors.RED}{word_text}{Colors.ENDC}", answer
 
 
-def ask_production(user, lang, word_id, word_text, definition, score, audio, header_text, word_header, audio_lang=None, update_score=True, current_box=1, wpm=64):
+def ask_production(user, lang, word_id, word_text, definition, score, audio, header_text, word_header, audio_lang=None, update_score=True, current_box=1, wpm=128):
     """
     Band 3 / drill-mode question: definition is shown and audio plays; the
     user must type the word from memory (case-sensitive). When update_score
@@ -1010,7 +1010,7 @@ def ask_production(user, lang, word_id, word_text, definition, score, audio, hea
     return 'incorrect', f"Incorrect. The word was: {Colors.RED}{word_text}{Colors.ENDC}", answer
 
 
-def start_practice_session(user, lang, audio, audio_lang=None, drill_all=False, drill_mode=False, wpm=64):
+def start_practice_session(user, lang, audio, audio_lang=None, drill_all=False, drill_mode=False, wpm=128):
     """
     Up to MAX_QUESTIONS unique words per session using Leitner spaced repetition.
     Due words (box interval elapsed) come first; each word is asked exactly once.
@@ -1423,8 +1423,8 @@ Developed by Bahman Farhadian.
     practice_parser.add_argument('--drill-mode', action='store_true',
                                   help="Review drill: practice your high-mistake words without changing\n"
                                        "their scores. Completing a drill reduces that word's mistake count.")
-    practice_parser.add_argument('--wpm', type=int, default=64,
-                                  help="Speech rate in words per minute for macOS 'say' (default 64, slow and\n"
+    practice_parser.add_argument('--wpm', type=int, default=128,
+                                  help="Speech rate in words per minute for macOS 'say' (default 128;\n"
                                        "clear for language learners; lower = slower, higher = faster).")
 
     report_parser = subparsers.add_parser('report', help="Show practice history.")

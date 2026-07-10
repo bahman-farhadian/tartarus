@@ -249,14 +249,14 @@ button:disabled {
 
 .check-option {
   display: flex;
-  align-items: flex-start;
-  gap: 0.55rem;
+  align-items: center;
+  gap: 0.65rem;
   width: 100%;
-  min-height: 46px;
+  min-height: 40px;
   background: var(--surface0);
   border: 1px solid var(--surface1);
   border-radius: 0.5rem;
-  padding: 0.5rem 0.65rem;
+  padding: 0.42rem 0.65rem;
   color: var(--text);
   cursor: pointer;
   transition: background 0.15s, border-color 0.15s;
@@ -290,30 +290,38 @@ button:disabled {
   pointer-events: none;
 }
 
-.check-mark {
-  display: grid;
-  place-items: center;
+.switch-control {
+  display: inline-flex;
+  align-items: center;
   flex: 0 0 auto;
-  width: 0.95rem;
-  height: 0.95rem;
-  margin-top: 0.08rem;
-  border: 2px solid var(--overlay1);
-  border-radius: 0.25rem;
+  width: 2rem;
+  height: 1.1rem;
+  border: 1px solid var(--overlay1);
+  border-radius: 999px;
   background: var(--crust);
   position: relative;
+  transition: background 0.15s, border-color 0.15s;
 }
 
-.check-option input:checked + .check-mark {
+.switch-control::after {
+  content: '';
+  position: absolute;
+  left: 0.15rem;
+  width: 0.72rem;
+  height: 0.72rem;
+  border-radius: 50%;
+  background: var(--overlay1);
+  transition: transform 0.15s, background 0.15s;
+}
+
+.check-option input:checked + .switch-control {
   background: var(--mauve);
   border-color: var(--mauve);
 }
 
-.check-option input:checked + .check-mark::after {
-  content: '✓';
-  color: var(--crust);
-  font-size: 0.8rem;
-  font-weight: 800;
-  line-height: 1;
+.check-option input:checked + .switch-control::after {
+  transform: translateX(0.86rem);
+  background: var(--crust);
 }
 
 .check-option:focus-within {

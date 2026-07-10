@@ -51,7 +51,7 @@
   function speak(text) {
     if (!document.getElementById('practice-audio').checked) return Promise.resolve();
     const wpmInput = document.getElementById('practice-wpm');
-    let wpm = 64;
+    let wpm = 128;
     if (wpmInput) {
       const parsed = parseInt(wpmInput.value, 10);
       if (!Number.isNaN(parsed) && parsed >= 30 && parsed <= 400) wpm = parsed;
@@ -66,7 +66,7 @@
   // --- Practice state ---
   let sessionId = null;
   let sessionLang = '';
-  let sessionWpm = 64;
+  let sessionWpm = 128;
   let currentQuestion = null;
   let drillActive = false;
   let answering = false;
@@ -200,7 +200,7 @@
     const knownDrillMode = knownDrillModeInput?.checked ?? false;
     const instantDrill = instantDrillInput?.checked ?? false;
     const wpmInput = document.getElementById('practice-wpm');
-    let wpm = 64;
+    let wpm = 128;
     if (wpmInput) {
       const parsed = parseInt(wpmInput.value, 10);
       if (!Number.isNaN(parsed) && parsed >= 30 && parsed <= 400) wpm = parsed;

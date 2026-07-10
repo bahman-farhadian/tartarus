@@ -44,39 +44,36 @@
           </div>
           <div class="field">
             <label for="practice-wpm">Speech WPM <span class="muted" style="font-weight:400;">(words/min)</span></label>
-            <input id="practice-wpm" type="number" min="30" max="400" step="1" value="64" inputmode="numeric">
+            <input id="practice-wpm" type="number" min="30" max="400" step="1" value="128" inputmode="numeric">
           </div>
         </div>
         <div class="practice-options">
           <label class="check-option">
             <input id="practice-audio" type="checkbox" checked>
-            <span class="check-mark"></span>
+            <span class="switch-control"></span>
             <span class="check-copy">
               <span class="check-title">Play audio</span>
             </span>
           </label>
           <label class="check-option">
-            <input id="practice-drill-mode" type="checkbox">
-            <span class="check-mark"></span>
+            <input id="practice-instant-drill" type="checkbox">
+            <span class="switch-control"></span>
             <span class="check-copy">
-              <span class="check-title">Drill mode</span>
-              <span class="check-detail">High-mistake words, scores unchanged</span>
+              <span class="check-title">Instant drill</span>
+            </span>
+          </label>
+          <label class="check-option">
+            <input id="practice-drill-mode" type="checkbox">
+            <span class="switch-control"></span>
+            <span class="check-copy">
+              <span class="check-title">Mistake drill</span>
             </span>
           </label>
           <label class="check-option">
             <input id="practice-known-drill-mode" type="checkbox">
-            <span class="check-mark"></span>
+            <span class="switch-control"></span>
             <span class="check-copy">
-              <span class="check-title">Drill mode</span>
-              <span class="check-detail">Known words, mistake triggers drill</span>
-            </span>
-          </label>
-          <label class="check-option">
-            <input id="practice-instant-drill" type="checkbox">
-            <span class="check-mark"></span>
-            <span class="check-copy">
-              <span class="check-title">Instant drill</span>
-              <span class="check-detail">Wrong answers drill immediately</span>
+              <span class="check-title">Known drill</span>
             </span>
           </label>
         </div>
