@@ -242,7 +242,7 @@ button:disabled {
 /* --- Practice view --- */
 .practice-options {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1.25rem;
   margin: 0.2rem 0 1.25rem;
 }
@@ -267,6 +267,16 @@ button:disabled {
   border-color: var(--mauve);
 }
 
+.check-option.disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.check-option.disabled:hover {
+  background: var(--surface0);
+  border-color: var(--surface1);
+}
+
 .check-option:has(input:checked) {
   border-color: var(--mauve);
   background: rgba(203, 166, 247, 0.13);
@@ -281,6 +291,8 @@ button:disabled {
 }
 
 .check-mark {
+  display: grid;
+  place-items: center;
   flex: 0 0 auto;
   width: 0.95rem;
   height: 0.95rem;
@@ -297,15 +309,11 @@ button:disabled {
 }
 
 .check-option input:checked + .check-mark::after {
-  content: '';
-  position: absolute;
-  left: 0.22rem;
-  top: 0.03rem;
-  width: 0.28rem;
-  height: 0.5rem;
-  border: solid var(--crust);
-  border-width: 0 2px 2px 0;
-  transform: rotate(45deg);
+  content: '✓';
+  color: var(--crust);
+  font-size: 0.8rem;
+  font-weight: 800;
+  line-height: 1;
 }
 
 .check-option:focus-within {
@@ -337,6 +345,12 @@ button:disabled {
   .practice-options {
     grid-template-columns: 1fr;
     gap: 0.6rem;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 1100px) {
+  .practice-options {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 

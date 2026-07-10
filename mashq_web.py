@@ -76,6 +76,7 @@ def build_question(session, word_id, word_text, definition, score, leitner_box=1
     band = ll.score_band(score)
     has_def = bool(definition)
     sentence_mode = session.get('sentence_mode', False)
+    display_score = min(ll.SENTENCE_MAX_SCORE, int(round(score)) + 1) if sentence_mode else round(score, 1)
 
     if sentence_mode and not session.get('drill_mode') and not session.get('known_drill_mode'):
         question_type = 'learning' if has_def else 'spelling'
@@ -99,7 +100,7 @@ def build_question(session, word_id, word_text, definition, score, leitner_box=1
         'word_id': word_id,
         'word': word_text,
         'definition': definition_lines,
-        'score': round(score, 1),
+        'score': display_score,
         'gauge': gauge_dots(score),
         'band': band,
         'gender': gender_class(word_text),
@@ -143,8 +144,11 @@ DRILL_WORDS = ll.DRILL_WORDS
 
 
 # --- Session lifecycle ---
-def start_session(user, lang, audio_lang=None, drill_mode=False, known_drill_mode=False, wpm=64):
+def start_session(user, lang, audio_lang=None, drill_mode=False, known_drill_mode=False, instant_drill=False, wpm=64):
     ll.sync_word_list(user, lang)
+    sentence_mode = ll.is_sentence_list(lang)
+    if sentence_mode and (drill_mode or known_drill_mode or instant_drill):
+        raise ValueError("Sentence lists do not support drill modes.")
     words = ll.get_words_for_practice(
         user, lang,
         DRILL_WORDS if drill_mode else MAX_QUESTIONS,
@@ -170,7 +174,8 @@ def start_session(user, lang, audio_lang=None, drill_mode=False, known_drill_mod
         'max_questions': DRILL_WORDS if drill_mode else MAX_QUESTIONS,
         'drill_mode': drill_mode,
         'known_drill_mode': known_drill_mode,
-        'sentence_mode': ll.is_sentence_list(lang),
+        'instant_drill': instant_drill,
+        'sentence_mode': sentence_mode,
         'correct': 0,
         'drilled': 0,
         'incorrect': [],
@@ -305,12 +310,15 @@ def process_answer(session, answer):
     if answer.startswith('$'):
         # Drill is disabled for sentence practice (sentences are too long to drill).
         if sentence_mode:
-            correct = ll.answer_matches(answer, cur['word_text'], sentence_mode=True)
             ll.update_sentence_score(session['user'], session['lang'], cur['word_id'],
-                                     correct, cur['score'], cur['leitner_box'])
-            if correct:
-                return advance(session, 'correct', None, attempt=answer)
-            return advance(session, 'incorrect', f"Incorrect. The word was: {cur['word_text']}", attempt=answer)
+                                     False, cur['score'], cur['leitner_box'])
+            session['incorrect'].append({'word': cur['word_text'], 'attempt': answer})
+            return {
+                'result': 'sentence_retry',
+                'done': False,
+                'message': "Incorrect. Try one more time.",
+                'word': cur['word_text'],
+            }
         cur['drill'] = {'correct_in_a_row': 0, 'repetition': 1}
         return {
             'result': 'drill_start',
@@ -352,7 +360,13 @@ def process_answer(session, answer):
                                  correct, cur['score'], cur['leitner_box'])
         if correct:
             return advance(session, 'correct', None, attempt=answer)
-        return advance(session, 'incorrect', f"Incorrect. The word was: {cur['word_text']}", attempt=answer)
+        session['incorrect'].append({'word': cur['word_text'], 'attempt': answer})
+        return {
+            'result': 'sentence_retry',
+            'done': False,
+            'message': "Incorrect. Try one more time.",
+            'word': cur['word_text'],
+        }
 
     if correct:
         ll.update_word_score(session['user'], session['lang'], cur['word_id'],
@@ -361,6 +375,22 @@ def process_answer(session, answer):
 
     ll.update_word_score(session['user'], session['lang'], cur['word_id'],
                          'incorrect', cur['score'], cur['leitner_box'])
+    if session.get('instant_drill'):
+        session['incorrect'].append({'word': cur['word_text'], 'attempt': answer})
+        cur['drill'] = {'correct_in_a_row': 0, 'repetition': 1}
+        return {
+            'result': 'drill_start',
+            'done': False,
+            'drill': {
+                'word': cur['word_text'],
+                'definition': drill_definition_lines(cur),
+                'repetition': 1,
+                'correct_in_a_row': 0,
+                'target': DRILL_TARGET,
+                'correct': False,
+                'show_word': True,
+            },
+        }
     return advance(session, 'incorrect', f"Incorrect. The word was: {cur['word_text']}", attempt=answer)
 
 
@@ -507,14 +537,16 @@ def user_progress_data(user):
     lists = []
     for (table_name,) in tables:
         lang = table_name[len(prefix):]
+        sentence_mode = ll.is_sentence_list(lang)
         has_leitner = 'leitner_box' in {
             r[1] for r in conn.execute(f'PRAGMA table_info("{table_name}")').fetchall()
         }
         if has_leitner:
+            to_drill_expr = '0' if sentence_mode else 'SUM(CASE WHEN times_incorrect > 0 THEN 1 ELSE 0 END)'
             row = conn.execute(
                 f'SELECT COUNT(*), '
                 f'SUM(CASE WHEN score >= 9.0 THEN 1 ELSE 0 END), '
-                f'SUM(CASE WHEN times_incorrect > 0 THEN 1 ELSE 0 END), '
+                f'{to_drill_expr}, '
                 f'SUM(CASE WHEN last_practiced IS NULL OR '
                 f'julianday(\'now\', \'localtime\') - julianday(last_practiced) >= '
                 f'CASE leitner_box WHEN 1 THEN 1 WHEN 2 THEN 2 WHEN 3 THEN 4 WHEN 4 THEN 9 ELSE 14 END '
@@ -523,10 +555,11 @@ def user_progress_data(user):
             ).fetchone()
             total, learned, to_drill, due_today = row
         else:
+            to_drill_expr = '0' if sentence_mode else 'SUM(CASE WHEN times_incorrect > 0 THEN 1 ELSE 0 END)'
             row = conn.execute(
                 f'SELECT COUNT(*), '
                 f'SUM(CASE WHEN score >= 9.0 THEN 1 ELSE 0 END), '
-                f'SUM(CASE WHEN times_incorrect > 0 THEN 1 ELSE 0 END) '
+                f'{to_drill_expr} '
                 f'FROM "{table_name}" WHERE active = 1'
             ).fetchone()
             total, learned, to_drill = row
@@ -600,7 +633,7 @@ def _corrects_to_mastery(score, sentence_mode=False):
     """Number of correct answers needed to bring score from current value to 9.0.
 
     Word mode: +1 in band 1 (score 1-3), +2 in band 2 (4-6), +3 in band 3 (7-9).
-    Sentence mode: +0.8 per correct, so a word needs 10 corrects from 1.0 to 9.0.
+    Sentence mode: +1 per correct, so a new sentence needs 9 correct typings.
     """
     s, count = float(score), 0
     if sentence_mode:
@@ -1089,6 +1122,7 @@ class Handler(http.server.BaseHTTPRequestHandler):
             audio_lang = str(payload.get('audio_lang', '')).strip() or None
             drill_mode = bool(payload.get('drill_mode', False))
             known_drill_mode = bool(payload.get('known_drill_mode', False))
+            instant_drill = bool(payload.get('instant_drill', False))
             try:
                 wpm = int(payload.get('wpm', 64))
             except (TypeError, ValueError):
@@ -1099,6 +1133,7 @@ class Handler(http.server.BaseHTTPRequestHandler):
                     audio_lang=audio_lang,
                     drill_mode=drill_mode and not known_drill_mode,
                     known_drill_mode=known_drill_mode,
+                    instant_drill=instant_drill,
                     wpm=wpm,
                 )
             except (ValueError, FileNotFoundError) as e:

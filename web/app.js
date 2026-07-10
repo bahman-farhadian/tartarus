@@ -107,6 +107,19 @@
   document.getElementById('start-session').addEventListener('click', startSession);
   const drillModeInput = document.getElementById('practice-drill-mode');
   const knownDrillModeInput = document.getElementById('practice-known-drill-mode');
+  const instantDrillInput = document.getElementById('practice-instant-drill');
+  function isSentenceListName(lang) {
+    return String(lang || '').toLowerCase().includes('sentences');
+  }
+  function syncSentenceDrillOptions() {
+    const sentenceList = isSentenceListName(document.getElementById('practice-lang')?.value);
+    [drillModeInput, knownDrillModeInput, instantDrillInput].forEach((input) => {
+      if (!input) return;
+      input.disabled = sentenceList;
+      input.closest('.check-option')?.classList.toggle('disabled', sentenceList);
+      if (sentenceList) input.checked = false;
+    });
+  }
   drillModeInput.addEventListener('change', () => {
     if (drillModeInput.checked) knownDrillModeInput.checked = false;
   });
@@ -181,9 +194,11 @@
     const langInput = document.getElementById('practice-lang');
     const user = userInput.value.trim();
     const lang = langInput.value.trim();
+    syncSentenceDrillOptions();
     const audioLang = (document.getElementById('practice-audio-lang')?.value ?? '').trim() || undefined;
     const drillMode = drillModeInput?.checked ?? false;
     const knownDrillMode = knownDrillModeInput?.checked ?? false;
+    const instantDrill = instantDrillInput?.checked ?? false;
     const wpmInput = document.getElementById('practice-wpm');
     let wpm = 64;
     if (wpmInput) {
@@ -200,6 +215,7 @@
       if (audioLang) body.audio_lang = audioLang;
       if (drillMode) body.drill_mode = true;
       if (knownDrillMode) body.known_drill_mode = true;
+      if (instantDrill) body.instant_drill = true;
       const data = await api('/api/practice/start', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -230,7 +246,7 @@
       const q = progress.questions ?? 0;
       const maxQ = progress.max_questions ?? '?';
       sessionProgress.textContent = `Drilled ${progress.drilled ?? 0}/${progress.total} · Q${q}/${maxQ}`;
-      sessionGauge.textContent = `${question.gauge} (score: ${question.score.toFixed(1)})`;
+      sessionGauge.textContent = `${question.gauge} (score: ${formatScore(question)})`;
       sessionGauge.className = `gauge band-${question.band}`;
       sessionType.textContent = 'Drill';
       wordDisplay.textContent = question.word;
@@ -244,7 +260,7 @@
     const q = progress.questions ?? 0;
     const maxQ = progress.max_questions ?? '?';
     sessionProgress.textContent = `Correct ${progress.correct ?? 0}/${progress.total} · Q${q}/${maxQ}`;
-    sessionGauge.textContent = `${question.gauge} (score: ${question.score.toFixed(1)})`;
+    sessionGauge.textContent = `${question.gauge} (score: ${formatScore(question)})`;
     sessionGauge.className = `gauge band-${question.band}`;
     sessionType.textContent = TYPE_LABELS[question.type] || question.type;
 
@@ -310,6 +326,12 @@
     btnDrill.disabled = !enabled || (currentQuestion && currentQuestion.sentence_mode);
   }
 
+  function formatScore(question) {
+    return question && question.sentence_mode
+      ? String(Math.round(question.score))
+      : Number(question.score).toFixed(1);
+  }
+
   function submitTextAnswer() {
     const value = answerInput.value;
     // '+' and '?' are always local commands — never submitted as answers.
@@ -340,6 +362,16 @@
     if (data.result === 'drill_start' || data.result === 'drill_progress') {
       answering = false;
       showDrill(data.drill);
+      return;
+    }
+
+    if (data.result === 'sentence_retry') {
+      answering = false;
+      setActionButtons(true);
+      feedback.textContent = data.message || 'Incorrect. Try one more time.';
+      feedback.className = 'feedback incorrect';
+      answerInput.value = '';
+      answerInput.focus();
       return;
     }
 
@@ -781,6 +813,7 @@
   document.getElementById('practice-lang').addEventListener('change', function () {
     const lang = this.value;
     const audioEl = document.getElementById('practice-audio-lang');
+    syncSentenceDrillOptions();
     if (!lang) { audioEl.value = ''; return; }
     const base = lang.split('_')[0].toLowerCase();
     audioEl.value = (lang.includes('_') && KNOWN_BASE_LANGS.has(base)) ? base : '';
