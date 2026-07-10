@@ -602,8 +602,8 @@ def update_sentence_score(user, lang, word_id, correct, current_score=None, curr
     - Correct: score += 1 (capped at 9). When score first hits 9, the Leitner
       box advances. Same-day re-practice of an already-mastered sentence does
       not advance the box or overwrite last_practiced.
-    - Incorrect: score, box, and last_practiced are unchanged. Only the
-      incorrect counter is incremented; callers must retry the same sentence.
+    - Incorrect: score, box, last_practiced, and mistake counters are unchanged;
+      callers must retry the same sentence.
     """
     table = words_table_name(user, lang)
     conn = get_connection()
@@ -631,11 +631,6 @@ def update_sentence_score(user, lang, word_id, correct, current_score=None, curr
             new_box = current_box or 1
         counter = 'times_correct'
     else:
-        conn.execute(
-            f'UPDATE "{table}" SET times_incorrect = times_incorrect + 1 WHERE id = ?',
-            (word_id,)
-        )
-        conn.commit()
         conn.close()
         return
 
