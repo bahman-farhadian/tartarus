@@ -134,17 +134,17 @@ the streak.
 
 ## Setup
 
-Mashq is a single Python file (`mashq.py`), run through the
-`mashq.sh` wrapper — don't call the `.py` file directly.
+Mashq has no external dependencies. Use `make help` to see its normal web
+and CLI entry points.
 
 ```bash
-chmod +x mashq.sh   # one-time, if not already executable
+make help
 ```
 
 ### Create a word list for a user/language
 
 ```bash
-./mashq.sh init --user bahman --lang german
+make init user=bahman list=german
 ```
 
 This creates `data/word_lists/bahman_german.json` (an empty array) and the
@@ -255,8 +255,8 @@ language for audio. Always pass `--audio-lang` (CLI) or fill **Audio language**
 (web UI):
 
 ```bash
-./mashq.sh practice --user bahman --lang german_b1 --audio-lang german
-./mashq.sh practice --user erfan  --lang kanji_a1  --audio-lang japanese
+make practice user=bahman list=german_b1 opts="--audio-lang german"
+make practice user=erfan list=kanji_a1 opts="--audio-lang japanese"
 ```
 
 ## Generating word lists from the source decks
@@ -332,7 +332,7 @@ flowchart TD
 ### Practice
 
 ```bash
-./mashq.sh practice --user bahman --lang german
+make practice user=bahman list=german
 ```
 
 | Option | Description |
@@ -344,8 +344,12 @@ flowchart TD
 | `--drill` | Full drill: every word in the session goes through the 9-repetition drill automatically, regardless of its score band. |
 | `--drill-mode` | Mistake drill: selects the 10 words with the most incorrect answers and puts each through a 9-correct-in-a-row repetition. On success, one incorrect mark is removed from that word's history. Scores are not changed. |
 
-Run `./mashq.sh practice --help` (or `report`/`init --help`) at any
-time to see this same reference from the CLI itself.
+Run `make help` to see the available web and CLI commands. Add optional CLI
+flags with `opts`, for example:
+
+```bash
+make practice user=bahman list=german opts="--no-audio"
+```
 
 #### In-session commands
 
@@ -362,7 +366,7 @@ time to see this same reference from the CLI itself.
 ### Report
 
 ```bash
-./mashq.sh report --user bahman [--lang german]
+make report user=bahman [list=german]
 ```
 
 | Option | Description |
@@ -380,7 +384,7 @@ time to see this same reference from the CLI itself.
 ### Init
 
 ```bash
-./mashq.sh init --user bahman --lang german
+make init user=bahman list=german
 ```
 
 | Option | Description |
@@ -393,10 +397,15 @@ they don't already exist.
 
 ### Help
 
-Every command and flag is also documented in the CLI itself:
+Use the Makefile for the normal workflows:
 
 ```bash
-./mashq.sh --help
+make help
+```
+
+The underlying CLI still provides detailed flag help when needed:
+
+```bash
 ./mashq.sh practice --help
 ./mashq.sh report --help
 ./mashq.sh init --help
@@ -409,6 +418,7 @@ mashq.py               # main script (single file)
 mashq.sh               # run through this wrapper, not python3 directly
 mashq_web.py           # web server (JSON API + static frontend)
 mashq_web.sh           # run through this wrapper, not python3 directly
+Makefile               # normal web and CLI entry points (`make help`)
 utils/
   make_mashq_video.py         # standalone: generate a vocab-drill video
   generate_mashq_json.py   # generate word lists from source decks
@@ -432,8 +442,7 @@ SQLite database and scoring logic as the CLI - standard library only, no
 `pip install` or virtualenv needed.
 
 ```bash
-chmod +x mashq_web.sh   # one-time, if not already executable
-./mashq_web.sh
+make web
 ```
 
 This starts a server at **http://127.0.0.1:9999/** (bound to localhost
@@ -534,9 +543,9 @@ according to its grammatical gender wherever it's displayed:
 
 ## Everyday practice commands
 
-The same `--lang` flag switches the whole session between word lists — use
-`--lang german` or `--lang english` (or any other list you've `init`'d) with
-any of the commands below. There's just one command: `practice`. The
+The `list` variable switches the whole session between word lists — use
+`list=german` or `list=english` (or any other list you've `init`'d) with any
+of the commands below. There's just one command: `practice`. The
 question type for each word is chosen automatically from its score (see
 [How it works](#how-it-works) above), so new words get "Learning" questions,
 words you're getting right move to "Audio" then "Production" questions, and
@@ -544,22 +553,22 @@ words you get wrong (or leave idle) drift back down.
 
 ```bash
 # Practice session, German
-./mashq.sh practice --user bahman --lang german
+make practice user=bahman list=german
 
 # Practice session, English
-./mashq.sh practice --user bahman --lang english
+make practice user=bahman list=english
 
-# Silent session (e.g. in a quiet office) — disables macOS audio
-./mashq.sh practice --user bahman --lang german --no-audio
+# Silent session (e.g. in a quiet office), disables macOS audio
+make practice user=bahman list=german opts="--no-audio"
 
 # Check today's and overall progress for a language
-./mashq.sh report --user bahman --lang german
+make report user=bahman list=german
 
 # Check progress across all of a user's word lists
-./mashq.sh report --user bahman
+make report user=bahman
 
 # Add a new word list (e.g. for a new language or topic)
-./mashq.sh init --user bahman --lang french
+make init user=bahman list=french
 ```
 
 ## Vocab drill video (optional side feature)
