@@ -443,17 +443,52 @@ def process_answer(session, answer):
 
 # --- Word lists / report ---
 def list_word_lists():
+    """List word lists for all users.
+    
+    Returns:
+    - User-specific lists (<user>_<lang>.json) for users who have sessions
+    - Generic/shared lists (<lang>.json, <lang>_<level>.json) available as fallback for all users
+    """
     if not os.path.isdir(ll.WORD_LISTS_DIR):
         return []
     result = []
+    # Get users who have session tables in the DB
+    conn = ll.get_connection()
+    user_tables = conn.execute("SELECT name FROM sqlite_master WHERE type='table' AND name LIKE 'sessions_%'").fetchall()
+    known_users = {t[0].replace('sessions_', '') for t in user_tables}
+    conn.close()
+    
+    # Language codes that indicate a generic/shared file (first part is a language, not user)
+    # These are languages that have generic project files
+    generic_languages = {'german', 'english', 'hiragana', 'kanji', 'katakana', 'french', 'spanish', 'japanese'}
+    
     for fname in sorted(os.listdir(ll.WORD_LISTS_DIR)):
         if not fname.endswith('.json'):
             continue
         stem = fname[:-len('.json')]
+        
+        # Generic language file (no underscore): german.json, english.json
         if '_' not in stem:
+            for user in known_users:
+                result.append({'user': user, 'lang': stem, 'shared': True})
             continue
-        user, lang = stem.split('_', 1)
-        result.append({'user': user, 'lang': lang})
+        
+        first_part, rest = stem.split('_', 1)
+        
+        # Generic/shared level file (language_level): german_a1, english_b2, german_sentences_a1
+        if first_part in generic_languages:
+            for user in known_users:
+                result.append({'user': user, 'lang': stem, 'shared': True})
+            continue
+        
+        # User-specific file: first part is a username
+        if first_part in known_users:
+            result.append({'user': first_part, 'lang': rest, 'shared': False})
+            continue
+        
+        # User-specific for user without sessions yet - still show it
+        result.append({'user': first_part, 'lang': rest, 'shared': False})
+    
     return result
 
 
