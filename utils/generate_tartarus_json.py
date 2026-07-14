@@ -166,7 +166,9 @@ def generate(lang, user, cefr_filter=None, sentences=False, flashcard_only=False
     for level in sorted(buckets):
         entries = buckets[level]
         kind = 'sentences_' if sentences else ''
-        out_name = f'{user}_{lang}_{kind}{level.lower()}.json'
+        # Output generic project files by default (no user prefix unless provided)
+        prefix = f'{user}_' if user else ''
+        out_name = f'{prefix}{lang}_{kind}{level.lower()}.json'
         out_path = os.path.join(WORD_LISTS_DIR, out_name)
         with open(out_path, 'w', encoding='utf-8') as f:
             json.dump(entries, f, ensure_ascii=False, indent=2)
@@ -175,9 +177,10 @@ def generate(lang, user, cefr_filter=None, sentences=False, flashcard_only=False
     if skipped:
         print(f'  (skipped {skipped} entries with missing/invalid CEFR or data)')
 
-    suffix = f'_{lang}_sentences_a1' if sentences else f'_{lang}_a1'
+    suffix = f'{lang}_sentences_a1' if sentences else f'{lang}_a1'
     audio_hint = ' --audio-lang japanese' if lang in JAPANESE_LANGS else ''
-    print(f'\nDone. Run: ./tartarus.sh practice --user {user} --lang {suffix[1:]}{audio_hint}')
+    user_hint = f' --user <your_user>' if not user else f' --user {user}'
+    print(f'\nDone. Run: ./tartarus.sh practice{user_hint} --lang {suffix}{audio_hint}')
 
 
 def main():
@@ -187,8 +190,8 @@ def main():
     )
     parser.add_argument('--lang', required=True, choices=valid_langs,
                         help='Source deck language.')
-    parser.add_argument('--user', required=True,
-                        help='Username prefix for output filenames.')
+    parser.add_argument('--user', default='',
+                        help='Username prefix for output filenames (optional, for user-specific lists).')
     parser.add_argument('--cefr', metavar='LEVEL',
                         help='Only generate one CEFR level (A1/A2/B1/B2/C1/C2).')
     parser.add_argument('--sentences', action='store_true',
@@ -198,7 +201,8 @@ def main():
     args = parser.parse_args()
 
     mode = 'sentence' if args.sentences else 'vocabulary'
-    print(f'Generating {args.lang.upper()} {mode} lists for user "{args.user}"...')
+    user_desc = f' for user "{args.user}"' if args.user else ' (generic project files)'
+    print(f'Generating {args.lang.upper()} {mode} lists{user_desc}...')
     if args.cefr:
         print(f'Filtering to CEFR level: {args.cefr.upper()}')
     if args.flashcard_only:

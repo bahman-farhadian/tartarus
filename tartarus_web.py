@@ -970,7 +970,8 @@ def load_word_list(user, lang):
 
 
 def save_word_list(user, lang, items):
-    path = ll.word_list_path(user, lang)
+    # Always save to user-specific file
+    path = ll.word_list_path_user_specific(user, lang)
     data = []
     for item in items:
         word = str(item.get('word', '')).strip()
@@ -993,7 +994,8 @@ def save_word_list(user, lang, items):
 
 def init_word_list(user, lang):
     os.makedirs(ll.WORD_LISTS_DIR, exist_ok=True)
-    path = ll.word_list_path(user, lang)
+    # Always create user-specific file, not generic
+    path = ll.word_list_path_user_specific(user, lang)
     created = False
     if not os.path.exists(path):
         with open(path, 'w', encoding='utf-8') as f:

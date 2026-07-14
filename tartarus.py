@@ -346,6 +346,22 @@ def ensure_sessions_table(conn, user):
 
 # --- Word List Sync ---
 def word_list_path(user, lang):
+    """
+    Returns the path to the word list JSON file.
+    First checks for user-specific file: {user}_{lang}.json
+    Then falls back to generic/shared file: {lang}.json
+    """
+    user = sanitize_name(user, 'user')
+    lang = sanitize_name(lang, 'language')
+    user_specific = os.path.join(WORD_LISTS_DIR, f"{user}_{lang}.json")
+    generic = os.path.join(WORD_LISTS_DIR, f"{lang}.json")
+    if os.path.isfile(user_specific):
+        return user_specific
+    return generic
+
+
+def word_list_path_user_specific(user, lang):
+    """Returns the user-specific word list path (for creating new lists)."""
     user = sanitize_name(user, 'user')
     lang = sanitize_name(lang, 'language')
     return os.path.join(WORD_LISTS_DIR, f"{user}_{lang}.json")
@@ -1391,7 +1407,7 @@ def generate_report(user, lang=None):
 # --- CLI ---
 def cmd_init(args):
     os.makedirs(WORD_LISTS_DIR, exist_ok=True)
-    path = word_list_path(args.user, args.lang)
+    path = word_list_path_user_specific(args.user, args.lang)
     if os.path.exists(path):
         print(f"Word list already exists: {path}")
     else:
