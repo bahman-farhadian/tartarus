@@ -941,7 +941,7 @@ def dashboard_data(user, lang=None):
     return result
 
 
-def word_list_stats(user, lang):
+def word_list_stats(user, lang, due_today_only=False):
     table = ll.words_table_name(user, lang)
     conn = ll.get_connection()
     cursor = conn.execute("SELECT name FROM sqlite_master WHERE type='table' AND name = ?", (table,))
@@ -949,13 +949,28 @@ def word_list_stats(user, lang):
         conn.close()
         return None
     ll.ensure_word_table(conn, user, lang)
-    rows = conn.execute(
-        f'SELECT text, score, active, times_practiced, times_correct, times_incorrect, '
-        f'times_drilled, times_flagged, times_mastered, last_practiced, leitner_box, last_known_review_at '
-        f'FROM "{table}" ORDER BY active DESC, score ASC, text ASC'
-    ).fetchall()
-    conn.close()
+    
     today = date.today()
+    if due_today_only:
+        # Only select words that are due today (next review is today or earlier)
+        query = f'''
+            SELECT text, score, active, times_practiced, times_correct, times_incorrect,
+                   times_drilled, times_flagged, times_mastered, last_practiced, leitner_box, last_known_review_at
+            FROM "{table}" WHERE active = 1 AND (
+                last_practiced IS NULL OR
+                julianday(?, 'localtime') - julianday(last_practiced) >=
+                CASE leitner_box WHEN 1 THEN 1 WHEN 2 THEN 2 WHEN 3 THEN 4 WHEN 4 THEN 9 ELSE 14 END
+            ) ORDER BY score ASC, text ASC
+        '''
+        rows = conn.execute(query, (today.isoformat(),)).fetchall()
+    else:
+        rows = conn.execute(
+            f'SELECT text, score, active, times_practiced, times_correct, times_incorrect, '
+            f'times_drilled, times_flagged, times_mastered, last_practiced, leitner_box, last_known_review_at '
+            f'FROM "{table}" ORDER BY active DESC, score ASC, text ASC'
+        ).fetchall()
+    
+    conn.close()
     words = []
     for (text, score, active, practiced, correct, incorrect,
          drilled, flagged, mastered, last_practiced, leitner_box, last_known_review_at) in rows:
@@ -1135,10 +1150,11 @@ class Handler(http.server.BaseHTTPRequestHandler):
             qs = urllib.parse.parse_qs(parsed.query)
             user = qs.get('user', [''])[0]
             lang = qs.get('lang', [''])[0]
+            due_today = qs.get('due_today', ['false'])[0].lower() == 'true'
             if not user or not lang:
                 return self._send_json({'error': "'user' and 'lang' are required"}, 400)
             try:
-                words = word_list_stats(user, lang)
+                words = word_list_stats(user, lang, due_today_only=due_today)
             except ValueError as e:
                 return self._send_json({'error': str(e)}, 400)
             if words is None:

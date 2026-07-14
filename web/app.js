@@ -605,6 +605,8 @@
       }
     } catch (_) {}
     try {
+      // Show only words due today in the report detail view
+      params.set('due_today', 'true');
       const data = await api(`/api/wordlist/stats?${params.toString()}`);
       if (data.words.length) {
         container.appendChild(renderWordStatsTable(lang, data.words));
