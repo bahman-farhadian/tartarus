@@ -152,7 +152,7 @@
 
   function revealWord() {
     if (!currentQuestion) return;
-    speak(currentQuestion.word);
+    speak(currentQuestion.word_unmasked || currentQuestion.word);
     if (currentQuestion.type === 'audio' || currentQuestion.type === 'spelling') {
       wordDisplay.classList.remove('hidden-word');
       setTimeout(() => {
@@ -160,6 +160,17 @@
           wordDisplay.classList.add('hidden-word');
         }
       }, 1200);
+    } else if (currentQuestion.sentence_mode) {
+      // In sentence mode, reveal the full unmasked sentence briefly
+      if (currentQuestion.word_unmasked) {
+        const originalText = wordDisplay.textContent;
+        wordDisplay.textContent = currentQuestion.word_unmasked;
+        setTimeout(() => {
+          if (currentQuestion && currentQuestion.sentence_mode) {
+            wordDisplay.textContent = originalText;
+          }
+        }, 1500);
+      }
     }
     // 'production' (drill): only replay audio, never reveal the word.
   }
@@ -289,20 +300,20 @@
           definitionLines.appendChild(div);
         });
       }
-      speak(question.word);
+      speak(question.word_unmasked || question.word);
       answerInput.value = '';
       answerInput.focus();
     } else if (question.type === 'audio') {
       answerBlock.style.display = 'flex';
       wordDisplay.classList.add('hidden-word');
       answerInput.value = '';
-      speak(question.word);
+      speak(question.word_unmasked || question.word);
       answerInput.focus();
     } else if (question.type === 'spelling') {
       answerBlock.style.display = 'flex';
       wordDisplay.classList.remove('hidden-word');
       answerInput.value = '';
-      speak(question.word);
+      speak(question.word_unmasked || question.word);
       answerInput.focus();
       setTimeout(() => {
         if (currentQuestion === question) {
@@ -314,7 +325,7 @@
       answerBlock.style.display = 'flex';
       wordDisplay.classList.remove('hidden-word');
       answerInput.value = '';
-      speak(question.word);
+      speak(question.word_unmasked || question.word);
       answerInput.focus();
     }
   }

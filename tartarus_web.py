@@ -62,6 +62,49 @@ def gender_class(word_text):
     return 'none'
 
 
+def mask_sentence(sentence, score):
+    """Mask a sentence progressively based on score (5-9).
+    
+    Score 1-4: 100% visible (no masking)
+    Score 5: 75% visible (25% masked)
+    Score 6: 50% visible (50% masked)
+    Score 7: 25% visible (75% masked)
+    Score 8: 12.5% visible
+    Score 9: 6.25% visible
+    
+    Non-letter characters (spaces, punctuation) are never masked.
+    """
+    if score < 5:
+        return sentence
+    steps = min(score - 4, 5)
+    visible_ratio = 0.75 ** steps
+    
+    letter_indices = [i for i, ch in enumerate(sentence) if ch.isalpha()]
+    if not letter_indices:
+        return sentence
+    
+    num_visible = max(1, int(len(letter_indices) * visible_ratio))
+    visible_indices = set()
+    
+    visible_indices.add(letter_indices[0])
+    visible_indices.add(letter_indices[-1])
+    
+    remaining_visible = num_visible - 2
+    if remaining_visible > 0 and len(letter_indices) > 2:
+        step = max(1, (len(letter_indices) - 2) // (remaining_visible + 1))
+        for i in range(1, len(letter_indices) - 1, step):
+            if len(visible_indices) < num_visible:
+                visible_indices.add(letter_indices[i])
+    
+    result = []
+    for i, ch in enumerate(sentence):
+        if ch.isalpha():
+            result.append(ch if i in visible_indices else '_')
+        else:
+            result.append(ch)
+    return ''.join(result)
+
+
 def prompt_definition_lines(cur):
     prompt = cur.get('prompt_definition') or cur.get('definition') or ''
     return prompt.split('\n') if prompt else []
@@ -77,6 +120,9 @@ def build_question(session, word_id, word_text, definition, score, leitner_box=1
     has_def = bool(definition)
     sentence_mode = session.get('sentence_mode', False)
     display_score = min(ll.SENTENCE_MAX_SCORE, int(round(score)) + 1) if sentence_mode else round(score, 1)
+    
+    # Apply progressive masking for sentence mode
+    display_word = mask_sentence(word_text, int(round(score))) if sentence_mode else word_text
 
     if sentence_mode and not session.get('drill_mode') and not session.get('known_drill_mode'):
         question_type = 'learning' if has_def else 'spelling'
@@ -98,7 +144,8 @@ def build_question(session, word_id, word_text, definition, score, leitner_box=1
 
     question = {
         'word_id': word_id,
-        'word': word_text,
+        'word': display_word,
+        'word_unmasked': word_text,
         'definition': definition_lines,
         'score': display_score,
         'gauge': gauge_dots(score),
@@ -117,7 +164,7 @@ def build_question(session, word_id, word_text, definition, score, leitner_box=1
         # Drill mode: every word requires 9 correct in a row, regardless of band.
         initial_drill = {'correct_in_a_row': 0, 'repetition': 1}
         question['drill_start'] = {
-            'word': word_text,
+            'word': display_word,
             'definition': definition_lines,
             'repetition': 1,
             'correct_in_a_row': 0,

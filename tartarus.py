@@ -51,6 +51,61 @@ def answer_matches(answer, word_text, sentence_mode=False):
     return sorted(answer_forms) == sorted(forms)
 
 
+def mask_sentence(sentence, score):
+    """Mask a sentence progressively based on score (5-9).
+    
+    Score 1-4: 100% visible (no masking)
+    Score 5: 75% visible (25% masked)
+    Score 6: 50% visible (50% masked)
+    Score 7: 25% visible (75% masked) - "final" level per spec
+    Score 8: 12.5% visible
+    Score 9: 6.25% visible
+    
+    Non-letter characters (spaces, punctuation) are never masked.
+    """
+    if score < 5:
+        return sentence
+    # Each step from 5-9 masks an additional 25% of remaining visible letters
+    # Score 5: mask 25% (75% visible)
+    # Score 6: mask 50% (50% visible)  
+    # Score 7: mask 75% (25% visible)
+    # Score 8: mask 87.5% (12.5% visible)
+    # Score 9: mask 93.75% (6.25% visible)
+    steps = min(score - 4, 5)  # 1 to 5 steps
+    visible_ratio = 0.75 ** steps  # 0.75, 0.5625, 0.421875, 0.3164, 0.2373
+    
+    # Find all letter positions (a-z, A-Z, and unicode letters)
+    letter_indices = [i for i, ch in enumerate(sentence) if ch.isalpha()]
+    if not letter_indices:
+        return sentence
+    
+    # Calculate how many letters to keep visible
+    num_visible = max(1, int(len(letter_indices) * visible_ratio))
+    # Keep first and last few letters visible for context, plus some in middle
+    visible_indices = set()
+    
+    # Always show first and last letter
+    visible_indices.add(letter_indices[0])
+    visible_indices.add(letter_indices[-1])
+    
+    # Distribute remaining visible letters evenly
+    remaining_visible = num_visible - 2
+    if remaining_visible > 0 and len(letter_indices) > 2:
+        step = max(1, (len(letter_indices) - 2) // (remaining_visible + 1))
+        for i in range(1, len(letter_indices) - 1, step):
+            if len(visible_indices) < num_visible:
+                visible_indices.add(letter_indices[i])
+    
+    # Build masked sentence
+    result = []
+    for i, ch in enumerate(sentence):
+        if ch.isalpha():
+            result.append(ch if i in visible_indices else '_')
+        else:
+            result.append(ch)
+    return ''.join(result)
+
+
 def get_gender_color(word_text):
     """Returns a color for a word based on its German article, if any:
     der (masculine) -> blue, die (feminine) -> red, das (neuter) -> green.
@@ -853,9 +908,11 @@ def ask_learning(user, lang, word_id, word_text, definition, score, audio, heade
     no definition, falls back to a flash-then-hide spelling test instead.
     Correct -> +1, incorrect -> -2.
 
-    In sentence_mode: the native sentence is always shown (never hidden), each
-    correct answer adds 1 score point, and incorrect answers retry the same
-    sentence without score/box penalty. Drill ('$') is disabled.
+    In sentence_mode: the native sentence is shown with progressive masking
+    (score 1-4: 100% visible, score 5: 75%, score 6: 50%, score 7: 25%,
+    score 8: 12.5%, score 9: 6.25%). Each correct answer adds 1 score point,
+    and incorrect answers retry the same sentence without score/box penalty.
+    Drill ('$') is disabled.
     """
     while True:
         clear_screen()
@@ -863,7 +920,12 @@ def ask_learning(user, lang, word_id, word_text, definition, score, audio, heade
         print("")
         has_def = bool(definition)
         if has_def:
-            print(f"{get_gender_color(word_text)}{word_text}{Colors.ENDC}")
+            # In sentence mode, show masked sentence based on score
+            if sentence_mode:
+                display_text = mask_sentence(word_text, int(round(score)))
+            else:
+                display_text = word_text
+            print(f"{get_gender_color(display_text)}{display_text}{Colors.ENDC}")
             show_definition(definition)
             print("")
             while True:
@@ -874,7 +936,11 @@ def ask_learning(user, lang, word_id, word_text, definition, score, audio, heade
                 answer = input("").strip()
                 sys.stdout.write('\033[A' + ERASE_LINE)
                 if answer == '?':
-                    sys.stdout.write(f"{word_header} {get_gender_color(word_text)}{word_text}{Colors.ENDC}")
+                    if sentence_mode:
+                        reveal_text = mask_sentence(word_text, int(round(score)))
+                    else:
+                        reveal_text = word_text
+                    sys.stdout.write(f"{word_header} {get_gender_color(reveal_text)}{reveal_text}{Colors.ENDC}")
                     sys.stdout.flush()
                     time.sleep(1.0)
                     sys.stdout.write(ERASE_LINE)
@@ -884,7 +950,11 @@ def ask_learning(user, lang, word_id, word_text, definition, score, audio, heade
                 break
         else:
             while True:
-                sys.stdout.write(f"{ERASE_LINE}{word_header} {get_gender_color(word_text)}{word_text}{Colors.ENDC}")
+                if sentence_mode:
+                    display_text = mask_sentence(word_text, int(round(score)))
+                else:
+                    display_text = word_text
+                sys.stdout.write(f"{ERASE_LINE}{word_header} {get_gender_color(display_text)}{display_text}{Colors.ENDC}")
                 sys.stdout.flush()
                 if audio:
                     speak(word_text, audio_lang or lang, wpm=wpm)
