@@ -60,7 +60,7 @@ score: `@` master -> 9.0 (Production), `$` drill -> 5.0 (Audio), `!` flag ->
 
 ## How learning works
 
-Mashq combines two complementary systems to build long-term retention.
+Tartarus combines two complementary systems to build long-term retention.
 
 ### Score and question bands
 
@@ -134,7 +134,7 @@ the streak.
 
 ## Setup
 
-Mashq has no external dependencies. Use `make help` to see its normal web
+Tartarus has no external dependencies. Use `make help` to see its normal web
 and CLI entry points.
 
 ```bash
@@ -302,7 +302,7 @@ source record, so the mapping is always exact.
 
 ## Renewing word lists
 
-Every time you run `practice` or `report --lang <lang>`, Mashq "renews"
+Every time you run `practice` or `report --lang <lang>`, Tartarus "renews"
 that list from its JSON file:
 
 - New entries are added to the table (score `1.0`, fresh history).
@@ -437,7 +437,7 @@ data/
 
 ## Web UI
 
-Mashq also ships with a localhost-only web UI that uses the same
+Tartarus also ships with a localhost-only web UI that uses the same
 SQLite database and scoring logic as the CLI - standard library only, no
 `pip install` or virtualenv needed.
 
@@ -479,7 +479,7 @@ The theme is dark, using the
 On macOS, every word is spoken aloud via the built-in `say` command —
 enabled by default, disable with `--no-audio`.
 
-- Mashq picks a `say` voice matching `--lang` when one is installed
+- Tartarus picks a `say` voice matching `--lang` when one is installed
   (e.g. a German voice for `--lang german`, a French voice for
   `--lang french`), so words are pronounced in their own language rather
   than read with the system default voice's accent. If no matching voice is
@@ -490,7 +490,7 @@ enabled by default, disable with `--no-audio`.
   "Anna" variant, in order: `Anna (Premium)` > `Anna (Enhanced)` > `Anna`.
   Whichever of these is installed (check with `say -v '?' | grep -i anna`)
   is used.
-- For all other recognized languages, Mashq falls back to the first
+- For all other recognized languages, Tartarus falls back to the first
   installed voice matching the locale prefix (e.g. first `fr_FR` voice for
   `--lang french`).
 - Recognized `--lang` names for voice matching include `english`, `german`/
@@ -503,7 +503,7 @@ enabled by default, disable with `--no-audio`.
   Spoken Content "Voice 1-4" picks (Siri/personal voices) are *not*
   addressable by name from the command line. This is different from
   downloadable premium voices like `Anna (Premium)`, which **are**
-  addressable via `say -v "Anna (Premium)"` and are what Mashq uses for
+  addressable via `say -v "Anna (Premium)"` and are what Tartarus uses for
   German when installed.
 - During the `$` 9-repetition drill, the word is spoken before **every**
   repetition, not just once — useful for repeated listen-and-spell practice.
@@ -513,7 +513,7 @@ enabled by default, disable with `--no-audio`.
 
 ## Color-coded German genders
 
-For words that start with a German article, Mashq colors the word
+For words that start with a German article, Tartarus colors the word
 according to its grammatical gender wherever it's displayed:
 
 | Article | Gender | Color |

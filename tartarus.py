@@ -1491,7 +1491,7 @@ Developed by Bahman Farhadian.
     practice_parser.add_argument('--lang', required=True, help="Word list / language to practice.")
     practice_parser.add_argument('--no-audio', action='store_true',
                                   help="Disable speaking each word aloud (audio is on by default on macOS, via 'say';\n"
-                                       "has no effect on other platforms). Mashq tries to use a 'say' voice that\n"
+                                       "has no effect on other platforms). Tartarus tries to use a 'say' voice that\n"
                                        "matches --lang (e.g. a German voice for --lang german).")
     practice_parser.add_argument('--audio-lang',
                                   help="Override the language used for voice/audio selection.\n"

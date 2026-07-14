@@ -1061,7 +1061,7 @@ def init_word_list(user, lang):
 
 # --- HTTP server ---
 class Handler(http.server.BaseHTTPRequestHandler):
-    server_version = "MashqWeb/0.1"
+    server_version = "TartarusWeb/0.1"
 
     def log_message(self, fmt, *args):
         pass
@@ -1289,14 +1289,14 @@ def main():
     except OSError as e:
         if e.errno == errno.EADDRINUSE:
             print(f"Error: port {PORT} is already in use.")
-            print(f"  Another Mashq web server (or another process) is "
+            print(f"  Another Tartarus web server (or another process) is "
                   f"probably already listening on http://{HOST}:{PORT}/.")
             print(f"  Find it with: lsof -i :{PORT}")
             print(f"  Stop it with: kill <PID>")
             sys.exit(1)
         raise
     db_path = os.path.abspath(ll.DATABASE_FILE)
-    print("Mashq web server starting...")
+    print("Tartarus web server starting...")
     print(f"  Listening on : http://{HOST}:{PORT}/")
     print(f"  Database     : {db_path}")
     print("  Press Ctrl+C to stop.")
