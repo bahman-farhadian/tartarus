@@ -597,27 +597,34 @@
 
   async function loadWordListStats(user, lang, container) {
     const params = new URLSearchParams({ user, lang });
-    // Leitner stats card first, then word-by-word table
+    // Leitner stats card first
     try {
       const leitnerData = await api(`/api/wordlist/leitner?${params.toString()}`);
       if (leitnerData.leitner) {
         container.appendChild(renderLeitnerCard(lang, leitnerData.leitner));
       }
     } catch (_) {}
+    // Full word list table
     try {
-      // Show only words due today in the report detail view
+      const data = await api(`/api/wordlist/stats?${params.toString()}`);
+      if (data.words.length) {
+        container.appendChild(renderWordStatsTable(lang, data.words, 'Full Word List'));
+      }
+    } catch (_) {}
+    // Due today table (separate)
+    try {
       params.set('due_today', 'true');
       const data = await api(`/api/wordlist/stats?${params.toString()}`);
       if (data.words.length) {
-        container.appendChild(renderWordStatsTable(lang, data.words));
+        container.appendChild(renderWordStatsTable(lang, data.words, `Due Today (${data.words.length})`));
       }
     } catch (_) {}
   }
 
-  function renderWordStatsTable(lang, words) {
+  function renderWordStatsTable(lang, words, caption) {
     const card = document.createElement('div');
     card.className = 'card';
-    let html = `<table><caption>Word list: ${escapeHtml(lang)}</caption>`;
+    let html = `<table><caption>${escapeHtml(caption || `Word list: ${lang}`)}</caption>`;
     html += '<thead><tr><th>Word</th><th>Score</th><th>Gauge</th><th>Box</th><th>Next Review</th><th>Known Review</th>'
       + '<th>Practiced</th><th>Correct</th><th>Wrong</th><th>Drilled</th><th>Flagged</th><th>Mastered</th></tr></thead><tbody>';
     words.forEach((w) => {
