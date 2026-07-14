@@ -12,7 +12,7 @@ from datetime import date, datetime, timedelta
 
 # --- Configuration ---
 DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data')
-DATABASE_FILE = os.path.join(DATA_DIR, 'mashq.db')
+DATABASE_FILE = os.path.join(DATA_DIR, 'tartarus.db')
 WORD_LISTS_DIR = os.path.join(DATA_DIR, 'word_lists')
 NAME_PATTERN = re.compile(r'^[a-z0-9_]+$')
 
@@ -35,17 +35,17 @@ def split_word_forms(word_text):
 
 def answer_matches(answer, word_text, sentence_mode=False):
     """Checks a typed answer against every accepted form of a word,
-    case-insensitively (comma-separated forms like "das Haus, die Häuser").
+    case-sensitively (comma-separated forms like "das Haus, die Häuser").
     Also accepts the full text with all forms typed out, e.g.
     "das Haus, die Häuser", however the commas/spacing are written.
 
     In sentence_mode, commas are part of the sentence and must NOT be treated
-    as form separators — a simple case-insensitive full-string comparison is
+    as form separators — a simple case-sensitive full-string comparison is
     used instead."""
     if sentence_mode:
-        return answer.strip().lower() == word_text.strip().lower()
-    forms = [form.strip().lower() for form in split_word_forms(word_text)]
-    answer_forms = [form.strip().lower() for form in split_word_forms(answer)]
+        return answer.strip() == word_text.strip()
+    forms = [form.strip() for form in split_word_forms(word_text)]
+    answer_forms = [form.strip() for form in split_word_forms(answer)]
     if len(answer_forms) == 1 and answer_forms[0] in forms:
         return True
     return sorted(answer_forms) == sorted(forms)
@@ -355,7 +355,7 @@ def sync_word_list(user, lang):
     path = word_list_path(user, lang)
     if not os.path.isfile(path):
         raise FileNotFoundError(
-            f"Word list not found: {path}\nRun: mashq init --user {user} --lang {lang}"
+            f"Word list not found: {path}\nRun: tartarus init --user {user} --lang {lang}"
         )
     with open(path, 'r', encoding='utf-8') as f:
         entries = json.load(f)
@@ -1355,22 +1355,22 @@ def cmd_report(args):
 
 def build_parser():
     parser = argparse.ArgumentParser(
-        prog='mashq',
+        prog='tartarus',
         description="An interactive CLI tool for vocabulary practice with multi-user, multi-language word lists.",
         formatter_class=argparse.RawTextHelpFormatter,
         epilog="""
 Usage Examples:
   # First time setup for a user/language (creates word_lists/<user>_<lang>.json)
-  ./mashq.sh init --user bahman --lang german
+  ./tartarus.sh init --user bahman --lang german
 
   # Start a practice session (4 words, 16 questions); audio on by default on macOS
-  ./mashq.sh practice --user bahman --lang german
+  ./tartarus.sh practice --user bahman --lang german
 
   # Same, but without audio
-  ./mashq.sh practice --user bahman --lang german --no-audio
+  ./tartarus.sh practice --user bahman --lang german --no-audio
 
   # View progress report
-  ./mashq.sh report --user bahman --lang german
+  ./tartarus.sh report --user bahman --lang german
 
 How question types are chosen:
   Every word has a score from 1.0 (struggling) to 9.0 (mastered). Each

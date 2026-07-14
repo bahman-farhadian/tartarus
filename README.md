@@ -1,8 +1,8 @@
-# Mashq
+# Tartarus
 
 A vocabulary practice tool with a **command-line interface** and a
 **self-hosted web UI**, backed by a local SQLite database and a
-spaced-repetition scoring system. Mashq is **language-agnostic and
+spaced-repetition scoring system. Tartarus is **language-agnostic and
 multi-user**: any user can maintain any number of word lists (one per
 language or topic), each entry being a word plus an optional definition (or
 multiple definitions, in any language). For example, an English word can have
@@ -11,7 +11,7 @@ practicing a new language while reviewing in your own.
 
 ## How it works
 
-- All data lives in a single local SQLite database (`data/mashq.db`).
+- All data lives in a single local SQLite database (`data/tartarus.db`).
 - Each **user** has their own tables, and each **word list** (one per
   `--lang`) is its own table: `words_<user>_<lang>`.
 - Every word has a **score** from `1.0` (struggling) to `9.0` (mastered),
@@ -148,7 +148,7 @@ make init user=bahman list=german
 ```
 
 This creates `data/word_lists/bahman_german.json` (an empty array) and the
-corresponding tables in `data/mashq.db`. Edit the JSON file to add words,
+corresponding tables in `data/tartarus.db`. Edit the JSON file to add words,
 then practice.
 
 ## Word list format
@@ -227,7 +227,7 @@ Entries without a valid CEFR level (A1–C2) are skipped by the generator; the r
 | C1 | 4 857 |
 | C2 | 307 |
 
-**Japanese vocabulary** (`erfan_hiragana/kanji/katakana_*.json`) — word (Japanese script) + `romanization — English translation` + bilingual example sentence. Sentence files (`erfan_*_sentences_*.json`) have the Japanese sentence as the word and the English translation as the definition.
+**Japanese vocabulary** (`tartarus_hiragana/kanji/katakana_*.json`) — word (Japanese script) + `romanization — English translation` + bilingual example sentence. Sentence files (`tartarus_*_sentences_*.json`) have the Japanese sentence as the word and the English translation as the definition.
 
 | Script | Level | Vocab | Sentences |
 |---|---|---|---|
@@ -247,7 +247,7 @@ Entries without a valid CEFR level (A1–C2) are skipped by the generator; the r
 | katakana | B2 | 1 997 | 1 996 |
 | katakana | C1 | 561 | 560 |
 
-Regenerate any of these with `utils/generate_mashq_json.py` — see
+Regenerate any of these with `utils/generate_tartarus_json.py` — see
 [Generating word lists from the source decks](#generating-word-lists-from-the-source-decks) below.
 
 All sub-list names (`german_a1`, `hiragana_b1`, etc.) don't auto-detect as a
@@ -256,7 +256,7 @@ language for audio. Always pass `--audio-lang` (CLI) or fill **Audio language**
 
 ```bash
 make practice user=bahman list=german_b1 opts="--audio-lang german"
-make practice user=erfan list=kanji_a1 opts="--audio-lang japanese"
+make practice user=tartarus list=kanji_a1 opts="--audio-lang japanese"
 ```
 
 ## Generating word lists from the source decks
@@ -264,28 +264,28 @@ make practice user=erfan list=kanji_a1 opts="--audio-lang japanese"
 Source files in `data/word_lists/` come from
 [github.com/vbvss199/Language-Learning-decks](https://github.com/vbvss199/Language-Learning-decks).
 To update them, replace the relevant `.json` file with the latest version from
-that repository, then re-run `utils/generate_mashq_json.py`.
+that repository, then re-run `utils/generate_tartarus_json.py`.
 
 Supported source files: `german.json`, `english.json`, `hiragana.json`,
 `kanji.json`, `katakana.json`.
 
 ```bash
 # Vocabulary mode — word + translation + bilingual example sentence
-python3 utils/generate_mashq_json.py --lang german   --user bahman
-python3 utils/generate_mashq_json.py --lang english  --user bahman
-python3 utils/generate_mashq_json.py --lang kanji    --user erfan
-python3 utils/generate_mashq_json.py --lang hiragana --user erfan
-python3 utils/generate_mashq_json.py --lang katakana --user erfan
+python3 utils/generate_tartarus_json.py --lang german   --user bahman
+python3 utils/generate_tartarus_json.py --lang english  --user bahman
+python3 utils/generate_tartarus_json.py --lang kanji    --user tartarus
+python3 utils/generate_tartarus_json.py --lang hiragana --user tartarus
+python3 utils/generate_tartarus_json.py --lang katakana --user tartarus
 
 # Sentence mode — word = native sentence, definition = English sentence
-python3 utils/generate_mashq_json.py --lang german --user bahman --sentences
-python3 utils/generate_mashq_json.py --lang kanji  --user erfan  --sentences
+python3 utils/generate_tartarus_json.py --lang german --user bahman --sentences
+python3 utils/generate_tartarus_json.py --lang kanji  --user tartarus  --sentences
 
 # Single CEFR level only
-python3 utils/generate_mashq_json.py --lang german --user bahman --cefr B1
+python3 utils/generate_tartarus_json.py --lang german --user bahman --cefr B1
 
 # Flashcard-quality entries only (filters to useful_for_flashcard=true)
-python3 utils/generate_mashq_json.py --lang kanji --user erfan --flashcard-only
+python3 utils/generate_tartarus_json.py --lang kanji --user tartarus --flashcard-only
 ```
 
 **Vocabulary mode** output: `<user>_<lang>_<level>.json`
@@ -406,29 +406,29 @@ make help
 The underlying CLI still provides detailed flag help when needed:
 
 ```bash
-./mashq.sh practice --help
-./mashq.sh report --help
-./mashq.sh init --help
+./tartarus.sh practice --help
+./tartarus.sh report --help
+./tartarus.sh init --help
 ```
 
 ## Project structure
 
 ```
-mashq.py               # main script (single file)
-mashq.sh               # run through this wrapper, not python3 directly
-mashq_web.py           # web server (JSON API + static frontend)
-mashq_web.sh           # run through this wrapper, not python3 directly
-Makefile               # normal web and CLI entry points (`make help`)
+tartarus.py               # main script (single file)
+tartarus.sh               # run through this wrapper, not python3 directly
+tartarus_web.py           # web server (JSON API + static frontend)
+tartarus_web.sh           # run through this wrapper, not python3 directly
+Makefile                  # normal web and CLI entry points (`make help`)
 utils/
-  make_mashq_video.py         # standalone: generate a vocab-drill video
-  generate_mashq_json.py   # generate word lists from source decks
-make_mashq_video.sh       # run through this wrapper
+  make_tartarus_video.py         # standalone: generate a vocab-drill video
+  generate_tartarus_json.py   # generate word lists from source decks
+make_tartarus_video.sh       # run through this wrapper
 web/
   index.html              # frontend markup
   style.css               # Catppuccin Mocha dark theme
   app.js                  # frontend logic
 data/
-  mashq.db             # SQLite database (auto-created)
+  tartarus.db             # SQLite database (auto-created)
   word_lists/
     german.json           # source deck: 20 280 German words (A1–C2)
     english.json          # source deck: 20 708 English words (A1–C2)
@@ -573,26 +573,26 @@ make init user=bahman list=french
 
 ## Vocab drill video (optional side feature)
 
-`utils/make_mashq_video.py` is a standalone script that turns one of your
+`utils/make_tartarus_video.py` is a standalone script that turns one of your
 word lists into a video: each word is shown (with its meaning) on a dark grey
 background while the audio is spoken several times in a row, so you can
 review a list "Memrise-flashcard" style in a video player. It's independent
 of the CLI/web UI and doesn't touch the database.
 
 ```bash
-chmod +x make_mashq_video.sh   # one-time, if not already executable
+chmod +x make_tartarus_video.sh   # one-time, if not already executable
 
 # Simple list — output goes to videos/bahman_german.mp4
-./make_mashq_video.sh --user bahman --lang german
+./make_tartarus_video.sh --user bahman --lang german
 
 # Sub-list with audio language override (same pattern as practice --audio-lang)
-./make_mashq_video.sh --user bahman --lang german_home --audio-lang german
+./make_tartarus_video.sh --user bahman --lang german_home --audio-lang german
 
 # Quick test: first 5 words only
-./make_mashq_video.sh --user bahman --lang german --number 5
+./make_tartarus_video.sh --user bahman --lang german --number 5
 
 # Custom output path
-./make_mashq_video.sh --user bahman --lang german --output ~/Desktop/german_drill.mp4
+./make_tartarus_video.sh --user bahman --lang german --output ~/Desktop/german_drill.mp4
 ```
 
 Each word is repeated (default `4` times), with a 1-second hold between

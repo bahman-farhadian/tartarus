@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="dark">
   <meta name="theme-color" content="#11111b">
-  <title>Mashq</title>
+  <title>Tartarus</title>
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
   <header>
-    <h1>Mashq</h1>
+    <h1>Tartarus</h1>
     <nav>
       <button type="button" data-view="practice" class="active">Practice</button>
       <button type="button" data-view="report">Report</button>
@@ -221,9 +221,9 @@
     <!-- About -->
     <section id="view-about" class="view">
       <div class="card">
-        <h2>About Mashq</h2>
+        <h2>About Tartarus</h2>
         <p>
-          Mashq is a self-hosted, Memrise-style vocabulary trainer, written
+          Tartarus is a self-hosted, Memrise-style vocabulary trainer, written
           by <strong>Bahman Farhadian</strong>. It keeps everything &mdash;
           your word lists, scores, and practice history &mdash; in a single
           local SQLite database that you fully own and control.
@@ -250,9 +250,9 @@
 
         <h3>The database is the source of truth</h3>
         <p>
-          The CLI (<code>mashq.sh</code>) and this web UI
-          (<code>mashq_web.sh</code>) both read and write the exact same
-          <code>data/mashq.db</code> SQLite file. Every answer updates the
+          The CLI (<code>tartarus.sh</code>) and this web UI
+          (<code>tartarus_web.sh</code>) both read and write the exact same
+          <code>data/tartarus.db</code> SQLite file. Every answer updates the
           database immediately, and ending a session &mdash; whether by
           clicking <strong>!!</strong> here, pressing <code>Ctrl+C</code> in
           the terminal, or letting a session finish naturally &mdash; writes

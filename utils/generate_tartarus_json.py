@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Generate Mashq word-list JSON files from the bundled source decks.
+Generate Tartarus word-list JSON files from the bundled source decks.
 
 Source: https://github.com/vbvss199/Language-Learning-decks
 
@@ -11,19 +11,19 @@ Supported source files (place in data/word_lists/):
 Usage
 -----
   # Vocabulary mode (one file per CEFR level)
-  python3 utils/generate_mashq_json.py --lang german  --user bahman
-  python3 utils/generate_mashq_json.py --lang english --user bahman
-  python3 utils/generate_mashq_json.py --lang kanji   --user erfan
+  python3 utils/generate_tartarus_json.py --lang german  --user bahman
+  python3 utils/generate_tartarus_json.py --lang english --user bahman
+  python3 utils/generate_tartarus_json.py --lang kanji   --user tartarus
 
   # Sentence mode: word = native sentence, definition = English sentence
-  python3 utils/generate_mashq_json.py --lang german --user bahman --sentences
-  python3 utils/generate_mashq_json.py --lang kanji  --user erfan  --sentences
+  python3 utils/generate_tartarus_json.py --lang german --user bahman --sentences
+  python3 utils/generate_tartarus_json.py --lang kanji  --user tartarus  --sentences
 
   # Single CEFR level
-  python3 utils/generate_mashq_json.py --lang german --user bahman --cefr B1
+  python3 utils/generate_tartarus_json.py --lang german --user bahman --cefr B1
 
   # Flashcard-quality entries only (useful_for_flashcard = true)
-  python3 utils/generate_mashq_json.py --lang kanji --user erfan --flashcard-only
+  python3 utils/generate_tartarus_json.py --lang kanji --user tartarus --flashcard-only
 
 Output
 ------
@@ -31,7 +31,7 @@ Output
   Sentences  : data/word_lists/<user>_<lang>_sentences_<level>.json
 
 Vocabulary definition format
------------------------------
+----------------------------
   German : line 1 = english_translation
            line 2 = "native sentence — english sentence"
            word   = "der/die/das Word" for nouns, bare word otherwise
@@ -177,13 +177,13 @@ def generate(lang, user, cefr_filter=None, sentences=False, flashcard_only=False
 
     suffix = f'_{lang}_sentences_a1' if sentences else f'_{lang}_a1'
     audio_hint = ' --audio-lang japanese' if lang in JAPANESE_LANGS else ''
-    print(f'\nDone. Run: ./mashq.sh practice --user {user} --lang {suffix[1:]}{audio_hint}')
+    print(f'\nDone. Run: ./tartarus.sh practice --user {user} --lang {suffix[1:]}{audio_hint}')
 
 
 def main():
     valid_langs = ['german', 'english', 'hiragana', 'kanji', 'katakana']
     parser = argparse.ArgumentParser(
-        description='Generate Mashq JSON word lists from the bundled source decks.'
+        description='Generate Tartarus JSON word lists from the bundled source decks.'
     )
     parser.add_argument('--lang', required=True, choices=valid_langs,
                         help='Source deck language.')

@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 """
-Mashq web server: a localhost-only JSON API + static frontend that wraps
-the same SQLite-backed scoring logic as the mashq.py CLI. Standard
+Tartarus web server: a localhost-only JSON API + static frontend that wraps
+the same SQLite-backed scoring logic as the tartarus.py CLI. Standard
 library only - no extra packages needed.
 
-Run via: ./mashq_web.sh   (serves http://127.0.0.1:9999)
+Run via: ./tartarus_web.sh   (serves http://127.0.0.1:9999)
 """
 import os
 import sys
@@ -17,7 +17,7 @@ import http.server
 import uuid
 
 from datetime import date, timedelta
-import mashq as ll
+import tartarus as ll
 
 HOST = '127.0.0.1'
 PORT = 9999
@@ -40,7 +40,7 @@ DRILL_TARGET = 9
 SESSIONS = {}
 
 
-# --- Helpers shared with the per-word question handlers in mashq.py ---
+# --- Helpers shared with the per-word question handlers in tartarus.py ---
 def gauge_dots(score):
     if score >= 9:
         return '●●●'
