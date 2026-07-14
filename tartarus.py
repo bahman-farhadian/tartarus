@@ -256,7 +256,6 @@ def ensure_word_table(conn, user, lang):
             times_correct INTEGER NOT NULL DEFAULT 0,
             times_incorrect INTEGER NOT NULL DEFAULT 0,
             times_drilled INTEGER NOT NULL DEFAULT 0,
-            times_flagged INTEGER NOT NULL DEFAULT 0,
             times_mastered INTEGER NOT NULL DEFAULT 0
         )
     ''')
@@ -304,7 +303,6 @@ def migrate_sentence_score_to_integer(conn, table):
             times_correct INTEGER NOT NULL DEFAULT 0,
             times_incorrect INTEGER NOT NULL DEFAULT 0,
             times_drilled INTEGER NOT NULL DEFAULT 0,
-            times_flagged INTEGER NOT NULL DEFAULT 0,
             times_mastered INTEGER NOT NULL DEFAULT 0,
             leitner_box INTEGER NOT NULL DEFAULT 1,
             last_known_review_at TEXT
@@ -314,12 +312,12 @@ def migrate_sentence_score_to_integer(conn, table):
         INSERT INTO "{tmp}" (
             id, text, definition, score, last_practiced, last_decay_at, active,
             times_practiced, times_correct, times_incorrect, times_drilled,
-            times_flagged, times_mastered, leitner_box, last_known_review_at
+            times_mastered, leitner_box, last_known_review_at
         )
         SELECT
             id, text, definition, CAST(ROUND(score) AS INTEGER), last_practiced,
             last_decay_at, active, times_practiced, times_correct,
-            times_incorrect, times_drilled, times_flagged, times_mastered,
+            times_incorrect, times_drilled, times_mastered,
             leitner_box, last_known_review_at
         FROM "{table}"
     ''')
@@ -487,7 +485,6 @@ FIXED_SCORES = {
 RESULT_COUNTERS = {
     'correct': 'times_correct',
     'incorrect': 'times_incorrect',
-    'flagged': 'times_flagged',
     'mastered': 'times_mastered',
     'drilled': 'times_drilled',
 }
@@ -593,7 +590,7 @@ def update_word_score(user, lang, word_id, result_status, current_score=None, cu
     """Updates a word's score + Leitner box and increments its history counters.
 
     correct/incorrect: score computed from current_score; box advances or resets.
-    mastered/flagged/drilled: fixed score; box set to 5/1/unchanged respectively.
+    mastered/flagged/drilled: fixed score; box set to 5/1/1 respectively.
 
     Leitner integrity: a word already mastered (score 9) that is practiced again
     on the SAME day is NOT a genuine review. Its box must not advance and its

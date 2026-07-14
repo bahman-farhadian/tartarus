@@ -955,7 +955,7 @@ def word_list_stats(user, lang, due_today_only=False):
         # Only select words that are due today (next review is today or earlier)
         query = f'''
             SELECT text, score, active, times_practiced, times_correct, times_incorrect,
-                   times_drilled, times_flagged, times_mastered, last_practiced, leitner_box, last_known_review_at
+                   times_drilled, times_mastered, last_practiced, leitner_box, last_known_review_at
             FROM "{table}" WHERE active = 1 AND (
                 last_practiced IS NULL OR
                 julianday(?, 'localtime') - julianday(last_practiced) >=
@@ -966,14 +966,14 @@ def word_list_stats(user, lang, due_today_only=False):
     else:
         rows = conn.execute(
             f'SELECT text, score, active, times_practiced, times_correct, times_incorrect, '
-            f'times_drilled, times_flagged, times_mastered, last_practiced, leitner_box, last_known_review_at '
+            f'times_drilled, times_mastered, last_practiced, leitner_box, last_known_review_at '
             f'FROM "{table}" ORDER BY active DESC, score ASC, text ASC'
         ).fetchall()
     
     conn.close()
     words = []
     for (text, score, active, practiced, correct, incorrect,
-         drilled, flagged, mastered, last_practiced, leitner_box, last_known_review_at) in rows:
+         drilled, mastered, last_practiced, leitner_box, last_known_review_at) in rows:
         box = leitner_box or 1
         if last_practiced:
             interval = ll.LEITNER_INTERVALS.get(box, 1)
@@ -992,7 +992,6 @@ def word_list_stats(user, lang, due_today_only=False):
             'times_correct': correct,
             'times_incorrect': incorrect,
             'times_drilled': drilled,
-            'times_flagged': flagged,
             'times_mastered': mastered,
             'last_practiced': last_practiced,
             'last_known_review_at': last_known_review_at,

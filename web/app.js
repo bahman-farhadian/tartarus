@@ -147,7 +147,7 @@
   btnReveal.addEventListener('click', revealWord);
 
   function replayAudio() {
-    if (currentQuestion) speak(currentQuestion.word);
+    if (currentQuestion) speak(currentQuestion.word_unmasked || currentQuestion.word);
   }
 
   function revealWord() {
@@ -450,7 +450,7 @@
 
     answerInput.value = '';
     answerInput.focus();
-    speak(currentQuestion.word);
+    speak(currentQuestion.word_unmasked || currentQuestion.word);
   }
 
   function showSummary(session) {
