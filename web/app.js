@@ -105,6 +105,7 @@
   };
 
   document.getElementById('start-session').addEventListener('click', startSession);
+  const drillAllInput = document.getElementById('practice-drill-all');
   const drillModeInput = document.getElementById('practice-drill-mode');
   const knownDrillModeInput = document.getElementById('practice-known-drill-mode');
   const instantDrillInput = document.getElementById('practice-instant-drill');
@@ -113,7 +114,7 @@
   }
   function syncSentenceDrillOptions() {
     const sentenceList = isSentenceListName(document.getElementById('practice-lang')?.value);
-    [drillModeInput, knownDrillModeInput, instantDrillInput].forEach((input) => {
+    [drillAllInput, drillModeInput, knownDrillModeInput, instantDrillInput].forEach((input) => {
       if (!input) return;
       input.disabled = sentenceList;
       input.closest('.check-option')?.classList.toggle('disabled', sentenceList);
@@ -125,6 +126,13 @@
   });
   knownDrillModeInput.addEventListener('change', () => {
     if (knownDrillModeInput.checked) drillModeInput.checked = false;
+  });
+  drillAllInput.addEventListener('change', () => {
+    if (drillAllInput.checked) {
+      drillModeInput.checked = false;
+      knownDrillModeInput.checked = false;
+      instantDrillInput.checked = false;
+    }
   });
   // Only text inputs get Enter-to-submit; selects use their native behaviour.
   document.getElementById('practice-audio-lang').addEventListener('keydown', (e) => {
@@ -209,6 +217,9 @@
     const audioLang = (document.getElementById('practice-audio-lang')?.value ?? '').trim() || undefined;
     const drillMode = drillModeInput?.checked ?? false;
     const knownDrillMode = knownDrillModeInput?.checked ?? false;
+    const drillAll = drillAllInput?.checked ?? false;
+    const drillMode = drillModeInput?.checked ?? false;
+    const knownDrillMode = knownDrillModeInput?.checked ?? false;
     const instantDrill = instantDrillInput?.checked ?? false;
     const wpmInput = document.getElementById('practice-wpm');
     let wpm = 128;
@@ -224,6 +235,7 @@
     try {
       const body = { user, lang, wpm };
       if (audioLang) body.audio_lang = audioLang;
+      if (drillAll) body.drill_all = true;
       if (drillMode) body.drill_mode = true;
       if (knownDrillMode) body.known_drill_mode = true;
       if (instantDrill) body.instant_drill = true;

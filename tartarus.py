@@ -1088,7 +1088,7 @@ def ask_production(user, lang, word_id, word_text, definition, score, audio, hea
     return 'incorrect', f"Incorrect. The word was: {Colors.RED}{word_text}{Colors.ENDC}", answer
 
 
-def start_practice_session(user, lang, audio, audio_lang=None, drill_all=False, drill_mode=False, wpm=128):
+def start_practice_session(user, lang, audio, audio_lang=None, drill_all=False, drill_mode=False, instant_drill=False, known_drill_mode=False, wpm=128):
     """
     Up to MAX_QUESTIONS unique words per session using Leitner spaced repetition.
     Due words (box interval elapsed) come first; each word is asked exactly once.
@@ -1099,9 +1099,9 @@ def start_practice_session(user, lang, audio, audio_lang=None, drill_all=False, 
     exactly 1 per correct answer from 1 to 9, and drill is disabled.
     """
     sentence_mode = is_sentence_list(lang)
-    if sentence_mode and (drill_all or drill_mode):
+    if sentence_mode and (drill_all or drill_mode or known_drill_mode or instant_drill):
         raise ValueError("Sentence lists do not support drill modes.")
-    words = get_words_for_practice(user, lang, DRILL_WORDS if drill_mode else MAX_QUESTIONS, drill_mode=drill_mode)
+    words = get_words_for_practice(user, lang, DRILL_WORDS if (drill_mode or drill_all) else MAX_QUESTIONS, drill_mode=drill_mode, known_drill_mode=known_drill_mode)
     queue = [{'id': r[0], 'word': r[1], 'def': r[2], 'score': r[3], 'box': r[4]}
              for r in words]
 
@@ -1180,6 +1180,12 @@ def start_practice_session(user, lang, audio, audio_lang=None, drill_all=False, 
                 correct_count += 1
             elif status == 'incorrect':
                 incorrect_list.append((word_text, attempt))
+                if instant_drill:
+                    drill_word(user, lang, word_text, word_id, definition,
+                               header_text(), audio, audio_lang=audio_lang,
+                               update_score=False, wpm=wpm)
+                    record_as_drilled(user, lang, word_id)
+                    drilled_words_count += 1
 
             if message:
                 print(f"{word_header} {message}")
@@ -1427,6 +1433,8 @@ def cmd_practice(args):
                            audio_lang=args.audio_lang or None,
                            drill_all=args.drill,
                            drill_mode=args.drill_mode,
+                           instant_drill=args.instant_drill,
+                           known_drill_mode=args.known_drill_mode,
                            wpm=args.wpm)
 
 
@@ -1501,6 +1509,12 @@ Developed by Bahman Farhadian.
     practice_parser.add_argument('--drill-mode', action='store_true',
                                   help="Review drill: practice your high-mistake words without changing\n"
                                        "their scores. Completing a drill reduces that word's mistake count.")
+    practice_parser.add_argument('--instant-drill', action='store_true',
+                                  help="Instant drill: after any incorrect answer, immediately start a\n"
+                                       "9-repetition drill for that word (score unchanged).")
+    practice_parser.add_argument('--known-drill-mode', action='store_true',
+                                  help="Known drill: review mastered words that were never reviewed,\n"
+                                       "then oldest review first. Completing a drill reduces mistake count.")
     practice_parser.add_argument('--wpm', type=int, default=128,
                                   help="Speech rate in words per minute for macOS 'say' (default 128;\n"
                                        "clear for language learners; lower = slower, higher = faster).")

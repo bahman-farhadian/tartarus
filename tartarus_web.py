@@ -191,14 +191,14 @@ DRILL_WORDS = ll.DRILL_WORDS
 
 
 # --- Session lifecycle ---
-def start_session(user, lang, audio_lang=None, drill_mode=False, known_drill_mode=False, instant_drill=False, wpm=128):
+def start_session(user, lang, audio_lang=None, drill_all=False, drill_mode=False, known_drill_mode=False, instant_drill=False, wpm=128):
     ll.sync_word_list(user, lang)
     sentence_mode = ll.is_sentence_list(lang)
-    if sentence_mode and (drill_mode or known_drill_mode or instant_drill):
+    if sentence_mode and (drill_all or drill_mode or known_drill_mode or instant_drill):
         raise ValueError("Sentence lists do not support drill modes.")
     words = ll.get_words_for_practice(
         user, lang,
-        DRILL_WORDS if drill_mode else MAX_QUESTIONS,
+        DRILL_WORDS if (drill_mode or drill_all) else MAX_QUESTIONS,
         drill_mode=drill_mode,
         known_drill_mode=known_drill_mode,
     )
@@ -218,10 +218,11 @@ def start_session(user, lang, audio_lang=None, drill_mode=False, known_drill_mod
         'queue': queue,
         'total': len(queue),
         'practiced': 0,
-        'max_questions': DRILL_WORDS if drill_mode else MAX_QUESTIONS,
+        'max_questions': DRILL_WORDS if (drill_mode or drill_all) else MAX_QUESTIONS,
         'drill_mode': drill_mode,
         'known_drill_mode': known_drill_mode,
         'instant_drill': instant_drill,
+        'drill_all': drill_all,
         'sentence_mode': sentence_mode,
         'correct': 0,
         'drilled': 0,
@@ -1219,6 +1220,7 @@ class Handler(http.server.BaseHTTPRequestHandler):
             user = str(payload.get('user', '')).strip()
             lang = str(payload.get('lang', '')).strip()
             audio_lang = str(payload.get('audio_lang', '')).strip() or None
+            drill_all = bool(payload.get('drill_all', False))
             drill_mode = bool(payload.get('drill_mode', False))
             known_drill_mode = bool(payload.get('known_drill_mode', False))
             instant_drill = bool(payload.get('instant_drill', False))
@@ -1230,6 +1232,7 @@ class Handler(http.server.BaseHTTPRequestHandler):
                 session_id, session = start_session(
                     user, lang,
                     audio_lang=audio_lang,
+                    drill_all=drill_all,
                     drill_mode=drill_mode and not known_drill_mode,
                     known_drill_mode=known_drill_mode,
                     instant_drill=instant_drill,
