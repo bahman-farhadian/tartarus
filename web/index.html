@@ -79,10 +79,10 @@
         </div>
         <div class="start-row">
           <button id="start-session" class="primary" type="button">Start session</button>
-          <label class="check-option check-option-inline" title="Play audio during practice">
+          <label class="check-option check-option-audio" title="Play audio during practice">
             <input id="practice-audio" type="checkbox" checked>
             <span class="switch-control"></span>
-            <span class="check-copy"><span class="check-title">Audio</span></span>
+            <span class="check-copy"><span class="check-title">Play audio</span></span>
           </label>
         </div>
       </div>
@@ -323,24 +323,5 @@
   </main>
 
   <script src="/app.js?v=20260715"></script>
-  <script>
-    // Fallback: populate user dropdown if main JS fails
-    (async () => {
-      const userSel = document.getElementById('practice-user');
-      if (userSel && userSel.options.length <= 1) {
-        try {
-          const resp = await fetch('/api/wordlists');
-          const data = await resp.json();
-          const users = [...new Set(data.wordlists.map(w => w.user))].sort();
-          users.forEach(u => {
-            const opt = document.createElement('option');
-            opt.value = u;
-            opt.textContent = u;
-            userSel.appendChild(opt);
-          });
-        } catch (_) {}
-      }
-    })();
-  </script>
 </body>
 </html>

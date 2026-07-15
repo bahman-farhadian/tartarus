@@ -218,8 +218,6 @@
     const drillMode = drillModeInput?.checked ?? false;
     const knownDrillMode = knownDrillModeInput?.checked ?? false;
     const drillAll = drillAllInput?.checked ?? false;
-    const drillMode = drillModeInput?.checked ?? false;
-    const knownDrillMode = knownDrillModeInput?.checked ?? false;
     const instantDrill = instantDrillInput?.checked ?? false;
     const wpmInput = document.getElementById('practice-wpm');
     let wpm = 128;

@@ -372,40 +372,9 @@ button:disabled {
   justify-content: flex-start;
 }
 
-.check-option-inline {
-  min-height: 32px;
-  padding: 0.35rem 0.7rem;
-  background: var(--surface0);
-  border: 1px solid var(--surface1);
+.check-option-audio {
+  width: auto;
   flex-shrink: 0;
-}
-
-.check-option-inline:hover {
-  background: var(--surface1);
-  border-color: var(--mauve);
-}
-
-.check-option-inline .switch-control {
-  width: 1.6rem;
-  height: 0.9rem;
-}
-
-.check-option-inline .switch-control::after {
-  width: 0.5rem;
-  height: 0.5rem;
-}
-
-.check-option-inline input:checked + .switch-control::after {
-  transform: translateX(0.65rem);
-}
-
-.check-option-inline .check-copy {
-  gap: 0;
-}
-
-.check-option-inline .check-title {
-  font-size: 0.8rem;
-  white-space: nowrap;
 }
 
 .session-header {

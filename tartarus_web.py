@@ -490,7 +490,13 @@ def list_word_lists():
         # User-specific for user without sessions yet - still show it
         result.append({'user': first_part, 'lang': rest, 'shared': False})
     
-    return result
+    # A personal list shadows a shared fallback with the same user/language.
+    unique = {}
+    for item in result:
+        key = (item['user'], item['lang'])
+        if key not in unique or not item['shared']:
+            unique[key] = item
+    return [unique[key] for key in sorted(unique)]
 
 
 def report_data(user, lang=None):
