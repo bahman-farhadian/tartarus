@@ -280,7 +280,7 @@ def next_question(session):
 
 def finalize_session(session, ended_early=False):
     elapsed = int(time.time() - session['start_time'])
-    if session['practiced'] > 0 and not session.get('fast_mode'):
+    if session['practiced'] > 0:
         ll.log_session(
             session['user'], session['lang'], elapsed, session['practiced'],
             session['correct'], len(session['incorrect']), session['drilled']
