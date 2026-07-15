@@ -714,8 +714,9 @@
   // Populate a user <select> and rebuild the corresponding lang <select>.
   function refreshUserSelect(userSelId, langSelId, opts = {}) {
     const userSel = document.getElementById(userSelId);
+    if (!userSel) return;
     const prev = userSel.value;
-    const users = [...new Set(allWordLists.map((w) => w.user))].sort();
+    const users = [...new Set((allWordLists || []).map((w) => w.user))].sort();
     userSel.innerHTML = '<option value="">Select user…</option>';
     users.forEach((u) => {
       const opt = document.createElement('option');
@@ -862,40 +863,40 @@
     try {
       const data = await api('/api/wordlists');
       allWordLists = data.wordlists || [];
-
-      // Refresh all cascading dropdowns across the app.
-      refreshUserSelect('practice-user', 'practice-lang');
-      refreshUserSelect('report-user',   'report-lang',  { allLangsDefault: true });
-
-      refreshUserSelect('editor-user',   'editor-lang');
-
-      // Render the Word Lists tab.
-      if (!allWordLists.length) {
-        listsBody.innerHTML = '<span class="muted">No word lists yet. Create one below.</span>';
-        return;
-      }
-      let html = '<ul class="summary-list">';
-      allWordLists.forEach((wl) => {
-        html += `<li><button class="link-btn" data-user="${escapeHtml(wl.user)}" data-lang="${escapeHtml(wl.lang)}">`
-          + `<strong>${escapeHtml(wl.user)}</strong> / ${escapeHtml(wl.lang)}</button> `
-          + `&mdash; <code>data/word_lists/${escapeHtml(wl.user)}_${escapeHtml(wl.lang)}.json</code></li>`;
-      });
-      html += '</ul>';
-      listsBody.innerHTML = html;
-      listsBody.querySelectorAll('.link-btn').forEach((btn) => {
-        btn.addEventListener('click', () => {
-          // Pre-select user & lang in the editor dropdowns then load.
-          const uSel = document.getElementById('editor-user');
-          const lSel = document.getElementById('editor-lang');
-          uSel.value = btn.dataset.user;
-          refreshLangSelect('editor-user', 'editor-lang');
-          lSel.value = btn.dataset.lang;
-          loadEditor();
-        });
-      });
     } catch (err) {
+      console.error('Failed to load word lists:', err);
       listsBody.innerHTML = `<span class="error">${escapeHtml(err.message)}</span>`;
+      allWordLists = [];
     }
+
+    // Always refresh dropdowns, even if API failed (will use cached/empty data).
+    refreshUserSelect('practice-user', 'practice-lang');
+    refreshUserSelect('report-user', 'report-lang', { allLangsDefault: true });
+    refreshUserSelect('editor-user', 'editor-lang');
+
+    // Render the Word Lists tab.
+    if (!allWordLists.length) {
+      listsBody.innerHTML = '<span class="muted">No word lists yet. Create one below.</span>';
+      return;
+    }
+    let html = '<ul class="summary-list">';
+    allWordLists.forEach((wl) => {
+      html += `<li><button class="link-btn" data-user="${escapeHtml(wl.user)}" data-lang="${escapeHtml(wl.lang)}">`
+        + `<strong>${escapeHtml(wl.user)}</strong> / ${escapeHtml(wl.lang)}</button> `
+        + `&mdash; <code>data/word_lists/${escapeHtml(wl.user)}_${escapeHtml(wl.lang)}.json</code></li>`;
+    });
+    html += '</ul>';
+    listsBody.innerHTML = html;
+    listsBody.querySelectorAll('.link-btn').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const uSel = document.getElementById('editor-user');
+        const lSel = document.getElementById('editor-lang');
+        uSel.value = btn.dataset.user;
+        refreshLangSelect('editor-user', 'editor-lang');
+        lSel.value = btn.dataset.lang;
+        loadEditor();
+      });
+    });
   }
 
   // Load word lists immediately so dropdowns are populated on first page load.
@@ -904,6 +905,24 @@
     const user = document.getElementById('practice-user').value;
     if (user) loadUserProgress(user);
   });
+
+  // Fallback: ensure dropdowns are populated even if initial load failed
+  async function ensureDropdownsPopulated(retries = 3) {
+    const userSel = document.getElementById('practice-user');
+    if (!userSel || userSel.options.length > 1) return;
+    for (let i = 0; i < retries; i++) {
+      try {
+        await loadWordLists();
+        if (userSel.options.length > 1) break;
+      } catch (_) {}
+      await new Promise(r => setTimeout(r, 200 * (i + 1)));
+    }
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', ensureDropdownsPopulated);
+  } else {
+    ensureDropdownsPopulated();
+  }
 
   // --- Dashboard card renderers (used inside loadReport) ---
 
