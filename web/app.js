@@ -67,6 +67,7 @@
   let sessionId = null;
   let sessionLang = '';
   let sessionWpm = 128;
+  let sessionFastMode = false;
   let currentQuestion = null;
   let drillActive = false;
   let answering = false;
@@ -83,6 +84,7 @@
   const definitionLines = document.getElementById('definition-lines');
   const answerBlock = document.getElementById('answer-block');
   const answerInput = document.getElementById('answer-input');
+  const submitAnswerButton = document.getElementById('submit-answer');
   const drillBlock = document.getElementById('drill-block');
   const drillRep = document.getElementById('drill-rep');
   const drillStreak = document.getElementById('drill-streak');
@@ -109,6 +111,7 @@
   const drillModeInput = document.getElementById('practice-drill-mode');
   const knownDrillModeInput = document.getElementById('practice-known-drill-mode');
   const instantDrillInput = document.getElementById('practice-instant-drill');
+  const fastModeInput = document.getElementById('practice-fast-mode');
   function isSentenceListName(lang) {
     return String(lang || '').toLowerCase().includes('sentences');
   }
@@ -134,6 +137,19 @@
       instantDrillInput.checked = false;
     }
   });
+  fastModeInput.addEventListener('change', () => {
+    if (fastModeInput.checked) {
+      drillAllInput.checked = false;
+      drillModeInput.checked = false;
+      knownDrillModeInput.checked = false;
+      instantDrillInput.checked = false;
+    }
+  });
+  [drillAllInput, drillModeInput, knownDrillModeInput, instantDrillInput].forEach((input) => {
+    input.addEventListener('change', () => {
+      if (input.checked) fastModeInput.checked = false;
+    });
+  });
   // Only text inputs get Enter-to-submit; selects use their native behaviour.
   document.getElementById('practice-audio-lang').addEventListener('keydown', (e) => {
     if (e.key === 'Enter') { e.preventDefault(); startSession(); }
@@ -143,13 +159,19 @@
     setupCard.style.display = 'block';
     document.getElementById('start-session').focus();
   });
-  document.getElementById('submit-answer').addEventListener('click', submitTextAnswer);
+  submitAnswerButton.addEventListener('click', submitTextAnswer);
   answerInput.addEventListener('keydown', (e) => {
     if (e.key === 'Enter') { e.preventDefault(); submitTextAnswer(); }
     // Prevent Tab from escaping the input to action buttons; Backspace is
     // handled in the input so no need to guard it here.
     if (e.key === 'Tab') { e.preventDefault(); }
   });
+  answerInput.addEventListener('paste', (e) => e.preventDefault());
+
+  function setAnswerInputEnabled(enabled) {
+    answerInput.disabled = !enabled;
+    submitAnswerButton.disabled = !enabled;
+  }
 
   btnReplay.addEventListener('click', replayAudio);
   btnReveal.addEventListener('click', revealWord);
@@ -219,6 +241,7 @@
     const knownDrillMode = knownDrillModeInput?.checked ?? false;
     const drillAll = drillAllInput?.checked ?? false;
     const instantDrill = instantDrillInput?.checked ?? false;
+    const fastMode = fastModeInput?.checked ?? false;
     const wpmInput = document.getElementById('practice-wpm');
     let wpm = 128;
     if (wpmInput) {
@@ -237,6 +260,7 @@
       if (drillMode) body.drill_mode = true;
       if (knownDrillMode) body.known_drill_mode = true;
       if (instantDrill) body.instant_drill = true;
+      if (fastMode) body.fast_mode = true;
       const data = await api('/api/practice/start', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -245,6 +269,7 @@
       sessionId = data.session_id;
       sessionLang = data.lang || '';
       sessionWpm = wpm;
+      sessionFastMode = !!data.fast_mode;
       setupCard.style.display = 'none';
       summaryCard.style.display = 'none';
       sessionCard.style.display = 'block';
@@ -258,6 +283,7 @@
     currentQuestion = question;
     drillActive = false;
     answering = false;
+    setAnswerInputEnabled(true);
     feedback.textContent = '';
     feedback.className = 'feedback';
     drillBlock.style.display = 'none';
@@ -284,6 +310,29 @@
     sessionGauge.textContent = `${question.gauge} (score: ${formatScore(question)})`;
     sessionGauge.className = `gauge band-${question.band}`;
     sessionType.textContent = TYPE_LABELS[question.type] || question.type;
+
+    if (question.fast_mode) {
+      sessionProgress.textContent = `Fast mode · ${progress.questions ?? 0}/${progress.max_questions ?? progress.total} · Correct ${progress.correct ?? 0}`;
+      sessionGauge.textContent = 'Mastered';
+      sessionGauge.className = 'gauge';
+      sessionType.textContent = 'Fast mode';
+      wordDisplay.textContent = question.word_unmasked || question.word;
+      wordDisplay.className = `word-display ${question.gender}`;
+      definitionLines.innerHTML = '';
+      if (question.definition && question.definition.length) {
+        question.definition.forEach((line) => {
+          const div = document.createElement('div');
+          div.textContent = line;
+          definitionLines.appendChild(div);
+        });
+      }
+      answerBlock.style.display = 'flex';
+      answerInput.value = '';
+      setActionButtons(true);
+      speak(question.word_unmasked || question.word);
+      answerInput.focus();
+      return;
+    }
 
     wordDisplay.textContent = question.word;
     wordDisplay.className = `word-display ${question.gender}`;
@@ -341,10 +390,11 @@
   }
 
   function setActionButtons(enabled) {
-    btnFlag.disabled = !enabled;
-    btnMaster.disabled = !enabled;
+    btnFlag.disabled = !enabled || sessionFastMode;
+    btnMaster.disabled = !enabled || sessionFastMode;
     // Drill is disabled for sentence practice (sentences are too long to drill).
-    btnDrill.disabled = !enabled || (currentQuestion && currentQuestion.sentence_mode);
+    btnDrill.disabled = !enabled || sessionFastMode || (currentQuestion && currentQuestion.sentence_mode);
+    btnReveal.disabled = !enabled || sessionFastMode;
   }
 
   function formatScore(question) {
@@ -364,6 +414,7 @@
   async function sendAnswer(answer) {
     if (!sessionId || answering) return;
     answering = true;
+    setAnswerInputEnabled(false);
     setActionButtons(false);
     try {
       const data = await api('/api/practice/answer', {
@@ -374,6 +425,7 @@
       handleAnswerResult(data);
     } catch (err) {
       answering = false;
+      setAnswerInputEnabled(true);
       setActionButtons(true);
       showError(practiceError, err.message);
     }
@@ -386,8 +438,21 @@
       return;
     }
 
+    if (data.fast_retry) {
+      answering = false;
+      setAnswerInputEnabled(true);
+      setActionButtons(true);
+      feedback.textContent = data.message || 'Incorrect. Try again.';
+      feedback.className = 'feedback incorrect';
+      answerInput.value = '';
+      answerInput.focus();
+      speak(currentQuestion.word_unmasked || currentQuestion.word);
+      return;
+    }
+
     if (data.result === 'sentence_retry') {
       answering = false;
+      setAnswerInputEnabled(true);
       setActionButtons(true);
       feedback.textContent = data.message || 'Incorrect. Try one more time.';
       feedback.className = 'feedback incorrect';
@@ -429,6 +494,7 @@
 
   function showDrill(drill) {
     drillActive = true;
+    setAnswerInputEnabled(true);
     drillBlock.style.display = 'block';
     answerBlock.style.display = 'flex';
     setActionButtons(false);
@@ -464,10 +530,30 @@
   }
 
   function showSummary(session) {
+    setAnswerInputEnabled(false);
     sessionCard.style.display = 'none';
     summaryCard.style.display = 'block';
     sessionId = null;
     currentQuestion = null;
+
+    if (session.fast_mode) {
+      sessionFastMode = false;
+      const accuracy = session.accuracy == null ? 'N/A' : `${session.accuracy}%`;
+      const average = session.avg_seconds_per_item == null ? 'N/A' : `${session.avg_seconds_per_item}s`;
+      const minutes = Math.floor(session.elapsed_seconds / 60);
+      const seconds = session.elapsed_seconds % 60;
+      let html = '<ul class="summary-list">';
+      html += `<li>Items reviewed: <strong>${session.practiced}</strong></li>`;
+      html += `<li>Correct answers: <strong>${session.correct}</strong></li>`;
+      html += `<li>Incorrect answers: <strong>${session.incorrect.length}</strong></li>`;
+      html += `<li>Accuracy: <strong>${accuracy}</strong></li>`;
+      html += `<li>Total time: <strong>${minutes}m ${seconds}s</strong></li>`;
+      html += `<li>Average time per item: <strong>${average}</strong></li>`;
+      html += '</ul>';
+      document.getElementById('summary-body').innerHTML = html;
+      loadUserProgress(document.getElementById('practice-user').value);
+      return;
+    }
 
     const minutes = Math.floor(session.elapsed_seconds / 60);
     const seconds = session.elapsed_seconds % 60;

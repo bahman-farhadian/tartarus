@@ -256,7 +256,8 @@ def ensure_word_table(conn, user, lang):
             times_correct INTEGER NOT NULL DEFAULT 0,
             times_incorrect INTEGER NOT NULL DEFAULT 0,
             times_drilled INTEGER NOT NULL DEFAULT 0,
-            times_mastered INTEGER NOT NULL DEFAULT 0
+            times_mastered INTEGER NOT NULL DEFAULT 0,
+            last_fast_review_at TEXT
         )
     ''')
     columns = [row[1] for row in conn.execute(f'PRAGMA table_info("{table}")').fetchall()]
@@ -266,6 +267,8 @@ def ensure_word_table(conn, user, lang):
         conn.execute(f'ALTER TABLE "{table}" ADD COLUMN leitner_box INTEGER NOT NULL DEFAULT 1')
     if 'last_known_review_at' not in columns:
         conn.execute(f'ALTER TABLE "{table}" ADD COLUMN last_known_review_at TEXT')
+    if 'last_fast_review_at' not in columns:
+        conn.execute(f'ALTER TABLE "{table}" ADD COLUMN last_fast_review_at TEXT')
     if sentence_table:
         score_column = next((row for row in conn.execute(f'PRAGMA table_info("{table}")') if row[1] == 'score'), None)
         if score_column and score_column[2].upper() != 'INTEGER':
@@ -305,20 +308,21 @@ def migrate_sentence_score_to_integer(conn, table):
             times_drilled INTEGER NOT NULL DEFAULT 0,
             times_mastered INTEGER NOT NULL DEFAULT 0,
             leitner_box INTEGER NOT NULL DEFAULT 1,
-            last_known_review_at TEXT
+            last_known_review_at TEXT,
+            last_fast_review_at TEXT
         )
     ''')
     conn.execute(f'''
         INSERT INTO "{tmp}" (
             id, text, definition, score, last_practiced, last_decay_at, active,
             times_practiced, times_correct, times_incorrect, times_drilled,
-            times_mastered, leitner_box, last_known_review_at
+            times_mastered, leitner_box, last_known_review_at, last_fast_review_at
         )
         SELECT
             id, text, definition, CAST(ROUND(score) AS INTEGER), last_practiced,
             last_decay_at, active, times_practiced, times_correct,
             times_incorrect, times_drilled, times_mastered,
-            leitner_box, last_known_review_at
+            leitner_box, last_known_review_at, last_fast_review_at
         FROM "{table}"
     ''')
     conn.execute(f'DROP TABLE "{table}"')
@@ -581,6 +585,33 @@ def record_known_review_seen(user, lang, word_id):
         f'last_practiced = ?, last_decay_at = ?, last_known_review_at = ? '
         f'WHERE id = ?',
         (today, today, now, word_id)
+    )
+    conn.commit()
+    conn.close()
+
+
+def ensure_fast_review_column(conn, user, lang):
+    """Add the Fast mode review marker without changing word progress."""
+    table = words_table_name(user, lang)
+    exists = conn.execute(
+        "SELECT 1 FROM sqlite_master WHERE type='table' AND name = ?", (table,)
+    ).fetchone()
+    if exists:
+        columns = {row[1] for row in conn.execute(f'PRAGMA table_info("{table}")')}
+        if 'last_fast_review_at' not in columns:
+            conn.execute(f'ALTER TABLE "{table}" ADD COLUMN last_fast_review_at TEXT')
+    return table
+
+
+def record_fast_review(user, lang, word_id):
+    """Mark a completed Fast mode item without changing score or counters."""
+    table = words_table_name(user, lang)
+    conn = get_connection()
+    ensure_fast_review_column(conn, user, lang)
+    now = datetime.now().isoformat(timespec='microseconds')
+    conn.execute(
+        f'UPDATE "{table}" SET last_fast_review_at = ? WHERE id = ?',
+        (now, word_id)
     )
     conn.commit()
     conn.close()

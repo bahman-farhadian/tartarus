@@ -119,12 +119,15 @@ def build_question(session, word_id, word_text, definition, score, leitner_box=1
     band = ll.score_band(score)
     has_def = bool(definition)
     sentence_mode = session.get('sentence_mode', False)
+    fast_mode = session.get('fast_mode', False)
     display_score = min(ll.SENTENCE_MAX_SCORE, int(round(score)) + 1) if sentence_mode else round(score, 1)
     
     # Apply progressive masking for sentence mode
-    display_word = mask_sentence(word_text, int(round(score))) if sentence_mode else word_text
+    display_word = word_text if fast_mode else (mask_sentence(word_text, int(round(score))) if sentence_mode else word_text)
 
-    if sentence_mode and not session.get('drill_mode') and not session.get('known_drill_mode'):
+    if fast_mode:
+        question_type = 'fast'
+    elif sentence_mode and not session.get('drill_mode') and not session.get('known_drill_mode'):
         question_type = 'learning' if has_def else 'spelling'
     elif band == 1:
         question_type = 'learning' if has_def else 'spelling'
@@ -153,6 +156,7 @@ def build_question(session, word_id, word_text, definition, score, leitner_box=1
         'gender': gender_class(word_text),
         'type': question_type,
         'sentence_mode': sentence_mode,
+        'fast_mode': fast_mode,
     }
     initial_drill = None
 
@@ -191,17 +195,47 @@ DRILL_WORDS = ll.DRILL_WORDS
 
 
 # --- Session lifecycle ---
-def start_session(user, lang, audio_lang=None, drill_all=False, drill_mode=False, known_drill_mode=False, instant_drill=False, wpm=128):
-    ll.sync_word_list(user, lang)
+def mastered_words(user, lang):
+    """Read all mastered entries, ordered by their last Fast review."""
+    conn = ll.get_connection()
+    table = ll.ensure_fast_review_column(conn, user, lang)
+    try:
+        exists = conn.execute(
+            "SELECT 1 FROM sqlite_master WHERE type='table' AND name = ?", (table,)
+        ).fetchone()
+        if not exists:
+            return []
+        conn.commit()
+        return conn.execute(
+            f'''SELECT id, text, definition, score, leitner_box
+                FROM "{table}"
+                WHERE active = 1 AND score >= 9
+                ORDER BY CASE WHEN last_fast_review_at IS NULL THEN 0 ELSE 1 END,
+                         last_fast_review_at,
+                         COALESCE(last_practiced, '0000-00-00'), id'''
+        ).fetchall()
+    finally:
+        conn.close()
+
+
+def start_session(user, lang, audio_lang=None, drill_all=False, drill_mode=False, known_drill_mode=False, instant_drill=False, fast_mode=False, wpm=128):
     sentence_mode = ll.is_sentence_list(lang)
+    if fast_mode:
+        if drill_all or drill_mode or known_drill_mode or instant_drill:
+            raise ValueError("Fast mode cannot be combined with drill modes.")
+        words = mastered_words(user, lang)
+        if not words:
+            raise ValueError("No mastered words are available for fast mode.")
+    else:
+        ll.sync_word_list(user, lang)
+        words = ll.get_words_for_practice(
+            user, lang,
+            DRILL_WORDS if (drill_mode or drill_all) else MAX_QUESTIONS,
+            drill_mode=drill_mode,
+            known_drill_mode=known_drill_mode,
+        )
     if sentence_mode and (drill_all or drill_mode or known_drill_mode or instant_drill):
         raise ValueError("Sentence lists do not support drill modes.")
-    words = ll.get_words_for_practice(
-        user, lang,
-        DRILL_WORDS if (drill_mode or drill_all) else MAX_QUESTIONS,
-        drill_mode=drill_mode,
-        known_drill_mode=known_drill_mode,
-    )
     voice_lang = audio_lang or lang
 
     queue = [
@@ -218,10 +252,11 @@ def start_session(user, lang, audio_lang=None, drill_all=False, drill_mode=False
         'queue': queue,
         'total': len(queue),
         'practiced': 0,
-        'max_questions': DRILL_WORDS if (drill_mode or drill_all) else MAX_QUESTIONS,
+        'max_questions': len(queue) if fast_mode else (DRILL_WORDS if (drill_mode or drill_all) else MAX_QUESTIONS),
         'drill_mode': drill_mode,
         'known_drill_mode': known_drill_mode,
         'instant_drill': instant_drill,
+        'fast_mode': fast_mode,
         'drill_all': drill_all,
         'sentence_mode': sentence_mode,
         'correct': 0,
@@ -245,11 +280,13 @@ def next_question(session):
 
 def finalize_session(session, ended_early=False):
     elapsed = int(time.time() - session['start_time'])
-    if session['practiced'] > 0:
+    if session['practiced'] > 0 and not session.get('fast_mode'):
         ll.log_session(
             session['user'], session['lang'], elapsed, session['practiced'],
             session['correct'], len(session['incorrect']), session['drilled']
         )
+    practiced = session['practiced']
+    attempts = practiced + len(session['incorrect']) if session.get('fast_mode') else practiced
     return {
         'practiced': session['practiced'],
         'correct': session['correct'],
@@ -257,7 +294,47 @@ def finalize_session(session, ended_early=False):
         'drilled': session['drilled'],
         'elapsed_seconds': elapsed,
         'ended_early': ended_early,
+        'fast_mode': session.get('fast_mode', False),
+        'accuracy': round(100 * session['correct'] / attempts, 1) if attempts else None,
+        'avg_seconds_per_item': round(elapsed / practiced, 1) if practiced else None,
     }
+
+
+def advance_fast(session, correct, attempt):
+    cur = session['current']
+    word_text = cur['word_text']
+    if not correct:
+        session['incorrect'].append({'word': word_text, 'attempt': attempt})
+        return {
+            'result': 'incorrect',
+            'message': f"Incorrect. Try again. Mistakes: {len(session['incorrect'])}",
+            'word': word_text,
+            'fast_mode': True,
+            'fast_retry': True,
+            'done': False,
+            'incorrect_count': len(session['incorrect']),
+        }
+
+    session['practiced'] += 1
+    session['correct'] += 1
+    status = 'correct'
+    message = 'Correct.'
+
+    result = {'result': status, 'message': message, 'word': word_text, 'fast_mode': True}
+    if session['practiced'] >= session['max_questions']:
+        result['done'] = True
+        result['session'] = finalize_session(session)
+    else:
+        result['done'] = False
+        result['question'] = next_question(session)
+        result['progress'] = {
+            'correct': session['correct'],
+            'drilled': 0,
+            'total': session['total'],
+            'questions': session['practiced'],
+            'max_questions': session['max_questions'],
+        }
+    return result
 
 
 def advance(session, status, message, attempt=None):
@@ -337,6 +414,12 @@ def process_answer(session, answer):
     # Session-level commands are always honoured, even mid-drill.
     if answer == '!!':
         return {'done': True, 'result': 'end', 'session': finalize_session(session, ended_early=True)}
+
+    if session.get('fast_mode'):
+        correct = ll.answer_matches(answer, cur['word_text'], sentence_mode=sentence_mode)
+        if correct:
+            ll.record_fast_review(session['user'], session['lang'], cur['word_id'])
+        return advance_fast(session, correct, answer)
 
     if answer.startswith('@'):
         if not (session.get('drill_mode') or session.get('known_drill_mode')):
@@ -1091,6 +1174,7 @@ class Handler(http.server.BaseHTTPRequestHandler):
         self.send_response(200)
         self.send_header('Content-Type', content_type)
         self.send_header('Content-Length', str(len(body)))
+        self.send_header('Cache-Control', 'no-store, max-age=0')
         self.end_headers()
         self.wfile.write(body)
 
@@ -1230,6 +1314,7 @@ class Handler(http.server.BaseHTTPRequestHandler):
             drill_mode = bool(payload.get('drill_mode', False))
             known_drill_mode = bool(payload.get('known_drill_mode', False))
             instant_drill = bool(payload.get('instant_drill', False))
+            fast_mode = bool(payload.get('fast_mode', False))
             try:
                 wpm = int(payload.get('wpm', 128))
             except (TypeError, ValueError):
@@ -1242,6 +1327,7 @@ class Handler(http.server.BaseHTTPRequestHandler):
                     drill_mode=drill_mode and not known_drill_mode,
                     known_drill_mode=known_drill_mode,
                     instant_drill=instant_drill,
+                    fast_mode=fast_mode,
                     wpm=wpm,
                 )
             except (ValueError, FileNotFoundError) as e:
@@ -1250,6 +1336,7 @@ class Handler(http.server.BaseHTTPRequestHandler):
             return self._send_json({
                 'session_id': session_id,
                 'lang': session['lang'],
+                'fast_mode': session['fast_mode'],
                 'progress': {
                     'correct': 0,
                     'drilled': 0,
