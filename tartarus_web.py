@@ -160,7 +160,7 @@ def build_question(session, word_id, word_text, definition, score, leitner_box=1
     }
     initial_drill = None
 
-    if session.get('drill_mode'):
+    if session.get('drill_mode') or session.get('drill_all'):
         definition_lines = prompt_definition_lines
         question['definition'] = definition_lines
         question['type'] = 'drill'
@@ -220,8 +220,11 @@ def mastered_words(user, lang):
 
 def start_session(user, lang, audio_lang=None, drill_all=False, drill_mode=False, known_drill_mode=False, instant_drill=False, fast_mode=False, wpm=128):
     sentence_mode = ll.is_sentence_list(lang)
+    selected_drill_modes = sum(bool(value) for value in (drill_all, drill_mode, known_drill_mode, instant_drill))
+    if selected_drill_modes > 1:
+        raise ValueError("Choose only one drill mode per session.")
     if fast_mode:
-        if drill_all or drill_mode or known_drill_mode or instant_drill:
+        if selected_drill_modes:
             raise ValueError("Fast mode cannot be combined with drill modes.")
         words = mastered_words(user, lang)
         if not words:
@@ -1324,7 +1327,7 @@ class Handler(http.server.BaseHTTPRequestHandler):
                     user, lang,
                     audio_lang=audio_lang,
                     drill_all=drill_all,
-                    drill_mode=drill_mode and not known_drill_mode,
+                    drill_mode=drill_mode,
                     known_drill_mode=known_drill_mode,
                     instant_drill=instant_drill,
                     fast_mode=fast_mode,

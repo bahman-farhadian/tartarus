@@ -124,18 +124,25 @@
       if (sentenceList) input.checked = false;
     });
   }
+
+  function selectDrillMode(selected) {
+    [drillAllInput, drillModeInput, knownDrillModeInput, instantDrillInput].forEach((input) => {
+      input.checked = input === selected;
+    });
+    fastModeInput.checked = false;
+  }
+
   drillModeInput.addEventListener('change', () => {
-    if (drillModeInput.checked) knownDrillModeInput.checked = false;
+    if (drillModeInput.checked) selectDrillMode(drillModeInput);
   });
   knownDrillModeInput.addEventListener('change', () => {
-    if (knownDrillModeInput.checked) drillModeInput.checked = false;
+    if (knownDrillModeInput.checked) selectDrillMode(knownDrillModeInput);
   });
   drillAllInput.addEventListener('change', () => {
-    if (drillAllInput.checked) {
-      drillModeInput.checked = false;
-      knownDrillModeInput.checked = false;
-      instantDrillInput.checked = false;
-    }
+    if (drillAllInput.checked) selectDrillMode(drillAllInput);
+  });
+  instantDrillInput.addEventListener('change', () => {
+    if (instantDrillInput.checked) selectDrillMode(instantDrillInput);
   });
   fastModeInput.addEventListener('change', () => {
     if (fastModeInput.checked) {
@@ -144,11 +151,6 @@
       knownDrillModeInput.checked = false;
       instantDrillInput.checked = false;
     }
-  });
-  [drillAllInput, drillModeInput, knownDrillModeInput, instantDrillInput].forEach((input) => {
-    input.addEventListener('change', () => {
-      if (input.checked) fastModeInput.checked = false;
-    });
   });
   // Only text inputs get Enter-to-submit; selects use their native behaviour.
   document.getElementById('practice-audio-lang').addEventListener('keydown', (e) => {
@@ -1104,7 +1106,7 @@
       document.getElementById('practice-user').value = user;
       refreshLangSelect('practice-user', 'practice-lang');
       document.getElementById('practice-lang').value = lang;
-      document.getElementById('practice-drill-mode').checked = true;
+      selectDrillMode(document.getElementById('practice-drill-mode'));
       switchView('practice');
     });
     return card;
