@@ -547,7 +547,7 @@ def list_word_lists():
     
     # Language codes that indicate a generic/shared file (first part is a language, not user)
     # These are languages that have generic project files
-    generic_languages = {'german', 'english', 'hiragana', 'kanji', 'katakana', 'french', 'spanish', 'japanese'}
+    generic_languages = {'german', 'english'}
     
     for fname in sorted(os.listdir(ll.WORD_LISTS_DIR)):
         if not fname.endswith('.json'):

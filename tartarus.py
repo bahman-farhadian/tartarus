@@ -125,22 +125,6 @@ def get_gender_color(word_text):
 LANGUAGE_LOCALES = {
     'english': 'en', 'en': 'en',
     'german': 'de', 'deutsch': 'de', 'de': 'de',
-    'french': 'fr', 'francais': 'fr', 'fr': 'fr',
-    'spanish': 'es', 'espanol': 'es', 'es': 'es',
-    'italian': 'it', 'it': 'it',
-    'dutch': 'nl', 'nl': 'nl',
-    'portuguese': 'pt', 'pt': 'pt',
-    'russian': 'ru', 'ru': 'ru',
-    'japanese': 'ja', 'ja': 'ja',
-    'hiragana': 'ja', 'kanji': 'ja', 'katakana': 'ja',
-    'chinese': 'zh', 'zh': 'zh',
-    'korean': 'ko', 'ko': 'ko',
-    'turkish': 'tr', 'tr': 'tr',
-    'polish': 'pl', 'pl': 'pl',
-    'swedish': 'sv', 'sv': 'sv',
-    'norwegian': 'no', 'no': 'no',
-    'danish': 'da', 'da': 'da',
-    'arabic': 'ar', 'ar': 'ar',
 }
 
 # Preferred 'say' voices per locale prefix, in order of quality. The first

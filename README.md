@@ -199,9 +199,6 @@ sense to you (e.g. `german_home`, `english_b2`).
 |---|---|---|---|---|
 | `german.json` | 20 280 | 100 % | 100 % | 100 % |
 | `english.json` | 20 708 | 100 % | 100 % | — |
-| `hiragana.json` | 3 880 | 90 % | 76 % | 87 % |
-| `kanji.json` | 24 158 | 99 % | 84 % | 98 % |
-| `katakana.json` | 9 164 | 99 % | 70 % | 97 % |
 
 Entries without a valid CEFR level (A1–C2) are skipped by the generator; the rest are split one file per level.
 
@@ -227,36 +224,15 @@ Entries without a valid CEFR level (A1–C2) are skipped by the generator; the r
 | C1 | 4 857 |
 | C2 | 307 |
 
-**Japanese vocabulary** (`tartarus_hiragana/kanji/katakana_*.json`) — word (Japanese script) + `romanization — English translation` + bilingual example sentence. Sentence files (`tartarus_*_sentences_*.json`) have the Japanese sentence as the word and the English translation as the definition.
-
-| Script | Level | Vocab | Sentences |
-|---|---|---|---|
-| hiragana | A1 | 404 | 404 |
-| hiragana | A2 | 556 | 556 |
-| hiragana | B1 | 796 | 795 |
-| hiragana | B2 | 916 | 916 |
-| hiragana | C1 | 264 | 262 |
-| kanji | A1 | 654 | 654 |
-| kanji | A2 | 1 916 | 1 916 |
-| kanji | B1 | 4 974 | 4 974 |
-| kanji | B2 | 8 533 | 8 533 |
-| kanji | C1 | 3 955 | 3 954 |
-| katakana | A1 | 279 | 278 |
-| katakana | A2 | 1 067 | 1 067 |
-| katakana | B1 | 2 489 | 2 488 |
-| katakana | B2 | 1 997 | 1 996 |
-| katakana | C1 | 561 | 560 |
-
 Regenerate any of these with `utils/generate_tartarus_json.py` — see
 [Generating word lists from the source decks](#generating-word-lists-from-the-source-decks) below.
 
-All sub-list names (`german_a1`, `hiragana_b1`, etc.) don't auto-detect as a
+All sub-list names (`german_a1`, `english_b1`, etc.) don't auto-detect as a
 language for audio. Always pass `--audio-lang` (CLI) or fill **Audio language**
 (web UI):
 
 ```bash
 make practice user=bahman list=german_b1 opts="--audio-lang german"
-make practice user=tartarus list=kanji_a1 opts="--audio-lang japanese"
 ```
 
 ## Generating word lists from the source decks
@@ -266,31 +242,24 @@ Source files in `data/word_lists/` come from
 To update them, replace the relevant `.json` file with the latest version from
 that repository, then re-run `utils/generate_tartarus_json.py`.
 
-Supported source files: `german.json`, `english.json`, `hiragana.json`,
-`kanji.json`, `katakana.json`.
+Supported source files: `german.json`, `english.json`.
 
 ```bash
 # Vocabulary mode — word + translation + bilingual example sentence
 python3 utils/generate_tartarus_json.py --lang german   --user bahman
 python3 utils/generate_tartarus_json.py --lang english  --user bahman
-python3 utils/generate_tartarus_json.py --lang kanji    --user tartarus
-python3 utils/generate_tartarus_json.py --lang hiragana --user tartarus
-python3 utils/generate_tartarus_json.py --lang katakana --user tartarus
 
 # Sentence mode — word = native sentence, definition = English sentence
 python3 utils/generate_tartarus_json.py --lang german --user bahman --sentences
-python3 utils/generate_tartarus_json.py --lang kanji  --user tartarus  --sentences
 
 # Single CEFR level only
 python3 utils/generate_tartarus_json.py --lang german --user bahman --cefr B1
 
 # Flashcard-quality entries only (filters to useful_for_flashcard=true)
-python3 utils/generate_tartarus_json.py --lang kanji --user tartarus --flashcard-only
 ```
 
 **Vocabulary mode** output: `<user>_<lang>_<level>.json`
 - German: `der`/`die`/`das` + word for nouns; definition = translation + bilingual example.
-- Japanese: word = Japanese script as-is; definition = `"romanization — translation"` + bilingual example.
 - English: word as-is; definition = translation + example sentence.
 
 **Sentence mode** output: `<user>_<lang>_sentences_<level>.json`
@@ -480,9 +449,8 @@ On macOS, every word is spoken aloud via the built-in `say` command —
 enabled by default, disable with `--no-audio`.
 
 - Tartarus picks a `say` voice matching `--lang` when one is installed
-  (e.g. a German voice for `--lang german`, a French voice for
-  `--lang french`), so words are pronounced in their own language rather
-  than read with the system default voice's accent. If no matching voice is
+  (e.g. a German voice for `--lang german`), so words are pronounced in
+  their own language rather  than read with the system default voice's accent. If no matching voice is
   found, the system default voice is used.
 - **English** (`--lang english`/`en`) always uses the **system default
   voice** — no `-v` override is applied.
@@ -490,14 +458,10 @@ enabled by default, disable with `--no-audio`.
   "Anna" variant, in order: `Anna (Premium)` > `Anna (Enhanced)` > `Anna`.
   Whichever of these is installed (check with `say -v '?' | grep -i anna`)
   is used.
-- For all other recognized languages, Tartarus falls back to the first
-  installed voice matching the locale prefix (e.g. first `fr_FR` voice for
-  `--lang french`).
-- Recognized `--lang` names for voice matching include `english`, `german`/
-  `deutsch`, `french`/`francais`, `spanish`/`espanol`, `italian`, `dutch`,
-  `portuguese`, `russian`, `japanese`, `chinese`, `korean`, `turkish`,
-  `polish`, `swedish`, `norwegian`, `danish`, `arabic`, or their two-letter
-  codes (`en`, `de`, `fr`, ...). Any other `--lang` value still works for
+- For unsupported `--lang` values, Tartarus falls back to the system default
+  voice.
+- Recognized `--lang` names for voice matching are `english`, `german`,
+  `deutsch`, `en`, and `de`. Any other `--lang` value still works for
   practice — it just falls back to the default voice for audio.
 - **A note on voice quality:** macOS's System Settings -> Accessibility ->
   Spoken Content "Voice 1-4" picks (Siri/personal voices) are *not*
@@ -567,8 +531,8 @@ make report user=bahman list=german
 # Check progress across all of a user's word lists
 make report user=bahman
 
-# Add a new word list (e.g. for a new language or topic)
-make init user=bahman list=french
+# Add a new word list for a topic
+make init user=bahman list=german_nouns
 ```
 
 ## Vocab drill video (optional side feature)

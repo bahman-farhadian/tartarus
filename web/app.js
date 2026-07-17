@@ -772,11 +772,7 @@
 
   let allWordLists = [];
 
-  const KNOWN_BASE_LANGS = new Set([
-    'german', 'english', 'french', 'spanish', 'italian', 'dutch', 'portuguese',
-    'russian', 'japanese', 'chinese', 'korean', 'turkish', 'polish', 'swedish',
-    'norwegian', 'danish', 'arabic',
-  ]);
+  const KNOWN_BASE_LANGS = new Set(['german', 'english']);
 
   // Populate a lang <select> for the currently chosen user.
   function refreshLangSelect(userSelId, langSelId, { allLangsDefault = false } = {}) {
