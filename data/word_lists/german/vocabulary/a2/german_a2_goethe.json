@@ -2,2272 +2,4458 @@
   {
     "word": "ausruhen",
     "definition": [
-      "(sich)"
+      "(sich)",
+      "rest"
     ]
   },
   {
     "word": "bedanken",
     "definition": [
-      "(sich)"
+      "(sich)",
+      "to thank"
     ]
   },
   {
     "word": "beeilen",
     "definition": [
-      "(sich)"
+      "(sich)",
+      "hurry up"
     ]
   },
   {
     "word": "beschweren",
     "definition": [
-      "(sich)"
+      "(sich)",
+      "complain"
     ]
   },
   {
     "word": "bewerben",
     "definition": [
-      "(sich)"
+      "(sich)",
+      "apply"
     ]
   },
   {
     "word": "eintragen",
     "definition": [
-      "(sich)"
+      "(sich)",
+      "register yourself"
     ]
   },
   {
     "word": "erinnern",
     "definition": [
-      "(sich)"
+      "(sich)",
+      "to remember"
     ]
   },
   {
     "word": "fühlen",
     "definition": [
-      "(sich)"
+      "(sich)",
+      "to feel"
     ]
   },
   {
     "word": "interessieren",
     "definition": [
-      "(sich)"
+      "(sich)",
+      "Interested in"
     ]
   },
   {
     "word": "kümmern",
     "definition": [
-      "(sich)"
+      "(sich)",
+      "take care"
     ]
   },
   {
     "word": "schneiden",
     "definition": [
-      "(sich)"
+      "(sich)",
+      "cut each other"
     ]
   },
   {
     "word": "setzen",
     "definition": [
-      "(sich)"
+      "(sich)",
+      "to sit down"
     ]
   },
   {
     "word": "streiten",
     "definition": [
-      "(sich)"
+      "(sich)",
+      "argue"
     ]
   },
   {
     "word": "unterhalten",
     "definition": [
-      "(sich)"
+      "(sich)",
+      "talk"
     ]
   },
   {
     "word": "verletzen",
     "definition": [
-      "(sich)"
+      "(sich)",
+      "get hurt"
     ]
   },
   {
     "word": "verlieben",
     "definition": [
-      "(sich)"
+      "(sich)",
+      "fall in love"
     ]
   },
   {
     "word": "ärgern",
     "definition": [
-      "(sich)"
+      "(sich)",
+      "get angry"
     ]
   },
   {
-    "word": "abschließen"
+    "word": "abschließen",
+    "definition": [
+      "complete"
+    ]
   },
   {
-    "word": "Achtung!"
+    "word": "Achtung!",
+    "definition": [
+      "Danger!"
+    ]
   },
   {
-    "word": "aktiv"
+    "word": "aktiv",
+    "definition": [
+      "active"
+    ]
   },
   {
-    "word": "aktuell"
+    "word": "aktuell",
+    "definition": [
+      "current"
+    ]
   },
   {
-    "word": "als"
+    "word": "als",
+    "definition": [
+      "as"
+    ]
   },
   {
-    "word": "am besten"
+    "word": "am besten",
+    "definition": [
+      "preferably"
+    ]
   },
   {
-    "word": "am liebsten"
+    "word": "am liebsten",
+    "definition": [
+      "rather"
+    ]
   },
   {
-    "word": "an die"
+    "word": "an die",
+    "definition": [
+      "to the"
+    ]
   },
   {
-    "word": "arm"
+    "word": "arm",
+    "definition": [
+      "arm"
+    ]
   },
   {
-    "word": "aufmachen"
+    "word": "aufmachen",
+    "definition": [
+      "open up"
+    ]
   },
   {
-    "word": "aufpassen"
+    "word": "aufpassen",
+    "definition": [
+      "watch out"
+    ]
   },
   {
-    "word": "aufregend"
+    "word": "aufregend",
+    "definition": [
+      "exciting"
+    ]
   },
   {
-    "word": "aufräumen"
+    "word": "aufräumen",
+    "definition": [
+      "clean up"
+    ]
   },
   {
-    "word": "aus!"
+    "word": "aus!",
+    "definition": [
+      "out of!"
+    ]
   },
   {
-    "word": "ausgeben"
+    "word": "ausgeben",
+    "definition": [
+      "spend"
+    ]
   },
   {
-    "word": "ausgehen"
+    "word": "ausgehen",
+    "definition": [
+      "go out"
+    ]
   },
   {
-    "word": "auspacken"
+    "word": "auspacken",
+    "definition": [
+      "unpacking"
+    ]
   },
   {
-    "word": "außer"
+    "word": "außer",
+    "definition": [
+      "except"
+    ]
   },
   {
-    "word": "außerdem"
+    "word": "außerdem",
+    "definition": [
+      "aside from that"
+    ]
   },
   {
-    "word": "außerhalb"
+    "word": "außerhalb",
+    "definition": [
+      "outside"
+    ]
   },
   {
-    "word": "aussprechen"
+    "word": "aussprechen",
+    "definition": [
+      "express"
+    ]
   },
   {
-    "word": "austauschen"
+    "word": "austauschen",
+    "definition": [
+      "exchange"
+    ]
   },
   {
-    "word": "austragen"
+    "word": "austragen",
+    "definition": [
+      "carry out"
+    ]
   },
   {
-    "word": "backen"
+    "word": "backen",
+    "definition": [
+      "bake"
+    ]
   },
   {
-    "word": "basteln"
+    "word": "basteln",
+    "definition": [
+      "craft"
+    ]
   },
   {
-    "word": "bauen"
+    "word": "bauen",
+    "definition": [
+      "build"
+    ]
   },
   {
-    "word": "beantworten"
+    "word": "beantworten",
+    "definition": [
+      "answer"
+    ]
   },
   {
-    "word": "beantwortet"
+    "word": "beantwortet",
+    "definition": [
+      "answered"
+    ]
   },
   {
-    "word": "bedankt"
+    "word": "bedankt",
+    "definition": [
+      "thanks"
+    ]
   },
   {
-    "word": "bedeutet"
+    "word": "bedeutet",
+    "definition": [
+      "means"
+    ]
   },
   {
-    "word": "beeilt"
+    "word": "beeilt",
+    "definition": [
+      "hurry up"
+    ]
   },
   {
-    "word": "beenden"
+    "word": "beenden",
+    "definition": [
+      "finish"
+    ]
   },
   {
-    "word": "beendet"
+    "word": "beendet",
+    "definition": [
+      "ended"
+    ]
   },
   {
-    "word": "beginnt"
+    "word": "beginnt",
+    "definition": [
+      "begins"
+    ]
   },
   {
-    "word": "begründen"
+    "word": "begründen",
+    "definition": [
+      "justify"
+    ]
   },
   {
-    "word": "begründet"
+    "word": "begründet",
+    "definition": [
+      "justified"
+    ]
   },
   {
-    "word": "bekommt"
+    "word": "bekommt",
+    "definition": [
+      "receives"
+    ]
   },
   {
-    "word": "beliebt"
+    "word": "beliebt",
+    "definition": [
+      "popular"
+    ]
   },
   {
-    "word": "benutzt"
+    "word": "benutzt",
+    "definition": [
+      "used"
+    ]
   },
   {
-    "word": "bequem"
+    "word": "bequem",
+    "definition": [
+      "comfortable"
+    ]
   },
   {
-    "word": "beraten"
+    "word": "beraten",
+    "definition": [
+      "advise"
+    ]
   },
   {
-    "word": "berichten"
+    "word": "berichten",
+    "definition": [
+      "report"
+    ]
   },
   {
-    "word": "berichtet"
+    "word": "berichtet",
+    "definition": [
+      "reported"
+    ]
   },
   {
-    "word": "berühmt"
+    "word": "berühmt",
+    "definition": [
+      "famous"
+    ]
   },
   {
-    "word": "beschreiben"
+    "word": "beschreiben",
+    "definition": [
+      "describe"
+    ]
   },
   {
-    "word": "beschreibt"
+    "word": "beschreibt",
+    "definition": [
+      "describes"
+    ]
   },
   {
-    "word": "beschwert"
+    "word": "beschwert",
+    "definition": [
+      "complained"
+    ]
   },
   {
-    "word": "besichtigt"
+    "word": "besichtigt",
+    "definition": [
+      "visited"
+    ]
   },
   {
-    "word": "besonders"
+    "word": "besonders",
+    "definition": [
+      "particularly"
+    ]
   },
   {
-    "word": "bestehen"
+    "word": "bestehen",
+    "definition": [
+      "consist"
+    ]
   },
   {
-    "word": "besteht"
+    "word": "besteht",
+    "definition": [
+      "consists"
+    ]
   },
   {
-    "word": "bestellt"
+    "word": "bestellt",
+    "definition": [
+      "ordered"
+    ]
   },
   {
-    "word": "bestätigen"
+    "word": "bestätigen",
+    "definition": [
+      "confirm"
+    ]
   },
   {
-    "word": "bestätigt"
+    "word": "bestätigt",
+    "definition": [
+      "confirmed"
+    ]
   },
   {
-    "word": "besucht"
+    "word": "besucht",
+    "definition": [
+      "visited"
+    ]
   },
   {
-    "word": "bewirbt"
+    "word": "bewirbt",
+    "definition": [
+      "applied"
+    ]
   },
   {
-    "word": "bewölkt"
+    "word": "bewölkt",
+    "definition": [
+      "cloudy"
+    ]
   },
   {
-    "word": "bezahlt"
+    "word": "bezahlt",
+    "definition": [
+      "paid"
+    ]
   },
   {
-    "word": "bietet an"
+    "word": "bietet an",
+    "definition": [
+      "offers"
+    ]
   },
   {
-    "word": "bittet"
+    "word": "bittet",
+    "definition": [
+      "asks"
+    ]
   },
   {
-    "word": "bleibt"
+    "word": "bleibt",
+    "definition": [
+      "remains"
+    ]
   },
   {
-    "word": "blond"
+    "word": "blond",
+    "definition": [
+      "blond"
+    ]
   },
   {
-    "word": "blöd"
+    "word": "blöd",
+    "definition": [
+      "stupid"
+    ]
   },
   {
-    "word": "braten"
+    "word": "braten",
+    "definition": [
+      "fry"
+    ]
   },
   {
-    "word": "braucht"
+    "word": "braucht",
+    "definition": [
+      "needs"
+    ]
   },
   {
-    "word": "bringt"
+    "word": "bringt",
+    "definition": [
+      "brings"
+    ]
   },
   {
-    "word": "brät"
+    "word": "brät",
+    "definition": [
+      "fry"
+    ]
   },
   {
-    "word": "buchen"
+    "word": "buchen",
+    "definition": [
+      "book"
+    ]
   },
   {
-    "word": "buchstabiert"
+    "word": "buchstabiert",
+    "definition": [
+      "spelled"
+    ]
   },
   {
-    "word": "bucht"
+    "word": "bucht",
+    "definition": [
+      "bay"
+    ]
   },
   {
-    "word": "bunt"
+    "word": "bunt",
+    "definition": [
+      "colorful"
+    ]
   },
   {
-    "word": "bäckt/backt"
+    "word": "bäckt/backt",
+    "definition": [
+      "bakes/bakes"
+    ]
   },
   {
-    "word": "chatten"
+    "word": "chatten",
+    "definition": [
+      "chat"
+    ]
   },
   {
-    "word": "chattet"
+    "word": "chattet",
+    "definition": [
+      "chats"
+    ]
   },
   {
-    "word": "dabei (sein)"
+    "word": "dabei (sein)",
+    "definition": [
+      "to be there)"
+    ]
   },
   {
-    "word": "dafür/dagegen sein"
+    "word": "dafür/dagegen sein",
+    "definition": [
+      "be for/against"
+    ]
   },
   {
-    "word": "dagegen gewesen"
+    "word": "dagegen gewesen",
+    "definition": [
+      "been against it"
+    ]
   },
   {
-    "word": "damals"
+    "word": "damals",
+    "definition": [
+      "at that time"
+    ]
   },
   {
-    "word": "darf"
+    "word": "darf",
+    "definition": [
+      "may"
+    ]
   },
   {
-    "word": "darüber)"
+    "word": "darüber)",
+    "definition": [
+      "about it)"
+    ]
   },
   {
-    "word": "das Blatt, die Blätter"
+    "word": "das Blatt, die Blätter",
+    "definition": [
+      "the leaf, the leaves"
+    ]
   },
   {
-    "word": "das Büro, die Büros"
+    "word": "das Büro, die Büros",
+    "definition": [
+      "the office, the offices"
+    ]
   },
   {
-    "word": "das Ding, die Dinge"
+    "word": "das Ding, die Dinge",
+    "definition": [
+      "the thing, the things"
+    ]
   },
   {
-    "word": "das E-Book, die E-Books"
+    "word": "das E-Book, die E-Books",
+    "definition": [
+      "the e-book, the e-books"
+    ]
   },
   {
-    "word": "das Einkaufszentrum, die Einkaufszentrumen"
+    "word": "das Einkaufszentrum, die Einkaufszentrumen",
+    "definition": [
+      "the mall, the malls"
+    ]
   },
   {
-    "word": "das Erdgeschoss, die Erdgeschosse"
+    "word": "das Erdgeschoss, die Erdgeschosse",
+    "definition": [
+      "the ground floor, the ground floors"
+    ]
   },
   {
-    "word": "das Fach, die Fächer"
+    "word": "das Fach, die Fächer",
+    "definition": [
+      "the subject, the subjects"
+    ]
   },
   {
-    "word": "das Fenster"
+    "word": "das Fenster",
+    "definition": [
+      "the window"
+    ]
   },
   {
-    "word": "das Fest, die Feste"
+    "word": "das Fest, die Feste",
+    "definition": [
+      "the festival, the festivals"
+    ]
   },
   {
-    "word": "das Festival, die Festivals"
+    "word": "das Festival, die Festivals",
+    "definition": [
+      "the festival, the festivals"
+    ]
   },
   {
-    "word": "das Gegenteil, die Gegenteile"
+    "word": "das Gegenteil, die Gegenteile",
+    "definition": [
+      "the opposite, the opposites"
+    ]
   },
   {
-    "word": "das Gehalt, die Gehälter"
+    "word": "das Gehalt, die Gehälter",
+    "definition": [
+      "the salary, the salaries"
+    ]
   },
   {
-    "word": "das Gericht, die Gerichte"
+    "word": "das Gericht, die Gerichte",
+    "definition": [
+      "the court, the courts"
+    ]
   },
   {
-    "word": "das Gerät, die Geräte"
+    "word": "das Gerät, die Geräte",
+    "definition": [
+      "the device, the devices"
+    ]
   },
   {
-    "word": "das Gesicht, die Gesichter"
+    "word": "das Gesicht, die Gesichter",
+    "definition": [
+      "the face, the faces"
+    ]
   },
   {
-    "word": "das Gewitter"
+    "word": "das Gewitter",
+    "definition": [
+      "the thunderstorm"
+    ]
   },
   {
-    "word": "das Handtuch, die Handtücher"
+    "word": "das Handtuch, die Handtücher",
+    "definition": [
+      "the towel, the towels"
+    ]
   },
   {
-    "word": "das Heft, die Hefte"
+    "word": "das Heft, die Hefte",
+    "definition": [
+      "the booklet, the booklets"
+    ]
   },
   {
-    "word": "das Hemd, die Hemden"
+    "word": "das Hemd, die Hemden",
+    "definition": [
+      "the shirt, the shirts"
+    ]
   },
   {
-    "word": "das Instrument, die Instrumente"
+    "word": "das Instrument, die Instrumente",
+    "definition": [
+      "the instrument, the instruments"
+    ]
   },
   {
-    "word": "das Interesse, die Interessen"
+    "word": "das Interesse, die Interessen",
+    "definition": [
+      "the interest, the interests"
+    ]
   },
   {
-    "word": "das Interview, die Interviews"
+    "word": "das Interview, die Interviews",
+    "definition": [
+      "the interview, the interviews"
+    ]
   },
   {
-    "word": "das Kaufhaus, die Kaufhaüser"
+    "word": "das Kaufhaus, die Kaufhaüser",
+    "definition": [
+      "the department store, the department stores"
+    ]
   },
   {
-    "word": "das Klavier, die Klaviere"
+    "word": "das Klavier, die Klaviere",
+    "definition": [
+      "the piano, the pianos"
+    ]
   },
   {
-    "word": "das Kleid, die Kleider"
+    "word": "das Kleid, die Kleider",
+    "definition": [
+      "the dress, the clothes"
+    ]
   },
   {
-    "word": "das Konzert, die Konzerte"
+    "word": "das Konzert, die Konzerte",
+    "definition": [
+      "the concert, the concerts"
+    ]
   },
   {
-    "word": "das Krankenhaus, die Krankenhaüser"
+    "word": "das Krankenhaus, die Krankenhaüser",
+    "definition": [
+      "the hospital, the hospitals"
+    ]
   },
   {
-    "word": "das Medikament, die Medikamente"
+    "word": "das Medikament, die Medikamente",
+    "definition": [
+      "the medicine, the medicines"
+    ]
   },
   {
-    "word": "das Messer"
+    "word": "das Messer",
+    "definition": [
+      "the knife"
+    ]
   },
   {
-    "word": "das Mittagessen"
+    "word": "das Mittagessen",
+    "definition": [
+      "the lunch"
+    ]
   },
   {
-    "word": "das Mittel"
+    "word": "das Mittel",
+    "definition": [
+      "the means"
+    ]
   },
   {
-    "word": "das Mobiltelefon, die Mobiltelefone"
+    "word": "das Mobiltelefon, die Mobiltelefone",
+    "definition": [
+      "the cell phone, cell phones"
+    ]
   },
   {
-    "word": "das Museum, die Museumeen"
+    "word": "das Museum, die Museumeen",
+    "definition": [
+      "the museum, the museums"
+    ]
   },
   {
-    "word": "das Ohr, die Ohren"
+    "word": "das Ohr, die Ohren",
+    "definition": [
+      "the ear, the ears"
+    ]
   },
   {
-    "word": "das Paar, die Paare"
+    "word": "das Paar, die Paare",
+    "definition": [
+      "the couple, the couples"
+    ]
   },
   {
-    "word": "das Paket, die Pakete"
+    "word": "das Paket, die Pakete",
+    "definition": [
+      "the package, the packages"
+    ]
   },
   {
-    "word": "das Parfüm, die Parfüms"
+    "word": "das Parfüm, die Parfüms",
+    "definition": [
+      "the perfume, the perfumes"
+    ]
   },
   {
-    "word": "das Passwort, die Passwörter"
+    "word": "das Passwort, die Passwörter",
+    "definition": [
+      "the password, the passwords"
+    ]
   },
   {
-    "word": "das Pferd, die Pferde"
+    "word": "das Pferd, die Pferde",
+    "definition": [
+      "the horse, the horses"
+    ]
   },
   {
-    "word": "das Plakat, die Plakate"
+    "word": "das Plakat, die Plakate",
+    "definition": [
+      "the poster, the posters"
+    ]
   },
   {
-    "word": "das Poster"
+    "word": "das Poster",
+    "definition": [
+      "the poster"
+    ]
   },
   {
-    "word": "das Produkt, die Produkte"
+    "word": "das Produkt, die Produkte",
+    "definition": [
+      "the product, the products"
+    ]
   },
   {
-    "word": "das Programm, die Programme"
+    "word": "das Programm, die Programme",
+    "definition": [
+      "the program, the programs"
+    ]
   },
   {
-    "word": "das Projekt, die Projekte"
+    "word": "das Projekt, die Projekte",
+    "definition": [
+      "the project, the projects"
+    ]
   },
   {
-    "word": "das Radio, die Radios"
+    "word": "das Radio, die Radios",
+    "definition": [
+      "the radio, the radios"
+    ]
   },
   {
-    "word": "das Rathaus, die Rathaüser"
+    "word": "das Rathaus, die Rathaüser",
+    "definition": [
+      "the town hall, the town hall"
+    ]
   },
   {
-    "word": "das Rezept, die Rezepte"
+    "word": "das Rezept, die Rezepte",
+    "definition": [
+      "the recipe, the recipes"
+    ]
   },
   {
-    "word": "das Rind"
+    "word": "das Rind",
+    "definition": [
+      "the beef"
+    ]
   },
   {
-    "word": "das Rätsel"
+    "word": "das Rätsel",
+    "definition": [
+      "the puzzle"
+    ]
   },
   {
-    "word": "das Schiff, die Schiffe"
+    "word": "das Schiff, die Schiffe",
+    "definition": [
+      "the ship, the ships"
+    ]
   },
   {
-    "word": "das Schlafzimmer"
+    "word": "das Schlafzimmer",
+    "definition": [
+      "the bedroom"
+    ]
   },
   {
-    "word": "das Schloss, die Schlösser"
+    "word": "das Schloss, die Schlösser",
+    "definition": [
+      "the castle, the castles"
+    ]
   },
   {
-    "word": "das Schwein, die Schweine"
+    "word": "das Schwein, die Schweine",
+    "definition": [
+      "the pig, the pigs"
+    ]
   },
   {
-    "word": "das Spiel, die Spiele"
+    "word": "das Spiel, die Spiele",
+    "definition": [
+      "the game, the games"
+    ]
   },
   {
-    "word": "das Stipendium, die Stipendiumen"
+    "word": "das Stipendium, die Stipendiumen",
+    "definition": [
+      "the scholarship, the scholarships"
+    ]
   },
   {
-    "word": "das Stockwerk, die Stockwerke"
+    "word": "das Stockwerk, die Stockwerke",
+    "definition": [
+      "the floor, the floors"
+    ]
   },
   {
-    "word": "das Stück, die Stücke"
+    "word": "das Stück, die Stücke",
+    "definition": [
+      "the piece, the pieces"
+    ]
   },
   {
-    "word": "das T-Shirt, die T-Shirts"
+    "word": "das T-Shirt, die T-Shirts",
+    "definition": [
+      "the t-shirt, the t-shirts"
+    ]
   },
   {
-    "word": "das Tablet, die Tablets"
+    "word": "das Tablet, die Tablets",
+    "definition": [
+      "the tablet, the tablets"
+    ]
   },
   {
-    "word": "das Taschengeld"
+    "word": "das Taschengeld",
+    "definition": [
+      "the pocket money"
+    ]
   },
   {
-    "word": "das Team, die Teams"
+    "word": "das Team, die Teams",
+    "definition": [
+      "the team, the teams"
+    ]
   },
   {
-    "word": "das Theater"
+    "word": "das Theater",
+    "definition": [
+      "the theater"
+    ]
   },
   {
-    "word": "das Tier, die Tiere"
+    "word": "das Tier, die Tiere",
+    "definition": [
+      "the animal, the animals"
+    ]
   },
   {
-    "word": "das Training, die Trainings"
+    "word": "das Training, die Trainings",
+    "definition": [
+      "the training, the trainings"
+    ]
   },
   {
-    "word": "das Verkehrsmittel"
+    "word": "das Verkehrsmittel",
+    "definition": [
+      "the means of transport"
+    ]
   },
   {
-    "word": "das Wohnzimmer"
+    "word": "das Wohnzimmer",
+    "definition": [
+      "the living room"
+    ]
   },
   {
-    "word": "das Zelt, die Zelte"
+    "word": "das Zelt, die Zelte",
+    "definition": [
+      "the tent, the tents"
+    ]
   },
   {
-    "word": "das Zentrum, die Zentrumen"
+    "word": "das Zentrum, die Zentrumen",
+    "definition": [
+      "the center, the centers"
+    ]
   },
   {
-    "word": "das Zeugnis, die Zeugnisse"
+    "word": "das Zeugnis, die Zeugnisse",
+    "definition": [
+      "the testimony, the testimonies"
+    ]
   },
   {
-    "word": "das Ziel, die Ziele"
+    "word": "das Ziel, die Ziele",
+    "definition": [
+      "the goal, the goals"
+    ]
   },
   {
-    "word": "dass"
+    "word": "dass",
+    "definition": [
+      "that"
+    ]
   },
   {
-    "word": "de"
+    "word": "de",
+    "definition": [
+      "de"
+    ]
   },
   {
-    "word": "deinem"
+    "word": "deinem",
+    "definition": [
+      "yours"
+    ]
   },
   {
-    "word": "dem"
+    "word": "dem",
+    "definition": [
+      "dem"
+    ]
   },
   {
-    "word": "denken"
+    "word": "denken",
+    "definition": [
+      "think"
+    ]
   },
   {
-    "word": "der Apparat, die Apparate"
+    "word": "der Apparat, die Apparate",
+    "definition": [
+      "the apparatus, the apparatus"
+    ]
   },
   {
-    "word": "der Artikel"
+    "word": "der Artikel",
+    "definition": [
+      "the article"
+    ]
   },
   {
-    "word": "der Babysitter"
+    "word": "der Babysitter",
+    "definition": [
+      "the babysitter"
+    ]
   },
   {
-    "word": "der Ball, die Bälle"
+    "word": "der Ball, die Bälle",
+    "definition": [
+      "the ball, the balls"
+    ]
   },
   {
-    "word": "der Basketball, die Basketbälle"
+    "word": "der Basketball, die Basketbälle",
+    "definition": [
+      "the basketball, the basketballs"
+    ]
   },
   {
-    "word": "der Berg, die Berge"
+    "word": "der Berg, die Berge",
+    "definition": [
+      "the mountain, the mountains"
+    ]
   },
   {
-    "word": "der Bescheid"
+    "word": "der Bescheid",
+    "definition": [
+      "the notice"
+    ]
   },
   {
-    "word": "der Besuch, die Besuche"
+    "word": "der Besuch, die Besuche",
+    "definition": [
+      "the visit, the visits"
+    ]
   },
   {
-    "word": "der Club, die Clubs"
+    "word": "der Club, die Clubs",
+    "definition": [
+      "the club, the clubs"
+    ]
   },
   {
-    "word": "der Ehepartner, die Ehepartnerdas"
+    "word": "der Ehepartner, die Ehepartnerdas",
+    "definition": [
+      "the spouse, the spousesthat"
+    ]
   },
   {
-    "word": "der Fahrplan, die Fahrpläne"
+    "word": "der Fahrplan, die Fahrpläne",
+    "definition": [
+      "the timetable, the timetables"
+    ]
   },
   {
-    "word": "der Fan, die Fans"
+    "word": "der Fan, die Fans",
+    "definition": [
+      "the fan, the fans"
+    ]
   },
   {
-    "word": "der Fernseher"
+    "word": "der Fernseher",
+    "definition": [
+      "the TV"
+    ]
   },
   {
-    "word": "der Flohmarkt, die Flohmärkte"
+    "word": "der Flohmarkt, die Flohmärkte",
+    "definition": [
+      "the flea market, the flea markets"
+    ]
   },
   {
-    "word": "der Flug, die Flüge"
+    "word": "der Flug, die Flüge",
+    "definition": [
+      "the flight, the flights"
+    ]
   },
   {
-    "word": "der Fluss, die Flüsse"
+    "word": "der Fluss, die Flüsse",
+    "definition": [
+      "the river, the rivers"
+    ]
   },
   {
-    "word": "der Fotoapparat, die Fotoapparate"
+    "word": "der Fotoapparat, die Fotoapparate",
+    "definition": [
+      "the camera, the cameras"
+    ]
   },
   {
-    "word": "der Führerschein, die Führerscheine"
+    "word": "der Führerschein, die Führerscheine",
+    "definition": [
+      "the driving license, the driving licenses"
+    ]
   },
   {
-    "word": "der Hals, die Hälse"
+    "word": "der Hals, die Hälse",
+    "definition": [
+      "the neck, the necks"
+    ]
   },
   {
-    "word": "der Hamburger"
+    "word": "der Hamburger",
+    "definition": [
+      "the hamburger"
+    ]
   },
   {
-    "word": "der Haushalt, die Haushalte"
+    "word": "der Haushalt, die Haushalte",
+    "definition": [
+      "the household, the households"
+    ]
   },
   {
-    "word": "der Kalender"
+    "word": "der Kalender",
+    "definition": [
+      "the calendar"
+    ]
   },
   {
-    "word": "der Keller"
+    "word": "der Keller",
+    "definition": [
+      "the cellar"
+    ]
   },
   {
-    "word": "der Kontakt, die Kontakte"
+    "word": "der Kontakt, die Kontakte",
+    "definition": [
+      "the contact, the contacts"
+    ]
   },
   {
-    "word": "der Kredit, die Kredite"
+    "word": "der Kredit, die Kredite",
+    "definition": [
+      "the credit, the loans"
+    ]
   },
   {
-    "word": "der Krimi, die Krimis"
+    "word": "der Krimi, die Krimis",
+    "definition": [
+      "the crime thriller, the crime novels"
+    ]
   },
   {
-    "word": "der Körper"
+    "word": "der Körper",
+    "definition": [
+      "the body"
+    ]
   },
   {
-    "word": "der Kühlschrank, die Kühlschränke"
+    "word": "der Kühlschrank, die Kühlschränke",
+    "definition": [
+      "the refrigerator, the refrigerators"
+    ]
   },
   {
-    "word": "der Link, die Links"
+    "word": "der Link, die Links",
+    "definition": [
+      "the link, the links"
+    ]
   },
   {
-    "word": "der Löffel"
+    "word": "der Löffel",
+    "definition": [
+      "the spoon"
+    ]
   },
   {
-    "word": "der Magen, die Mägen"
+    "word": "der Magen, die Mägen",
+    "definition": [
+      "the stomach, the stomachs"
+    ]
   },
   {
-    "word": "der Mantel, die Mäntel"
+    "word": "der Mantel, die Mäntel",
+    "definition": [
+      "the coat, the coats"
+    ]
   },
   {
-    "word": "der Markt, die Märkte"
+    "word": "der Markt, die Märkte",
+    "definition": [
+      "the market, the markets"
+    ]
   },
   {
-    "word": "der Mitarbeiter"
+    "word": "der Mitarbeiter",
+    "definition": [
+      "the employee"
+    ]
   },
   {
-    "word": "der Motor, die Motoren"
+    "word": "der Motor, die Motoren",
+    "definition": [
+      "the engine, the engines"
+    ]
   },
   {
-    "word": "der Motorroller"
+    "word": "der Motorroller",
+    "definition": [
+      "the scooter"
+    ]
   },
   {
-    "word": "der Nachbar, die NachbarMein"
+    "word": "der Nachbar, die NachbarMein",
+    "definition": [
+      "the neighbor, the neighborMy"
+    ]
   },
   {
-    "word": "der Park, die Parks"
+    "word": "der Park, die Parks",
+    "definition": [
+      "the park, the parks"
+    ]
   },
   {
-    "word": "der Partner"
+    "word": "der Partner",
+    "definition": [
+      "the partner"
+    ]
   },
   {
-    "word": "der Pullover"
+    "word": "der Pullover",
+    "definition": [
+      "the sweater"
+    ]
   },
   {
-    "word": "der Reifen"
+    "word": "der Reifen",
+    "definition": [
+      "the tire"
+    ]
   },
   {
-    "word": "der Rest, die Reste"
+    "word": "der Rest, die Reste",
+    "definition": [
+      "the rest, the leftovers"
+    ]
   },
   {
-    "word": "der Ring, die Ringe"
+    "word": "der Ring, die Ringe",
+    "definition": [
+      "the ring, the rings"
+    ]
   },
   {
-    "word": "der Rock, die Röcke"
+    "word": "der Rock, die Röcke",
+    "definition": [
+      "the skirt, the skirts"
+    ]
   },
   {
-    "word": "der Rucksack, die Rucksäcke"
+    "word": "der Rucksack, die Rucksäcke",
+    "definition": [
+      "the backpack, the backpacks"
+    ]
   },
   {
-    "word": "der Rundgang, die Rundgänge"
+    "word": "der Rundgang, die Rundgänge",
+    "definition": [
+      "the tour, the tours"
+    ]
   },
   {
-    "word": "der Rücken"
+    "word": "der Rücken",
+    "definition": [
+      "the back"
+    ]
   },
   {
-    "word": "der Satz, die Sätze"
+    "word": "der Satz, die Sätze",
+    "definition": [
+      "the sentence, the sentences"
+    ]
   },
   {
-    "word": "der Schirm"
+    "word": "der Schirm",
+    "definition": [
+      "the umbrella"
+    ]
   },
   {
-    "word": "der Schmerz, die Schmerzen"
+    "word": "der Schmerz, die Schmerzen",
+    "definition": [
+      "the pain, the pain"
+    ]
   },
   {
-    "word": "der See, die Seen"
+    "word": "der See, die Seen",
+    "definition": [
+      "the lake, the lakes"
+    ]
   },
   {
-    "word": "der Ski, die Skier"
+    "word": "der Ski, die Skier",
+    "definition": [
+      "the ski, the skis"
+    ]
   },
   {
-    "word": "der Spaziergang, die Spaziergänge"
+    "word": "der Spaziergang, die Spaziergänge",
+    "definition": [
+      "the walk, the walks"
+    ]
   },
   {
-    "word": "der Sportplatz, die Sportplätze"
+    "word": "der Sportplatz, die Sportplätze",
+    "definition": [
+      "the sports field, the sports fields"
+    ]
   },
   {
-    "word": "der Stadtplan, die Stadtpläne"
+    "word": "der Stadtplan, die Stadtpläne",
+    "definition": [
+      "the city map, the city maps"
+    ]
   },
   {
-    "word": "der Star, die Stars"
+    "word": "der Star, die Stars",
+    "definition": [
+      "the star, the stars"
+    ]
   },
   {
-    "word": "der Stiefel"
+    "word": "der Stiefel",
+    "definition": [
+      "the boot"
+    ]
   },
   {
-    "word": "der Stift, die Stifte"
+    "word": "der Stift, die Stifte",
+    "definition": [
+      "the pen, the pens"
+    ]
   },
   {
-    "word": "der Strand, die Strände"
+    "word": "der Strand, die Strände",
+    "definition": [
+      "the beach, the beaches"
+    ]
   },
   {
-    "word": "der Stuhl, die Stühle"
+    "word": "der Stuhl, die Stühle",
+    "definition": [
+      "the chair, the chairs"
+    ]
   },
   {
-    "word": "der Supermarkt, die Supermärkte"
+    "word": "der Supermarkt, die Supermärkte",
+    "definition": [
+      "the supermarket, the supermarkets"
+    ]
   },
   {
-    "word": "der Teller"
+    "word": "der Teller",
+    "definition": [
+      "the dish"
+    ]
   },
   {
-    "word": "der Tipp, die Tipps"
+    "word": "der Tipp, die Tipps",
+    "definition": [
+      "the tip, the tips"
+    ]
   },
   {
-    "word": "der Titel"
+    "word": "der Titel",
+    "definition": [
+      "the title"
+    ]
   },
   {
-    "word": "der Topf, die Töpfe"
+    "word": "der Topf, die Töpfe",
+    "definition": [
+      "the pot, the pots"
+    ]
   },
   {
-    "word": "der Tourist, die TouristIm"
+    "word": "der Tourist, die TouristIm",
+    "definition": [
+      "the tourist, the tourist im"
+    ]
   },
   {
-    "word": "der Traum, die Traüme"
+    "word": "der Traum, die Traüme",
+    "definition": [
+      "the dream, the dreams"
+    ]
   },
   {
-    "word": "der Umzug, die Umzüge"
+    "word": "der Umzug, die Umzüge",
+    "definition": [
+      "the move, the moves"
+    ]
   },
   {
-    "word": "der Unfall, die Unfälle"
+    "word": "der Unfall, die Unfälle",
+    "definition": [
+      "the accident, the accidents"
+    ]
   },
   {
-    "word": "der Unterschied, die Unterschiede"
+    "word": "der Unterschied, die Unterschiede",
+    "definition": [
+      "the difference, the differences"
+    ]
   },
   {
-    "word": "der Vertrag, die Verträge"
+    "word": "der Vertrag, die Verträge",
+    "definition": [
+      "the contract, the contracts"
+    ]
   },
   {
-    "word": "der Vogel, die Vögel"
+    "word": "der Vogel, die Vögel",
+    "definition": [
+      "the bird, the birds"
+    ]
   },
   {
-    "word": "der Volleyball, die Volleybälle"
+    "word": "der Volleyball, die Volleybälle",
+    "definition": [
+      "the volleyball, the volleyballs"
+    ]
   },
   {
-    "word": "der Vorschlag, die Vorschläge"
+    "word": "der Vorschlag, die Vorschläge",
+    "definition": [
+      "the suggestion, the suggestions"
+    ]
   },
   {
-    "word": "der Wagen"
+    "word": "der Wagen",
+    "definition": [
+      "the car"
+    ]
   },
   {
-    "word": "der Wald, die Wälder"
+    "word": "der Wald, die Wälder",
+    "definition": [
+      "the forest, the forests"
+    ]
   },
   {
-    "word": "der Weg, die Wege"
+    "word": "der Weg, die Wege",
+    "definition": [
+      "the path, the paths"
+    ]
   },
   {
-    "word": "der Wettbewerb, die Wettbewerbe"
+    "word": "der Wettbewerb, die Wettbewerbe",
+    "definition": [
+      "the competition, the competitions"
+    ]
   },
   {
-    "word": "der Witz, die Witze"
+    "word": "der Witz, die Witze",
+    "definition": [
+      "the joke, the jokes"
+    ]
   },
   {
-    "word": "der Workshop, die Workshops"
+    "word": "der Workshop, die Workshops",
+    "definition": [
+      "the workshop, the workshops"
+    ]
   },
   {
-    "word": "der Wunsch, die Wünsche"
+    "word": "der Wunsch, die Wünsche",
+    "definition": [
+      "the wish, the desires"
+    ]
   },
   {
-    "word": "der Zahn, die Zähne"
+    "word": "der Zahn, die Zähne",
+    "definition": [
+      "the tooth, the teeth"
+    ]
   },
   {
-    "word": "der Zettel"
+    "word": "der Zettel",
+    "definition": [
+      "the note"
+    ]
   },
   {
-    "word": "der Zirkus, die Zirkusse"
+    "word": "der Zirkus, die Zirkusse",
+    "definition": [
+      "the circus, the circuses"
+    ]
   },
   {
-    "word": "der Zoo, die Zoos"
+    "word": "der Zoo, die Zoos",
+    "definition": [
+      "the zoo, the zoos"
+    ]
   },
   {
-    "word": "der/das"
+    "word": "der/das",
+    "definition": [
+      "the/that"
+    ]
   },
   {
-    "word": "deshalb"
+    "word": "deshalb",
+    "definition": [
+      "for this reason"
+    ]
   },
   {
-    "word": "deutlich"
+    "word": "deutlich",
+    "definition": [
+      "clearly"
+    ]
   },
   {
-    "word": "dick"
+    "word": "dick",
+    "definition": [
+      "thick"
+    ]
   },
   {
-    "word": "die Ahnung, die Ahnungen"
+    "word": "die Ahnung, die Ahnungen",
+    "definition": [
+      "the hunch, the premonitions"
+    ]
   },
   {
-    "word": "die Ampel, die Ampeln"
+    "word": "die Ampel, die Ampeln",
+    "definition": [
+      "the traffic lights, the traffic lights"
+    ]
   },
   {
-    "word": "die Ausbildung, die Ausbildungen"
+    "word": "die Ausbildung, die Ausbildungen",
+    "definition": [
+      "the training, the training"
+    ]
   },
   {
-    "word": "die Ausstellung, die Ausstellungen"
+    "word": "die Ausstellung, die Ausstellungen",
+    "definition": [
+      "the exhibition, the exhibitions"
+    ]
   },
   {
-    "word": "die Band, die Bands"
+    "word": "die Band, die Bands",
+    "definition": [
+      "the band, the bands"
+    ]
   },
   {
-    "word": "die Baustelle, die Baustellen"
+    "word": "die Baustelle, die Baustellen",
+    "definition": [
+      "the construction site, the construction sites"
+    ]
   },
   {
-    "word": "die Bewerbung, die Bewerbungen"
+    "word": "die Bewerbung, die Bewerbungen",
+    "definition": [
+      "the application, the applications"
+    ]
   },
   {
-    "word": "die Bibliothek, die Bibliotheken"
+    "word": "die Bibliothek, die Bibliotheken",
+    "definition": [
+      "the library, the libraries"
+    ]
   },
   {
-    "word": "die Bluse, die Blusen"
+    "word": "die Bluse, die Blusen",
+    "definition": [
+      "the blouse, the blouses"
+    ]
   },
   {
-    "word": "die Bohne, die Bohnen"
+    "word": "die Bohne, die Bohnen",
+    "definition": [
+      "the bean, the beans"
+    ]
   },
   {
-    "word": "die Brille, die Brillen"
+    "word": "die Brille, die Brillen",
+    "definition": [
+      "the glasses, the glasses"
+    ]
   },
   {
-    "word": "die Brücke, die Brücken"
+    "word": "die Brücke, die Brücken",
+    "definition": [
+      "the bridge, the bridges"
+    ]
   },
   {
-    "word": "die Cafeteria, die Cafeterias"
+    "word": "die Cafeteria, die Cafeterias",
+    "definition": [
+      "the cafeteria, the cafeterias"
+    ]
   },
   {
-    "word": "die Chefin, die Chefinnen"
+    "word": "die Chefin, die Chefinnen",
+    "definition": [
+      "the boss, the bosses"
+    ]
   },
   {
-    "word": "die Creme, die Cremes"
+    "word": "die Creme, die Cremes",
+    "definition": [
+      "the cream, the creams"
+    ]
   },
   {
-    "word": "die Datei, die Dateien"
+    "word": "die Datei, die Dateien",
+    "definition": [
+      "the file, the files"
+    ]
   },
   {
-    "word": "die Disko, die Diskos"
+    "word": "die Disko, die Diskos",
+    "definition": [
+      "the disco, the discos"
+    ]
   },
   {
-    "word": "die Erfahrung, die Erfahrungen"
+    "word": "die Erfahrung, die Erfahrungen",
+    "definition": [
+      "the experience, the experiences"
+    ]
   },
   {
-    "word": "die Ermäßigung, die Ermäßigungen"
+    "word": "die Ermäßigung, die Ermäßigungen",
+    "definition": [
+      "the discount, the discounts"
+    ]
   },
   {
-    "word": "die Feier, die Feiern"
+    "word": "die Feier, die Feiern",
+    "definition": [
+      "the celebration, the celebrations"
+    ]
   },
   {
-    "word": "die Freundin, die Freundinnen"
+    "word": "die Freundin, die Freundinnen",
+    "definition": [
+      "the girlfriend, the girlfriends"
+    ]
   },
   {
-    "word": "die Fundsachen"
+    "word": "die Fundsachen",
+    "definition": [
+      "the lost property"
+    ]
   },
   {
-    "word": "die Gabel, die Gabeln"
+    "word": "die Gabel, die Gabeln",
+    "definition": [
+      "the fork, the forks"
+    ]
   },
   {
-    "word": "die Garage, die Garagen"
+    "word": "die Garage, die Garagen",
+    "definition": [
+      "the garage, the garages"
+    ]
   },
   {
-    "word": "die Geldbörse, die Geldbörsen"
+    "word": "die Geldbörse, die Geldbörsen",
+    "definition": [
+      "the wallet, the wallets"
+    ]
   },
   {
-    "word": "die Geschichte, die Geschichten"
+    "word": "die Geschichte, die Geschichten",
+    "definition": [
+      "the history, the stories"
+    ]
   },
   {
-    "word": "die Gesundheit"
+    "word": "die Gesundheit",
+    "definition": [
+      "the health"
+    ]
   },
   {
-    "word": "die Gitarre, die Gitarren"
+    "word": "die Gitarre, die Gitarren",
+    "definition": [
+      "the guitar, the guitars"
+    ]
   },
   {
-    "word": "die Hauptstadt, die Hauptstädte"
+    "word": "die Hauptstadt, die Hauptstädte",
+    "definition": [
+      "the capital, the capitals"
+    ]
   },
   {
-    "word": "die Heizung, die Heizungen"
+    "word": "die Heizung, die Heizungen",
+    "definition": [
+      "the heating, the heaters"
+    ]
   },
   {
-    "word": "die Homepage, die Homepages"
+    "word": "die Homepage, die Homepages",
+    "definition": [
+      "the homepage, the homepages"
+    ]
   },
   {
-    "word": "die Hose, die Hosen"
+    "word": "die Hose, die Hosen",
+    "definition": [
+      "the trousers, the trousers"
+    ]
   },
   {
-    "word": "die Idee, die Ideen"
+    "word": "die Idee, die Ideen",
+    "definition": [
+      "the idea, the ideas"
+    ]
   },
   {
-    "word": "die Insel, die Inseln"
+    "word": "die Insel, die Inseln",
+    "definition": [
+      "the island, the islands"
+    ]
   },
   {
-    "word": "die Jugendherberge, die Jugendherbergen"
+    "word": "die Jugendherberge, die Jugendherbergen",
+    "definition": [
+      "the youth hostel, the youth hostels"
+    ]
   },
   {
-    "word": "die Kamera, die Kameras"
+    "word": "die Kamera, die Kameras",
+    "definition": [
+      "the camera, the cameras"
+    ]
   },
   {
-    "word": "die Katze, die Katzen"
+    "word": "die Katze, die Katzen",
+    "definition": [
+      "the cat, the cats"
+    ]
   },
   {
-    "word": "die Kette, die Ketten"
+    "word": "die Kette, die Ketten",
+    "definition": [
+      "the chain, the chains"
+    ]
   },
   {
-    "word": "die Kirche, die Kirchen"
+    "word": "die Kirche, die Kirchen",
+    "definition": [
+      "the church, the churches"
+    ]
   },
   {
-    "word": "die Kollegin, die Kolleginnen"
+    "word": "die Kollegin, die Kolleginnen",
+    "definition": [
+      "the colleague"
+    ]
   },
   {
-    "word": "die Krankenkasse, die Krankenkassen"
+    "word": "die Krankenkasse, die Krankenkassen",
+    "definition": [
+      "the health insurance company, the health insurance companies"
+    ]
   },
   {
-    "word": "die Krankheit, die Krankheiten"
+    "word": "die Krankheit, die Krankheiten",
+    "definition": [
+      "the illness, the diseases"
+    ]
   },
   {
-    "word": "die Kreuzung, die Kreuzungen"
+    "word": "die Kreuzung, die Kreuzungen",
+    "definition": [
+      "the intersection, the intersections"
+    ]
   },
   {
-    "word": "die Kultur, die Kulturen"
+    "word": "die Kultur, die Kulturen",
+    "definition": [
+      "the culture, the cultures"
+    ]
   },
   {
-    "word": "die Kundin, die Kundinnen"
+    "word": "die Kundin, die Kundinnen",
+    "definition": [
+      "the customer, the customers"
+    ]
   },
   {
-    "word": "die Kunst, die Künste"
+    "word": "die Kunst, die Künste",
+    "definition": [
+      "the art, the arts"
+    ]
   },
   {
-    "word": "die Lampe, die Lampen"
+    "word": "die Lampe, die Lampen",
+    "definition": [
+      "the lamp, the lamps"
+    ]
   },
   {
-    "word": "die Landschaft, die Landschaften"
+    "word": "die Landschaft, die Landschaften",
+    "definition": [
+      "the landscape, the landscapes"
+    ]
   },
   {
-    "word": "die Lebensmittel"
+    "word": "die Lebensmittel",
+    "definition": [
+      "the food"
+    ]
   },
   {
-    "word": "die Lüge, die Lügen"
+    "word": "die Lüge, die Lügen",
+    "definition": [
+      "the lie, the lies"
+    ]
   },
   {
-    "word": "die Mailbox, die Mailboxen"
+    "word": "die Mailbox, die Mailboxen",
+    "definition": [
+      "the mailbox, the mailboxes"
+    ]
   },
   {
-    "word": "die Mannschaft, die Mannschaften"
+    "word": "die Mannschaft, die Mannschaften",
+    "definition": [
+      "the team, the teams"
+    ]
   },
   {
-    "word": "die Meinung, die Meinungen"
+    "word": "die Meinung, die Meinungen",
+    "definition": [
+      "the opinion, the opinions"
+    ]
   },
   {
-    "word": "die Menge, die Mengen"
+    "word": "die Menge, die Mengen",
+    "definition": [
+      "the quantity, the quantities"
+    ]
   },
   {
-    "word": "die Messe, die Messen"
+    "word": "die Messe, die Messen",
+    "definition": [
+      "the fair, the fairs"
+    ]
   },
   {
-    "word": "die Mode, die Moden"
+    "word": "die Mode, die Moden",
+    "definition": [
+      "the fashion, the fashions"
+    ]
   },
   {
-    "word": "die Mütze, die Mützen"
+    "word": "die Mütze, die Mützen",
+    "definition": [
+      "the hat, the hats"
+    ]
   },
   {
-    "word": "die Nachbarin, die Nachbarinnen"
+    "word": "die Nachbarin, die Nachbarinnen",
+    "definition": [
+      "the neighbor, the neighbors"
+    ]
   },
   {
-    "word": "die Nachricht, die Nachrichten"
+    "word": "die Nachricht, die Nachrichten",
+    "definition": [
+      "the message, the news"
+    ]
   },
   {
-    "word": "die Note, die Noten"
+    "word": "die Note, die Noten",
+    "definition": [
+      "the grade, the grades"
+    ]
   },
   {
-    "word": "die Notiz, die Notizen"
+    "word": "die Notiz, die Notizen",
+    "definition": [
+      "the note, the notes"
+    ]
   },
   {
-    "word": "die Nudel, die Nudeln"
+    "word": "die Nudel, die Nudeln",
+    "definition": [
+      "the noodle, the noodles"
+    ]
   },
   {
-    "word": "die Orange, die Orangen"
+    "word": "die Orange, die Orangen",
+    "definition": [
+      "the orange, the oranges"
+    ]
   },
   {
-    "word": "die Person, die Personen"
+    "word": "die Person, die Personen",
+    "definition": [
+      "the person, the people"
+    ]
   },
   {
-    "word": "die Pflanze, die Pflanzen"
+    "word": "die Pflanze, die Pflanzen",
+    "definition": [
+      "the plant, the plants"
+    ]
   },
   {
-    "word": "die Pizza, die Pizzas"
+    "word": "die Pizza, die Pizzas",
+    "definition": [
+      "the pizza, the pizzas"
+    ]
   },
   {
-    "word": "die Pommes"
+    "word": "die Pommes",
+    "definition": [
+      "the fries"
+    ]
   },
   {
-    "word": "die Portion, die Portionen"
+    "word": "die Portion, die Portionen",
+    "definition": [
+      "the portion, the portions"
+    ]
   },
   {
-    "word": "die Postkarte, die Postkarten"
+    "word": "die Postkarte, die Postkarten",
+    "definition": [
+      "the postcard, the postcards"
+    ]
   },
   {
-    "word": "die Qualität, die Qualitäten"
+    "word": "die Qualität, die Qualitäten",
+    "definition": [
+      "the quality, the qualities"
+    ]
   },
   {
-    "word": "die Reihe, die Reihen"
+    "word": "die Reihe, die Reihen",
+    "definition": [
+      "the row, the rows"
+    ]
   },
   {
-    "word": "die Reinigung, die Reinigungen"
+    "word": "die Reinigung, die Reinigungen",
+    "definition": [
+      "the cleaning, the cleanings"
+    ]
   },
   {
-    "word": "die Rentnerin, die Rentnerinnen"
+    "word": "die Rentnerin, die Rentnerinnen",
+    "definition": [
+      "the pensioner, the pensioners"
+    ]
   },
   {
-    "word": "die Rose, die Rosen"
+    "word": "die Rose, die Rosen",
+    "definition": [
+      "the rose, the roses"
+    ]
   },
   {
-    "word": "die Sache, die Sachen"
+    "word": "die Sache, die Sachen",
+    "definition": [
+      "the thing, the things"
+    ]
   },
   {
-    "word": "die Schere, die Scheren"
+    "word": "die Schere, die Scheren",
+    "definition": [
+      "the scissors, the scissors"
+    ]
   },
   {
-    "word": "die Schokolade"
+    "word": "die Schokolade",
+    "definition": [
+      "the chocolate"
+    ]
   },
   {
-    "word": "die Schülerin, die Schülerinnen"
+    "word": "die Schülerin, die Schülerinnen",
+    "definition": [
+      "the student, the students"
+    ]
   },
   {
-    "word": "die Seife, die Seifen"
+    "word": "die Seife, die Seifen",
+    "definition": [
+      "the soap, the soaps"
+    ]
   },
   {
-    "word": "die Seite, die Seiten"
+    "word": "die Seite, die Seiten",
+    "definition": [
+      "the page, the pages"
+    ]
   },
   {
-    "word": "die Sendung, die Sendungen"
+    "word": "die Sendung, die Sendungen",
+    "definition": [
+      "the broadcast, the broadcasts"
+    ]
   },
   {
-    "word": "die Situation, die Situationen"
+    "word": "die Situation, die Situationen",
+    "definition": [
+      "the situation, the situations"
+    ]
   },
   {
-    "word": "die Speisekarte, die Speisekarten"
+    "word": "die Speisekarte, die Speisekarten",
+    "definition": [
+      "the menu, the menus"
+    ]
   },
   {
-    "word": "die Sprechstunde, die Sprechstunden"
+    "word": "die Sprechstunde, die Sprechstunden",
+    "definition": [
+      "the consultation hours, the consultation hours"
+    ]
   },
   {
-    "word": "die Studentin, die Studentinnen"
+    "word": "die Studentin, die Studentinnen",
+    "definition": [
+      "the student, the students"
+    ]
   },
   {
-    "word": "die Suppe, die Suppen"
+    "word": "die Suppe, die Suppen",
+    "definition": [
+      "the soup, the soups"
+    ]
   },
   {
-    "word": "die Süßigkeiten"
+    "word": "die Süßigkeiten",
+    "definition": [
+      "the sweets"
+    ]
   },
   {
-    "word": "die Tablette, die Tabletten"
+    "word": "die Tablette, die Tabletten",
+    "definition": [
+      "the tablet, the tablets"
+    ]
   },
   {
-    "word": "die Tafel, die Tafeln"
+    "word": "die Tafel, die Tafeln",
+    "definition": [
+      "the board, the boards"
+    ]
   },
   {
-    "word": "die Tasse, die Tassen"
+    "word": "die Tasse, die Tassen",
+    "definition": [
+      "the cup, the cups"
+    ]
   },
   {
-    "word": "die Torte, die Torten"
+    "word": "die Torte, die Torten",
+    "definition": [
+      "the cake, the cakes"
+    ]
   },
   {
-    "word": "die Tour, die Touren"
+    "word": "die Tour, die Touren",
+    "definition": [
+      "the tour, the tours"
+    ]
   },
   {
-    "word": "die Touristin, die Touristinnen"
+    "word": "die Touristin, die Touristinnen",
+    "definition": [
+      "the tourist, the tourists"
+    ]
   },
   {
-    "word": "die Tür, die Türen"
+    "word": "die Tür, die Türen",
+    "definition": [
+      "the door, the doors"
+    ]
   },
   {
-    "word": "die Universität, die Universitäten"
+    "word": "die Universität, die Universitäten",
+    "definition": [
+      "the university, the universities"
+    ]
   },
   {
-    "word": "die Unterkunft, die Unterkünfte"
+    "word": "die Unterkunft, die Unterkünfte",
+    "definition": [
+      "the accommodation, the accommodations"
+    ]
   },
   {
-    "word": "die Veranstaltung, die Veranstaltungen"
+    "word": "die Veranstaltung, die Veranstaltungen",
+    "definition": [
+      "the event, the events"
+    ]
   },
   {
-    "word": "die Vermieterin, die Vermieterinnen"
+    "word": "die Vermieterin, die Vermieterinnen",
+    "definition": [
+      "the landlady, the landladies"
+    ]
   },
   {
-    "word": "die Verspätung, die Verspätungen"
+    "word": "die Verspätung, die Verspätungen",
+    "definition": [
+      "the delay, the delays"
+    ]
   },
   {
-    "word": "die Webseite, die Webseiten"
+    "word": "die Webseite, die Webseiten",
+    "definition": [
+      "the website, the websites"
+    ]
   },
   {
-    "word": "die Werkstatt, die Werkstätten"
+    "word": "die Werkstatt, die Werkstätten",
+    "definition": [
+      "the workshop, the workshops"
+    ]
   },
   {
-    "word": "die Wolke, die Wolken"
+    "word": "die Wolke, die Wolken",
+    "definition": [
+      "the cloud, the clouds"
+    ]
   },
   {
-    "word": "die Wurst, die Würste"
+    "word": "die Wurst, die Würste",
+    "definition": [
+      "the sausage, the sausages"
+    ]
   },
   {
-    "word": "die Wäsche, die Wäschen"
+    "word": "die Wäsche, die Wäschen",
+    "definition": [
+      "the laundry, the laundry"
+    ]
   },
   {
-    "word": "die Zahl, die Zahlen"
+    "word": "die Zahl, die Zahlen",
+    "definition": [
+      "the number, the numbers"
+    ]
   },
   {
-    "word": "die Zeitschrift, die Zeitschriften"
+    "word": "die Zeitschrift, die Zeitschriften",
+    "definition": [
+      "the magazine, the magazines"
+    ]
   },
   {
-    "word": "die Zitrone, die Zitronen"
+    "word": "die Zitrone, die Zitronen",
+    "definition": [
+      "the lemon, the lemons"
+    ]
   },
   {
-    "word": "die Übersetzung, die Übersetzungen"
+    "word": "die Übersetzung, die Übersetzungen",
+    "definition": [
+      "the translation, the translations"
+    ]
   },
   {
-    "word": "direkt"
+    "word": "direkt",
+    "definition": [
+      "direct"
+    ]
   },
   {
-    "word": "diskutieren"
+    "word": "diskutieren",
+    "definition": [
+      "discuss"
+    ]
   },
   {
-    "word": "diskutiert"
+    "word": "diskutiert",
+    "definition": [
+      "discussed"
+    ]
   },
   {
-    "word": "doch"
+    "word": "doch",
+    "definition": [
+      "but"
+    ]
   },
   {
-    "word": "dringend"
+    "word": "dringend",
+    "definition": [
+      "urgent"
+    ]
   },
   {
-    "word": "drinnen"
+    "word": "drinnen",
+    "definition": [
+      "inside"
+    ]
   },
   {
-    "word": "dritten"
+    "word": "dritten",
+    "definition": [
+      "third"
+    ]
   },
   {
-    "word": "drüben"
+    "word": "drüben",
+    "definition": [
+      "over"
+    ]
   },
   {
-    "word": "dumm"
+    "word": "dumm",
+    "definition": [
+      "dumb"
+    ]
   },
   {
-    "word": "dunkel"
+    "word": "dunkel",
+    "definition": [
+      "dark"
+    ]
   },
   {
-    "word": "durfte"
+    "word": "durfte",
+    "definition": [
+      "was allowed"
+    ]
   },
   {
-    "word": "duscht"
+    "word": "duscht",
+    "definition": [
+      "showers"
+    ]
   },
   {
-    "word": "dünn"
+    "word": "dünn",
+    "definition": [
+      "thin"
+    ]
   },
   {
-    "word": "echt"
+    "word": "echt",
+    "definition": [
+      "real"
+    ]
   },
   {
-    "word": "egal"
+    "word": "egal",
+    "definition": [
+      "doesn't matter"
+    ]
   },
   {
-    "word": "eigen, eigene"
+    "word": "eigen, eigene",
+    "definition": [
+      "own, own"
+    ]
   },
   {
-    "word": "eigentlich"
+    "word": "eigentlich",
+    "definition": [
+      "actually"
+    ]
   },
   {
-    "word": "ein günstiges"
+    "word": "ein günstiges",
+    "definition": [
+      "a cheap one"
+    ]
   },
   {
-    "word": "ein paar"
+    "word": "ein paar",
+    "definition": [
+      "a couple"
+    ]
   },
   {
-    "word": "eine"
+    "word": "eine",
+    "definition": [
+      "one"
+    ]
   },
   {
-    "word": "eine schöne"
+    "word": "eine schöne",
+    "definition": [
+      "a beautiful one"
+    ]
   },
   {
-    "word": "einen"
+    "word": "einen",
+    "definition": [
+      "a"
+    ]
   },
   {
-    "word": "einig, einige"
+    "word": "einig, einige",
+    "definition": [
+      "agree, some"
+    ]
   },
   {
-    "word": "einpacken"
+    "word": "einpacken",
+    "definition": [
+      "pack up"
+    ]
   },
   {
-    "word": "einverstanden"
+    "word": "einverstanden",
+    "definition": [
+      "agreed"
+    ]
   },
   {
-    "word": "einziehen"
+    "word": "einziehen",
+    "definition": [
+      "move in"
+    ]
   },
   {
-    "word": "empfiehlt"
+    "word": "empfiehlt",
+    "definition": [
+      "recommends"
+    ]
   },
   {
-    "word": "endlich"
+    "word": "endlich",
+    "definition": [
+      "finally"
+    ]
   },
   {
-    "word": "eng"
+    "word": "eng",
+    "definition": [
+      "closely"
+    ]
   },
   {
-    "word": "entschuldigt"
+    "word": "entschuldigt",
+    "definition": [
+      "sorry"
+    ]
   },
   {
-    "word": "erkältet sein"
+    "word": "erkältet sein",
+    "definition": [
+      "to have a cold"
+    ]
   },
   {
-    "word": "erlaubt sein"
+    "word": "erlaubt sein",
+    "definition": [
+      "be allowed"
+    ]
   },
   {
-    "word": "erreichen"
+    "word": "erreichen",
+    "definition": [
+      "to reach"
+    ]
   },
   {
-    "word": "erreicht"
+    "word": "erreicht",
+    "definition": [
+      "reached"
+    ]
   },
   {
-    "word": "erst"
+    "word": "erst",
+    "definition": [
+      "first"
+    ]
   },
   {
-    "word": "etwas"
+    "word": "etwas",
+    "definition": [
+      "something"
+    ]
   },
   {
-    "word": "fallen"
+    "word": "fallen",
+    "definition": [
+      "fall"
+    ]
   },
   {
-    "word": "fantastisch"
+    "word": "fantastisch",
+    "definition": [
+      "fantastic"
+    ]
   },
   {
-    "word": "fast"
+    "word": "fast",
+    "definition": [
+      "almost"
+    ]
   },
   {
-    "word": "faul"
+    "word": "faul",
+    "definition": [
+      "lazy"
+    ]
   },
   {
-    "word": "fertig sein"
+    "word": "fertig sein",
+    "definition": [
+      "be finished"
+    ]
   },
   {
-    "word": "fett"
+    "word": "fett",
+    "definition": [
+      "fat"
+    ]
   },
   {
-    "word": "findet statt"
+    "word": "findet statt",
+    "definition": [
+      "takes place"
+    ]
   },
   {
-    "word": "fit sein"
+    "word": "fit sein",
+    "definition": [
+      "be fit"
+    ]
   },
   {
-    "word": "fleißig"
+    "word": "fleißig",
+    "definition": [
+      "diligent"
+    ]
   },
   {
-    "word": "fotografieren"
+    "word": "fotografieren",
+    "definition": [
+      "photograph"
+    ]
   },
   {
-    "word": "fotografiert"
+    "word": "fotografiert",
+    "definition": [
+      "photographed"
+    ]
   },
   {
-    "word": "freiwillig"
+    "word": "freiwillig",
+    "definition": [
+      "voluntarily"
+    ]
   },
   {
-    "word": "freundlich"
+    "word": "freundlich",
+    "definition": [
+      "friendly"
+    ]
   },
   {
-    "word": "freut"
+    "word": "freut",
+    "definition": [
+      "happy"
+    ]
   },
   {
-    "word": "frisch"
+    "word": "frisch",
+    "definition": [
+      "fresh"
+    ]
   },
   {
-    "word": "froh"
+    "word": "froh",
+    "definition": [
+      "glad"
+    ]
   },
   {
-    "word": "früh"
+    "word": "früh",
+    "definition": [
+      "early"
+    ]
   },
   {
-    "word": "frühstückt"
+    "word": "frühstückt",
+    "definition": [
+      "has breakfast"
+    ]
   },
   {
-    "word": "furchtbar"
+    "word": "furchtbar",
+    "definition": [
+      "terrible"
+    ]
   },
   {
-    "word": "fühlt"
+    "word": "fühlt",
+    "definition": [
+      "feels"
+    ]
   },
   {
-    "word": "füllt aus"
+    "word": "füllt aus",
+    "definition": [
+      "fills in"
+    ]
   },
   {
-    "word": "fünf"
+    "word": "fünf",
+    "definition": [
+      "five"
+    ]
   },
   {
-    "word": "ganz"
+    "word": "ganz",
+    "definition": [
+      "quite"
+    ]
   },
   {
-    "word": "geehrt, geehrte"
+    "word": "geehrt, geehrte",
+    "definition": [
+      "honored, honored"
+    ]
   },
   {
-    "word": "gefährlich"
+    "word": "gefährlich",
+    "definition": [
+      "dangerous"
+    ]
   },
   {
-    "word": "gegenüber"
+    "word": "gegenüber",
+    "definition": [
+      "opposite"
+    ]
   },
   {
-    "word": "genau"
+    "word": "genau",
+    "definition": [
+      "Exactly"
+    ]
   },
   {
-    "word": "genug"
+    "word": "genug",
+    "definition": [
+      "enough"
+    ]
   },
   {
-    "word": "gesund"
+    "word": "gesund",
+    "definition": [
+      "healthy"
+    ]
   },
   {
-    "word": "gewesen"
+    "word": "gewesen",
+    "definition": [
+      "been"
+    ]
   },
   {
-    "word": "gewinnt"
+    "word": "gewinnt",
+    "definition": [
+      "wins"
+    ]
   },
   {
-    "word": "gratuliert"
+    "word": "gratuliert",
+    "definition": [
+      "congratulates"
+    ]
   },
   {
-    "word": "gültig sein"
+    "word": "gültig sein",
+    "definition": [
+      "be valid"
+    ]
   },
   {
-    "word": "hart"
+    "word": "hart",
+    "definition": [
+      "hard"
+    ]
   },
   {
-    "word": "hatte"
+    "word": "hatte",
+    "definition": [
+      "had"
+    ]
   },
   {
-    "word": "hatte recht"
+    "word": "hatte recht",
+    "definition": [
+      "was right"
+    ]
   },
   {
-    "word": "heiß"
+    "word": "heiß",
+    "definition": [
+      "hot"
+    ]
   },
   {
-    "word": "her"
+    "word": "her",
+    "definition": [
+      "here"
+    ]
   },
   {
-    "word": "heraus/raus"
+    "word": "heraus/raus",
+    "definition": [
+      "out/out"
+    ]
   },
   {
-    "word": "herein/rein"
+    "word": "herein/rein",
+    "definition": [
+      "in/in"
+    ]
   },
   {
-    "word": "herstellen"
+    "word": "herstellen",
+    "definition": [
+      "produce"
+    ]
   },
   {
-    "word": "herunterladen"
+    "word": "herunterladen",
+    "definition": [
+      "download"
+    ]
   },
   {
-    "word": "hin"
+    "word": "hin",
+    "definition": [
+      "there"
+    ]
   },
   {
-    "word": "hinter"
+    "word": "hinter",
+    "definition": [
+      "behind"
+    ]
   },
   {
-    "word": "hoffen"
+    "word": "hoffen",
+    "definition": [
+      "hope"
+    ]
   },
   {
-    "word": "hoffentlich"
+    "word": "hoffentlich",
+    "definition": [
+      "hopefully"
+    ]
   },
   {
-    "word": "husten"
+    "word": "husten",
+    "definition": [
+      "cough"
+    ]
   },
   {
-    "word": "hängen"
+    "word": "hängen",
+    "definition": [
+      "hang"
+    ]
   },
   {
-    "word": "hässlich"
+    "word": "hässlich",
+    "definition": [
+      "ugly"
+    ]
   },
   {
-    "word": "hört auf"
+    "word": "hört auf",
+    "definition": [
+      "stops"
+    ]
   },
   {
-    "word": "im"
+    "word": "im",
+    "definition": [
+      "in the"
+    ]
   },
   {
-    "word": "informieren"
+    "word": "informieren",
+    "definition": [
+      "inform"
+    ]
   },
   {
-    "word": "informiert"
+    "word": "informiert",
+    "definition": [
+      "informed"
+    ]
   },
   {
-    "word": "intelligent"
+    "word": "intelligent",
+    "definition": [
+      "intelligent"
+    ]
   },
   {
-    "word": "interessant"
+    "word": "interessant",
+    "definition": [
+      "interesting"
+    ]
   },
   {
-    "word": "interessiert"
+    "word": "interessiert",
+    "definition": [
+      "interested"
+    ]
   },
   {
-    "word": "jeder"
+    "word": "jeder",
+    "definition": [
+      "everyone"
+    ]
   },
   {
-    "word": "jemand"
+    "word": "jemand",
+    "definition": [
+      "someone"
+    ]
   },
   {
-    "word": "joggen"
+    "word": "joggen",
+    "definition": [
+      "jog"
+    ]
   },
   {
-    "word": "kalt"
+    "word": "kalt",
+    "definition": [
+      "cold"
+    ]
   },
   {
-    "word": "kauft ein"
+    "word": "kauft ein",
+    "definition": [
+      "buys"
+    ]
   },
   {
-    "word": "keine"
+    "word": "keine",
+    "definition": [
+      "no"
+    ]
   },
   {
-    "word": "klappen"
+    "word": "klappen",
+    "definition": [
+      "succeed"
+    ]
   },
   {
-    "word": "klug"
+    "word": "klug",
+    "definition": [
+      "smart"
+    ]
   },
   {
-    "word": "komisch"
+    "word": "komisch",
+    "definition": [
+      "funny"
+    ]
   },
   {
-    "word": "kontrollieren"
+    "word": "kontrollieren",
+    "definition": [
+      "control"
+    ]
   },
   {
-    "word": "kostenlos"
+    "word": "kostenlos",
+    "definition": [
+      "for free"
+    ]
   },
   {
-    "word": "kühl"
+    "word": "kühl",
+    "definition": [
+      "cool"
+    ]
   },
   {
-    "word": "kümmert"
+    "word": "kümmert",
+    "definition": [
+      "cares"
+    ]
   },
   {
-    "word": "kündigen"
+    "word": "kündigen",
+    "definition": [
+      "quit"
+    ]
   },
   {
-    "word": "langweilig"
+    "word": "langweilig",
+    "definition": [
+      "boring"
+    ]
   },
   {
-    "word": "lassen"
+    "word": "lassen",
+    "definition": [
+      "let"
+    ]
   },
   {
-    "word": "laufen)"
+    "word": "laufen)",
+    "definition": [
+      "run)"
+    ]
   },
   {
-    "word": "leer"
+    "word": "leer",
+    "definition": [
+      "empty"
+    ]
   },
   {
-    "word": "leidtun/leid tun"
+    "word": "leidtun/leid tun",
+    "definition": [
+      "feel sorry/sorry"
+    ]
   },
   {
-    "word": "leihen"
+    "word": "leihen",
+    "definition": [
+      "lend"
+    ]
   },
   {
-    "word": "lernt kennen"
+    "word": "lernt kennen",
+    "definition": [
+      "gets to know"
+    ]
   },
   {
-    "word": "lesen!"
+    "word": "lesen!",
+    "definition": [
+      "read!"
+    ]
   },
   {
-    "word": "liefern"
+    "word": "liefern",
+    "definition": [
+      "delivery"
+    ]
   },
   {
-    "word": "linken"
+    "word": "linken",
+    "definition": [
+      "left"
+    ]
   },
   {
-    "word": "lädt ein"
+    "word": "lädt ein",
+    "definition": [
+      "invites"
+    ]
   },
   {
-    "word": "lädt herunter"
+    "word": "lädt herunter",
+    "definition": [
+      "downloads"
+    ]
   },
   {
-    "word": "lügen"
+    "word": "lügen",
+    "definition": [
+      "lie"
+    ]
   },
   {
-    "word": "macht auf"
+    "word": "macht auf",
+    "definition": [
+      "opens up"
+    ]
   },
   {
-    "word": "macht aus"
+    "word": "macht aus",
+    "definition": [
+      "makes a difference"
+    ]
   },
   {
-    "word": "macht zu"
+    "word": "macht zu",
+    "definition": [
+      "closes"
+    ]
   },
   {
-    "word": "mal"
+    "word": "mal",
+    "definition": [
+      "just"
+    ]
   },
   {
-    "word": "malen"
+    "word": "malen",
+    "definition": [
+      "paint"
+    ]
   },
   {
-    "word": "manch, manche"
+    "word": "manch, manche",
+    "definition": [
+      "some, some"
+    ]
   },
   {
-    "word": "manchmal"
+    "word": "manchmal",
+    "definition": [
+      "sometimes"
+    ]
   },
   {
-    "word": "meine"
+    "word": "meine",
+    "definition": [
+      "mine"
+    ]
   },
   {
-    "word": "meinen"
+    "word": "meinen",
+    "definition": [
+      "mean"
+    ]
   },
   {
-    "word": "meiner"
+    "word": "meiner",
+    "definition": [
+      "mine"
+    ]
   },
   {
-    "word": "meistens"
+    "word": "meistens",
+    "definition": [
+      "mostly"
+    ]
   },
   {
-    "word": "merken"
+    "word": "merken",
+    "definition": [
+      "remember"
+    ]
   },
   {
-    "word": "mindestens"
+    "word": "mindestens",
+    "definition": [
+      "at least"
+    ]
   },
   {
-    "word": "mochte"
+    "word": "mochte",
+    "definition": [
+      "want"
+    ]
   },
   {
-    "word": "musste"
+    "word": "musste",
+    "definition": [
+      "had to"
+    ]
   },
   {
-    "word": "nass"
+    "word": "nass",
+    "definition": [
+      "wet"
+    ]
   },
   {
-    "word": "natürlich"
+    "word": "natürlich",
+    "definition": [
+      "naturally"
+    ]
   },
   {
-    "word": "neben"
+    "word": "neben",
+    "definition": [
+      "next to"
+    ]
   },
   {
-    "word": "nebenan"
+    "word": "nebenan",
+    "definition": [
+      "next door"
+    ]
   },
   {
-    "word": "neblig"
+    "word": "neblig",
+    "definition": [
+      "foggy"
+    ]
   },
   {
-    "word": "nennen"
+    "word": "nennen",
+    "definition": [
+      "to name"
+    ]
   },
   {
-    "word": "nervös"
+    "word": "nervös",
+    "definition": [
+      "nervous"
+    ]
   },
   {
-    "word": "nett"
+    "word": "nett",
+    "definition": [
+      "nice"
+    ]
   },
   {
-    "word": "niemand"
+    "word": "niemand",
+    "definition": [
+      "no one"
+    ]
   },
   {
-    "word": "nirgends"
+    "word": "nirgends",
+    "definition": [
+      "nowhere"
+    ]
   },
   {
-    "word": "normal"
+    "word": "normal",
+    "definition": [
+      "normal"
+    ]
   },
   {
-    "word": "notieren"
+    "word": "notieren",
+    "definition": [
+      "note down"
+    ]
   },
   {
-    "word": "notwendig"
+    "word": "notwendig",
+    "definition": [
+      "necessary"
+    ]
   },
   {
-    "word": "nächste"
+    "word": "nächste",
+    "definition": [
+      "next"
+    ]
   },
   {
-    "word": "nützlich"
+    "word": "nützlich",
+    "definition": [
+      "useful"
+    ]
   },
   {
-    "word": "oder einen"
+    "word": "oder einen",
+    "definition": [
+      "or one"
+    ]
   },
   {
-    "word": "offen"
+    "word": "offen",
+    "definition": [
+      "open"
+    ]
   },
   {
-    "word": "online"
+    "word": "online",
+    "definition": [
+      "on-line"
+    ]
   },
   {
-    "word": "organisieren"
+    "word": "organisieren",
+    "definition": [
+      "organize"
+    ]
   },
   {
-    "word": "organisiert"
+    "word": "organisiert",
+    "definition": [
+      "organized"
+    ]
   },
   {
-    "word": "packen"
+    "word": "packen",
+    "definition": [
+      "pack"
+    ]
   },
   {
-    "word": "packt aus"
+    "word": "packt aus",
+    "definition": [
+      "unpacks"
+    ]
   },
   {
-    "word": "packt ein"
+    "word": "packt ein",
+    "definition": [
+      "packs up"
+    ]
   },
   {
-    "word": "parken"
+    "word": "parken",
+    "definition": [
+      "park"
+    ]
   },
   {
-    "word": "passen"
+    "word": "passen",
+    "definition": [
+      "fit"
+    ]
   },
   {
-    "word": "passieren"
+    "word": "passieren",
+    "definition": [
+      "happen"
+    ]
   },
   {
-    "word": "passiert"
+    "word": "passiert",
+    "definition": [
+      "happened"
+    ]
   },
   {
-    "word": "passt auf"
+    "word": "passt auf",
+    "definition": [
+      "pay attention"
+    ]
   },
   {
-    "word": "planen"
+    "word": "planen",
+    "definition": [
+      "plan"
+    ]
   },
   {
-    "word": "plötzlich"
+    "word": "plötzlich",
+    "definition": [
+      "suddenly"
+    ]
   },
   {
-    "word": "praktisch"
+    "word": "praktisch",
+    "definition": [
+      "practical"
+    ]
   },
   {
-    "word": "preiswert"
+    "word": "preiswert",
+    "definition": [
+      "inexpensive"
+    ]
   },
   {
-    "word": "privat"
+    "word": "privat",
+    "definition": [
+      "private"
+    ]
   },
   {
-    "word": "private"
+    "word": "private",
+    "definition": [
+      "private"
+    ]
   },
   {
-    "word": "pro"
+    "word": "pro",
+    "definition": [
+      "per"
+    ]
   },
   {
-    "word": "probieren"
+    "word": "probieren",
+    "definition": [
+      "try out"
+    ]
   },
   {
-    "word": "probiert"
+    "word": "probiert",
+    "definition": [
+      "tried"
+    ]
   },
   {
-    "word": "prüfen"
+    "word": "prüfen",
+    "definition": [
+      "check"
+    ]
   },
   {
-    "word": "putzen"
+    "word": "putzen",
+    "definition": [
+      "cleaning"
+    ]
   },
   {
-    "word": "raten"
+    "word": "raten",
+    "definition": [
+      "guess"
+    ]
   },
   {
-    "word": "rechnen"
+    "word": "rechnen",
+    "definition": [
+      "calculate"
+    ]
   },
   {
-    "word": "recht haben"
+    "word": "recht haben",
+    "definition": [
+      "to be right"
+    ]
   },
   {
-    "word": "reden"
+    "word": "reden",
+    "definition": [
+      "talk"
+    ]
   },
   {
-    "word": "reich"
+    "word": "reich",
+    "definition": [
+      "rich"
+    ]
   },
   {
-    "word": "reiten"
+    "word": "reiten",
+    "definition": [
+      "ride"
+    ]
   },
   {
-    "word": "renovieren"
+    "word": "renovieren",
+    "definition": [
+      "renovate"
+    ]
   },
   {
-    "word": "renoviert"
+    "word": "renoviert",
+    "definition": [
+      "renovated"
+    ]
   },
   {
-    "word": "repariert"
+    "word": "repariert",
+    "definition": [
+      "repaired"
+    ]
   },
   {
-    "word": "reservieren"
+    "word": "reservieren",
+    "definition": [
+      "reserve"
+    ]
   },
   {
-    "word": "reserviert"
+    "word": "reserviert",
+    "definition": [
+      "reserved"
+    ]
   },
   {
-    "word": "romantisch"
+    "word": "romantisch",
+    "definition": [
+      "romantic"
+    ]
   },
   {
-    "word": "rot"
+    "word": "rot",
+    "definition": [
+      "red"
+    ]
   },
   {
-    "word": "rufen"
+    "word": "rufen",
+    "definition": [
+      "call"
+    ]
   },
   {
-    "word": "ruht aus"
+    "word": "ruht aus",
+    "definition": [
+      "rests"
+    ]
   },
   {
-    "word": "rund"
+    "word": "rund",
+    "definition": [
+      "around"
+    ]
   },
   {
-    "word": "räumt auf"
+    "word": "räumt auf",
+    "definition": [
+      "cleans up"
+    ]
   },
   {
-    "word": "sammeln"
+    "word": "sammeln",
+    "definition": [
+      "collect"
+    ]
   },
   {
-    "word": "sammelt"
+    "word": "sammelt",
+    "definition": [
+      "collects"
+    ]
   },
   {
-    "word": "sauber"
+    "word": "sauber",
+    "definition": [
+      "clean"
+    ]
   },
   {
-    "word": "sauer"
+    "word": "sauer",
+    "definition": [
+      "sour"
+    ]
   },
   {
-    "word": "schade"
+    "word": "schade",
+    "definition": [
+      "too bad"
+    ]
   },
   {
-    "word": "schaffen"
+    "word": "schaffen",
+    "definition": [
+      "create"
+    ]
   },
   {
-    "word": "scharf"
+    "word": "scharf",
+    "definition": [
+      "sharp"
+    ]
   },
   {
-    "word": "schaue"
+    "word": "schaue",
+    "definition": [
+      "look"
+    ]
   },
   {
-    "word": "schenken"
+    "word": "schenken",
+    "definition": [
+      "give"
+    ]
   },
   {
-    "word": "schenkt"
+    "word": "schenkt",
+    "definition": [
+      "gives"
+    ]
   },
   {
-    "word": "schimpfen"
+    "word": "schimpfen",
+    "definition": [
+      "scold"
+    ]
   },
   {
-    "word": "schimpft"
+    "word": "schimpft",
+    "definition": [
+      "scolds"
+    ]
   },
   {
-    "word": "schließt"
+    "word": "schließt",
+    "definition": [
+      "closes"
+    ]
   },
   {
-    "word": "schließt ab"
+    "word": "schließt ab",
+    "definition": [
+      "concludes"
+    ]
   },
   {
-    "word": "schlimm"
+    "word": "schlimm",
+    "definition": [
+      "terrible"
+    ]
   },
   {
-    "word": "schmeckt"
+    "word": "schmeckt",
+    "definition": [
+      "tastes"
+    ]
   },
   {
-    "word": "schmutzig"
+    "word": "schmutzig",
+    "definition": [
+      "dirty"
+    ]
   },
   {
-    "word": "schneidet"
+    "word": "schneidet",
+    "definition": [
+      "cuts"
+    ]
   },
   {
-    "word": "schneien"
+    "word": "schneien",
+    "definition": [
+      "snow"
+    ]
   },
   {
-    "word": "schneit"
+    "word": "schneit",
+    "definition": [
+      "snowing"
+    ]
   },
   {
-    "word": "schrecklich"
+    "word": "schrecklich",
+    "definition": [
+      "terrible"
+    ]
   },
   {
-    "word": "schriftlich"
+    "word": "schriftlich",
+    "definition": [
+      "in written form"
+    ]
   },
   {
-    "word": "schwach"
+    "word": "schwach",
+    "definition": [
+      "weak"
+    ]
   },
   {
-    "word": "schwanger"
+    "word": "schwanger",
+    "definition": [
+      "pregnant"
+    ]
   },
   {
-    "word": "schwierig"
+    "word": "schwierig",
+    "definition": [
+      "difficult"
+    ]
   },
   {
-    "word": "schwimmt"
+    "word": "schwimmt",
+    "definition": [
+      "swims"
+    ]
   },
   {
-    "word": "schädlich"
+    "word": "schädlich",
+    "definition": [
+      "harmful"
+    ]
   },
   {
-    "word": "selbst"
+    "word": "selbst",
+    "definition": [
+      "himself"
+    ]
   },
   {
-    "word": "setzt"
+    "word": "setzt",
+    "definition": [
+      "sets"
+    ]
   },
   {
-    "word": "sich umziehen"
+    "word": "sich umziehen",
+    "definition": [
+      "get changed"
+    ]
   },
   {
-    "word": "sicher"
+    "word": "sicher",
+    "definition": [
+      "secure"
+    ]
   },
   {
-    "word": "sie im"
+    "word": "sie im",
+    "definition": [
+      "them in"
+    ]
   },
   {
-    "word": "singen"
+    "word": "singen",
+    "definition": [
+      "sing"
+    ]
   },
   {
-    "word": "sogar"
+    "word": "sogar",
+    "definition": [
+      "even"
+    ]
   },
   {
-    "word": "sollte"
+    "word": "sollte",
+    "definition": [
+      "should"
+    ]
   },
   {
-    "word": "sonnig"
+    "word": "sonnig",
+    "definition": [
+      "sunny"
+    ]
   },
   {
-    "word": "sonst"
+    "word": "sonst",
+    "definition": [
+      "otherwise"
+    ]
   },
   {
-    "word": "spannend"
+    "word": "spannend",
+    "definition": [
+      "exciting"
+    ]
   },
   {
-    "word": "sparen"
+    "word": "sparen",
+    "definition": [
+      "save"
+    ]
   },
   {
-    "word": "spazieren gehen"
+    "word": "spazieren gehen",
+    "definition": [
+      "go for a stroll"
+    ]
   },
   {
-    "word": "speichern"
+    "word": "speichern",
+    "definition": [
+      "save"
+    ]
   },
   {
-    "word": "speichert"
+    "word": "speichert",
+    "definition": [
+      "saves"
+    ]
   },
   {
-    "word": "spielt"
+    "word": "spielt",
+    "definition": [
+      "plays"
+    ]
   },
   {
-    "word": "sportlich"
+    "word": "sportlich",
+    "definition": [
+      "sporty"
+    ]
   },
   {
-    "word": "stark"
+    "word": "stark",
+    "definition": [
+      "strong"
+    ]
   },
   {
-    "word": "stattfinden"
+    "word": "stattfinden",
+    "definition": [
+      "take place"
+    ]
   },
   {
-    "word": "steht auf"
+    "word": "steht auf",
+    "definition": [
+      "stands up"
+    ]
   },
   {
-    "word": "steigt aus"
+    "word": "steigt aus",
+    "definition": [
+      "gets out"
+    ]
   },
   {
-    "word": "steigt ein"
+    "word": "steigt ein",
+    "definition": [
+      "gets in"
+    ]
   },
   {
-    "word": "steigt um"
+    "word": "steigt um",
+    "definition": [
+      "rises"
+    ]
   },
   {
-    "word": "stellt her"
+    "word": "stellt her",
+    "definition": [
+      "produces"
+    ]
   },
   {
-    "word": "sterben"
+    "word": "sterben",
+    "definition": [
+      "die"
+    ]
   },
   {
-    "word": "streitet"
+    "word": "streitet",
+    "definition": [
+      "argues"
+    ]
   },
   {
-    "word": "streng"
+    "word": "streng",
+    "definition": [
+      "strictly"
+    ]
   },
   {
-    "word": "stressig"
+    "word": "stressig",
+    "definition": [
+      "stressful"
+    ]
   },
   {
-    "word": "studiert"
+    "word": "studiert",
+    "definition": [
+      "studied"
+    ]
   },
   {
-    "word": "stören"
+    "word": "stören",
+    "definition": [
+      "disturb"
+    ]
   },
   {
-    "word": "super"
+    "word": "super",
+    "definition": [
+      "super"
+    ]
   },
   {
-    "word": "surfen"
+    "word": "surfen",
+    "definition": [
+      "surfing"
+    ]
   },
   {
-    "word": "surfen und"
+    "word": "surfen und",
+    "definition": [
+      "surf and"
+    ]
   },
   {
-    "word": "sympathisch"
+    "word": "sympathisch",
+    "definition": [
+      "friendly"
+    ]
   },
   {
-    "word": "süß"
+    "word": "süß",
+    "definition": [
+      "sweet"
+    ]
   },
   {
-    "word": "teilen"
+    "word": "teilen",
+    "definition": [
+      "split"
+    ]
   },
   {
-    "word": "teilnehmen"
+    "word": "teilnehmen",
+    "definition": [
+      "participate"
+    ]
   },
   {
-    "word": "telefoniert"
+    "word": "telefoniert",
+    "definition": [
+      "telephoned"
+    ]
   },
   {
-    "word": "tief"
+    "word": "tief",
+    "definition": [
+      "deep"
+    ]
   },
   {
-    "word": "toll"
+    "word": "toll",
+    "definition": [
+      "great"
+    ]
   },
   {
-    "word": "total"
+    "word": "total",
+    "definition": [
+      "total"
+    ]
   },
   {
-    "word": "tragen"
+    "word": "tragen",
+    "definition": [
+      "carry"
+    ]
   },
   {
-    "word": "trainieren"
+    "word": "trainieren",
+    "definition": [
+      "train"
+    ]
   },
   {
-    "word": "trainiert"
+    "word": "trainiert",
+    "definition": [
+      "trained"
+    ]
   },
   {
-    "word": "traurig"
+    "word": "traurig",
+    "definition": [
+      "sad"
+    ]
   },
   {
-    "word": "trifft"
+    "word": "trifft",
+    "definition": [
+      "hits"
+    ]
   },
   {
-    "word": "trocken"
+    "word": "trocken",
+    "definition": [
+      "dry"
+    ]
   },
   {
-    "word": "trägt aus"
+    "word": "trägt aus",
+    "definition": [
+      "carries out"
+    ]
   },
   {
-    "word": "trägt ein"
+    "word": "trägt ein",
+    "definition": [
+      "contributes"
+    ]
   },
   {
-    "word": "träumen"
+    "word": "träumen",
+    "definition": [
+      "dream"
+    ]
   },
   {
-    "word": "träumt"
+    "word": "träumt",
+    "definition": [
+      "dreams"
+    ]
   },
   {
-    "word": "tschüs"
+    "word": "tschüs",
+    "definition": [
+      "bye"
+    ]
   },
   {
-    "word": "tut leid"
+    "word": "tut leid",
+    "definition": [
+      "sorry"
+    ]
   },
   {
-    "word": "tut weh"
+    "word": "tut weh",
+    "definition": [
+      "hurts"
+    ]
   },
   {
-    "word": "typisch"
+    "word": "typisch",
+    "definition": [
+      "typical"
+    ]
   },
   {
-    "word": "um 21:00"
+    "word": "um 21:00",
+    "definition": [
+      "at 9:00 p.m"
+    ]
   },
   {
-    "word": "umsteigen"
+    "word": "umsteigen",
+    "definition": [
+      "transfer"
+    ]
   },
   {
-    "word": "unbedingt"
+    "word": "unbedingt",
+    "definition": [
+      "absolutely"
+    ]
   },
   {
-    "word": "und 15"
+    "word": "und 15",
+    "definition": [
+      "and 15"
+    ]
   },
   {
-    "word": "und ein"
+    "word": "und ein",
+    "definition": [
+      "and a"
+    ]
   },
   {
-    "word": "unserer"
+    "word": "unserer",
+    "definition": [
+      "ours"
+    ]
   },
   {
-    "word": "unterhält"
+    "word": "unterhält",
+    "definition": [
+      "entertains"
+    ]
   },
   {
-    "word": "unternehmen"
+    "word": "unternehmen",
+    "definition": [
+      "company"
+    ]
   },
   {
-    "word": "unternimmt"
+    "word": "unternimmt",
+    "definition": [
+      "undertakes"
+    ]
   },
   {
-    "word": "unterschreibt"
+    "word": "unterschreibt",
+    "definition": [
+      "signs"
+    ]
   },
   {
-    "word": "untersuchen"
+    "word": "untersuchen",
+    "definition": [
+      "investigate"
+    ]
   },
   {
-    "word": "untersucht"
+    "word": "untersucht",
+    "definition": [
+      "examined"
+    ]
   },
   {
-    "word": "unterwegs sein"
+    "word": "unterwegs sein",
+    "definition": [
+      "be on the move"
+    ]
   },
   {
-    "word": "verabredet sein"
+    "word": "verabredet sein",
+    "definition": [
+      "have an appointment"
+    ]
   },
   {
-    "word": "verboten sein"
+    "word": "verboten sein",
+    "definition": [
+      "be forbidden"
+    ]
   },
   {
-    "word": "verdient"
+    "word": "verdient",
+    "definition": [
+      "earned"
+    ]
   },
   {
-    "word": "vereinbaren"
+    "word": "vereinbaren",
+    "definition": [
+      "agree"
+    ]
   },
   {
-    "word": "vereinbart"
+    "word": "vereinbart",
+    "definition": [
+      "agreed"
+    ]
   },
   {
-    "word": "vergessen"
+    "word": "vergessen",
+    "definition": [
+      "forget"
+    ]
   },
   {
-    "word": "vergiss"
+    "word": "vergiss",
+    "definition": [
+      "forget"
+    ]
   },
   {
-    "word": "vergisst"
+    "word": "vergisst",
+    "definition": [
+      "forgets"
+    ]
   },
   {
-    "word": "vergleichen"
+    "word": "vergleichen",
+    "definition": [
+      "compare"
+    ]
   },
   {
-    "word": "vergleicht"
+    "word": "vergleicht",
+    "definition": [
+      "compares"
+    ]
   },
   {
-    "word": "verkauft"
+    "word": "verkauft",
+    "definition": [
+      "sold"
+    ]
   },
   {
-    "word": "verletzt"
+    "word": "verletzt",
+    "definition": [
+      "injured"
+    ]
   },
   {
-    "word": "verliebt"
+    "word": "verliebt",
+    "definition": [
+      "in love"
+    ]
   },
   {
-    "word": "verlieren"
+    "word": "verlieren",
+    "definition": [
+      "lose"
+    ]
   },
   {
-    "word": "verliert"
+    "word": "verliert",
+    "definition": [
+      "loses"
+    ]
   },
   {
-    "word": "vermietet"
+    "word": "vermietet",
+    "definition": [
+      "rented"
+    ]
   },
   {
-    "word": "verpassen"
+    "word": "verpassen",
+    "definition": [
+      "miss"
+    ]
   },
   {
-    "word": "verpasst"
+    "word": "verpasst",
+    "definition": [
+      "missed"
+    ]
   },
   {
-    "word": "verreisen"
+    "word": "verreisen",
+    "definition": [
+      "travel"
+    ]
   },
   {
-    "word": "verreist"
+    "word": "verreist",
+    "definition": [
+      "traveled"
+    ]
   },
   {
-    "word": "verschieben"
+    "word": "verschieben",
+    "definition": [
+      "move"
+    ]
   },
   {
-    "word": "verschiebt"
+    "word": "verschiebt",
+    "definition": [
+      "postpones"
+    ]
   },
   {
-    "word": "verschieden"
+    "word": "verschieden",
+    "definition": [
+      "different"
+    ]
   },
   {
-    "word": "versteht"
+    "word": "versteht",
+    "definition": [
+      "understands"
+    ]
   },
   {
-    "word": "versuchen"
+    "word": "versuchen",
+    "definition": [
+      "attempt"
+    ]
   },
   {
-    "word": "versucht"
+    "word": "versucht",
+    "definition": [
+      "tried"
+    ]
   },
   {
-    "word": "voll"
+    "word": "voll",
+    "definition": [
+      "full"
+    ]
   },
   {
-    "word": "vorbei"
+    "word": "vorbei",
+    "definition": [
+      "over"
+    ]
   },
   {
-    "word": "vorbereiten"
+    "word": "vorbereiten",
+    "definition": [
+      "prepare"
+    ]
   },
   {
-    "word": "vorgestern"
+    "word": "vorgestern",
+    "definition": [
+      "the day before yesterday"
+    ]
   },
   {
-    "word": "vorher"
+    "word": "vorher",
+    "definition": [
+      "previously"
+    ]
   },
   {
-    "word": "vorn, vorne"
+    "word": "vorn, vorne",
+    "definition": [
+      "front, front"
+    ]
   },
   {
-    "word": "vorsichtig"
+    "word": "vorsichtig",
+    "definition": [
+      "cautious"
+    ]
   },
   {
-    "word": "vorwärts"
+    "word": "vorwärts",
+    "definition": [
+      "forward"
+    ]
   },
   {
-    "word": "wach"
+    "word": "wach",
+    "definition": [
+      "awake"
+    ]
   },
   {
-    "word": "wahr"
+    "word": "wahr",
+    "definition": [
+      "true"
+    ]
   },
   {
-    "word": "wahrscheinlich"
+    "word": "wahrscheinlich",
+    "definition": [
+      "probably"
+    ]
   },
   {
-    "word": "wandert"
+    "word": "wandert",
+    "definition": [
+      "wanders"
+    ]
   },
   {
-    "word": "warm"
+    "word": "warm",
+    "definition": [
+      "warm"
+    ]
   },
   {
-    "word": "wartet"
+    "word": "wartet",
+    "definition": [
+      "waits"
+    ]
   },
   {
-    "word": "wechseln"
+    "word": "wechseln",
+    "definition": [
+      "change"
+    ]
   },
   {
-    "word": "wechselt"
+    "word": "wechselt",
+    "definition": [
+      "changes"
+    ]
   },
   {
-    "word": "wecken"
+    "word": "wecken",
+    "definition": [
+      "wake up"
+    ]
   },
   {
-    "word": "weckt"
+    "word": "weckt",
+    "definition": [
+      "awakens"
+    ]
   },
   {
-    "word": "weg"
+    "word": "weg",
+    "definition": [
+      "away"
+    ]
   },
   {
-    "word": "wegen"
+    "word": "wegen",
+    "definition": [
+      "because of"
+    ]
   },
   {
-    "word": "wehtun"
+    "word": "wehtun",
+    "definition": [
+      "hurt"
+    ]
   },
   {
-    "word": "weich"
+    "word": "weich",
+    "definition": [
+      "soft"
+    ]
   },
   {
-    "word": "weil"
+    "word": "weil",
+    "definition": [
+      "because"
+    ]
   },
   {
-    "word": "weinen"
+    "word": "weinen",
+    "definition": [
+      "cry"
+    ]
   },
   {
-    "word": "welcher"
+    "word": "welcher",
+    "definition": [
+      "which"
+    ]
   },
   {
-    "word": "wenigstens"
+    "word": "wenigstens",
+    "definition": [
+      "at least"
+    ]
   },
   {
-    "word": "wenigstens ein"
+    "word": "wenigstens ein",
+    "definition": [
+      "at least one"
+    ]
   },
   {
-    "word": "wenn"
+    "word": "wenn",
+    "definition": [
+      "if"
+    ]
   },
   {
-    "word": "wer (wen"
+    "word": "wer (wen",
+    "definition": [
+      "who (whom"
+    ]
   },
   {
-    "word": "wichtigen"
+    "word": "wichtigen",
+    "definition": [
+      "important"
+    ]
   },
   {
-    "word": "wieder"
+    "word": "wieder",
+    "definition": [
+      "again"
+    ]
   },
   {
-    "word": "wieder ins"
+    "word": "wieder ins",
+    "definition": [
+      "back into"
+    ]
   },
   {
-    "word": "wiederholt"
+    "word": "wiederholt",
+    "definition": [
+      "repeated"
+    ]
   },
   {
-    "word": "windig"
+    "word": "windig",
+    "definition": [
+      "windy"
+    ]
   },
   {
-    "word": "wirklich"
+    "word": "wirklich",
+    "definition": [
+      "really"
+    ]
   },
   {
-    "word": "witzig"
+    "word": "witzig",
+    "definition": [
+      "funny"
+    ]
   },
   {
-    "word": "wollte"
+    "word": "wollte",
+    "definition": [
+      "wanted"
+    ]
   },
   {
-    "word": "wählen"
+    "word": "wählen",
+    "definition": [
+      "choose"
+    ]
   },
   {
-    "word": "wäscht"
+    "word": "wäscht",
+    "definition": [
+      "washes"
+    ]
   },
   {
-    "word": "wünschen"
+    "word": "wünschen",
+    "definition": [
+      "wish"
+    ]
   },
   {
-    "word": "zeichnen"
+    "word": "zeichnen",
+    "definition": [
+      "draw"
+    ]
   },
   {
-    "word": "zeichnet"
+    "word": "zeichnet",
+    "definition": [
+      "draws"
+    ]
   },
   {
-    "word": "zeigen"
+    "word": "zeigen",
+    "definition": [
+      "show"
+    ]
   },
   {
-    "word": "zieht"
+    "word": "zieht",
+    "definition": [
+      "pulls"
+    ]
   },
   {
-    "word": "zieht ein"
+    "word": "zieht ein",
+    "definition": [
+      "moves in"
+    ]
   },
   {
-    "word": "zieht um"
+    "word": "zieht um",
+    "definition": [
+      "moves"
+    ]
   },
   {
-    "word": "zog"
+    "word": "zog",
+    "definition": [
+      "pulled"
+    ]
   },
   {
-    "word": "zuerst"
+    "word": "zuerst",
+    "definition": [
+      "first"
+    ]
   },
   {
-    "word": "zuhören"
+    "word": "zuhören",
+    "definition": [
+      "listen"
+    ]
   },
   {
-    "word": "zuletzt"
+    "word": "zuletzt",
+    "definition": [
+      "last"
+    ]
   },
   {
-    "word": "zumachen"
+    "word": "zumachen",
+    "definition": [
+      "close"
+    ]
   },
   {
-    "word": "zur"
+    "word": "zur",
+    "definition": [
+      "to"
+    ]
   },
   {
-    "word": "ärgert"
+    "word": "ärgert",
+    "definition": [
+      "annoys"
+    ]
   },
   {
-    "word": "üben"
+    "word": "üben",
+    "definition": [
+      "practice"
+    ]
   },
   {
-    "word": "überall"
+    "word": "überall",
+    "definition": [
+      "everywhere"
+    ]
   },
   {
-    "word": "übermorgen"
+    "word": "übermorgen",
+    "definition": [
+      "the day after tomorrow"
+    ]
   },
   {
-    "word": "übernachtet"
+    "word": "übernachtet",
+    "definition": [
+      "stayed overnight"
+    ]
   },
   {
-    "word": "übersetzen"
+    "word": "übersetzen",
+    "definition": [
+      "translate"
+    ]
   },
   {
-    "word": "übersetzt"
+    "word": "übersetzt",
+    "definition": [
+      "translated"
+    ]
   },
   {
-    "word": "überweist"
+    "word": "überweist",
+    "definition": [
+      "transferred"
+    ]
   }
 ]
