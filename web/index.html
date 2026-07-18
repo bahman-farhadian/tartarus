@@ -25,44 +25,34 @@
       <div id="practice-setup" class="card">
         <h2>Start a practice session</h2>
         <div id="practice-error"></div>
-        <div class="field-row practice-select-row">
+        <div class="field-row practice-top-row">
           <div class="field">
-            <label for="practice-user">User</label>
-            <select id="practice-user">
+            <select id="practice-user" aria-label="User">
               <option value="">Select user…</option>
             </select>
           </div>
           <div class="field">
-            <label for="practice-lang">Language</label>
-            <select id="practice-lang">
+            <input id="practice-audio-lang" aria-label="Audio language (optional)" type="text" placeholder="e.g. german" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+          </div>
+          <div class="field">
+            <input id="practice-wpm" aria-label="Speech WPM (words/min)" type="number" min="30" max="400" step="1" value="128" inputmode="numeric">
+          </div>
+        </div>
+        <div class="field-row practice-select-row">
+          <div class="field">
+            <select id="practice-lang" aria-label="Language">
               <option value="">Select language…</option>
-              <option value="english_vocabulary">English vocabulary</option>
-              <option value="english_sentences">English sentences</option>
-              <option value="german_vocabulary">German vocabulary</option>
-              <option value="german_sentences">German sentences</option>
             </select>
           </div>
           <div class="field">
-            <label for="practice-level">Level</label>
-            <select id="practice-level">
+            <select id="practice-level" aria-label="Level">
               <option value="">Select level…</option>
             </select>
           </div>
           <div class="field">
-            <label for="practice-file">Word list file</label>
-            <select id="practice-file">
+            <select id="practice-file" aria-label="Word list file">
               <option value="">Select word list file…</option>
             </select>
-          </div>
-        </div>
-        <div class="field-row practice-settings-row">
-          <div class="field">
-            <label for="practice-audio-lang">Audio language <span class="muted" style="font-weight:400;">(optional)</span></label>
-            <input id="practice-audio-lang" type="text" placeholder="e.g. german" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
-          </div>
-          <div class="field">
-            <label for="practice-wpm">Speech WPM <span class="muted" style="font-weight:400;">(words/min)</span></label>
-            <input id="practice-wpm" type="number" min="30" max="400" step="1" value="128" inputmode="numeric">
           </div>
         </div>
         <div class="practice-options">

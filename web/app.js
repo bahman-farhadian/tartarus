@@ -559,7 +559,7 @@
       html += `<li>Average time per item: <strong>${average}</strong></li>`;
       html += '</ul>';
       document.getElementById('summary-body').innerHTML = html;
-      loadUserProgress(document.getElementById('practice-user').value);
+      loadSelectedProgress();
       return;
     }
 
@@ -580,7 +580,7 @@
       html += '</ul>';
     }
     document.getElementById('summary-body').innerHTML = html;
-    loadUserProgress(document.getElementById('practice-user').value);
+    loadSelectedProgress();
   }
 
   // --- Report ---
@@ -826,20 +826,38 @@
   // --- Progress widget ---
   const progressEl = document.getElementById('practice-progress');
 
-  async function loadUserProgress(user) {
-    if (!user) { progressEl.style.display = 'none'; return; }
+  function loadSelectedProgress() {
+    loadUserProgress(
+      document.getElementById('practice-user').value,
+      document.getElementById('practice-lang').value,
+      document.getElementById('practice-level').value,
+    );
+  }
+
+  async function loadUserProgress(user, category, level) {
+    if (!user || !category || !level) { progressEl.style.display = 'none'; return; }
     try {
-      const data = await api(`/api/user/progress?user=${encodeURIComponent(user)}`);
+      const params = new URLSearchParams({ user, category, level });
+      const data = await api(`/api/user/progress?${params.toString()}`);
       if (!data.lists || !data.lists.length) { progressEl.style.display = 'none'; return; }
-      progressEl.innerHTML = renderProgressWidget(data.lists);
+      progressEl.innerHTML = renderProgressWidget(data.lists, category, level);
       progressEl.style.display = 'block';
     } catch (_) {
       progressEl.style.display = 'none';
     }
   }
 
-  function renderProgressWidget(lists) {
-    let html = '<div class="card"><h2>Progress</h2><div class="progress-list">';
+  function renderProgressWidget(lists, category, level) {
+    const labels = {
+      english_vocabulary: 'English vocabulary',
+      english_sentences: 'English sentences',
+      german_vocabulary: 'German vocabulary',
+      german_sentences: 'German sentences',
+    };
+    const title = category && level
+      ? `Progress · ${labels[category] || category} · ${level.toUpperCase()}`
+      : 'Progress';
+    let html = `<div class="card"><h2>${escapeHtml(title)}</h2><div class="progress-list">`;
     lists.forEach((item) => {
       const pct = Math.min(item.progress, 100);
       html += `<div class="progress-row">
@@ -1000,10 +1018,16 @@
 
   document.getElementById('practice-user').addEventListener('change', function () {
     refreshPracticeLanguage();
-    loadUserProgress(this.value);
+    loadSelectedProgress();
   });
-  document.getElementById('practice-lang').addEventListener('change', refreshPracticeLevel);
-  document.getElementById('practice-level').addEventListener('change', refreshPracticeFile);
+  document.getElementById('practice-lang').addEventListener('change', () => {
+    refreshPracticeLevel();
+    loadSelectedProgress();
+  });
+  document.getElementById('practice-level').addEventListener('change', () => {
+    refreshPracticeFile();
+    loadSelectedProgress();
+  });
   document.getElementById('practice-file').addEventListener('change', updatePracticeAudioLanguage);
 
   setupCascade('report-user',   'report-lang',  { allLangsDefault: true });

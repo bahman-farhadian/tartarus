@@ -240,23 +240,24 @@ button:disabled {
 }
 
 /* --- Practice view --- */
+.practice-top-row,
+.practice-select-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.practice-top-row .field,
 .practice-select-row .field {
-  min-width: 160px;
-}
-
-.practice-settings-row {
-  max-width: 52rem;
-}
-
-.practice-settings-row .field {
-  flex: 0 1 240px;
+  min-width: 0;
+  margin-bottom: 0.75rem;
 }
 
 .practice-options {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.25rem;
-  margin: 0.2rem 0 1.25rem;
+  margin: 0.15rem 0 1rem;
 }
 
 .check-option {
@@ -362,6 +363,12 @@ button:disabled {
 }
 
 @media (max-width: 760px) {
+  .practice-top-row,
+  .practice-select-row {
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
+  }
+
   .practice-options {
     grid-template-columns: 1fr;
     gap: 0.6rem;
@@ -370,6 +377,11 @@ button:disabled {
 
 @media (min-width: 761px) and (max-width: 1100px) {
   .practice-options {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .practice-top-row,
+  .practice-select-row {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -379,8 +391,8 @@ button:disabled {
   align-items: center;
   flex-wrap: wrap;
   gap: 0.75rem;
-  margin-top: 1rem;
-  padding-top: 1rem;
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
   border-top: 1px solid var(--surface1);
   justify-content: flex-start;
 }

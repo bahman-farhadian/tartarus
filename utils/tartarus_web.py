@@ -699,8 +699,8 @@ def user_summary_data(user):
     }
 
 
-def user_progress_data(user):
-    """Return per-word-list progress stats for a user (total, learned, to_drill, due_today)."""
+def user_progress_data(user, category=None, level=None):
+    """Return progress for selectable lists, optionally filtered by category and level."""
     user_s = ll.sanitize_name(user, 'user')
     prefix = f"words_{user_s}_"
     conn = ll.get_connection()
@@ -708,9 +708,17 @@ def user_progress_data(user):
         "SELECT name FROM sqlite_master WHERE type='table' AND name LIKE ? ORDER BY name",
         (f"{prefix}%",)
     ).fetchall()
+    selectable_langs = {
+        item['lang'] for item in list_word_lists()
+        if item['user'] == user_s
+        and (not category or item.get('category') == category)
+        and (not level or item.get('level') == level)
+    }
     lists = []
     for (table_name,) in tables:
         lang = table_name[len(prefix):]
+        if lang not in selectable_langs:
+            continue
         sentence_mode = ll.is_sentence_list(lang)
         has_leitner = 'leitner_box' in {
             r[1] for r in conn.execute(f'PRAGMA table_info("{table_name}")').fetchall()
@@ -1223,9 +1231,11 @@ class Handler(http.server.BaseHTTPRequestHandler):
         if parsed.path == '/api/user/progress':
             qs = urllib.parse.parse_qs(parsed.query)
             user = qs.get('user', [''])[0]
+            category = qs.get('category', [''])[0] or None
+            level = qs.get('level', [''])[0] or None
             if not user:
                 return self._send_json({'error': "'user' is required"}, 400)
-            return self._send_json({'lists': user_progress_data(user)})
+            return self._send_json({'lists': user_progress_data(user, category, level)})
 
         if parsed.path == '/api/wordlist':
             qs = urllib.parse.parse_qs(parsed.query)
