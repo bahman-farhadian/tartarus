@@ -232,6 +232,7 @@ def ensure_word_table(conn, user, lang):
             id INTEGER PRIMARY KEY,
             text TEXT NOT NULL UNIQUE,
             definition TEXT NOT NULL DEFAULT '',
+            word_frequency INTEGER,
             score {score_type} NOT NULL DEFAULT {default_score},
             last_practiced DATE,
             last_decay_at DATE,
@@ -253,6 +254,8 @@ def ensure_word_table(conn, user, lang):
         conn.execute(f'ALTER TABLE "{table}" ADD COLUMN last_known_review_at TEXT')
     if 'last_fast_review_at' not in columns:
         conn.execute(f'ALTER TABLE "{table}" ADD COLUMN last_fast_review_at TEXT')
+    if 'word_frequency' not in columns:
+        conn.execute(f'ALTER TABLE "{table}" ADD COLUMN word_frequency INTEGER')
     if sentence_table:
         score_column = next((row for row in conn.execute(f'PRAGMA table_info("{table}")') if row[1] == 'score'), None)
         if score_column and score_column[2].upper() != 'INTEGER':
@@ -362,6 +365,14 @@ def normalize_definition(definition):
     return str(definition).strip()
 
 
+def normalize_word_frequency(value):
+    try:
+        value = int(value)
+    except (TypeError, ValueError):
+        return None
+    return value if value >= 0 else None
+
+
 def apply_decay(conn, table):
     """
     Applies time-based decay: any active word not practiced for one or more
@@ -431,17 +442,18 @@ def sync_word_list(user, lang):
             continue
         seen_words.add(word)
         definition = normalize_definition(entry.get('definition'))
+        word_frequency = normalize_word_frequency(entry.get('word_frequency'))
         cursor = conn.execute(f'SELECT id FROM "{table}" WHERE text = ?', (word,))
         row = cursor.fetchone()
         if row is None:
             conn.execute(
-                f'INSERT INTO "{table}" (text, definition, score, active) VALUES (?, ?, ?, 1)',
-                (word, definition, SENTENCE_MIN_SCORE if sentence_mode else 1.0)
+                f'INSERT INTO "{table}" (text, definition, word_frequency, score, active) VALUES (?, ?, ?, ?, 1)',
+                (word, definition, word_frequency, SENTENCE_MIN_SCORE if sentence_mode else 1.0)
             )
         else:
             conn.execute(
-                f'UPDATE "{table}" SET definition = ?, active = 1 WHERE id = ?',
-                (definition, row[0])
+                f'UPDATE "{table}" SET definition = ?, word_frequency = ?, active = 1 WHERE id = ?',
+                (definition, word_frequency, row[0])
             )
 
     cursor = conn.execute(f'SELECT id, text FROM "{table}" WHERE active = 1')
@@ -753,7 +765,7 @@ def get_words_for_practice(user, lang, num_words=MAX_QUESTIONS, drill_mode=False
     conn = get_connection()
     if known_drill_mode:
         cursor = conn.execute(
-            f'''SELECT id, text, definition, score, leitner_box FROM "{table}"
+            f'''SELECT id, text, definition, score, leitner_box, word_frequency FROM "{table}"
                 WHERE active = 1 AND score >= 9.0 AND times_practiced > 0
                 ORDER BY
                   CASE WHEN last_known_review_at IS NULL THEN 0 ELSE 1 END,
@@ -767,7 +779,7 @@ def get_words_for_practice(user, lang, num_words=MAX_QUESTIONS, drill_mode=False
         )
     elif drill_mode:
         cursor = conn.execute(
-            f'''SELECT id, text, definition, score, leitner_box FROM "{table}"
+            f'''SELECT id, text, definition, score, leitner_box, word_frequency FROM "{table}"
                 WHERE active = 1 AND times_incorrect > 0
                 ORDER BY times_incorrect DESC, last_practiced ASC
                 LIMIT ?''',
@@ -787,7 +799,7 @@ def get_words_for_practice(user, lang, num_words=MAX_QUESTIONS, drill_mode=False
         # This caps daily practice per file and pushes the user to other files
         # or drill modes once today's words are done.
         cursor = conn.execute(
-            f'''SELECT id, text, definition, score, leitner_box FROM "{table}"
+            f'''SELECT id, text, definition, score, leitner_box, word_frequency FROM "{table}"
                 WHERE active = 1 AND (
                   score < 9
                   OR
@@ -804,6 +816,8 @@ def get_words_for_practice(user, lang, num_words=MAX_QUESTIONS, drill_mode=False
                 ORDER BY
                   CASE WHEN score < 9 THEN 0 ELSE 1 END,
                   score DESC,
+                  CASE WHEN word_frequency IS NULL THEN 1 ELSE 0 END,
+                  word_frequency ASC,
                   last_practiced ASC
                 LIMIT ?''',
             (num_words,)

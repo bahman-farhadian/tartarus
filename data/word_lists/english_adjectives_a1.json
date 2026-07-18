@@ -1,0 +1,730 @@
+[
+  {
+    "word": "able",
+    "definition": [
+      "capable",
+      "I am able to help you."
+    ],
+    "word_frequency": 290
+  },
+  {
+    "word": "all",
+    "definition": [
+      "all",
+      "All students passed the exam."
+    ],
+    "word_frequency": 28
+  },
+  {
+    "word": "angry",
+    "definition": [
+      "feeling or showing anger",
+      "She was very angry about the delay."
+    ],
+    "word_frequency": 1687
+  },
+  {
+    "word": "any",
+    "definition": [
+      "some, a single",
+      "Do you have any questions?"
+    ],
+    "word_frequency": 79
+  },
+  {
+    "word": "bad",
+    "definition": [
+      "not good",
+      "That was a bad idea."
+    ],
+    "word_frequency": 227
+  },
+  {
+    "word": "beautiful",
+    "definition": [
+      "beautiful",
+      "She has a beautiful smile."
+    ],
+    "word_frequency": 500
+  },
+  {
+    "word": "big",
+    "definition": [
+      "large in size",
+      "That's a very big dog."
+    ],
+    "word_frequency": 168
+  },
+  {
+    "word": "black",
+    "definition": [
+      "black",
+      "My cat is black."
+    ],
+    "word_frequency": 269
+  },
+  {
+    "word": "blue",
+    "definition": [
+      "blue",
+      "The sky is blue."
+    ],
+    "word_frequency": 621
+  },
+  {
+    "word": "brown",
+    "definition": [
+      "a color",
+      "The dog has brown fur."
+    ],
+    "word_frequency": 851
+  },
+  {
+    "word": "busy",
+    "definition": [
+      "occupied, active",
+      "I'm too busy to talk right now."
+    ],
+    "word_frequency": 1429
+  },
+  {
+    "word": "chinese",
+    "definition": [
+      "relating to China",
+      "She is learning Chinese culture."
+    ],
+    "word_frequency": 853
+  },
+  {
+    "word": "clean",
+    "definition": [
+      "not dirty",
+      "Please keep your room clean."
+    ],
+    "word_frequency": 926
+  },
+  {
+    "word": "close",
+    "definition": [
+      "a short distance away",
+      "The store is very close to my house."
+    ],
+    "word_frequency": 354
+  },
+  {
+    "word": "cold",
+    "definition": [
+      "at a low temperature",
+      "It's very cold outside today."
+    ],
+    "word_frequency": 828
+  },
+  {
+    "word": "cool",
+    "definition": [
+      "of or at a fairly low temperature",
+      "It's a cool evening."
+    ],
+    "word_frequency": 596
+  },
+  {
+    "word": "dark",
+    "definition": [
+      "with little or no light",
+      "It gets dark early in winter."
+    ],
+    "word_frequency": 789
+  },
+  {
+    "word": "difficult",
+    "definition": [
+      "hard, not easy",
+      "This math problem is very difficult."
+    ],
+    "word_frequency": 741
+  },
+  {
+    "word": "dirty",
+    "definition": [
+      "not clean",
+      "Your hands are very dirty."
+    ],
+    "word_frequency": 2068
+  },
+  {
+    "word": "dry",
+    "definition": [
+      "free from moisture or liquid",
+      "The clothes are dry now."
+    ],
+    "word_frequency": 1463
+  },
+  {
+    "word": "each",
+    "definition": [
+      "every single",
+      "Each student received a book."
+    ],
+    "word_frequency": 161
+  },
+  {
+    "word": "early",
+    "definition": [
+      "before the usual time",
+      "We arrived early."
+    ],
+    "word_frequency": 292
+  },
+  {
+    "word": "easy",
+    "definition": [
+      "not difficult",
+      "This test is very easy."
+    ],
+    "word_frequency": 421
+  },
+  {
+    "word": "fast",
+    "definition": [
+      "quick, rapid",
+      "He is a fast runner."
+    ],
+    "word_frequency": 626
+  },
+  {
+    "word": "fat",
+    "definition": [
+      "having a lot of flesh",
+      "The cat was very fat."
+    ],
+    "word_frequency": 1184
+  },
+  {
+    "word": "fine",
+    "definition": [
+      "good, acceptable",
+      "I feel fine today."
+    ],
+    "word_frequency": 487
+  },
+  {
+    "word": "first",
+    "definition": [
+      "coming before all others",
+      "This is my first time here."
+    ],
+    "word_frequency": 70
+  },
+  {
+    "word": "french",
+    "definition": [
+      "French",
+      "She speaks French fluently."
+    ],
+    "word_frequency": 697
+  },
+  {
+    "word": "full",
+    "definition": [
+      "containing as much as possible",
+      "The glass is full of water."
+    ],
+    "word_frequency": 221
+  },
+  {
+    "word": "german",
+    "definition": [
+      "German",
+      "She is learning the German language."
+    ],
+    "word_frequency": 963
+  },
+  {
+    "word": "good",
+    "definition": [
+      "of high quality",
+      "She is a good student."
+    ],
+    "word_frequency": 67
+  },
+  {
+    "word": "gray",
+    "definition": [
+      "a color between black and white",
+      "The sky was gray and cloudy."
+    ],
+    "word_frequency": 2331
+  },
+  {
+    "word": "great",
+    "definition": [
+      "excellent",
+      "That's a great idea!"
+    ],
+    "word_frequency": 118
+  },
+  {
+    "word": "green",
+    "definition": [
+      "green",
+      "The grass is green."
+    ],
+    "word_frequency": 628
+  },
+  {
+    "word": "happy",
+    "definition": [
+      "feeling pleasure or contentment",
+      "She was very happy with her new car."
+    ],
+    "word_frequency": 362
+  },
+  {
+    "word": "healthy",
+    "definition": [
+      "in good health",
+      "Eating fruits and vegetables helps you stay healthy."
+    ],
+    "word_frequency": 1312
+  },
+  {
+    "word": "high",
+    "definition": [
+      "of great or more than average extent, size, or amount",
+      "The mountain is very high."
+    ],
+    "word_frequency": 145
+  },
+  {
+    "word": "hot",
+    "definition": [
+      "having a high temperature",
+      "Be careful, the plate is hot."
+    ],
+    "word_frequency": 583
+  },
+  {
+    "word": "hungry",
+    "definition": [
+      "feeling or showing the need for food",
+      "I'm so hungry, I could eat a horse!"
+    ],
+    "word_frequency": 2467
+  },
+  {
+    "word": "important",
+    "definition": [
+      "significant",
+      "This is an important decision."
+    ],
+    "word_frequency": 287
+  },
+  {
+    "word": "large",
+    "definition": [
+      "of considerable or relatively great size",
+      "That's a large dog."
+    ],
+    "word_frequency": 328
+  },
+  {
+    "word": "last",
+    "definition": [
+      "final; previous",
+      "This is the last piece of cake."
+    ],
+    "word_frequency": 120
+  },
+  {
+    "word": "late",
+    "definition": [
+      "after the usual or expected time",
+      "He was late for the meeting."
+    ],
+    "word_frequency": 374
+  },
+  {
+    "word": "left",
+    "definition": [
+      "on the side of the body that is to the west when one is facing north",
+      "Turn left at the next corner."
+    ],
+    "word_frequency": 183
+  },
+  {
+    "word": "less",
+    "definition": [
+      "less",
+      "I have less time today than yesterday."
+    ],
+    "word_frequency": 4175
+  },
+  {
+    "word": "little",
+    "definition": [
+      "small in size, amount, or degree",
+      "I have a little dog."
+    ],
+    "word_frequency": 146
+  },
+  {
+    "word": "long",
+    "definition": [
+      "measuring a great distance from end to end",
+      "She has long hair."
+    ],
+    "word_frequency": 127
+  },
+  {
+    "word": "loud",
+    "definition": [
+      "producing or capable of producing much noise",
+      "The music was very loud."
+    ],
+    "word_frequency": 2150
+  },
+  {
+    "word": "low",
+    "definition": [
+      "not high",
+      "The water level is very low."
+    ],
+    "word_frequency": 383
+  },
+  {
+    "word": "many",
+    "definition": [
+      "a large number of",
+      "I have many friends."
+    ],
+    "word_frequency": 112
+  },
+  {
+    "word": "much",
+    "definition": [
+      "a large amount",
+      "I don't have much time."
+    ],
+    "word_frequency": 44
+  },
+  {
+    "word": "near",
+    "definition": [
+      "close to",
+      "The park is near my house."
+    ],
+    "word_frequency": 424
+  },
+  {
+    "word": "new",
+    "definition": [
+      "not existing before",
+      "I bought a new car."
+    ],
+    "word_frequency": 56
+  },
+  {
+    "word": "next",
+    "definition": [
+      "following; coming immediately after",
+      "The next train leaves in five minutes."
+    ],
+    "word_frequency": 160
+  },
+  {
+    "word": "nice",
+    "definition": [
+      "pleasant or agreeable",
+      "Have a nice day!"
+    ],
+    "word_frequency": 348
+  },
+  {
+    "word": "no",
+    "definition": [
+      "not any",
+      "There is no milk left."
+    ],
+    "word_frequency": 46
+  },
+  {
+    "word": "old",
+    "definition": [
+      "having lived for a long time; no longer young",
+      "My grandfather is old."
+    ],
+    "word_frequency": 147
+  },
+  {
+    "word": "open",
+    "definition": [
+      "open",
+      "The door is open."
+    ],
+    "word_frequency": 260
+  },
+  {
+    "word": "orange",
+    "definition": [
+      "orange",
+      "She wore an orange dress."
+    ],
+    "word_frequency": 1832
+  },
+  {
+    "word": "other",
+    "definition": [
+      "different from the one mentioned",
+      "Do you have any other questions."
+    ],
+    "word_frequency": 63
+  },
+  {
+    "word": "pink",
+    "definition": [
+      "a pale red color",
+      "Her favorite color is pink."
+    ],
+    "word_frequency": 2198
+  },
+  {
+    "word": "pretty",
+    "definition": [
+      "attractive in a delicate way",
+      "She has a pretty dress."
+    ],
+    "word_frequency": 343
+  },
+  {
+    "word": "purple",
+    "definition": [
+      "a color intermediate between blue and red",
+      "Her favorite color is purple."
+    ],
+    "word_frequency": 3065
+  },
+  {
+    "word": "ready",
+    "definition": [
+      "prepared",
+      "Are you ready to go?"
+    ],
+    "word_frequency": 440
+  },
+  {
+    "word": "red",
+    "definition": [
+      "a primary color",
+      "Her favorite color is red."
+    ],
+    "word_frequency": 394
+  },
+  {
+    "word": "right",
+    "definition": [
+      "correct",
+      "That's the right answer."
+    ],
+    "word_frequency": 101
+  },
+  {
+    "word": "russian",
+    "definition": [
+      "relating to Russia",
+      "She is studying Russian history."
+    ],
+    "word_frequency": 866
+  },
+  {
+    "word": "sad",
+    "definition": [
+      "feeling or showing sorrow; unhappy",
+      "She felt sad when her pet left."
+    ],
+    "word_frequency": 1216
+  },
+  {
+    "word": "same",
+    "definition": [
+      "identical; not different",
+      "We have the same idea."
+    ],
+    "word_frequency": 131
+  },
+  {
+    "word": "second",
+    "definition": [
+      "next after the first",
+      "This is my second cup of coffee."
+    ],
+    "word_frequency": 180
+  },
+  {
+    "word": "short",
+    "definition": [
+      "having little length",
+      "He is quite short for his age."
+    ],
+    "word_frequency": 387
+  },
+  {
+    "word": "sick",
+    "definition": [
+      "feeling unwell; ill",
+      "She felt sick after eating too much candy."
+    ],
+    "word_frequency": 1133
+  },
+  {
+    "word": "simple",
+    "definition": [
+      "easy, not complicated",
+      "The instructions were very simple to follow."
+    ],
+    "word_frequency": 727
+  },
+  {
+    "word": "sleepy",
+    "definition": [
+      "needing sleep; tired",
+      "The baby was very sleepy after a long day of playing."
+    ],
+    "word_frequency": 8054
+  },
+  {
+    "word": "slow",
+    "definition": [
+      "moving or operating at a low speed",
+      "The internet connection is very slow today."
+    ],
+    "word_frequency": 1197
+  },
+  {
+    "word": "small",
+    "definition": [
+      "small",
+      "I live in a small house."
+    ],
+    "word_frequency": 242
+  },
+  {
+    "word": "some",
+    "definition": [
+      "an unspecified amount or number",
+      "I need some sugar."
+    ],
+    "word_frequency": 59
+  },
+  {
+    "word": "sorry",
+    "definition": [
+      "feeling regret; apologetic",
+      "I'm sorry for the delay."
+    ],
+    "word_frequency": 559
+  },
+  {
+    "word": "sunny",
+    "definition": [
+      "sunny",
+      "It's a beautiful sunny day."
+    ],
+    "word_frequency": 4587
+  },
+  {
+    "word": "tall",
+    "definition": [
+      "of great height",
+      "He is a very tall man."
+    ],
+    "word_frequency": 2207
+  },
+  {
+    "word": "third",
+    "definition": [
+      "coming after the second",
+      "This is my third cup of coffee."
+    ],
+    "word_frequency": 397
+  },
+  {
+    "word": "thirsty",
+    "definition": [
+      "feeling a need to drink",
+      "I'm so thirsty, I need a glass of water."
+    ],
+    "word_frequency": 7385
+  },
+  {
+    "word": "true",
+    "definition": [
+      "in accordance with fact or reality",
+      "Is that story true?"
+    ],
+    "word_frequency": 324
+  },
+  {
+    "word": "unhappy",
+    "definition": [
+      "not happy",
+      "She was unhappy with the results."
+    ],
+    "word_frequency": 4662
+  },
+  {
+    "word": "warm",
+    "definition": [
+      "moderately hot",
+      "The tea is still warm."
+    ],
+    "word_frequency": 1577
+  },
+  {
+    "word": "welcome",
+    "definition": [
+      "gladly received",
+      "You are always welcome in our home."
+    ],
+    "word_frequency": 912
+  },
+  {
+    "word": "wet",
+    "definition": [
+      "covered or saturated with water or another liquid",
+      "Don't sit on the wet grass."
+    ],
+    "word_frequency": 2129
+  },
+  {
+    "word": "white",
+    "definition": [
+      "white",
+      "The snow is white."
+    ],
+    "word_frequency": 243
+  },
+  {
+    "word": "wrong",
+    "definition": [
+      "incorrect or mistaken",
+      "That answer is wrong."
+    ],
+    "word_frequency": 336
+  },
+  {
+    "word": "yellow",
+    "definition": [
+      "a primary color",
+      "The sun is yellow."
+    ],
+    "word_frequency": 1631
+  },
+  {
+    "word": "young",
+    "definition": [
+      "not old",
+      "She has a young child."
+    ],
+    "word_frequency": 300
+  }
+]

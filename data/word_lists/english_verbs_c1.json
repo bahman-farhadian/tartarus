@@ -1,0 +1,3914 @@
+[
+  {
+    "word": "abate",
+    "definition": [
+      "to become less intense or widespread",
+      "The storm finally began to abate."
+    ],
+    "word_frequency": 29699
+  },
+  {
+    "word": "abdicate",
+    "definition": [
+      "(Of a monarch) renounce one's throne.",
+      "The king decided to abdicate his throne."
+    ],
+    "word_frequency": 30399
+  },
+  {
+    "word": "abduct",
+    "definition": [
+      "to take someone away illegally by force",
+      "The police are investigating a case where a child was abducted."
+    ],
+    "word_frequency": 9427
+  },
+  {
+    "word": "abhor",
+    "definition": [
+      "detest; strongly dislike",
+      "She truly abhors violence in any form."
+    ],
+    "word_frequency": 31210
+  },
+  {
+    "word": "abound",
+    "definition": [
+      "to exist in large numbers or amounts",
+      "The rivers here abound with fish and other wildlife."
+    ],
+    "word_frequency": 14006
+  },
+  {
+    "word": "accede",
+    "definition": [
+      "to agree to a demand, request, or treaty",
+      "The government was forced to accede to the protesters' demands."
+    ],
+    "word_frequency": 33705
+  },
+  {
+    "word": "accentuate",
+    "definition": [
+      "make more noticeable or prominent.",
+      "Her new hairstyle accentuates her eyes."
+    ],
+    "word_frequency": 26982
+  },
+  {
+    "word": "accredit",
+    "definition": [
+      "officially recognize or authorize",
+      "The university is accredited by a national board."
+    ],
+    "word_frequency": 7618
+  },
+  {
+    "word": "accrue",
+    "definition": [
+      "be received by someone in regular or increasing amounts over time",
+      "Interest will accrue on the account daily."
+    ],
+    "word_frequency": 16655
+  },
+  {
+    "word": "acquit",
+    "definition": [
+      "To free someone from a criminal charge by a verdict of not guilty",
+      "The jury decided to acquit the defendant."
+    ],
+    "word_frequency": 11158
+  },
+  {
+    "word": "actuate",
+    "definition": [
+      "to cause (a machine or device) to operate",
+      "The sensor actuates the alarm when motion is detected."
+    ],
+    "word_frequency": 34507
+  },
+  {
+    "word": "addle",
+    "definition": [
+      "to confuse or muddle (someone's mind)",
+      "The complex instructions began to addle his brain."
+    ],
+    "word_frequency": 34508
+  },
+  {
+    "word": "adjudge",
+    "definition": [
+      "to consider or declare to be true or the case",
+      "The court will adjudge the winner of the competition."
+    ],
+    "word_frequency": 32055
+  },
+  {
+    "word": "adorn",
+    "definition": [
+      "decorate",
+      "She adorned her hair with flowers."
+    ],
+    "word_frequency": 12218
+  },
+  {
+    "word": "aggrieve",
+    "definition": [
+      "to distress or treat unfairly",
+      "The company's decision to cut benefits aggrieved many employees."
+    ],
+    "word_frequency": 22714
+  },
+  {
+    "word": "allege",
+    "definition": [
+      "claim without proof",
+      "The police allege that he committed the crime."
+    ],
+    "word_frequency": 2801
+  },
+  {
+    "word": "alleviate",
+    "definition": [
+      "make suffering less severe",
+      "The new medicine helped to alleviate her pain."
+    ],
+    "word_frequency": 9994
+  },
+  {
+    "word": "amalgamate",
+    "definition": [
+      "to combine or unite to form one organization or structure",
+      "The two companies decided to amalgamate to create a stronger entity."
+    ],
+    "word_frequency": 21289
+  },
+  {
+    "word": "ameliorate",
+    "definition": [
+      "to make (something bad or unsatisfactory) better",
+      "Steps were taken to ameliorate the living conditions of the refugees."
+    ],
+    "word_frequency": 34519
+  },
+  {
+    "word": "amplify",
+    "definition": [
+      "increase the volume of (sound), especially using an amplifier; enlarge upon or add details to (a story or statement)",
+      "The microphone will amplify your voice."
+    ],
+    "word_frequency": 12748
+  },
+  {
+    "word": "animate",
+    "definition": [
+      "bring to life; give spirit to",
+      "The artist used special effects to animate the characters."
+    ],
+    "word_frequency": 4523
+  },
+  {
+    "word": "annihilate",
+    "definition": [
+      "To destroy completely.",
+      "The army sought to annihilate the enemy forces."
+    ],
+    "word_frequency": 20762
+  },
+  {
+    "word": "annualize",
+    "definition": [
+      "to adjust a rate or amount to an annual basis",
+      "We need to annualize these quarterly earnings to get a full-year projection."
+    ],
+    "word_frequency": 32066
+  },
+  {
+    "word": "annul",
+    "definition": [
+      "to declare invalid (an official agreement, decision, or result)",
+      "The court decided to annul the marriage."
+    ],
+    "word_frequency": 21291
+  },
+  {
+    "word": "anoint",
+    "definition": [
+      "to smear or rub with oil, typically as part of a religious ceremony",
+      "The priest will anoint the new king with holy oil."
+    ],
+    "word_frequency": 17487
+  },
+  {
+    "word": "appall",
+    "definition": [
+      "to greatly dismay or horrify",
+      "The news of the disaster appalled everyone."
+    ],
+    "word_frequency": 14608
+  },
+  {
+    "word": "apprehend",
+    "definition": [
+      "to arrest; to understand",
+      "The police were able to apprehend the suspect."
+    ],
+    "word_frequency": 13311
+  },
+  {
+    "word": "arraign",
+    "definition": [
+      "to call or bring (someone) before a court to answer a criminal charge",
+      "The suspect was arraigned on charges of theft."
+    ],
+    "word_frequency": 27991
+  },
+  {
+    "word": "ascertain",
+    "definition": [
+      "find something out for certain; make sure of",
+      "We need to ascertain the facts before making a decision."
+    ],
+    "word_frequency": 13652
+  },
+  {
+    "word": "ascribe",
+    "definition": [
+      "attribute something to (a cause, source, or author)",
+      "He ascribed his success to hard work and a bit of luck."
+    ],
+    "word_frequency": 18981
+  },
+  {
+    "word": "aspirate",
+    "definition": [
+      "to draw (fluid) by suction from a body cavity; to pronounce with an audible breath",
+      "The doctor had to aspirate fluid from the patient's lung."
+    ],
+    "word_frequency": 32457
+  },
+  {
+    "word": "aspire",
+    "definition": [
+      "to direct one's hopes or ambitions towards achieving something",
+      "She aspires to become a doctor."
+    ],
+    "word_frequency": 9437
+  },
+  {
+    "word": "assimilate",
+    "definition": [
+      "to absorb and integrate (people, ideas, or culture) into a wider society or culture",
+      "Immigrants often try to assimilate into their new culture."
+    ],
+    "word_frequency": 18237
+  },
+  {
+    "word": "assort",
+    "definition": [
+      "to arrange into groups",
+      "The shopkeeper began to assort the different types of candies."
+    ],
+    "word_frequency": 13852
+  },
+  {
+    "word": "assuage",
+    "definition": [
+      "To make less severe",
+      "He tried to assuage her fears about the upcoming exam."
+    ],
+    "word_frequency": 31636
+  },
+  {
+    "word": "astound",
+    "definition": [
+      "to surprise greatly",
+      "Her incredible performance continued to astound the audience."
+    ],
+    "word_frequency": 11008
+  },
+  {
+    "word": "atone",
+    "definition": [
+      "to make amends or reparation",
+      "He tried to atone for his mistakes by helping others."
+    ],
+    "word_frequency": 23907
+  },
+  {
+    "word": "attenuate",
+    "definition": [
+      "to reduce the force, effect, or value of",
+      "The vaccine helps to attenuate the effects of the virus."
+    ],
+    "word_frequency": 27351
+  },
+  {
+    "word": "attest",
+    "definition": [
+      "provide or serve as clear evidence of",
+      "The ancient ruins attest to the city's former glory."
+    ],
+    "word_frequency": 14404
+  },
+  {
+    "word": "attribute",
+    "definition": [
+      "to regard something as being caused by",
+      "She attributed her success to hard work."
+    ],
+    "word_frequency": 4668
+  },
+  {
+    "word": "attune",
+    "definition": [
+      "to make receptive or aware; to bring into harmony",
+      "It takes time to attune yourself to a new culture."
+    ],
+    "word_frequency": 23312
+  },
+  {
+    "word": "augment",
+    "definition": [
+      "to make something greater by adding to it",
+      "He decided to augment his income by working a second job."
+    ],
+    "word_frequency": 10268
+  },
+  {
+    "word": "avail",
+    "definition": [
+      "To use or take advantage of (an opportunity or available resource)",
+      "His efforts were of no avail."
+    ],
+    "word_frequency": 9069
+  },
+  {
+    "word": "avow",
+    "definition": [
+      "to assert or confess openly",
+      "He avowed his innocence despite the evidence."
+    ],
+    "word_frequency": 30419
+  },
+  {
+    "word": "balk",
+    "definition": [
+      "hesitate or be unwilling to accept an idea or undertaking; (in baseball) an illegal motion by a pitcher",
+      "Many investors balk at the idea of putting money into risky ventures."
+    ],
+    "word_frequency": 28319
+  },
+  {
+    "word": "batten",
+    "definition": [
+      "to fasten or secure with battens",
+      "They had to batten down the hatches before the storm hit."
+    ],
+    "word_frequency": 27692
+  },
+  {
+    "word": "befall",
+    "definition": [
+      "(of something bad) happen to (someone)",
+      "A great misfortune befell the family."
+    ],
+    "word_frequency": 28634
+  },
+  {
+    "word": "begrudge",
+    "definition": [
+      "to envy someone the possession or enjoyment of something",
+      "I don't begrudge him his success."
+    ],
+    "word_frequency": 34112
+  },
+  {
+    "word": "beguile",
+    "definition": [
+      "to charm or enchant someone, sometimes in a deceptive way",
+      "She was beguiled by his charming smile."
+    ],
+    "word_frequency": 34968
+  },
+  {
+    "word": "behold",
+    "definition": [
+      "see or observe (a thing or person, especially a remarkable or impressive one)",
+      "Behold the beauty of the sunset!"
+    ],
+    "word_frequency": 7094
+  },
+  {
+    "word": "beleaguer",
+    "definition": [
+      "to besiege; to trouble persistently",
+      "The company was beleaguered by financial difficulties."
+    ],
+    "word_frequency": 28006
+  },
+  {
+    "word": "bemuse",
+    "definition": [
+      "Puzzle, confuse, or bewilder.",
+      "The complex instructions left him completely bemused."
+    ],
+    "word_frequency": 34540
+  },
+  {
+    "word": "bequeath",
+    "definition": [
+      "To leave (property) to a person or other beneficiary by a will.",
+      "He bequeathed his entire estate to his niece."
+    ],
+    "word_frequency": 19525
+  },
+  {
+    "word": "bereave",
+    "definition": [
+      "to deprive of a loved one through a profound absence, especially due to death",
+      "The war had bereaved many families of their sons."
+    ],
+    "word_frequency": 22735
+  },
+  {
+    "word": "beseech",
+    "definition": [
+      "to ask someone urgently and fervently to do something",
+      "I beseech you to reconsider your decision."
+    ],
+    "word_frequency": 27700
+  },
+  {
+    "word": "beset",
+    "definition": [
+      "to trouble or threaten persistently",
+      "The project was beset by delays."
+    ],
+    "word_frequency": 18029
+  },
+  {
+    "word": "besiege",
+    "definition": [
+      "to surround (a place) with armed forces in order to capture it or force its surrender",
+      "The army decided to besiege the castle for several weeks."
+    ],
+    "word_frequency": 12579
+  },
+  {
+    "word": "bestow",
+    "definition": [
+      "to confer or present (an honor, right, or gift)",
+      "The queen will bestow a knighthood upon him for his service."
+    ],
+    "word_frequency": 11926
+  },
+  {
+    "word": "betroth",
+    "definition": [
+      "to formally engage to be married",
+      "They were betrothed at a young age."
+    ],
+    "word_frequency": 23916
+  },
+  {
+    "word": "bide",
+    "definition": [
+      "to remain or stay somewhere",
+      "He decided to bide his time until the right opportunity arose."
+    ],
+    "word_frequency": 30428
+  },
+  {
+    "word": "blindside",
+    "definition": [
+      "to hit or attack (someone) from the blind side; to surprise (someone) negatively",
+      "The news completely blindsided him."
+    ],
+    "word_frequency": 28638
+  },
+  {
+    "word": "bluster",
+    "definition": [
+      "talk in a loud, aggressive, or arrogant way",
+      "He tried to bluster his way out of trouble."
+    ],
+    "word_frequency": 33742
+  },
+  {
+    "word": "bode",
+    "definition": [
+      "to be an omen of",
+      "The dark clouds bode ill for our picnic."
+    ],
+    "word_frequency": 19248
+  },
+  {
+    "word": "bray",
+    "definition": [
+      "to make a loud, harsh cry (like a donkey)",
+      "We heard the donkey bray loudly from the field."
+    ],
+    "word_frequency": 13322
+  },
+  {
+    "word": "burgeon",
+    "definition": [
+      "begin to grow or increase rapidly; flourish",
+      "The company's profits began to burgeon."
+    ],
+    "word_frequency": 17074
+  },
+  {
+    "word": "burnish",
+    "definition": [
+      "Polish (something, especially metal) by rubbing.",
+      "He used a soft cloth to burnish the silver."
+    ],
+    "word_frequency": 34555
+  },
+  {
+    "word": "cantilever",
+    "definition": [
+      "to project or support by a cantilever",
+      "The architect designed the balcony to cantilever out over the garden."
+    ],
+    "word_frequency": 28338
+  },
+  {
+    "word": "castrate",
+    "definition": [
+      "to remove the testicles of a male animal or human",
+      "Farmers often castrate male livestock to improve meat quality."
+    ],
+    "word_frequency": 27713
+  },
+  {
+    "word": "cede",
+    "definition": [
+      "to give up power or territory",
+      "The country was forced to cede territory after the war."
+    ],
+    "word_frequency": 19264
+  },
+  {
+    "word": "censure",
+    "definition": [
+      "to express severe disapproval of (someone or something), especially in a formal statement",
+      "The committee voted to censure the senator for his misconduct."
+    ],
+    "word_frequency": 21590
+  },
+  {
+    "word": "circumcise",
+    "definition": [
+      "to remove the foreskin",
+      "In some cultures, it is traditional to circumcise male infants."
+    ],
+    "word_frequency": 23082
+  },
+  {
+    "word": "circumscribe",
+    "definition": [
+      "To restrict (something) within limits; to draw a figure around another, touching it at points",
+      "The new rules will circumscribe the power of the committee."
+    ],
+    "word_frequency": 32502
+  },
+  {
+    "word": "circumvent",
+    "definition": [
+      "find a way around an obstacle",
+      "They tried to circumvent the rules, but were caught."
+    ],
+    "word_frequency": 16454
+  },
+  {
+    "word": "cite",
+    "definition": [
+      "to quote as evidence",
+      "You must cite your sources in academic writing."
+    ],
+    "word_frequency": 3196
+  },
+  {
+    "word": "cleave",
+    "definition": [
+      "split or sever (something), especially along a natural line or grain",
+      "The axe was used to cleave the log in two."
+    ],
+    "word_frequency": 24229
+  },
+  {
+    "word": "coalesce",
+    "definition": [
+      "to come together to form one mass or whole",
+      "The small groups will coalesce into one large organization."
+    ],
+    "word_frequency": 31681
+  },
+  {
+    "word": "codify",
+    "definition": [
+      "arrange (laws or rules) into a systematic code.",
+      "They decided to codify the new regulations to make them clearer."
+    ],
+    "word_frequency": 20811
+  },
+  {
+    "word": "collate",
+    "definition": [
+      "to collect and combine (texts, information, etc.)",
+      "Please collate the reports before the meeting."
+    ],
+    "word_frequency": 26723
+  },
+  {
+    "word": "commemorate",
+    "definition": [
+      "remember and honor",
+      "A monument was built to commemorate the fallen soldiers."
+    ],
+    "word_frequency": 10443
+  },
+  {
+    "word": "conceive",
+    "definition": [
+      "to form or devise (a plan or idea) in the mind",
+      "She conceived a brilliant plan for the new project."
+    ],
+    "word_frequency": 6085
+  },
+  {
+    "word": "conceptualize",
+    "definition": [
+      "form a concept or idea of (something); imagine",
+      "It's hard to conceptualize the vastness of space."
+    ],
+    "word_frequency": 31288
+  },
+  {
+    "word": "condescend",
+    "definition": [
+      "to behave in a way that shows one considers oneself superior",
+      "Please don't condescend to me; I understand the topic perfectly."
+    ],
+    "word_frequency": 17525
+  },
+  {
+    "word": "condone",
+    "definition": [
+      "to accept and allow (behavior that is considered morally wrong or offensive) to continue",
+      "The school does not condone bullying of any kind."
+    ],
+    "word_frequency": 16033
+  },
+  {
+    "word": "confound",
+    "definition": [
+      "to surprise or confuse someone; to prove (a theory, expectation, or prediction) wrong",
+      "The sudden turn of events confounded everyone."
+    ],
+    "word_frequency": 24823
+  },
+  {
+    "word": "conjoin",
+    "definition": [
+      "to join together; combine",
+      "The two rivers conjoin just before reaching the sea."
+    ],
+    "word_frequency": 26725
+  },
+  {
+    "word": "conjure",
+    "definition": [
+      "to make something appear as if by magic",
+      "The magician promised to conjure a rabbit from his hat."
+    ],
+    "word_frequency": 17529
+  },
+  {
+    "word": "connive",
+    "definition": [
+      "secretly allow (something immoral, illegal, or harmful) to occur",
+      "The guards were accused of conniving with the prisoners."
+    ],
+    "word_frequency": 31290
+  },
+  {
+    "word": "consecrate",
+    "definition": [
+      "to make or declare (something, typically a church) sacred; dedicate formally to a religious or divine purpose",
+      "The bishop will consecrate the new church next Sunday."
+    ],
+    "word_frequency": 16036
+  },
+  {
+    "word": "consign",
+    "definition": [
+      "to send or deliver",
+      "He decided to consign his old furniture to an auction house."
+    ],
+    "word_frequency": 23648
+  },
+  {
+    "word": "constipate",
+    "definition": [
+      "to cause constipation",
+      "Certain medications can constipate you."
+    ],
+    "word_frequency": 27391
+  },
+  {
+    "word": "constitute",
+    "definition": [
+      "be (a part) of a whole; combine to form (a whole)",
+      "These elements constitute the main part of the report."
+    ],
+    "word_frequency": 6268
+  },
+  {
+    "word": "construe",
+    "definition": [
+      "interpret (a word or action) in a particular way",
+      "His silence was construed as an admission of guilt."
+    ],
+    "word_frequency": 13677
+  },
+  {
+    "word": "consummate",
+    "definition": [
+      "to complete or make perfect",
+      "They hoped to consummate the deal by the end of the week."
+    ],
+    "word_frequency": 19009
+  },
+  {
+    "word": "contend",
+    "definition": [
+      "to assert something as a position in an argument; to struggle to surmount",
+      "The lawyers will contend that their client is innocent."
+    ],
+    "word_frequency": 9460
+  },
+  {
+    "word": "contrive",
+    "definition": [
+      "create or bring about (an object or a situation) by deliberate use of skill and artifice",
+      "The prisoners contrived a way to escape."
+    ],
+    "word_frequency": 16458
+  },
+  {
+    "word": "convene",
+    "definition": [
+      "call people together for a meeting; assemble",
+      "The committee will convene next week to discuss the proposals."
+    ],
+    "word_frequency": 11796
+  },
+  {
+    "word": "correlate",
+    "definition": [
+      "have a mutual relationship or connection",
+      "Stress levels often correlate with sleep deprivation."
+    ],
+    "word_frequency": 10291
+  },
+  {
+    "word": "corroborate",
+    "definition": [
+      "To confirm or give support to (a statement, theory, or finding).",
+      "The witness's testimony helped to corroborate the suspect's alibi."
+    ],
+    "word_frequency": 22194
+  },
+  {
+    "word": "covet",
+    "definition": [
+      "To yearn to possess or have (something).",
+      "She coveted her neighbor's beautiful garden."
+    ],
+    "word_frequency": 12780
+  },
+  {
+    "word": "criminalize",
+    "definition": [
+      "To make something illegal.",
+      "Many countries have chosen to criminalize certain drugs."
+    ],
+    "word_frequency": 33790
+  },
+  {
+    "word": "cripple",
+    "definition": [
+      "cause severe and disabling damage to",
+      "The economic crisis threatened to cripple the industry."
+    ],
+    "word_frequency": 10294
+  },
+  {
+    "word": "crucify",
+    "definition": [
+      "to put (someone) to death by nailing or binding them to a cross",
+      "Historically, some criminals were crucified as a form of execution."
+    ],
+    "word_frequency": 14034
+  },
+  {
+    "word": "crystallize",
+    "definition": [
+      "To form into crystals; to become clear or definite.",
+      "The sugar began to crystallize at the bottom of the pan."
+    ],
+    "word_frequency": 29017
+  },
+  {
+    "word": "cull",
+    "definition": [
+      "to reduce the population of a wild animal by selective slaughter; to select from a large quantity",
+      "The park rangers decided to cull the deer population to prevent overgrazing."
+    ],
+    "word_frequency": 21077
+  },
+  {
+    "word": "culminate",
+    "definition": [
+      "to reach a climax",
+      "The long negotiations culminated in a peace treaty."
+    ],
+    "word_frequency": 13873
+  },
+  {
+    "word": "curtail",
+    "definition": [
+      "to reduce in extent or quantity; impose a restriction on",
+      "The new policy will curtail government spending."
+    ],
+    "word_frequency": 18274
+  },
+  {
+    "word": "dally",
+    "definition": [
+      "to waste time; to linger",
+      "Don't dally on your way home; it's getting late."
+    ],
+    "word_frequency": 26395
+  },
+  {
+    "word": "debilitate",
+    "definition": [
+      "to make someone very weak and infirm",
+      "The illness can severely debilitate patients."
+    ],
+    "word_frequency": 15651
+  },
+  {
+    "word": "decapitate",
+    "definition": [
+      "to cut off the head of",
+      "In ancient times, it was common to decapitate traitors."
+    ],
+    "word_frequency": 20295
+  },
+  {
+    "word": "decentralize",
+    "definition": [
+      "to move power away from a central point",
+      "The company decided to decentralize its operations."
+    ],
+    "word_frequency": 13684
+  },
+  {
+    "word": "decommission",
+    "definition": [
+      "take out of service",
+      "The old power plant will be decommissioned next year."
+    ],
+    "word_frequency": 24529
+  },
+  {
+    "word": "deconstruct",
+    "definition": [
+      "to analyze or break down (a text or concept) into its component parts",
+      "The literary critic sought to deconstruct the novel's themes."
+    ],
+    "word_frequency": 35020
+  },
+  {
+    "word": "decry",
+    "definition": [
+      "publicly denounce",
+      "The critics decried the new policy as unfair."
+    ],
+    "word_frequency": 31309
+  },
+  {
+    "word": "deem",
+    "definition": [
+      "to consider or judge",
+      "They deemed the project a success."
+    ],
+    "word_frequency": 3766
+  },
+  {
+    "word": "defer",
+    "definition": [
+      "put off (an action or event) to a later time; postpone",
+      "They decided to defer the decision until next month."
+    ],
+    "word_frequency": 9743
+  },
+  {
+    "word": "defile",
+    "definition": [
+      "to spoil or make impure",
+      "They were accused of trying to defile the sacred monument."
+    ],
+    "word_frequency": 30890
+  },
+  {
+    "word": "deject",
+    "definition": [
+      "to make sad or dispirited; depress",
+      "The bad news seemed to deject him completely."
+    ],
+    "word_frequency": 26738
+  },
+  {
+    "word": "delineate",
+    "definition": [
+      "to describe or portray precisely",
+      "The architect tried to delineate the boundaries of the property."
+    ],
+    "word_frequency": 28364
+  },
+  {
+    "word": "demean",
+    "definition": [
+      "to cause a loss of dignity or respect for (someone or something)",
+      "His rude comments demeaned the entire team."
+    ],
+    "word_frequency": 21876
+  },
+  {
+    "word": "demonize",
+    "definition": [
+      "to portray as evil or threatening",
+      "It's easy to demonize those we don't understand."
+    ],
+    "word_frequency": 32528
+  },
+  {
+    "word": "denigrate",
+    "definition": [
+      "criticize unfairly; disparage",
+      "It's wrong to denigrate someone's efforts without understanding their challenges."
+    ],
+    "word_frequency": 33363
+  },
+  {
+    "word": "denominate",
+    "definition": [
+      "to name",
+      "The currency is denominated in euros."
+    ],
+    "word_frequency": 22206
+  },
+  {
+    "word": "denote",
+    "definition": [
+      "be a sign of; indicate",
+      "The red light denotes danger."
+    ],
+    "word_frequency": 11512
+  },
+  {
+    "word": "depose",
+    "definition": [
+      "to remove from office suddenly and forcefully",
+      "The king was deposed by a military coup last year."
+    ],
+    "word_frequency": 14038
+  },
+  {
+    "word": "deprecate",
+    "definition": [
+      "to express disapproval of",
+      "He tended to deprecate his own achievements, despite their significance."
+    ],
+    "word_frequency": 26741
+  },
+  {
+    "word": "derange",
+    "definition": [
+      "to make insane; to disturb the order of",
+      "The stress of the situation seemed to derange his thoughts."
+    ],
+    "word_frequency": 15449
+  },
+  {
+    "word": "deride",
+    "definition": [
+      "to express contempt for; ridicule",
+      "The critics derided the play as amateurish and poorly written."
+    ],
+    "word_frequency": 26742
+  },
+  {
+    "word": "derive",
+    "definition": [
+      "to obtain or get something from",
+      "Many English words derive from Latin."
+    ],
+    "word_frequency": 3204
+  },
+  {
+    "word": "desecrate",
+    "definition": [
+      "treat (a sacred place or thing) with violent disrespect; violate",
+      "Vandals desecrated the ancient monument."
+    ],
+    "word_frequency": 31311
+  },
+  {
+    "word": "desist",
+    "definition": [
+      "stop doing something",
+      "The police ordered the protesters to desist from blocking the road."
+    ],
+    "word_frequency": 18799
+  },
+  {
+    "word": "destruct",
+    "definition": [
+      "To destroy (oneself or something) deliberately.",
+      "The missile was programmed to destruct if it went off course."
+    ],
+    "word_frequency": 22780
+  },
+  {
+    "word": "dethrone",
+    "definition": [
+      "Remove from a position of power or authority.",
+      "The challenger hoped to dethrone the reigning champion."
+    ],
+    "word_frequency": 34589
+  },
+  {
+    "word": "detract",
+    "definition": [
+      "to reduce or take away the worth or value of",
+      "His rude comments did not detract from the overall success of the event."
+    ],
+    "word_frequency": 19787
+  },
+  {
+    "word": "devolve",
+    "definition": [
+      "to transfer or delegate (power) to a lower level",
+      "The central government decided to devolve more power to local authorities."
+    ],
+    "word_frequency": 16887
+  },
+  {
+    "word": "diffuse",
+    "definition": [
+      "to spread or cause to spread over a wide area or among a large number of people",
+      "The scent of flowers diffused through the room."
+    ],
+    "word_frequency": 13883
+  },
+  {
+    "word": "dignify",
+    "definition": [
+      "to make something seem important or impressive",
+      "He refused to dignify the accusations with a response."
+    ],
+    "word_frequency": 13884
+  },
+  {
+    "word": "disaffect",
+    "definition": [
+      "to make someone feel alienated or hostile",
+      "The government's policies began to disaffect the public."
+    ],
+    "word_frequency": 27408
+  },
+  {
+    "word": "disavow",
+    "definition": [
+      "to deny any responsibility or support for",
+      "The politician was quick to disavow the controversial statements."
+    ],
+    "word_frequency": 32957
+  },
+  {
+    "word": "discern",
+    "definition": [
+      "to perceive or recognize something",
+      "It was difficult to discern the truth from the rumors."
+    ],
+    "word_frequency": 14856
+  },
+  {
+    "word": "disconcert",
+    "definition": [
+      "disturb the composure of; unsettle",
+      "His sudden appearance disconcerted everyone."
+    ],
+    "word_frequency": 21345
+  },
+  {
+    "word": "discredit",
+    "definition": [
+      "To harm the good reputation of.",
+      "The scandal served to discredit the politician."
+    ],
+    "word_frequency": 12441
+  },
+  {
+    "word": "disenchant",
+    "definition": [
+      "to free from illusion or false belief; disillusion",
+      "The harsh reality of the job began to disenchant him."
+    ],
+    "word_frequency": 30485
+  },
+  {
+    "word": "disenfranchise",
+    "definition": [
+      "To deprive (someone) of the right to vote.",
+      "Laws were passed to prevent attempts to disenfranchise minority voters."
+    ],
+    "word_frequency": 22783
+  },
+  {
+    "word": "disillusion",
+    "definition": [
+      "To free from illusion; to disappoint",
+      "The harsh reality began to disillusion him."
+    ],
+    "word_frequency": 15858
+  },
+  {
+    "word": "dismember",
+    "definition": [
+      "tear or cut off the limbs of a person or animal",
+      "The predator began to dismember its prey."
+    ],
+    "word_frequency": 26065
+  },
+  {
+    "word": "disparage",
+    "definition": [
+      "to regard or represent as being of little worth",
+      "It's wrong to disparage someone's efforts, even if they fail."
+    ],
+    "word_frequency": 23384
+  },
+  {
+    "word": "dispel",
+    "definition": [
+      "to make a doubt, feeling, or belief disappear",
+      "He tried to dispel her fears about the upcoming exam."
+    ],
+    "word_frequency": 17544
+  },
+  {
+    "word": "dispossess",
+    "definition": [
+      "to deprive someone of land, property, or other possessions",
+      "The landlord threatened to dispossess the tenants for unpaid rent."
+    ],
+    "word_frequency": 27409
+  },
+  {
+    "word": "disseminate",
+    "definition": [
+      "to spread or disperse widely",
+      "The organization aims to disseminate information about healthy living."
+    ],
+    "word_frequency": 19297
+  },
+  {
+    "word": "dissent",
+    "definition": [
+      "to hold or express opinions that are at variance with those previously, commonly, or officially expressed",
+      "Three judges dissented from the majority decision."
+    ],
+    "word_frequency": 9466
+  },
+  {
+    "word": "dissipate",
+    "definition": [
+      "to disappear or cause to disappear",
+      "The fog began to dissipate as the sun rose."
+    ],
+    "word_frequency": 18288
+  },
+  {
+    "word": "dissuade",
+    "definition": [
+      "to persuade someone not to take a particular course of action",
+      "We tried to dissuade him from quitting his job, but he was determined."
+    ],
+    "word_frequency": 19790
+  },
+  {
+    "word": "diverge",
+    "definition": [
+      "to separate and go in different directions",
+      "The two paths diverge at the old oak tree."
+    ],
+    "word_frequency": 24841
+  },
+  {
+    "word": "divest",
+    "definition": [
+      "to strip or deprive (someone or something) of power, rights, or possessions",
+      "The company decided to divest its holdings in fossil fuels."
+    ],
+    "word_frequency": 23386
+  },
+  {
+    "word": "divulge",
+    "definition": [
+      "to make known (private information)",
+      "He refused to divulge the source of his information."
+    ],
+    "word_frequency": 21886
+  },
+  {
+    "word": "dredge",
+    "definition": [
+      "to clean out the bed of a harbor or river",
+      "They used a special boat to dredge the river."
+    ],
+    "word_frequency": 17106
+  },
+  {
+    "word": "drudge",
+    "definition": [
+      "to do dull, laborious, or menial work",
+      "He had to drudge through piles of paperwork."
+    ],
+    "word_frequency": 32540
+  },
+  {
+    "word": "dumbfound",
+    "definition": [
+      "to greatly astonish or amaze; to make speechless with amazement",
+      "The magician's trick dumbfounded the audience."
+    ],
+    "word_frequency": 27415
+  },
+  {
+    "word": "dupe",
+    "definition": [
+      "to deceive or trick",
+      "He tried to dupe me into giving him money."
+    ],
+    "word_frequency": 18059
+  },
+  {
+    "word": "ejaculate",
+    "definition": [
+      "to utter suddenly; to expel semen",
+      "He would often ejaculate a witty remark during the meeting."
+    ],
+    "word_frequency": 35042
+  },
+  {
+    "word": "eke",
+    "definition": [
+      "To make a living with difficulty; to obtain or extract with great effort.",
+      "They had to eke out a living from their small farm."
+    ],
+    "word_frequency": 31728
+  },
+  {
+    "word": "elate",
+    "definition": [
+      "make (someone) ecstatically happy.",
+      "The news of her promotion elated her."
+    ],
+    "word_frequency": 20838
+  },
+  {
+    "word": "elicit",
+    "definition": [
+      "to evoke or draw out (a response, answer, or fact) from someone",
+      "Her questions failed to elicit any response from him."
+    ],
+    "word_frequency": 17556
+  },
+  {
+    "word": "elongate",
+    "definition": [
+      "to make something longer",
+      "The artist tried to elongate the figures in the painting."
+    ],
+    "word_frequency": 12614
+  },
+  {
+    "word": "elucidate",
+    "definition": [
+      "to make clear; explain",
+      "Please elucidate the main points of your argument."
+    ],
+    "word_frequency": 29040
+  },
+  {
+    "word": "emanate",
+    "definition": [
+      "to issue or spread out from (a source)",
+      "A strange light seemed to emanate from the old house."
+    ],
+    "word_frequency": 19308
+  },
+  {
+    "word": "emancipate",
+    "definition": [
+      "to set free",
+      "The new law will emancipate many people from debt."
+    ],
+    "word_frequency": 29407
+  },
+  {
+    "word": "embalm",
+    "definition": [
+      "To preserve a body from decay",
+      "Ancient Egyptians would embalm their pharaohs."
+    ],
+    "word_frequency": 34602
+  },
+  {
+    "word": "embattle",
+    "definition": [
+      "To prepare for battle; to place in a state of conflict.",
+      "The embattled government faced widespread protests."
+    ],
+    "word_frequency": 26411
+  },
+  {
+    "word": "embellish",
+    "definition": [
+      "make (something) more attractive by the addition of decorative details or features",
+      "He tended to embellish the truth when telling stories."
+    ],
+    "word_frequency": 17835
+  },
+  {
+    "word": "embitter",
+    "definition": [
+      "to make someone feel bitter or resentful",
+      "His constant failures began to embitter him."
+    ],
+    "word_frequency": 32973
+  },
+  {
+    "word": "embody",
+    "definition": [
+      "represent; give tangible form to",
+      "The new building will embody the spirit of modern architecture."
+    ],
+    "word_frequency": 12802
+  },
+  {
+    "word": "emboss",
+    "definition": [
+      "to raise a design on a surface",
+      "The leather cover was embossed with the company's logo."
+    ],
+    "word_frequency": 21901
+  },
+  {
+    "word": "emulate",
+    "definition": [
+      "to match or surpass (a person or achievement), typically by imitation",
+      "She tried to emulate her older sister's success."
+    ],
+    "word_frequency": 11653
+  },
+  {
+    "word": "encapsulate",
+    "definition": [
+      "enclose (something) in or as if in a capsule; express the essential features of (something) succinctly",
+      "The report aims to encapsulate the main findings of the research."
+    ],
+    "word_frequency": 22504
+  },
+  {
+    "word": "encompass",
+    "definition": [
+      "to surround and have or hold within",
+      "The study will encompass all aspects of the problem."
+    ],
+    "word_frequency": 11654
+  },
+  {
+    "word": "encroach",
+    "definition": [
+      "intrude on (a person's territory or a thing considered to be a right).",
+      "The sea has started to encroach on the coastline."
+    ],
+    "word_frequency": 25455
+  },
+  {
+    "word": "encrust",
+    "definition": [
+      "to cover (a surface) with a hard crust or coating",
+      "Over time, the pipes became encrusted with mineral deposits."
+    ],
+    "word_frequency": 27423
+  },
+  {
+    "word": "endear",
+    "definition": [
+      "to cause to be loved or liked",
+      "Her kindness and humor quickly endeared her to everyone."
+    ],
+    "word_frequency": 16895
+  },
+  {
+    "word": "endeavor",
+    "definition": [
+      "to try hard to do or achieve something",
+      "We must endeavor to improve our services."
+    ],
+    "word_frequency": 9470
+  },
+  {
+    "word": "endorse",
+    "definition": [
+      "to declare one's public approval or support of",
+      "Many celebrities endorse various products."
+    ],
+    "word_frequency": 6090
+  },
+  {
+    "word": "endow",
+    "definition": [
+      "to provide with a quality, ability, or asset",
+      "Nature endowed her with great musical talent."
+    ],
+    "word_frequency": 11655
+  },
+  {
+    "word": "engender",
+    "definition": [
+      "To cause or give rise to (a feeling, situation, or condition).",
+      "The new policy is likely to engender controversy."
+    ],
+    "word_frequency": 31731
+  },
+  {
+    "word": "enshrine",
+    "definition": [
+      "to place in a shrine or sacred place; to preserve",
+      "The constitution enshrines the rights of citizens."
+    ],
+    "word_frequency": 19028
+  },
+  {
+    "word": "ensue",
+    "definition": [
+      "happen or occur afterward or as a result",
+      "A heated debate ensued after his controversial statement."
+    ],
+    "word_frequency": 9754
+  },
+  {
+    "word": "enthrall",
+    "definition": [
+      "To capture the fascinated attention of.",
+      "The magician's performance enthralled the audience."
+    ],
+    "word_frequency": 26415
+  },
+  {
+    "word": "entitle",
+    "definition": [
+      "give a right or claim to",
+      "This ticket entitles you to free entry."
+    ],
+    "word_frequency": 2225
+  },
+  {
+    "word": "entrench",
+    "definition": [
+      "to establish (an attitude, habit, or belief) so firmly that change is very difficult or unlikely",
+      "The habit of daily exercise became deeply entrenched in his routine."
+    ],
+    "word_frequency": 13347
+  },
+  {
+    "word": "envisage",
+    "definition": [
+      "to imagine or contemplate",
+      "It's hard to envisage a future without technology."
+    ],
+    "word_frequency": 17325
+  },
+  {
+    "word": "eradicate",
+    "definition": [
+      "to destroy completely",
+      "The goal is to eradicate poverty."
+    ],
+    "word_frequency": 13699
+  },
+  {
+    "word": "err",
+    "definition": [
+      "be mistaken or incorrect; make a mistake",
+      "To err is human, to forgive divine."
+    ],
+    "word_frequency": 11958
+  },
+  {
+    "word": "eschew",
+    "definition": [
+      "deliberately avoid using; abstain from",
+      "He tried to eschew all forms of luxury."
+    ],
+    "word_frequency": 34192
+  },
+  {
+    "word": "espouse",
+    "definition": [
+      "adopt or support (a cause, belief, or way of life)",
+      "She decided to espouse the cause of environmental protection."
+    ],
+    "word_frequency": 22802
+  },
+  {
+    "word": "estrange",
+    "definition": [
+      "to alienate, to separate",
+      "The argument caused him to estrange himself from his family."
+    ],
+    "word_frequency": 14654
+  },
+  {
+    "word": "euthanize",
+    "definition": [
+      "to kill (a person or animal) painlessly to relieve suffering",
+      "The vet decided it was best to euthanize the suffering animal."
+    ],
+    "word_frequency": 28387
+  },
+  {
+    "word": "exacerbate",
+    "definition": [
+      "to make worse",
+      "The lack of rain will only exacerbate the drought."
+    ],
+    "word_frequency": 15066
+  },
+  {
+    "word": "exalt",
+    "definition": [
+      "praise highly; raise in rank",
+      "The choir will exalt the Lord with their voices."
+    ],
+    "word_frequency": 16482
+  },
+  {
+    "word": "excise",
+    "definition": [
+      "remove by cutting out",
+      "The editor decided to excise the irrelevant paragraph from the article."
+    ],
+    "word_frequency": 14249
+  },
+  {
+    "word": "excommunicate",
+    "definition": [
+      "officially exclude (someone) from participation in the sacraments and services of the Christian Church.",
+      "The bishop threatened to excommunicate the rebellious priest."
+    ],
+    "word_frequency": 25462
+  },
+  {
+    "word": "exemplify",
+    "definition": [
+      "to be a typical example of",
+      "His dedication to his work exemplifies true professionalism."
+    ],
+    "word_frequency": 16897
+  },
+  {
+    "word": "exhilarate",
+    "definition": [
+      "to make someone feel very happy, animated, or thrilled",
+      "The roller coaster ride was exhilarating."
+    ],
+    "word_frequency": 17113
+  },
+  {
+    "word": "exhume",
+    "definition": [
+      "dig out (something buried, especially a corpse) from the ground",
+      "The police decided to exhume the body for further examination."
+    ],
+    "word_frequency": 30163
+  },
+  {
+    "word": "exonerate",
+    "definition": [
+      "to clear from blame",
+      "The DNA evidence helped to exonerate the suspect."
+    ],
+    "word_frequency": 22223
+  },
+  {
+    "word": "exploit",
+    "definition": [
+      "make full use of and derive benefit from (a resource)",
+      "We need to exploit new technologies to improve efficiency."
+    ],
+    "word_frequency": 6431
+  },
+  {
+    "word": "expunge",
+    "definition": [
+      "erase or remove completely (something unwanted or unpleasant)",
+      "He tried to expunge the painful memories from his mind."
+    ],
+    "word_frequency": 30164
+  },
+  {
+    "word": "extenuate",
+    "definition": [
+      "To make (guilt or an offense) seem less serious or more forgivable",
+      "There were no circumstances to extenuate his actions."
+    ],
+    "word_frequency": 34612
+  },
+  {
+    "word": "extradite",
+    "definition": [
+      "to hand over a person to another jurisdiction",
+      "The government decided to extradite the suspect."
+    ],
+    "word_frequency": 25767
+  },
+  {
+    "word": "extricate",
+    "definition": [
+      "free (someone or something) from a difficulty or constraint",
+      "It took a long time to extricate the car from the mud."
+    ],
+    "word_frequency": 33391
+  },
+  {
+    "word": "extrude",
+    "definition": [
+      "to force out (a material) through a die or nozzle",
+      "Plastic is often extruded into various shapes."
+    ],
+    "word_frequency": 31338
+  },
+  {
+    "word": "exude",
+    "definition": [
+      "to discharge slowly and steadily; to display (an emotion or quality) strongly and openly",
+      "The plant began to exude a sticky sap."
+    ],
+    "word_frequency": 32556
+  },
+  {
+    "word": "fabricate",
+    "definition": [
+      "Invent or concoct (something), typically with deceitful intent; construct or manufacture (an industrial product), especially from prepared components.",
+      "He tried to fabricate an alibi."
+    ],
+    "word_frequency": 10192
+  },
+  {
+    "word": "facilitate",
+    "definition": [
+      "to make an action or process easy or easier",
+      "The new software will facilitate communication between teams."
+    ],
+    "word_frequency": 5117
+  },
+  {
+    "word": "fathom",
+    "definition": [
+      "understand deeply",
+      "I can't fathom why he would do such a thing."
+    ],
+    "word_frequency": 14451
+  },
+  {
+    "word": "federate",
+    "definition": [
+      "to unite in a federation",
+      "The states decided to federate to form a stronger nation."
+    ],
+    "word_frequency": 21636
+  },
+  {
+    "word": "feign",
+    "definition": [
+      "to pretend to be affected by (a feeling, state, or injury)",
+      "She tried to feign illness to avoid going to school."
+    ],
+    "word_frequency": 30917
+  },
+  {
+    "word": "flabbergast",
+    "definition": [
+      "to surprise someone greatly",
+      "His sudden resignation flabbergasted everyone in the office."
+    ],
+    "word_frequency": 29422
+  },
+  {
+    "word": "fledge",
+    "definition": [
+      "develop feathers for flight",
+      "The young birds will fledge and leave the nest soon."
+    ],
+    "word_frequency": 14254
+  },
+  {
+    "word": "forebode",
+    "definition": [
+      "act as a warning of (something bad)",
+      "The dark clouds forebode a coming storm."
+    ],
+    "word_frequency": 26095
+  },
+  {
+    "word": "foreclose",
+    "definition": [
+      "to take possession of a mortgaged property when the mortgagor fails to keep up their mortgage payments",
+      "The bank threatened to foreclose on their house."
+    ],
+    "word_frequency": 24865
+  },
+  {
+    "word": "forego",
+    "definition": [
+      "to go without; to give up",
+      "I decided to forego dessert to save calories."
+    ],
+    "word_frequency": 18068
+  },
+  {
+    "word": "forestall",
+    "definition": [
+      "prevent or obstruct by taking action ahead of time",
+      "He tried to forestall the crisis by acting quickly."
+    ],
+    "word_frequency": 32174
+  },
+  {
+    "word": "forsake",
+    "definition": [
+      "to abandon or give up",
+      "He promised never to forsake his family."
+    ],
+    "word_frequency": 16274
+  },
+  {
+    "word": "galvanise",
+    "definition": [
+      "to shock or excite (someone) into taking action; to coat (iron or steel) with a protective layer of zinc",
+      "The urgency of the situation helped to galvanise the team into action."
+    ],
+    "word_frequency": 35072
+  },
+  {
+    "word": "galvanize",
+    "definition": [
+      "to shock or excite (someone) into taking action; to coat (iron or steel) with a protective layer of zinc",
+      "The urgency of the situation galvanized the team into action."
+    ],
+    "word_frequency": 19578
+  },
+  {
+    "word": "garner",
+    "definition": [
+      "gather or collect (something, especially information or approval)",
+      "The politician hoped to garner support from the voters."
+    ],
+    "word_frequency": 9612
+  },
+  {
+    "word": "gerrymander",
+    "definition": [
+      "Manipulate the boundaries of (an electoral constituency) so as to favor one party or class.",
+      "Critics accused the party of trying to gerrymander the voting districts."
+    ],
+    "word_frequency": 27774
+  },
+  {
+    "word": "gild",
+    "definition": [
+      "to cover thinly with gold; to give a specious or attractive appearance to",
+      "They decided to gild the frame of the old mirror."
+    ],
+    "word_frequency": 13543
+  },
+  {
+    "word": "glean",
+    "definition": [
+      "extract (information) from various sources; gather (leftover grain)",
+      "From various sources, I was able to glean a few facts about the incident."
+    ],
+    "word_frequency": 21382
+  },
+  {
+    "word": "gratify",
+    "definition": [
+      "to give pleasure or satisfaction to",
+      "It was gratifying to see the project finally completed."
+    ],
+    "word_frequency": 18319
+  },
+  {
+    "word": "grizzle",
+    "definition": [
+      "to complain or cry fretfully",
+      "The baby started to grizzle when he couldn't reach his toy."
+    ],
+    "word_frequency": 34648
+  },
+  {
+    "word": "grope",
+    "definition": [
+      "to feel about blindly or uncertainly",
+      "He had to grope in the dark for the light switch."
+    ],
+    "word_frequency": 19825
+  },
+  {
+    "word": "hallow",
+    "definition": [
+      "To honor as holy or sacred.",
+      "We hallow the memory of those who died for freedom."
+    ],
+    "word_frequency": 19328
+  },
+  {
+    "word": "hallucinate",
+    "definition": [
+      "to experience something that is not real",
+      "Lack of sleep can cause people to hallucinate."
+    ],
+    "word_frequency": 28417
+  },
+  {
+    "word": "hamper",
+    "definition": [
+      "to hinder or impede the movement or progress of",
+      "Heavy snow will hamper rescue efforts."
+    ],
+    "word_frequency": 13196
+  },
+  {
+    "word": "hew",
+    "definition": [
+      "chop or cut (something, especially wood or coal) with an axe, pick, or other tool",
+      "The sculptor began to hew the stone into shape."
+    ],
+    "word_frequency": 30197
+  },
+  {
+    "word": "hinder",
+    "definition": [
+      "To create difficulties for someone or something, resulting in delay or obstruction.",
+      "Bad weather can hinder travel plans."
+    ],
+    "word_frequency": 11978
+  },
+  {
+    "word": "hone",
+    "definition": [
+      "to sharpen or refine",
+      "She needs to hone her public speaking skills."
+    ],
+    "word_frequency": 16095
+  },
+  {
+    "word": "imbue",
+    "definition": [
+      "to inspire or permeate with a feeling or quality",
+      "His art is imbued with a sense of peace and tranquility."
+    ],
+    "word_frequency": 22552
+  },
+  {
+    "word": "immortalize",
+    "definition": [
+      "to make immortal; to preserve in memory or fame forever",
+      "The artist hoped to immortalize the beauty of the landscape in his painting."
+    ],
+    "word_frequency": 28754
+  },
+  {
+    "word": "impair",
+    "definition": [
+      "to weaken or damage something (especially a human faculty or function)",
+      "Smoking can seriously impair your health."
+    ],
+    "word_frequency": 8017
+  },
+  {
+    "word": "impale",
+    "definition": [
+      "pierce or transfix with a sharp instrument",
+      "The knight's spear was used to impale the dragon."
+    ],
+    "word_frequency": 26465
+  },
+  {
+    "word": "impart",
+    "definition": [
+      "to communicate (information or knowledge); to bestow (a quality)",
+      "The teacher tried to impart wisdom to her students."
+    ],
+    "word_frequency": 17872
+  },
+  {
+    "word": "impassion",
+    "definition": [
+      "to fill with passion or strong emotion",
+      "His speech was designed to impassion the crowd."
+    ],
+    "word_frequency": 21676
+  },
+  {
+    "word": "impeach",
+    "definition": [
+      "charge with misconduct in office",
+      "The legislature voted to impeach the president."
+    ],
+    "word_frequency": 16508
+  },
+  {
+    "word": "impede",
+    "definition": [
+      "To delay or prevent (someone or something) by obstructing them; hinder",
+      "The dense fog impeded their progress on the road."
+    ],
+    "word_frequency": 16742
+  },
+  {
+    "word": "impersonate",
+    "definition": [
+      "to pretend to be another person",
+      "He tried to impersonate his boss to get information."
+    ],
+    "word_frequency": 20889
+  },
+  {
+    "word": "implicate",
+    "definition": [
+      "to show someone to be involved in a crime or wrongdoing",
+      "The evidence seemed to implicate him in the robbery."
+    ],
+    "word_frequency": 10924
+  },
+  {
+    "word": "implore",
+    "definition": [
+      "beg someone earnestly or desperately to do something",
+      "She implored him to reconsider his decision."
+    ],
+    "word_frequency": 24594
+  },
+  {
+    "word": "impoverish",
+    "definition": [
+      "to make poor",
+      "Years of war can impoverish a nation."
+    ],
+    "word_frequency": 12645
+  },
+  {
+    "word": "impregnate",
+    "definition": [
+      "to make pregnant; to saturate",
+      "The fabric was impregnated with a waterproof coating."
+    ],
+    "word_frequency": 22278
+  },
+  {
+    "word": "incapacitate",
+    "definition": [
+      "to prevent from functioning in a normal way",
+      "The injury incapacitated him for several weeks."
+    ],
+    "word_frequency": 17873
+  },
+  {
+    "word": "incarcerate",
+    "definition": [
+      "imprison",
+      "The court decided to incarcerate the criminal for ten years."
+    ],
+    "word_frequency": 13724
+  },
+  {
+    "word": "incarnate",
+    "definition": [
+      "to embody in flesh; to represent in a concrete form",
+      "He was seen as evil incarnate."
+    ],
+    "word_frequency": 20348
+  },
+  {
+    "word": "incinerate",
+    "definition": [
+      "destroy (something, especially waste material) by burning",
+      "The old documents were incinerated to protect privacy."
+    ],
+    "word_frequency": 30968
+  },
+  {
+    "word": "incite",
+    "definition": [
+      "to encourage or stir up (violent or unlawful behavior)",
+      "His speech was accused of trying to incite violence."
+    ],
+    "word_frequency": 16102
+  },
+  {
+    "word": "incline",
+    "definition": [
+      "to lean or turn away from the vertical or horizontal",
+      "The road began to incline steeply uphill."
+    ],
+    "word_frequency": 6103
+  },
+  {
+    "word": "incriminate",
+    "definition": [
+      "To make someone appear guilty of a crime or wrongdoing.",
+      "His testimony could incriminate the suspect."
+    ],
+    "word_frequency": 19337
+  },
+  {
+    "word": "indemnify",
+    "definition": [
+      "compensate (someone) for harm or loss; secure (someone) against legal responsibility for their actions",
+      "The insurance policy will indemnify you against any losses."
+    ],
+    "word_frequency": 32620
+  },
+  {
+    "word": "indict",
+    "definition": [
+      "to formally accuse of a crime",
+      "The grand jury voted to indict him on fraud charges."
+    ],
+    "word_frequency": 10330
+  },
+  {
+    "word": "indoctrinate",
+    "definition": [
+      "teach (a person or group) to accept a set of beliefs uncritically",
+      "The cult tried to indoctrinate new members with its ideology."
+    ],
+    "word_frequency": 33028
+  },
+  {
+    "word": "induce",
+    "definition": [
+      "succeed in persuading or influencing (someone) to do something",
+      "Nothing could induce him to change his mind."
+    ],
+    "word_frequency": 4767
+  },
+  {
+    "word": "infatuate",
+    "definition": [
+      "to be inspired with an intense but short-lived passion or admiration for",
+      "He was infatuated with her beauty."
+    ],
+    "word_frequency": 22853
+  },
+  {
+    "word": "infiltrate",
+    "definition": [
+      "to secretly enter and become part of",
+      "The spy managed to infiltrate the enemy organization."
+    ],
+    "word_frequency": 14484
+  },
+  {
+    "word": "inflect",
+    "definition": [
+      "to change the form of a word to express a grammatical function",
+      "Verbs in English do not inflect as much as in other languages."
+    ],
+    "word_frequency": 33443
+  },
+  {
+    "word": "infringe",
+    "definition": [
+      "infringe",
+      "Copying copyrighted material can infringe on intellectual property rights."
+    ],
+    "word_frequency": 18340
+  },
+  {
+    "word": "infuse",
+    "definition": [
+      "fill; pervade; soak",
+      "The tea leaves infuse the water with flavor."
+    ],
+    "word_frequency": 12147
+  },
+  {
+    "word": "ingrain",
+    "definition": [
+      "firmly fix or establish (a habit, belief, or attitude) in a person's mind",
+      "The values of hard work were ingrained in him from an early age."
+    ],
+    "word_frequency": 18094
+  },
+  {
+    "word": "inhibit",
+    "definition": [
+      "hinder; restrain; prevent",
+      "Fear can inhibit people from expressing their true feelings."
+    ],
+    "word_frequency": 12835
+  },
+  {
+    "word": "inoculate",
+    "definition": [
+      "to treat (a person or animal) with a vaccine to produce immunity against a disease",
+      "Doctors inoculate children against various diseases."
+    ],
+    "word_frequency": 34260
+  },
+  {
+    "word": "instigate",
+    "definition": [
+      "to bring about or initiate (an action or event)",
+      "He was accused of trying to instigate a rebellion."
+    ],
+    "word_frequency": 18849
+  },
+  {
+    "word": "instill",
+    "definition": [
+      "to gradually but firmly establish (an idea or attitude) in a person's mind",
+      "Parents try to instill good values in their children."
+    ],
+    "word_frequency": 20099
+  },
+  {
+    "word": "institutionalize",
+    "definition": [
+      "establish (a practice or activity) as a convention or norm",
+      "The new policy aims to institutionalize fair hiring practices."
+    ],
+    "word_frequency": 16928
+  },
+  {
+    "word": "inter",
+    "definition": [
+      "to bury (a corpse)",
+      "They decided to inter the remains in the family plot."
+    ],
+    "word_frequency": 3978
+  },
+  {
+    "word": "internalize",
+    "definition": [
+      "to make (attitudes or behavior) part of one's nature by learning or unconscious assimilation",
+      "It takes time to internalize new concepts."
+    ],
+    "word_frequency": 24030
+  },
+  {
+    "word": "interrelate",
+    "definition": [
+      "to relate or connect with one another",
+      "The different aspects of the problem interrelate in complex ways."
+    ],
+    "word_frequency": 29106
+  },
+  {
+    "word": "intersperse",
+    "definition": [
+      "to scatter among or between other things; to place at intervals",
+      "She interspersed her lecture with humorous anecdotes."
+    ],
+    "word_frequency": 17597
+  },
+  {
+    "word": "interweave",
+    "definition": [
+      "weave together or entwine",
+      "The author skillfully interwove several plotlines into a single narrative."
+    ],
+    "word_frequency": 25516
+  },
+  {
+    "word": "inundate",
+    "definition": [
+      "To overwhelm (someone) with things or people to be dealt with; to flood.",
+      "We were inundated with applications for the new position."
+    ],
+    "word_frequency": 19343
+  },
+  {
+    "word": "invalidate",
+    "definition": [
+      "to make (an argument, statement, or theory) unsound or invalid",
+      "New evidence could invalidate the previous findings."
+    ],
+    "word_frequency": 20100
+  },
+  {
+    "word": "invigorate",
+    "definition": [
+      "to give strength or energy to",
+      "A brisk walk in the fresh air can invigorate you."
+    ],
+    "word_frequency": 28116
+  },
+  {
+    "word": "invoke",
+    "definition": [
+      "call on (a deity or spirit) or cite (an authority) in support of an argument",
+      "He decided to invoke his right to remain silent."
+    ],
+    "word_frequency": 13026
+  },
+  {
+    "word": "ionize",
+    "definition": [
+      "convert into an ion",
+      "High energy can ionize atoms."
+    ],
+    "word_frequency": 26801
+  },
+  {
+    "word": "irradiate",
+    "definition": [
+      "to expose to radiation; to illuminate",
+      "Scientists can irradiate food to kill bacteria."
+    ],
+    "word_frequency": 21963
+  },
+  {
+    "word": "juxtapose",
+    "definition": [
+      "To place or deal with close together for contrasting effect.",
+      "The artist chose to juxtapose bright colors with dark shadows."
+    ],
+    "word_frequency": 27467
+  },
+  {
+    "word": "knacker",
+    "definition": [
+      "to exhaust or wear out; to kill (an old or injured animal)",
+      "The long hike really knackered me out."
+    ],
+    "word_frequency": 31421
+  },
+  {
+    "word": "lactate",
+    "definition": [
+      "to secrete milk",
+      "Mammals lactate to feed their young."
+    ],
+    "word_frequency": 28454
+  },
+  {
+    "word": "lade",
+    "definition": [
+      "to load or burden",
+      "The ship was heavily laden with cargo."
+    ],
+    "word_frequency": 7342
+  },
+  {
+    "word": "lament",
+    "definition": [
+      "to express sorrow or regret",
+      "She lamented the loss of her youth."
+    ],
+    "word_frequency": 14501
+  },
+  {
+    "word": "laud",
+    "definition": [
+      "to praise (a person or their achievements) highly",
+      "The critics lauded the new play as a masterpiece."
+    ],
+    "word_frequency": 16116
+  },
+  {
+    "word": "leach",
+    "definition": [
+      "to drain away from a solid by percolation",
+      "Rain can leach nutrients from the soil."
+    ],
+    "word_frequency": 14502
+  },
+  {
+    "word": "legitimize",
+    "definition": [
+      "To make legitimate; to justify or make lawful.",
+      "The government sought to legitimize its actions through a public vote."
+    ],
+    "word_frequency": 27478
+  },
+  {
+    "word": "liquidate",
+    "definition": [
+      "to close a business by selling its assets; to pay off a debt",
+      "The company decided to liquidate its assets to pay off its debts."
+    ],
+    "word_frequency": 20906
+  },
+  {
+    "word": "loathe",
+    "definition": [
+      "Feel intense dislike or disgust for",
+      "I absolutely loathe doing laundry."
+    ],
+    "word_frequency": 17372
+  },
+  {
+    "word": "lynch",
+    "definition": [
+      "to kill someone, especially by hanging, without legal trial",
+      "Historically, some groups were subjected to mob rule and would lynch individuals."
+    ],
+    "word_frequency": 5517
+  },
+  {
+    "word": "maim",
+    "definition": [
+      "to wound or injure (someone) so that part of the body is permanently damaged",
+      "The accident left him maimed for life."
+    ],
+    "word_frequency": 25541
+  },
+  {
+    "word": "malign",
+    "definition": [
+      "to speak about (someone) in a spitefully critical manner",
+      "He tried to malign his opponent's reputation."
+    ],
+    "word_frequency": 29516
+  },
+  {
+    "word": "marginalise",
+    "definition": [
+      "to treat (a person, group, or concept) as insignificant or peripheral",
+      "Society should not marginalize vulnerable groups."
+    ],
+    "word_frequency": 27496
+  },
+  {
+    "word": "marginalize",
+    "definition": [
+      "to treat (a person, group, or concept) as insignificant or peripheral",
+      "Society tends to marginalize those who are different."
+    ],
+    "word_frequency": 12859
+  },
+  {
+    "word": "masturbate",
+    "definition": [
+      "To stimulate one's own genitals for sexual pleasure.",
+      "The topic of masturbation is often discussed in sex education."
+    ],
+    "word_frequency": 13572
+  },
+  {
+    "word": "mesmerize",
+    "definition": [
+      "to hypnotize or enthrall",
+      "The magician's performance completely mesmerized the audience."
+    ],
+    "word_frequency": 27183
+  },
+  {
+    "word": "metabolize",
+    "definition": [
+      "to process substances in the body",
+      "The body metabolizes food to produce energy."
+    ],
+    "word_frequency": 32674
+  },
+  {
+    "word": "mete",
+    "definition": [
+      "To dispense or allot justice, punishment, or harsh treatment.",
+      "The judge will mete out justice to the criminals."
+    ],
+    "word_frequency": 34747
+  },
+  {
+    "word": "mire",
+    "definition": [
+      "to involve (someone or something) in a difficult or unpleasant situation",
+      "The company was mired in debt after the failed investment."
+    ],
+    "word_frequency": 25556
+  },
+  {
+    "word": "misconstrue",
+    "definition": [
+      "To interpret (something, especially a person's words or actions) wrongly.",
+      "Don't misconstrue my silence as disapproval."
+    ],
+    "word_frequency": 34751
+  },
+  {
+    "word": "mitigate",
+    "definition": [
+      "make less severe, serious, or painful",
+      "They tried to mitigate the impact of the flood."
+    ],
+    "word_frequency": 9796
+  },
+  {
+    "word": "modulate",
+    "definition": [
+      "To adjust or regulate.",
+      "The speaker learned to modulate her voice to keep the audience engaged."
+    ],
+    "word_frequency": 21167
+  },
+  {
+    "word": "molest",
+    "definition": [
+      "to annoy, bother, or assault",
+      "The police warned people not to molest the wild animals."
+    ],
+    "word_frequency": 16541
+  },
+  {
+    "word": "monger",
+    "definition": [
+      "to promote or spread (something undesirable)",
+      "Some politicians tend to monger fear among the public."
+    ],
+    "word_frequency": 21434
+  },
+  {
+    "word": "morph",
+    "definition": [
+      "to change gradually in shape or form",
+      "The caterpillar will morph into a butterfly."
+    ],
+    "word_frequency": 18368
+  },
+  {
+    "word": "mutilate",
+    "definition": [
+      "to injure severely, disfigure",
+      "The old book was so badly damaged it looked mutilated."
+    ],
+    "word_frequency": 16328
+  },
+  {
+    "word": "nationalise",
+    "definition": [
+      "to transfer from private to state ownership or control (British English)",
+      "The government decided to nationalise the struggling industry."
+    ],
+    "word_frequency": 29545
+  },
+  {
+    "word": "nuance",
+    "definition": [
+      "to give nuances to; to make subtle distinctions",
+      "The artist carefully nuanced the colors in the painting."
+    ],
+    "word_frequency": 14318
+  },
+  {
+    "word": "nullify",
+    "definition": [
+      "To make legally null and void; invalidate",
+      "The judge decided to nullify the contract due to fraud."
+    ],
+    "word_frequency": 24352
+  },
+  {
+    "word": "obligate",
+    "definition": [
+      "obligate",
+      "The contract will obligate them to pay."
+    ],
+    "word_frequency": 10368
+  },
+  {
+    "word": "oblige",
+    "definition": [
+      "to make (someone) legally or morally bound to an action or course of action",
+      "We were obliged to follow the rules."
+    ],
+    "word_frequency": 7054
+  },
+  {
+    "word": "obliterate",
+    "definition": [
+      "to destroy completely",
+      "The bombing raid obliterated the entire city."
+    ],
+    "word_frequency": 18383
+  },
+  {
+    "word": "obsess",
+    "definition": [
+      "to preoccupy or fill the mind of (someone) continually and to a troubling extent",
+      "Don't obsess over small details."
+    ],
+    "word_frequency": 4496
+  },
+  {
+    "word": "opine",
+    "definition": [
+      "to state one's opinion",
+      "He opined that the new policy would fail."
+    ],
+    "word_frequency": 28171
+  },
+  {
+    "word": "orchestrate",
+    "definition": [
+      "to arrange or control the elements of a complex situation to produce a desired effect",
+      "The director managed to orchestrate a flawless performance."
+    ],
+    "word_frequency": 13937
+  },
+  {
+    "word": "ordain",
+    "definition": [
+      "to make someone a priest or minister; to order by decree",
+      "He was ordained as a priest last year."
+    ],
+    "word_frequency": 10673
+  },
+  {
+    "word": "oscillate",
+    "definition": [
+      "move or swing back and forth at a regular speed.",
+      "The pendulum continued to oscillate for a long time."
+    ],
+    "word_frequency": 26543
+  },
+  {
+    "word": "ostracize",
+    "definition": [
+      "to exclude from a society or group",
+      "The community decided to ostracize him after his controversial remarks."
+    ],
+    "word_frequency": 32302
+  },
+  {
+    "word": "oust",
+    "definition": [
+      "drive out or expel (someone) from a position or place",
+      "The rebels tried to oust the dictator from power."
+    ],
+    "word_frequency": 15729
+  },
+  {
+    "word": "overreach",
+    "definition": [
+      "extend beyond limits",
+      "The government was accused of overreaching its authority."
+    ],
+    "word_frequency": 31486
+  },
+  {
+    "word": "overrule",
+    "definition": [
+      "reject or disallow by exercising one's superior authority",
+      "The judge decided to overrule the objection."
+    ],
+    "word_frequency": 17186
+  },
+  {
+    "word": "overrun",
+    "definition": [
+      "To spread over or occupy (a place) in large numbers; to exceed (a limit or cost)",
+      "The weeds have overrun the garden."
+    ],
+    "word_frequency": 12506
+  },
+  {
+    "word": "pander",
+    "definition": [
+      "to gratify or indulge (an immoral or distasteful desire, need, or habit or a person with such a desire, etc.)",
+      "Politicians often pander to public opinion to gain votes."
+    ],
+    "word_frequency": 20938
+  },
+  {
+    "word": "parry",
+    "definition": [
+      "ward off (a weapon or attack) with a countermove",
+      "He managed to parry the blow with his sword."
+    ],
+    "word_frequency": 11237
+  },
+  {
+    "word": "partake",
+    "definition": [
+      "to take part in; to eat or drink",
+      "Guests were invited to partake in the feast."
+    ],
+    "word_frequency": 14943
+  },
+  {
+    "word": "permeate",
+    "definition": [
+      "spread throughout (something); pervade",
+      "The smell of baking bread permeated the entire house."
+    ],
+    "word_frequency": 29576
+  },
+  {
+    "word": "perpetrate",
+    "definition": [
+      "To carry out or commit (a harmful, illegal, or immoral action).",
+      "The criminals managed to perpetrate the robbery without being caught."
+    ],
+    "word_frequency": 14529
+  },
+  {
+    "word": "perpetuate",
+    "definition": [
+      "make (something) continue indefinitely",
+      "The cycle of poverty is perpetuated by lack of education."
+    ],
+    "word_frequency": 15731
+  },
+  {
+    "word": "persecute",
+    "definition": [
+      "to harass or oppress, especially for beliefs",
+      "Historically, many groups have been persecuted for their religious beliefs."
+    ],
+    "word_frequency": 11575
+  },
+  {
+    "word": "personify",
+    "definition": [
+      "to represent (an abstract quality or idea) as a person or thing",
+      "She seemed to personify grace and elegance."
+    ],
+    "word_frequency": 22622
+  },
+  {
+    "word": "pertain",
+    "definition": [
+      "to relate to; be appropriate to",
+      "The rules pertain to all members of the club."
+    ],
+    "word_frequency": 9026
+  },
+  {
+    "word": "perturb",
+    "definition": [
+      "make (someone) anxious or unsettled",
+      "The news of the accident did not seem to perturb him."
+    ],
+    "word_frequency": 29578
+  },
+  {
+    "word": "peruse",
+    "definition": [
+      "to read carefully",
+      "He spent hours perusing the documents."
+    ],
+    "word_frequency": 28181
+  },
+  {
+    "word": "petrify",
+    "definition": [
+      "to make someone so frightened that they are unable to move or think",
+      "The sudden noise petrified the small child."
+    ],
+    "word_frequency": 19399
+  },
+  {
+    "word": "pillage",
+    "definition": [
+      "to rob a place using violence, especially in wartime",
+      "The invading army began to pillage the conquered city."
+    ],
+    "word_frequency": 27234
+  },
+  {
+    "word": "placate",
+    "definition": [
+      "to make someone less angry or hostile",
+      "He tried to placate the angry customer with a refund."
+    ],
+    "word_frequency": 26883
+  },
+  {
+    "word": "plumb",
+    "definition": [
+      "to measure the depth of (water); to explore or examine deeply",
+      "The detective tried to plumb the depths of the suspect's mind."
+    ],
+    "word_frequency": 22336
+  },
+  {
+    "word": "ply",
+    "definition": [
+      "to work diligently at; to travel regularly over a route",
+      "The taxi driver continued to ply his trade late into the night."
+    ],
+    "word_frequency": 16573
+  },
+  {
+    "word": "polarize",
+    "definition": [
+      "To cause (people, opinions, etc.) to separate into opposing groups.",
+      "The issue has polarized public opinion."
+    ],
+    "word_frequency": 13589
+  },
+  {
+    "word": "politicize",
+    "definition": [
+      "to make something a political issue",
+      "The debate quickly became politicized, losing its original focus."
+    ],
+    "word_frequency": 25270
+  },
+  {
+    "word": "posit",
+    "definition": [
+      "to assume as fact; to put forward as a basis for argument",
+      "She would posit that the theory is flawed."
+    ],
+    "word_frequency": 26884
+  },
+  {
+    "word": "postulate",
+    "definition": [
+      "suggest or assume the existence of",
+      "Scientists postulate the existence of dark matter."
+    ],
+    "word_frequency": 25893
+  },
+  {
+    "word": "precipitate",
+    "definition": [
+      "to cause (an event or situation, typically an undesirable one) to happen suddenly, unexpectedly, or prematurely",
+      "The economic crisis precipitated a change in government policy."
+    ],
+    "word_frequency": 20426
+  },
+  {
+    "word": "preclude",
+    "definition": [
+      "To prevent from happening; make impossible.",
+      "His injury will preclude him from playing in the final."
+    ],
+    "word_frequency": 19408
+  },
+  {
+    "word": "preconceive",
+    "definition": [
+      "Form (an idea or opinion) in advance.",
+      "It's important not to preconceive notions about people before you meet them."
+    ],
+    "word_frequency": 24097
+  },
+  {
+    "word": "predetermine",
+    "definition": [
+      "To establish or decide in advance.",
+      "The outcome of the game was predetermined."
+    ],
+    "word_frequency": 13591
+  },
+  {
+    "word": "predicate",
+    "definition": [
+      "to state, affirm, or assert something about the subject of a sentence or argument",
+      "The theory is predicated on extensive research."
+    ],
+    "word_frequency": 20164
+  },
+  {
+    "word": "predispose",
+    "definition": [
+      "To make someone liable or inclined to a specified attitude, action, or condition",
+      "Genetic factors can predispose individuals to certain diseases."
+    ],
+    "word_frequency": 25588
+  },
+  {
+    "word": "predominate",
+    "definition": [
+      "be the strongest or main element; be greater in number or amount",
+      "In the forest, oak trees tend to predominate over other species."
+    ],
+    "word_frequency": 33548
+  },
+  {
+    "word": "preexist",
+    "definition": [
+      "to exist before something else",
+      "Some believe that souls preexist their physical bodies."
+    ],
+    "word_frequency": 22627
+  },
+  {
+    "word": "premeditate",
+    "definition": [
+      "to think out or plan (an action, especially a crime) beforehand",
+      "The crime was clearly premeditated."
+    ],
+    "word_frequency": 21734
+  },
+  {
+    "word": "preordain",
+    "definition": [
+      "to decide or determine beforehand; to destine",
+      "Some believe that our destiny is preordained by a higher power."
+    ],
+    "word_frequency": 34809
+  },
+  {
+    "word": "privatise",
+    "definition": [
+      "to transfer (a business, industry, or service) from public to private ownership and control",
+      "The government plans to privatise several state-owned industries."
+    ],
+    "word_frequency": 32317
+  },
+  {
+    "word": "proclaim",
+    "definition": [
+      "to announce officially or publicly",
+      "The king will proclaim the new law tomorrow."
+    ],
+    "word_frequency": 7064
+  },
+  {
+    "word": "procure",
+    "definition": [
+      "to obtain, especially with effort",
+      "He managed to procure the necessary documents for the visa."
+    ],
+    "word_frequency": 16345
+  },
+  {
+    "word": "profiteer",
+    "definition": [
+      "make or seek to make an excessive or unfair profit",
+      "Some companies were accused of trying to profiteer during the crisis."
+    ],
+    "word_frequency": 33978
+  },
+  {
+    "word": "proliferate",
+    "definition": [
+      "increase rapidly in numbers; multiply",
+      "Rumors about the incident began to proliferate."
+    ],
+    "word_frequency": 29589
+  },
+  {
+    "word": "promulgate",
+    "definition": [
+      "to make known by open declaration; to proclaim",
+      "The government sought to promulgate new laws to protect the environment."
+    ],
+    "word_frequency": 20686
+  },
+  {
+    "word": "propagate",
+    "definition": [
+      "reproduce or spread",
+      "Plants can propagate from cuttings."
+    ],
+    "word_frequency": 17946
+  },
+  {
+    "word": "proscribe",
+    "definition": [
+      "to forbid or prohibit",
+      "The law proscribes the use of certain chemicals in food production."
+    ],
+    "word_frequency": 33136
+  },
+  {
+    "word": "protrude",
+    "definition": [
+      "extend beyond or above a surface",
+      "A sharp rock protruded from the ground."
+    ],
+    "word_frequency": 18658
+  },
+  {
+    "word": "purge",
+    "definition": [
+      "to remove or cleanse",
+      "The new leader promised to purge corruption from the government."
+    ],
+    "word_frequency": 9391
+  },
+  {
+    "word": "purport",
+    "definition": [
+      "to appear or claim to be or do something, especially falsely",
+      "The document purports to be a will."
+    ],
+    "word_frequency": 13788
+  },
+  {
+    "word": "quash",
+    "definition": [
+      "to reject or void (a legal decision); to suppress",
+      "The court decided to quash the conviction."
+    ],
+    "word_frequency": 27559
+  },
+  {
+    "word": "quell",
+    "definition": [
+      "to put an end to (a rebellion or other disorder), typically by the use of force",
+      "The police were called to quell the disturbance."
+    ],
+    "word_frequency": 20168
+  },
+  {
+    "word": "racketeer",
+    "definition": [
+      "engage in dishonest and fraudulent business dealings",
+      "The gang tried to racketeer money from local businesses."
+    ],
+    "word_frequency": 23817
+  },
+  {
+    "word": "radicalize",
+    "definition": [
+      "to cause someone to adopt radical positions on political or social issues",
+      "The group tried to radicalize young people through online propaganda."
+    ],
+    "word_frequency": 26892
+  },
+  {
+    "word": "ratify",
+    "definition": [
+      "sign or give formal consent to (a treaty, contract, or agreement), making it officially valid",
+      "The member states need to ratify the new treaty."
+    ],
+    "word_frequency": 11728
+  },
+  {
+    "word": "ravage",
+    "definition": [
+      "to cause severe and extensive damage to",
+      "The forest fire ravaged thousands of acres of woodland."
+    ],
+    "word_frequency": 16152
+  },
+  {
+    "word": "ravel",
+    "definition": [
+      "to untangle or fray",
+      "The old sweater began to ravel at the seams."
+    ],
+    "word_frequency": 28845
+  },
+  {
+    "word": "ravish",
+    "definition": [
+      "seize and carry off (someone); fill (someone) with intense delight",
+      "The beauty of the landscape ravished his senses."
+    ],
+    "word_frequency": 29599
+  },
+  {
+    "word": "raze",
+    "definition": [
+      "completely destroy (a building, town, or other site)",
+      "The old factory was razed to make way for new apartments."
+    ],
+    "word_frequency": 26227
+  },
+  {
+    "word": "rebut",
+    "definition": [
+      "to prove (a statement or charge) to be false",
+      "The lawyer tried to rebut the witness's testimony."
+    ],
+    "word_frequency": 33145
+  },
+  {
+    "word": "recast",
+    "definition": [
+      "to present (something) in a different way; to give a new form to",
+      "The director decided to recast the role with a different actor."
+    ],
+    "word_frequency": 21741
+  },
+  {
+    "word": "recompense",
+    "definition": [
+      "to make amends to (someone) for loss or harm suffered; compensate",
+      "The company offered to recompense customers for the inconvenience."
+    ],
+    "word_frequency": 32332
+  },
+  {
+    "word": "reconcile",
+    "definition": [
+      "reconcile",
+      "They tried to reconcile their differences."
+    ],
+    "word_frequency": 10386
+  },
+  {
+    "word": "reconstitute",
+    "definition": [
+      "build up again from parts; restore to liquid form",
+      "You need to add water to reconstitute the dried soup."
+    ],
+    "word_frequency": 25285
+  },
+  {
+    "word": "recoup",
+    "definition": [
+      "to regain (something lost or spent)",
+      "The company hopes to recoup its losses by increasing sales."
+    ],
+    "word_frequency": 20692
+  },
+  {
+    "word": "rectify",
+    "definition": [
+      "to put right; correct",
+      "We need to rectify the error before it causes further problems."
+    ],
+    "word_frequency": 16154
+  },
+  {
+    "word": "redact",
+    "definition": [
+      "to censor or obscure parts of a text",
+      "The document was heavily redacted before its release."
+    ],
+    "word_frequency": 18912
+  },
+  {
+    "word": "redesignate",
+    "definition": [
+      "To designate again or differently",
+      "The committee decided to redesignate the old building as a historical landmark."
+    ],
+    "word_frequency": 25597
+  },
+  {
+    "word": "reimagine",
+    "definition": [
+      "imagine again or anew",
+      "The director decided to reimagine the classic play for a modern audience."
+    ],
+    "word_frequency": 31518
+  },
+  {
+    "word": "reincarnate",
+    "definition": [
+      "be born again in another body",
+      "Some religions believe that souls can reincarnate after death."
+    ],
+    "word_frequency": 25286
+  },
+  {
+    "word": "reinstate",
+    "definition": [
+      "restore (someone or something) to their former position or state",
+      "The company decided to reinstate the old policy."
+    ],
+    "word_frequency": 12699
+  },
+  {
+    "word": "reiterate",
+    "definition": [
+      "to say something again or a number of times, typically for emphasis or clarity",
+      "Let me reiterate my main point: safety is our top priority."
+    ],
+    "word_frequency": 13956
+  },
+  {
+    "word": "rejuvenate",
+    "definition": [
+      "to make someone or something feel or look younger, fresher, or more lively",
+      "A good night's sleep can rejuvenate your mind and body."
+    ],
+    "word_frequency": 26902
+  },
+  {
+    "word": "relegate",
+    "definition": [
+      "to assign to a lower position; to banish",
+      "The team was relegated to a lower division after losing the match."
+    ],
+    "word_frequency": 10831
+  },
+  {
+    "word": "relent",
+    "definition": [
+      "to give in; to abandon a harsh intention",
+      "After much persuasion, he finally began to relent."
+    ],
+    "word_frequency": 28852
+  },
+  {
+    "word": "relinquish",
+    "definition": [
+      "To voluntarily give up a possession, right, or power.",
+      "He was forced to relinquish control of the company."
+    ],
+    "word_frequency": 17210
+  },
+  {
+    "word": "remand",
+    "definition": [
+      "send (a prisoner or accused person) back into custody, especially to await trial or further examination",
+      "The judge decided to remand the suspect in custody."
+    ],
+    "word_frequency": 15344
+  },
+  {
+    "word": "remit",
+    "definition": [
+      "send money or cancel a punishment",
+      "Please remit payment within 30 days."
+    ],
+    "word_frequency": 17951
+  },
+  {
+    "word": "render",
+    "definition": [
+      "to cause to be or become; to provide",
+      "The news rendered him speechless."
+    ],
+    "word_frequency": 6053
+  },
+  {
+    "word": "renounce",
+    "definition": [
+      "formally declare one's abandonment of (a claim, right, or possession)",
+      "He decided to renounce his claim to the throne."
+    ],
+    "word_frequency": 15748
+  },
+  {
+    "word": "repatriate",
+    "definition": [
+      "send (someone) back to their own country",
+      "The government decided to repatriate the refugees."
+    ],
+    "word_frequency": 26229
+  },
+  {
+    "word": "reproach",
+    "definition": [
+      "to express disapproval or disappointment to (someone)",
+      "He reproached her for her carelessness."
+    ],
+    "word_frequency": 21744
+  },
+  {
+    "word": "repudiate",
+    "definition": [
+      "refuse to accept or be associated with; deny the truth or validity of",
+      "He was quick to repudiate the accusations made against him."
+    ],
+    "word_frequency": 32338
+  },
+  {
+    "word": "repute",
+    "definition": [
+      "to be generally considered or believed to be",
+      "He is reputed to be the best doctor in the city."
+    ],
+    "word_frequency": 31522
+  },
+  {
+    "word": "rescind",
+    "definition": [
+      "revoke, cancel, or repeal (a law, order, or agreement)",
+      "The company decided to rescind its offer of employment."
+    ],
+    "word_frequency": 19665
+  },
+  {
+    "word": "resound",
+    "definition": [
+      "To fill a place with sound; to be heard loudly.",
+      "The hall resounded with laughter."
+    ],
+    "word_frequency": 19421
+  },
+  {
+    "word": "resurrect",
+    "definition": [
+      "Bring back to life",
+      "They hope to resurrect the ancient language."
+    ],
+    "word_frequency": 14752
+  },
+  {
+    "word": "resuscitate",
+    "definition": [
+      "revive (someone) from unconsciousness or apparent death",
+      "Paramedics tried to resuscitate the victim at the scene."
+    ],
+    "word_frequency": 32339
+  },
+  {
+    "word": "retain",
+    "definition": [
+      "to keep; to hold",
+      "She managed to retain her composure."
+    ],
+    "word_frequency": 3998
+  },
+  {
+    "word": "revere",
+    "definition": [
+      "to feel deep respect or admiration for (something)",
+      "Many people revere him as a national hero."
+    ],
+    "word_frequency": 12899
+  },
+  {
+    "word": "revile",
+    "definition": [
+      "criticize in an abusive or angrily insulting manner",
+      "He was reviled by the public for his controversial statements."
+    ],
+    "word_frequency": 31103
+  },
+  {
+    "word": "rue",
+    "definition": [
+      "to bitterly regret (something one has done or allowed to happen)",
+      "She would live to rue the day she made that decision."
+    ],
+    "word_frequency": 9528
+  },
+  {
+    "word": "sanctify",
+    "definition": [
+      "to make holy or sacred",
+      "The priest will sanctify the new altar."
+    ],
+    "word_frequency": 28863
+  },
+  {
+    "word": "sate",
+    "definition": [
+      "satisfy (a desire or an appetite) to the full",
+      "A good meal will sate your hunger."
+    ],
+    "word_frequency": 34002
+  },
+  {
+    "word": "scuttle",
+    "definition": [
+      "run with short, quick steps; sink (one's own ship)",
+      "The crab began to scuttle sideways into its hole."
+    ],
+    "word_frequency": 29623
+  },
+  {
+    "word": "secede",
+    "definition": [
+      "to withdraw formally from an alliance or federation",
+      "Several states threatened to secede from the union."
+    ],
+    "word_frequency": 26250
+  },
+  {
+    "word": "seclude",
+    "definition": [
+      "to isolate",
+      "He decided to seclude himself from society."
+    ],
+    "word_frequency": 14762
+  },
+  {
+    "word": "secrete",
+    "definition": [
+      "to produce and release a substance",
+      "Glands in the skin secrete sweat to cool the body."
+    ],
+    "word_frequency": 21487
+  },
+  {
+    "word": "seduce",
+    "definition": [
+      "to tempt",
+      "He tried to seduce her with promises of wealth."
+    ],
+    "word_frequency": 14763
+  },
+  {
+    "word": "seethe",
+    "definition": [
+      "be filled with intense but unexpressed anger",
+      "He was seething with rage after the unfair decision."
+    ],
+    "word_frequency": 23836
+  },
+  {
+    "word": "sequester",
+    "definition": [
+      "to isolate or hide away; to take legal possession of",
+      "The jury was sequestered during the trial."
+    ],
+    "word_frequency": 30703
+  },
+  {
+    "word": "serialize",
+    "definition": [
+      "to arrange in a series or sequence",
+      "The software needs to serialize the data before saving it."
+    ],
+    "word_frequency": 33592
+  },
+  {
+    "word": "serrate",
+    "definition": [
+      "having or forming a jagged edge like a saw",
+      "The knife was designed to serrate the bread easily."
+    ],
+    "word_frequency": 25301
+  },
+  {
+    "word": "sexualize",
+    "definition": [
+      "to make something sexual in nature or character",
+      "The media often tends to sexualize female athletes."
+    ],
+    "word_frequency": 31545
+  },
+  {
+    "word": "shun",
+    "definition": [
+      "to avoid",
+      "After the scandal, he was shunned by his former friends."
+    ],
+    "word_frequency": 14766
+  },
+  {
+    "word": "skew",
+    "definition": [
+      "to distort, to bias",
+      "The results were skewed by the small sample size."
+    ],
+    "word_frequency": 14768
+  },
+  {
+    "word": "smelt",
+    "definition": [
+      "to extract metal from its ore by heating",
+      "Ancient civilizations learned to smelt copper from its ore."
+    ],
+    "word_frequency": 20457
+  },
+  {
+    "word": "spangle",
+    "definition": [
+      "To decorate with small, sparkling objects",
+      "The night sky was spangled with stars."
+    ],
+    "word_frequency": 22378
+  },
+  {
+    "word": "spearhead",
+    "definition": [
+      "lead (an attack or movement); be the leader of.",
+      "She was chosen to spearhead the new marketing campaign."
+    ],
+    "word_frequency": 18689
+  },
+  {
+    "word": "spellbind",
+    "definition": [
+      "to hold (someone's attention) completely as though by magic",
+      "The magician's performance spellbound the audience."
+    ],
+    "word_frequency": 30718
+  },
+  {
+    "word": "spurn",
+    "definition": [
+      "Reject with disdain or contempt.",
+      "She spurned his advances and walked away."
+    ],
+    "word_frequency": 31137
+  },
+  {
+    "word": "standardize",
+    "definition": [
+      "to make consistent or uniform",
+      "We need to standardize our procedures."
+    ],
+    "word_frequency": 8547
+  },
+  {
+    "word": "stigmatize",
+    "definition": [
+      "to describe or regard as worthy of disgrace or great disapproval",
+      "Mental illness should not be stigmatized in society."
+    ],
+    "word_frequency": 28547
+  },
+  {
+    "word": "stratify",
+    "definition": [
+      "to arrange or classify into strata or groups",
+      "The data was stratified by age group."
+    ],
+    "word_frequency": 27289
+  },
+  {
+    "word": "strew",
+    "definition": [
+      "to scatter or spread (things) untidily over a surface or area",
+      "Leaves were strewn across the path after the strong winds."
+    ],
+    "word_frequency": 18187
+  },
+  {
+    "word": "stylize",
+    "definition": [
+      "depict or treat in a mannered and nonrealistic style.",
+      "The artist chose to stylize the figures in her painting."
+    ],
+    "word_frequency": 18694
+  },
+  {
+    "word": "subjugate",
+    "definition": [
+      "bring under domination or control",
+      "The empire sought to subjugate the neighboring tribes."
+    ],
+    "word_frequency": 29641
+  },
+  {
+    "word": "subsidise",
+    "definition": [
+      "To support (an organization or activity) financially",
+      "The government decided to subsidise public transport."
+    ],
+    "word_frequency": 25622
+  },
+  {
+    "word": "subsidize",
+    "definition": [
+      "to support (an organization or activity) financially",
+      "The government decided to subsidize public transport."
+    ],
+    "word_frequency": 12538
+  },
+  {
+    "word": "substantiate",
+    "definition": [
+      "to provide evidence to support or prove the truth of",
+      "You need to substantiate your claims with facts."
+    ],
+    "word_frequency": 24733
+  },
+  {
+    "word": "subsume",
+    "definition": [
+      "Include or absorb (something) in something else.",
+      "The new theory attempts to subsume all previous findings."
+    ],
+    "word_frequency": 31147
+  },
+  {
+    "word": "subvert",
+    "definition": [
+      "to undermine the power and authority of an established system or institution",
+      "The rebels tried to subvert the government."
+    ],
+    "word_frequency": 21504
+  },
+  {
+    "word": "succumb",
+    "definition": [
+      "to fail to resist pressure, temptation, or another negative force",
+      "He eventually succumbed to the pressure and resigned."
+    ],
+    "word_frequency": 16382
+  },
+  {
+    "word": "suffice",
+    "definition": [
+      "to be enough or adequate",
+      "A small snack will suffice until dinner."
+    ],
+    "word_frequency": 10991
+  },
+  {
+    "word": "suffuse",
+    "definition": [
+      "spread through or over",
+      "A warm glow began to suffuse the room as the sun set."
+    ],
+    "word_frequency": 34440
+  },
+  {
+    "word": "sully",
+    "definition": [
+      "to damage the purity or integrity of; defile",
+      "He was careful not to sully his reputation."
+    ],
+    "word_frequency": 17447
+  },
+  {
+    "word": "sup",
+    "definition": [
+      "to eat the evening meal",
+      "They would sup together before retiring for the night."
+    ],
+    "word_frequency": 9540
+  },
+  {
+    "word": "supercharge",
+    "definition": [
+      "charge with an additional amount of power or energy",
+      "The new technology will supercharge the company's growth."
+    ],
+    "word_frequency": 25315
+  },
+  {
+    "word": "superconduct",
+    "definition": [
+      "to conduct electricity with zero resistance",
+      "Certain materials can superconduct at very low temperatures."
+    ],
+    "word_frequency": 28892
+  },
+  {
+    "word": "superimpose",
+    "definition": [
+      "To place or lay (one thing) over another so that both are still discernible",
+      "The artist decided to superimpose a new image onto the existing background."
+    ],
+    "word_frequency": 22387
+  },
+  {
+    "word": "supersede",
+    "definition": [
+      "to take the place of (someone or something previously in authority or use)",
+      "The new regulations will supersede the old ones, effective next month."
+    ],
+    "word_frequency": 16177
+  },
+  {
+    "word": "supplant",
+    "definition": [
+      "To supersede and replace",
+      "New technology will soon supplant older methods."
+    ],
+    "word_frequency": 25624
+  },
+  {
+    "word": "suppress",
+    "definition": [
+      "to forcibly put an end to; to prevent the development or action of",
+      "The government tried to suppress the rebellion."
+    ],
+    "word_frequency": 8303
+  },
+  {
+    "word": "synthesize",
+    "definition": [
+      "to combine, to create",
+      "Scientists can synthesize new materials in the lab."
+    ],
+    "word_frequency": 14777
+  },
+  {
+    "word": "taint",
+    "definition": [
+      "contaminate; spoil",
+      "The scandal will taint his reputation."
+    ],
+    "word_frequency": 12201
+  },
+  {
+    "word": "taper",
+    "definition": [
+      "diminish or reduce in thickness toward one end",
+      "The road began to taper off into a narrow path."
+    ],
+    "word_frequency": 13620
+  },
+  {
+    "word": "teeth",
+    "definition": [
+      "to grow teeth; to provide with teeth",
+      "The baby is starting to teeth, which makes him a bit fussy."
+    ],
+    "word_frequency": 24742
+  },
+  {
+    "word": "thatch",
+    "definition": [
+      "to cover (a roof or a building) with straw or similar material",
+      "They decided to thatch the roof of their new cottage."
+    ],
+    "word_frequency": 24140
+  },
+  {
+    "word": "thwart",
+    "definition": [
+      "To prevent someone from accomplishing something",
+      "The police managed to thwart the robbery attempt."
+    ],
+    "word_frequency": 16626
+  },
+  {
+    "word": "tout",
+    "definition": [
+      "to attempt to persuade people of the merits of",
+      "The company continued to tout its new product as revolutionary."
+    ],
+    "word_frequency": 15783
+  },
+  {
+    "word": "transcend",
+    "definition": [
+      "to go beyond the limits of",
+      "Her beauty seemed to transcend all earthly standards."
+    ],
+    "word_frequency": 17750
+  },
+  {
+    "word": "transcribe",
+    "definition": [
+      "to put thoughts, speech, or data into written or printed form",
+      "She was asked to transcribe the interview recording."
+    ],
+    "word_frequency": 16392
+  },
+  {
+    "word": "transpire",
+    "definition": [
+      "occur; happen; (of a secret, etc.) be revealed.",
+      "It later transpired that the information was false."
+    ],
+    "word_frequency": 18710
+  },
+  {
+    "word": "traverse",
+    "definition": [
+      "to travel across or through",
+      "They had to traverse the entire mountain range."
+    ],
+    "word_frequency": 11898
+  },
+  {
+    "word": "truncate",
+    "definition": [
+      "to shorten by cutting off the top or end",
+      "The data was truncated to fit the display."
+    ],
+    "word_frequency": 19471
+  },
+  {
+    "word": "typify",
+    "definition": [
+      "to be characteristic or a representative example of",
+      "His actions typify the spirit of generosity."
+    ],
+    "word_frequency": 28573
+  },
+  {
+    "word": "undaunt",
+    "definition": [
+      "not to deter or discourage",
+      "Nothing could undaunt his resolve."
+    ],
+    "word_frequency": 29668
+  },
+  {
+    "word": "underlie",
+    "definition": [
+      "be the cause or basis of (something)",
+      "The fundamental principles that underlie the theory are complex."
+    ],
+    "word_frequency": 3948
+  },
+  {
+    "word": "underpin",
+    "definition": [
+      "support from below; form the basis of",
+      "The research underpins the new theory."
+    ],
+    "word_frequency": 29669
+  },
+  {
+    "word": "underrepresent",
+    "definition": [
+      "to represent inadequately",
+      "The survey results might underrepresent the opinions of younger voters."
+    ],
+    "word_frequency": 22685
+  },
+  {
+    "word": "underwrite",
+    "definition": [
+      "sign and accept liability under (an insurance policy), thus guaranteeing payment in case of loss or damage",
+      "The bank agreed to underwrite the new venture."
+    ],
+    "word_frequency": 16836
+  },
+  {
+    "word": "undulate",
+    "definition": [
+      "to move with a smooth, wavelike motion",
+      "The fields of wheat undulated in the gentle breeze."
+    ],
+    "word_frequency": 23274
+  },
+  {
+    "word": "unencumber",
+    "definition": [
+      "to free from a burden or impediment",
+      "He sought to unencumber himself from all his worldly possessions."
+    ],
+    "word_frequency": 33223
+  },
+  {
+    "word": "unfetter",
+    "definition": [
+      "to release from restraints or limitations; to free",
+      "The new policies aim to unfetter economic growth."
+    ],
+    "word_frequency": 23275
+  },
+  {
+    "word": "unleash",
+    "definition": [
+      "to release from a leash or restraint",
+      "The dog was unleashed in the park."
+    ],
+    "word_frequency": 10852
+  },
+  {
+    "word": "usurp",
+    "definition": [
+      "to take illegally or by force",
+      "The general tried to usurp power from the king."
+    ],
+    "word_frequency": 26637
+  },
+  {
+    "word": "vanquish",
+    "definition": [
+      "to defeat thoroughly",
+      "The knight set out to vanquish the dragon."
+    ],
+    "word_frequency": 22696
+  },
+  {
+    "word": "venerate",
+    "definition": [
+      "Regard with great respect; revere.",
+      "Many cultures venerate their ancestors."
+    ],
+    "word_frequency": 28927
+  },
+  {
+    "word": "vex",
+    "definition": [
+      "To annoy or irritate.",
+      "The constant noise began to vex him."
+    ],
+    "word_frequency": 24457
+  },
+  {
+    "word": "vie",
+    "definition": [
+      "compete eagerly with someone in order to achieve something",
+      "The two teams will vie for the championship."
+    ],
+    "word_frequency": 12729
+  },
+  {
+    "word": "vilify",
+    "definition": [
+      "to speak or write about in an abusively disparaging manner",
+      "The media tried to vilify the politician during the scandal."
+    ],
+    "word_frequency": 29285
+  },
+  {
+    "word": "vindicate",
+    "definition": [
+      "clear (someone) of blame or suspicion",
+      "The new evidence helped to vindicate her reputation."
+    ],
+    "word_frequency": 20486
+  },
+  {
+    "word": "weaponize",
+    "definition": [
+      "to adapt for use as a weapon",
+      "The country was accused of trying to weaponize the virus."
+    ],
+    "word_frequency": 32846
+  },
+  {
+    "word": "whet",
+    "definition": [
+      "sharpen the blade of (a tool or weapon); excite or stimulate (someone's desire, interest, or appetite)",
+      "The appetizer only served to whet my appetite."
+    ],
+    "word_frequency": 32419
+  },
+  {
+    "word": "wield",
+    "definition": [
+      "to hold and use (a weapon or tool); to exercise (power or influence)",
+      "He wielded the sword with great skill."
+    ],
+    "word_frequency": 13304
+  },
+  {
+    "word": "withhold",
+    "definition": [
+      "to refuse to give (something that is due to or is desired by another)",
+      "The company decided to withhold payment until the work was completed."
+    ],
+    "word_frequency": 12559
+  },
+  {
+    "word": "woo",
+    "definition": [
+      "try to gain the love, support, or custom of (someone)",
+      "The company is trying to woo new customers with special offers."
+    ],
+    "word_frequency": 6152
+  },
+  {
+    "word": "wrack",
+    "definition": [
+      "to cause severe damage or destruction to",
+      "He wracked his brain trying to remember the answer."
+    ],
+    "word_frequency": 27659
+  },
+  {
+    "word": "wrangle",
+    "definition": [
+      "to argue or dispute; to herd animals",
+      "They spent hours trying to wrangle the cattle."
+    ],
+    "word_frequency": 30786
+  },
+  {
+    "word": "wreak",
+    "definition": [
+      "to cause (a great deal of damage or harm)",
+      "The storm threatened to wreak havoc on the coastal towns."
+    ],
+    "word_frequency": 21816
+  },
+  {
+    "word": "wrest",
+    "definition": [
+      "forcibly pull (something) from a person's grasp",
+      "He managed to wrest the document from her hand."
+    ],
+    "word_frequency": 32039
+  },
+  {
+    "word": "writhe",
+    "definition": [
+      "To twist or squirm, especially in pain",
+      "He began to writhe in agony after falling."
+    ],
+    "word_frequency": 26656
+  }
+]

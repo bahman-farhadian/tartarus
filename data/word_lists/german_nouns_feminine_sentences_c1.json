@@ -1,0 +1,5742 @@
+[
+  {
+    "word": "Adipositas ist ein ernstes Gesundheitsproblem.",
+    "definition": "Obesity is a serious health problem.",
+    "word_frequency": 23249
+  },
+  {
+    "word": "Albert Einstein entwickelte die Relativitätstheorie.",
+    "definition": "Albert Einstein developed the theory of relativity.",
+    "word_frequency": 23911
+  },
+  {
+    "word": "Altersarmut ist ein wachsendes Problem in vielen Ländern.",
+    "definition": "Poverty in old age is a growing problem in many countries.",
+    "word_frequency": 15529
+  },
+  {
+    "word": "Bach komponierte viele Kantaten.",
+    "definition": "Bach composed many cantatas.",
+    "word_frequency": 27497
+  },
+  {
+    "word": "Barrierefreiheit ist ein wichtiges Thema.",
+    "definition": "Accessibility is an important topic.",
+    "word_frequency": 17418
+  },
+  {
+    "word": "Bei der Planung muss die Sicherheit Berücksichtigung finden.",
+    "definition": "Safety must be taken into consideration during planning.",
+    "word_frequency": 3862
+  },
+  {
+    "word": "Beide Vertragsparteien müssen dem Abkommen zustimmen.",
+    "definition": "Both contracting parties must agree to the agreement.",
+    "word_frequency": 29095
+  },
+  {
+    "word": "Bestechung ist in vielen Ländern ein großes Problem.",
+    "definition": "Bribery is a big problem in many countries.",
+    "word_frequency": 13873
+  },
+  {
+    "word": "Biomasse ist eine erneuerbare Energiequelle.",
+    "definition": "Biomass is a renewable energy source.",
+    "word_frequency": 16335
+  },
+  {
+    "word": "Bitte lesen Sie die nächste Section des Berichts.",
+    "definition": "Please read the next section of the report.",
+    "word_frequency": 16009
+  },
+  {
+    "word": "Chancengleichheit ist ein wichtiges Ziel in der Gesellschaft.",
+    "definition": "Equality of opportunity is an important goal in society.",
+    "word_frequency": 14557
+  },
+  {
+    "word": "Das alte Lied geriet in Vergessenheit.",
+    "definition": "The old song fell into oblivion.",
+    "word_frequency": 9657
+  },
+  {
+    "word": "Das alte System ist eine Legacy-Anwendung.",
+    "definition": "The old system is a legacy application.",
+    "word_frequency": 20994
+  },
+  {
+    "word": "Das Buch behandelt das Thema Erotik.",
+    "definition": "The book deals with the topic of eroticism.",
+    "word_frequency": 5365
+  },
+  {
+    "word": "Das Buch ist in einer neuen Neubearbeitung erschienen.",
+    "definition": "The book has been published in a new revision.",
+    "word_frequency": 28472
+  },
+  {
+    "word": "Das Design ist in Anlehnung an alte Modelle entstanden.",
+    "definition": "The design was created based on old models.",
+    "word_frequency": 7369
+  },
+  {
+    "word": "Das Erdbeben hat viele Gebäude in Mitleidenschaft gezogen.",
+    "definition": "The earthquake affected many buildings.",
+    "word_frequency": 15424
+  },
+  {
+    "word": "Das Ergebnis zeigte eine Anomalie.",
+    "definition": "The result showed an anomaly.",
+    "word_frequency": 15798
+  },
+  {
+    "word": "Das Falschparken ist eine Ordnungswidrigkeit.",
+    "definition": "Illegal parking is a minor infraction.",
+    "word_frequency": 24678
+  },
+  {
+    "word": "Das Foto ist nur eine Momentaufnahme.",
+    "definition": "The photo is just a snapshot.",
+    "word_frequency": 22371
+  },
+  {
+    "word": "Das Gericht hat ihr die Vormundschaft für das Kind übertragen.",
+    "definition": "The court granted her guardianship of the child.",
+    "word_frequency": 23207
+  },
+  {
+    "word": "Das Gericht hat keine Gerichtsbarkeit in diesem Fall.",
+    "definition": "The court has no jurisdiction in this case.",
+    "word_frequency": 12143
+  },
+  {
+    "word": "Das Gesetz fordert Gleichbehandlung für alle.",
+    "definition": "The law demands equal treatment for everyone.",
+    "word_frequency": 18718
+  },
+  {
+    "word": "Das Gesetz tritt ab morgen in Geltung.",
+    "definition": "The law comes into force tomorrow.",
+    "word_frequency": 7652
+  },
+  {
+    "word": "Das Institut für Wirtschaftsforschung veröffentlichte neue Daten.",
+    "definition": "The Institute for Economic Research published new data.",
+    "word_frequency": 23619
+  },
+  {
+    "word": "Das ist eine seltene Ausprägung der Krankheit.",
+    "definition": "This is a rare manifestation of the disease.",
+    "word_frequency": 10568
+  },
+  {
+    "word": "Das Kind wurde in die Obhut der Großeltern gegeben.",
+    "definition": "The child was placed in the care of the grandparents.",
+    "word_frequency": 10837
+  },
+  {
+    "word": "Das Konzept der Islamisierung wird oft diskutiert.",
+    "definition": "The concept of Islamization is often discussed.",
+    "word_frequency": 13714
+  },
+  {
+    "word": "Das Land befindet sich in einer tiefen Rezession.",
+    "definition": "The country is in a deep recession.",
+    "word_frequency": 15168
+  },
+  {
+    "word": "Das Land strebte nach regionaler Vorherrschaft.",
+    "definition": "The country strived for regional dominance.",
+    "word_frequency": 15224
+  },
+  {
+    "word": "Das liegt in meiner Zuständigkeit.",
+    "definition": "That is within my responsibility.",
+    "word_frequency": 7905
+  },
+  {
+    "word": "Das Material hält hoher Beanspruchung stand.",
+    "definition": "The material withstands high stress.",
+    "word_frequency": 22557
+  },
+  {
+    "word": "Das neue System führte zu einer deutlichen Leistungssteigerung.",
+    "definition": "The new system led to a significant performance increase.",
+    "word_frequency": 20028
+  },
+  {
+    "word": "Das Prinzip der elektromagnetischen Induktion ist wichtig in der Physik.",
+    "definition": "The principle of electromagnetic induction is important in physics.",
+    "word_frequency": 25431
+  },
+  {
+    "word": "Das Prinzip der Verhältnismässigkeit ist im Recht wichtig.",
+    "definition": "The principle of proportionality is important in law.",
+    "word_frequency": 19182
+  },
+  {
+    "word": "Das Problem hat viele Facetten.",
+    "definition": "The problem has many facets.",
+    "word_frequency": 10771
+  },
+  {
+    "word": "Das Programm dient der Gesundheitsförderung.",
+    "definition": "The program serves health promotion.",
+    "word_frequency": 25388
+  },
+  {
+    "word": "Das Projekt erhielt die Billigung der Behörden.",
+    "definition": "The project received the approval of the authorities.",
+    "word_frequency": 27377
+  },
+  {
+    "word": "Das Projekt ist das Ergebnis einer engen Kollaboration.",
+    "definition": "The project is the result of close collaboration.",
+    "word_frequency": 23071
+  },
+  {
+    "word": "Das Projekt wird in Eigenregie durchgeführt.",
+    "definition": "The project is carried out under its own direction.",
+    "word_frequency": 23727
+  },
+  {
+    "word": "Das Recht auf Selbstbestimmung ist fundamental.",
+    "definition": "The right to self-determination is fundamental.",
+    "word_frequency": 8155
+  },
+  {
+    "word": "Das Restaurant ist Extraklasse.",
+    "definition": "The restaurant is top class.",
+    "word_frequency": 27417
+  },
+  {
+    "word": "Das Schiff sendete ein Seenotsignal.",
+    "definition": "The ship sent a distress signal at sea.",
+    "word_frequency": 22817
+  },
+  {
+    "word": "Das System zur Entwässerung ist sehr effizient.",
+    "definition": "The drainage system is very efficient.",
+    "word_frequency": 22617
+  },
+  {
+    "word": "Das Thema Abtreibung ist in vielen Ländern umstritten.",
+    "definition": "The topic of abortion is controversial in many countries.",
+    "word_frequency": 9846
+  },
+  {
+    "word": "Das Unternehmen bildete eine Rückstellung für zukünftige Ausgaben.",
+    "definition": "The company formed a provision for future expenses.",
+    "word_frequency": 23526
+  },
+  {
+    "word": "Das Unternehmen bildete Rücklagen für zukünftige Investitionen.",
+    "definition": "The company formed reserves for future investments.",
+    "word_frequency": 15711
+  },
+  {
+    "word": "Das Unternehmen hat mehrere Tochtergesellschaften weltweit.",
+    "definition": "The company has several subsidiary companies worldwide.",
+    "word_frequency": 16529
+  },
+  {
+    "word": "Das Unternehmen hat Probleme mit der Liquidität.",
+    "definition": "The company has problems with liquidity.",
+    "word_frequency": 17270
+  },
+  {
+    "word": "Das Unternehmen meldete Zahlungsunfähigkeit an.",
+    "definition": "The company declared insolvency.",
+    "word_frequency": 26869
+  },
+  {
+    "word": "Das Unternehmen plant eine Kapitalerhöhung, um neue Projekte zu finanzieren.",
+    "definition": "The company plans a capital increase to finance new projects.",
+    "word_frequency": 22704
+  },
+  {
+    "word": "Das Unternehmen plant eine strategische Neuausrichtung.",
+    "definition": "The company is planning a strategic realignment.",
+    "word_frequency": 17288
+  },
+  {
+    "word": "Das Unternehmen strebt nach Excellence in allen Bereichen.",
+    "definition": "The company strives for excellence in all areas.",
+    "word_frequency": 15867
+  },
+  {
+    "word": "Das Volk litt unter der Tyrannei des Herrschers.",
+    "definition": "The people suffered under the tyranny of the ruler.",
+    "word_frequency": 19171
+  },
+  {
+    "word": "Das war doch eine totale Verarsche!",
+    "definition": "That was a total rip-off!",
+    "word_frequency": 24397
+  },
+  {
+    "word": "Das war eine schwere Unterlassung.",
+    "definition": "That was a serious omission.",
+    "word_frequency": 23195
+  },
+  {
+    "word": "Das Wort \"Nutte\" ist sehr beleidigend.",
+    "definition": "The word \"Nutte\" is very offensive.",
+    "word_frequency": 8549
+  },
+  {
+    "word": "Das Ziel der Regierung ist Vollbeschäftigung.",
+    "definition": "The government's goal is full employment.",
+    "word_frequency": 22490
+  },
+  {
+    "word": "Demut ist eine wichtige Tugend.",
+    "definition": "Humility is an important virtue.",
+    "word_frequency": 11875
+  },
+  {
+    "word": "Der Angeklagte wurde wegen Nötigung verurteilt.",
+    "definition": "The defendant was convicted of coercion.",
+    "word_frequency": 13754
+  },
+  {
+    "word": "Der Arzt nahm eine detaillierte Anamnese auf.",
+    "definition": "The doctor took a detailed medical history.",
+    "word_frequency": 27740
+  },
+  {
+    "word": "Der Aufprall hatte eine enorme Wucht.",
+    "definition": "The impact had an enormous force.",
+    "word_frequency": 10375
+  },
+  {
+    "word": "Der Bauer verteilte Gülle auf dem Feld.",
+    "definition": "The farmer spread liquid manure on the field.",
+    "word_frequency": 17817
+  },
+  {
+    "word": "Der Begriff \"Lügenpresse\" wird oft in politischen Debatten verwendet.",
+    "definition": "The term \"lying press\" is often used in political debates.",
+    "word_frequency": 7676
+  },
+  {
+    "word": "Der Bösewicht strebt nach Weltherrschaft.",
+    "definition": "The villain strives for world domination.",
+    "word_frequency": 20170
+  },
+  {
+    "word": "Der Einsatz von Chemiewaffen ist international verboten.",
+    "definition": "The use of chemical weapons is internationally prohibited.",
+    "word_frequency": 20877
+  },
+  {
+    "word": "Der ganze Prozess war eine Farce.",
+    "definition": "The whole process was a farce.",
+    "word_frequency": 13913
+  },
+  {
+    "word": "Der Gefangene trug eine Fussfessel.",
+    "definition": "The prisoner wore an ankle cuff.",
+    "word_frequency": 29269
+  },
+  {
+    "word": "Der König gewährte ihm eine Audienz.",
+    "definition": "The king granted him an audience.",
+    "word_frequency": 19554
+  },
+  {
+    "word": "Der Künstler widmete sein Werk als Hommage an seinen Lehrer.",
+    "definition": "The artist dedicated his work as an homage to his teacher.",
+    "word_frequency": 11533
+  },
+  {
+    "word": "Der Löwe jagte seine Beute.",
+    "definition": "The lion hunted its prey.",
+    "word_frequency": 3588
+  },
+  {
+    "word": "Der Mauerfall war eine Zäsur in der deutschen Geschichte.",
+    "definition": "The fall of the Berlin Wall was a turning point in German history.",
+    "word_frequency": 24433
+  },
+  {
+    "word": "Der neue Künstler machte Furore mit seiner Ausstellung.",
+    "definition": "The new artist caused a sensation with his exhibition.",
+    "word_frequency": 26591
+  },
+  {
+    "word": "Der Patient benötigte Beatmung.",
+    "definition": "The patient required artificial respiration.",
+    "word_frequency": 26131
+  },
+  {
+    "word": "Der Patient muss regelmäßig zur Dialyse.",
+    "definition": "The patient needs regular dialysis.",
+    "word_frequency": 24506
+  },
+  {
+    "word": "Der Priester bereitete sich in der Sakristei auf die Messe vor.",
+    "definition": "The priest prepared for mass in the sacristy.",
+    "word_frequency": 27611
+  },
+  {
+    "word": "Der Prozess der Entscheidungsfindung war langwierig.",
+    "definition": "The decision-making process was lengthy.",
+    "word_frequency": 17788
+  },
+  {
+    "word": "Der Schutz der Artenvielfalt ist entscheidend.",
+    "definition": "The protection of biodiversity is crucial.",
+    "word_frequency": 17145
+  },
+  {
+    "word": "Der Schutz der Biodiversität ist entscheidend.",
+    "definition": "The protection of biodiversity is crucial.",
+    "word_frequency": 21858
+  },
+  {
+    "word": "Der Staat muss die Grundversorgung der Bürger sichern.",
+    "definition": "The state must ensure the basic services for its citizens.",
+    "word_frequency": 14839
+  },
+  {
+    "word": "Der Unfall geschah aus Fahrlässigkeit.",
+    "definition": "The accident happened due to negligence.",
+    "word_frequency": 15066
+  },
+  {
+    "word": "Der Unfall hatte Todesfolge.",
+    "definition": "The accident resulted in death.",
+    "word_frequency": 29057
+  },
+  {
+    "word": "Der Verein hat den Status der Gemeinnützigkeit.",
+    "definition": "The association has non-profit status.",
+    "word_frequency": 28331
+  },
+  {
+    "word": "Der Verein muss in die Relegation.",
+    "definition": "The club has to go into relegation.",
+    "word_frequency": 10669
+  },
+  {
+    "word": "Deutschland diskutiert oft über die Willkommenskultur.",
+    "definition": "Germany often discusses the welcoming culture.",
+    "word_frequency": 19830
+  },
+  {
+    "word": "Die Abfallwirtschaft ist ein wichtiger Sektor für die Umwelt.",
+    "definition": "Waste management is an important sector for the environment.",
+    "word_frequency": 29623
+  },
+  {
+    "word": "Die Abschiebung wurde nach langem Verfahren angeordnet.",
+    "definition": "The deportation was ordered after a long procedure.",
+    "word_frequency": 7104
+  },
+  {
+    "word": "Die Abschottung des Landes führte zu Problemen.",
+    "definition": "The isolation of the country led to problems.",
+    "word_frequency": 21154
+  },
+  {
+    "word": "Die Abschreckung ist ein wichtiges Konzept in der Sicherheitspolitik.",
+    "definition": "Deterrence is an important concept in security policy.",
+    "word_frequency": 17129
+  },
+  {
+    "word": "Die Abschreibung des Vermögenswerts ist wichtig für die Bilanz.",
+    "definition": "The depreciation of the asset is important for the balance sheet.",
+    "word_frequency": 18905
+  },
+  {
+    "word": "Die Absetzung des Ministers führte zu Protesten.",
+    "definition": "The removal of the minister led to protests.",
+    "word_frequency": 15247
+  },
+  {
+    "word": "Die Absorption von Licht ist ein physikalischer Prozess.",
+    "definition": "The absorption of light is a physical process.",
+    "word_frequency": 28203
+  },
+  {
+    "word": "Die Abspaltung der Gruppe führte zu internen Konflikten.",
+    "definition": "The split-off of the group led to internal conflicts.",
+    "word_frequency": 11464
+  },
+  {
+    "word": "Die Abstraktion ist ein wichtiger Schritt im Denkprozess.",
+    "definition": "Abstraction is an important step in the thought process.",
+    "word_frequency": 19849
+  },
+  {
+    "word": "Die Abtretung der Forderung wurde notariell beurkundet.",
+    "definition": "The assignment of the claim was notarized.",
+    "word_frequency": 19222
+  },
+  {
+    "word": "Die Abwahl des Bürgermeisters wurde beantragt.",
+    "definition": "The recall of the mayor was requested.",
+    "word_frequency": 27329
+  },
+  {
+    "word": "Die Aktionäre erhalten eine Dividende.",
+    "definition": "The shareholders receive a dividend.",
+    "word_frequency": 10424
+  },
+  {
+    "word": "Die aktuelle Lage führt zu großer Verunsicherung in der Bevölkerung.",
+    "definition": "The current situation leads to great insecurity among the population.",
+    "word_frequency": 16289
+  },
+  {
+    "word": "Die alte Abtei steht auf einem Hügel.",
+    "definition": "The old abbey stands on a hill.",
+    "word_frequency": 12281
+  },
+  {
+    "word": "Die alte Festung war eine uneinnehmbare Bastion.",
+    "definition": "The old fortress was an impregnable bastion.",
+    "word_frequency": 20215
+  },
+  {
+    "word": "Die alte Grabstätte war von Bäumen umgeben.",
+    "definition": "The old burial site was surrounded by trees.",
+    "word_frequency": 27459
+  },
+  {
+    "word": "Die alte Mähre zog den Karren langsam den Hügel hinauf.",
+    "definition": "The old nag slowly pulled the cart up the hill.",
+    "word_frequency": 14432
+  },
+  {
+    "word": "Die alte Pape war sehr stabil.",
+    "definition": "The old cardboard was very stable.",
+    "word_frequency": 21345
+  },
+  {
+    "word": "Die alte Prophezeiung erfüllte sich.",
+    "definition": "The old prophecy came true.",
+    "word_frequency": 16729
+  },
+  {
+    "word": "Die alte Reliquie wurde im Museum ausgestellt.",
+    "definition": "The old relic was exhibited in the museum.",
+    "word_frequency": 20393
+  },
+  {
+    "word": "Die alte Stele trug eine Inschrift in Hieroglyphen.",
+    "definition": "The old stele bore an inscription in hieroglyphs.",
+    "word_frequency": 26793
+  },
+  {
+    "word": "Die alte Stiftskirche ist ein beeindruckendes Bauwerk.",
+    "definition": "The old collegiate church is an impressive building.",
+    "word_frequency": 24759
+  },
+  {
+    "word": "Die alte Zivilisation hatte eine reiche Kultur.",
+    "definition": "The ancient civilization had a rich culture.",
+    "word_frequency": 6047
+  },
+  {
+    "word": "Die alten Ägypter schrieben in Hieroglyphen.",
+    "definition": "The ancient Egyptians wrote in hieroglyphs.",
+    "word_frequency": 29794
+  },
+  {
+    "word": "Die Amtseinführung des neuen Präsidenten fand gestern statt.",
+    "definition": "The inauguration of the new president took place yesterday.",
+    "word_frequency": 28213
+  },
+  {
+    "word": "Die Amtsperiode des Präsidenten dauert vier Jahre.",
+    "definition": "The president's term of office lasts four years.",
+    "word_frequency": 29638
+  },
+  {
+    "word": "Die Analytik der Daten ist entscheidend für den Erfolg.",
+    "definition": "The analytics of the data is crucial for success.",
+    "word_frequency": 24836
+  },
+  {
+    "word": "Die Anbetung Gottes ist ein wichtiger Teil ihres Glaubens.",
+    "definition": "The worship of God is an important part of their faith.",
+    "word_frequency": 18012
+  },
+  {
+    "word": "Die Anfechtung des Vertrages war erfolgreich.",
+    "definition": "The challenge to the contract was successful.",
+    "word_frequency": 18913
+  },
+  {
+    "word": "Die Angleichung der Gesetze ist notwendig.",
+    "definition": "The alignment of the laws is necessary.",
+    "word_frequency": 18916
+  },
+  {
+    "word": "Die Anklage wurde wegen mangelnder Beweise fallen gelassen.",
+    "definition": "The charge was dropped due to lack of evidence.",
+    "word_frequency": 3858
+  },
+  {
+    "word": "Die Anreicherung von Uran ist ein komplexer Prozess.",
+    "definition": "The enrichment of uranium is a complex process.",
+    "word_frequency": 28691
+  },
+  {
+    "word": "Die Anschuldigungen führten zu einer regelrechten Hexenjagd.",
+    "definition": "The accusations led to a veritable witch hunt.",
+    "word_frequency": 25417
+  },
+  {
+    "word": "Die Anschuldigungen waren reine Verleumdung.",
+    "definition": "The accusations were pure defamation.",
+    "word_frequency": 16804
+  },
+  {
+    "word": "Die Anstiftung zur Gewalt ist strafbar.",
+    "definition": "Incitement to violence is punishable.",
+    "word_frequency": 26118
+  },
+  {
+    "word": "Die Anziehungskraft der Erde hält uns am Boden.",
+    "definition": "The Earth's gravitational pull keeps us on the ground.",
+    "word_frequency": 14074
+  },
+  {
+    "word": "Die Apartheid war ein System der Rassentrennung.",
+    "definition": "Apartheid was a system of racial segregation.",
+    "word_frequency": 18615
+  },
+  {
+    "word": "Die Apotheke bereitet die Rezeptur zu.",
+    "definition": "The pharmacy prepares the formulation.",
+    "word_frequency": 24713
+  },
+  {
+    "word": "Die Arbeiterkammer vertritt die Interessen der Arbeitnehmer.",
+    "definition": "The Chamber of Labour represents the interests of employees.",
+    "word_frequency": 29645
+  },
+  {
+    "word": "Die Arbeitslosenquote ist in diesem Quartal gesunken.",
+    "definition": "The unemployment rate has decreased this quarter.",
+    "word_frequency": 15258
+  },
+  {
+    "word": "Die Armut war eine Geissel für die Gesellschaft.",
+    "definition": "Poverty was a scourge for society.",
+    "word_frequency": 29279
+  },
+  {
+    "word": "Die Artillerie feuerte auf die feindlichen Stellungen.",
+    "definition": "The artillery fired on the enemy positions.",
+    "word_frequency": 8356
+  },
+  {
+    "word": "Die Assimilation neuer Kulturen kann eine Herausforderung sein.",
+    "definition": "The assimilation of new cultures can be a challenge.",
+    "word_frequency": 20841
+  },
+  {
+    "word": "Die Aufarbeitung der Geschichte ist wichtig für die Zukunft.",
+    "definition": "The reappraisal of history is important for the future.",
+    "word_frequency": 7107
+  },
+  {
+    "word": "Die Auferstehung ist ein zentraler Glaube im Christentum.",
+    "definition": "The resurrection is a central belief in Christianity.",
+    "word_frequency": 9356
+  },
+  {
+    "word": "Die Aufhebung des Gesetzes wurde beschlossen.",
+    "definition": "The abolition of the law was decided.",
+    "word_frequency": 4967
+  },
+  {
+    "word": "Die Aufladung des Akkus dauert mehrere Stunden.",
+    "definition": "The charging of the battery takes several hours.",
+    "word_frequency": 25695
+  },
+  {
+    "word": "Die Aufrechterhaltung des Friedens ist wichtig.",
+    "definition": "The maintenance of peace is important.",
+    "word_frequency": 13416
+  },
+  {
+    "word": "Die Aufrüstung des Militärs war ein kontroverses Thema.",
+    "definition": "The rearmament of the military was a controversial topic.",
+    "word_frequency": 14076
+  },
+  {
+    "word": "Die Aufsichtsbehörde prüft die Einhaltung der Vorschriften.",
+    "definition": "The supervisory authority checks compliance with the regulations.",
+    "word_frequency": 16846
+  },
+  {
+    "word": "Die Aufspaltung des Unternehmens war unvermeidlich.",
+    "definition": "The division of the company was inevitable.",
+    "word_frequency": 26505
+  },
+  {
+    "word": "Die Aufwendungen für das Projekt waren hoch.",
+    "definition": "The expenses for the project were high.",
+    "word_frequency": 9357
+  },
+  {
+    "word": "Die Ausbeute der Ernte war dieses Jahr sehr gut.",
+    "definition": "The yield of the harvest was very good this year.",
+    "word_frequency": 12296
+  },
+  {
+    "word": "Die Ausbeutung natürlicher Ressourcen ist ein Problem.",
+    "definition": "The exploitation of natural resources is a problem.",
+    "word_frequency": 7373
+  },
+  {
+    "word": "Die Ausbreitung des Virus ist besorgniserregend.",
+    "definition": "The spread of the virus is concerning.",
+    "word_frequency": 7918
+  },
+  {
+    "word": "Die Ausdehnung des Universums ist unvorstellbar.",
+    "definition": "The expansion of the universe is unimaginable.",
+    "word_frequency": 7614
+  },
+  {
+    "word": "Die Ausgestaltung des Projekts ist noch nicht abgeschlossen.",
+    "definition": "The design of the project is not yet complete.",
+    "word_frequency": 9511
+  },
+  {
+    "word": "Die Ausgliederung der IT-Abteilung führte zu Kosteneinsparungen.",
+    "definition": "The outsourcing of the IT department led to cost savings.",
+    "word_frequency": 26908
+  },
+  {
+    "word": "Die Auslastung des Hotels ist hoch.",
+    "definition": "The hotel's occupancy rate is high.",
+    "word_frequency": 9696
+  },
+  {
+    "word": "Die Auslegung des Gesetzes ist umstritten.",
+    "definition": "The interpretation of the law is controversial.",
+    "word_frequency": 6154
+  },
+  {
+    "word": "Die Auslieferung des Pakets ist für morgen geplant.",
+    "definition": "The delivery of the package is planned for tomorrow.",
+    "word_frequency": 8204
+  },
+  {
+    "word": "Die Auslöschung der Dinosaurier ist ein Rätsel.",
+    "definition": "The extinction of the dinosaurs is a mystery.",
+    "word_frequency": 26510
+  },
+  {
+    "word": "Die Ausrottung dieser Art muss verhindert werden.",
+    "definition": "The eradication of this species must be prevented.",
+    "word_frequency": 22179
+  },
+  {
+    "word": "Die Ausschreibung für das Projekt wurde veröffentlicht.",
+    "definition": "The tender for the project was published.",
+    "word_frequency": 6858
+  },
+  {
+    "word": "Die Aussenwirkung der Entscheidung war negativ.",
+    "definition": "The external effect of the decision was negative.",
+    "word_frequency": 29655
+  },
+  {
+    "word": "Die Aussetzung der Bauarbeiten wurde angeordnet.",
+    "definition": "The suspension of the construction work was ordered.",
+    "word_frequency": 16585
+  },
+  {
+    "word": "Die Austragung der Meisterschaft findet nächstes Jahr statt.",
+    "definition": "The holding of the championship will take place next year.",
+    "word_frequency": 24854
+  },
+  {
+    "word": "Die Ausweisung des Ausländers wurde angeordnet.",
+    "definition": "The expulsion of the foreigner was ordered.",
+    "word_frequency": 11658
+  },
+  {
+    "word": "Die Ausweitung der Produktion ist geplant.",
+    "definition": "The expansion of production is planned.",
+    "word_frequency": 7919
+  },
+  {
+    "word": "Die Authentizität des Dokuments wurde bestätigt.",
+    "definition": "The authenticity of the document was confirmed.",
+    "word_frequency": 11479
+  },
+  {
+    "word": "Die Autopsie ergab die Todesursache.",
+    "definition": "The autopsy revealed the cause of death.",
+    "word_frequency": 25706
+  },
+  {
+    "word": "Die Bandbreite der Meinungen ist groß.",
+    "definition": "The range of opinions is wide.",
+    "word_frequency": 6615
+  },
+  {
+    "word": "Die Bank prüft die Bonität des Kunden.",
+    "definition": "The bank checks the customer's creditworthiness.",
+    "word_frequency": 18952
+  },
+  {
+    "word": "Die Barbarei des Krieges ist unerträglich.",
+    "definition": "The barbarity of war is unbearable.",
+    "word_frequency": 24464
+  },
+  {
+    "word": "Die Baugruppe muss vor dem Einbau geprüft werden.",
+    "definition": "The assembly must be checked before installation.",
+    "word_frequency": 29659
+  },
+  {
+    "word": "Die Baukunst des Mittelalters ist beeindruckend.",
+    "definition": "The architecture of the Middle Ages is impressive.",
+    "word_frequency": 19875
+  },
+  {
+    "word": "Die Bausubstanz des alten Hauses ist noch gut.",
+    "definition": "The building fabric of the old house is still good.",
+    "word_frequency": 18315
+  },
+  {
+    "word": "Die Beendigung des Projekts ist für nächste Woche geplant.",
+    "definition": "The completion of the project is planned for next week.",
+    "word_frequency": 5639
+  },
+  {
+    "word": "Die Befruchtung der Pflanze ist für die Fruchtbildung entscheidend.",
+    "definition": "The fertilization of the plant is crucial for fruit formation.",
+    "word_frequency": 16326
+  },
+  {
+    "word": "Die Begehung des Gebäudes findet morgen statt.",
+    "definition": "The inspection of the building will take place tomorrow.",
+    "word_frequency": 16856
+  },
+  {
+    "word": "Die Begrifflichkeit in diesem Bereich ist komplex.",
+    "definition": "The terminology in this area is complex.",
+    "word_frequency": 23277
+  },
+  {
+    "word": "Die Begutachtung des Projekts ist abgeschlossen.",
+    "definition": "The assessment of the project is complete.",
+    "word_frequency": 14086
+  },
+  {
+    "word": "Die Behörden ermitteln wegen Geldwäsche.",
+    "definition": "The authorities are investigating money laundering.",
+    "word_frequency": 13686
+  },
+  {
+    "word": "Die Beibehaltung der alten Traditionen ist wichtig.",
+    "definition": "The retention of old traditions is important.",
+    "word_frequency": 15021
+  },
+  {
+    "word": "Die beiden Länder waren in Personalunion verbunden.",
+    "definition": "The two countries were connected in a personal union.",
+    "word_frequency": 27577
+  },
+  {
+    "word": "Die Beilegung des Konflikts ist wichtig.",
+    "definition": "The resolution of the conflict is important.",
+    "word_frequency": 21177
+  },
+  {
+    "word": "Die Bekämpfung der Armut ist ein wichtiges Ziel.",
+    "definition": "The combat against poverty is an important goal.",
+    "word_frequency": 4629
+  },
+  {
+    "word": "Die Belebung der Wirtschaft ist ein wichtiges Ziel.",
+    "definition": "The revitalization of the economy is an important goal.",
+    "word_frequency": 19879
+  },
+  {
+    "word": "Die Berichterstattung über das Ereignis war sehr ausführlich.",
+    "definition": "The reporting on the event was very detailed.",
+    "word_frequency": 3525
+  },
+  {
+    "word": "Die Berufsgenossenschaft ist für die Unfallversicherung zuständig.",
+    "definition": "The professional association is responsible for accident insurance.",
+    "word_frequency": 26520
+  },
+  {
+    "word": "Die Beschlagnahme der Waren erfolgte ohne Vorwarnung.",
+    "definition": "The seizure of the goods occurred without warning.",
+    "word_frequency": 25285
+  },
+  {
+    "word": "Die Beschlussfassung erfolgte einstimmig.",
+    "definition": "The decision-making was unanimous.",
+    "word_frequency": 20854
+  },
+  {
+    "word": "Die Beschneidung von Bäumen ist wichtig für ihre Gesundheit.",
+    "definition": "The pruning of trees is important for their health.",
+    "word_frequency": 13870
+  },
+  {
+    "word": "Die Beseitigung des Mülls ist eine große Herausforderung.",
+    "definition": "The disposal of waste is a big challenge.",
+    "word_frequency": 7491
+  },
+  {
+    "word": "Die Besiedlung des Mars ist ein langfristiges Ziel.",
+    "definition": "The colonization of Mars is a long-term goal.",
+    "word_frequency": 18318
+  },
+  {
+    "word": "Die Besoldung der Beamten wurde angepasst.",
+    "definition": "The salary of the civil servants was adjusted.",
+    "word_frequency": 25286
+  },
+  {
+    "word": "Die Besteuerung von Luxusgütern wurde erhöht.",
+    "definition": "The taxation of luxury goods was increased.",
+    "word_frequency": 8626
+  },
+  {
+    "word": "Die Bestrahlung ist Teil der Therapie.",
+    "definition": "The radiation is part of the therapy.",
+    "word_frequency": 21512
+  },
+  {
+    "word": "Die Bevölkerungsentwicklung ist ein wichtiges Thema.",
+    "definition": "Population development is an important topic.",
+    "word_frequency": 26139
+  },
+  {
+    "word": "Die Beweisaufnahme im Prozess dauerte mehrere Tage.",
+    "definition": "The taking of evidence in the trial lasted several days.",
+    "word_frequency": 27776
+  },
+  {
+    "word": "Die Beweisführung des Anwalts war überzeugend.",
+    "definition": "The lawyer's argumentation was convincing.",
+    "word_frequency": 28733
+  },
+  {
+    "word": "Die Beweislast liegt beim Kläger.",
+    "definition": "The burden of proof lies with the plaintiff.",
+    "word_frequency": 23287
+  },
+  {
+    "word": "Die Bezirksregierung ist für die Verwaltung der Region zuständig.",
+    "definition": "The district government is responsible for the administration of the region.",
+    "word_frequency": 22932
+  },
+  {
+    "word": "Die Bibliographie am Ende des Buches ist sehr hilfreich.",
+    "definition": "The bibliography at the end of the book is very helpful.",
+    "word_frequency": 11669
+  },
+  {
+    "word": "Die Bildsprache des Films war beeindruckend.",
+    "definition": "The visual language of the film was impressive.",
+    "word_frequency": 29669
+  },
+  {
+    "word": "Die Bildungspolitik ist ein wichtiges Thema.",
+    "definition": "Education policy is an important topic.",
+    "word_frequency": 14096
+  },
+  {
+    "word": "Die Biotechnologie bietet innovative Lösungen für die Medizin.",
+    "definition": "Biotechnology offers innovative solutions for medicine.",
+    "word_frequency": 22933
+  },
+  {
+    "word": "Die Bischofskonferenz traf sich, um wichtige Themen zu besprechen.",
+    "definition": "The bishops' conference met to discuss important issues.",
+    "word_frequency": 17738
+  },
+  {
+    "word": "Die Bodentruppen wurden in die Region entsandt.",
+    "definition": "The ground troops were dispatched to the region.",
+    "word_frequency": 29197
+  },
+  {
+    "word": "Die Bohrung nach Öl war erfolgreich.",
+    "definition": "The drilling for oil was successful.",
+    "word_frequency": 15827
+  },
+  {
+    "word": "Die Bora ist ein starker Fallwind an der Adriaküste.",
+    "definition": "The Bora is a strong katabatic wind on the Adriatic coast.",
+    "word_frequency": 18038
+  },
+  {
+    "word": "Die Braut trug ein Kleid mit einer langen Schleppe.",
+    "definition": "The bride wore a dress with a long train.",
+    "word_frequency": 29010
+  },
+  {
+    "word": "Die Brennstoffzelle wandelt chemische Energie in elektrische Energie um.",
+    "definition": "The fuel cell converts chemical energy into electrical energy.",
+    "word_frequency": 26147
+  },
+  {
+    "word": "Die Brennweite des Objektivs ist wichtig für die Fotografie.",
+    "definition": "The focal length of the lens is important for photography.",
+    "word_frequency": 24883
+  },
+  {
+    "word": "Die Bronzezeit war eine wichtige Epoche.",
+    "definition": "The Bronze Age was an important epoch.",
+    "word_frequency": 25298
+  },
+  {
+    "word": "Die Brustwarze ist ein Teil der Brust.",
+    "definition": "The nipple is a part of the breast.",
+    "word_frequency": 20868
+  },
+  {
+    "word": "Die Brutalität der Tat schockierte alle.",
+    "definition": "The brutality of the act shocked everyone.",
+    "word_frequency": 15555
+  },
+  {
+    "word": "Die Bundesanstalt für Arbeit ist zuständig für Arbeitsvermittlung.",
+    "definition": "The Federal Employment Agency is responsible for job placement.",
+    "word_frequency": 12755
+  },
+  {
+    "word": "Die Bundesanwaltschaft ermittelt in dem Fall.",
+    "definition": "The Federal Public Prosecutor's Office is investigating the case.",
+    "word_frequency": 22214
+  },
+  {
+    "word": "Die Bundestagsfraktion traf sich zur Abstimmung.",
+    "definition": "The parliamentary group met for the vote.",
+    "word_frequency": 14103
+  },
+  {
+    "word": "Die Bundesvereinigung setzt sich für den Umweltschutz ein.",
+    "definition": "The Federal Association advocates for environmental protection.",
+    "word_frequency": 28247
+  },
+  {
+    "word": "Die Bundesverfassung garantiert die Grundrechte der Bürger.",
+    "definition": "The Federal Constitution guarantees the fundamental rights of citizens.",
+    "word_frequency": 28248
+  },
+  {
+    "word": "Die Bundesversammlung wählt den Bundespräsidenten.",
+    "definition": "The Federal Convention elects the Federal President.",
+    "word_frequency": 20529
+  },
+  {
+    "word": "Die Bundeszentrale befindet sich in Berlin.",
+    "definition": "The federal headquarters are located in Berlin.",
+    "word_frequency": 19273
+  },
+  {
+    "word": "Die Burschenschaft feierte ihr 200-jähriges Bestehen.",
+    "definition": "The student fraternity celebrated its 200th anniversary.",
+    "word_frequency": 18327
+  },
+  {
+    "word": "Die Bürgerbeteiligung ist wichtig für eine funktionierende Demokratie.",
+    "definition": "Citizen participation is important for a functioning democracy.",
+    "word_frequency": 17435
+  },
+  {
+    "word": "Die Bürgerschaft wurde zur Abstimmung aufgerufen.",
+    "definition": "The citizenry was called to vote.",
+    "word_frequency": 8371
+  },
+  {
+    "word": "Die Bürgerwehr patrouilliert nachts in der Nachbarschaft.",
+    "definition": "The vigilante group patrols the neighborhood at night.",
+    "word_frequency": 22593
+  },
+  {
+    "word": "Die chemische Solution muss vorsichtig gehandhabt werden.",
+    "definition": "The chemical solution must be handled carefully.",
+    "word_frequency": 16014
+  },
+  {
+    "word": "Die Cholera ist eine schwere Infektionskrankheit.",
+    "definition": "Cholera is a severe infectious disease.",
+    "word_frequency": 13884
+  },
+  {
+    "word": "Die Choreographie des Tanzes war beeindruckend.",
+    "definition": "The choreography of the dance was impressive.",
+    "word_frequency": 17755
+  },
+  {
+    "word": "Die Daten werden durch starke Verschlüsselung geschützt.",
+    "definition": "The data is protected by strong encryption.",
+    "word_frequency": 8752
+  },
+  {
+    "word": "Die Daten werden in Echtzeit aktualisiert.",
+    "definition": "The data is updated in real-time.",
+    "word_frequency": 8936
+  },
+  {
+    "word": "Die Datierung des Fundes ist noch unklar.",
+    "definition": "The dating of the find is still unclear.",
+    "word_frequency": 10418
+  },
+  {
+    "word": "Die Debatte über die Netzneutralität ist in vollem Gange.",
+    "definition": "The debate about net neutrality is in full swing.",
+    "word_frequency": 17008
+  },
+  {
+    "word": "Die Debatte über Sterbehilfe ist sehr kontrovers.",
+    "definition": "The debate about euthanasia is very controversial.",
+    "word_frequency": 12243
+  },
+  {
+    "word": "Die Deeskalation der Situation ist unser Ziel.",
+    "definition": "The de-escalation of the situation is our goal.",
+    "word_frequency": 29216
+  },
+  {
+    "word": "Die Dekadenz der Gesellschaft war offensichtlich.",
+    "definition": "The decadence of society was obvious.",
+    "word_frequency": 23713
+  },
+  {
+    "word": "Die Demographie eines Landes ist wichtig für die Zukunftsplanung.",
+    "definition": "The demography of a country is important for future planning.",
+    "word_frequency": 20243
+  },
+  {
+    "word": "Die Demokratisierung des Landes ist ein langer Prozess.",
+    "definition": "The democratization of the country is a long process.",
+    "word_frequency": 19602
+  },
+  {
+    "word": "Die Denkmalpflege ist wichtig für unsere Geschichte.",
+    "definition": "Monument preservation is important for our history.",
+    "word_frequency": 14566
+  },
+  {
+    "word": "Die Deportation wurde von der Regierung angeordnet.",
+    "definition": "The deportation was ordered by the government.",
+    "word_frequency": 19913
+  },
+  {
+    "word": "Die Deutung des Traumes war schwierig.",
+    "definition": "The interpretation of the dream was difficult.",
+    "word_frequency": 10064
+  },
+  {
+    "word": "Die Diagnostik der Krankheit ist komplex.",
+    "definition": "The diagnostics of the disease are complex.",
+    "word_frequency": 8218
+  },
+  {
+    "word": "Die Dialektik ist ein wichtiger Begriff in der Philosophie.",
+    "definition": "Dialectics is an important concept in philosophy.",
+    "word_frequency": 14113
+  },
+  {
+    "word": "Die Didaktik des Faches ist komplex.",
+    "definition": "The didactics of the subject are complex.",
+    "word_frequency": 15046
+  },
+  {
+    "word": "Die Diffamierung seines Rufes war ungerechtfertigt.",
+    "definition": "The defamation of his reputation was unjustified.",
+    "word_frequency": 26557
+  },
+  {
+    "word": "Die Differenzierung der Produkte ist wichtig für den Erfolg.",
+    "definition": "The differentiation of products is important for success.",
+    "word_frequency": 10244
+  },
+  {
+    "word": "Die Digitalisierung verändert unsere Arbeitswelt.",
+    "definition": "Digitalization is changing our working world.",
+    "word_frequency": 4019
+  },
+  {
+    "word": "Die Diskussion über Pornografie ist oft kontrovers.",
+    "definition": "The discussion about pornography is often controversial.",
+    "word_frequency": 23492
+  },
+  {
+    "word": "Die Diözese umfasst mehrere Pfarreien.",
+    "definition": "The diocese comprises several parishes.",
+    "word_frequency": 10939
+  },
+  {
+    "word": "Die Dogmatik der Kirche ist streng.",
+    "definition": "The dogmatics of the church are strict.",
+    "word_frequency": 28767
+  },
+  {
+    "word": "Die Dramaturgie des Stücks war sehr komplex.",
+    "definition": "The dramaturgy of the play was very complex.",
+    "word_frequency": 17773
+  },
+  {
+    "word": "Die Dreifaltigkeit ist ein zentrales Konzept im Christentum.",
+    "definition": "The Trinity is a central concept in Christianity.",
+    "word_frequency": 25758
+  },
+  {
+    "word": "Die Drosselung der Internetgeschwindigkeit war ärgerlich.",
+    "definition": "The throttling of the internet speed was annoying.",
+    "word_frequency": 28277
+  },
+  {
+    "word": "Die Dura Mater ist eine Hirnhaut.",
+    "definition": "The dura mater is a meninge.",
+    "word_frequency": 18450
+  },
+  {
+    "word": "Die Einberufung zum Militärdienst wurde verschickt.",
+    "definition": "The conscription notice for military service was sent.",
+    "word_frequency": 18989
+  },
+  {
+    "word": "Die Einführung einer Vermögenssteuer wird diskutiert.",
+    "definition": "The introduction of a wealth tax is being discussed.",
+    "word_frequency": 29572
+  },
+  {
+    "word": "Die Einsatzbereitschaft der Truppen ist hoch.",
+    "definition": "The readiness for action of the troops is high.",
+    "word_frequency": 24929
+  },
+  {
+    "word": "Die Einsetzung des neuen Direktors erfolgte letzte Woche.",
+    "definition": "The installation of the new director took place last week.",
+    "word_frequency": 18992
+  },
+  {
+    "word": "Die Elastizität des Materials ist sehr hoch.",
+    "definition": "The elasticity of the material is very high.",
+    "word_frequency": 22975
+  },
+  {
+    "word": "Die Elektrifizierung der Bahnstrecke ist ein großes Projekt.",
+    "definition": "The electrification of the railway line is a big project.",
+    "word_frequency": 22977
+  },
+  {
+    "word": "Die Elektrode wurde in die Lösung getaucht.",
+    "definition": "The electrode was dipped into the solution.",
+    "word_frequency": 21548
+  },
+  {
+    "word": "Die Elite des Landes traf sich zu einer geheimen Besprechung.",
+    "definition": "The country's elite met for a secret discussion.",
+    "word_frequency": 4110
+  },
+  {
+    "word": "Die Energieerzeugung aus erneuerbaren Quellen nimmt zu.",
+    "definition": "Energy generation from renewable sources is increasing.",
+    "word_frequency": 27410
+  },
+  {
+    "word": "Die Energiegewinnung aus erneuerbaren Quellen ist wichtig.",
+    "definition": "Energy generation from renewable sources is important.",
+    "word_frequency": 24117
+  },
+  {
+    "word": "Die Energieversorgung ist ein wichtiges Thema für die Zukunft.",
+    "definition": "Energy supply is an important topic for the future.",
+    "word_frequency": 10947
+  },
+  {
+    "word": "Die Energiewende ist ein wichtiges Thema in Deutschland.",
+    "definition": "The energy transition is an important topic in Germany.",
+    "word_frequency": 4111
+  },
+  {
+    "word": "Die Energiewirtschaft steht vor großen Herausforderungen.",
+    "definition": "The energy industry faces great challenges.",
+    "word_frequency": 19312
+  },
+  {
+    "word": "Die Enteignung von Land ist ein kontroverses Thema.",
+    "definition": "The expropriation of land is a controversial topic.",
+    "word_frequency": 11325
+  },
+  {
+    "word": "Die Enthauptung war eine grausame Strafe.",
+    "definition": "The beheading was a cruel punishment.",
+    "word_frequency": 24529
+  },
+  {
+    "word": "Die Entlohnung für diese Arbeit ist fair.",
+    "definition": "The remuneration for this work is fair.",
+    "word_frequency": 18362
+  },
+  {
+    "word": "Die Entnahme der Probe erfolgte schnell.",
+    "definition": "The removal of the sample was quick.",
+    "word_frequency": 15058
+  },
+  {
+    "word": "Die Entnazifizierung war ein wichtiger Prozess nach dem Krieg.",
+    "definition": "Denazification was an important process after the war.",
+    "word_frequency": 29721
+  },
+  {
+    "word": "Die Entrüstung über die Entscheidung war groß.",
+    "definition": "The indignation about the decision was great.",
+    "word_frequency": 22615
+  },
+  {
+    "word": "Die Entscheidung erfolgte nach Maßgabe der Vorschriften.",
+    "definition": "The decision was made according to the regulations.",
+    "word_frequency": 11375
+  },
+  {
+    "word": "Die Entscheidung wurde aus reiner Willkür getroffen.",
+    "definition": "The decision was made out of pure arbitrariness.",
+    "word_frequency": 10017
+  },
+  {
+    "word": "Die Entstehungszeit des Gemäldes ist unbekannt.",
+    "definition": "The period of origin of the painting is unknown.",
+    "word_frequency": 26982
+  },
+  {
+    "word": "Die Entwicklungsgeschichte der Menschheit ist faszinierend.",
+    "definition": "The history of human development is fascinating.",
+    "word_frequency": 25777
+  },
+  {
+    "word": "Die Entwicklungspolitik zielt darauf ab, Armut zu reduzieren.",
+    "definition": "Development policy aims to reduce poverty.",
+    "word_frequency": 28788
+  },
+  {
+    "word": "Die Entwicklungszusammenarbeit ist entscheidend für globale Fortschritte.",
+    "definition": "Development cooperation is crucial for global progress.",
+    "word_frequency": 28789
+  },
+  {
+    "word": "Die Erbfolge wurde im Testament festgelegt.",
+    "definition": "The line of succession was determined in the will.",
+    "word_frequency": 28293
+  },
+  {
+    "word": "Die Erbschaftsteuer ist in Deutschland umstritten.",
+    "definition": "Inheritance tax is controversial in Germany.",
+    "word_frequency": 24939
+  },
+  {
+    "word": "Die Erde ist eine Kugel oder Sphäre.",
+    "definition": "The Earth is a globe or sphere.",
+    "word_frequency": 16762
+  },
+  {
+    "word": "Die Erde ist in zwei Hemisphären geteilt.",
+    "definition": "The Earth is divided into two hemispheres.",
+    "word_frequency": 27475
+  },
+  {
+    "word": "Die Erfindung des Internets ist eine große Errungenschaft.",
+    "definition": "The invention of the internet is a great achievement.",
+    "word_frequency": 10766
+  },
+  {
+    "word": "Die Erfolgsaussicht für das Projekt ist hoch.",
+    "definition": "The prospect of success for the project is high.",
+    "word_frequency": 26571
+  },
+  {
+    "word": "Die Erinnerungskultur spielt eine wichtige Rolle in der deutschen Gesellschaft.",
+    "definition": "The culture of remembrance plays an important role in German society.",
+    "word_frequency": 25348
+  },
+  {
+    "word": "Die Erlangung des Diploms war ihr größtes Ziel.",
+    "definition": "The attainment of the diploma was her biggest goal.",
+    "word_frequency": 18071
+  },
+  {
+    "word": "Die Ermordung des Präsidenten schockierte die Welt.",
+    "definition": "The assassination of the president shocked the world.",
+    "word_frequency": 7258
+  },
+  {
+    "word": "Die Erreichung dieses Ziels erfordert viel Arbeit.",
+    "definition": "The achievement of this goal requires a lot of work.",
+    "word_frequency": 14124
+  },
+  {
+    "word": "Die Erschaffung der Welt ist ein zentrales Thema in vielen Religionen.",
+    "definition": "The creation of the world is a central theme in many religions.",
+    "word_frequency": 24129
+  },
+  {
+    "word": "Die Erschliessung neuer Gebiete ist geplant.",
+    "definition": "The development of new areas is planned.",
+    "word_frequency": 8085
+  },
+  {
+    "word": "Die Erschütterung war im ganzen Haus zu spüren.",
+    "definition": "The tremor could be felt throughout the house.",
+    "word_frequency": 22987
+  },
+  {
+    "word": "Die erste Aussendung des Radiosenders war ein Erfolg.",
+    "definition": "The first broadcast of the radio station was a success.",
+    "word_frequency": 28715
+  },
+  {
+    "word": "Die erste Hochrechnung zeigt ein klares Ergebnis.",
+    "definition": "The first projection shows a clear result.",
+    "word_frequency": 24193
+  },
+  {
+    "word": "Die Erzdiözese Köln ist eine der größten.",
+    "definition": "The Archdiocese of Cologne is one of the largest.",
+    "word_frequency": 26986
+  },
+  {
+    "word": "Die Erörterung des Themas dauerte Stunden.",
+    "definition": "The discussion of the topic lasted hours.",
+    "word_frequency": 22268
+  },
+  {
+    "word": "Die Essenz des Problems liegt in der Kommunikation.",
+    "definition": "The essence of the problem lies in communication.",
+    "word_frequency": 14819
+  },
+  {
+    "word": "Die Etablierung neuer Regeln ist notwendig.",
+    "definition": "The establishment of new rules is necessary.",
+    "word_frequency": 15333
+  },
+  {
+    "word": "Die Etymologie des Wortes ist faszinierend.",
+    "definition": "The etymology of the word is fascinating.",
+    "word_frequency": 26201
+  },
+  {
+    "word": "Die Eucharistie ist ein zentrales Sakrament im Christentum.",
+    "definition": "The Eucharist is a central sacrament in Christianity.",
+    "word_frequency": 26579
+  },
+  {
+    "word": "Die Europäische Commission hat eine neue Richtlinie erlassen.",
+    "definition": "The European Commission has issued a new directive.",
+    "word_frequency": 10414
+  },
+  {
+    "word": "Die Europäische Union ist eine Währungsunion.",
+    "definition": "The European Union is a monetary union.",
+    "word_frequency": 20476
+  },
+  {
+    "word": "Die Europäische Zentralbank ist eine Notenbank.",
+    "definition": "The European Central Bank is a central bank.",
+    "word_frequency": 16714
+  },
+  {
+    "word": "Die Evolutionstheorie ist ein Grundpfeiler der Biologie.",
+    "definition": "The theory of evolution is a cornerstone of biology.",
+    "word_frequency": 28794
+  },
+  {
+    "word": "Die Exekution des Plans verlief reibungslos.",
+    "definition": "The execution of the plan went smoothly.",
+    "word_frequency": 22270
+  },
+  {
+    "word": "Die Exekutive ist für die Umsetzung der Gesetze zuständig.",
+    "definition": "The executive is responsible for implementing the laws.",
+    "word_frequency": 10255
+  },
+  {
+    "word": "Die Extension des Arms ist wichtig für die Übung.",
+    "definition": "The extension of the arm is important for the exercise.",
+    "word_frequency": 21911
+  },
+  {
+    "word": "Die Fachsprache der Medizin ist komplex.",
+    "definition": "The technical language of medicine is complex.",
+    "word_frequency": 27419
+  },
+  {
+    "word": "Die Familienpolitik ist ein wichtiges Thema in der Regierung.",
+    "definition": "Family policy is an important topic in the government.",
+    "word_frequency": 22996
+  },
+  {
+    "word": "Die Farbgebung des Gemäldes ist sehr harmonisch.",
+    "definition": "The color scheme of the painting is very harmonious.",
+    "word_frequency": 19321
+  },
+  {
+    "word": "Die Fauna dieser Region ist sehr vielfältig.",
+    "definition": "The fauna of this region is very diverse.",
+    "word_frequency": 8945
+  },
+  {
+    "word": "Die Federführung für das Projekt liegt bei ihm.",
+    "definition": "The leadership for the project lies with him.",
+    "word_frequency": 22273
+  },
+  {
+    "word": "Die Festschrift wurde zu Ehren des Professors herausgegeben.",
+    "definition": "The commemorative publication was issued in honor of the professor.",
+    "word_frequency": 9097
+  },
+  {
+    "word": "Die Festsetzung des Preises erfolgte durch den Vorstand.",
+    "definition": "The determination of the price was made by the board.",
+    "word_frequency": 17479
+  },
+  {
+    "word": "Die Firma ist in eine Rechtsstreitigkeit verwickelt.",
+    "definition": "The company is involved in a legal dispute.",
+    "word_frequency": 23906
+  },
+  {
+    "word": "Die Firma plant eine Expansion in neue Märkte.",
+    "definition": "The company plans an expansion into new markets.",
+    "word_frequency": 8235
+  },
+  {
+    "word": "Die Firma plant eine umfassende Umstrukturierung.",
+    "definition": "The company plans a comprehensive restructuring.",
+    "word_frequency": 16281
+  },
+  {
+    "word": "Die Firma wurde in eine Aktiengesellschaft umgewandelt.",
+    "definition": "The company was converted into a public limited company.",
+    "word_frequency": 8612
+  },
+  {
+    "word": "Die Fluktuation der Mitarbeiter war hoch.",
+    "definition": "The fluctuation of employees was high.",
+    "word_frequency": 27003
+  },
+  {
+    "word": "Die Flüchtlingskrise war ein großes Thema.",
+    "definition": "The refugee crisis was a big topic.",
+    "word_frequency": 10776
+  },
+  {
+    "word": "Die Flüchtlingspolitik ist ein wichtiges Thema in der aktuellen Debatte.",
+    "definition": "Refugee policy is an important topic in the current debate.",
+    "word_frequency": 8386
+  },
+  {
+    "word": "Die Flügeldecke des Käfers schützt seine zarten Flügel.",
+    "definition": "The elytron of the beetle protects its delicate wings.",
+    "word_frequency": 29751
+  },
+  {
+    "word": "Die Flüsse fließen durch die weite Niederung.",
+    "definition": "The rivers flow through the wide lowland.",
+    "word_frequency": 29890
+  },
+  {
+    "word": "Die Formel 1 ist die Königsklasse des Motorsports.",
+    "definition": "Formula 1 is the premier class of motorsport.",
+    "word_frequency": 26667
+  },
+  {
+    "word": "Die Formgebung des neuen Autos ist sehr modern.",
+    "definition": "The design of the new car is very modern.",
+    "word_frequency": 27855
+  },
+  {
+    "word": "Die Forschung an Stammzellen ist ein vielversprechendes Feld.",
+    "definition": "Stem cell research is a promising field.",
+    "word_frequency": 21750
+  },
+  {
+    "word": "Die Forschungsgemeinschaft arbeitet an einer Lösung.",
+    "definition": "The research community is working on a solution.",
+    "word_frequency": 24956
+  },
+  {
+    "word": "Die Forstwirtschaft spielt eine wichtige Rolle in der ländlichen Entwicklung.",
+    "definition": "Forestry plays an important role in rural development.",
+    "word_frequency": 10957
+  },
+  {
+    "word": "Die Fortpflanzung ist ein grundlegender biologischer Prozess.",
+    "definition": "Reproduction is a fundamental biological process.",
+    "word_frequency": 11902
+  },
+  {
+    "word": "Die Fortschreibung der Daten ist für die Analyse wichtig.",
+    "definition": "The continuation of the data is important for the analysis.",
+    "word_frequency": 29753
+  },
+  {
+    "word": "Die Frist für die Antragstellung endet nächste Woche.",
+    "definition": "The deadline for the application submission ends next week.",
+    "word_frequency": 28219
+  },
+  {
+    "word": "Die Fruchtbarkeit des Bodens ist entscheidend für die Ernte.",
+    "definition": "The fertility of the soil is crucial for the harvest.",
+    "word_frequency": 19628
+  },
+  {
+    "word": "Die Funktionsfähigkeit des Systems muss gewährleistet sein.",
+    "definition": "The functionality of the system must be ensured.",
+    "word_frequency": 26217
+  },
+  {
+    "word": "Die Fäkalien wurden in einem speziellen Behälter gesammelt.",
+    "definition": "The faeces were collected in a special container.",
+    "word_frequency": 29270
+  },
+  {
+    "word": "Die Führungsriege traf eine wichtige Entscheidung.",
+    "definition": "The leadership team made an important decision.",
+    "word_frequency": 25806
+  },
+  {
+    "word": "Die ganze Situation war eine einzige Posse.",
+    "definition": "The whole situation was a complete farce.",
+    "word_frequency": 20069
+  },
+  {
+    "word": "Die Gefahrenabwehr ist eine wichtige Aufgabe der Polizei.",
+    "definition": "Hazard prevention is an important task of the police.",
+    "word_frequency": 25379
+  },
+  {
+    "word": "Die Gefangennahme des Täters erfolgte schnell.",
+    "definition": "The capture of the perpetrator happened quickly.",
+    "word_frequency": 27869
+  },
+  {
+    "word": "Die Gefährdung der Umwelt ist ein ernstes Problem.",
+    "definition": "The endangerment of the environment is a serious problem.",
+    "word_frequency": 6525
+  },
+  {
+    "word": "Die Gegenüberstellung der Zeugen fand statt.",
+    "definition": "The confrontation of the witnesses took place.",
+    "word_frequency": 18708
+  },
+  {
+    "word": "Die Geltendmachung von Ansprüchen ist wichtig.",
+    "definition": "The assertion of claims is important.",
+    "word_frequency": 25813
+  },
+  {
+    "word": "Die Gemahlin des Königs war sehr elegant.",
+    "definition": "The king's consort was very elegant.",
+    "word_frequency": 10784
+  },
+  {
+    "word": "Die Gemarkung umfasst mehrere Dörfer.",
+    "definition": "The cadastral district includes several villages.",
+    "word_frequency": 14598
+  },
+  {
+    "word": "Die Gemeinde strebt mehr Selbstverwaltung an.",
+    "definition": "The municipality strives for more self-government.",
+    "word_frequency": 12899
+  },
+  {
+    "word": "Die Gendarmerie war für die Aufrechterhaltung der Ordnung zuständig.",
+    "definition": "The gendarmerie was responsible for maintaining order.",
+    "word_frequency": 27018
+  },
+  {
+    "word": "Die Genese der Krankheit ist noch unklar.",
+    "definition": "The genesis of the disease is still unclear.",
+    "word_frequency": 29771
+  },
+  {
+    "word": "Die Gentechnik bietet neue Möglichkeiten in der Medizin.",
+    "definition": "Genetic engineering offers new possibilities in medicine.",
+    "word_frequency": 12581
+  },
+  {
+    "word": "Die Gentrifizierung verändert das Stadtbild.",
+    "definition": "Gentrification changes the cityscape.",
+    "word_frequency": 23768
+  },
+  {
+    "word": "Die geologische Verwerfung führte zu einem Erdbeben.",
+    "definition": "The geological fault led to an earthquake.",
+    "word_frequency": 21450
+  },
+  {
+    "word": "Die Gesandtschaft befindet sich im Stadtzentrum.",
+    "definition": "The legation is located in the city center.",
+    "word_frequency": 23773
+  },
+  {
+    "word": "Die Geschichte hatte viele unerwartete Verwicklungen.",
+    "definition": "The story had many unexpected complications.",
+    "word_frequency": 27291
+  },
+  {
+    "word": "Die Geschichtsschreibung ist eine wichtige Disziplin.",
+    "definition": "Historiography is an important discipline.",
+    "word_frequency": 16139
+  },
+  {
+    "word": "Die Geschäftsordnung regelt den Ablauf der Sitzung.",
+    "definition": "The rules of procedure regulate the course of the meeting.",
+    "word_frequency": 16142
+  },
+  {
+    "word": "Die Geschäftstätigkeit wurde vorübergehend eingestellt.",
+    "definition": "The business activity was temporarily suspended.",
+    "word_frequency": 27878
+  },
+  {
+    "word": "Die Gesellschaftsordnung hat sich im Laufe der Jahrhunderte verändert.",
+    "definition": "The social order has changed over the centuries.",
+    "word_frequency": 26231
+  },
+  {
+    "word": "Die Gesundheitspolitik ist ein wichtiges Thema.",
+    "definition": "Health policy is an important topic.",
+    "word_frequency": 23776
+  },
+  {
+    "word": "Die Gewaltenteilung ist ein Grundprinzip der Demokratie.",
+    "definition": "The separation of powers is a fundamental principle of democracy.",
+    "word_frequency": 18100
+  },
+  {
+    "word": "Die Gewerbesteuer ist eine wichtige Einnahmequelle für Gemeinden.",
+    "definition": "The trade tax is an important source of income for municipalities.",
+    "word_frequency": 17497
+  },
+  {
+    "word": "Die Gewerkschaft ist eine wichtige Interessenvertretung der Arbeitnehmer.",
+    "definition": "The trade union is an important interest group for employees.",
+    "word_frequency": 19997
+  },
+  {
+    "word": "Die Gewährung des Kredits wurde genehmigt.",
+    "definition": "The granting of the loan was approved.",
+    "word_frequency": 16146
+  },
+  {
+    "word": "Die Gleichschaltung der Gesellschaft war ein Ziel des Regimes.",
+    "definition": "The coordination of society was a goal of the regime.",
+    "word_frequency": 25820
+  },
+  {
+    "word": "Die Gleichsetzung von Reichtum und Glück ist oft irreführend.",
+    "definition": "The equation of wealth and happiness is often misleading.",
+    "word_frequency": 23024
+  },
+  {
+    "word": "Die Globalisierung hat viele Auswirkungen auf die Wirtschaft.",
+    "definition": "Globalization has many effects on the economy.",
+    "word_frequency": 7142
+  },
+  {
+    "word": "Die Grausamkeit des Krieges ist unerträglich.",
+    "definition": "The cruelty of war is unbearable.",
+    "word_frequency": 14146
+  },
+  {
+    "word": "Die Grossbank kündigte eine Fusion an.",
+    "definition": "The major bank announced a merger.",
+    "word_frequency": 26612
+  },
+  {
+    "word": "Die Grundlagenforschung ist entscheidend für neue Entdeckungen.",
+    "definition": "Basic research is crucial for new discoveries.",
+    "word_frequency": 18723
+  },
+  {
+    "word": "Die Grundordnung der Gesellschaft muss respektiert werden.",
+    "definition": "The basic order of society must be respected.",
+    "word_frequency": 18393
+  },
+  {
+    "word": "Die Gräueltaten des Krieges sind unvergesslich.",
+    "definition": "The atrocities of the war are unforgettable.",
+    "word_frequency": 21251
+  },
+  {
+    "word": "Die Guerilla kämpfte für die Freiheit ihres Landes.",
+    "definition": "The guerrilla fought for the freedom of their country.",
+    "word_frequency": 19034
+  },
+  {
+    "word": "Die Guillotine wurde während der Französischen Revolution eingesetzt.",
+    "definition": "The guillotine was used during the French Revolution.",
+    "word_frequency": 27464
+  },
+  {
+    "word": "Die Gurken wurden in Salzlake eingelegt.",
+    "definition": "The cucumbers were pickled in brine.",
+    "word_frequency": 6912
+  },
+  {
+    "word": "Die Handlungsfähigkeit einer Person kann eingeschränkt sein.",
+    "definition": "A person's capacity to act can be limited.",
+    "word_frequency": 25403
+  },
+  {
+    "word": "Die Handwerkskammer bietet Weiterbildungskurse an.",
+    "definition": "The Chamber of Crafts offers continuing education courses.",
+    "word_frequency": 18727
+  },
+  {
+    "word": "Die Harmonisierung der Gesetze ist ein komplexer Prozess.",
+    "definition": "The harmonization of laws is a complex process.",
+    "word_frequency": 24988
+  },
+  {
+    "word": "Die Hauptverhandlung beginnt nächste Woche.",
+    "definition": "The main hearing begins next week.",
+    "word_frequency": 22307
+  },
+  {
+    "word": "Die Hauptversammlung findet nächste Woche statt.",
+    "definition": "The general meeting will take place next week.",
+    "word_frequency": 11715
+  },
+  {
+    "word": "Die Hege des Waldes ist wichtig für die Artenvielfalt.",
+    "definition": "The management of the forest is important for biodiversity.",
+    "word_frequency": 19652
+  },
+  {
+    "word": "Die Hegemonie einer Nation kann zu Spannungen führen.",
+    "definition": "The hegemony of a nation can lead to tensions.",
+    "word_frequency": 25840
+  },
+  {
+    "word": "Die Heiligkeit des Ortes war spürbar.",
+    "definition": "The holiness of the place was palpable.",
+    "word_frequency": 12362
+  },
+  {
+    "word": "Die Herleitung der Formel ist kompliziert.",
+    "definition": "The derivation of the formula is complicated.",
+    "word_frequency": 24990
+  },
+  {
+    "word": "Die Herrlichkeit des Sonnenuntergangs war atemberaubend.",
+    "definition": "The glory of the sunset was breathtaking.",
+    "word_frequency": 14613
+  },
+  {
+    "word": "Die Herstellungskosten sind in den letzten Jahren gestiegen.",
+    "definition": "Production costs have increased in recent years.",
+    "word_frequency": 27048
+  },
+  {
+    "word": "Die Hervorhebung wichtiger Punkte ist entscheidend.",
+    "definition": "The highlighting of important points is crucial.",
+    "word_frequency": 29793
+  },
+  {
+    "word": "Die Hetze gegen Minderheiten ist inakzeptabel.",
+    "definition": "The agitation against minorities is unacceptable.",
+    "word_frequency": 6086
+  },
+  {
+    "word": "Die Hinrichtung fand öffentlich statt.",
+    "definition": "The execution took place publicly.",
+    "word_frequency": 8252
+  },
+  {
+    "word": "Die Historie der Stadt ist faszinierend.",
+    "definition": "The history of the city is fascinating.",
+    "word_frequency": 6655
+  },
+  {
+    "word": "Die Hochtour war anspruchsvoll, aber lohnend.",
+    "definition": "The high-altitude tour was demanding but rewarding.",
+    "word_frequency": 16656
+  },
+  {
+    "word": "Die Hoheit des Staates ist unteilbar.",
+    "definition": "The sovereignty of the state is indivisible.",
+    "word_frequency": 9411
+  },
+  {
+    "word": "Die Hotellerie erholt sich langsam von der Krise.",
+    "definition": "The hotel industry is slowly recovering from the crisis.",
+    "word_frequency": 24999
+  },
+  {
+    "word": "Die Hydraulik des Baggers funktionierte einwandfrei.",
+    "definition": "The excavator's hydraulics worked perfectly.",
+    "word_frequency": 21264
+  },
+  {
+    "word": "Die Idee der Wiedergeburt ist in vielen Kulturen verbreitet.",
+    "definition": "The idea of rebirth is widespread in many cultures.",
+    "word_frequency": 14745
+  },
+  {
+    "word": "Die Identifizierung des Täters war schwierig.",
+    "definition": "The identification of the perpetrator was difficult.",
+    "word_frequency": 9918
+  },
+  {
+    "word": "Die Implementierung des Plans ist entscheidend.",
+    "definition": "The implementation of the plan is crucial.",
+    "word_frequency": 12372
+  },
+  {
+    "word": "Die Inanspruchnahme der Dienstleistung ist kostenpflichtig.",
+    "definition": "The utilization of the service is subject to a fee.",
+    "word_frequency": 14390
+  },
+  {
+    "word": "Die Inbetriebnahme der neuen Anlage ist für nächste Woche geplant.",
+    "definition": "The commissioning of the new plant is planned for next week.",
+    "word_frequency": 9750
+  },
+  {
+    "word": "Die Individualisierung der Gesellschaft nimmt zu.",
+    "definition": "The individualization of society is increasing.",
+    "word_frequency": 24202
+  },
+  {
+    "word": "Die Indoktrination der Jugend ist gefährlich.",
+    "definition": "The indoctrination of the youth is dangerous.",
+    "word_frequency": 28388
+  },
+  {
+    "word": "Die Industrialisierung veränderte die Gesellschaft.",
+    "definition": "Industrialization changed society.",
+    "word_frequency": 11169
+  },
+  {
+    "word": "Die industrielle Revolution war eine große Umwälzung.",
+    "definition": "The Industrial Revolution was a great upheaval.",
+    "word_frequency": 29069
+  },
+  {
+    "word": "Die Infanterie rückte langsam vor.",
+    "definition": "The infantry advanced slowly.",
+    "word_frequency": 8673
+  },
+  {
+    "word": "Die Inhaftierung des Verdächtigen erfolgte gestern.",
+    "definition": "The detention of the suspect took place yesterday.",
+    "word_frequency": 21622
+  },
+  {
+    "word": "Die Inquisition war eine Periode religiöser Verfolgung.",
+    "definition": "The Inquisition was a period of religious persecution.",
+    "word_frequency": 16167
+  },
+  {
+    "word": "Die Instandsetzung des Gebäudes dauert noch an.",
+    "definition": "The restoration of the building is still ongoing.",
+    "word_frequency": 15103
+  },
+  {
+    "word": "Die Instrumentalisierung von Daten ist ein ethisches Problem.",
+    "definition": "The instrumentalization of data is an ethical problem.",
+    "word_frequency": 25435
+  },
+  {
+    "word": "Die Inszenierung des Stücks war beeindruckend.",
+    "definition": "The staging of the play was impressive.",
+    "word_frequency": 5386
+  },
+  {
+    "word": "Die Interna des Unternehmens sollten nicht nach außen dringen.",
+    "definition": "The internal matters of the company should not leak out.",
+    "word_frequency": 29336
+  },
+  {
+    "word": "Die Internationalisierung des Unternehmens schreitet voran.",
+    "definition": "The internationalization of the company is progressing.",
+    "word_frequency": 22325
+  },
+  {
+    "word": "Die Inzidenz der Krankheit ist gestiegen.",
+    "definition": "The incidence of the disease has increased.",
+    "word_frequency": 28391
+  },
+  {
+    "word": "Die Jugendhilfe unterstützt Familien in Not.",
+    "definition": "Youth welfare supports families in need.",
+    "word_frequency": 13276
+  },
+  {
+    "word": "Die Jungfräulichkeit ist in einigen Kulturen von großer Bedeutung.",
+    "definition": "Virginity is of great importance in some cultures.",
+    "word_frequency": 26642
+  },
+  {
+    "word": "Die Justizministerin hielt eine wichtige Rede.",
+    "definition": "The Minister of Justice held an important speech.",
+    "word_frequency": 28871
+  },
+  {
+    "word": "Die jährliche Ausschüttung an die Aktionäre war hoch.",
+    "definition": "The annual payout to shareholders was high.",
+    "word_frequency": 18309
+  },
+  {
+    "word": "Die jüdische Diaspora ist weltweit verbreitet.",
+    "definition": "The Jewish diaspora is spread worldwide.",
+    "word_frequency": 19295
+  },
+  {
+    "word": "Die Kampfhandlungen wurden eingestellt.",
+    "definition": "The combat operations were ceased.",
+    "word_frequency": 22328
+  },
+  {
+    "word": "Die Kastration des Tieres wurde durchgeführt.",
+    "definition": "The castration of the animal was performed.",
+    "word_frequency": 27076
+  },
+  {
+    "word": "Die Kategorisierung von Daten ist wichtig für die Analyse.",
+    "definition": "The categorization of data is important for analysis.",
+    "word_frequency": 26648
+  },
+  {
+    "word": "Die Kausalität zwischen den Ereignissen ist unklar.",
+    "definition": "The causality between the events is unclear.",
+    "word_frequency": 16968
+  },
+  {
+    "word": "Die Kavallerie griff den Feind an.",
+    "definition": "The cavalry attacked the enemy.",
+    "word_frequency": 11731
+  },
+  {
+    "word": "Die Kieler Förde ist eine bekannte Förde in Deutschland.",
+    "definition": "The Kiel Fjord is a well-known fjord in Germany.",
+    "word_frequency": 27011
+  },
+  {
+    "word": "Die Klassifizierung der Daten ist wichtig.",
+    "definition": "The classification of the data is important.",
+    "word_frequency": 15934
+  },
+  {
+    "word": "Die Klitoris ist ein wichtiges Organ für die weibliche Sexualität.",
+    "definition": "The clitoris is an important organ for female sexuality.",
+    "word_frequency": 20631
+  },
+  {
+    "word": "Die Koalitionsverhandlungen dauerten mehrere Wochen.",
+    "definition": "The coalition negotiations lasted several weeks.",
+    "word_frequency": 18430
+  },
+  {
+    "word": "Die Kommerzialisierung des Sports ist ein kontroverses Thema.",
+    "definition": "The commercialization of sports is a controversial topic.",
+    "word_frequency": 28880
+  },
+  {
+    "word": "Die Komplexität des Systems ist beeindruckend.",
+    "definition": "The complexity of the system is impressive.",
+    "word_frequency": 7149
+  },
+  {
+    "word": "Die Kompression der Daten reduziert die Dateigröße.",
+    "definition": "The compression of the data reduces the file size.",
+    "word_frequency": 22336
+  },
+  {
+    "word": "Die Konjunktur erholt sich langsam.",
+    "definition": "The economic situation is slowly recovering.",
+    "word_frequency": 10988
+  },
+  {
+    "word": "Die Konsolidierung der Schulden ist notwendig.",
+    "definition": "The consolidation of debts is necessary.",
+    "word_frequency": 14634
+  },
+  {
+    "word": "Die Kontrolle an der Aussengrenze wurde verstärkt.",
+    "definition": "Control at the external border was strengthened.",
+    "word_frequency": 24851
+  },
+  {
+    "word": "Die Konvergenz der Technologien ist offensichtlich.",
+    "definition": "The convergence of technologies is obvious.",
+    "word_frequency": 25881
+  },
+  {
+    "word": "Die Korrespondenz wurde per E-Mail verschickt.",
+    "definition": "The correspondence was sent by email.",
+    "word_frequency": 12170
+  },
+  {
+    "word": "Die Kost im Krankenhaus war sehr einfach.",
+    "definition": "The food in the hospital was very simple.",
+    "word_frequency": 8978
+  },
+  {
+    "word": "Die Kosten liegen in dieser Grössenordnung.",
+    "definition": "The costs are in this order of magnitude.",
+    "word_frequency": 8245
+  },
+  {
+    "word": "Die Krankenkasse hat die Kostenübernahme zugesagt.",
+    "definition": "The health insurance company has agreed to cover the costs.",
+    "word_frequency": 29353
+  },
+  {
+    "word": "Die Kulturpolitik fördert lokale Künstler.",
+    "definition": "The cultural policy promotes local artists.",
+    "word_frequency": 21997
+  },
+  {
+    "word": "Die Kurie ist die Verwaltung des Vatikans.",
+    "definition": "The Curia is the administration of the Vatican.",
+    "word_frequency": 22347
+  },
+  {
+    "word": "Die Künstlergruppe gehörte zur Avantgarde.",
+    "definition": "The artist group belonged to the avant-garde.",
+    "word_frequency": 12974
+  },
+  {
+    "word": "Die Lamellen der Jalousie waren verstellt.",
+    "definition": "The slats of the blind were out of alignment.",
+    "word_frequency": 21298
+  },
+  {
+    "word": "Die Landesanstalt forscht im Bereich Umweltschutz.",
+    "definition": "The state institution conducts research in environmental protection.",
+    "word_frequency": 27524
+  },
+  {
+    "word": "Die Landtagsfraktion stimmte über das neue Gesetz ab.",
+    "definition": "The state parliamentary group voted on the new law.",
+    "word_frequency": 20022
+  },
+  {
+    "word": "Die Landwehr wurde zur Verteidigung des Landes mobilisiert.",
+    "definition": "The militia was mobilized for the defense of the country.",
+    "word_frequency": 19383
+  },
+  {
+    "word": "Die Landwirtschaftskammer berät Bauern in der Region.",
+    "definition": "The Chamber of Agriculture advises farmers in the region.",
+    "word_frequency": 28895
+  },
+  {
+    "word": "Die lange Wartezeit war eine echte Tortur.",
+    "definition": "The long waiting time was a real ordeal.",
+    "word_frequency": 26036
+  },
+  {
+    "word": "Die Lebenswelt eines Menschen wird durch seine Erfahrungen geprägt.",
+    "definition": "A person's lifeworld is shaped by their experiences.",
+    "word_frequency": 19687
+  },
+  {
+    "word": "Die Legislative ist für die Gesetzgebung zuständig.",
+    "definition": "The legislative branch is responsible for legislation.",
+    "word_frequency": 15400
+  },
+  {
+    "word": "Die Legitimität der Regierung wurde in Frage gestellt.",
+    "definition": "The legitimacy of the government was questioned.",
+    "word_frequency": 16686
+  },
+  {
+    "word": "Die Leistungsfähigkeit des neuen Motors ist beeindruckend.",
+    "definition": "The performance of the new engine is impressive.",
+    "word_frequency": 6323
+  },
+  {
+    "word": "Die Liberalisierung des Marktes wurde diskutiert.",
+    "definition": "The liberalization of the market was discussed.",
+    "word_frequency": 15943
+  },
+  {
+    "word": "Die Lichtgeschwindigkeit ist eine physikalische Konstante.",
+    "definition": "The speed of light is a physical constant.",
+    "word_frequency": 12619
+  },
+  {
+    "word": "Die Liegenschaft wurde verkauft.",
+    "definition": "The property was sold.",
+    "word_frequency": 18145
+  },
+  {
+    "word": "Die Linienführung des neuen Autos ist sehr elegant.",
+    "definition": "The line management of the new car is very elegant.",
+    "word_frequency": 27108
+  },
+  {
+    "word": "Die Linksfraktion stimmte gegen den Gesetzentwurf.",
+    "definition": "The Left Party parliamentary group voted against the bill.",
+    "word_frequency": 29853
+  },
+  {
+    "word": "Die Liturgie der Messe war sehr feierlich.",
+    "definition": "The liturgy of the mass was very solemn.",
+    "word_frequency": 13734
+  },
+  {
+    "word": "Die lokale Gazette berichtete über das Ereignis.",
+    "definition": "The local gazette reported on the event.",
+    "word_frequency": 28818
+  },
+  {
+    "word": "Die Lokalisierung der Software ist für den internationalen Markt wichtig.",
+    "definition": "The localization of the software is important for the international market.",
+    "word_frequency": 23087
+  },
+  {
+    "word": "Die Lösung wurde unter Zuhilfenahme externer Experten gefunden.",
+    "definition": "The solution was found with the assistance of external experts.",
+    "word_frequency": 26088
+  },
+  {
+    "word": "Die Machtergreifung der Nationalsozialisten war ein dunkles Kapitel.",
+    "definition": "The seizure of power by the National Socialists was a dark chapter.",
+    "word_frequency": 15136
+  },
+  {
+    "word": "Die Machtübernahme erfolgte nach langen Verhandlungen.",
+    "definition": "The takeover of power occurred after long negotiations.",
+    "word_frequency": 18776
+  },
+  {
+    "word": "Die Magdeburger Börde ist bekannt für ihre fruchtbaren Böden.",
+    "definition": "The Magdeburg Börde is known for its fertile soils.",
+    "word_frequency": 21522
+  },
+  {
+    "word": "Die Maser des Holzes war wunderschön.",
+    "definition": "The grain of the wood was beautiful.",
+    "word_frequency": 12845
+  },
+  {
+    "word": "Die Matrix hat drei Zeilen und zwei Spalten.",
+    "definition": "The matrix has three rows and two columns.",
+    "word_frequency": 6670
+  },
+  {
+    "word": "Die Medienlandschaft hat sich stark verändert.",
+    "definition": "The media landscape has changed significantly.",
+    "word_frequency": 23450
+  },
+  {
+    "word": "Die Meinungsbildung in der Gesellschaft ist komplex.",
+    "definition": "Opinion formation in society is complex.",
+    "word_frequency": 23453
+  },
+  {
+    "word": "Die Meinungsäusserung ist ein Grundrecht.",
+    "definition": "The expression of opinion is a fundamental right.",
+    "word_frequency": 12638
+  },
+  {
+    "word": "Die Menschenwürde ist unantastbar.",
+    "definition": "Human dignity is inviolable.",
+    "word_frequency": 13516
+  },
+  {
+    "word": "Die Menschheitsgeschichte ist voller faszinierender Ereignisse.",
+    "definition": "The history of humanity is full of fascinating events.",
+    "word_frequency": 23855
+  },
+  {
+    "word": "Die Menstruation ist ein natürlicher Prozess.",
+    "definition": "Menstruation is a natural process.",
+    "word_frequency": 25911
+  },
+  {
+    "word": "Die Messtechnik ist entscheidend für die Qualitätssicherung.",
+    "definition": "Measurement technology is crucial for quality assurance.",
+    "word_frequency": 23859
+  },
+  {
+    "word": "Die Metaphysik ist ein Zweig der Philosophie.",
+    "definition": "Metaphysics is a branch of philosophy.",
+    "word_frequency": 18781
+  },
+  {
+    "word": "Die Meteorologie ist die Wissenschaft vom Wetter.",
+    "definition": "Meteorology is the science of weather.",
+    "word_frequency": 21316
+  },
+  {
+    "word": "Die Metrik eines Gedichts ist wichtig für seinen Rhythmus.",
+    "definition": "The metric of a poem is important for its rhythm.",
+    "word_frequency": 25485
+  },
+  {
+    "word": "Die Militärjunta übernahm die Macht im Land.",
+    "definition": "The military junta took power in the country.",
+    "word_frequency": 22702
+  },
+  {
+    "word": "Die Mitbestimmung der Arbeitnehmer ist in Deutschland gesetzlich verankert.",
+    "definition": "Employee co-determination is legally enshrined in Germany.",
+    "word_frequency": 14891
+  },
+  {
+    "word": "Die Mobilmachung der Truppen wurde angeordnet.",
+    "definition": "The mobilization of the troops was ordered.",
+    "word_frequency": 28459
+  },
+  {
+    "word": "Die Modalität des Vertrags wurde diskutiert.",
+    "definition": "The modality of the contract was discussed.",
+    "word_frequency": 27983
+  },
+  {
+    "word": "Die moderne Kriegsführung ist komplex.",
+    "definition": "Modern warfare is complex.",
+    "word_frequency": 16679
+  },
+  {
+    "word": "Die Modernisierung der Fabrik ist notwendig.",
+    "definition": "The modernization of the factory is necessary.",
+    "word_frequency": 6332
+  },
+  {
+    "word": "Die Morphologie ist ein Teilgebiet der Biologie.",
+    "definition": "Morphology is a subfield of biology.",
+    "word_frequency": 22751
+  },
+  {
+    "word": "Die Motion wurde im Parlament angenommen.",
+    "definition": "The motion was accepted in parliament.",
+    "word_frequency": 11555
+  },
+  {
+    "word": "Die Musik versetzte sie in einen Zustand der Ecstasy.",
+    "definition": "The music put her in a state of ecstasy.",
+    "word_frequency": 24106
+  },
+  {
+    "word": "Die nachhaltige Bewirtschaftung der Wälder ist wichtig.",
+    "definition": "The sustainable management of forests is important.",
+    "word_frequency": 14788
+  },
+  {
+    "word": "Die Nachricht löste große Bestürzung aus.",
+    "definition": "The news caused great dismay.",
+    "word_frequency": 29665
+  },
+  {
+    "word": "Die Nachricht sorgte für große Erregung.",
+    "definition": "The news caused great excitement.",
+    "word_frequency": 13459
+  },
+  {
+    "word": "Die Nachwirkungen des Sturms waren noch lange spürbar.",
+    "definition": "The after-effects of the storm were still noticeable for a long time.",
+    "word_frequency": 22374
+  },
+  {
+    "word": "Die Nacktheit des Modells war Teil der Kunst.",
+    "definition": "The nakedness of the model was part of the art.",
+    "word_frequency": 20054
+  },
+  {
+    "word": "Die Nationalratswahl findet alle vier Jahre statt.",
+    "definition": "The National Council election takes place every four years.",
+    "word_frequency": 26339
+  },
+  {
+    "word": "Die Netzpolitik ist ein wichtiges Thema in der heutigen Gesellschaft.",
+    "definition": "Internet policy is an important topic in today's society.",
+    "word_frequency": 25930
+  },
+  {
+    "word": "Die neue CPU bietet eine beeindruckende Rechenleistung.",
+    "definition": "The new CPU offers impressive computing power.",
+    "word_frequency": 29460
+  },
+  {
+    "word": "Die neue Entdeckung wurde in der Fachwelt kontrovers diskutiert.",
+    "definition": "The new discovery was controversially discussed in the expert community.",
+    "word_frequency": 28797
+  },
+  {
+    "word": "Die neue Forschungseinrichtung wurde eröffnet.",
+    "definition": "The new research institution was opened.",
+    "word_frequency": 21565
+  },
+  {
+    "word": "Die neue Gemeindeordnung tritt nächste Woche in Kraft.",
+    "definition": "The new municipal code comes into effect next week.",
+    "word_frequency": 22287
+  },
+  {
+    "word": "Die neue Gesetzesänderung tritt nächste Woche in Kraft.",
+    "definition": "The new legal change comes into effect next week.",
+    "word_frequency": 19974
+  },
+  {
+    "word": "Die neue Gesetzgebung tritt im nächsten Jahr in Kraft.",
+    "definition": "The new legislation comes into force next year.",
+    "word_frequency": 6526
+  },
+  {
+    "word": "Die neue Kollektion zeigt exquisite Couture.",
+    "definition": "The new collection displays exquisite couture.",
+    "word_frequency": 27804
+  },
+  {
+    "word": "Die neue Lagerstätte enthält große Mengen an Erdöl.",
+    "definition": "The new deposit contains large quantities of crude oil.",
+    "word_frequency": 25048
+  },
+  {
+    "word": "Die neue Schriftenreihe behandelt historische Themen.",
+    "definition": "The new series of publications deals with historical topics.",
+    "word_frequency": 14699
+  },
+  {
+    "word": "Die neue Verordnung tritt nächste Woche in Kraft.",
+    "definition": "The new regulation comes into force next week.",
+    "word_frequency": 2954
+  },
+  {
+    "word": "Die neuen Leitlinien wurden veröffentlicht.",
+    "definition": "The new guidelines were published.",
+    "word_frequency": 13064
+  },
+  {
+    "word": "Die Neugründung des Unternehmens war ein Erfolg.",
+    "definition": "The new establishment of the company was a success.",
+    "word_frequency": 16207
+  },
+  {
+    "word": "Die Niederlage war eine große Schmach für das Team.",
+    "definition": "The defeat was a great disgrace for the team.",
+    "word_frequency": 21733
+  },
+  {
+    "word": "Die Nomenklatur der Pflanzen ist sehr komplex.",
+    "definition": "The nomenclature of plants is very complex.",
+    "word_frequency": 26712
+  },
+  {
+    "word": "Die Novellierung des Gesetzes ist in Arbeit.",
+    "definition": "The amendment of the law is in progress.",
+    "word_frequency": 29418
+  },
+  {
+    "word": "Die Nutzungsdauer dieses Geräts ist begrenzt.",
+    "definition": "The service life of this device is limited.",
+    "word_frequency": 28950
+  },
+  {
+    "word": "Die nächste Legislaturperiode beginnt im Herbst.",
+    "definition": "The next legislative period begins in autumn.",
+    "word_frequency": 7833
+  },
+  {
+    "word": "Die nächste Wahlperiode beginnt im Herbst.",
+    "definition": "The next legislative period begins in autumn.",
+    "word_frequency": 11455
+  },
+  {
+    "word": "Die Obduktion ergab die Todesursache.",
+    "definition": "The autopsy revealed the cause of death.",
+    "word_frequency": 20678
+  },
+  {
+    "word": "Die Oberschicht hat oft viel Einfluss.",
+    "definition": "The upper class often has a lot of influence.",
+    "word_frequency": 13977
+  },
+  {
+    "word": "Die Ode an die Freude ist sehr bekannt.",
+    "definition": "The Ode to Joy is very well known.",
+    "word_frequency": 13530
+  },
+  {
+    "word": "Die Offenlegung der Daten ist gesetzlich vorgeschrieben.",
+    "definition": "The disclosure of the data is legally required.",
+    "word_frequency": 21687
+  },
+  {
+    "word": "Die Offense des Teams war sehr stark.",
+    "definition": "The team's offense was very strong.",
+    "word_frequency": 23878
+  },
+  {
+    "word": "Die Ordination des Arztes ist von 9 bis 17 Uhr geöffnet.",
+    "definition": "The doctor's office is open from 9 AM to 5 PM.",
+    "word_frequency": 28485
+  },
+  {
+    "word": "Die Organisation leistet wichtige Aufklärungsarbeit.",
+    "definition": "The organization does important educational work.",
+    "word_frequency": 27352
+  },
+  {
+    "word": "Die Ouvertüre leitete das Konzert ein.",
+    "definition": "The overture introduced the concert.",
+    "word_frequency": 20063
+  },
+  {
+    "word": "Die Partei strebt eine Regierungsbeteiligung an.",
+    "definition": "The party aims for government participation.",
+    "word_frequency": 29464
+  },
+  {
+    "word": "Die Parteien einigten sich auf eine Waffenruhe.",
+    "definition": "The parties agreed on a ceasefire.",
+    "word_frequency": 11454
+  },
+  {
+    "word": "Die Parteispitze traf sich zur Krisensitzung.",
+    "definition": "The party leadership met for the crisis meeting.",
+    "word_frequency": 25517
+  },
+  {
+    "word": "Die Party endete in einer wilden Orgie.",
+    "definition": "The party ended in a wild orgy.",
+    "word_frequency": 17292
+  },
+  {
+    "word": "Die Penetration des Marktes war schwierig.",
+    "definition": "The penetration of the market was difficult.",
+    "word_frequency": 27161
+  },
+  {
+    "word": "Die Personalentwicklung ist wichtig für das Wachstum des Unternehmens.",
+    "definition": "Personnel development is important for the company's growth.",
+    "word_frequency": 26357
+  },
+  {
+    "word": "Die Personalie des neuen Direktors wurde bekannt gegeben.",
+    "definition": "The personnel matter of the new director was announced.",
+    "word_frequency": 15155
+  },
+  {
+    "word": "Die Pferde grasen auf der grünen Aue.",
+    "definition": "The horses graze on the green meadow.",
+    "word_frequency": 8198
+  },
+  {
+    "word": "Die Photovoltaik gewinnt an Bedeutung für die Energiewende.",
+    "definition": "Photovoltaics is gaining importance for the energy transition.",
+    "word_frequency": 11398
+  },
+  {
+    "word": "Die Polarisierung der Gesellschaft nimmt zu.",
+    "definition": "The polarization of society is increasing.",
+    "word_frequency": 24696
+  },
+  {
+    "word": "Die politische Brisanz der Situation ist offensichtlich.",
+    "definition": "The political explosiveness of the situation is obvious.",
+    "word_frequency": 23693
+  },
+  {
+    "word": "Die politische Konstellation ist sehr komplex.",
+    "definition": "The political constellation is very complex.",
+    "word_frequency": 8975
+  },
+  {
+    "word": "Die politischen Machenschaften wurden aufgedeckt.",
+    "definition": "The political machinations were uncovered.",
+    "word_frequency": 13509
+  },
+  {
+    "word": "Die Polizei begann eine intensive Spurensuche am Tatort.",
+    "definition": "The police began an intensive search for clues at the crime scene.",
+    "word_frequency": 17640
+  },
+  {
+    "word": "Die Polizei ermittelt wegen Brandstiftung.",
+    "definition": "The police are investigating for arson.",
+    "word_frequency": 10409
+  },
+  {
+    "word": "Die Polizei führte eine Hausdurchsuchung durch.",
+    "definition": "The police conducted a house search.",
+    "word_frequency": 21257
+  },
+  {
+    "word": "Die Polizei führte eine Verhaftung durch.",
+    "definition": "The police carried out an arrest.",
+    "word_frequency": 7339
+  },
+  {
+    "word": "Die Polizei rechtfertigte die Gewaltanwendung.",
+    "definition": "The police justified the use of force.",
+    "word_frequency": 24974
+  },
+  {
+    "word": "Die Polizei startete eine Hetzjagd auf den Flüchtigen.",
+    "definition": "The police started a manhunt for the fugitive.",
+    "word_frequency": 29316
+  },
+  {
+    "word": "Die Polizei suchte nach der Tatwaffe.",
+    "definition": "The police were looking for the murder weapon.",
+    "word_frequency": 25592
+  },
+  {
+    "word": "Die Polizeigewerkschaft forderte bessere Arbeitsbedingungen.",
+    "definition": "The police union demanded better working conditions.",
+    "word_frequency": 27171
+  },
+  {
+    "word": "Die Positionierung des Produkts ist entscheidend für den Erfolg.",
+    "definition": "The positioning of the product is crucial for success.",
+    "word_frequency": 13325
+  },
+  {
+    "word": "Die Privatwirtschaft spielt eine wichtige Rolle in der Wirtschaft.",
+    "definition": "The private sector plays an important role in the economy.",
+    "word_frequency": 17890
+  },
+  {
+    "word": "Die Problematik des Klimawandels ist komplex.",
+    "definition": "The problematic nature of climate change is complex.",
+    "word_frequency": 5031
+  },
+  {
+    "word": "Die Probleme nehmen Überhand.",
+    "definition": "The problems are getting out of hand.",
+    "word_frequency": 22890
+  },
+  {
+    "word": "Die Produktion verwendet moderne Werkzeugmaschinen.",
+    "definition": "Production uses modern machine tools.",
+    "word_frequency": 26078
+  },
+  {
+    "word": "Die Professionalisierung des Berufsstandes ist wichtig.",
+    "definition": "The professionalization of the profession is important.",
+    "word_frequency": 24699
+  },
+  {
+    "word": "Die Proklamation des neuen Gesetzes erfolgte gestern.",
+    "definition": "The proclamation of the new law took place yesterday.",
+    "word_frequency": 23134
+  },
+  {
+    "word": "Die Prostata ist eine Drüse im männlichen Körper.",
+    "definition": "The prostate is a gland in the male body.",
+    "word_frequency": 18491
+  },
+  {
+    "word": "Die Prostituierte wartete an der Ecke.",
+    "definition": "The prostitute waited on the corner.",
+    "word_frequency": 8431
+  },
+  {
+    "word": "Die Präambel der Verfassung ist sehr wichtig.",
+    "definition": "The preamble of the constitution is very important.",
+    "word_frequency": 23135
+  },
+  {
+    "word": "Die Psyche spielt eine große Rolle für die Gesundheit.",
+    "definition": "The psyche plays a big role in health.",
+    "word_frequency": 7858
+  },
+  {
+    "word": "Die Quintessenz seiner Rede war die Notwendigkeit von Zusammenarbeit.",
+    "definition": "The quintessence of his speech was the necessity of cooperation.",
+    "word_frequency": 26370
+  },
+  {
+    "word": "Die Radikalisierung der Jugend ist ein ernstes Problem.",
+    "definition": "The radicalization of youth is a serious problem.",
+    "word_frequency": 14682
+  },
+  {
+    "word": "Die Radioaktivität des Materials wurde gemessen.",
+    "definition": "The radioactivity of the material was measured.",
+    "word_frequency": 18800
+  },
+  {
+    "word": "Die Rahmenbedingungen für das Projekt sind klar definiert.",
+    "definition": "The framework conditions for the project are clearly defined.",
+    "word_frequency": 5118
+  },
+  {
+    "word": "Die Ratio zwischen den beiden Werten ist 2 zu 1.",
+    "definition": "The ratio between the two values is 2 to 1.",
+    "word_frequency": 13996
+  },
+  {
+    "word": "Die Raupe durchläuft eine Metamorphose zum Schmetterling.",
+    "definition": "The caterpillar undergoes a metamorphosis into a butterfly.",
+    "word_frequency": 27125
+  },
+  {
+    "word": "Die Rechnungslegung muss den gesetzlichen Vorschriften entsprechen.",
+    "definition": "The accounting must comply with legal requirements.",
+    "word_frequency": 29461
+  },
+  {
+    "word": "Die Rechtmässigkeit der Entscheidung wurde angezweifelt.",
+    "definition": "The legality of the decision was questioned.",
+    "word_frequency": 17610
+  },
+  {
+    "word": "Die Rechtsgrundlage für diese Entscheidung ist unklar.",
+    "definition": "The legal basis for this decision is unclear.",
+    "word_frequency": 15702
+  },
+  {
+    "word": "Die Rechtslage ist kompliziert.",
+    "definition": "The legal situation is complicated.",
+    "word_frequency": 9150
+  },
+  {
+    "word": "Die Rechtsordnung eines Landes ist komplex.",
+    "definition": "The legal system of a country is complex.",
+    "word_frequency": 21049
+  },
+  {
+    "word": "Die Rechtsprechung in diesem Fall war umstritten.",
+    "definition": "The jurisprudence in this case was controversial.",
+    "word_frequency": 5302
+  },
+  {
+    "word": "Die Recovery des Systems dauerte Stunden.",
+    "definition": "The recovery of the system took hours.",
+    "word_frequency": 26749
+  },
+  {
+    "word": "Die Regentschaft dauerte zehn Jahre.",
+    "definition": "The regency lasted ten years.",
+    "word_frequency": 22057
+  },
+  {
+    "word": "Die Regierung diskutiert eine neue Steuerpolitik.",
+    "definition": "The government is discussing a new tax policy.",
+    "word_frequency": 29979
+  },
+  {
+    "word": "Die Regierung drohte mit Repressalien.",
+    "definition": "The government threatened reprisals.",
+    "word_frequency": 24332
+  },
+  {
+    "word": "Die Regierung erteilte eine Konzession für den Bergbau.",
+    "definition": "The government granted a concession for mining.",
+    "word_frequency": 18136
+  },
+  {
+    "word": "Die Regierung gab neue Anleihen aus.",
+    "definition": "The government issued new bonds.",
+    "word_frequency": 6850
+  },
+  {
+    "word": "Die Regierung gewährt Subventionen für erneuerbare Energien.",
+    "definition": "The government grants subsidies for renewable energies.",
+    "word_frequency": 9813
+  },
+  {
+    "word": "Die Regierung gewährte eine Amnestie für politische Gefangene.",
+    "definition": "The government granted an amnesty for political prisoners.",
+    "word_frequency": 19858
+  },
+  {
+    "word": "Die Regierung hofft auf eine Trendwende in der Wirtschaft.",
+    "definition": "The government hopes for a trend reversal in the economy.",
+    "word_frequency": 27265
+  },
+  {
+    "word": "Die Regierung kündigte neue Sparmassnahmen an.",
+    "definition": "The government announced new austerity measures.",
+    "word_frequency": 27629
+  },
+  {
+    "word": "Die Regierung leistete Wiedergutmachung für die Opfer.",
+    "definition": "The government provided reparations for the victims.",
+    "word_frequency": 13605
+  },
+  {
+    "word": "Die Regierung strebt nach mehr Rechtssicherheit.",
+    "definition": "The government strives for more legal certainty.",
+    "word_frequency": 17612
+  },
+  {
+    "word": "Die Regierung verbreitete Propaganda, um die öffentliche Meinung zu beeinflussen.",
+    "definition": "The government spread propaganda to influence public opinion.",
+    "word_frequency": 2894
+  },
+  {
+    "word": "Die Regierung veröffentlichte eine Denkschrift zu diesem Thema.",
+    "definition": "The government published a memorandum on this topic.",
+    "word_frequency": 26953
+  },
+  {
+    "word": "Die Regierung übt Repression aus.",
+    "definition": "The government exercises repression.",
+    "word_frequency": 15456
+  },
+  {
+    "word": "Die Regierung übte Einflussnahme auf die Medien aus.",
+    "definition": "The government exerted influence on the media.",
+    "word_frequency": 11317
+  },
+  {
+    "word": "Die Region ist bekannt für ihre einzigartige Kulturlandschaft.",
+    "definition": "The region is known for its unique cultural landscape.",
+    "word_frequency": 16971
+  },
+  {
+    "word": "Die Reichsregierung erließ neue Gesetze.",
+    "definition": "The Reich government enacted new laws.",
+    "word_frequency": 29930
+  },
+  {
+    "word": "Die Reise war eine wahre Odyssee.",
+    "definition": "The journey was a true odyssey.",
+    "word_frequency": 14441
+  },
+  {
+    "word": "Die Religionszugehörigkeit ist in Deutschland frei wählbar.",
+    "definition": "Religious affiliation is freely selectable in Germany.",
+    "word_frequency": 29468
+  },
+  {
+    "word": "Die Rendite der Investition war hoch.",
+    "definition": "The return on the investment was high.",
+    "word_frequency": 6455
+  },
+  {
+    "word": "Die Rentabilität des Projekts ist fraglich.",
+    "definition": "The profitability of the project is questionable.",
+    "word_frequency": 26756
+  },
+  {
+    "word": "Die Reparatur verursachte unerwartete Folgekosten.",
+    "definition": "The repair caused unexpected follow-up costs.",
+    "word_frequency": 24147
+  },
+  {
+    "word": "Die Replik des Künstlers war beeindruckend.",
+    "definition": "The artist's replica was impressive.",
+    "word_frequency": 19750
+  },
+  {
+    "word": "Die Reproduktion dieses Gemäldes ist sehr detailreich.",
+    "definition": "The reproduction of this painting is very detailed.",
+    "word_frequency": 15166
+  },
+  {
+    "word": "Die Repräsentation der Bürger ist wichtig in einer Demokratie.",
+    "definition": "The representation of citizens is important in a democracy.",
+    "word_frequency": 13769
+  },
+  {
+    "word": "Die Ritterschaft versammelte sich zur Schlacht.",
+    "definition": "The knighthood gathered for battle.",
+    "word_frequency": 23918
+  },
+  {
+    "word": "Die Robotik ist ein schnell wachsendes Feld.",
+    "definition": "Robotics is a rapidly growing field.",
+    "word_frequency": 25968
+  },
+  {
+    "word": "Die römische Legion war eine mächtige Militäreinheit.",
+    "definition": "The Roman legion was a powerful military unit.",
+    "word_frequency": 10472
+  },
+  {
+    "word": "Die Rückführung der Flüchtlinge ist ein komplexes Thema.",
+    "definition": "The repatriation of the refugees is a complex issue.",
+    "word_frequency": 13334
+  },
+  {
+    "word": "Die Rüstungsindustrie spielt eine große Rolle in der Wirtschaft.",
+    "definition": "The arms industry plays a big role in the economy.",
+    "word_frequency": 18506
+  },
+  {
+    "word": "Die Sakura-Blüte in Japan ist ein wunderschönes Spektakel.",
+    "definition": "The cherry blossom bloom in Japan is a beautiful spectacle.",
+    "word_frequency": 25551
+  },
+  {
+    "word": "Die Sanierung der Altlasten ist teuer.",
+    "definition": "The remediation of the contaminated sites is expensive.",
+    "word_frequency": 24442
+  },
+  {
+    "word": "Die Schamlippen sind Teil der weiblichen Genitalien.",
+    "definition": "The labia are part of the female genitalia.",
+    "word_frequency": 25122
+  },
+  {
+    "word": "Die Scharia ist das islamische Rechtssystem.",
+    "definition": "Sharia is the Islamic legal system.",
+    "word_frequency": 12446
+  },
+  {
+    "word": "Die Schenkung wurde notariell beurkundet.",
+    "definition": "The donation was notarized.",
+    "word_frequency": 13337
+  },
+  {
+    "word": "Die Schleimhaut in der Nase ist entzündet.",
+    "definition": "The mucous membrane in the nose is inflamed.",
+    "word_frequency": 27216
+  },
+  {
+    "word": "Die Schweizerische Eidgenossenschaft wurde 1291 gegründet.",
+    "definition": "The Swiss Confederation was founded in 1291.",
+    "word_frequency": 20894
+  },
+  {
+    "word": "Die Seenotrettung war schnell vor Ort.",
+    "definition": "The sea rescue was quickly on site.",
+    "word_frequency": 22818
+  },
+  {
+    "word": "Die Selbstorganisation ist ein wichtiges Prinzip in der Natur.",
+    "definition": "Self-organization is an important principle in nature.",
+    "word_frequency": 25569
+  },
+  {
+    "word": "Die Selbstverwirklichung ist ein wichtiges menschliches Bedürfnis.",
+    "definition": "Self-realization is an important human need.",
+    "word_frequency": 24355
+  },
+  {
+    "word": "Die Semantik befasst sich mit der Bedeutung von Wörtern und Sätzen.",
+    "definition": "Semantics deals with the meaning of words and sentences.",
+    "word_frequency": 19772
+  },
+  {
+    "word": "Die Sensibilisierung für Umweltthemen ist wichtig.",
+    "definition": "Sensitization to environmental issues is important.",
+    "word_frequency": 25573
+  },
+  {
+    "word": "Die Setzung des Gebäudes verursachte Risse.",
+    "definition": "The subsidence of the building caused cracks.",
+    "word_frequency": 21394
+  },
+  {
+    "word": "Die Sexualität ist ein wichtiger Aspekt des menschlichen Lebens.",
+    "definition": "Sexuality is an important aspect of human life.",
+    "word_frequency": 5833
+  },
+  {
+    "word": "Die Sicherstellung der Qualität ist wichtig.",
+    "definition": "Ensuring quality is important.",
+    "word_frequency": 14011
+  },
+  {
+    "word": "Die Sinnlichkeit der Musik berührte sie tief.",
+    "definition": "The sensuality of the music touched her deeply.",
+    "word_frequency": 20102
+  },
+  {
+    "word": "Die Sitzverteilung im Parlament wurde bekannt gegeben.",
+    "definition": "The seat distribution in parliament was announced.",
+    "word_frequency": 28562
+  },
+  {
+    "word": "Die Soldaten kehrten in die Garnison zurück.",
+    "definition": "The soldiers returned to the garrison.",
+    "word_frequency": 17809
+  },
+  {
+    "word": "Die Souveränität eines Staates ist entscheidend.",
+    "definition": "The sovereignty of a state is crucial.",
+    "word_frequency": 7587
+  },
+  {
+    "word": "Die Sozialdemokratie hat eine lange Geschichte in Deutschland.",
+    "definition": "Social democracy has a long history in Germany.",
+    "word_frequency": 8731
+  },
+  {
+    "word": "Die Sozialisation spielt eine wichtige Rolle in der Entwicklung.",
+    "definition": "Socialization plays an important role in development.",
+    "word_frequency": 21079
+  },
+  {
+    "word": "Die Spurensicherung am Tatort dauerte Stunden.",
+    "definition": "The forensic investigation at the crime scene lasted hours.",
+    "word_frequency": 26410
+  },
+  {
+    "word": "Die Staatsanwaltschaft hat Anklage erhoben.",
+    "definition": "The public prosecutor's office has filed charges.",
+    "word_frequency": 3057
+  },
+  {
+    "word": "Die Staatsausgaben wurden im letzten Jahr stark erhöht.",
+    "definition": "Government expenditures were significantly increased last year.",
+    "word_frequency": 29974
+  },
+  {
+    "word": "Die Staatsbibliothek beherbergt viele alte Manuskripte.",
+    "definition": "The state library houses many old manuscripts.",
+    "word_frequency": 18532
+  },
+  {
+    "word": "Die Staatsgewalt ist in Deutschland in drei Bereiche aufgeteilt.",
+    "definition": "State power in Germany is divided into three branches.",
+    "word_frequency": 15189
+  },
+  {
+    "word": "Die Staatskanzlei ist für die Koordination der Regierungsarbeit zuständig.",
+    "definition": "The State Chancellery is responsible for coordinating government work.",
+    "word_frequency": 17641
+  },
+  {
+    "word": "Die Staatsmacht muss die Rechte der Bürger schützen.",
+    "definition": "The state power must protect the rights of the citizens.",
+    "word_frequency": 23167
+  },
+  {
+    "word": "Die Staatsschuld ist in den letzten Jahren stark angestiegen.",
+    "definition": "The national debt has risen sharply in recent years.",
+    "word_frequency": 25584
+  },
+  {
+    "word": "Die Staatssekretärin hielt eine Rede.",
+    "definition": "The state secretary gave a speech.",
+    "word_frequency": 23554
+  },
+  {
+    "word": "Die Staatssicherheit spielte eine wichtige Rolle in der Geschichte der DDR.",
+    "definition": "State security played an important role in the history of the GDR.",
+    "word_frequency": 18533
+  },
+  {
+    "word": "Die Staatsverschuldung ist ein großes Problem für viele Länder.",
+    "definition": "National indebtedness is a big problem for many countries.",
+    "word_frequency": 25585
+  },
+  {
+    "word": "Die Stadt investiert viel in die Wirtschaftsförderung.",
+    "definition": "The city invests a lot in economic development.",
+    "word_frequency": 19528
+  },
+  {
+    "word": "Die Stadtgemeinde ist für die lokalen Angelegenheiten zuständig.",
+    "definition": "The urban municipality is responsible for local affairs.",
+    "word_frequency": 24755
+  },
+  {
+    "word": "Die Stadtverordnetenversammlung tagt nächste Woche.",
+    "definition": "The city council assembly meets next week.",
+    "word_frequency": 18837
+  },
+  {
+    "word": "Die Standardisierung von Prozessen kann die Effizienz erhöhen.",
+    "definition": "The standardization of processes can increase efficiency.",
+    "word_frequency": 24371
+  },
+  {
+    "word": "Die Statik des Gebäudes muss überprüft werden.",
+    "definition": "The statics of the building must be checked.",
+    "word_frequency": 19158
+  },
+  {
+    "word": "Die Stigmatisierung von psychischen Erkrankungen ist ein Problem.",
+    "definition": "The stigmatization of mental illnesses is a problem.",
+    "word_frequency": 26415
+  },
+  {
+    "word": "Die Stilllegung des Atomkraftwerks ist geplant.",
+    "definition": "The decommissioning of the nuclear power plant is planned.",
+    "word_frequency": 23558
+  },
+  {
+    "word": "Die Stimulation der Nerven kann Schmerzen lindern.",
+    "definition": "The stimulation of the nerves can relieve pain.",
+    "word_frequency": 20429
+  },
+  {
+    "word": "Die Strafbarkeit der Handlung muss geprüft werden.",
+    "definition": "The culpability of the act must be examined.",
+    "word_frequency": 20430
+  },
+  {
+    "word": "Die Strafverfolgung wurde eingeleitet.",
+    "definition": "The prosecution was initiated.",
+    "word_frequency": 11798
+  },
+  {
+    "word": "Die Strahlentherapie ist eine Behandlungsmethode bei Krebs.",
+    "definition": "Radiation therapy is a treatment method for cancer.",
+    "word_frequency": 28099
+  },
+  {
+    "word": "Die Streitkräfte des Landes wurden mobilisiert.",
+    "definition": "The country's armed forces were mobilized.",
+    "word_frequency": 6031
+  },
+  {
+    "word": "Die Streitmacht wurde mobilisiert.",
+    "definition": "The armed forces were mobilized.",
+    "word_frequency": 27244
+  },
+  {
+    "word": "Die Studie hat eine hohe Aussagekraft.",
+    "definition": "The study has high informative value.",
+    "word_frequency": 15268
+  },
+  {
+    "word": "Die Studie untersuchte verschiedene Bevölkerungsschichten.",
+    "definition": "The study examined different social strata.",
+    "word_frequency": 24872
+  },
+  {
+    "word": "Die Symbolik in diesem Gemälde ist sehr reichhaltig.",
+    "definition": "The symbolism in this painting is very rich.",
+    "word_frequency": 10693
+  },
+  {
+    "word": "Die Symptomatik der Krankheit ist sehr vielfältig.",
+    "definition": "The symptomatology of the disease is very diverse.",
+    "word_frequency": 28588
+  },
+  {
+    "word": "Die Synode traf sich, um wichtige Entscheidungen zu treffen.",
+    "definition": "The synod met to make important decisions.",
+    "word_frequency": 12916
+  },
+  {
+    "word": "Die Synthese der Daten ist komplex.",
+    "definition": "The synthesis of the data is complex.",
+    "word_frequency": 9642
+  },
+  {
+    "word": "Die Säuberung des Waldes ist wichtig für die Umwelt.",
+    "definition": "The cleansing of the forest is important for the environment.",
+    "word_frequency": 19789
+  },
+  {
+    "word": "Die Terminologie in diesem Fachgebiet ist sehr komplex.",
+    "definition": "The terminology in this field is very complex.",
+    "word_frequency": 19484
+  },
+  {
+    "word": "Die Terrorgruppe bekannte sich zu dem Anschlag.",
+    "definition": "The terrorist group claimed responsibility for the attack.",
+    "word_frequency": 25595
+  },
+  {
+    "word": "Die Terrormiliz verübte einen Anschlag.",
+    "definition": "The terrorist militia carried out an attack.",
+    "word_frequency": 24380
+  },
+  {
+    "word": "Die Terrororganisation wurde von der Regierung verurteilt.",
+    "definition": "The terrorist organization was condemned by the government.",
+    "word_frequency": 16780
+  },
+  {
+    "word": "Die Theory ist interessant, aber schwer zu beweisen.",
+    "definition": "The theory is interesting but hard to prove.",
+    "word_frequency": 9816
+  },
+  {
+    "word": "Die Thermodynamik ist ein Teilgebiet der Physik.",
+    "definition": "Thermodynamics is a subfield of physics.",
+    "word_frequency": 27649
+  },
+  {
+    "word": "Die Tilgung des Kredits erfolgt monatlich.",
+    "definition": "The repayment of the loan occurs monthly.",
+    "word_frequency": 16528
+  },
+  {
+    "word": "Die Todesstrafe ist in vielen Ländern abgeschafft.",
+    "definition": "The death penalty has been abolished in many countries.",
+    "word_frequency": 5937
+  },
+  {
+    "word": "Die Topographie der Region ist sehr bergig.",
+    "definition": "The topography of the region is very mountainous.",
+    "word_frequency": 20757
+  },
+  {
+    "word": "Die traditionelle Heilkunde hat eine lange Geschichte.",
+    "definition": "Traditional medicine has a long history.",
+    "word_frequency": 25411
+  },
+  {
+    "word": "Die Tragfähigkeit der Brücke muss regelmäßig überprüft werden.",
+    "definition": "The load-bearing capacity of the bridge must be checked regularly.",
+    "word_frequency": 20759
+  },
+  {
+    "word": "Die Tragik der Situation war offensichtlich.",
+    "definition": "The tragedy of the situation was obvious.",
+    "word_frequency": 22847
+  },
+  {
+    "word": "Die Tragweite dieser Entscheidung ist noch nicht absehbar.",
+    "definition": "The full implications of this decision are not yet foreseeable.",
+    "word_frequency": 17081
+  },
+  {
+    "word": "Die Transkription des Interviews dauerte Stunden.",
+    "definition": "The transcription of the interview took hours.",
+    "word_frequency": 29061
+  },
+  {
+    "word": "Die Transplantation war erfolgreich.",
+    "definition": "The transplantation was successful.",
+    "word_frequency": 19797
+  },
+  {
+    "word": "Die Treuhand war für die Privatisierung der DDR-Betriebe zuständig.",
+    "definition": "The Treuhand was responsible for the privatization of GDR companies.",
+    "word_frequency": 22468
+  },
+  {
+    "word": "Die Truppen wurden in Alarmbereitschaft versetzt.",
+    "definition": "The troops were put on alert readiness.",
+    "word_frequency": 27733
+  },
+  {
+    "word": "Die Trägerschaft des Projekts liegt bei der Stadt.",
+    "definition": "The sponsorship of the project lies with the city.",
+    "word_frequency": 14729
+  },
+  {
+    "word": "Die Tänzerin bewegte sich mit großer Anmut.",
+    "definition": "The dancer moved with great grace.",
+    "word_frequency": 20198
+  },
+  {
+    "word": "Die Tötung war ein tragisches Ereignis.",
+    "definition": "The killing was a tragic event.",
+    "word_frequency": 7335
+  },
+  {
+    "word": "Die Ukraine war eine Sowjetrepublik.",
+    "definition": "Ukraine was a Soviet republic.",
+    "word_frequency": 24747
+  },
+  {
+    "word": "Die Umgestaltung des Parks dauerte ein Jahr.",
+    "definition": "The redesign of the park took one year.",
+    "word_frequency": 8028
+  },
+  {
+    "word": "Die Umverteilung von Reichtum ist ein kontroverses Thema.",
+    "definition": "The redistribution of wealth is a controversial topic.",
+    "word_frequency": 16534
+  },
+  {
+    "word": "Die Universität erhielt die Akkreditierung für ihr neues Programm.",
+    "definition": "The university received accreditation for its new program.",
+    "word_frequency": 26486
+  },
+  {
+    "word": "Die Unschuldsvermutung ist ein Grundsatz des Rechtsstaats.",
+    "definition": "The presumption of innocence is a principle of the rule of law.",
+    "word_frequency": 26046
+  },
+  {
+    "word": "Die Unternehmensführung traf eine wichtige Entscheidung.",
+    "definition": "The corporate management made an important decision.",
+    "word_frequency": 17966
+  },
+  {
+    "word": "Die Unternehmensgruppe expandiert international.",
+    "definition": "The corporate group is expanding internationally.",
+    "word_frequency": 15214
+  },
+  {
+    "word": "Die Unternehmenskultur spielt eine wichtige Rolle für den Erfolg.",
+    "definition": "The corporate culture plays an important role for success.",
+    "word_frequency": 22862
+  },
+  {
+    "word": "Die Unterschrift des Beamten ist eine Amtshandlung.",
+    "definition": "The official's signature is an official act.",
+    "word_frequency": 29637
+  },
+  {
+    "word": "Die Unterwerfung unter fremde Regeln war schwer.",
+    "definition": "The submission to foreign rules was difficult.",
+    "word_frequency": 14271
+  },
+  {
+    "word": "Die Unversehrtheit des Körpers ist ein Grundrecht.",
+    "definition": "The integrity of the body is a fundamental right.",
+    "word_frequency": 19177
+  },
+  {
+    "word": "Die Uraufführung des Stücks war ein großer Erfolg.",
+    "definition": "The premiere of the play was a great success.",
+    "word_frequency": 11253
+  },
+  {
+    "word": "Die Vagina ist ein Teil des weiblichen Fortpflanzungssystems.",
+    "definition": "The vagina is part of the female reproductive system.",
+    "word_frequency": 8170
+  },
+  {
+    "word": "Die Variabilität der Daten war überraschend.",
+    "definition": "The variability of the data was surprising.",
+    "word_frequency": 29565
+  },
+  {
+    "word": "Die Varianz der Daten war gering.",
+    "definition": "The variance of the data was low.",
+    "word_frequency": 23587
+  },
+  {
+    "word": "Die Verabreichung des Medikaments erfolgte oral.",
+    "definition": "The administration of the medication was oral.",
+    "word_frequency": 27676
+  },
+  {
+    "word": "Die Verankerung des Schiffes war sicher.",
+    "definition": "The anchoring of the ship was secure.",
+    "word_frequency": 16542
+  },
+  {
+    "word": "Die Veranstaltung steht unter der Schirmherrschaft des Bürgermeisters.",
+    "definition": "The event is under the patronage of the mayor.",
+    "word_frequency": 19456
+  },
+  {
+    "word": "Die Verbandsgemeinde ist für mehrere Dörfer zuständig.",
+    "definition": "The municipal association is responsible for several villages.",
+    "word_frequency": 14492
+  },
+  {
+    "word": "Die Verbannung aus dem Land war eine harte Strafe.",
+    "definition": "Banishment from the country was a harsh punishment.",
+    "word_frequency": 17971
+  },
+  {
+    "word": "Die Verdichtung des Bodens ist wichtig für den Bau.",
+    "definition": "The compression of the soil is important for construction.",
+    "word_frequency": 20150
+  },
+  {
+    "word": "Die Verdrängung von alten Technologien ist oft notwendig.",
+    "definition": "The displacement of old technologies is often necessary.",
+    "word_frequency": 14273
+  },
+  {
+    "word": "Die Vereidigung des neuen Präsidenten findet nächste Woche statt.",
+    "definition": "The swearing-in of the new president will take place next week.",
+    "word_frequency": 29567
+  },
+  {
+    "word": "Die Vereinheitlichung der Regeln ist notwendig.",
+    "definition": "The standardization of the rules is necessary.",
+    "word_frequency": 24790
+  },
+  {
+    "word": "Die Vererbung von Merkmalen ist ein zentrales Thema in der Biologie.",
+    "definition": "The inheritance of traits is a central topic in biology.",
+    "word_frequency": 25199
+  },
+  {
+    "word": "Die Verfassungsänderung wurde vom Parlament verabschiedet.",
+    "definition": "The constitutional amendment was passed by parliament.",
+    "word_frequency": 23200
+  },
+  {
+    "word": "Die Vergänglichkeit des Lebens ist ein häufiges Thema in der Kunst.",
+    "definition": "The transience of life is a common theme in art.",
+    "word_frequency": 25203
+  },
+  {
+    "word": "Die Verharmlosung des Problems ist gefährlich.",
+    "definition": "The trivialization of the problem is dangerous.",
+    "word_frequency": 26439
+  },
+  {
+    "word": "Die Verherrlichung von Gewalt ist inakzeptabel.",
+    "definition": "The glorification of violence is unacceptable.",
+    "word_frequency": 29085
+  },
+  {
+    "word": "Die Verhängung der Strafe erfolgte gestern.",
+    "definition": "The imposition of the penalty took place yesterday.",
+    "word_frequency": 27683
+  },
+  {
+    "word": "Die Verklärung Christi ist ein wichtiges Thema in der Kunst.",
+    "definition": "The Transfiguration of Christ is an important theme in art.",
+    "word_frequency": 29569
+  },
+  {
+    "word": "Die Verlagsbuchhandlung hat viele neue Bücher.",
+    "definition": "The publishing bookstore has many new books.",
+    "word_frequency": 28627
+  },
+  {
+    "word": "Die Verlagsgruppe hat mehrere Imprints.",
+    "definition": "The publishing group has several imprints.",
+    "word_frequency": 28628
+  },
+  {
+    "word": "Die Verletzung betraf eine obere Extremität.",
+    "definition": "The injury affected an upper extremity.",
+    "word_frequency": 22272
+  },
+  {
+    "word": "Die Vermählung fand in einer kleinen Kapelle statt.",
+    "definition": "The wedding took place in a small chapel.",
+    "word_frequency": 27687
+  },
+  {
+    "word": "Die Vernehmung des Zeugen dauerte Stunden.",
+    "definition": "The interrogation of the witness lasted hours.",
+    "word_frequency": 14736
+  },
+  {
+    "word": "Die Vernichtung des Waldes ist eine Tragödie.",
+    "definition": "The destruction of the forest is a tragedy.",
+    "word_frequency": 6601
+  },
+  {
+    "word": "Die Versammlungsfreiheit ist ein Grundrecht.",
+    "definition": "The freedom of assembly is a fundamental right.",
+    "word_frequency": 25629
+  },
+  {
+    "word": "Die Verschmelzung der beiden Unternehmen war erfolgreich.",
+    "definition": "The merger of the two companies was successful.",
+    "word_frequency": 15764
+  },
+  {
+    "word": "Die Verschärfung der Regeln war notwendig.",
+    "definition": "The tightening of the rules was necessary.",
+    "word_frequency": 11448
+  },
+  {
+    "word": "Die Versicherungswirtschaft ist ein wichtiger Wirtschaftszweig.",
+    "definition": "The insurance industry is an important economic sector.",
+    "word_frequency": 26836
+  },
+  {
+    "word": "Die Verstaatlichung der Industrie war ein kontroverses Thema.",
+    "definition": "The nationalization of the industry was a controversial topic.",
+    "word_frequency": 20460
+  },
+  {
+    "word": "Die Vertreibung der Bevölkerung führte zu einer Krise.",
+    "definition": "The expulsion of the population led to a crisis.",
+    "word_frequency": 10006
+  },
+  {
+    "word": "Die Verunreinigung des Wassers ist ein ernstes Problem.",
+    "definition": "The contamination of the water is a serious problem.",
+    "word_frequency": 17976
+  },
+  {
+    "word": "Die Verurteilung erfolgte nach langer Verhandlung.",
+    "definition": "The conviction followed a long trial.",
+    "word_frequency": 6132
+  },
+  {
+    "word": "Die Vervielfältigung dieses Dokuments ist untersagt.",
+    "definition": "The reproduction of this document is prohibited.",
+    "word_frequency": 23591
+  },
+  {
+    "word": "Die Vervollständigung des Projekts ist für nächste Woche geplant.",
+    "definition": "The completion of the project is planned for next week.",
+    "word_frequency": 29099
+  },
+  {
+    "word": "Die Verwaltungsgemeinschaft kümmert sich um die Angelegenheiten mehrerer kleiner Gemeinden.",
+    "definition": "The administrative community handles the affairs of several small municipalities.",
+    "word_frequency": 23998
+  },
+  {
+    "word": "Die Verwaltungskosten müssen gesenkt werden.",
+    "definition": "The administrative costs must be reduced.",
+    "word_frequency": 24797
+  },
+  {
+    "word": "Die Verwendung dieser Trope ist in der modernen Literatur weit verbreitet.",
+    "definition": "The use of this trope is widespread in modern literature.",
+    "word_frequency": 17959
+  },
+  {
+    "word": "Die Verwertung von Abfall ist wichtig für die Umwelt.",
+    "definition": "The recycling of waste is important for the environment.",
+    "word_frequency": 10191
+  },
+  {
+    "word": "Die Verwirklichung des Projekts dauerte lange.",
+    "definition": "The realization of the project took a long time.",
+    "word_frequency": 11614
+  },
+  {
+    "word": "Die Verzahnung der Räder ist präzise.",
+    "definition": "The meshing of the gears is precise.",
+    "word_frequency": 26838
+  },
+  {
+    "word": "Die Veräusserung der Immobilie brachte einen hohen Gewinn.",
+    "definition": "The sale of the property brought a high profit.",
+    "word_frequency": 18879
+  },
+  {
+    "word": "Die Visualisierung der Daten hilft beim Verständnis.",
+    "definition": "The visualization of the data helps with understanding.",
+    "word_frequency": 18568
+  },
+  {
+    "word": "Die Volatilität des Marktes ist derzeit sehr hoch.",
+    "definition": "The market's volatility is currently very high.",
+    "word_frequency": 25212
+  },
+  {
+    "word": "Die Volksinitiative wurde von vielen Bürgern unterstützt.",
+    "definition": "The popular initiative was supported by many citizens.",
+    "word_frequency": 24804
+  },
+  {
+    "word": "Die Volksrepublik China ist ein grosses Land.",
+    "definition": "The People's Republic of China is a large country.",
+    "word_frequency": 10706
+  },
+  {
+    "word": "Die Volkswirtschaft eines Landes ist komplex.",
+    "definition": "The national economy of a country is complex.",
+    "word_frequency": 8593
+  },
+  {
+    "word": "Die Vollendung des Projekts dauerte Jahre.",
+    "definition": "The completion of the project took years.",
+    "word_frequency": 9832
+  },
+  {
+    "word": "Die Vollstreckung des Urteils wurde angeordnet.",
+    "definition": "The enforcement of the judgment was ordered.",
+    "word_frequency": 21127
+  },
+  {
+    "word": "Die Vorhaut ist ein Teil des männlichen Geschlechtsorgans.",
+    "definition": "The foreskin is part of the male genital organ.",
+    "word_frequency": 22137
+  },
+  {
+    "word": "Die Vorratsdatenspeicherung ist ein kontroverses Thema.",
+    "definition": "Data retention is a controversial topic.",
+    "word_frequency": 10196
+  },
+  {
+    "word": "Die Vorräte gehen langsam zur Neige.",
+    "definition": "The supplies are slowly running out.",
+    "word_frequency": 15430
+  },
+  {
+    "word": "Die Vorstandsvorsitzende hielt eine Rede.",
+    "definition": "The chairwoman of the board gave a speech.",
+    "word_frequency": 24005
+  },
+  {
+    "word": "Die Völkerwanderung prägte die Geschichte Europas.",
+    "definition": "The Migration Period shaped the history of Europe.",
+    "word_frequency": 27302
+  },
+  {
+    "word": "Die Wahl der Rechtsform ist wichtig für ein Unternehmen.",
+    "definition": "The choice of legal form is important for a company.",
+    "word_frequency": 17039
+  },
+  {
+    "word": "Die Wahlbeteiligung war dieses Jahr sehr hoch.",
+    "definition": "The voter turnout was very high this year.",
+    "word_frequency": 6043
+  },
+  {
+    "word": "Die Wahrung der Menschenrechte ist essenziell.",
+    "definition": "The safeguarding of human rights is essential.",
+    "word_frequency": 10198
+  },
+  {
+    "word": "Die Wasserwirtschaft ist für die Trinkwasserversorgung zuständig.",
+    "definition": "Water management is responsible for drinking water supply.",
+    "word_frequency": 21133
+  },
+  {
+    "word": "Die Weltpolitik ist komplex und ständig im Wandel.",
+    "definition": "World politics is complex and constantly changing.",
+    "word_frequency": 19826
+  },
+  {
+    "word": "Die Weltwirtschaftskrise begann 1929.",
+    "definition": "The Great Depression began in 1929.",
+    "word_frequency": 24419
+  },
+  {
+    "word": "Die Wertigkeit eines Elements bestimmt seine chemischen Eigenschaften.",
+    "definition": "The valence of an element determines its chemical properties.",
+    "word_frequency": 20470
+  },
+  {
+    "word": "Die Wertschöpfung ist entscheidend für den Erfolg.",
+    "definition": "Value creation is crucial for success.",
+    "word_frequency": 14283
+  },
+  {
+    "word": "Die Wettbewerbsfähigkeit des Unternehmens ist hoch.",
+    "definition": "The competitiveness of the company is high.",
+    "word_frequency": 13394
+  },
+  {
+    "word": "Die Wiedereinführung der alten Regel wurde diskutiert.",
+    "definition": "The reintroduction of the old rule was discussed.",
+    "word_frequency": 17371
+  },
+  {
+    "word": "Die Wiederherstellung des alten Gebäudes dauerte Jahre.",
+    "definition": "The restoration of the old building took years.",
+    "word_frequency": 7604
+  },
+  {
+    "word": "Die Wirksamkeit des Medikaments wurde bestätigt.",
+    "definition": "The effectiveness of the medication was confirmed.",
+    "word_frequency": 6045
+  },
+  {
+    "word": "Die Wirtschaft ist auf Talfahrt.",
+    "definition": "The economy is on a downward trend.",
+    "word_frequency": 27254
+  },
+  {
+    "word": "Die Wirtschaftlichkeit des Projekts wurde in Frage gestellt.",
+    "definition": "The economic efficiency of the project was questioned.",
+    "word_frequency": 10714
+  },
+  {
+    "word": "Die Wirtschaftskammer vertritt die Interessen der Unternehmen.",
+    "definition": "The chamber of commerce represents the interests of businesses.",
+    "word_frequency": 23219
+  },
+  {
+    "word": "Die Wirtschaftskraft des Landes ist in den letzten Jahren gestiegen.",
+    "definition": "The economic power of the country has increased in recent years.",
+    "word_frequency": 26463
+  },
+  {
+    "word": "Die Wirtschaftsleistung des Landes ist im letzten Quartal gestiegen.",
+    "definition": "The country's economic output increased in the last quarter.",
+    "word_frequency": 23220
+  },
+  {
+    "word": "Die Witterung war schlecht für die Ernte.",
+    "definition": "The weather conditions were bad for the harvest.",
+    "word_frequency": 9839
+  },
+  {
+    "word": "Die Wählerschaft ist unzufrieden mit der aktuellen Regierung.",
+    "definition": "The electorate is dissatisfied with the current government.",
+    "word_frequency": 24818
+  },
+  {
+    "word": "Die Zahlung erfolgte in natura, nicht in Geld.",
+    "definition": "The payment was made in kind, not in money.",
+    "word_frequency": 13528
+  },
+  {
+    "word": "Die Zentralisierung der Verwaltung wurde kritisiert.",
+    "definition": "The centralization of the administration was criticized.",
+    "word_frequency": 28664
+  },
+  {
+    "word": "Die Zentralstelle koordiniert alle Aktivitäten.",
+    "definition": "The central office coordinates all activities.",
+    "word_frequency": 22883
+  },
+  {
+    "word": "Die Zerschlagung des Konzerns war unvermeidlich.",
+    "definition": "The breakup of the conglomerate was inevitable.",
+    "word_frequency": 18595
+  },
+  {
+    "word": "Die Zersetzung organischer Stoffe ist ein natürlicher Prozess.",
+    "definition": "The decomposition of organic matter is a natural process.",
+    "word_frequency": 26873
+  },
+  {
+    "word": "Die Zersplitterung der politischen Parteien ist ein Problem.",
+    "definition": "The fragmentation of political parties is a problem.",
+    "word_frequency": 29613
+  },
+  {
+    "word": "Die Zier des Gartens war beeindruckend.",
+    "definition": "The ornament of the garden was impressive.",
+    "word_frequency": 26875
+  },
+  {
+    "word": "Die Zivilbevölkerung litt unter dem Konflikt.",
+    "definition": "The civilian population suffered from the conflict.",
+    "word_frequency": 14059
+  },
+  {
+    "word": "Die Zivilgesellschaft spielt eine wichtige Rolle in der Demokratie.",
+    "definition": "Civil society plays an important role in democracy.",
+    "word_frequency": 10208
+  },
+  {
+    "word": "Die Zulässigkeit der Beweise wurde geprüft.",
+    "definition": "The admissibility of the evidence was examined.",
+    "word_frequency": 20481
+  },
+  {
+    "word": "Die Zusammenlegung der beiden Firmen wurde angekündigt.",
+    "definition": "The merger of the two companies was announced.",
+    "word_frequency": 15787
+  },
+  {
+    "word": "Die Zuspitzung der Lage führte zu Verhandlungen.",
+    "definition": "The escalation of the situation led to negotiations.",
+    "word_frequency": 25236
+  },
+  {
+    "word": "Die Zwangsversteigerung des Hauses findet nächste Woche statt.",
+    "definition": "The forced auction of the house will take place next week.",
+    "word_frequency": 26880
+  },
+  {
+    "word": "Die Zweitstimme entscheidet über die Sitzverteilung im Bundestag.",
+    "definition": "The second vote decides on the distribution of seats in the Bundestag.",
+    "word_frequency": 28194
+  },
+  {
+    "word": "Die Äbtissin leitete das Kloster.",
+    "definition": "The abbess led the monastery.",
+    "word_frequency": 28196
+  },
+  {
+    "word": "Die ägyptische Hochkultur ist faszinierend.",
+    "definition": "The Egyptian high culture is fascinating.",
+    "word_frequency": 29323
+  },
+  {
+    "word": "Die Ärztekammer ist für die Berufsordnung zuständig.",
+    "definition": "The medical association is responsible for professional regulations.",
+    "word_frequency": 23234
+  },
+  {
+    "word": "Die Ästhetik des Designs ist beeindruckend.",
+    "definition": "The aesthetics of the design are impressive.",
+    "word_frequency": 6716
+  },
+  {
+    "word": "Die Ökologie ist ein wichtiges Forschungsgebiet.",
+    "definition": "Ecology is an important field of research.",
+    "word_frequency": 10380
+  },
+  {
+    "word": "Die Ökumene fördert die Einheit der christlichen Kirchen.",
+    "definition": "Ecumenism promotes the unity of Christian churches.",
+    "word_frequency": 26093
+  },
+  {
+    "word": "Die Überlassung der Wohnung erfolgt nach Vertragsunterzeichnung.",
+    "definition": "The transfer of the apartment takes place after contract signing.",
+    "word_frequency": 26095
+  },
+  {
+    "word": "Dies ist seine letzte Ruhestätte.",
+    "definition": "This is his final resting place.",
+    "word_frequency": 25550
+  },
+  {
+    "word": "Diese Pflanze gehört zu einer seltenen Gattung.",
+    "definition": "This plant belongs to a rare genus.",
+    "word_frequency": 4035
+  },
+  {
+    "word": "Diese Praktik ist in vielen Kulturen verbreitet.",
+    "definition": "This practice is common in many cultures.",
+    "word_frequency": 7694
+  },
+  {
+    "word": "Diese Rechtsvorschrift ist seit letztem Jahr in Kraft.",
+    "definition": "This legal regulation has been in force since last year.",
+    "word_frequency": 23505
+  },
+  {
+    "word": "Diese Species ist vom Aussterben bedroht.",
+    "definition": "This species is threatened with extinction.",
+    "word_frequency": 14256
+  },
+  {
+    "word": "Dunkle Materie ist schwer zu erforschen.",
+    "definition": "Dark matter is difficult to research.",
+    "word_frequency": 5021
+  },
+  {
+    "word": "Ein Update der Firmware ist erforderlich.",
+    "definition": "A firmware update is required.",
+    "word_frequency": 20573
+  },
+  {
+    "word": "Eine Erektion ist ein natürlicher physiologischer Vorgang.",
+    "definition": "An erection is a natural physiological process.",
+    "word_frequency": 19938
+  },
+  {
+    "word": "Eine Fehlgeburt ist ein tragisches Ereignis.",
+    "definition": "A miscarriage is a tragic event.",
+    "word_frequency": 29251
+  },
+  {
+    "word": "Eine Fregatte ist ein Kriegsschiff.",
+    "definition": "A frigate is a warship.",
+    "word_frequency": 26214
+  },
+  {
+    "word": "Eine Geschlechtskrankheit erfordert ärztliche Behandlung.",
+    "definition": "A sexually transmitted disease requires medical treatment.",
+    "word_frequency": 24165
+  },
+  {
+    "word": "Eine Gliedmasse ist ein Körperteil, das sich vom Rumpf erstreckt.",
+    "definition": "A limb is a body part that extends from the torso.",
+    "word_frequency": 16395
+  },
+  {
+    "word": "Eine große Armada segelte über das Meer.",
+    "definition": "A large armada sailed across the sea.",
+    "word_frequency": 29165
+  },
+  {
+    "word": "Eine Hämorrhoide kann sehr schmerzhaft sein.",
+    "definition": "A hemorrhoid can be very painful.",
+    "word_frequency": 29328
+  },
+  {
+    "word": "Eine klare Abgrenzung der Zuständigkeiten ist wichtig.",
+    "definition": "A clear demarcation of responsibilities is important.",
+    "word_frequency": 5751
+  },
+  {
+    "word": "Eine kleine Störung kann eine Kettenreaktion auslösen.",
+    "definition": "A small disturbance can trigger a chain reaction.",
+    "word_frequency": 27081
+  },
+  {
+    "word": "Eine Körperschaft des öffentlichen Rechts hat besondere Befugnisse.",
+    "definition": "A public corporation has special powers.",
+    "word_frequency": 16684
+  },
+  {
+    "word": "Eine Menschenrechtsverletzung ist inakzeptabel.",
+    "definition": "A human rights violation is unacceptable.",
+    "word_frequency": 15139
+  },
+  {
+    "word": "Eine Nervenzelle ist die Grundeinheit des Nervensystems.",
+    "definition": "A nerve cell is the basic unit of the nervous system.",
+    "word_frequency": 21331
+  },
+  {
+    "word": "Eine Nova ist ein plötzlicher Helligkeitsausbruch eines Sterns.",
+    "definition": "A nova is a sudden outburst of brightness of a star.",
+    "word_frequency": 8424
+  },
+  {
+    "word": "Eine Patientenverfügung regelt medizinische Entscheidungen im Voraus.",
+    "definition": "A living will regulates medical decisions in advance.",
+    "word_frequency": 24301
+  },
+  {
+    "word": "Eine Persönlichkeitsstörung kann das tägliche Leben stark beeinträchtigen.",
+    "definition": "A personality disorder can severely impair daily life.",
+    "word_frequency": 27578
+  },
+  {
+    "word": "Eine positive Grundhaltung ist entscheidend für den Erfolg.",
+    "definition": "A positive basic attitude is crucial for success.",
+    "word_frequency": 19033
+  },
+  {
+    "word": "Eine Psychose kann verschiedene Ursachen haben.",
+    "definition": "A psychosis can have various causes.",
+    "word_frequency": 18799
+  },
+  {
+    "word": "Eine Retrospektive der Kunstwerke wurde gezeigt.",
+    "definition": "A retrospective of the artworks was shown.",
+    "word_frequency": 18809
+  },
+  {
+    "word": "Eine Samtgemeinde ist ein Gemeindeverband in Niedersachsen.",
+    "definition": "A collective municipality is an association of municipalities in Lower Saxony.",
+    "word_frequency": 17912
+  },
+  {
+    "word": "Eine tiefe Melancholie überkam ihn.",
+    "definition": "A deep melancholy overcame him.",
+    "word_frequency": 14205
+  },
+  {
+    "word": "Eine tiefe Venenthrombose kann gefährlich sein.",
+    "definition": "A deep vein thrombosis can be dangerous.",
+    "word_frequency": 29538
+  },
+  {
+    "word": "Eine wichtige Maxime in seinem Leben war Ehrlichkeit.",
+    "definition": "An important maxim in his life was honesty.",
+    "word_frequency": 13303
+  },
+  {
+    "word": "Eine Übergangsregierung wurde gebildet, um die Krise zu bewältigen.",
+    "definition": "An interim government was formed to manage the crisis.",
+    "word_frequency": 29142
+  },
+  {
+    "word": "Epilepsie ist eine neurologische Erkrankung.",
+    "definition": "Epilepsy is a neurological disease.",
+    "word_frequency": 18996
+  },
+  {
+    "word": "Er abonniert eine wissenschaftliche Monatsschrift.",
+    "definition": "He subscribes to a scientific monthly magazine.",
+    "word_frequency": 29402
+  },
+  {
+    "word": "Er arbeitet in der Abteilung für Unfallchirurgie.",
+    "definition": "He works in the department of trauma surgery.",
+    "word_frequency": 29071
+  },
+  {
+    "word": "Er arbeitet in der Vermögensverwaltung einer großen Bank.",
+    "definition": "He works in asset management for a large bank.",
+    "word_frequency": 25206
+  },
+  {
+    "word": "Er arbeitet in einer großen Unternehmensberatung.",
+    "definition": "He works at a large management consulting firm.",
+    "word_frequency": 17965
+  },
+  {
+    "word": "Er bat um Barmherzigkeit.",
+    "definition": "He asked for mercy.",
+    "word_frequency": 12529
+  },
+  {
+    "word": "Er beantragte eine Freistellung von der Arbeit.",
+    "definition": "He applied for an exemption from work.",
+    "word_frequency": 24957
+  },
+  {
+    "word": "Er begegnete der Idee mit Skepsis.",
+    "definition": "He met the idea with skepticism.",
+    "word_frequency": 8729
+  },
+  {
+    "word": "Er begegnete der Situation mit großer Gelassenheit.",
+    "definition": "He faced the situation with great serenity.",
+    "word_frequency": 10612
+  },
+  {
+    "word": "Er behauptete, er sei einer Gehirnwäsche unterzogen worden.",
+    "definition": "He claimed he had been subjected to brainwashing.",
+    "word_frequency": 18709
+  },
+  {
+    "word": "Er brauchte eine Legitimation, um das Gebäude zu betreten.",
+    "definition": "He needed authorization to enter the building.",
+    "word_frequency": 10819
+  },
+  {
+    "word": "Er definierte Männlichkeit auf seine eigene Weise.",
+    "definition": "He defined masculinity in his own way.",
+    "word_frequency": 13313
+  },
+  {
+    "word": "Er empfand die Behandlung als eine große Erniedrigung.",
+    "definition": "He felt the treatment was a great humiliation.",
+    "word_frequency": 25350
+  },
+  {
+    "word": "Er empfand eine tiefe Bedeutungslosigkeit in seinem Leben.",
+    "definition": "He felt a deep insignificance in his life.",
+    "word_frequency": 24864
+  },
+  {
+    "word": "Er empfand reine Wonne beim Anblick des Meeres.",
+    "definition": "He felt pure bliss at the sight of the sea.",
+    "word_frequency": 28656
+  },
+  {
+    "word": "Er entwickelte eine Obsession für alte Münzen.",
+    "definition": "He developed an obsession for old coins.",
+    "word_frequency": 25509
+  },
+  {
+    "word": "Er erhielt die Ermächtigung, den Vertrag zu unterzeichnen.",
+    "definition": "He received the authorization to sign the contract.",
+    "word_frequency": 22618
+  },
+  {
+    "word": "Er erhielt eine Aufwandsentschädigung für seine Reisekosten.",
+    "definition": "He received an expense allowance for his travel costs.",
+    "word_frequency": 28707
+  },
+  {
+    "word": "Er erhielt eine besondere Würdigung für seine Arbeit.",
+    "definition": "He received a special appreciation for his work.",
+    "word_frequency": 10021
+  },
+  {
+    "word": "Er erhielt eine Bewährungsstrafe von zwei Jahren.",
+    "definition": "He received a two-year suspended sentence.",
+    "word_frequency": 20225
+  },
+  {
+    "word": "Er erhielt eine hohe Abfindung nach seiner Kündigung.",
+    "definition": "He received high severance pay after his termination.",
+    "word_frequency": 15244
+  },
+  {
+    "word": "Er erhielt eine hohe Kompensation für den Schaden.",
+    "definition": "He received high compensation for the damage.",
+    "word_frequency": 18135
+  },
+  {
+    "word": "Er erhielt eine Morddrohung.",
+    "definition": "He received a death threat.",
+    "word_frequency": 16705
+  },
+  {
+    "word": "Er erhielt eine Vorladung vor Gericht.",
+    "definition": "He received a summons to court.",
+    "word_frequency": 29583
+  },
+  {
+    "word": "Er erkannte die Unzulänglichkeit seiner Vorbereitung.",
+    "definition": "He recognized the inadequacy of his preparation.",
+    "word_frequency": 23982
+  },
+  {
+    "word": "Er fand die Sexanzeige in der Zeitung.",
+    "definition": "He found the sex ad in the newspaper.",
+    "word_frequency": 28554
+  },
+  {
+    "word": "Er fand große Befriedigung in seiner Arbeit.",
+    "definition": "He found great satisfaction in his work.",
+    "word_frequency": 12089
+  },
+  {
+    "word": "Er fiel in Ungnade beim König.",
+    "definition": "He fell into disgrace with the king.",
+    "word_frequency": 21438
+  },
+  {
+    "word": "Er forderte absolute Unterordnung.",
+    "definition": "He demanded absolute subordination.",
+    "word_frequency": 23979
+  },
+  {
+    "word": "Er gab die Ordre, sofort abzureisen.",
+    "definition": "He gave the order to depart immediately.",
+    "word_frequency": 21341
+  },
+  {
+    "word": "Er gab ihr die Zusicherung, dass alles in Ordnung sei.",
+    "definition": "He gave her the assurance that everything was fine.",
+    "word_frequency": 27717
+  },
+  {
+    "word": "Er genießt diplomatische Immunität.",
+    "definition": "He enjoys diplomatic immunity.",
+    "word_frequency": 9118
+  },
+  {
+    "word": "Er genoss die Abgeschiedenheit der Berge.",
+    "definition": "He enjoyed the seclusion of the mountains.",
+    "word_frequency": 27325
+  },
+  {
+    "word": "Er genoss die volle Gefolgschaft seiner Anhänger.",
+    "definition": "He enjoyed the full allegiance of his followers.",
+    "word_frequency": 21937
+  },
+  {
+    "word": "Er geriet in große Bedrängnis.",
+    "definition": "He got into great distress.",
+    "word_frequency": 16853
+  },
+  {
+    "word": "Er glaubt an jede Verschwörungstheorie.",
+    "definition": "He believes every conspiracy theory.",
+    "word_frequency": 11613
+  },
+  {
+    "word": "Er handelte mit großer Besonnenheit.",
+    "definition": "He acted with great prudence.",
+    "word_frequency": 28236
+  },
+  {
+    "word": "Er hat die Befugnis, diese Entscheidung zu treffen.",
+    "definition": "He has the authority to make this decision.",
+    "word_frequency": 12304
+  },
+  {
+    "word": "Er hat eine gute Disposition für Sprachen.",
+    "definition": "He has a good disposition for languages.",
+    "word_frequency": 10588
+  },
+  {
+    "word": "Er hat eine hohe Hemmschwelle, um Hilfe zu bitten.",
+    "definition": "He has a high inhibition threshold for asking for help.",
+    "word_frequency": 27476
+  },
+  {
+    "word": "Er hat eine sehr negative Attitüde.",
+    "definition": "He has a very negative attitude.",
+    "word_frequency": 24847
+  },
+  {
+    "word": "Er hat in seiner Lebzeit viel erreicht.",
+    "definition": "He achieved a lot in his lifetime.",
+    "word_frequency": 9766
+  },
+  {
+    "word": "Er hat seine Approbation als Arzt erhalten.",
+    "definition": "He received his license to practice as a doctor.",
+    "word_frequency": 25685
+  },
+  {
+    "word": "Er hatte eine geheime Amour.",
+    "definition": "He had a secret love affair.",
+    "word_frequency": 17713
+  },
+  {
+    "word": "Er hatte eine sehr positive Aura.",
+    "definition": "He had a very positive aura.",
+    "word_frequency": 10228
+  },
+  {
+    "word": "Er hatte eine Unmenge an Arbeit zu erledigen.",
+    "definition": "He had a huge amount of work to do.",
+    "word_frequency": 14965
+  },
+  {
+    "word": "Er hatte Todesangst, als er den Bären sah.",
+    "definition": "He had mortal fear when he saw the bear.",
+    "word_frequency": 21772
+  },
+  {
+    "word": "Er hielt eine bewegende Laudatio auf den Preisträger.",
+    "definition": "He gave a moving eulogy for the award winner.",
+    "word_frequency": 19066
+  },
+  {
+    "word": "Er hinterfragte die Sinnhaftigkeit seiner Arbeit.",
+    "definition": "He questioned the meaningfulness of his work.",
+    "word_frequency": 29026
+  },
+  {
+    "word": "Er hob eine Sode aus dem Boden.",
+    "definition": "He lifted a sod from the ground.",
+    "word_frequency": 22089
+  },
+  {
+    "word": "Er hoffte auf eine Begnadigung.",
+    "definition": "He hoped for a pardon.",
+    "word_frequency": 23276
+  },
+  {
+    "word": "Er hoffte, dass seine Arbeit der Nachwelt nützen würde.",
+    "definition": "He hoped his work would benefit posterity.",
+    "word_frequency": 18465
+  },
+  {
+    "word": "Er interessierte sich für die alte Mystik des Ostens.",
+    "definition": "He was interested in the ancient mysticism of the East.",
+    "word_frequency": 19087
+  },
+  {
+    "word": "Er ist bekannt für seine Integrität.",
+    "definition": "He is known for his integrity.",
+    "word_frequency": 9120
+  },
+  {
+    "word": "Er ist ein Experte für Weltliteratur.",
+    "definition": "He is an expert in world literature.",
+    "word_frequency": 22879
+  },
+  {
+    "word": "Er ist Experte für Zeitgeschichte.",
+    "definition": "He is an expert in contemporary history.",
+    "word_frequency": 10903
+  },
+  {
+    "word": "Er ist Spezialist für Kardiologie.",
+    "definition": "He is a specialist in cardiology.",
+    "word_frequency": 24591
+  },
+  {
+    "word": "Er kippte den Sand auf eine große Schütte.",
+    "definition": "He dumped the sand onto a large heap.",
+    "word_frequency": 18516
+  },
+  {
+    "word": "Er lehnte jede Bevormundung ab.",
+    "definition": "He rejected any paternalism.",
+    "word_frequency": 22197
+  },
+  {
+    "word": "Er leidet unter Gicht in den Füßen.",
+    "definition": "He suffers from gout in his feet.",
+    "word_frequency": 26607
+  },
+  {
+    "word": "Er leistete keine Gegenwehr.",
+    "definition": "He offered no resistance.",
+    "word_frequency": 15604
+  },
+  {
+    "word": "Er litt unter Paranoia und misstraute jedem.",
+    "definition": "He suffered from paranoia and distrusted everyone.",
+    "word_frequency": 17020
+  },
+  {
+    "word": "Er litt unter starken Halluzinationen.",
+    "definition": "He suffered from severe hallucinations.",
+    "word_frequency": 23037
+  },
+  {
+    "word": "Er litt unter Wahnvorstellungen.",
+    "definition": "He suffered from delusions.",
+    "word_frequency": 23605
+  },
+  {
+    "word": "Er musste eine Bürgschaft für den Kredit leisten.",
+    "definition": "He had to provide a guarantee for the loan.",
+    "word_frequency": 19898
+  },
+  {
+    "word": "Er neigt dazu, sich in die Opferrolle zu begeben.",
+    "definition": "He tends to put himself in the victim role.",
+    "word_frequency": 25098
+  },
+  {
+    "word": "Er sah darin eine Perversion der Gerechtigkeit.",
+    "definition": "He saw it as a perversion of justice.",
+    "word_frequency": 29908
+  },
+  {
+    "word": "Er sah sich vielen Anfeindungen ausgesetzt.",
+    "definition": "He faced a lot of hostility.",
+    "word_frequency": 18014
+  },
+  {
+    "word": "Er schätzte ihre Sachlichkeit in der Diskussion.",
+    "definition": "He appreciated her objectivity in the discussion.",
+    "word_frequency": 15998
+  },
+  {
+    "word": "Er spielt die Ud, ein traditionelles Instrument aus dem Nahen Osten.",
+    "definition": "He plays the oud, a traditional instrument from the Middle East.",
+    "word_frequency": 21105
+  },
+  {
+    "word": "Er sprach in großer Wirre.",
+    "definition": "He spoke in great confusion.",
+    "word_frequency": 13827
+  },
+  {
+    "word": "Er spricht mit großer Autorität.",
+    "definition": "He speaks with great authority.",
+    "word_frequency": 6054
+  },
+  {
+    "word": "Er spuckte Gift und Galle.",
+    "definition": "He spat venom and gall.",
+    "word_frequency": 6646
+  },
+  {
+    "word": "Er steckt in einer echten Zwickmühle.",
+    "definition": "He's in a real dilemma.",
+    "word_frequency": 24030
+  },
+  {
+    "word": "Er studiert Kirchengeschichte an der Universität.",
+    "definition": "He studies church history at the university.",
+    "word_frequency": 15116
+  },
+  {
+    "word": "Er studiert menschliche Physiologie.",
+    "definition": "He studies human physiology.",
+    "word_frequency": 13984
+  },
+  {
+    "word": "Er studiert Neurologie an der Universität.",
+    "definition": "He studies neurology at the university.",
+    "word_frequency": 17010
+  },
+  {
+    "word": "Er studiert Rechtsgeschichte an der Universität.",
+    "definition": "He studies legal history at the university.",
+    "word_frequency": 21716
+  },
+  {
+    "word": "Er studiert Sozialgeschichte an der Universität.",
+    "definition": "He studies social history at the university.",
+    "word_frequency": 22093
+  },
+  {
+    "word": "Er studiert Volkskunde an der Universität.",
+    "definition": "He studies folklore at the university.",
+    "word_frequency": 17103
+  },
+  {
+    "word": "Er studierte Mineralogie an der Universität.",
+    "definition": "He studied mineralogy at the university.",
+    "word_frequency": 24271
+  },
+  {
+    "word": "Er suchte Absolution für seine Sünden.",
+    "definition": "He sought absolution for his sins.",
+    "word_frequency": 29147
+  },
+  {
+    "word": "Er suchte die wahre Glückseligkeit im einfachen Leben.",
+    "definition": "He sought true bliss in a simple life.",
+    "word_frequency": 23027
+  },
+  {
+    "word": "Er suchte nach Erlösung von seinen Sorgen.",
+    "definition": "He sought deliverance from his worries.",
+    "word_frequency": 9385
+  },
+  {
+    "word": "Er suchte Sühne für seine Taten.",
+    "definition": "He sought atonement for his actions.",
+    "word_frequency": 27640
+  },
+  {
+    "word": "Er verbrachte mehrere Jahre in Kriegsgefangenschaft.",
+    "definition": "He spent several years in captivity as a prisoner of war.",
+    "word_frequency": 28887
+  },
+  {
+    "word": "Er verstand die feine Nuance des Arguments.",
+    "definition": "He understood the subtle nuance of the argument.",
+    "word_frequency": 15964
+  },
+  {
+    "word": "Er verstand die Situation in ihrer Gänze.",
+    "definition": "He understood the situation in its entirety.",
+    "word_frequency": 14149
+  },
+  {
+    "word": "Er versuchte, ihre Gunst zu gewinnen.",
+    "definition": "He tried to win her favor.",
+    "word_frequency": 5978
+  },
+  {
+    "word": "Er war in tiefer Versenkung.",
+    "definition": "He was in deep contemplation.",
+    "word_frequency": 16807
+  },
+  {
+    "word": "Er war voller Fury.",
+    "definition": "He was full of fury.",
+    "word_frequency": 20919
+  },
+  {
+    "word": "Er wurde der Blasphemie beschuldigt.",
+    "definition": "He was accused of blasphemy.",
+    "word_frequency": 26140
+  },
+  {
+    "word": "Er wurde in die Justizvollzugsanstalt gebracht.",
+    "definition": "He was brought to the correctional facility.",
+    "word_frequency": 24587
+  },
+  {
+    "word": "Er wurde wegen Körperverletzung angeklagt.",
+    "definition": "He was charged with bodily harm.",
+    "word_frequency": 5479
+  },
+  {
+    "word": "Er wurde wegen Trunkenheit am Steuer verhaftet.",
+    "definition": "He was arrested for drunk driving.",
+    "word_frequency": 19495
+  },
+  {
+    "word": "Er wurde wegen Unterschlagung angeklagt.",
+    "definition": "He was accused of embezzlement.",
+    "word_frequency": 28612
+  },
+  {
+    "word": "Er wurde zu einer Freiheitsstrafe verurteilt.",
+    "definition": "He was sentenced to a prison sentence.",
+    "word_frequency": 8237
+  },
+  {
+    "word": "Er wurde zu einer Strafe auf Bewährung verurteilt.",
+    "definition": "He was sentenced to a suspended sentence (probation).",
+    "word_frequency": 5759
+  },
+  {
+    "word": "Er zeigte große Selbstbeherrschung in der schwierigen Situation.",
+    "definition": "He showed great self-control in the difficult situation.",
+    "word_frequency": 29497
+  },
+  {
+    "word": "Er zeigte seine wahre Couleur in der Debatte.",
+    "definition": "He showed his true colors in the debate.",
+    "word_frequency": 22955
+  },
+  {
+    "word": "Er zog das Schwert aus der Scheide.",
+    "definition": "He drew the sword from the scabbard.",
+    "word_frequency": 16242
+  },
+  {
+    "word": "Er zog sich von der Aussenwelt zurück.",
+    "definition": "He withdrew from the outside world.",
+    "word_frequency": 10917
+  },
+  {
+    "word": "Es erfordert Zivilcourage, sich gegen Ungerechtigkeit zu stellen.",
+    "definition": "It requires civil courage to stand up against injustice.",
+    "word_frequency": 15783
+  },
+  {
+    "word": "Es gab drei Enthaltungen bei der Abstimmung.",
+    "definition": "There were three abstentions in the vote.",
+    "word_frequency": 24935
+  },
+  {
+    "word": "Es gab eine Abkehr von alten Traditionen.",
+    "definition": "There was a turning away from old traditions.",
+    "word_frequency": 11637
+  },
+  {
+    "word": "Es gab eine Dissonanz zwischen ihren Aussagen.",
+    "definition": "There was a dissonance between their statements.",
+    "word_frequency": 27814
+  },
+  {
+    "word": "Es gab eine geringfügige Abweichung von den ursprünglichen Plänen.",
+    "definition": "There was a slight deviation from the original plans.",
+    "word_frequency": 8191
+  },
+  {
+    "word": "Es gab eine hitzige Auseinandersetzung über die neue Politik.",
+    "definition": "There was a heated dispute about the new policy.",
+    "word_frequency": 2612
+  },
+  {
+    "word": "Es gab eine starke Gegenbewegung gegen die Reform.",
+    "definition": "There was a strong counter-movement against the reform.",
+    "word_frequency": 27016
+  },
+  {
+    "word": "Es gab eine tiefe Spaltung in der Partei.",
+    "definition": "There was a deep division in the party.",
+    "word_frequency": 6235
+  },
+  {
+    "word": "Es gab eine Verschleierung der Tatsachen.",
+    "definition": "There was a concealment of the facts.",
+    "word_frequency": 22486
+  },
+  {
+    "word": "Es gab eine Volksabstimmung über das neue Gesetz.",
+    "definition": "There was a referendum on the new law.",
+    "word_frequency": 10893
+  },
+  {
+    "word": "Es gab eine Welle der Hysterie nach den Nachrichten.",
+    "definition": "There was a wave of hysteria after the news.",
+    "word_frequency": 13045
+  },
+  {
+    "word": "Es gab einige Ungereimtheiten in seiner Aussage.",
+    "definition": "There were some inconsistencies in his statement.",
+    "word_frequency": 22477
+  },
+  {
+    "word": "Es gab keine Rechtfertigung für sein Verhalten.",
+    "definition": "There was no justification for his behavior.",
+    "word_frequency": 7582
+  },
+  {
+    "word": "Es gab keine Veranlassung zur Sorge.",
+    "definition": "There was no reason for concern.",
+    "word_frequency": 15217
+  },
+  {
+    "word": "Es gab Proteste gegen Polizeigewalt.",
+    "definition": "There were protests against police brutality.",
+    "word_frequency": 12659
+  },
+  {
+    "word": "Es gab starke Schwankungen im Preis.",
+    "definition": "There were strong fluctuations in the price.",
+    "word_frequency": 9156
+  },
+  {
+    "word": "Es gab Vorwürfe der Ungleichbehandlung am Arbeitsplatz.",
+    "definition": "There were accusations of unequal treatment at the workplace.",
+    "word_frequency": 26818
+  },
+  {
+    "word": "Es gab Vorwürfe der Vertuschung von Beweisen.",
+    "definition": "There were accusations of evidence cover-up.",
+    "word_frequency": 27691
+  },
+  {
+    "word": "Es gibt eine direkte Relation zwischen Ursache und Wirkung.",
+    "definition": "There is a direct relation between cause and effect.",
+    "word_frequency": 7699
+  },
+  {
+    "word": "Es gibt eine große Varietät an Pflanzen in diesem Garten.",
+    "definition": "There is a great variety of plants in this garden.",
+    "word_frequency": 20779
+  },
+  {
+    "word": "Es gibt eine gute Synergie zwischen den Teams.",
+    "definition": "There is good synergy between the teams.",
+    "word_frequency": 27251
+  },
+  {
+    "word": "Es gibt eine starke Korrelation zwischen den beiden Variablen.",
+    "definition": "There is a strong correlation between the two variables.",
+    "word_frequency": 12828
+  },
+  {
+    "word": "Es gibt feine Abstufungen in der Farbe.",
+    "definition": "There are subtle gradations in the color.",
+    "word_frequency": 25667
+  },
+  {
+    "word": "Es gibt keine ausreichende Evidence für diese Behauptung.",
+    "definition": "There is no sufficient evidence for this claim.",
+    "word_frequency": 20569
+  },
+  {
+    "word": "Es gibt keine Evidenz für diese Behauptung.",
+    "definition": "There is no evidence for this claim.",
+    "word_frequency": 17210
+  },
+  {
+    "word": "Es gibt verschiedene Lesarten dieses Gedichts.",
+    "definition": "There are different interpretations of this poem.",
+    "word_frequency": 19692
+  },
+  {
+    "word": "Es ist eine alte Gepflogenheit in dieser Region.",
+    "definition": "It is an old custom in this region.",
+    "word_frequency": 20286
+  },
+  {
+    "word": "Es kam zu einer Entfremdung zwischen den Geschwistern.",
+    "definition": "There was an estrangement between the siblings.",
+    "word_frequency": 17786
+  },
+  {
+    "word": "Es kam zu gewalttätigen Ausschreitungen.",
+    "definition": "There were violent riots.",
+    "word_frequency": 8489
+  },
+  {
+    "word": "Es kostete ihn große Überwindung, die Rede zu halten.",
+    "definition": "It took great effort for him to give the speech.",
+    "word_frequency": 10031
+  },
+  {
+    "word": "Es war eine große Genugtuung für ihn.",
+    "definition": "It was a great satisfaction for him.",
+    "word_frequency": 14365
+  },
+  {
+    "word": "Eure Majestät, der König wartet.",
+    "definition": "Your Majesty, the king is waiting.",
+    "word_frequency": 5809
+  },
+  {
+    "word": "Freiheit, Gleichheit, Brüderlichkeit sind die Ideale der Revolution.",
+    "definition": "Liberty, equality, fraternity are the ideals of the revolution.",
+    "word_frequency": 26532
+  },
+  {
+    "word": "Fremdenfeindlichkeit ist ein ernstes Problem in der Gesellschaft.",
+    "definition": "Xenophobia is a serious problem in society.",
+    "word_frequency": 16634
+  },
+  {
+    "word": "Früher wurden psychisch Kranke in Irrenanstalten untergebracht.",
+    "definition": "In the past, mentally ill people were housed in asylums.",
+    "word_frequency": 28393
+  },
+  {
+    "word": "Für dieses Verbrechen droht die Höchststrafe.",
+    "definition": "The maximum penalty threatens for this crime.",
+    "word_frequency": 28855
+  },
+  {
+    "word": "Geisteskrankheit ist ein ernstes Thema.",
+    "definition": "Mental illness is a serious topic.",
+    "word_frequency": 28328
+  },
+  {
+    "word": "Gute Allgemeinbildung ist wichtig für das Leben.",
+    "definition": "Good general knowledge is important for life.",
+    "word_frequency": 23646
+  },
+  {
+    "word": "Gute Governance ist entscheidend für den Erfolg.",
+    "definition": "Good governance is crucial for success.",
+    "word_frequency": 15363
+  },
+  {
+    "word": "Hepatitis ist eine Entzündung der Leber.",
+    "definition": "Hepatitis is an inflammation of the liver.",
+    "word_frequency": 14611
+  },
+  {
+    "word": "Homophobie ist ein ernstes Problem.",
+    "definition": "Homophobia is a serious problem.",
+    "word_frequency": 12157
+  },
+  {
+    "word": "Homosexualität ist in vielen Ländern akzeptiert.",
+    "definition": "Homosexuality is accepted in many countries.",
+    "word_frequency": 5892
+  },
+  {
+    "word": "Humanität ist ein wichtiger Wert.",
+    "definition": "Humanity is an important value.",
+    "word_frequency": 20616
+  },
+  {
+    "word": "Ich habe große Hochachtung vor seiner Arbeit.",
+    "definition": "I have great respect for his work.",
+    "word_frequency": 20613
+  },
+  {
+    "word": "Ihr Humor zeichnet sich durch viel Selbstironie aus.",
+    "definition": "Her humor is characterized by a lot of self-irony.",
+    "word_frequency": 24352
+  },
+  {
+    "word": "Ihre Belastbarkeit wurde in der Krise auf die Probe gestellt.",
+    "definition": "Her resilience was tested during the crisis.",
+    "word_frequency": 23682
+  },
+  {
+    "word": "Ihre Frömmigkeit war tief und aufrichtig.",
+    "definition": "Her piety was deep and sincere.",
+    "word_frequency": 23007
+  },
+  {
+    "word": "Ihre Missgunst war offensichtlich.",
+    "definition": "Her ill will was obvious.",
+    "word_frequency": 27981
+  },
+  {
+    "word": "Ihre Professionalität beeindruckte alle.",
+    "definition": "Her professionalism impressed everyone.",
+    "word_frequency": 16218
+  },
+  {
+    "word": "Ihre Vita ist beeindruckend.",
+    "definition": "Her curriculum vitae is impressive.",
+    "word_frequency": 6039
+  },
+  {
+    "word": "Ihre Weltoffenheit beeindruckte alle.",
+    "definition": "Her cosmopolitanism impressed everyone.",
+    "word_frequency": 29596
+  },
+  {
+    "word": "Im Mittelalter waren Zünfte sehr mächtig.",
+    "definition": "In the Middle Ages, guilds were very powerful.",
+    "word_frequency": 14754
+  },
+  {
+    "word": "In Bezugnahme auf Ihr Schreiben vom letzten Monat...",
+    "definition": "With reference to your letter from last month...",
+    "word_frequency": 27376
+  },
+  {
+    "word": "In der Gerüchteküche brodelte es nach der Ankündigung.",
+    "definition": "The rumor mill was buzzing after the announcement.",
+    "word_frequency": 28827
+  },
+  {
+    "word": "In der Mythologie ist die Unterwelt das Reich der Toten.",
+    "definition": "In mythology, the underworld is the realm of the dead.",
+    "word_frequency": 11444
+  },
+  {
+    "word": "In Deutschland muss man oft Erbschaftssteuer zahlen.",
+    "definition": "In Germany, one often has to pay inheritance tax.",
+    "word_frequency": 24121
+  },
+  {
+    "word": "In diesem Land regiert eine Einheitspartei.",
+    "definition": "A single party governs in this country.",
+    "word_frequency": 28289
+  },
+  {
+    "word": "In dieser Hinsicht stimme ich dir zu.",
+    "definition": "In this respect, I agree with you.",
+    "word_frequency": 2438
+  },
+  {
+    "word": "In dieser Wildbahn leben viele seltene Tierarten.",
+    "definition": "Many rare animal species live in this wildlife habitat.",
+    "word_frequency": 22503
+  },
+  {
+    "word": "In Ermangelung weiterer Beweise wurde der Fall eingestellt.",
+    "definition": "In the absence of further evidence, the case was closed.",
+    "word_frequency": 25781
+  },
+  {
+    "word": "In früheren Zeiten war die Mitgift wichtig für eine Heirat.",
+    "definition": "In earlier times, the dowry was important for a marriage.",
+    "word_frequency": 22747
+  },
+  {
+    "word": "In vielen Städten herrscht Wohnungsnot.",
+    "definition": "There is a housing shortage in many cities.",
+    "word_frequency": 19835
+  },
+  {
+    "word": "Inklusion ist ein wichtiges Thema in der Gesellschaft.",
+    "definition": "Inclusion is an important topic in society.",
+    "word_frequency": 7279
+  },
+  {
+    "word": "Intoleranz gegenüber anderen Meinungen ist ein Problem.",
+    "definition": "Intolerance towards other opinions is a problem.",
+    "word_frequency": 13495
+  },
+  {
+    "word": "Investitionen in Staatsanleihen gelten als sicher.",
+    "definition": "Investments in government bonds are considered safe.",
+    "word_frequency": 15478
+  },
+  {
+    "word": "Inzucht kann zu genetischen Problemen führen.",
+    "definition": "Inbreeding can lead to genetic problems.",
+    "word_frequency": 29337
+  },
+  {
+    "word": "Jede Ethnie hat ihre eigene Kultur.",
+    "definition": "Every ethnic group has its own culture.",
+    "word_frequency": 14126
+  },
+  {
+    "word": "Jede Kultur hat ihre eigenen Wertvorstellungen.",
+    "definition": "Every culture has its own value concepts.",
+    "word_frequency": 21806
+  },
+  {
+    "word": "Jeder Bürger sollte Eigenverantwortung für sein Handeln übernehmen.",
+    "definition": "Every citizen should take personal responsibility for their actions.",
+    "word_frequency": 15321
+  },
+  {
+    "word": "Jeder hat eine Mitverantwortung für den Umweltschutz.",
+    "definition": "Everyone has a co-responsibility for environmental protection.",
+    "word_frequency": 25492
+  },
+  {
+    "word": "Kaliningrad ist eine russische Exklave.",
+    "definition": "Kaliningrad is a Russian exclave.",
+    "word_frequency": 21556
+  },
+  {
+    "word": "Künstliche Intelligence ist ein wichtiges Forschungsgebiet.",
+    "definition": "Artificial intelligence is an important field of research.",
+    "word_frequency": 15104
+  },
+  {
+    "word": "Lehrer haben eine wichtige Vorbildfunktion.",
+    "definition": "Teachers have an important role model function.",
+    "word_frequency": 24409
+  },
+  {
+    "word": "Leukämie ist eine schwere Krankheit.",
+    "definition": "Leukemia is a serious illness.",
+    "word_frequency": 14192
+  },
+  {
+    "word": "Man muss die Betrachtungsweise ändern.",
+    "definition": "One must change the perspective.",
+    "word_frequency": 21854
+  },
+  {
+    "word": "Man muss die Spreu vom Weizen trennen, um das Gute zu finden.",
+    "definition": "One must separate the chaff from the wheat to find the good.",
+    "word_frequency": 29971
+  },
+  {
+    "word": "Man sollte die Obrigkeit respektieren.",
+    "definition": "One should respect the authorities.",
+    "word_frequency": 17015
+  },
+  {
+    "word": "Manche Leute verwenden das Wort \"Bitches\" abfällig.",
+    "definition": "Some people use the word \"bitches\" disparagingly.",
+    "word_frequency": 28239
+  },
+  {
+    "word": "Medienkompetenz ist im digitalen Zeitalter unerlässlich.",
+    "definition": "Media literacy is essential in the digital age.",
+    "word_frequency": 19703
+  },
+  {
+    "word": "Mit Beharrlichkeit erreichte er sein Ziel.",
+    "definition": "With perseverance, he reached his goal.",
+    "word_frequency": 25717
+  },
+  {
+    "word": "Mit der Hochschulreife kann man an jeder Universität studieren.",
+    "definition": "With the university entrance qualification, one can study at any university.",
+    "word_frequency": 24994
+  },
+  {
+    "word": "Multiple Sklerose ist eine chronische Krankheit.",
+    "definition": "Multiple sclerosis is a chronic disease.",
+    "word_frequency": 20412
+  },
+  {
+    "word": "Nach dem Krieg wurde das Land von einer Besatzungsmacht regiert.",
+    "definition": "After the war, the country was governed by an occupying power.",
+    "word_frequency": 25721
+  },
+  {
+    "word": "Nach dem Krieg wurde Deutschland in Besatzungszonen aufgeteilt.",
+    "definition": "After the war, Germany was divided into occupation zones.",
+    "word_frequency": 29663
+  },
+  {
+    "word": "Nach dem Sport ist Regeneration wichtig.",
+    "definition": "After sports, regeneration is important.",
+    "word_frequency": 14235
+  },
+  {
+    "word": "Nach dem Unfall begann ihre Rehabilitation.",
+    "definition": "After the accident, her rehabilitation began.",
+    "word_frequency": 11027
+  },
+  {
+    "word": "Nach dem Unfall beging der Fahrer Fahrerflucht.",
+    "definition": "After the accident, the driver committed hit-and-run.",
+    "word_frequency": 22995
+  },
+  {
+    "word": "Nach dem Unfall fiel er in Bewusstlosigkeit.",
+    "definition": "After the accident, he fell into unconsciousness.",
+    "word_frequency": 29667
+  },
+  {
+    "word": "Nach dem Unfall hatte sie eine Fraktur am Arm.",
+    "definition": "After the accident, she had a fracture in her arm.",
+    "word_frequency": 19954
+  },
+  {
+    "word": "Nach dem Unfall litt er unter einer Lähmung.",
+    "definition": "After the accident, he suffered from paralysis.",
+    "word_frequency": 23089
+  },
+  {
+    "word": "Nach dem Vorfall erfolgte seine Suspendierung vom Dienst.",
+    "definition": "After the incident, his suspension from duty followed.",
+    "word_frequency": 26797
+  },
+  {
+    "word": "Nach langer Betrachtung traf er eine Entscheidung.",
+    "definition": "After long consideration, he made a decision.",
+    "word_frequency": 4795
+  },
+  {
+    "word": "Nach langer Suche gab es Fehlanzeige.",
+    "definition": "After a long search, there was nothing to report.",
+    "word_frequency": 19323
+  },
+  {
+    "word": "Nach sorgfältiger Abwägung traf er eine Entscheidung.",
+    "definition": "After careful consideration, he made a decision.",
+    "word_frequency": 14299
+  },
+  {
+    "word": "Nenn mich nicht so, du Drecksau!",
+    "definition": "Don't call me that, you scumbag!",
+    "word_frequency": 24912
+  },
+  {
+    "word": "Nichts kann die Lichtgeschwindigkeit übertreffen.",
+    "definition": "Nothing can exceed the speed of light.",
+    "word_frequency": 20650
+  },
+  {
+    "word": "Nächste Woche findet eine wichtige Fachtagung statt.",
+    "definition": "An important specialist conference will take place next week.",
+    "word_frequency": 24135
+  },
+  {
+    "word": "Nächstenliebe ist ein wichtiges Prinzip.",
+    "definition": "Charity is an important principle.",
+    "word_frequency": 11966
+  },
+  {
+    "word": "Nürnberg war eine bedeutende Reichsstadt im Heiligen Römischen Reich.",
+    "definition": "Nuremberg was an important imperial city in the Holy Roman Empire.",
+    "word_frequency": 26373
+  },
+  {
+    "word": "Persönlichkeitsentwicklung ist ein lebenslanger Prozess.",
+    "definition": "Personality development is a lifelong process.",
+    "word_frequency": 23487
+  },
+  {
+    "word": "Pilze vermehren sich durch Sporen.",
+    "definition": "Fungi reproduce through spores.",
+    "word_frequency": 14946
+  },
+  {
+    "word": "Prostitution ist in einigen Ländern legal.",
+    "definition": "Prostitution is legal in some countries.",
+    "word_frequency": 8432
+  },
+  {
+    "word": "Proteine bestehen aus Aminosäuren.",
+    "definition": "Proteins consist of amino acids.",
+    "word_frequency": 14766
+  },
+  {
+    "word": "Pädophilie ist eine schwere Straftat.",
+    "definition": "Pedophilia is a serious crime.",
+    "word_frequency": 18194
+  },
+  {
+    "word": "Regelmäßige Selbstreflexion hilft bei der persönlichen Entwicklung.",
+    "definition": "Regular self-reflection helps with personal development.",
+    "word_frequency": 24354
+  },
+  {
+    "word": "Religionsfreiheit ist ein Grundrecht.",
+    "definition": "Freedom of religion is a fundamental right.",
+    "word_frequency": 11995
+  },
+  {
+    "word": "Rost ist eine Form der Korrosion.",
+    "definition": "Rust is a form of corrosion.",
+    "word_frequency": 26295
+  },
+  {
+    "word": "Sachbeschädigung ist eine Straftat.",
+    "definition": "Property damage is a criminal offense.",
+    "word_frequency": 11999
+  },
+  {
+    "word": "Schizophrenie ist eine komplexe psychische Erkrankung.",
+    "definition": "Schizophrenia is a complex mental illness.",
+    "word_frequency": 15716
+  },
+  {
+    "word": "Schwefelsäure ist eine stark ätzende Flüssigkeit.",
+    "definition": "Sulfuric acid is a highly corrosive liquid.",
+    "word_frequency": 27221
+  },
+  {
+    "word": "Seine Abstammung ist irisch.",
+    "definition": "His ancestry is Irish.",
+    "word_frequency": 7910
+  },
+  {
+    "word": "Seine Argumentation basiert auf einer falschen Prämisse.",
+    "definition": "His argumentation is based on a false premise.",
+    "word_frequency": 16730
+  },
+  {
+    "word": "Seine Argumente grenzten an Lächerlichkeit.",
+    "definition": "His arguments bordered on ridiculousness.",
+    "word_frequency": 27115
+  },
+  {
+    "word": "Seine Aussage bedarf einer Relativierung.",
+    "definition": "His statement requires a relativization.",
+    "word_frequency": 29467
+  },
+  {
+    "word": "Seine Befangenheit war offensichtlich.",
+    "definition": "His bias was obvious.",
+    "word_frequency": 28233
+  },
+  {
+    "word": "Seine Befindlichkeit war nach der Nachricht sehr schlecht.",
+    "definition": "His state of mind was very bad after the news.",
+    "word_frequency": 25714
+  },
+  {
+    "word": "Seine Begierde nach Wissen war unstillbar.",
+    "definition": "His desire for knowledge was insatiable.",
+    "word_frequency": 16588
+  },
+  {
+    "word": "Seine Besessenheit mit Details war beeindruckend.",
+    "definition": "His obsession with details was impressive.",
+    "word_frequency": 29193
+  },
+  {
+    "word": "Seine Bestrebungen nach Frieden sind bewundernswert.",
+    "definition": "His endeavors for peace are admirable.",
+    "word_frequency": 9365
+  },
+  {
+    "word": "Seine Darlegung war sehr klar und präzise.",
+    "definition": "His explanation was very clear and precise.",
+    "word_frequency": 23710
+  },
+  {
+    "word": "Seine Distanzierung von der Partei überraschte viele.",
+    "definition": "His distancing from the party surprised many.",
+    "word_frequency": 18348
+  },
+  {
+    "word": "Seine Emotionalität war in diesem Moment sehr deutlich.",
+    "definition": "His emotionality was very clear at that moment.",
+    "word_frequency": 29717
+  },
+  {
+    "word": "Seine Erwartungshaltung war sehr hoch.",
+    "definition": "His expectation was very high.",
+    "word_frequency": 18365
+  },
+  {
+    "word": "Seine Exzellenz traf die Entscheidung.",
+    "definition": "His Excellency made the decision.",
+    "word_frequency": 13463
+  },
+  {
+    "word": "Seine Gedankenwelt ist sehr komplex.",
+    "definition": "His world of thought is very complex.",
+    "word_frequency": 23354
+  },
+  {
+    "word": "Seine Geilheit war offensichtlich.",
+    "definition": "His lust was obvious.",
+    "word_frequency": 25381
+  },
+  {
+    "word": "Seine Glaubwürdigkeit wurde in Frage gestellt.",
+    "definition": "His credibility was questioned.",
+    "word_frequency": 7018
+  },
+  {
+    "word": "Seine Habgier kannte keine Grenzen.",
+    "definition": "His greed knew no bounds.",
+    "word_frequency": 27890
+  },
+  {
+    "word": "Seine Handlungen grenzten an Idiotie.",
+    "definition": "His actions bordered on idiocy.",
+    "word_frequency": 28386
+  },
+  {
+    "word": "Seine Kreditwürdigkeit wurde geprüft.",
+    "definition": "His creditworthiness was checked.",
+    "word_frequency": 29356
+  },
+  {
+    "word": "Seine Kunst ist voller Gesellschaftskritik.",
+    "definition": "His art is full of social criticism.",
+    "word_frequency": 25386
+  },
+  {
+    "word": "Seine Leugnung der Tatsachen war offensichtlich.",
+    "definition": "His denial of the facts was obvious.",
+    "word_frequency": 28434
+  },
+  {
+    "word": "Seine Missachtung der Regeln führte zu Problemen.",
+    "definition": "His disregard for the rules led to problems.",
+    "word_frequency": 13076
+  },
+  {
+    "word": "Seine politische Gesinnung ist sehr klar.",
+    "definition": "His political conviction is very clear.",
+    "word_frequency": 7964
+  },
+  {
+    "word": "Seine Rationalität half ihm, eine gute Entscheidung zu treffen.",
+    "definition": "His rationality helped him make a good decision.",
+    "word_frequency": 18802
+  },
+  {
+    "word": "Seine Rede war voller Polemik gegen die Regierung.",
+    "definition": "His speech was full of polemic against the government.",
+    "word_frequency": 10146
+  },
+  {
+    "word": "Seine Religiosität war tief verwurzelt.",
+    "definition": "His religiosity was deeply rooted.",
+    "word_frequency": 24710
+  },
+  {
+    "word": "Seine Selbstdarstellung in den sozialen Medien ist sehr wichtig für ihn.",
+    "definition": "His self-presentation on social media is very important to him.",
+    "word_frequency": 16248
+  },
+  {
+    "word": "Seine Selbstüberschätzung führte zu Fehlern.",
+    "definition": "His overestimation of himself led to mistakes.",
+    "word_frequency": 29498
+  },
+  {
+    "word": "Seine Verblendung führte zu falschen Entscheidungen.",
+    "definition": "His delusion led to wrong decisions.",
+    "word_frequency": 26825
+  },
+  {
+    "word": "Seine Verfehlung hatte ernste Konsequenzen für seine Karriere.",
+    "definition": "His transgression had serious consequences for his career.",
+    "word_frequency": 19810
+  },
+  {
+    "word": "Seine Verweigerung der Zusammenarbeit war offensichtlich.",
+    "definition": "His refusal to cooperate was obvious.",
+    "word_frequency": 14739
+  },
+  {
+    "word": "Seine Weigerung überraschte uns alle.",
+    "definition": "His refusal surprised us all.",
+    "word_frequency": 16550
+  },
+  {
+    "word": "Seine Weltanschauung ist sehr optimistisch.",
+    "definition": "His worldview is very optimistic.",
+    "word_frequency": 9835
+  },
+  {
+    "word": "Seine Weltsicht ist sehr optimistisch.",
+    "definition": "His worldview is very optimistic.",
+    "word_frequency": 24812
+  },
+  {
+    "word": "Seine Worte waren voller Heuchelei.",
+    "definition": "His words were full of hypocrisy.",
+    "word_frequency": 12808
+  },
+  {
+    "word": "Seine Überlegenheit im Schachspiel war offensichtlich.",
+    "definition": "His superiority in chess was obvious.",
+    "word_frequency": 8188
+  },
+  {
+    "word": "Selbstbefriedigung ist ein natürlicher Teil der menschlichen Sexualität.",
+    "definition": "Masturbation is a natural part of human sexuality.",
+    "word_frequency": 29022
+  },
+  {
+    "word": "Selbstjustiz ist in einem Rechtsstaat nicht erlaubt.",
+    "definition": "Vigilantism is not allowed in a constitutional state.",
+    "word_frequency": 22819
+  },
+  {
+    "word": "Sie arbeitet in der Geburtshilfe.",
+    "definition": "She works in obstetrics.",
+    "word_frequency": 15076
+  },
+  {
+    "word": "Sie arbeitet in der Sozialforschung an der Universität.",
+    "definition": "She works in social research at the university.",
+    "word_frequency": 20734
+  },
+  {
+    "word": "Sie arbeitet mit großer Hingabe an ihrem Projekt.",
+    "definition": "She works with great dedication on her project.",
+    "word_frequency": 9570
+  },
+  {
+    "word": "Sie begann eine Psychotherapie, um ihre Ängste zu bewältigen.",
+    "definition": "She started psychotherapy to cope with her fears.",
+    "word_frequency": 7696
+  },
+  {
+    "word": "Sie bewegte sich mit großer Grazie.",
+    "definition": "She moved with great grace.",
+    "word_frequency": 21248
+  },
+  {
+    "word": "Sie empfand eine tiefe Sehnsucht nach ihrer Heimat.",
+    "definition": "She felt a deep longing for her homeland.",
+    "word_frequency": 4069
+  },
+  {
+    "word": "Sie empfand eine tiefe Wehmut.",
+    "definition": "She felt a deep melancholy.",
+    "word_frequency": 26853
+  },
+  {
+    "word": "Sie empfand tiefe Verehrung für ihren Mentor.",
+    "definition": "She felt deep adoration for her mentor.",
+    "word_frequency": 11069
+  },
+  {
+    "word": "Sie erhielt die Ehrennadel für ihre langjährige Arbeit.",
+    "definition": "She received the badge of honor for her many years of work.",
+    "word_frequency": 26565
+  },
+  {
+    "word": "Sie fordern die Abschaffung der Todesstrafe.",
+    "definition": "They demand the abolition of the death penalty.",
+    "word_frequency": 4463
+  },
+  {
+    "word": "Sie forscht in der Genealogie ihrer Familie.",
+    "definition": "She researches her family's genealogy.",
+    "word_frequency": 23357
+  },
+  {
+    "word": "Sie glaubt an die Wirksamkeit der Homöopathie.",
+    "definition": "She believes in the effectiveness of homeopathy.",
+    "word_frequency": 6905
+  },
+  {
+    "word": "Sie glaubte an die göttliche Vorsehung.",
+    "definition": "She believed in divine providence.",
+    "word_frequency": 27301
+  },
+  {
+    "word": "Sie gründeten eine Interessengemeinschaft zum Schutz der Umwelt.",
+    "definition": "They formed an interest group for environmental protection.",
+    "word_frequency": 20315
+  },
+  {
+    "word": "Sie hat eine Bestleistung im Marathon erzielt.",
+    "definition": "She achieved a peak performance in the marathon.",
+    "word_frequency": 21180
+  },
+  {
+    "word": "Sie hat eine Professur an der Universität angenommen.",
+    "definition": "She accepted a professorship at the university.",
+    "word_frequency": 12661
+  },
+  {
+    "word": "Sie hat große Expertise in diesem Bereich.",
+    "definition": "She has great expertise in this area.",
+    "word_frequency": 9540
+  },
+  {
+    "word": "Sie interessiert sich für Esoterik.",
+    "definition": "She is interested in esotericism.",
+    "word_frequency": 17474
+  },
+  {
+    "word": "Sie ist für die gesamte Pressearbeit des Unternehmens verantwortlich.",
+    "definition": "She is responsible for all press work of the company.",
+    "word_frequency": 29448
+  },
+  {
+    "word": "Sie ist für die Öffentlichkeitsarbeit des Unternehmens zuständig.",
+    "definition": "She is responsible for the company's public relations.",
+    "word_frequency": 8607
+  },
+  {
+    "word": "Sie kamen zu einer Übereinkunft über die Bedingungen.",
+    "definition": "They came to an agreement on the terms.",
+    "word_frequency": 19214
+  },
+  {
+    "word": "Sie kämpften gegen die Unterdrückung.",
+    "definition": "They fought against oppression.",
+    "word_frequency": 6128
+  },
+  {
+    "word": "Sie können die Werbungskosten absetzen.",
+    "definition": "You can deduct the income-related expenses.",
+    "word_frequency": 26856
+  },
+  {
+    "word": "Sie lebten in einer abgelegenen Einöde.",
+    "definition": "They lived in a remote wasteland.",
+    "word_frequency": 25769
+  },
+  {
+    "word": "Sie legt großen Wert auf ihre Eigenständigkeit.",
+    "definition": "She places great importance on her independence.",
+    "word_frequency": 14808
+  },
+  {
+    "word": "Sie macht eine Verhaltenstherapie.",
+    "definition": "She is doing behavioral therapy.",
+    "word_frequency": 28625
+  },
+  {
+    "word": "Sie nannte ihn eine Schlampe, weil er so unordentlich war.",
+    "definition": "She called him a slob because he was so messy.",
+    "word_frequency": 3493
+  },
+  {
+    "word": "Sie schlugen eine Bresche in die feindlichen Linien.",
+    "definition": "They broke a breach in the enemy lines.",
+    "word_frequency": 29199
+  },
+  {
+    "word": "Sie schreibt ihre Dissertation über mittelalterliche Geschichte.",
+    "definition": "She is writing her dissertation on medieval history.",
+    "word_frequency": 5168
+  },
+  {
+    "word": "Sie schrieb eine Monographie über die Geschichte der Kunst.",
+    "definition": "She wrote a monograph on the history of art.",
+    "word_frequency": 22749
+  },
+  {
+    "word": "Sie schrieb eine wissenschaftliche Abhandlung über das Thema.",
+    "definition": "She wrote a scientific treatise on the topic.",
+    "word_frequency": 12067
+  },
+  {
+    "word": "Sie schrieb ihre Memoiren über ihr Leben.",
+    "definition": "She wrote her memoirs about her life.",
+    "word_frequency": 13305
+  },
+  {
+    "word": "Sie schworen ewige Bruderschaft.",
+    "definition": "They swore eternal brotherhood.",
+    "word_frequency": 11673
+  },
+  {
+    "word": "Sie strahlte eine natürliche Weiblichkeit aus.",
+    "definition": "She exuded a natural femininity.",
+    "word_frequency": 17362
+  },
+  {
+    "word": "Sie studiert Anthropologie an der Universität.",
+    "definition": "She studies anthropology at the university.",
+    "word_frequency": 12970
+  },
+  {
+    "word": "Sie studiert Archäologie an der Universität.",
+    "definition": "She studies archaeology at the university.",
+    "word_frequency": 10391
+  },
+  {
+    "word": "Sie studiert Betriebswirtschaftslehre an der Universität.",
+    "definition": "She studies business administration at the university.",
+    "word_frequency": 16334
+  },
+  {
+    "word": "Sie studiert Biochemie an der Universität.",
+    "definition": "She studies biochemistry at the university.",
+    "word_frequency": 18947
+  },
+  {
+    "word": "Sie studiert deutsche Literaturgeschichte an der Universität.",
+    "definition": "She studies German literary history at the university.",
+    "word_frequency": 20032
+  },
+  {
+    "word": "Sie studiert deutsche Lyrik an der Universität.",
+    "definition": "She studies German poetry at the university.",
+    "word_frequency": 6915
+  },
+  {
+    "word": "Sie studiert Erziehungswissenschaft an der Universität.",
+    "definition": "She studies educational science at the university.",
+    "word_frequency": 27838
+  },
+  {
+    "word": "Sie studiert Ethnologie an der Universität.",
+    "definition": "She studies ethnology at the university.",
+    "word_frequency": 22991
+  },
+  {
+    "word": "Sie studiert Geisteswissenschaften an der Universität.",
+    "definition": "She studies humanities at the university.",
+    "word_frequency": 14829
+  },
+  {
+    "word": "Sie studiert Geschichtswissenschaft an der Universität.",
+    "definition": "She studies historical science at the university.",
+    "word_frequency": 17493
+  },
+  {
+    "word": "Sie studiert Gynäkologie an der Universität.",
+    "definition": "She studies gynecology at the university.",
+    "word_frequency": 21605
+  },
+  {
+    "word": "Sie studiert Literaturwissenschaft an der Universität.",
+    "definition": "She studies literary studies at the university.",
+    "word_frequency": 15407
+  },
+  {
+    "word": "Sie studiert Mikrobiologie an der Universität.",
+    "definition": "She studies microbiology at the university.",
+    "word_frequency": 29868
+  },
+  {
+    "word": "Sie studiert Musikwissenschaft an der Universität.",
+    "definition": "She studies musicology at the university.",
+    "word_frequency": 29407
+  },
+  {
+    "word": "Sie studiert Naturheilkunde an der Universität.",
+    "definition": "She studies naturopathy at the university.",
+    "word_frequency": 27143
+  },
+  {
+    "word": "Sie studiert Onkologie an der Universität.",
+    "definition": "She studies oncology at the university.",
+    "word_frequency": 22028
+  },
+  {
+    "word": "Sie studiert Pathologie an der Universität.",
+    "definition": "She studies pathology at the university.",
+    "word_frequency": 17023
+  },
+  {
+    "word": "Sie studiert Pharmazie an der Universität.",
+    "definition": "She studies pharmacy at the university.",
+    "word_frequency": 21698
+  },
+  {
+    "word": "Sie studiert Philologie an der Universität.",
+    "definition": "She studies philology at the university.",
+    "word_frequency": 12423
+  },
+  {
+    "word": "Sie studiert Politikwissenschaft an der Universität.",
+    "definition": "She studies political science at the university.",
+    "word_frequency": 16214
+  },
+  {
+    "word": "Sie studiert Publizistik an der Universität.",
+    "definition": "She studies journalism at the university.",
+    "word_frequency": 20073
+  },
+  {
+    "word": "Sie studiert Pädagogik an der Universität.",
+    "definition": "She studies pedagogy at the university.",
+    "word_frequency": 6572
+  },
+  {
+    "word": "Sie studiert Rechtswissenschaft an der Universität.",
+    "definition": "She studies legal science at the university.",
+    "word_frequency": 16495
+  },
+  {
+    "word": "Sie studiert Sozialpädagogik an der Universität.",
+    "definition": "She studies social pedagogy at the university.",
+    "word_frequency": 26782
+  },
+  {
+    "word": "Sie studiert Soziologie an der Universität.",
+    "definition": "She studies sociology at the university.",
+    "word_frequency": 5835
+  },
+  {
+    "word": "Sie studiert Sprachwissenschaft an der Universität.",
+    "definition": "She studies linguistics at the university.",
+    "word_frequency": 16516
+  },
+  {
+    "word": "Sie studiert Verfahrenstechnik an der Universität.",
+    "definition": "She studies process engineering at the university.",
+    "word_frequency": 29082
+  },
+  {
+    "word": "Sie studiert Volkswirtschaftslehre an der Universität.",
+    "definition": "She studies economics at the university.",
+    "word_frequency": 26064
+  },
+  {
+    "word": "Sie studiert Wirtschaftsgeschichte an der Universität.",
+    "definition": "She studies economic history at the university.",
+    "word_frequency": 24423
+  },
+  {
+    "word": "Sie studiert Wirtschaftsinformatik an der Universität.",
+    "definition": "She studies business informatics at the university.",
+    "word_frequency": 19529
+  },
+  {
+    "word": "Sie studiert Zoologie an der Universität.",
+    "definition": "She studies zoology at the university.",
+    "word_frequency": 20817
+  },
+  {
+    "word": "Sie suchte Lebenshilfe, um mit ihren Problemen umzugehen.",
+    "definition": "She sought life counseling to deal with her problems.",
+    "word_frequency": 17541
+  },
+  {
+    "word": "Sie tanzte in Ekstase.",
+    "definition": "She danced in ecstasy.",
+    "word_frequency": 23323
+  },
+  {
+    "word": "Sie unterzieht sich einer Chemotherapie.",
+    "definition": "She is undergoing chemotherapy.",
+    "word_frequency": 15835
+  },
+  {
+    "word": "Sie war die Verkörperung der Eleganz.",
+    "definition": "She was the embodiment of elegance.",
+    "word_frequency": 23993
+  },
+  {
+    "word": "Sie wurde unter Hypnose gesetzt.",
+    "definition": "She was put under hypnosis.",
+    "word_frequency": 12604
+  },
+  {
+    "word": "Sie zeigte große Entschlossenheit, ihr Ziel zu erreichen.",
+    "definition": "She showed great determination to reach her goal.",
+    "word_frequency": 12774
+  },
+  {
+    "word": "Sigmund Freud ist der Begründer der Psychoanalyse.",
+    "definition": "Sigmund Freud is the founder of psychoanalysis.",
+    "word_frequency": 13327
+  },
+  {
+    "word": "Soziale Ausgrenzung ist ein ernstes Problem.",
+    "definition": "Social exclusion is a serious problem.",
+    "word_frequency": 10733
+  },
+  {
+    "word": "Soziale Teilhabe ist wichtig für die Integration.",
+    "definition": "Social participation is important for integration.",
+    "word_frequency": 8577
+  },
+  {
+    "word": "Steuerhinterziehung ist in Deutschland eine Straftat.",
+    "definition": "Tax evasion is a criminal offense in Germany.",
+    "word_frequency": 11594
+  },
+  {
+    "word": "Suchmaschinenoptimierung ist entscheidend für Online-Sichtbarkeit.",
+    "definition": "Search engine optimization is crucial for online visibility.",
+    "word_frequency": 20746
+  },
+  {
+    "word": "Tierquälerei ist in vielen Ländern strafbar.",
+    "definition": "Animal cruelty is punishable in many countries.",
+    "word_frequency": 21770
+  },
+  {
+    "word": "Tuberkulose ist eine bakterielle Infektionskrankheit.",
+    "definition": "Tuberculosis is a bacterial infectious disease.",
+    "word_frequency": 13370
+  },
+  {
+    "word": "Unfallflucht ist eine Straftat.",
+    "definition": "Hit and run is a criminal offense.",
+    "word_frequency": 26043
+  },
+  {
+    "word": "Ungesättigte Fettsäuren sind wichtig für die Gesundheit.",
+    "definition": "Unsaturated fatty acids are important for health.",
+    "word_frequency": 14132
+  },
+  {
+    "word": "Unsere Galaxis heißt Milchstraße.",
+    "definition": "Our galaxy is called the Milky Way.",
+    "word_frequency": 21931
+  },
+  {
+    "word": "Untreue kann eine Beziehung zerstören.",
+    "definition": "Infidelity can destroy a relationship.",
+    "word_frequency": 14039
+  },
+  {
+    "word": "Vergewaltigung ist ein schweres Verbrechen.",
+    "definition": "Rape is a serious crime.",
+    "word_frequency": 4692
+  },
+  {
+    "word": "Vetternwirtschaft ist in vielen Ländern ein großes Problem.",
+    "definition": "Nepotism is a big problem in many countries.",
+    "word_frequency": 26060
+  },
+  {
+    "word": "Viele Familien leben unter der Armutsgrenze.",
+    "definition": "Many families live below the poverty line.",
+    "word_frequency": 25689
+  },
+  {
+    "word": "Viele Filme handeln von der Apokalypse.",
+    "definition": "Many films are about the apocalypse.",
+    "word_frequency": 10223
+  },
+  {
+    "word": "Viele Gläubige unternehmen eine Wallfahrt.",
+    "definition": "Many believers undertake a pilgrimage.",
+    "word_frequency": 17678
+  },
+  {
+    "word": "Viele kritisieren die Doppelmoral in der Politik.",
+    "definition": "Many criticize the double standard in politics.",
+    "word_frequency": 15051
+  },
+  {
+    "word": "Viele Kulturen träumen von der Unsterblichkeit.",
+    "definition": "Many cultures dream of immortality.",
+    "word_frequency": 16284
+  },
+  {
+    "word": "Viele Menschen leiden unter Hypertonie.",
+    "definition": "Many people suffer from hypertension.",
+    "word_frequency": 26631
+  },
+  {
+    "word": "Viele Menschen vertrauen auf die Schulmedizin.",
+    "definition": "Many people trust conventional medicine.",
+    "word_frequency": 24732
+  },
+  {
+    "word": "Viele Prophezeiungen sprechen von der Endzeit.",
+    "definition": "Many prophecies speak of the end time.",
+    "word_frequency": 25774
+  },
+  {
+    "word": "Viele Völker litten unter der Knechtschaft.",
+    "definition": "Many peoples suffered under servitude.",
+    "word_frequency": 24229
+  },
+  {
+    "word": "Viele Wähler sind von den Altparteien enttäuscht.",
+    "definition": "Many voters are disappointed with the established parties.",
+    "word_frequency": 23648
+  },
+  {
+    "word": "Volksverhetzung ist in Deutschland strafbar.",
+    "definition": "Incitement to hatred is punishable in Germany.",
+    "word_frequency": 11080
+  },
+  {
+    "word": "Vor der Operation erhielt der Patient eine Anästhesie.",
+    "definition": "Before the operation, the patient received anesthesia.",
+    "word_frequency": 19865
+  },
+  {
+    "word": "Wahre Weisheit beginnt mit Selbsterkenntnis.",
+    "definition": "True wisdom begins with self-knowledge.",
+    "word_frequency": 25998
+  },
+  {
+    "word": "Welche Implikationen hat diese Entscheidung?",
+    "definition": "What implications does this decision have?",
+    "word_frequency": 20619
+  },
+  {
+    "word": "Wir garantieren absolute Vertraulichkeit.",
+    "definition": "We guarantee absolute confidentiality.",
+    "word_frequency": 26059
+  },
+  {
+    "word": "Wir kämpfen für Gleichberechtigung.",
+    "definition": "We fight for equality.",
+    "word_frequency": 6896
+  },
+  {
+    "word": "Wir können keine Gewähr für die Richtigkeit übernehmen.",
+    "definition": "We cannot give any guarantee for the correctness.",
+    "word_frequency": 14373
+  },
+  {
+    "word": "Wir müssen die Kontinuität des Projekts sicherstellen.",
+    "definition": "We must ensure the continuity of the project.",
+    "word_frequency": 9423
+  },
+  {
+    "word": "Wir müssen eine Bestandsaufnahme der aktuellen Situation machen.",
+    "definition": "We need to make an assessment of the current situation.",
+    "word_frequency": 13430
+  },
+  {
+    "word": "Wir müssen eine Eskalation des Konflikts vermeiden.",
+    "definition": "We must avoid an escalation of the conflict.",
+    "word_frequency": 8234
+  },
+  {
+    "word": "Wir müssen uns an die neuen Gegebenheiten anpassen.",
+    "definition": "We have to adapt to the new circumstances.",
+    "word_frequency": 7014
+  },
+  {
+    "word": "Wir müssen unsere Verbindlichkeiten erfüllen.",
+    "definition": "We must fulfill our obligations.",
+    "word_frequency": 13149
+  },
+  {
+    "word": "Wir sprechen der Familie unsere aufrichtige Anteilnahme aus.",
+    "definition": "We express our sincere sympathy to the family.",
+    "word_frequency": 12729
+  },
+  {
+    "word": "Wir studieren die Frühgeschichte Europas.",
+    "definition": "We are studying the early history of Europe.",
+    "word_frequency": 25805
+  },
+  {
+    "word": "Zur besseren Veranschaulichung zeigte er ein Diagramm.",
+    "definition": "For better illustration, he showed a diagram.",
+    "word_frequency": 27677
+  },
+  {
+    "word": "Zwangsarbeit ist ein Verbrechen gegen die Menschlichkeit.",
+    "definition": "Forced labor is a crime against humanity.",
+    "word_frequency": 12714
+  },
+  {
+    "word": "Zwei hoch drei ist eine Potenz.",
+    "definition": "Two to the power of three is a power.",
+    "word_frequency": 13765
+  },
+  {
+    "word": "Zwischen den beiden Gruppen herrschte große Feindseligkeit.",
+    "definition": "There was great hostility between the two groups.",
+    "word_frequency": 25358
+  },
+  {
+    "word": "Zwischen den Familien gab es eine lange Fehde.",
+    "definition": "There was a long feud between the families.",
+    "word_frequency": 20273
+  },
+  {
+    "word": "Ärzte sind zur Verschwiegenheit verpflichtet.",
+    "definition": "Doctors are obliged to confidentiality.",
+    "word_frequency": 27288
+  },
+  {
+    "word": "Ärzte unterliegen der Schweigepflicht.",
+    "definition": "Doctors are subject to the duty of confidentiality.",
+    "word_frequency": 19458
+  }
+]

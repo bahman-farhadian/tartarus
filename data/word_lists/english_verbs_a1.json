@@ -1,0 +1,802 @@
+[
+  {
+    "word": "add",
+    "definition": [
+      "to join something to something else",
+      "Please add sugar to my coffee."
+    ],
+    "word_frequency": 575
+  },
+  {
+    "word": "arrive",
+    "definition": [
+      "arrive",
+      "What time will you arrive?"
+    ],
+    "word_frequency": 1328
+  },
+  {
+    "word": "ask",
+    "definition": [
+      "to put a question to someone",
+      "I need to ask you a question."
+    ],
+    "word_frequency": 371
+  },
+  {
+    "word": "be",
+    "definition": [
+      "to be",
+      "I want to be a doctor."
+    ],
+    "word_frequency": 7
+  },
+  {
+    "word": "become",
+    "definition": [
+      "grow into",
+      "He wants to become a doctor."
+    ],
+    "word_frequency": 314
+  },
+  {
+    "word": "begin",
+    "definition": [
+      "start",
+      "The movie begins at 7 PM."
+    ],
+    "word_frequency": 735
+  },
+  {
+    "word": "breathe",
+    "definition": [
+      "take air into and expel it from the lungs",
+      "It's important to breathe deeply when you exercise."
+    ],
+    "word_frequency": 3250
+  },
+  {
+    "word": "bring",
+    "definition": [
+      "carry, take",
+      "Please bring your book tomorrow."
+    ],
+    "word_frequency": 445
+  },
+  {
+    "word": "buy",
+    "definition": [
+      "obtain in exchange for payment",
+      "I need to buy some groceries."
+    ],
+    "word_frequency": 390
+  },
+  {
+    "word": "call",
+    "definition": [
+      "to telephone; to name",
+      "I will call you later."
+    ],
+    "word_frequency": 196
+  },
+  {
+    "word": "can",
+    "definition": [
+      "can",
+      "I can swim."
+    ],
+    "word_frequency": 35
+  },
+  {
+    "word": "carry",
+    "definition": [
+      "transport, hold",
+      "Can you help me carry these bags?"
+    ],
+    "word_frequency": 1099
+  },
+  {
+    "word": "come",
+    "definition": [
+      "move or travel towards or into a place",
+      "Please come here."
+    ],
+    "word_frequency": 135
+  },
+  {
+    "word": "cook",
+    "definition": [
+      "cook",
+      "I like to cook dinner every evening."
+    ],
+    "word_frequency": 1728
+  },
+  {
+    "word": "count",
+    "definition": [
+      "to determine the total number of a collection of items",
+      "Can you count to ten."
+    ],
+    "word_frequency": 1231
+  },
+  {
+    "word": "cry",
+    "definition": [
+      "shed tears",
+      "The baby started to cry."
+    ],
+    "word_frequency": 1910
+  },
+  {
+    "word": "cut",
+    "definition": [
+      "divide with a sharp tool",
+      "Be careful not to cut yourself."
+    ],
+    "word_frequency": 472
+  },
+  {
+    "word": "do",
+    "definition": [
+      "perform an action",
+      "What do you do for a living?"
+    ],
+    "word_frequency": 45
+  },
+  {
+    "word": "draw",
+    "definition": [
+      "to make a picture with a pencil or pen",
+      "Can you draw a picture of a house?"
+    ],
+    "word_frequency": 1286
+  },
+  {
+    "word": "drying",
+    "definition": [
+      "the process of becoming dry",
+      "The clothes are drying on the line."
+    ],
+    "word_frequency": 7313
+  },
+  {
+    "word": "eat",
+    "definition": [
+      "consume food",
+      "I want to eat pizza."
+    ],
+    "word_frequency": 624
+  },
+  {
+    "word": "enjoy",
+    "definition": [
+      "enjoy",
+      "I really enjoy reading books."
+    ],
+    "word_frequency": 695
+  },
+  {
+    "word": "enter",
+    "definition": [
+      "to come or go into",
+      "Please enter the room quietly."
+    ],
+    "word_frequency": 1289
+  },
+  {
+    "word": "feel",
+    "definition": [
+      "to experience an emotion or sensation",
+      "I feel happy today."
+    ],
+    "word_frequency": 169
+  },
+  {
+    "word": "fell",
+    "definition": [
+      "past tense of fall; to cut down (a tree)",
+      "He fell off his bike and scraped his knee."
+    ],
+    "word_frequency": 23979
+  },
+  {
+    "word": "find",
+    "definition": [
+      "discover or perceive after a search",
+      "I need to find my keys."
+    ],
+    "word_frequency": 142
+  },
+  {
+    "word": "finish",
+    "definition": [
+      "to finish",
+      "I need to finish my homework."
+    ],
+    "word_frequency": 990
+  },
+  {
+    "word": "forget",
+    "definition": [
+      "fail to remember",
+      "Don't forget to lock the door."
+    ],
+    "word_frequency": 756
+  },
+  {
+    "word": "get",
+    "definition": [
+      "obtain, receive",
+      "Can you get me a glass of water?"
+    ],
+    "word_frequency": 53
+  },
+  {
+    "word": "give",
+    "definition": [
+      "freely transfer the possession of (something) to (someone)",
+      "Can you give me that book?"
+    ],
+    "word_frequency": 155
+  },
+  {
+    "word": "go",
+    "definition": [
+      "move",
+      "Let's go to the cinema."
+    ],
+    "word_frequency": 87
+  },
+  {
+    "word": "got",
+    "definition": [
+      "received; obtained; became",
+      "I got a new phone yesterday."
+    ],
+    "word_frequency": 28727
+  },
+  {
+    "word": "happen",
+    "definition": [
+      "to occur",
+      "What happened to your car?"
+    ],
+    "word_frequency": 527
+  },
+  {
+    "word": "have",
+    "definition": [
+      "to have",
+      "I have a new car."
+    ],
+    "word_frequency": 16
+  },
+  {
+    "word": "hear",
+    "definition": [
+      "perceive sound",
+      "Can you hear me?"
+    ],
+    "word_frequency": 450
+  },
+  {
+    "word": "help",
+    "definition": [
+      "make it easier for (someone) to do something",
+      "Can you help me?"
+    ],
+    "word_frequency": 144
+  },
+  {
+    "word": "hit",
+    "definition": [
+      "to strike with a blow",
+      "He hit the ball very hard."
+    ],
+    "word_frequency": 347
+  },
+  {
+    "word": "hold",
+    "definition": [
+      "grasp, keep",
+      "Please hold my hand."
+    ],
+    "word_frequency": 475
+  },
+  {
+    "word": "hope",
+    "definition": [
+      "wish for",
+      "I hope you have a good day."
+    ],
+    "word_frequency": 286
+  },
+  {
+    "word": "jump",
+    "definition": [
+      "to push oneself off the ground",
+      "The cat likes to jump on the table."
+    ],
+    "word_frequency": 1618
+  },
+  {
+    "word": "know",
+    "definition": [
+      "have information or understanding",
+      "I know the answer."
+    ],
+    "word_frequency": 73
+  },
+  {
+    "word": "laugh",
+    "definition": [
+      "make sounds of amusement",
+      "She started to laugh at the joke."
+    ],
+    "word_frequency": 1703
+  },
+  {
+    "word": "learn",
+    "definition": [
+      "to gain knowledge or skill",
+      "I want to learn a new language."
+    ],
+    "word_frequency": 572
+  },
+  {
+    "word": "leave",
+    "definition": [
+      "go away from",
+      "I have to leave now."
+    ],
+    "word_frequency": 375
+  },
+  {
+    "word": "let",
+    "definition": [
+      "to allow",
+      "Let me help you."
+    ],
+    "word_frequency": 193
+  },
+  {
+    "word": "like",
+    "definition": [
+      "to like",
+      "I like ice cream."
+    ],
+    "word_frequency": 38
+  },
+  {
+    "word": "listen",
+    "definition": [
+      "to hear with attention",
+      "Please listen carefully to the instructions."
+    ],
+    "word_frequency": 761
+  },
+  {
+    "word": "live",
+    "definition": [
+      "reside; be alive",
+      "I live in a big city."
+    ],
+    "word_frequency": 222
+  },
+  {
+    "word": "look",
+    "definition": [
+      "direct one's gaze",
+      "Look at that beautiful bird!"
+    ],
+    "word_frequency": 128
+  },
+  {
+    "word": "lose",
+    "definition": [
+      "to no longer have something",
+      "Don't lose your passport."
+    ],
+    "word_frequency": 329
+  },
+  {
+    "word": "love",
+    "definition": [
+      "feel deep affection for",
+      "I love to read books."
+    ],
+    "word_frequency": 124
+  },
+  {
+    "word": "lyin",
+    "definition": [
+      "telling untruths; resting in a horizontal position",
+      "He was caught lying about his age."
+    ],
+    "word_frequency": 27489
+  },
+  {
+    "word": "make",
+    "definition": [
+      "create, produce",
+      "Can you make a cake."
+    ],
+    "word_frequency": 76
+  },
+  {
+    "word": "meet",
+    "definition": [
+      "encounter, get to know",
+      "Nice to meet you."
+    ],
+    "word_frequency": 452
+  },
+  {
+    "word": "move",
+    "definition": [
+      "change position",
+      "Please move your car."
+    ],
+    "word_frequency": 366
+  },
+  {
+    "word": "need",
+    "definition": [
+      "require",
+      "I need help."
+    ],
+    "word_frequency": 99
+  },
+  {
+    "word": "pay",
+    "definition": [
+      "to give money for something",
+      "I need to pay for the groceries."
+    ],
+    "word_frequency": 321
+  },
+  {
+    "word": "play",
+    "definition": [
+      "to engage in an activity for enjoyment",
+      "Let's play a game."
+    ],
+    "word_frequency": 189
+  },
+  {
+    "word": "pull",
+    "definition": [
+      "to exert force on (someone or something) so as to cause movement toward oneself or the thing exerting the force.",
+      "Pull the door open."
+    ],
+    "word_frequency": 1273
+  },
+  {
+    "word": "push",
+    "definition": [
+      "to exert force on (someone or something) in order to move them away from oneself.",
+      "Push the button to start."
+    ],
+    "word_frequency": 1274
+  },
+  {
+    "word": "put",
+    "definition": [
+      "to place",
+      "Please put the book on the table."
+    ],
+    "word_frequency": 177
+  },
+  {
+    "word": "read",
+    "definition": [
+      "interpret written words",
+      "I love to read books."
+    ],
+    "word_frequency": 224
+  },
+  {
+    "word": "remember",
+    "definition": [
+      "to recall from memory",
+      "I can't remember his name."
+    ],
+    "word_frequency": 344
+  },
+  {
+    "word": "rollin",
+    "definition": [
+      "to move by turning over and over",
+      "The ball started to roll down the hill."
+    ],
+    "word_frequency": 17420
+  },
+  {
+    "word": "run",
+    "definition": [
+      "run",
+      "I like to run in the park."
+    ],
+    "word_frequency": 256
+  },
+  {
+    "word": "say",
+    "definition": [
+      "speak",
+      "What did you say?"
+    ],
+    "word_frequency": 89
+  },
+  {
+    "word": "see",
+    "definition": [
+      "perceive with the eyes",
+      "Can you see the mountain?"
+    ],
+    "word_frequency": 74
+  },
+  {
+    "word": "send",
+    "definition": [
+      "to cause to go or be taken to a destination",
+      "I will send you an email."
+    ],
+    "word_frequency": 592
+  },
+  {
+    "word": "show",
+    "definition": [
+      "to display; to present",
+      "Can you show me your new phone?"
+    ],
+    "word_frequency": 167
+  },
+  {
+    "word": "sing",
+    "definition": [
+      "to make musical sounds with the voice",
+      "She loves to sing in the shower."
+    ],
+    "word_frequency": 1929
+  },
+  {
+    "word": "sit",
+    "definition": [
+      "take a seat",
+      "Please sit down."
+    ],
+    "word_frequency": 1094
+  },
+  {
+    "word": "sleep",
+    "definition": [
+      "to rest in a state of unconsciousness",
+      "I need to sleep for at least eight hours."
+    ],
+    "word_frequency": 782
+  },
+  {
+    "word": "smell",
+    "definition": [
+      "to perceive odor",
+      "I can smell the fresh bread."
+    ],
+    "word_frequency": 2320
+  },
+  {
+    "word": "speak",
+    "definition": [
+      "to say words; to talk",
+      "Can you speak louder?"
+    ],
+    "word_frequency": 820
+  },
+  {
+    "word": "spend",
+    "definition": [
+      "to use money or time",
+      "I like to spend time with my family."
+    ],
+    "word_frequency": 840
+  },
+  {
+    "word": "stand",
+    "definition": [
+      "be upright, tolerate",
+      "Please stand up."
+    ],
+    "word_frequency": 616
+  },
+  {
+    "word": "start",
+    "definition": [
+      "begin",
+      "Let's start the meeting."
+    ],
+    "word_frequency": 208
+  },
+  {
+    "word": "stay",
+    "definition": [
+      "remain in a place",
+      "I want to stay home tonight."
+    ],
+    "word_frequency": 388
+  },
+  {
+    "word": "stop",
+    "definition": [
+      "cease movement or activity",
+      "Please stop talking."
+    ],
+    "word_frequency": 236
+  },
+  {
+    "word": "swim",
+    "definition": [
+      "to move through water using your body",
+      "I love to swim in the ocean during summer."
+    ],
+    "word_frequency": 2567
+  },
+  {
+    "word": "take",
+    "definition": [
+      "grasp",
+      "Please take a seat."
+    ],
+    "word_frequency": 110
+  },
+  {
+    "word": "talk",
+    "definition": [
+      "speak",
+      "Let's talk about it."
+    ],
+    "word_frequency": 303
+  },
+  {
+    "word": "teach",
+    "definition": [
+      "to impart knowledge",
+      "She wants to teach English abroad."
+    ],
+    "word_frequency": 1541
+  },
+  {
+    "word": "tell",
+    "definition": [
+      "communicate information",
+      "Please tell me your name."
+    ],
+    "word_frequency": 225
+  },
+  {
+    "word": "thank",
+    "definition": [
+      "thank",
+      "I want to thank you for your help."
+    ],
+    "word_frequency": 263
+  },
+  {
+    "word": "think",
+    "definition": [
+      "form or have in the mind",
+      "I think it's a good idea."
+    ],
+    "word_frequency": 78
+  },
+  {
+    "word": "try",
+    "definition": [
+      "try",
+      "I will try my best."
+    ],
+    "word_frequency": 248
+  },
+  {
+    "word": "turn",
+    "definition": [
+      "move in a circular direction",
+      "Turn left at the next corner."
+    ],
+    "word_frequency": 398
+  },
+  {
+    "word": "understand",
+    "definition": [
+      "to perceive the meaning of",
+      "Do you understand the instructions?"
+    ],
+    "word_frequency": 350
+  },
+  {
+    "word": "use",
+    "definition": [
+      "take, hold, or deploy (something) as a means of accomplishing a purpose",
+      "Can I use your pen?"
+    ],
+    "word_frequency": 130
+  },
+  {
+    "word": "wait",
+    "definition": [
+      "stay in one place until something happens",
+      "Please wait for me."
+    ],
+    "word_frequency": 370
+  },
+  {
+    "word": "want",
+    "definition": [
+      "desire",
+      "I want a new car."
+    ],
+    "word_frequency": 85
+  },
+  {
+    "word": "wash",
+    "definition": [
+      "to clean with water and usually soap",
+      "Please wash your hands before dinner."
+    ],
+    "word_frequency": 2445
+  },
+  {
+    "word": "watch",
+    "definition": [
+      "look at or observe attentively",
+      "Let's watch a movie tonight."
+    ],
+    "word_frequency": 378
+  },
+  {
+    "word": "wear",
+    "definition": [
+      "to have clothes on your body",
+      "She likes to wear colorful dresses."
+    ],
+    "word_frequency": 1045
+  },
+  {
+    "word": "werent",
+    "definition": [
+      "were not",
+      "They weren't at the party last night."
+    ],
+    "word_frequency": 22414
+  },
+  {
+    "word": "will",
+    "definition": [
+      "will",
+      "I will call you later."
+    ],
+    "word_frequency": 36
+  },
+  {
+    "word": "win",
+    "definition": [
+      "to be successful in a competition",
+      "I hope we win the game."
+    ],
+    "word_frequency": 335
+  },
+  {
+    "word": "work",
+    "definition": [
+      "perform a task",
+      "I work in an office."
+    ],
+    "word_frequency": 102
+  },
+  {
+    "word": "write",
+    "definition": [
+      "write",
+      "I need to write an email."
+    ],
+    "word_frequency": 705
+  }
+]

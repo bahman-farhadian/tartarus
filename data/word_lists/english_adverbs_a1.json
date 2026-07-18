@@ -1,0 +1,282 @@
+[
+  {
+    "word": "again",
+    "definition": [
+      "another time; once more",
+      "Please say that again."
+    ],
+    "word_frequency": 159
+  },
+  {
+    "word": "ago",
+    "definition": [
+      "in the past",
+      "I saw him two days ago."
+    ],
+    "word_frequency": 301
+  },
+  {
+    "word": "almost",
+    "definition": [
+      "very nearly",
+      "I almost forgot my keys."
+    ],
+    "word_frequency": 325
+  },
+  {
+    "word": "also",
+    "definition": [
+      "in addition",
+      "She is a doctor, and also a writer."
+    ],
+    "word_frequency": 60
+  },
+  {
+    "word": "always",
+    "definition": [
+      "at all times; on all occasions",
+      "I always drink coffee in the morning."
+    ],
+    "word_frequency": 141
+  },
+  {
+    "word": "back",
+    "definition": [
+      "to the rear",
+      "Please go back to your seat."
+    ],
+    "word_frequency": 82
+  },
+  {
+    "word": "down",
+    "definition": [
+      "to a lower position",
+      "Sit down, please."
+    ],
+    "word_frequency": 117
+  },
+  {
+    "word": "downstairs",
+    "definition": [
+      "to or on a lower floor",
+      "He went downstairs to get a drink."
+    ],
+    "word_frequency": 7537
+  },
+  {
+    "word": "here",
+    "definition": [
+      "in this place",
+      "Come here, please."
+    ],
+    "word_frequency": 98
+  },
+  {
+    "word": "how",
+    "definition": [
+      "in what way",
+      "How do you spell your name?"
+    ],
+    "word_frequency": 58
+  },
+  {
+    "word": "later",
+    "definition": [
+      "later",
+      "See you later."
+    ],
+    "word_frequency": 252
+  },
+  {
+    "word": "never",
+    "definition": [
+      "at no time",
+      "I never eat meat."
+    ],
+    "word_frequency": 113
+  },
+  {
+    "word": "not",
+    "definition": [
+      "not",
+      "I am not hungry."
+    ],
+    "word_frequency": 19
+  },
+  {
+    "word": "now",
+    "definition": [
+      "at the present time",
+      "I need to leave now."
+    ],
+    "word_frequency": 62
+  },
+  {
+    "word": "off",
+    "definition": [
+      "away from",
+      "Turn the light off."
+    ],
+    "word_frequency": 107
+  },
+  {
+    "word": "often",
+    "definition": [
+      "frequently",
+      "I often go for a walk."
+    ],
+    "word_frequency": 312
+  },
+  {
+    "word": "only",
+    "definition": [
+      "no one or nothing more than",
+      "I only have five dollars."
+    ],
+    "word_frequency": 68
+  },
+  {
+    "word": "out",
+    "definition": [
+      "away from the inside",
+      "She went out to buy milk."
+    ],
+    "word_frequency": 41
+  },
+  {
+    "word": "really",
+    "definition": [
+      "truly",
+      "I really like this song."
+    ],
+    "word_frequency": 100
+  },
+  {
+    "word": "realy",
+    "definition": [
+      "in fact; actually",
+      "I'm realy sorry for the mistake."
+    ],
+    "word_frequency": 27249
+  },
+  {
+    "word": "so",
+    "definition": [
+      "so",
+      "It was so cold yesterday."
+    ],
+    "word_frequency": 29
+  },
+  {
+    "word": "sometimes",
+    "definition": [
+      "occasionally",
+      "Sometimes I like to read a book."
+    ],
+    "word_frequency": 441
+  },
+  {
+    "word": "soon",
+    "definition": [
+      "in a short time",
+      "I'll be there soon."
+    ],
+    "word_frequency": 396
+  },
+  {
+    "word": "then",
+    "definition": [
+      "next",
+      "First, we eat, then we go home."
+    ],
+    "word_frequency": 80
+  },
+  {
+    "word": "there",
+    "definition": [
+      "in that place",
+      "The book is over there."
+    ],
+    "word_frequency": 49
+  },
+  {
+    "word": "tomorrow",
+    "definition": [
+      "the day after today",
+      "I will see you tomorrow."
+    ],
+    "word_frequency": 842
+  },
+  {
+    "word": "tonight",
+    "definition": [
+      "on the evening of the present day",
+      "I'm going out tonight."
+    ],
+    "word_frequency": 823
+  },
+  {
+    "word": "too",
+    "definition": [
+      "also",
+      "I want to come too."
+    ],
+    "word_frequency": 105
+  },
+  {
+    "word": "up",
+    "definition": [
+      "upwards, higher",
+      "Please stand up."
+    ],
+    "word_frequency": 40
+  },
+  {
+    "word": "very",
+    "definition": [
+      "extremely",
+      "It's very cold today."
+    ],
+    "word_frequency": 93
+  },
+  {
+    "word": "well",
+    "definition": [
+      "in a good way",
+      "She sings very well."
+    ],
+    "word_frequency": 88
+  },
+  {
+    "word": "when",
+    "definition": [
+      "at what time",
+      "When do you want to meet?"
+    ],
+    "word_frequency": 43
+  },
+  {
+    "word": "where",
+    "definition": [
+      "at what place",
+      "Where do you live?"
+    ],
+    "word_frequency": 94
+  },
+  {
+    "word": "why",
+    "definition": [
+      "for what reason",
+      "Why are you late."
+    ],
+    "word_frequency": 108
+  },
+  {
+    "word": "yesterday",
+    "definition": [
+      "on the day before today",
+      "I saw her yesterday."
+    ],
+    "word_frequency": 1075
+  }
+]

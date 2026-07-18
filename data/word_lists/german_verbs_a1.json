@@ -1,0 +1,915 @@
+[
+  {
+    "word": "anfangen",
+    "definition": [
+      "to begin;to start",
+      "Der Film fängt um 20 Uhr an. — The movie starts at 8 PM."
+    ],
+    "word_frequency": 1317
+  },
+  {
+    "word": "ankommen",
+    "definition": [
+      "to arrive",
+      "Wann wird der Zug ankommen? — When will the train arrive?"
+    ],
+    "word_frequency": 1800
+  },
+  {
+    "word": "anrufen",
+    "definition": [
+      "to call",
+      "Ich werde dich später anrufen. — I will call you later."
+    ],
+    "word_frequency": 2814
+  },
+  {
+    "word": "anschalten",
+    "definition": [
+      "to switch on;to turn on",
+      "Bitte schalte das Licht an. — Please turn on the light."
+    ],
+    "word_frequency": 28217
+  },
+  {
+    "word": "antworten",
+    "definition": [
+      "to answer;to reply",
+      "Bitte antworte mir schnell. — Please answer me quickly."
+    ],
+    "word_frequency": 4162
+  },
+  {
+    "word": "arbeiten",
+    "definition": [
+      "to work",
+      "Ich arbeite jeden Tag. — I work every day."
+    ],
+    "word_frequency": 235
+  },
+  {
+    "word": "aufpassen",
+    "definition": [
+      "to pay attention;to be careful",
+      "Du musst aufpassen, wenn du die Straße überquerst. — You have to pay attention when you cross the street."
+    ],
+    "word_frequency": 3650
+  },
+  {
+    "word": "aufstehen",
+    "definition": [
+      "To get up;to stand up",
+      "Ich muss früh aufstehen. — I have to get up early."
+    ],
+    "word_frequency": 3126
+  },
+  {
+    "word": "aufwachen",
+    "definition": [
+      "to wake up",
+      "Ich muss früh aufwachen. — I have to wake up early."
+    ],
+    "word_frequency": 5532
+  },
+  {
+    "word": "ausruhen",
+    "definition": [
+      "to rest",
+      "Ich muss mich jetzt ausruhen. — I need to rest now."
+    ],
+    "word_frequency": 9211
+  },
+  {
+    "word": "baden",
+    "definition": [
+      "to bathe;to swim",
+      "Ich gehe gerne im See baden. — I like to swim in the lake."
+    ],
+    "word_frequency": 866
+  },
+  {
+    "word": "beginnen",
+    "definition": [
+      "to begin;to start",
+      "Der Unterricht beginnt um neun Uhr. — The class begins at nine o'clock."
+    ],
+    "word_frequency": 703
+  },
+  {
+    "word": "bekommen",
+    "definition": [
+      "to get;to receive",
+      "Ich bekomme einen Brief. — I receive a letter."
+    ],
+    "word_frequency": 227
+  },
+  {
+    "word": "benutzen",
+    "definition": [
+      "to use",
+      "Kann ich dein Handy benutzen? — Can I use your phone?"
+    ],
+    "word_frequency": 909
+  },
+  {
+    "word": "besuchen",
+    "definition": [
+      "to visit",
+      "Ich möchte meine Freunde besuchen. — I want to visit my friends."
+    ],
+    "word_frequency": 1291
+  },
+  {
+    "word": "bleiben",
+    "definition": [
+      "to stay",
+      "Ich möchte heute zu Hause bleiben. — I want to stay at home today."
+    ],
+    "word_frequency": 237
+  },
+  {
+    "word": "brauchen",
+    "definition": [
+      "to need",
+      "Ich brauche deine Hilfe. — I need your help."
+    ],
+    "word_frequency": 334
+  },
+  {
+    "word": "bringen",
+    "definition": [
+      "to bring",
+      "Kannst du mir das Buch bringen? — Can you bring me the book?"
+    ],
+    "word_frequency": 298
+  },
+  {
+    "word": "danken",
+    "definition": [
+      "to thank",
+      "Ich möchte dir für deine Hilfe danken. — I would like to thank you for your help."
+    ],
+    "word_frequency": 3330
+  },
+  {
+    "word": "dauern",
+    "definition": [
+      "to last;to take (time)",
+      "Wie lange wird das dauern? — How long will that take?"
+    ],
+    "word_frequency": 1256
+  },
+  {
+    "word": "denken",
+    "definition": [
+      "to think",
+      "Ich denke, es ist eine gute Idee. — I think it's a good idea."
+    ],
+    "word_frequency": 335
+  },
+  {
+    "word": "duschen",
+    "definition": [
+      "to shower",
+      "Ich dusche jeden Morgen. — I shower every morning."
+    ],
+    "word_frequency": 4480
+  },
+  {
+    "word": "einkaufen",
+    "definition": [
+      "to shop;to buy",
+      "Ich muss heute einkaufen gehen. — I have to go shopping today."
+    ],
+    "word_frequency": 2624
+  },
+  {
+    "word": "einsteigen",
+    "definition": [
+      "to get in;to board",
+      "Wir müssen schnell in den Zug einsteigen. — We have to get on the train quickly."
+    ],
+    "word_frequency": 4810
+  },
+  {
+    "word": "entschuldigen",
+    "definition": [
+      "to apologize;to excuse",
+      "Ich möchte mich entschuldigen. — I would like to apologize."
+    ],
+    "word_frequency": 3661
+  },
+  {
+    "word": "essen",
+    "definition": [
+      "to eat",
+      "Was möchtest du essen? — What would you like to eat?"
+    ],
+    "word_frequency": 276
+  },
+  {
+    "word": "fahren",
+    "definition": [
+      "to drive;to go (by vehicle)",
+      "Ich fahre jeden Tag zur Arbeit. — I drive to work every day."
+    ],
+    "word_frequency": 388
+  },
+  {
+    "word": "fallen",
+    "definition": [
+      "to fall",
+      "Der Apfel fällt vom Baum. — The apple falls from the tree."
+    ],
+    "word_frequency": 517
+  },
+  {
+    "word": "fehlen",
+    "definition": [
+      "to be missing",
+      "Mir fehlt die Zeit. — I lack the time."
+    ],
+    "word_frequency": 695
+  },
+  {
+    "word": "feiern",
+    "definition": [
+      "to celebrate",
+      "Wir wollen heute Abend feiern. — We want to celebrate tonight."
+    ],
+    "word_frequency": 1060
+  },
+  {
+    "word": "finden",
+    "definition": [
+      "to find",
+      "Ich kann meine Schlüssel nicht finden. — I cannot find my keys."
+    ],
+    "word_frequency": 157
+  },
+  {
+    "word": "fliegen",
+    "definition": [
+      "to fly",
+      "Vögel können fliegen. — Birds can fly."
+    ],
+    "word_frequency": 1324
+  },
+  {
+    "word": "fragen",
+    "definition": [
+      "to ask",
+      "Ich möchte dich etwas fragen. — I want to ask you something."
+    ],
+    "word_frequency": 210
+  },
+  {
+    "word": "frieren",
+    "definition": [
+      "to freeze;to be cold",
+      "Mir friert es an den Füßen. — My feet are freezing."
+    ],
+    "word_frequency": 15600
+  },
+  {
+    "word": "frühstücken",
+    "definition": [
+      "to have breakfast",
+      "Wir frühstücken jeden Morgen um sieben Uhr. — We have breakfast every morning at seven o'clock."
+    ],
+    "word_frequency": 10260
+  },
+  {
+    "word": "führen",
+    "definition": [
+      "to lead;to guide",
+      "Er kann das Team gut führen. — He can lead the team well."
+    ],
+    "word_frequency": 410
+  },
+  {
+    "word": "geben",
+    "definition": [
+      "to give",
+      "Ich gebe dir ein Buch. — I give you a book."
+    ],
+    "word_frequency": 70
+  },
+  {
+    "word": "geboren",
+    "definition": [
+      "born",
+      "Ich bin in Deutschland geboren. — I was born in Germany."
+    ],
+    "word_frequency": 954
+  },
+  {
+    "word": "gehen",
+    "definition": [
+      "to go",
+      "Ich gehe nach Hause. — I am going home."
+    ],
+    "word_frequency": 74
+  },
+  {
+    "word": "grüßen",
+    "definition": [
+      "to greet",
+      "Ich möchte meine Freunde grüßen. — I would like to greet my friends."
+    ],
+    "word_frequency": 4419
+  },
+  {
+    "word": "haben",
+    "definition": [
+      "to have",
+      "Ich habe ein Buch. — I have a book."
+    ],
+    "word_frequency": 29
+  },
+  {
+    "word": "halten",
+    "definition": [
+      "to hold;to stop",
+      "Bitte halten Sie die Tür offen. — Please hold the door open."
+    ],
+    "word_frequency": 270
+  },
+  {
+    "word": "heissen",
+    "definition": [
+      "to be called;to mean",
+      "Ich heiße Anna. — My name is Anna.",
+      "to be called;to be named"
+    ],
+    "word_frequency": 207
+  },
+  {
+    "word": "helfen",
+    "definition": [
+      "to help",
+      "Kannst du mir bitte helfen? — Can you please help me?"
+    ],
+    "word_frequency": 411
+  },
+  {
+    "word": "holen",
+    "definition": [
+      "to fetch",
+      "Kannst du bitte das Buch holen? — Can you please get the book?"
+    ],
+    "word_frequency": 956
+  },
+  {
+    "word": "hören",
+    "definition": [
+      "to hear;to listen",
+      "Ich höre Musik. — I am listening to music."
+    ],
+    "word_frequency": 508
+  },
+  {
+    "word": "interessieren",
+    "definition": [
+      "to interest",
+      "Das Thema interessiert mich sehr. — The topic interests me a lot."
+    ],
+    "word_frequency": 843
+  },
+  {
+    "word": "kaufen",
+    "definition": [
+      "to buy",
+      "Ich möchte ein neues Buch kaufen. — I want to buy a new book."
+    ],
+    "word_frequency": 460
+  },
+  {
+    "word": "kennen",
+    "definition": [
+      "to know (people;places;facts)",
+      "Ich kenne diesen Mann nicht. — I don't know this man."
+    ],
+    "word_frequency": 529
+  },
+  {
+    "word": "kennenlernen",
+    "definition": [
+      "to get to know;to meet",
+      "Ich möchte dich besser kennenlernen. — I would like to get to know you better."
+    ],
+    "word_frequency": 3150
+  },
+  {
+    "word": "kochen",
+    "definition": [
+      "to cook;to boil",
+      "Ich koche gerne Pasta. — I like to cook pasta."
+    ],
+    "word_frequency": 1782
+  },
+  {
+    "word": "kommen",
+    "definition": [
+      "to come",
+      "Ich komme aus Deutschland. — I come from Germany."
+    ],
+    "word_frequency": 96
+  },
+  {
+    "word": "kosten",
+    "definition": [
+      "to cost",
+      "Wie viel kostet das? — How much does that cost?"
+    ],
+    "word_frequency": 412
+  },
+  {
+    "word": "können",
+    "definition": [
+      "to be able to;can",
+      "Ich kann Deutsch sprechen. — I can speak German."
+    ],
+    "word_frequency": 43
+  },
+  {
+    "word": "lachen",
+    "definition": [
+      "to laugh",
+      "Sie mussten sehr lachen. — They had to laugh a lot."
+    ],
+    "word_frequency": 1067
+  },
+  {
+    "word": "laufen",
+    "definition": [
+      "to run",
+      "Ich laufe jeden Morgen im Park. — I run every morning in the park."
+    ],
+    "word_frequency": 423
+  },
+  {
+    "word": "leben",
+    "definition": [
+      "to live",
+      "Wir leben in einer großen Stadt. — We live in a big city."
+    ],
+    "word_frequency": 99
+  },
+  {
+    "word": "legen",
+    "definition": [
+      "to lay;to put",
+      "Er legt das Buch auf den Tisch. — He lays the book on the table."
+    ],
+    "word_frequency": 912
+  },
+  {
+    "word": "lernen",
+    "definition": [
+      "to learn",
+      "Wir lernen Deutsch. — We are learning German."
+    ],
+    "word_frequency": 461
+  },
+  {
+    "word": "lesen",
+    "definition": [
+      "to read",
+      "Ich lese jeden Abend ein Buch. — I read a book every evening."
+    ],
+    "word_frequency": 362
+  },
+  {
+    "word": "lieben",
+    "definition": [
+      "to love",
+      "Ich liebe es, neue Sprachen zu lernen. — I love learning new languages."
+    ],
+    "word_frequency": 846
+  },
+  {
+    "word": "liegen",
+    "definition": [
+      "to lie (down);to be located",
+      "Das Buch liegt auf dem Tisch. — The book is lying on the table."
+    ],
+    "word_frequency": 179
+  },
+  {
+    "word": "machen",
+    "definition": [
+      "to make;to do",
+      "Was machst du heute? — What are you doing today?"
+    ],
+    "word_frequency": 79
+  },
+  {
+    "word": "malen",
+    "definition": [
+      "to paint;to draw",
+      "Sie malt gerne Landschaften. — She likes to paint landscapes."
+    ],
+    "word_frequency": 3963
+  },
+  {
+    "word": "meinen",
+    "definition": [
+      "to mean;to think",
+      "Was meinst du dazu? — What do you think about that?"
+    ],
+    "word_frequency": 847
+  },
+  {
+    "word": "nehmen",
+    "definition": [
+      "to take",
+      "Ich nehme einen Kaffee. — I'll take a coffee."
+    ],
+    "word_frequency": 219
+  },
+  {
+    "word": "parken",
+    "definition": [
+      "to park",
+      "Du kannst hier parken. — You can park here."
+    ],
+    "word_frequency": 5114
+  },
+  {
+    "word": "passen",
+    "definition": [
+      "to fit;to suit",
+      "Die Schuhe passen mir gut. — The shoes fit me well."
+    ],
+    "word_frequency": 613
+  },
+  {
+    "word": "putzen",
+    "definition": [
+      "to clean",
+      "Ich muss mein Zimmer putzen. — I have to clean my room."
+    ],
+    "word_frequency": 4932
+  },
+  {
+    "word": "regnen",
+    "definition": [
+      "to rain",
+      "Es wird heute regnen. — It will rain today."
+    ],
+    "word_frequency": 6452
+  },
+  {
+    "word": "reisen",
+    "definition": [
+      "to travel",
+      "Wir möchten nächstes Jahr nach Italien reisen. — We would like to travel to Italy next year."
+    ],
+    "word_frequency": 1274
+  },
+  {
+    "word": "rufen",
+    "definition": [
+      "to call",
+      "Ich rufe dich später an. — I will call you later."
+    ],
+    "word_frequency": 1647
+  },
+  {
+    "word": "sagen",
+    "definition": [
+      "to say",
+      "Was willst du sagen? — What do you want to say?"
+    ],
+    "word_frequency": 131
+  },
+  {
+    "word": "schauen",
+    "definition": [
+      "to look;to watch",
+      "Wir schauen einen Film. — We are watching a movie."
+    ],
+    "word_frequency": 700
+  },
+  {
+    "word": "schlafen",
+    "definition": [
+      "to sleep",
+      "Ich muss jetzt schlafen gehen. — I have to go to sleep now."
+    ],
+    "word_frequency": 944
+  },
+  {
+    "word": "schließen",
+    "definition": [
+      "to close;to shut",
+      "Bitte schließen Sie die Tür. — Please close the door."
+    ],
+    "word_frequency": 7191
+  },
+  {
+    "word": "schneien",
+    "definition": [
+      "to snow",
+      "Es wird heute Abend schneien. — It will snow tonight."
+    ],
+    "word_frequency": 15177
+  },
+  {
+    "word": "schreiben",
+    "definition": [
+      "to write",
+      "Ich schreibe einen Brief. — I am writing a letter."
+    ],
+    "word_frequency": 341
+  },
+  {
+    "word": "schwimmen",
+    "definition": [
+      "to swim",
+      "Ich kann gut schwimmen. — I can swim well."
+    ],
+    "word_frequency": 2399
+  },
+  {
+    "word": "sehen",
+    "definition": [
+      "to see",
+      "Ich sehe einen Vogel. — I see a bird."
+    ],
+    "word_frequency": 125
+  },
+  {
+    "word": "sein",
+    "definition": [
+      "to be",
+      "Er will Arzt sein. — He wants to be a doctor."
+    ],
+    "word_frequency": 6
+  },
+  {
+    "word": "setzen",
+    "definition": [
+      "to set;to put;to place",
+      "Er setzt sich auf den Stuhl. — He sits down on the chair."
+    ],
+    "word_frequency": 500
+  },
+  {
+    "word": "singen",
+    "definition": [
+      "to sing",
+      "Sie singt sehr schön. — She sings very beautifully."
+    ],
+    "word_frequency": 1648
+  },
+  {
+    "word": "sitzen",
+    "definition": [
+      "to sit",
+      "Ich sitze auf dem Stuhl. — I am sitting on the chair."
+    ],
+    "word_frequency": 799
+  },
+  {
+    "word": "spazierengehen",
+    "definition": [
+      "to go for a walk",
+      "Wir wollen heute Nachmittag spazierengehen. — We want to go for a walk this afternoon."
+    ],
+    "word_frequency": 27233
+  },
+  {
+    "word": "spielen",
+    "definition": [
+      "to play",
+      "Kinder spielen gerne im Garten. — Children like to play in the garden."
+    ],
+    "word_frequency": 231
+  },
+  {
+    "word": "sprechen",
+    "definition": [
+      "to speak",
+      "Kannst du Deutsch sprechen? — Can you speak German?"
+    ],
+    "word_frequency": 471
+  },
+  {
+    "word": "stehen",
+    "definition": [
+      "to stand",
+      "Er steht am Fenster. — He stands at the window."
+    ],
+    "word_frequency": 132
+  },
+  {
+    "word": "stellen",
+    "definition": [
+      "to place;to put",
+      "Ich stelle das Buch auf den Tisch. — I place the book on the table."
+    ],
+    "word_frequency": 250
+  },
+  {
+    "word": "studieren",
+    "definition": [
+      "to study",
+      "Ich studiere Deutsch an der Universität. — I study German at the university."
+    ],
+    "word_frequency": 3110
+  },
+  {
+    "word": "suchen",
+    "definition": [
+      "to search;to look for",
+      "Ich suche meine Schlüssel. — I am looking for my keys."
+    ],
+    "word_frequency": 414
+  },
+  {
+    "word": "tanzen",
+    "definition": [
+      "to dance",
+      "Wir tanzen gerne. — We like to dance."
+    ],
+    "word_frequency": 2320
+  },
+  {
+    "word": "teilen",
+    "definition": [
+      "to share;to divide",
+      "Wir teilen uns ein Zimmer. — We share a room."
+    ],
+    "word_frequency": 750
+  },
+  {
+    "word": "telefonieren",
+    "definition": [
+      "to telephone;to call",
+      "Ich muss noch mit meiner Mutter telefonieren. — I still need to call my mother."
+    ],
+    "word_frequency": 5052
+  },
+  {
+    "word": "tragen",
+    "definition": [
+      "to carry;to wear",
+      "Ich trage einen Rucksack. — I am carrying a backpack."
+    ],
+    "word_frequency": 572
+  },
+  {
+    "word": "trainieren",
+    "definition": [
+      "to train;to practice",
+      "Ich trainiere jeden Tag. — I train every day."
+    ],
+    "word_frequency": 3700
+  },
+  {
+    "word": "treffen",
+    "definition": [
+      "to meet;to hit",
+      "Wir treffen uns morgen. — We are meeting tomorrow."
+    ],
+    "word_frequency": 342
+  },
+  {
+    "word": "trinken",
+    "definition": [
+      "to drink",
+      "Ich möchte Wasser trinken. — I would like to drink water."
+    ],
+    "word_frequency": 1072
+  },
+  {
+    "word": "tun",
+    "definition": [
+      "to do;to put",
+      "Was soll ich tun? — What should I do?"
+    ],
+    "word_frequency": 169
+  },
+  {
+    "word": "vergessen",
+    "definition": [
+      "to forget",
+      "Ich habe meine Schlüssel vergessen. — I forgot my keys."
+    ],
+    "word_frequency": 453
+  },
+  {
+    "word": "verkaufen",
+    "definition": [
+      "to sell",
+      "Er möchte sein altes Auto verkaufen. — He wants to sell his old car."
+    ],
+    "word_frequency": 830
+  },
+  {
+    "word": "verstehen",
+    "definition": [
+      "to understand",
+      "Ich verstehe die Frage nicht. — I don't understand the question."
+    ],
+    "word_frequency": 427
+  },
+  {
+    "word": "vorstellen",
+    "definition": [
+      "to introduce;to imagine",
+      "Darf ich mich vorstellen? — May I introduce myself?"
+    ],
+    "word_frequency": 831
+  },
+  {
+    "word": "warten",
+    "definition": [
+      "to wait",
+      "Ich muss auf den Bus warten. — I have to wait for the bus."
+    ],
+    "word_frequency": 620
+  },
+  {
+    "word": "waschen",
+    "definition": [
+      "to wash",
+      "Ich muss meine Kleidung waschen. — I need to wash my clothes."
+    ],
+    "word_frequency": 3376
+  },
+  {
+    "word": "werden",
+    "definition": [
+      "to become;to get",
+      "Er wird Arzt. — He is becoming a doctor."
+    ],
+    "word_frequency": 37
+  },
+  {
+    "word": "wissen",
+    "definition": [
+      "to know (facts)",
+      "Ich weiß es nicht. — I don't know it."
+    ],
+    "word_frequency": 115
+  },
+  {
+    "word": "wohnen",
+    "definition": [
+      "to live;to reside",
+      "Ich wohne in Berlin. — I live in Berlin."
+    ],
+    "word_frequency": 1161
+  },
+  {
+    "word": "zahlen",
+    "definition": [
+      "to pay",
+      "Kann ich bitte zahlen? — Can I pay, please?"
+    ],
+    "word_frequency": 2325
+  },
+  {
+    "word": "zeigen",
+    "definition": [
+      "to show;to point",
+      "Kannst du mir den Weg zeigen? — Can you show me the way?"
+    ],
+    "word_frequency": 273
+  },
+  {
+    "word": "ziehen",
+    "definition": [
+      "to pull;to move",
+      "Er muss den Wagen ziehen. — He has to pull the cart."
+    ],
+    "word_frequency": 560
+  },
+  {
+    "word": "zumachen",
+    "definition": [
+      "to close",
+      "Bitte mach die Tür zu. — Please close the door."
+    ],
+    "word_frequency": 14060
+  },
+  {
+    "word": "öffnen",
+    "definition": [
+      "to open",
+      "Bitte öffnen Sie die Tür. — Please open the door."
+    ],
+    "word_frequency": 1434
+  },
+  {
+    "word": "üben",
+    "definition": [
+      "to practice;to exercise",
+      "Ich muss mehr üben, um besser zu werden. — I need to practice more to get better."
+    ],
+    "word_frequency": 2604
+  }
+]

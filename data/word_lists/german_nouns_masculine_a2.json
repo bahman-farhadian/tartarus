@@ -1,0 +1,4882 @@
+[
+  {
+    "word": "der Abfall",
+    "definition": [
+      "waste;rubbish",
+      "Bitte trennen Sie den Abfall. — Please separate the waste."
+    ],
+    "word_frequency": 5748
+  },
+  {
+    "word": "der Abflug",
+    "definition": [
+      "departure",
+      "Der Abflug ist um 10 Uhr morgens. — The departure is at 10 AM."
+    ],
+    "word_frequency": 11463
+  },
+  {
+    "word": "der Abschied",
+    "definition": [
+      "farewell",
+      "Wir nahmen Abschied von unseren Freunden. — We said goodbye to our friends."
+    ],
+    "word_frequency": 2813
+  },
+  {
+    "word": "der Absender",
+    "definition": [
+      "sender",
+      "Der Absender des Briefes ist unbekannt. — The sender of the letter is unknown."
+    ],
+    "word_frequency": 10557
+  },
+  {
+    "word": "der Abwasch",
+    "definition": [
+      "dishwashing;washing up",
+      "Wer macht heute den Abwasch? — Who is doing the washing up today?"
+    ],
+    "word_frequency": 29149
+  },
+  {
+    "word": "der Adapter",
+    "definition": [
+      "adapter",
+      "Ich brauche einen Adapter für mein Laptop. — I need an adapter for my laptop."
+    ],
+    "word_frequency": 14526
+  },
+  {
+    "word": "der Adventskalender",
+    "definition": [
+      "Advent calendar",
+      "Die Kinder lieben ihren Adventskalender. — The children love their Advent calendar."
+    ],
+    "word_frequency": 16568
+  },
+  {
+    "word": "der Affe",
+    "definition": [
+      "monkey;ape",
+      "Der Affe isst eine Banane. — The monkey is eating a banana."
+    ],
+    "word_frequency": 4305
+  },
+  {
+    "word": "der Airport",
+    "definition": [
+      "airport",
+      "Der Airport ist weit vom Stadtzentrum entfernt. — The airport is far from the city center."
+    ],
+    "word_frequency": 6611
+  },
+  {
+    "word": "der Alkohol",
+    "definition": [
+      "alcohol",
+      "Alkohol ist in Deutschland ab 16 Jahren erlaubt. — Alcohol is allowed from 16 years old in Germany."
+    ],
+    "word_frequency": 1342
+  },
+  {
+    "word": "der Alltag",
+    "definition": [
+      "everyday life",
+      "Das ist mein Alltag. — That is my everyday life."
+    ],
+    "word_frequency": 1834
+  },
+  {
+    "word": "der Amerikaner",
+    "definition": [
+      "American (male)",
+      "Er ist ein Amerikaner. — He is an American."
+    ],
+    "word_frequency": 1625
+  },
+  {
+    "word": "der Anzug",
+    "definition": [
+      "suit",
+      "Er trägt einen eleganten Anzug. — He is wearing an elegant suit."
+    ],
+    "word_frequency": 4786
+  },
+  {
+    "word": "der Apfelbaum",
+    "definition": [
+      "apple tree",
+      "Im Garten steht ein alter Apfelbaum. — There is an old apple tree in the garden."
+    ],
+    "word_frequency": 26498
+  },
+  {
+    "word": "der Apotheker",
+    "definition": [
+      "pharmacist (male)",
+      "Der Apotheker hat mir das Medikament gegeben. — The pharmacist gave me the medicine."
+    ],
+    "word_frequency": 6732
+  },
+  {
+    "word": "der Appetit",
+    "definition": [
+      "appetite",
+      "Ich habe großen Appetit auf Pizza. — I have a big appetite for pizza."
+    ],
+    "word_frequency": 6270
+  },
+  {
+    "word": "der Arbeiter",
+    "definition": [
+      "worker",
+      "Der Arbeiter repariert die Maschine. — The worker is repairing the machine."
+    ],
+    "word_frequency": 1924
+  },
+  {
+    "word": "der Arbeitskollege",
+    "definition": [
+      "colleague (male)",
+      "Mein Arbeitskollege hilft mir oft. — My colleague often helps me."
+    ],
+    "word_frequency": 16315
+  },
+  {
+    "word": "der Arbeitsplatz",
+    "definition": [
+      "workplace",
+      "Mein Arbeitsplatz ist sehr modern. — My workplace is very modern."
+    ],
+    "word_frequency": 3388
+  },
+  {
+    "word": "der Arbeitstag",
+    "definition": [
+      "workday",
+      "Mein Arbeitstag beginnt um neun Uhr. — My workday starts at nine o'clock."
+    ],
+    "word_frequency": 8487
+  },
+  {
+    "word": "der Argentinier",
+    "definition": [
+      "Argentinian (male)",
+      "Er ist ein Argentinier. — He is an Argentinian."
+    ],
+    "word_frequency": 17409
+  },
+  {
+    "word": "der Artikel",
+    "definition": [
+      "article;item",
+      "Ich lese einen interessanten Artikel in der Zeitung. — I am reading an interesting article in the newspaper."
+    ],
+    "word_frequency": 344
+  },
+  {
+    "word": "der Assistent",
+    "definition": [
+      "assistant (male)",
+      "Der Assistent hilft dem Professor. — The assistant helps the professor."
+    ],
+    "word_frequency": 5753
+  },
+  {
+    "word": "der Ast",
+    "definition": [
+      "branch",
+      "Ein Vogel saß auf dem Ast. — A bird sat on the branch."
+    ],
+    "word_frequency": 7766
+  },
+  {
+    "word": "der Atem",
+    "definition": [
+      "breath",
+      "Er hielt den Atem an. — He held his breath."
+    ],
+    "word_frequency": 4231
+  },
+  {
+    "word": "der Aufkleber",
+    "definition": [
+      "sticker;decal",
+      "Das Kind klebte einen Aufkleber auf das Buch. — The child stuck a sticker on the book."
+    ],
+    "word_frequency": 6855
+  },
+  {
+    "word": "der Aufzug",
+    "definition": [
+      "elevator;lift",
+      "Wir nehmen den Aufzug in den fünften Stock. — We take the elevator to the fifth floor."
+    ],
+    "word_frequency": 6273
+  },
+  {
+    "word": "der Augenarzt",
+    "definition": [
+      "ophthalmologist;eye doctor",
+      "Ich muss einen Termin beim Augenarzt machen. — I need to make an appointment with the eye doctor."
+    ],
+    "word_frequency": 19249
+  },
+  {
+    "word": "der Ausflug",
+    "definition": [
+      "excursion",
+      "Wir machten einen Ausflug in die Berge. — We took an excursion to the mountains."
+    ],
+    "word_frequency": 4233
+  },
+  {
+    "word": "der Ausgang",
+    "definition": [
+      "exit;outcome",
+      "Wo ist der Ausgang? — Where is the exit?"
+    ],
+    "word_frequency": 3319
+  },
+  {
+    "word": "der Ausländer",
+    "definition": [
+      "foreigner",
+      "Viele Ausländer leben in Deutschland. — Many foreigners live in Germany."
+    ],
+    "word_frequency": 2670
+  },
+  {
+    "word": "der Australier",
+    "definition": [
+      "Australian (person)",
+      "Er ist ein Australier. — He is an Australian."
+    ],
+    "word_frequency": 11478
+  },
+  {
+    "word": "der Ausweis",
+    "definition": [
+      "ID card;identification",
+      "Bitte zeigen Sie Ihren Ausweis. — Please show your ID."
+    ],
+    "word_frequency": 5159
+  },
+  {
+    "word": "der Autofahrer",
+    "definition": [
+      "Car driver",
+      "Der Autofahrer parkte sein Auto. — The car driver parked his car."
+    ],
+    "word_frequency": 3128
+  },
+  {
+    "word": "der Automat",
+    "definition": [
+      "vending machine;automaton",
+      "Der Automat ist kaputt. — The vending machine is broken."
+    ],
+    "word_frequency": 6278
+  },
+  {
+    "word": "der Autounfall",
+    "definition": [
+      "car accident",
+      "Es gab einen Autounfall auf der Autobahn. — There was a car accident on the highway."
+    ],
+    "word_frequency": 9359
+  },
+  {
+    "word": "der Babysitter",
+    "definition": [
+      "babysitter",
+      "Wir brauchen einen Babysitter für heute Abend. — We need a babysitter for tonight."
+    ],
+    "word_frequency": 19874
+  },
+  {
+    "word": "der Bach",
+    "definition": [
+      "stream",
+      "Der kleine Bach fließt durch den Wald. — The small stream flows through the forest."
+    ],
+    "word_frequency": 2615
+  },
+  {
+    "word": "der Backofen",
+    "definition": [
+      "oven",
+      "Der Kuchen backt im Backofen. — The cake is baking in the oven."
+    ],
+    "word_frequency": 13201
+  },
+  {
+    "word": "der Bacon",
+    "definition": [
+      "bacon",
+      "Zum Frühstück esse ich gerne Rührei mit Bacon. — For breakfast, I like to eat scrambled eggs with bacon."
+    ],
+    "word_frequency": 12297
+  },
+  {
+    "word": "der Badeanzug",
+    "definition": [
+      "swimsuit",
+      "Er hat seinen Badeanzug vergessen. — He forgot his swimsuit."
+    ],
+    "word_frequency": 20845
+  },
+  {
+    "word": "der Bademantel",
+    "definition": [
+      "bathrobe",
+      "Nach dem Duschen zog er seinen Bademantel an. — After showering, he put on his bathrobe."
+    ],
+    "word_frequency": 17730
+  },
+  {
+    "word": "der Badesee",
+    "definition": [
+      "swimming lake",
+      "Wir fahren im Sommer oft zum Badesee. — We often go to the swimming lake in summer."
+    ],
+    "word_frequency": 22184
+  },
+  {
+    "word": "der Bahnsteig",
+    "definition": [
+      "platform (train)",
+      "Der Zug fährt von Bahnsteig 3 ab. — The train departs from platform 3."
+    ],
+    "word_frequency": 9062
+  },
+  {
+    "word": "der Balkon",
+    "definition": [
+      "balcony",
+      "Wir haben einen schönen Balkon mit Blick auf den Garten. — We have a beautiful balcony with a view of the garden."
+    ],
+    "word_frequency": 3391
+  },
+  {
+    "word": "der Ballon",
+    "definition": [
+      "balloon",
+      "Der Ballon schwebte hoch in den Himmel. — The balloon floated high into the sky."
+    ],
+    "word_frequency": 10921
+  },
+  {
+    "word": "der Bart",
+    "definition": [
+      "beard",
+      "Er hat einen langen Bart. — He has a long beard."
+    ],
+    "word_frequency": 3519
+  },
+  {
+    "word": "der Baseball",
+    "definition": [
+      "baseball",
+      "Baseball ist in den USA sehr beliebt. — Baseball is very popular in the USA."
+    ],
+    "word_frequency": 9699
+  },
+  {
+    "word": "der Basketball",
+    "definition": [
+      "basketball",
+      "Er spielt gerne Basketball am Wochenende. — He likes to play basketball on the weekend."
+    ],
+    "word_frequency": 3656
+  },
+  {
+    "word": "der Bauarbeiter",
+    "definition": [
+      "construction worker",
+      "Der Bauarbeiter trägt einen Helm. — The construction worker wears a helmet."
+    ],
+    "word_frequency": 12300
+  },
+  {
+    "word": "der Bauch",
+    "definition": [
+      "belly;stomach",
+      "Mein Bauch tut weh. — My stomach hurts."
+    ],
+    "word_frequency": 2420
+  },
+  {
+    "word": "der Bauchschmerz",
+    "definition": [
+      "stomach ache",
+      "Ich habe Bauchschmerzen. — I have a stomach ache."
+    ],
+    "word_frequency": 11290
+  },
+  {
+    "word": "der Bauer",
+    "definition": [
+      "farmer",
+      "Der Bauer arbeitet auf dem Feld. — The farmer works in the field."
+    ],
+    "word_frequency": 2149
+  },
+  {
+    "word": "der Bauernhof",
+    "definition": [
+      "farm",
+      "Wir besuchten einen Bauernhof auf dem Land. — We visited a farm in the countryside."
+    ],
+    "word_frequency": 7238
+  },
+  {
+    "word": "der Baumarkt",
+    "definition": [
+      "DIY store;hardware store",
+      "Wir müssen zum Baumarkt, um Farbe zu kaufen. — We need to go to the DIY store to buy paint."
+    ],
+    "word_frequency": 9063
+  },
+  {
+    "word": "der Beginn",
+    "definition": [
+      "beginning;start",
+      "Der Beginn des Konzerts ist um 20 Uhr. — The beginning of the concert is at 8 PM."
+    ],
+    "word_frequency": 636
+  },
+  {
+    "word": "der Belgier",
+    "definition": [
+      "Belgian (person)",
+      "Er ist ein Belgier und spricht Französisch. — He is a Belgian and speaks French."
+    ],
+    "word_frequency": 11485
+  },
+  {
+    "word": "der Belt",
+    "definition": [
+      "belt",
+      "Er trägt einen schwarzen Belt. — He is wearing a black belt."
+    ],
+    "word_frequency": 23280
+  },
+  {
+    "word": "der Benutzer",
+    "definition": [
+      "user",
+      "Der Benutzer hat sich angemeldet. — The user has logged in."
+    ],
+    "word_frequency": 5253
+  },
+  {
+    "word": "der Besen",
+    "definition": [
+      "broom",
+      "Sie fegte den Boden mit einem Besen. — She swept the floor with a broom."
+    ],
+    "word_frequency": 11666
+  },
+  {
+    "word": "der Besucher",
+    "definition": [
+      "visitor",
+      "Der Besucher kam pünktlich an. — The visitor arrived on time."
+    ],
+    "word_frequency": 1404
+  },
+  {
+    "word": "der Betreff",
+    "definition": [
+      "subject (of an email)",
+      "Bitte geben Sie einen Betreff ein. — Please enter a subject."
+    ],
+    "word_frequency": 14094
+  },
+  {
+    "word": "der Beutel",
+    "definition": [
+      "bag;pouch",
+      "Ich habe einen kleinen Beutel für meine Einkäufe dabei. — I have a small bag for my groceries with me."
+    ],
+    "word_frequency": 7113
+  },
+  {
+    "word": "der Biergarten",
+    "definition": [
+      "beer garden",
+      "Im Sommer gehen wir oft in den Biergarten. — In summer, we often go to the beer garden."
+    ],
+    "word_frequency": 12306
+  },
+  {
+    "word": "der Bikini",
+    "definition": [
+      "bikini",
+      "Sie trug einen neuen Bikini am Strand. — She wore a new bikini at the beach."
+    ],
+    "word_frequency": 10235
+  },
+  {
+    "word": "der Bildschirm",
+    "definition": [
+      "screen;monitor",
+      "Der Bildschirm meines Computers ist sehr groß. — The screen of my computer is very large."
+    ],
+    "word_frequency": 4170
+  },
+  {
+    "word": "der Birnbaum",
+    "definition": [
+      "pear tree",
+      "Im Garten steht ein alter Birnbaum. — There is an old pear tree in the garden."
+    ],
+    "word_frequency": 27783
+  },
+  {
+    "word": "der Blazer",
+    "definition": [
+      "blazer",
+      "Sie trug einen eleganten blauen Blazer. — She wore an elegant blue blazer."
+    ],
+    "word_frequency": 26523
+  },
+  {
+    "word": "der Blinker",
+    "definition": [
+      "turn signal",
+      "Vergiss nicht, den Blinker zu setzen, wenn du abbiegst. — Don't forget to use the turn signal when you turn."
+    ],
+    "word_frequency": 19888
+  },
+  {
+    "word": "der Blitz",
+    "definition": [
+      "lightning;flash",
+      "Ein Blitz schlug in den Baum ein. — A lightning bolt struck the tree."
+    ],
+    "word_frequency": 4978
+  },
+  {
+    "word": "der Blumenkohl",
+    "definition": [
+      "cauliflower",
+      "Ich mag Blumenkohl mit Käsesauce. — I like cauliflower with cheese sauce."
+    ],
+    "word_frequency": 24076
+  },
+  {
+    "word": "der Blumenstrauss",
+    "definition": [
+      "bouquet of flowers",
+      "Sie bekam einen schönen Blumenstrauss zum Geburtstag. — She received a beautiful bouquet of flowers for her birthday."
+    ],
+    "word_frequency": 19579
+  },
+  {
+    "word": "der Blumentopf",
+    "definition": [
+      "flowerpot",
+      "Sie stellte die Blume in einen Blumentopf. — She put the flower in a flowerpot."
+    ],
+    "word_frequency": 24879
+  },
+  {
+    "word": "der Boden",
+    "definition": [
+      "floor;ground",
+      "Der Boden ist nass. — The floor is wet."
+    ],
+    "word_frequency": 602
+  },
+  {
+    "word": "der Briefkasten",
+    "definition": [
+      "mailbox",
+      "Ich habe den Brief in den Briefkasten geworfen. — I threw the letter into the mailbox."
+    ],
+    "word_frequency": 7382
+  },
+  {
+    "word": "der Briefträger",
+    "definition": [
+      "postman",
+      "Der Briefträger bringt jeden Morgen die Post. — The postman brings the mail every morning."
+    ],
+    "word_frequency": 28741
+  },
+  {
+    "word": "der Brokkoli",
+    "definition": [
+      "broccoli",
+      "Ich mag Brokkoli sehr gerne. — I like broccoli very much."
+    ],
+    "word_frequency": 19894
+  },
+  {
+    "word": "der Brunnen",
+    "definition": [
+      "well;fountain",
+      "Der alte Brunnen auf dem Marktplatz ist sehr schön. — The old fountain in the marketplace is very beautiful."
+    ],
+    "word_frequency": 3932
+  },
+  {
+    "word": "der Bub",
+    "definition": [
+      "boy (southern German;Austrian)",
+      "Der kleine Bub spielt im Garten. — The little boy is playing in the garden."
+    ],
+    "word_frequency": 9524
+  },
+  {
+    "word": "der Buchladen",
+    "definition": [
+      "bookstore",
+      "Ich kaufe meine Bücher immer im Buchladen um die Ecke. — I always buy my books at the bookstore around the corner."
+    ],
+    "word_frequency": 19897
+  },
+  {
+    "word": "der Busbahnhof",
+    "definition": [
+      "bus station",
+      "Der Busbahnhof ist gleich um die Ecke. — The bus station is just around the corner."
+    ],
+    "word_frequency": 17170
+  },
+  {
+    "word": "der Busch",
+    "definition": [
+      "bush;shrub",
+      "Hinter dem Haus steht ein großer Busch. — Behind the house stands a large bush."
+    ],
+    "word_frequency": 4712
+  },
+  {
+    "word": "der Busfahrer",
+    "definition": [
+      "bus driver",
+      "Der Busfahrer wartete an der Haltestelle. — The bus driver waited at the bus stop."
+    ],
+    "word_frequency": 8628
+  },
+  {
+    "word": "der Bär",
+    "definition": [
+      "bear",
+      "Der Bär schlief in seiner Höhle. — The bear slept in its cave."
+    ],
+    "word_frequency": 4799
+  },
+  {
+    "word": "der Bürgersteig",
+    "definition": [
+      "sidewalk;pavement",
+      "Bitte gehen Sie auf dem Bürgersteig. — Please walk on the sidewalk."
+    ],
+    "word_frequency": 15559
+  },
+  {
+    "word": "der Cake",
+    "definition": [
+      "cake",
+      "Möchtest du ein Stück Cake? — Would you like a piece of cake?"
+    ],
+    "word_frequency": 23299
+  },
+  {
+    "word": "der Campingplatz",
+    "definition": [
+      "campsite",
+      "Wir haben einen schönen Campingplatz am See gefunden. — We found a beautiful campsite by the lake."
+    ],
+    "word_frequency": 11120
+  },
+  {
+    "word": "der Chef",
+    "definition": [
+      "boss;chief",
+      "Mein Chef ist sehr nett. — My boss is very nice."
+    ],
+    "word_frequency": 755
+  },
+  {
+    "word": "der Chinese",
+    "definition": [
+      "Chinese person (male)",
+      "Er ist ein Chinese. — He is a Chinese person."
+    ],
+    "word_frequency": 4247
+  },
+  {
+    "word": "der Chip",
+    "definition": [
+      "chip",
+      "Ich esse gerne Chips zum Film. — I like to eat chips with the movie."
+    ],
+    "word_frequency": 5265
+  },
+  {
+    "word": "der Circus",
+    "definition": [
+      "circus",
+      "Der Circus kommt in die Stadt. — The circus is coming to town."
+    ],
+    "word_frequency": 10582
+  },
+  {
+    "word": "der Clown",
+    "definition": [
+      "clown",
+      "Der Clown brachte die Kinder zum Lachen. — The clown made the children laugh."
+    ],
+    "word_frequency": 7789
+  },
+  {
+    "word": "der Club",
+    "definition": [
+      "club",
+      "Wir gehen heute Abend in den Club. — We are going to the club tonight."
+    ],
+    "word_frequency": 928
+  },
+  {
+    "word": "der Cocktail",
+    "definition": [
+      "cocktail",
+      "Er bestellte einen erfrischenden Cocktail an der Bar. — He ordered a refreshing cocktail at the bar."
+    ],
+    "word_frequency": 9224
+  },
+  {
+    "word": "der Comic",
+    "definition": [
+      "comic book;comic strip",
+      "Ich lese gerne Comics. — I like to read comic books."
+    ],
+    "word_frequency": 3935
+  },
+  {
+    "word": "der Cousin",
+    "definition": [
+      "male cousin",
+      "Mein Cousin besucht uns nächste Woche. — My cousin is visiting us next week."
+    ],
+    "word_frequency": 6289
+  },
+  {
+    "word": "der Dachboden",
+    "definition": [
+      "attic;loft",
+      "Wir haben alte Möbel auf dem Dachboden gelagert. — We stored old furniture in the attic."
+    ],
+    "word_frequency": 11498
+  },
+  {
+    "word": "der Dad",
+    "definition": [
+      "Dad",
+      "Mein Dad kommt uns besuchen. — My Dad is coming to visit us."
+    ],
+    "word_frequency": 6626
+  },
+  {
+    "word": "der Dank",
+    "definition": [
+      "thanks;gratitude",
+      "Vielen Dank für Ihre Hilfe. — Many thanks for your help."
+    ],
+    "word_frequency": 279
+  },
+  {
+    "word": "der Daumen",
+    "definition": [
+      "thumb",
+      "Er hob den Daumen als Zeichen der Zustimmung. — He raised his thumb as a sign of approval."
+    ],
+    "word_frequency": 3332
+  },
+  {
+    "word": "der Deckel",
+    "definition": [
+      "lid;cover",
+      "Bitte setz den Deckel auf den Topf. — Please put the lid on the pot."
+    ],
+    "word_frequency": 5547
+  },
+  {
+    "word": "der Deutschlehrer",
+    "definition": [
+      "German teacher",
+      "Mein Deutschlehrer ist sehr nett. — My German teacher is very nice."
+    ],
+    "word_frequency": 26170
+  },
+  {
+    "word": "der Deutschunterricht",
+    "definition": [
+      "German class;lesson",
+      "Der Deutschunterricht beginnt um neun Uhr. — The German class starts at nine o'clock."
+    ],
+    "word_frequency": 16887
+  },
+  {
+    "word": "der Diesel",
+    "definition": [
+      "diesel (fuel)",
+      "Mein Auto fährt mit Diesel. — My car runs on diesel."
+    ],
+    "word_frequency": 3202
+  },
+  {
+    "word": "der Dino",
+    "definition": [
+      "dino (dinosaur)",
+      "Mein Sohn liebt Dinos. — My son loves dinos."
+    ],
+    "word_frequency": 11686
+  },
+  {
+    "word": "der Direktor",
+    "definition": [
+      "director",
+      "Der Direktor hat die Entscheidung getroffen. — The director made the decision."
+    ],
+    "word_frequency": 2004
+  },
+  {
+    "word": "der Doktor",
+    "definition": [
+      "doctor",
+      "Der Doktor hat mir geholfen. — The doctor helped me."
+    ],
+    "word_frequency": 3264
+  },
+  {
+    "word": "der Dollar",
+    "definition": [
+      "dollar",
+      "Das kostet zehn Dollar. — That costs ten dollars."
+    ],
+    "word_frequency": 756
+  },
+  {
+    "word": "der Donner",
+    "definition": [
+      "thunder",
+      "Nach dem Blitz kam der Donner. — After the lightning came the thunder."
+    ],
+    "word_frequency": 10246
+  },
+  {
+    "word": "der Donnerstagabend",
+    "definition": [
+      "Thursday evening",
+      "Wir treffen uns am Donnerstagabend. — We meet on Thursday evening."
+    ],
+    "word_frequency": 17189
+  },
+  {
+    "word": "der Donut",
+    "definition": [
+      "donut",
+      "Ich möchte einen Donut zum Kaffee. — I would like a donut with my coffee."
+    ],
+    "word_frequency": 23718
+  },
+  {
+    "word": "der Drink",
+    "definition": [
+      "drink (alcoholic or mixed)",
+      "Möchtest du einen Drink bestellen? — Would you like to order a drink?"
+    ],
+    "word_frequency": 9378
+  },
+  {
+    "word": "der Drucker",
+    "definition": [
+      "printer",
+      "Mein Drucker funktioniert nicht mehr. — My printer doesn't work anymore."
+    ],
+    "word_frequency": 5170
+  },
+  {
+    "word": "der Döner",
+    "definition": [
+      "doner kebab",
+      "Ich habe heute Abend einen Döner gegessen. — I ate a doner kebab tonight."
+    ],
+    "word_frequency": 7252
+  },
+  {
+    "word": "der Ehemann",
+    "definition": [
+      "husband",
+      "Mein Ehemann kommt heute Abend nach Hause. — My husband is coming home tonight."
+    ],
+    "word_frequency": 2971
+  },
+  {
+    "word": "der Eimer",
+    "definition": [
+      "bucket",
+      "Er füllte den Eimer mit Wasser. — He filled the bucket with water."
+    ],
+    "word_frequency": 6295
+  },
+  {
+    "word": "der Einkauf",
+    "definition": [
+      "shopping",
+      "Ich muss noch den Einkauf erledigen. — I still have to do the shopping."
+    ],
+    "word_frequency": 4809
+  },
+  {
+    "word": "der Einkaufswagen",
+    "definition": [
+      "shopping cart",
+      "Wir brauchen einen Einkaufswagen für den Großeinkauf. — We need a shopping cart for the big shopping trip."
+    ],
+    "word_frequency": 14346
+  },
+  {
+    "word": "der Eintopf",
+    "definition": [
+      "stew;one-pot meal",
+      "Zum Abendessen gab es einen herzhaften Eintopf. — For dinner, there was a hearty stew."
+    ],
+    "word_frequency": 19927
+  },
+  {
+    "word": "der Eintritt",
+    "definition": [
+      "entry;admission",
+      "Der Eintritt ist frei. — Admission is free."
+    ],
+    "word_frequency": 2006
+  },
+  {
+    "word": "der Eisbär",
+    "definition": [
+      "polar bear",
+      "Der Eisbär lebt in der Arktis. — The polar bear lives in the Arctic."
+    ],
+    "word_frequency": 9889
+  },
+  {
+    "word": "der Eistee",
+    "definition": [
+      "iced tea",
+      "Im Sommer trinke ich gerne Eistee. — In summer, I like to drink iced tea."
+    ],
+    "word_frequency": 22256
+  },
+  {
+    "word": "der Elefant",
+    "definition": [
+      "elephant",
+      "Der Elefant ist ein großes Tier. — The elephant is a big animal."
+    ],
+    "word_frequency": 5970
+  },
+  {
+    "word": "der Elektriker",
+    "definition": [
+      "electrician",
+      "Wir brauchen einen Elektriker, um die Lampe zu reparieren. — We need an electrician to fix the lamp."
+    ],
+    "word_frequency": 13012
+  },
+  {
+    "word": "der Ellbogen",
+    "definition": [
+      "elbow",
+      "Er stieß sich den Ellbogen am Tisch. — He hit his elbow on the table."
+    ],
+    "word_frequency": 16367
+  },
+  {
+    "word": "der Engländer",
+    "definition": [
+      "Englishman",
+      "Der Engländer sprach sehr gut Deutsch. — The Englishman spoke German very well."
+    ],
+    "word_frequency": 4027
+  },
+  {
+    "word": "der Enkel",
+    "definition": [
+      "grandchild",
+      "Mein Enkel besucht mich oft. — My grandchild often visits me."
+    ],
+    "word_frequency": 4324
+  },
+  {
+    "word": "der Erwachsener",
+    "definition": [
+      "adult",
+      "Ein Erwachsener muss die Kinder beaufsichtigen. — An adult must supervise the children."
+    ],
+    "word_frequency": 2254
+  },
+  {
+    "word": "der Esel",
+    "definition": [
+      "donkey",
+      "Der Esel trug die Last. — The donkey carried the load."
+    ],
+    "word_frequency": 5655
+  },
+  {
+    "word": "der Espresso",
+    "definition": [
+      "espresso",
+      "Ich trinke gerne einen Espresso nach dem Essen. — I like to drink an espresso after the meal."
+    ],
+    "word_frequency": 11329
+  },
+  {
+    "word": "der Essig",
+    "definition": [
+      "vinegar",
+      "Gib etwas Essig in den Salat. — Put some vinegar in the salad."
+    ],
+    "word_frequency": 10431
+  },
+  {
+    "word": "der Esslöffel",
+    "definition": [
+      "tablespoon",
+      "Bitte gib mir einen Esslöffel Zucker. — Please give me a tablespoon of sugar."
+    ],
+    "word_frequency": 26199
+  },
+  {
+    "word": "der Esstisch",
+    "definition": [
+      "dining table",
+      "Wir essen am Esstisch zu Abend. — We eat dinner at the dining table."
+    ],
+    "word_frequency": 18366
+  },
+  {
+    "word": "der Fahrlehrer",
+    "definition": [
+      "driving instructor",
+      "Mein Fahrlehrer ist sehr geduldig. — My driving instructor is very patient."
+    ],
+    "word_frequency": 24137
+  },
+  {
+    "word": "der Fahrplan",
+    "definition": [
+      "timetable;schedule",
+      "Bitte überprüfen Sie den Fahrplan für die nächste Bahn. — Please check the timetable for the next train."
+    ],
+    "word_frequency": 9541
+  },
+  {
+    "word": "der Fahrradfahrer",
+    "definition": [
+      "cyclist;bicycle rider",
+      "Der Fahrradfahrer trug einen Helm. — The cyclist wore a helmet."
+    ],
+    "word_frequency": 13464
+  },
+  {
+    "word": "der Fahrschein",
+    "definition": [
+      "ticket;fare ticket",
+      "Bitte zeigen Sie Ihren Fahrschein. — Please show your ticket."
+    ],
+    "word_frequency": 26990
+  },
+  {
+    "word": "der Fahrstuhl",
+    "definition": [
+      "elevator",
+      "Nehmen Sie den Fahrstuhl in den dritten Stock. — Take the elevator to the third floor."
+    ],
+    "word_frequency": 11891
+  },
+  {
+    "word": "der Familienname",
+    "definition": [
+      "surname;family name",
+      "Mein Familienname ist Müller. — My family name is Müller."
+    ],
+    "word_frequency": 20270
+  },
+  {
+    "word": "der Fan",
+    "definition": [
+      "fan",
+      "Er ist ein großer Fan dieser Band. — He is a big fan of this band."
+    ],
+    "word_frequency": 823
+  },
+  {
+    "word": "der Farmer",
+    "definition": [
+      "farmer",
+      "Der Farmer arbeitet hart auf seinem Feld. — The farmer works hard in his field."
+    ],
+    "word_frequency": 11892
+  },
+  {
+    "word": "der Feierabend",
+    "definition": [
+      "end of work;quitting time",
+      "Nach dem Feierabend gehe ich nach Hause. — After work, I go home."
+    ],
+    "word_frequency": 5657
+  },
+  {
+    "word": "der Feiertag",
+    "definition": [
+      "public holiday",
+      "Nächste Woche ist ein Feiertag. — Next week is a public holiday."
+    ],
+    "word_frequency": 6070
+  },
+  {
+    "word": "der Felsen",
+    "definition": [
+      "rock;cliff",
+      "Der Wanderweg führte über steile Felsen. — The hiking trail led over steep rocks."
+    ],
+    "word_frequency": 4414
+  },
+  {
+    "word": "der Feuerwehrmann",
+    "definition": [
+      "firefighter",
+      "Der Feuerwehrmann rettete die Katze vom Baum. — The firefighter rescued the cat from the tree."
+    ],
+    "word_frequency": 12782
+  },
+  {
+    "word": "der Fingernagel",
+    "definition": [
+      "fingernail",
+      "Sie hat sich den Fingernagel abgebrochen. — She broke her fingernail."
+    ],
+    "word_frequency": 16920
+  },
+  {
+    "word": "der Fischer",
+    "definition": [
+      "fisherman",
+      "Der Fischer fängt viele Fische. — The fisherman catches many fish."
+    ],
+    "word_frequency": 1449
+  },
+  {
+    "word": "der Fischmarkt",
+    "definition": [
+      "fish market",
+      "Wir besuchten den Fischmarkt in Hamburg. — We visited the fish market in Hamburg."
+    ],
+    "word_frequency": 27429
+  },
+  {
+    "word": "der Fleck",
+    "definition": [
+      "spot;stain",
+      "Auf dem Teppich ist ein großer Fleck. — There is a big stain on the carpet."
+    ],
+    "word_frequency": 4416
+  },
+  {
+    "word": "der Fleischer",
+    "definition": [
+      "butcher",
+      "Der Fleischer hat frisches Fleisch. — The butcher has fresh meat."
+    ],
+    "word_frequency": 13022
+  },
+  {
+    "word": "der Flohmarkt",
+    "definition": [
+      "flea market",
+      "Am Wochenende gehe ich auf den Flohmarkt. — This weekend I'm going to the flea market."
+    ],
+    "word_frequency": 9390
+  },
+  {
+    "word": "der Flug",
+    "definition": [
+      "flight",
+      "Der Flug nach Berlin dauert zwei Stunden. — The flight to Berlin takes two hours."
+    ],
+    "word_frequency": 1889
+  },
+  {
+    "word": "der Flur",
+    "definition": [
+      "hallway",
+      "Der Flur ist lang und dunkel. — The hallway is long and dark."
+    ],
+    "word_frequency": 4486
+  },
+  {
+    "word": "der Football",
+    "definition": [
+      "football (American)",
+      "Er schaut gerne American Football im Fernsehen. — He likes to watch American football on television."
+    ],
+    "word_frequency": 4256
+  },
+  {
+    "word": "der Fotograf",
+    "definition": [
+      "photographer",
+      "Der Fotograf machte viele Bilder. — The photographer took many pictures."
+    ],
+    "word_frequency": 5092
+  },
+  {
+    "word": "der Franzose",
+    "definition": [
+      "Frenchman",
+      "Er ist ein Franzose und spricht fließend Deutsch. — He is a Frenchman and speaks fluent German."
+    ],
+    "word_frequency": 2527
+  },
+  {
+    "word": "der Freitagabend",
+    "definition": [
+      "Friday evening",
+      "Wir treffen uns am Freitagabend. — We are meeting on Friday evening."
+    ],
+    "word_frequency": 9249
+  },
+  {
+    "word": "der Freizeitpark",
+    "definition": [
+      "amusement park",
+      "Wir haben einen schönen Tag im Freizeitpark verbracht. — We spent a nice day at the amusement park."
+    ],
+    "word_frequency": 15344
+  },
+  {
+    "word": "der Frischkäse",
+    "definition": [
+      "cream cheese",
+      "Ich esse gerne Brot mit Frischkäse. — I like to eat bread with cream cheese."
+    ],
+    "word_frequency": 25370
+  },
+  {
+    "word": "der Friseur",
+    "definition": [
+      "hairdresser",
+      "Ich gehe heute zum Friseur. — I'm going to the hairdresser today."
+    ],
+    "word_frequency": 7138
+  },
+  {
+    "word": "der Frisör",
+    "definition": [
+      "hairdresser",
+      "Ich gehe morgen zum Frisör. — I'm going to the hairdresser tomorrow."
+    ],
+    "word_frequency": 25371
+  },
+  {
+    "word": "der Frosch",
+    "definition": [
+      "frog",
+      "Der Frosch sitzt auf dem Seerosenblatt. — The frog is sitting on the lily pad."
+    ],
+    "word_frequency": 7401
+  },
+  {
+    "word": "der Fuchs",
+    "definition": [
+      "fox",
+      "Der Fuchs ist ein kluges Tier. — The fox is a clever animal."
+    ],
+    "word_frequency": 3271
+  },
+  {
+    "word": "der Fun",
+    "definition": [
+      "fun",
+      "Wir hatten viel Fun auf der Party. — We had a lot of fun at the party."
+    ],
+    "word_frequency": 4726
+  },
+  {
+    "word": "der Fussballer",
+    "definition": [
+      "footballer;soccer player",
+      "Der Fussballer schoss ein Tor. — The footballer scored a goal."
+    ],
+    "word_frequency": 6301
+  },
+  {
+    "word": "der Fussballfan",
+    "definition": [
+      "football fan",
+      "Er ist ein großer Fussballfan. — He is a big football fan."
+    ],
+    "word_frequency": 12577
+  },
+  {
+    "word": "der Fussballplatz",
+    "definition": [
+      "football field",
+      "Die Kinder spielen auf dem Fussballplatz. — The children are playing on the football field."
+    ],
+    "word_frequency": 25373
+  },
+  {
+    "word": "der Fussballspieler",
+    "definition": [
+      "football player",
+      "Der Fussballspieler hat ein Tor geschossen. — The football player scored a goal."
+    ],
+    "word_frequency": 19629
+  },
+  {
+    "word": "der Fussboden",
+    "definition": [
+      "floor",
+      "Der Fussboden ist sauber. — The floor is clean."
+    ],
+    "word_frequency": 10084
+  },
+  {
+    "word": "der Fussgänger",
+    "definition": [
+      "pedestrian",
+      "Fussgänger müssen den Zebrastreifen benutzen. — Pedestrians must use the crosswalk."
+    ],
+    "word_frequency": 5457
+  },
+  {
+    "word": "der Führerschein",
+    "definition": [
+      "driving license",
+      "Er hat seinen Führerschein letztes Jahr gemacht. — He got his driving license last year."
+    ],
+    "word_frequency": 3406
+  },
+  {
+    "word": "der Füller",
+    "definition": [
+      "fountain pen",
+      "Ich schreibe mit meinem neuen Füller. — I am writing with my new fountain pen."
+    ],
+    "word_frequency": 22641
+  },
+  {
+    "word": "der Gang",
+    "definition": [
+      "corridor;gear;course (of a meal);walk",
+      "Der erste Gang des Menüs war Suppe. — The first course of the menu was soup."
+    ],
+    "word_frequency": 1505
+  },
+  {
+    "word": "der Gast",
+    "definition": [
+      "guest",
+      "Wir erwarten heute Abend einen Gast. — We are expecting a guest tonight."
+    ],
+    "word_frequency": 1144
+  },
+  {
+    "word": "der Gebrauchtwagen",
+    "definition": [
+      "used car",
+      "Er hat einen Gebrauchtwagen gekauft. — He bought a used car."
+    ],
+    "word_frequency": 19018
+  },
+  {
+    "word": "der Geburtsort",
+    "definition": [
+      "place of birth",
+      "Mein Geburtsort ist Berlin. — My place of birth is Berlin."
+    ],
+    "word_frequency": 14828
+  },
+  {
+    "word": "der Gehweg",
+    "definition": [
+      "sidewalk;pavement",
+      "Bitte bleiben Sie auf dem Gehweg. — Please stay on the sidewalk."
+    ],
+    "word_frequency": 11342
+  },
+  {
+    "word": "der Geldautomat",
+    "definition": [
+      "ATM;cash machine",
+      "Wo ist der nächste Geldautomat? — Where is the nearest ATM?"
+    ],
+    "word_frequency": 16133
+  },
+  {
+    "word": "der Geldbeutel",
+    "definition": [
+      "wallet;purse",
+      "Ich habe meinen Geldbeutel verloren. — I lost my wallet."
+    ],
+    "word_frequency": 7961
+  },
+  {
+    "word": "der Geschirrspüler",
+    "definition": [
+      "dishwasher",
+      "Wir haben einen neuen Geschirrspüler gekauft. — We bought a new dishwasher."
+    ],
+    "word_frequency": 24164
+  },
+  {
+    "word": "der Gewinner",
+    "definition": [
+      "winner",
+      "Der Gewinner des Rennens war sehr glücklich. — The winner of the race was very happy."
+    ],
+    "word_frequency": 2389
+  },
+  {
+    "word": "der Gin",
+    "definition": [
+      "gin",
+      "Möchtest du einen Gin Tonic? — Would you like a gin and tonic?"
+    ],
+    "word_frequency": 8817
+  },
+  {
+    "word": "der Globus",
+    "definition": [
+      "globe",
+      "Der Globus steht auf dem Schreibtisch. — The globe is on the desk."
+    ],
+    "word_frequency": 10270
+  },
+  {
+    "word": "der Glückwunsch",
+    "definition": [
+      "congratulation",
+      "Herzlichen Glückwunsch zum Geburtstag! — Happy birthday!"
+    ],
+    "word_frequency": 2492
+  },
+  {
+    "word": "der Golf",
+    "definition": [
+      "golf",
+      "Er spielt gerne Golf am Wochenende. — He likes to play golf on the weekend."
+    ],
+    "word_frequency": 2630
+  },
+  {
+    "word": "der Gorilla",
+    "definition": [
+      "gorilla",
+      "Der Gorilla ist ein großer Affe. — The gorilla is a large ape."
+    ],
+    "word_frequency": 16398
+  },
+  {
+    "word": "der Grad",
+    "definition": [
+      "degree",
+      "Es sind 20 Grad Celsius. — It is 20 degrees Celsius."
+    ],
+    "word_frequency": 682
+  },
+  {
+    "word": "der Grieche",
+    "definition": [
+      "Greek (person)",
+      "Der Grieche liebt Oliven. — The Greek loves olives."
+    ],
+    "word_frequency": 4650
+  },
+  {
+    "word": "der Grill",
+    "definition": [
+      "grill;barbecue",
+      "Wir machen heute Abend einen Grill an. — We're lighting a grill tonight."
+    ],
+    "word_frequency": 5463
+  },
+  {
+    "word": "der Grund",
+    "definition": [
+      "reason;ground",
+      "Es gibt einen guten Grund dafür. — There is a good reason for that."
+    ],
+    "word_frequency": 254
+  },
+  {
+    "word": "der Grundkurs",
+    "definition": [
+      "basic course",
+      "Ich habe einen Grundkurs in Spanisch belegt. — I took a basic course in Spanish."
+    ],
+    "word_frequency": 23366
+  },
+  {
+    "word": "der Gruss",
+    "definition": [
+      "greeting",
+      "Er schickte einen herzlichen Gruss. — He sent a warm greeting."
+    ],
+    "word_frequency": 2683
+  },
+  {
+    "word": "der Gurt",
+    "definition": [
+      "belt;strap",
+      "Bitte legen Sie den Sicherheitsgurt an. — Please fasten your seatbelt."
+    ],
+    "word_frequency": 16401
+  },
+  {
+    "word": "der Gärtner",
+    "definition": [
+      "gardener",
+      "Der Gärtner pflegt die Blumen. — The gardener takes care of the flowers."
+    ],
+    "word_frequency": 5891
+  },
+  {
+    "word": "der Gürtel",
+    "definition": [
+      "belt",
+      "Er trägt einen braunen Gürtel. — He is wearing a brown belt."
+    ],
+    "word_frequency": 5564
+  },
+  {
+    "word": "der Haarschnitt",
+    "definition": [
+      "haircut",
+      "Ich brauche einen neuen Haarschnitt. — I need a new haircut."
+    ],
+    "word_frequency": 19982
+  },
+  {
+    "word": "der Hahn",
+    "definition": [
+      "rooster;tap;faucet",
+      "Der Hahn kräht jeden Morgen. — The rooster crows every morning."
+    ],
+    "word_frequency": 2833
+  },
+  {
+    "word": "der Hai",
+    "definition": [
+      "shark",
+      "Der Hai schwimmt schnell im Ozean. — The shark swims fast in the ocean."
+    ],
+    "word_frequency": 8959
+  },
+  {
+    "word": "der Hals",
+    "definition": [
+      "neck;throat",
+      "Mein Hals tut weh. — My throat hurts."
+    ],
+    "word_frequency": 2014
+  },
+  {
+    "word": "der Halsschmerz",
+    "definition": [
+      "sore throat",
+      "Ich habe einen Halsschmerz. — I have a sore throat."
+    ],
+    "word_frequency": 29299
+  },
+  {
+    "word": "der Hammer",
+    "definition": [
+      "hammer",
+      "Wo ist der Hammer? — Where is the hammer?"
+    ],
+    "word_frequency": 2304
+  },
+  {
+    "word": "der Hamster",
+    "definition": [
+      "hamster",
+      "Mein Hamster schläft den ganzen Tag. — My hamster sleeps all day."
+    ],
+    "word_frequency": 14382
+  },
+  {
+    "word": "der Handball",
+    "definition": [
+      "handball",
+      "Er spielt gerne Handball. — He likes to play handball."
+    ],
+    "word_frequency": 4333
+  },
+  {
+    "word": "der Handschuh",
+    "definition": [
+      "glove",
+      "Ich habe meine Handschuhe vergessen. — I forgot my gloves."
+    ],
+    "word_frequency": 7405
+  },
+  {
+    "word": "der Handwerker",
+    "definition": [
+      "craftsman",
+      "Der Handwerker repariert das Dach. — The craftsman is repairing the roof."
+    ],
+    "word_frequency": 3878
+  },
+  {
+    "word": "der Hase",
+    "definition": [
+      "hare;rabbit",
+      "Der Hase hoppelt über das Feld. — The hare hops across the field."
+    ],
+    "word_frequency": 6900
+  },
+  {
+    "word": "der Hauptbahnhof",
+    "definition": [
+      "main station",
+      "Wir treffen uns am Hauptbahnhof. — We meet at the main station."
+    ],
+    "word_frequency": 3345
+  },
+  {
+    "word": "der Haupteingang",
+    "definition": [
+      "main entrance",
+      "Der Haupteingang ist auf der anderen Seite des Gebäudes. — The main entrance is on the other side of the building."
+    ],
+    "word_frequency": 15371
+  },
+  {
+    "word": "der Hausarzt",
+    "definition": [
+      "family doctor;general practitioner",
+      "Ich muss einen Termin bei meinem Hausarzt vereinbaren. — I need to make an appointment with my family doctor."
+    ],
+    "word_frequency": 10619
+  },
+  {
+    "word": "der Hausmeister",
+    "definition": [
+      "caretaker;janitor",
+      "Der Hausmeister reparierte die Heizung. — The caretaker repaired the heating."
+    ],
+    "word_frequency": 8669
+  },
+  {
+    "word": "der Hausschuh",
+    "definition": [
+      "slipper",
+      "Zieh deine Hausschuhe an, es ist kalt. — Put on your slippers, it's cold."
+    ],
+    "word_frequency": 28370
+  },
+  {
+    "word": "der Heiligabend",
+    "definition": [
+      "Christmas Eve",
+      "Wir feiern Heiligabend mit der Familie. — We celebrate Christmas Eve with the family."
+    ],
+    "word_frequency": 13933
+  },
+  {
+    "word": "der Heimweg",
+    "definition": [
+      "way home",
+      "Der Heimweg war lang. — The way home was long."
+    ],
+    "word_frequency": 8820
+  },
+  {
+    "word": "der Heizkörper",
+    "definition": [
+      "radiator",
+      "Der Heizkörper ist warm. — The radiator is warm."
+    ],
+    "word_frequency": 27900
+  },
+  {
+    "word": "der Helfer",
+    "definition": [
+      "helper",
+      "Der Helfer kam schnell. — The helper came quickly."
+    ],
+    "word_frequency": 3411
+  },
+  {
+    "word": "der Herbst",
+    "definition": [
+      "autumn;fall",
+      "Im Herbst fallen die Blätter von den Bäumen. — In autumn, the leaves fall from the trees."
+    ],
+    "word_frequency": 1114
+  },
+  {
+    "word": "der Herd",
+    "definition": [
+      "stove",
+      "Der neue Herd hat sechs Kochplatten. — The new stove has six burners."
+    ],
+    "word_frequency": 6085
+  },
+  {
+    "word": "der Himmel",
+    "definition": [
+      "sky;heaven",
+      "Der Himmel ist heute blau. — The sky is blue today."
+    ],
+    "word_frequency": 935
+  },
+  {
+    "word": "der Hocker",
+    "definition": [
+      "stool",
+      "Bitte nimm auf dem Hocker Platz. — Please take a seat on the stool."
+    ],
+    "word_frequency": 13268
+  },
+  {
+    "word": "der Hof",
+    "definition": [
+      "courtyard",
+      "Der Hof ist voller Blumen. — The courtyard is full of flowers."
+    ],
+    "word_frequency": 1265
+  },
+  {
+    "word": "der Honig",
+    "definition": [
+      "honey",
+      "Ich mag Honig im Tee. — I like honey in my tea."
+    ],
+    "word_frequency": 4423
+  },
+  {
+    "word": "der Hoodie",
+    "definition": [
+      "hoodie",
+      "Er trug einen bequemen Hoodie. — He wore a comfortable hoodie."
+    ],
+    "word_frequency": 26256
+  },
+  {
+    "word": "der Horrorfilm",
+    "definition": [
+      "horror film",
+      "Ich mag keine Horrorfilme, sie sind zu gruselig. — I don't like horror films, they are too scary."
+    ],
+    "word_frequency": 15626
+  },
+  {
+    "word": "der Husky",
+    "definition": [
+      "husky (dog breed)",
+      "Der Husky ist ein Schlittenhund. — The husky is a sled dog."
+    ],
+    "word_frequency": 26630
+  },
+  {
+    "word": "der Hörer",
+    "definition": [
+      "listener;receiver (of a phone)",
+      "Der Hörer legte auf. — The listener hung up."
+    ],
+    "word_frequency": 7542
+  },
+  {
+    "word": "der Igel",
+    "definition": [
+      "hedgehog",
+      "Ein kleiner Igel lief über die Straße. — A small hedgehog ran across the street."
+    ],
+    "word_frequency": 10457
+  },
+  {
+    "word": "der Imbiss",
+    "definition": [
+      "snack;snack bar",
+      "Wir holen uns einen Imbiss. — We'll get a snack."
+    ],
+    "word_frequency": 11166
+  },
+  {
+    "word": "der Internetanschluss",
+    "definition": [
+      "internet connection",
+      "Wir brauchen einen neuen Internetanschluss. — We need a new internet connection."
+    ],
+    "word_frequency": 27066
+  },
+  {
+    "word": "der Internetzugang",
+    "definition": [
+      "internet access",
+      "Wir haben keinen Internetzugang in diesem Hotel. — We have no internet access in this hotel."
+    ],
+    "word_frequency": 20316
+  },
+  {
+    "word": "der Italiener",
+    "definition": [
+      "Italian (person)",
+      "Er ist ein Italiener. — He is an Italian."
+    ],
+    "word_frequency": 4049
+  },
+  {
+    "word": "der Japaner",
+    "definition": [
+      "Japanese person (male)",
+      "Er ist ein Japaner. — He is a Japanese person."
+    ],
+    "word_frequency": 5106
+  },
+  {
+    "word": "der Job",
+    "definition": [
+      "job",
+      "Mein Job ist sehr interessant. — My job is very interesting."
+    ],
+    "word_frequency": 520
+  },
+  {
+    "word": "der Jogger",
+    "definition": [
+      "jogger",
+      "Der Jogger läuft jeden Morgen im Park. — The jogger runs in the park every morning."
+    ],
+    "word_frequency": 24217
+  },
+  {
+    "word": "der Juice",
+    "definition": [
+      "juice",
+      "Ich möchte einen Apfel-Juice. — I would like an apple juice."
+    ],
+    "word_frequency": 19672
+  },
+  {
+    "word": "der Jänner",
+    "definition": [
+      "January",
+      "Der Jänner ist der erste Monat des Jahres. — January is the first month of the year."
+    ],
+    "word_frequency": 4576
+  },
+  {
+    "word": "der Kakao",
+    "definition": [
+      "cocoa",
+      "Ich trinke gerne heißen Kakao. — I like to drink hot cocoa."
+    ],
+    "word_frequency": 8832
+  },
+  {
+    "word": "der Kaktus",
+    "definition": [
+      "cactus",
+      "Der Kaktus braucht nicht viel Wasser. — The cactus doesn't need much water."
+    ],
+    "word_frequency": 23400
+  },
+  {
+    "word": "der Kalender",
+    "definition": [
+      "calendar",
+      "Der Kalender hängt an der Wand. — The calendar hangs on the wall."
+    ],
+    "word_frequency": 3613
+  },
+  {
+    "word": "der Kamm",
+    "definition": [
+      "comb",
+      "Ich brauche einen Kamm für meine Haare. — I need a comb for my hair."
+    ],
+    "word_frequency": 9273
+  },
+  {
+    "word": "der Kanadier",
+    "definition": [
+      "Canadian (male)",
+      "Er ist ein Kanadier. — He is a Canadian."
+    ],
+    "word_frequency": 10106
+  },
+  {
+    "word": "der Kartoffelsalat",
+    "definition": [
+      "potato salad",
+      "Zum Grillen gibt es oft Kartoffelsalat. — Potato salad is often served with barbecue."
+    ],
+    "word_frequency": 17526
+  },
+  {
+    "word": "der Karton",
+    "definition": [
+      "cardboard box;carton",
+      "Bitte legen Sie es in den Karton. — Please put it in the box."
+    ],
+    "word_frequency": 7978
+  },
+  {
+    "word": "der Kassierer",
+    "definition": [
+      "cashier (male)",
+      "Der Kassierer hat mir geholfen. — The cashier helped me."
+    ],
+    "word_frequency": 11177
+  },
+  {
+    "word": "der Kasten",
+    "definition": [
+      "box",
+      "Der Kasten ist voll mit Büchern. — The box is full of books."
+    ],
+    "word_frequency": 4427
+  },
+  {
+    "word": "der Kater",
+    "definition": [
+      "tomcat;hangover",
+      "Mein Kater schläft den ganzen Tag. — My tomcat sleeps all day."
+    ],
+    "word_frequency": 5007
+  },
+  {
+    "word": "der Kauf",
+    "definition": [
+      "purchase",
+      "Der Kauf des Hauses war eine große Entscheidung. — The purchase of the house was a big decision."
+    ],
+    "word_frequency": 1194
+  },
+  {
+    "word": "der Kaugummi",
+    "definition": [
+      "chewing gum",
+      "Ich mag den Geschmack von Kaugummi. — I like the taste of chewing gum."
+    ],
+    "word_frequency": 13055
+  },
+  {
+    "word": "der Keks",
+    "definition": [
+      "biscuit;cookie",
+      "Möchtest du einen Keks? — Would you like a cookie?"
+    ],
+    "word_frequency": 7036
+  },
+  {
+    "word": "der Keller",
+    "definition": [
+      "cellar;basement",
+      "Wir lagern Wein im Keller. — We store wine in the cellar."
+    ],
+    "word_frequency": 1576
+  },
+  {
+    "word": "der Kellner",
+    "definition": [
+      "waiter",
+      "Der Kellner brachte uns die Speisekarte. — The waiter brought us the menu."
+    ],
+    "word_frequency": 6425
+  },
+  {
+    "word": "der Kinderarzt",
+    "definition": [
+      "pediatrician",
+      "Wir müssen mit dem Baby zum Kinderarzt. — We need to take the baby to the pediatrician."
+    ],
+    "word_frequency": 17833
+  },
+  {
+    "word": "der Kindergeburtstag",
+    "definition": [
+      "children's birthday party",
+      "Wir feiern einen Kindergeburtstag. — We are celebrating a children's birthday party."
+    ],
+    "word_frequency": 23407
+  },
+  {
+    "word": "der Kinderspielplatz",
+    "definition": [
+      "children's playground",
+      "Der Kinderspielplatz ist voller Kinder. — The children's playground is full of children."
+    ],
+    "word_frequency": 27083
+  },
+  {
+    "word": "der Kinderwagen",
+    "definition": [
+      "stroller;pram",
+      "Der Kinderwagen ist neu. — The stroller is new."
+    ],
+    "word_frequency": 8833
+  },
+  {
+    "word": "der Kinofilm",
+    "definition": [
+      "cinema film;movie",
+      "Wir haben gestern einen guten Kinofilm gesehen. — We saw a good movie yesterday."
+    ],
+    "word_frequency": 13286
+  },
+  {
+    "word": "der Kiosk",
+    "definition": [
+      "kiosk;newsstand",
+      "Ich kaufe eine Zeitung am Kiosk. — I buy a newspaper at the kiosk."
+    ],
+    "word_frequency": 8834
+  },
+  {
+    "word": "der Kirchplatz",
+    "definition": [
+      "church square",
+      "Wir treffen uns auf dem Kirchplatz. — We meet at the church square."
+    ],
+    "word_frequency": 27505
+  },
+  {
+    "word": "der Kirschbaum",
+    "definition": [
+      "cherry tree",
+      "Im Frühling blüht der Kirschbaum wunderschön. — In spring, the cherry tree blossoms beautifully."
+    ],
+    "word_frequency": 24227
+  },
+  {
+    "word": "der Klassenkamerad",
+    "definition": [
+      "classmate (male)",
+      "Mein Klassenkamerad hilft mir. — My classmate helps me."
+    ],
+    "word_frequency": 15933
+  },
+  {
+    "word": "der Klassenraum",
+    "definition": [
+      "classroom",
+      "Der Klassenraum ist sehr hell. — The classroom is very bright."
+    ],
+    "word_frequency": 24596
+  },
+  {
+    "word": "der Kleber",
+    "definition": [
+      "glue;adhesive",
+      "Der Kleber hält sehr gut. — The glue holds very well."
+    ],
+    "word_frequency": 11540
+  },
+  {
+    "word": "der Klebstoff",
+    "definition": [
+      "glue",
+      "Ich brauche Klebstoff, um das Papier zu befestigen. — I need glue to attach the paper."
+    ],
+    "word_frequency": 26286
+  },
+  {
+    "word": "der Kleiderschrank",
+    "definition": [
+      "wardrobe;closet",
+      "Der Kleiderschrank ist voll mit Kleidung. — The wardrobe is full of clothes."
+    ],
+    "word_frequency": 12616
+  },
+  {
+    "word": "der Klub",
+    "definition": [
+      "club",
+      "Wir gehen heute Abend in den Klub. — We are going to the club tonight."
+    ],
+    "word_frequency": 3615
+  },
+  {
+    "word": "der Knoblauch",
+    "definition": [
+      "garlic",
+      "Ich mag den Geruch von Knoblauch. — I like the smell of garlic."
+    ],
+    "word_frequency": 7422
+  },
+  {
+    "word": "der Knopf",
+    "definition": [
+      "button",
+      "Der Knopf an meinem Hemd ist abgefallen. — The button on my shirt fell off."
+    ],
+    "word_frequency": 4837
+  },
+  {
+    "word": "der Kofferraum",
+    "definition": [
+      "car boot;trunk",
+      "Bitte legen Sie die Taschen in den Kofferraum. — Please put the bags in the car boot."
+    ],
+    "word_frequency": 8679
+  },
+  {
+    "word": "der Kohl",
+    "definition": [
+      "cabbage",
+      "Ich mag keinen Kohl. — I don't like cabbage."
+    ],
+    "word_frequency": 4912
+  },
+  {
+    "word": "der Kollege",
+    "definition": [
+      "colleague",
+      "Mein Kollege hilft mir bei der Arbeit. — My colleague helps me with the work."
+    ],
+    "word_frequency": 911
+  },
+  {
+    "word": "der Konferenzraum",
+    "definition": [
+      "conference room",
+      "Wir treffen uns im Konferenzraum. — We meet in the conference room."
+    ],
+    "word_frequency": 29833
+  },
+  {
+    "word": "der Kontakt",
+    "definition": [
+      "contact",
+      "Wir haben keinen Kontakt mehr. — We don't have any contact anymore."
+    ],
+    "word_frequency": 892
+  },
+  {
+    "word": "der Kontinent",
+    "definition": [
+      "continent",
+      "Europa ist ein Kontinent. — Europe is a continent."
+    ],
+    "word_frequency": 6211
+  },
+  {
+    "word": "der Kopfhörer",
+    "definition": [
+      "headphones",
+      "Ich höre Musik mit meinen Kopfhörern. — I listen to music with my headphones."
+    ],
+    "word_frequency": 5994
+  },
+  {
+    "word": "der Kopfschmerz",
+    "definition": [
+      "headache",
+      "Ich habe starke Kopfschmerzen. — I have a bad headache."
+    ],
+    "word_frequency": 4661
+  },
+  {
+    "word": "der Korb",
+    "definition": [
+      "basket",
+      "Sie trug einen Korb voller Pilze. — She carried a basket full of mushrooms."
+    ],
+    "word_frequency": 6093
+  },
+  {
+    "word": "der Koreaner",
+    "definition": [
+      "Korean (person)",
+      "Er ist ein Koreaner. — He is a Korean."
+    ],
+    "word_frequency": 17839
+  },
+  {
+    "word": "der Krankenpfleger",
+    "definition": [
+      "male nurse",
+      "Der Krankenpfleger kümmerte sich gut um die Patienten. — The male nurse took good care of the patients."
+    ],
+    "word_frequency": 15647
+  },
+  {
+    "word": "der Kroate",
+    "definition": [
+      "Croat (male)",
+      "Er ist ein Kroate aus Zagreb. — He is a Croat from Zagreb."
+    ],
+    "word_frequency": 14868
+  },
+  {
+    "word": "der Kunde",
+    "definition": [
+      "customer",
+      "Der Kunde wartet schon. — The customer is already waiting."
+    ],
+    "word_frequency": 711
+  },
+  {
+    "word": "der Kurs",
+    "definition": [
+      "course (e.g.;language course);rate (e.g.;exchange rate)",
+      "Ich besuche einen Deutschkurs. — I am attending a German course."
+    ],
+    "word_frequency": 1357
+  },
+  {
+    "word": "der Kuss",
+    "definition": [
+      "kiss",
+      "Er gab ihr einen Kuss auf die Wange. — He gave her a kiss on the cheek."
+    ],
+    "word_frequency": 4055
+  },
+  {
+    "word": "der Käsekuchen",
+    "definition": [
+      "cheesecake",
+      "Ich liebe Käsekuchen mit Kirschen. — I love cheesecake with cherries."
+    ],
+    "word_frequency": 27521
+  },
+  {
+    "word": "der Körper",
+    "definition": [
+      "body",
+      "Der menschliche Körper ist komplex. — The human body is complex."
+    ],
+    "word_frequency": 627
+  },
+  {
+    "word": "der Körperteil",
+    "definition": [
+      "body part",
+      "Jeder Körperteil hat eine Funktion. — Every body part has a function."
+    ],
+    "word_frequency": 18435
+  },
+  {
+    "word": "der Küchentisch",
+    "definition": [
+      "kitchen table",
+      "Wir essen oft am Küchentisch. — We often eat at the kitchen table."
+    ],
+    "word_frequency": 21641
+  },
+  {
+    "word": "der Kühlschrank",
+    "definition": [
+      "refrigerator",
+      "Das Essen ist im Kühlschrank. — The food is in the refrigerator."
+    ],
+    "word_frequency": 3283
+  },
+  {
+    "word": "der Kürbis",
+    "definition": [
+      "pumpkin;squash",
+      "Wir haben einen großen Kürbis für Halloween gekauft. — We bought a big pumpkin for Halloween."
+    ],
+    "word_frequency": 12173
+  },
+  {
+    "word": "der Lachs",
+    "definition": [
+      "salmon",
+      "Ich esse gerne Lachs zum Abendessen. — I like to eat salmon for dinner."
+    ],
+    "word_frequency": 12175
+  },
+  {
+    "word": "der Lagerraum",
+    "definition": [
+      "storage room",
+      "Wir lagern die Möbel im Lagerraum. — We store the furniture in the storage room."
+    ],
+    "word_frequency": 19381
+  },
+  {
+    "word": "der Lappen",
+    "definition": [
+      "rag;cloth",
+      "Bitte gib mir den Lappen, um den Tisch abzuwischen. — Please give me the rag to wipe the table."
+    ],
+    "word_frequency": 6665
+  },
+  {
+    "word": "der Laptop",
+    "definition": [
+      "laptop",
+      "Mein Laptop ist kaputt. — My laptop is broken."
+    ],
+    "word_frequency": 3545
+  },
+  {
+    "word": "der Lastwagen",
+    "definition": [
+      "truck;lorry",
+      "Der Lastwagen lieferte die Waren. — The truck delivered the goods."
+    ],
+    "word_frequency": 9125
+  },
+  {
+    "word": "der Lauch",
+    "definition": [
+      "leek",
+      "Ich brauche Lauch für die Suppe. — I need leek for the soup."
+    ],
+    "word_frequency": 15398
+  },
+  {
+    "word": "der Laufschuh",
+    "definition": [
+      "running shoe",
+      "Er kaufte ein neues Paar Laufschuhe. — He bought a new pair of running shoes."
+    ],
+    "word_frequency": 27955
+  },
+  {
+    "word": "der Lerner",
+    "definition": [
+      "learner",
+      "Die Lerner übten die neuen Vokabeln. — The learners practiced the new vocabulary."
+    ],
+    "word_frequency": 25465
+  },
+  {
+    "word": "der Leser",
+    "definition": [
+      "reader",
+      "Der Leser fand das Buch sehr interessant. — The reader found the book very interesting."
+    ],
+    "word_frequency": 1667
+  },
+  {
+    "word": "der Lichtschalter",
+    "definition": [
+      "light switch",
+      "Bitte betätigen Sie den Lichtschalter. — Please operate the light switch."
+    ],
+    "word_frequency": 29850
+  },
+  {
+    "word": "der Liebling",
+    "definition": [
+      "darling",
+      "Du bist mein Liebling. — You are my darling."
+    ],
+    "word_frequency": 6551
+  },
+  {
+    "word": "der Lift",
+    "definition": [
+      "elevator;lift",
+      "Wir nahmen den Lift in den fünften Stock. — We took the lift to the fifth floor."
+    ],
+    "word_frequency": 12393
+  },
+  {
+    "word": "der Lippenstift",
+    "definition": [
+      "lipstick",
+      "Sie hat einen neuen Lippenstift gekauft. — She bought a new lipstick."
+    ],
+    "word_frequency": 14195
+  },
+  {
+    "word": "der Lkw",
+    "definition": [
+      "truck;lorry",
+      "Der Lkw transportiert schwere Güter. — The truck transports heavy goods."
+    ],
+    "word_frequency": 2023
+  },
+  {
+    "word": "der Locher",
+    "definition": [
+      "hole punch",
+      "Ich brauche einen Locher, um die Blätter abzuheften. — I need a hole punch to file the sheets."
+    ],
+    "word_frequency": 29855
+  },
+  {
+    "word": "der Login",
+    "definition": [
+      "login",
+      "Bitte geben Sie Ihr Login und Passwort ein. — Please enter your login and password."
+    ],
+    "word_frequency": 15134
+  },
+  {
+    "word": "der Luftballon",
+    "definition": [
+      "balloon",
+      "Die Kinder spielten mit einem roten Luftballon. — The children played with a red balloon."
+    ],
+    "word_frequency": 13298
+  },
+  {
+    "word": "der Lutscher",
+    "definition": [
+      "lollipop",
+      "Das Kind isst einen Lutscher. — The child is eating a lollipop."
+    ],
+    "word_frequency": 28441
+  },
+  {
+    "word": "der Luxemburger",
+    "definition": [
+      "Luxembourger (male)",
+      "Er ist ein Luxemburger und spricht drei Sprachen. — He is a Luxembourger and speaks three languages."
+    ],
+    "word_frequency": 14879
+  },
+  {
+    "word": "der Lärm",
+    "definition": [
+      "noise",
+      "Der Lärm war unerträglich. — The noise was unbearable."
+    ],
+    "word_frequency": 3887
+  },
+  {
+    "word": "der Löwe",
+    "definition": [
+      "lion",
+      "Der Löwe ist ein wildes Tier. — The lion is a wild animal."
+    ],
+    "word_frequency": 2688
+  },
+  {
+    "word": "der Magen",
+    "definition": [
+      "stomach",
+      "Mein Magen knurrt. — My stomach is rumbling."
+    ],
+    "word_frequency": 3155
+  },
+  {
+    "word": "der Magnet",
+    "definition": [
+      "magnet",
+      "Der Magnet zieht das Metall an. — The magnet attracts the metal."
+    ],
+    "word_frequency": 13511
+  },
+  {
+    "word": "der Mais",
+    "definition": [
+      "corn;maize",
+      "Wir essen gerne Maiskolben im Sommer. — We like to eat corn on the cob in summer."
+    ],
+    "word_frequency": 6325
+  },
+  {
+    "word": "der Maler",
+    "definition": [
+      "painter",
+      "Der Maler streicht die Wand grün. — The painter paints the wall green."
+    ],
+    "word_frequency": 3354
+  },
+  {
+    "word": "der Mantel",
+    "definition": [
+      "coat",
+      "Ich brauche einen warmen Mantel für den Winter. — I need a warm coat for the winter."
+    ],
+    "word_frequency": 4505
+  },
+  {
+    "word": "der Marker",
+    "definition": [
+      "marker (pen)",
+      "Bitte gib mir den roten Marker. — Please give me the red marker."
+    ],
+    "word_frequency": 19397
+  },
+  {
+    "word": "der Marktplatz",
+    "definition": [
+      "marketplace",
+      "Der Marktplatz ist heute voller Menschen. — The marketplace is full of people today."
+    ],
+    "word_frequency": 4350
+  },
+  {
+    "word": "der Mechaniker",
+    "definition": [
+      "mechanic",
+      "Der Mechaniker reparierte mein Auto. — The mechanic repaired my car."
+    ],
+    "word_frequency": 11376
+  },
+  {
+    "word": "der Mensch",
+    "definition": [
+      "human being",
+      "Der Mensch ist ein soziales Wesen. — The human being is a social creature."
+    ],
+    "word_frequency": 94
+  },
+  {
+    "word": "der Metzger",
+    "definition": [
+      "butcher",
+      "Ich kaufe mein Fleisch immer beim Metzger. — I always buy my meat at the butcher's."
+    ],
+    "word_frequency": 7838
+  },
+  {
+    "word": "der Mexikaner",
+    "definition": [
+      "Mexican (person)",
+      "Er ist ein Mexikaner. — He is a Mexican."
+    ],
+    "word_frequency": 10642
+  },
+  {
+    "word": "der Mietwagen",
+    "definition": [
+      "rental car",
+      "Wir haben einen Mietwagen für unsere Reise gebucht. — We booked a rental car for our trip."
+    ],
+    "word_frequency": 13518
+  },
+  {
+    "word": "der Millimeter",
+    "definition": [
+      "millimeter",
+      "Der Nagel ist zehn Millimeter lang. — The nail is ten millimeters long."
+    ],
+    "word_frequency": 5690
+  },
+  {
+    "word": "der Mittwochabend",
+    "definition": [
+      "Wednesday evening",
+      "Wir treffen uns am Mittwochabend. — We are meeting on Wednesday evening."
+    ],
+    "word_frequency": 16201
+  },
+  {
+    "word": "der Mixer",
+    "definition": [
+      "blender;mixer",
+      "Ich brauche einen Mixer für den Smoothie. — I need a blender for the smoothie."
+    ],
+    "word_frequency": 16704
+  },
+  {
+    "word": "der Mond",
+    "definition": [
+      "moon",
+      "Der Mond scheint hell am Nachthimmel. — The moon shines brightly in the night sky."
+    ],
+    "word_frequency": 2545
+  },
+  {
+    "word": "der Monitor",
+    "definition": [
+      "monitor",
+      "Der Monitor ist sehr groß. — The monitor is very big."
+    ],
+    "word_frequency": 5692
+  },
+  {
+    "word": "der Montagabend",
+    "definition": [
+      "Monday evening",
+      "Wir treffen uns am Montagabend. — We are meeting on Monday evening."
+    ],
+    "word_frequency": 15668
+  },
+  {
+    "word": "der Montagmorgen",
+    "definition": [
+      "Monday morning",
+      "Am Montagmorgen beginnt die Arbeitswoche. — The work week begins on Monday morning."
+    ],
+    "word_frequency": 14654
+  },
+  {
+    "word": "der Motor",
+    "definition": [
+      "engine;motor",
+      "Der Motor des Autos ist kaputt. — The car's engine is broken."
+    ],
+    "word_frequency": 1975
+  },
+  {
+    "word": "der Movie",
+    "definition": [
+      "movie;film",
+      "Ich habe gestern einen guten Movie gesehen. — I saw a good movie yesterday."
+    ],
+    "word_frequency": 7845
+  },
+  {
+    "word": "der Mozzarella",
+    "definition": [
+      "mozzarella",
+      "Ich mache einen Salat mit Tomaten und Mozzarella. — I am making a salad with tomatoes and mozzarella."
+    ],
+    "word_frequency": 25498
+  },
+  {
+    "word": "der Muffin",
+    "definition": [
+      "muffin",
+      "Ich möchte einen Schokoladenmuffin zum Frühstück. — I would like a chocolate muffin for breakfast."
+    ],
+    "word_frequency": 17284
+  },
+  {
+    "word": "der Musiker",
+    "definition": [
+      "musician (male)",
+      "Der Musiker spielte ein schönes Lied. — The musician played a beautiful song."
+    ],
+    "word_frequency": 1784
+  },
+  {
+    "word": "der Musiklehrer",
+    "definition": [
+      "music teacher",
+      "Mein Musiklehrer spielt Klavier. — My music teacher plays piano."
+    ],
+    "word_frequency": 23110
+  },
+  {
+    "word": "der Musikunterricht",
+    "definition": [
+      "music lesson",
+      "Ich habe jeden Dienstag Musikunterricht. — I have music lessons every Tuesday."
+    ],
+    "word_frequency": 24664
+  },
+  {
+    "word": "der Muttertag",
+    "definition": [
+      "Mother's Day",
+      "Am Muttertag schenken wir unserer Mutter Blumen. — On Mother's Day, we give our mother flowers."
+    ],
+    "word_frequency": 17577
+  },
+  {
+    "word": "der Müll",
+    "definition": [
+      "trash",
+      "Bitte werfen Sie den Müll in den dafür vorgesehenen Behälter. — Please throw the trash in the designated bin."
+    ],
+    "word_frequency": 2264
+  },
+  {
+    "word": "der Mülleimer",
+    "definition": [
+      "trash can",
+      "Wirf den Abfall in den Mülleimer. — Throw the waste in the trash can."
+    ],
+    "word_frequency": 10832
+  },
+  {
+    "word": "der Nachname",
+    "definition": [
+      "surname;last name",
+      "Bitte geben Sie Ihren Nachnamen an. — Please state your last name."
+    ],
+    "word_frequency": 8696
+  },
+  {
+    "word": "der Nachttisch",
+    "definition": [
+      "nightstand;bedside table",
+      "Auf dem Nachttisch stand eine Lampe. — There was a lamp on the nightstand."
+    ],
+    "word_frequency": 25088
+  },
+  {
+    "word": "der Nagellack",
+    "definition": [
+      "nail polish",
+      "Sie hat roten Nagellack aufgetragen. — She applied red nail polish."
+    ],
+    "word_frequency": 21021
+  },
+  {
+    "word": "der Neffe",
+    "definition": [
+      "nephew",
+      "Mein Neffe besucht uns am Wochenende. — My nephew is visiting us on the weekend."
+    ],
+    "word_frequency": 7850
+  },
+  {
+    "word": "der Niederländer",
+    "definition": [
+      "Dutchman;Netherlander",
+      "Er ist ein Niederländer aus Amsterdam. — He is a Dutchman from Amsterdam."
+    ],
+    "word_frequency": 7056
+  },
+  {
+    "word": "der Nord",
+    "definition": [
+      "North",
+      "Der Wind kommt aus Nord. — The wind comes from the North."
+    ],
+    "word_frequency": 1672
+  },
+  {
+    "word": "der Norden",
+    "definition": [
+      "north",
+      "Wir fahren in den Norden. — We are driving to the north."
+    ],
+    "word_frequency": 1359
+  },
+  {
+    "word": "der Nordost",
+    "definition": [
+      "northeast",
+      "Der Wind kommt aus Nordost. — The wind comes from the northeast."
+    ],
+    "word_frequency": 17013
+  },
+  {
+    "word": "der Nordwesten",
+    "definition": [
+      "northwest",
+      "Das Haus liegt im Nordwesten der Stadt. — The house is located in the northwest of the city."
+    ],
+    "word_frequency": 10312
+  },
+  {
+    "word": "der Norweger",
+    "definition": [
+      "Norwegian (person)",
+      "Er ist ein Norweger aus Oslo. — He is a Norwegian from Oslo."
+    ],
+    "word_frequency": 11964
+  },
+  {
+    "word": "der Obstbaum",
+    "definition": [
+      "fruit tree",
+      "Im Garten steht ein alter Obstbaum. — There is an old fruit tree in the garden."
+    ],
+    "word_frequency": 27152
+  },
+  {
+    "word": "der Ofen",
+    "definition": [
+      "oven;stove;furnace",
+      "Der Kuchen backt im Ofen. — The cake is baking in the oven."
+    ],
+    "word_frequency": 3899
+  },
+  {
+    "word": "der Opi",
+    "definition": [
+      "grandpa (colloquial)",
+      "Mein Opi erzählt immer lustige Geschichten. — My grandpa always tells funny stories."
+    ],
+    "word_frequency": 29899
+  },
+  {
+    "word": "der Ordner",
+    "definition": [
+      "folder;binder;organizer",
+      "Bitte legen Sie die Dokumente in den Ordner. — Please put the documents in the folder."
+    ],
+    "word_frequency": 6567
+  },
+  {
+    "word": "der Ort",
+    "definition": [
+      "place;location",
+      "Das ist ein schöner Ort. — That is a beautiful place."
+    ],
+    "word_frequency": 294
+  },
+  {
+    "word": "der Ost",
+    "definition": [
+      "East",
+      "Die Sonne geht im Ost auf. — The sun rises in the East."
+    ],
+    "word_frequency": 1673
+  },
+  {
+    "word": "der Ostbahnhof",
+    "definition": [
+      "East Station",
+      "Wir treffen uns am Ostbahnhof. — We meet at the East Station."
+    ],
+    "word_frequency": 27572
+  },
+  {
+    "word": "der Osten",
+    "definition": [
+      "east",
+      "Die Sonne geht im Osten auf. — The sun rises in the east."
+    ],
+    "word_frequency": 1093
+  },
+  {
+    "word": "der Osterhase",
+    "definition": [
+      "Easter Bunny",
+      "Der Osterhase bringt die Eier. — The Easter Bunny brings the eggs."
+    ],
+    "word_frequency": 29424
+  },
+  {
+    "word": "der Ostersonntag",
+    "definition": [
+      "Easter Sunday",
+      "Ostersonntag ist ein wichtiger Feiertag. — Easter Sunday is an important holiday."
+    ],
+    "word_frequency": 20683
+  },
+  {
+    "word": "der Ozean",
+    "definition": [
+      "ocean",
+      "Der Pazifische Ozean ist der größte Ozean der Welt. — The Pacific Ocean is the largest ocean in the world."
+    ],
+    "word_frequency": 5704
+  },
+  {
+    "word": "der Panda",
+    "definition": [
+      "panda",
+      "Der Panda ist ein seltenes Tier. — The panda is a rare animal."
+    ],
+    "word_frequency": 13091
+  },
+  {
+    "word": "der Papagei",
+    "definition": [
+      "parrot",
+      "Der Papagei kann sprechen. — The parrot can speak."
+    ],
+    "word_frequency": 22775
+  },
+  {
+    "word": "der Papierkorb",
+    "definition": [
+      "wastebasket",
+      "Wirf das bitte in den Papierkorb. — Please throw that in the wastebasket."
+    ],
+    "word_frequency": 23885
+  },
+  {
+    "word": "der Parkplatz",
+    "definition": [
+      "parking space",
+      "Gibt es hier einen freien Parkplatz? — Is there a free parking space here?"
+    ],
+    "word_frequency": 2844
+  },
+  {
+    "word": "der Partner",
+    "definition": [
+      "partner",
+      "Mein Partner kommt später. — My partner is coming later."
+    ],
+    "word_frequency": 981
+  },
+  {
+    "word": "der Pass",
+    "definition": [
+      "passport",
+      "Zeigen Sie bitte Ihren Pass. — Please show your passport."
+    ],
+    "word_frequency": 1644
+  },
+  {
+    "word": "der Patient",
+    "definition": [
+      "patient",
+      "Der Patient wartet auf den Arzt. — The patient is waiting for the doctor."
+    ],
+    "word_frequency": 942
+  },
+  {
+    "word": "der Pen",
+    "definition": [
+      "pen",
+      "Kannst du mir bitte einen Pen leihen? — Can you please lend me a pen?"
+    ],
+    "word_frequency": 5708
+  },
+  {
+    "word": "der Penny",
+    "definition": [
+      "penny",
+      "Ich habe nur noch einen Penny. — I only have one penny left."
+    ],
+    "word_frequency": 7573
+  },
+  {
+    "word": "der Personalausweis",
+    "definition": [
+      "identity card",
+      "Bitte zeigen Sie Ihren Personalausweis. — Please show your identity card."
+    ],
+    "word_frequency": 13982
+  },
+  {
+    "word": "der Pfannkuchen",
+    "definition": [
+      "pancake",
+      "Ich esse gerne Pfannkuchen zum Frühstück. — I like to eat pancakes for breakfast."
+    ],
+    "word_frequency": 9951
+  },
+  {
+    "word": "der Pfeffer",
+    "definition": [
+      "pepper",
+      "Bitte gib mir den Pfeffer. — Please give me the pepper."
+    ],
+    "word_frequency": 6801
+  },
+  {
+    "word": "der Pfirsich",
+    "definition": [
+      "peach",
+      "Ich esse gerne einen saftigen Pfirsich. — I like to eat a juicy peach."
+    ],
+    "word_frequency": 20066
+  },
+  {
+    "word": "der Pfleger",
+    "definition": [
+      "male nurse",
+      "Der Pfleger kümmerte sich gut um den Patienten. — The male nurse took good care of the patient."
+    ],
+    "word_frequency": 8703
+  },
+  {
+    "word": "der Pilot",
+    "definition": [
+      "pilot",
+      "Der Pilot landete das Flugzeug sicher. — The pilot landed the plane safely."
+    ],
+    "word_frequency": 3628
+  },
+  {
+    "word": "der Pin",
+    "definition": [
+      "PIN;pin",
+      "Bitte geben Sie Ihren Pin ein. — Please enter your PIN."
+    ],
+    "word_frequency": 8004
+  },
+  {
+    "word": "der Pkw",
+    "definition": [
+      "car (passenger car)",
+      "Der Pkw parkt vor dem Haus. — The car is parked in front of the house."
+    ],
+    "word_frequency": 2453
+  },
+  {
+    "word": "der Plan",
+    "definition": [
+      "plan",
+      "Wir brauchen einen guten Plan für das Projekt. — We need a good plan for the project."
+    ],
+    "word_frequency": 849
+  },
+  {
+    "word": "der Po",
+    "definition": [
+      "bottom;buttock",
+      "Er fiel auf seinen Po. — He fell on his bottom."
+    ],
+    "word_frequency": 4845
+  },
+  {
+    "word": "der Polizist",
+    "definition": [
+      "police officer (male)",
+      "Der Polizist half uns den Weg zu finden. — The police officer helped us find the way."
+    ],
+    "word_frequency": 1217
+  },
+  {
+    "word": "der Pool",
+    "definition": [
+      "pool",
+      "Wir haben einen Pool im Garten. — We have a pool in the garden."
+    ],
+    "word_frequency": 3754
+  },
+  {
+    "word": "der Popo",
+    "definition": [
+      "bottom;butt",
+      "Das Baby hat einen kleinen Popo. — The baby has a small bottom."
+    ],
+    "word_frequency": 21041
+  },
+  {
+    "word": "der Popstar",
+    "definition": [
+      "pop star",
+      "Sie träumt davon, ein Popstar zu werden. — She dreams of becoming a pop star."
+    ],
+    "word_frequency": 28028
+  },
+  {
+    "word": "der Postbote",
+    "definition": [
+      "postman;mail carrier",
+      "Der Postbote brachte einen Brief. — The postman brought a letter."
+    ],
+    "word_frequency": 20694
+  },
+  {
+    "word": "der Prinz",
+    "definition": [
+      "prince",
+      "Der Prinz rettete die Prinzessin. — The prince rescued the princess."
+    ],
+    "word_frequency": 2119
+  },
+  {
+    "word": "der Professor",
+    "definition": [
+      "professor",
+      "Der Professor hält eine Vorlesung. — The professor is giving a lecture."
+    ],
+    "word_frequency": 1123
+  },
+  {
+    "word": "der Pudding",
+    "definition": [
+      "pudding",
+      "Ich esse gerne Schokoladenpudding. — I like to eat chocolate pudding."
+    ],
+    "word_frequency": 13990
+  },
+  {
+    "word": "der Pudel",
+    "definition": [
+      "poodle",
+      "Mein Pudel ist sehr intelligent. — My poodle is very intelligent."
+    ],
+    "word_frequency": 23138
+  },
+  {
+    "word": "der Pulli",
+    "definition": [
+      "sweater;pullover",
+      "Ich trage einen warmen Pulli. — I am wearing a warm sweater."
+    ],
+    "word_frequency": 11767
+  },
+  {
+    "word": "der Pyjama",
+    "definition": [
+      "pajamas",
+      "Er zog seinen Pyjama an, bevor er ins Bett ging. — He put on his pajamas before going to bed."
+    ],
+    "word_frequency": 22791
+  },
+  {
+    "word": "der Quark",
+    "definition": [
+      "quark (dairy product)",
+      "Ich esse gerne Quark mit Früchten. — I like to eat quark with fruit."
+    ],
+    "word_frequency": 10325
+  },
+  {
+    "word": "der Quatsch",
+    "definition": [
+      "nonsense",
+      "Das ist doch alles Quatsch! — That's all nonsense!"
+    ],
+    "word_frequency": 2700
+  },
+  {
+    "word": "der Rabatt",
+    "definition": [
+      "discount",
+      "Wir bekommen einen Rabatt auf den Preis. — We get a discount on the price."
+    ],
+    "word_frequency": 4358
+  },
+  {
+    "word": "der Radweg",
+    "definition": [
+      "cycle path",
+      "Der neue Radweg ist sehr sicher. — The new cycle path is very safe."
+    ],
+    "word_frequency": 5503
+  },
+  {
+    "word": "der Rap",
+    "definition": [
+      "rap (music)",
+      "Er hört gerne Rap-Musik. — He likes to listen to rap music."
+    ],
+    "word_frequency": 5119
+  },
+  {
+    "word": "der Rasen",
+    "definition": [
+      "lawn;grass",
+      "Der Rasen muss gemäht werden. — The lawn needs to be mowed."
+    ],
+    "word_frequency": 3902
+  },
+  {
+    "word": "der Rasenmäher",
+    "definition": [
+      "lawnmower",
+      "Der Rasenmäher ist kaputt. — The lawnmower is broken."
+    ],
+    "word_frequency": 17306
+  },
+  {
+    "word": "der Rauch",
+    "definition": [
+      "smoke",
+      "Aus dem Schornstein kam Rauch. — Smoke came out of the chimney."
+    ],
+    "word_frequency": 3555
+  },
+  {
+    "word": "der Raum",
+    "definition": [
+      "room;space",
+      "Das Wohnzimmer ist ein großer Raum. — The living room is a large room."
+    ],
+    "word_frequency": 487
+  },
+  {
+    "word": "der Rechen",
+    "definition": [
+      "rake",
+      "Ich brauche einen Rechen, um die Blätter zu sammeln. — I need a rake to collect the leaves."
+    ],
+    "word_frequency": 25963
+  },
+  {
+    "word": "der Rechner",
+    "definition": [
+      "computer;calculator",
+      "Mein neuer Rechner ist sehr schnell. — My new computer is very fast."
+    ],
+    "word_frequency": 3758
+  },
+  {
+    "word": "der Regenbogen",
+    "definition": [
+      "rainbow",
+      "Nach dem Regen sahen wir einen schönen Regenbogen. — After the rain, we saw a beautiful rainbow."
+    ],
+    "word_frequency": 9621
+  },
+  {
+    "word": "der Regentropfen",
+    "definition": [
+      "raindrop",
+      "Ein Regentropfen fiel auf meine Nase. — A raindrop fell on my nose."
+    ],
+    "word_frequency": 27192
+  },
+  {
+    "word": "der Reiseführer",
+    "definition": [
+      "travel guide (book or person)",
+      "Wir haben einen guten Reiseführer für Rom gekauft. — We bought a good travel guide for Rome."
+    ],
+    "word_frequency": 12224
+  },
+  {
+    "word": "der Reisepass",
+    "definition": [
+      "passport",
+      "Vergessen Sie Ihren Reisepass nicht. — Don't forget your passport."
+    ],
+    "word_frequency": 13109
+  },
+  {
+    "word": "der Rentner",
+    "definition": [
+      "retiree;pensioner",
+      "Mein Großvater ist ein Rentner. — My grandfather is a retiree."
+    ],
+    "word_frequency": 3978
+  },
+  {
+    "word": "der Reporter",
+    "definition": [
+      "reporter",
+      "Der Reporter stellte viele Fragen. — The reporter asked many questions."
+    ],
+    "word_frequency": 3832
+  },
+  {
+    "word": "der Rest",
+    "definition": [
+      "rest;remainder",
+      "Iss den Rest des Kuchens. — Eat the rest of the cake."
+    ],
+    "word_frequency": 817
+  },
+  {
+    "word": "der Ring",
+    "definition": [
+      "ring",
+      "Sie trägt einen schönen Ring am Finger. — She wears a beautiful ring on her finger."
+    ],
+    "word_frequency": 1714
+  },
+  {
+    "word": "der Roboter",
+    "definition": [
+      "robot",
+      "Der Roboter kann sprechen. — The robot can speak."
+    ],
+    "word_frequency": 3291
+  },
+  {
+    "word": "der Roller",
+    "definition": [
+      "scooter",
+      "Er fährt jeden Tag mit seinem Roller zur Arbeit. — He rides his scooter to work every day."
+    ],
+    "word_frequency": 5918
+  },
+  {
+    "word": "der Roman",
+    "definition": [
+      "novel",
+      "Ich lese einen interessanten Roman. — I am reading an interesting novel."
+    ],
+    "word_frequency": 1334
+  },
+  {
+    "word": "der Rosengarten",
+    "definition": [
+      "rose garden",
+      "Wir spazierten durch den Rosengarten. — We walked through the rose garden."
+    ],
+    "word_frequency": 18813
+  },
+  {
+    "word": "der Rotwein",
+    "definition": [
+      "red wine",
+      "Ich trinke gerne ein Glas Rotwein zum Abendessen. — I like to drink a glass of red wine with dinner."
+    ],
+    "word_frequency": 9308
+  },
+  {
+    "word": "der Rucksack",
+    "definition": [
+      "backpack",
+      "Ich packe meinen Rucksack für die Wanderung. — I'm packing my backpack for the hike."
+    ],
+    "word_frequency": 4598
+  },
+  {
+    "word": "der Rumäne",
+    "definition": [
+      "Romanian (person)",
+      "Er ist ein Rumäne. — He is a Romanian."
+    ],
+    "word_frequency": 13555
+  },
+  {
+    "word": "der Russe",
+    "definition": [
+      "Russian (person)",
+      "Er ist ein Russe. — He is a Russian."
+    ],
+    "word_frequency": 2595
+  },
+  {
+    "word": "der Rücken",
+    "definition": [
+      "back (body part)",
+      "Mein Rücken tut weh. — My back hurts."
+    ],
+    "word_frequency": 1005
+  },
+  {
+    "word": "der Rückflug",
+    "definition": [
+      "return flight",
+      "Der Rückflug ist für morgen geplant. — The return flight is scheduled for tomorrow."
+    ],
+    "word_frequency": 18206
+  },
+  {
+    "word": "der Rücksitz",
+    "definition": [
+      "back seat",
+      "Die Kinder sitzen auf dem Rücksitz. — The children are sitting in the back seat."
+    ],
+    "word_frequency": 28057
+  },
+  {
+    "word": "der Sack",
+    "definition": [
+      "sack;bag",
+      "Er trug einen schweren Sack auf dem Rücken. — He carried a heavy sack on his back."
+    ],
+    "word_frequency": 2999
+  },
+  {
+    "word": "der Sale",
+    "definition": [
+      "sale",
+      "Der Sale beginnt nächste Woche. — The sale starts next week."
+    ],
+    "word_frequency": 9013
+  },
+  {
+    "word": "der Samstagmorgen",
+    "definition": [
+      "Saturday morning",
+      "Am Samstagmorgen schlafe ich gerne lange. — On Saturday morning, I like to sleep in."
+    ],
+    "word_frequency": 19759
+  },
+  {
+    "word": "der Samstagnachmittag",
+    "definition": [
+      "Saturday afternoon",
+      "Wir treffen uns am Samstagnachmittag. — We are meeting on Saturday afternoon."
+    ],
+    "word_frequency": 29480
+  },
+  {
+    "word": "der Sand",
+    "definition": [
+      "sand",
+      "Der Sand am Strand ist warm. — The sand on the beach is warm."
+    ],
+    "word_frequency": 2458
+  },
+  {
+    "word": "der Sandkasten",
+    "definition": [
+      "sandbox",
+      "Die Kinder spielen im Sandkasten. — The children are playing in the sandbox."
+    ],
+    "word_frequency": 21058
+  },
+  {
+    "word": "der Sandstrand",
+    "definition": [
+      "sandy beach",
+      "Wir verbrachten den Tag am Sandstrand. — We spent the day at the sandy beach."
+    ],
+    "word_frequency": 28537
+  },
+  {
+    "word": "der Sattel",
+    "definition": [
+      "saddle",
+      "Der Sattel des Fahrrads war unbequem. — The bicycle's saddle was uncomfortable."
+    ],
+    "word_frequency": 6935
+  },
+  {
+    "word": "der Satz",
+    "definition": [
+      "sentence;set;jump",
+      "Bitte bilden Sie einen Satz. — Please form a sentence."
+    ],
+    "word_frequency": 749
+  },
+  {
+    "word": "der Schal",
+    "definition": [
+      "scarf",
+      "Im Winter trage ich immer einen warmen Schal. — In winter, I always wear a warm scarf."
+    ],
+    "word_frequency": 8015
+  },
+  {
+    "word": "der Schalter",
+    "definition": [
+      "switch;counter (e.g.;at a bank)",
+      "Drücken Sie den Schalter, um das Licht einzuschalten. — Press the switch to turn on the light."
+    ],
+    "word_frequency": 6462
+  },
+  {
+    "word": "der Schatz",
+    "definition": [
+      "treasure;darling",
+      "Er fand einen alten Schatz. — He found an old treasure."
+    ],
+    "word_frequency": 2459
+  },
+  {
+    "word": "der Schauspieler",
+    "definition": [
+      "actor",
+      "Der Schauspieler spielte seine Rolle sehr überzeugend. — The actor played his role very convincingly."
+    ],
+    "word_frequency": 1676
+  },
+  {
+    "word": "der Scheck",
+    "definition": [
+      "check (bank check)",
+      "Ich habe einen Scheck erhalten. — I received a check."
+    ],
+    "word_frequency": 11221
+  },
+  {
+    "word": "der Schirm",
+    "definition": [
+      "umbrella;screen",
+      "Vergiss deinen Schirm nicht, es regnet. — Don't forget your umbrella, it's raining."
+    ],
+    "word_frequency": 6352
+  },
+  {
+    "word": "der Schlaf",
+    "definition": [
+      "sleep",
+      "Ich brauche mehr Schlaf. — I need more sleep."
+    ],
+    "word_frequency": 1786
+  },
+  {
+    "word": "der Schlafanzug",
+    "definition": [
+      "pajamas",
+      "Er zog seinen Schlafanzug an, bevor er ins Bett ging. — He put on his pajamas before going to bed."
+    ],
+    "word_frequency": 20724
+  },
+  {
+    "word": "der Schlafsack",
+    "definition": [
+      "sleeping bag",
+      "Ich packte meinen Schlafsack für die Wanderung ein. — I packed my sleeping bag for the hike."
+    ],
+    "word_frequency": 22426
+  },
+  {
+    "word": "der Schlitten",
+    "definition": [
+      "sled;sleigh",
+      "Die Kinder fahren mit dem Schlitten den Hügel hinunter. — The children are riding the sled down the hill."
+    ],
+    "word_frequency": 11223
+  },
+  {
+    "word": "der Schluss",
+    "definition": [
+      "end",
+      "Am Schluss war alles klar. — In the end, everything was clear."
+    ],
+    "word_frequency": 765
+  },
+  {
+    "word": "der Schlüsselanhänger",
+    "definition": [
+      "keyring;keychain",
+      "Ich habe einen neuen Schlüsselanhänger gekauft. — I bought a new keyring."
+    ],
+    "word_frequency": 24346
+  },
+  {
+    "word": "der Schmetterling",
+    "definition": [
+      "butterfly",
+      "Ein bunter Schmetterling flog durch den Garten. — A colorful butterfly flew through the garden."
+    ],
+    "word_frequency": 8719
+  },
+  {
+    "word": "der Schneefall",
+    "definition": [
+      "snowfall",
+      "Der Schneefall war sehr stark. — The snowfall was very heavy."
+    ],
+    "word_frequency": 19138
+  },
+  {
+    "word": "der Schnupfen",
+    "definition": [
+      "cold (illness);sniffles",
+      "Ich habe einen Schnupfen und muss niesen. — I have a cold and need to sneeze."
+    ],
+    "word_frequency": 14243
+  },
+  {
+    "word": "der Schnürsenkel",
+    "definition": [
+      "shoelace",
+      "Mein Schnürsenkel ist offen. — My shoelace is untied."
+    ],
+    "word_frequency": 26773
+  },
+  {
+    "word": "der Schraubenzieher",
+    "definition": [
+      "screwdriver",
+      "Ich brauche einen Schraubenzieher, um das zu reparieren. — I need a screwdriver to fix that."
+    ],
+    "word_frequency": 28545
+  },
+  {
+    "word": "der Schreibfehler",
+    "definition": [
+      "typo",
+      "Entschuldigen Sie den Schreibfehler im Text. — Excuse the typo in the text."
+    ],
+    "word_frequency": 23157
+  },
+  {
+    "word": "der Schritt",
+    "definition": [
+      "step",
+      "Mach einen Schritt nach vorne. — Take a step forward."
+    ],
+    "word_frequency": 714
+  },
+  {
+    "word": "der Schulhof",
+    "definition": [
+      "schoolyard",
+      "Die Kinder spielen auf dem Schulhof. — The children are playing in the schoolyard."
+    ],
+    "word_frequency": 12448
+  },
+  {
+    "word": "der Schultag",
+    "definition": [
+      "school day",
+      "Der Schultag beginnt um acht Uhr. — The school day starts at eight o'clock."
+    ],
+    "word_frequency": 15467
+  },
+  {
+    "word": "der Schulweg",
+    "definition": [
+      "way to school",
+      "Der Schulweg ist für viele Kinder lang. — The way to school is long for many children."
+    ],
+    "word_frequency": 22430
+  },
+  {
+    "word": "der Schwamm",
+    "definition": [
+      "sponge",
+      "Bitte gib mir den Schwamm, um den Tisch abzuwischen. — Please give me the sponge to wipe the table."
+    ],
+    "word_frequency": 9974
+  },
+  {
+    "word": "der Schwan",
+    "definition": [
+      "swan",
+      "Der Schwan schwimmt elegant auf dem See. — The swan swims elegantly on the lake."
+    ],
+    "word_frequency": 11040
+  },
+  {
+    "word": "der Schwede",
+    "definition": [
+      "Swede",
+      "Er ist ein Schwede. — He is a Swede."
+    ],
+    "word_frequency": 11420
+  },
+  {
+    "word": "der Schwiegervater",
+    "definition": [
+      "father-in-law",
+      "Mein Schwiegervater kommt uns besuchen. — My father-in-law is coming to visit us."
+    ],
+    "word_frequency": 13783
+  },
+  {
+    "word": "der Scooter",
+    "definition": [
+      "scooter",
+      "Mein Kind fährt gerne mit seinem Scooter im Park. — My child likes to ride their scooter in the park."
+    ],
+    "word_frequency": 14930
+  },
+  {
+    "word": "der See",
+    "definition": [
+      "lake",
+      "Wir fahren zum See. — We are going to the lake."
+    ],
+    "word_frequency": 986
+  },
+  {
+    "word": "der Sekt",
+    "definition": [
+      "sparkling wine",
+      "Wir haben mit Sekt auf das neue Jahr angestoßen. — We toasted the new year with sparkling wine."
+    ],
+    "word_frequency": 8154
+  },
+  {
+    "word": "der Sellerie",
+    "definition": [
+      "celery",
+      "Für die Suppe brauchen wir Sellerie und Karotten. — For the soup, we need celery and carrots."
+    ],
+    "word_frequency": 25999
+  },
+  {
+    "word": "der Senf",
+    "definition": [
+      "mustard",
+      "Ich esse gerne Würstchen mit Senf. — I like to eat sausages with mustard."
+    ],
+    "word_frequency": 8019
+  },
+  {
+    "word": "der Serbe",
+    "definition": [
+      "Serb",
+      "Er ist ein Serbe. — He is a Serb."
+    ],
+    "word_frequency": 11425
+  },
+  {
+    "word": "der Service",
+    "definition": [
+      "service",
+      "Der Service in diesem Restaurant ist ausgezeichnet. — The service in this restaurant is excellent."
+    ],
+    "word_frequency": 1489
+  },
+  {
+    "word": "der Sessel",
+    "definition": [
+      "armchair",
+      "Ich sitze gerne in meinem bequemen Sessel. — I like to sit in my comfortable armchair."
+    ],
+    "word_frequency": 7451
+  },
+  {
+    "word": "der Shake",
+    "definition": [
+      "shake (e.g.;milkshake)",
+      "Ich hätte gerne einen Erdbeer-Shake. — I would like a strawberry shake."
+    ],
+    "word_frequency": 16011
+  },
+  {
+    "word": "der Shop",
+    "definition": [
+      "shop",
+      "Der neue Shop hat tolle Angebote. — The new shop has great offers."
+    ],
+    "word_frequency": 1860
+  },
+  {
+    "word": "der Singer",
+    "definition": [
+      "singer",
+      "Der Singer hat eine schöne Stimme. — The singer has a beautiful voice."
+    ],
+    "word_frequency": 9020
+  },
+  {
+    "word": "der Sitz",
+    "definition": [
+      "seat;headquarters",
+      "Bitte nehmen Sie Platz, hier ist Ihr Sitz. — Please take a seat, here is your seat."
+    ],
+    "word_frequency": 1554
+  },
+  {
+    "word": "der Sitzplatz",
+    "definition": [
+      "seat",
+      "Haben Sie noch einen freien Sitzplatz? — Do you still have a free seat?"
+    ],
+    "word_frequency": 11232
+  },
+  {
+    "word": "der Ski",
+    "definition": [
+      "ski",
+      "Er hat neue Ski gekauft. — He bought new skis."
+    ],
+    "word_frequency": 4071
+  },
+  {
+    "word": "der Skifahrer",
+    "definition": [
+      "skier",
+      "Der Skifahrer fuhr schnell den Berg hinunter. — The skier skied quickly down the mountain."
+    ],
+    "word_frequency": 25578
+  },
+  {
+    "word": "der Skiurlaub",
+    "definition": [
+      "ski holiday",
+      "Wir planen unseren nächsten Skiurlaub in den Alpen. — We are planning our next ski holiday in the Alps."
+    ],
+    "word_frequency": 28563
+  },
+  {
+    "word": "der Smoothie",
+    "definition": [
+      "smoothie",
+      "Ich trinke jeden Morgen einen grünen Smoothie. — I drink a green smoothie every morning."
+    ],
+    "word_frequency": 23937
+  },
+  {
+    "word": "der Snack",
+    "definition": [
+      "snack",
+      "Ich brauche einen kleinen Snack. — I need a small snack."
+    ],
+    "word_frequency": 12902
+  },
+  {
+    "word": "der Sneaker",
+    "definition": [
+      "sneaker;trainers",
+      "Ich habe mir neue Sneaker gekauft. — I bought new sneakers."
+    ],
+    "word_frequency": 15187
+  },
+  {
+    "word": "der Sommermonat",
+    "definition": [
+      "summer month",
+      "Juli ist ein Sommermonat. — July is a summer month."
+    ],
+    "word_frequency": 17634
+  },
+  {
+    "word": "der Sommertag",
+    "definition": [
+      "summer day",
+      "Es war ein wunderschöner Sommertag. — It was a beautiful summer day."
+    ],
+    "word_frequency": 26404
+  },
+  {
+    "word": "der Sommerurlaub",
+    "definition": [
+      "summer holiday",
+      "Wir planen unseren Sommerurlaub in Italien. — We are planning our summer holiday in Italy."
+    ],
+    "word_frequency": 24746
+  },
+  {
+    "word": "der Song",
+    "definition": [
+      "song",
+      "Das ist mein Lieblingssong. — That is my favorite song."
+    ],
+    "word_frequency": 1278
+  },
+  {
+    "word": "der Sonnenbrand",
+    "definition": [
+      "sunburn",
+      "Nach dem Strandtag hatte er einen schlimmen Sonnenbrand. — After the beach day, he had a bad sunburn."
+    ],
+    "word_frequency": 20414
+  },
+  {
+    "word": "der Sonnenschein",
+    "definition": [
+      "sunshine",
+      "Wir genießen den Sonnenschein im Garten. — We are enjoying the sunshine in the garden."
+    ],
+    "word_frequency": 4855
+  },
+  {
+    "word": "der Sonnenschirm",
+    "definition": [
+      "parasol",
+      "Wir haben einen Sonnenschirm am Strand aufgestellt. — We put up a parasol on the beach."
+    ],
+    "word_frequency": 29028
+  },
+  {
+    "word": "der Sonnenuntergang",
+    "definition": [
+      "sunset",
+      "Der Sonnenuntergang war wunderschön. — The sunset was beautiful."
+    ],
+    "word_frequency": 6120
+  },
+  {
+    "word": "der Sonntagabend",
+    "definition": [
+      "Sunday evening",
+      "Wir treffen uns am Sonntagabend. — We meet on Sunday evening."
+    ],
+    "word_frequency": 11793
+  },
+  {
+    "word": "der Sonntagmorgen",
+    "definition": [
+      "Sunday morning",
+      "Am Sonntagmorgen schlafe ich gerne lange. — On Sunday morning, I like to sleep in."
+    ],
+    "word_frequency": 14939
+  },
+  {
+    "word": "der Sonntagnachmittag",
+    "definition": [
+      "Sunday afternoon",
+      "Wir treffen uns am Sonntagnachmittag im Park. — We meet in the park on Sunday afternoon."
+    ],
+    "word_frequency": 22092
+  },
+  {
+    "word": "der Spanier",
+    "definition": [
+      "Spaniard",
+      "Er ist ein Spanier aus Madrid. — He is a Spaniard from Madrid."
+    ],
+    "word_frequency": 4761
+  },
+  {
+    "word": "der Spargel",
+    "definition": [
+      "asparagus",
+      "Im Frühling essen wir gerne Spargel. — In spring, we like to eat asparagus."
+    ],
+    "word_frequency": 10524
+  },
+  {
+    "word": "der Spaziergang",
+    "definition": [
+      "walk;stroll",
+      "Wir machten einen Spaziergang im Park. — We took a walk in the park."
+    ],
+    "word_frequency": 5046
+  },
+  {
+    "word": "der Spiegel",
+    "definition": [
+      "mirror",
+      "Sie schaut in den Spiegel. — She looks in the mirror."
+    ],
+    "word_frequency": 1125
+  },
+  {
+    "word": "der Spieler",
+    "definition": [
+      "player",
+      "Der Spieler hat ein Tor geschossen. — The player scored a goal."
+    ],
+    "word_frequency": 551
+  },
+  {
+    "word": "der Spielplatz",
+    "definition": [
+      "playground",
+      "Die Kinder spielen auf dem Spielplatz. — The children are playing on the playground."
+    ],
+    "word_frequency": 6236
+  },
+  {
+    "word": "der Spinat",
+    "definition": [
+      "spinach",
+      "Ich esse gerne Spinat mit Kartoffeln. — I like to eat spinach with potatoes."
+    ],
+    "word_frequency": 13575
+  },
+  {
+    "word": "der Sportclub",
+    "definition": [
+      "sports club",
+      "Er ist Mitglied in einem Sportclub. — He is a member of a sports club."
+    ],
+    "word_frequency": 27236
+  },
+  {
+    "word": "der Sportlehrer",
+    "definition": [
+      "sports teacher",
+      "Unser Sportlehrer ist sehr motivierend. — Our sports teacher is very motivating."
+    ],
+    "word_frequency": 20737
+  },
+  {
+    "word": "der Sportplatz",
+    "definition": [
+      "sports field",
+      "Wir spielen Fußball auf dem Sportplatz. — We play football on the sports field."
+    ],
+    "word_frequency": 11432
+  },
+  {
+    "word": "der Sportschuh",
+    "definition": [
+      "sports shoe;sneaker",
+      "Ich brauche neue Sportschuhe zum Laufen. — I need new sports shoes for running."
+    ],
+    "word_frequency": 28087
+  },
+  {
+    "word": "der Sportverein",
+    "definition": [
+      "sports club",
+      "Ich bin Mitglied in einem lokalen Sportverein. — I am a member of a local sports club."
+    ],
+    "word_frequency": 9982
+  },
+  {
+    "word": "der Stadtkern",
+    "definition": [
+      "city center",
+      "Wir trafen uns im Stadtkern. — We met in the city center."
+    ],
+    "word_frequency": 25151
+  },
+  {
+    "word": "der Stadtpark",
+    "definition": [
+      "city park",
+      "Wir gehen oft im Stadtpark spazieren. — We often go for a walk in the city park."
+    ],
+    "word_frequency": 12909
+  },
+  {
+    "word": "der Stadtplan",
+    "definition": [
+      "city map",
+      "Haben Sie einen Stadtplan von Berlin? — Do you have a city map of Berlin?"
+    ],
+    "word_frequency": 19156
+  },
+  {
+    "word": "der Stadtteil",
+    "definition": [
+      "district",
+      "Ich wohne in einem ruhigen Stadtteil. — I live in a quiet district."
+    ],
+    "word_frequency": 3441
+  },
+  {
+    "word": "der Stall",
+    "definition": [
+      "stable;barn",
+      "Die Pferde leben im Stall. — The horses live in the stable."
+    ],
+    "word_frequency": 5721
+  },
+  {
+    "word": "der Start",
+    "definition": [
+      "start",
+      "Der Start des Rennens war aufregend. — The start of the race was exciting."
+    ],
+    "word_frequency": 800
+  },
+  {
+    "word": "der Stau",
+    "definition": [
+      "traffic jam",
+      "Auf der Autobahn gibt es einen langen Stau. — There is a long traffic jam on the highway."
+    ],
+    "word_frequency": 5312
+  },
+  {
+    "word": "der Staubsauger",
+    "definition": [
+      "vacuum cleaner",
+      "Der Staubsauger ist sehr laut. — The vacuum cleaner is very loud."
+    ],
+    "word_frequency": 10342
+  },
+  {
+    "word": "der Stecker",
+    "definition": [
+      "plug (electrical)",
+      "Der Stecker passt nicht in die Steckdose. — The plug doesn't fit into the socket."
+    ],
+    "word_frequency": 9638
+  },
+  {
+    "word": "der Stein",
+    "definition": [
+      "stone;rock",
+      "Der Stein ist sehr schwer. — The stone is very heavy."
+    ],
+    "word_frequency": 1337
+  },
+  {
+    "word": "der Sticker",
+    "definition": [
+      "sticker",
+      "Das Kind klebte einen Sticker auf sein Heft. — The child stuck a sticker on his notebook."
+    ],
+    "word_frequency": 10688
+  },
+  {
+    "word": "der Stiefel",
+    "definition": [
+      "boot",
+      "Er trägt neue Stiefel. — He is wearing new boots."
+    ],
+    "word_frequency": 5420
+  },
+  {
+    "word": "der Stock",
+    "definition": [
+      "stick",
+      "Der alte Mann benutzte einen Stock zum Gehen. — The old man used a stick for walking."
+    ],
+    "word_frequency": 2597
+  },
+  {
+    "word": "der Stoff",
+    "definition": [
+      "fabric;material;subject matter",
+      "Dieser Stoff fühlt sich weich an. — This fabric feels soft."
+    ],
+    "word_frequency": 2072
+  },
+  {
+    "word": "der Strand",
+    "definition": [
+      "beach",
+      "Wir gehen zum Strand. — We are going to the beach."
+    ],
+    "word_frequency": 2123
+  },
+  {
+    "word": "der Streit",
+    "definition": [
+      "argument;dispute",
+      "Sie hatten einen Streit über das Geld. — They had an argument about the money."
+    ],
+    "word_frequency": 1491
+  },
+  {
+    "word": "der Stress",
+    "definition": [
+      "stress",
+      "Er hat viel Stress bei der Arbeit. — He has a lot of stress at work."
+    ],
+    "word_frequency": 1914
+  },
+  {
+    "word": "der Strumpf",
+    "definition": [
+      "stocking;sock",
+      "Er zog einen warmen Strumpf an. — He put on a warm sock."
+    ],
+    "word_frequency": 29525
+  },
+  {
+    "word": "der Strümpfe",
+    "definition": [
+      "stockings;socks",
+      "Sie zog ihre warmen Strümpfe an. — She put on her warm stockings."
+    ],
+    "word_frequency": 14953
+  },
+  {
+    "word": "der Stundenplan",
+    "definition": [
+      "timetable;schedule",
+      "Ich muss meinen Stundenplan für das nächste Semester überprüfen. — I need to check my timetable for next semester."
+    ],
+    "word_frequency": 19478
+  },
+  {
+    "word": "der Swimmingpool",
+    "definition": [
+      "swimming pool",
+      "Der Swimmingpool ist sehr groß. — The swimming pool is very large."
+    ],
+    "word_frequency": 26420
+  },
+  {
+    "word": "der Sänger",
+    "definition": [
+      "singer",
+      "Der Sänger hat eine wunderschöne Stimme. — The singer has a beautiful voice."
+    ],
+    "word_frequency": 2319
+  },
+  {
+    "word": "der Süd",
+    "definition": [
+      "South",
+      "Der Wind kommt aus Süd. — The wind comes from the South."
+    ],
+    "word_frequency": 2188
+  },
+  {
+    "word": "der Süden",
+    "definition": [
+      "south",
+      "Wir fahren in den Süden Deutschlands. — We are driving to the south of Germany."
+    ],
+    "word_frequency": 1611
+  },
+  {
+    "word": "der Tank",
+    "definition": [
+      "tank",
+      "Der Tank des Autos ist leer. — The car's tank is empty."
+    ],
+    "word_frequency": 5726
+  },
+  {
+    "word": "der Tannenbaum",
+    "definition": [
+      "fir tree;Christmas tree",
+      "Wir schmücken den Tannenbaum zu Weihnachten. — We decorate the fir tree for Christmas."
+    ],
+    "word_frequency": 23173
+  },
+  {
+    "word": "der Tanz",
+    "definition": [
+      "dance",
+      "Der Tanz war sehr schön. — The dance was very beautiful."
+    ],
+    "word_frequency": 2463
+  },
+  {
+    "word": "der Taschenrechner",
+    "definition": [
+      "calculator",
+      "Ich brauche meinen Taschenrechner für die Mathematikaufgabe. — I need my calculator for the math problem."
+    ],
+    "word_frequency": 20127
+  },
+  {
+    "word": "der Taxifahrer",
+    "definition": [
+      "taxi driver",
+      "Der Taxifahrer brachte mich zum Flughafen. — The taxi driver took me to the airport."
+    ],
+    "word_frequency": 8164
+  },
+  {
+    "word": "der Teddy",
+    "definition": [
+      "teddy bear",
+      "Das Kind spielt mit seinem Teddy. — The child is playing with its teddy bear."
+    ],
+    "word_frequency": 7592
+  },
+  {
+    "word": "der Teelöffel",
+    "definition": [
+      "teaspoon",
+      "Bitte gib mir einen Teelöffel Zucker. — Please give me a teaspoon of sugar."
+    ],
+    "word_frequency": 26425
+  },
+  {
+    "word": "der Teenager",
+    "definition": [
+      "teenager",
+      "Die Teenager trafen sich im Park. — The teenagers met in the park."
+    ],
+    "word_frequency": 4074
+  },
+  {
+    "word": "der Teig",
+    "definition": [
+      "dough",
+      "Der Bäcker knetet den Teig. — The baker kneads the dough."
+    ],
+    "word_frequency": 8576
+  },
+  {
+    "word": "der Tennisspieler",
+    "definition": [
+      "tennis player",
+      "Der Tennisspieler gewann das Match. — The tennis player won the match."
+    ],
+    "word_frequency": 29532
+  },
+  {
+    "word": "der Teppich",
+    "definition": [
+      "carpet;rug",
+      "Der neue Teppich passt gut ins Wohnzimmer. — The new carpet fits well in the living room."
+    ],
+    "word_frequency": 3989
+  },
+  {
+    "word": "der Termin",
+    "definition": [
+      "appointment;deadline",
+      "Ich habe einen Termin beim Arzt. — I have an appointment with the doctor."
+    ],
+    "word_frequency": 1519
+  },
+  {
+    "word": "der Test",
+    "definition": [
+      "test",
+      "Der Test war sehr schwierig. — The test was very difficult."
+    ],
+    "word_frequency": 1128
+  },
+  {
+    "word": "der Thunfisch",
+    "definition": [
+      "tuna",
+      "Ich esse gerne Thunfischsalat. — I like to eat tuna salad."
+    ],
+    "word_frequency": 16527
+  },
+  {
+    "word": "der Tierarzt",
+    "definition": [
+      "veterinarian",
+      "Wir müssen mit unserem Hund zum Tierarzt. — We have to take our dog to the veterinarian."
+    ],
+    "word_frequency": 8875
+  },
+  {
+    "word": "der Tiergarten",
+    "definition": [
+      "zoo;animal park",
+      "Der Tiergarten ist ein beliebter Ort für Familienausflüge. — The zoo is a popular place for family outings."
+    ],
+    "word_frequency": 13141
+  },
+  {
+    "word": "der Tierpark",
+    "definition": [
+      "animal park;zoo",
+      "Wir besuchen am Wochenende den Tierpark. — We are visiting the animal park on the weekend."
+    ],
+    "word_frequency": 14263
+  },
+  {
+    "word": "der Tiger",
+    "definition": [
+      "tiger",
+      "Der Tiger ist eine große Katze. — The tiger is a large cat."
+    ],
+    "word_frequency": 4608
+  },
+  {
+    "word": "der Tipp",
+    "definition": [
+      "tip;hint",
+      "Hast du einen guten Tipp für mich? — Do you have a good tip for me?"
+    ],
+    "word_frequency": 1520
+  },
+  {
+    "word": "der Toaster",
+    "definition": [
+      "toaster",
+      "Der Toaster steht in der Küche. — The toaster is in the kitchen."
+    ],
+    "word_frequency": 14030
+  },
+  {
+    "word": "der Ton",
+    "definition": [
+      "sound;tone;clay",
+      "Der Ton der Musik ist sehr klar. — The sound of the music is very clear."
+    ],
+    "word_frequency": 1556
+  },
+  {
+    "word": "der Topf",
+    "definition": [
+      "pot",
+      "Der Topf steht auf dem Herd. — The pot is on the stove."
+    ],
+    "word_frequency": 4379
+  },
+  {
+    "word": "der Tourist",
+    "definition": [
+      "tourist",
+      "Der Tourist fragte nach dem Weg. — The tourist asked for directions."
+    ],
+    "word_frequency": 3296
+  },
+  {
+    "word": "der Trainer",
+    "definition": [
+      "coach;trainer",
+      "Der Trainer motiviert sein Team. — The coach motivates his team."
+    ],
+    "word_frequency": 964
+  },
+  {
+    "word": "der Traktor",
+    "definition": [
+      "tractor",
+      "Der Bauer fährt mit seinem Traktor aufs Feld. — The farmer drives his tractor to the field."
+    ],
+    "word_frequency": 10532
+  },
+  {
+    "word": "der Transport",
+    "definition": [
+      "transport",
+      "Der Transport der Güter erfolgt per LKW. — The transport of goods is done by truck."
+    ],
+    "word_frequency": 2853
+  },
+  {
+    "word": "der Traum",
+    "definition": [
+      "dream",
+      "Ich hatte einen schönen Traum letzte Nacht. — I had a beautiful dream last night."
+    ],
+    "word_frequency": 1180
+  },
+  {
+    "word": "der Treffpunkt",
+    "definition": [
+      "meeting point",
+      "Unser Treffpunkt ist am Bahnhof. — Our meeting point is at the train station."
+    ],
+    "word_frequency": 5515
+  },
+  {
+    "word": "der Trick",
+    "definition": [
+      "trick",
+      "Er zeigte uns einen neuen Trick mit Karten. — He showed us a new trick with cards."
+    ],
+    "word_frequency": 3772
+  },
+  {
+    "word": "der Trockner",
+    "definition": [
+      "dryer",
+      "Der Trockner ist kaputt. — The dryer is broken."
+    ],
+    "word_frequency": 17082
+  },
+  {
+    "word": "der Truthahn",
+    "definition": [
+      "turkey",
+      "Zum Erntedankfest gab es einen großen Truthahn. — For Thanksgiving, there was a big turkey."
+    ],
+    "word_frequency": 29548
+  },
+  {
+    "word": "der Tscheche",
+    "definition": [
+      "Czech (person)",
+      "Er ist ein Tscheche und spricht fließend Deutsch. — He is a Czech and speaks fluent German."
+    ],
+    "word_frequency": 12473
+  },
+  {
+    "word": "der Tunnel",
+    "definition": [
+      "tunnel",
+      "Wir fahren durch einen langen Tunnel. — We are driving through a long tunnel."
+    ],
+    "word_frequency": 3181
+  },
+  {
+    "word": "der Turm",
+    "definition": [
+      "tower",
+      "Der alte Turm ist ein Wahrzeichen der Stadt. — The old tower is a landmark of the city."
+    ],
+    "word_frequency": 3445
+  },
+  {
+    "word": "der Turnschuh",
+    "definition": [
+      "sneaker",
+      "Er trägt seine neuen Turnschuhe zum Sport. — He wears his new sneakers for sports."
+    ],
+    "word_frequency": 17961
+  },
+  {
+    "word": "der Typ",
+    "definition": [
+      "type;guy",
+      "Er ist ein netter Typ. — He is a nice guy."
+    ],
+    "word_frequency": 632
+  },
+  {
+    "word": "der Ukrainer",
+    "definition": [
+      "Ukrainian (male person)",
+      "Ein Ukrainer hat uns geholfen. — A Ukrainian helped us."
+    ],
+    "word_frequency": 12925
+  },
+  {
+    "word": "der Umschlag",
+    "definition": [
+      "envelope;cover",
+      "Ich brauche einen Umschlag für den Brief. — I need an envelope for the letter."
+    ],
+    "word_frequency": 8581
+  },
+  {
+    "word": "der Unfall",
+    "definition": [
+      "accident",
+      "Es gab einen Unfall auf der Autobahn. — There was an accident on the highway."
+    ],
+    "word_frequency": 1224
+  },
+  {
+    "word": "der Ungar",
+    "definition": [
+      "Hungarian (person)",
+      "Er ist ein Ungar und spricht fließend Ungarisch. — He is a Hungarian and speaks fluent Hungarian."
+    ],
+    "word_frequency": 21109
+  },
+  {
+    "word": "der Unterschied",
+    "definition": [
+      "difference",
+      "Es gibt einen großen Unterschied zwischen den beiden. — There is a big difference between the two."
+    ],
+    "word_frequency": 903
+  },
+  {
+    "word": "der Urlaub",
+    "definition": [
+      "vacation",
+      "Ich mache Urlaub in Spanien. — I am going on vacation in Spain."
+    ],
+    "word_frequency": 922
+  },
+  {
+    "word": "der Urlaubstag",
+    "definition": [
+      "vacation day;holiday",
+      "Ich habe noch fünf Urlaubstage übrig. — I still have five vacation days left."
+    ],
+    "word_frequency": 25619
+  },
+  {
+    "word": "der Valentinstag",
+    "definition": [
+      "Valentine's Day",
+      "Am Valentinstag schenken sich viele Leute Blumen. — On Valentine's Day, many people give each other flowers."
+    ],
+    "word_frequency": 11066
+  },
+  {
+    "word": "der Vatertag",
+    "definition": [
+      "Father's Day",
+      "Wir feiern Vatertag im Mai. — We celebrate Father's Day in May."
+    ],
+    "word_frequency": 26051
+  },
+  {
+    "word": "der Vegetarier",
+    "definition": [
+      "vegetarian",
+      "Mein Bruder ist Vegetarier. — My brother is a vegetarian."
+    ],
+    "word_frequency": 9485
+  },
+  {
+    "word": "der Verkauf",
+    "definition": [
+      "sale",
+      "Der Verkauf der Tickets beginnt morgen. — The sale of the tickets begins tomorrow."
+    ],
+    "word_frequency": 1494
+  },
+  {
+    "word": "der Verkehr",
+    "definition": [
+      "traffic",
+      "Der Verkehr in der Stadt ist oft sehr dicht. — The traffic in the city is often very heavy."
+    ],
+    "word_frequency": 1098
+  },
+  {
+    "word": "der Verkäufer",
+    "definition": [
+      "salesperson",
+      "Der Verkäufer half mir, das richtige Produkt zu finden. — The salesperson helped me find the right product."
+    ],
+    "word_frequency": 3775
+  },
+  {
+    "word": "der Videoclip",
+    "definition": [
+      "video clip",
+      "Hast du den neuen Videoclip gesehen? — Have you seen the new video clip?"
+    ],
+    "word_frequency": 28152
+  },
+  {
+    "word": "der Vogel",
+    "definition": [
+      "bird",
+      "Ein kleiner Vogel sitzt auf dem Ast. — A small bird is sitting on the branch."
+    ],
+    "word_frequency": 2082
+  },
+  {
+    "word": "der Volleyball",
+    "definition": [
+      "volleyball",
+      "Wir spielen jeden Sonntag Volleyball. — We play volleyball every Sunday."
+    ],
+    "word_frequency": 6604
+  },
+  {
+    "word": "der Vollmond",
+    "definition": [
+      "full moon",
+      "Heute Nacht ist Vollmond. — Tonight is a full moon."
+    ],
+    "word_frequency": 12265
+  },
+  {
+    "word": "der Vorgarten",
+    "definition": [
+      "front garden",
+      "Der Vorgarten ist voller Blumen. — The front garden is full of flowers."
+    ],
+    "word_frequency": 18261
+  },
+  {
+    "word": "der Vorhang",
+    "definition": [
+      "curtain",
+      "Zieh den Vorhang zu, es ist zu hell. — Close the curtain, it's too bright."
+    ],
+    "word_frequency": 6710
+  },
+  {
+    "word": "der Vorort",
+    "definition": [
+      "suburb",
+      "Sie wohnen in einem ruhigen Vorort. — They live in a quiet suburb."
+    ],
+    "word_frequency": 10707
+  },
+  {
+    "word": "der Vorschlag",
+    "definition": [
+      "suggestion;proposal",
+      "Ich habe einen Vorschlag für dich. — I have a suggestion for you."
+    ],
+    "word_frequency": 1617
+  },
+  {
+    "word": "der Wanderweg",
+    "definition": [
+      "hiking trail",
+      "Der Wanderweg führt durch einen schönen Wald. — The hiking trail leads through a beautiful forest."
+    ],
+    "word_frequency": 14975
+  },
+  {
+    "word": "der Waschlappen",
+    "definition": [
+      "washcloth",
+      "Ich brauche einen Waschlappen, um mein Gesicht zu waschen. — I need a washcloth to wash my face."
+    ],
+    "word_frequency": 24008
+  },
+  {
+    "word": "der Wasserfall",
+    "definition": [
+      "waterfall",
+      "Wir besuchten einen wunderschönen Wasserfall in den Bergen. — We visited a beautiful waterfall in the mountains."
+    ],
+    "word_frequency": 10368
+  },
+  {
+    "word": "der Wasserhahn",
+    "definition": [
+      "tap;faucet",
+      "Der Wasserhahn tropft. — The tap is dripping."
+    ],
+    "word_frequency": 18265
+  },
+  {
+    "word": "der Wasserkocher",
+    "definition": [
+      "electric kettle",
+      "Ich brauche den Wasserkocher für meinen Tee. — I need the electric kettle for my tea."
+    ],
+    "word_frequency": 26072
+  },
+  {
+    "word": "der Wecker",
+    "definition": [
+      "alarm clock",
+      "Mein Wecker klingelt jeden Morgen um sechs Uhr. — My alarm clock rings every morning at six o'clock."
+    ],
+    "word_frequency": 7602
+  },
+  {
+    "word": "der Weihnachtsbaum",
+    "definition": [
+      "Christmas tree",
+      "Wir schmücken den Weihnachtsbaum jedes Jahr. — We decorate the Christmas tree every year."
+    ],
+    "word_frequency": 12941
+  },
+  {
+    "word": "der Weihnachtsmann",
+    "definition": [
+      "Santa Claus",
+      "Der Weihnachtsmann bringt Geschenke zu Weihnachten. — Santa Claus brings presents at Christmas."
+    ],
+    "word_frequency": 8761
+  },
+  {
+    "word": "der Weihnachtsmarkt",
+    "definition": [
+      "Christmas market",
+      "Wir gehen jedes Jahr auf den Weihnachtsmarkt. — We go to the Christmas market every year."
+    ],
+    "word_frequency": 8762
+  },
+  {
+    "word": "der Weisswein",
+    "definition": [
+      "white wine",
+      "Möchten Sie lieber Rotwein oder Weisswein? — Would you prefer red wine or white wine?"
+    ],
+    "word_frequency": 16063
+  },
+  {
+    "word": "der West",
+    "definition": [
+      "west",
+      "Die Sonne geht im Westen unter. — The sun sets in the west."
+    ],
+    "word_frequency": 1498
+  },
+  {
+    "word": "der Westen",
+    "definition": [
+      "west",
+      "Die Sonne geht im Westen unter. — The sun sets in the west."
+    ],
+    "word_frequency": 1160
+  },
+  {
+    "word": "der Wetterbericht",
+    "definition": [
+      "weather report",
+      "Ich habe den Wetterbericht gehört. — I heard the weather report."
+    ],
+    "word_frequency": 18581
+  },
+  {
+    "word": "der Wind",
+    "definition": [
+      "wind",
+      "Der Wind weht stark heute. — The wind is blowing strongly today."
+    ],
+    "word_frequency": 1249
+  },
+  {
+    "word": "der Wintermonat",
+    "definition": [
+      "winter month",
+      "Dezember ist ein typischer Wintermonat. — December is a typical winter month."
+    ],
+    "word_frequency": 22506
+  },
+  {
+    "word": "der Witz",
+    "definition": [
+      "joke",
+      "Er hat einen lustigen Witz erzählt. — He told a funny joke."
+    ],
+    "word_frequency": 1522
+  },
+  {
+    "word": "der Wochenmarkt",
+    "definition": [
+      "weekly market",
+      "Wir kaufen frisches Gemüse auf dem Wochenmarkt. — We buy fresh vegetables at the weekly market."
+    ],
+    "word_frequency": 18585
+  },
+  {
+    "word": "der Wohnort",
+    "definition": [
+      "place of residence",
+      "Bitte geben Sie Ihren Wohnort an. — Please state your place of residence."
+    ],
+    "word_frequency": 6607
+  },
+  {
+    "word": "der Wok",
+    "definition": [
+      "Wok",
+      "Ich koche gerne im Wok. — I like to cook in a wok."
+    ],
+    "word_frequency": 28177
+  },
+  {
+    "word": "der Wolf",
+    "definition": [
+      "wolf",
+      "Der Wolf heult im Wald. — The wolf howls in the forest."
+    ],
+    "word_frequency": 1620
+  },
+  {
+    "word": "der Wunsch",
+    "definition": [
+      "wish",
+      "Ich habe einen Wunsch. — I have a wish."
+    ],
+    "word_frequency": 1032
+  },
+  {
+    "word": "der Würfel",
+    "definition": [
+      "dice;cube",
+      "Wir spielten mit einem Würfel. — We played with a die."
+    ],
+    "word_frequency": 8043
+  },
+  {
+    "word": "der Zahnarzt",
+    "definition": [
+      "dentist",
+      "Ich muss einen Termin beim Zahnarzt machen. — I need to make an appointment with the dentist."
+    ],
+    "word_frequency": 5944
+  },
+  {
+    "word": "der Zaun",
+    "definition": [
+      "fence",
+      "Der Hund sprang über den Zaun. — The dog jumped over the fence."
+    ],
+    "word_frequency": 4454
+  },
+  {
+    "word": "der Zebrastreifen",
+    "definition": [
+      "zebra crossing",
+      "Bitte überqueren Sie die Straße am Zebrastreifen. — Please cross the street at the zebra crossing."
+    ],
+    "word_frequency": 21817
+  },
+  {
+    "word": "der Zehner",
+    "definition": [
+      "ten (e.g.;a ten-euro note);number ten",
+      "Ich habe einen Zehner in meiner Brieftasche. — I have a ten-euro note in my wallet."
+    ],
+    "word_frequency": 20173
+  },
+  {
+    "word": "der Zentimeter",
+    "definition": [
+      "centimeter",
+      "Der Tisch ist achtzig Zentimeter breit. — The table is eighty centimeters wide."
+    ],
+    "word_frequency": 3247
+  },
+  {
+    "word": "der Zettel",
+    "definition": [
+      "note",
+      "Ich habe einen Zettel mit Notizen. — I have a note with observations."
+    ],
+    "word_frequency": 4389
+  },
+  {
+    "word": "der Zirkus",
+    "definition": [
+      "circus",
+      "Wir gehen heute in den Zirkus. — We are going to the circus today."
+    ],
+    "word_frequency": 6258
+  },
+  {
+    "word": "der Zitronensaft",
+    "definition": [
+      "lemon juice",
+      "Ich mag Zitronensaft in meinem Tee. — I like lemon juice in my tea."
+    ],
+    "word_frequency": 27321
+  },
+  {
+    "word": "der Ägypter",
+    "definition": [
+      "Egyptian (person)",
+      "Er ist ein Ägypter. — He is an Egyptian."
+    ],
+    "word_frequency": 13175
+  },
+  {
+    "word": "der Ärger",
+    "definition": [
+      "anger;trouble",
+      "Er hatte viel Ärger mit seinem Chef. — He had a lot of trouble with his boss."
+    ],
+    "word_frequency": 2471
+  },
+  {
+    "word": "der Ärmel",
+    "definition": [
+      "sleeve",
+      "Er krempelte die Ärmel hoch. — He rolled up his sleeves."
+    ],
+    "word_frequency": 9199
+  },
+  {
+    "word": "der Österreicher",
+    "definition": [
+      "Austrian (male)",
+      "Er ist ein Österreicher. — He is an Austrian."
+    ],
+    "word_frequency": 2664
+  }
+]

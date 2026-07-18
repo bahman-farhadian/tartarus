@@ -1,0 +1,1619 @@
+[
+  {
+    "word": "aktiv",
+    "definition": [
+      "active",
+      "Sie ist eine sehr aktive Person. — She is a very active person."
+    ],
+    "word_frequency": 805
+  },
+  {
+    "word": "allein",
+    "definition": [
+      "alone",
+      "Sie ist gern allein. — She likes to be alone."
+    ],
+    "word_frequency": 266
+  },
+  {
+    "word": "amerikanisch",
+    "definition": [
+      "American",
+      "Er fährt ein amerikanisches Auto. — He drives an American car."
+    ],
+    "word_frequency": 1369
+  },
+  {
+    "word": "anders",
+    "definition": [
+      "different;otherwise",
+      "Das ist ganz anders. — That is completely different."
+    ],
+    "word_frequency": 275
+  },
+  {
+    "word": "angenehm",
+    "definition": [
+      "pleasant;comfortable",
+      "Es war ein sehr angenehmer Abend. — It was a very pleasant evening."
+    ],
+    "word_frequency": 2865
+  },
+  {
+    "word": "anstrengend",
+    "definition": [
+      "strenuous;exhausting",
+      "Der Marathon war sehr anstrengend. — The marathon was very strenuous."
+    ],
+    "word_frequency": 4161
+  },
+  {
+    "word": "argentinisch",
+    "definition": [
+      "Argentinian",
+      "Sie kommt aus Argentinien, sie ist argentinisch. — She comes from Argentina, she is Argentinian."
+    ],
+    "word_frequency": 15535
+  },
+  {
+    "word": "artig",
+    "definition": [
+      "well-behaved;polite",
+      "Das Kind war sehr artig. — The child was very well-behaved."
+    ],
+    "word_frequency": 13629
+  },
+  {
+    "word": "aufregend",
+    "definition": [
+      "exciting",
+      "Das war ein sehr aufregender Tag. — That was a very exciting day."
+    ],
+    "word_frequency": 9209
+  },
+  {
+    "word": "ausländisch",
+    "definition": [
+      "foreign",
+      "Viele ausländische Studenten kommen hierher. — Many foreign students come here."
+    ],
+    "word_frequency": 3654
+  },
+  {
+    "word": "automatisch",
+    "definition": [
+      "automatic",
+      "Die Tür öffnet sich automatisch. — The door opens automatically."
+    ],
+    "word_frequency": 1565
+  },
+  {
+    "word": "beendet",
+    "definition": [
+      "finished;ended",
+      "Das Projekt ist beendet. — The project is finished."
+    ],
+    "word_frequency": 15278
+  },
+  {
+    "word": "beige",
+    "definition": [
+      "beige",
+      "Sie trägt einen beigen Mantel. — She is wearing a beige coat."
+    ],
+    "word_frequency": 13640
+  },
+  {
+    "word": "bekannt",
+    "definition": [
+      "known",
+      "Er ist ein bekannter Schauspieler. — He is a famous actor."
+    ],
+    "word_frequency": 326
+  },
+  {
+    "word": "belgisch",
+    "definition": [
+      "Belgian",
+      "Er isst gerne belgische Waffeln. — He likes to eat Belgian waffles."
+    ],
+    "word_frequency": 8062
+  },
+  {
+    "word": "beliebt",
+    "definition": [
+      "popular;beloved",
+      "Sie ist bei ihren Kollegen sehr beliebt. — She is very popular with her colleagues."
+    ],
+    "word_frequency": 2475
+  },
+  {
+    "word": "bequem",
+    "definition": [
+      "comfortable;convenient",
+      "Das Sofa ist sehr bequem. — The sofa is very comfortable."
+    ],
+    "word_frequency": 3198
+  },
+  {
+    "word": "bereit",
+    "definition": [
+      "ready;prepared",
+      "Bist du bereit für die Prüfung? — Are you ready for the exam?"
+    ],
+    "word_frequency": 587
+  },
+  {
+    "word": "beruflich",
+    "definition": [
+      "professional;vocational",
+      "Er ist beruflich viel unterwegs. — He travels a lot for work."
+    ],
+    "word_frequency": 4241
+  },
+  {
+    "word": "bewölkt",
+    "definition": [
+      "cloudy;overcast",
+      "Heute ist es bewölkt, aber es regnet nicht. — Today it is cloudy, but it's not raining."
+    ],
+    "word_frequency": 13432
+  },
+  {
+    "word": "billig",
+    "definition": [
+      "cheap",
+      "Das ist ein billiges Auto. — That is a cheap car."
+    ],
+    "word_frequency": 2962
+  },
+  {
+    "word": "bitter",
+    "definition": [
+      "bitter",
+      "Der Kaffee schmeckt bitter. — The coffee tastes bitter."
+    ],
+    "word_frequency": 4319
+  },
+  {
+    "word": "blöd",
+    "definition": [
+      "stupid;silly",
+      "Das ist eine blöde Idee. — That is a stupid idea."
+    ],
+    "word_frequency": 2001
+  },
+  {
+    "word": "brasilianisch",
+    "definition": [
+      "Brazilian",
+      "Sie spricht brasilianisches Portugiesisch. — She speaks Brazilian Portuguese."
+    ],
+    "word_frequency": 8067
+  },
+  {
+    "word": "brav",
+    "definition": [
+      "well-behaved",
+      "Das Kind war sehr brav. — The child was very well-behaved."
+    ],
+    "word_frequency": 4635
+  },
+  {
+    "word": "britisch",
+    "definition": [
+      "British",
+      "Er ist ein britischer Staatsbürger. — He is a British citizen."
+    ],
+    "word_frequency": 2481
+  },
+  {
+    "word": "british",
+    "definition": [
+      "British",
+      "Er hat einen britischen Akzent. — He has a British accent."
+    ],
+    "word_frequency": 7930
+  },
+  {
+    "word": "böse",
+    "definition": [
+      "evil;angry;bad",
+      "Er war böse auf seinen Freund. — He was angry at his friend."
+    ],
+    "word_frequency": 1109
+  },
+  {
+    "word": "chinesisch",
+    "definition": [
+      "Chinese",
+      "Ich mag chinesisches Essen. — I like Chinese food."
+    ],
+    "word_frequency": 2965
+  },
+  {
+    "word": "clever",
+    "definition": [
+      "clever;smart",
+      "Das war eine sehr clevere Idee. — That was a very clever idea."
+    ],
+    "word_frequency": 6744
+  },
+  {
+    "word": "cool",
+    "definition": [
+      "cool",
+      "Das ist ein cooles Auto. — That is a cool car."
+    ],
+    "word_frequency": 995
+  },
+  {
+    "word": "dankbar",
+    "definition": [
+      "grateful",
+      "Ich bin dir sehr dankbar. — I am very grateful to you."
+    ],
+    "word_frequency": 2092
+  },
+  {
+    "word": "digital",
+    "definition": [
+      "digital",
+      "Wir leben in einem digitalen Zeitalter. — We live in a digital age."
+    ],
+    "word_frequency": 2826
+  },
+  {
+    "word": "direkt",
+    "definition": [
+      "direct",
+      "Der Weg ist direkt. — The path is direct."
+    ],
+    "word_frequency": 268
+  },
+  {
+    "word": "doof",
+    "definition": [
+      "stupid;silly",
+      "Das ist eine doofe Idee. — That is a stupid idea."
+    ],
+    "word_frequency": 3074
+  },
+  {
+    "word": "doppelt",
+    "definition": [
+      "double;twofold",
+      "Ich habe eine doppelte Portion bestellt. — I ordered a double portion."
+    ],
+    "word_frequency": 2094
+  },
+  {
+    "word": "dreckig",
+    "definition": [
+      "dirty",
+      "Die Schuhe sind sehr dreckig. — The shoes are very dirty."
+    ],
+    "word_frequency": 8219
+  },
+  {
+    "word": "dreijährig",
+    "definition": [
+      "three-year-old;three-year",
+      "Mein dreijähriger Neffe spielt gerne im Garten. — My three-year-old nephew likes to play in the garden."
+    ],
+    "word_frequency": 17454
+  },
+  {
+    "word": "dritt",
+    "definition": [
+      "third",
+      "Das ist der dritte Versuch. — This is the third attempt."
+    ],
+    "word_frequency": 706
+  },
+  {
+    "word": "dumm",
+    "definition": [
+      "stupid",
+      "Das ist eine dumme Idee. — That is a stupid idea."
+    ],
+    "word_frequency": 1056
+  },
+  {
+    "word": "dunkelblau",
+    "definition": [
+      "dark blue",
+      "Sie trug ein dunkelblaues Kleid. — She wore a dark blue dress."
+    ],
+    "word_frequency": 22966
+  },
+  {
+    "word": "dunkelbraun",
+    "definition": [
+      "dark brown",
+      "Sie hat dunkelbraune Haare. — She has dark brown hair."
+    ],
+    "word_frequency": 17776
+  },
+  {
+    "word": "dunkelgrün",
+    "definition": [
+      "dark green",
+      "Sie trug ein dunkelgrünes Kleid. — She wore a dark green dress."
+    ],
+    "word_frequency": 29223
+  },
+  {
+    "word": "dunkelrot",
+    "definition": [
+      "dark red",
+      "Das Auto war dunkelrot lackiert. — The car was painted dark red."
+    ],
+    "word_frequency": 29224
+  },
+  {
+    "word": "durstig",
+    "definition": [
+      "thirsty",
+      "Ich bin sehr durstig. — I am very thirsty."
+    ],
+    "word_frequency": 23722
+  },
+  {
+    "word": "dünn",
+    "definition": [
+      "thin",
+      "Das Papier ist sehr dünn. — The paper is very thin."
+    ],
+    "word_frequency": 4107
+  },
+  {
+    "word": "egal",
+    "definition": [
+      "all the same;doesn't matter",
+      "Es ist mir egal. — It's all the same to me."
+    ],
+    "word_frequency": 314
+  },
+  {
+    "word": "eilig",
+    "definition": [
+      "urgent;in a hurry",
+      "Ich habe es eilig, ich muss jetzt gehen. — I'm in a hurry, I have to go now."
+    ],
+    "word_frequency": 8382
+  },
+  {
+    "word": "einige",
+    "definition": [
+      "some;a few",
+      "Ich habe einige Bücher gelesen. — I have read some books."
+    ],
+    "word_frequency": 182
+  },
+  {
+    "word": "einverstanden",
+    "definition": [
+      "agreed;in agreement",
+      "Sind Sie damit einverstanden? — Do you agree with that?"
+    ],
+    "word_frequency": 2926
+  },
+  {
+    "word": "eklig",
+    "definition": [
+      "disgusting;gross",
+      "Das Essen schmeckt eklig. — The food tastes disgusting."
+    ],
+    "word_frequency": 7644
+  },
+  {
+    "word": "eng",
+    "definition": [
+      "narrow",
+      "Die Straße ist sehr eng. — The street is very narrow."
+    ],
+    "word_frequency": 1597
+  },
+  {
+    "word": "erkältet",
+    "definition": [
+      "having a cold",
+      "Ich bin erkältet und muss zu Hause bleiben. — I have a cold and have to stay home."
+    ],
+    "word_frequency": 18999
+  },
+  {
+    "word": "false",
+    "definition": [
+      "false",
+      "Das ist eine falsche Antwort. — That is a false answer."
+    ],
+    "word_frequency": 15597
+  },
+  {
+    "word": "fantastisch",
+    "definition": [
+      "fantastic;great",
+      "Das war ein fantastischer Film! — That was a fantastic movie!"
+    ],
+    "word_frequency": 5454
+  },
+  {
+    "word": "farbig",
+    "definition": [
+      "colorful;colored",
+      "Das Bild ist sehr farbig. — The picture is very colorful."
+    ],
+    "word_frequency": 9095
+  },
+  {
+    "word": "faul",
+    "definition": [
+      "lazy;rotten",
+      "Er ist zu faul, um aufzustehen. — He is too lazy to get up."
+    ],
+    "word_frequency": 4029
+  },
+  {
+    "word": "fettig",
+    "definition": [
+      "greasy;fatty",
+      "Das Essen war sehr fettig. — The food was very greasy."
+    ],
+    "word_frequency": 28801
+  },
+  {
+    "word": "fit",
+    "definition": [
+      "fit;in shape",
+      "Er ist sehr fit für sein Alter. — He is very fit for his age."
+    ],
+    "word_frequency": 2574
+  },
+  {
+    "word": "fleissig",
+    "definition": [
+      "diligent;hardworking",
+      "Sie ist eine sehr fleissige Studentin. — She is a very diligent student."
+    ],
+    "word_frequency": 3802
+  },
+  {
+    "word": "flüssig",
+    "definition": [
+      "liquid",
+      "Wasser ist eine flüssige Substanz. — Water is a liquid substance."
+    ],
+    "word_frequency": 8652
+  },
+  {
+    "word": "froh",
+    "definition": [
+      "glad;happy",
+      "Ich bin froh, dich zu sehen. — I am glad to see you."
+    ],
+    "word_frequency": 998
+  },
+  {
+    "word": "fruchtig",
+    "definition": [
+      "fruity",
+      "Dieser Wein hat einen sehr fruchtigen Geschmack. — This wine has a very fruity taste."
+    ],
+    "word_frequency": 28815
+  },
+  {
+    "word": "fröhlich",
+    "definition": [
+      "cheerful",
+      "Sie war sehr fröhlich über die Nachricht. — She was very happy about the news."
+    ],
+    "word_frequency": 4117
+  },
+  {
+    "word": "fünfjährig",
+    "definition": [
+      "five-year-old;five-year",
+      "Mein fünfjähriger Neffe spielt gerne im Garten. — My five-year-old nephew likes to play in the garden."
+    ],
+    "word_frequency": 23010
+  },
+  {
+    "word": "gebraucht",
+    "definition": [
+      "used (second-hand)",
+      "Ich habe ein gebrauchtes Fahrrad gekauft. — I bought a used bicycle."
+    ],
+    "word_frequency": 8516
+  },
+  {
+    "word": "gefährlich",
+    "definition": [
+      "dangerous",
+      "Das ist eine gefährliche Situation. — That is a dangerous situation."
+    ],
+    "word_frequency": 1506
+  },
+  {
+    "word": "gefüllt",
+    "definition": [
+      "filled;stuffed",
+      "Der Korb ist mit Äpfeln gefüllt. — The basket is filled with apples."
+    ],
+    "word_frequency": 10610
+  },
+  {
+    "word": "gekauft",
+    "definition": [
+      "bought",
+      "Das gekaufte Produkt war von hoher Qualität. — The purchased product was of high quality."
+    ],
+    "word_frequency": 15351
+  },
+  {
+    "word": "gekocht",
+    "definition": [
+      "cooked",
+      "Ich mag gekochtes Gemüse. — I like cooked vegetables."
+    ],
+    "word_frequency": 27443
+  },
+  {
+    "word": "gelebt",
+    "definition": [
+      "lived",
+      "Das gelebte Leben war voller Abenteuer. — The lived life was full of adventures."
+    ],
+    "word_frequency": 15353
+  },
+  {
+    "word": "gemeinsam",
+    "definition": [
+      "common;together",
+      "Wir arbeiten gemeinsam an dem Projekt. — We are working together on the project."
+    ],
+    "word_frequency": 492
+  },
+  {
+    "word": "gemütlich",
+    "definition": [
+      "cozy",
+      "Das Sofa ist sehr gemütlich. — The sofa is very cozy."
+    ],
+    "word_frequency": 3876
+  },
+  {
+    "word": "genau",
+    "definition": [
+      "exact;precise;exactly!",
+      "Das ist genau das, was ich brauche. — That is exactly what I need."
+    ],
+    "word_frequency": 146
+  },
+  {
+    "word": "gerade",
+    "definition": [
+      "straight",
+      "Die Linie ist gerade. — The line is straight."
+    ],
+    "word_frequency": 109
+  },
+  {
+    "word": "geschlossen",
+    "definition": [
+      "closed",
+      "Der Laden ist heute geschlossen. — The shop is closed today."
+    ],
+    "word_frequency": 3947
+  },
+  {
+    "word": "gesehen",
+    "definition": [
+      "seen",
+      "Das ist ein oft gesehenes Problem. — That is an often seen problem."
+    ],
+    "word_frequency": 21591
+  },
+  {
+    "word": "gestreift",
+    "definition": [
+      "striped",
+      "Sie trug ein gestreiftes Hemd. — She wore a striped shirt."
+    ],
+    "word_frequency": 27882
+  },
+  {
+    "word": "geöffnet",
+    "definition": [
+      "open;opened",
+      "Die Tür ist geöffnet. — The door is open."
+    ],
+    "word_frequency": 14374
+  },
+  {
+    "word": "glatt",
+    "definition": [
+      "smooth",
+      "Die Oberfläche ist ganz glatt. — The surface is very smooth."
+    ],
+    "word_frequency": 3085
+  },
+  {
+    "word": "golden",
+    "definition": [
+      "golden",
+      "Sie trug einen goldenen Ring. — She wore a golden ring."
+    ],
+    "word_frequency": 2877
+  },
+  {
+    "word": "griechisch",
+    "definition": [
+      "Greek",
+      "Sie isst gerne griechischen Salat. — She likes to eat Greek salad."
+    ],
+    "word_frequency": 2832
+  },
+  {
+    "word": "günstig",
+    "definition": [
+      "favorable;cheap;affordable",
+      "Das Angebot ist sehr günstig. — The offer is very favorable/cheap."
+    ],
+    "word_frequency": 2102
+  },
+  {
+    "word": "happy",
+    "definition": [
+      "happy",
+      "Ich bin heute sehr happy. — I am very happy today."
+    ],
+    "word_frequency": 3088
+  },
+  {
+    "word": "hart",
+    "definition": [
+      "hard",
+      "Das Brot ist hart. — The bread is hard."
+    ],
+    "word_frequency": 812
+  },
+  {
+    "word": "hellbraun",
+    "definition": [
+      "light brown",
+      "Sie hat hellbraune Haare. — She has light brown hair."
+    ],
+    "word_frequency": 24183
+  },
+  {
+    "word": "holländisch",
+    "definition": [
+      "Dutch",
+      "Sie spricht Holländisch. — She speaks Dutch."
+    ],
+    "word_frequency": 12156
+  },
+  {
+    "word": "hungrig",
+    "definition": [
+      "hungry",
+      "Ich bin sehr hungrig. — I am very hungry."
+    ],
+    "word_frequency": 7278
+  },
+  {
+    "word": "hässlich",
+    "definition": [
+      "ugly",
+      "Das ist ein hässliches Gebäude. — That is an ugly building."
+    ],
+    "word_frequency": 4654
+  },
+  {
+    "word": "höflich",
+    "definition": [
+      "polite",
+      "Er ist immer sehr höflich. — He is always very polite."
+    ],
+    "word_frequency": 5894
+  },
+  {
+    "word": "hübsch",
+    "definition": [
+      "pretty;handsome",
+      "Sie hat ein hübsches Lächeln. — She has a pretty smile."
+    ],
+    "word_frequency": 2777
+  },
+  {
+    "word": "indisch",
+    "definition": [
+      "Indian",
+      "Ich mag indisches Essen sehr gerne. — I like Indian food very much."
+    ],
+    "word_frequency": 4999
+  },
+  {
+    "word": "intelligent",
+    "definition": [
+      "intelligent",
+      "Sie ist eine sehr intelligente Frau. — She is a very intelligent woman."
+    ],
+    "word_frequency": 5679
+  },
+  {
+    "word": "japanisch",
+    "definition": [
+      "Japanese",
+      "Sie lernt die japanische Sprache. — She is learning the Japanese language."
+    ],
+    "word_frequency": 3482
+  },
+  {
+    "word": "klar",
+    "definition": [
+      "clear;obvious",
+      "Das ist ganz klar. — That is very clear."
+    ],
+    "word_frequency": 176
+  },
+  {
+    "word": "klebrig",
+    "definition": [
+      "sticky",
+      "Der Honig ist sehr klebrig. — The honey is very sticky."
+    ],
+    "word_frequency": 25876
+  },
+  {
+    "word": "klug",
+    "definition": [
+      "smart;clever",
+      "Sie ist ein sehr kluges Mädchen. — She is a very smart girl."
+    ],
+    "word_frequency": 3957
+  },
+  {
+    "word": "komisch",
+    "definition": [
+      "funny;strange",
+      "Das ist eine komische Geschichte. — That is a funny story."
+    ],
+    "word_frequency": 1452
+  },
+  {
+    "word": "koreanisch",
+    "definition": [
+      "Korean",
+      "Sie lernt die koreanische Sprache. — She is learning the Korean language."
+    ],
+    "word_frequency": 17534
+  },
+  {
+    "word": "korrekt",
+    "definition": [
+      "correct",
+      "Ihre Antwort ist korrekt. — Your answer is correct."
+    ],
+    "word_frequency": 2583
+  },
+  {
+    "word": "kostenlos",
+    "definition": [
+      "free of charge",
+      "Der Eintritt ist kostenlos. — Admission is free of charge."
+    ],
+    "word_frequency": 1089
+  },
+  {
+    "word": "kroatisch",
+    "definition": [
+      "Croatian",
+      "Sie spricht kroatisch. — She speaks Croatian."
+    ],
+    "word_frequency": 16435
+  },
+  {
+    "word": "kühl",
+    "definition": [
+      "cool;chilly",
+      "Es ist heute kühl draußen. — It is cool outside today."
+    ],
+    "word_frequency": 5480
+  },
+  {
+    "word": "langweilig",
+    "definition": [
+      "boring",
+      "Der Film war sehr langweilig. — The movie was very boring."
+    ],
+    "word_frequency": 2221
+  },
+  {
+    "word": "ledig",
+    "definition": [
+      "single;unmarried",
+      "Sie ist noch ledig. — She is still single."
+    ],
+    "word_frequency": 18141
+  },
+  {
+    "word": "leise",
+    "definition": [
+      "quiet;soft (sound)",
+      "Bitte sprich leise. — Please speak quietly."
+    ],
+    "word_frequency": 2063
+  },
+  {
+    "word": "letzt",
+    "definition": [
+      "last;final",
+      "Das ist das letzte Mal. — This is the last time."
+    ],
+    "word_frequency": 188
+  },
+  {
+    "word": "lieb",
+    "definition": [
+      "dear;kind",
+      "Das ist sehr lieb von dir. — That is very kind of you."
+    ],
+    "word_frequency": 292
+  },
+  {
+    "word": "los",
+    "definition": [
+      "loose;off;gone",
+      "Was ist los? — What's going on?"
+    ],
+    "word_frequency": 331
+  },
+  {
+    "word": "mehrer",
+    "definition": [
+      "several",
+      "Es gab mehrere Gründe für seine Entscheidung. — There were several reasons for his decision."
+    ],
+    "word_frequency": 3890
+  },
+  {
+    "word": "mehrere",
+    "definition": [
+      "several",
+      "Ich habe mehrere Bücher gelesen. — I have read several books."
+    ],
+    "word_frequency": 351
+  },
+  {
+    "word": "mexikanisch",
+    "definition": [
+      "Mexican",
+      "Sie isst gerne mexikanisches Essen. — She likes to eat Mexican food."
+    ],
+    "word_frequency": 11003
+  },
+  {
+    "word": "mild",
+    "definition": [
+      "mild;gentle",
+      "Das Wetter ist heute mild. — The weather is mild today."
+    ],
+    "word_frequency": 6560
+  },
+  {
+    "word": "mitgebracht",
+    "definition": [
+      "brought along",
+      "Das mitgebrachte Essen war sehr lecker. — The food brought along was very delicious."
+    ],
+    "word_frequency": 25490
+  },
+  {
+    "word": "modern",
+    "definition": [
+      "modern",
+      "Das ist ein sehr modernes Haus. — That is a very modern house."
+    ],
+    "word_frequency": 1243
+  },
+  {
+    "word": "musikalisch",
+    "definition": [
+      "musical",
+      "Sie ist sehr musikalisch. — She is very musical."
+    ],
+    "word_frequency": 3747
+  },
+  {
+    "word": "mutig",
+    "definition": [
+      "brave;courageous",
+      "Sie ist ein mutiges Mädchen. — She is a brave girl."
+    ],
+    "word_frequency": 4921
+  },
+  {
+    "word": "nahe",
+    "definition": [
+      "near;close",
+      "Das Haus ist ganz nahe am See. — The house is very close to the lake."
+    ],
+    "word_frequency": 780
+  },
+  {
+    "word": "nass",
+    "definition": [
+      "wet",
+      "Meine Kleidung ist ganz nass geworden. — My clothes got completely wet."
+    ],
+    "word_frequency": 3825
+  },
+  {
+    "word": "natürlich",
+    "definition": [
+      "natural;naturally;of course",
+      "Das ist eine natürliche Reaktion. — That is a natural reaction."
+    ],
+    "word_frequency": 154
+  },
+  {
+    "word": "negativ",
+    "definition": [
+      "negative",
+      "Er hat eine sehr negative Einstellung. — He has a very negative attitude."
+    ],
+    "word_frequency": 2315
+  },
+  {
+    "word": "neugierig",
+    "definition": [
+      "curious",
+      "Kinder sind oft sehr neugierig. — Children are often very curious."
+    ],
+    "word_frequency": 3681
+  },
+  {
+    "word": "niedlich",
+    "definition": [
+      "cute;adorable",
+      "Das Kätzchen ist sehr niedlich. — The kitten is very cute."
+    ],
+    "word_frequency": 8129
+  },
+  {
+    "word": "norwegisch",
+    "definition": [
+      "Norwegian",
+      "Sie spricht fließend Norwegisch. — She speaks fluent Norwegian."
+    ],
+    "word_frequency": 11010
+  },
+  {
+    "word": "nötig",
+    "definition": [
+      "necessary",
+      "Das ist nicht nötig. — That is not necessary."
+    ],
+    "word_frequency": 980
+  },
+  {
+    "word": "offen",
+    "definition": [
+      "open",
+      "Die Tür ist offen. — The door is open."
+    ],
+    "word_frequency": 646
+  },
+  {
+    "word": "perfekt",
+    "definition": [
+      "perfect",
+      "Das ist die perfekte Lösung. — That is the perfect solution."
+    ],
+    "word_frequency": 897
+  },
+  {
+    "word": "polnisch",
+    "definition": [
+      "Polish",
+      "Sie spricht fließend Polnisch. — She speaks fluent Polish."
+    ],
+    "word_frequency": 3687
+  },
+  {
+    "word": "positiv",
+    "definition": [
+      "positive",
+      "Sie hat eine sehr positive Einstellung zum Leben. — She has a very positive attitude towards life."
+    ],
+    "word_frequency": 1094
+  },
+  {
+    "word": "praktisch",
+    "definition": [
+      "practical;convenient",
+      "Das ist sehr praktisch. — That is very practical."
+    ],
+    "word_frequency": 1456
+  },
+  {
+    "word": "prima",
+    "definition": [
+      "great;excellent",
+      "Das ist eine prima Idee! — That's a great idea!"
+    ],
+    "word_frequency": 3366
+  },
+  {
+    "word": "pünktlich",
+    "definition": [
+      "punctual;on time",
+      "Er ist immer pünktlich zur Arbeit. — He is always punctual for work."
+    ],
+    "word_frequency": 3103
+  },
+  {
+    "word": "quadratisch",
+    "definition": [
+      "square",
+      "Der Tisch ist quadratisch. — The table is square."
+    ],
+    "word_frequency": 20076
+  },
+  {
+    "word": "rechteckig",
+    "definition": [
+      "rectangular",
+      "Der Tisch hat eine rechteckige Form. — The table has a rectangular shape."
+    ],
+    "word_frequency": 27190
+  },
+  {
+    "word": "regelmässig",
+    "definition": [
+      "regularly",
+      "Ich gehe regelmässig ins Fitnessstudio. — I go to the gym regularly.",
+      "Ich gehe regelmäßig ins Fitnessstudio. — I go to the gym regularly."
+    ],
+    "word_frequency": 850
+  },
+  {
+    "word": "reich",
+    "definition": [
+      "rich;wealthy",
+      "Er ist ein reicher Mann. — He is a rich man."
+    ],
+    "word_frequency": 746
+  },
+  {
+    "word": "ruhig",
+    "definition": [
+      "quiet;calm",
+      "Bitte sei ruhig. — Please be quiet."
+    ],
+    "word_frequency": 1069
+  },
+  {
+    "word": "rund",
+    "definition": [
+      "round",
+      "Der Tisch ist rund. — The table is round."
+    ],
+    "word_frequency": 323
+  },
+  {
+    "word": "salzig",
+    "definition": [
+      "salty",
+      "Die Suppe ist zu salzig. — The soup is too salty."
+    ],
+    "word_frequency": 22065
+  },
+  {
+    "word": "satt",
+    "definition": [
+      "full (after eating);satisfied",
+      "Ich bin satt, danke. — I am full, thank you."
+    ],
+    "word_frequency": 4365
+  },
+  {
+    "word": "sauber",
+    "definition": [
+      "clean",
+      "Die Küche ist jetzt sauber. — The kitchen is clean now."
+    ],
+    "word_frequency": 2029
+  },
+  {
+    "word": "sauer",
+    "definition": [
+      "sour;angry",
+      "Die Zitrone schmeckt sauer. — The lemon tastes sour."
+    ],
+    "word_frequency": 2653
+  },
+  {
+    "word": "schade",
+    "definition": [
+      "a pity;too bad",
+      "Es ist schade, dass du nicht kommen kannst. — It's a pity that you can't come."
+    ],
+    "word_frequency": 1025
+  },
+  {
+    "word": "scharf",
+    "definition": [
+      "sharp;spicy",
+      "Das Messer ist sehr scharf. — The knife is very sharp."
+    ],
+    "word_frequency": 2183
+  },
+  {
+    "word": "schlafend",
+    "definition": [
+      "sleeping",
+      "Das Baby liegt schlafend in seinem Bett. — The baby lies sleeping in its bed."
+    ],
+    "word_frequency": 17622
+  },
+  {
+    "word": "schlank",
+    "definition": [
+      "slim;slender",
+      "Sie hat eine sehr schlanke Figur. — She has a very slim figure."
+    ],
+    "word_frequency": 6463
+  },
+  {
+    "word": "schlimm",
+    "definition": [
+      "bad;terrible",
+      "Das Wetter ist heute wirklich schlimm. — The weather is really bad today."
+    ],
+    "word_frequency": 1026
+  },
+  {
+    "word": "schmutzig",
+    "definition": [
+      "dirty",
+      "Die Kleidung ist schmutzig. — The clothes are dirty."
+    ],
+    "word_frequency": 8306
+  },
+  {
+    "word": "schrecklich",
+    "definition": [
+      "terrible;horrible",
+      "Das Wetter ist heute schrecklich. — The weather is terrible today."
+    ],
+    "word_frequency": 3233
+  },
+  {
+    "word": "schwach",
+    "definition": [
+      "weak",
+      "Nach der Krankheit fühlte er sich sehr schwach. — After the illness, he felt very weak."
+    ],
+    "word_frequency": 2185
+  },
+  {
+    "word": "schwierig",
+    "definition": [
+      "difficult",
+      "Die Aufgabe ist sehr schwierig. — The task is very difficult."
+    ],
+    "word_frequency": 1247
+  },
+  {
+    "word": "sicher",
+    "definition": [
+      "sure;safe;certainly",
+      "Bist du sicher? — Are you sure?"
+    ],
+    "word_frequency": 185
+  },
+  {
+    "word": "siebenjährig",
+    "definition": [
+      "seven-year-old;seven years old",
+      "Das siebenjährige Mädchen spielte im Garten. — The seven-year-old girl played in the garden."
+    ],
+    "word_frequency": 21396
+  },
+  {
+    "word": "siebent",
+    "definition": [
+      "seventh",
+      "Er ist der siebente in der Reihe. — He is the seventh in line."
+    ],
+    "word_frequency": 20410
+  },
+  {
+    "word": "siebt",
+    "definition": [
+      "seventh",
+      "Das ist der siebte Tag der Woche. — That is the seventh day of the week."
+    ],
+    "word_frequency": 6233
+  },
+  {
+    "word": "spannend",
+    "definition": [
+      "exciting;thrilling",
+      "Das Buch ist sehr spannend. — The book is very exciting."
+    ],
+    "word_frequency": 2187
+  },
+  {
+    "word": "sportlich",
+    "definition": [
+      "sporty",
+      "Er ist sehr sportlich. — He is very sporty."
+    ],
+    "word_frequency": 4289
+  },
+  {
+    "word": "späteres",
+    "definition": [
+      "later (adjective)",
+      "Wir müssen das auf einen späteren Zeitpunkt verschieben. — We have to postpone that to a later time."
+    ],
+    "word_frequency": 23948
+  },
+  {
+    "word": "stark",
+    "definition": [
+      "strong",
+      "Er ist ein starker Mann. — He is a strong man."
+    ],
+    "word_frequency": 318
+  },
+  {
+    "word": "still",
+    "definition": [
+      "quiet;still",
+      "Bitte sei still. — Please be quiet."
+    ],
+    "word_frequency": 2122
+  },
+  {
+    "word": "stolz",
+    "definition": [
+      "proud",
+      "Sie ist stolz auf ihre Kinder. — She is proud of her children."
+    ],
+    "word_frequency": 828
+  },
+  {
+    "word": "supi",
+    "definition": [
+      "super;great",
+      "Das ist supi! — That's super!"
+    ],
+    "word_frequency": 23961
+  },
+  {
+    "word": "sympathisch",
+    "definition": [
+      "likeable;sympathetic",
+      "Sie ist eine sehr sympathische Person. — She is a very likeable person."
+    ],
+    "word_frequency": 5510
+  },
+  {
+    "word": "tief",
+    "definition": [
+      "deep",
+      "Der See ist sehr tief. — The lake is very deep."
+    ],
+    "word_frequency": 946
+  },
+  {
+    "word": "traurig",
+    "definition": [
+      "sad",
+      "Sie war sehr traurig über die Nachricht. — She was very sad about the news."
+    ],
+    "word_frequency": 1394
+  },
+  {
+    "word": "trocken",
+    "definition": [
+      "dry",
+      "Das Handtuch ist trocken. — The towel is dry."
+    ],
+    "word_frequency": 2802
+  },
+  {
+    "word": "tschechisch",
+    "definition": [
+      "Czech",
+      "Das ist ein tschechisches Bier. — That is a Czech beer."
+    ],
+    "word_frequency": 7728
+  },
+  {
+    "word": "typisch",
+    "definition": [
+      "typical",
+      "Das ist typisch für ihn. — That is typical for him."
+    ],
+    "word_frequency": 2504
+  },
+  {
+    "word": "täglich",
+    "definition": [
+      "daily",
+      "Ich trinke täglich Kaffee. — I drink coffee daily."
+    ],
+    "word_frequency": 988
+  },
+  {
+    "word": "türkisch",
+    "definition": [
+      "Turkish",
+      "Ich mag türkischen Kaffee sehr gerne. — I like Turkish coffee very much."
+    ],
+    "word_frequency": 2275
+  },
+  {
+    "word": "ukrainisch",
+    "definition": [
+      "Ukrainian",
+      "Sie spricht Ukrainisch. — She speaks Ukrainian."
+    ],
+    "word_frequency": 6701
+  },
+  {
+    "word": "unbekannt",
+    "definition": [
+      "unknown",
+      "Der Autor des Buches ist unbekannt. — The author of the book is unknown."
+    ],
+    "word_frequency": 2854
+  },
+  {
+    "word": "unfreundlich",
+    "definition": [
+      "unfriendly;unkind",
+      "Er war sehr unfreundlich zu mir. — He was very unfriendly to me."
+    ],
+    "word_frequency": 13595
+  },
+  {
+    "word": "ungarisch",
+    "definition": [
+      "Hungarian",
+      "Sie spricht ungarisch. — She speaks Hungarian."
+    ],
+    "word_frequency": 5729
+  },
+  {
+    "word": "ungerade",
+    "definition": [
+      "odd (number);uneven",
+      "Die Zahl sieben ist ungerade. — The number seven is odd."
+    ],
+    "word_frequency": 23582
+  },
+  {
+    "word": "ungesund",
+    "definition": [
+      "unhealthy",
+      "Fast Food ist oft ungesund. — Fast food is often unhealthy."
+    ],
+    "word_frequency": 12928
+  },
+  {
+    "word": "unglücklich",
+    "definition": [
+      "unhappy",
+      "Sie war sehr unglücklich über die Nachricht. — She was very unhappy about the news."
+    ],
+    "word_frequency": 4447
+  },
+  {
+    "word": "uninteressant",
+    "definition": [
+      "uninteresting",
+      "Das Buch war uninteressant. — The book was uninteresting."
+    ],
+    "word_frequency": 13373
+  },
+  {
+    "word": "unsicher",
+    "definition": [
+      "insecure;uncertain",
+      "Er fühlt sich unsicher in der neuen Umgebung. — He feels insecure in the new environment."
+    ],
+    "word_frequency": 3643
+  },
+  {
+    "word": "unwichtig",
+    "definition": [
+      "unimportant",
+      "Das ist eine unwichtige Information. — That is unimportant information."
+    ],
+    "word_frequency": 8583
+  },
+  {
+    "word": "vegetarisch",
+    "definition": [
+      "vegetarian",
+      "Ich esse gerne vegetarisch. — I like to eat vegetarian."
+    ],
+    "word_frequency": 12932
+  },
+  {
+    "word": "verboten",
+    "definition": [
+      "forbidden;prohibited",
+      "Rauchen ist hier streng verboten. — Smoking is strictly forbidden here."
+    ],
+    "word_frequency": 10003
+  },
+  {
+    "word": "verheiratet",
+    "definition": [
+      "married",
+      "Sie ist seit zehn Jahren verheiratet. — She has been married for ten years."
+    ],
+    "word_frequency": 15498
+  },
+  {
+    "word": "verliebt",
+    "definition": [
+      "in love",
+      "Sie ist verliebt in ihn. — She is in love with him."
+    ],
+    "word_frequency": 13382
+  },
+  {
+    "word": "verschieden",
+    "definition": [
+      "different;various",
+      "Wir haben verschiedene Meinungen. — We have different opinions."
+    ],
+    "word_frequency": 454
+  },
+  {
+    "word": "verspätet",
+    "definition": [
+      "delayed",
+      "Der Zug ist verspätet. — The train is delayed."
+    ],
+    "word_frequency": 9827
+  },
+  {
+    "word": "violett",
+    "definition": [
+      "violet",
+      "Die Blumen haben eine schöne violette Farbe. — The flowers have a beautiful violet color."
+    ],
+    "word_frequency": 12263
+  },
+  {
+    "word": "voll",
+    "definition": [
+      "full",
+      "Das Glas ist voll Wasser. — The glass is full of water."
+    ],
+    "word_frequency": 428
+  },
+  {
+    "word": "vorsichtig",
+    "definition": [
+      "careful",
+      "Sei vorsichtig, die Straße ist glatt. — Be careful, the road is slippery."
+    ],
+    "word_frequency": 2136
+  },
+  {
+    "word": "wach",
+    "definition": [
+      "awake",
+      "Ich bin noch wach. — I am still awake."
+    ],
+    "word_frequency": 2038
+  },
+  {
+    "word": "weh",
+    "definition": [
+      "sore;painful",
+      "Mein Kopf tut weh. — My head hurts."
+    ],
+    "word_frequency": 1760
+  },
+  {
+    "word": "weich",
+    "definition": [
+      "soft",
+      "Das Kissen ist sehr weich. — The pillow is very soft."
+    ],
+    "word_frequency": 4453
+  },
+  {
+    "word": "weit",
+    "definition": [
+      "far;wide",
+      "Der Weg ist sehr weit. — The way is very far."
+    ],
+    "word_frequency": 116
+  },
+  {
+    "word": "wild",
+    "definition": [
+      "wild",
+      "Das ist eine wilde Katze. — That is a wild cat."
+    ],
+    "word_frequency": 1871
+  },
+  {
+    "word": "windig",
+    "definition": [
+      "windy",
+      "Heute ist es sehr windig. — It is very windy today."
+    ],
+    "word_frequency": 21812
+  },
+  {
+    "word": "wunderbar",
+    "definition": [
+      "wonderful;marvelous",
+      "Das Wetter ist heute wunderbar. — The weather is wonderful today."
+    ],
+    "word_frequency": 2039
+  },
+  {
+    "word": "wunderschön",
+    "definition": [
+      "beautiful;wonderful",
+      "Das ist ein wunderschönes Kleid. — That is a beautiful dress."
+    ],
+    "word_frequency": 2956
+  },
+  {
+    "word": "zehnt",
+    "definition": [
+      "tenth",
+      "Das ist der zehnte Versuch. — This is the tenth attempt."
+    ],
+    "word_frequency": 6257
+  },
+  {
+    "word": "zufrieden",
+    "definition": [
+      "satisfied",
+      "Bist du mit dem Ergebnis zufrieden? — Are you satisfied with the result?"
+    ],
+    "word_frequency": 1034
+  },
+  {
+    "word": "zwanzigst",
+    "definition": [
+      "twentieth",
+      "Das ist der zwanzigste Geburtstag. — This is the twentieth birthday."
+    ],
+    "word_frequency": 28190
+  },
+  {
+    "word": "österreichisch",
+    "definition": [
+      "Austrian",
+      "Er mag österreichisches Essen. — He likes Austrian food."
+    ],
+    "word_frequency": 1686
+  },
+  {
+    "word": "östlich",
+    "definition": [
+      "eastern;easterly",
+      "Die Stadt liegt östlich des Flusses. — The city lies east of the river."
+    ],
+    "word_frequency": 4779
+  }
+]

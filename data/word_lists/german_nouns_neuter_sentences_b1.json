@@ -1,0 +1,3982 @@
+[
+  {
+    "word": "Alice fiel ins Wunderland.",
+    "definition": "Alice fell into Wonderland.",
+    "word_frequency": 17688
+  },
+  {
+    "word": "Allerheiligen ist ein Feiertag in vielen Bundesländern.",
+    "definition": "All Saints' Day is a public holiday in many federal states.",
+    "word_frequency": 21159
+  },
+  {
+    "word": "Am Ende des Buches finden Sie ein nützliches Glossar.",
+    "definition": "At the end of the book, you will find a useful glossary.",
+    "word_frequency": 23025
+  },
+  {
+    "word": "Am Ende des Satzes steht ein Ausrufezeichen.",
+    "definition": "There is an exclamation mark at the end of the sentence.",
+    "word_frequency": 15011
+  },
+  {
+    "word": "Am Jahresende gibt es immer eine große Feier.",
+    "definition": "At the year-end, there is always a big celebration.",
+    "word_frequency": 8263
+  },
+  {
+    "word": "Am Nachthimmel konnte man viele Sternbilder sehen.",
+    "definition": "Many constellations could be seen in the night sky.",
+    "word_frequency": 26794
+  },
+  {
+    "word": "Am Ufer wächst hohes Schilf.",
+    "definition": "Tall reeds grow on the bank.",
+    "word_frequency": 25983
+  },
+  {
+    "word": "Auf dem Armaturenbrett leuchtete eine Warnlampe.",
+    "definition": "A warning light lit up on the dashboard.",
+    "word_frequency": 26899
+  },
+  {
+    "word": "Auf dem Feld wächst viel Getreide.",
+    "definition": "A lot of grain grows in the field.",
+    "word_frequency": 6417
+  },
+  {
+    "word": "Auf dem Fest gab es Freibier für alle.",
+    "definition": "At the festival, there was free beer for everyone.",
+    "word_frequency": 23758
+  },
+  {
+    "word": "Auf dem i fehlt ein Pünktchen.",
+    "definition": "There's a little dot missing on the i.",
+    "word_frequency": 24316
+  },
+  {
+    "word": "Ballons werden oft mit Helium gefüllt, damit sie schweben.",
+    "definition": "Balloons are often filled with helium so they float.",
+    "word_frequency": 18730
+  },
+  {
+    "word": "Bayern ist ein großes Bundesland in Deutschland.",
+    "definition": "Bavaria is a large federal state in Germany.",
+    "word_frequency": 4016
+  },
+  {
+    "word": "Bitte fügen Sie ein Leerzeichen zwischen den Wörtern ein.",
+    "definition": "Please insert a space between the words.",
+    "word_frequency": 19071
+  },
+  {
+    "word": "Bitte geben Sie Ihr Geschlecht an.",
+    "definition": "Please state your gender.",
+    "word_frequency": 2258
+  },
+  {
+    "word": "Bitte geben Sie Ihr Kennwort ein.",
+    "definition": "Please enter your password.",
+    "word_frequency": 27080
+  },
+  {
+    "word": "Bitte gib mir das Sieb, um die Nudeln abzugießen.",
+    "definition": "Please give me the sieve to drain the pasta.",
+    "word_frequency": 16756
+  },
+  {
+    "word": "Bitte lesen Sie das Handbuch.",
+    "definition": "Please read the manual.",
+    "word_frequency": 3478
+  },
+  {
+    "word": "Bitte lesen Sie das Manual sorgfältig durch.",
+    "definition": "Please read the manual carefully.",
+    "word_frequency": 22363
+  },
+  {
+    "word": "Bitte machen Sie ein Kreuzchen in das Kästchen.",
+    "definition": "Please put a tick mark in the box.",
+    "word_frequency": 27516
+  },
+  {
+    "word": "Bitte schreiben Sie das Protokoll des Treffens.",
+    "definition": "Please write the minutes of the meeting.",
+    "word_frequency": 3901
+  },
+  {
+    "word": "Bitte setzen Sie ein Häkchen in das Kästchen.",
+    "definition": "Please put a tick mark in the box.",
+    "word_frequency": 23805
+  },
+  {
+    "word": "Bitte speichern Sie das Document ab.",
+    "definition": "Please save the document.",
+    "word_frequency": 28274
+  },
+  {
+    "word": "Bitte und Danke sind Zauberwörter.",
+    "definition": "Please and thank you are magic words.",
+    "word_frequency": 20809
+  },
+  {
+    "word": "Bitte wenden Sie sich an das Sekretariat.",
+    "definition": "Please contact the secretariat.",
+    "word_frequency": 14464
+  },
+  {
+    "word": "Bitte überprüfen Sie das Verzeichnis für weitere Informationen.",
+    "definition": "Please check the directory for more information.",
+    "word_frequency": 5326
+  },
+  {
+    "word": "Blei ist ein schweres Metall.",
+    "definition": "Lead is a heavy metal.",
+    "word_frequency": 7780
+  },
+  {
+    "word": "Bogenschiessen erfordert viel Konzentration.",
+    "definition": "Archery requires a lot of concentration.",
+    "word_frequency": 18035
+  },
+  {
+    "word": "Brot wird aus Korn gebacken.",
+    "definition": "Bread is baked from grain.",
+    "word_frequency": 6317
+  },
+  {
+    "word": "Carsharing wird in Städten immer beliebter.",
+    "definition": "Carsharing is becoming increasingly popular in cities.",
+    "word_frequency": 14796
+  },
+  {
+    "word": "Curling ist ein Wintersport, der auf Eis gespielt wird.",
+    "definition": "Curling is a winter sport played on ice.",
+    "word_frequency": 28263
+  },
+  {
+    "word": "Das Abwasser wird in der Kläranlage gereinigt.",
+    "definition": "The wastewater is treated in the sewage plant.",
+    "word_frequency": 12508
+  },
+  {
+    "word": "Das Alltagsleben in der Stadt ist sehr hektisch.",
+    "definition": "Everyday life in the city is very hectic.",
+    "word_frequency": 22530
+  },
+  {
+    "word": "Das Alpengebirge ist sehr beeindruckend.",
+    "definition": "The Alps mountain range is very impressive.",
+    "word_frequency": 5372
+  },
+  {
+    "word": "Das alte Bauwerk ist ein Wahrzeichen der Stadt.",
+    "definition": "The old structure is a landmark of the city.",
+    "word_frequency": 8918
+  },
+  {
+    "word": "Das alte Centrum der Stadt ist sehr schön.",
+    "definition": "The old center of the city is very beautiful.",
+    "word_frequency": 14556
+  },
+  {
+    "word": "Das alte Haus hatte wunderschönes Parkett.",
+    "definition": "The old house had beautiful parquet flooring.",
+    "word_frequency": 11568
+  },
+  {
+    "word": "Das alte Kloster liegt auf einem Hügel.",
+    "definition": "The old monastery is located on a hill.",
+    "word_frequency": 2734
+  },
+  {
+    "word": "Das alte Sägewerk wurde abgerissen.",
+    "definition": "The old sawmill was torn down.",
+    "word_frequency": 25163
+  },
+  {
+    "word": "Das Arbeitsleben kann sehr anspruchsvoll sein.",
+    "definition": "Working life can be very demanding.",
+    "word_frequency": 16843
+  },
+  {
+    "word": "Das Archiv bewahrt alte Dokumente auf.",
+    "definition": "The archive stores old documents.",
+    "word_frequency": 2200
+  },
+  {
+    "word": "Das Audio ist sehr klar.",
+    "definition": "The audio is very clear.",
+    "word_frequency": 5158
+  },
+  {
+    "word": "Das Auto bekam ein Facelift.",
+    "definition": "The car got a facelift.",
+    "word_frequency": 23335
+  },
+  {
+    "word": "Das Auto hielt am Rotlicht an.",
+    "definition": "The car stopped at the red light.",
+    "word_frequency": 28527
+  },
+  {
+    "word": "Das Baby trinkt aus dem Fläschchen.",
+    "definition": "The baby drinks from the small bottle.",
+    "word_frequency": 18087
+  },
+  {
+    "word": "Das Baujahr des Hauses ist 1990.",
+    "definition": "The year of construction of the house is 1990.",
+    "word_frequency": 9700
+  },
+  {
+    "word": "Das Bauland ist sehr teuer geworden.",
+    "definition": "The building land has become very expensive.",
+    "word_frequency": 21174
+  },
+  {
+    "word": "Das Bergland ist bekannt für seine malerischen Wanderwege.",
+    "definition": "The mountainous region is known for its picturesque hiking trails.",
+    "word_frequency": 20221
+  },
+  {
+    "word": "Das Berufsleben kann sehr anspruchsvoll sein.",
+    "definition": "Professional life can be very demanding.",
+    "word_frequency": 9520
+  },
+  {
+    "word": "Das Bier wird in großen Fässern gelagert.",
+    "definition": "The beer is stored in large barrels.",
+    "word_frequency": 5179
+  },
+  {
+    "word": "Das Biest brüllte laut im Wald.",
+    "definition": "The beast roared loudly in the forest.",
+    "word_frequency": 14545
+  },
+  {
+    "word": "Das Blasorchester spielte traditionelle Volkslieder.",
+    "definition": "The wind orchestra played traditional folk songs.",
+    "word_frequency": 24876
+  },
+  {
+    "word": "Das Boot hatte ein kaputtes Ruder.",
+    "definition": "The boat had a broken rudder.",
+    "word_frequency": 6933
+  },
+  {
+    "word": "Das Bootshaus liegt direkt am See.",
+    "definition": "The boathouse is right by the lake.",
+    "word_frequency": 26934
+  },
+  {
+    "word": "Das Brautpaar tanzte den ersten Tanz.",
+    "definition": "The bridal couple danced the first dance.",
+    "word_frequency": 22208
+  },
+  {
+    "word": "Das Buch beginnt mit einem kurzen Vorwort.",
+    "definition": "The book begins with a short foreword.",
+    "word_frequency": 6486
+  },
+  {
+    "word": "Das Bureau ist bis 17 Uhr geöffnet.",
+    "definition": "The office is open until 5 PM.",
+    "word_frequency": 13651
+  },
+  {
+    "word": "Das Bühnenbild für das neue Stück war sehr beeindruckend.",
+    "definition": "The stage design for the new play was very impressive.",
+    "word_frequency": 19586
+  },
+  {
+    "word": "Das Casino ist bis spät in die Nacht geöffnet.",
+    "definition": "The casino is open late into the night.",
+    "word_frequency": 6624
+  },
+  {
+    "word": "Das Catering für die Party war ausgezeichnet.",
+    "definition": "The catering for the party was excellent.",
+    "word_frequency": 15833
+  },
+  {
+    "word": "Das Commercial vor dem Film war sehr lang.",
+    "definition": "The commercial before the movie was very long.",
+    "word_frequency": 26547
+  },
+  {
+    "word": "Das Computersystem funktioniert nicht.",
+    "definition": "The computer system is not working.",
+    "word_frequency": 488
+  },
+  {
+    "word": "Das Concert beginnt um acht Uhr.",
+    "definition": "The concert starts at eight o'clock.",
+    "word_frequency": 18664
+  },
+  {
+    "word": "Das Dach ist aus Blech.",
+    "definition": "The roof is made of sheet metal.",
+    "word_frequency": 9523
+  },
+  {
+    "word": "Das Dekor des Raumes war sehr geschmackvoll.",
+    "definition": "The decor of the room was very tasteful.",
+    "word_frequency": 21880
+  },
+  {
+    "word": "Das Denkmal steht im Stadtzentrum.",
+    "definition": "The monument stands in the city center.",
+    "word_frequency": 4403
+  },
+  {
+    "word": "Das Department für Marketing ist im dritten Stock.",
+    "definition": "The marketing department is on the third floor.",
+    "word_frequency": 10421
+  },
+  {
+    "word": "Das Design des neuen Autos ist sehr modern.",
+    "definition": "The design of the new car is very modern.",
+    "word_frequency": 1570
+  },
+  {
+    "word": "Das deutsche Schulsystem ist anders als das amerikanische.",
+    "definition": "The German school system is different from the American one.",
+    "word_frequency": 14926
+  },
+  {
+    "word": "Das Diagramm zeigt die Verkaufszahlen.",
+    "definition": "The diagram shows the sales figures.",
+    "word_frequency": 11501
+  },
+  {
+    "word": "Das Drama hatte ein trauriges Ende.",
+    "definition": "The drama had a sad ending.",
+    "word_frequency": 2721
+  },
+  {
+    "word": "Das Durchschnittsalter der Bevölkerung steigt.",
+    "definition": "The average age of the population is rising.",
+    "word_frequency": 15574
+  },
+  {
+    "word": "Das Echo hallte in den Bergen wider.",
+    "definition": "The echo reverberated in the mountains.",
+    "word_frequency": 4406
+  },
+  {
+    "word": "Das Einkaufszentrum ist im Stadtzentrum.",
+    "definition": "The shopping mall is in the city center.",
+    "word_frequency": 2482
+  },
+  {
+    "word": "Das Endergebnis des Spiels war 3 zu 1.",
+    "definition": "The final result of the game was 3 to 1.",
+    "word_frequency": 12118
+  },
+  {
+    "word": "Das Endspiel war sehr spannend.",
+    "definition": "The final game was very exciting.",
+    "word_frequency": 7128
+  },
+  {
+    "word": "Das Erdbeben verursachte große Schäden.",
+    "definition": "The earthquake caused great damage.",
+    "word_frequency": 4482
+  },
+  {
+    "word": "Das Ergebnis der Prüfung war sehr gut.",
+    "definition": "The result of the exam was very good.",
+    "word_frequency": 639
+  },
+  {
+    "word": "Das erste Chapter des Buches war spannend.",
+    "definition": "The first chapter of the book was exciting.",
+    "word_frequency": 22225
+  },
+  {
+    "word": "Das erste Gruppenspiel endete unentschieden.",
+    "definition": "The first group game ended in a draw.",
+    "word_frequency": 19979
+  },
+  {
+    "word": "Das erste Halbjahr war sehr erfolgreich.",
+    "definition": "The first half-year was very successful.",
+    "word_frequency": 6898
+  },
+  {
+    "word": "Das Event war sehr gut organisiert.",
+    "definition": "The event was very well organized.",
+    "word_frequency": 2570
+  },
+  {
+    "word": "Das Experiment war erfolgreich.",
+    "definition": "The experiment was successful.",
+    "word_frequency": 3801
+  },
+  {
+    "word": "Das externe Laufwerk ist voll.",
+    "definition": "The external drive is full.",
+    "word_frequency": 21302
+  },
+  {
+    "word": "Das Fenster hatte ein Gitter.",
+    "definition": "The window had a grid.",
+    "word_frequency": 7267
+  },
+  {
+    "word": "Das Fenster ist aus Alu.",
+    "definition": "The window is made of aluminum.",
+    "word_frequency": 12724
+  },
+  {
+    "word": "Das Ferkel spielte im Schlamm.",
+    "definition": "The piglet played in the mud.",
+    "word_frequency": 16376
+  },
+  {
+    "word": "Das Festzelt war voller Menschen.",
+    "definition": "The festival tent was full of people.",
+    "word_frequency": 26998
+  },
+  {
+    "word": "Das Feuerwerk war wunderschön.",
+    "definition": "The fireworks were beautiful.",
+    "word_frequency": 5973
+  },
+  {
+    "word": "Das Filmfestival beginnt nächste Woche.",
+    "definition": "The film festival starts next week.",
+    "word_frequency": 18081
+  },
+  {
+    "word": "Das Finale war sehr spannend.",
+    "definition": "The final was very exciting.",
+    "word_frequency": 1170
+  },
+  {
+    "word": "Das Finish des Rennens war sehr spannend.",
+    "definition": "The finish of the race was very exciting.",
+    "word_frequency": 19010
+  },
+  {
+    "word": "Das Firmenlogo ist sehr bekannt.",
+    "definition": "The company logo is very well-known.",
+    "word_frequency": 2644
+  },
+  {
+    "word": "Das Fohlen spielte auf der Wiese.",
+    "definition": "The foal played in the meadow.",
+    "word_frequency": 15073
+  },
+  {
+    "word": "Das Fotoshooting dauerte den ganzen Tag.",
+    "definition": "The photo shoot lasted all day.",
+    "word_frequency": 10334
+  },
+  {
+    "word": "Das Fußball-Match war sehr spannend.",
+    "definition": "The football match was very exciting.",
+    "word_frequency": 4277
+  },
+  {
+    "word": "Das Fussballstadion war ausverkauft.",
+    "definition": "The football stadium was sold out.",
+    "word_frequency": 25374
+  },
+  {
+    "word": "Das Fähnchen wehte im Wind.",
+    "definition": "The small flag waved in the wind.",
+    "word_frequency": 19962
+  },
+  {
+    "word": "Das Game ist sehr spannend.",
+    "definition": "The game is very exciting.",
+    "word_frequency": 2212
+  },
+  {
+    "word": "Das Geburtshaus von Mozart ist in Salzburg.",
+    "definition": "Mozart's birthplace is in Salzburg.",
+    "word_frequency": 27440
+  },
+  {
+    "word": "Das Geburtstagskind hat viele Geschenke bekommen.",
+    "definition": "The birthday child received many presents.",
+    "word_frequency": 21240
+  },
+  {
+    "word": "Das Gefäss war mit Wasser gefüllt.",
+    "definition": "The vessel was filled with water.",
+    "word_frequency": 12138
+  },
+  {
+    "word": "Das Gegenteil ist der Fall.",
+    "definition": "The opposite is the case.",
+    "word_frequency": 1532
+  },
+  {
+    "word": "Das Geländer ist aus Holz.",
+    "definition": "The railing is made of wood.",
+    "word_frequency": 14141
+  },
+  {
+    "word": "Das Gemeindezentrum ist der Treffpunkt für alle.",
+    "definition": "The community center is the meeting point for everyone.",
+    "word_frequency": 19340
+  },
+  {
+    "word": "Das Gemisch ist sehr komplex.",
+    "definition": "The mixture is very complex.",
+    "word_frequency": 12140
+  },
+  {
+    "word": "Das Gemälde hängt im Museum.",
+    "definition": "The painting hangs in the museum.",
+    "word_frequency": 3537
+  },
+  {
+    "word": "Das Genus eines Wortes ist wichtig für die Deklination.",
+    "definition": "The gender of a word is important for declension.",
+    "word_frequency": 16387
+  },
+  {
+    "word": "Das Gesamtgewicht des Pakets beträgt 5 Kilogramm.",
+    "definition": "The total weight of the package is 5 kilograms.",
+    "word_frequency": 20932
+  },
+  {
+    "word": "Das Geschirr ist aus feinem Porzellan.",
+    "definition": "The dishes are made of fine porcelain.",
+    "word_frequency": 9006
+  },
+  {
+    "word": "Das Gesundheitssystem ist komplex.",
+    "definition": "The healthcare system is complex.",
+    "word_frequency": 13472
+  },
+  {
+    "word": "Das Gewicht des Pakets ist fünf Kilogramm.",
+    "definition": "The weight of the package is five kilograms.",
+    "word_frequency": 1598
+  },
+  {
+    "word": "Das Gipfeltreffen der Staatschefs findet nächste Woche statt.",
+    "definition": "The summit meeting of the heads of state will take place next week.",
+    "word_frequency": 23361
+  },
+  {
+    "word": "Das Girl sang ein Lied.",
+    "definition": "The girl sang a song.",
+    "word_frequency": 3665
+  },
+  {
+    "word": "Das Gnu ist ein großes Tier, das in Afrika lebt.",
+    "definition": "The wildebeest is a large animal that lives in Africa.",
+    "word_frequency": 18720
+  },
+  {
+    "word": "Das Hauptgebäude der Universität ist sehr alt.",
+    "definition": "The main building of the university is very old.",
+    "word_frequency": 19354
+  },
+  {
+    "word": "Das Haupthaus ist das größte Gebäude auf dem Grundstück.",
+    "definition": "The main house is the largest building on the property.",
+    "word_frequency": 28369
+  },
+  {
+    "word": "Das Hauptproblem ist der Mangel an Zeit.",
+    "definition": "The main problem is the lack of time.",
+    "word_frequency": 18398
+  },
+  {
+    "word": "Das Hauptthema des Buches ist die Liebe.",
+    "definition": "The main topic of the book is love.",
+    "word_frequency": 18399
+  },
+  {
+    "word": "Das Herz ist ein wichtiges Organ.",
+    "definition": "The heart is an important organ.",
+    "word_frequency": 5296
+  },
+  {
+    "word": "Das Hinterrad des Fahrrads hatte einen Platten.",
+    "definition": "The rear wheel of the bicycle had a flat tire.",
+    "word_frequency": 25419
+  },
+  {
+    "word": "Das Hinterteil des Autos war beschädigt.",
+    "definition": "The rear part of the car was damaged.",
+    "word_frequency": 25420
+  },
+  {
+    "word": "Das historische Stadtbild ist gut erhalten.",
+    "definition": "The historic cityscape is well preserved.",
+    "word_frequency": 12908
+  },
+  {
+    "word": "Das Hochwasser verursachte große Schäden.",
+    "definition": "The flood caused great damage.",
+    "word_frequency": 8253
+  },
+  {
+    "word": "Das Hotel bietet ein reichhaltiges Frühstücksbuffet an.",
+    "definition": "The hotel offers a rich breakfast buffet.",
+    "word_frequency": 9868
+  },
+  {
+    "word": "Das Inhaltsverzeichnis befindet sich am Anfang des Buches.",
+    "definition": "The table of contents is at the beginning of the book.",
+    "word_frequency": 10799
+  },
+  {
+    "word": "Das Internet ist ein wichtiges Medium.",
+    "definition": "The internet is an important medium.",
+    "word_frequency": 556
+  },
+  {
+    "word": "Das ist ein altes Ritual.",
+    "definition": "That is an old ritual.",
+    "word_frequency": 8713
+  },
+  {
+    "word": "Das ist ein großes Geheimnis.",
+    "definition": "That is a big secret.",
+    "word_frequency": 2432
+  },
+  {
+    "word": "Das ist ein großes Plus für uns.",
+    "definition": "That is a big plus for us.",
+    "word_frequency": 1122
+  },
+  {
+    "word": "Das ist ein wahres Wunder.",
+    "definition": "That is a true miracle.",
+    "word_frequency": 1285
+  },
+  {
+    "word": "Das ist ein wichtiges Prinzip.",
+    "definition": "That is an important principle.",
+    "word_frequency": 1420
+  },
+  {
+    "word": "Das ist ein wichtiges Werk in der Stadt.",
+    "definition": "That is an important factory in the city.",
+    "word_frequency": 819
+  },
+  {
+    "word": "Das ist mein Lieblingsmusikstück.",
+    "definition": "That is my favorite piece of music.",
+    "word_frequency": 27557
+  },
+  {
+    "word": "Das Jahrbuch enthält viele interessante Informationen.",
+    "definition": "The yearbook contains a lot of interesting information.",
+    "word_frequency": 6205
+  },
+  {
+    "word": "Das Jugendzentrum bietet viele Aktivitäten an.",
+    "definition": "The youth center offers many activities.",
+    "word_frequency": 26270
+  },
+  {
+    "word": "Das Jungtier spielte fröhlich auf der Wiese.",
+    "definition": "The young animal played happily in the meadow.",
+    "word_frequency": 22701
+  },
+  {
+    "word": "Das Kalenderjahr beginnt am ersten Januar.",
+    "definition": "The calendar year begins on the first of January.",
+    "word_frequency": 21276
+  },
+  {
+    "word": "Das Kennzeichen des Autos war schwer zu lesen.",
+    "definition": "The car's license plate was hard to read.",
+    "word_frequency": 3739
+  },
+  {
+    "word": "Das Kinderheim bietet vielen Waisen ein Zuhause.",
+    "definition": "The children's home offers a home to many orphans.",
+    "word_frequency": 21283
+  },
+  {
+    "word": "Das Kindermädchen kümmert sich um die Kinder.",
+    "definition": "The nanny takes care of the children.",
+    "word_frequency": 28405
+  },
+  {
+    "word": "Das Kirchdorf liegt idyllisch in den Bergen.",
+    "definition": "The church village is idyllically situated in the mountains.",
+    "word_frequency": 20980
+  },
+  {
+    "word": "Das kleine Engelchen sang ein Lied.",
+    "definition": "The little angel sang a song.",
+    "word_frequency": 26185
+  },
+  {
+    "word": "Das kleine Kerlchen spielte im Garten.",
+    "definition": "The little fellow was playing in the garden.",
+    "word_frequency": 21279
+  },
+  {
+    "word": "Das kleine Mäuschen huschte über den Boden.",
+    "definition": "The little mouse scurried across the floor.",
+    "word_frequency": 25919
+  },
+  {
+    "word": "Das kleine Pflänzchen wächst schnell.",
+    "definition": "The small plant grows quickly.",
+    "word_frequency": 29432
+  },
+  {
+    "word": "Das Klinikum ist bekannt für seine Forschung.",
+    "definition": "The hospital is known for its research.",
+    "word_frequency": 8835
+  },
+  {
+    "word": "Das Knie ist ein wichtiges Gelenk.",
+    "definition": "The knee is an important joint.",
+    "word_frequency": 13251
+  },
+  {
+    "word": "Das Komitee traf eine wichtige Entscheidung.",
+    "definition": "The committee made an important decision.",
+    "word_frequency": 7671
+  },
+  {
+    "word": "Das Konzept für das neue Projekt ist fertig.",
+    "definition": "The concept for the new project is ready.",
+    "word_frequency": 1117
+  },
+  {
+    "word": "Das Konzert findet im Olympiastadium statt.",
+    "definition": "The concert is taking place in the Olympic Stadium.",
+    "word_frequency": 6030
+  },
+  {
+    "word": "Das Kreuz steht auf dem Hügel.",
+    "definition": "The cross stands on the hill.",
+    "word_frequency": 1850
+  },
+  {
+    "word": "Das Kreuzfahrtschiff legte im Hafen an.",
+    "definition": "The cruise ship docked in the harbor.",
+    "word_frequency": 20639
+  },
+  {
+    "word": "Das kulturelle Erbe muss geschützt werden.",
+    "definition": "The cultural heritage must be protected.",
+    "word_frequency": 3397
+  },
+  {
+    "word": "Das Kulturhaus bietet viele Veranstaltungen an.",
+    "definition": "The cultural center offers many events.",
+    "word_frequency": 25888
+  },
+  {
+    "word": "Das Kulturzentrum bietet viele Veranstaltungen an.",
+    "definition": "The cultural center offers many events.",
+    "word_frequency": 15124
+  },
+  {
+    "word": "Das Kunsthaus zeigt moderne Skulpturen.",
+    "definition": "The art museum shows modern sculptures.",
+    "word_frequency": 24242
+  },
+  {
+    "word": "Das Kunstprojekt wurde von Studenten erstellt.",
+    "definition": "The art project was created by students.",
+    "word_frequency": 27949
+  },
+  {
+    "word": "Das Kurhaus bietet verschiedene Wellness-Behandlungen an.",
+    "definition": "The spa house offers various wellness treatments.",
+    "word_frequency": 23419
+  },
+  {
+    "word": "Das Kätzchen spielte mit einem Glöckchen.",
+    "definition": "The kitten played with a small bell.",
+    "word_frequency": 27454
+  },
+  {
+    "word": "Das Label auf der Flasche ist abgerissen.",
+    "definition": "The label on the bottle is torn off.",
+    "word_frequency": 4913
+  },
+  {
+    "word": "Das Lama ist ein Tier aus Südamerika.",
+    "definition": "The llama is an animal from South America.",
+    "word_frequency": 11738
+  },
+  {
+    "word": "Das Landleben ist oft ruhiger als das Stadtleben.",
+    "definition": "Rural life is often quieter than city life.",
+    "word_frequency": 26670
+  },
+  {
+    "word": "Das Lebensalter spielt eine Rolle.",
+    "definition": "The age plays a role.",
+    "word_frequency": 22002
+  },
+  {
+    "word": "Das letzte Jahrzehnt war voller Veränderungen.",
+    "definition": "The last decade was full of changes.",
+    "word_frequency": 2109
+  },
+  {
+    "word": "Das Liebespaar spazierte Hand in Hand.",
+    "definition": "The couple in love walked hand in hand.",
+    "word_frequency": 24631
+  },
+  {
+    "word": "Das Länderspiel endete unentschieden.",
+    "definition": "The international match ended in a draw.",
+    "word_frequency": 10120
+  },
+  {
+    "word": "Das Management hat eine neue Strategie vorgestellt.",
+    "definition": "The management presented a new strategy.",
+    "word_frequency": 2025
+  },
+  {
+    "word": "Das Maskottchen des Teams ist ein Bär.",
+    "definition": "The team's mascot is a bear.",
+    "word_frequency": 13515
+  },
+  {
+    "word": "Das Medikament ist in Pulverform.",
+    "definition": "The medicine is in powder form.",
+    "word_frequency": 6805
+  },
+  {
+    "word": "Das Meerwasser ist heute sehr kalt.",
+    "definition": "The seawater is very cold today.",
+    "word_frequency": 21009
+  },
+  {
+    "word": "Das Meeting beginnt um zehn Uhr.",
+    "definition": "The meeting starts at ten o'clock.",
+    "word_frequency": 6787
+  },
+  {
+    "word": "Das menschliche Skelett besteht aus vielen Knochen.",
+    "definition": "The human skeleton consists of many bones.",
+    "word_frequency": 12455
+  },
+  {
+    "word": "Das Messgerät zeigte eine hohe Temperatur an.",
+    "definition": "The measuring device showed a high temperature.",
+    "word_frequency": 25068
+  },
+  {
+    "word": "Das Militär ist für die Landesverteidigung zuständig.",
+    "definition": "The military is responsible for national defense.",
+    "word_frequency": 2543
+  },
+  {
+    "word": "Das Mindestalter für den Führerschein ist 17 Jahre.",
+    "definition": "The minimum age for the driving license is 17 years.",
+    "word_frequency": 28454
+  },
+  {
+    "word": "Das Minimum an Schlaf ist wichtig.",
+    "definition": "The minimum amount of sleep is important.",
+    "word_frequency": 6440
+  },
+  {
+    "word": "Das Mittelmeer ist ein beliebtes Reiseziel.",
+    "definition": "The Mediterranean Sea is a popular travel destination.",
+    "word_frequency": 4137
+  },
+  {
+    "word": "Das Monument erinnert an die Geschichte der Stadt.",
+    "definition": "The monument commemorates the city's history.",
+    "word_frequency": 15142
+  },
+  {
+    "word": "Das Moor ist ein wichtiger Lebensraum für viele Pflanzen und Tiere.",
+    "definition": "The moor is an important habitat for many plants and animals.",
+    "word_frequency": 10308
+  },
+  {
+    "word": "Das Mosaik an der Wand ist sehr schön.",
+    "definition": "The mosaic on the wall is very beautiful.",
+    "word_frequency": 13523
+  },
+  {
+    "word": "Das Motiv des Verbrechens war Rache.",
+    "definition": "The motive for the crime was revenge.",
+    "word_frequency": 2842
+  },
+  {
+    "word": "Das Museum zeigt viele beeindruckende Kunstwerke.",
+    "definition": "The museum displays many impressive artworks.",
+    "word_frequency": 6430
+  },
+  {
+    "word": "Das Museum zeigte ein beeindruckendes Ölgemälde.",
+    "definition": "The museum displayed an impressive oil painting.",
+    "word_frequency": 20181
+  },
+  {
+    "word": "Das musikalische Duo spielte ein wunderschönes Lied.",
+    "definition": "The musical duo played a beautiful song.",
+    "word_frequency": 4026
+  },
+  {
+    "word": "Das musikalische Trio spielte wunderschön.",
+    "definition": "The musical trio played beautifully.",
+    "word_frequency": 4859
+  },
+  {
+    "word": "Das Mädel lachte laut.",
+    "definition": "The girl laughed loudly.",
+    "word_frequency": 2741
+  },
+  {
+    "word": "Das Männchen des Vogels hat bunte Federn.",
+    "definition": "The male bird has colorful feathers.",
+    "word_frequency": 6562
+  },
+  {
+    "word": "Das Nachtleben in Berlin ist sehr lebhaft.",
+    "definition": "The nightlife in Berlin is very lively.",
+    "word_frequency": 21020
+  },
+  {
+    "word": "Das Nashorn hat ein großes Horn.",
+    "definition": "The rhinoceros has a large horn.",
+    "word_frequency": 4125
+  },
+  {
+    "word": "Das Nashorn ist ein großes Tier.",
+    "definition": "The rhinoceros is a large animal.",
+    "word_frequency": 26706
+  },
+  {
+    "word": "Das Nationalteam hat das Spiel gewonnen.",
+    "definition": "The national team won the game.",
+    "word_frequency": 19409
+  },
+  {
+    "word": "Das Nebengebäude wird als Lager genutzt.",
+    "definition": "The outbuilding is used as storage.",
+    "word_frequency": 23116
+  },
+  {
+    "word": "Das Nebenzimmer ist für Gäste reserviert.",
+    "definition": "The adjoining room is reserved for guests.",
+    "word_frequency": 29886
+  },
+  {
+    "word": "Das neue Bauprojekt liegt im Gemeindegebiet von Musterstadt.",
+    "definition": "The new construction project is located in the municipal area of Musterstadt.",
+    "word_frequency": 20587
+  },
+  {
+    "word": "Das neue Bildungszentrum bietet Kurse für alle Altersgruppen an.",
+    "definition": "The new educational center offers courses for all age groups.",
+    "word_frequency": 25724
+  },
+  {
+    "word": "Das neue Feuerwehrhaus wurde gestern eröffnet.",
+    "definition": "The new fire station was opened yesterday.",
+    "word_frequency": 24541
+  },
+  {
+    "word": "Das neue Geschäftshaus bietet viele Büros und Läden.",
+    "definition": "The new commercial building offers many offices and shops.",
+    "word_frequency": 26230
+  },
+  {
+    "word": "Das neue Gesetz tritt nächste Woche in Kraft.",
+    "definition": "The new law comes into effect next week.",
+    "word_frequency": 777
+  },
+  {
+    "word": "Das neue Gewerbegebiet bietet viele Arbeitsplätze.",
+    "definition": "The new industrial area offers many jobs.",
+    "word_frequency": 12360
+  },
+  {
+    "word": "Das neue Konzerthaus hat eine hervorragende Akustik.",
+    "definition": "The new concert hall has excellent acoustics.",
+    "word_frequency": 25033
+  },
+  {
+    "word": "Das neue Kraftwerk wird viel Energie produzieren.",
+    "definition": "The new power plant will produce a lot of energy.",
+    "word_frequency": 7041
+  },
+  {
+    "word": "Das neue Schulzentrum bietet viele Möglichkeiten.",
+    "definition": "The new school complex offers many opportunities.",
+    "word_frequency": 27621
+  },
+  {
+    "word": "Das neue Werk wird im Industriegebiet gebaut.",
+    "definition": "The new factory will be built in the industrial area.",
+    "word_frequency": 15918
+  },
+  {
+    "word": "Das neue Wohngebäude hat viele Wohnungen.",
+    "definition": "The new residential building has many apartments.",
+    "word_frequency": 19530
+  },
+  {
+    "word": "Das Niveau des Kurses ist hoch.",
+    "definition": "The level of the course is high.",
+    "word_frequency": 1605
+  },
+  {
+    "word": "Das nächste Heimspiel ist am Samstag.",
+    "definition": "The next home game is on Saturday.",
+    "word_frequency": 5466
+  },
+  {
+    "word": "Das nächste Pflichtspiel ist am Samstag.",
+    "definition": "The next competitive match is on Saturday.",
+    "word_frequency": 22779
+  },
+  {
+    "word": "Das Objekt auf dem Tisch ist ein Buch.",
+    "definition": "The object on the table is a book.",
+    "word_frequency": 2742
+  },
+  {
+    "word": "Das Olympiastadion in Berlin ist sehr groß.",
+    "definition": "The Olympic Stadium in Berlin is very large.",
+    "word_frequency": 16717
+  },
+  {
+    "word": "Das Online-Forum ist sehr aktiv.",
+    "definition": "The online forum is very active.",
+    "word_frequency": 1738
+  },
+  {
+    "word": "Das Opfer wurde gerettet.",
+    "definition": "The victim was rescued.",
+    "word_frequency": 612
+  },
+  {
+    "word": "Das Orchester spielt klassische Musik.",
+    "definition": "The orchestra plays classical music.",
+    "word_frequency": 3683
+  },
+  {
+    "word": "Das Parlament hat ein neues Gesetz verabschiedet.",
+    "definition": "The parliament passed a new law.",
+    "word_frequency": 1455
+  },
+  {
+    "word": "Das Personal war sehr freundlich.",
+    "definition": "The staff was very friendly.",
+    "word_frequency": 1752
+  },
+  {
+    "word": "Das Pferd schlief auf einem Bett aus Stroh.",
+    "definition": "The horse slept on a bed of straw.",
+    "word_frequency": 7716
+  },
+  {
+    "word": "Das Pferd sprang über das Hindernis.",
+    "definition": "The horse jumped over the obstacle.",
+    "word_frequency": 6903
+  },
+  {
+    "word": "Das Pflegepersonal kümmert sich um die Patienten.",
+    "definition": "The nursing staff takes care of the patients.",
+    "word_frequency": 21039
+  },
+  {
+    "word": "Das Projekt umfasst verschiedene Multimedia-Elemente.",
+    "definition": "The project includes various multimedia elements.",
+    "word_frequency": 12193
+  },
+  {
+    "word": "Das Publikum applaudierte laut.",
+    "definition": "The audience applauded loudly.",
+    "word_frequency": 1485
+  },
+  {
+    "word": "Das Quartett spielte wunderschöne Musik.",
+    "definition": "The quartet played beautiful music.",
+    "word_frequency": 8140
+  },
+  {
+    "word": "Das Raumschiff landete auf einem fremden Planeten.",
+    "definition": "The spaceship landed on an alien planet.",
+    "word_frequency": 9960
+  },
+  {
+    "word": "Das Rentier lebt in kalten Regionen.",
+    "definition": "The reindeer lives in cold regions.",
+    "word_frequency": 29469
+  },
+  {
+    "word": "Das Restaurant hat ein schönes Ambiente.",
+    "definition": "The restaurant has a nice atmosphere.",
+    "word_frequency": 9505
+  },
+  {
+    "word": "Das Resultat der Prüfung war sehr gut.",
+    "definition": "The result of the exam was very good.",
+    "word_frequency": 4146
+  },
+  {
+    "word": "Das Schauspiel war beeindruckend.",
+    "definition": "The play was impressive.",
+    "word_frequency": 5602
+  },
+  {
+    "word": "Das Schauspielhaus ist ein wichtiges Kulturzentrum in der Stadt.",
+    "definition": "The playhouse is an important cultural center in the city.",
+    "word_frequency": 17621
+  },
+  {
+    "word": "Das Schiff liegt im Dock zur Reparatur.",
+    "definition": "The ship is in the dock for repair.",
+    "word_frequency": 17452
+  },
+  {
+    "word": "Das Schiff setzte die Segel.",
+    "definition": "The ship set sail.",
+    "word_frequency": 8445
+  },
+  {
+    "word": "Das Schiff transportiert viel Cargo.",
+    "definition": "The ship transports a lot of cargo.",
+    "word_frequency": 16350
+  },
+  {
+    "word": "Das Schwimmbecken ist sehr groß.",
+    "definition": "The swimming pool is very large.",
+    "word_frequency": 4164
+  },
+  {
+    "word": "Das Seil ist sehr lang.",
+    "definition": "The rope is very long.",
+    "word_frequency": 7322
+  },
+  {
+    "word": "Das Setup des neuen Computers war einfach.",
+    "definition": "The setup of the new computer was easy.",
+    "word_frequency": 18212
+  },
+  {
+    "word": "Das Sommersemester beginnt im April.",
+    "definition": "The summer semester begins in April.",
+    "word_frequency": 16252
+  },
+  {
+    "word": "Das Spiel endete im Elfmeterschiessen.",
+    "definition": "The game ended in a penalty shootout.",
+    "word_frequency": 13013
+  },
+  {
+    "word": "Das Spielfeld war nass vom Regen.",
+    "definition": "The playing field was wet from the rain.",
+    "word_frequency": 9022
+  },
+  {
+    "word": "Das Stadtgebiet ist dicht besiedelt.",
+    "definition": "The urban area is densely populated.",
+    "word_frequency": 6238
+  },
+  {
+    "word": "Das Standbild des Königs steht auf dem Marktplatz.",
+    "definition": "The statue of the king stands in the marketplace.",
+    "word_frequency": 28092
+  },
+  {
+    "word": "Das Studienjahr beginnt im Herbst.",
+    "definition": "The academic year begins in autumn.",
+    "word_frequency": 27637
+  },
+  {
+    "word": "Das Studio ist sehr modern eingerichtet.",
+    "definition": "The studio is furnished very modernly.",
+    "word_frequency": 2073
+  },
+  {
+    "word": "Das Städtchen war sehr malerisch.",
+    "definition": "The small town was very picturesque.",
+    "word_frequency": 11245
+  },
+  {
+    "word": "Das Symbol auf der Karte ist ein Herz.",
+    "definition": "The symbol on the card is a heart.",
+    "word_frequency": 2800
+  },
+  {
+    "word": "Das Tageslicht ist am Morgen am schönsten.",
+    "definition": "The daylight is most beautiful in the morning.",
+    "word_frequency": 8320
+  },
+  {
+    "word": "Das Tagesthema in den Nachrichten war die Wirtschaftskrise.",
+    "definition": "The topic of the day in the news was the economic crisis.",
+    "word_frequency": 24765
+  },
+  {
+    "word": "Das Team hat ein wichtiges Auswärtsspiel.",
+    "definition": "The team has an important away game.",
+    "word_frequency": 10918
+  },
+  {
+    "word": "Das Tempo des Liedes ist sehr schnell.",
+    "definition": "The tempo of the song is very fast.",
+    "word_frequency": 3111
+  },
+  {
+    "word": "Das Testergebnis war positiv.",
+    "definition": "The test result was positive.",
+    "word_frequency": 22841
+  },
+  {
+    "word": "Das Theaterstück war sehr beeindruckend.",
+    "definition": "The play was very impressive.",
+    "word_frequency": 9990
+  },
+  {
+    "word": "Das Titelbild des Buches ist sehr ansprechend.",
+    "definition": "The cover image of the book is very appealing.",
+    "word_frequency": 17657
+  },
+  {
+    "word": "Das Titelblatt des Buches ist sehr ansprechend gestaltet.",
+    "definition": "The title page of the book is very attractively designed.",
+    "word_frequency": 21096
+  },
+  {
+    "word": "Das Treffen findet im Gemeindehaus statt.",
+    "definition": "The meeting takes place in the community center.",
+    "word_frequency": 15606
+  },
+  {
+    "word": "Das Treppenhaus ist sehr hell.",
+    "definition": "The stairwell is very bright.",
+    "word_frequency": 8462
+  },
+  {
+    "word": "Das Turnier war sehr spannend.",
+    "definition": "The tournament was very exciting.",
+    "word_frequency": 2190
+  },
+  {
+    "word": "Das Universum ist unendlich groß.",
+    "definition": "The universe is infinitely large.",
+    "word_frequency": 3846
+  },
+  {
+    "word": "Das Unternehmen hat ein großes Defizit.",
+    "definition": "The company has a large deficit.",
+    "word_frequency": 10754
+  },
+  {
+    "word": "Das Unternehmen hat ein gutes Image in der Öffentlichkeit.",
+    "definition": "The company has a good image in public.",
+    "word_frequency": 3671
+  },
+  {
+    "word": "Das Unternehmen hat viele Mitarbeiter.",
+    "definition": "The company has many employees.",
+    "word_frequency": 251
+  },
+  {
+    "word": "Das Unternehmen verzeichnet ein starkes Wachstum.",
+    "definition": "The company is experiencing strong growth.",
+    "word_frequency": 2281
+  },
+  {
+    "word": "Das Unwetter verursachte große Schäden.",
+    "definition": "The severe weather caused great damage.",
+    "word_frequency": 8029
+  },
+  {
+    "word": "Das Verb steht im Präsens.",
+    "definition": "The verb is in the present tense.",
+    "word_frequency": 28975
+  },
+  {
+    "word": "Das Verbrechen wurde schnell aufgeklärt.",
+    "definition": "The crime was quickly solved.",
+    "word_frequency": 1866
+  },
+  {
+    "word": "Das Vereinsheim ist jeden Freitagabend geöffnet.",
+    "definition": "The club house is open every Friday evening.",
+    "word_frequency": 25197
+  },
+  {
+    "word": "Das Vereinsleben ist in Deutschland sehr wichtig.",
+    "definition": "Club life is very important in Germany.",
+    "word_frequency": 26052
+  },
+  {
+    "word": "Das Videomaterial wurde der Polizei übergeben.",
+    "definition": "The video footage was handed over to the police.",
+    "word_frequency": 26444
+  },
+  {
+    "word": "Das Viertelfinale war sehr spannend.",
+    "definition": "The quarter-final was very exciting.",
+    "word_frequency": 4300
+  },
+  {
+    "word": "Das Virus verbreitet sich schnell.",
+    "definition": "The virus is spreading quickly.",
+    "word_frequency": 2858
+  },
+  {
+    "word": "Das Vokabular dieses Buches ist sehr umfangreich.",
+    "definition": "The vocabulary of this book is very extensive.",
+    "word_frequency": 18880
+  },
+  {
+    "word": "Das Volk wählte einen neuen Präsidenten.",
+    "definition": "The people elected a new president.",
+    "word_frequency": 882
+  },
+  {
+    "word": "Das Volumen des Würfels beträgt 27 Kubikzentimeter.",
+    "definition": "The volume of the cube is 27 cubic centimeters.",
+    "word_frequency": 4214
+  },
+  {
+    "word": "Das Vorderrad des Fahrrads war platt.",
+    "definition": "The front wheel of the bicycle was flat.",
+    "word_frequency": 29107
+  },
+  {
+    "word": "Das Voting für den besten Song beginnt jetzt.",
+    "definition": "The voting for the best song starts now.",
+    "word_frequency": 14973
+  },
+  {
+    "word": "Das Waisenhaus kümmert sich um viele Kinder.",
+    "definition": "The orphanage takes care of many children.",
+    "word_frequency": 16549
+  },
+  {
+    "word": "Das war ein großes Abenteuer.",
+    "definition": "That was a great adventure.",
+    "word_frequency": 2199
+  },
+  {
+    "word": "Das war ein unerwartetes Ereignis.",
+    "definition": "That was an unexpected event.",
+    "word_frequency": 2206
+  },
+  {
+    "word": "Das war wirklich Pech für ihn.",
+    "definition": "That was really bad luck for him.",
+    "word_frequency": 3163
+  },
+  {
+    "word": "Das Wasser fließt durch das Rohr.",
+    "definition": "The water flows through the pipe.",
+    "word_frequency": 4933
+  },
+  {
+    "word": "Das Wasserwerk versorgt die ganze Stadt mit sauberem Wasser.",
+    "definition": "The waterworks supplies the whole city with clean water.",
+    "word_frequency": 23210
+  },
+  {
+    "word": "Das Web bietet Zugang zu vielen Informationen.",
+    "definition": "The web offers access to a lot of information.",
+    "word_frequency": 3116
+  },
+  {
+    "word": "Das Weltall ist unendlich groß.",
+    "definition": "The universe is infinitely large.",
+    "word_frequency": 11085
+  },
+  {
+    "word": "Das Wetter ist immer ein gutes Gesprächsthema.",
+    "definition": "The weather is always a good topic of conversation.",
+    "word_frequency": 27879
+  },
+  {
+    "word": "Das Wettrennen war sehr spannend.",
+    "definition": "The race was very exciting.",
+    "word_frequency": 29599
+  },
+  {
+    "word": "Das Wintersemester beginnt im Oktober.",
+    "definition": "The winter semester begins in October.",
+    "word_frequency": 11461
+  },
+  {
+    "word": "Das Zubehör ist separat erhältlich.",
+    "definition": "The accessories are available separately.",
+    "word_frequency": 6259
+  },
+  {
+    "word": "Der alte Baumstamm war mit grünen Moosen bedeckt.",
+    "definition": "The old tree trunk was covered with green mosses.",
+    "word_frequency": 24273
+  },
+  {
+    "word": "Der Bürgermeister hielt ein kurzes Grusswort.",
+    "definition": "The mayor gave a short welcoming address.",
+    "word_frequency": 26240
+  },
+  {
+    "word": "Der Garten war im Mondlicht wunderschön.",
+    "definition": "The garden was beautiful in the moonlight.",
+    "word_frequency": 27133
+  },
+  {
+    "word": "Der Handel mit dem Inland ist wichtig für die Wirtschaft.",
+    "definition": "Trade with the interior is important for the economy.",
+    "word_frequency": 7280
+  },
+  {
+    "word": "Der Hund wartet auf sein Frauchen.",
+    "definition": "The dog is waiting for its owner.",
+    "word_frequency": 14136
+  },
+  {
+    "word": "Der Hund wartet auf sein Herrchen.",
+    "definition": "The dog is waiting for its master.",
+    "word_frequency": 15094
+  },
+  {
+    "word": "Der Kaffee hat ein wunderbares Aroma.",
+    "definition": "The coffee has a wonderful aroma.",
+    "word_frequency": 13628
+  },
+  {
+    "word": "Der Künstler arbeitet in seinem Atelier.",
+    "definition": "The artist works in his studio.",
+    "word_frequency": 6734
+  },
+  {
+    "word": "Der Lehrer stand am Pult.",
+    "definition": "The teacher stood at the desk.",
+    "word_frequency": 20074
+  },
+  {
+    "word": "Der Preis für Heizöl ist gestiegen.",
+    "definition": "The price of heating oil has increased.",
+    "word_frequency": 16406
+  },
+  {
+    "word": "Der Preis für Rohöl ist gestiegen.",
+    "definition": "The price of crude oil has risen.",
+    "word_frequency": 26761
+  },
+  {
+    "word": "Der Redner stand auf dem Podest.",
+    "definition": "The speaker stood on the podium.",
+    "word_frequency": 14228
+  },
+  {
+    "word": "Der Ring ist aus Silber.",
+    "definition": "The ring is made of silver.",
+    "word_frequency": 1788
+  },
+  {
+    "word": "Der Schiedsrichter pfiff ein Foul.",
+    "definition": "The referee whistled a foul.",
+    "word_frequency": 11332
+  },
+  {
+    "word": "Der See ist ein beliebtes Ausflugsziel.",
+    "definition": "The lake is a popular excursion destination.",
+    "word_frequency": 18930
+  },
+  {
+    "word": "Der Soldat folgte dem Kommando.",
+    "definition": "The soldier followed the command.",
+    "word_frequency": 4340
+  },
+  {
+    "word": "Der Soldat trug ein Gewehr.",
+    "definition": "The soldier carried a rifle.",
+    "word_frequency": 7656
+  },
+  {
+    "word": "Der Spieler schoss ein Eigentor.",
+    "definition": "The player scored an own goal.",
+    "word_frequency": 16615
+  },
+  {
+    "word": "Der Spieler trug ein neues Dress.",
+    "definition": "The player wore a new jersey.",
+    "word_frequency": 15848
+  },
+  {
+    "word": "Der Stein war mit grünem Moos bedeckt.",
+    "definition": "The stone was covered with green moss.",
+    "word_frequency": 10132
+  },
+  {
+    "word": "Der Tisch ist aus massivem Eichenholz gefertigt.",
+    "definition": "The table is made of solid oak wood.",
+    "word_frequency": 29709
+  },
+  {
+    "word": "Der Turner übte am Reck.",
+    "definition": "The gymnast practiced on the horizontal bar.",
+    "word_frequency": 18198
+  },
+  {
+    "word": "Der Urlaub war ein unvergessliches Erlebnis.",
+    "definition": "The vacation was an unforgettable experience.",
+    "word_frequency": 3338
+  },
+  {
+    "word": "Der Zauberer zeigte ein beeindruckendes Kunststück.",
+    "definition": "The magician showed an impressive trick.",
+    "word_frequency": 22346
+  },
+  {
+    "word": "Deutschland hat neun Nachbarländer.",
+    "definition": "Germany has nine neighboring countries.",
+    "word_frequency": 15428
+  },
+  {
+    "word": "Deutschland hat viele schöne Mittelgebirge.",
+    "definition": "Germany has many beautiful low mountain ranges.",
+    "word_frequency": 29872
+  },
+  {
+    "word": "Die Abgase von Autos verschmutzen die Luft.",
+    "definition": "Car exhaust fumes pollute the air.",
+    "word_frequency": 18903
+  },
+  {
+    "word": "Die Band nimmt ihr neues Album im Tonstudio auf.",
+    "definition": "The band is recording their new album in the recording studio.",
+    "word_frequency": 26428
+  },
+  {
+    "word": "Die Batterie hat zwölf Volt.",
+    "definition": "The battery has twelve volts.",
+    "word_frequency": 8468
+  },
+  {
+    "word": "Die Datei ist 20 Gb groß.",
+    "definition": "The file is 20 Gigabytes large.",
+    "word_frequency": 3604
+  },
+  {
+    "word": "Die Erde ist ein Planet im Sonnensystem.",
+    "definition": "Earth is a planet in the solar system.",
+    "word_frequency": 19775
+  },
+  {
+    "word": "Die Internetverbindung hat eine Geschwindigkeit von einem Gigabit pro Sekunde.",
+    "definition": "The internet connection has a speed of one gigabit per second.",
+    "word_frequency": 28348
+  },
+  {
+    "word": "Die Intro des Liedes war sehr eingängig.",
+    "definition": "The intro of the song was very catchy.",
+    "word_frequency": 10285
+  },
+  {
+    "word": "Die Katze versteckte sich im Gebüsch.",
+    "definition": "The cat hid in the bush.",
+    "word_frequency": 12349
+  },
+  {
+    "word": "Die Kerze ist aus Wachs.",
+    "definition": "The candle is made of wax.",
+    "word_frequency": 10548
+  },
+  {
+    "word": "Die Kfz-Zulassungsstelle ist geschlossen.",
+    "definition": "The motor vehicle registration office is closed.",
+    "word_frequency": 3614
+  },
+  {
+    "word": "Die Kinder fahren im Sommer ins Zeltlager.",
+    "definition": "The children are going to the tent camp in summer.",
+    "word_frequency": 29133
+  },
+  {
+    "word": "Die Kinder lieben es, auf dem Karussell zu fahren.",
+    "definition": "The children love riding on the carousel.",
+    "word_frequency": 17527
+  },
+  {
+    "word": "Die Kinder springen auf dem Trampolin.",
+    "definition": "The children are jumping on the trampoline.",
+    "word_frequency": 19796
+  },
+  {
+    "word": "Die Mannschaft erreichte das Achtelfinale des Turniers.",
+    "definition": "The team reached the round of sixteen of the tournament.",
+    "word_frequency": 6846
+  },
+  {
+    "word": "Die Mannschaft gewann das Testspiel.",
+    "definition": "The team won the friendly match.",
+    "word_frequency": 10176
+  },
+  {
+    "word": "Die Niederlande sind bekannt für ihr Flachland.",
+    "definition": "The Netherlands are known for their flatland.",
+    "word_frequency": 25362
+  },
+  {
+    "word": "Die Ozonschicht schützt uns vor UV-Strahlung.",
+    "definition": "The ozone layer protects us from UV radiation.",
+    "word_frequency": 22773
+  },
+  {
+    "word": "Die Pferde fressen frisches Heu.",
+    "definition": "The horses eat fresh hay.",
+    "word_frequency": 11532
+  },
+  {
+    "word": "Die Politiker trafen sich im Hinterzimmer.",
+    "definition": "The politicians met in the back room.",
+    "word_frequency": 26622
+  },
+  {
+    "word": "Die Tablette enthält 500 Milligramm Paracetamol.",
+    "definition": "The tablet contains 500 milligrams of paracetamol.",
+    "word_frequency": 24269
+  },
+  {
+    "word": "Die Tiere leben in einem großen Gehege.",
+    "definition": "The animals live in a large enclosure.",
+    "word_frequency": 17223
+  },
+  {
+    "word": "Die Veranstaltung findet im Bürgerhaus statt.",
+    "definition": "The event takes place in the community center.",
+    "word_frequency": 17172
+  },
+  {
+    "word": "Die Wand war voller bunter Graffiti.",
+    "definition": "The wall was full of colorful graffiti.",
+    "word_frequency": 8664
+  },
+  {
+    "word": "Die Waren sind im Lager.",
+    "definition": "The goods are in the warehouse.",
+    "word_frequency": 1358
+  },
+  {
+    "word": "Die Waren werden im Lagerhaus gelagert.",
+    "definition": "The goods are stored in the warehouse.",
+    "word_frequency": 20018
+  },
+  {
+    "word": "Die Zahlen für das erste Quartal sind gut.",
+    "definition": "The figures for the first quarter are good.",
+    "word_frequency": 5117
+  },
+  {
+    "word": "Die Zahlen sind besser als im Vorjahr.",
+    "definition": "The numbers are better than in the previous year.",
+    "word_frequency": 4385
+  },
+  {
+    "word": "Dieser Garten ist ein wahres Paradies.",
+    "definition": "This garden is a true paradise.",
+    "word_frequency": 4063
+  },
+  {
+    "word": "Dieses Elektrogerät verbraucht viel Strom.",
+    "definition": "This electrical appliance consumes a lot of electricity.",
+    "word_frequency": 24934
+  },
+  {
+    "word": "Dieses Exemplar des Buches ist sehr selten.",
+    "definition": "This copy of the book is very rare.",
+    "word_frequency": 4412
+  },
+  {
+    "word": "Dieses Gebiet ist sehr schön.",
+    "definition": "This area is very beautiful.",
+    "word_frequency": 933
+  },
+  {
+    "word": "Dieses mobile Device ist sehr nützlich.",
+    "definition": "This mobile device is very useful.",
+    "word_frequency": 24907
+  },
+  {
+    "word": "Dieses Projekt hat großes Potenzial.",
+    "definition": "This project has great potential.",
+    "word_frequency": 4846
+  },
+  {
+    "word": "Dieses Schmuckstück ist aus reinem Metall.",
+    "definition": "This piece of jewelry is made of pure metal.",
+    "word_frequency": 3095
+  },
+  {
+    "word": "Drücken Sie das Pedal ganz durch.",
+    "definition": "Press the pedal all the way down.",
+    "word_frequency": 19732
+  },
+  {
+    "word": "Du hast Recht. / Das ist mein Recht.",
+    "definition": "You are right. / That is my right.",
+    "word_frequency": 156
+  },
+  {
+    "word": "Ein Adjektiv beschreibt ein Nomen.",
+    "definition": "An adjective describes a noun.",
+    "word_frequency": 14068
+  },
+  {
+    "word": "Ein altes Sprichwort sagt: 'Übung macht den Meister'.",
+    "definition": "An old proverb says: 'Practice makes perfect'.",
+    "word_frequency": 9164
+  },
+  {
+    "word": "Ein Byte besteht aus acht Bit.",
+    "definition": "A byte consists of eight bits.",
+    "word_frequency": 24083
+  },
+  {
+    "word": "Ein Dreieck hat drei Seiten.",
+    "definition": "A triangle has three sides.",
+    "word_frequency": 7508
+  },
+  {
+    "word": "Ein Drittel der Bevölkerung ist betroffen.",
+    "definition": "One third of the population is affected.",
+    "word_frequency": 2095
+  },
+  {
+    "word": "Ein Eichhorn kletterte auf den Baum.",
+    "definition": "A squirrel climbed the tree.",
+    "word_frequency": 21215
+  },
+  {
+    "word": "Ein friedliches Zusammenleben ist wichtig.",
+    "definition": "Peaceful cohabitation is important.",
+    "word_frequency": 7354
+  },
+  {
+    "word": "Ein großes Banner hing über der Straße.",
+    "definition": "A large banner hung over the street.",
+    "word_frequency": 5755
+  },
+  {
+    "word": "Ein großes Bauunternehmen hat den Auftrag erhalten.",
+    "definition": "A large construction company received the contract.",
+    "word_frequency": 18938
+  },
+  {
+    "word": "Ein harmonisches Familienleben ist wichtig.",
+    "definition": "A harmonious family life is important.",
+    "word_frequency": 17477
+  },
+  {
+    "word": "Ein Hufeisen soll Glück bringen.",
+    "definition": "A horseshoe is supposed to bring good luck.",
+    "word_frequency": 20309
+  },
+  {
+    "word": "Ein Kaninchen ist ein beliebtes Kleintier.",
+    "definition": "A rabbit is a popular small animal.",
+    "word_frequency": 28410
+  },
+  {
+    "word": "Ein kleines Blättchen fiel vom Baum.",
+    "definition": "A small leaf fell from the tree.",
+    "word_frequency": 26932
+  },
+  {
+    "word": "Ein kleines Insekt krabbelte über den Tisch.",
+    "definition": "A small insect crawled across the table.",
+    "word_frequency": 4832
+  },
+  {
+    "word": "Ein kleines Tierchen krabbelte auf dem Blatt.",
+    "definition": "A little creature crawled on the leaf.",
+    "word_frequency": 19487
+  },
+  {
+    "word": "Ein kleines Tröpfchen Wasser fiel auf den Tisch.",
+    "definition": "A little droplet of water fell on the table.",
+    "word_frequency": 23971
+  },
+  {
+    "word": "Ein kleines Vögelchen saß auf dem Ast.",
+    "definition": "A little bird sat on the branch.",
+    "word_frequency": 26066
+  },
+  {
+    "word": "Ein Nomen ist ein Wort, das eine Person, einen Ort oder eine Sache benennt.",
+    "definition": "A noun is a word that names a person, place, or thing.",
+    "word_frequency": 15433
+  },
+  {
+    "word": "Ein Pixel ist der kleinste Punkt auf einem Bildschirm.",
+    "definition": "A pixel is the smallest dot on a screen.",
+    "word_frequency": 9300
+  },
+  {
+    "word": "Ein Quadrat hat vier gleiche Seiten.",
+    "definition": "A square has four equal sides.",
+    "word_frequency": 11988
+  },
+  {
+    "word": "Ein Quadrat ist ein spezielles Viereck.",
+    "definition": "A square is a special quadrilateral.",
+    "word_frequency": 27292
+  },
+  {
+    "word": "Ein Reh lief über die Straße.",
+    "definition": "A roe deer ran across the street.",
+    "word_frequency": 12223
+  },
+  {
+    "word": "Ein süßes Pärchen spazierte im Park.",
+    "definition": "A cute couple walked in the park.",
+    "word_frequency": 8006
+  },
+  {
+    "word": "Ein Verb beschreibt eine Handlung.",
+    "definition": "A verb describes an action.",
+    "word_frequency": 8031
+  },
+  {
+    "word": "Ein Wiesel huschte durch das Gras.",
+    "definition": "A weasel scurried through the grass.",
+    "word_frequency": 28651
+  },
+  {
+    "word": "Ein Wildschwein lief durch den Wald.",
+    "definition": "A wild boar ran through the forest.",
+    "word_frequency": 18897
+  },
+  {
+    "word": "Ein Winterspiel im Schnee macht viel Spaß.",
+    "definition": "A winter game in the snow is a lot of fun.",
+    "word_frequency": 11089
+  },
+  {
+    "word": "Ein Zehntel von hundert ist zehn.",
+    "definition": "One tenth of a hundred is ten.",
+    "word_frequency": 14747
+  },
+  {
+    "word": "Eisen ist ein starkes Metall.",
+    "definition": "Iron is a strong metal.",
+    "word_frequency": 3870
+  },
+  {
+    "word": "Eiweiss ist wichtig für den Muskelaufbau.",
+    "definition": "Protein is important for muscle building.",
+    "word_frequency": 9087
+  },
+  {
+    "word": "Entschuldigen Sie, wo ist das Örtchen?",
+    "definition": "Excuse me, where is the little room (toilet)?",
+    "word_frequency": 28669
+  },
+  {
+    "word": "Er achtet auf jedes kleine Detail.",
+    "definition": "He pays attention to every small detail.",
+    "word_frequency": 1695
+  },
+  {
+    "word": "Er arbeitet im öffentlichen Amt.",
+    "definition": "He works in the public office.",
+    "word_frequency": 925
+  },
+  {
+    "word": "Er arbeitet in einem Architekturbüro in Berlin.",
+    "definition": "He works in an architectural office in Berlin.",
+    "word_frequency": 21497
+  },
+  {
+    "word": "Er bekam ein Fahrverbot für einen Monat.",
+    "definition": "He received a driving ban for one month.",
+    "word_frequency": 15868
+  },
+  {
+    "word": "Er benutzte Haargel für seine Frisur.",
+    "definition": "He used hair gel for his hairstyle.",
+    "word_frequency": 10448
+  },
+  {
+    "word": "Er beobachtete die Vögel mit einem Fernglas.",
+    "definition": "He watched the birds with binoculars.",
+    "word_frequency": 22629
+  },
+  {
+    "word": "Er bestellte ein dunkles Ale.",
+    "definition": "He ordered a dark ale.",
+    "word_frequency": 14994
+  },
+  {
+    "word": "Er erhielt viel Lob für seine Arbeit.",
+    "definition": "He received a lot of praise for his work.",
+    "word_frequency": 3421
+  },
+  {
+    "word": "Er fiel auf sein Gesäss.",
+    "definition": "He fell on his bottom.",
+    "word_frequency": 24556
+  },
+  {
+    "word": "Er fuhr mit seinem Quad durch das Gelände.",
+    "definition": "He rode his quad bike through the terrain.",
+    "word_frequency": 16733
+  },
+  {
+    "word": "Er fährt ein rotes Cabrio.",
+    "definition": "He drives a red convertible.",
+    "word_frequency": 11305
+  },
+  {
+    "word": "Er fährt ein rotes Cabriolet.",
+    "definition": "He drives a red convertible.",
+    "word_frequency": 28748
+  },
+  {
+    "word": "Er fährt gerne Skateboard auf seinem Board.",
+    "definition": "He likes skateboarding on his board.",
+    "word_frequency": 5762
+  },
+  {
+    "word": "Er fährt gerne Snowboard im Winter.",
+    "definition": "He likes to snowboard in winter.",
+    "word_frequency": 18833
+  },
+  {
+    "word": "Er fährt jeden Tag mit seinem Bike zur Arbeit.",
+    "definition": "He rides his bike to work every day.",
+    "word_frequency": 6395
+  },
+  {
+    "word": "Er fährt jeden Tag mit seinem Rennrad zur Arbeit.",
+    "definition": "He rides his racing bicycle to work every day.",
+    "word_frequency": 16741
+  },
+  {
+    "word": "Er gab ein klares Signal zum Aufbruch.",
+    "definition": "He gave a clear signal to depart.",
+    "word_frequency": 2797
+  },
+  {
+    "word": "Er gab ein offizielles Statement ab.",
+    "definition": "He made an official statement.",
+    "word_frequency": 4857
+  },
+  {
+    "word": "Er hat Blut gespendet.",
+    "definition": "He donated blood.",
+    "word_frequency": 1135
+  },
+  {
+    "word": "Er hat ein gutes Gedächtnis für Namen.",
+    "definition": "He has a good memory for names.",
+    "word_frequency": 3806
+  },
+  {
+    "word": "Er hat ein hohes Level an Erfahrung.",
+    "definition": "He has a high level of experience.",
+    "word_frequency": 2587
+  },
+  {
+    "word": "Er hat ein sehr gutes Gehör für Musik.",
+    "definition": "He has a very good ear for music.",
+    "word_frequency": 6190
+  },
+  {
+    "word": "Er hat ein starkes Kinn.",
+    "definition": "He has a strong chin.",
+    "word_frequency": 9760
+  },
+  {
+    "word": "Er hat immer ein Taschenmesser dabei.",
+    "definition": "He always carries a pocket knife.",
+    "word_frequency": 25164
+  },
+  {
+    "word": "Er hat sein Abitur letztes Jahr bestanden.",
+    "definition": "He passed his Abitur last year.",
+    "word_frequency": 3191
+  },
+  {
+    "word": "Er hat sein Testament gemacht.",
+    "definition": "He made his will.",
+    "word_frequency": 4291
+  },
+  {
+    "word": "Er hatte ein starkes Argument.",
+    "definition": "He had a strong argument.",
+    "word_frequency": 2960
+  },
+  {
+    "word": "Er hatte Mitleid mit dem armen Tier.",
+    "definition": "He had pity for the poor animal.",
+    "word_frequency": 3965
+  },
+  {
+    "word": "Er hielt das Lenkrad fest in den Händen.",
+    "definition": "He held the steering wheel firmly in his hands.",
+    "word_frequency": 10297
+  },
+  {
+    "word": "Er ist nach Hause gegangen, um sein Heim zu finden.",
+    "definition": "He went home to find his abode.",
+    "word_frequency": 2103
+  },
+  {
+    "word": "Er ist seit vielen Jahren ein aktives Vereinsmitglied.",
+    "definition": "He has been an active club member for many years.",
+    "word_frequency": 19809
+  },
+  {
+    "word": "Er kaufte ein Sixpack Bier.",
+    "definition": "He bought a six-pack of beer.",
+    "word_frequency": 29505
+  },
+  {
+    "word": "Er leidet seit seiner Kindheit an Asthma.",
+    "definition": "He has suffered from asthma since his childhood.",
+    "word_frequency": 12293
+  },
+  {
+    "word": "Er lernt ein altes Handwerk.",
+    "definition": "He is learning an old craft.",
+    "word_frequency": 3608
+  },
+  {
+    "word": "Er liebt es, Autorennen anzusehen.",
+    "definition": "He loves watching car races.",
+    "word_frequency": 24856
+  },
+  {
+    "word": "Er liebt sein Moto.",
+    "definition": "He loves his motorcycle.",
+    "word_frequency": 14895
+  },
+  {
+    "word": "Er liebt technische Gadgets.",
+    "definition": "He loves technical gadgets.",
+    "word_frequency": 26595
+  },
+  {
+    "word": "Er macht zweimal pro Woche Krafttraining.",
+    "definition": "He does strength training twice a week.",
+    "word_frequency": 24610
+  },
+  {
+    "word": "Er musste ins Spital gebracht werden.",
+    "definition": "He had to be taken to the hospital.",
+    "word_frequency": 9024
+  },
+  {
+    "word": "Er musste lange im Krankenbett liegen.",
+    "definition": "He had to lie in the sickbed for a long time.",
+    "word_frequency": 29839
+  },
+  {
+    "word": "Er musste sich beim Jobcenter melden.",
+    "definition": "He had to report to the job center.",
+    "word_frequency": 7821
+  },
+  {
+    "word": "Er nahm die Musik auf ein Tonband auf.",
+    "definition": "He recorded the music on a magnetic tape.",
+    "word_frequency": 25171
+  },
+  {
+    "word": "Er sammelt alte Schallplatten aus Vinyl.",
+    "definition": "He collects old vinyl records.",
+    "word_frequency": 11450
+  },
+  {
+    "word": "Er schickte ein Telegramm an seine Familie.",
+    "definition": "He sent a telegram to his family.",
+    "word_frequency": 14722
+  },
+  {
+    "word": "Er schoss ein fantastisches Goal.",
+    "definition": "He scored a fantastic goal.",
+    "word_frequency": 20938
+  },
+  {
+    "word": "Er schoss ein Tor.",
+    "definition": "He scored a goal.",
+    "word_frequency": 987
+  },
+  {
+    "word": "Er schützt sein Privatleben sehr.",
+    "definition": "He protects his private life very much.",
+    "word_frequency": 7066
+  },
+  {
+    "word": "Er spaltete das Holz mit einem Beil.",
+    "definition": "He split the wood with a hatchet.",
+    "word_frequency": 16328
+  },
+  {
+    "word": "Er spielt das Cell in einem Orchester.",
+    "definition": "He plays the cello in an orchestra.",
+    "word_frequency": 18658
+  },
+  {
+    "word": "Er spielt gerne Akkordeon.",
+    "definition": "He likes to play the accordion.",
+    "word_frequency": 15526
+  },
+  {
+    "word": "Er spielt gerne Saxophon.",
+    "definition": "He likes to play the saxophone.",
+    "word_frequency": 17914
+  },
+  {
+    "word": "Er spielt im Mittelfeld.",
+    "definition": "He plays in the midfield.",
+    "word_frequency": 7165
+  },
+  {
+    "word": "Er spielt Schlagzeug in einer Band.",
+    "definition": "He plays drums in a band.",
+    "word_frequency": 8565
+  },
+  {
+    "word": "Er spielte eine Karte mit Karo.",
+    "definition": "He played a card with a diamond.",
+    "word_frequency": 20977
+  },
+  {
+    "word": "Er trainiert jeden Tag Boxen.",
+    "definition": "He trains boxing every day.",
+    "word_frequency": 4244
+  },
+  {
+    "word": "Er trainiert seit Jahren Karate.",
+    "definition": "He has been training karate for years.",
+    "word_frequency": 9578
+  },
+  {
+    "word": "Er trank ein Gläschen Wein.",
+    "definition": "He drank a small glass of wine.",
+    "word_frequency": 16397
+  },
+  {
+    "word": "Er trug ein Abzeichen an seiner Uniform.",
+    "definition": "He wore a badge on his uniform.",
+    "word_frequency": 10725
+  },
+  {
+    "word": "Er trug ein elegantes Sakko zu seinem Anzug.",
+    "definition": "He wore an elegant jacket with his suit.",
+    "word_frequency": 24726
+  },
+  {
+    "word": "Er trägt sein Lieblingstrikot.",
+    "definition": "He is wearing his favorite jersey.",
+    "word_frequency": 5054
+  },
+  {
+    "word": "Er verbrachte zehn Jahre im Gefängnis.",
+    "definition": "He spent ten years in prison.",
+    "word_frequency": 2011
+  },
+  {
+    "word": "Er vermisste sein Heimatland sehr.",
+    "definition": "He missed his homeland very much.",
+    "word_frequency": 7663
+  },
+  {
+    "word": "Er war mein Idol, als ich jung war.",
+    "definition": "He was my idol when I was young.",
+    "word_frequency": 11723
+  },
+  {
+    "word": "Er wohnt im Studentenwohnheim.",
+    "definition": "He lives in the student dormitory.",
+    "word_frequency": 14058
+  },
+  {
+    "word": "Er wuchs in einem ländlichen Umfeld auf.",
+    "definition": "He grew up in a rural environment.",
+    "word_frequency": 1917
+  },
+  {
+    "word": "Er wurde ins Hospital gebracht.",
+    "definition": "He was brought to the hospital.",
+    "word_frequency": 8257
+  },
+  {
+    "word": "Erdgas ist eine wichtige Energiequelle.",
+    "definition": "Natural gas is an important energy source.",
+    "word_frequency": 8082
+  },
+  {
+    "word": "Es gab ein Missverständnis zwischen ihnen.",
+    "definition": "There was a misunderstanding between them.",
+    "word_frequency": 7839
+  },
+  {
+    "word": "Es gibt ein Gerücht über neue Pläne.",
+    "definition": "There is a rumor about new plans.",
+    "word_frequency": 4259
+  },
+  {
+    "word": "Es gibt ein hohes Risiko, dass es regnet.",
+    "definition": "There is a high risk that it will rain.",
+    "word_frequency": 1386
+  },
+  {
+    "word": "Es gibt ein Limit für die Anzahl der Teilnehmer.",
+    "definition": "There is a limit to the number of participants.",
+    "word_frequency": 6913
+  },
+  {
+    "word": "Es gibt ein Rauchverbot in öffentlichen Gebäuden.",
+    "definition": "There is a smoking ban in public buildings.",
+    "word_frequency": 19439
+  },
+  {
+    "word": "Es gibt ein Verbot für das Rauchen hier.",
+    "definition": "There is a ban on smoking here.",
+    "word_frequency": 1988
+  },
+  {
+    "word": "Es gibt kein Mittel gegen diese Krankheit.",
+    "definition": "There is no remedy for this disease.",
+    "word_frequency": 895
+  },
+  {
+    "word": "Es tut mir Leid, dass ich zu spät bin.",
+    "definition": "I am sorry that I am late.",
+    "word_frequency": 913
+  },
+  {
+    "word": "Es war ein großes Unglück, dass das Schiff sank.",
+    "definition": "It was a great misfortune that the ship sank.",
+    "word_frequency": 3565
+  },
+  {
+    "word": "Es war mir ein Vergnügen.",
+    "definition": "It was a pleasure for me.",
+    "word_frequency": 3302
+  },
+  {
+    "word": "Fische leben im Salzwasser.",
+    "definition": "Fish live in saltwater.",
+    "word_frequency": 19135
+  },
+  {
+    "word": "Für die Reise benötige ich ein Visum.",
+    "definition": "For the trip, I need a visa.",
+    "word_frequency": 7600
+  },
+  {
+    "word": "Für die Reparatur benötige ich ein Ersatz-Einzelteil.",
+    "definition": "For the repair, I need a replacement individual part.",
+    "word_frequency": 18065
+  },
+  {
+    "word": "Für die Wanderung ist festes Schuhwerk wichtig.",
+    "definition": "Sturdy footwear is important for the hike.",
+    "word_frequency": 25988
+  },
+  {
+    "word": "Für diese Aufgabe braucht man Grundwissen in Mathematik.",
+    "definition": "For this task, one needs basic knowledge in mathematics.",
+    "word_frequency": 27035
+  },
+  {
+    "word": "Für ihn war die Aufgabe ein Kinderspiel.",
+    "definition": "For him, the task was a piece of cake.",
+    "word_frequency": 15115
+  },
+  {
+    "word": "Gaming ist ein beliebtes Hobby bei Jugendlichen.",
+    "definition": "Gaming is a popular hobby among young people.",
+    "word_frequency": 4118
+  },
+  {
+    "word": "Gesunde Nahrungsmittel sind wichtig für unseren Körper.",
+    "definition": "Healthy food is important for our body.",
+    "word_frequency": 7054
+  },
+  {
+    "word": "Gesundes Zahnfleisch ist wichtig für die Mundhygiene.",
+    "definition": "Healthy gums are important for oral hygiene.",
+    "word_frequency": 21470
+  },
+  {
+    "word": "Gib mir mal das Dings da drüben.",
+    "definition": "Hand me that thingy over there.",
+    "word_frequency": 16891
+  },
+  {
+    "word": "Gib mir mal das Mikro.",
+    "definition": "Hand me the mic.",
+    "word_frequency": 7991
+  },
+  {
+    "word": "Gutes Teamwork ist entscheidend für den Erfolg.",
+    "definition": "Good teamwork is crucial for success.",
+    "word_frequency": 27257
+  },
+  {
+    "word": "Hallo, mein Darling!",
+    "definition": "Hello, my darling!",
+    "word_frequency": 18050
+  },
+  {
+    "word": "Hat jemand ein Ufo gesehen?",
+    "definition": "Has anyone seen a UFO?",
+    "word_frequency": 11809
+  },
+  {
+    "word": "Hinter dem Haus ist ein kleines Waldstück.",
+    "definition": "Behind the house is a small patch of forest.",
+    "word_frequency": 26067
+  },
+  {
+    "word": "Hinter dem Haus ist ein kleines Wäldchen.",
+    "definition": "Behind the house is a small grove.",
+    "word_frequency": 29607
+  },
+  {
+    "word": "Husten ist ein häufiges Symptom einer Erkältung.",
+    "definition": "Coughing is a common symptom of a cold.",
+    "word_frequency": 3443
+  },
+  {
+    "word": "Hör auf mit diesem Blabla!",
+    "definition": "Stop with this blah blah!",
+    "word_frequency": 18639
+  },
+  {
+    "word": "Hör mal zu, Freundchen, so geht das nicht!",
+    "definition": "Listen, buddy, that's not how it works!",
+    "word_frequency": 29761
+  },
+  {
+    "word": "Ich benutze ein Lesezeichen, um meine Seite zu markieren.",
+    "definition": "I use a bookmark to mark my page.",
+    "word_frequency": 23084
+  },
+  {
+    "word": "Ich besuche ein interessantes Seminar über Geschichte.",
+    "definition": "I am attending an interesting seminar on history.",
+    "word_frequency": 3905
+  },
+  {
+    "word": "Ich brauche ein neues Modem für mein Internet.",
+    "definition": "I need a new modem for my internet.",
+    "word_frequency": 17004
+  },
+  {
+    "word": "Ich brauche ein Pflaster für meinen Finger.",
+    "definition": "I need a plaster for my finger.",
+    "word_frequency": 7690
+  },
+  {
+    "word": "Ich brauche ein Schmerzmittel gegen die Kopfschmerzen.",
+    "definition": "I need a painkiller for the headache.",
+    "word_frequency": 12892
+  },
+  {
+    "word": "Ich brauche ein Stativ für meine Kamera.",
+    "definition": "I need a tripod for my camera.",
+    "word_frequency": 25153
+  },
+  {
+    "word": "Ich brauche ein ärztliches Attest für die Arbeit.",
+    "definition": "I need a medical certificate for work.",
+    "word_frequency": 20503
+  },
+  {
+    "word": "Ich brauche Ihr Feedback zu diesem Projekt.",
+    "definition": "I need your feedback on this project.",
+    "word_frequency": 4030
+  },
+  {
+    "word": "Ich esse gerne Beef mit Gemüse.",
+    "definition": "I like to eat beef with vegetables.",
+    "word_frequency": 8208
+  },
+  {
+    "word": "Ich habe an einem Gewinnspiel teilgenommen.",
+    "definition": "I participated in a competition.",
+    "word_frequency": 8520
+  },
+  {
+    "word": "Ich habe das Wort im Lexikon nachgeschlagen.",
+    "definition": "I looked up the word in the lexicon.",
+    "word_frequency": 7043
+  },
+  {
+    "word": "Ich habe ein Abo für diese Zeitschrift.",
+    "definition": "I have a subscription for this magazine.",
+    "word_frequency": 5149
+  },
+  {
+    "word": "Ich habe ein Abonnement für diese Zeitschrift.",
+    "definition": "I have a subscription for this magazine.",
+    "word_frequency": 17394
+  },
+  {
+    "word": "Ich habe ein Giro bei dieser Bank.",
+    "definition": "I have a giro account with this bank.",
+    "word_frequency": 17498
+  },
+  {
+    "word": "Ich habe ein gutes Feeling für dieses Projekt.",
+    "definition": "I have a good feeling about this project.",
+    "word_frequency": 9895
+  },
+  {
+    "word": "Ich habe ein interessantes Stellenangebot gefunden.",
+    "definition": "I found an interesting job offer.",
+    "word_frequency": 15481
+  },
+  {
+    "word": "Ich habe ein interessantes Taschenbuch gelesen.",
+    "definition": "I read an interesting paperback.",
+    "word_frequency": 8163
+  },
+  {
+    "word": "Ich habe ein Knöllchen bekommen, weil ich falsch geparkt habe.",
+    "definition": "I got a parking ticket because I parked incorrectly.",
+    "word_frequency": 26290
+  },
+  {
+    "word": "Ich habe ein lustiges Meme im Internet gesehen.",
+    "definition": "I saw a funny meme on the internet.",
+    "word_frequency": 8285
+  },
+  {
+    "word": "Ich habe ein Memo an alle Mitarbeiter geschickt.",
+    "definition": "I sent a memo to all employees.",
+    "word_frequency": 15417
+  },
+  {
+    "word": "Ich habe ein neues Girokonto eröffnet.",
+    "definition": "I have opened a new current account.",
+    "word_frequency": 14600
+  },
+  {
+    "word": "Ich habe ein neues Parfum gekauft.",
+    "definition": "I bought a new perfume.",
+    "word_frequency": 14222
+  },
+  {
+    "word": "Ich habe ein nützliches Tutorial online gefunden.",
+    "definition": "I found a useful tutorial online.",
+    "word_frequency": 14487
+  },
+  {
+    "word": "Ich habe ein Pack Kekse gekauft.",
+    "definition": "I bought a pack of cookies.",
+    "word_frequency": 3751
+  },
+  {
+    "word": "Ich habe ein schönes Andenken aus dem Urlaub mitgebracht.",
+    "definition": "I brought a nice souvenir from the vacation.",
+    "word_frequency": 8346
+  },
+  {
+    "word": "Ich habe ein Sprachzertifikat erhalten.",
+    "definition": "I received a language certificate.",
+    "word_frequency": 10024
+  },
+  {
+    "word": "Ich habe eine gute Review für das Buch gelesen.",
+    "definition": "I read a good review for the book.",
+    "word_frequency": 4677
+  },
+  {
+    "word": "Ich habe frisches Kraut für die Suppe gekauft.",
+    "definition": "I bought fresh herb for the soup.",
+    "word_frequency": 8273
+  },
+  {
+    "word": "Ich habe gestern Abend ein leckeres Risotto gegessen.",
+    "definition": "I ate a delicious risotto last night.",
+    "word_frequency": 27201
+  },
+  {
+    "word": "Ich habe heute ein Probetraining im Fitnessstudio.",
+    "definition": "I have a trial training session at the gym today.",
+    "word_frequency": 28502
+  },
+  {
+    "word": "Ich habe kein Cash dabei.",
+    "definition": "I don't have any cash with me.",
+    "word_frequency": 6286
+  },
+  {
+    "word": "Ich habe mein neues Tablet-Pad gekauft.",
+    "definition": "I bought my new tablet pad.",
+    "word_frequency": 16210
+  },
+  {
+    "word": "Ich habe mir das Handgelenk verstaucht.",
+    "definition": "I sprained my wrist.",
+    "word_frequency": 9742
+  },
+  {
+    "word": "Ich habe volles Verständnis für deine Situation.",
+    "definition": "I have full understanding for your situation.",
+    "word_frequency": 1495
+  },
+  {
+    "word": "Ich hatte ein langes Telefongespräch mit meiner Mutter.",
+    "definition": "I had a long phone call with my mother.",
+    "word_frequency": 29053
+  },
+  {
+    "word": "Ich höre gerne Country-Musik.",
+    "definition": "I like listening to country music.",
+    "word_frequency": 5645
+  },
+  {
+    "word": "Ich höre gerne Hörbücher auf langen Fahrten.",
+    "definition": "I like listening to audiobooks on long drives.",
+    "word_frequency": 8966
+  },
+  {
+    "word": "Ich lerne Litauisch, weil ich dort studieren möchte.",
+    "definition": "I am learning Lithuanian because I want to study there.",
+    "word_frequency": 24635
+  },
+  {
+    "word": "Ich lese ein Ebook auf meinem Tablet.",
+    "definition": "I am reading an e-book on my tablet.",
+    "word_frequency": 7942
+  },
+  {
+    "word": "Ich lese gerne Sachbücher über Geschichte.",
+    "definition": "I like to read non-fiction books about history.",
+    "word_frequency": 20094
+  },
+  {
+    "word": "Ich lese jeden Abend das Abendblatt.",
+    "definition": "I read the evening paper every evening.",
+    "word_frequency": 21152
+  },
+  {
+    "word": "Ich liebe Eis mit Karamell.",
+    "definition": "I love ice cream with caramel.",
+    "word_frequency": 27499
+  },
+  {
+    "word": "Ich liebe es, Rätsel zu lösen.",
+    "definition": "I love solving riddles.",
+    "word_frequency": 3557
+  },
+  {
+    "word": "Ich liebe frisches Basilikum auf meiner Pizza.",
+    "definition": "I love fresh basil on my pizza.",
+    "word_frequency": 20847
+  },
+  {
+    "word": "Ich mache gerne ein Nickerchen am Nachmittag.",
+    "definition": "I like to take a nap in the afternoon.",
+    "word_frequency": 19717
+  },
+  {
+    "word": "Ich mache gerne Kreuzworträtsel in meiner Freizeit.",
+    "definition": "I like to do crossword puzzles in my free time.",
+    "word_frequency": 28420
+  },
+  {
+    "word": "Ich mache jeden Morgen ein kurzes Workout.",
+    "definition": "I do a short workout every morning.",
+    "word_frequency": 19531
+  },
+  {
+    "word": "Ich mache Nudeln mit Pesto.",
+    "definition": "I am making pasta with pesto.",
+    "word_frequency": 23488
+  },
+  {
+    "word": "Ich mache regelmäßig ein Backup meiner Daten.",
+    "definition": "I regularly make a backup of my data.",
+    "word_frequency": 10041
+  },
+  {
+    "word": "Ich mag den Geschmack von Kokos.",
+    "definition": "I like the taste of coconut.",
+    "word_frequency": 27941
+  },
+  {
+    "word": "Ich muss das neue Update installieren.",
+    "definition": "I need to install the new update.",
+    "word_frequency": 2804
+  },
+  {
+    "word": "Ich muss das Unkraut aus dem Garten entfernen.",
+    "definition": "I need to remove the weeds from the garden.",
+    "word_frequency": 11607
+  },
+  {
+    "word": "Ich muss ein Wörtchen mit dir reden.",
+    "definition": "I need to have a word with you.",
+    "word_frequency": 17117
+  },
+  {
+    "word": "Ich muss meine Steuererklärung beim Finanzamt einreichen.",
+    "definition": "I have to submit my tax declaration to the tax office.",
+    "word_frequency": 6072
+  },
+  {
+    "word": "Ich muss morgen zum Arbeitsamt gehen.",
+    "definition": "I have to go to the employment office tomorrow.",
+    "word_frequency": 15800
+  },
+  {
+    "word": "Ich rufe dich auf dem Festnetz an.",
+    "definition": "I'll call you on the landline.",
+    "word_frequency": 13677
+  },
+  {
+    "word": "Ich trainiere jeden Morgen auf dem Laufband.",
+    "definition": "I train every morning on the treadmill.",
+    "word_frequency": 24246
+  },
+  {
+    "word": "Ihr Debütalbum war ein großer Erfolg.",
+    "definition": "Her debut album was a great success.",
+    "word_frequency": 25323
+  },
+  {
+    "word": "Ihr letztes Posting auf Social Media war sehr beliebt.",
+    "definition": "Her last post on social media was very popular.",
+    "word_frequency": 17887
+  },
+  {
+    "word": "Ihr neues Styling ist sehr modern.",
+    "definition": "Her new styling is very modern.",
+    "word_frequency": 21759
+  },
+  {
+    "word": "Ihr Verhältnis zueinander ist kompliziert.",
+    "definition": "Their relationship with each other is complicated.",
+    "word_frequency": 1340
+  },
+  {
+    "word": "Im alten Backhaus wurde früher Brot gebacken.",
+    "definition": "Bread used to be baked in the old bakehouse.",
+    "word_frequency": 22183
+  },
+  {
+    "word": "Im Ausland ist Roaming oft teuer.",
+    "definition": "Roaming is often expensive abroad.",
+    "word_frequency": 18203
+  },
+  {
+    "word": "Im ersten Lehrjahr lernt man die Grundlagen.",
+    "definition": "In the first apprenticeship year, one learns the basics.",
+    "word_frequency": 28430
+  },
+  {
+    "word": "Im Frühjahr blühen die Blumen.",
+    "definition": "In spring, the flowers bloom.",
+    "word_frequency": 1968
+  },
+  {
+    "word": "Im Frühling blühen die Veilchen.",
+    "definition": "In spring, the violets bloom.",
+    "word_frequency": 14735
+  },
+  {
+    "word": "Im Garten wächst ein kleines Bäumchen.",
+    "definition": "A small tree is growing in the garden.",
+    "word_frequency": 26534
+  },
+  {
+    "word": "Im Gedränge verlor ich meine Freunde.",
+    "definition": "I lost my friends in the crowd.",
+    "word_frequency": 20923
+  },
+  {
+    "word": "Im Gewächshaus wachsen Tomaten und Gurken.",
+    "definition": "Tomatoes and cucumbers grow in the greenhouse.",
+    "word_frequency": 16643
+  },
+  {
+    "word": "Im Herbst fällt das Laub von den Bäumen.",
+    "definition": "In autumn, the leaves fall from the trees.",
+    "word_frequency": 9277
+  },
+  {
+    "word": "Im Neubaugebiet entstehen viele neue Häuser.",
+    "definition": "Many new houses are being built in the new development area.",
+    "word_frequency": 17580
+  },
+  {
+    "word": "Im Wald leben viele Wildtiere.",
+    "definition": "Many wild animals live in the forest.",
+    "word_frequency": 22881
+  },
+  {
+    "word": "Immer mehr Menschen kaufen ein Elektroauto.",
+    "definition": "More and more people are buying an electric car.",
+    "word_frequency": 9233
+  },
+  {
+    "word": "Immer mehr Menschen kaufen ein Elektrofahrzeug.",
+    "definition": "More and more people are buying an electric vehicle.",
+    "word_frequency": 28781
+  },
+  {
+    "word": "In alten Schlössern soll es oft Gespenster geben.",
+    "definition": "There are often said to be ghosts in old castles.",
+    "word_frequency": 13689
+  },
+  {
+    "word": "In Köln trinkt man gerne Kölsch.",
+    "definition": "In Cologne, people like to drink Kölsch.",
+    "word_frequency": 13730
+  },
+  {
+    "word": "Ist das Leitungswasser trinkbar?",
+    "definition": "Is the tap water drinkable?",
+    "word_frequency": 15941
+  },
+  {
+    "word": "Jedes Bauteil muss präzise gefertigt werden.",
+    "definition": "Every component must be manufactured precisely.",
+    "word_frequency": 10400
+  },
+  {
+    "word": "Jedes Elternteil hat Rechte und Pflichten.",
+    "definition": "Every parent has rights and duties.",
+    "word_frequency": 11323
+  },
+  {
+    "word": "Jedes Jahr findet ein großes Stadtfest statt.",
+    "definition": "A big city festival takes place every year.",
+    "word_frequency": 17332
+  },
+  {
+    "word": "Jedes Lebewesen hat das Recht auf Leben.",
+    "definition": "Every living being has the right to life.",
+    "word_frequency": 2241
+  },
+  {
+    "word": "Jedes Modul hat eine eigene Prüfung.",
+    "definition": "Each module has its own exam.",
+    "word_frequency": 9781
+  },
+  {
+    "word": "Jedes Parteimitglied hat eine Stimme.",
+    "definition": "Every party member has one vote.",
+    "word_frequency": 20687
+  },
+  {
+    "word": "Joghurt ist ein gesundes Milchprodukt.",
+    "definition": "Yogurt is a healthy dairy product.",
+    "word_frequency": 21668
+  },
+  {
+    "word": "Kaffee enthält Koffein.",
+    "definition": "Coffee contains caffeine.",
+    "word_frequency": 13725
+  },
+  {
+    "word": "Kannst du mir ein Bissel helfen?",
+    "definition": "Can you help me a little bit?",
+    "word_frequency": 19887
+  },
+  {
+    "word": "Klicke auf das Icon, um die Anwendung zu starten.",
+    "definition": "Click on the icon to start the application.",
+    "word_frequency": 15916
+  },
+  {
+    "word": "Klicke auf Home, um zur Startseite zurückzukehren.",
+    "definition": "Click on Home to return to the homepage.",
+    "word_frequency": 2636
+  },
+  {
+    "word": "Komm her, mein Schätzchen.",
+    "definition": "Come here, my darling.",
+    "word_frequency": 18827
+  },
+  {
+    "word": "Kühe sind Nutztiere.",
+    "definition": "Cows are farm animals.",
+    "word_frequency": 26346
+  },
+  {
+    "word": "Liest du dein Horoskop jeden Tag?",
+    "definition": "Do you read your horoscope every day?",
+    "word_frequency": 24197
+  },
+  {
+    "word": "Lübecker Marzipan ist sehr berühmt.",
+    "definition": "Lübeck marzipan is very famous.",
+    "word_frequency": 23851
+  },
+  {
+    "word": "Magma steigt aus dem Erdinneren auf.",
+    "definition": "Magma rises from the Earth's interior.",
+    "word_frequency": 26686
+  },
+  {
+    "word": "Man braucht Köpfchen, um dieses Rätsel zu lösen.",
+    "definition": "You need brains to solve this riddle.",
+    "word_frequency": 17267
+  },
+  {
+    "word": "Mein Bruder studiert am College.",
+    "definition": "My brother studies at college.",
+    "word_frequency": 3024
+  },
+  {
+    "word": "Mein Datenvolumen ist fast aufgebraucht.",
+    "definition": "My data volume is almost used up.",
+    "word_frequency": 12553
+  },
+  {
+    "word": "Mein Großvater trägt ein Gebiss.",
+    "definition": "My grandfather wears a denture.",
+    "word_frequency": 18380
+  },
+  {
+    "word": "Mein Hauptfach an der Universität war Geschichte.",
+    "definition": "My major subject at university was history.",
+    "word_frequency": 23043
+  },
+  {
+    "word": "Meine Großmutter lebt in einem Altenheim.",
+    "definition": "My grandmother lives in a nursing home.",
+    "word_frequency": 15000
+  },
+  {
+    "word": "Meine Großmutter lebt in einem Altersheim.",
+    "definition": "My grandmother lives in a nursing home.",
+    "word_frequency": 16077
+  },
+  {
+    "word": "Meine Grossmutter lebt in einem Pflegeheim.",
+    "definition": "My grandmother lives in a nursing home.",
+    "word_frequency": 11978
+  },
+  {
+    "word": "Meine Großmutter lebt in einem Seniorenheim.",
+    "definition": "My grandmother lives in a nursing home.",
+    "word_frequency": 25572
+  },
+  {
+    "word": "Milch ist eine gute Quelle für Kalzium.",
+    "definition": "Milk is a good source of calcium.",
+    "word_frequency": 27073
+  },
+  {
+    "word": "Mit dem Mikroskop kann man sehr kleine Dinge sehen.",
+    "definition": "With the microscope, one can see very small things.",
+    "word_frequency": 17569
+  },
+  {
+    "word": "Mit dem Teleskop kann man die Sterne beobachten.",
+    "definition": "You can observe the stars with the telescope.",
+    "word_frequency": 16269
+  },
+  {
+    "word": "Mobbing am Arbeitsplatz ist inakzeptabel.",
+    "definition": "Bullying in the workplace is unacceptable.",
+    "word_frequency": 7681
+  },
+  {
+    "word": "Nach dem Abi möchte ich reisen.",
+    "definition": "After my high school diploma, I want to travel.",
+    "word_frequency": 6265
+  },
+  {
+    "word": "Nach dem Spiel trafen wir uns im Clubhaus.",
+    "definition": "After the game, we met at the clubhouse.",
+    "word_frequency": 28259
+  },
+  {
+    "word": "Nach der Party herrschte totales Chaos.",
+    "definition": "After the party, there was total chaos.",
+    "word_frequency": 2519
+  },
+  {
+    "word": "Nikotin ist schädlich für die Gesundheit.",
+    "definition": "Nicotine is harmful to health.",
+    "word_frequency": 17585
+  },
+  {
+    "word": "Online-Dating ist heutzutage sehr beliebt.",
+    "definition": "Online dating is very popular nowadays.",
+    "word_frequency": 4716
+  },
+  {
+    "word": "Pfingsten ist ein Feiertag in Deutschland.",
+    "definition": "Pentecost is a public holiday in Germany.",
+    "word_frequency": 12422
+  },
+  {
+    "word": "Pflanzen brauchen Sonnenlicht zum Wachsen.",
+    "definition": "Plants need sunlight to grow.",
+    "word_frequency": 10684
+  },
+  {
+    "word": "Proteine sind wichtig für den Muskelaufbau.",
+    "definition": "Proteins are important for muscle building.",
+    "word_frequency": 7857
+  },
+  {
+    "word": "Recycling ist wichtig für die Umwelt.",
+    "definition": "Recycling is important for the environment.",
+    "word_frequency": 11407
+  },
+  {
+    "word": "Rugby ist ein beliebter Sport in England.",
+    "definition": "Rugby is a popular sport in England.",
+    "word_frequency": 13774
+  },
+  {
+    "word": "Running ist gut für die Gesundheit.",
+    "definition": "Running is good for your health.",
+    "word_frequency": 10329
+  },
+  {
+    "word": "Schicken Sie mir das Dokument per Fax.",
+    "definition": "Send me the document by fax.",
+    "word_frequency": 8512
+  },
+  {
+    "word": "Schlangen sind Reptilien.",
+    "definition": "Snakes are reptiles.",
+    "word_frequency": 15704
+  },
+  {
+    "word": "Sein Benehmen war tadellos.",
+    "definition": "His behavior was impeccable.",
+    "word_frequency": 4976
+  },
+  {
+    "word": "Sein Einkommen ist sehr hoch.",
+    "definition": "His income is very high.",
+    "word_frequency": 2485
+  },
+  {
+    "word": "Sein Gehalt wurde erhöht.",
+    "definition": "His salary was increased.",
+    "word_frequency": 2388
+  },
+  {
+    "word": "Sein Handicap hinderte ihn nicht daran, erfolgreich zu sein.",
+    "definition": "His handicap did not prevent him from being successful.",
+    "word_frequency": 16403
+  },
+  {
+    "word": "Sein Karriereende kam überraschend.",
+    "definition": "His career end came surprisingly.",
+    "word_frequency": 23402
+  },
+  {
+    "word": "Sein Kopfschütteln zeigte seine Ablehnung.",
+    "definition": "His head shaking showed his disapproval.",
+    "word_frequency": 17533
+  },
+  {
+    "word": "Sein Lebensmotto ist \"Lebe jeden Tag\".",
+    "definition": "His life motto is \"Live every day\".",
+    "word_frequency": 2117
+  },
+  {
+    "word": "Sein Liebesleben ist in letzter Zeit sehr aufregend.",
+    "definition": "His love life has been very exciting lately.",
+    "word_frequency": 20343
+  },
+  {
+    "word": "Setzen Sie das Zitat in Anführungszeichen.",
+    "definition": "Put the quote in quotation marks.",
+    "word_frequency": 22536
+  },
+  {
+    "word": "Sie arbeitet als Model in Paris.",
+    "definition": "She works as a model in Paris.",
+    "word_frequency": 3096
+  },
+  {
+    "word": "Sie arbeitet in einem Callcenter.",
+    "definition": "She works in a call center.",
+    "word_frequency": 24084
+  },
+  {
+    "word": "Sie arbeitet in einem Forschungsinstitut.",
+    "definition": "She works at a research institute.",
+    "word_frequency": 1355
+  },
+  {
+    "word": "Sie bat den Schauspieler um ein Autogramm.",
+    "definition": "She asked the actor for an autograph.",
+    "word_frequency": 13861
+  },
+  {
+    "word": "Sie beantragte ihr Visum im Konsulat.",
+    "definition": "She applied for her visa at the consulate.",
+    "word_frequency": 14864
+  },
+  {
+    "word": "Sie benutzte ein Haarspray.",
+    "definition": "She used a hair spray.",
+    "word_frequency": 16255
+  },
+  {
+    "word": "Sie besuchte ein Internat in der Schweiz.",
+    "definition": "She attended a boarding school in Switzerland.",
+    "word_frequency": 9415
+  },
+  {
+    "word": "Sie besuchten das Grab ihres Großvaters.",
+    "definition": "They visited their grandfather's grave.",
+    "word_frequency": 2773
+  },
+  {
+    "word": "Sie fahren oft mit ihrem Tandem durch die Stadt.",
+    "definition": "They often ride through the city on their tandem.",
+    "word_frequency": 20124
+  },
+  {
+    "word": "Sie fand ein vierblättriges Kleeblatt.",
+    "definition": "She found a four-leaf clover.",
+    "word_frequency": 25027
+  },
+  {
+    "word": "Sie fanden das Versteck des Schatzes.",
+    "definition": "They found the hiding place of the treasure.",
+    "word_frequency": 9828
+  },
+  {
+    "word": "Sie gingen zum Polizeirevier, um Anzeige zu erstatten.",
+    "definition": "They went to the police station to file a report.",
+    "word_frequency": 16725
+  },
+  {
+    "word": "Sie haben das Halbfinale erreicht.",
+    "definition": "They reached the semi-final.",
+    "word_frequency": 2728
+  },
+  {
+    "word": "Sie haben ein großes Grundstück gekauft.",
+    "definition": "They bought a large plot of land.",
+    "word_frequency": 2878
+  },
+  {
+    "word": "Sie haben ein schönes Landhaus auf dem Land.",
+    "definition": "They have a beautiful country house in the countryside.",
+    "word_frequency": 10293
+  },
+  {
+    "word": "Sie haben einen Abend im Kasino verbracht.",
+    "definition": "They spent an evening at the casino.",
+    "word_frequency": 24592
+  },
+  {
+    "word": "Sie haben sich auf dem Standesamt das Ja-Wort gegeben.",
+    "definition": "They said \"I do\" at the registry office.",
+    "word_frequency": 16017
+  },
+  {
+    "word": "Sie hat ein feuriges Temperament.",
+    "definition": "She has a fiery temperament.",
+    "word_frequency": 13794
+  },
+  {
+    "word": "Sie hat ein großes Talent für Musik.",
+    "definition": "She has a great talent for music.",
+    "word_frequency": 2907
+  },
+  {
+    "word": "Sie hat ein kleines Tattoo auf ihrem Arm.",
+    "definition": "She has a small tattoo on her arm.",
+    "word_frequency": 7200
+  },
+  {
+    "word": "Sie hat ein lustiges Filmchen auf ihrem Handy.",
+    "definition": "She has a funny short film on her phone.",
+    "word_frequency": 28308
+  },
+  {
+    "word": "Sie hat ein Mixtape mit ihren Lieblingsliedern gemacht.",
+    "definition": "She made a mixtape with her favorite songs.",
+    "word_frequency": 26325
+  },
+  {
+    "word": "Sie hat ein neues Piercing in der Nase.",
+    "definition": "She has a new piercing in her nose.",
+    "word_frequency": 22044
+  },
+  {
+    "word": "Sie hat ein Stipendium für ihr Studium erhalten.",
+    "definition": "She received a scholarship for her studies.",
+    "word_frequency": 9639
+  },
+  {
+    "word": "Sie hat ihr Diplom mit Auszeichnung bestanden.",
+    "definition": "She passed her diploma with distinction.",
+    "word_frequency": 5269
+  },
+  {
+    "word": "Sie hat ihr Examen bestanden.",
+    "definition": "She passed her exam.",
+    "word_frequency": 11695
+  },
+  {
+    "word": "Sie hat ihr Geld auf einem Sparbuch angelegt.",
+    "definition": "She invested her money in a savings book.",
+    "word_frequency": 21744
+  },
+  {
+    "word": "Sie hat ihr Profil online aktualisiert.",
+    "definition": "She updated her profile online.",
+    "word_frequency": 1904
+  },
+  {
+    "word": "Sie hatte ein Fotoshooting für ein Magazin.",
+    "definition": "She had a photoshoot for a magazine.",
+    "word_frequency": 19012
+  },
+  {
+    "word": "Sie hatte ein wichtiges Bewerbungsgespräch.",
+    "definition": "She had an important job interview.",
+    "word_frequency": 21856
+  },
+  {
+    "word": "Sie hatte ein wichtiges Interview.",
+    "definition": "She had an important interview.",
+    "word_frequency": 1065
+  },
+  {
+    "word": "Sie hatte starkes Heimweh, als sie im Ausland studierte.",
+    "definition": "She had strong homesickness when she studied abroad.",
+    "word_frequency": 15621
+  },
+  {
+    "word": "Sie hatten ein Rendezvous im Café.",
+    "definition": "They had a rendezvous at the cafe.",
+    "word_frequency": 20085
+  },
+  {
+    "word": "Sie hört gerne Hörspiele.",
+    "definition": "She likes listening to radio plays.",
+    "word_frequency": 11165
+  },
+  {
+    "word": "Sie ist ein echtes Vorbild für mich.",
+    "definition": "She is a true role model for me.",
+    "word_frequency": 2192
+  },
+  {
+    "word": "Sie ist ein neues Mitglied im Verein.",
+    "definition": "She is a new member of the club.",
+    "word_frequency": 628
+  },
+  {
+    "word": "Sie kaufte ein neues Eau de Parfum.",
+    "definition": "She bought a new Eau de Parfum.",
+    "word_frequency": 19305
+  },
+  {
+    "word": "Sie kehrte in ihr Heimatdorf zurück.",
+    "definition": "She returned to her home village.",
+    "word_frequency": 29308
+  },
+  {
+    "word": "Sie las ein kleines Büchlein im Park.",
+    "definition": "She read a small book in the park.",
+    "word_frequency": 20870
+  },
+  {
+    "word": "Sie leben in einem Glashaus.",
+    "definition": "They live in a glasshouse.",
+    "word_frequency": 23780
+  },
+  {
+    "word": "Sie leben in einem kleinen Village am See.",
+    "definition": "They live in a small village by the lake.",
+    "word_frequency": 12262
+  },
+  {
+    "word": "Sie liebt es, Ballett zu tanzen.",
+    "definition": "She loves to dance ballet.",
+    "word_frequency": 8620
+  },
+  {
+    "word": "Sie macht ein Fernstudium in Informatik.",
+    "definition": "She is doing distance learning in computer science.",
+    "word_frequency": 27426
+  },
+  {
+    "word": "Sie macht ein Praktikum bei einer großen Firma.",
+    "definition": "She is doing an internship at a large company.",
+    "word_frequency": 4590
+  },
+  {
+    "word": "Sie machte ein Selfie mit ihren Freunden.",
+    "definition": "She took a selfie with her friends.",
+    "word_frequency": 12900
+  },
+  {
+    "word": "Sie machte ihm ein Kompliment.",
+    "definition": "She paid him a compliment.",
+    "word_frequency": 6427
+  },
+  {
+    "word": "Sie malte ein kleines Herzchen auf die Karte.",
+    "definition": "She drew a little heart on the card.",
+    "word_frequency": 19357
+  },
+  {
+    "word": "Sie malte ein Porträt ihres Sohnes.",
+    "definition": "She painted a portrait of her son.",
+    "word_frequency": 5823
+  },
+  {
+    "word": "Sie malte ein schönes Portrait von ihrer Mutter.",
+    "definition": "She painted a beautiful portrait of her mother.",
+    "word_frequency": 9955
+  },
+  {
+    "word": "Sie mieteten ein kleines Appartement in der Stadt.",
+    "definition": "They rented a small apartment in the city.",
+    "word_frequency": 18018
+  },
+  {
+    "word": "Sie musste zum Sozialamt gehen, um Unterstützung zu beantragen.",
+    "definition": "She had to go to the social welfare office to apply for support.",
+    "word_frequency": 20416
+  },
+  {
+    "word": "Sie müssen das Plugin installieren.",
+    "definition": "You need to install the plugin.",
+    "word_frequency": 15691
+  },
+  {
+    "word": "Sie reisen gerne mit ihrem Wohnmobil.",
+    "definition": "They like to travel with their motorhome.",
+    "word_frequency": 10717
+  },
+  {
+    "word": "Sie sah ihr Spiegelbild im Wasser.",
+    "definition": "She saw her reflection in the water.",
+    "word_frequency": 14943
+  },
+  {
+    "word": "Sie sangen ein altes deutsches Volkslied am Lagerfeuer.",
+    "definition": "They sang an old German folk song by the campfire.",
+    "word_frequency": 19817
+  },
+  {
+    "word": "Sie sangen ein wunderschönes Duett.",
+    "definition": "They sang a beautiful duet.",
+    "word_frequency": 14341
+  },
+  {
+    "word": "Sie schreibt jeden Abend in ihr Tagebuch.",
+    "definition": "She writes in her diary every evening.",
+    "word_frequency": 3988
+  },
+  {
+    "word": "Sie schreibt jeden Tag in ihr Journal.",
+    "definition": "She writes in her journal every day.",
+    "word_frequency": 4052
+  },
+  {
+    "word": "Sie spielen gerne Billard am Abend.",
+    "definition": "They like to play billiards in the evening.",
+    "word_frequency": 14789
+  },
+  {
+    "word": "Sie spielt gerne Keyboard.",
+    "definition": "She likes to play the keyboard.",
+    "word_frequency": 11179
+  },
+  {
+    "word": "Sie spielt wunderschön Cello.",
+    "definition": "She plays the cello beautifully.",
+    "word_frequency": 13220
+  },
+  {
+    "word": "Sie strickt einen Schal aus Wolle und Garn.",
+    "definition": "She is knitting a scarf from wool and yarn.",
+    "word_frequency": 20281
+  },
+  {
+    "word": "Sie suchte nach dem perfekten Brautkleid.",
+    "definition": "She was looking for the perfect wedding dress.",
+    "word_frequency": 21517
+  },
+  {
+    "word": "Sie suchte nach dem perfekten Hochzeitskleid.",
+    "definition": "She was looking for the perfect wedding dress.",
+    "word_frequency": 27907
+  },
+  {
+    "word": "Sie trug ein Bündel Holz.",
+    "definition": "She carried a bundle of wood.",
+    "word_frequency": 13880
+  },
+  {
+    "word": "Sie trug ein elegantes Abendkleid zur Gala.",
+    "definition": "She wore an elegant evening dress to the gala.",
+    "word_frequency": 26477
+  },
+  {
+    "word": "Sie trug ein hübsches Bändchen im Haar.",
+    "definition": "She wore a pretty small ribbon in her hair.",
+    "word_frequency": 22941
+  },
+  {
+    "word": "Sie trug ein Kleid mit einem tiefen Dekolleté.",
+    "definition": "She wore a dress with a deep neckline.",
+    "word_frequency": 29218
+  },
+  {
+    "word": "Sie trug ein kleines Medaillon um ihren Hals.",
+    "definition": "She wore a small locket around her neck.",
+    "word_frequency": 25482
+  },
+  {
+    "word": "Sie trug ein rotes Kopftuch.",
+    "definition": "She wore a red headscarf.",
+    "word_frequency": 6316
+  },
+  {
+    "word": "Sie trug ein schönes Accessoire zu ihrem Kleid.",
+    "definition": "She wore a beautiful accessory with her dress.",
+    "word_frequency": 13183
+  },
+  {
+    "word": "Sie trug ein schönes Dirndl zum Oktoberfest.",
+    "definition": "She wore a beautiful Dirndl to Oktoberfest.",
+    "word_frequency": 11503
+  },
+  {
+    "word": "Sie trug ein wunderschönes Collier.",
+    "definition": "She wore a beautiful necklace.",
+    "word_frequency": 25311
+  },
+  {
+    "word": "Sie trug ein wunderschönes Schmuckstück.",
+    "definition": "She wore a beautiful piece of jewelry.",
+    "word_frequency": 16752
+  },
+  {
+    "word": "Sie trug einen eleganten Midi-Rock.",
+    "definition": "She wore an elegant midi skirt.",
+    "word_frequency": 14885
+  },
+  {
+    "word": "Sie trug Pfefferspray zur Selbstverteidigung.",
+    "definition": "She carried pepper spray for self-defense.",
+    "word_frequency": 11976
+  },
+  {
+    "word": "Sie trägt ein Hörgerät, um besser hören zu können.",
+    "definition": "She wears a hearing aid to hear better.",
+    "word_frequency": 27058
+  },
+  {
+    "word": "Sie trägt ein schönes Oberteil.",
+    "definition": "She is wearing a beautiful top.",
+    "word_frequency": 14440
+  },
+  {
+    "word": "Sie trägt ein teures Parfüm.",
+    "definition": "She is wearing an expensive perfume.",
+    "word_frequency": 13321
+  },
+  {
+    "word": "Sie träumt davon, ein Topmodel zu werden.",
+    "definition": "She dreams of becoming a top model.",
+    "word_frequency": 16275
+  },
+  {
+    "word": "Sie verbrachten ihren Urlaub auf einem alten Landgut.",
+    "definition": "They spent their holiday at an old country estate.",
+    "word_frequency": 28894
+  },
+  {
+    "word": "Sie verteilten Flugblätter in der Stadt.",
+    "definition": "They distributed leaflets in the city.",
+    "word_frequency": 17804
+  },
+  {
+    "word": "Sie wohnen in einem großen Mehrfamilienhaus.",
+    "definition": "They live in a large apartment building.",
+    "word_frequency": 16992
+  },
+  {
+    "word": "Sie wohnen in einem kleinen Häuschen am See.",
+    "definition": "They live in a small house by the lake.",
+    "word_frequency": 8525
+  },
+  {
+    "word": "Sie wohnen in einem schönen Stadthaus im Zentrum.",
+    "definition": "They live in a beautiful townhouse in the center.",
+    "word_frequency": 19472
+  },
+  {
+    "word": "Sie wohnt im Downtown von Berlin.",
+    "definition": "She lives downtown in Berlin.",
+    "word_frequency": 21207
+  },
+  {
+    "word": "Sie wohnt in einem Penthouse mit Blick über die Stadt.",
+    "definition": "She lives in a penthouse with a view over the city.",
+    "word_frequency": 22392
+  },
+  {
+    "word": "Sie zeigte mir ein süßes Bildchen von ihrem Hund.",
+    "definition": "She showed me a cute small picture of her dog.",
+    "word_frequency": 20861
+  },
+  {
+    "word": "Sie änderte ihr Profilbild auf Social Media.",
+    "definition": "She changed her profile picture on social media.",
+    "word_frequency": 21359
+  },
+  {
+    "word": "Skispringen ist ein beliebter Wintersport.",
+    "definition": "Ski jumping is a popular winter sport.",
+    "word_frequency": 20103
+  },
+  {
+    "word": "Speichern Sie das File auf dem Desktop.",
+    "definition": "Save the file on the desktop.",
+    "word_frequency": 16128
+  },
+  {
+    "word": "Sport trägt zum allgemeinen Wohlbefinden bei.",
+    "definition": "Sport contributes to general well-being.",
+    "word_frequency": 10716
+  },
+  {
+    "word": "Sprichst du Slowakisch oder Tschechisch?",
+    "definition": "Do you speak Slovak or Czech?",
+    "word_frequency": 24743
+  },
+  {
+    "word": "Trinkwasser ist lebensnotwendig.",
+    "definition": "Drinking water is essential for life.",
+    "word_frequency": 6698
+  },
+  {
+    "word": "Unser Hauptziel ist es, die Kundenzufriedenheit zu erhöhen.",
+    "definition": "Our main goal is to increase customer satisfaction.",
+    "word_frequency": 17509
+  },
+  {
+    "word": "Unser Töchterchen spielt im Garten.",
+    "definition": "Our little daughter is playing in the garden.",
+    "word_frequency": 27660
+  },
+  {
+    "word": "Vergiss nicht, die richtigen Satzzeichen zu verwenden.",
+    "definition": "Don't forget to use the correct punctuation marks.",
+    "word_frequency": 24341
+  },
+  {
+    "word": "Viele alte Städte haben schöne Fachwerkhäuser.",
+    "definition": "Many old towns have beautiful half-timbered houses.",
+    "word_frequency": 27842
+  },
+  {
+    "word": "Viele Arbeitnehmer erhalten im November Weihnachtsgeld.",
+    "definition": "Many employees receive a Christmas bonus in November.",
+    "word_frequency": 25219
+  },
+  {
+    "word": "Viele Eltern beantragen Elterngeld.",
+    "definition": "Many parents apply for parental allowance.",
+    "word_frequency": 22612
+  },
+  {
+    "word": "Viele englische Wörter sind heute Fremdwörter im Deutschen.",
+    "definition": "Many English words are now loanwords in German.",
+    "word_frequency": 23004
+  },
+  {
+    "word": "Viele Familien erhalten Kindergeld vom Staat.",
+    "definition": "Many families receive child benefit from the state.",
+    "word_frequency": 10632
+  },
+  {
+    "word": "Viele kleine Geschäfte sind Familienunternehmen.",
+    "definition": "Many small shops are family businesses.",
+    "word_frequency": 12125
+  },
+  {
+    "word": "Viele Kreditkarten bieten Cashback-Programme an.",
+    "definition": "Many credit cards offer cashback programs.",
+    "word_frequency": 26539
+  },
+  {
+    "word": "Viele Leute arbeiten jetzt im Homeoffice.",
+    "definition": "Many people now work in the home office.",
+    "word_frequency": 23800
+  },
+  {
+    "word": "Viele Menschen engagieren sich im Ehrenamt.",
+    "definition": "Many people are involved in voluntary work.",
+    "word_frequency": 12325
+  },
+  {
+    "word": "Viele Menschen träumen vom Wohneigentum.",
+    "definition": "Many people dream of home ownership.",
+    "word_frequency": 29605
+  },
+  {
+    "word": "Viele Produkte sind aus Plastik.",
+    "definition": "Many products are made of plastic.",
+    "word_frequency": 4439
+  },
+  {
+    "word": "Viele Studenten leben im Studentenwohnheim.",
+    "definition": "Many students live in the student dormitory.",
+    "word_frequency": 29987
+  },
+  {
+    "word": "Viele träumen von einem Eigenheim.",
+    "definition": "Many dream of their own home.",
+    "word_frequency": 13452
+  },
+  {
+    "word": "Viele Unternehmen nutzen Leasing für ihre Fahrzeuge.",
+    "definition": "Many companies use leasing for their vehicles.",
+    "word_frequency": 16188
+  },
+  {
+    "word": "Viele Websites zeigen personalisierte Ads an.",
+    "definition": "Many websites display personalized ads.",
+    "word_frequency": 13184
+  },
+  {
+    "word": "Viele Windräder produzieren Strom.",
+    "definition": "Many wind turbines produce electricity.",
+    "word_frequency": 12055
+  },
+  {
+    "word": "Vor dem Auftritt hatte sie starkes Herzklopfen.",
+    "definition": "Before the performance, she had strong heart palpitations.",
+    "word_frequency": 26250
+  },
+  {
+    "word": "Vorsicht, das ist Gift!",
+    "definition": "Caution, that is poison!",
+    "word_frequency": 4648
+  },
+  {
+    "word": "Wale sind Säugetiere, keine Fische.",
+    "definition": "Whales are mammals, not fish.",
+    "word_frequency": 20436
+  },
+  {
+    "word": "Warte bitte ein Weilchen.",
+    "definition": "Please wait a little while.",
+    "word_frequency": 22141
+  },
+  {
+    "word": "Was ist das für ein komisches Viech?",
+    "definition": "What kind of strange critter is that?",
+    "word_frequency": 18567
+  },
+  {
+    "word": "Was ist dein Sternzeichen?",
+    "definition": "What is your zodiac sign?",
+    "word_frequency": 17075
+  },
+  {
+    "word": "Wasser enthält wichtige Mineralien.",
+    "definition": "Water contains important minerals.",
+    "word_frequency": 11006
+  },
+  {
+    "word": "Wasser ist ein wichtiges Element.",
+    "definition": "Water is an important element.",
+    "word_frequency": 2205
+  },
+  {
+    "word": "Welches Format hat diese Datei?",
+    "definition": "What format is this file?",
+    "word_frequency": 2257
+  },
+  {
+    "word": "Welches Transportmittel bevorzugst du?",
+    "definition": "Which means of transport do you prefer?",
+    "word_frequency": 19492
+  },
+  {
+    "word": "Wie hoch ist das Porto für diesen Brief?",
+    "definition": "How much is the postage for this letter?",
+    "word_frequency": 5299
+  },
+  {
+    "word": "Wir besuchen jedes Jahr das Volksfest.",
+    "definition": "We visit the public festival every year.",
+    "word_frequency": 13813
+  },
+  {
+    "word": "Wir besuchen jedes Jahr das Weinfest.",
+    "definition": "We visit the wine festival every year.",
+    "word_frequency": 29119
+  },
+  {
+    "word": "Wir besuchen morgen das Stadtmuseum.",
+    "definition": "We are visiting the city museum tomorrow.",
+    "word_frequency": 16768
+  },
+  {
+    "word": "Wir besuchten das Heimatmuseum, um mehr über die Geschichte der Stadt zu erfahren.",
+    "definition": "We visited the local history museum to learn more about the city's history.",
+    "word_frequency": 19040
+  },
+  {
+    "word": "Wir besuchten das Landesmuseum in der Hauptstadt.",
+    "definition": "We visited the state museum in the capital.",
+    "word_frequency": 17539
+  },
+  {
+    "word": "Wir besuchten das Opernhaus in Wien.",
+    "definition": "We visited the opera house in Vienna.",
+    "word_frequency": 19098
+  },
+  {
+    "word": "Wir besuchten das Planetarium, um die Sterne zu sehen.",
+    "definition": "We visited the planetarium to see the stars.",
+    "word_frequency": 26359
+  },
+  {
+    "word": "Wir besuchten ein Freilichtmuseum, um alte Häuser zu sehen.",
+    "definition": "We visited an open-air museum to see old houses.",
+    "word_frequency": 23759
+  },
+  {
+    "word": "Wir besuchten ein schönes Weingut in der Pfalz.",
+    "definition": "We visited a beautiful winery in the Palatinate.",
+    "word_frequency": 12269
+  },
+  {
+    "word": "Wir brauchen ein neues Cable für den Fernseher.",
+    "definition": "We need a new cable for the television.",
+    "word_frequency": 20872
+  },
+  {
+    "word": "Wir brauchen eine Breitband-Internetverbindung.",
+    "definition": "We need a broadband internet connection.",
+    "word_frequency": 17165
+  },
+  {
+    "word": "Wir brauchen mehr Baumaterial für das Haus.",
+    "definition": "We need more building material for the house.",
+    "word_frequency": 23679
+  },
+  {
+    "word": "Wir brauchen mehr Brennholz für den Kamin.",
+    "definition": "We need more firewood for the fireplace.",
+    "word_frequency": 18645
+  },
+  {
+    "word": "Wir fahren mit dem Kanu auf dem See.",
+    "definition": "We are going by canoe on the lake.",
+    "word_frequency": 12165
+  },
+  {
+    "word": "Wir fuhren mit dem Schlauchboot über den See.",
+    "definition": "We went across the lake in the inflatable boat.",
+    "word_frequency": 25561
+  },
+  {
+    "word": "Wir gehen am Wochenende zum Straßenfest.",
+    "definition": "We are going to the street festival on the weekend.",
+    "word_frequency": 29524
+  },
+  {
+    "word": "Wir gehen dieses Wochenende auf ein Musikfestival.",
+    "definition": "We are going to a music festival this weekend.",
+    "word_frequency": 1933
+  },
+  {
+    "word": "Wir gehen heute Abend ins Dancing.",
+    "definition": "We are going to the dancing tonight.",
+    "word_frequency": 15565
+  },
+  {
+    "word": "Wir gehen heute Abend ins Musical.",
+    "definition": "We are going to the musical tonight.",
+    "word_frequency": 4750
+  },
+  {
+    "word": "Wir gehen heute Abend zum Osterfeuer.",
+    "definition": "We are going to the Easter bonfire tonight.",
+    "word_frequency": 25102
+  },
+  {
+    "word": "Wir gehen im Sommer oft ins Strandbad.",
+    "definition": "We often go to the lido in summer.",
+    "word_frequency": 29040
+  },
+  {
+    "word": "Wir gehen ins Camp.",
+    "definition": "We are going to the camp.",
+    "word_frequency": 3792
+  },
+  {
+    "word": "Wir gehen ins Wahllokal, um unsere Stimme abzugeben.",
+    "definition": "We are going to the polling station to cast our vote.",
+    "word_frequency": 14974
+  },
+  {
+    "word": "Wir genossen das atemberaubende Panorama.",
+    "definition": "We enjoyed the breathtaking panorama.",
+    "word_frequency": 5029
+  },
+  {
+    "word": "Wir haben alte Dias gefunden.",
+    "definition": "We found old slides.",
+    "word_frequency": 14569
+  },
+  {
+    "word": "Wir haben ein Abteil im Zug reserviert.",
+    "definition": "We reserved a compartment on the train.",
+    "word_frequency": 16303
+  },
+  {
+    "word": "Wir haben ein großes Netzwerk von Freunden.",
+    "definition": "We have a large network of friends.",
+    "word_frequency": 2228
+  },
+  {
+    "word": "Wir haben ein kleines Zeitfenster für das Treffen.",
+    "definition": "We have a small time window for the meeting.",
+    "word_frequency": 17992
+  },
+  {
+    "word": "Wir haben ein schönes Quartier gefunden.",
+    "definition": "We found nice lodging.",
+    "word_frequency": 6225
+  },
+  {
+    "word": "Wir haben ein spannendes Rodeo besucht.",
+    "definition": "We visited an exciting rodeo.",
+    "word_frequency": 28056
+  },
+  {
+    "word": "Wir haben im Brauhaus zu Abend gegessen.",
+    "definition": "We had dinner at the brewpub.",
+    "word_frequency": 21863
+  },
+  {
+    "word": "Wir haben im Outlet viele Schnäppchen gefunden.",
+    "definition": "We found many bargains at the outlet.",
+    "word_frequency": 13757
+  },
+  {
+    "word": "Wir haben in einem typisch amerikanischen Diner gegessen.",
+    "definition": "We ate in a typical American diner.",
+    "word_frequency": 20247
+  },
+  {
+    "word": "Wir haben Karten für eine Vorstellung im Stadttheater.",
+    "definition": "We have tickets for a performance at the city theater.",
+    "word_frequency": 18534
+  },
+  {
+    "word": "Wir haben unseren Hund aus dem Tierheim adoptiert.",
+    "definition": "We adopted our dog from the animal shelter.",
+    "word_frequency": 8322
+  },
+  {
+    "word": "Wir hatten ein gutes Mahl zusammen.",
+    "definition": "We had a good meal together.",
+    "word_frequency": 15949
+  },
+  {
+    "word": "Wir hatten ein paar Häppchen vor dem Abendessen.",
+    "definition": "We had a few snacks before dinner.",
+    "word_frequency": 21265
+  },
+  {
+    "word": "Wir hörten die Sirenen und sahen das Blaulicht.",
+    "definition": "We heard the sirens and saw the blue light.",
+    "word_frequency": 11671
+  },
+  {
+    "word": "Wir leben im 21. Jahrhundert.",
+    "definition": "We live in the 21st century.",
+    "word_frequency": 938
+  },
+  {
+    "word": "Wir lernen aus diesem Lehrbuch.",
+    "definition": "We learn from this textbook.",
+    "word_frequency": 7426
+  },
+  {
+    "word": "Wir lieben Camping in den Bergen.",
+    "definition": "We love camping in the mountains.",
+    "word_frequency": 14104
+  },
+  {
+    "word": "Wir machen am Wochenende ein Barbecue.",
+    "definition": "We are having a barbecue on the weekend.",
+    "word_frequency": 26917
+  },
+  {
+    "word": "Wir machten einen Spaziergang im Naturschutzgebiet.",
+    "definition": "We took a walk in the nature reserve.",
+    "word_frequency": 13749
+  },
+  {
+    "word": "Wir mieteten ein Kajak für unsere Tour auf dem See.",
+    "definition": "We rented a kayak for our tour on the lake.",
+    "word_frequency": 15638
+  },
+  {
+    "word": "Wir mieteten ein kleines Cottage am See.",
+    "definition": "We rented a small cottage by the lake.",
+    "word_frequency": 27802
+  },
+  {
+    "word": "Wir müssen das Budget einhalten.",
+    "definition": "We have to stick to the budget.",
+    "word_frequency": 3529
+  },
+  {
+    "word": "Wir planen ein Klassentreffen für nächstes Jahr.",
+    "definition": "We are planning a class reunion for next year.",
+    "word_frequency": 25875
+  },
+  {
+    "word": "Wir sammeln Regenwasser im Garten.",
+    "definition": "We collect rainwater in the garden.",
+    "word_frequency": 17898
+  },
+  {
+    "word": "Wir saßen am Lagerfeuer und sangen Lieder.",
+    "definition": "We sat by the campfire and sang songs.",
+    "word_frequency": 11945
+  },
+  {
+    "word": "Wir sind auf dem Riesenrad gefahren.",
+    "definition": "We rode on the Ferris wheel.",
+    "word_frequency": 25967
+  },
+  {
+    "word": "Wir spazierten am Flussufer entlang.",
+    "definition": "We walked along the riverbank.",
+    "word_frequency": 27853
+  },
+  {
+    "word": "Wir spazierten am Ufer des Flusses entlang.",
+    "definition": "We walked along the bank of the river.",
+    "word_frequency": 3241
+  },
+  {
+    "word": "Wir spielten eine Runde Memory.",
+    "definition": "We played a round of Memory.",
+    "word_frequency": 13074
+  },
+  {
+    "word": "Wir standen auf dem Deck des Schiffes.",
+    "definition": "We stood on the deck of the ship.",
+    "word_frequency": 6628
+  },
+  {
+    "word": "Wir trafen uns in einem gemütlichen Bistro.",
+    "definition": "We met in a cozy bistro.",
+    "word_frequency": 16337
+  },
+  {
+    "word": "Wir trafen uns in einem gemütlichen Wirtshaus.",
+    "definition": "We met in a cozy inn.",
+    "word_frequency": 12945
+  },
+  {
+    "word": "Wir treffen uns im Foyer des Theaters.",
+    "definition": "We meet in the foyer of the theater.",
+    "word_frequency": 12575
+  },
+  {
+    "word": "Wir treffen uns oft im Kaffeehaus.",
+    "definition": "We often meet at the coffee house.",
+    "word_frequency": 24589
+  },
+  {
+    "word": "Wir verbrachten den Tag im Spa.",
+    "definition": "We spent the day at the spa.",
+    "word_frequency": 6692
+  },
+  {
+    "word": "Wir verbringen den Urlaub in unserem Sommerhaus am See.",
+    "definition": "We are spending the holiday in our summer house by the lake.",
+    "word_frequency": 29966
+  },
+  {
+    "word": "Wir wanderten durch ein großes Waldgebiet.",
+    "definition": "We hiked through a large forest area.",
+    "word_frequency": 25635
+  },
+  {
+    "word": "Wir wohnen im Dachgeschoss.",
+    "definition": "We live on the attic floor.",
+    "word_frequency": 12761
+  },
+  {
+    "word": "Wir wohnen in einem ruhigen Wohngebiet.",
+    "definition": "We live in a quiet residential area.",
+    "word_frequency": 12497
+  },
+  {
+    "word": "Wir übernachteten in einem gemütlichen Gästehaus.",
+    "definition": "We stayed overnight in a cozy guesthouse.",
+    "word_frequency": 19981
+  },
+  {
+    "word": "Wir übernachteten in einem günstigen Hostel.",
+    "definition": "We stayed overnight in a cheap hostel.",
+    "word_frequency": 20962
+  },
+  {
+    "word": "Zieh das Rollo hoch, es ist hell draußen.",
+    "definition": "Pull up the roller blind, it's bright outside.",
+    "word_frequency": 23150
+  },
+  {
+    "word": "Zum Frühstück gab es frisches Mettbrötchen.",
+    "definition": "For breakfast, there was a fresh minced pork roll.",
+    "word_frequency": 19082
+  },
+  {
+    "word": "Zum Nachtisch gab es Apfelmus mit Vanillesauce.",
+    "definition": "For dessert, there was apple puree with vanilla sauce.",
+    "word_frequency": 14659
+  },
+  {
+    "word": "Überall in der Stadt hängen Wahlplakate.",
+    "definition": "Election posters are hanging everywhere in the city.",
+    "word_frequency": 21455
+  },
+  {
+    "word": "Überall lag Konfetti nach der Party.",
+    "definition": "There was confetti everywhere after the party.",
+    "word_frequency": 24608
+  },
+  {
+    "word": "Übergewicht kann zu Gesundheitsproblemen führen.",
+    "definition": "Overweight can lead to health problems.",
+    "word_frequency": 8340
+  },
+  {
+    "word": "Überprüfen Sie Ihr Guthaben auf dem Konto.",
+    "definition": "Check your balance on the account.",
+    "word_frequency": 8819
+  }
+]

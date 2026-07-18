@@ -202,18 +202,18 @@ sense to you (e.g. `german_home`, `english_b2`).
 
 Entries without a valid CEFR level (A1–C2) are skipped by the generator; the rest are split one file per level.
 
-**German vocabulary** (`bahman_german_*.json`) — word + `der`/`die`/`das` for nouns, English translation, bilingual example sentence:
+**German vocabulary** (`german_<category>_<level>.json`) — word + `der`/`die`/`das` for nouns, English translation, and bilingual example sentence. Nouns are split by gender; other entries are split by part of speech.
 
-| Level | Words | Sentences (`bahman_german_sentences_*.json`) |
+| Level | Source records | Sentence records |
 |---|---|---|
-| A1 | 681 | 681 |
-| A2 | 2 060 | 2 060 |
-| B1 | 6 449 | 6 449 |
-| B2 | 8 288 | 8 288 |
-| C1 | 2 771 | 2 771 |
+| A1 | 675 | 678 |
+| A2 | 2 055 | 2 056 |
+| B1 | 6 440 | 6 445 |
+| B2 | 8 282 | 8 280 |
+| C1 | 2 770 | 2 770 |
 | C2 | 31 | 31 |
 
-**English vocabulary** (`bahman_english_*.json`) — word + definition:
+**English vocabulary** (`english_<category>_<level>.json`) — word + definition:
 
 | Level | Words |
 |---|---|
@@ -232,37 +232,35 @@ language for audio. Always pass `--audio-lang` (CLI) or fill **Audio language**
 (web UI):
 
 ```bash
-make practice user=bahman list=german_b1 opts="--audio-lang german"
+make practice user=bahman list=german_nouns_masculine_a1 opts="--audio-lang german"
 ```
 
 ## Generating word lists from the source decks
 
-Source files in `data/word_lists/` come from
+Raw source files in `data/sources/` come from
 [github.com/vbvss199/Language-Learning-decks](https://github.com/vbvss199/Language-Learning-decks).
-To update them, replace the relevant `.json` file with the latest version from
-that repository, then re-run `utils/generate_tartarus_json.py`.
+The Goethe PDFs are stored in `data/sources/goethe/`. Replace a source file and
+re-run `utils/generate_tartarus_json.py` when the source data changes.
 
-Supported source files: `german.json`, `english.json`.
+Supported source files: `data/sources/german.json`, `data/sources/english.json`.
 
 ```bash
-# Vocabulary mode — word + translation + bilingual example sentence
-python3 utils/generate_tartarus_json.py --lang german   --user bahman
-python3 utils/generate_tartarus_json.py --lang english  --user bahman
-
-# Sentence mode — word = native sentence, definition = English sentence
-python3 utils/generate_tartarus_json.py --lang german --user bahman --sentences
-
-# Single CEFR level only
-python3 utils/generate_tartarus_json.py --lang german --user bahman --cefr B1
-
-# Flashcard-quality entries only (filters to useful_for_flashcard=true)
+python3 utils/generate_tartarus_json.py --all
 ```
 
-**Vocabulary mode** output: `<user>_<lang>_<level>.json`
-- German: `der`/`die`/`das` + word for nouns; definition = translation + bilingual example.
-- English: word as-is; definition = translation + example sentence.
+The generator creates category and CEFR files directly in `data/word_lists/`.
+German files include matching sentence files, for example:
 
-**Sentence mode** output: `<user>_<lang>_sentences_<level>.json`
+- `german_nouns_masculine_a1.json`
+- `german_nouns_masculine_sentences_a1.json`
+- `german_verbs_b1.json`
+- `german_verbs_sentences_b1.json`
+
+Each generated record may include `word_frequency`. Lower frequency ranks are
+more common, and the practice backend uses them to prioritize common words.
+
+Sentence files use the native sentence as `word` and its English translation as
+`definition`.
 - **word** — native sentence (e.g. `"Er will Arzt sein."` / `"彼は良い人です。"`)
 - **definition** — English translation (e.g. `"He wants to be a doctor."`)
 
@@ -398,9 +396,14 @@ web/
   app.js                  # frontend logic
 data/
   tartarus.db             # SQLite database (auto-created)
+  sources/
+    german.json           # raw German source deck
+    english.json          # raw English source deck
+    goethe/               # authoritative Goethe PDFs
   word_lists/
-    german.json           # source deck: 20 280 German words (A1–C2)
-    english.json          # source deck: 20 708 English words (A1–C2)
+    german_<category>_<level>.json
+    german_<category>_sentences_<level>.json
+    english_<category>_<level>.json
     <user>_<lang>.json    # generated / hand-curated word lists
 ```
 

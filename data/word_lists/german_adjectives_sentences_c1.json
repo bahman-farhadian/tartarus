@@ -1,0 +1,1837 @@
+[
+  {
+    "word": "Alle Bürger über 18 sind stimmberechtigt.",
+    "definition": "All citizens over 18 are eligible to vote.",
+    "word_frequency": 23952
+  },
+  {
+    "word": "Alle Menschen sollten gleichberechtigt sein.",
+    "definition": "All people should have equal rights.",
+    "word_frequency": 14836
+  },
+  {
+    "word": "Antisemitische Äußerungen sind inakzeptabel.",
+    "definition": "Antisemitic statements are unacceptable.",
+    "word_frequency": 11282
+  },
+  {
+    "word": "Bitte beachten Sie die obigen Anweisungen.",
+    "definition": "Please note the above instructions.",
+    "word_frequency": 11012
+  },
+  {
+    "word": "Bitte beachten Sie die vorstehenden Anweisungen.",
+    "definition": "Please note the preceding instructions.",
+    "word_frequency": 21794
+  },
+  {
+    "word": "Bitte melden Sie etwaige Probleme sofort.",
+    "definition": "Please report any possible problems immediately.",
+    "word_frequency": 8511
+  },
+  {
+    "word": "Das aerodynamische Design verbessert die Leistung.",
+    "definition": "The aerodynamic design improves performance.",
+    "word_frequency": 23642
+  },
+  {
+    "word": "Das Design ist asymmetrisch.",
+    "definition": "The design is asymmetrical.",
+    "word_frequency": 29170
+  },
+  {
+    "word": "Das Ergebnis wird unweigerlich eintreten.",
+    "definition": "The result will inevitably occur.",
+    "word_frequency": 12477
+  },
+  {
+    "word": "Das Gebäude hat eine beeindruckende architektonische Gestaltung.",
+    "definition": "The building has an impressive architectural design.",
+    "word_frequency": 18020
+  },
+  {
+    "word": "Das Gemälde hat einen hohen ästhetischen Wert.",
+    "definition": "The painting has high aesthetic value.",
+    "word_frequency": 11633
+  },
+  {
+    "word": "Das Gesetz wurde als verfassungswidrig erklärt.",
+    "definition": "The law was declared unconstitutional.",
+    "word_frequency": 12259
+  },
+  {
+    "word": "Das hat volkswirtschaftliche Auswirkungen.",
+    "definition": "That has economic implications.",
+    "word_frequency": 26843
+  },
+  {
+    "word": "Das hat weitreichende Konsequenzen.",
+    "definition": "That has far-reaching consequences.",
+    "word_frequency": 11625
+  },
+  {
+    "word": "Das hatte tiefgreifende Auswirkungen.",
+    "definition": "That had profound effects.",
+    "word_frequency": 23565
+  },
+  {
+    "word": "Das ist ein alteingesessenes Unternehmen.",
+    "definition": "That is a long-established company.",
+    "word_frequency": 25675
+  },
+  {
+    "word": "Das ist ein dreiköpfiges Team.",
+    "definition": "This is a three-headed team.",
+    "word_frequency": 23424
+  },
+  {
+    "word": "Das ist ein elektromagnetisches Feld.",
+    "definition": "That is an electromagnetic field.",
+    "word_frequency": 18688
+  },
+  {
+    "word": "Das ist ein ernstzunehmendes Problem.",
+    "definition": "This is a serious problem.",
+    "word_frequency": 29243
+  },
+  {
+    "word": "Das ist ein exemplarischer Fall.",
+    "definition": "That is an exemplary case.",
+    "word_frequency": 13676
+  },
+  {
+    "word": "Das ist ein imperialer Palast.",
+    "definition": "That is an imperial palace.",
+    "word_frequency": 21974
+  },
+  {
+    "word": "Das ist ein integraler Bestandteil des Systems.",
+    "definition": "This is an integral part of the system.",
+    "word_frequency": 23811
+  },
+  {
+    "word": "Das ist ein konzeptioneller Ansatz zur Problemlösung.",
+    "definition": "This is a conceptual approach to problem-solving.",
+    "word_frequency": 28417
+  },
+  {
+    "word": "Das ist ein neo-klassischer Stil.",
+    "definition": "That is a neo-classical style.",
+    "word_frequency": 6445
+  },
+  {
+    "word": "Das ist ein pseudo-wissenschaftlicher Ansatz.",
+    "definition": "That is a pseudo-scientific approach.",
+    "word_frequency": 8433
+  },
+  {
+    "word": "Das ist ein public event.",
+    "definition": "This is a public event.",
+    "word_frequency": 3829
+  },
+  {
+    "word": "Das ist ein ultra-schnelles Auto.",
+    "definition": "That is an ultra-fast car.",
+    "word_frequency": 5516
+  },
+  {
+    "word": "Das ist ein wiederkehrendes Problem.",
+    "definition": "This is a recurring problem.",
+    "word_frequency": 14056
+  },
+  {
+    "word": "Das ist ein äquivalenter Wert.",
+    "definition": "That is an equivalent value.",
+    "word_frequency": 11839
+  },
+  {
+    "word": "Das ist ein übergreifendes Konzept.",
+    "definition": "This is an overarching concept.",
+    "word_frequency": 28198
+  },
+  {
+    "word": "Das ist eine aussenpolitische Entscheidung.",
+    "definition": "That is a foreign policy decision.",
+    "word_frequency": 19563
+  },
+  {
+    "word": "Das ist eine geologische Formation.",
+    "definition": "That is a geological formation.",
+    "word_frequency": 12356
+  },
+  {
+    "word": "Das ist eine interessante psychologische Studie.",
+    "definition": "That is an interesting psychological study.",
+    "word_frequency": 6344
+  },
+  {
+    "word": "Das ist eine normative Aussage.",
+    "definition": "That is a normative statement.",
+    "word_frequency": 28946
+  },
+  {
+    "word": "Das ist eine physiologische Reaktion des Körpers.",
+    "definition": "That is a physiological reaction of the body.",
+    "word_frequency": 23489
+  },
+  {
+    "word": "Das ist eine rein administrative Angelegenheit.",
+    "definition": "That is a purely administrative matter.",
+    "word_frequency": 17134
+  },
+  {
+    "word": "Das ist eine schwachsinnige Idee.",
+    "definition": "That's an idiotic idea.",
+    "word_frequency": 29014
+  },
+  {
+    "word": "Das ist eine soziologische Studie.",
+    "definition": "This is a sociological study.",
+    "word_frequency": 22094
+  },
+  {
+    "word": "Das ist eine strafrechtliche Angelegenheit.",
+    "definition": "This is a criminal matter.",
+    "word_frequency": 12911
+  },
+  {
+    "word": "Das ist eine verfassungsrechtliche Frage.",
+    "definition": "That is a constitutional question.",
+    "word_frequency": 21121
+  },
+  {
+    "word": "Das ist eine völkerrechtliche Frage.",
+    "definition": "That is a question of international law.",
+    "word_frequency": 26451
+  },
+  {
+    "word": "Das ist hochgradig unwahrscheinlich.",
+    "definition": "That is highly unlikely.",
+    "word_frequency": 14387
+  },
+  {
+    "word": "Das ist nachweislich falsch.",
+    "definition": "That is demonstrably false.",
+    "word_frequency": 7436
+  },
+  {
+    "word": "Das ist nur eine imaginäre Zahl.",
+    "definition": "That is just an imaginary number.",
+    "word_frequency": 18123
+  },
+  {
+    "word": "Das ist von minderem Wert.",
+    "definition": "That is of inferior value.",
+    "word_frequency": 7993
+  },
+  {
+    "word": "Das Material erwies sich als untauglich für den Bau.",
+    "definition": "The material proved to be unsuitable for construction.",
+    "word_frequency": 24784
+  },
+  {
+    "word": "Das Material ist urheberrechtlich geschützt.",
+    "definition": "The material is protected by copyright.",
+    "word_frequency": 19502
+  },
+  {
+    "word": "Das Problem erfordert eine institutionelle Lösung.",
+    "definition": "The problem requires an institutional solution.",
+    "word_frequency": 15630
+  },
+  {
+    "word": "Das Problem hat weltgrosse Ausmasse angenommen.",
+    "definition": "The problem has taken on world-sized proportions.",
+    "word_frequency": 29122
+  },
+  {
+    "word": "Das Problem ist gravierend.",
+    "definition": "The problem is serious.",
+    "word_frequency": 14603
+  },
+  {
+    "word": "Das Problem ist systemisch bedingt.",
+    "definition": "The problem is systemically caused.",
+    "word_frequency": 21418
+  },
+  {
+    "word": "Das Problem ist weitestgehend gelöst.",
+    "definition": "The problem is largely solved.",
+    "word_frequency": 7474
+  },
+  {
+    "word": "Das Projekt hat große städtebauliche Auswirkungen.",
+    "definition": "The project has major urban planning implications.",
+    "word_frequency": 22459
+  },
+  {
+    "word": "Das Projekt ist interdisziplinär angelegt.",
+    "definition": "The project is designed to be interdisciplinary.",
+    "word_frequency": 16955
+  },
+  {
+    "word": "Das Projekt ist noch angedacht.",
+    "definition": "The project is still being considered.",
+    "word_frequency": 17716
+  },
+  {
+    "word": "Das Regime war totalitär und unterdrückte die Bevölkerung.",
+    "definition": "The regime was totalitarian and oppressed the population.",
+    "word_frequency": 18236
+  },
+  {
+    "word": "Das Schiff gilt seit Wochen als verschollen.",
+    "definition": "The ship has been considered missing for weeks.",
+    "word_frequency": 14274
+  },
+  {
+    "word": "Das Stück sollte allegro gespielt werden.",
+    "definition": "The piece should be played allegro.",
+    "word_frequency": 24041
+  },
+  {
+    "word": "Das System hat eine duale Funktion.",
+    "definition": "The system has a dual function.",
+    "word_frequency": 9082
+  },
+  {
+    "word": "Das System verwendet eine embedded Software.",
+    "definition": "The system uses embedded software.",
+    "word_frequency": 23738
+  },
+  {
+    "word": "Das Urteil ist nun rechtskräftig.",
+    "definition": "The judgment is now legally binding.",
+    "word_frequency": 11576
+  },
+  {
+    "word": "Das Verfahren ist noch anhängig.",
+    "definition": "The procedure is still pending.",
+    "word_frequency": 24841
+  },
+  {
+    "word": "Das war ein beispielloser Erfolg.",
+    "definition": "That was an unprecedented success.",
+    "word_frequency": 29186
+  },
+  {
+    "word": "Das war ein clever erdachter Plan.",
+    "definition": "That was a cleverly devised plan.",
+    "word_frequency": 25779
+  },
+  {
+    "word": "Das war ein glorreicher Sieg.",
+    "definition": "That was a glorious victory.",
+    "word_frequency": 20936
+  },
+  {
+    "word": "Das war ein perfider Plan.",
+    "definition": "That was a perfidious plan.",
+    "word_frequency": 23889
+  },
+  {
+    "word": "Das war ein wahrhaft magischer Moment.",
+    "definition": "That was a truly magical moment.",
+    "word_frequency": 13818
+  },
+  {
+    "word": "Das war eine dreiste Lüge.",
+    "definition": "That was an audacious lie.",
+    "word_frequency": 10066
+  },
+  {
+    "word": "Das war eine herausragende Leistung.",
+    "definition": "That was an outstanding performance.",
+    "word_frequency": 7276
+  },
+  {
+    "word": "Das war eine hochkarätige Leistung.",
+    "definition": "That was a top-class performance.",
+    "word_frequency": 27053
+  },
+  {
+    "word": "Das war eine sehr gewinnbringende Investition.",
+    "definition": "That was a very profitable investment.",
+    "word_frequency": 22289
+  },
+  {
+    "word": "Das war eine ungeheuerliche Behauptung.",
+    "definition": "That was an outrageous claim.",
+    "word_frequency": 27668
+  },
+  {
+    "word": "Das war ungemein schwierig.",
+    "definition": "That was immensely difficult.",
+    "word_frequency": 8326
+  },
+  {
+    "word": "Das Wetter in den Bergen ist oft unberechenbar.",
+    "definition": "The weather in the mountains is often unpredictable.",
+    "word_frequency": 17347
+  },
+  {
+    "word": "Das wird zwangsläufig zu Problemen führen.",
+    "definition": "That will inevitably lead to problems.",
+    "word_frequency": 5526
+  },
+  {
+    "word": "Der agierende Bürgermeister hielt eine Rede.",
+    "definition": "The acting mayor gave a speech.",
+    "word_frequency": 18604
+  },
+  {
+    "word": "Der alte Vertrag ist nun hinfällig.",
+    "definition": "The old contract is now obsolete.",
+    "word_frequency": 15623
+  },
+  {
+    "word": "Der Chef kam höchstpersönlich, um die Auszeichnung zu überreichen.",
+    "definition": "The boss came in person to present the award.",
+    "word_frequency": 16415
+  },
+  {
+    "word": "Der ersehnte Urlaub stand endlich vor der Tür.",
+    "definition": "The longed-for vacation was finally around the corner.",
+    "word_frequency": 25351
+  },
+  {
+    "word": "Der Film hatte eine erotische Szene.",
+    "definition": "The film had an erotic scene.",
+    "word_frequency": 8808
+  },
+  {
+    "word": "Der Fortschritt ist unaufhaltsam.",
+    "definition": "Progress is unstoppable.",
+    "word_frequency": 19498
+  },
+  {
+    "word": "Der Himmel war in einem tiefen Azurblau.",
+    "definition": "The sky was in a deep azure blue.",
+    "word_frequency": 16586
+  },
+  {
+    "word": "Der Kandidat galt als unwählbar.",
+    "definition": "The candidate was considered unelectable.",
+    "word_frequency": 25617
+  },
+  {
+    "word": "Der König war gnädig zu seinen Untertanen.",
+    "definition": "The king was merciful to his subjects.",
+    "word_frequency": 15613
+  },
+  {
+    "word": "Der Lehrer verwendete eine didaktisch sinnvolle Methode.",
+    "definition": "The teacher used a didactically sensible method.",
+    "word_frequency": 24908
+  },
+  {
+    "word": "Der Lärm war unerträglich.",
+    "definition": "The noise was unbearable.",
+    "word_frequency": 6832
+  },
+  {
+    "word": "Der mutmassliche Täter wurde festgenommen.",
+    "definition": "The alleged perpetrator was arrested.",
+    "word_frequency": 9439
+  },
+  {
+    "word": "Der nominelle Wert des Produkts ist höher als der reale.",
+    "definition": "The nominal value of the product is higher than the real one.",
+    "word_frequency": 29415
+  },
+  {
+    "word": "Der Regen fiel unaufhörlich.",
+    "definition": "The rain fell incessantly.",
+    "word_frequency": 26434
+  },
+  {
+    "word": "Der Spieler wechselte ablösefrei zum neuen Verein.",
+    "definition": "The player moved to the new club transfer-free.",
+    "word_frequency": 26479
+  },
+  {
+    "word": "Der Stoff war von Wasser durchdrungen.",
+    "definition": "The fabric was permeated by water.",
+    "word_frequency": 29705
+  },
+  {
+    "word": "Der Sturm hatte verheerende Auswirkungen.",
+    "definition": "The storm had devastating effects.",
+    "word_frequency": 16047
+  },
+  {
+    "word": "Der Text hat einige stilistische Schwächen.",
+    "definition": "The text has some stylistic weaknesses.",
+    "word_frequency": 16769
+  },
+  {
+    "word": "Der uralte Baum stand seit Jahrhunderten dort.",
+    "definition": "The ancient tree had stood there for centuries.",
+    "word_frequency": 23984
+  },
+  {
+    "word": "Der urzeitliche Wald war voller Geheimnisse.",
+    "definition": "The primeval forest was full of secrets.",
+    "word_frequency": 4690
+  },
+  {
+    "word": "Der vermeintliche Täter wurde festgenommen.",
+    "definition": "The alleged perpetrator was arrested.",
+    "word_frequency": 5622
+  },
+  {
+    "word": "Der Vertrag wurde für nichtig erklärt.",
+    "definition": "The contract was declared null and void.",
+    "word_frequency": 14215
+  },
+  {
+    "word": "Der vorhergehende Absatz war wichtig.",
+    "definition": "The preceding paragraph was important.",
+    "word_frequency": 16057
+  },
+  {
+    "word": "Der Wein schmeckt etwas sur.",
+    "definition": "The wine tastes a bit tart.",
+    "word_frequency": 5050
+  },
+  {
+    "word": "Die abendländische Kultur hat viele Einflüsse.",
+    "definition": "Western culture has many influences.",
+    "word_frequency": 26101
+  },
+  {
+    "word": "Die Abteilung ist federführend bei diesem Projekt.",
+    "definition": "The department is leading this project.",
+    "word_frequency": 24139
+  },
+  {
+    "word": "Die agrare Wirtschaft ist in dieser Region sehr wichtig.",
+    "definition": "The agrarian economy is very important in this region.",
+    "word_frequency": 15525
+  },
+  {
+    "word": "Die alte Tradition blieb unangetastet.",
+    "definition": "The old tradition remained untouched.",
+    "word_frequency": 26816
+  },
+  {
+    "word": "Die Arbeitsbedingungen waren unzumutbar.",
+    "definition": "The working conditions were unacceptable.",
+    "word_frequency": 25195
+  },
+  {
+    "word": "Die atomare Energie ist ein komplexes Thema.",
+    "definition": "Atomic energy is a complex topic.",
+    "word_frequency": 24455
+  },
+  {
+    "word": "Die Aufgabe wurde vollumfänglich erfüllt.",
+    "definition": "The task was fully completed.",
+    "word_frequency": 24002
+  },
+  {
+    "word": "Die aufgewendete Zeit war es wert.",
+    "definition": "The time expended was worth it.",
+    "word_frequency": 22915
+  },
+  {
+    "word": "Die aufständischen Truppen marschierten auf die Hauptstadt zu.",
+    "definition": "The rebellious troops marched towards the capital.",
+    "word_frequency": 11652
+  },
+  {
+    "word": "Die Aussicht vom Berg war atemberaubend.",
+    "definition": "The view from the mountain was breathtaking.",
+    "word_frequency": 16320
+  },
+  {
+    "word": "Die automotive Industrie ist ein wichtiger Wirtschaftszweig.",
+    "definition": "The automotive industry is an important economic sector.",
+    "word_frequency": 14773
+  },
+  {
+    "word": "Die Bedingungen im Gefängnis waren unmenschlich.",
+    "definition": "The conditions in the prison were inhumane.",
+    "word_frequency": 16283
+  },
+  {
+    "word": "Die Bewegung hat identitäre Ansichten.",
+    "definition": "The movement has identitarian views.",
+    "word_frequency": 19662
+  },
+  {
+    "word": "Die Beweise waren dürftig.",
+    "definition": "The evidence was meager.",
+    "word_frequency": 18986
+  },
+  {
+    "word": "Die Brücke hatte eine elegante, geschwungene Form.",
+    "definition": "The bridge had an elegant, curved shape.",
+    "word_frequency": 21945
+  },
+  {
+    "word": "Die byzantinische Kunst ist sehr beeindruckend.",
+    "definition": "Byzantine art is very impressive.",
+    "word_frequency": 18650
+  },
+  {
+    "word": "Die demographische Entwicklung ist besorgniserregend.",
+    "definition": "The demographic development is concerning.",
+    "word_frequency": 21199
+  },
+  {
+    "word": "Die Dokumente sind für alle Mitglieder einsehbar.",
+    "definition": "The documents are viewable for all members.",
+    "word_frequency": 14812
+  },
+  {
+    "word": "Die dortige Bevölkerung war sehr freundlich.",
+    "definition": "The local population was very friendly.",
+    "word_frequency": 3659
+  },
+  {
+    "word": "Die eidgenössischen Wahlen finden alle vier Jahre statt.",
+    "definition": "The federal elections take place every four years.",
+    "word_frequency": 18060
+  },
+  {
+    "word": "Die Entscheidung ist unwiderruflich.",
+    "definition": "The decision is irrevocable.",
+    "word_frequency": 27278
+  },
+  {
+    "word": "Die Entwicklung war rapid.",
+    "definition": "The development was rapid.",
+    "word_frequency": 8559
+  },
+  {
+    "word": "Die ergebende Summe war überraschend hoch.",
+    "definition": "The resulting sum was surprisingly high.",
+    "word_frequency": 22267
+  },
+  {
+    "word": "Die Ergebnisse der Studie waren ernüchternd.",
+    "definition": "The results of the study were sobering.",
+    "word_frequency": 26196
+  },
+  {
+    "word": "Die erhabene Schönheit der Berge beeindruckte sie.",
+    "definition": "The sublime beauty of the mountains impressed her.",
+    "word_frequency": 18070
+  },
+  {
+    "word": "Die forensische Untersuchung ergab neue Hinweise.",
+    "definition": "The forensic investigation yielded new clues.",
+    "word_frequency": 28808
+  },
+  {
+    "word": "Die gentechnische Veränderung von Pflanzen ist umstritten.",
+    "definition": "The genetic engineering modification of plants is controversial.",
+    "word_frequency": 21585
+  },
+  {
+    "word": "Die germanischen Sprachen sind eine Sprachfamilie.",
+    "definition": "The Germanic languages are a language family.",
+    "word_frequency": 10088
+  },
+  {
+    "word": "Die gothaer Spezialität ist bekannt.",
+    "definition": "The Gothan specialty is well-known.",
+    "word_frequency": 22297
+  },
+  {
+    "word": "Die Gruppe wurde als gewaltbereit eingestuft.",
+    "definition": "The group was classified as prone to violence.",
+    "word_frequency": 25817
+  },
+  {
+    "word": "Die herrschende Meinung ist, dass wir handeln müssen.",
+    "definition": "The prevailing opinion is that we must act.",
+    "word_frequency": 8524
+  },
+  {
+    "word": "Die Hitze war mörderisch.",
+    "definition": "The heat was tremendous.",
+    "word_frequency": 24667
+  },
+  {
+    "word": "Die imperialistische Politik führte zu Konflikten.",
+    "definition": "The imperialistic policy led to conflicts.",
+    "word_frequency": 28860
+  },
+  {
+    "word": "Die indigenen Völker haben eine reiche Kultur.",
+    "definition": "The indigenous peoples have a rich culture.",
+    "word_frequency": 20965
+  },
+  {
+    "word": "Die Informationen waren spärlich.",
+    "definition": "The information was sparse.",
+    "word_frequency": 14471
+  },
+  {
+    "word": "Die konstituierende Sitzung des Parlaments findet nächste Woche statt.",
+    "definition": "The constituent session of parliament will take place next week.",
+    "word_frequency": 22338
+  },
+  {
+    "word": "Die Kosten betragen annähernd 100 Euro.",
+    "definition": "The costs are approximately 100 Euros.",
+    "word_frequency": 4228
+  },
+  {
+    "word": "Die Kosten stiegen überproportional an.",
+    "definition": "The costs increased disproportionately.",
+    "word_frequency": 21150
+  },
+  {
+    "word": "Die Krankheit und die damit einhergehenden Symptome.",
+    "definition": "The disease and the accompanying symptoms.",
+    "word_frequency": 18686
+  },
+  {
+    "word": "Die Kritik war vernichtend.",
+    "definition": "The criticism was devastating.",
+    "word_frequency": 29090
+  },
+  {
+    "word": "Die Landschaft war wüst und leer.",
+    "definition": "The landscape was desolate and empty.",
+    "word_frequency": 18589
+  },
+  {
+    "word": "Die letztgenannte Option ist die beste.",
+    "definition": "The last-mentioned option is the best.",
+    "word_frequency": 24251
+  },
+  {
+    "word": "Die linksradikale Gruppe protestierte gegen die Regierung.",
+    "definition": "The left-wing radical group protested against the government.",
+    "word_frequency": 26314
+  },
+  {
+    "word": "Die liturgische Musik war sehr schön.",
+    "definition": "The liturgical music was very beautiful.",
+    "word_frequency": 22006
+  },
+  {
+    "word": "Die mediale Berichterstattung war sehr intensiv.",
+    "definition": "The media coverage was very intense.",
+    "word_frequency": 9436
+  },
+  {
+    "word": "Die Menschenwürde ist unantastbar.",
+    "definition": "Human dignity is inviolable.",
+    "word_frequency": 20768
+  },
+  {
+    "word": "Die Mischung sollte homogen sein.",
+    "definition": "The mixture should be homogeneous.",
+    "word_frequency": 16657
+  },
+  {
+    "word": "Die molekulare Struktur ist sehr komplex.",
+    "definition": "The molecular structure is very complex.",
+    "word_frequency": 20666
+  },
+  {
+    "word": "Die märkische Landschaft ist sehr flach.",
+    "definition": "The Marchian landscape is very flat.",
+    "word_frequency": 16709
+  },
+  {
+    "word": "Die Nachricht war erschütternd für alle Beteiligten.",
+    "definition": "The news was shattering for everyone involved.",
+    "word_frequency": 26575
+  },
+  {
+    "word": "Die napoleonischen Kriege prägten Europa.",
+    "definition": "The Napoleonic Wars shaped Europe.",
+    "word_frequency": 29412
+  },
+  {
+    "word": "Die nationalsozialistische Ideologie war verheerend.",
+    "definition": "The National Socialist ideology was devastating.",
+    "word_frequency": 8546
+  },
+  {
+    "word": "Die neue Software ist sehr functional.",
+    "definition": "The new software is very functional.",
+    "word_frequency": 24959
+  },
+  {
+    "word": "Die orale Einnahme des Medikaments ist wichtig.",
+    "definition": "The oral intake of the medication is important.",
+    "word_frequency": 11014
+  },
+  {
+    "word": "Die Partei hat eine sozialdemokratische Ausrichtung.",
+    "definition": "The party has a social democratic orientation.",
+    "word_frequency": 9979
+  },
+  {
+    "word": "Die Partei vertritt rechtspopulistische Ansichten.",
+    "definition": "The party represents right-wing populist views.",
+    "word_frequency": 25964
+  },
+  {
+    "word": "Die provinziale Stadt hatte ihren eigenen Charme.",
+    "definition": "The provincial town had its own charm.",
+    "word_frequency": 22789
+  },
+  {
+    "word": "Die psychosoziale Unterstützung ist sehr wichtig.",
+    "definition": "Psychosocial support is very important.",
+    "word_frequency": 28978
+  },
+  {
+    "word": "Die Regelung gilt rückwirkend ab dem ersten Januar.",
+    "definition": "The regulation applies retroactively from January first.",
+    "word_frequency": 12887
+  },
+  {
+    "word": "Die Sicherheit der Bürger ist vorrangig.",
+    "definition": "The safety of the citizens is primary.",
+    "word_frequency": 6837
+  },
+  {
+    "word": "Die Situation hat sich zugespitzt.",
+    "definition": "The situation has escalated.",
+    "word_frequency": 18598
+  },
+  {
+    "word": "Die Situation war einfach grotesk.",
+    "definition": "The situation was simply grotesque.",
+    "word_frequency": 16933
+  },
+  {
+    "word": "Die Statue hatte ein gemeisseltes Gesicht.",
+    "definition": "The statue had a chiseled face.",
+    "word_frequency": 27444
+  },
+  {
+    "word": "Die Statue hatte hörnerne Flügel.",
+    "definition": "The statue had horny wings.",
+    "word_frequency": 27484
+  },
+  {
+    "word": "Die Stimmung war apokalyptisch nach dem Sturm.",
+    "definition": "The mood was apocalyptic after the storm.",
+    "word_frequency": 28220
+  },
+  {
+    "word": "Die Stimmung war ziemlich mau.",
+    "definition": "The mood was quite poor.",
+    "word_frequency": 11547
+  },
+  {
+    "word": "Die topographische Karte zeigte alle Höhenunterschiede.",
+    "definition": "The topographical map showed all elevation differences.",
+    "word_frequency": 23568
+  },
+  {
+    "word": "Die Ursache des Problems ist augenscheinlich.",
+    "definition": "The cause of the problem is apparent.",
+    "word_frequency": 11656
+  },
+  {
+    "word": "Die vorderste Reihe war bereits besetzt.",
+    "definition": "The foremost row was already occupied.",
+    "word_frequency": 27299
+  },
+  {
+    "word": "Die vorgehaltene Waffe war eine Attrappe.",
+    "definition": "The held-up weapon was a dummy.",
+    "word_frequency": 29581
+  },
+  {
+    "word": "Die vorgenannten Punkte sind wichtig.",
+    "definition": "The aforementioned points are important.",
+    "word_frequency": 18884
+  },
+  {
+    "word": "Die vorherrschende Meinung ist, dass es regnen wird.",
+    "definition": "The prevailing opinion is that it will rain.",
+    "word_frequency": 16058
+  },
+  {
+    "word": "Die vorliegenden Daten bestätigen unsere Hypothese.",
+    "definition": "The present data confirms our hypothesis.",
+    "word_frequency": 5328
+  },
+  {
+    "word": "Die Zeitung hat eine überregionale Auflage.",
+    "definition": "The newspaper has a supraregional circulation.",
+    "word_frequency": 12505
+  },
+  {
+    "word": "Die Zusage erfolgt vorbehaltlich der Genehmigung.",
+    "definition": "The approval is subject to permission.",
+    "word_frequency": 26448
+  },
+  {
+    "word": "Die Änderungen wurden sukzessive eingeführt.",
+    "definition": "The changes were introduced gradually.",
+    "word_frequency": 14716
+  },
+  {
+    "word": "Die übergeordnete Behörde traf die Entscheidung.",
+    "definition": "The superior authority made the decision.",
+    "word_frequency": 17124
+  },
+  {
+    "word": "Diese Aspekte wurden in der Diskussion ausgeklammert.",
+    "definition": "These aspects were excluded from the discussion.",
+    "word_frequency": 27356
+  },
+  {
+    "word": "Diese Entscheidung ist alternativlos.",
+    "definition": "This decision is without alternative.",
+    "word_frequency": 21827
+  },
+  {
+    "word": "Diese Maßnahme ist unumgänglich für den Erfolg.",
+    "definition": "This measure is unavoidable for success.",
+    "word_frequency": 15215
+  },
+  {
+    "word": "Diese Mode ist längst passe.",
+    "definition": "This fashion is long passé.",
+    "word_frequency": 9949
+  },
+  {
+    "word": "Diese Regelung ist nicht durchsetzbar.",
+    "definition": "This regulation is not enforceable.",
+    "word_frequency": 28773
+  },
+  {
+    "word": "Diese Situation ist untragbar geworden.",
+    "definition": "This situation has become unbearable.",
+    "word_frequency": 24785
+  },
+  {
+    "word": "Diese Technologie ist inzwischen obsolet.",
+    "definition": "This technology is now obsolete.",
+    "word_frequency": 19095
+  },
+  {
+    "word": "Dieses Werkzeug ist unentbehrlich für die Arbeit.",
+    "definition": "This tool is indispensable for the work.",
+    "word_frequency": 23976
+  },
+  {
+    "word": "Ein gesundes Leben ist immer erstrebenswert.",
+    "definition": "A healthy life is always desirable.",
+    "word_frequency": 24531
+  },
+  {
+    "word": "Ein linder Wind wehte durch die Bäume.",
+    "definition": "A mild wind blew through the trees.",
+    "word_frequency": 23086
+  },
+  {
+    "word": "Er arbeitet für eine renommierte Firma.",
+    "definition": "He works for a reputable company.",
+    "word_frequency": 8437
+  },
+  {
+    "word": "Er arbeitet in der pharmazeutischen Industrie.",
+    "definition": "He works in the pharmaceutical industry.",
+    "word_frequency": 21348
+  },
+  {
+    "word": "Er arbeitet in einer psychiatrischen Klinik.",
+    "definition": "He works in a psychiatric clinic.",
+    "word_frequency": 12211
+  },
+  {
+    "word": "Er bat händeringend um Hilfe.",
+    "definition": "He desperately pleaded for help.",
+    "word_frequency": 27915
+  },
+  {
+    "word": "Er bemerkte die subtilen Unterschiede nicht.",
+    "definition": "He didn't notice the subtle differences.",
+    "word_frequency": 16772
+  },
+  {
+    "word": "Er besuchte die bischöfliche Residenz.",
+    "definition": "He visited the episcopal residence.",
+    "word_frequency": 18034
+  },
+  {
+    "word": "Er blieb seinen Prinzipien getreu.",
+    "definition": "He remained true to his principles.",
+    "word_frequency": 14372
+  },
+  {
+    "word": "Er empfand abgrundtiefe Traurigkeit.",
+    "definition": "He felt abysmal sadness.",
+    "word_frequency": 28673
+  },
+  {
+    "word": "Er empfand unsägliche Schmerzen.",
+    "definition": "He felt unspeakable pain.",
+    "word_frequency": 27276
+  },
+  {
+    "word": "Er erhielt carte blanche für das Projekt.",
+    "definition": "He received carte blanche for the project.",
+    "word_frequency": 13435
+  },
+  {
+    "word": "Er erhielt eine päpstliche Audienz.",
+    "definition": "He received a papal audience.",
+    "word_frequency": 11987
+  },
+  {
+    "word": "Er erhielt unverhofft eine Erbschaft.",
+    "definition": "He unexpectedly received an inheritance.",
+    "word_frequency": 25194
+  },
+  {
+    "word": "Er erlebte einen qualvollen Tod.",
+    "definition": "He experienced an agonizing death.",
+    "word_frequency": 26742
+  },
+  {
+    "word": "Er gab eine explizite Anweisung.",
+    "definition": "He gave an explicit instruction.",
+    "word_frequency": 4891
+  },
+  {
+    "word": "Er glaubte, er sei allmächtig.",
+    "definition": "He believed he was almighty.",
+    "word_frequency": 19544
+  },
+  {
+    "word": "Er handelte skrupellos, um seine Ziele zu erreichen.",
+    "definition": "He acted unscrupulously to achieve his goals.",
+    "word_frequency": 28081
+  },
+  {
+    "word": "Er hat anatomische Kenntnisse.",
+    "definition": "He has anatomical knowledge.",
+    "word_frequency": 23652
+  },
+  {
+    "word": "Er hat eigenmächtig gehandelt.",
+    "definition": "He acted without authorization.",
+    "word_frequency": 24110
+  },
+  {
+    "word": "Er hat eine avancierte Position in der Firma.",
+    "definition": "He has an advanced position in the company.",
+    "word_frequency": 19565
+  },
+  {
+    "word": "Er hat eine beherrschende Persönlichkeit.",
+    "definition": "He has a dominant personality.",
+    "word_frequency": 28729
+  },
+  {
+    "word": "Er hat eine marxistische Weltanschauung.",
+    "definition": "He has a Marxist worldview.",
+    "word_frequency": 25480
+  },
+  {
+    "word": "Er hat eine neurologische Erkrankung.",
+    "definition": "He has a neurological disease.",
+    "word_frequency": 23118
+  },
+  {
+    "word": "Er hat einen sehr autoritären Führungsstil.",
+    "definition": "He has a very authoritarian leadership style.",
+    "word_frequency": 15542
+  },
+  {
+    "word": "Er hat einschlägige Erfahrungen in diesem Bereich.",
+    "definition": "He has relevant experience in this field.",
+    "word_frequency": 8938
+  },
+  {
+    "word": "Er hat kognitive Fähigkeiten, die über dem Durchschnitt liegen.",
+    "definition": "He has cognitive abilities that are above average.",
+    "word_frequency": 11939
+  },
+  {
+    "word": "Er hat neuerlich versucht, sie anzurufen.",
+    "definition": "He tried to call her again recently.",
+    "word_frequency": 19715
+  },
+  {
+    "word": "Er hatte einen eisernen Willen.",
+    "definition": "He had an iron will.",
+    "word_frequency": 7394
+  },
+  {
+    "word": "Er hatte einen kühnen Plan.",
+    "definition": "He had a bold plan.",
+    "word_frequency": 8537
+  },
+  {
+    "word": "Er hatte einen perversen Sinn für Humor.",
+    "definition": "He had a perverse sense of humor.",
+    "word_frequency": 11396
+  },
+  {
+    "word": "Er hatte starke vaterländische Gefühle.",
+    "definition": "He had strong patriotic feelings.",
+    "word_frequency": 23986
+  },
+  {
+    "word": "Er ist besessen von seiner Arbeit.",
+    "definition": "He is obsessed with his work.",
+    "word_frequency": 7492
+  },
+  {
+    "word": "Er ist der auserwählte Anführer.",
+    "definition": "He is the chosen leader.",
+    "word_frequency": 18622
+  },
+  {
+    "word": "Er ist der geschäftsführende Direktor des Unternehmens.",
+    "definition": "He is the managing director of the company.",
+    "word_frequency": 21590
+  },
+  {
+    "word": "Er ist der unangefochtene Meister in dieser Disziplin.",
+    "definition": "He is the undisputed master in this discipline.",
+    "word_frequency": 28606
+  },
+  {
+    "word": "Er ist der zweitstärkste Spieler im Team.",
+    "definition": "He is the second strongest player in the team.",
+    "word_frequency": 29618
+  },
+  {
+    "word": "Er ist ein Hardcore-Fan dieser Band.",
+    "definition": "He is a hardcore fan of this band.",
+    "word_frequency": 4902
+  },
+  {
+    "word": "Er ist ein hochrangiger Beamter.",
+    "definition": "He is a high-ranking official.",
+    "word_frequency": 20615
+  },
+  {
+    "word": "Er ist ein selbsternannter Experte.",
+    "definition": "He is a self-proclaimed expert.",
+    "word_frequency": 25135
+  },
+  {
+    "word": "Er ist ein visionärer Anführer.",
+    "definition": "He is a visionary leader.",
+    "word_frequency": 25633
+  },
+  {
+    "word": "Er ist für diese Rolle prädestiniert.",
+    "definition": "He is predestined for this role.",
+    "word_frequency": 23136
+  },
+  {
+    "word": "Er ist seinem Gegner ebenbürtig.",
+    "definition": "He is equal to his opponent.",
+    "word_frequency": 21213
+  },
+  {
+    "word": "Er ist stets bestrebt, seine Ziele zu erreichen.",
+    "definition": "He is always striving to achieve his goals.",
+    "word_frequency": 15027
+  },
+  {
+    "word": "Er kam unbeschadet aus dem Unfall hervor.",
+    "definition": "He emerged unharmed from the accident.",
+    "word_frequency": 12927
+  },
+  {
+    "word": "Er kam unversehrt aus dem Unfall.",
+    "definition": "He emerged unharmed from the accident.",
+    "word_frequency": 14042
+  },
+  {
+    "word": "Er kehrte in sein angestammtes Dorf zurück.",
+    "definition": "He returned to his ancestral village.",
+    "word_frequency": 24446
+  },
+  {
+    "word": "Er klagte über fortwährende Schmerzen.",
+    "definition": "He complained about continuous pain.",
+    "word_frequency": 21233
+  },
+  {
+    "word": "Er konnte seine Taten nicht ungestraft begehen.",
+    "definition": "He could not commit his deeds unpunished.",
+    "word_frequency": 16537
+  },
+  {
+    "word": "Er konnte unbehelligt seinen Weg fortsetzen.",
+    "definition": "He could continue his way undisturbed.",
+    "word_frequency": 19803
+  },
+  {
+    "word": "Er kritisierte die neoliberale Politik.",
+    "definition": "He criticized the neoliberal policy.",
+    "word_frequency": 20366
+  },
+  {
+    "word": "Er kritisierte die Regierung schonungslos.",
+    "definition": "He criticized the government mercilessly.",
+    "word_frequency": 27620
+  },
+  {
+    "word": "Er lachte hemmungslos über den Witz.",
+    "definition": "He laughed uninhibitedly at the joke.",
+    "word_frequency": 21258
+  },
+  {
+    "word": "Er machte einen kläglichen Versuch.",
+    "definition": "He made a pathetic attempt.",
+    "word_frequency": 18132
+  },
+  {
+    "word": "Er machte nur einen halbherzigen Versuch.",
+    "definition": "He only made a half-hearted attempt.",
+    "word_frequency": 27893
+  },
+  {
+    "word": "Er musste notgedrungen seine Pläne ändern.",
+    "definition": "He was compelled to change his plans.",
+    "word_frequency": 21333
+  },
+  {
+    "word": "Er reagierte in der Krise sehr besonnen.",
+    "definition": "He reacted very level-headed in the crisis.",
+    "word_frequency": 20857
+  },
+  {
+    "word": "Er sah ihn mit einem grimmigen Blick an.",
+    "definition": "He looked at him with a grim gaze.",
+    "word_frequency": 28355
+  },
+  {
+    "word": "Er schlug sich wacker im Kampf.",
+    "definition": "He fought bravely in the battle.",
+    "word_frequency": 10366
+  },
+  {
+    "word": "Er schrieb ein lyrisches Gedicht über die Natur.",
+    "definition": "He wrote a lyrical poem about nature.",
+    "word_frequency": 18773
+  },
+  {
+    "word": "Er spielte das Stück meisterhaft.",
+    "definition": "He played the piece masterfully.",
+    "word_frequency": 26691
+  },
+  {
+    "word": "Er sprach mit eindringlicher Stimme.",
+    "definition": "He spoke with an emphatic voice.",
+    "word_frequency": 13453
+  },
+  {
+    "word": "Er spricht einen pfälzischen Dialekt.",
+    "definition": "He speaks a Palatinate dialect.",
+    "word_frequency": 16722
+  },
+  {
+    "word": "Er spricht einen württembergischen Dialekt.",
+    "definition": "He speaks a Württembergian dialect.",
+    "word_frequency": 8335
+  },
+  {
+    "word": "Er stand einer übermächtigen Armee gegenüber.",
+    "definition": "He faced an overwhelming army.",
+    "word_frequency": 29621
+  },
+  {
+    "word": "Er stand unvermittelt vor mir.",
+    "definition": "He suddenly stood in front of me.",
+    "word_frequency": 15495
+  },
+  {
+    "word": "Er studiert postmoderne Kunst.",
+    "definition": "He studies postmodern art.",
+    "word_frequency": 21702
+  },
+  {
+    "word": "Er tat seine Meinung kund.",
+    "definition": "He made his opinion known.",
+    "word_frequency": 17265
+  },
+  {
+    "word": "Er unterschrieb einen blanco Scheck.",
+    "definition": "He signed a blank check.",
+    "word_frequency": 21516
+  },
+  {
+    "word": "Er verfolgte sein Ziel unbeirrt.",
+    "definition": "He pursued his goal undeterred.",
+    "word_frequency": 27271
+  },
+  {
+    "word": "Er verfolgte sein Ziel unerbittlich.",
+    "definition": "He pursued his goal relentlessly.",
+    "word_frequency": 26435
+  },
+  {
+    "word": "Er verfolgte seine Ziele rigoros.",
+    "definition": "He pursued his goals rigorously.",
+    "word_frequency": 23515
+  },
+  {
+    "word": "Er versuchte krampfhaft, sich zu erinnern.",
+    "definition": "He tried desperately to remember.",
+    "word_frequency": 20334
+  },
+  {
+    "word": "Er vertritt antifaschistische Ansichten.",
+    "definition": "He holds anti-fascist views.",
+    "word_frequency": 17718
+  },
+  {
+    "word": "Er vertritt eine humanistische Weltanschauung.",
+    "definition": "He represents a humanistic worldview.",
+    "word_frequency": 15913
+  },
+  {
+    "word": "Er vertritt freiheitliche Werte.",
+    "definition": "He represents liberal values.",
+    "word_frequency": 14354
+  },
+  {
+    "word": "Er war mitverantwortlich für den Erfolg des Projekts.",
+    "definition": "He was jointly responsible for the success of the project.",
+    "word_frequency": 14653
+  },
+  {
+    "word": "Er war sehr gefügig und folgte allen Anweisungen.",
+    "definition": "He was very compliant and followed all instructions.",
+    "word_frequency": 29276
+  },
+  {
+    "word": "Er wurde als abtrünnig betrachtet.",
+    "definition": "He was considered renegade.",
+    "word_frequency": 27729
+  },
+  {
+    "word": "Er wurde als geisteskrank eingestuft.",
+    "definition": "He was classified as mentally ill.",
+    "word_frequency": 20925
+  },
+  {
+    "word": "Er wurde kommissarisch zum Leiter ernannt.",
+    "definition": "He was provisionally appointed as head.",
+    "word_frequency": 27510
+  },
+  {
+    "word": "Er wurde mundtot gemacht und durfte seine Meinung nicht äußern.",
+    "definition": "He was silenced and not allowed to express his opinion.",
+    "word_frequency": 23463
+  },
+  {
+    "word": "Er zeigte eine martialische Haltung.",
+    "definition": "He showed a martial attitude.",
+    "word_frequency": 23448
+  },
+  {
+    "word": "Er zeigte eine superior Leistung.",
+    "definition": "He showed a superior performance.",
+    "word_frequency": 13135
+  },
+  {
+    "word": "Er zeigte geballte Faust.",
+    "definition": "He showed a clenched fist.",
+    "word_frequency": 21934
+  },
+  {
+    "word": "Er zuckte unwillkürlich zusammen.",
+    "definition": "He flinched involuntarily.",
+    "word_frequency": 28615
+  },
+  {
+    "word": "Er äußerte eine dezidierte Meinung.",
+    "definition": "He expressed a decided opinion.",
+    "word_frequency": 24099
+  },
+  {
+    "word": "Es bedarf einer richterlichen Anordnung.",
+    "definition": "A judicial order is required.",
+    "word_frequency": 23916
+  },
+  {
+    "word": "Es gab ein ökumenisches Treffen der Kirchen.",
+    "definition": "There was an ecumenical meeting of the churches.",
+    "word_frequency": 15518
+  },
+  {
+    "word": "Es gab eine partielle Sonnenfinsternis.",
+    "definition": "There was a partial solar eclipse.",
+    "word_frequency": 24299
+  },
+  {
+    "word": "Es gab eine signifikante Veränderung.",
+    "definition": "There was a significant change.",
+    "word_frequency": 8450
+  },
+  {
+    "word": "Es gab große ideologische Unterschiede zwischen den Parteien.",
+    "definition": "There were big ideological differences between the parties.",
+    "word_frequency": 9749
+  },
+  {
+    "word": "Es gab keine strafrechtliche Verfolgung.",
+    "definition": "There was no criminal prosecution.",
+    "word_frequency": 14950
+  },
+  {
+    "word": "Es gibt eine latente Gefahr.",
+    "definition": "There is a latent danger.",
+    "word_frequency": 21647
+  },
+  {
+    "word": "Es gibt viele Cyber-Angriffe heutzutage.",
+    "definition": "There are many cyber attacks nowadays.",
+    "word_frequency": 8932
+  },
+  {
+    "word": "Es ist mir scheissegal, was du denkst.",
+    "definition": "I don't give a damn what you think.",
+    "word_frequency": 7700
+  },
+  {
+    "word": "Es ist mir schleierhaft, wie das passieren konnte.",
+    "definition": "It is inexplicable to me how that could have happened.",
+    "word_frequency": 29487
+  },
+  {
+    "word": "Es ist unstrittig, dass er Recht hat.",
+    "definition": "It is undisputed that he is right.",
+    "word_frequency": 26437
+  },
+  {
+    "word": "Es ist zwingend notwendig, diese Regeln zu befolgen.",
+    "definition": "It is absolutely necessary to follow these rules.",
+    "word_frequency": 4459
+  },
+  {
+    "word": "Es war ein erbitterter Kampf.",
+    "definition": "It was a fierce battle.",
+    "word_frequency": 23330
+  },
+  {
+    "word": "Es war schier unmöglich, die Aufgabe zu lösen.",
+    "definition": "It was virtually impossible to solve the task.",
+    "word_frequency": 10158
+  },
+  {
+    "word": "Es wurde eine einstweilige Verfügung erlassen.",
+    "definition": "A provisional injunction was issued.",
+    "word_frequency": 16618
+  },
+  {
+    "word": "Homophobe Einstellungen sind in unserer Gesellschaft inakzeptabel.",
+    "definition": "Homophobic attitudes are unacceptable in our society.",
+    "word_frequency": 21263
+  },
+  {
+    "word": "Ich hatte einen beschissenen Tag.",
+    "definition": "I had a crappy day.",
+    "word_frequency": 6506
+  },
+  {
+    "word": "Ihr Auftritt war makellos.",
+    "definition": "Her performance was flawless.",
+    "word_frequency": 23092
+  },
+  {
+    "word": "Ihre Leistungen sind überdurchschnittlich gut.",
+    "definition": "Her performance is above average.",
+    "word_frequency": 9673
+  },
+  {
+    "word": "Ihre Meinungen sind unvereinbar.",
+    "definition": "Their opinions are incompatible.",
+    "word_frequency": 18248
+  },
+  {
+    "word": "Inhaltlich war die Präsentation sehr gut.",
+    "definition": "In terms of content, the presentation was very good.",
+    "word_frequency": 3814
+  },
+  {
+    "word": "Mainz ist eine kreisfreie Stadt.",
+    "definition": "Mainz is an independent city.",
+    "word_frequency": 27515
+  },
+  {
+    "word": "Mir ist mein Schlüssel abhanden gekommen.",
+    "definition": "My key has gone missing.",
+    "word_frequency": 14522
+  },
+  {
+    "word": "Mitarbeiter sollen eigenverantwortlich handeln.",
+    "definition": "Employees should act on their own responsibility.",
+    "word_frequency": 29229
+  },
+  {
+    "word": "Nach dem Unfall war das Auto unkenntlich.",
+    "definition": "After the accident, the car was unrecognizable.",
+    "word_frequency": 29557
+  },
+  {
+    "word": "Nach der Krankheit sah er sehr hager aus.",
+    "definition": "After the illness, he looked very gaunt.",
+    "word_frequency": 19351
+  },
+  {
+    "word": "Niemand ist unfehlbar.",
+    "definition": "Nobody is infallible.",
+    "word_frequency": 28136
+  },
+  {
+    "word": "Sein Ehrgeiz war maßlos.",
+    "definition": "His ambition was immoderate.",
+    "word_frequency": 16988
+  },
+  {
+    "word": "Sein Ton war sehr herablassend.",
+    "definition": "His tone was very condescending.",
+    "word_frequency": 28372
+  },
+  {
+    "word": "Sein Verhalten war abartig.",
+    "definition": "His behavior was abnormal.",
+    "word_frequency": 14519
+  },
+  {
+    "word": "Sein Verhalten war absolut verwerflich.",
+    "definition": "His behavior was absolutely reprehensible.",
+    "word_frequency": 19184
+  },
+  {
+    "word": "Sein Verhalten war wirklich widerwärtig.",
+    "definition": "His behavior was truly repulsive.",
+    "word_frequency": 23214
+  },
+  {
+    "word": "Sein Verhalten wirkte auf mich sehr befremdlich.",
+    "definition": "His behavior seemed very strange to me.",
+    "word_frequency": 19878
+  },
+  {
+    "word": "Sein Zustand war erbärmlich.",
+    "definition": "His condition was miserable.",
+    "word_frequency": 8509
+  },
+  {
+    "word": "Seine anmassende Art ärgert mich.",
+    "definition": "His presumptuous manner annoys me.",
+    "word_frequency": 24842
+  },
+  {
+    "word": "Seine Ansichten sind sehr reaktionär.",
+    "definition": "His views are very reactionary.",
+    "word_frequency": 22409
+  },
+  {
+    "word": "Seine Ansichten sind ziemlich archaisch.",
+    "definition": "His views are quite archaic.",
+    "word_frequency": 28223
+  },
+  {
+    "word": "Seine Argumentation war völlig irr.",
+    "definition": "His argumentation was completely erroneous.",
+    "word_frequency": 19361
+  },
+  {
+    "word": "Seine Argumente sind sehr fundiert.",
+    "definition": "His arguments are very well-founded.",
+    "word_frequency": 12133
+  },
+  {
+    "word": "Seine Ausreden klangen sehr verlogen.",
+    "definition": "His excuses sounded very deceitful.",
+    "word_frequency": 22868
+  },
+  {
+    "word": "Seine Bemerkung war grenzwertig.",
+    "definition": "His remark was borderline.",
+    "word_frequency": 28353
+  },
+  {
+    "word": "Seine Bemerkungen waren sehr sexistisch.",
+    "definition": "His remarks were very sexist.",
+    "word_frequency": 19147
+  },
+  {
+    "word": "Seine Botschaft war unmissverständlich.",
+    "definition": "His message was unambiguous.",
+    "word_frequency": 16038
+  },
+  {
+    "word": "Seine Erfahrung war ausschlaggebend für den Erfolg.",
+    "definition": "His experience was crucial for the success.",
+    "word_frequency": 7485
+  },
+  {
+    "word": "Seine Forderungen sind völlig legitim.",
+    "definition": "His demands are completely legitimate.",
+    "word_frequency": 10296
+  },
+  {
+    "word": "Seine Fähigkeiten sind unbestritten.",
+    "definition": "His abilities are undisputed.",
+    "word_frequency": 14033
+  },
+  {
+    "word": "Seine Hilfe war vonnöten.",
+    "definition": "His help was necessary.",
+    "word_frequency": 23598
+  },
+  {
+    "word": "Seine Ideen klingen etwas utopisch.",
+    "definition": "His ideas sound a bit utopian.",
+    "word_frequency": 20452
+  },
+  {
+    "word": "Seine Ideen waren noch nicht salonfähig genug für die Öffentlichkeit.",
+    "definition": "His ideas were not yet socially acceptable enough for the public.",
+    "word_frequency": 21727
+  },
+  {
+    "word": "Seine Meinung blieb unberücksichtigt.",
+    "definition": "His opinion remained unconsidered.",
+    "word_frequency": 27665
+  },
+  {
+    "word": "Seine Meinung ist in dieser Angelegenheit massgebend.",
+    "definition": "His opinion is decisive in this matter.",
+    "word_frequency": 19079
+  },
+  {
+    "word": "Seine menschenverachtende Haltung schockierte alle.",
+    "definition": "His inhumane attitude shocked everyone.",
+    "word_frequency": 29393
+  },
+  {
+    "word": "Seine Reaktion war sehr bezeichnend.",
+    "definition": "His reaction was very telling.",
+    "word_frequency": 11110
+  },
+  {
+    "word": "Seine Rede war sehr polemisch.",
+    "definition": "His speech was very polemical.",
+    "word_frequency": 28969
+  },
+  {
+    "word": "Seine Rede war sehr populistisch.",
+    "definition": "His speech was very populist.",
+    "word_frequency": 28029
+  },
+  {
+    "word": "Sie bat ihn inständig um Hilfe.",
+    "definition": "She urgently implored him for help.",
+    "word_frequency": 25858
+  },
+  {
+    "word": "Sie blieb standhaft in ihren Überzeugungen.",
+    "definition": "She remained steadfast in her beliefs.",
+    "word_frequency": 19157
+  },
+  {
+    "word": "Sie führt ein selbstbestimmtes Leben.",
+    "definition": "She leads a self-determined life.",
+    "word_frequency": 24735
+  },
+  {
+    "word": "Sie führt eine sozialwissenschaftliche Studie durch.",
+    "definition": "She is conducting a social scientific study.",
+    "word_frequency": 28569
+  },
+  {
+    "word": "Sie führten bilaterale Gespräche.",
+    "definition": "They conducted bilateral talks.",
+    "word_frequency": 20227
+  },
+  {
+    "word": "Sie gab eine forsche Antwort.",
+    "definition": "She gave a brisk answer.",
+    "word_frequency": 27432
+  },
+  {
+    "word": "Sie gab eine sehr differenzierte Antwort.",
+    "definition": "She gave a very nuanced answer.",
+    "word_frequency": 13448
+  },
+  {
+    "word": "Sie haben sich einvernehmlich getrennt.",
+    "definition": "They separated by mutual agreement.",
+    "word_frequency": 21218
+  },
+  {
+    "word": "Sie hat zierliche Hände.",
+    "definition": "She has delicate hands.",
+    "word_frequency": 20815
+  },
+  {
+    "word": "Sie hatte eine sehr anmutende Erscheinung.",
+    "definition": "She had a very graceful appearance.",
+    "word_frequency": 22539
+  },
+  {
+    "word": "Sie hatte eine ätherische Schönheit.",
+    "definition": "She had an ethereal beauty.",
+    "word_frequency": 28668
+  },
+  {
+    "word": "Sie identifiziert sich als trans Person.",
+    "definition": "She identifies as a trans person.",
+    "word_frequency": 6592
+  },
+  {
+    "word": "Sie ist eine aufstrebende Künstlerin.",
+    "definition": "She is an aspiring artist.",
+    "word_frequency": 18304
+  },
+  {
+    "word": "Sie ist eine werdende Mutter.",
+    "definition": "She is an expectant mother.",
+    "word_frequency": 7349
+  },
+  {
+    "word": "Sie lebten ein fürstliches Leben.",
+    "definition": "They lived a princely life.",
+    "word_frequency": 21576
+  },
+  {
+    "word": "Sie studiert theologische Texte an der Universität.",
+    "definition": "She studies theological texts at the university.",
+    "word_frequency": 7725
+  },
+  {
+    "word": "Sie trug ein Kleid, das ihre vollbusige Figur betonte.",
+    "definition": "She wore a dress that emphasized her busty figure.",
+    "word_frequency": 29105
+  },
+  {
+    "word": "Sie war eine holde Erscheinung.",
+    "definition": "She was a graceful apparition.",
+    "word_frequency": 10455
+  },
+  {
+    "word": "Sie war sehr barmherzig zu den Armen.",
+    "definition": "She was very merciful to the poor.",
+    "word_frequency": 26126
+  },
+  {
+    "word": "Smartphones sind heutzutage allgegenwärtig.",
+    "definition": "Smartphones are ubiquitous nowadays.",
+    "word_frequency": 17710
+  },
+  {
+    "word": "Stress kann psychosomatische Beschwerden verursachen.",
+    "definition": "Stress can cause psychosomatic complaints.",
+    "word_frequency": 28977
+  },
+  {
+    "word": "Trotz widriger Umstände haben sie es geschafft.",
+    "definition": "Despite adverse circumstances, they succeeded.",
+    "word_frequency": 27702
+  },
+  {
+    "word": "Vertrauen ist für eine gute Beziehung unabdingbar.",
+    "definition": "Trust is indispensable for a good relationship.",
+    "word_frequency": 16535
+  },
+  {
+    "word": "Viele alte Kulturen hatten heidnische Rituale.",
+    "definition": "Many ancient cultures had pagan rituals.",
+    "word_frequency": 23048
+  },
+  {
+    "word": "Viele Unternehmen verlagern ihre Produktion offshore.",
+    "definition": "Many companies relocate their production offshore.",
+    "word_frequency": 12650
+  },
+  {
+    "word": "Vordergründig schien alles in Ordnung zu sein.",
+    "definition": "Ostensibly, everything seemed to be in order.",
+    "word_frequency": 19190
+  },
+  {
+    "word": "Wasser ist eine anorganische Verbindung.",
+    "definition": "Water is an inorganic compound.",
+    "word_frequency": 27746
+  },
+  {
+    "word": "Wasser ist für das Leben unerlässlich.",
+    "definition": "Water is essential for life.",
+    "word_frequency": 11605
+  },
+  {
+    "word": "Wir benötigen weitergehende Informationen.",
+    "definition": "We need further information.",
+    "word_frequency": 15775
+  },
+  {
+    "word": "Wir bieten einen flat rate Tarif an.",
+    "definition": "We offer a flat rate tariff.",
+    "word_frequency": 8650
+  },
+  {
+    "word": "Wir brauchen eine quantitative Analyse.",
+    "definition": "We need a quantitative analysis.",
+    "word_frequency": 16490
+  },
+  {
+    "word": "Wir brauchen eine zielführende Strategie.",
+    "definition": "We need an effective strategy.",
+    "word_frequency": 18899
+  },
+  {
+    "word": "Wir fördern den interkulturellen Austausch.",
+    "definition": "We promote intercultural exchange.",
+    "word_frequency": 16419
+  },
+  {
+    "word": "Wir müssen die existierenden Probleme lösen.",
+    "definition": "We need to solve the existing problems.",
+    "word_frequency": 9094
+  },
+  {
+    "word": "Wir müssen die Situation perspektivisch betrachten.",
+    "definition": "We must consider the situation from a perspectival view.",
+    "word_frequency": 28493
+  },
+  {
+    "word": "Wir müssen die überschüssige Energie speichern.",
+    "definition": "We need to store the excess energy.",
+    "word_frequency": 22892
+  },
+  {
+    "word": "Wir sollten dies tunlichst vermeiden.",
+    "definition": "We should avoid this as much as possible.",
+    "word_frequency": 26813
+  },
+  {
+    "word": "Wir verfolgen einen ganzheitlichen Ansatz.",
+    "definition": "We pursue a holistic approach.",
+    "word_frequency": 20920
+  },
+  {
+    "word": "Wir verfolgen einen integrativen Ansatz.",
+    "definition": "We pursue an integrative approach.",
+    "word_frequency": 24578
+  },
+  {
+    "word": "Wir warten schon seit geraumer Zeit.",
+    "definition": "We have been waiting for quite some time.",
+    "word_frequency": 12357
+  },
+  {
+    "word": "Zahlenmässig waren sie überlegen.",
+    "definition": "Numerically, they were superior.",
+    "word_frequency": 14517
+  }
+]

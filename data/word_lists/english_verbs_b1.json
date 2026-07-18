@@ -1,0 +1,4490 @@
+[
+  {
+    "word": "absorb",
+    "definition": [
+      "to take in a liquid, gas, or other substance",
+      "The sponge can absorb a lot of water."
+    ],
+    "word_frequency": 5643
+  },
+  {
+    "word": "accompany",
+    "definition": [
+      "to go somewhere with someone as a companion or escort",
+      "She agreed to accompany him to the party."
+    ],
+    "word_frequency": 3399
+  },
+  {
+    "word": "accumulate",
+    "definition": [
+      "gather or acquire an increasing number or quantity of",
+      "Dust tends to accumulate in corners."
+    ],
+    "word_frequency": 7746
+  },
+  {
+    "word": "achieve",
+    "definition": [
+      "to successfully bring about or reach",
+      "She worked hard to achieve her goals."
+    ],
+    "word_frequency": 1970
+  },
+  {
+    "word": "adapt",
+    "definition": [
+      "to adjust to new conditions",
+      "It takes time to adapt to a new culture."
+    ],
+    "word_frequency": 3889
+  },
+  {
+    "word": "adjust",
+    "definition": [
+      "to alter or move something slightly in order to achieve the desired fit, appearance, or result",
+      "You can adjust the height of the chair."
+    ],
+    "word_frequency": 4265
+  },
+  {
+    "word": "admire",
+    "definition": [
+      "to respect and approve of someone or something",
+      "I admire her dedication to her work."
+    ],
+    "word_frequency": 5241
+  },
+  {
+    "word": "admit",
+    "definition": [
+      "to confess; to allow entry",
+      "He had to admit he was wrong."
+    ],
+    "word_frequency": 1936
+  },
+  {
+    "word": "adopt",
+    "definition": [
+      "take into one's family; formally accept",
+      "They decided to adopt a child."
+    ],
+    "word_frequency": 2212
+  },
+  {
+    "word": "adore",
+    "definition": [
+      "love and respect deeply",
+      "I adore my grandchildren."
+    ],
+    "word_frequency": 7747
+  },
+  {
+    "word": "advance",
+    "definition": [
+      "to make progress",
+      "The army began to advance towards the enemy."
+    ],
+    "word_frequency": 1550
+  },
+  {
+    "word": "advertise",
+    "definition": [
+      "to promote a product or service",
+      "Companies advertise their products on TV."
+    ],
+    "word_frequency": 7185
+  },
+  {
+    "word": "advise",
+    "definition": [
+      "to offer suggestions about the best course of action",
+      "I advise you to study hard for the exam."
+    ],
+    "word_frequency": 3817
+  },
+  {
+    "word": "affect",
+    "definition": [
+      "affect",
+      "The weather can affect your mood."
+    ],
+    "word_frequency": 1748
+  },
+  {
+    "word": "afford",
+    "definition": [
+      "to have enough money to pay for",
+      "I can't afford a new car right now."
+    ],
+    "word_frequency": 1972
+  },
+  {
+    "word": "aim",
+    "definition": [
+      "point or direct; intend",
+      "He aimed the camera at the bird."
+    ],
+    "word_frequency": 2213
+  },
+  {
+    "word": "allow",
+    "definition": [
+      "to let someone do something",
+      "My parents allow me to stay out late."
+    ],
+    "word_frequency": 805
+  },
+  {
+    "word": "alter",
+    "definition": [
+      "to change or cause to change in character or composition",
+      "We had to alter our plans."
+    ],
+    "word_frequency": 4665
+  },
+  {
+    "word": "amaze",
+    "definition": [
+      "to surprise greatly",
+      "Her talent continues to amaze me."
+    ],
+    "word_frequency": 5724
+  },
+  {
+    "word": "amuse",
+    "definition": [
+      "to entertain or make someone laugh",
+      "The clown tried to amuse the children with his tricks."
+    ],
+    "word_frequency": 9860
+  },
+  {
+    "word": "analyse",
+    "definition": [
+      "examine in detail",
+      "We need to analyse the data carefully."
+    ],
+    "word_frequency": 10582
+  },
+  {
+    "word": "analyze",
+    "definition": [
+      "examine in detail",
+      "We need to analyze the data carefully."
+    ],
+    "word_frequency": 5812
+  },
+  {
+    "word": "announce",
+    "definition": [
+      "to make a public statement about something",
+      "They will announce the winner tomorrow."
+    ],
+    "word_frequency": 942
+  },
+  {
+    "word": "annoy",
+    "definition": [
+      "to irritate or bother (someone)",
+      "His constant whistling began to annoy me."
+    ],
+    "word_frequency": 2665
+  },
+  {
+    "word": "appoint",
+    "definition": [
+      "assign a job or role to (someone)",
+      "They decided to appoint her as the new manager."
+    ],
+    "word_frequency": 1900
+  },
+  {
+    "word": "appreciate",
+    "definition": [
+      "to recognize the full worth of",
+      "I really appreciate your help."
+    ],
+    "word_frequency": 1461
+  },
+  {
+    "word": "approve",
+    "definition": [
+      "approve",
+      "The committee needs to approve the new plan."
+    ],
+    "word_frequency": 1750
+  },
+  {
+    "word": "arrest",
+    "definition": [
+      "arrest",
+      "The police decided to arrest the suspect."
+    ],
+    "word_frequency": 1753
+  },
+  {
+    "word": "assemble",
+    "definition": [
+      "to put together",
+      "We need to assemble the new furniture."
+    ],
+    "word_frequency": 5315
+  },
+  {
+    "word": "assign",
+    "definition": [
+      "to give a task or duty",
+      "The teacher assigned homework to the students."
+    ],
+    "word_frequency": 2716
+  },
+  {
+    "word": "assist",
+    "definition": [
+      "to help or support someone or something",
+      "Can I assist you with your bags?"
+    ],
+    "word_frequency": 2576
+  },
+  {
+    "word": "assure",
+    "definition": [
+      "tell someone something positively to remove any doubt",
+      "I can assure you that the information is accurate."
+    ],
+    "word_frequency": 4526
+  },
+  {
+    "word": "attach",
+    "definition": [
+      "to fasten or join one thing to another",
+      "Please attach your resume to the application form."
+    ],
+    "word_frequency": 2175
+  },
+  {
+    "word": "attract",
+    "definition": [
+      "to draw attention or interest",
+      "The bright colors attract butterflies."
+    ],
+    "word_frequency": 3085
+  },
+  {
+    "word": "avoid",
+    "definition": [
+      "keep away from or stop oneself from doing (something)",
+      "Try to avoid making the same mistake twice."
+    ],
+    "word_frequency": 1138
+  },
+  {
+    "word": "ban",
+    "definition": [
+      "officially or legally prohibit",
+      "Smoking is banned in all public buildings."
+    ],
+    "word_frequency": 2058
+  },
+  {
+    "word": "barf",
+    "definition": [
+      "to vomit",
+      "The motion sickness made him want to barf."
+    ],
+    "word_frequency": 27691
+  },
+  {
+    "word": "base",
+    "definition": [
+      "use as a foundation",
+      "The movie is based on a true story."
+    ],
+    "word_frequency": 238
+  },
+  {
+    "word": "bear",
+    "definition": [
+      "bear",
+      "I can't bear the thought of losing you."
+    ],
+    "word_frequency": 690
+  },
+  {
+    "word": "beckon",
+    "definition": [
+      "to make a gesture with the hand, arm, or head to encourage someone to come nearer or follow",
+      "She beckoned to him from across the room."
+    ],
+    "word_frequency": 28321
+  },
+  {
+    "word": "beg",
+    "definition": [
+      "to ask (someone) earnestly or humbly for something",
+      "He begged for forgiveness."
+    ],
+    "word_frequency": 4669
+  },
+  {
+    "word": "bet",
+    "definition": [
+      "bet",
+      "I wouldn't bet on that horse."
+    ],
+    "word_frequency": 1330
+  },
+  {
+    "word": "better",
+    "definition": [
+      "to improve; to surpass",
+      "He tried to better his previous performance."
+    ],
+    "word_frequency": 26363
+  },
+  {
+    "word": "beware",
+    "definition": [
+      "be cautious and alert to risks or dangers",
+      "Beware of the dog."
+    ],
+    "word_frequency": 7755
+  },
+  {
+    "word": "blacken",
+    "definition": [
+      "make or become black",
+      "The smoke began to blacken the walls."
+    ],
+    "word_frequency": 20265
+  },
+  {
+    "word": "bleed",
+    "definition": [
+      "To lose blood.",
+      "His nose started to bleed after the fall."
+    ],
+    "word_frequency": 4451
+  },
+  {
+    "word": "blend",
+    "definition": [
+      "to mix together",
+      "Blend the ingredients until smooth."
+    ],
+    "word_frequency": 5408
+  },
+  {
+    "word": "bless",
+    "definition": [
+      "to ask for divine favor; to make holy",
+      "May God bless you and your family."
+    ],
+    "word_frequency": 3513
+  },
+  {
+    "word": "bloom",
+    "definition": [
+      "to produce flowers",
+      "The roses in the garden will bloom beautifully in spring."
+    ],
+    "word_frequency": 5564
+  },
+  {
+    "word": "blush",
+    "definition": [
+      "to become red in the face from embarrassment or shame",
+      "She would always blush when he complimented her."
+    ],
+    "word_frequency": 9445
+  },
+  {
+    "word": "bore",
+    "definition": [
+      "to make someone feel tired and uninterested",
+      "His long speech began to bore the audience."
+    ],
+    "word_frequency": 2538
+  },
+  {
+    "word": "bother",
+    "definition": [
+      "to annoy; to take the trouble to do something",
+      "Don't bother me when I'm working."
+    ],
+    "word_frequency": 2719
+  },
+  {
+    "word": "brag",
+    "definition": [
+      "to boast",
+      "He likes to brag about his achievements."
+    ],
+    "word_frequency": 10430
+  },
+  {
+    "word": "brainstorm",
+    "definition": [
+      "to produce an idea or way of solving a problem by holding a spontaneous group discussion",
+      "Let's brainstorm some ideas for the new marketing campaign."
+    ],
+    "word_frequency": 22156
+  },
+  {
+    "word": "breed",
+    "definition": [
+      "To reproduce or cause to reproduce.",
+      "Many animals breed in the spring."
+    ],
+    "word_frequency": 4452
+  },
+  {
+    "word": "brew",
+    "definition": [
+      "make (beer, coffee, or tea) by soaking, boiling, and fermentation",
+      "I'll brew some fresh coffee for us."
+    ],
+    "word_frequency": 7097
+  },
+  {
+    "word": "brighten",
+    "definition": [
+      "make or become brighter",
+      "The flowers helped to brighten up the room."
+    ],
+    "word_frequency": 14416
+  },
+  {
+    "word": "browse",
+    "definition": [
+      "to look through a number of books or magazines without reading everything; to look at goods in a shop without necessarily buying anything; to look at information on the internet",
+      "I like to browse in bookstores."
+    ],
+    "word_frequency": 8957
+  },
+  {
+    "word": "burst",
+    "definition": [
+      "to break open or apart suddenly and violently",
+      "The balloon burst when it hit the sharp branch."
+    ],
+    "word_frequency": 4020
+  },
+  {
+    "word": "bury",
+    "definition": [
+      "to put or hide underground",
+      "They decided to bury the treasure in the garden."
+    ],
+    "word_frequency": 2670
+  },
+  {
+    "word": "calculate",
+    "definition": [
+      "determine (the amount or number of something) mathematically",
+      "Can you calculate the total cost for me."
+    ],
+    "word_frequency": 4334
+  },
+  {
+    "word": "capture",
+    "definition": [
+      "capture",
+      "The police managed to capture the suspect."
+    ],
+    "word_frequency": 2496
+  },
+  {
+    "word": "carve",
+    "definition": [
+      "carve",
+      "He used a knife to carve the wood."
+    ],
+    "word_frequency": 5998
+  },
+  {
+    "word": "categorise",
+    "definition": [
+      "to place in a particular category",
+      "Please categorise these documents by date."
+    ],
+    "word_frequency": 28021
+  },
+  {
+    "word": "categorize",
+    "definition": [
+      "to place in a category",
+      "Please categorize these books by genre."
+    ],
+    "word_frequency": 13325
+  },
+  {
+    "word": "cheat",
+    "definition": [
+      "to act dishonestly or unfairly in order to gain an advantage",
+      "It's wrong to cheat on an exam."
+    ],
+    "word_frequency": 3707
+  },
+  {
+    "word": "chill",
+    "definition": [
+      "to make something cold",
+      "Chill the wine before serving."
+    ],
+    "word_frequency": 3828
+  },
+  {
+    "word": "chirp",
+    "definition": [
+      "to make a short, sharp, high-pitched sound",
+      "The birds began to chirp as the sun rose."
+    ],
+    "word_frequency": 23641
+  },
+  {
+    "word": "choke",
+    "definition": [
+      "to have difficulty breathing because of something in your throat",
+      "He started to choke on a piece of food."
+    ],
+    "word_frequency": 7525
+  },
+  {
+    "word": "chuckle",
+    "definition": [
+      "to laugh quietly",
+      "He couldn't help but chuckle at the silly joke."
+    ],
+    "word_frequency": 10016
+  },
+  {
+    "word": "chug",
+    "definition": [
+      "To move making a regular muffled explosive sound, as of a steam engine or motorboat.",
+      "The old train began to chug slowly up the hill."
+    ],
+    "word_frequency": 22177
+  },
+  {
+    "word": "clarify",
+    "definition": [
+      "make (something) less confusing and more comprehensible",
+      "Could you please clarify your last point?"
+    ],
+    "word_frequency": 6264
+  },
+  {
+    "word": "clothe",
+    "definition": [
+      "to provide with clothes; to dress",
+      "They worked hard to feed and clothe their children."
+    ],
+    "word_frequency": 14219
+  },
+  {
+    "word": "collide",
+    "definition": [
+      "strike with a forceful impact",
+      "Two cars collided at the intersection."
+    ],
+    "word_frequency": 13672
+  },
+  {
+    "word": "combine",
+    "definition": [
+      "to put together",
+      "You can combine these ingredients."
+    ],
+    "word_frequency": 1633
+  },
+  {
+    "word": "commute",
+    "definition": [
+      "to travel some distance regularly between one's home and place of work or study",
+      "He commutes to work by train every day."
+    ],
+    "word_frequency": 9455
+  },
+  {
+    "word": "compare",
+    "definition": [
+      "to estimate, measure, or note the similarity or dissimilarity between",
+      "Let's compare the two options."
+    ],
+    "word_frequency": 1032
+  },
+  {
+    "word": "compete",
+    "definition": [
+      "strive to gain or win something by defeating or establishing superiority over others",
+      "Athletes compete for gold medals."
+    ],
+    "word_frequency": 2723
+  },
+  {
+    "word": "concentrate",
+    "definition": [
+      "focus all one's attention on a particular object or activity",
+      "It's hard to concentrate with all this noise."
+    ],
+    "word_frequency": 4536
+  },
+  {
+    "word": "confess",
+    "definition": [
+      "admit or acknowledge",
+      "He decided to confess his crime."
+    ],
+    "word_frequency": 6517
+  },
+  {
+    "word": "confirm",
+    "definition": [
+      "to state or show that something is true",
+      "Can you confirm your reservation?"
+    ],
+    "word_frequency": 1660
+  },
+  {
+    "word": "confuse",
+    "definition": [
+      "to make someone unable to think clearly or understand",
+      "The instructions confused me, so I couldn't finish the task."
+    ],
+    "word_frequency": 2369
+  },
+  {
+    "word": "congratulate",
+    "definition": [
+      "express one's pleasure to (someone) at their success or good fortune",
+      "I want to congratulate you on your excellent exam results."
+    ],
+    "word_frequency": 9085
+  },
+  {
+    "word": "conserve",
+    "definition": [
+      "protect (something, especially an environmentally or culturally important place or thing) from harm or destruction.",
+      "We must conserve water during the drought."
+    ],
+    "word_frequency": 12254
+  },
+  {
+    "word": "consider",
+    "definition": [
+      "consider",
+      "Please consider my offer."
+    ],
+    "word_frequency": 708
+  },
+  {
+    "word": "consist",
+    "definition": [
+      "be composed or made up of",
+      "The team consists of five members."
+    ],
+    "word_frequency": 2724
+  },
+  {
+    "word": "consult",
+    "definition": [
+      "to seek advice or information from",
+      "You should consult a doctor if the pain continues."
+    ],
+    "word_frequency": 4606
+  },
+  {
+    "word": "consume",
+    "definition": [
+      "to eat, drink, or use up",
+      "We consume a lot of electricity."
+    ],
+    "word_frequency": 5418
+  },
+  {
+    "word": "contain",
+    "definition": [
+      "to hold or include",
+      "The box contains old letters."
+    ],
+    "word_frequency": 1636
+  },
+  {
+    "word": "contribute",
+    "definition": [
+      "give (something, especially money or time) in order to help achieve or provide something",
+      "Everyone should contribute to the project."
+    ],
+    "word_frequency": 2725
+  },
+  {
+    "word": "control",
+    "definition": [
+      "manage",
+      "He can control his emotions."
+    ],
+    "word_frequency": 316
+  },
+  {
+    "word": "converse",
+    "definition": [
+      "to engage in conversation",
+      "They spent hours conversing about their travels."
+    ],
+    "word_frequency": 10615
+  },
+  {
+    "word": "convince",
+    "definition": [
+      "to persuade (someone) to do something",
+      "I tried to convince him to join us."
+    ],
+    "word_frequency": 2675
+  },
+  {
+    "word": "coo",
+    "definition": [
+      "(of a dove or pigeon) make a soft, murmuring sound",
+      "The baby began to coo happily."
+    ],
+    "word_frequency": 13515
+  },
+  {
+    "word": "cooperate",
+    "definition": [
+      "work together",
+      "We need to cooperate to finish this project on time."
+    ],
+    "word_frequency": 6801
+  },
+  {
+    "word": "coordinate",
+    "definition": [
+      "organize; work together",
+      "We need to coordinate our efforts to finish the project on time."
+    ],
+    "word_frequency": 6521
+  },
+  {
+    "word": "cope",
+    "definition": [
+      "to deal effectively with something difficult",
+      "It's hard to cope with so much stress."
+    ],
+    "word_frequency": 4752
+  },
+  {
+    "word": "cram",
+    "definition": [
+      "to study intensively over a short period; to force into a small space",
+      "She had to cram for her exams all night."
+    ],
+    "word_frequency": 15646
+  },
+  {
+    "word": "crash",
+    "definition": [
+      "to hit something hard; to fail suddenly",
+      "The car crashed into a tree."
+    ],
+    "word_frequency": 2064
+  },
+  {
+    "word": "crawl",
+    "definition": [
+      "to move forward on the hands and knees or by dragging the body close to the ground",
+      "The baby learned to crawl at six months old."
+    ],
+    "word_frequency": 7008
+  },
+  {
+    "word": "creak",
+    "definition": [
+      "to make a harsh, scraping sound",
+      "The old wooden floorboards would creak with every step."
+    ],
+    "word_frequency": 25744
+  },
+  {
+    "word": "create",
+    "definition": [
+      "to bring something into existence",
+      "Artists create beautiful works of art."
+    ],
+    "word_frequency": 773
+  },
+  {
+    "word": "creep",
+    "definition": [
+      "move slowly and carefully in order to avoid being heard or noticed",
+      "The cat tried to creep silently towards the bird."
+    ],
+    "word_frequency": 6343
+  },
+  {
+    "word": "criticise",
+    "definition": [
+      "to express disapproval of someone or something",
+      "It's easy to criticise others, but harder to offer solutions."
+    ],
+    "word_frequency": 8219
+  },
+  {
+    "word": "criticize",
+    "definition": [
+      "to express disapproval of someone or something",
+      "It's easy to criticize others, but harder to offer solutions."
+    ],
+    "word_frequency": 5046
+  },
+  {
+    "word": "crouch",
+    "definition": [
+      "to stoop or bend low with the limbs drawn close to the body",
+      "The cat crouched low, ready to pounce."
+    ],
+    "word_frequency": 14224
+  },
+  {
+    "word": "crush",
+    "definition": [
+      "to press or squeeze something so hard that it is flattened or broken",
+      "He accidentally crushed the empty can."
+    ],
+    "word_frequency": 3904
+  },
+  {
+    "word": "cuddle",
+    "definition": [
+      "hold (someone or something) close in one's arms as a way of showing affection or for comfort",
+      "The child wanted to cuddle with her teddy bear."
+    ],
+    "word_frequency": 11797
+  },
+  {
+    "word": "cuffed",
+    "definition": [
+      "to put handcuffs on; to strike with an open hand",
+      "The police cuffed the suspect and led him away."
+    ],
+    "word_frequency": 25431
+  },
+  {
+    "word": "customize",
+    "definition": [
+      "to modify (something) to suit a particular individual or task",
+      "You can customize the settings to fit your preferences."
+    ],
+    "word_frequency": 11178
+  },
+  {
+    "word": "dab",
+    "definition": [
+      "to touch lightly and quickly",
+      "She used a tissue to dab the paint off her finger."
+    ],
+    "word_frequency": 13163
+  },
+  {
+    "word": "dare",
+    "definition": [
+      "to be brave enough to do something",
+      "I dare you to jump into the cold water."
+    ],
+    "word_frequency": 3090
+  },
+  {
+    "word": "darken",
+    "definition": [
+      "to make or become dark",
+      "The clouds began to darken, signaling a storm."
+    ],
+    "word_frequency": 16883
+  },
+  {
+    "word": "deal",
+    "definition": [
+      "distribute, handle",
+      "How do you deal with stress?"
+    ],
+    "word_frequency": 391
+  },
+  {
+    "word": "decrease",
+    "definition": [
+      "to make or become smaller or fewer",
+      "The number of visitors has decreased."
+    ],
+    "word_frequency": 3906
+  },
+  {
+    "word": "defend",
+    "definition": [
+      "to protect from harm or danger",
+      "The lawyer tried to defend his client in court."
+    ],
+    "word_frequency": 2371
+  },
+  {
+    "word": "define",
+    "definition": [
+      "explain, characterize",
+      "Can you define the term 'democracy'?"
+    ],
+    "word_frequency": 2024
+  },
+  {
+    "word": "deflate",
+    "definition": [
+      "To let air or gas out of (a tire, balloon, or similar inflatable object).",
+      "The mechanic had to deflate the tire to repair it."
+    ],
+    "word_frequency": 22777
+  },
+  {
+    "word": "dehydrate",
+    "definition": [
+      "to cause (a person or thing) to lose a large amount of water",
+      "It's important to drink water so you don't dehydrate."
+    ],
+    "word_frequency": 14230
+  },
+  {
+    "word": "delight",
+    "definition": [
+      "to please greatly",
+      "The news delighted everyone."
+    ],
+    "word_frequency": 4397
+  },
+  {
+    "word": "deliver",
+    "definition": [
+      "deliver",
+      "The postman will deliver the package tomorrow."
+    ],
+    "word_frequency": 1819
+  },
+  {
+    "word": "demonstrate",
+    "definition": [
+      "show, prove",
+      "The teacher will demonstrate how to solve the problem."
+    ],
+    "word_frequency": 3595
+  },
+  {
+    "word": "deny",
+    "definition": [
+      "to state that something is not true",
+      "He denied all the accusations."
+    ],
+    "word_frequency": 2545
+  },
+  {
+    "word": "depart",
+    "definition": [
+      "leave, especially to start a journey",
+      "The train will depart from platform 3."
+    ],
+    "word_frequency": 6911
+  },
+  {
+    "word": "descend",
+    "definition": [
+      "move or fall downwards",
+      "The plane began to descend towards the airport."
+    ],
+    "word_frequency": 7310
+  },
+  {
+    "word": "describe",
+    "definition": [
+      "to give an account of in words",
+      "Can you describe the suspect?"
+    ],
+    "word_frequency": 880
+  },
+  {
+    "word": "deserve",
+    "definition": [
+      "do something or have qualities worthy of (reward or punishment)",
+      "You deserve a break after all that hard work."
+    ],
+    "word_frequency": 1913
+  },
+  {
+    "word": "destroy",
+    "definition": [
+      "to put an end to the existence of something",
+      "The fire destroyed the old building."
+    ],
+    "word_frequency": 1856
+  },
+  {
+    "word": "detect",
+    "definition": [
+      "to discover or identify the presence of",
+      "The security system can detect any unauthorized entry."
+    ],
+    "word_frequency": 4612
+  },
+  {
+    "word": "develop",
+    "definition": [
+      "to grow or cause to grow and become more mature, advanced, or elaborate",
+      "The city plans to develop a new park."
+    ],
+    "word_frequency": 959
+  },
+  {
+    "word": "differ",
+    "definition": [
+      "to be different",
+      "Our opinions often differ on political matters."
+    ],
+    "word_frequency": 4821
+  },
+  {
+    "word": "dine",
+    "definition": [
+      "to eat dinner",
+      "We decided to dine at a new restaurant tonight."
+    ],
+    "word_frequency": 4084
+  },
+  {
+    "word": "disappoint",
+    "definition": [
+      "to fail to fulfill the hopes or expectations of",
+      "I hope I don't disappoint you with my performance."
+    ],
+    "word_frequency": 2585
+  },
+  {
+    "word": "disapprove",
+    "definition": [
+      "to have an unfavorable opinion",
+      "Her parents disapprove of her new boyfriend."
+    ],
+    "word_frequency": 17103
+  },
+  {
+    "word": "discard",
+    "definition": [
+      "get rid of (someone or something) as no longer useful or desirable",
+      "Please discard all old newspapers in the recycling bin."
+    ],
+    "word_frequency": 9092
+  },
+  {
+    "word": "discuss",
+    "definition": [
+      "talk about something",
+      "Let's discuss this issue later."
+    ],
+    "word_frequency": 1690
+  },
+  {
+    "word": "disinfect",
+    "definition": [
+      "to clean (something) with a disinfectant in order to destroy bacteria",
+      "You should disinfect the wound to prevent infection."
+    ],
+    "word_frequency": 35026
+  },
+  {
+    "word": "dismiss",
+    "definition": [
+      "to order or allow to leave; to treat as unworthy of serious consideration",
+      "The teacher dismissed the class early."
+    ],
+    "word_frequency": 3712
+  },
+  {
+    "word": "dispose",
+    "definition": [
+      "get rid of by throwing away or giving or selling to someone else",
+      "Please dispose of your trash properly."
+    ],
+    "word_frequency": 9602
+  },
+  {
+    "word": "distract",
+    "definition": [
+      "prevent someone from concentrating",
+      "Please don't distract me while I'm working."
+    ],
+    "word_frequency": 6007
+  },
+  {
+    "word": "distribute",
+    "definition": [
+      "to give out or spread around",
+      "Please distribute these flyers to everyone."
+    ],
+    "word_frequency": 3094
+  },
+  {
+    "word": "disturb",
+    "definition": [
+      "to interrupt; to bother",
+      "Please do not disturb the sleeping baby."
+    ],
+    "word_frequency": 4680
+  },
+  {
+    "word": "dodge",
+    "definition": [
+      "to avoid (something) by moving quickly",
+      "He had to dodge a falling branch as he walked through the forest."
+    ],
+    "word_frequency": 5579
+  },
+  {
+    "word": "donate",
+    "definition": [
+      "to give money or goods for a good cause",
+      "Many people choose to donate blood regularly."
+    ],
+    "word_frequency": 4615
+  },
+  {
+    "word": "download",
+    "definition": [
+      "to copy data from one computer system to another",
+      "I need to download the new software update."
+    ],
+    "word_frequency": 1637
+  },
+  {
+    "word": "doze",
+    "definition": [
+      "sleep lightly",
+      "He began to doze off during the long lecture."
+    ],
+    "word_frequency": 31322
+  },
+  {
+    "word": "drag",
+    "definition": [
+      "to pull something along the ground",
+      "He had to drag the heavy box across the floor."
+    ],
+    "word_frequency": 3208
+  },
+  {
+    "word": "drain",
+    "definition": [
+      "cause the water or other liquid in (something) to run out",
+      "Please drain the pasta before adding the sauce."
+    ],
+    "word_frequency": 4540
+  },
+  {
+    "word": "dribble",
+    "definition": [
+      "to let liquid fall in small drops; to move a ball by short kicks or bounces",
+      "The baby started to dribble milk down his chin."
+    ],
+    "word_frequency": 18539
+  },
+  {
+    "word": "drill",
+    "definition": [
+      "to make a hole with a drill; to practice",
+      "We need to drill a hole in the wall."
+    ],
+    "word_frequency": 4400
+  },
+  {
+    "word": "drool",
+    "definition": [
+      "let saliva flow from the mouth",
+      "The baby started to drool when he saw the bottle."
+    ],
+    "word_frequency": 18806
+  },
+  {
+    "word": "drown",
+    "definition": [
+      "to die through submersion in and inhalation of water",
+      "He was careful not to drown while swimming in the deep end."
+    ],
+    "word_frequency": 7017
+  },
+  {
+    "word": "dump",
+    "definition": [
+      "To drop or let fall.",
+      "He dumped the rubbish in the bin."
+    ],
+    "word_frequency": 4468
+  },
+  {
+    "word": "dunk",
+    "definition": [
+      "dip (food) into a drink or sauce before eating it; score by forcing the ball down through the basket",
+      "He likes to dunk his cookies in milk."
+    ],
+    "word_frequency": 9750
+  },
+  {
+    "word": "edit",
+    "definition": [
+      "to prepare for publication by correcting, revising, or adapting",
+      "I need to edit my essay before submitting it."
+    ],
+    "word_frequency": 3098
+  },
+  {
+    "word": "educate",
+    "definition": [
+      "to teach or train someone",
+      "Parents have a responsibility to educate their children."
+    ],
+    "word_frequency": 3209
+  },
+  {
+    "word": "eject",
+    "definition": [
+      "force or throw (something) out, typically in a violent or rapid way.",
+      "The pilot had to eject from the damaged aircraft."
+    ],
+    "word_frequency": 12277
+  },
+  {
+    "word": "elect",
+    "definition": [
+      "to choose someone by voting",
+      "Citizens will elect a new president next year."
+    ],
+    "word_frequency": 1793
+  },
+  {
+    "word": "embarrass",
+    "definition": [
+      "to cause (someone) to feel awkward, self-conscious, or ashamed",
+      "His rude comments embarrassed everyone at the party."
+    ],
+    "word_frequency": 4032
+  },
+  {
+    "word": "emigrate",
+    "definition": [
+      "to leave one's own country to settle permanently in another",
+      "Many people emigrate for better job opportunities."
+    ],
+    "word_frequency": 17108
+  },
+  {
+    "word": "emphasise",
+    "definition": [
+      "To give special importance or prominence to",
+      "The teacher will emphasise the key points."
+    ],
+    "word_frequency": 15865
+  },
+  {
+    "word": "employ",
+    "definition": [
+      "to give work to someone; to make use of",
+      "The company employs over 500 people."
+    ],
+    "word_frequency": 2589
+  },
+  {
+    "word": "enclose",
+    "definition": [
+      "to surround or close off",
+      "Please enclose the documents in the envelope."
+    ],
+    "word_frequency": 7321
+  },
+  {
+    "word": "encourage",
+    "definition": [
+      "to give support, confidence, or hope to someone",
+      "Her parents always encourage her to study hard."
+    ],
+    "word_frequency": 2460
+  },
+  {
+    "word": "enlarge",
+    "definition": [
+      "make or become larger",
+      "Can you enlarge this photo for me?"
+    ],
+    "word_frequency": 8717
+  },
+  {
+    "word": "enquire",
+    "definition": [
+      "ask for information from someone",
+      "I need to enquire about the train schedule."
+    ],
+    "word_frequency": 22506
+  },
+  {
+    "word": "enrol",
+    "definition": [
+      "To officially register as a member of an institution or a student on a course.",
+      "You need to enrol for the course by Friday."
+    ],
+    "word_frequency": 30157
+  },
+  {
+    "word": "enroll",
+    "definition": [
+      "to officially register as a member of an institution or a student on a course",
+      "She decided to enroll in a language course."
+    ],
+    "word_frequency": 5662
+  },
+  {
+    "word": "entertain",
+    "definition": [
+      "to provide amusement or enjoyment",
+      "The clown entertained the children with his tricks."
+    ],
+    "word_frequency": 4286
+  },
+  {
+    "word": "equalize",
+    "definition": [
+      "make equal or uniform",
+      "The team managed to equalize the score in the last minute."
+    ],
+    "word_frequency": 34190
+  },
+  {
+    "word": "erase",
+    "definition": [
+      "to remove marks or information",
+      "Please erase the whiteboard before you leave."
+    ],
+    "word_frequency": 8240
+  },
+  {
+    "word": "evaporate",
+    "definition": [
+      "to turn from liquid into vapor",
+      "The water will evaporate quickly in the sun."
+    ],
+    "word_frequency": 19031
+  },
+  {
+    "word": "examine",
+    "definition": [
+      "inspect closely",
+      "The doctor will examine your throat."
+    ],
+    "word_frequency": 3843
+  },
+  {
+    "word": "excel",
+    "definition": [
+      "be exceptionally good at or proficient in an activity or subject",
+      "She always strives to excel in her studies."
+    ],
+    "word_frequency": 7435
+  },
+  {
+    "word": "exclaim",
+    "definition": [
+      "cry out suddenly in surprise, anger, or excitement",
+      "She would often exclaim with delight when she saw her grandchildren."
+    ],
+    "word_frequency": 18813
+  },
+  {
+    "word": "exhale",
+    "definition": [
+      "to breathe out",
+      "Take a deep breath in, then slowly exhale."
+    ],
+    "word_frequency": 17329
+  },
+  {
+    "word": "exhaust",
+    "definition": [
+      "To use up or tire out completely.",
+      "The long hike completely exhausted us."
+    ],
+    "word_frequency": 4472
+  },
+  {
+    "word": "exist",
+    "definition": [
+      "to be real, to live",
+      "Do aliens really exist?"
+    ],
+    "word_frequency": 1436
+  },
+  {
+    "word": "expand",
+    "definition": [
+      "to become or make larger or more extensive",
+      "The company plans to expand its business."
+    ],
+    "word_frequency": 2904
+  },
+  {
+    "word": "expire",
+    "definition": [
+      "to cease to be valid, typically after a fixed period of time; to die",
+      "My passport will expire next year."
+    ],
+    "word_frequency": 6625
+  },
+  {
+    "word": "explode",
+    "definition": [
+      "burst or cause to burst with a loud noise and force",
+      "The fireworks exploded in the night sky."
+    ],
+    "word_frequency": 6717
+  },
+  {
+    "word": "explore",
+    "definition": [
+      "to travel through an unfamiliar area to learn about it; to examine thoroughly",
+      "Let's explore the old castle."
+    ],
+    "word_frequency": 3100
+  },
+  {
+    "word": "express",
+    "definition": [
+      "to show a feeling or opinion",
+      "It's important to express your feelings."
+    ],
+    "word_frequency": 1640
+  },
+  {
+    "word": "extend",
+    "definition": [
+      "to stretch out or prolong",
+      "We decided to extend our stay for another week."
+    ],
+    "word_frequency": 1761
+  },
+  {
+    "word": "fade",
+    "definition": [
+      "gradually grow faint or disappear",
+      "The colors of the old photograph began to fade."
+    ],
+    "word_frequency": 6184
+  },
+  {
+    "word": "fart",
+    "definition": [
+      "emit gas from the anus",
+      "He tried to hold it in, but he accidentally farted."
+    ],
+    "word_frequency": 9101
+  },
+  {
+    "word": "fatten",
+    "definition": [
+      "to make or become fat",
+      "Farmers often fatten their livestock before selling them for meat."
+    ],
+    "word_frequency": 28074
+  },
+  {
+    "word": "fidget",
+    "definition": [
+      "make small movements, especially of the hands and feet, through nervousness or impatience",
+      "The child began to fidget in his seat during the long lecture."
+    ],
+    "word_frequency": 33398
+  },
+  {
+    "word": "finalize",
+    "definition": [
+      "to complete or settle (a plan, arrangement, or deal)",
+      "We need to finalize the details of the contract."
+    ],
+    "word_frequency": 13354
+  },
+  {
+    "word": "fit",
+    "definition": [
+      "to fit",
+      "Does this shirt still fit you?"
+    ],
+    "word_frequency": 961
+  },
+  {
+    "word": "flatten",
+    "definition": [
+      "To make or become flat.",
+      "The steamroller will flatten the road."
+    ],
+    "word_frequency": 12455
+  },
+  {
+    "word": "flee",
+    "definition": [
+      "to run away from a place or situation of danger",
+      "The refugees were forced to flee their homes."
+    ],
+    "word_frequency": 4687
+  },
+  {
+    "word": "flip",
+    "definition": [
+      "to turn over or cause to turn over with a sudden quick movement",
+      "He flipped the coin to decide who would go first."
+    ],
+    "word_frequency": 3718
+  },
+  {
+    "word": "flirt",
+    "definition": [
+      "to behave as if attracted to someone",
+      "He likes to flirt with all the waitresses."
+    ],
+    "word_frequency": 8484
+  },
+  {
+    "word": "flow",
+    "definition": [
+      "to move steadily and continuously",
+      "The river flows into the sea."
+    ],
+    "word_frequency": 1641
+  },
+  {
+    "word": "flush",
+    "definition": [
+      "to clean or empty with a rush of water; to turn red in the face",
+      "Don't forget to flush the toilet. Her face began to flush with embarrassment."
+    ],
+    "word_frequency": 6722
+  },
+  {
+    "word": "flutter",
+    "definition": [
+      "to move with quick, light, irregular motions",
+      "The butterflies began to flutter their wings as the sun came out."
+    ],
+    "word_frequency": 18562
+  },
+  {
+    "word": "forbid",
+    "definition": [
+      "to refuse to allow (something)",
+      "My parents forbid me from staying out late."
+    ],
+    "word_frequency": 5342
+  },
+  {
+    "word": "forgive",
+    "definition": [
+      "to stop feeling angry or resentful towards someone for an offense",
+      "Please forgive me for my mistake."
+    ],
+    "word_frequency": 3415
+  },
+  {
+    "word": "freshen",
+    "definition": [
+      "to make or become fresh",
+      "She opened the window to freshen the air in the room."
+    ],
+    "word_frequency": 24269
+  },
+  {
+    "word": "frighten",
+    "definition": [
+      "to make someone afraid",
+      "The loud noise frightened the cat."
+    ],
+    "word_frequency": 7329
+  },
+  {
+    "word": "fulfil",
+    "definition": [
+      "achieve or realize (something desired, promised, or predicted)",
+      "He worked hard to fulfil his dreams."
+    ],
+    "word_frequency": 9610
+  },
+  {
+    "word": "gain",
+    "definition": [
+      "to obtain or acquire something",
+      "He hopes to gain more experience in this role."
+    ],
+    "word_frequency": 1292
+  },
+  {
+    "word": "gasp",
+    "definition": [
+      "to take a quick, deep breath with your mouth open",
+      "She let out a gasp of surprise when she saw the gift."
+    ],
+    "word_frequency": 11058
+  },
+  {
+    "word": "gobble",
+    "definition": [
+      "to eat something very quickly and noisily",
+      "The hungry dog gobbled down its food."
+    ],
+    "word_frequency": 24878
+  },
+  {
+    "word": "govern",
+    "definition": [
+      "to conduct the policy, actions, and affairs of (a state, organization, or people)",
+      "The new laws will govern how businesses operate."
+    ],
+    "word_frequency": 4234
+  },
+  {
+    "word": "grab",
+    "definition": [
+      "to take hold of something or someone suddenly and roughly",
+      "He grabbed his bag and ran out the door."
+    ],
+    "word_frequency": 2189
+  },
+  {
+    "word": "graduate",
+    "definition": [
+      "successfully complete an academic degree",
+      "She will graduate from university next year."
+    ],
+    "word_frequency": 2261
+  },
+  {
+    "word": "grate",
+    "definition": [
+      "to shred or rub food into small pieces",
+      "Please grate the cheese for the pasta."
+    ],
+    "word_frequency": 16083
+  },
+  {
+    "word": "graze",
+    "definition": [
+      "eat grass; scrape skin",
+      "The cows graze in the field."
+    ],
+    "word_frequency": 10473
+  },
+  {
+    "word": "grieve",
+    "definition": [
+      "to feel intense sorrow or distress",
+      "It takes time to grieve after losing a loved one."
+    ],
+    "word_frequency": 11064
+  },
+  {
+    "word": "groan",
+    "definition": [
+      "make a deep, inarticulate sound in response to pain or despair",
+      "He let out a groan of pain."
+    ],
+    "word_frequency": 17127
+  },
+  {
+    "word": "growl",
+    "definition": [
+      "To make a low, guttural sound, typically in anger or warning",
+      "The dog began to growl at the stranger."
+    ],
+    "word_frequency": 16727
+  },
+  {
+    "word": "grumble",
+    "definition": [
+      "to complain in a bad-tempered way",
+      "He continued to grumble about the cold weather."
+    ],
+    "word_frequency": 23138
+  },
+  {
+    "word": "gulp",
+    "definition": [
+      "to swallow quickly or in large mouthfuls",
+      "He gulped down his water after the run."
+    ],
+    "word_frequency": 21935
+  },
+  {
+    "word": "halt",
+    "definition": [
+      "to stop; to bring to a stop",
+      "The police ordered the car to halt at the checkpoint."
+    ],
+    "word_frequency": 5585
+  },
+  {
+    "word": "handle",
+    "definition": [
+      "handle",
+      "She can handle difficult situations well."
+    ],
+    "word_frequency": 1339
+  },
+  {
+    "word": "harden",
+    "definition": [
+      "to make or become hard",
+      "The concrete will harden overnight."
+    ],
+    "word_frequency": 10059
+  },
+  {
+    "word": "heal",
+    "definition": [
+      "to become sound or healthy again",
+      "It will take time for the wound to heal."
+    ],
+    "word_frequency": 3538
+  },
+  {
+    "word": "hesitate",
+    "definition": [
+      "pause before acting or speaking",
+      "Don't hesitate to ask if you have any questions."
+    ],
+    "word_frequency": 6825
+  },
+  {
+    "word": "hike",
+    "definition": [
+      "to walk a long distance, especially in the country or mountains",
+      "We decided to hike to the top of the mountain."
+    ],
+    "word_frequency": 5435
+  },
+  {
+    "word": "hire",
+    "definition": [
+      "employ for wages; obtain the temporary use of",
+      "The company decided to hire a new manager."
+    ],
+    "word_frequency": 2639
+  },
+  {
+    "word": "hiss",
+    "definition": [
+      "make a sharp, sibilant sound as of the letter s",
+      "The snake began to hiss loudly."
+    ],
+    "word_frequency": 18839
+  },
+  {
+    "word": "hitchhike",
+    "definition": [
+      "to travel by getting free rides from passing vehicles",
+      "They decided to hitchhike across the country during their gap year."
+    ],
+    "word_frequency": 31385
+  },
+  {
+    "word": "honk",
+    "definition": [
+      "make a loud, harsh sound (like a goose or car horn)",
+      "The driver had to honk his horn to warn the pedestrian."
+    ],
+    "word_frequency": 21396
+  },
+  {
+    "word": "howl",
+    "definition": [
+      "long, loud cry",
+      "The wolf began to howl at the full moon."
+    ],
+    "word_frequency": 14278
+  },
+  {
+    "word": "hum",
+    "definition": [
+      "make a low, continuous, murmuring sound",
+      "The refrigerator began to hum loudly."
+    ],
+    "word_frequency": 9118
+  },
+  {
+    "word": "identify",
+    "definition": [
+      "to recognize or establish the identity of",
+      "Can you identify the person in this photograph?"
+    ],
+    "word_frequency": 1795
+  },
+  {
+    "word": "ignore",
+    "definition": [
+      "to refuse to take notice of",
+      "Don't ignore my advice."
+    ],
+    "word_frequency": 2334
+  },
+  {
+    "word": "imitate",
+    "definition": [
+      "copy",
+      "Children often imitate their parents' behavior."
+    ],
+    "word_frequency": 13721
+  },
+  {
+    "word": "immigrate",
+    "definition": [
+      "to come to live permanently in a foreign country",
+      "Many people immigrate to new countries for better opportunities."
+    ],
+    "word_frequency": 21959
+  },
+  {
+    "word": "impress",
+    "definition": [
+      "make someone admire",
+      "He tried to impress his boss with his hard work."
+    ],
+    "word_frequency": 2953
+  },
+  {
+    "word": "improve",
+    "definition": [
+      "improve",
+      "He wants to improve his English skills."
+    ],
+    "word_frequency": 1340
+  },
+  {
+    "word": "include",
+    "definition": [
+      "contain as part of a whole",
+      "The price includes tax."
+    ],
+    "word_frequency": 233
+  },
+  {
+    "word": "inflate",
+    "definition": [
+      "to fill with air or gas; to increase in size or amount",
+      "We need to inflate the tires before the trip."
+    ],
+    "word_frequency": 10201
+  },
+  {
+    "word": "inform",
+    "definition": [
+      "to give someone facts or information",
+      "Please inform me if there are any changes."
+    ],
+    "word_frequency": 2468
+  },
+  {
+    "word": "inhale",
+    "definition": [
+      "to breathe in",
+      "He took a deep breath and began to inhale the fresh air."
+    ],
+    "word_frequency": 14487
+  },
+  {
+    "word": "injure",
+    "definition": [
+      "cause harm or damage to",
+      "He injured his knee playing football."
+    ],
+    "word_frequency": 2228
+  },
+  {
+    "word": "inquire",
+    "definition": [
+      "ask for information from someone",
+      "She decided to inquire about the job opening."
+    ],
+    "word_frequency": 12148
+  },
+  {
+    "word": "insert",
+    "definition": [
+      "to place, fit, or push (something) into something else",
+      "Please insert the key into the lock."
+    ],
+    "word_frequency": 4981
+  },
+  {
+    "word": "insist",
+    "definition": [
+      "to demand forcefully",
+      "He insisted on paying for the meal."
+    ],
+    "word_frequency": 4630
+  },
+  {
+    "word": "inspect",
+    "definition": [
+      "to look at something closely, typically to assess its condition or discover any shortcomings",
+      "The mechanic will inspect the car for any damage."
+    ],
+    "word_frequency": 8622
+  },
+  {
+    "word": "install",
+    "definition": [
+      "to put in place for use",
+      "We need to install new software on the computer."
+    ],
+    "word_frequency": 2689
+  },
+  {
+    "word": "instruct",
+    "definition": [
+      "to teach or direct",
+      "Please instruct me on how to use this machine."
+    ],
+    "word_frequency": 6362
+  },
+  {
+    "word": "insure",
+    "definition": [
+      "arrange for compensation in the event of damage to or loss of property",
+      "You should insure your car against theft."
+    ],
+    "word_frequency": 7915
+  },
+  {
+    "word": "intend",
+    "definition": [
+      "plan, mean to do",
+      "I intend to finish this project by Friday."
+    ],
+    "word_frequency": 1594
+  },
+  {
+    "word": "interact",
+    "definition": [
+      "to act in such a way as to have an effect on another",
+      "It's important for children to interact with others."
+    ],
+    "word_frequency": 4695
+  },
+  {
+    "word": "interrupt",
+    "definition": [
+      "to stop someone from speaking or doing something",
+      "Please don't interrupt me when I'm talking."
+    ],
+    "word_frequency": 6285
+  },
+  {
+    "word": "intersect",
+    "definition": [
+      "To cross or meet each other.",
+      "The two roads intersect just beyond the bridge."
+    ],
+    "word_frequency": 15692
+  },
+  {
+    "word": "invent",
+    "definition": [
+      "to create or design something that has not existed before",
+      "Thomas Edison invented the light bulb."
+    ],
+    "word_frequency": 3914
+  },
+  {
+    "word": "invest",
+    "definition": [
+      "put money into financial schemes, shares, or property with the expectation of achieving a profit",
+      "It's wise to invest in your future."
+    ],
+    "word_frequency": 3052
+  },
+  {
+    "word": "investigate",
+    "definition": [
+      "to carry out a systematic or formal inquiry to discover and examine the facts of (an incident, allegation, etc.) so as to establish the truth",
+      "The police will investigate the cause of the accident."
+    ],
+    "word_frequency": 3107
+  },
+  {
+    "word": "involve",
+    "definition": [
+      "to include or affect someone or something",
+      "The project will involve a lot of teamwork."
+    ],
+    "word_frequency": 678
+  },
+  {
+    "word": "irrigate",
+    "definition": [
+      "To supply water to land or crops to aid growth.",
+      "Farmers irrigate their fields during dry seasons."
+    ],
+    "word_frequency": 24602
+  },
+  {
+    "word": "irritate",
+    "definition": [
+      "to annoy or make angry; to make sore or inflamed",
+      "His constant complaining really started to irritate me."
+    ],
+    "word_frequency": 8859
+  },
+  {
+    "word": "jiggle",
+    "definition": [
+      "to move lightly and quickly up and down or from side to side",
+      "The jelly began to jiggle when she touched it."
+    ],
+    "word_frequency": 29484
+  },
+  {
+    "word": "juggle",
+    "definition": [
+      "keep several objects in the air; manage multiple tasks",
+      "She has to juggle work, family, and her studies."
+    ],
+    "word_frequency": 14899
+  },
+  {
+    "word": "kill",
+    "definition": [
+      "kill",
+      "The hunter tried to kill the animal."
+    ],
+    "word_frequency": 502
+  },
+  {
+    "word": "knead",
+    "definition": [
+      "to work (dough or clay) with the hands",
+      "She began to knead the dough for bread."
+    ],
+    "word_frequency": 34281
+  },
+  {
+    "word": "kneel",
+    "definition": [
+      "to go down on one's knee or knees",
+      "He had to kneel to tie his shoelace."
+    ],
+    "word_frequency": 13209
+  },
+  {
+    "word": "knit",
+    "definition": [
+      "to make fabric by interlocking loops of yarn",
+      "My grandmother loves to knit sweaters."
+    ],
+    "word_frequency": 8256
+  },
+  {
+    "word": "launch",
+    "definition": [
+      "to start or send off",
+      "They plan to launch a new product next month."
+    ],
+    "word_frequency": 1619
+  },
+  {
+    "word": "launder",
+    "definition": [
+      "To wash and iron clothes; to conceal the origin of illegally obtained money.",
+      "She needs to launder her clothes this weekend."
+    ],
+    "word_frequency": 10493
+  },
+  {
+    "word": "lead",
+    "definition": [
+      "to guide; to be in charge",
+      "She will lead the team on the new project."
+    ],
+    "word_frequency": 528
+  },
+  {
+    "word": "leak",
+    "definition": [
+      "to escape or allow to escape through a hole",
+      "The pipe started to leak."
+    ],
+    "word_frequency": 4416
+  },
+  {
+    "word": "lean",
+    "definition": [
+      "to incline or bend from a vertical position",
+      "Don't lean on the wet paint."
+    ],
+    "word_frequency": 4104
+  },
+  {
+    "word": "leap",
+    "definition": [
+      "to jump a long way or to a great height",
+      "The deer leaped over the fence."
+    ],
+    "word_frequency": 5515
+  },
+  {
+    "word": "lengthen",
+    "definition": [
+      "To make or become longer.",
+      "The tailor had to lengthen the trousers."
+    ],
+    "word_frequency": 23166
+  },
+  {
+    "word": "lick",
+    "definition": [
+      "to pass the tongue over",
+      "The dog started to lick its paw."
+    ],
+    "word_frequency": 7040
+  },
+  {
+    "word": "lie",
+    "definition": [
+      "to be in a horizontal position; to say something untrue",
+      "He likes to lie on the sofa and read."
+    ],
+    "word_frequency": 1213
+  },
+  {
+    "word": "lighten",
+    "definition": [
+      "to make or become less heavy or dark",
+      "The sky began to lighten as dawn approached."
+    ],
+    "word_frequency": 12654
+  },
+  {
+    "word": "locate",
+    "definition": [
+      "find, discover the position of",
+      "Can you help me locate my lost keys?"
+    ],
+    "word_frequency": 1172
+  },
+  {
+    "word": "loosen",
+    "definition": [
+      "to make or become less tight or firm",
+      "He had to loosen his tie after the long meeting."
+    ],
+    "word_frequency": 12324
+  },
+  {
+    "word": "lower",
+    "definition": [
+      "to move something downwards",
+      "Please lower your voice."
+    ],
+    "word_frequency": 6205
+  },
+  {
+    "word": "maintain",
+    "definition": [
+      "maintain",
+      "It's important to maintain a healthy diet."
+    ],
+    "word_frequency": 1737
+  },
+  {
+    "word": "manage",
+    "definition": [
+      "to control, to succeed in doing",
+      "Can you manage to finish the report by Friday?"
+    ],
+    "word_frequency": 1418
+  },
+  {
+    "word": "marinate",
+    "definition": [
+      "to soak food in a marinade",
+      "You should marinate the chicken for at least an hour before grilling."
+    ],
+    "word_frequency": 26510
+  },
+  {
+    "word": "meditate",
+    "definition": [
+      "to think deeply or focus one's mind for a period",
+      "She tries to meditate for at least 15 minutes every morning."
+    ],
+    "word_frequency": 14308
+  },
+  {
+    "word": "memorize",
+    "definition": [
+      "commit to memory; learn by heart",
+      "I need to memorize these vocabulary words."
+    ],
+    "word_frequency": 15116
+  },
+  {
+    "word": "mend",
+    "definition": [
+      "To repair something that is broken or damaged.",
+      "Can you help me mend this torn shirt?"
+    ],
+    "word_frequency": 13049
+  },
+  {
+    "word": "mention",
+    "definition": [
+      "to refer to something briefly and without going into detail",
+      "Did he mention anything about the meeting?"
+    ],
+    "word_frequency": 1238
+  },
+  {
+    "word": "migrate",
+    "definition": [
+      "(of a person or animal) move from one area or country to another",
+      "Many birds migrate south for the winter."
+    ],
+    "word_frequency": 11406
+  },
+  {
+    "word": "mince",
+    "definition": [
+      "to cut up or grind (food, especially meat) into very small pieces",
+      "Please mince the garlic finely for the sauce."
+    ],
+    "word_frequency": 19633
+  },
+  {
+    "word": "mingle",
+    "definition": [
+      "mix or combine; move around and talk to people at a social event",
+      "She likes to mingle with guests at parties."
+    ],
+    "word_frequency": 15314
+  },
+  {
+    "word": "minimize",
+    "definition": [
+      "to reduce to the smallest possible amount or degree",
+      "We need to minimize the risks."
+    ],
+    "word_frequency": 6743
+  },
+  {
+    "word": "misbehave",
+    "definition": [
+      "to behave badly",
+      "The children were warned not to misbehave during the school trip."
+    ],
+    "word_frequency": 29530
+  },
+  {
+    "word": "mismanage",
+    "definition": [
+      "manage badly or inefficiently",
+      "The company's finances were severely mismanaged."
+    ],
+    "word_frequency": 33929
+  },
+  {
+    "word": "misread",
+    "definition": [
+      "To read incorrectly.",
+      "I think I misread the instructions, so the cake didn't turn out right."
+    ],
+    "word_frequency": 21164
+  },
+  {
+    "word": "misspell",
+    "definition": [
+      "To spell (a word) incorrectly.",
+      "It's easy to misspell 'receive' or 'believe'."
+    ],
+    "word_frequency": 20395
+  },
+  {
+    "word": "mistreat",
+    "definition": [
+      "to treat (a person or animal) badly",
+      "It's wrong to mistreat animals."
+    ],
+    "word_frequency": 18879
+  },
+  {
+    "word": "moan",
+    "definition": [
+      "make a long, low sound of pain, suffering, or pleasure",
+      "He let out a low moan of discomfort."
+    ],
+    "word_frequency": 11408
+  },
+  {
+    "word": "modernise",
+    "definition": [
+      "to make modern",
+      "They plan to modernise the old factory."
+    ],
+    "word_frequency": 32689
+  },
+  {
+    "word": "moisturize",
+    "definition": [
+      "to make something less dry",
+      "Remember to moisturize your skin daily."
+    ],
+    "word_frequency": 27839
+  },
+  {
+    "word": "multiply",
+    "definition": [
+      "multiply",
+      "You need to multiply these numbers."
+    ],
+    "word_frequency": 10361
+  },
+  {
+    "word": "munch",
+    "definition": [
+      "To eat (something) steadily and often audibly.",
+      "The rabbit munched on a carrot."
+    ],
+    "word_frequency": 18130
+  },
+  {
+    "word": "navigate",
+    "definition": [
+      "to plan and direct the route or course of a ship, aircraft, or other form of transport, especially by using instruments or maps",
+      "It's difficult to navigate without a map."
+    ],
+    "word_frequency": 8028
+  },
+  {
+    "word": "nibble",
+    "definition": [
+      "To take small bites",
+      "The rabbit began to nibble on the carrot."
+    ],
+    "word_frequency": 24349
+  },
+  {
+    "word": "notify",
+    "definition": [
+      "to inform someone",
+      "Please notify me if there are any changes."
+    ],
+    "word_frequency": 6461
+  },
+  {
+    "word": "observe",
+    "definition": [
+      "notice or perceive (something) and register it as being significant",
+      "Scientists observe the stars."
+    ],
+    "word_frequency": 2745
+  },
+  {
+    "word": "offend",
+    "definition": [
+      "to cause someone to feel upset or angry",
+      "I didn't mean to offend you."
+    ],
+    "word_frequency": 5605
+  },
+  {
+    "word": "operate",
+    "definition": [
+      "to control the functioning of a machine, process, or system",
+      "You need to learn how to operate this machine."
+    ],
+    "word_frequency": 1445
+  },
+  {
+    "word": "organise",
+    "definition": [
+      "to arrange or put in order",
+      "We need to organise the event."
+    ],
+    "word_frequency": 4497
+  },
+  {
+    "word": "organize",
+    "definition": [
+      "arrange or put in order",
+      "We need to organize the event."
+    ],
+    "word_frequency": 2235
+  },
+  {
+    "word": "outplay",
+    "definition": [
+      "to play better than an opponent",
+      "Our team managed to outplay the champions in the final match."
+    ],
+    "word_frequency": 25875
+  },
+  {
+    "word": "outscore",
+    "definition": [
+      "To score more points than an opponent.",
+      "Our team managed to outscore the opposition in the final quarter."
+    ],
+    "word_frequency": 23199
+  },
+  {
+    "word": "overcook",
+    "definition": [
+      "Cook (food) for too long.",
+      "Be careful not to overcook the pasta, or it will be mushy."
+    ],
+    "word_frequency": 30276
+  },
+  {
+    "word": "overeat",
+    "definition": [
+      "eat too much",
+      "It's easy to overeat during the holidays."
+    ],
+    "word_frequency": 29563
+  },
+  {
+    "word": "overhear",
+    "definition": [
+      "hear (someone or something) without meaning to or without the knowledge of the speaker",
+      "I couldn't help but overhear their conversation at the next table."
+    ],
+    "word_frequency": 11855
+  },
+  {
+    "word": "overheat",
+    "definition": [
+      "become too hot",
+      "The car engine started to overheat."
+    ],
+    "word_frequency": 17663
+  },
+  {
+    "word": "overpay",
+    "definition": [
+      "to pay too much for something",
+      "Be careful not to overpay for that used car."
+    ],
+    "word_frequency": 22929
+  },
+  {
+    "word": "overtake",
+    "definition": [
+      "To catch up with and pass while traveling in the same direction.",
+      "The car quickly overtook the truck on the highway."
+    ],
+    "word_frequency": 13580
+  },
+  {
+    "word": "overwork",
+    "definition": [
+      "to make someone work too hard",
+      "He tends to overwork himself before deadlines."
+    ],
+    "word_frequency": 20149
+  },
+  {
+    "word": "owe",
+    "definition": [
+      "to owe",
+      "I owe you five dollars for the coffee."
+    ],
+    "word_frequency": 4185
+  },
+  {
+    "word": "own",
+    "definition": [
+      "have (something) as one's own property; possess",
+      "I own a small car."
+    ],
+    "word_frequency": 150
+  },
+  {
+    "word": "participate",
+    "definition": [
+      "take part in",
+      "Everyone should participate in the discussion."
+    ],
+    "word_frequency": 2609
+  },
+  {
+    "word": "peck",
+    "definition": [
+      "to strike or bite with the beak or bill",
+      "The bird began to peck at the seeds on the ground."
+    ],
+    "word_frequency": 10956
+  },
+  {
+    "word": "pee",
+    "definition": [
+      "urinate",
+      "The dog needs to pee."
+    ],
+    "word_frequency": 5360
+  },
+  {
+    "word": "peep",
+    "definition": [
+      "to look quickly and furtively",
+      "She tried to peep through the keyhole."
+    ],
+    "word_frequency": 12026
+  },
+  {
+    "word": "perform",
+    "definition": [
+      "to carry out, accomplish, or entertain",
+      "The band will perform tonight."
+    ],
+    "word_frequency": 1647
+  },
+  {
+    "word": "persist",
+    "definition": [
+      "to continue firmly or obstinately",
+      "If you persist, you will eventually succeed."
+    ],
+    "word_frequency": 9937
+  },
+  {
+    "word": "persuade",
+    "definition": [
+      "to convince someone to do something",
+      "I tried to persuade her to come with us."
+    ],
+    "word_frequency": 6568
+  },
+  {
+    "word": "pinch",
+    "definition": [
+      "to grip tightly between the thumb and a finger",
+      "She pinched herself to make sure she wasn't dreaming."
+    ],
+    "word_frequency": 7147
+  },
+  {
+    "word": "please",
+    "definition": [
+      "to make happy or satisfied",
+      "He tried to please his parents."
+    ],
+    "word_frequency": 176
+  },
+  {
+    "word": "poke",
+    "definition": [
+      "to jab or prod",
+      "He poked me with his elbow."
+    ],
+    "word_frequency": 9027
+  },
+  {
+    "word": "polish",
+    "definition": [
+      "to make something smooth and shiny by rubbing",
+      "She used a cloth to polish the silver."
+    ],
+    "word_frequency": 3230
+  },
+  {
+    "word": "pollute",
+    "definition": [
+      "to contaminate (water, air, or a place) with harmful substances",
+      "Factories often pollute the air with their emissions."
+    ],
+    "word_frequency": 13249
+  },
+  {
+    "word": "pose",
+    "definition": [
+      "to present or constitute (a problem, danger, etc.)",
+      "The new policy could pose a risk to small businesses."
+    ],
+    "word_frequency": 4372
+  },
+  {
+    "word": "possess",
+    "definition": [
+      "to have or own something",
+      "He possesses great skill in playing the piano."
+    ],
+    "word_frequency": 4937
+  },
+  {
+    "word": "postpone",
+    "definition": [
+      "to delay",
+      "We had to postpone the meeting until next week."
+    ],
+    "word_frequency": 7360
+  },
+  {
+    "word": "pray",
+    "definition": [
+      "to speak to God",
+      "Many people pray for peace."
+    ],
+    "word_frequency": 2702
+  },
+  {
+    "word": "predict",
+    "definition": [
+      "to say or estimate that a specified thing will happen in the future or will be a consequence of something",
+      "It's difficult to predict the weather accurately for next week."
+    ],
+    "word_frequency": 4247
+  },
+  {
+    "word": "preheat",
+    "definition": [
+      "to heat (an oven or other cooking appliance) to a specified temperature before putting food in it",
+      "Remember to preheat the oven to 200 degrees Celsius."
+    ],
+    "word_frequency": 22948
+  },
+  {
+    "word": "preorder",
+    "definition": [
+      "To order (something) before it is available.",
+      "You can preorder the new game now."
+    ],
+    "word_frequency": 19409
+  },
+  {
+    "word": "prevent",
+    "definition": [
+      "prevent",
+      "We need to prevent further damage."
+    ],
+    "word_frequency": 1344
+  },
+  {
+    "word": "prioritize",
+    "definition": [
+      "to determine the order for dealing with (items or tasks) according to their relative importance",
+      "You need to prioritize your tasks to meet the deadline."
+    ],
+    "word_frequency": 13415
+  },
+  {
+    "word": "proceed",
+    "definition": [
+      "continue, go forward",
+      "Please proceed with your presentation."
+    ],
+    "word_frequency": 3862
+  },
+  {
+    "word": "promote",
+    "definition": [
+      "to support or actively encourage",
+      "The campaign aims to promote healthy eating habits."
+    ],
+    "word_frequency": 2047
+  },
+  {
+    "word": "pronounce",
+    "definition": [
+      "to make the sound of a word or letter",
+      "How do you pronounce this word?"
+    ],
+    "word_frequency": 4644
+  },
+  {
+    "word": "protect",
+    "definition": [
+      "to keep safe from harm",
+      "Parents try to protect their children from danger."
+    ],
+    "word_frequency": 1040
+  },
+  {
+    "word": "prove",
+    "definition": [
+      "prove",
+      "Can you prove that you were there?"
+    ],
+    "word_frequency": 1398
+  },
+  {
+    "word": "provide",
+    "definition": [
+      "supply, give",
+      "We need to provide more information."
+    ],
+    "word_frequency": 602
+  },
+  {
+    "word": "publish",
+    "definition": [
+      "print and distribute",
+      "The author will publish a new book next year."
+    ],
+    "word_frequency": 748
+  },
+  {
+    "word": "puff",
+    "definition": [
+      "to breathe in or out in short, quick breaths; to swell",
+      "He began to puff after running up the stairs."
+    ],
+    "word_frequency": 9666
+  },
+  {
+    "word": "pumping",
+    "definition": [
+      "forcing liquid or gas to move",
+      "The heart is constantly pumping blood around the body."
+    ],
+    "word_frequency": 6659
+  },
+  {
+    "word": "punish",
+    "definition": [
+      "to make someone suffer for a crime or wrongdoing",
+      "The teacher had to punish the student for cheating."
+    ],
+    "word_frequency": 5083
+  },
+  {
+    "word": "purify",
+    "definition": [
+      "remove contaminants from",
+      "The water filter helps to purify drinking water."
+    ],
+    "word_frequency": 15740
+  },
+  {
+    "word": "putt",
+    "definition": [
+      "to strike a golf ball gently across the putting green",
+      "He managed to putt the ball directly into the hole."
+    ],
+    "word_frequency": 16580
+  },
+  {
+    "word": "quack",
+    "definition": [
+      "to make the characteristic harsh sound of a duck",
+      "The duck began to quack loudly as we approached."
+    ],
+    "word_frequency": 18661
+  },
+  {
+    "word": "quit",
+    "definition": [
+      "to stop doing something",
+      "He decided to quit his job."
+    ],
+    "word_frequency": 2124
+  },
+  {
+    "word": "raise",
+    "definition": [
+      "to lift or move to a higher position",
+      "Please raise your hand if you have a question."
+    ],
+    "word_frequency": 1215
+  },
+  {
+    "word": "react",
+    "definition": [
+      "to respond",
+      "How did he react to the news?"
+    ],
+    "word_frequency": 3995
+  },
+  {
+    "word": "realise",
+    "definition": [
+      "to become aware of something",
+      "I didn't realise how late it was."
+    ],
+    "word_frequency": 3384
+  },
+  {
+    "word": "reappear",
+    "definition": [
+      "appear again",
+      "After a long absence, the sun finally reappeared from behind the clouds."
+    ],
+    "word_frequency": 19911
+  },
+  {
+    "word": "reapply",
+    "definition": [
+      "apply again",
+      "You need to reapply for the visa next year."
+    ],
+    "word_frequency": 29601
+  },
+  {
+    "word": "rearrange",
+    "definition": [
+      "change the position or arrangement of something",
+      "She decided to rearrange the furniture in her living room."
+    ],
+    "word_frequency": 19912
+  },
+  {
+    "word": "reassure",
+    "definition": [
+      "say or do something to remove the doubts or fears of someone",
+      "She tried to reassure him that everything would be fine."
+    ],
+    "word_frequency": 11872
+  },
+  {
+    "word": "reboot",
+    "definition": [
+      "to restart a computer system",
+      "Please reboot your computer to apply the updates."
+    ],
+    "word_frequency": 9815
+  },
+  {
+    "word": "recharge",
+    "definition": [
+      "charge (a battery or device) again; restore energy or vigor",
+      "I need to recharge my phone before we leave."
+    ],
+    "word_frequency": 11874
+  },
+  {
+    "word": "reckon",
+    "definition": [
+      "to expect or believe; to calculate",
+      "I reckon it's going to rain soon."
+    ],
+    "word_frequency": 7153
+  },
+  {
+    "word": "recognise",
+    "definition": [
+      "recognize",
+      "I didn't recognise him at first."
+    ],
+    "word_frequency": 4578
+  },
+  {
+    "word": "recommend",
+    "definition": [
+      "to suggest or praise as suitable or good",
+      "I highly recommend this book."
+    ],
+    "word_frequency": 1867
+  },
+  {
+    "word": "recover",
+    "definition": [
+      "to return to a normal state of health, mind, or strength",
+      "It took him a long time to recover from the illness."
+    ],
+    "word_frequency": 3232
+  },
+  {
+    "word": "rediscover",
+    "definition": [
+      "to discover again",
+      "She hopes to rediscover her passion for painting."
+    ],
+    "word_frequency": 20693
+  },
+  {
+    "word": "redo",
+    "definition": [
+      "do again or differently",
+      "I had to redo the entire assignment because of a mistake."
+    ],
+    "word_frequency": 15745
+  },
+  {
+    "word": "reduce",
+    "definition": [
+      "make smaller or less in amount",
+      "We need to reduce our expenses."
+    ],
+    "word_frequency": 1501
+  },
+  {
+    "word": "refer",
+    "definition": [
+      "to mention or allude to; to direct attention to",
+      "Please refer to the manual for more details."
+    ],
+    "word_frequency": 1868
+  },
+  {
+    "word": "reflect",
+    "definition": [
+      "throw back (heat, light, or sound) without absorbing it",
+      "The mirror reflects your image."
+    ],
+    "word_frequency": 2750
+  },
+  {
+    "word": "refresh",
+    "definition": [
+      "to give new strength or energy to",
+      "A cold drink will refresh you."
+    ],
+    "word_frequency": 6478
+  },
+  {
+    "word": "refrigerate",
+    "definition": [
+      "To make or keep cold or cool.",
+      "Please refrigerate the leftovers to keep them fresh."
+    ],
+    "word_frequency": 17695
+  },
+  {
+    "word": "refuel",
+    "definition": [
+      "to supply with more fuel",
+      "The plane needed to refuel before continuing its long journey."
+    ],
+    "word_frequency": 22049
+  },
+  {
+    "word": "refuse",
+    "definition": [
+      "to say that you will not do or accept something",
+      "She refused to answer the question."
+    ],
+    "word_frequency": 2125
+  },
+  {
+    "word": "register",
+    "definition": [
+      "to record; to sign up",
+      "You need to register for the course by Friday."
+    ],
+    "word_frequency": 1925
+  },
+  {
+    "word": "rehearse",
+    "definition": [
+      "practice a play, piece of music, or other work for public performance",
+      "The band will rehearse their new songs tonight."
+    ],
+    "word_frequency": 16986
+  },
+  {
+    "word": "reinstall",
+    "definition": [
+      "install again",
+      "I had to reinstall the software after the update failed."
+    ],
+    "word_frequency": 27252
+  },
+  {
+    "word": "reject",
+    "definition": [
+      "refuse to accept",
+      "They decided to reject the offer."
+    ],
+    "word_frequency": 2832
+  },
+  {
+    "word": "rejoin",
+    "definition": [
+      "join again; reply to (someone) in a quick or witty way",
+      "After a short break, he will rejoin the team."
+    ],
+    "word_frequency": 15746
+  },
+  {
+    "word": "relate",
+    "definition": [
+      "relate",
+      "I can relate to your feelings."
+    ],
+    "word_frequency": 684
+  },
+  {
+    "word": "reload",
+    "definition": [
+      "load again",
+      "He had to reload the gun."
+    ],
+    "word_frequency": 14342
+  },
+  {
+    "word": "relocate",
+    "definition": [
+      "To move to a new place and establish one's home or business there",
+      "The company decided to relocate its headquarters to a different city."
+    ],
+    "word_frequency": 11259
+  },
+  {
+    "word": "rely",
+    "definition": [
+      "to depend on with full trust or confidence",
+      "You can always rely on him for help."
+    ],
+    "word_frequency": 3235
+  },
+  {
+    "word": "remain",
+    "definition": [
+      "to continue to be in the same state or condition.",
+      "Please remain seated."
+    ],
+    "word_frequency": 1244
+  },
+  {
+    "word": "remarry",
+    "definition": [
+      "To marry again.",
+      "After her divorce, she decided to remarry."
+    ],
+    "word_frequency": 18156
+  },
+  {
+    "word": "remodel",
+    "definition": [
+      "to change the structure or form of something",
+      "They decided to remodel their kitchen."
+    ],
+    "word_frequency": 19155
+  },
+  {
+    "word": "remove",
+    "definition": [
+      "remove",
+      "Please remove your shoes before entering."
+    ],
+    "word_frequency": 1345
+  },
+  {
+    "word": "renovate",
+    "definition": [
+      "to restore (something old, especially a building) to a good state of repair",
+      "They plan to renovate their old house next year."
+    ],
+    "word_frequency": 9524
+  },
+  {
+    "word": "reopen",
+    "definition": [
+      "open again",
+      "The store will reopen next Monday after renovations."
+    ],
+    "word_frequency": 10536
+  },
+  {
+    "word": "reorganize",
+    "definition": [
+      "to organize (something) again in a different way",
+      "The company decided to reorganize its departments."
+    ],
+    "word_frequency": 20175
+  },
+  {
+    "word": "repaint",
+    "definition": [
+      "to paint something again",
+      "We decided to repaint the living room a lighter color."
+    ],
+    "word_frequency": 29213
+  },
+  {
+    "word": "repay",
+    "definition": [
+      "to pay back (a loan, debt, or money)",
+      "He promised to repay the loan by next month."
+    ],
+    "word_frequency": 8287
+  },
+  {
+    "word": "rephrase",
+    "definition": [
+      "to say or write something in a different way",
+      "Could you please rephrase that question?"
+    ],
+    "word_frequency": 25001
+  },
+  {
+    "word": "replace",
+    "definition": [
+      "to take the place of",
+      "You need to replace the old battery with a new one."
+    ],
+    "word_frequency": 1961
+  },
+  {
+    "word": "repost",
+    "definition": [
+      "to post something again, especially on social media",
+      "Please don't repost my photos without permission."
+    ],
+    "word_frequency": 9037
+  },
+  {
+    "word": "reread",
+    "definition": [
+      "to read (something) again",
+      "I often reread my favorite books."
+    ],
+    "word_frequency": 20176
+  },
+  {
+    "word": "reschedule",
+    "definition": [
+      "to change the time or date of something",
+      "We had to reschedule the meeting due to a conflict."
+    ],
+    "word_frequency": 17415
+  },
+  {
+    "word": "rescue",
+    "definition": [
+      "to save from a dangerous situation",
+      "The firefighters managed to rescue everyone from the burning building."
+    ],
+    "word_frequency": 2350
+  },
+  {
+    "word": "resell",
+    "definition": [
+      "to sell something again",
+      "Many people buy concert tickets just to resell them at a higher price."
+    ],
+    "word_frequency": 22051
+  },
+  {
+    "word": "reset",
+    "definition": [
+      "set again",
+      "I need to reset my password."
+    ],
+    "word_frequency": 6482
+  },
+  {
+    "word": "resettle",
+    "definition": [
+      "settle again or in a different place",
+      "Many refugees had to resettle in new countries."
+    ],
+    "word_frequency": 29608
+  },
+  {
+    "word": "resist",
+    "definition": [
+      "to oppose or fight against",
+      "It's hard to resist chocolate."
+    ],
+    "word_frequency": 3738
+  },
+  {
+    "word": "restock",
+    "definition": [
+      "to replenish a supply of something",
+      "We need to restock the shelves before the store opens."
+    ],
+    "word_frequency": 26574
+  },
+  {
+    "word": "retake",
+    "definition": [
+      "to take again",
+      "She had to retake the exam because she failed the first time."
+    ],
+    "word_frequency": 13959
+  },
+  {
+    "word": "retell",
+    "definition": [
+      "to tell again",
+      "She asked him to retell the story from the beginning."
+    ],
+    "word_frequency": 21471
+  },
+  {
+    "word": "retire",
+    "definition": [
+      "to stop working due to age",
+      "My grandfather plans to retire next year."
+    ],
+    "word_frequency": 2526
+  },
+  {
+    "word": "retry",
+    "definition": [
+      "to try again",
+      "If the first attempt fails, you can always retry."
+    ],
+    "word_frequency": 34393
+  },
+  {
+    "word": "reuse",
+    "definition": [
+      "to use again or more than once",
+      "We should try to reuse plastic bags to protect the environment."
+    ],
+    "word_frequency": 12355
+  },
+  {
+    "word": "reveal",
+    "definition": [
+      "reveal",
+      "The investigation will reveal the truth."
+    ],
+    "word_frequency": 1741
+  },
+  {
+    "word": "revise",
+    "definition": [
+      "revise",
+      "She needs to revise her essay before submitting it."
+    ],
+    "word_frequency": 4124
+  },
+  {
+    "word": "revolve",
+    "definition": [
+      "move in a circle on a central axis; consider something from all angles",
+      "The Earth revolves around the Sun."
+    ],
+    "word_frequency": 11732
+  },
+  {
+    "word": "rewatch",
+    "definition": [
+      "to watch again",
+      "I love that movie so much, I could rewatch it every week."
+    ],
+    "word_frequency": 20961
+  },
+  {
+    "word": "rewind",
+    "definition": [
+      "Go back in time/tape",
+      "Please rewind the video to the beginning."
+    ],
+    "word_frequency": 14754
+  },
+  {
+    "word": "rewrite",
+    "definition": [
+      "to write (something) again so as to alter or improve it",
+      "She had to rewrite her essay to improve the arguments."
+    ],
+    "word_frequency": 10834
+  },
+  {
+    "word": "rhyme",
+    "definition": [
+      "to have the same sound at the end of words or lines",
+      "Do these two words rhyme?"
+    ],
+    "word_frequency": 9527
+  },
+  {
+    "word": "rid",
+    "definition": [
+      "make free of something undesirable",
+      "We need to get rid of this old furniture."
+    ],
+    "word_frequency": 2273
+  },
+  {
+    "word": "ripen",
+    "definition": [
+      "to become ripe; to mature",
+      "The apples need a few more days to ripen on the tree."
+    ],
+    "word_frequency": 28206
+  },
+  {
+    "word": "roam",
+    "definition": [
+      "roam",
+      "The wild horses roam freely across the plains."
+    ],
+    "word_frequency": 10389
+  },
+  {
+    "word": "rob",
+    "definition": [
+      "steal from",
+      "Someone tried to rob the bank last night."
+    ],
+    "word_frequency": 2927
+  },
+  {
+    "word": "rotate",
+    "definition": [
+      "to move in a circle around a central axis",
+      "The Earth rotates on its axis once every 24 hours."
+    ],
+    "word_frequency": 7068
+  },
+  {
+    "word": "rush",
+    "definition": [
+      "to move with urgent haste",
+      "We had to rush to catch the train."
+    ],
+    "word_frequency": 2351
+  },
+  {
+    "word": "satisfy",
+    "definition": [
+      "to please someone by giving them what they want or need",
+      "The meal was enough to satisfy my hunger."
+    ],
+    "word_frequency": 3291
+  },
+  {
+    "word": "saw",
+    "definition": [
+      "to cut with a saw",
+      "He used a hacksaw to saw through the metal pipe."
+    ],
+    "word_frequency": 21481
+  },
+  {
+    "word": "scan",
+    "definition": [
+      "scan",
+      "Please scan this document and email it to me."
+    ],
+    "word_frequency": 4581
+  },
+  {
+    "word": "scold",
+    "definition": [
+      "to rebuke angrily",
+      "She would often scold her children for misbehaving."
+    ],
+    "word_frequency": 21217
+  },
+  {
+    "word": "scoot",
+    "definition": [
+      "to move quickly",
+      "Can you scoot over a bit so I can sit down?"
+    ],
+    "word_frequency": 26246
+  },
+  {
+    "word": "scramble",
+    "definition": [
+      "To move quickly or awkwardly",
+      "The children scrambled over the rocks."
+    ],
+    "word_frequency": 11123
+  },
+  {
+    "word": "scrape",
+    "definition": [
+      "to rub against a rough surface, often causing damage or a harsh sound",
+      "He managed to scrape through the exam."
+    ],
+    "word_frequency": 11882
+  },
+  {
+    "word": "scratch",
+    "definition": [
+      "to mark or damage a surface with a sharp object",
+      "Be careful not to scratch the new car."
+    ],
+    "word_frequency": 4002
+  },
+  {
+    "word": "scribble",
+    "definition": [
+      "to write or draw carelessly or hurriedly",
+      "He quickly scribbled a note before leaving."
+    ],
+    "word_frequency": 27269
+  },
+  {
+    "word": "sculpt",
+    "definition": [
+      "create or represent (something) by carving, casting, or shaping clay or other materials",
+      "The artist will sculpt a statue out of marble."
+    ],
+    "word_frequency": 16806
+  },
+  {
+    "word": "seek",
+    "definition": [
+      "to try to find or obtain something",
+      "They are seeking new opportunities abroad."
+    ],
+    "word_frequency": 1870
+  },
+  {
+    "word": "select",
+    "definition": [
+      "to choose",
+      "Please select your preferred option."
+    ],
+    "word_frequency": 1651
+  },
+  {
+    "word": "set",
+    "definition": [
+      "to put or place; to establish",
+      "Please set the table for dinner."
+    ],
+    "word_frequency": 198
+  },
+  {
+    "word": "settle",
+    "definition": [
+      "to resolve a dispute or to make a home",
+      "Let's try to settle this argument peacefully."
+    ],
+    "word_frequency": 2529
+  },
+  {
+    "word": "sharpen",
+    "definition": [
+      "To make or become sharp",
+      "He used a stone to sharpen his knife."
+    ],
+    "word_frequency": 16602
+  },
+  {
+    "word": "shoot",
+    "definition": [
+      "shoot",
+      "Don't shoot the messenger."
+    ],
+    "word_frequency": 1374
+  },
+  {
+    "word": "shoplift",
+    "definition": [
+      "to steal goods from a shop while pretending to be a customer",
+      "She was caught trying to shoplift a dress."
+    ],
+    "word_frequency": 20713
+  },
+  {
+    "word": "shorten",
+    "definition": [
+      "shorten",
+      "Can you shorten these trousers for me?"
+    ],
+    "word_frequency": 10397
+  },
+  {
+    "word": "shriek",
+    "definition": [
+      "to utter a high-pitched scream",
+      "She let out a shriek of terror when she saw the spider."
+    ],
+    "word_frequency": 24125
+  },
+  {
+    "word": "shrink",
+    "definition": [
+      "to become smaller",
+      "My sweater will shrink if I wash it in hot water."
+    ],
+    "word_frequency": 7486
+  },
+  {
+    "word": "shrug",
+    "definition": [
+      "to raise and lower your shoulders to show you don't know or care",
+      "He could only shrug his shoulders in response."
+    ],
+    "word_frequency": 13090
+  },
+  {
+    "word": "sigh",
+    "definition": [
+      "to exhale audibly",
+      "She let out a long sigh of relief."
+    ],
+    "word_frequency": 5470
+  },
+  {
+    "word": "simplify",
+    "definition": [
+      "make something easier to understand or do",
+      "Please simplify the instructions."
+    ],
+    "word_frequency": 7963
+  },
+  {
+    "word": "sizzle",
+    "definition": [
+      "to make a hissing sound when frying",
+      "The bacon began to sizzle in the hot pan."
+    ],
+    "word_frequency": 17005
+  },
+  {
+    "word": "skim",
+    "definition": [
+      "to read quickly; to remove from the surface",
+      "She decided to skim the article to get the main idea."
+    ],
+    "word_frequency": 16169
+  },
+  {
+    "word": "skydive",
+    "definition": [
+      "To jump from an aircraft and fall freely before opening a parachute",
+      "She decided to skydive for her 30th birthday."
+    ],
+    "word_frequency": 19938
+  },
+  {
+    "word": "slash",
+    "definition": [
+      "to cut with a sharp blade",
+      "He used a knife to slash the rope."
+    ],
+    "word_frequency": 8424
+  },
+  {
+    "word": "slouch",
+    "definition": [
+      "to stand, sit, or walk with a drooping posture",
+      "Don't slouch; stand up straight!"
+    ],
+    "word_frequency": 29247
+  },
+  {
+    "word": "smash",
+    "definition": [
+      "to break into pieces violently",
+      "He accidentally smashed the glass."
+    ],
+    "word_frequency": 4431
+  },
+  {
+    "word": "snap",
+    "definition": [
+      "to break suddenly with a sharp sound; to take a quick photograph",
+      "The twig snapped under his foot."
+    ],
+    "word_frequency": 3693
+  },
+  {
+    "word": "sneak",
+    "definition": [
+      "move secretly",
+      "He tried to sneak out of the house unnoticed."
+    ],
+    "word_frequency": 5158
+  },
+  {
+    "word": "sniff",
+    "definition": [
+      "To draw air audibly up the nose to detect a smell",
+      "The dog began to sniff the ground for clues."
+    ],
+    "word_frequency": 11276
+  },
+  {
+    "word": "snorkel",
+    "definition": [
+      "to swim using a snorkel",
+      "We went snorkeling in the clear blue waters."
+    ],
+    "word_frequency": 29989
+  },
+  {
+    "word": "snort",
+    "definition": [
+      "To make a sudden sound through the nose",
+      "The horse gave a loud snort."
+    ],
+    "word_frequency": 19941
+  },
+  {
+    "word": "snuggle",
+    "definition": [
+      "snuggle (to settle or move into a warm, comfortable position)",
+      "The children loved to snuggle with their dog on the sofa."
+    ],
+    "word_frequency": 19177
+  },
+  {
+    "word": "soak",
+    "definition": [
+      "to make something completely wet",
+      "Let the clothes soak in water before washing them."
+    ],
+    "word_frequency": 8295
+  },
+  {
+    "word": "sob",
+    "definition": [
+      "to cry noisily",
+      "She began to sob uncontrollably."
+    ],
+    "word_frequency": 10841
+  },
+  {
+    "word": "socialise",
+    "definition": [
+      "to mix socially",
+      "It's important for children to socialise with their peers."
+    ],
+    "word_frequency": 33187
+  },
+  {
+    "word": "socialize",
+    "definition": [
+      "to mix socially with others",
+      "It's important to socialize with your colleagues outside of work."
+    ],
+    "word_frequency": 16373
+  },
+  {
+    "word": "soften",
+    "definition": [
+      "to make or become soft or softer",
+      "You can soften the butter by leaving it out of the fridge."
+    ],
+    "word_frequency": 12530
+  },
+  {
+    "word": "sow",
+    "definition": [
+      "plant (seed) by scattering it on or in the earth",
+      "Farmers sow seeds in the spring."
+    ],
+    "word_frequency": 12196
+  },
+  {
+    "word": "spank",
+    "definition": [
+      "to hit on the buttocks with an open hand",
+      "The parent gently spanked the child's bottom."
+    ],
+    "word_frequency": 13973
+  },
+  {
+    "word": "sparkle",
+    "definition": [
+      "to shine brightly with flashes of light",
+      "The diamonds on her necklace sparkled under the lights."
+    ],
+    "word_frequency": 9535
+  },
+  {
+    "word": "specialise",
+    "definition": [
+      "To concentrate on a particular area",
+      "He decided to specialise in criminal law."
+    ],
+    "word_frequency": 11135
+  },
+  {
+    "word": "spit",
+    "definition": [
+      "to eject saliva from the mouth",
+      "It's rude to spit on the street."
+    ],
+    "word_frequency": 6315
+  },
+  {
+    "word": "split",
+    "definition": [
+      "split",
+      "They decided to split the bill."
+    ],
+    "word_frequency": 1743
+  },
+  {
+    "word": "spoil",
+    "definition": [
+      "to damage or ruin",
+      "Don't spoil the surprise for him."
+    ],
+    "word_frequency": 6676
+  },
+  {
+    "word": "sprain",
+    "definition": [
+      "to injure a joint by twisting it",
+      "She managed to sprain her ankle while hiking."
+    ],
+    "word_frequency": 19445
+  },
+  {
+    "word": "spray",
+    "definition": [
+      "to scatter liquid in fine drops",
+      "He used a bottle to spray water on the plants."
+    ],
+    "word_frequency": 3876
+  },
+  {
+    "word": "spread",
+    "definition": [
+      "to extend over a large or increasing area",
+      "The news spread quickly through the town."
+    ],
+    "word_frequency": 1301
+  },
+  {
+    "word": "sprinkle",
+    "definition": [
+      "scatter or pour small drops or particles over an object or surface",
+      "Please sprinkle some cheese on top of the pasta."
+    ],
+    "word_frequency": 12054
+  },
+  {
+    "word": "sprint",
+    "definition": [
+      "run at full speed",
+      "He had to sprint to catch the bus."
+    ],
+    "word_frequency": 5376
+  },
+  {
+    "word": "squat",
+    "definition": [
+      "crouch or sit with one's knees bent and one's heels close to or touching one's buttocks or the back of one's thighs",
+      "He had to squat down to pick up the dropped coin."
+    ],
+    "word_frequency": 10710
+  },
+  {
+    "word": "squeeze",
+    "definition": [
+      "firmly press (something soft or pliable), typically to extract liquid or alter its shape",
+      "Squeeze the lemon to get the juice."
+    ],
+    "word_frequency": 5542
+  },
+  {
+    "word": "squint",
+    "definition": [
+      "to look at someone or something with one's eyes partly closed",
+      "He had to squint to read the small print."
+    ],
+    "word_frequency": 25932
+  },
+  {
+    "word": "stain",
+    "definition": [
+      "mark or discolor with something that is not easily removed",
+      "Be careful not to stain your new shirt."
+    ],
+    "word_frequency": 6873
+  },
+  {
+    "word": "stare",
+    "definition": [
+      "stare",
+      "It's rude to stare at people."
+    ],
+    "word_frequency": 4127
+  },
+  {
+    "word": "startle",
+    "definition": [
+      "to cause to feel sudden shock or alarm",
+      "The loud noise startled the cat."
+    ],
+    "word_frequency": 11893
+  },
+  {
+    "word": "starve",
+    "definition": [
+      "suffer or die from hunger",
+      "Many people in the region are starving due to the drought."
+    ],
+    "word_frequency": 6875
+  },
+  {
+    "word": "steer",
+    "definition": [
+      "to guide the movement of a vehicle",
+      "He steered the car around the corner."
+    ],
+    "word_frequency": 5630
+  },
+  {
+    "word": "stick",
+    "definition": [
+      "to attach, to pierce",
+      "Please stick the poster on the wall."
+    ],
+    "word_frequency": 1422
+  },
+  {
+    "word": "sting",
+    "definition": [
+      "cause sharp pain",
+      "A bee stung me on the arm."
+    ],
+    "word_frequency": 6773
+  },
+  {
+    "word": "stomp",
+    "definition": [
+      "to tread heavily",
+      "He began to stomp his feet in frustration."
+    ],
+    "word_frequency": 14565
+  },
+  {
+    "word": "stoop",
+    "definition": [
+      "bend one's head or body forwards and downwards",
+      "He had to stoop to enter the low doorway."
+    ],
+    "word_frequency": 16823
+  },
+  {
+    "word": "stow",
+    "definition": [
+      "pack or store (an object) carefully and neatly in a particular place.",
+      "Please stow your luggage in the overhead compartment."
+    ],
+    "word_frequency": 18692
+  },
+  {
+    "word": "straighten",
+    "definition": [
+      "to make straight",
+      "Please straighten your tie before the interview."
+    ],
+    "word_frequency": 14165
+  },
+  {
+    "word": "stroll",
+    "definition": [
+      "to walk in a leisurely way",
+      "They went for a leisurely stroll in the park."
+    ],
+    "word_frequency": 9835
+  },
+  {
+    "word": "strum",
+    "definition": [
+      "to play a stringed instrument by sweeping the fingers or a plectrum across the strings",
+      "He likes to strum his guitar by the campfire."
+    ],
+    "word_frequency": 32803
+  },
+  {
+    "word": "stumble",
+    "definition": [
+      "to trip or lose one's balance; to make a mistake",
+      "He stumbled over a loose rock and almost fell."
+    ],
+    "word_frequency": 8301
+  },
+  {
+    "word": "submit",
+    "definition": [
+      "accept or yield to a superior force or to the authority of another person",
+      "Please submit your application by Friday."
+    ],
+    "word_frequency": 3070
+  },
+  {
+    "word": "subscribe",
+    "definition": [
+      "to arrange to receive something regularly, typically a publication or service",
+      "You can subscribe to our newsletter online."
+    ],
+    "word_frequency": 4947
+  },
+  {
+    "word": "suck",
+    "definition": [
+      "draw into the mouth; be bad (informal)",
+      "The baby continued to suck his thumb."
+    ],
+    "word_frequency": 2618
+  },
+  {
+    "word": "suffer",
+    "definition": [
+      "to experience something bad or unpleasant",
+      "He suffers from severe headaches."
+    ],
+    "word_frequency": 2169
+  },
+  {
+    "word": "suggest",
+    "definition": [
+      "to put forward for consideration",
+      "I suggest we take a break now."
+    ],
+    "word_frequency": 1449
+  },
+  {
+    "word": "summarise",
+    "definition": [
+      "give a brief statement of the main points of something",
+      "Can you summarise the main points of the report?"
+    ],
+    "word_frequency": 25043
+  },
+  {
+    "word": "summarize",
+    "definition": [
+      "give a brief statement of the main points of (something)",
+      "Please summarize the article for me."
+    ],
+    "word_frequency": 12716
+  },
+  {
+    "word": "sunbathe",
+    "definition": [
+      "to lie in the sun",
+      "She loves to sunbathe on the beach during her holidays."
+    ],
+    "word_frequency": 26608
+  },
+  {
+    "word": "supervise",
+    "definition": [
+      "to observe and direct the execution of a task or activity",
+      "The manager supervises a team of ten employees."
+    ],
+    "word_frequency": 9171
+  },
+  {
+    "word": "support",
+    "definition": [
+      "give assistance to",
+      "We support local businesses."
+    ],
+    "word_frequency": 232
+  },
+  {
+    "word": "suppose",
+    "definition": [
+      "to assume that something is true",
+      "I suppose you're right."
+    ],
+    "word_frequency": 1071
+  },
+  {
+    "word": "surround",
+    "definition": [
+      "to be all around",
+      "Trees surround the old house."
+    ],
+    "word_frequency": 2322
+  },
+  {
+    "word": "survive",
+    "definition": [
+      "continue to live or exist",
+      "Only a few plants can survive in the desert."
+    ],
+    "word_frequency": 2206
+  },
+  {
+    "word": "swap",
+    "definition": [
+      "exchange (one thing) for another",
+      "Let's swap seats."
+    ],
+    "word_frequency": 5544
+  },
+  {
+    "word": "sway",
+    "definition": [
+      "to move or cause to move slowly to and fro",
+      "The trees swayed gently in the breeze."
+    ],
+    "word_frequency": 8429
+  },
+  {
+    "word": "swear",
+    "definition": [
+      "make a solemn promise; use offensive language",
+      "I swear I will tell the truth."
+    ],
+    "word_frequency": 2240
+  },
+  {
+    "word": "sweeten",
+    "definition": [
+      "To make or become sweet or sweeter",
+      "You can sweeten your tea with honey."
+    ],
+    "word_frequency": 19951
+  },
+  {
+    "word": "swipe",
+    "definition": [
+      "to swipe",
+      "Please swipe your card to enter the building."
+    ],
+    "word_frequency": 9281
+  },
+  {
+    "word": "sympathise",
+    "definition": [
+      "to feel or express sympathy",
+      "I sympathise with your situation."
+    ],
+    "word_frequency": 28894
+  },
+  {
+    "word": "sympathize",
+    "definition": [
+      "feel or express sympathy.",
+      "I sympathize with your difficult situation."
+    ],
+    "word_frequency": 18701
+  },
+  {
+    "word": "tackle",
+    "definition": [
+      "to deal with; to confront",
+      "We need to tackle this problem immediately."
+    ],
+    "word_frequency": 4057
+  },
+  {
+    "word": "tangle",
+    "definition": [
+      "to twist together into a confused mass",
+      "The fishing line got tangled in the weeds."
+    ],
+    "word_frequency": 10995
+  },
+  {
+    "word": "tease",
+    "definition": [
+      "to make fun of or provoke someone in a playful or unkind way",
+      "Don't tease your little brother."
+    ],
+    "word_frequency": 9173
+  },
+  {
+    "word": "tend",
+    "definition": [
+      "be inclined, look after",
+      "Prices tend to rise in the summer."
+    ],
+    "word_frequency": 2006
+  },
+  {
+    "word": "terrify",
+    "definition": [
+      "to cause to feel extreme fear",
+      "The loud noise terrified the cat."
+    ],
+    "word_frequency": 5478
+  },
+  {
+    "word": "thaw",
+    "definition": [
+      "to melt or become liquid; to become friendlier or more relaxed",
+      "The ice began to thaw in the spring sun."
+    ],
+    "word_frequency": 15979
+  },
+  {
+    "word": "thicken",
+    "definition": [
+      "to make or become thick or thicker",
+      "You can thicken the sauce by adding a little cornstarch."
+    ],
+    "word_frequency": 23259
+  },
+  {
+    "word": "thump",
+    "definition": [
+      "to hit or strike heavily, especially with the fist or a blunt implement",
+      "His heart began to thump loudly in his chest."
+    ],
+    "word_frequency": 16387
+  },
+  {
+    "word": "tick",
+    "definition": [
+      "make a regular sound; mark",
+      "The clock began to tick loudly."
+    ],
+    "word_frequency": 6776
+  },
+  {
+    "word": "tickle",
+    "definition": [
+      "to lightly touch to cause sensation",
+      "The feather tickled her nose."
+    ],
+    "word_frequency": 14785
+  },
+  {
+    "word": "tighten",
+    "definition": [
+      "to make or become tight",
+      "Please tighten the screws on this shelf."
+    ],
+    "word_frequency": 10253
+  },
+  {
+    "word": "tingle",
+    "definition": [
+      "to feel a slight prickling or stinging sensation",
+      "My fingers began to tingle from the cold."
+    ],
+    "word_frequency": 17743
+  },
+  {
+    "word": "tinker",
+    "definition": [
+      "to attempt to repair or improve something in a casual or desultory way",
+      "He likes to tinker with old radios in his garage."
+    ],
+    "word_frequency": 13984
+  },
+  {
+    "word": "tiptoe",
+    "definition": [
+      "to walk quietly on the balls of one's feet",
+      "He had to tiptoe past the sleeping baby."
+    ],
+    "word_frequency": 31576
+  },
+  {
+    "word": "tow",
+    "definition": [
+      "pull (something) behind",
+      "The truck had to tow the broken-down car."
+    ],
+    "word_frequency": 7600
+  },
+  {
+    "word": "train",
+    "definition": [
+      "to teach or prepare someone for a particular job or activity",
+      "We need to train new employees."
+    ],
+    "word_frequency": 560
+  },
+  {
+    "word": "transfer",
+    "definition": [
+      "to move from one place to another",
+      "Please transfer the files to the new folder."
+    ],
+    "word_frequency": 1543
+  },
+  {
+    "word": "treat",
+    "definition": [
+      "to behave towards or deal with in a certain way",
+      "Please treat others with respect."
+    ],
+    "word_frequency": 1453
+  },
+  {
+    "word": "tremble",
+    "definition": [
+      "to shake involuntarily",
+      "His hands began to tremble from the cold and fear."
+    ],
+    "word_frequency": 14173
+  },
+  {
+    "word": "tuck",
+    "definition": [
+      "to push, fold, or turn something into a small space",
+      "She tucked the blanket around the baby."
+    ],
+    "word_frequency": 8788
+  },
+  {
+    "word": "tumble",
+    "definition": [
+      "fall suddenly, clumsily, or headlong",
+      "The child began to tumble down the stairs."
+    ],
+    "word_frequency": 11751
+  },
+  {
+    "word": "twinkle",
+    "definition": [
+      "to shine with a series of short, quick flashes of light",
+      "The distant lights of the city began to twinkle as night fell."
+    ],
+    "word_frequency": 16183
+  },
+  {
+    "word": "twirl",
+    "definition": [
+      "spin quickly and lightly",
+      "She loved to twirl in her new dress."
+    ],
+    "word_frequency": 27633
+  },
+  {
+    "word": "unblock",
+    "definition": [
+      "to remove an obstruction from",
+      "We need to unblock the drain."
+    ],
+    "word_frequency": 28575
+  },
+  {
+    "word": "uncover",
+    "definition": [
+      "to remove a cover from; to discover",
+      "They hope to uncover the truth."
+    ],
+    "word_frequency": 7500
+  },
+  {
+    "word": "underline",
+    "definition": [
+      "to draw a line under; to emphasize",
+      "Please underline the main points in the text."
+    ],
+    "word_frequency": 17754
+  },
+  {
+    "word": "undo",
+    "definition": [
+      "to reverse the effect of an action",
+      "I wish I could undo that mistake."
+    ],
+    "word_frequency": 9414
+  },
+  {
+    "word": "unfold",
+    "definition": [
+      "To open or spread out",
+      "He watched the story unfold before his eyes."
+    ],
+    "word_frequency": 11148
+  },
+  {
+    "word": "unite",
+    "definition": [
+      "to come or bring together for a common purpose or action",
+      "The team needs to unite to win the championship."
+    ],
+    "word_frequency": 5905
+  },
+  {
+    "word": "unload",
+    "definition": [
+      "to remove cargo",
+      "They helped to unload the groceries from the car."
+    ],
+    "word_frequency": 14793
+  },
+  {
+    "word": "unwrap",
+    "definition": [
+      "to remove the wrapping from",
+      "He carefully began to unwrap the present."
+    ],
+    "word_frequency": 34898
+  },
+  {
+    "word": "unzip",
+    "definition": [
+      "to open a zipper",
+      "Please unzip your jacket, it's warm in here."
+    ],
+    "word_frequency": 34899
+  },
+  {
+    "word": "upload",
+    "definition": [
+      "transfer data to a larger computer system",
+      "Please upload the document to the shared drive."
+    ],
+    "word_frequency": 5167
+  },
+  {
+    "word": "urge",
+    "definition": [
+      "to try to persuade strongly",
+      "I urge you to reconsider your decision."
+    ],
+    "word_frequency": 4325
+  },
+  {
+    "word": "vanish",
+    "definition": [
+      "disappear suddenly",
+      "The magician made the rabbit vanish from the hat."
+    ],
+    "word_frequency": 7610
+  },
+  {
+    "word": "vary",
+    "definition": [
+      "to differ",
+      "Prices may vary depending on the season."
+    ],
+    "word_frequency": 3445
+  },
+  {
+    "word": "vibrate",
+    "definition": [
+      "to move continuously and rapidly to and fro",
+      "My phone started to vibrate in my pocket."
+    ],
+    "word_frequency": 13115
+  },
+  {
+    "word": "vomit",
+    "definition": [
+      "eject matter from the stomach through the mouth",
+      "He felt sick and had to vomit."
+    ],
+    "word_frequency": 8673
+  },
+  {
+    "word": "wail",
+    "definition": [
+      "to utter a prolonged, mournful cry",
+      "The baby began to wail loudly."
+    ],
+    "word_frequency": 17468
+  },
+  {
+    "word": "wander",
+    "definition": [
+      "walk aimlessly",
+      "We decided to wander around the old town."
+    ],
+    "word_frequency": 6787
+  },
+  {
+    "word": "waste",
+    "definition": [
+      "to use or expend carelessly, extravagantly, or to no purpose",
+      "Don't waste food; eat everything on your plate."
+    ],
+    "word_frequency": 1303
+  },
+  {
+    "word": "weaken",
+    "definition": [
+      "to make or become weak",
+      "The storm began to weaken as it moved inland."
+    ],
+    "word_frequency": 7507
+  },
+  {
+    "word": "weave",
+    "definition": [
+      "to form (fabric or a fabric item) by interlacing long threads passing in one direction with others at a right angle",
+      "The spider began to weave its web."
+    ],
+    "word_frequency": 9559
+  },
+  {
+    "word": "wed",
+    "definition": [
+      "to marry (someone)",
+      "They plan to wed next spring."
+    ],
+    "word_frequency": 8314
+  },
+  {
+    "word": "weep",
+    "definition": [
+      "shed tears; cry",
+      "She began to weep silently after hearing the sad news."
+    ],
+    "word_frequency": 11756
+  },
+  {
+    "word": "whisk",
+    "definition": [
+      "to take or move (someone or something) in a particular direction suddenly and quickly",
+      "She whisked the eggs for the omelet."
+    ],
+    "word_frequency": 17471
+  },
+  {
+    "word": "widen",
+    "definition": [
+      "to make or become wider",
+      "The road will widen after the bridge."
+    ],
+    "word_frequency": 11299
+  },
+  {
+    "word": "wiggle",
+    "definition": [
+      "to move with small, quick movements",
+      "The puppy started to wiggle its tail."
+    ],
+    "word_frequency": 14381
+  },
+  {
+    "word": "withdraw",
+    "definition": [
+      "to take back or remove",
+      "He decided to withdraw his application."
+    ],
+    "word_frequency": 4737
+  },
+  {
+    "word": "wobble",
+    "definition": [
+      "to move unsteadily from side to side",
+      "The table began to wobble when he leaned on it."
+    ],
+    "word_frequency": 19728
+  },
+  {
+    "word": "worsen",
+    "definition": [
+      "make or become worse",
+      "His condition began to worsen after the surgery."
+    ],
+    "word_frequency": 16644
+  },
+  {
+    "word": "wreck",
+    "definition": [
+      "destroy or severely damage",
+      "The storm could wreck the ship."
+    ],
+    "word_frequency": 5398
+  },
+  {
+    "word": "yelp",
+    "definition": [
+      "to utter a short, sharp cry",
+      "The puppy let out a small yelp when it stepped on its paw."
+    ],
+    "word_frequency": 14593
+  },
+  {
+    "word": "zoom",
+    "definition": [
+      "move or travel very quickly; adjust a camera lens",
+      "The car zoomed past us."
+    ],
+    "word_frequency": 6501
+  }
+]

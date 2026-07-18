@@ -1,0 +1,5762 @@
+[
+  {
+    "word": "Alle wollten mitsingen.",
+    "definition": "Everyone wanted to sing along.",
+    "word_frequency": 16702
+  },
+  {
+    "word": "Am Wochenende bummeln wir gerne durch die Stadt.",
+    "definition": "On the weekend, we like to stroll through the city.",
+    "word_frequency": 25734
+  },
+  {
+    "word": "Bitte aktualisieren Sie die Software.",
+    "definition": "Please update the software.",
+    "word_frequency": 4544
+  },
+  {
+    "word": "Bitte atmen Sie langsam aus.",
+    "definition": "Please exhale slowly.",
+    "word_frequency": 21500
+  },
+  {
+    "word": "Bitte beachten Sie die Regeln.",
+    "definition": "Please observe the rules.",
+    "word_frequency": 2867
+  },
+  {
+    "word": "Bitte befüllen Sie das Formular vollständig.",
+    "definition": "Please fill out the form completely.",
+    "word_frequency": 24468
+  },
+  {
+    "word": "Bitte benachrichtigen Sie mich, wenn Sie ankommen.",
+    "definition": "Please notify me when you arrive.",
+    "word_frequency": 16092
+  },
+  {
+    "word": "Bitte berichtigen Sie die Fehler in diesem Text.",
+    "definition": "Please correct the errors in this text.",
+    "word_frequency": 27370
+  },
+  {
+    "word": "Bitte berühren Sie die Kunstwerke nicht.",
+    "definition": "Please do not touch the artworks.",
+    "word_frequency": 3022
+  },
+  {
+    "word": "Bitte beschriften Sie die Ordner.",
+    "definition": "Please label the folders.",
+    "word_frequency": 21179
+  },
+  {
+    "word": "Bitte betreten Sie den Rasen nicht.",
+    "definition": "Please do not step on the lawn.",
+    "word_frequency": 3326
+  },
+  {
+    "word": "Bitte betätigen Sie den Schalter.",
+    "definition": "Please operate the switch.",
+    "word_frequency": 12741
+  },
+  {
+    "word": "Bitte bewahren Sie die Quittung auf.",
+    "definition": "Please keep the receipt.",
+    "word_frequency": 6272
+  },
+  {
+    "word": "Bitte deck das Baby gut zu.",
+    "definition": "Please cover the baby well.",
+    "word_frequency": 26876
+  },
+  {
+    "word": "Bitte deck den Tisch für das Abendessen ein.",
+    "definition": "Please set the table for dinner.",
+    "word_frequency": 28287
+  },
+  {
+    "word": "Bitte decken Sie das Essen ab.",
+    "definition": "Please cover the food.",
+    "word_frequency": 7607
+  },
+  {
+    "word": "Bitte dreh das Licht ab, wenn du gehst.",
+    "definition": "Please turn off the light when you leave.",
+    "word_frequency": 24828
+  },
+  {
+    "word": "Bitte entfernen Sie den Müll.",
+    "definition": "Please remove the trash.",
+    "word_frequency": 693
+  },
+  {
+    "word": "Bitte entleeren Sie den Mülleimer.",
+    "definition": "Please empty the trash can.",
+    "word_frequency": 27833
+  },
+  {
+    "word": "Bitte ergänzen Sie die fehlenden Informationen.",
+    "definition": "Please complete the missing information.",
+    "word_frequency": 2522
+  },
+  {
+    "word": "Bitte erhitzen Sie die Milch langsam.",
+    "definition": "Please heat the milk slowly.",
+    "word_frequency": 11137
+  },
+  {
+    "word": "Bitte erwärmen Sie die Suppe.",
+    "definition": "Please warm up the soup.",
+    "word_frequency": 15592
+  },
+  {
+    "word": "Bitte fahren Sie den Computer herunter.",
+    "definition": "Please shut down the computer.",
+    "word_frequency": 28530
+  },
+  {
+    "word": "Bitte fügen Sie die neue Information hinzu.",
+    "definition": "Please add the new information.",
+    "word_frequency": 4422
+  },
+  {
+    "word": "Bitte füllen Sie das Glas auf.",
+    "definition": "Please refill the glass.",
+    "word_frequency": 15261
+  },
+  {
+    "word": "Bitte geben Sie Ihr Geburtsdatum an.",
+    "definition": "Please state your date of birth.",
+    "word_frequency": 2146
+  },
+  {
+    "word": "Bitte geben Sie Ihre Hausaufgaben bis Freitag ab.",
+    "definition": "Please hand in your homework by Friday.",
+    "word_frequency": 2510
+  },
+  {
+    "word": "Bitte greifen Sie zu!",
+    "definition": "Please help yourself!",
+    "word_frequency": 8606
+  },
+  {
+    "word": "Bitte halten Sie sich fern.",
+    "definition": "Please keep away.",
+    "word_frequency": 16127
+  },
+  {
+    "word": "Bitte knicken Sie das Blatt nicht.",
+    "definition": "Please do not crease the sheet.",
+    "word_frequency": 24599
+  },
+  {
+    "word": "Bitte kontaktieren Sie mich bei Fragen.",
+    "definition": "Please contact me if you have questions.",
+    "word_frequency": 7553
+  },
+  {
+    "word": "Bitte kontrollieren Sie Ihre Angaben.",
+    "definition": "Please check your information.",
+    "word_frequency": 2836
+  },
+  {
+    "word": "Bitte konzentrieren Sie sich auf Ihre Arbeit.",
+    "definition": "Please concentrate on your work.",
+    "word_frequency": 2737
+  },
+  {
+    "word": "Bitte korrigieren Sie meine Fehler.",
+    "definition": "Please correct my mistakes.",
+    "word_frequency": 5396
+  },
+  {
+    "word": "Bitte kreuzen Sie die richtige Antwort an.",
+    "definition": "Please tick the correct answer.",
+    "word_frequency": 24045
+  },
+  {
+    "word": "Bitte leeren Sie den Mülleimer.",
+    "definition": "Please empty the trash can.",
+    "word_frequency": 3620
+  },
+  {
+    "word": "Bitte legen Sie die CD in den Player ein.",
+    "definition": "Please insert the CD into the player.",
+    "word_frequency": 7796
+  },
+  {
+    "word": "Bitte legen Sie nicht auf.",
+    "definition": "Please don't hang up.",
+    "word_frequency": 6613
+  },
+  {
+    "word": "Bitte listen Sie alle Punkte auf.",
+    "definition": "Please list all points.",
+    "word_frequency": 8488
+  },
+  {
+    "word": "Bitte markieren Sie die wichtigen Stellen im Text.",
+    "definition": "Please mark the important parts in the text.",
+    "word_frequency": 4434
+  },
+  {
+    "word": "Bitte nehmen Sie das Buch aus dem Regal heraus.",
+    "definition": "Please take the book out of the shelf.",
+    "word_frequency": 21611
+  },
+  {
+    "word": "Bitte nehmen Sie Ihre Medikamente regelmäßig ein.",
+    "definition": "Please take your medication regularly.",
+    "word_frequency": 4722
+  },
+  {
+    "word": "Bitte notieren Sie sich das Datum.",
+    "definition": "Please note down the date.",
+    "word_frequency": 7439
+  },
+  {
+    "word": "Bitte platzieren Sie Ihre Taschen hier.",
+    "definition": "Please place your bags here.",
+    "word_frequency": 6341
+  },
+  {
+    "word": "Bitte runden Sie den Betrag auf die nächste ganze Zahl.",
+    "definition": "Please round the amount to the nearest whole number.",
+    "word_frequency": 20588
+  },
+  {
+    "word": "Bitte räumen Sie den Tisch ab.",
+    "definition": "Please clear the table.",
+    "word_frequency": 6687
+  },
+  {
+    "word": "Bitte rühren Sie den Kaffee um.",
+    "definition": "Please stir the coffee.",
+    "word_frequency": 26040
+  },
+  {
+    "word": "Bitte rühren Sie den Teig gut um.",
+    "definition": "Please stir the dough well.",
+    "word_frequency": 7075
+  },
+  {
+    "word": "Bitte schalten Sie das Licht ein.",
+    "definition": "Please turn on the light.",
+    "word_frequency": 4682
+  },
+  {
+    "word": "Bitte schließ die Tür ab.",
+    "definition": "Please lock the door.",
+    "word_frequency": 1227
+  },
+  {
+    "word": "Bitte schnallen Sie sich an.",
+    "definition": "Please buckle up.",
+    "word_frequency": 18510
+  },
+  {
+    "word": "Bitte schütteln Sie die Flasche vor Gebrauch.",
+    "definition": "Please shake the bottle before use.",
+    "word_frequency": 6818
+  },
+  {
+    "word": "Bitte schütten Sie den Kaffee in die Tasse.",
+    "definition": "Please pour the coffee into the cup.",
+    "word_frequency": 19765
+  },
+  {
+    "word": "Bitte sichern Sie Ihre Daten regelmäßig.",
+    "definition": "Please save your data regularly.",
+    "word_frequency": 2030
+  },
+  {
+    "word": "Bitte stellen Sie die Uhr eine Stunde zurück.",
+    "definition": "Please set the clock back one hour.",
+    "word_frequency": 23631
+  },
+  {
+    "word": "Bitte stellen Sie sich hier an.",
+    "definition": "Please queue up here.",
+    "word_frequency": 3579
+  },
+  {
+    "word": "Bitte tief einatmen.",
+    "definition": "Please inhale deeply.",
+    "word_frequency": 15854
+  },
+  {
+    "word": "Bitte tragen Sie die Creme dünn auf.",
+    "definition": "Please apply the cream thinly.",
+    "word_frequency": 9208
+  },
+  {
+    "word": "Bitte tragen Sie Ihren Namen hier ein.",
+    "definition": "Please enter your name here.",
+    "word_frequency": 4108
+  },
+  {
+    "word": "Bitte treten Sie ein.",
+    "definition": "Please come in.",
+    "word_frequency": 5083
+  },
+  {
+    "word": "Bitte unterbrechen Sie mich nicht.",
+    "definition": "Please do not interrupt me.",
+    "word_frequency": 4075
+  },
+  {
+    "word": "Bitte unterstreichen Sie die wichtigen Punkte.",
+    "definition": "Please underline the important points.",
+    "word_frequency": 10351
+  },
+  {
+    "word": "Bitte verschließen Sie die Tür.",
+    "definition": "Please lock the door.",
+    "word_frequency": 5735
+  },
+  {
+    "word": "Bitte vervollständigen Sie das Formular.",
+    "definition": "Please complete the form.",
+    "word_frequency": 18256
+  },
+  {
+    "word": "Bitte wenden Sie das Blatt.",
+    "definition": "Please turn the page.",
+    "word_frequency": 2509
+  },
+  {
+    "word": "Bitte wisch den Tisch ab.",
+    "definition": "Please wipe off the table.",
+    "word_frequency": 19850
+  },
+  {
+    "word": "Bitte zeichnen Sie die Route auf der Karte ein.",
+    "definition": "Please mark the route on the map.",
+    "word_frequency": 19307
+  },
+  {
+    "word": "Bitte ziehen Sie die Tür zu.",
+    "definition": "Please close the door.",
+    "word_frequency": 11632
+  },
+  {
+    "word": "Bitte zähle mich bei der Bestellung mit.",
+    "definition": "Please count me in for the order.",
+    "word_frequency": 23862
+  },
+  {
+    "word": "Daraus kann ein Problem entstehen.",
+    "definition": "A problem can arise from that.",
+    "word_frequency": 1059
+  },
+  {
+    "word": "Das alte Gebäude drohte einzustürzen.",
+    "definition": "The old building threatened to collapse.",
+    "word_frequency": 27824
+  },
+  {
+    "word": "Das alte Haus ist komplett abgebrannt.",
+    "definition": "The old house burned down completely.",
+    "word_frequency": 14067
+  },
+  {
+    "word": "Das alte Haus wird seit Jahren nicht mehr bewohnt.",
+    "definition": "The old house has not been inhabited for years.",
+    "word_frequency": 9366
+  },
+  {
+    "word": "Das alte T-Shirt hat sich verfärbt.",
+    "definition": "The old T-shirt has discolored.",
+    "word_frequency": 26830
+  },
+  {
+    "word": "Das Baby begann, auf allen Vieren zu kriechen.",
+    "definition": "The baby started to crawl on all fours.",
+    "word_frequency": 12621
+  },
+  {
+    "word": "Das Baby beginnt zu krabbeln.",
+    "definition": "The baby is starting to crawl.",
+    "word_frequency": 27514
+  },
+  {
+    "word": "Das Baby beginnt zu robben.",
+    "definition": "The baby is starting to crawl.",
+    "word_frequency": 8857
+  },
+  {
+    "word": "Das Bier wird in Flaschen abgefüllt.",
+    "definition": "The beer is bottled.",
+    "word_frequency": 22157
+  },
+  {
+    "word": "Das Buch bereitet mir viel Freude.",
+    "definition": "The book brings me a lot of joy.",
+    "word_frequency": 2820
+  },
+  {
+    "word": "Das Buch bildet die Geschichte sehr genau ab.",
+    "definition": "The book depicts the history very accurately.",
+    "word_frequency": 5947
+  },
+  {
+    "word": "Das Buch gefällt mir sehr.",
+    "definition": "I really like the book.",
+    "word_frequency": 660
+  },
+  {
+    "word": "Das Eichhörnchen knabbert an einer Nuss.",
+    "definition": "The squirrel is nibbling on a nut.",
+    "word_frequency": 20632
+  },
+  {
+    "word": "Das Eis schmilzt schnell in der Sonne.",
+    "definition": "The ice melts quickly in the sun.",
+    "word_frequency": 9973
+  },
+  {
+    "word": "Das Ergebnis muss den Erwartungen entsprechen.",
+    "definition": "The result must correspond to the expectations.",
+    "word_frequency": 1321
+  },
+  {
+    "word": "Das Flugzeug wird bald landen.",
+    "definition": "The plane will land soon.",
+    "word_frequency": 2643
+  },
+  {
+    "word": "Das Flugzeug wird gleich abheben.",
+    "definition": "The plane will take off soon.",
+    "word_frequency": 8609
+  },
+  {
+    "word": "Das gefrorene Gemüse muss zuerst auftauen.",
+    "definition": "The frozen vegetables must thaw first.",
+    "word_frequency": 27752
+  },
+  {
+    "word": "Das gehört einfach dazu.",
+    "definition": "That's just part of it.",
+    "word_frequency": 24096
+  },
+  {
+    "word": "Das Geld wird für die Miete ausreichen.",
+    "definition": "The money will be sufficient for the rent.",
+    "word_frequency": 6857
+  },
+  {
+    "word": "Das Geld wird nicht genügen.",
+    "definition": "The money will not be enough.",
+    "word_frequency": 4036
+  },
+  {
+    "word": "Das Geld wird nicht reichen.",
+    "definition": "The money will not be enough.",
+    "word_frequency": 664
+  },
+  {
+    "word": "Das Geschenk wird sie sicher erfreuen.",
+    "definition": "The gift will surely please her.",
+    "word_frequency": 7397
+  },
+  {
+    "word": "Das Holz treibt auf dem Wasser.",
+    "definition": "The wood floats on the water.",
+    "word_frequency": 2189
+  },
+  {
+    "word": "Das Hotel ist für das Wochenende ausgebucht.",
+    "definition": "The hotel is fully booked for the weekend.",
+    "word_frequency": 12082
+  },
+  {
+    "word": "Das Kind begann zu schluchzen.",
+    "definition": "The child began to sob.",
+    "word_frequency": 28065
+  },
+  {
+    "word": "Das Kind klammerte sich an seine Mutter.",
+    "definition": "The child clung to its mother.",
+    "word_frequency": 25874
+  },
+  {
+    "word": "Das Kind lutscht am Lutscher.",
+    "definition": "The child is sucking on the lollipop.",
+    "word_frequency": 15946
+  },
+  {
+    "word": "Das Kind spritzte Wasser aus der Pistole.",
+    "definition": "The child squirted water from the gun.",
+    "word_frequency": 23945
+  },
+  {
+    "word": "Das Konzert muss leider ausfallen.",
+    "definition": "The concert unfortunately has to be cancelled.",
+    "word_frequency": 4790
+  },
+  {
+    "word": "Das Konzert wird morgen stattfinden.",
+    "definition": "The concert will take place tomorrow.",
+    "word_frequency": 2461
+  },
+  {
+    "word": "Das Küken ist gerade aus dem Ei geschlüpft.",
+    "definition": "The chick just hatched from the egg.",
+    "word_frequency": 11583
+  },
+  {
+    "word": "Das laute Geräusch lenkte mich ab.",
+    "definition": "The loud noise distracted me.",
+    "word_frequency": 8048
+  },
+  {
+    "word": "Das Licht geht nicht an.",
+    "definition": "The light doesn't turn on.",
+    "word_frequency": 2418
+  },
+  {
+    "word": "Das Model musste lange für das Foto posieren.",
+    "definition": "The model had to pose for a long time for the photo.",
+    "word_frequency": 25527
+  },
+  {
+    "word": "Das Museum befindet sich im Stadtzentrum.",
+    "definition": "The museum is located in the city center.",
+    "word_frequency": 856
+  },
+  {
+    "word": "Das Museum wird neue Kunstwerke ausstellen.",
+    "definition": "The museum will exhibit new artworks.",
+    "word_frequency": 4553
+  },
+  {
+    "word": "Das Obst beginnt zu faulen.",
+    "definition": "The fruit is starting to rot.",
+    "word_frequency": 11894
+  },
+  {
+    "word": "Das Publikum begann zu applaudieren.",
+    "definition": "The audience began to applaud.",
+    "word_frequency": 24845
+  },
+  {
+    "word": "Das Schiff begann zu sinken.",
+    "definition": "The ship began to sink.",
+    "word_frequency": 3908
+  },
+  {
+    "word": "Das Schiff nähert sich dem Hafen.",
+    "definition": "The ship is approaching the harbor.",
+    "word_frequency": 6799
+  },
+  {
+    "word": "Das Schiff steuert den Hafen an.",
+    "definition": "The ship is heading for the port.",
+    "word_frequency": 27343
+  },
+  {
+    "word": "Das stimmt nicht.",
+    "definition": "That's not correct.",
+    "word_frequency": 440
+  },
+  {
+    "word": "Das Unglück ereignete sich gestern Abend.",
+    "definition": "The accident happened last night.",
+    "word_frequency": 10765
+  },
+  {
+    "word": "Das Visum ist abgelaufen.",
+    "definition": "The visa has expired.",
+    "word_frequency": 6264
+  },
+  {
+    "word": "Das Waschbecken ist verstopft.",
+    "definition": "The sink is clogged.",
+    "word_frequency": 15222
+  },
+  {
+    "word": "Das Wasser dampft im Topf.",
+    "definition": "The water is steaming in the pot.",
+    "word_frequency": 23709
+  },
+  {
+    "word": "Das Wasser fließt den Bach hinunter.",
+    "definition": "The water flows down the stream.",
+    "word_frequency": 3729
+  },
+  {
+    "word": "Das Wasser fließt schnell.",
+    "definition": "The water flows quickly.",
+    "word_frequency": 15603
+  },
+  {
+    "word": "Das Wasser läuft aus dem Hahn aus.",
+    "definition": "The water is leaking from the tap.",
+    "word_frequency": 11477
+  },
+  {
+    "word": "Das Wasser schimmerte im Mondlicht.",
+    "definition": "The water shimmered in the moonlight.",
+    "word_frequency": 29485
+  },
+  {
+    "word": "Das Wasser spiegelt die Bäume.",
+    "definition": "The water reflects the trees.",
+    "word_frequency": 5720
+  },
+  {
+    "word": "Das Wasser wird bei Hitze verdampfen.",
+    "definition": "The water will evaporate with heat.",
+    "word_frequency": 28621
+  },
+  {
+    "word": "Das Wasser wird bei null Grad Celsius gefrieren.",
+    "definition": "The water will freeze at zero degrees Celsius.",
+    "word_frequency": 20584
+  },
+  {
+    "word": "Das Wetter kann unsere Stimmung beeinflussen.",
+    "definition": "The weather can influence our mood.",
+    "word_frequency": 2713
+  },
+  {
+    "word": "Das Wetter wird sich verschlechtern.",
+    "definition": "The weather will worsen.",
+    "word_frequency": 10705
+  },
+  {
+    "word": "Das wird dir nichts nützen.",
+    "definition": "That won't do you any good.",
+    "word_frequency": 5590
+  },
+  {
+    "word": "Der Alarm wurde durch Rauch ausgelöst.",
+    "definition": "The alarm was triggered by smoke.",
+    "word_frequency": 3127
+  },
+  {
+    "word": "Der Arzt muss ihn operieren.",
+    "definition": "The doctor has to operate on him.",
+    "word_frequency": 7170
+  },
+  {
+    "word": "Der Arzt wird den Patienten untersuchen.",
+    "definition": "The doctor will examine the patient.",
+    "word_frequency": 2128
+  },
+  {
+    "word": "Der Arzt wird ihn behandeln.",
+    "definition": "The doctor will treat him.",
+    "word_frequency": 1134
+  },
+  {
+    "word": "Der Autor wird sein neues Buch signieren.",
+    "definition": "The author will sign his new book.",
+    "word_frequency": 17928
+  },
+  {
+    "word": "Der Ballon ist geplatzt.",
+    "definition": "The balloon burst.",
+    "word_frequency": 7575
+  },
+  {
+    "word": "Der Bauer muss die Kühe melken.",
+    "definition": "The farmer has to milk the cows.",
+    "word_frequency": 18157
+  },
+  {
+    "word": "Der Bauer wird im Frühling Weizen säen.",
+    "definition": "The farmer will sow wheat in spring.",
+    "word_frequency": 21419
+  },
+  {
+    "word": "Der Baum hat viele Äpfel abgeworfen.",
+    "definition": "The tree yielded many apples.",
+    "word_frequency": 18007
+  },
+  {
+    "word": "Der Baum schwankte im Wind.",
+    "definition": "The tree swayed in the wind.",
+    "word_frequency": 10863
+  },
+  {
+    "word": "Der Betrag wird von Ihrem Konto abgebucht.",
+    "definition": "The amount will be debited from your account.",
+    "word_frequency": 29146
+  },
+  {
+    "word": "Der Bus fuhr an die Haltestelle an.",
+    "definition": "The bus drove up to the stop.",
+    "word_frequency": 8349
+  },
+  {
+    "word": "Der Bus hat fast eine Katze überfahren.",
+    "definition": "The bus almost ran over a cat.",
+    "word_frequency": 8186
+  },
+  {
+    "word": "Der Bäcker mahlt das Getreide zu Mehl.",
+    "definition": "The baker grinds the grain into flour.",
+    "word_frequency": 24638
+  },
+  {
+    "word": "Der Chef diktiert einen Brief.",
+    "definition": "The boss dictates a letter.",
+    "word_frequency": 18979
+  },
+  {
+    "word": "Der Clown konnte die Kinder amüsieren.",
+    "definition": "The clown could amuse the children.",
+    "word_frequency": 9686
+  },
+  {
+    "word": "Der Computer funktioniert nicht.",
+    "definition": "The computer is not working.",
+    "word_frequency": 681
+  },
+  {
+    "word": "Der Computer ist abgestürzt.",
+    "definition": "The computer crashed.",
+    "word_frequency": 10384
+  },
+  {
+    "word": "Der Computer kann große Datenmengen verarbeiten.",
+    "definition": "The computer can process large amounts of data.",
+    "word_frequency": 4297
+  },
+  {
+    "word": "Der Dieb hat ihn um sein Geld bestohlen.",
+    "definition": "The thief stole his money from him.",
+    "word_frequency": 24870
+  },
+  {
+    "word": "Der Dieb wurde von der Polizei erwischt.",
+    "definition": "The thief was caught by the police.",
+    "word_frequency": 2385
+  },
+  {
+    "word": "Der Duft des Essens lockte die Katze an.",
+    "definition": "The smell of the food lured the cat.",
+    "word_frequency": 4583
+  },
+  {
+    "word": "Der Duft lockt die Bienen an.",
+    "definition": "The scent attracts the bees.",
+    "word_frequency": 21830
+  },
+  {
+    "word": "Der Fahrer musste hupen, um auf sich aufmerksam zu machen.",
+    "definition": "The driver had to honk to draw attention to himself.",
+    "word_frequency": 16414
+  },
+  {
+    "word": "Der Fahrer musste verlangsamen.",
+    "definition": "The driver had to slow down.",
+    "word_frequency": 17095
+  },
+  {
+    "word": "Der Fluss hat das Tal überschwemmt.",
+    "definition": "The river flooded the valley.",
+    "word_frequency": 18002
+  },
+  {
+    "word": "Der Hund begann, sein Fell zu lecken.",
+    "definition": "The dog started to lick its fur.",
+    "word_frequency": 5998
+  },
+  {
+    "word": "Der Hund bewacht das Haus.",
+    "definition": "The dog guards the house.",
+    "word_frequency": 12742
+  },
+  {
+    "word": "Der Hund jagt den Ball.",
+    "definition": "The dog chases the ball.",
+    "word_frequency": 4655
+  },
+  {
+    "word": "Der Hund muss pinkeln.",
+    "definition": "The dog has to pee.",
+    "word_frequency": 10320
+  },
+  {
+    "word": "Der Hund muss seinem Herrchen gehorchen.",
+    "definition": "The dog must obey its master.",
+    "word_frequency": 13030
+  },
+  {
+    "word": "Der Hund nagte an seinem Knochen.",
+    "definition": "The dog gnawed on its bone.",
+    "word_frequency": 29884
+  },
+  {
+    "word": "Der Hund schnappte nach dem Ball.",
+    "definition": "The dog snapped at the ball.",
+    "word_frequency": 11224
+  },
+  {
+    "word": "Der Hund schnupperte am Boden.",
+    "definition": "The dog sniffed at the ground.",
+    "word_frequency": 18511
+  },
+  {
+    "word": "Der Hund vergrub seinen Knochen.",
+    "definition": "The dog buried its bone.",
+    "word_frequency": 11814
+  },
+  {
+    "word": "Der Hund wollte den Postboten angreifen.",
+    "definition": "The dog wanted to attack the postman.",
+    "word_frequency": 2473
+  },
+  {
+    "word": "Der Hund wollte weglaufen.",
+    "definition": "The dog wanted to run away.",
+    "word_frequency": 17680
+  },
+  {
+    "word": "Der Jäger schießt auf das Wild.",
+    "definition": "The hunter shoots at the game.",
+    "word_frequency": 3342
+  },
+  {
+    "word": "Der Jäger schiesst auf den Hirsch.",
+    "definition": "The hunter shoots at the deer.",
+    "word_frequency": 2501
+  },
+  {
+    "word": "Der Jäger versucht, das Tier einzufangen.",
+    "definition": "The hunter tries to catch the animal.",
+    "word_frequency": 11318
+  },
+  {
+    "word": "Der Kellner kassiert das Geld.",
+    "definition": "The waiter collects the money.",
+    "word_frequency": 6539
+  },
+  {
+    "word": "Der Kurs wird viele Themen umfassen.",
+    "definition": "The course will comprise many topics.",
+    "word_frequency": 1955
+  },
+  {
+    "word": "Der Kühlschrank brummt leise.",
+    "definition": "The refrigerator hums quietly.",
+    "word_frequency": 17168
+  },
+  {
+    "word": "Der Künstler kann Ton zu schönen Skulpturen formen.",
+    "definition": "The artist can form clay into beautiful sculptures.",
+    "word_frequency": 8951
+  },
+  {
+    "word": "Der Künstler modelliert eine Figur aus Ton.",
+    "definition": "The artist models a figure from clay.",
+    "word_frequency": 25493
+  },
+  {
+    "word": "Der Künstler wird das Buch illustrieren.",
+    "definition": "The artist will illustrate the book.",
+    "word_frequency": 11724
+  },
+  {
+    "word": "Der laute Knall ließ mich erschrecken.",
+    "definition": "The loud bang made me jump.",
+    "word_frequency": 9237
+  },
+  {
+    "word": "Der Lehrer begann, die Arbeitsblätter auszuteilen.",
+    "definition": "The teacher began to distribute the worksheets.",
+    "word_frequency": 25273
+  },
+  {
+    "word": "Der Lehrer bewertet die Arbeiten der Schüler.",
+    "definition": "The teacher evaluates the students' papers.",
+    "word_frequency": 2821
+  },
+  {
+    "word": "Der Lehrer lobte die Schüler für ihre Arbeit.",
+    "definition": "The teacher praised the students for their work.",
+    "word_frequency": 6648
+  },
+  {
+    "word": "Der Lehrer wird uns morgen die Vokabeln abfragen.",
+    "definition": "The teacher will test us on the vocabulary tomorrow.",
+    "word_frequency": 18005
+  },
+  {
+    "word": "Der Löwe begann zu brüllen.",
+    "definition": "The lion began to roar.",
+    "word_frequency": 10055
+  },
+  {
+    "word": "Der Magier kann Kaninchen aus dem Hut zaubern.",
+    "definition": "The magician can conjure rabbits out of the hat.",
+    "word_frequency": 8602
+  },
+  {
+    "word": "Der Moderator wird den nächsten Künstler ansagen.",
+    "definition": "The host will announce the next artist.",
+    "word_frequency": 15257
+  },
+  {
+    "word": "Der Motor wird bald anlaufen.",
+    "definition": "The engine will start soon.",
+    "word_frequency": 19233
+  },
+  {
+    "word": "Der Motor zündete nicht.",
+    "definition": "The engine didn't ignite.",
+    "word_frequency": 11838
+  },
+  {
+    "word": "Der Müll stinkt sehr.",
+    "definition": "The trash stinks a lot.",
+    "word_frequency": 6586
+  },
+  {
+    "word": "Der Postbote wird das Paket morgen zustellen.",
+    "definition": "The postman will deliver the package tomorrow.",
+    "word_frequency": 11092
+  },
+  {
+    "word": "Der Preis schließt die Getränke ein.",
+    "definition": "The price includes the drinks.",
+    "word_frequency": 5651
+  },
+  {
+    "word": "Der Präsident musste abtreten.",
+    "definition": "The president had to step down.",
+    "word_frequency": 13405
+  },
+  {
+    "word": "Der Rauch steigt schnell auf.",
+    "definition": "The smoke rises quickly.",
+    "word_frequency": 8200
+  },
+  {
+    "word": "Der Regen konnte uns nicht hindern, spazieren zu gehen.",
+    "definition": "The rain could not prevent us from going for a walk.",
+    "word_frequency": 7540
+  },
+  {
+    "word": "Der Richter wird den Täter bestrafen.",
+    "definition": "The judge will punish the perpetrator.",
+    "word_frequency": 3259
+  },
+  {
+    "word": "Der Satellit umkreist die Erde.",
+    "definition": "The satellite orbits the Earth.",
+    "word_frequency": 28130
+  },
+  {
+    "word": "Der Schlüssel ist im Schloss hängengeblieben.",
+    "definition": "The key got stuck in the lock.",
+    "word_frequency": 29804
+  },
+  {
+    "word": "Der Schlüssel ist verschwunden.",
+    "definition": "The key has disappeared.",
+    "word_frequency": 2034
+  },
+  {
+    "word": "Der Schmied schmiedet das Eisen.",
+    "definition": "The blacksmith forges the iron.",
+    "word_frequency": 13341
+  },
+  {
+    "word": "Der Stuhl könnte umkippen, wenn du dich so bewegst.",
+    "definition": "The chair could tip over if you move like that.",
+    "word_frequency": 21775
+  },
+  {
+    "word": "Der Sturm naht schnell.",
+    "definition": "The storm is approaching quickly.",
+    "word_frequency": 3052
+  },
+  {
+    "word": "Der Taucher ist in die Tiefe abgetaucht.",
+    "definition": "The diver dived into the depths.",
+    "word_frequency": 25246
+  },
+  {
+    "word": "Der Termin wird wegfallen.",
+    "definition": "The appointment will be cancelled.",
+    "word_frequency": 13821
+  },
+  {
+    "word": "Der Tisch wackelt.",
+    "definition": "The table wobbles.",
+    "word_frequency": 16059
+  },
+  {
+    "word": "Der Trainer musste einen Spieler auswechseln.",
+    "definition": "The coach had to substitute a player.",
+    "word_frequency": 15540
+  },
+  {
+    "word": "Der Trainer versucht, seine Spieler zu motivieren.",
+    "definition": "The coach tries to motivate his players.",
+    "word_frequency": 3966
+  },
+  {
+    "word": "Der Verkehr staut sich auf der Autobahn.",
+    "definition": "Traffic is jamming on the highway.",
+    "word_frequency": 26020
+  },
+  {
+    "word": "Der Versuch könnte misslingen.",
+    "definition": "The attempt could fail.",
+    "word_frequency": 25074
+  },
+  {
+    "word": "Der Vogel gleitet durch die Luft.",
+    "definition": "The bird glides through the air.",
+    "word_frequency": 13475
+  },
+  {
+    "word": "Der Vogel hockte auf dem Ast.",
+    "definition": "The bird perched on the branch.",
+    "word_frequency": 13491
+  },
+  {
+    "word": "Der Vorstand beschloss, das Projekt zu starten.",
+    "definition": "The board decided to start the project.",
+    "word_frequency": 16593
+  },
+  {
+    "word": "Der Vulkan könnte jederzeit ausbrechen.",
+    "definition": "The volcano could erupt at any time.",
+    "word_frequency": 8785
+  },
+  {
+    "word": "Der Wind bläst stark.",
+    "definition": "The wind blows strongly.",
+    "word_frequency": 4015
+  },
+  {
+    "word": "Der Wind heult durch die Bäume.",
+    "definition": "The wind howls through the trees.",
+    "word_frequency": 6087
+  },
+  {
+    "word": "Der Wind weht stark.",
+    "definition": "The wind is blowing strongly.",
+    "word_frequency": 8475
+  },
+  {
+    "word": "Der Zimmermann hämmerte Nägel in das Holz.",
+    "definition": "The carpenter hammered nails into the wood.",
+    "word_frequency": 19990
+  },
+  {
+    "word": "Der Zug fährt einfach durch.",
+    "definition": "The train just passes through.",
+    "word_frequency": 18355
+  },
+  {
+    "word": "Der Zug wird gleich abgehen.",
+    "definition": "The train will depart soon.",
+    "word_frequency": 8343
+  },
+  {
+    "word": "Der Zug wird gleich in den Bahnhof einfahren.",
+    "definition": "The train will enter the station shortly.",
+    "word_frequency": 13008
+  },
+  {
+    "word": "Der Zug wird pünktlich eintreffen.",
+    "definition": "The train will arrive on time.",
+    "word_frequency": 6752
+  },
+  {
+    "word": "Deutschland exportiert viele Autos.",
+    "definition": "Germany exports many cars.",
+    "word_frequency": 11330
+  },
+  {
+    "word": "Deutschland importiert viel Öl.",
+    "definition": "Germany imports a lot of oil.",
+    "word_frequency": 10977
+  },
+  {
+    "word": "Die alten Türen quietschen, wenn man sie öffnet.",
+    "definition": "The old doors squeak when you open them.",
+    "word_frequency": 27185
+  },
+  {
+    "word": "Die Arbeiter beschlossen zu streiken.",
+    "definition": "The workers decided to strike.",
+    "word_frequency": 11799
+  },
+  {
+    "word": "Die Archäologen werden alte Artefakte ausgraben.",
+    "definition": "The archaeologists will dig up old artifacts.",
+    "word_frequency": 13197
+  },
+  {
+    "word": "Die Band wird die Bühne rocken.",
+    "definition": "The band will rock the stage.",
+    "word_frequency": 17308
+  },
+  {
+    "word": "Die Bauern ernten das Getreide im Herbst.",
+    "definition": "The farmers harvest the grain in autumn.",
+    "word_frequency": 8083
+  },
+  {
+    "word": "Die beiden Brüder gleichen sich sehr.",
+    "definition": "The two brothers resemble each other very much.",
+    "word_frequency": 6194
+  },
+  {
+    "word": "Die beiden Firmen konkurrieren um Marktanteile.",
+    "definition": "The two companies compete for market shares.",
+    "word_frequency": 13288
+  },
+  {
+    "word": "Die beiden Firmen wollen sich zusammenschließen.",
+    "definition": "The two companies want to merge.",
+    "word_frequency": 13611
+  },
+  {
+    "word": "Die Beine des Kindes baumelten vom Stuhl.",
+    "definition": "The child's legs dangled from the chair.",
+    "word_frequency": 19568
+  },
+  {
+    "word": "Die Bergsteiger mussten sich abseilen.",
+    "definition": "The mountaineers had to abseil.",
+    "word_frequency": 17925
+  },
+  {
+    "word": "Die Blumen duften herrlich.",
+    "definition": "The flowers smell wonderful.",
+    "word_frequency": 17193
+  },
+  {
+    "word": "Die Blumen müssen mit Wasser besprüht werden.",
+    "definition": "The flowers need to be sprayed with water.",
+    "word_frequency": 20109
+  },
+  {
+    "word": "Die Blätter fallen im Herbst von den Bäumen ab.",
+    "definition": "The leaves fall off the trees in autumn.",
+    "word_frequency": 23636
+  },
+  {
+    "word": "Die Bombe wird bald explodieren.",
+    "definition": "The bomb will explode soon.",
+    "word_frequency": 7009
+  },
+  {
+    "word": "Die Diebe haben die Bank geraubt.",
+    "definition": "The thieves robbed the bank.",
+    "word_frequency": 11024
+  },
+  {
+    "word": "Die Dokumente wurden zur Veröffentlichung freigegeben.",
+    "definition": "The documents were released for publication.",
+    "word_frequency": 5885
+  },
+  {
+    "word": "Die Eltern versuchen, ihre Kinder zu beschützen.",
+    "definition": "The parents try to protect their children.",
+    "word_frequency": 8625
+  },
+  {
+    "word": "Die Erde begann zu beben.",
+    "definition": "The earth began to tremble.",
+    "word_frequency": 11662
+  },
+  {
+    "word": "Die Fabrik produziert Autos.",
+    "definition": "The factory produces cars.",
+    "word_frequency": 1949
+  },
+  {
+    "word": "Die Fabrik verschmutzt die Umwelt.",
+    "definition": "The factory pollutes the environment.",
+    "word_frequency": 24402
+  },
+  {
+    "word": "Die Fahne flatterte im Wind.",
+    "definition": "The flag fluttered in the wind.",
+    "word_frequency": 20575
+  },
+  {
+    "word": "Die Familie bewirtschaftet einen großen Bauernhof.",
+    "definition": "The family manages a large farm.",
+    "word_frequency": 17424
+  },
+  {
+    "word": "Die Fans begannen zu jubeln, als das Tor fiel.",
+    "definition": "The fans started to cheer when the goal was scored.",
+    "word_frequency": 8971
+  },
+  {
+    "word": "Die Fans feuerten ihre Mannschaft an.",
+    "definition": "The fans cheered on their team.",
+    "word_frequency": 24445
+  },
+  {
+    "word": "Die Fans stürmten das Feld nach dem Spiel.",
+    "definition": "The fans stormed the field after the game.",
+    "word_frequency": 7880
+  },
+  {
+    "word": "Die Farben der Kleidung passen gut zusammen.",
+    "definition": "The colors of the clothes fit well together.",
+    "word_frequency": 24823
+  },
+  {
+    "word": "Die Farben des alten Fotos beginnen zu verblassen.",
+    "definition": "The colors of the old photo are starting to fade.",
+    "word_frequency": 21443
+  },
+  {
+    "word": "Die Farben harmonieren gut miteinander.",
+    "definition": "The colors harmonize well with each other.",
+    "word_frequency": 29302
+  },
+  {
+    "word": "Die Fenster klapperten im Wind.",
+    "definition": "The windows rattled in the wind.",
+    "word_frequency": 26285
+  },
+  {
+    "word": "Die Feuerwehr konnte die Katze aus dem Baum bergen.",
+    "definition": "The fire department could rescue the cat from the tree.",
+    "word_frequency": 2762
+  },
+  {
+    "word": "Die Firma beliefert uns mit frischen Produkten.",
+    "definition": "The company supplies us with fresh products.",
+    "word_frequency": 15547
+  },
+  {
+    "word": "Die Firma beschäftigt viele Mitarbeiter.",
+    "definition": "The company employs many employees.",
+    "word_frequency": 971
+  },
+  {
+    "word": "Die Firma konnte ihren Umsatz verdreifachen.",
+    "definition": "The company was able to triple its revenue.",
+    "word_frequency": 24399
+  },
+  {
+    "word": "Die Firma wirbt für ihr neues Produkt.",
+    "definition": "The company advertises its new product.",
+    "word_frequency": 4535
+  },
+  {
+    "word": "Die Firma wird die notwendigen Ressourcen bereitstellen.",
+    "definition": "The company will provide the necessary resources.",
+    "word_frequency": 8622
+  },
+  {
+    "word": "Die Firma wird ihn befördern.",
+    "definition": "The company will promote him.",
+    "word_frequency": 4879
+  },
+  {
+    "word": "Die Gefangenen versuchten, aus dem Gefängnis zu fliehen.",
+    "definition": "The prisoners tried to escape from the prison.",
+    "word_frequency": 4176
+  },
+  {
+    "word": "Die Gesamtkosten betragen 50 Euro.",
+    "definition": "The total costs amount to 50 Euros.",
+    "word_frequency": 1187
+  },
+  {
+    "word": "Die Gewinner werden morgen ausgelost.",
+    "definition": "The winners will be drawn tomorrow.",
+    "word_frequency": 21841
+  },
+  {
+    "word": "Die Glocken tönen laut.",
+    "definition": "The bells sound loudly.",
+    "word_frequency": 9031
+  },
+  {
+    "word": "Die Großeltern verwöhnen ihre Enkelkinder.",
+    "definition": "The grandparents spoil their grandchildren.",
+    "word_frequency": 9830
+  },
+  {
+    "word": "Die Gäste werden morgen anreisen.",
+    "definition": "The guests will arrive tomorrow.",
+    "word_frequency": 18294
+  },
+  {
+    "word": "Die hohen Preise schrecken viele Kunden ab.",
+    "definition": "The high prices deter many customers.",
+    "word_frequency": 13618
+  },
+  {
+    "word": "Die Hose ist beim Waschen eingelaufen.",
+    "definition": "The trousers shrunk in the wash.",
+    "word_frequency": 22973
+  },
+  {
+    "word": "Die Katze hat das Sofa zerkratzt.",
+    "definition": "The cat scratched up the sofa.",
+    "word_frequency": 23629
+  },
+  {
+    "word": "Die Katze kratzte am Sofa.",
+    "definition": "The cat scratched the sofa.",
+    "word_frequency": 10112
+  },
+  {
+    "word": "Die Katze spielt mit der spinnenden Schnur.",
+    "definition": "The cat is playing with the spinning string.",
+    "word_frequency": 12905
+  },
+  {
+    "word": "Die Kinder futtern ihre Süßigkeiten.",
+    "definition": "The children are gobbling their sweets.",
+    "word_frequency": 22638
+  },
+  {
+    "word": "Die Kinder haben den ganzen Kuchen verputzt.",
+    "definition": "The children gobbled up the whole cake.",
+    "word_frequency": 27287
+  },
+  {
+    "word": "Die Kinder laufen im Garten herum.",
+    "definition": "The children run around in the garden.",
+    "word_frequency": 16653
+  },
+  {
+    "word": "Die Kinder laufen im Garten rum.",
+    "definition": "The children are running around in the garden.",
+    "word_frequency": 10674
+  },
+  {
+    "word": "Die Kinder lernen, Wörter zu reimen.",
+    "definition": "The children learn to rhyme words.",
+    "word_frequency": 19441
+  },
+  {
+    "word": "Die Kinder lieben es, sich an ihre Eltern zu kuscheln.",
+    "definition": "The children love to cuddle up to their parents.",
+    "word_frequency": 12624
+  },
+  {
+    "word": "Die Kinder malen die Bilder aus.",
+    "definition": "The children color in the pictures.",
+    "word_frequency": 17414
+  },
+  {
+    "word": "Die Kinder mussten kichern, als sie den Clown sahen.",
+    "definition": "The children had to giggle when they saw the clown.",
+    "word_frequency": 19370
+  },
+  {
+    "word": "Die Kinder müssen sich draußen austoben.",
+    "definition": "The children need to let off steam outside.",
+    "word_frequency": 16849
+  },
+  {
+    "word": "Die Kinder schaukeln im Garten.",
+    "definition": "The children are swinging in the garden.",
+    "word_frequency": 16241
+  },
+  {
+    "word": "Die Kinder spritzten sich mit Wasser.",
+    "definition": "The children sprayed each other with water.",
+    "word_frequency": 6122
+  },
+  {
+    "word": "Die Kinder toben im Garten.",
+    "definition": "The children are romping in the garden.",
+    "word_frequency": 13366
+  },
+  {
+    "word": "Die Kinder werden ein Theaterstück aufführen.",
+    "definition": "The children will perform a play.",
+    "word_frequency": 3194
+  },
+  {
+    "word": "Die Kinder wollen weiterspielen.",
+    "definition": "The children want to continue playing.",
+    "word_frequency": 21804
+  },
+  {
+    "word": "Die Kohlen glühten im Kamin.",
+    "definition": "The coals glowed in the fireplace.",
+    "word_frequency": 21597
+  },
+  {
+    "word": "Die Kommission wird nächste Woche tagen.",
+    "definition": "The commission will meet next week.",
+    "word_frequency": 19161
+  },
+  {
+    "word": "Die Leute protestieren gegen die Regierung.",
+    "definition": "The people are protesting against the government.",
+    "word_frequency": 7178
+  },
+  {
+    "word": "Die Leute versammelten sich auf dem Marktplatz.",
+    "definition": "The people gathered in the marketplace.",
+    "word_frequency": 6372
+  },
+  {
+    "word": "Die Lieferung wird morgen erfolgen.",
+    "definition": "The delivery will take place tomorrow.",
+    "word_frequency": 1112
+  },
+  {
+    "word": "Die Mannschaft konnte den Gegner besiegen.",
+    "definition": "The team was able to defeat the opponent.",
+    "word_frequency": 4632
+  },
+  {
+    "word": "Die Milch ist verdorben.",
+    "definition": "The milk has spoiled.",
+    "word_frequency": 6479
+  },
+  {
+    "word": "Die Musik kann uns inspirieren.",
+    "definition": "The music can inspire us.",
+    "word_frequency": 5385
+  },
+  {
+    "word": "Die Mutter nährt ihr Kind.",
+    "definition": "The mother nourishes her child.",
+    "word_frequency": 22766
+  },
+  {
+    "word": "Die Mutter schimpfte mit ihrem Kind.",
+    "definition": "The mother scolded her child.",
+    "word_frequency": 12229
+  },
+  {
+    "word": "Die Mutter stillt ihr Baby.",
+    "definition": "The mother breastfeeds her baby.",
+    "word_frequency": 4942
+  },
+  {
+    "word": "Die Möwen kreischen am Strand.",
+    "definition": "The seagulls are screeching on the beach.",
+    "word_frequency": 20638
+  },
+  {
+    "word": "Die Nachricht wird ihn überraschen.",
+    "definition": "The news will surprise him.",
+    "word_frequency": 1400
+  },
+  {
+    "word": "Die Nachrichten verbreiten sich schnell.",
+    "definition": "The news spreads quickly.",
+    "word_frequency": 1681
+  },
+  {
+    "word": "Die Polizei konnte den Betrug aufdecken.",
+    "definition": "The police were able to uncover the fraud.",
+    "word_frequency": 9508
+  },
+  {
+    "word": "Die Polizei musste die Straße absperren.",
+    "definition": "The police had to cordon off the street.",
+    "word_frequency": 17392
+  },
+  {
+    "word": "Die Polizei verfolgt den Dieb.",
+    "definition": "The police are pursuing the thief.",
+    "word_frequency": 1615
+  },
+  {
+    "word": "Die Polizei versucht, den Fall aufzuklären.",
+    "definition": "The police are trying to solve the case.",
+    "word_frequency": 7108
+  },
+  {
+    "word": "Die Polizei wurde sofort alarmiert.",
+    "definition": "The police were immediately alerted.",
+    "word_frequency": 11842
+  },
+  {
+    "word": "Die Preise steigen.",
+    "definition": "The prices are rising.",
+    "word_frequency": 1364
+  },
+  {
+    "word": "Die Prüfung ist schwer, aber ich werde durchgehen.",
+    "definition": "The exam is difficult, but I will pass.",
+    "word_frequency": 7511
+  },
+  {
+    "word": "Die Raupe wird sich in einen Schmetterling wandeln.",
+    "definition": "The caterpillar will transform into a butterfly.",
+    "word_frequency": 11522
+  },
+  {
+    "word": "Die Regierung muss das Land gut regieren.",
+    "definition": "The government must govern the country well.",
+    "word_frequency": 4850
+  },
+  {
+    "word": "Die Regierung wird die neuen Maßnahmen morgen bekanntgeben.",
+    "definition": "The government will announce the new measures tomorrow.",
+    "word_frequency": 9360
+  },
+  {
+    "word": "Die Reifen nutzen sich schnell ab.",
+    "definition": "The tires wear out quickly.",
+    "word_frequency": 27324
+  },
+  {
+    "word": "Die Samen beginnen zu keimen.",
+    "definition": "The seeds begin to germinate.",
+    "word_frequency": 21986
+  },
+  {
+    "word": "Die Scheinwerfer beleuchten die Bühne.",
+    "definition": "The spotlights illuminate the stage.",
+    "word_frequency": 6280
+  },
+  {
+    "word": "Die Schlange zischte laut.",
+    "definition": "The snake hissed loudly.",
+    "word_frequency": 27714
+  },
+  {
+    "word": "Die Situation hat sich verschlimmert.",
+    "definition": "The situation has worsened.",
+    "word_frequency": 21122
+  },
+  {
+    "word": "Die Soldaten marschieren im Gleichschritt.",
+    "definition": "The soldiers march in step.",
+    "word_frequency": 8690
+  },
+  {
+    "word": "Die Sonne blendet mich.",
+    "definition": "The sun is blinding me.",
+    "word_frequency": 13648
+  },
+  {
+    "word": "Die Sonne scheint heute.",
+    "definition": "The sun is shining today.",
+    "word_frequency": 355
+  },
+  {
+    "word": "Die Sonne strahlt hell.",
+    "definition": "The sun shines brightly.",
+    "word_frequency": 8571
+  },
+  {
+    "word": "Die Sonne wird bald untergehen.",
+    "definition": "The sun will soon go down.",
+    "word_frequency": 9335
+  },
+  {
+    "word": "Die Stelle ist bereits besetzt.",
+    "definition": "The position is already filled.",
+    "word_frequency": 2044
+  },
+  {
+    "word": "Die Sterne funkeln am Nachthimmel.",
+    "definition": "The stars twinkle in the night sky.",
+    "word_frequency": 22635
+  },
+  {
+    "word": "Die Sterne glänzen am Nachthimmel.",
+    "definition": "The stars shine in the night sky.",
+    "word_frequency": 10271
+  },
+  {
+    "word": "Die Straße ist blockiert.",
+    "definition": "The street is blocked.",
+    "word_frequency": 4398
+  },
+  {
+    "word": "Die Straße ist gesperrt.",
+    "definition": "The road is blocked.",
+    "word_frequency": 2164
+  },
+  {
+    "word": "Die Studenten wollen für ihre Rechte demonstrieren.",
+    "definition": "The students want to protest for their rights.",
+    "word_frequency": 4479
+  },
+  {
+    "word": "Die Temperaturen werden morgen ansteigen.",
+    "definition": "The temperatures will rise tomorrow.",
+    "word_frequency": 11469
+  },
+  {
+    "word": "Die Termine überschneiden sich.",
+    "definition": "The appointments overlap.",
+    "word_frequency": 26883
+  },
+  {
+    "word": "Die Tiere flüchteten vor dem Feuer.",
+    "definition": "The animals fled from the fire.",
+    "word_frequency": 6188
+  },
+  {
+    "word": "Die Tür geht langsam zu.",
+    "definition": "The door is slowly closing.",
+    "word_frequency": 10905
+  },
+  {
+    "word": "Die Tür klemmt.",
+    "definition": "The door is sticking.",
+    "word_frequency": 19678
+  },
+  {
+    "word": "Die Tür knallte laut zu.",
+    "definition": "The door slammed shut loudly.",
+    "word_frequency": 10110
+  },
+  {
+    "word": "Die Uhr tickt laut.",
+    "definition": "The clock ticks loudly.",
+    "word_frequency": 11804
+  },
+  {
+    "word": "Die Uhrzeit wird digital angezeigt.",
+    "definition": "The time is displayed digitally.",
+    "word_frequency": 2608
+  },
+  {
+    "word": "Die Vase ist zerbrochen.",
+    "definition": "The vase is broken.",
+    "word_frequency": 11269
+  },
+  {
+    "word": "Die Versicherung wird den Schaden ausbezahlen.",
+    "definition": "The insurance will pay out the damage.",
+    "word_frequency": 18025
+  },
+  {
+    "word": "Die Versicherung wird den Schaden auszahlen.",
+    "definition": "The insurance will pay out the damage.",
+    "word_frequency": 8786
+  },
+  {
+    "word": "Die Vögel kreisen über dem Feld.",
+    "definition": "The birds are circling over the field.",
+    "word_frequency": 3617
+  },
+  {
+    "word": "Die Vögel zwitschern am Morgen.",
+    "definition": "The birds chirp in the morning.",
+    "word_frequency": 22151
+  },
+  {
+    "word": "Die Wissenschaftler experimentieren mit neuen Materialien.",
+    "definition": "The scientists are experimenting with new materials.",
+    "word_frequency": 13911
+  },
+  {
+    "word": "Die Wunde wird schnell heilen.",
+    "definition": "The wound will heal quickly.",
+    "word_frequency": 5379
+  },
+  {
+    "word": "Die Zahl der Touristen nimmt stetig zu.",
+    "definition": "The number of tourists is steadily increasing.",
+    "word_frequency": 6713
+  },
+  {
+    "word": "Die Zahlen sind zurückgegangen.",
+    "definition": "The numbers have declined.",
+    "word_frequency": 7477
+  },
+  {
+    "word": "Die Zeit vergeht schnell.",
+    "definition": "Time passes quickly.",
+    "word_frequency": 4532
+  },
+  {
+    "word": "Die Zuschauer begannen zu klatschen.",
+    "definition": "The spectators began to clap.",
+    "word_frequency": 8532
+  },
+  {
+    "word": "Diese Aufgabe wird dir zukommen.",
+    "definition": "This task will be assigned to you.",
+    "word_frequency": 4456
+  },
+  {
+    "word": "Diese beiden Probleme hängen eng zusammen.",
+    "definition": "These two problems are closely connected.",
+    "word_frequency": 9053
+  },
+  {
+    "word": "Diese Fabrik erzeugt viel Energie.",
+    "definition": "This factory produces a lot of energy.",
+    "word_frequency": 2626
+  },
+  {
+    "word": "Diese Firma stellt Autos her.",
+    "definition": "This company manufactures cars.",
+    "word_frequency": 1779
+  },
+  {
+    "word": "Diese Flasche enthält Wasser.",
+    "definition": "This bottle contains water.",
+    "word_frequency": 1058
+  },
+  {
+    "word": "Diese Regel gilt für alle.",
+    "definition": "This rule applies to everyone.",
+    "word_frequency": 310
+  },
+  {
+    "word": "Diese Regelung betrifft alle Mitarbeiter.",
+    "definition": "This regulation concerns all employees.",
+    "word_frequency": 1569
+  },
+  {
+    "word": "Dieser Stuhl gehört in die Küche.",
+    "definition": "This chair belongs in the kitchen.",
+    "word_frequency": 18736
+  },
+  {
+    "word": "Dieses Bild soll die Freiheit darstellen.",
+    "definition": "This picture is supposed to represent freedom.",
+    "word_frequency": 1593
+  },
+  {
+    "word": "Dieses Buch eignet sich gut für Anfänger.",
+    "definition": "This book is well suited for beginners.",
+    "word_frequency": 4807
+  },
+  {
+    "word": "Dieses Gebäude datiert aus dem 18. Jahrhundert.",
+    "definition": "This building dates from the 18th century.",
+    "word_frequency": 10242
+  },
+  {
+    "word": "Dieses Lied stammt aus den 80er Jahren.",
+    "definition": "This song originates from the 80s.",
+    "word_frequency": 1583
+  },
+  {
+    "word": "Dieses Werkzeug dient einem bestimmten Zweck.",
+    "definition": "This tool serves a specific purpose.",
+    "word_frequency": 1407
+  },
+  {
+    "word": "Dinosaurier existieren heute nicht mehr.",
+    "definition": "Dinosaurs no longer exist today.",
+    "word_frequency": 2007
+  },
+  {
+    "word": "Du kannst das Brot einfrieren.",
+    "definition": "You can freeze the bread.",
+    "word_frequency": 13898
+  },
+  {
+    "word": "Du kannst das Buch behalten.",
+    "definition": "You can keep the book.",
+    "word_frequency": 1443
+  },
+  {
+    "word": "Du kannst den Weg abkürzen, wenn du durch den Park gehst.",
+    "definition": "You can shorten the way if you go through the park.",
+    "word_frequency": 16833
+  },
+  {
+    "word": "Du kannst die Informationen im Buch nachlesen.",
+    "definition": "You can look up the information in the book.",
+    "word_frequency": 6333
+  },
+  {
+    "word": "Du kannst diesen Satz weglassen.",
+    "definition": "You can omit this sentence.",
+    "word_frequency": 14282
+  },
+  {
+    "word": "Du kannst gerne mitlesen, wenn du möchtest.",
+    "definition": "You can read along if you like.",
+    "word_frequency": 24655
+  },
+  {
+    "word": "Du musst das Fleisch zuerst scharf anbraten.",
+    "definition": "You have to sear the meat sharply first.",
+    "word_frequency": 21489
+  },
+  {
+    "word": "Du musst den Stecker reinstecken.",
+    "definition": "You have to plug in the connector.",
+    "word_frequency": 23509
+  },
+  {
+    "word": "Du musst dich mehr anstrengen, um das Ziel zu erreichen.",
+    "definition": "You have to make more effort to reach the goal.",
+    "word_frequency": 13192
+  },
+  {
+    "word": "Du musst die Farbe mit Wasser verdünnen.",
+    "definition": "You have to dilute the paint with water.",
+    "word_frequency": 23989
+  },
+  {
+    "word": "Du musst die Vergangenheit loslassen.",
+    "definition": "You have to let go of the past.",
+    "word_frequency": 9281
+  },
+  {
+    "word": "Du musst jetzt durchhalten, es ist fast geschafft.",
+    "definition": "You have to persevere now, it's almost done.",
+    "word_frequency": 10068
+  },
+  {
+    "word": "Du solltest deine Augen schonen.",
+    "definition": "You should spare your eyes.",
+    "word_frequency": 8309
+  },
+  {
+    "word": "Du solltest den alten Müll wegschmeissen.",
+    "definition": "You should throw away the old trash.",
+    "word_frequency": 21459
+  },
+  {
+    "word": "Du solltest dich aus dieser Angelegenheit raushalten.",
+    "definition": "You should stay out of this matter.",
+    "word_frequency": 25962
+  },
+  {
+    "word": "Du solltest die Hausaufgaben nicht abschreiben.",
+    "definition": "You should not copy the homework.",
+    "word_frequency": 13180
+  },
+  {
+    "word": "Du solltest keine Mahlzeit auslassen.",
+    "definition": "You shouldn't skip any meal.",
+    "word_frequency": 8359
+  },
+  {
+    "word": "Du solltest mich nicht anlügen.",
+    "definition": "You shouldn't lie to me.",
+    "word_frequency": 25259
+  },
+  {
+    "word": "Du solltest mich nicht belügen.",
+    "definition": "You shouldn't lie to me.",
+    "word_frequency": 13428
+  },
+  {
+    "word": "Du solltest nicht immer so übertreiben.",
+    "definition": "You shouldn't always exaggerate so much.",
+    "word_frequency": 4391
+  },
+  {
+    "word": "Du solltest niemanden beleidigen.",
+    "definition": "You shouldn't insult anyone.",
+    "word_frequency": 3586
+  },
+  {
+    "word": "Du solltest niemanden schubsen.",
+    "definition": "You shouldn't push anyone.",
+    "word_frequency": 20725
+  },
+  {
+    "word": "Er befahl den Soldaten, vorzurücken.",
+    "definition": "He commanded the soldiers to advance.",
+    "word_frequency": 11107
+  },
+  {
+    "word": "Er befürchtet, dass der Plan scheitern wird.",
+    "definition": "He fears that the plan will fail.",
+    "word_frequency": 2951
+  },
+  {
+    "word": "Er begann laut zu schreien.",
+    "definition": "He started to scream loudly.",
+    "word_frequency": 3368
+  },
+  {
+    "word": "Er begann vor Schmerz zu stöhnen.",
+    "definition": "He began to groan in pain.",
+    "word_frequency": 13582
+  },
+  {
+    "word": "Er begann wütend mit dem Fuß zu stampfen.",
+    "definition": "He began to stamp his foot angrily.",
+    "word_frequency": 21751
+  },
+  {
+    "word": "Er begann zu fluchen, als er den Fehler bemerkte.",
+    "definition": "He started to curse when he noticed the mistake.",
+    "word_frequency": 15873
+  },
+  {
+    "word": "Er begann zu stottern, als er nervös wurde.",
+    "definition": "He started to stutter when he got nervous.",
+    "word_frequency": 26416
+  },
+  {
+    "word": "Er begann, an der Tür zu rütteln.",
+    "definition": "He began to shake the door.",
+    "word_frequency": 17053
+  },
+  {
+    "word": "Er begann, die Bücher auf dem Tisch zu stapeln.",
+    "definition": "He began to stack the books on the table.",
+    "word_frequency": 17643
+  },
+  {
+    "word": "Er begann, sie unhöflich anzustarren.",
+    "definition": "He began to stare at her rudely.",
+    "word_frequency": 27744
+  },
+  {
+    "word": "Er behauptet, die Wahrheit zu kennen.",
+    "definition": "He claims to know the truth.",
+    "word_frequency": 1803
+  },
+  {
+    "word": "Er beherrscht mehrere Sprachen fließend.",
+    "definition": "He masters several languages fluently.",
+    "word_frequency": 4556
+  },
+  {
+    "word": "Er berät seine Kunden in Finanzfragen.",
+    "definition": "He advises his clients on financial matters.",
+    "word_frequency": 2819
+  },
+  {
+    "word": "Er beschloss, zu schweigen und nichts zu sagen.",
+    "definition": "He decided to be silent and say nothing.",
+    "word_frequency": 2186
+  },
+  {
+    "word": "Er beschwert sich immer über das Essen.",
+    "definition": "He always complains about the food.",
+    "word_frequency": 4631
+  },
+  {
+    "word": "Er besitzt ein großes Haus.",
+    "definition": "He owns a big house.",
+    "word_frequency": 1319
+  },
+  {
+    "word": "Er betonte die Wichtigkeit der Aufgabe.",
+    "definition": "He emphasized the importance of the task.",
+    "word_frequency": 2333
+  },
+  {
+    "word": "Er blickte auf seine Kindheit zurück.",
+    "definition": "He looked back on his childhood.",
+    "word_frequency": 15516
+  },
+  {
+    "word": "Er blickte aus dem Fenster.",
+    "definition": "He looked out of the window.",
+    "word_frequency": 3527
+  },
+  {
+    "word": "Er braut sein eigenes Bier.",
+    "definition": "He brews his own beer.",
+    "word_frequency": 17746
+  },
+  {
+    "word": "Er darf nicht versagen.",
+    "definition": "He must not fail.",
+    "word_frequency": 4082
+  },
+  {
+    "word": "Er drohte, sich umzubringen.",
+    "definition": "He threatened to kill himself.",
+    "word_frequency": 5845
+  },
+  {
+    "word": "Er drängte mich, schneller zu sein.",
+    "definition": "He urged me to be faster.",
+    "word_frequency": 5271
+  },
+  {
+    "word": "Er engagiert sich stark für den Umweltschutz.",
+    "definition": "He is strongly committed to environmental protection.",
+    "word_frequency": 3469
+  },
+  {
+    "word": "Er filmt einen Dokumentarfilm.",
+    "definition": "He is filming a documentary.",
+    "word_frequency": 2431
+  },
+  {
+    "word": "Er geht nicht ans Telefon ran.",
+    "definition": "He doesn't answer the phone.",
+    "word_frequency": 24707
+  },
+  {
+    "word": "Er greift nach dem Buch.",
+    "definition": "He reaches for the book.",
+    "word_frequency": 2056
+  },
+  {
+    "word": "Er hat das alte Holz im Kamin verbrannt.",
+    "definition": "He burned the old wood in the fireplace.",
+    "word_frequency": 4770
+  },
+  {
+    "word": "Er hat einen Schlag abbekommen.",
+    "definition": "He received a blow.",
+    "word_frequency": 13838
+  },
+  {
+    "word": "Er hat gestern Abend zu viel gesoffen.",
+    "definition": "He drank too much last night.",
+    "word_frequency": 6461
+  },
+  {
+    "word": "Er hat großen Schaden angerichtet.",
+    "definition": "He caused great damage.",
+    "word_frequency": 7480
+  },
+  {
+    "word": "Er hat heute die Schule geschwänzt.",
+    "definition": "He skipped school today.",
+    "word_frequency": 16007
+  },
+  {
+    "word": "Er hat im Urlaub etwas zugenommen.",
+    "definition": "He gained some weight on vacation.",
+    "word_frequency": 8045
+  },
+  {
+    "word": "Er hat mich ohne Grund angeschrien.",
+    "definition": "He yelled at me for no reason.",
+    "word_frequency": 23656
+  },
+  {
+    "word": "Er hat mir das Schwimmen beigebracht.",
+    "definition": "He taught me how to swim.",
+    "word_frequency": 5959
+  },
+  {
+    "word": "Er hat mir vorgemacht, wie es geht.",
+    "definition": "He showed me how it's done.",
+    "word_frequency": 20788
+  },
+  {
+    "word": "Er hat seine Teilnahme zugesagt.",
+    "definition": "He confirmed his participation.",
+    "word_frequency": 9195
+  },
+  {
+    "word": "Er hat sich den Kopf an der Tür gestoßen.",
+    "definition": "He bumped his head on the door.",
+    "word_frequency": 4149
+  },
+  {
+    "word": "Er hat sich in sie verliebt.",
+    "definition": "He fell in love with her.",
+    "word_frequency": 2506
+  },
+  {
+    "word": "Er hat sich mit Grippe angesteckt.",
+    "definition": "He got infected with the flu.",
+    "word_frequency": 12517
+  },
+  {
+    "word": "Er hat sich schnell mit den neuen Kollegen angefreundet.",
+    "definition": "He quickly made friends with the new colleagues.",
+    "word_frequency": 16310
+  },
+  {
+    "word": "Er hatte nichts mit der Sache zutun.",
+    "definition": "He had nothing to do with the matter.",
+    "word_frequency": 10028
+  },
+  {
+    "word": "Er hörte die Tür zuschlagen.",
+    "definition": "He heard the door slam shut.",
+    "word_frequency": 8902
+  },
+  {
+    "word": "Er ist an einer Grippe erkrankt.",
+    "definition": "He fell ill with the flu.",
+    "word_frequency": 8231
+  },
+  {
+    "word": "Er ist auf dem Eis ausgerutscht.",
+    "definition": "He slipped on the ice.",
+    "word_frequency": 24849
+  },
+  {
+    "word": "Er ist aus der Schule rausgeflogen.",
+    "definition": "He was kicked out of school.",
+    "word_frequency": 27593
+  },
+  {
+    "word": "Er ist leider bei der Prüfung durchgefallen.",
+    "definition": "He unfortunately failed the exam.",
+    "word_frequency": 19607
+  },
+  {
+    "word": "Er kann die Uhrzeit von der Sonnenuhr ablesen.",
+    "definition": "He can read the time off the sundial.",
+    "word_frequency": 9502
+  },
+  {
+    "word": "Er kann drei Bälle gleichzeitig jonglieren.",
+    "definition": "He can juggle three balls at the same time.",
+    "word_frequency": 27930
+  },
+  {
+    "word": "Er kann mit den anderen nicht mithalten.",
+    "definition": "He cannot keep up with the others.",
+    "word_frequency": 7164
+  },
+  {
+    "word": "Er kann schwere Gewichte heben.",
+    "definition": "He can lift heavy weights.",
+    "word_frequency": 3734
+  },
+  {
+    "word": "Er kann sehr gut rappen.",
+    "definition": "He can rap very well.",
+    "word_frequency": 17305
+  },
+  {
+    "word": "Er kann sehr laut pfeifen.",
+    "definition": "He can whistle very loudly.",
+    "word_frequency": 10844
+  },
+  {
+    "word": "Er kann sich ein neues Auto leisten.",
+    "definition": "He can afford a new car.",
+    "word_frequency": 1004
+  },
+  {
+    "word": "Er kennt sich gut in der Stadt aus.",
+    "definition": "He knows his way around the city well.",
+    "word_frequency": 13199
+  },
+  {
+    "word": "Er klagt oft über Kopfschmerzen.",
+    "definition": "He often complains about headaches.",
+    "word_frequency": 2939
+  },
+  {
+    "word": "Er knöpfte sein Hemd zu.",
+    "definition": "He buttoned up his shirt.",
+    "word_frequency": 23070
+  },
+  {
+    "word": "Er konnte das Auto überholen.",
+    "definition": "He was able to overtake the car.",
+    "word_frequency": 5527
+  },
+  {
+    "word": "Er konnte das Kind vor dem Feuer retten.",
+    "definition": "He could save the child from the fire.",
+    "word_frequency": 1514
+  },
+  {
+    "word": "Er konnte den Ball blocken.",
+    "definition": "He could block the ball.",
+    "word_frequency": 15075
+  },
+  {
+    "word": "Er konnte den Ball nicht fassen.",
+    "definition": "He could not grasp the ball.",
+    "word_frequency": 2209
+  },
+  {
+    "word": "Er konnte den Unfall überleben.",
+    "definition": "He was able to survive the accident.",
+    "word_frequency": 2559
+  },
+  {
+    "word": "Er konnte der Gefahr entkommen.",
+    "definition": "He was able to escape the danger.",
+    "word_frequency": 5360
+  },
+  {
+    "word": "Er konnte die Angst nicht abschütteln.",
+    "definition": "He couldn't shake off the fear.",
+    "word_frequency": 28202
+  },
+  {
+    "word": "Er konnte die Nüsse knacken.",
+    "definition": "He could crack the nuts.",
+    "word_frequency": 7421
+  },
+  {
+    "word": "Er konnte die Tablette nicht schlucken.",
+    "definition": "He could not swallow the tablet.",
+    "word_frequency": 6579
+  },
+  {
+    "word": "Er konnte nicht wegkommen.",
+    "definition": "He couldn't get away.",
+    "word_frequency": 24011
+  },
+  {
+    "word": "Er konnte nicht wegschauen, als es passierte.",
+    "definition": "He couldn't look away when it happened.",
+    "word_frequency": 25218
+  },
+  {
+    "word": "Er konnte seine Einnahmen verdoppeln.",
+    "definition": "He was able to double his income.",
+    "word_frequency": 7205
+  },
+  {
+    "word": "Er konnte seine Gefühle nicht ausdrücken.",
+    "definition": "He couldn't express his feelings.",
+    "word_frequency": 4310
+  },
+  {
+    "word": "Er konnte seine Meinung nicht äußern.",
+    "definition": "He could not express his opinion.",
+    "word_frequency": 2811
+  },
+  {
+    "word": "Er konnte sich nicht länger aufhalten.",
+    "definition": "He couldn't stay any longer.",
+    "word_frequency": 3924
+  },
+  {
+    "word": "Er konnte sich nicht mehr wehren.",
+    "definition": "He could no longer defend himself.",
+    "word_frequency": 3779
+  },
+  {
+    "word": "Er konnte sich nicht von der Gruppe loslösen.",
+    "definition": "He couldn't detach himself from the group.",
+    "word_frequency": 18149
+  },
+  {
+    "word": "Er könnte stürzen, wenn er nicht aufpasst.",
+    "definition": "He could fall if he's not careful.",
+    "word_frequency": 4375
+  },
+  {
+    "word": "Er kümmert sich um seine Pflanzen.",
+    "definition": "He takes care of his plants.",
+    "word_frequency": 1708
+  },
+  {
+    "word": "Er lehnte das Angebot ab.",
+    "definition": "He rejected the offer.",
+    "word_frequency": 2369
+  },
+  {
+    "word": "Er lehnte sich an die Wand.",
+    "definition": "He leaned against the wall.",
+    "word_frequency": 4501
+  },
+  {
+    "word": "Er lehnte sich entspannt zurück.",
+    "definition": "He leaned back relaxed.",
+    "word_frequency": 20820
+  },
+  {
+    "word": "Er lernt, wie man fechten kann.",
+    "definition": "He is learning how to fence.",
+    "word_frequency": 19623
+  },
+  {
+    "word": "Er liebt es, am Wochenende mit Freunden zu pokern.",
+    "definition": "He loves to play poker with friends on the weekend.",
+    "word_frequency": 29442
+  },
+  {
+    "word": "Er liebt es, im Meer zu tauchen.",
+    "definition": "He loves to dive in the sea.",
+    "word_frequency": 4204
+  },
+  {
+    "word": "Er liebt es, Musik zu komponieren.",
+    "definition": "He loves to compose music.",
+    "word_frequency": 11941
+  },
+  {
+    "word": "Er muss aus dem Fenster ausschauen.",
+    "definition": "He has to look out of the window.",
+    "word_frequency": 25701
+  },
+  {
+    "word": "Er muss das Auto schieben.",
+    "definition": "He has to push the car.",
+    "word_frequency": 3834
+  },
+  {
+    "word": "Er muss das Auto vorsichtig lenken.",
+    "definition": "He must steer the car carefully.",
+    "word_frequency": 5482
+  },
+  {
+    "word": "Er muss das Holz sägen, bevor er es verwenden kann.",
+    "definition": "He has to saw the wood before he can use it.",
+    "word_frequency": 18847
+  },
+  {
+    "word": "Er muss das Messer schärfen.",
+    "definition": "He has to sharpen the knife.",
+    "word_frequency": 19143
+  },
+  {
+    "word": "Er muss das Metall schweissen.",
+    "definition": "He has to weld the metal.",
+    "word_frequency": 21067
+  },
+  {
+    "word": "Er muss das Paket bis morgen abliefern.",
+    "definition": "He has to deliver the package by tomorrow.",
+    "word_frequency": 12066
+  },
+  {
+    "word": "Er muss das Schiff durch den Sturm steuern.",
+    "definition": "He has to steer the ship through the storm.",
+    "word_frequency": 6766
+  },
+  {
+    "word": "Er muss den Befehl ausführen.",
+    "definition": "He has to execute the order.",
+    "word_frequency": 2711
+  },
+  {
+    "word": "Er muss den Rasen mähen.",
+    "definition": "He has to mow the lawn.",
+    "word_frequency": 18169
+  },
+  {
+    "word": "Er muss den Schnee vom Weg schaufeln.",
+    "definition": "He has to shovel the snow off the path.",
+    "word_frequency": 16502
+  },
+  {
+    "word": "Er muss den Stecker einstecken.",
+    "definition": "He has to plug in the plug.",
+    "word_frequency": 10596
+  },
+  {
+    "word": "Er muss den Text noch editieren.",
+    "definition": "He still has to edit the text.",
+    "word_frequency": 27403
+  },
+  {
+    "word": "Er muss die Anforderungen erfüllen.",
+    "definition": "He must meet the requirements.",
+    "word_frequency": 1470
+  },
+  {
+    "word": "Er muss die Fahrradkette ölen.",
+    "definition": "He has to oil the bicycle chain.",
+    "word_frequency": 24434
+  },
+  {
+    "word": "Er muss die Finanzen verwalten.",
+    "definition": "He has to manage the finances.",
+    "word_frequency": 7093
+  },
+  {
+    "word": "Er muss die Frage beantworten.",
+    "definition": "He has to answer the question.",
+    "word_frequency": 2090
+  },
+  {
+    "word": "Er muss die Prüfung bestehen.",
+    "definition": "He has to pass the exam.",
+    "word_frequency": 381
+  },
+  {
+    "word": "Er muss die Schraube festschrauben.",
+    "definition": "He has to screw the bolt tightly.",
+    "word_frequency": 20590
+  },
+  {
+    "word": "Er muss die Waren abladen.",
+    "definition": "He has to unload the goods.",
+    "word_frequency": 27725
+  },
+  {
+    "word": "Er muss diese Herausforderung meistern.",
+    "definition": "He must master this challenge.",
+    "word_frequency": 7561
+  },
+  {
+    "word": "Er muss ein Loch in die Wand bohren.",
+    "definition": "He has to drill a hole in the wall.",
+    "word_frequency": 9866
+  },
+  {
+    "word": "Er muss ein neues Logo designen.",
+    "definition": "He has to design a new logo.",
+    "word_frequency": 27808
+  },
+  {
+    "word": "Er muss erst mal runterkommen, bevor wir reden können.",
+    "definition": "He needs to calm down first before we can talk.",
+    "word_frequency": 27606
+  },
+  {
+    "word": "Er muss jetzt stark dastehen.",
+    "definition": "He has to appear strong now.",
+    "word_frequency": 11682
+  },
+  {
+    "word": "Er muss noch die Dokumente bearbeiten.",
+    "definition": "He still has to process the documents.",
+    "word_frequency": 3257
+  },
+  {
+    "word": "Er muss noch einen Euro einwerfen.",
+    "definition": "He still has to insert one euro.",
+    "word_frequency": 22251
+  },
+  {
+    "word": "Er muss sein Verhalten bessern.",
+    "definition": "He must improve his behavior.",
+    "word_frequency": 14093
+  },
+  {
+    "word": "Er muss seine Brille aufsetzen.",
+    "definition": "He has to put on his glasses.",
+    "word_frequency": 8782
+  },
+  {
+    "word": "Er muss seine Schuhe binden.",
+    "definition": "He has to tie his shoes.",
+    "word_frequency": 3210
+  },
+  {
+    "word": "Er muss seine Schuhe polieren.",
+    "definition": "He needs to polish his shoes.",
+    "word_frequency": 19111
+  },
+  {
+    "word": "Er muss seinen Bart trimmen.",
+    "definition": "He needs to trim his beard.",
+    "word_frequency": 27883
+  },
+  {
+    "word": "Er muss seinen Fehler anerkennen.",
+    "definition": "He must acknowledge his mistake.",
+    "word_frequency": 2863
+  },
+  {
+    "word": "Er muss seinen Kollegen ablösen.",
+    "definition": "He has to relieve his colleague.",
+    "word_frequency": 6973
+  },
+  {
+    "word": "Er muss seinen Weg selbst bestimmen.",
+    "definition": "He has to determine his own path.",
+    "word_frequency": 2377
+  },
+  {
+    "word": "Er muss sich erst orientieren.",
+    "definition": "He first needs to get his bearings.",
+    "word_frequency": 4438
+  },
+  {
+    "word": "Er muss sich mit diesem Problem befassen.",
+    "definition": "He has to deal with this problem.",
+    "word_frequency": 4011
+  },
+  {
+    "word": "Er muss viel leiden.",
+    "definition": "He has to suffer a lot.",
+    "word_frequency": 1267
+  },
+  {
+    "word": "Er muss viele Projekte gleichzeitig managen.",
+    "definition": "He has to manage many projects simultaneously.",
+    "word_frequency": 16694
+  },
+  {
+    "word": "Er muss vor Gericht aussagen.",
+    "definition": "He has to testify in court.",
+    "word_frequency": 13857
+  },
+  {
+    "word": "Er musste alles niederschreiben, was er gehört hatte.",
+    "definition": "He had to write down everything he had heard.",
+    "word_frequency": 24283
+  },
+  {
+    "word": "Er musste auf die Tür kloppen, um gehört zu werden.",
+    "definition": "He had to knock on the door to be heard.",
+    "word_frequency": 28878
+  },
+  {
+    "word": "Er musste aus politischen Gründen ausreisen.",
+    "definition": "He had to leave the country for political reasons.",
+    "word_frequency": 20505
+  },
+  {
+    "word": "Er musste das Auto abstellen.",
+    "definition": "He had to park the car.",
+    "word_frequency": 7608
+  },
+  {
+    "word": "Er musste das Boot am Steg festmachen.",
+    "definition": "He had to moor the boat to the jetty.",
+    "word_frequency": 23338
+  },
+  {
+    "word": "Er musste das Seil durchschneiden, um sich zu befreien.",
+    "definition": "He had to cut through the rope to free himself.",
+    "word_frequency": 25765
+  },
+  {
+    "word": "Er musste das Seil zerschneiden, um sich zu befreien.",
+    "definition": "He had to cut up the rope to free himself.",
+    "word_frequency": 26872
+  },
+  {
+    "word": "Er musste den Ball auffangen.",
+    "definition": "He had to catch the ball.",
+    "word_frequency": 16085
+  },
+  {
+    "word": "Er musste den Brief an die richtige Person adressieren.",
+    "definition": "He had to address the letter to the correct person.",
+    "word_frequency": 20189
+  },
+  {
+    "word": "Er musste den Kuchen aufschneiden.",
+    "definition": "He had to cut open the cake.",
+    "word_frequency": 25696
+  },
+  {
+    "word": "Er musste den Nagel aus dem Holz rausziehen.",
+    "definition": "He had to pull the nail out of the wood.",
+    "word_frequency": 26747
+  },
+  {
+    "word": "Er musste den Raum säubern.",
+    "definition": "He had to clean the room.",
+    "word_frequency": 14955
+  },
+  {
+    "word": "Er musste den Schalter umlegen.",
+    "definition": "He had to flip the switch.",
+    "word_frequency": 16788
+  },
+  {
+    "word": "Er musste den schweren Koffer anheben.",
+    "definition": "He had to lift the heavy suitcase.",
+    "word_frequency": 10036
+  },
+  {
+    "word": "Er musste die Arme breiten, um sie zu umarmen.",
+    "definition": "He had to spread his arms to hug her.",
+    "word_frequency": 11490
+  },
+  {
+    "word": "Er musste die Datei aufrufen, um sie zu bearbeiten.",
+    "definition": "He had to call up the file to edit it.",
+    "word_frequency": 4706
+  },
+  {
+    "word": "Er musste die Möbel selbst zusammenbauen.",
+    "definition": "He had to assemble the furniture himself.",
+    "word_frequency": 25235
+  },
+  {
+    "word": "Er musste die Papiere zusammenheften.",
+    "definition": "He had to staple the papers together.",
+    "word_frequency": 19987
+  },
+  {
+    "word": "Er musste die Prüfung durchziehen.",
+    "definition": "He had to pull through the exam.",
+    "word_frequency": 7940
+  },
+  {
+    "word": "Er musste die schweren Koffer schleppen.",
+    "definition": "He had to drag the heavy suitcases.",
+    "word_frequency": 9972
+  },
+  {
+    "word": "Er musste eine schwierige Zeit durchmachen.",
+    "definition": "He had to go through a difficult time.",
+    "word_frequency": 11131
+  },
+  {
+    "word": "Er musste einem entgegenkommenden Auto ausweichen.",
+    "definition": "He had to avoid an oncoming car.",
+    "word_frequency": 7237
+  },
+  {
+    "word": "Er musste Holz nachlegen, damit das Feuer nicht ausging.",
+    "definition": "He had to add more wood so the fire wouldn't go out.",
+    "word_frequency": 24670
+  },
+  {
+    "word": "Er musste knien, um das Kind zu erreichen.",
+    "definition": "He had to kneel to reach the child.",
+    "word_frequency": 9124
+  },
+  {
+    "word": "Er musste plötzlich abbremsen.",
+    "definition": "He suddenly had to brake.",
+    "word_frequency": 25662
+  },
+  {
+    "word": "Er musste schnell aufspringen, um den Ball zu fangen.",
+    "definition": "He had to jump up quickly to catch the ball.",
+    "word_frequency": 28704
+  },
+  {
+    "word": "Er musste schnell laufen, um die Gruppe einzuholen.",
+    "definition": "He had to run fast to catch up with the group.",
+    "word_frequency": 9230
+  },
+  {
+    "word": "Er musste seine Prüfung ablegen.",
+    "definition": "He had to take his exam.",
+    "word_frequency": 6143
+  },
+  {
+    "word": "Er musste seine Wohnung kündigen.",
+    "definition": "He had to give notice on his apartment.",
+    "word_frequency": 5014
+  },
+  {
+    "word": "Er musste seinen Arm ausstrecken, um es zu erreichen.",
+    "definition": "He had to stretch out his arm to reach it.",
+    "word_frequency": 28228
+  },
+  {
+    "word": "Er musste seinen Gürtel lockern.",
+    "definition": "He had to loosen his belt.",
+    "word_frequency": 15408
+  },
+  {
+    "word": "Er musste sich am Geländer festhalten.",
+    "definition": "He had to hold on to the railing.",
+    "word_frequency": 3727
+  },
+  {
+    "word": "Er musste sich an der Wand stützen.",
+    "definition": "He had to support himself against the wall.",
+    "word_frequency": 5932
+  },
+  {
+    "word": "Er musste sich bücken, um unter dem Ast hindurchzugehen.",
+    "definition": "He had to bend down to go under the branch.",
+    "word_frequency": 9706
+  },
+  {
+    "word": "Er musste sich die Ohren zuhalten, weil es so laut war.",
+    "definition": "He had to cover his ears because it was so loud.",
+    "word_frequency": 28667
+  },
+  {
+    "word": "Er musste sich durch die Menge pressen.",
+    "definition": "He had to squeeze through the crowd.",
+    "word_frequency": 10849
+  },
+  {
+    "word": "Er musste sich eine Ausrede ausdenken.",
+    "definition": "He had to think up an excuse.",
+    "word_frequency": 6153
+  },
+  {
+    "word": "Er musste sich krümmen, um unter dem Ast hindurchzukommen.",
+    "definition": "He had to bend to get under the branch.",
+    "word_frequency": 27871
+  },
+  {
+    "word": "Er musste sich strecken, um es zu erreichen.",
+    "definition": "He had to stretch to reach it.",
+    "word_frequency": 14370
+  },
+  {
+    "word": "Er musste sich umsehen, um den Ausgang zu finden.",
+    "definition": "He had to look around to find the exit.",
+    "word_frequency": 15493
+  },
+  {
+    "word": "Er musste sich vor Gericht verteidigen.",
+    "definition": "He had to defend himself in court.",
+    "word_frequency": 2555
+  },
+  {
+    "word": "Er musste viele Herausforderungen bewältigen.",
+    "definition": "He had to overcome many challenges.",
+    "word_frequency": 5541
+  },
+  {
+    "word": "Er musste vom Fahrrad absteigen.",
+    "definition": "He had to dismount from the bicycle.",
+    "word_frequency": 12719
+  },
+  {
+    "word": "Er musste zugeben, dass er einen Fehler gemacht hatte.",
+    "definition": "He had to admit that he had made a mistake.",
+    "word_frequency": 3576
+  },
+  {
+    "word": "Er musste zurückbleiben, um die Tür abzuschließen.",
+    "definition": "He had to stay behind to lock the door.",
+    "word_frequency": 17121
+  },
+  {
+    "word": "Er möchte dem Verein beitreten.",
+    "definition": "He wants to join the club.",
+    "word_frequency": 10923
+  },
+  {
+    "word": "Er möchte die ganze Welt bereisen.",
+    "definition": "He wants to travel around the whole world.",
+    "word_frequency": 23283
+  },
+  {
+    "word": "Er möchte ein Lied aufnehmen.",
+    "definition": "He wants to record a song.",
+    "word_frequency": 969
+  },
+  {
+    "word": "Er möchte für das Amt des Bürgermeisters kandidieren.",
+    "definition": "He wants to run for the office of mayor.",
+    "word_frequency": 14169
+  },
+  {
+    "word": "Er möchte Geld für wohltätige Zwecke stiften.",
+    "definition": "He wants to donate money for charitable causes.",
+    "word_frequency": 12801
+  },
+  {
+    "word": "Er möchte Rosen züchten.",
+    "definition": "He wants to cultivate roses.",
+    "word_frequency": 12148
+  },
+  {
+    "word": "Er möchte sein altes Auto in der Zeitung inserieren.",
+    "definition": "He wants to advertise his old car in the newspaper.",
+    "word_frequency": 29812
+  },
+  {
+    "word": "Er möchte sein Auto neu lackieren lassen.",
+    "definition": "He wants to have his car repainted.",
+    "word_frequency": 16438
+  },
+  {
+    "word": "Er möchte seine Forschungsergebnisse publizieren.",
+    "definition": "He wants to publish his research results.",
+    "word_frequency": 5410
+  },
+  {
+    "word": "Er möchte sich auf Softwareentwicklung spezialisieren.",
+    "definition": "He wants to specialize in software development.",
+    "word_frequency": 5605
+  },
+  {
+    "word": "Er möchte sich in Berlin niederlassen.",
+    "definition": "He wants to settle down in Berlin.",
+    "word_frequency": 16467
+  },
+  {
+    "word": "Er richtete seine Aufmerksamkeit auf die Aufgabe.",
+    "definition": "He directed his attention to the task.",
+    "word_frequency": 2317
+  },
+  {
+    "word": "Er schaute sich im Raum um.",
+    "definition": "He looked around the room.",
+    "word_frequency": 20448
+  },
+  {
+    "word": "Er scherzte über die Situation.",
+    "definition": "He joked about the situation.",
+    "word_frequency": 22070
+  },
+  {
+    "word": "Er schlug das Buch auf.",
+    "definition": "He opened the book.",
+    "word_frequency": 15009
+  },
+  {
+    "word": "Er schlürfte seinen Kaffee laut.",
+    "definition": "He slurped his coffee loudly.",
+    "word_frequency": 29946
+  },
+  {
+    "word": "Er schmiert Butter auf sein Brot.",
+    "definition": "He spreads butter on his bread.",
+    "word_frequency": 16141
+  },
+  {
+    "word": "Er schnitt sich ein Stück Brot ab. Wie hast du bei der Prüfung abgeschnitten?",
+    "definition": "He cut off a piece of bread. How did you perform on the exam?",
+    "word_frequency": 5948
+  },
+  {
+    "word": "Er schnürte seine Schuhe fest.",
+    "definition": "He tied his shoes tightly.",
+    "word_frequency": 24349
+  },
+  {
+    "word": "Er schuldet mir noch Geld.",
+    "definition": "He still owes me money.",
+    "word_frequency": 9254
+  },
+  {
+    "word": "Er schwenkte die Fahne im Wind.",
+    "definition": "He waved the flag in the wind.",
+    "word_frequency": 20405
+  },
+  {
+    "word": "Er schämt sich für seine Fehler.",
+    "definition": "He is ashamed of his mistakes.",
+    "word_frequency": 5215
+  },
+  {
+    "word": "Er sollte die Arbeit nicht aufschieben.",
+    "definition": "He should not postpone the work.",
+    "word_frequency": 23665
+  },
+  {
+    "word": "Er steckt den Schlüssel ins Schloss.",
+    "definition": "He puts the key into the lock.",
+    "word_frequency": 1336
+  },
+  {
+    "word": "Er stolperte über einen Stein.",
+    "definition": "He stumbled over a stone.",
+    "word_frequency": 13690
+  },
+  {
+    "word": "Er tauchte in das kalte Wasser ein.",
+    "definition": "He immersed himself in the cold water.",
+    "word_frequency": 15055
+  },
+  {
+    "word": "Er tritt auf die Bremse.",
+    "definition": "He steps on the brake.",
+    "word_frequency": 1222
+  },
+  {
+    "word": "Er verneinte die Anschuldigungen.",
+    "definition": "He denied the accusations.",
+    "word_frequency": 15501
+  },
+  {
+    "word": "Er versucht, das Fahrrad zu stehlen.",
+    "definition": "He is trying to steal the bicycle.",
+    "word_frequency": 3140
+  },
+  {
+    "word": "Er versucht, die Beleidigungen zu ignorieren.",
+    "definition": "He tries to ignore the insults.",
+    "word_frequency": 3541
+  },
+  {
+    "word": "Er versucht, mit ihr zu flirten.",
+    "definition": "He is trying to flirt with her.",
+    "word_frequency": 8514
+  },
+  {
+    "word": "Er versucht, zwischen den Parteien zu vermitteln.",
+    "definition": "He tries to mediate between the parties.",
+    "word_frequency": 2855
+  },
+  {
+    "word": "Er versuchte, das weinende Kind zu beruhigen.",
+    "definition": "He tried to calm the crying child.",
+    "word_frequency": 4093
+  },
+  {
+    "word": "Er versuchte, die Fliege zu töten.",
+    "definition": "He tried to kill the fly.",
+    "word_frequency": 1474
+  },
+  {
+    "word": "Er weigert sich, die Wahrheit zu sagen.",
+    "definition": "He refuses to tell the truth.",
+    "word_frequency": 8892
+  },
+  {
+    "word": "Er wies auf die Tür.",
+    "definition": "He pointed to the door.",
+    "word_frequency": 1618
+  },
+  {
+    "word": "Er will eine neue Maschine erfinden.",
+    "definition": "He wants to invent a new machine.",
+    "word_frequency": 3076
+  },
+  {
+    "word": "Er wird bald zurückkehren.",
+    "definition": "He will return soon.",
+    "word_frequency": 4002
+  },
+  {
+    "word": "Er wird das Brett an die Wand nageln.",
+    "definition": "He will nail the board to the wall.",
+    "word_frequency": 28332
+  },
+  {
+    "word": "Er wird das Haus verlassen.",
+    "definition": "He will leave the house.",
+    "word_frequency": 717
+  },
+  {
+    "word": "Er wird das Projekt leiten.",
+    "definition": "He will lead the project.",
+    "word_frequency": 2886
+  },
+  {
+    "word": "Er wird den Brief zerreißen.",
+    "definition": "He will tear up the letter.",
+    "word_frequency": 10720
+  },
+  {
+    "word": "Er wird die Dokumente morgen übergeben.",
+    "definition": "He will hand over the documents tomorrow.",
+    "word_frequency": 2412
+  },
+  {
+    "word": "Er wird die Ergebnisse morgen präsentieren.",
+    "definition": "He will present the results tomorrow.",
+    "word_frequency": 1608
+  },
+  {
+    "word": "Er wird die Verantwortung übernehmen.",
+    "definition": "He will take over the responsibility.",
+    "word_frequency": 1207
+  },
+  {
+    "word": "Er wird dir in schwierigen Zeiten beistehen.",
+    "definition": "He will stand by you in difficult times.",
+    "word_frequency": 26135
+  },
+  {
+    "word": "Er wird einen neuen Weg einschlagen.",
+    "definition": "He will take a new path.",
+    "word_frequency": 8802
+  },
+  {
+    "word": "Er wird sich für den Umweltschutz einsetzen.",
+    "definition": "He will advocate for environmental protection.",
+    "word_frequency": 1084
+  },
+  {
+    "word": "Er wird sie zum Bahnhof begleiten.",
+    "definition": "He will accompany her to the station.",
+    "word_frequency": 1878
+  },
+  {
+    "word": "Er wird uns die neue Maschine vorführen.",
+    "definition": "He will demonstrate the new machine to us.",
+    "word_frequency": 9662
+  },
+  {
+    "word": "Er wird über die Neuigkeiten berichten.",
+    "definition": "He will report on the news.",
+    "word_frequency": 1036
+  },
+  {
+    "word": "Er wollte auf den Fehler hinweisen.",
+    "definition": "He wanted to point out the mistake.",
+    "word_frequency": 3480
+  },
+  {
+    "word": "Er wollte das Feuer anzünden.",
+    "definition": "He wanted to light the fire.",
+    "word_frequency": 8614
+  },
+  {
+    "word": "Er wollte den Nagel mit dem Hammer hauen.",
+    "definition": "He wanted to hit the nail with the hammer.",
+    "word_frequency": 4903
+  },
+  {
+    "word": "Er wollte die schwierige Passage überspringen.",
+    "definition": "He wanted to skip the difficult passage.",
+    "word_frequency": 13616
+  },
+  {
+    "word": "Er wollte ihm das Auto abkaufen.",
+    "definition": "He wanted to buy the car from him.",
+    "word_frequency": 20825
+  },
+  {
+    "word": "Er wollte ihr die Neuigkeiten mitteilen.",
+    "definition": "He wanted to inform her of the news.",
+    "word_frequency": 4353
+  },
+  {
+    "word": "Er wollte ihr nichts vorwerfen.",
+    "definition": "He didn't want to accuse her of anything.",
+    "word_frequency": 5426
+  },
+  {
+    "word": "Er wollte mir das Buch wegnehmen.",
+    "definition": "He wanted to take the book away from me.",
+    "word_frequency": 7603
+  },
+  {
+    "word": "Er wollte nicht mitziehen, aber er musste.",
+    "definition": "He didn't want to go along, but he had to.",
+    "word_frequency": 29874
+  },
+  {
+    "word": "Er wollte nicht nachgeben und blieb bei seiner Meinung.",
+    "definition": "He didn't want to give in and stuck to his opinion.",
+    "word_frequency": 13526
+  },
+  {
+    "word": "Er wollte nicht nur mitlaufen, sondern aktiv teilnehmen.",
+    "definition": "He didn't just want to run along, but to actively participate.",
+    "word_frequency": 26324
+  },
+  {
+    "word": "Er wollte nicht rüberkommen, aber er musste.",
+    "definition": "He didn't want to come over, but he had to.",
+    "word_frequency": 24722
+  },
+  {
+    "word": "Er wollte nichts riskieren.",
+    "definition": "He didn't want to risk anything.",
+    "word_frequency": 6932
+  },
+  {
+    "word": "Er wollte niemanden verletzen.",
+    "definition": "He didn't want to hurt anyone.",
+    "word_frequency": 923
+  },
+  {
+    "word": "Er wollte sie ansprechen, aber er war zu schüchtern.",
+    "definition": "He wanted to speak to her, but he was too shy.",
+    "word_frequency": 2607
+  },
+  {
+    "word": "Er wollte sofort fortgehen.",
+    "definition": "He wanted to leave immediately.",
+    "word_frequency": 27004
+  },
+  {
+    "word": "Er wurde aus dem Krankenhaus entlassen.",
+    "definition": "He was released from the hospital.",
+    "word_frequency": 2426
+  },
+  {
+    "word": "Er wurde aus der Bar rausgeworfen.",
+    "definition": "He was thrown out of the bar.",
+    "word_frequency": 16736
+  },
+  {
+    "word": "Er wurde erwischt, als er versuchte, bei der Prüfung zu spicken.",
+    "definition": "He was caught trying to cheat on the exam.",
+    "word_frequency": 23022
+  },
+  {
+    "word": "Er wurde für seine Tapferkeit ausgezeichnet.",
+    "definition": "He was awarded for his bravery.",
+    "word_frequency": 1690
+  },
+  {
+    "word": "Er zielte mit dem Pfeil auf die Zielscheibe.",
+    "definition": "He aimed the arrow at the target.",
+    "word_frequency": 3038
+  },
+  {
+    "word": "Er zögerte, bevor er antwortete.",
+    "definition": "He hesitated before he answered.",
+    "word_frequency": 7217
+  },
+  {
+    "word": "Erscheint mir logisch.",
+    "definition": "Seems logical to me.",
+    "word_frequency": 1113
+  },
+  {
+    "word": "Erwachen Sie sanft aus dem Schlaf.",
+    "definition": "Wake up gently from sleep.",
+    "word_frequency": 8086
+  },
+  {
+    "word": "Erwähnen Sie das bitte nicht.",
+    "definition": "Please don't mention that.",
+    "word_frequency": 931
+  },
+  {
+    "word": "Es begann plötzlich zu hageln.",
+    "definition": "It suddenly started to hail.",
+    "word_frequency": 28361
+  },
+  {
+    "word": "Es blitzt und donnert draußen.",
+    "definition": "It's lightning and thundering outside.",
+    "word_frequency": 17429
+  },
+  {
+    "word": "Es dauert eine Weile, bis der Körper das Essen verdaut.",
+    "definition": "It takes a while for the body to digest the food.",
+    "word_frequency": 16287
+  },
+  {
+    "word": "Es dauert eine Weile, sich in einem neuen Land einzuleben.",
+    "definition": "It takes a while to settle in a new country.",
+    "word_frequency": 28288
+  },
+  {
+    "word": "Es dauert lange, eine neue Sprache zu erlernen.",
+    "definition": "It takes a long time to learn a new language.",
+    "word_frequency": 7132
+  },
+  {
+    "word": "Es hat die ganze Nacht gedonnert.",
+    "definition": "It thundered all night.",
+    "word_frequency": 28768
+  },
+  {
+    "word": "Es hängt davon ab, wie das Wetter wird.",
+    "definition": "It depends on what the weather will be like.",
+    "word_frequency": 6721
+  },
+  {
+    "word": "Es ist ihm gelungen, das Problem zu lösen.",
+    "definition": "He succeeded in solving the problem.",
+    "word_frequency": 2214
+  },
+  {
+    "word": "Es ist nicht erlaubt, bei der Prüfung zu schummeln.",
+    "definition": "It is not allowed to cheat on the exam.",
+    "word_frequency": 28546
+  },
+  {
+    "word": "Es ist schwer, die beiden zu unterscheiden.",
+    "definition": "It is hard to distinguish the two.",
+    "word_frequency": 1794
+  },
+  {
+    "word": "Es ist unhöflich, auf den Boden zu spucken.",
+    "definition": "It is impolite to spit on the floor.",
+    "word_frequency": 14023
+  },
+  {
+    "word": "Es ist verboten, hier zu rauchen.",
+    "definition": "It is forbidden to smoke here.",
+    "word_frequency": 1521
+  },
+  {
+    "word": "Es kitzelt mich an der Nase.",
+    "definition": "It tickles my nose.",
+    "word_frequency": 29345
+  },
+  {
+    "word": "Es lohnt sich, früh aufzustehen.",
+    "definition": "It's worth it to get up early.",
+    "word_frequency": 1577
+  },
+  {
+    "word": "Es steht fest, dass wir morgen reisen werden.",
+    "definition": "It is certain that we will travel tomorrow.",
+    "word_frequency": 15337
+  },
+  {
+    "word": "Gestatten Sie mir, mich vorzustellen.",
+    "definition": "Allow me to introduce myself.",
+    "word_frequency": 4727
+  },
+  {
+    "word": "Hast du das jetzt kapiert?",
+    "definition": "Do you get it now?",
+    "word_frequency": 7547
+  },
+  {
+    "word": "Hast du mitbekommen, was passiert ist?",
+    "definition": "Did you notice what happened?",
+    "word_frequency": 4136
+  },
+  {
+    "word": "Hast du mitgekriegt, was passiert ist?",
+    "definition": "Did you notice what happened?",
+    "word_frequency": 20044
+  },
+  {
+    "word": "Hohe Bäume umgeben das Haus.",
+    "definition": "Tall trees surround the house.",
+    "word_frequency": 3298
+  },
+  {
+    "word": "Hör auf, mich zu nerven!",
+    "definition": "Stop annoying me!",
+    "word_frequency": 3748
+  },
+  {
+    "word": "Ich bedauere, dass ich das gesagt habe.",
+    "definition": "I regret that I said that.",
+    "word_frequency": 6864
+  },
+  {
+    "word": "Ich befürchte, es wird regnen.",
+    "definition": "I fear it will rain.",
+    "word_frequency": 4792
+  },
+  {
+    "word": "Ich begegne ihm oft in der Stadt.",
+    "definition": "I often meet him in the city.",
+    "word_frequency": 3392
+  },
+  {
+    "word": "Ich bemerke, dass du müde bist.",
+    "definition": "I notice that you are tired.",
+    "word_frequency": 2150
+  },
+  {
+    "word": "Ich bereue meine Entscheidung nicht.",
+    "definition": "I do not regret my decision.",
+    "word_frequency": 8921
+  },
+  {
+    "word": "Ich bevorzuge Kaffee statt Tee.",
+    "definition": "I prefer coffee instead of tea.",
+    "word_frequency": 3718
+  },
+  {
+    "word": "Ich bewundere deine Geduld sehr.",
+    "definition": "I admire your patience very much.",
+    "word_frequency": 7241
+  },
+  {
+    "word": "Ich bin auf dem Land aufgewachsen.",
+    "definition": "I grew up in the countryside.",
+    "word_frequency": 3785
+  },
+  {
+    "word": "Ich erwarte einen Anruf.",
+    "definition": "I am expecting a call.",
+    "word_frequency": 708
+  },
+  {
+    "word": "Ich fürchte mich vor Spinnen.",
+    "definition": "I am afraid of spiders.",
+    "word_frequency": 3603
+  },
+  {
+    "word": "Ich habe den Bus verpennt.",
+    "definition": "I overslept and missed the bus.",
+    "word_frequency": 24401
+  },
+  {
+    "word": "Ich habe den Fehler übersehen.",
+    "definition": "I overlooked the mistake.",
+    "word_frequency": 3188
+  },
+  {
+    "word": "Ich habe die beiden Namen verwechselt.",
+    "definition": "I confused the two names.",
+    "word_frequency": 5849
+  },
+  {
+    "word": "Ich habe einen Brief erhalten.",
+    "definition": "I have received a letter.",
+    "word_frequency": 290
+  },
+  {
+    "word": "Ich habe heute Morgen verschlafen.",
+    "definition": "I overslept this morning.",
+    "word_frequency": 10888
+  },
+  {
+    "word": "Ich habe ihn sofort wiedererkannt.",
+    "definition": "I recognized him immediately.",
+    "word_frequency": 20799
+  },
+  {
+    "word": "Ich habe meine Schlüssel verlegt.",
+    "definition": "I have misplaced my keys.",
+    "word_frequency": 3008
+  },
+  {
+    "word": "Ich hasse es, früh aufzustehen.",
+    "definition": "I hate getting up early.",
+    "word_frequency": 1705
+  },
+  {
+    "word": "Ich hoffe, dass alles gut klappt.",
+    "definition": "I hope that everything works out well.",
+    "word_frequency": 2111
+  },
+  {
+    "word": "Ich hoffe, dass nichts schiefgeht.",
+    "definition": "I hope that nothing goes wrong.",
+    "word_frequency": 17058
+  },
+  {
+    "word": "Ich hoffe, ich kann meine Schlüssel wiederfinden.",
+    "definition": "I hope I can find my keys again.",
+    "word_frequency": 11459
+  },
+  {
+    "word": "Ich kann den Schmerz nicht länger aushalten.",
+    "definition": "I can't bear the pain any longer.",
+    "word_frequency": 5534
+  },
+  {
+    "word": "Ich kann den Wind auf meiner Haut spüren.",
+    "definition": "I can feel the wind on my skin.",
+    "word_frequency": 2400
+  },
+  {
+    "word": "Ich kann diese Bedingungen nicht akzeptieren.",
+    "definition": "I cannot accept these conditions.",
+    "word_frequency": 2370
+  },
+  {
+    "word": "Ich kann dir das nicht garantieren.",
+    "definition": "I cannot guarantee that to you.",
+    "word_frequency": 2301
+  },
+  {
+    "word": "Ich kann dir das nicht vergeben.",
+    "definition": "I cannot forgive you for that.",
+    "word_frequency": 1919
+  },
+  {
+    "word": "Ich kann Ihnen versichern, dass alles in Ordnung ist.",
+    "definition": "I can assure you that everything is fine.",
+    "word_frequency": 4083
+  },
+  {
+    "word": "Ich komme gut mit der neuen Software klar.",
+    "definition": "I'm coping well with the new software.",
+    "word_frequency": 14630
+  },
+  {
+    "word": "Ich komme gut mit der neuen Software zurecht.",
+    "definition": "I cope well with the new software.",
+    "word_frequency": 22887
+  },
+  {
+    "word": "Ich konnte ihn kaum wiedererkennen.",
+    "definition": "I could barely recognize him.",
+    "word_frequency": 774
+  },
+  {
+    "word": "Ich konnte ihn überreden, mitzukommen.",
+    "definition": "I was able to persuade him to come along.",
+    "word_frequency": 9676
+  },
+  {
+    "word": "Ich konnte nicht begreifen, was passiert war.",
+    "definition": "I couldn't grasp what had happened.",
+    "word_frequency": 4237
+  },
+  {
+    "word": "Ich lerne, wie man Computer programmiert.",
+    "definition": "I am learning how to program computers.",
+    "word_frequency": 8555
+  },
+  {
+    "word": "Ich muss abnehmen, um gesünder zu sein.",
+    "definition": "I need to lose weight to be healthier.",
+    "word_frequency": 3311
+  },
+  {
+    "word": "Ich muss alte Kleidung aussortieren.",
+    "definition": "I need to sort out old clothes.",
+    "word_frequency": 17150
+  },
+  {
+    "word": "Ich muss das Buch aus der Bibliothek zurückholen.",
+    "definition": "I need to retrieve the book from the library.",
+    "word_frequency": 16560
+  },
+  {
+    "word": "Ich muss das Essen aufwärmen.",
+    "definition": "I need to warm up the food.",
+    "word_frequency": 11653
+  },
+  {
+    "word": "Ich muss das Geld auf dein Konto überweisen.",
+    "definition": "I need to transfer the money to your account.",
+    "word_frequency": 9055
+  },
+  {
+    "word": "Ich muss das Geld bis nächste Woche zurückzahlen.",
+    "definition": "I have to pay back the money by next week.",
+    "word_frequency": 11835
+  },
+  {
+    "word": "Ich muss das googeln.",
+    "definition": "I need to google that.",
+    "word_frequency": 13478
+  },
+  {
+    "word": "Ich muss das im Wörterbuch nachschauen.",
+    "definition": "I have to look that up in the dictionary.",
+    "word_frequency": 11749
+  },
+  {
+    "word": "Ich muss das noch klarmachen.",
+    "definition": "I still need to make that clear.",
+    "word_frequency": 18426
+  },
+  {
+    "word": "Ich muss das Paket verschicken.",
+    "definition": "I need to send the package.",
+    "word_frequency": 6248
+  },
+  {
+    "word": "Ich muss das Treffen in meinen Kalender einplanen.",
+    "definition": "I need to schedule the meeting in my calendar.",
+    "word_frequency": 14118
+  },
+  {
+    "word": "Ich muss das Wohnzimmer saugen.",
+    "definition": "I have to vacuum the living room.",
+    "word_frequency": 8563
+  },
+  {
+    "word": "Ich muss den Bericht noch durchlesen.",
+    "definition": "I still need to read through the report.",
+    "word_frequency": 13450
+  },
+  {
+    "word": "Ich muss den Computer hochfahren.",
+    "definition": "I need to boot up the computer.",
+    "word_frequency": 24191
+  },
+  {
+    "word": "Ich muss den verpassten Unterricht nachholen.",
+    "definition": "I have to catch up on the missed lessons.",
+    "word_frequency": 10134
+  },
+  {
+    "word": "Ich muss die Datei hochladen.",
+    "definition": "I need to upload the file.",
+    "word_frequency": 7026
+  },
+  {
+    "word": "Ich muss die Datei noch runterladen.",
+    "definition": "I still need to download the file.",
+    "word_frequency": 12670
+  },
+  {
+    "word": "Ich muss die neue Software installieren.",
+    "definition": "I need to install the new software.",
+    "word_frequency": 3612
+  },
+  {
+    "word": "Ich muss diese Aufgabe heute erledigen.",
+    "definition": "I have to complete this task today.",
+    "word_frequency": 2207
+  },
+  {
+    "word": "Ich muss dieser Sache noch nachgehen.",
+    "definition": "I still need to follow up on this matter.",
+    "word_frequency": 8125
+  },
+  {
+    "word": "Ich muss dieses Problem lösen.",
+    "definition": "I have to solve this problem.",
+    "word_frequency": 1415
+  },
+  {
+    "word": "Ich muss dieses Wort im Wörterbuch nachschlagen.",
+    "definition": "I need to look up this word in the dictionary.",
+    "word_frequency": 21326
+  },
+  {
+    "word": "Ich muss herausfinden, wie das funktioniert.",
+    "definition": "I need to find out how that works.",
+    "word_frequency": 5468
+  },
+  {
+    "word": "Ich muss Ihnen leider widersprechen.",
+    "definition": "Unfortunately, I have to contradict you.",
+    "word_frequency": 4777
+  },
+  {
+    "word": "Ich muss im Wörterbuch nachsehen.",
+    "definition": "I need to look it up in the dictionary.",
+    "word_frequency": 9602
+  },
+  {
+    "word": "Ich muss mein Fahrrad flicken.",
+    "definition": "I need to mend my bicycle.",
+    "word_frequency": 20911
+  },
+  {
+    "word": "Ich muss mein Handy aufladen.",
+    "definition": "I need to charge my phone.",
+    "word_frequency": 11853
+  },
+  {
+    "word": "Ich muss meine Dokumente sortieren.",
+    "definition": "I need to sort my documents.",
+    "word_frequency": 7453
+  },
+  {
+    "word": "Ich muss meine Software updaten.",
+    "definition": "I need to update my software.",
+    "word_frequency": 26438
+  },
+  {
+    "word": "Ich muss meine Sprachkenntnisse auffrischen.",
+    "definition": "I need to brush up on my language skills.",
+    "word_frequency": 27751
+  },
+  {
+    "word": "Ich muss meine Träume realisieren.",
+    "definition": "I have to realize my dreams.",
+    "word_frequency": 3975
+  },
+  {
+    "word": "Ich muss meinen Freund zurückrufen.",
+    "definition": "I need to call my friend back.",
+    "word_frequency": 25660
+  },
+  {
+    "word": "Ich muss mich für den Kurs einschreiben.",
+    "definition": "I need to register for the course.",
+    "word_frequency": 15322
+  },
+  {
+    "word": "Ich muss mich von der Arbeit erholen.",
+    "definition": "I need to recover from work.",
+    "word_frequency": 7007
+  },
+  {
+    "word": "Ich muss nach der Arbeit einfach abschalten.",
+    "definition": "I just need to switch off after work.",
+    "word_frequency": 6049
+  },
+  {
+    "word": "Ich muss noch Brot besorgen.",
+    "definition": "I still need to get bread.",
+    "word_frequency": 3023
+  },
+  {
+    "word": "Ich muss noch ein bisschen pennen.",
+    "definition": "I still need to sleep a bit.",
+    "word_frequency": 18183
+  },
+  {
+    "word": "Ich muss noch ein paar Punkte auf meiner Liste abhaken.",
+    "definition": "I still need to tick off a few items on my list.",
+    "word_frequency": 20185
+  },
+  {
+    "word": "Ich muss noch eine Nachricht texten.",
+    "definition": "I still need to text a message.",
+    "word_frequency": 3641
+  },
+  {
+    "word": "Ich muss rausfinden, wie das funktioniert.",
+    "definition": "I need to find out how that works.",
+    "word_frequency": 15984
+  },
+  {
+    "word": "Ich muss über deine Vorschläge nachdenken.",
+    "definition": "I need to think about your suggestions.",
+    "word_frequency": 2177
+  },
+  {
+    "word": "Ich muss überlegen, bevor ich antworte.",
+    "definition": "I need to consider before I answer.",
+    "word_frequency": 1720
+  },
+  {
+    "word": "Ich musste das defekte Produkt reklamieren.",
+    "definition": "I had to complain about the defective product.",
+    "word_frequency": 28517
+  },
+  {
+    "word": "Ich musste staunen, wie schnell er das Problem gelöst hat.",
+    "definition": "I had to marvel at how quickly he solved the problem.",
+    "word_frequency": 7197
+  },
+  {
+    "word": "Ich möchte am Wochenende einfach nur relaxen.",
+    "definition": "I just want to relax on the weekend.",
+    "word_frequency": 21719
+  },
+  {
+    "word": "Ich möchte das neue Buch vorbestellen.",
+    "definition": "I would like to pre-order the new book.",
+    "word_frequency": 28635
+  },
+  {
+    "word": "Ich möchte das neue Rezept ausprobieren.",
+    "definition": "I want to try out the new recipe.",
+    "word_frequency": 3584
+  },
+  {
+    "word": "Ich möchte das schöne Wetter genießen.",
+    "definition": "I want to enjoy the beautiful weather.",
+    "word_frequency": 2931
+  },
+  {
+    "word": "Ich möchte den Zug nicht verpassen.",
+    "definition": "I don't want to miss the train.",
+    "word_frequency": 1825
+  },
+  {
+    "word": "Ich möchte dich nicht enttäuschen.",
+    "definition": "I don't want to disappoint you.",
+    "word_frequency": 2054
+  },
+  {
+    "word": "Ich möchte dich unterstützen.",
+    "definition": "I want to support you.",
+    "word_frequency": 881
+  },
+  {
+    "word": "Ich möchte die Datei herunterladen.",
+    "definition": "I want to download the file.",
+    "word_frequency": 10622
+  },
+  {
+    "word": "Ich möchte diesen Kanal abonnieren.",
+    "definition": "I want to subscribe to this channel.",
+    "word_frequency": 11273
+  },
+  {
+    "word": "Ich möchte ein Taxi ordern.",
+    "definition": "I would like to order a taxi.",
+    "word_frequency": 25100
+  },
+  {
+    "word": "Ich möchte etwas Neues erleben.",
+    "definition": "I want to experience something new.",
+    "word_frequency": 1350
+  },
+  {
+    "word": "Ich möchte mehr über dieses Thema erfahren.",
+    "definition": "I want to learn more about this topic.",
+    "word_frequency": 788
+  },
+  {
+    "word": "Ich möchte mein altes Handy gegen ein neues eintauschen.",
+    "definition": "I would like to trade in my old phone for a new one.",
+    "word_frequency": 21547
+  },
+  {
+    "word": "Ich möchte meine alten Bücher verschenken.",
+    "definition": "I want to give away my old books.",
+    "word_frequency": 7470
+  },
+  {
+    "word": "Ich möchte mich um diese Stelle bewerben.",
+    "definition": "I would like to apply for this position.",
+    "word_frequency": 3460
+  },
+  {
+    "word": "Ich nehme an, dass er kommt.",
+    "definition": "I assume that he is coming.",
+    "word_frequency": 1402
+  },
+  {
+    "word": "Ich rate dir davon ab, das zu tun.",
+    "definition": "I advise you against doing that.",
+    "word_frequency": 22895
+  },
+  {
+    "word": "Ich schätze deine Hilfe sehr.",
+    "definition": "I really appreciate your help.",
+    "word_frequency": 2460
+  },
+  {
+    "word": "Ich spendiere dir einen Kaffee.",
+    "definition": "I'll treat you to a coffee.",
+    "word_frequency": 17636
+  },
+  {
+    "word": "Ich stimme dir zu.",
+    "definition": "I agree with you.",
+    "word_frequency": 4086
+  },
+  {
+    "word": "Ich traue ihm nicht. Sie ließen sich in der Kirche trauen.",
+    "definition": "I don't trust him. They got married in the church.",
+    "word_frequency": 3913
+  },
+  {
+    "word": "Ich vermute, dass er die Wahrheit sagt.",
+    "definition": "I suspect that he is telling the truth.",
+    "word_frequency": 3372
+  },
+  {
+    "word": "Ich werde beim Kundendienst anfragen.",
+    "definition": "I will inquire with customer service.",
+    "word_frequency": 15002
+  },
+  {
+    "word": "Ich werde beim Kundendienst nachfragen.",
+    "definition": "I will inquire with customer service.",
+    "word_frequency": 6794
+  },
+  {
+    "word": "Ich werde das schon hinbekommen.",
+    "definition": "I will manage that.",
+    "word_frequency": 8823
+  },
+  {
+    "word": "Ich werde die Datei an die E-Mail anhängen.",
+    "definition": "I will attach the file to the email.",
+    "word_frequency": 12518
+  },
+  {
+    "word": "Ich werde dir beim Kochen zusehen.",
+    "definition": "I will watch you cook.",
+    "word_frequency": 5143
+  },
+  {
+    "word": "Ich werde dir eine E-Mail senden.",
+    "definition": "I will send you an email.",
+    "word_frequency": 2904
+  },
+  {
+    "word": "Ich werde dir etwas zu essen mitgeben.",
+    "definition": "I will give you something to eat to take with you.",
+    "word_frequency": 22018
+  },
+  {
+    "word": "Ich werde es schaffen.",
+    "definition": "I will manage it.",
+    "word_frequency": 499
+  },
+  {
+    "word": "Ich werde mich nach den Preisen erkundigen.",
+    "definition": "I will inquire about the prices.",
+    "word_frequency": 13674
+  },
+  {
+    "word": "Ich werde vorangehen, um den Weg zu zeigen.",
+    "definition": "I will go ahead to show the way.",
+    "word_frequency": 23205
+  },
+  {
+    "word": "Ich wette, dass es morgen regnen wird.",
+    "definition": "I bet that it will rain tomorrow.",
+    "word_frequency": 2913
+  },
+  {
+    "word": "Ich wundere mich, warum er nicht gekommen ist.",
+    "definition": "I wonder why he hasn't come.",
+    "word_frequency": 3849
+  },
+  {
+    "word": "Ich würde Kaffee Tee vorziehen.",
+    "definition": "I would prefer coffee to tea.",
+    "word_frequency": 13157
+  },
+  {
+    "word": "Ich zweifle an seiner Ehrlichkeit.",
+    "definition": "I doubt his honesty.",
+    "word_frequency": 6262
+  },
+  {
+    "word": "In schwierigen Zeiten müssen wir zusammenhalten.",
+    "definition": "In difficult times, we must stick together.",
+    "word_frequency": 16561
+  },
+  {
+    "word": "Jeder sollte die Möglichkeit haben, mitzureden.",
+    "definition": "Everyone should have the opportunity to have a say.",
+    "word_frequency": 12407
+  },
+  {
+    "word": "Jeder sollte seine Ideen in die Diskussion einbringen.",
+    "definition": "Everyone should contribute their ideas to the discussion.",
+    "word_frequency": 5774
+  },
+  {
+    "word": "Jeder sollte seinen Teil beitragen.",
+    "definition": "Everyone should contribute their part.",
+    "word_frequency": 3321
+  },
+  {
+    "word": "Jemand hat die Wand mit Graffiti beschmiert.",
+    "definition": "Someone has defaced the wall with graffiti.",
+    "word_frequency": 24868
+  },
+  {
+    "word": "Kannst du bitte auf einen anderen Kanal umschalten?",
+    "definition": "Can you please switch to another channel?",
+    "word_frequency": 16533
+  },
+  {
+    "word": "Kannst du bitte das Buch aus der Tasche herausholen?",
+    "definition": "Can you please get the book out of the bag?",
+    "word_frequency": 19655
+  },
+  {
+    "word": "Kannst du bitte das Buch vom Regal runterholen?",
+    "definition": "Can you please get the book down from the shelf?",
+    "word_frequency": 27605
+  },
+  {
+    "word": "Kannst du bitte das Buch von dort herholen?",
+    "definition": "Can you please fetch the book from over there?",
+    "word_frequency": 20957
+  },
+  {
+    "word": "Kannst du bitte das Radio aufdrehen?",
+    "definition": "Can you please turn up the radio?",
+    "word_frequency": 21839
+  },
+  {
+    "word": "Kannst du bitte den Bleistift spitzen?",
+    "definition": "Can you please sharpen the pencil?",
+    "word_frequency": 22830
+  },
+  {
+    "word": "Kannst du bitte den Müll rausbringen?",
+    "definition": "Can you please take out the trash?",
+    "word_frequency": 21713
+  },
+  {
+    "word": "Kannst du bitte den Müll rausholen?",
+    "definition": "Can you please take out the trash?",
+    "word_frequency": 12218
+  },
+  {
+    "word": "Kannst du bitte die E-Mails checken?",
+    "definition": "Can you please check the emails?",
+    "word_frequency": 7384
+  },
+  {
+    "word": "Kannst du bitte die Wäsche falten?",
+    "definition": "Can you please fold the laundry?",
+    "word_frequency": 20924
+  },
+  {
+    "word": "Kannst du bitte für mich einspringen?",
+    "definition": "Can you please fill in for me?",
+    "word_frequency": 18360
+  },
+  {
+    "word": "Kannst du bitte kurz reinschauen, ob das Licht noch brennt?",
+    "definition": "Can you please look in quickly to see if the light is still on?",
+    "word_frequency": 16228
+  },
+  {
+    "word": "Kannst du das Band bitte zurückspulen?",
+    "definition": "Can you please rewind the tape?",
+    "word_frequency": 23552
+  },
+  {
+    "word": "Kannst du das Buch aufheben?",
+    "definition": "Can you pick up the book?",
+    "word_frequency": 2669
+  },
+  {
+    "word": "Kannst du das Dokument bitte scannen?",
+    "definition": "Can you please scan the document?",
+    "word_frequency": 13560
+  },
+  {
+    "word": "Kannst du das Kabel anschliessen?",
+    "definition": "Can you connect the cable?",
+    "word_frequency": 3713
+  },
+  {
+    "word": "Kannst du das nachmachen?",
+    "definition": "Can you imitate that?",
+    "word_frequency": 15958
+  },
+  {
+    "word": "Kannst du den Hund rauslassen?",
+    "definition": "Can you let the dog out?",
+    "word_frequency": 18197
+  },
+  {
+    "word": "Kannst du den Stuhl bitte dorthin hinstellen?",
+    "definition": "Can you please place the chair over there?",
+    "word_frequency": 13937
+  },
+  {
+    "word": "Kannst du die Antwort erraten?",
+    "definition": "Can you guess the answer?",
+    "word_frequency": 10599
+  },
+  {
+    "word": "Kannst du die Vorteile aufzählen?",
+    "definition": "Can you list the advantages?",
+    "word_frequency": 17411
+  },
+  {
+    "word": "Kannst du diese Nachricht bitte weitergeben?",
+    "definition": "Can you please pass on this message?",
+    "word_frequency": 7741
+  },
+  {
+    "word": "Kannst du dieses Werkzeug gebrauchen?",
+    "definition": "Can you use this tool?",
+    "word_frequency": 3475
+  },
+  {
+    "word": "Kannst du Euro in Dollar umrechnen?",
+    "definition": "Can you convert euros to dollars?",
+    "word_frequency": 9654
+  },
+  {
+    "word": "Kannst du mich bitte reinlassen?",
+    "definition": "Can you please let me in?",
+    "word_frequency": 23910
+  },
+  {
+    "word": "Kannst du mir bitte aushelfen?",
+    "definition": "Can you please help me out?",
+    "word_frequency": 18307
+  },
+  {
+    "word": "Kannst du mir bitte beim Umzug mithelfen?",
+    "definition": "Can you please help me with the move?",
+    "word_frequency": 16200
+  },
+  {
+    "word": "Kannst du mir bitte die Informationen raussuchen?",
+    "definition": "Can you please look up the information for me?",
+    "word_frequency": 16737
+  },
+  {
+    "word": "Kannst du mir bitte verzeihen?",
+    "definition": "Can you please forgive me?",
+    "word_frequency": 8175
+  },
+  {
+    "word": "Kannst du mir das Lied vorspielen?",
+    "definition": "Can you play the song for me?",
+    "word_frequency": 29109
+  },
+  {
+    "word": "Kannst du später vorbeischauen?",
+    "definition": "Can you drop by later?",
+    "word_frequency": 10894
+  },
+  {
+    "word": "Kinder ahmen oft ihre Eltern nach.",
+    "definition": "Children often imitate their parents.",
+    "word_frequency": 29881
+  },
+  {
+    "word": "Kinder lieben es, sich zu verkleiden.",
+    "definition": "Children love to dress up.",
+    "word_frequency": 15221
+  },
+  {
+    "word": "Kinder naschen gerne Süßigkeiten.",
+    "definition": "Children like to snack on sweets.",
+    "word_frequency": 24278
+  },
+  {
+    "word": "Können Sie bitte Ihre Reservierung bestätigen?",
+    "definition": "Can you please confirm your reservation?",
+    "word_frequency": 1108
+  },
+  {
+    "word": "Können Sie diesen Begriff genauer definieren?",
+    "definition": "Can you define this term more precisely?",
+    "word_frequency": 2520
+  },
+  {
+    "word": "Können Sie diesen Text ins Englische übersetzen?",
+    "definition": "Can you translate this text into English?",
+    "word_frequency": 2368
+  },
+  {
+    "word": "Können Sie Ihre Entscheidung begründen?",
+    "definition": "Can you justify your decision?",
+    "word_frequency": 2617
+  },
+  {
+    "word": "Können Sie mich bitte mit Herrn Müller verbinden?",
+    "definition": "Can you please connect me with Mr. Müller?",
+    "word_frequency": 947
+  },
+  {
+    "word": "Können Sie mir bitte den Gesamtbetrag berechnen?",
+    "definition": "Can you please calculate the total amount for me?",
+    "word_frequency": 3524
+  },
+  {
+    "word": "Können Sie mir bitte weiterhelfen?",
+    "definition": "Can you please help me further?",
+    "word_frequency": 8763
+  },
+  {
+    "word": "Könnten Sie die Hauptpunkte bitte zusammenfassen?",
+    "definition": "Could you please summarize the main points?",
+    "word_frequency": 3248
+  },
+  {
+    "word": "Könnten Sie diese E-Mail bitte weiterleiten?",
+    "definition": "Could you please forward this email?",
+    "word_frequency": 10199
+  },
+  {
+    "word": "Könnten Sie mir die Unterlagen zuschicken?",
+    "definition": "Could you send me the documents?",
+    "word_frequency": 16558
+  },
+  {
+    "word": "Könntest du mir bitte das Salz weiterreichen?",
+    "definition": "Could you please pass me the salt?",
+    "word_frequency": 29595
+  },
+  {
+    "word": "Lass dich nicht auf diesen Trick reinfallen!",
+    "definition": "Don't fall for this trick!",
+    "word_frequency": 19749
+  },
+  {
+    "word": "Lass dich nicht entmutigen.",
+    "definition": "Don't get discouraged.",
+    "word_frequency": 26981
+  },
+  {
+    "word": "Lass dich nicht täuschen.",
+    "definition": "Don't let yourself be deceived.",
+    "word_frequency": 7595
+  },
+  {
+    "word": "Lass uns eine Weile ruhen.",
+    "definition": "Let's rest for a while.",
+    "word_frequency": 5599
+  },
+  {
+    "word": "Lasst uns auf den Erfolg anstossen!",
+    "definition": "Let's toast to success!",
+    "word_frequency": 15004
+  },
+  {
+    "word": "Letzte Nacht ist jemand in das Haus eingebrochen.",
+    "definition": "Last night someone broke into the house.",
+    "word_frequency": 8635
+  },
+  {
+    "word": "Mach dir keine Sorgen.",
+    "definition": "Don't worry.",
+    "word_frequency": 1581
+  },
+  {
+    "word": "Man kann das Fahrradfahren nicht verlernen.",
+    "definition": "You cannot unlearn how to ride a bike.",
+    "word_frequency": 19812
+  },
+  {
+    "word": "Man kann das Thema in mehrere Abschnitte unterteilen.",
+    "definition": "One can divide the topic into several sections.",
+    "word_frequency": 9176
+  },
+  {
+    "word": "Man kann die Preise online vergleichen.",
+    "definition": "You can compare the prices online.",
+    "word_frequency": 2130
+  },
+  {
+    "word": "Man kann die Waggons koppeln.",
+    "definition": "One can couple the wagons.",
+    "word_frequency": 11150
+  },
+  {
+    "word": "Man kann diese Farben gut kombinieren.",
+    "definition": "You can combine these colors well.",
+    "word_frequency": 5476
+  },
+  {
+    "word": "Man kann dieser Statistik wichtige Informationen entnehmen.",
+    "definition": "One can infer important information from this statistic.",
+    "word_frequency": 4987
+  },
+  {
+    "word": "Man kann niemanden zum Glück zwingen.",
+    "definition": "You can't force anyone to be happy.",
+    "word_frequency": 2101
+  },
+  {
+    "word": "Man muss das Wasser filtern, bevor man es trinkt.",
+    "definition": "You have to filter the water before drinking it.",
+    "word_frequency": 11897
+  },
+  {
+    "word": "Man muss die Regeln befolgen.",
+    "definition": "One must follow the rules.",
+    "word_frequency": 9859
+  },
+  {
+    "word": "Man muss diese Regel richtig anwenden.",
+    "definition": "One must apply this rule correctly.",
+    "word_frequency": 4785
+  },
+  {
+    "word": "Man muss diese Zahlen multiplizieren.",
+    "definition": "You have to multiply these numbers.",
+    "word_frequency": 21674
+  },
+  {
+    "word": "Man muss genau hinsehen, um das Detail zu erkennen.",
+    "definition": "One has to look closely to recognize the detail.",
+    "word_frequency": 13488
+  },
+  {
+    "word": "Man muss immer dazulernen, um sich zu verbessern.",
+    "definition": "One must always learn additionally to improve oneself.",
+    "word_frequency": 29687
+  },
+  {
+    "word": "Man muss lernen, mit Stress umzugehen.",
+    "definition": "One must learn to deal with stress.",
+    "word_frequency": 2361
+  },
+  {
+    "word": "Man muss schnell handeln.",
+    "definition": "One must act quickly.",
+    "word_frequency": 528
+  },
+  {
+    "word": "Man muss sich an das Klima gewöhnen.",
+    "definition": "One has to get used to the climate.",
+    "word_frequency": 2303
+  },
+  {
+    "word": "Man sollte keine Pilze essen, die vergiften könnten.",
+    "definition": "One should not eat mushrooms that could poison.",
+    "word_frequency": 10357
+  },
+  {
+    "word": "Man sollte nicht gegen die Wand stossen.",
+    "definition": "One should not push against the wall.",
+    "word_frequency": 3768
+  },
+  {
+    "word": "Man sollte nicht immer kritisieren.",
+    "definition": "One should not always criticize.",
+    "word_frequency": 1896
+  },
+  {
+    "word": "Man sollte nicht über andere lästern.",
+    "definition": "One should not gossip about others.",
+    "word_frequency": 21003
+  },
+  {
+    "word": "Man sollte niemanden auslachen.",
+    "definition": "One should not laugh at anyone.",
+    "word_frequency": 15266
+  },
+  {
+    "word": "Man sollte sich gegen Grippe impfen lassen.",
+    "definition": "One should get vaccinated against the flu.",
+    "word_frequency": 11357
+  },
+  {
+    "word": "Man sollte sich vor dem Sport dehnen.",
+    "definition": "One should stretch before sports.",
+    "word_frequency": 17765
+  },
+  {
+    "word": "Man sollte Wunden sofort desinfizieren.",
+    "definition": "One should disinfect wounds immediately.",
+    "word_frequency": 29690
+  },
+  {
+    "word": "Man sollte ältere Menschen respektieren.",
+    "definition": "One should respect older people.",
+    "word_frequency": 6685
+  },
+  {
+    "word": "Man sollte Öl und Wasser nicht vermischen.",
+    "definition": "One should not mix oil and water.",
+    "word_frequency": 9037
+  },
+  {
+    "word": "Mein Arm juckt.",
+    "definition": "My arm itches.",
+    "word_frequency": 8264
+  },
+  {
+    "word": "Mein Auto musste abgeschleppt werden.",
+    "definition": "My car had to be towed away.",
+    "word_frequency": 19539
+  },
+  {
+    "word": "Mein Handy vibriert, wenn ich einen Anruf bekomme.",
+    "definition": "My phone vibrates when I get a call.",
+    "word_frequency": 24798
+  },
+  {
+    "word": "Mein Herz pochte vor Aufregung.",
+    "definition": "My heart was pounding with excitement.",
+    "word_frequency": 16723
+  },
+  {
+    "word": "Mein Kind wird nächstes Jahr eingeschult.",
+    "definition": "My child will start school next year.",
+    "word_frequency": 24925
+  },
+  {
+    "word": "Mein Kopf schmerzt.",
+    "definition": "My head hurts.",
+    "word_frequency": 9154
+  },
+  {
+    "word": "Meine Finger kribbeln vor Kälte.",
+    "definition": "My fingers are tingling from the cold.",
+    "word_frequency": 19375
+  },
+  {
+    "word": "Meine Grossmutter liebt es zu häkeln.",
+    "definition": "My grandmother loves to crochet.",
+    "word_frequency": 26257
+  },
+  {
+    "word": "Menschen altern mit der Zeit.",
+    "definition": "People age over time.",
+    "word_frequency": 12513
+  },
+  {
+    "word": "Mir fällt der Name nicht ein.",
+    "definition": "The name doesn't come to my mind.",
+    "word_frequency": 4322
+  },
+  {
+    "word": "Mir ist so schlecht, ich muss kotzen.",
+    "definition": "I feel so sick, I have to vomit.",
+    "word_frequency": 4663
+  },
+  {
+    "word": "Möchtest du mitspielen?",
+    "definition": "Do you want to play along?",
+    "word_frequency": 6791
+  },
+  {
+    "word": "Möchtest du zu unserer Gruppe dazukommen?",
+    "definition": "Would you like to join our group?",
+    "word_frequency": 28759
+  },
+  {
+    "word": "Nach dem Essen musste er sich erbrechen.",
+    "definition": "After eating, he had to vomit.",
+    "word_frequency": 11888
+  },
+  {
+    "word": "Nach dem langen Lauf musste er erst einmal durchatmen.",
+    "definition": "After the long run, he first had to take a deep breath.",
+    "word_frequency": 13004
+  },
+  {
+    "word": "Nach dem Unfall musste er hinken.",
+    "definition": "After the accident, he had to limp.",
+    "word_frequency": 17243
+  },
+  {
+    "word": "Nach der Prüfung konnte er endlich aufatmen.",
+    "definition": "After the exam, he could finally breathe a sigh of relief.",
+    "word_frequency": 21499
+  },
+  {
+    "word": "Ohne warme Kleidung könnte man in dieser Kälte erfrieren.",
+    "definition": "Without warm clothes, one could freeze to death in this cold.",
+    "word_frequency": 24124
+  },
+  {
+    "word": "Plötzlich tauchte ein Problem auf.",
+    "definition": "Suddenly a problem emerged.",
+    "word_frequency": 4626
+  },
+  {
+    "word": "Reg dich nicht so auf!",
+    "definition": "Don't get so upset!",
+    "word_frequency": 3251
+  },
+  {
+    "word": "Schnee bedeckte die Berge.",
+    "definition": "Snow covered the mountains.",
+    "word_frequency": 3787
+  },
+  {
+    "word": "Sei vorsichtig, damit du nicht auf dem Eis rutschst.",
+    "definition": "Be careful so you don't slip on the ice.",
+    "word_frequency": 9309
+  },
+  {
+    "word": "Sei vorsichtig, dass das Essen nicht anbrennt.",
+    "definition": "Be careful that the food doesn't burn.",
+    "word_frequency": 25676
+  },
+  {
+    "word": "Sei vorsichtig, dass die Flasche nicht kippt.",
+    "definition": "Be careful that the bottle doesn't tip over.",
+    "word_frequency": 7037
+  },
+  {
+    "word": "Seine Geschichten faszinieren mich immer.",
+    "definition": "His stories always fascinate me.",
+    "word_frequency": 6184
+  },
+  {
+    "word": "Seine neue Frisur ist sofort aufgefallen.",
+    "definition": "His new hairstyle immediately stood out.",
+    "word_frequency": 2668
+  },
+  {
+    "word": "Seine Rede konnte das Publikum begeistern.",
+    "definition": "His speech could inspire the audience.",
+    "word_frequency": 1771
+  },
+  {
+    "word": "Seine Worte verärgerten sie sehr.",
+    "definition": "His words annoyed her greatly.",
+    "word_frequency": 7892
+  },
+  {
+    "word": "Seine Worte wirken sehr überzeugend.",
+    "definition": "His words seem very convincing.",
+    "word_frequency": 1010
+  },
+  {
+    "word": "Sie argumentierte überzeugend für ihre Position.",
+    "definition": "She argued convincingly for her position.",
+    "word_frequency": 6733
+  },
+  {
+    "word": "Sie begann, ihm ein Geheimnis ins Ohr zu flüstern.",
+    "definition": "She began to whisper a secret into his ear.",
+    "word_frequency": 14352
+  },
+  {
+    "word": "Sie benützt oft öffentliche Verkehrsmittel.",
+    "definition": "She often uses public transport.",
+    "word_frequency": 27769
+  },
+  {
+    "word": "Sie beobachtet die Vögel im Garten.",
+    "definition": "She observes the birds in the garden.",
+    "word_frequency": 1804
+  },
+  {
+    "word": "Sie beschlossen, ein Kind zu adoptieren.",
+    "definition": "They decided to adopt a child.",
+    "word_frequency": 15249
+  },
+  {
+    "word": "Sie betreut die Kinder am Nachmittag.",
+    "definition": "She looks after the children in the afternoon.",
+    "word_frequency": 4242
+  },
+  {
+    "word": "Sie bildet neue Lehrer aus.",
+    "definition": "She trains new teachers.",
+    "word_frequency": 3252
+  },
+  {
+    "word": "Sie bloggt regelmäßig über ihre Reisen.",
+    "definition": "She regularly blogs about her travels.",
+    "word_frequency": 18950
+  },
+  {
+    "word": "Sie blätterte in einem alten Fotoalbum.",
+    "definition": "She leafed through an old photo album.",
+    "word_frequency": 6396
+  },
+  {
+    "word": "Sie dämpft das Gemüse für das Abendessen.",
+    "definition": "She steams the vegetables for dinner.",
+    "word_frequency": 19020
+  },
+  {
+    "word": "Sie erzieht ihre Kinder gut.",
+    "definition": "She raises her children well.",
+    "word_frequency": 6520
+  },
+  {
+    "word": "Sie forderte ihn zum Tanz auf.",
+    "definition": "She asked him to dance.",
+    "word_frequency": 4788
+  },
+  {
+    "word": "Sie haben den Schatz im Garten begraben.",
+    "definition": "They buried the treasure in the garden.",
+    "word_frequency": 4396
+  },
+  {
+    "word": "Sie haben sich letztes Jahr verlobt.",
+    "definition": "They got engaged last year.",
+    "word_frequency": 13807
+  },
+  {
+    "word": "Sie hoffen, das Spiel zu siegen.",
+    "definition": "They hope to win the game.",
+    "word_frequency": 2596
+  },
+  {
+    "word": "Sie kleidet sich immer elegant.",
+    "definition": "She always dresses elegantly.",
+    "word_frequency": 8239
+  },
+  {
+    "word": "Sie konnten sich auf einen Preis einigen.",
+    "definition": "They could agree on a price.",
+    "word_frequency": 9399
+  },
+  {
+    "word": "Sie können den Gutschein im Geschäft einlösen.",
+    "definition": "You can redeem the voucher in the store.",
+    "word_frequency": 15856
+  },
+  {
+    "word": "Sie können den Salat mit frischen Kräutern garnieren.",
+    "definition": "You can garnish the salad with fresh herbs.",
+    "word_frequency": 26221
+  },
+  {
+    "word": "Sie können die Seite in Ihrem Blog verlinken.",
+    "definition": "You can link the page in your blog.",
+    "word_frequency": 10704
+  },
+  {
+    "word": "Sie können noch etwas Salz dazugeben.",
+    "definition": "You can add some more salt.",
+    "word_frequency": 23712
+  },
+  {
+    "word": "Sie lehrt Deutsch an der Universität.",
+    "definition": "She teaches German at the university.",
+    "word_frequency": 4347
+  },
+  {
+    "word": "Sie lernt seit drei Jahren geigen.",
+    "definition": "She has been learning to play the violin for three years.",
+    "word_frequency": 23765
+  },
+  {
+    "word": "Sie liebt es, am Wochenende zu musizieren.",
+    "definition": "She loves to make music on the weekend.",
+    "word_frequency": 15670
+  },
+  {
+    "word": "Sie liebt es, im Sommer zu gärtnern.",
+    "definition": "She loves to garden in the summer.",
+    "word_frequency": 29296
+  },
+  {
+    "word": "Sie ließ sich den Rücken massieren.",
+    "definition": "She had her back massaged.",
+    "word_frequency": 15659
+  },
+  {
+    "word": "Sie muss das Abendessen zubereiten.",
+    "definition": "She has to prepare dinner.",
+    "word_frequency": 10209
+  },
+  {
+    "word": "Sie muss das Bad reinigen.",
+    "definition": "She has to clean the bathroom.",
+    "word_frequency": 6576
+  },
+  {
+    "word": "Sie muss das Bild sorgfältig ausschneiden.",
+    "definition": "She has to cut out the picture carefully.",
+    "word_frequency": 27754
+  },
+  {
+    "word": "Sie muss das Gemüse hacken.",
+    "definition": "She has to chop the vegetables.",
+    "word_frequency": 7021
+  },
+  {
+    "word": "Sie muss das Loch in ihrer Socke stopfen.",
+    "definition": "She has to mend the hole in her sock.",
+    "word_frequency": 11241
+  },
+  {
+    "word": "Sie muss den Boden kehren.",
+    "definition": "She has to sweep the floor.",
+    "word_frequency": 3542
+  },
+  {
+    "word": "Sie muss den Teig gut kneten.",
+    "definition": "She has to knead the dough well.",
+    "word_frequency": 27086
+  },
+  {
+    "word": "Sie muss die Geschenke noch verpacken.",
+    "definition": "She still has to wrap the presents.",
+    "word_frequency": 7735
+  },
+  {
+    "word": "Sie muss die Kinder hüten.",
+    "definition": "She has to look after the children.",
+    "word_frequency": 10796
+  },
+  {
+    "word": "Sie muss die Pakete stempeln, bevor sie verschickt werden.",
+    "definition": "She has to stamp the packages before they are sent.",
+    "word_frequency": 24373
+  },
+  {
+    "word": "Sie muss die Unterlagen für das Meeting zusammenstellen.",
+    "definition": "She has to compile the documents for the meeting.",
+    "word_frequency": 4699
+  },
+  {
+    "word": "Sie muss ein Visum beantragen.",
+    "definition": "She has to apply for a visa.",
+    "word_frequency": 4973
+  },
+  {
+    "word": "Sie muss ihre Familie ernähren.",
+    "definition": "She has to feed her family.",
+    "word_frequency": 5364
+  },
+  {
+    "word": "Sie muss ihre Papiere ordnen.",
+    "definition": "She has to organize her papers.",
+    "word_frequency": 10656
+  },
+  {
+    "word": "Sie musste ihre Familie zurücklassen.",
+    "definition": "She had to leave her family behind.",
+    "word_frequency": 12952
+  },
+  {
+    "word": "Sie musste ihre Gedanken klar formulieren.",
+    "definition": "She had to formulate her thoughts clearly.",
+    "word_frequency": 3404
+  },
+  {
+    "word": "Sie musste ihre Kinder alleine aufziehen.",
+    "definition": "She had to raise her children alone.",
+    "word_frequency": 10732
+  },
+  {
+    "word": "Sie musste ihre Kinder alleine grossziehen.",
+    "definition": "She had to raise her children alone.",
+    "word_frequency": 29292
+  },
+  {
+    "word": "Sie musste über seinen Witz schmunzeln.",
+    "definition": "She had to smile at his joke.",
+    "word_frequency": 9316
+  },
+  {
+    "word": "Sie mussten den Hund im Zwinger einsperren.",
+    "definition": "They had to lock up the dog in the kennel.",
+    "word_frequency": 7945
+  },
+  {
+    "word": "Sie müssen das Bild in das Dokument einfügen.",
+    "definition": "You need to insert the image into the document.",
+    "word_frequency": 8080
+  },
+  {
+    "word": "Sie müssen das Bild vergrössern.",
+    "definition": "You need to enlarge the picture.",
+    "word_frequency": 6246
+  },
+  {
+    "word": "Sie müssen das Bild verkleinern, damit es passt.",
+    "definition": "You need to reduce the image so it fits.",
+    "word_frequency": 13599
+  },
+  {
+    "word": "Sie müssen das Konto freischalten, um es nutzen zu können.",
+    "definition": "You need to activate the account to be able to use it.",
+    "word_frequency": 12788
+  },
+  {
+    "word": "Sie müssen das Problem klar benennen.",
+    "definition": "You must clearly name the problem.",
+    "word_frequency": 4240
+  },
+  {
+    "word": "Sie müssen das Regal an der Wand befestigen.",
+    "definition": "You must fasten the shelf to the wall.",
+    "word_frequency": 5160
+  },
+  {
+    "word": "Sie müssen den Preis verhandeln.",
+    "definition": "They have to negotiate the price.",
+    "word_frequency": 4771
+  },
+  {
+    "word": "Sie müssen die Aufgaben gerecht verteilen.",
+    "definition": "You must distribute the tasks fairly.",
+    "word_frequency": 1795
+  },
+  {
+    "word": "Sie müssen die Stimmen auszählen.",
+    "definition": "They have to count out the votes.",
+    "word_frequency": 24057
+  },
+  {
+    "word": "Sie müssen die Unterlagen bis Freitag einreichen.",
+    "definition": "You must submit the documents by Friday.",
+    "word_frequency": 5776
+  },
+  {
+    "word": "Sie müssen die Unterlagen schriftlich anfordern.",
+    "definition": "You must request the documents in writing.",
+    "word_frequency": 13188
+  },
+  {
+    "word": "Sie müssen die Ursachen des Problems bekämpfen.",
+    "definition": "They must combat the causes of the problem.",
+    "word_frequency": 3523
+  },
+  {
+    "word": "Sie müssen Ihr Konto aktivieren.",
+    "definition": "You need to activate your account.",
+    "word_frequency": 5151
+  },
+  {
+    "word": "Sie müssen Ihr Passwort eingeben.",
+    "definition": "You must enter your password.",
+    "word_frequency": 9383
+  },
+  {
+    "word": "Sie müssen ihre Familie versorgen.",
+    "definition": "They must provide for their family.",
+    "word_frequency": 3303
+  },
+  {
+    "word": "Sie müssen noch etwas Salz hinzugeben.",
+    "definition": "You still need to add some salt.",
+    "word_frequency": 23383
+  },
+  {
+    "word": "Sie müssen Stress abbauen.",
+    "definition": "They need to reduce stress.",
+    "word_frequency": 5242
+  },
+  {
+    "word": "Sie pflegt ihre Blumen jeden Tag.",
+    "definition": "She cares for her flowers every day.",
+    "word_frequency": 4064
+  },
+  {
+    "word": "Sie plauderten stundenlang über alles Mögliche.",
+    "definition": "They chatted for hours about all sorts of things.",
+    "word_frequency": 13324
+  },
+  {
+    "word": "Sie rieb sich die Augen.",
+    "definition": "She rubbed her eyes.",
+    "word_frequency": 9151
+  },
+  {
+    "word": "Sie rätselten lange über die Lösung.",
+    "definition": "They puzzled over the solution for a long time.",
+    "word_frequency": 18816
+  },
+  {
+    "word": "Sie schwärmt von ihrem neuen Urlaub.",
+    "definition": "She raves about her new vacation.",
+    "word_frequency": 14246
+  },
+  {
+    "word": "Sie sehnt sich nach ihrer Heimat.",
+    "definition": "She longs for her homeland.",
+    "word_frequency": 15183
+  },
+  {
+    "word": "Sie seufzte tief, als sie die Nachricht hörte.",
+    "definition": "She sighed deeply when she heard the news.",
+    "word_frequency": 18521
+  },
+  {
+    "word": "Sie sollte die Salbe zweimal täglich einreiben.",
+    "definition": "She should rub in the ointment twice a day.",
+    "word_frequency": 29712
+  },
+  {
+    "word": "Sie streichelt ihre Katze sanft.",
+    "definition": "She gently strokes her cat.",
+    "word_frequency": 10526
+  },
+  {
+    "word": "Sie streute Salz auf das Essen.",
+    "definition": "She sprinkled salt on the food.",
+    "word_frequency": 14025
+  },
+  {
+    "word": "Sie trauert um ihren verstorbenen Hund.",
+    "definition": "She is mourning her deceased dog.",
+    "word_frequency": 10879
+  },
+  {
+    "word": "Sie veranstalten jedes Jahr ein großes Fest.",
+    "definition": "They organize a big festival every year.",
+    "word_frequency": 4078
+  },
+  {
+    "word": "Sie versucht jeden Morgen zu meditieren.",
+    "definition": "She tries to meditate every morning.",
+    "word_frequency": 23452
+  },
+  {
+    "word": "Sie versuchte, ihn zu trösten.",
+    "definition": "She tried to comfort him.",
+    "word_frequency": 10880
+  },
+  {
+    "word": "Sie wandte sich ihrem Buch zu.",
+    "definition": "She turned to her book.",
+    "word_frequency": 20178
+  },
+  {
+    "word": "Sie werden den Kandidaten morgen interviewen.",
+    "definition": "They will interview the candidate tomorrow.",
+    "word_frequency": 14621
+  },
+  {
+    "word": "Sie werden die Ergebnisse bald ankündigen.",
+    "definition": "They will announce the results soon.",
+    "word_frequency": 2756
+  },
+  {
+    "word": "Sie werden ein neues Geschäft eröffnen.",
+    "definition": "They will open a new business.",
+    "word_frequency": 1296
+  },
+  {
+    "word": "Sie werden eine Umfrage durchführen.",
+    "definition": "They will conduct a survey.",
+    "word_frequency": 1347
+  },
+  {
+    "word": "Sie werden ihr Kind am Sonntag taufen lassen.",
+    "definition": "They will have their child baptized on Sunday.",
+    "word_frequency": 8816
+  },
+  {
+    "word": "Sie wird das Haus ihrer Großmutter erben.",
+    "definition": "She will inherit her grandmother's house.",
+    "word_frequency": 4253
+  },
+  {
+    "word": "Sie wird die Diskussion moderieren.",
+    "definition": "She will moderate the discussion.",
+    "word_frequency": 7842
+  },
+  {
+    "word": "Sie wird die Gäste herzlich empfangen.",
+    "definition": "She will warmly welcome the guests.",
+    "word_frequency": 2722
+  },
+  {
+    "word": "Sie wollen das alte Gebäude abreißen.",
+    "definition": "They want to demolish the old building.",
+    "word_frequency": 5629
+  },
+  {
+    "word": "Sie wollen das Gesetz abschaffen.",
+    "definition": "They want to abolish the law.",
+    "word_frequency": 5433
+  },
+  {
+    "word": "Sie wollen das Netzwerk ausbauen.",
+    "definition": "They want to expand the network.",
+    "word_frequency": 3652
+  },
+  {
+    "word": "Sie wollen den Vogel freilassen.",
+    "definition": "They want to release the bird.",
+    "word_frequency": 9550
+  },
+  {
+    "word": "Sie wollen ein neues Produkt einführen.",
+    "definition": "They want to introduce a new product.",
+    "word_frequency": 2005
+  },
+  {
+    "word": "Sie wollen eine neue Firma gründen.",
+    "definition": "They want to found a new company.",
+    "word_frequency": 792
+  },
+  {
+    "word": "Sie wollen eine neue Steuer erheben.",
+    "definition": "They want to levy a new tax.",
+    "word_frequency": 2293
+  },
+  {
+    "word": "Sie wollen ihre Tochter verheiraten.",
+    "definition": "They want to marry off their daughter.",
+    "word_frequency": 1823
+  },
+  {
+    "word": "Sie wollen ihre Wohnung vermieten.",
+    "definition": "They want to rent out their apartment.",
+    "word_frequency": 7890
+  },
+  {
+    "word": "Sie wollen in eine größere Stadt hinziehen.",
+    "definition": "They want to move to a bigger city.",
+    "word_frequency": 14849
+  },
+  {
+    "word": "Sie wollen in erneuerbare Energien investieren.",
+    "definition": "They want to invest in renewable energies.",
+    "word_frequency": 2779
+  },
+  {
+    "word": "Sie wollen nächsten Monat zusammenziehen.",
+    "definition": "They want to move in together next month.",
+    "word_frequency": 26879
+  },
+  {
+    "word": "Sie wollte den Weg erfragen.",
+    "definition": "She wanted to ask for the way.",
+    "word_frequency": 22982
+  },
+  {
+    "word": "Sie wollte die Wand bemalen.",
+    "definition": "She wanted to paint the wall.",
+    "word_frequency": 14091
+  },
+  {
+    "word": "Sie wollte ihn fest umarmen.",
+    "definition": "She wanted to hug him tightly.",
+    "word_frequency": 9993
+  },
+  {
+    "word": "Sie wollte neue Kontakte knüpfen.",
+    "definition": "She wanted to establish new contacts.",
+    "word_frequency": 9422
+  },
+  {
+    "word": "Sie wurden für den Schaden entschädigt.",
+    "definition": "They were compensated for the damage.",
+    "word_frequency": 16621
+  },
+  {
+    "word": "Sie zitterte vor Kälte.",
+    "definition": "She shivered from the cold.",
+    "word_frequency": 6968
+  },
+  {
+    "word": "Sie ähnelt ihrer Mutter sehr.",
+    "definition": "She resembles her mother very much.",
+    "word_frequency": 7907
+  },
+  {
+    "word": "Solche Fehler können vorkommen.",
+    "definition": "Such mistakes can occur.",
+    "word_frequency": 2556
+  },
+  {
+    "word": "Touristen dürfen ohne Visum einreisen.",
+    "definition": "Tourists are allowed to enter without a visa.",
+    "word_frequency": 14119
+  },
+  {
+    "word": "Trotz der Schwierigkeiten muss man weiterleben.",
+    "definition": "Despite the difficulties, one must continue living.",
+    "word_frequency": 16814
+  },
+  {
+    "word": "Trotz des Regens mussten wir weiterlaufen.",
+    "definition": "Despite the rain, we had to continue walking.",
+    "word_frequency": 22878
+  },
+  {
+    "word": "Vergessen Sie nicht, die Datei abzuspeichern.",
+    "definition": "Don't forget to save the file.",
+    "word_frequency": 26104
+  },
+  {
+    "word": "Vergiss nicht, die Datei zu speichern.",
+    "definition": "Don't forget to save the file.",
+    "word_frequency": 4993
+  },
+  {
+    "word": "Viele alte Bäume sterben im Winter.",
+    "definition": "Many old trees die in winter.",
+    "word_frequency": 962
+  },
+  {
+    "word": "Viele Leute liken seine Beiträge.",
+    "definition": "Many people like his posts.",
+    "word_frequency": 26313
+  },
+  {
+    "word": "Viele Leute pendeln jeden Tag zur Arbeit.",
+    "definition": "Many people commute to work every day.",
+    "word_frequency": 14224
+  },
+  {
+    "word": "Viele Menschen fasten während der Fastenzeit.",
+    "definition": "Many people fast during Lent.",
+    "word_frequency": 10259
+  },
+  {
+    "word": "Viele Menschen hungern in dieser Region.",
+    "definition": "Many people are starving in this region.",
+    "word_frequency": 12603
+  },
+  {
+    "word": "Viele Menschen spenden Geld für wohltätige Zwecke.",
+    "definition": "Many people donate money for charitable causes.",
+    "word_frequency": 2235
+  },
+  {
+    "word": "Viele Menschen träumen davon, auszuwandern.",
+    "definition": "Many people dream of emigrating.",
+    "word_frequency": 13422
+  },
+  {
+    "word": "Viele Menschen verhungern in armen Ländern.",
+    "definition": "Many people starve in poor countries.",
+    "word_frequency": 9179
+  },
+  {
+    "word": "Viele Menschen wandern nach Deutschland ein.",
+    "definition": "Many people immigrate to Germany.",
+    "word_frequency": 24926
+  },
+  {
+    "word": "Viele Zugvögel überwintern in wärmeren Regionen.",
+    "definition": "Many migratory birds overwinter in warmer regions.",
+    "word_frequency": 21477
+  },
+  {
+    "word": "Wann bekomme ich mein Geld zurück?",
+    "definition": "When will I get my money back?",
+    "word_frequency": 22888
+  },
+  {
+    "word": "Warum stehst du hier nur rum und hilfst nicht?",
+    "definition": "Why are you just standing around here and not helping?",
+    "word_frequency": 20717
+  },
+  {
+    "word": "Was ist geschehen?",
+    "definition": "What has happened?",
+    "word_frequency": 1062
+  },
+  {
+    "word": "Was ist gestern Abend vorfallen?",
+    "definition": "What happened last night?",
+    "word_frequency": 18262
+  },
+  {
+    "word": "Wie fühlt sich der Stoff an?",
+    "definition": "How does the fabric feel?",
+    "word_frequency": 8195
+  },
+  {
+    "word": "Wie kann ich dorthin hinkommen?",
+    "definition": "How can I get there?",
+    "word_frequency": 16944
+  },
+  {
+    "word": "Wie soll ich diesen Traum deuten?",
+    "definition": "How should I interpret this dream?",
+    "word_frequency": 4718
+  },
+  {
+    "word": "Wie soll ich ihn anreden?",
+    "definition": "How should I address him?",
+    "word_frequency": 28690
+  },
+  {
+    "word": "Wie wirst du auf diese Nachricht reagieren?",
+    "definition": "How will you react to this news?",
+    "word_frequency": 2182
+  },
+  {
+    "word": "Wie würden Sie das bezeichnen?",
+    "definition": "How would you describe that?",
+    "word_frequency": 754
+  },
+  {
+    "word": "Wir basteln ein Geschenk für Mama.",
+    "definition": "We are crafting a gift for Mom.",
+    "word_frequency": 6055
+  },
+  {
+    "word": "Wir benötigen mehr Zeit für dieses Projekt.",
+    "definition": "We need more time for this project.",
+    "word_frequency": 1880
+  },
+  {
+    "word": "Wir duzen uns schon lange.",
+    "definition": "We've been on a first-name basis for a long time.",
+    "word_frequency": 23724
+  },
+  {
+    "word": "Wir gehen am Wochenende kegeln.",
+    "definition": "We are going bowling on the weekend.",
+    "word_frequency": 27501
+  },
+  {
+    "word": "Wir geniessen den Sommer.",
+    "definition": "We enjoy the summer.",
+    "word_frequency": 1473
+  },
+  {
+    "word": "Wir haben den ganzen Abend gequatscht.",
+    "definition": "We chatted all evening.",
+    "word_frequency": 11022
+  },
+  {
+    "word": "Wir haben uns im Wald verirrt.",
+    "definition": "We got lost in the forest.",
+    "word_frequency": 16049
+  },
+  {
+    "word": "Wir haben uns im Wald verlaufen.",
+    "definition": "We got lost in the forest.",
+    "word_frequency": 3569
+  },
+  {
+    "word": "Wir haben uns lange über das Wetter unterhalten.",
+    "definition": "We talked about the weather for a long time.",
+    "word_frequency": 2277
+  },
+  {
+    "word": "Wir kommen gut voran.",
+    "definition": "We are making good progress.",
+    "word_frequency": 26847
+  },
+  {
+    "word": "Wir können diese Möglichkeit nicht ausschließen.",
+    "definition": "We cannot rule out this possibility.",
+    "word_frequency": 5439
+  },
+  {
+    "word": "Wir können Ihnen einen guten Preis bieten.",
+    "definition": "We can offer you a good price.",
+    "word_frequency": 704
+  },
+  {
+    "word": "Wir lagern die Möbel im Keller.",
+    "definition": "We store the furniture in the basement.",
+    "word_frequency": 5015
+  },
+  {
+    "word": "Wir liefern die Pizza nach Hause.",
+    "definition": "We deliver the pizza home.",
+    "word_frequency": 1746
+  },
+  {
+    "word": "Wir mussten die Reise abbrechen.",
+    "definition": "We had to cancel the trip.",
+    "word_frequency": 4222
+  },
+  {
+    "word": "Wir mussten lange anstehen, um die Tickets zu bekommen.",
+    "definition": "We had to queue for a long time to get the tickets.",
+    "word_frequency": 11847
+  },
+  {
+    "word": "Wir mussten umkehren, weil die Straße gesperrt war.",
+    "definition": "We had to turn back because the road was closed.",
+    "word_frequency": 15749
+  },
+  {
+    "word": "Wir mussten über den See rudern.",
+    "definition": "We had to row across the lake.",
+    "word_frequency": 13773
+  },
+  {
+    "word": "Wir müssen abwarten, was passiert.",
+    "definition": "We have to wait and see what happens.",
+    "word_frequency": 3711
+  },
+  {
+    "word": "Wir müssen alle mitarbeiten, um das Projekt abzuschließen.",
+    "definition": "We all have to collaborate to complete the project.",
+    "word_frequency": 19402
+  },
+  {
+    "word": "Wir müssen auf die Details eingehen.",
+    "definition": "We need to go into the details.",
+    "word_frequency": 2972
+  },
+  {
+    "word": "Wir müssen besser kommunizieren.",
+    "definition": "We need to communicate better.",
+    "word_frequency": 5108
+  },
+  {
+    "word": "Wir müssen das alte Gebäude modernisieren.",
+    "definition": "We need to modernize the old building.",
+    "word_frequency": 12642
+  },
+  {
+    "word": "Wir müssen das Datum für das Treffen festlegen.",
+    "definition": "We need to set the date for the meeting.",
+    "word_frequency": 2876
+  },
+  {
+    "word": "Wir müssen das Gepäck im Kofferraum verstauen.",
+    "definition": "We need to stow the luggage in the trunk.",
+    "word_frequency": 21784
+  },
+  {
+    "word": "Wir müssen das Paket heute versenden.",
+    "definition": "We have to send the package today.",
+    "word_frequency": 11260
+  },
+  {
+    "word": "Wir müssen das Problem besprechen.",
+    "definition": "We need to discuss the problem.",
+    "word_frequency": 4471
+  },
+  {
+    "word": "Wir müssen das Problem jetzt anpacken.",
+    "definition": "We need to tackle the problem now.",
+    "word_frequency": 15799
+  },
+  {
+    "word": "Wir müssen das Projekt bis Freitag fertigstellen.",
+    "definition": "We have to complete the project by Friday.",
+    "word_frequency": 7647
+  },
+  {
+    "word": "Wir müssen das Projekt finanzieren.",
+    "definition": "We have to finance the project.",
+    "word_frequency": 2830
+  },
+  {
+    "word": "Wir müssen das Schlimmste verhindern.",
+    "definition": "We must prevent the worst.",
+    "word_frequency": 1073
+  },
+  {
+    "word": "Wir müssen das Treffen arrangieren.",
+    "definition": "We need to arrange the meeting.",
+    "word_frequency": 11100
+  },
+  {
+    "word": "Wir müssen das Treffen organisieren.",
+    "definition": "We need to organize the meeting.",
+    "word_frequency": 2229
+  },
+  {
+    "word": "Wir müssen das Treffen verschieben.",
+    "definition": "We have to postpone the meeting.",
+    "word_frequency": 3705
+  },
+  {
+    "word": "Wir müssen das Zelt aufbauen.",
+    "definition": "We have to set up the tent.",
+    "word_frequency": 1877
+  },
+  {
+    "word": "Wir müssen das Zelt aufstellen.",
+    "definition": "We need to set up the tent.",
+    "word_frequency": 1994
+  },
+  {
+    "word": "Wir müssen den alten Computer ersetzen.",
+    "definition": "We need to replace the old computer.",
+    "word_frequency": 1661
+  },
+  {
+    "word": "Wir müssen den Ballon aufblasen.",
+    "definition": "We need to inflate the balloon.",
+    "word_frequency": 24848
+  },
+  {
+    "word": "Wir müssen den CO2-Ausstoß vermindern.",
+    "definition": "We must reduce CO2 emissions.",
+    "word_frequency": 14496
+  },
+  {
+    "word": "Wir müssen den Garten bepflanzen.",
+    "definition": "We need to plant the garden.",
+    "word_frequency": 29660
+  },
+  {
+    "word": "Wir müssen den Kuchen halbieren.",
+    "definition": "We need to halve the cake.",
+    "word_frequency": 15616
+  },
+  {
+    "word": "Wir müssen den Lastwagen mit Kisten beladen.",
+    "definition": "We have to load the truck with boxes.",
+    "word_frequency": 11484
+  },
+  {
+    "word": "Wir müssen den LKW entladen.",
+    "definition": "We have to unload the truck.",
+    "word_frequency": 13904
+  },
+  {
+    "word": "Wir müssen den Müll trennen.",
+    "definition": "We have to separate the trash.",
+    "word_frequency": 1810
+  },
+  {
+    "word": "Wir müssen den Prozess beschleunigen.",
+    "definition": "We need to accelerate the process.",
+    "word_frequency": 6984
+  },
+  {
+    "word": "Wir müssen den Prozess optimieren.",
+    "definition": "We need to optimize the process.",
+    "word_frequency": 9788
+  },
+  {
+    "word": "Wir müssen den Prozess vereinfachen.",
+    "definition": "We need to simplify the process.",
+    "word_frequency": 7599
+  },
+  {
+    "word": "Wir müssen den Schrank ausräumen, bevor wir umziehen.",
+    "definition": "We have to clear out the closet before we move.",
+    "word_frequency": 19872
+  },
+  {
+    "word": "Wir müssen den Text kürzen.",
+    "definition": "We have to shorten the text.",
+    "word_frequency": 7651
+  },
+  {
+    "word": "Wir müssen den Vertrag erneuern.",
+    "definition": "We must renew the contract.",
+    "word_frequency": 4888
+  },
+  {
+    "word": "Wir müssen den Vertrag verlängern.",
+    "definition": "We need to extend the contract.",
+    "word_frequency": 2805
+  },
+  {
+    "word": "Wir müssen die alten Dokumente digitalisieren.",
+    "definition": "We need to digitize the old documents.",
+    "word_frequency": 22238
+  },
+  {
+    "word": "Wir müssen die Arbeit fortsetzen.",
+    "definition": "We must continue the work.",
+    "word_frequency": 4894
+  },
+  {
+    "word": "Wir müssen die Arbeit gut einteilen.",
+    "definition": "We need to divide the work well.",
+    "word_frequency": 9086
+  },
+  {
+    "word": "Wir müssen die Arbeit unter uns aufteilen.",
+    "definition": "We need to divide the work among ourselves.",
+    "word_frequency": 5954
+  },
+  {
+    "word": "Wir müssen die Ausgaben begrenzen.",
+    "definition": "We must limit the expenses.",
+    "word_frequency": 2714
+  },
+  {
+    "word": "Wir müssen die Batterie austauschen.",
+    "definition": "We need to replace the battery.",
+    "word_frequency": 5437
+  },
+  {
+    "word": "Wir müssen die beiden Parteien wieder zusammenbringen.",
+    "definition": "We need to bring the two parties back together.",
+    "word_frequency": 21820
+  },
+  {
+    "word": "Wir müssen die Buchung stornieren.",
+    "definition": "We have to cancel the booking.",
+    "word_frequency": 23560
+  },
+  {
+    "word": "Wir müssen die Daten gruppieren.",
+    "definition": "We need to group the data.",
+    "word_frequency": 27463
+  },
+  {
+    "word": "Wir müssen die Daten überprüfen.",
+    "definition": "We need to check the data.",
+    "word_frequency": 2560
+  },
+  {
+    "word": "Wir müssen die Diskussion weiterführen.",
+    "definition": "We need to continue the discussion.",
+    "word_frequency": 11456
+  },
+  {
+    "word": "Wir müssen die Getränke kühlen.",
+    "definition": "We need to cool the drinks.",
+    "word_frequency": 6782
+  },
+  {
+    "word": "Wir müssen die Gäste für die Nacht unterbringen.",
+    "definition": "We need to accommodate the guests for the night.",
+    "word_frequency": 3446
+  },
+  {
+    "word": "Wir müssen die Kosten abrechnen.",
+    "definition": "We need to settle the costs.",
+    "word_frequency": 12958
+  },
+  {
+    "word": "Wir müssen die Kosten senken.",
+    "definition": "We must lower the costs.",
+    "word_frequency": 4070
+  },
+  {
+    "word": "Wir müssen die Kosten verringern.",
+    "definition": "We must reduce the costs.",
+    "word_frequency": 5623
+  },
+  {
+    "word": "Wir müssen die Länge des Tisches messen.",
+    "definition": "We need to measure the length of the table.",
+    "word_frequency": 2789
+  },
+  {
+    "word": "Wir müssen die Maschine richtig einstellen.",
+    "definition": "We need to adjust the machine correctly.",
+    "word_frequency": 1504
+  },
+  {
+    "word": "Wir müssen die Möbel montieren.",
+    "definition": "We have to assemble the furniture.",
+    "word_frequency": 7995
+  },
+  {
+    "word": "Wir müssen die Möbel neu ausrichten.",
+    "definition": "We need to realign the furniture.",
+    "word_frequency": 4090
+  },
+  {
+    "word": "Wir müssen die neue Küche noch einbauen.",
+    "definition": "We still need to install the new kitchen.",
+    "word_frequency": 4172
+  },
+  {
+    "word": "Wir müssen die neue Wohnung einrichten.",
+    "definition": "We need to furnish the new apartment.",
+    "word_frequency": 2155
+  },
+  {
+    "word": "Wir müssen die Polizei verständigen.",
+    "definition": "We must inform the police.",
+    "word_frequency": 9182
+  },
+  {
+    "word": "Wir müssen die Preise erhöhen.",
+    "definition": "We have to increase the prices.",
+    "word_frequency": 1530
+  },
+  {
+    "word": "Wir müssen die Produktion zurückfahren.",
+    "definition": "We have to reduce production.",
+    "word_frequency": 23630
+  },
+  {
+    "word": "Wir müssen die Qualität prüfen.",
+    "definition": "We have to check the quality.",
+    "word_frequency": 1980
+  },
+  {
+    "word": "Wir müssen die Regeln einhalten.",
+    "definition": "We must comply with the rules.",
+    "word_frequency": 5171
+  },
+  {
+    "word": "Wir müssen die Schüler langsam an das Thema heranführen.",
+    "definition": "We need to slowly introduce the students to the topic.",
+    "word_frequency": 27901
+  },
+  {
+    "word": "Wir müssen die Situation regeln.",
+    "definition": "We need to regulate the situation.",
+    "word_frequency": 3211
+  },
+  {
+    "word": "Wir müssen die Straße queren.",
+    "definition": "We have to cross the street.",
+    "word_frequency": 28980
+  },
+  {
+    "word": "Wir müssen die Teile zusammenfügen.",
+    "definition": "We need to assemble the parts.",
+    "word_frequency": 23229
+  },
+  {
+    "word": "Wir müssen die Umwelt schützen.",
+    "definition": "We must protect the environment.",
+    "word_frequency": 1095
+  },
+  {
+    "word": "Wir müssen die Wand streichen.",
+    "definition": "We need to paint the wall.",
+    "word_frequency": 3769
+  },
+  {
+    "word": "Wir müssen die Waren im Lager einlagern.",
+    "definition": "We need to store the goods in the warehouse.",
+    "word_frequency": 17778
+  },
+  {
+    "word": "Wir müssen die Waren zum Hafen transportieren.",
+    "definition": "We need to transport the goods to the harbor.",
+    "word_frequency": 5319
+  },
+  {
+    "word": "Wir müssen die Wartezeit verkürzen.",
+    "definition": "We need to shorten the waiting time.",
+    "word_frequency": 11073
+  },
+  {
+    "word": "Wir müssen diese Angelegenheit klären.",
+    "definition": "We need to clarify this matter.",
+    "word_frequency": 2735
+  },
+  {
+    "word": "Wir müssen diese Dokumente archivieren.",
+    "definition": "We need to archive these documents.",
+    "word_frequency": 22542
+  },
+  {
+    "word": "Wir müssen diese Straße kreuzen.",
+    "definition": "We have to cross this street.",
+    "word_frequency": 9926
+  },
+  {
+    "word": "Wir müssen dieses Problem diskutieren.",
+    "definition": "We need to discuss this problem.",
+    "word_frequency": 1884
+  },
+  {
+    "word": "Wir müssen dorthin hingehen, wo die Musik spielt.",
+    "definition": "We have to go there where the music plays.",
+    "word_frequency": 6201
+  },
+  {
+    "word": "Wir müssen eilen, um den Zug noch zu erreichen.",
+    "definition": "We have to hurry to catch the train.",
+    "word_frequency": 10941
+  },
+  {
+    "word": "Wir müssen eine Besprechung abhalten.",
+    "definition": "We need to hold a meeting.",
+    "word_frequency": 5749
+  },
+  {
+    "word": "Wir müssen eine Entscheidung beschliessen.",
+    "definition": "We must make a decision.",
+    "word_frequency": 1926
+  },
+  {
+    "word": "Wir müssen eine neue Strategie entwickeln.",
+    "definition": "We need to develop a new strategy.",
+    "word_frequency": 758
+  },
+  {
+    "word": "Wir müssen einen Bericht erstellen.",
+    "definition": "We need to create a report.",
+    "word_frequency": 1809
+  },
+  {
+    "word": "Wir müssen einen Termin abmachen.",
+    "definition": "We need to agree on an appointment.",
+    "word_frequency": 25242
+  },
+  {
+    "word": "Wir müssen einen Termin vereinbaren.",
+    "definition": "We need to arrange an appointment.",
+    "word_frequency": 4211
+  },
+  {
+    "word": "Wir müssen eng zusammenarbeiten, um das Projekt abzuschließen.",
+    "definition": "We must work closely together to complete the project.",
+    "word_frequency": 6141
+  },
+  {
+    "word": "Wir müssen feststellen, was passiert ist.",
+    "definition": "We need to determine what happened.",
+    "word_frequency": 1843
+  },
+  {
+    "word": "Wir müssen früh aufbrechen.",
+    "definition": "We have to set off early.",
+    "word_frequency": 10567
+  },
+  {
+    "word": "Wir müssen hart arbeiten, um weiterzukommen.",
+    "definition": "We have to work hard to make progress.",
+    "word_frequency": 17364
+  },
+  {
+    "word": "Wir müssen heute voten gehen.",
+    "definition": "We have to go vote today.",
+    "word_frequency": 21797
+  },
+  {
+    "word": "Wir müssen jetzt loslegen, sonst schaffen wir es nicht.",
+    "definition": "We have to get started now, otherwise we won't make it.",
+    "word_frequency": 13735
+  },
+  {
+    "word": "Wir müssen jetzt reingehen, es wird kalt.",
+    "definition": "We have to go in now, it's getting cold.",
+    "word_frequency": 25540
+  },
+  {
+    "word": "Wir müssen junge Talente fördern.",
+    "definition": "We must foster young talents.",
+    "word_frequency": 2300
+  },
+  {
+    "word": "Wir müssen losen, wer anfängt.",
+    "definition": "We have to draw lots to see who starts.",
+    "word_frequency": 14878
+  },
+  {
+    "word": "Wir müssen mehr Vielfalt zulassen.",
+    "definition": "We must allow more diversity.",
+    "word_frequency": 3118
+  },
+  {
+    "word": "Wir müssen mit der Arbeit fortfahren.",
+    "definition": "We must continue with the work.",
+    "word_frequency": 19011
+  },
+  {
+    "word": "Wir müssen rasten, bevor wir weitergehen.",
+    "definition": "We need to rest before we continue.",
+    "word_frequency": 14451
+  },
+  {
+    "word": "Wir müssen sehen, wo wir heute Nacht unterkommen können.",
+    "definition": "We need to see where we can find accommodation tonight.",
+    "word_frequency": 23194
+  },
+  {
+    "word": "Wir müssen uns an die neuen Regeln anpassen.",
+    "definition": "We have to adapt to the new rules.",
+    "word_frequency": 3249
+  },
+  {
+    "word": "Wir müssen uns beim Fahren abwechseln.",
+    "definition": "We have to take turns driving.",
+    "word_frequency": 26480
+  },
+  {
+    "word": "Wir müssen uns jetzt verabschieden.",
+    "definition": "We have to say goodbye now.",
+    "word_frequency": 3993
+  },
+  {
+    "word": "Wir müssen unsere Anstrengungen verstärken.",
+    "definition": "We must strengthen our efforts.",
+    "word_frequency": 2280
+  },
+  {
+    "word": "Wir müssen unsere Kenntnisse erweitern.",
+    "definition": "We need to broaden our knowledge.",
+    "word_frequency": 2295
+  },
+  {
+    "word": "Wir müssen unsere Kräfte bündeln.",
+    "definition": "We need to pool our strengths.",
+    "word_frequency": 13881
+  },
+  {
+    "word": "Wir müssen unsere Leistung steigern.",
+    "definition": "We need to increase our performance.",
+    "word_frequency": 3767
+  },
+  {
+    "word": "Wir müssen unsere Mitarbeiter schulen.",
+    "definition": "We need to train our employees.",
+    "word_frequency": 22075
+  },
+  {
+    "word": "Wir müssen unsere Pläne abstimmen.",
+    "definition": "We need to coordinate our plans.",
+    "word_frequency": 4621
+  },
+  {
+    "word": "Wir müssen unsere Strategie verändern.",
+    "definition": "We need to change our strategy.",
+    "word_frequency": 1205
+  },
+  {
+    "word": "Wir müssen unsere Werte hochhalten.",
+    "definition": "We must uphold our values.",
+    "word_frequency": 28848
+  },
+  {
+    "word": "Wir müssen unseren Plastikverbrauch reduzieren.",
+    "definition": "We must reduce our plastic consumption.",
+    "word_frequency": 2271
+  },
+  {
+    "word": "Wir müssen versuchen, durchzukommen.",
+    "definition": "We have to try to get through.",
+    "word_frequency": 11688
+  },
+  {
+    "word": "Wir müssen Wasser aus dem Brunnen pumpen.",
+    "definition": "We have to pump water from the well.",
+    "word_frequency": 19342
+  },
+  {
+    "word": "Wir müssen weiterarbeiten, um das Projekt abzuschließen.",
+    "definition": "We must continue working to complete the project.",
+    "word_frequency": 19524
+  },
+  {
+    "word": "Wir radeln gerne am Wochenende.",
+    "definition": "We like to cycle on the weekend.",
+    "word_frequency": 16220
+  },
+  {
+    "word": "Wir sahen das Auto vorbeifahren.",
+    "definition": "We saw the car drive past.",
+    "word_frequency": 18573
+  },
+  {
+    "word": "Wir schlenderten gemütlich durch den Park.",
+    "definition": "We strolled leisurely through the park.",
+    "word_frequency": 25985
+  },
+  {
+    "word": "Wir schmücken den Weihnachtsbaum.",
+    "definition": "We are decorating the Christmas tree.",
+    "word_frequency": 9106
+  },
+  {
+    "word": "Wir sollten das Zimmer lüften.",
+    "definition": "We should air out the room.",
+    "word_frequency": 11546
+  },
+  {
+    "word": "Wir sollten Fehler vermeiden.",
+    "definition": "We should avoid mistakes.",
+    "word_frequency": 1682
+  },
+  {
+    "word": "Wir sollten gute Arbeit belohnen.",
+    "definition": "We should reward good work.",
+    "word_frequency": 5345
+  },
+  {
+    "word": "Wir sollten kein Wasser verschwenden.",
+    "definition": "We should not waste water.",
+    "word_frequency": 8590
+  },
+  {
+    "word": "Wir sollten keine Zeit vergeuden.",
+    "definition": "We should not waste any time.",
+    "word_frequency": 28144
+  },
+  {
+    "word": "Wir sollten kurz pausieren und etwas trinken.",
+    "definition": "We should pause briefly and drink something.",
+    "word_frequency": 17599
+  },
+  {
+    "word": "Wir sollten nächste Woche zusammenkommen.",
+    "definition": "We should come together next week.",
+    "word_frequency": 13172
+  },
+  {
+    "word": "Wir sollten uns gegenseitig ermutigen.",
+    "definition": "We should encourage each other.",
+    "word_frequency": 15332
+  },
+  {
+    "word": "Wir sollten uns zusammentun, um das Projekt zu beenden.",
+    "definition": "We should team up to finish the project.",
+    "word_frequency": 26089
+  },
+  {
+    "word": "Wir sollten unser Geld zusammenlegen, um das Geschenk zu kaufen.",
+    "definition": "We should pool our money to buy the gift.",
+    "word_frequency": 19212
+  },
+  {
+    "word": "Wir verbrauchen viel Energie.",
+    "definition": "We consume a lot of energy.",
+    "word_frequency": 5731
+  },
+  {
+    "word": "Wir werden heute Abend im Restaurant speisen.",
+    "definition": "We will dine at the restaurant tonight.",
+    "word_frequency": 16389
+  },
+  {
+    "word": "Wir werden morgen aufs Land ausfahren.",
+    "definition": "We will drive out to the countryside tomorrow.",
+    "word_frequency": 26903
+  },
+  {
+    "word": "Wir werden Tickets für das Konzert verlosen.",
+    "definition": "We will raffle tickets for the concert.",
+    "word_frequency": 14494
+  },
+  {
+    "word": "Wir wollen am Wochenende segeln gehen.",
+    "definition": "We want to go sailing on the weekend.",
+    "word_frequency": 6689
+  },
+  {
+    "word": "Wir wollen das alte Schloss originalgetreu nachbauen.",
+    "definition": "We want to reconstruct the old castle true to the original.",
+    "word_frequency": 28467
+  },
+  {
+    "word": "Wir wollen das Zimmer dekorieren.",
+    "definition": "We want to decorate the room.",
+    "word_frequency": 15044
+  },
+  {
+    "word": "Wir wollen den Berg besteigen.",
+    "definition": "We want to climb the mountain.",
+    "word_frequency": 15284
+  },
+  {
+    "word": "Wir wollen den Film heute Abend streamen.",
+    "definition": "We want to stream the movie tonight.",
+    "word_frequency": 10343
+  },
+  {
+    "word": "Wir wollen den Kuchen verzieren.",
+    "definition": "We want to decorate the cake.",
+    "word_frequency": 10544
+  },
+  {
+    "word": "Wir wollen die Gegend erkunden.",
+    "definition": "We want to explore the area.",
+    "word_frequency": 7947
+  },
+  {
+    "word": "Wir wollen die Kinder zu Weihnachten beschenken.",
+    "definition": "We want to give presents to the children for Christmas.",
+    "word_frequency": 20515
+  },
+  {
+    "word": "Wir wollen eine Wohnung anmieten.",
+    "definition": "We want to rent an apartment.",
+    "word_frequency": 26895
+  },
+  {
+    "word": "Wir wollen Gemüse im Garten anbauen.",
+    "definition": "We want to grow vegetables in the garden.",
+    "word_frequency": 8778
+  },
+  {
+    "word": "Wir wollen uns an dem Projekt beteiligen.",
+    "definition": "We want to participate in the project.",
+    "word_frequency": 1468
+  },
+  {
+    "word": "Wir wollen uns ein neues Auto anschaffen.",
+    "definition": "We want to buy a new car.",
+    "word_frequency": 12075
+  },
+  {
+    "word": "Wir wollen unser Haus umbauen.",
+    "definition": "We want to rebuild our house.",
+    "word_frequency": 6595
+  },
+  {
+    "word": "Wissenschaftler forschen an neuen Medikamenten.",
+    "definition": "Scientists research new medicines.",
+    "word_frequency": 10437
+  }
+]

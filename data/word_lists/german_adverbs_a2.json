@@ -1,0 +1,498 @@
+[
+  {
+    "word": "aufjedenfall",
+    "definition": [
+      "in any case;definitely",
+      "Aufjedenfall müssen wir das noch besprechen. — In any case, we still need to discuss that."
+    ],
+    "word_frequency": 18022
+  },
+  {
+    "word": "aussen",
+    "definition": [
+      "outside",
+      "Wir warten aussen. — We are waiting outside."
+    ],
+    "word_frequency": 1133
+  },
+  {
+    "word": "bereits",
+    "definition": [
+      "already",
+      "Ich habe das bereits getan. — I have already done that."
+    ],
+    "word_frequency": 134
+  },
+  {
+    "word": "bissi",
+    "definition": [
+      "a little bit (colloquial)",
+      "Kannst du mir bissi helfen? — Can you help me a little bit?"
+    ],
+    "word_frequency": 23288
+  },
+  {
+    "word": "daheim",
+    "definition": [
+      "at home",
+      "Ich fühle mich daheim am wohlsten. — I feel most comfortable at home."
+    ],
+    "word_frequency": 2871
+  },
+  {
+    "word": "danach",
+    "definition": [
+      "afterwards",
+      "Wir haben gegessen, und danach sind wir ins Kino gegangen. — We ate, and afterwards we went to the cinema."
+    ],
+    "word_frequency": 299
+  },
+  {
+    "word": "daneben",
+    "definition": [
+      "next to it;beside it;wrong",
+      "Der Ball ging daneben. — The ball went wide."
+    ],
+    "word_frequency": 1501
+  },
+  {
+    "word": "daran",
+    "definition": [
+      "on it;about it",
+      "Ich denke oft daran. — I often think about it."
+    ],
+    "word_frequency": 258
+  },
+  {
+    "word": "davor",
+    "definition": [
+      "before that;in front of it",
+      "Er stand davor und wartete. — He stood in front of it and waited."
+    ],
+    "word_frequency": 1257
+  },
+  {
+    "word": "deshalb",
+    "definition": [
+      "therefore",
+      "Es regnet, deshalb bleibe ich zu Hause. — It's raining, therefore I'm staying home."
+    ],
+    "word_frequency": 242
+  },
+  {
+    "word": "deswegen",
+    "definition": [
+      "therefore;that's why",
+      "Es regnet, deswegen bleiben wir zu Hause. — It's raining, that's why we are staying at home."
+    ],
+    "word_frequency": 638
+  },
+  {
+    "word": "diesmal",
+    "definition": [
+      "this time",
+      "Diesmal wird alles anders sein. — This time everything will be different."
+    ],
+    "word_frequency": 1110
+  },
+  {
+    "word": "dorthin",
+    "definition": [
+      "there (to that place)",
+      "Wir müssen dorthin gehen. — We have to go there."
+    ],
+    "word_frequency": 2924
+  },
+  {
+    "word": "draussen",
+    "definition": [
+      "outside",
+      "Es ist kalt draussen. — It is cold outside."
+    ],
+    "word_frequency": 929
+  },
+  {
+    "word": "drin",
+    "definition": [
+      "inside (informal)",
+      "Ist noch Kaffee drin? — Is there still coffee inside?"
+    ],
+    "word_frequency": 822
+  },
+  {
+    "word": "drinnen",
+    "definition": [
+      "inside;indoors",
+      "Es ist kalt draußen, bleiben wir drinnen. — It's cold outside, let's stay inside."
+    ],
+    "word_frequency": 3798
+  },
+  {
+    "word": "drüben",
+    "definition": [
+      "over there;across the way",
+      "Mein Freund wohnt drüben auf der anderen Straßenseite. — My friend lives over there on the other side of the street."
+    ],
+    "word_frequency": 5357
+  },
+  {
+    "word": "ebenfalls",
+    "definition": [
+      "likewise",
+      "Ich komme ebenfalls mit. — I'm coming along likewise."
+    ],
+    "word_frequency": 280
+  },
+  {
+    "word": "eigentlich",
+    "definition": [
+      "actually;really",
+      "Was machst du eigentlich? — What are you actually doing?"
+    ],
+    "word_frequency": 166
+  },
+  {
+    "word": "endlich",
+    "definition": [
+      "finally",
+      "Endlich ist das Wochenende da! — Finally, the weekend is here!"
+    ],
+    "word_frequency": 307
+  },
+  {
+    "word": "erst",
+    "definition": [
+      "first;only (not until)",
+      "Ich komme erst um fünf Uhr. — I'm not coming until five o'clock."
+    ],
+    "word_frequency": 112
+  },
+  {
+    "word": "erstmal",
+    "definition": [
+      "first (of all);for now",
+      "Lass uns erstmal einen Kaffee trinken. — Let's have a coffee first."
+    ],
+    "word_frequency": 870
+  },
+  {
+    "word": "genauso",
+    "definition": [
+      "exactly the same",
+      "Er ist genauso groß wie ich. — He is just as tall as me."
+    ],
+    "word_frequency": 696
+  },
+  {
+    "word": "herum",
+    "definition": [
+      "around",
+      "Die Kinder spielen im Garten herum. — The children are playing around in the garden."
+    ],
+    "word_frequency": 1191
+  },
+  {
+    "word": "hierher",
+    "definition": [
+      "here (to this place)",
+      "Komm bitte hierher! — Please come here!"
+    ],
+    "word_frequency": 3668
+  },
+  {
+    "word": "hierhin",
+    "definition": [
+      "here (to this place)",
+      "Bitte kommen Sie hierhin. — Please come here."
+    ],
+    "word_frequency": 16160
+  },
+  {
+    "word": "hin",
+    "definition": [
+      "there (to a place away)",
+      "Geh bitte hin und hol es. — Please go there and get it."
+    ],
+    "word_frequency": 222
+  },
+  {
+    "word": "hoffentlich",
+    "definition": [
+      "hopefully",
+      "Hoffentlich scheint morgen die Sonne. — Hopefully the sun will shine tomorrow."
+    ],
+    "word_frequency": 1115
+  },
+  {
+    "word": "innen",
+    "definition": [
+      "inside",
+      "Es ist kalt draußen, aber warm innen. — It's cold outside, but warm inside."
+    ],
+    "word_frequency": 1147
+  },
+  {
+    "word": "irgendwo",
+    "definition": [
+      "somewhere;anywhere",
+      "Ich habe meine Schlüssel irgendwo verloren. — I lost my keys somewhere."
+    ],
+    "word_frequency": 978
+  },
+  {
+    "word": "jemals",
+    "definition": [
+      "ever",
+      "Hast du jemals einen Elefanten gesehen? — Have you ever seen an elephant?"
+    ],
+    "word_frequency": 1600
+  },
+  {
+    "word": "leider",
+    "definition": [
+      "unfortunately",
+      "Leider kann ich nicht kommen. — Unfortunately, I cannot come."
+    ],
+    "word_frequency": 248
+  },
+  {
+    "word": "manchmal",
+    "definition": [
+      "sometimes",
+      "Manchmal regnet es im Sommer. — Sometimes it rains in summer."
+    ],
+    "word_frequency": 399
+  },
+  {
+    "word": "meistens",
+    "definition": [
+      "mostly;usually",
+      "Meistens trinke ich Kaffee am Morgen. — Mostly, I drink coffee in the morning."
+    ],
+    "word_frequency": 1383
+  },
+  {
+    "word": "mittwochs",
+    "definition": [
+      "on Wednesdays",
+      "Wir treffen uns mittwochs im Café. — We meet on Wednesdays at the café."
+    ],
+    "word_frequency": 11748
+  },
+  {
+    "word": "nachher",
+    "definition": [
+      "afterwards",
+      "Wir können nachher darüber sprechen. — We can talk about it afterwards."
+    ],
+    "word_frequency": 2314
+  },
+  {
+    "word": "nochmal",
+    "definition": [
+      "again;once more",
+      "Können Sie das bitte nochmal sagen? — Can you please say that again?"
+    ],
+    "word_frequency": 611
+  },
+  {
+    "word": "normalerweise",
+    "definition": [
+      "normally;usually",
+      "Normalerweise stehe ich um sieben Uhr auf. — Normally, I get up at seven o'clock."
+    ],
+    "word_frequency": 1817
+  },
+  {
+    "word": "plötzlich",
+    "definition": [
+      "suddenly",
+      "Plötzlich fing es an zu regnen. — Suddenly, it started to rain."
+    ],
+    "word_frequency": 614
+  },
+  {
+    "word": "rauf",
+    "definition": [
+      "up (colloquial)",
+      "Komm mal rauf! — Come up!"
+    ],
+    "word_frequency": 6808
+  },
+  {
+    "word": "raus",
+    "definition": [
+      "out;outside",
+      "Komm raus! — Come out!"
+    ],
+    "word_frequency": 400
+  },
+  {
+    "word": "runter",
+    "definition": [
+      "down;downwards",
+      "Geh bitte die Treppe runter. — Please go down the stairs."
+    ],
+    "word_frequency": 1387
+  },
+  {
+    "word": "rüber",
+    "definition": [
+      "over (here;there)",
+      "Komm mal rüber! — Come over here!"
+    ],
+    "word_frequency": 3633
+  },
+  {
+    "word": "schonmal",
+    "definition": [
+      "already once;ever",
+      "Warst du schonmal in Berlin? — Have you ever been to Berlin?"
+    ],
+    "word_frequency": 3637
+  },
+  {
+    "word": "sofort",
+    "definition": [
+      "immediately",
+      "Ich komme sofort. — I'm coming immediately."
+    ],
+    "word_frequency": 295
+  },
+  {
+    "word": "sogar",
+    "definition": [
+      "even",
+      "Er kann sogar Deutsch sprechen. — He can even speak German."
+    ],
+    "word_frequency": 191
+  },
+  {
+    "word": "sonntags",
+    "definition": [
+      "on Sundays",
+      "Sonntags schlafe ich lange. — On Sundays, I sleep long."
+    ],
+    "word_frequency": 4938
+  },
+  {
+    "word": "ungefähr",
+    "definition": [
+      "approximately;about",
+      "Es sind ungefähr zehn Minuten zu Fuß. — It's about ten minutes on foot."
+    ],
+    "word_frequency": 1225
+  },
+  {
+    "word": "ungern",
+    "definition": [
+      "reluctantly;unwillingly",
+      "Ich gehe ungern früh ins Bett. — I reluctantly go to bed early."
+    ],
+    "word_frequency": 5616
+  },
+  {
+    "word": "unterwegs",
+    "definition": [
+      "on the way;en route",
+      "Wir sind noch unterwegs. — We are still on the way."
+    ],
+    "word_frequency": 671
+  },
+  {
+    "word": "viermal",
+    "definition": [
+      "four times",
+      "Ich habe ihn viermal angerufen. — I called him four times."
+    ],
+    "word_frequency": 6964
+  },
+  {
+    "word": "vorbei",
+    "definition": [
+      "past;over;by",
+      "Der Zug fuhr am Bahnhof vorbei. — The train drove past the station."
+    ],
+    "word_frequency": 455
+  },
+  {
+    "word": "vorgestern",
+    "definition": [
+      "the day before yesterday",
+      "Ich habe ihn vorgestern getroffen. — I met him the day before yesterday."
+    ],
+    "word_frequency": 9185
+  },
+  {
+    "word": "vormittags",
+    "definition": [
+      "in the morning;before noon",
+      "Ich arbeite vormittags. — I work in the morning."
+    ],
+    "word_frequency": 10195
+  },
+  {
+    "word": "vorn",
+    "definition": [
+      "in front",
+      "Er sitzt ganz vorn im Bus. — He sits right at the front of the bus."
+    ],
+    "word_frequency": 2135
+  },
+  {
+    "word": "vorne",
+    "definition": [
+      "in front",
+      "Er sitzt ganz vorne. — He sits right at the front."
+    ],
+    "word_frequency": 1158
+  },
+  {
+    "word": "vorwärts",
+    "definition": [
+      "forward;onwards",
+      "Gehen Sie bitte vorwärts. — Please go forward."
+    ],
+    "word_frequency": 3998
+  },
+  {
+    "word": "wieso",
+    "definition": [
+      "why;how come",
+      "Wieso bist du so spät? — Why are you so late?"
+    ],
+    "word_frequency": 430
+  },
+  {
+    "word": "wirklich",
+    "definition": [
+      "really;truly",
+      "Das ist wirklich schön. — That is really beautiful."
+    ],
+    "word_frequency": 117
+  },
+  {
+    "word": "ziemlich",
+    "definition": [
+      "quite;rather;pretty",
+      "Das Wetter ist heute ziemlich gut. — The weather is quite good today."
+    ],
+    "word_frequency": 416
+  },
+  {
+    "word": "zuwenig",
+    "definition": [
+      "too little;not enough",
+      "Das ist zuwenig für alle. — That is too little for everyone."
+    ],
+    "word_frequency": 20179
+  },
+  {
+    "word": "übermorgen",
+    "definition": [
+      "the day after tomorrow",
+      "Wir fahren übermorgen in den Urlaub. — We are going on vacation the day after tomorrow."
+    ],
+    "word_frequency": 9675
+  }
+]

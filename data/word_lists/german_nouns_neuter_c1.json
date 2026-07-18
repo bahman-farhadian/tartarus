@@ -1,0 +1,2810 @@
+[
+  {
+    "word": "das Aas",
+    "definition": [
+      "carrion;scum",
+      "Der Geier kreiste über dem Aas. — The vulture circled above the carrion."
+    ],
+    "word_frequency": 20184
+  },
+  {
+    "word": "das Abbild",
+    "definition": [
+      "image;copy;reflection",
+      "Das Foto ist ein Abbild der Realität. — The photo is a reflection of reality."
+    ],
+    "word_frequency": 13179
+  },
+  {
+    "word": "das Abendland",
+    "definition": [
+      "Occident;Western world",
+      "Die Geschichte des Abendlandes ist komplex. — The history of the Occident is complex."
+    ],
+    "word_frequency": 16302
+  },
+  {
+    "word": "das Abgeordnetenhaus",
+    "definition": [
+      "house of representatives",
+      "Das Abgeordnetenhaus tagt heute. — The House of Representatives is meeting today."
+    ],
+    "word_frequency": 10382
+  },
+  {
+    "word": "das Adrenalin",
+    "definition": [
+      "adrenaline",
+      "Bei Gefahr schüttet der Körper Adrenalin aus. — In danger, the body releases adrenaline."
+    ],
+    "word_frequency": 12071
+  },
+  {
+    "word": "das Ais",
+    "definition": [
+      "A-sharp (musical note)",
+      "Der Geiger spielte ein klares Ais. — The violinist played a clear A-sharp."
+    ],
+    "word_frequency": 23251
+  },
+  {
+    "word": "das Alleinstellungsmerkmal",
+    "definition": [
+      "unique selling proposition (USP)",
+      "Das Produkt hat ein klares Alleinstellungsmerkmal. — The product has a clear unique selling proposition."
+    ],
+    "word_frequency": 19543
+  },
+  {
+    "word": "das Amtsblatt",
+    "definition": [
+      "official gazette",
+      "Die Bekanntmachung wurde im Amtsblatt veröffentlicht. — The announcement was published in the official gazette."
+    ],
+    "word_frequency": 17139
+  },
+  {
+    "word": "das Angesicht",
+    "definition": [
+      "face;countenance",
+      "Im Angesicht der Gefahr blieb er ruhig. — In the face of danger, he remained calm."
+    ],
+    "word_frequency": 8054
+  },
+  {
+    "word": "das Anhängsel",
+    "definition": [
+      "appendage",
+      "Das kleine Anhängsel am Ende des Dokuments war wichtig. — The small appendage at the end of the document was important."
+    ],
+    "word_frequency": 28689
+  },
+  {
+    "word": "das Ansinnen",
+    "definition": [
+      "request;demand;proposition",
+      "Sein Ansinnen wurde abgelehnt. — His request was rejected."
+    ],
+    "word_frequency": 21832
+  },
+  {
+    "word": "das Antidepressivum",
+    "definition": [
+      "antidepressant",
+      "Sie nimmt ein Antidepressivum. — She takes an antidepressant."
+    ],
+    "word_frequency": 17717
+  },
+  {
+    "word": "das Antlitz",
+    "definition": [
+      "countenance;face (archaic;poetic)",
+      "Sein Antlitz war von Sorge gezeichnet. — His countenance was marked by worry."
+    ],
+    "word_frequency": 16312
+  },
+  {
+    "word": "das Arbeitsgericht",
+    "definition": [
+      "labor court",
+      "Der Fall wurde vor dem Arbeitsgericht verhandelt. — The case was heard before the labor court."
+    ],
+    "word_frequency": 20837
+  },
+  {
+    "word": "das Arbeitslager",
+    "definition": [
+      "labor camp",
+      "Viele Menschen litten in Arbeitslagern. — Many people suffered in labor camps."
+    ],
+    "word_frequency": 22176
+  },
+  {
+    "word": "das Arbeitsrecht",
+    "definition": [
+      "labor law;employment law",
+      "Sie studiert Arbeitsrecht an der Universität. — She studies labor law at the university."
+    ],
+    "word_frequency": 10731
+  },
+  {
+    "word": "das Armeekorps",
+    "definition": [
+      "army corps",
+      "Das Armeekorps wurde an die Front verlegt. — The army corps was moved to the front."
+    ],
+    "word_frequency": 29646
+  },
+  {
+    "word": "das Armutszeugnis",
+    "definition": [
+      "damning indictment;poor showing",
+      "Das schlechte Ergebnis ist ein Armutszeugnis für die ganze Abteilung. — The poor result is a damning indictment for the whole department."
+    ],
+    "word_frequency": 19239
+  },
+  {
+    "word": "das Asset",
+    "definition": [
+      "asset",
+      "Das Unternehmen verfügt über viele digitale Assets. — The company possesses many digital assets."
+    ],
+    "word_frequency": 16083
+  },
+  {
+    "word": "das Asylrecht",
+    "definition": [
+      "asylum law;right to asylum",
+      "Das Asylrecht ist ein wichtiges Thema. — Asylum law is an important topic."
+    ],
+    "word_frequency": 22912
+  },
+  {
+    "word": "das Asylverfahren",
+    "definition": [
+      "asylum procedure",
+      "Das Asylverfahren kann sehr lange dauern. — The asylum procedure can take a very long time."
+    ],
+    "word_frequency": 19869
+  },
+  {
+    "word": "das Attribut",
+    "definition": [
+      "attribute",
+      "Das Attribut beschreibt eine Eigenschaft. — The attribute describes a characteristic."
+    ],
+    "word_frequency": 14311
+  },
+  {
+    "word": "das Aufgebot",
+    "definition": [
+      "contingent;summons;turnout",
+      "Ein großes Aufgebot an Polizei war vor Ort. — A large contingent of police was on site."
+    ],
+    "word_frequency": 10038
+  },
+  {
+    "word": "das Augenmass",
+    "definition": [
+      "judgment;sense of proportion",
+      "Man braucht Augenmass, um diese Situation richtig einzuschätzen. — One needs good judgment to assess this situation correctly."
+    ],
+    "word_frequency": 25271
+  },
+  {
+    "word": "das Augenmerk",
+    "definition": [
+      "focus;attention",
+      "Das Augenmerk liegt auf der Qualität. — The focus is on quality."
+    ],
+    "word_frequency": 9694
+  },
+  {
+    "word": "das Aushängeschild",
+    "definition": [
+      "figurehead;showpiece;signboard",
+      "Das Museum ist das Aushängeschild der Stadt. — The museum is the showpiece of the city."
+    ],
+    "word_frequency": 18626
+  },
+  {
+    "word": "das Ausmass",
+    "definition": [
+      "extent;scope;scale",
+      "Das Ausmass des Schadens war enorm. — The extent of the damage was enormous."
+    ],
+    "word_frequency": 3926
+  },
+  {
+    "word": "das Bashing",
+    "definition": [
+      "bashing;denigration",
+      "Das Bashing in den sozialen Medien ist oft unfair. — The bashing on social media is often unfair."
+    ],
+    "word_frequency": 15274
+  },
+  {
+    "word": "das Bataillon",
+    "definition": [
+      "battalion",
+      "Das Bataillon marschierte durch die Stadt. — The battalion marched through the city."
+    ],
+    "word_frequency": 11660
+  },
+  {
+    "word": "das Baurecht",
+    "definition": [
+      "building law",
+      "Das Baurecht ist in dieser Region sehr streng. — The building law is very strict in this region."
+    ],
+    "word_frequency": 20848
+  },
+  {
+    "word": "das Bekenntnis",
+    "definition": [
+      "confession;commitment;creed",
+      "Er legte ein umfassendes Bekenntnis ab. — He made a comprehensive confession."
+    ],
+    "word_frequency": 6738
+  },
+  {
+    "word": "das Berufsverbot",
+    "definition": [
+      "professional ban;occupational ban",
+      "Er erhielt ein Berufsverbot wegen Fehlverhaltens. — He received a professional ban due to misconduct."
+    ],
+    "word_frequency": 26138
+  },
+  {
+    "word": "das Berufungsgericht",
+    "definition": [
+      "court of appeal",
+      "Der Fall ging vor das Berufungsgericht. — The case went before the court of appeal."
+    ],
+    "word_frequency": 21852
+  },
+  {
+    "word": "das Besatzungsmitglied",
+    "definition": [
+      "crew member",
+      "Jedes Besatzungsmitglied hat eine wichtige Aufgabe. — Every crew member has an important task."
+    ],
+    "word_frequency": 29192
+  },
+  {
+    "word": "das Bestreben",
+    "definition": [
+      "endeavor",
+      "Sein Bestreben war es, die Welt zu verbessern. — His endeavor was to improve the world."
+    ],
+    "word_frequency": 13212
+  },
+  {
+    "word": "das Betäubungsmittel",
+    "definition": [
+      "anesthetic;narcotic",
+      "Der Arzt verabreichte ein Betäubungsmittel. — The doctor administered an anesthetic."
+    ],
+    "word_frequency": 24071
+  },
+  {
+    "word": "das Bevölkerungswachstum",
+    "definition": [
+      "population growth",
+      "Das Bevölkerungswachstum stellt eine Herausforderung dar. — Population growth poses a challenge."
+    ],
+    "word_frequency": 20223
+  },
+  {
+    "word": "das Beweismittel",
+    "definition": [
+      "evidence;exhibit",
+      "Das Beweismittel wurde vor Gericht vorgelegt. — The evidence was presented in court."
+    ],
+    "word_frequency": 13646
+  },
+  {
+    "word": "das Bezirksgericht",
+    "definition": [
+      "district court",
+      "Der Fall wird vor dem Bezirksgericht verhandelt. — The case will be heard before the district court."
+    ],
+    "word_frequency": 27375
+  },
+  {
+    "word": "das Bildnis",
+    "definition": [
+      "portrait;image",
+      "Das alte Bildnis hing im Flur. — The old portrait hung in the hallway."
+    ],
+    "word_frequency": 15823
+  },
+  {
+    "word": "das Bildungswesen",
+    "definition": [
+      "education system",
+      "Das Bildungswesen in Deutschland ist komplex. — The education system in Germany is complex."
+    ],
+    "word_frequency": 21185
+  },
+  {
+    "word": "das Bindegewebe",
+    "definition": [
+      "connective tissue",
+      "Das Bindegewebe stützt und verbindet Organe. — Connective tissue supports and connects organs."
+    ],
+    "word_frequency": 24874
+  },
+  {
+    "word": "das Bindeglied",
+    "definition": [
+      "connecting link",
+      "Er fungiert als Bindeglied zwischen den Abteilungen. — He acts as a connecting link between the departments."
+    ],
+    "word_frequency": 19267
+  },
+  {
+    "word": "das Biotop",
+    "definition": [
+      "biotope",
+      "Ein Biotop ist ein Lebensraum für bestimmte Pflanzen und Tiere. — A biotope is a habitat for specific plants and animals."
+    ],
+    "word_frequency": 24479
+  },
+  {
+    "word": "das Bistum",
+    "definition": [
+      "diocese;bishopric",
+      "Das Bistum umfasst mehrere Gemeinden. — The diocese includes several parishes."
+    ],
+    "word_frequency": 9708
+  },
+  {
+    "word": "das Bleiberecht",
+    "definition": [
+      "right of residence",
+      "Viele Flüchtlinge kämpfen um ihr Bleiberecht in Deutschland. — Many refugees are fighting for their right of residence in Germany."
+    ],
+    "word_frequency": 23688
+  },
+  {
+    "word": "das Blutbad",
+    "definition": [
+      "bloodbath",
+      "Die Schlacht endete in einem Blutbad. — The battle ended in a bloodbath."
+    ],
+    "word_frequency": 19269
+  },
+  {
+    "word": "das Blutkörperchen",
+    "definition": [
+      "blood cell",
+      "Rote Blutkörperchen transportieren Sauerstoff im Körper. — Red blood cells transport oxygen in the body."
+    ],
+    "word_frequency": 22934
+  },
+  {
+    "word": "das Bollwerk",
+    "definition": [
+      "bulwark;stronghold",
+      "Die Stadt war ein Bollwerk gegen die Angreifer. — The city was a bulwark against the attackers."
+    ],
+    "word_frequency": 20229
+  },
+  {
+    "word": "das Bundesgesetz",
+    "definition": [
+      "federal law",
+      "Das neue Bundesgesetz tritt nächste Woche in Kraft. — The new federal law comes into effect next week."
+    ],
+    "word_frequency": 18326
+  },
+  {
+    "word": "das Bundeskanzleramt",
+    "definition": [
+      "Federal Chancellery",
+      "Das Bundeskanzleramt ist der Amtssitz des deutschen Bundeskanzlers. — The Federal Chancellery is the official seat of the German Chancellor."
+    ],
+    "word_frequency": 18648
+  },
+  {
+    "word": "das Bundesverdienstkreuz",
+    "definition": [
+      "Federal Cross of Merit",
+      "Er erhielt das Bundesverdienstkreuz für seine Verdienste. — He received the Federal Cross of Merit for his services."
+    ],
+    "word_frequency": 21869
+  },
+  {
+    "word": "das Bürgertum",
+    "definition": [
+      "bourgeoisie;middle class",
+      "Das Bürgertum spielte eine wichtige Rolle in der Geschichte. — The bourgeoisie played an important role in history."
+    ],
+    "word_frequency": 18959
+  },
+  {
+    "word": "das Charakteristikum",
+    "definition": [
+      "characteristic",
+      "Ein wichtiges Charakteristikum dieser Art ist ihre Anpassungsfähigkeit. — An important characteristic of this species is its adaptability."
+    ],
+    "word_frequency": 24492
+  },
+  {
+    "word": "das Control",
+    "definition": [
+      "control (e.g.;in technical contexts)",
+      "Das Control-Panel ist einfach zu bedienen. — The control panel is easy to operate."
+    ],
+    "word_frequency": 6512
+  },
+  {
+    "word": "das Creed",
+    "definition": [
+      "creed;belief",
+      "Sein persönliches Creed war die Ehrlichkeit. — His personal creed was honesty."
+    ],
+    "word_frequency": 15839
+  },
+  {
+    "word": "das Darknet",
+    "definition": [
+      "Darknet",
+      "Das Darknet ist ein Teil des Internets, der nicht öffentlich zugänglich ist. — The Darknet is a part of the internet that is not publicly accessible."
+    ],
+    "word_frequency": 21531
+  },
+  {
+    "word": "das Dasein",
+    "definition": [
+      "existence;being",
+      "Das menschliche Dasein ist komplex. — Human existence is complex."
+    ],
+    "word_frequency": 9076
+  },
+  {
+    "word": "das Demokratieverständnis",
+    "definition": [
+      "understanding of democracy",
+      "Sein Demokratieverständnis ist sehr ausgeprägt. — His understanding of democracy is very pronounced."
+    ],
+    "word_frequency": 29689
+  },
+  {
+    "word": "das Departement",
+    "definition": [
+      "department",
+      "Er arbeitet im Departement für Bildung. — He works in the department for education."
+    ],
+    "word_frequency": 16107
+  },
+  {
+    "word": "das Derivat",
+    "definition": [
+      "derivative",
+      "Ein Derivat ist ein Finanzinstrument. — A derivative is a financial instrument."
+    ],
+    "word_frequency": 18975
+  },
+  {
+    "word": "das Dickicht",
+    "definition": [
+      "thicket",
+      "Sie versteckten sich im dichten Dickicht. — They hid in the dense thicket."
+    ],
+    "word_frequency": 28764
+  },
+  {
+    "word": "das Dienstleistungsunternehmen",
+    "definition": [
+      "service company",
+      "Er arbeitet für ein großes Dienstleistungsunternehmen. — He works for a large service company."
+    ],
+    "word_frequency": 27812
+  },
+  {
+    "word": "das Direktmandat",
+    "definition": [
+      "direct mandate",
+      "Er gewann das Direktmandat in seinem Wahlkreis. — He won the direct mandate in his constituency."
+    ],
+    "word_frequency": 24510
+  },
+  {
+    "word": "das Dis",
+    "definition": [
+      "D sharp (musical note)",
+      "Der Geiger spielte ein hohes Dis. — The violinist played a high D sharp."
+    ],
+    "word_frequency": 13228
+  },
+  {
+    "word": "das Dogma",
+    "definition": [
+      "dogma",
+      "Er hinterfragte das Dogma der Partei. — He questioned the dogma of the party."
+    ],
+    "word_frequency": 17771
+  },
+  {
+    "word": "das Domizil",
+    "definition": [
+      "domicile;residence",
+      "Sein Domizil ist in der Schweiz. — His domicile is in Switzerland."
+    ],
+    "word_frequency": 21205
+  },
+  {
+    "word": "das Doom",
+    "definition": [
+      "doom",
+      "Das Schicksal besiegelte ihr Doom. — Fate sealed her doom."
+    ],
+    "word_frequency": 15311
+  },
+  {
+    "word": "das Drehmoment",
+    "definition": [
+      "torque",
+      "Das Drehmoment des Motors ist sehr hoch. — The engine's torque is very high."
+    ],
+    "word_frequency": 13229
+  },
+  {
+    "word": "das Druckmittel",
+    "definition": [
+      "leverage",
+      "Die Verhandlungen erforderten ein starkes Druckmittel. — The negotiations required strong leverage."
+    ],
+    "word_frequency": 18055
+  },
+  {
+    "word": "das Durchhaltevermögen",
+    "definition": [
+      "perseverance",
+      "Für diesen Marathon braucht man viel Durchhaltevermögen. — For this marathon, one needs a lot of perseverance."
+    ],
+    "word_frequency": 20251
+  },
+  {
+    "word": "das Eckdatum",
+    "definition": [
+      "key date;milestone date",
+      "Das Eckdatum für die Fertigstellung des Projekts ist der 31. Dezember. — The key date for the project's completion is December 31st."
+    ],
+    "word_frequency": 27822
+  },
+  {
+    "word": "das Ehrenmal",
+    "definition": [
+      "memorial",
+      "Das Ehrenmal erinnert an die gefallenen Soldaten. — The memorial commemorates the fallen soldiers."
+    ],
+    "word_frequency": 26564
+  },
+  {
+    "word": "das Eigenkapital",
+    "definition": [
+      "equity",
+      "Das Unternehmen hat sein Eigenkapital erhöht. — The company has increased its equity."
+    ],
+    "word_frequency": 11316
+  },
+  {
+    "word": "das Eingeweide",
+    "definition": [
+      "entrails;guts",
+      "Die Eingeweide des Tieres wurden entfernt. — The animal's entrails were removed."
+    ],
+    "word_frequency": 24113
+  },
+  {
+    "word": "das Einsatzgebiet",
+    "definition": [
+      "area of application;field of operation",
+      "Das neue Produkt hat ein breites Einsatzgebiet. — The new product has a wide area of application."
+    ],
+    "word_frequency": 23732
+  },
+  {
+    "word": "das Einvernehmen",
+    "definition": [
+      "agreement",
+      "Sie erreichten ein Einvernehmen über die Bedingungen. — They reached an agreement on the terms."
+    ],
+    "word_frequency": 11886
+  },
+  {
+    "word": "das Elend",
+    "definition": [
+      "misery;wretchedness",
+      "Viele Menschen leben in großem Elend. — Many people live in great misery."
+    ],
+    "word_frequency": 5173
+  },
+  {
+    "word": "das Endlager",
+    "definition": [
+      "final repository",
+      "Die Suche nach einem sicheren Endlager ist eine große Herausforderung. — The search for a safe final repository is a big challenge."
+    ],
+    "word_frequency": 26978
+  },
+  {
+    "word": "das Enzym",
+    "definition": [
+      "enzyme",
+      "Enzyme spielen eine wichtige Rolle im Stoffwechsel. — Enzymes play an important role in metabolism."
+    ],
+    "word_frequency": 18995
+  },
+  {
+    "word": "das Epos",
+    "definition": [
+      "epic;epic poem",
+      "Das Gilgamesch-Epos ist eines der ältesten literarischen Werke. — The Epic of Gilgamesh is one of the oldest literary works."
+    ],
+    "word_frequency": 14815
+  },
+  {
+    "word": "das Erbarmen",
+    "definition": [
+      "mercy;pity",
+      "Er hatte kein Erbarmen mit seinen Feinden. — He had no mercy on his enemies."
+    ],
+    "word_frequency": 16908
+  },
+  {
+    "word": "das Erbgut",
+    "definition": [
+      "genetic material;genome",
+      "Das Erbgut enthält alle Informationen für die Entwicklung eines Organismus. — The genetic material contains all information for the development of an organism."
+    ],
+    "word_frequency": 21552
+  },
+  {
+    "word": "das Erbrecht",
+    "definition": [
+      "inheritance law",
+      "Das Erbrecht regelt die Verteilung des Vermögens nach dem Tod. — Inheritance law regulates the distribution of assets after death."
+    ],
+    "word_frequency": 17207
+  },
+  {
+    "word": "das Erfordernis",
+    "definition": [
+      "requirement",
+      "Die Sicherheit ist ein grundlegendes Erfordernis. — Safety is a fundamental requirement."
+    ],
+    "word_frequency": 26572
+  },
+  {
+    "word": "das Ermittlungsverfahren",
+    "definition": [
+      "investigation procedure",
+      "Das Ermittlungsverfahren wurde eingestellt. — The investigation procedure was discontinued."
+    ],
+    "word_frequency": 15061
+  },
+  {
+    "word": "das Etablissement",
+    "definition": [
+      "establishment",
+      "Das Etablissement hatte eine lange Geschichte. — The establishment had a long history."
+    ],
+    "word_frequency": 29731
+  },
+  {
+    "word": "das Ethanol",
+    "definition": [
+      "ethanol",
+      "Ethanol wird oft als Lösungsmittel verwendet. — Ethanol is often used as a solvent."
+    ],
+    "word_frequency": 21554
+  },
+  {
+    "word": "das Exempel",
+    "definition": [
+      "example;instance",
+      "Er wollte ein Exempel statuieren. — He wanted to make an example."
+    ],
+    "word_frequency": 17799
+  },
+  {
+    "word": "das Existenzminimum",
+    "definition": [
+      "subsistence level;minimum living standard",
+      "Viele Menschen leben am Existenzminimum. — Many people live at the subsistence level."
+    ],
+    "word_frequency": 27416
+  },
+  {
+    "word": "das Fachwissen",
+    "definition": [
+      "specialized knowledge",
+      "Für diese Aufgabe ist spezielles Fachwissen erforderlich. — Specialized knowledge is required for this task."
+    ],
+    "word_frequency": 10953
+  },
+  {
+    "word": "das Fegefeuer",
+    "definition": [
+      "purgatory",
+      "Im Mittelalter glaubten viele Menschen an das Fegefeuer. — In the Middle Ages, many people believed in purgatory."
+    ],
+    "word_frequency": 26581
+  },
+  {
+    "word": "das Feindbild",
+    "definition": [
+      "enemy image;bogeyman",
+      "Das Feindbild wurde in der Propaganda aufgebaut. — The enemy image was built up in the propaganda."
+    ],
+    "word_frequency": 22274
+  },
+  {
+    "word": "das Feingefühl",
+    "definition": [
+      "sensitivity",
+      "Sie zeigte viel Feingefühl in der schwierigen Situation. — She showed a lot of sensitivity in the difficult situation."
+    ],
+    "word_frequency": 24952
+  },
+  {
+    "word": "das Fettnäpfchen",
+    "definition": [
+      "faux pas;blunder",
+      "Er ist ins Fettnäpfchen getreten. — He made a blunder."
+    ],
+    "word_frequency": 27850
+  },
+  {
+    "word": "das Feuilleton",
+    "definition": [
+      "cultural section (of a newspaper);feuilleton",
+      "Ich lese gerne das Feuilleton in der Sonntagszeitung. — I like to read the cultural section in the Sunday newspaper."
+    ],
+    "word_frequency": 16378
+  },
+  {
+    "word": "das Fingerspitzengefühl",
+    "definition": [
+      "intuition;tact;delicate touch",
+      "Für diese Aufgabe braucht man viel Fingerspitzengefühl. — This task requires a lot of intuition."
+    ],
+    "word_frequency": 24542
+  },
+  {
+    "word": "das Framing",
+    "definition": [
+      "framing",
+      "Das Framing der Nachrichten beeinflusst die öffentliche Meinung. — The framing of the news influences public opinion."
+    ],
+    "word_frequency": 25369
+  },
+  {
+    "word": "das Frauenrecht",
+    "definition": [
+      "women's right",
+      "Das Frauenrecht auf Bildung ist fundamental. — The women's right to education is fundamental."
+    ],
+    "word_frequency": 19328
+  },
+  {
+    "word": "das Freihandelsabkommen",
+    "definition": [
+      "free trade agreement",
+      "Das neue Freihandelsabkommen soll den Handel ankurbeln. — The new free trade agreement is intended to boost trade."
+    ],
+    "word_frequency": 10959
+  },
+  {
+    "word": "das Gebein",
+    "definition": [
+      "bones;remains",
+      "Archäologen entdeckten alte Gebeine in der Höhle. — Archaeologists discovered ancient remains in the cave."
+    ],
+    "word_frequency": 22643
+  },
+  {
+    "word": "das Gedankengut",
+    "definition": [
+      "body of thought;ideology",
+      "Das Gedankengut der Aufklärung prägte die Gesellschaft. — The body of thought of the Enlightenment shaped society."
+    ],
+    "word_frequency": 12137
+  },
+  {
+    "word": "das Gefecht",
+    "definition": [
+      "combat;skirmish;engagement",
+      "Sie lieferten sich ein heftiges Gefecht. — They engaged in a fierce combat."
+    ],
+    "word_frequency": 5975
+  },
+  {
+    "word": "das Gefieder",
+    "definition": [
+      "plumage;feathers",
+      "Das bunte Gefieder des Vogels war wunderschön. — The bird's colorful plumage was beautiful."
+    ],
+    "word_frequency": 28821
+  },
+  {
+    "word": "das Gefilde",
+    "definition": [
+      "fields;realms",
+      "Sie wanderten durch die grünen Gefilde. — They wandered through the green fields."
+    ],
+    "word_frequency": 28822
+  },
+  {
+    "word": "das Geflecht",
+    "definition": [
+      "braid",
+      "Das Geflecht aus Ästen war sehr dicht. — The intertwining of branches was very dense."
+    ],
+    "word_frequency": 25809
+  },
+  {
+    "word": "das Gefährt",
+    "definition": [
+      "vehicle;conveyance",
+      "Das alte Gefährt knarrte bei jeder Bewegung. — The old vehicle creaked with every movement."
+    ],
+    "word_frequency": 18383
+  },
+  {
+    "word": "das Gefüge",
+    "definition": [
+      "structure;framework",
+      "Das soziale Gefüge einer Gesellschaft ist komplex. — The social fabric of a society is complex."
+    ],
+    "word_frequency": 19635
+  },
+  {
+    "word": "das Geheiss",
+    "definition": [
+      "command;bidding;behest",
+      "Er handelte auf Geheiß seines Vorgesetzten. — He acted at the command of his superior."
+    ],
+    "word_frequency": 23016
+  },
+  {
+    "word": "das Gelübde",
+    "definition": [
+      "vow;pledge",
+      "Sie legte ein Gelübde ab. — She took a vow."
+    ],
+    "word_frequency": 18712
+  },
+  {
+    "word": "das Gemeinwesen",
+    "definition": [
+      "community",
+      "Ein starkes Gemeinwesen ist wichtig für die Gesellschaft. — A strong community is important for society."
+    ],
+    "word_frequency": 20928
+  },
+  {
+    "word": "das Gemeinwohl",
+    "definition": [
+      "common good;public welfare",
+      "Die Regierung sollte sich für das Gemeinwohl einsetzen. — The government should advocate for the common good."
+    ],
+    "word_frequency": 14830
+  },
+  {
+    "word": "das Gemüt",
+    "definition": [
+      "mind;disposition;temperament",
+      "Er hat ein ruhiges Gemüt. — He has a calm disposition."
+    ],
+    "word_frequency": 14364
+  },
+  {
+    "word": "das Genom",
+    "definition": [
+      "genome",
+      "Das menschliche Genom wurde entschlüsselt. — The human genome has been deciphered."
+    ],
+    "word_frequency": 26227
+  },
+  {
+    "word": "das Gesamtwerk",
+    "definition": [
+      "complete works;oeuvre",
+      "Das Gesamtwerk des Künstlers ist beeindruckend. — The artist's complete works are impressive."
+    ],
+    "word_frequency": 23772
+  },
+  {
+    "word": "das Geschwader",
+    "definition": [
+      "squadron;fleet",
+      "Das Geschwader flog über das Meer. — The squadron flew over the sea."
+    ],
+    "word_frequency": 27022
+  },
+  {
+    "word": "das Geschwür",
+    "definition": [
+      "ulcer",
+      "Das Geschwür musste behandelt werden. — The ulcer had to be treated."
+    ],
+    "word_frequency": 29285
+  },
+  {
+    "word": "das Geschütz",
+    "definition": [
+      "cannon;gun (artillery)",
+      "Das alte Geschütz stand als Denkmal auf dem Hügel. — The old cannon stood as a monument on the hill."
+    ],
+    "word_frequency": 12582
+  },
+  {
+    "word": "das Gesetzbuch",
+    "definition": [
+      "law book;code of laws",
+      "Das neue Gesetzbuch wurde verabschiedet. — The new code of laws was passed."
+    ],
+    "word_frequency": 21947
+  },
+  {
+    "word": "das Gespann",
+    "definition": [
+      "team (of horses);combination (e.g.;sidecar motorcycle)",
+      "Das Pferd und der Wagen bildeten ein beeindruckendes Gespann. — The horse and the carriage formed an impressive team."
+    ],
+    "word_frequency": 20290
+  },
+  {
+    "word": "das Gespür",
+    "definition": [
+      "intuition;sense",
+      "Sie hat ein gutes Gespür für Farben. — She has a good sense for colors."
+    ],
+    "word_frequency": 11711
+  },
+  {
+    "word": "das Getöse",
+    "definition": [
+      "din",
+      "Das Getöse des Sturms war ohrenbetäubend. — The din of the storm was deafening."
+    ],
+    "word_frequency": 28344
+  },
+  {
+    "word": "das Gewand",
+    "definition": [
+      "garment;robe;attire",
+      "Sie trug ein prächtiges Gewand. — She wore a magnificent garment."
+    ],
+    "word_frequency": 9257
+  },
+  {
+    "word": "das Gleichnis",
+    "definition": [
+      "parable;analogy",
+      "Er erzählte ein Gleichnis. — He told a parable."
+    ],
+    "word_frequency": 25395
+  },
+  {
+    "word": "das Glyphosat",
+    "definition": [
+      "glyphosate",
+      "Die Debatte über Glyphosat dauert an. — The debate about glyphosate continues."
+    ],
+    "word_frequency": 19975
+  },
+  {
+    "word": "das Gouvernement",
+    "definition": [
+      "government;governorship",
+      "Das Gouvernement erließ neue Gesetze. — The government issued new laws."
+    ],
+    "word_frequency": 27031
+  },
+  {
+    "word": "das Government",
+    "definition": [
+      "government",
+      "Das Government hat neue Richtlinien erlassen. — The government has issued new guidelines."
+    ],
+    "word_frequency": 12590
+  },
+  {
+    "word": "das Grabfeld",
+    "definition": [
+      "burial ground",
+      "Das alte Grabfeld war von Bäumen umgeben. — The old burial ground was surrounded by trees."
+    ],
+    "word_frequency": 29290
+  },
+  {
+    "word": "das Gran",
+    "definition": [
+      "grain (unit of weight)",
+      "Ein Gran ist eine sehr kleine Maßeinheit. — A grain is a very small unit of measurement."
+    ],
+    "word_frequency": 8957
+  },
+  {
+    "word": "das Gremium",
+    "definition": [
+      "committee;panel;board",
+      "Das Gremium hat eine Entscheidung getroffen. — The committee has made a decision."
+    ],
+    "word_frequency": 9258
+  },
+  {
+    "word": "das Grundeinkommen",
+    "definition": [
+      "basic income",
+      "Das Konzept des Grundeinkommens wird diskutiert. — The concept of basic income is being discussed."
+    ],
+    "word_frequency": 9409
+  },
+  {
+    "word": "das Grundrecht",
+    "definition": [
+      "fundamental right;basic right",
+      "Meinungsfreiheit ist ein Grundrecht. — Freedom of speech is a fundamental right."
+    ],
+    "word_frequency": 5977
+  },
+  {
+    "word": "das Gutachten",
+    "definition": [
+      "expert opinion;report",
+      "Das Gericht forderte ein Gutachten von einem Sachverständigen an. — The court requested an expert opinion from a specialist."
+    ],
+    "word_frequency": 3407
+  },
+  {
+    "word": "das Habitat",
+    "definition": [
+      "habitat",
+      "Der Schutz des natürlichen Habitats ist wichtig. — The protection of the natural habitat is important."
+    ],
+    "word_frequency": 27891
+  },
+  {
+    "word": "das Hasch",
+    "definition": [
+      "hashish",
+      "Der Besitz von Hasch ist in vielen Ländern illegal. — The possession of hashish is illegal in many countries."
+    ],
+    "word_frequency": 27042
+  },
+  {
+    "word": "das Haschisch",
+    "definition": [
+      "hashish",
+      "Der Besitz von Haschisch ist in vielen Ländern illegal. — The possession of hashish is illegal in many countries."
+    ],
+    "word_frequency": 23042
+  },
+  {
+    "word": "das Hauptaugenmerk",
+    "definition": [
+      "main focus;primary attention",
+      "Das Hauptaugenmerk liegt auf der Kundenzufriedenheit. — The main focus is on customer satisfaction."
+    ],
+    "word_frequency": 19353
+  },
+  {
+    "word": "das Heritage",
+    "definition": [
+      "heritage",
+      "Das Gebäude ist Teil des kulturellen Heritage der Stadt. — The building is part of the city's cultural heritage."
+    ],
+    "word_frequency": 28374
+  },
+  {
+    "word": "das Heroin",
+    "definition": [
+      "heroin",
+      "Heroin ist eine gefährliche Droge. — Heroin is a dangerous drug."
+    ],
+    "word_frequency": 8249
+  },
+  {
+    "word": "das Herzblut",
+    "definition": [
+      "heart and soul",
+      "Er steckt viel Herzblut in seine Arbeit. — He puts a lot of heart and soul into his work."
+    ],
+    "word_frequency": 14614
+  },
+  {
+    "word": "das Herzogtum",
+    "definition": [
+      "duchy",
+      "Das Herzogtum war reich. — The duchy was rich."
+    ],
+    "word_frequency": 16158
+  },
+  {
+    "word": "das Herzstück",
+    "definition": [
+      "core;centerpiece;heart (of something)",
+      "Der Motor ist das Herzstück des Autos. — The engine is the heart of the car."
+    ],
+    "word_frequency": 16408
+  },
+  {
+    "word": "das Himmelreich",
+    "definition": [
+      "kingdom of heaven",
+      "Im Himmelreich gibt es keinen Schmerz. — In the kingdom of heaven there is no pain."
+    ],
+    "word_frequency": 23054
+  },
+  {
+    "word": "das Hoheitsgebiet",
+    "definition": [
+      "sovereign territory",
+      "Das Schiff befand sich im Hoheitsgebiet eines anderen Landes. — The ship was in the sovereign territory of another country."
+    ],
+    "word_frequency": 26255
+  },
+  {
+    "word": "das Imago",
+    "definition": [
+      "imago (adult insect;idealized image)",
+      "Die Raupe verwandelt sich in die Imago des Schmetterlings. — The caterpillar transforms into the imago of the butterfly."
+    ],
+    "word_frequency": 23391
+  },
+  {
+    "word": "das Inferno",
+    "definition": [
+      "inferno",
+      "Das Feuer verwandelte das Gebäude in ein Inferno. — The fire turned the building into an inferno."
+    ],
+    "word_frequency": 18410
+  },
+  {
+    "word": "das Innenleben",
+    "definition": [
+      "inner life;inner workings",
+      "Das Innenleben der Maschine war komplex. — The inner workings of the machine were complex."
+    ],
+    "word_frequency": 22688
+  },
+  {
+    "word": "das Insolvenzverfahren",
+    "definition": [
+      "insolvency proceedings",
+      "Das Unternehmen musste ein Insolvenzverfahren einleiten. — The company had to initiate insolvency proceedings."
+    ],
+    "word_frequency": 22690
+  },
+  {
+    "word": "das Interim",
+    "definition": [
+      "interim;temporary period",
+      "Er leitet das Unternehmen im Interim. — He is leading the company on an interim basis."
+    ],
+    "word_frequency": 26636
+  },
+  {
+    "word": "das Intermezzo",
+    "definition": [
+      "interlude",
+      "Das kurze Intermezzo bot eine willkommene Pause. — The short interlude offered a welcome break."
+    ],
+    "word_frequency": 26261
+  },
+  {
+    "word": "das Ion",
+    "definition": [
+      "ion",
+      "Ein Ion ist ein elektrisch geladenes Atom oder Molekül. — An ion is an electrically charged atom or molecule."
+    ],
+    "word_frequency": 10461
+  },
+  {
+    "word": "das Justizministerium",
+    "definition": [
+      "Ministry of Justice",
+      "Das Justizministerium ist für die Rechtspflege zuständig. — The Ministry of Justice is responsible for the administration of justice."
+    ],
+    "word_frequency": 13278
+  },
+  {
+    "word": "das Kaiserreich",
+    "definition": [
+      "empire",
+      "Das Deutsche Kaiserreich existierte von 1871 bis 1918. — The German Empire existed from 1871 to 1918."
+    ],
+    "word_frequency": 11363
+  },
+  {
+    "word": "das Kalifat",
+    "definition": [
+      "caliphate",
+      "Das Kalifat war eine historische Staatsform. — The caliphate was a historical form of state."
+    ],
+    "word_frequency": 20975
+  },
+  {
+    "word": "das Kalkül",
+    "definition": [
+      "calculation",
+      "Sein Handeln war Teil eines politischen Kalküls. — His actions were part of a political calculation."
+    ],
+    "word_frequency": 14397
+  },
+  {
+    "word": "das Kartell",
+    "definition": [
+      "cartel",
+      "Das Ölkartell kontrolliert die Preise. — The oil cartel controls the prices."
+    ],
+    "word_frequency": 15927
+  },
+  {
+    "word": "das Kleinod",
+    "definition": [
+      "jewel;treasure",
+      "Das alte Buch war ein wahres Kleinod. — The old book was a true treasure."
+    ],
+    "word_frequency": 23408
+  },
+  {
+    "word": "das Knochenmark",
+    "definition": [
+      "bone marrow",
+      "Knochenmark ist wichtig für die Blutbildung. — Bone marrow is important for blood formation."
+    ],
+    "word_frequency": 25879
+  },
+  {
+    "word": "das Kokain",
+    "definition": [
+      "cocaine",
+      "Kokain ist eine illegale Droge. — Cocaine is an illegal drug."
+    ],
+    "word_frequency": 8114
+  },
+  {
+    "word": "das Kolloquium",
+    "definition": [
+      "colloquium",
+      "Das Kolloquium findet nächste Woche statt. — The colloquium will take place next week."
+    ],
+    "word_frequency": 24603
+  },
+  {
+    "word": "das Kompendium",
+    "definition": [
+      "compendium",
+      "Das Kompendium bietet einen Überblick über das Thema. — The compendium provides an overview of the topic."
+    ],
+    "word_frequency": 27943
+  },
+  {
+    "word": "das Konsortium",
+    "definition": [
+      "consortium",
+      "Ein Konsortium von Unternehmen hat das Projekt finanziert. — A consortium of companies financed the project."
+    ],
+    "word_frequency": 20011
+  },
+  {
+    "word": "das Konsumgut",
+    "definition": [
+      "consumer good",
+      "Ein Auto ist ein teures Konsumgut. — A car is an expensive consumer good."
+    ],
+    "word_frequency": 29835
+  },
+  {
+    "word": "das Kontingent",
+    "definition": [
+      "quota;contingent",
+      "Jedes Land hat ein bestimmtes Kontingent an Flüchtlingen aufgenommen. — Each country has accepted a certain quota of refugees."
+    ],
+    "word_frequency": 16178
+  },
+  {
+    "word": "das Kontor",
+    "definition": [
+      "office (historical;commercial)",
+      "Im alten Kontor wurden die Bücher geführt. — The books were kept in the old office."
+    ],
+    "word_frequency": 28416
+  },
+  {
+    "word": "das Konzil",
+    "definition": [
+      "council (ecclesiastical)",
+      "Das Konzil von Trient war ein wichtiges Ereignis in der Kirchengeschichte. — The Council of Trent was an important event in church history."
+    ],
+    "word_frequency": 12385
+  },
+  {
+    "word": "das Korps",
+    "definition": [
+      "corps",
+      "Das diplomatische Korps traf sich zur jährlichen Versammlung. — The diplomatic corps met for the annual assembly."
+    ],
+    "word_frequency": 12386
+  },
+  {
+    "word": "das Kreditinstitut",
+    "definition": [
+      "credit institution;bank",
+      "Ein Kreditinstitut vergibt Darlehen. — A credit institution grants loans."
+    ],
+    "word_frequency": 20335
+  },
+  {
+    "word": "das Kriegsverbrechen",
+    "definition": [
+      "war crime",
+      "Kriegsverbrechen sind schwere Verstöße gegen das Völkerrecht. — War crimes are serious violations of international law."
+    ],
+    "word_frequency": 11369
+  },
+  {
+    "word": "das Kultusministerium",
+    "definition": [
+      "Ministry of Education;Cultural Affairs",
+      "Das Kultusministerium ist für Bildung und Kultur zuständig. — The Ministry of Education is responsible for education and culture."
+    ],
+    "word_frequency": 20014
+  },
+  {
+    "word": "das Kuratorium",
+    "definition": [
+      "board of trustees",
+      "Das Kuratorium überwacht die Stiftung. — The board of trustees oversees the foundation."
+    ],
+    "word_frequency": 20336
+  },
+  {
+    "word": "das Kursziel",
+    "definition": [
+      "target price",
+      "Analysten haben das Kursziel für die Aktie erhöht. — Analysts have raised the target price for the stock."
+    ],
+    "word_frequency": 25457
+  },
+  {
+    "word": "das Lab",
+    "definition": [
+      "rennet",
+      "Lab wird bei der Käseherstellung verwendet. — Rennet is used in cheese production."
+    ],
+    "word_frequency": 12391
+  },
+  {
+    "word": "das Lebenswerk",
+    "definition": [
+      "life's work;oeuvre",
+      "Sein Lebenswerk war die Erforschung der Sterne. — His life's work was the exploration of the stars."
+    ],
+    "word_frequency": 10818
+  },
+  {
+    "word": "das Lee",
+    "definition": [
+      "leeward side",
+      "Das Schiff suchte Schutz im Lee der Insel. — The ship sought shelter on the leeward side of the island."
+    ],
+    "word_frequency": 3092
+  },
+  {
+    "word": "das Legat",
+    "definition": [
+      "legacy",
+      "Das Legat des Großvaters ermöglichte den Bau der Bibliothek. — The grandfather's legacy enabled the construction of the library."
+    ],
+    "word_frequency": 25463
+  },
+  {
+    "word": "das Luder",
+    "definition": [
+      "carrion;hussy (derogatory)",
+      "Das Luder lag im Wald und lockte die Tiere an. — The carrion lay in the forest and attracted the animals."
+    ],
+    "word_frequency": 12396
+  },
+  {
+    "word": "das Lumen",
+    "definition": [
+      "lumen",
+      "Die Helligkeit einer Lampe wird in Lumen gemessen. — The brightness of a lamp is measured in lumens."
+    ],
+    "word_frequency": 19390
+  },
+  {
+    "word": "das Lösungsmittel",
+    "definition": [
+      "solvent",
+      "Aceton ist ein häufig verwendetes Lösungsmittel. — Acetone is a commonly used solvent."
+    ],
+    "word_frequency": 22734
+  },
+  {
+    "word": "das Machtverhältnis",
+    "definition": [
+      "power relation;balance",
+      "Das Machtverhältnis zwischen den Parteien hat sich verschoben. — The power relation between the parties has shifted."
+    ],
+    "word_frequency": 24258
+  },
+  {
+    "word": "das Making",
+    "definition": [
+      "making (as in 'making-of')",
+      "Das Making-of des Films war sehr interessant. — The making-of the film was very interesting."
+    ],
+    "word_frequency": 12399
+  },
+  {
+    "word": "das Mandat",
+    "definition": [
+      "mandate;seat (in parliament)",
+      "Er hat ein Mandat im Parlament. — He has a seat in parliament."
+    ],
+    "word_frequency": 5689
+  },
+  {
+    "word": "das Marihuana",
+    "definition": [
+      "marijuana",
+      "Der Besitz von Marihuana ist in vielen Ländern illegal. — The possession of marijuana is illegal in many countries."
+    ],
+    "word_frequency": 9592
+  },
+  {
+    "word": "das Mark",
+    "definition": [
+      "marrow",
+      "Knochenmark ist wichtig für die Blutbildung. — Bone marrow is important for blood formation."
+    ],
+    "word_frequency": 1214
+  },
+  {
+    "word": "das Martyrium",
+    "definition": [
+      "martyrdom",
+      "Sein Leben war ein Martyrium. — His life was a martyrdom."
+    ],
+    "word_frequency": 24262
+  },
+  {
+    "word": "das Maschinengewehr",
+    "definition": [
+      "machine gun",
+      "Das Maschinengewehr wurde im Krieg eingesetzt. — The machine gun was used in the war."
+    ],
+    "word_frequency": 20037
+  },
+  {
+    "word": "das Massenmedium",
+    "definition": [
+      "mass medium",
+      "Das Fernsehen ist ein wichtiges Massenmedium. — Television is an important mass medium."
+    ],
+    "word_frequency": 16451
+  },
+  {
+    "word": "das Mausoleum",
+    "definition": [
+      "mausoleum",
+      "Das alte Mausoleum war beeindruckend. — The old mausoleum was impressive."
+    ],
+    "word_frequency": 27546
+  },
+  {
+    "word": "das Megawatt",
+    "definition": [
+      "megawatt",
+      "Das Kraftwerk erzeugt mehrere Megawatt Strom. — The power plant generates several megawatts of electricity."
+    ],
+    "word_frequency": 22740
+  },
+  {
+    "word": "das Memorandum",
+    "definition": [
+      "memorandum",
+      "Er verfasste ein Memorandum für die Besprechung. — He drafted a memorandum for the meeting."
+    ],
+    "word_frequency": 27973
+  },
+  {
+    "word": "das Metadatum",
+    "definition": [
+      "metadata",
+      "Jedes Bild enthält wichtige Metadaten. — Every image contains important metadata."
+    ],
+    "word_frequency": 19705
+  },
+  {
+    "word": "das Methan",
+    "definition": [
+      "methane",
+      "Methan ist ein starkes Treibhausgas. — Methane is a strong greenhouse gas."
+    ],
+    "word_frequency": 18159
+  },
+  {
+    "word": "das Metier",
+    "definition": [
+      "profession;trade;métier",
+      "Das ist sein Metier, er kennt sich damit aus. — That is his profession, he knows a lot about it."
+    ],
+    "word_frequency": 26322
+  },
+  {
+    "word": "das Mietrecht",
+    "definition": [
+      "tenancy law",
+      "Er kennt sich gut im Mietrecht aus. — He is well-versed in tenancy law."
+    ],
+    "word_frequency": 25913
+  },
+  {
+    "word": "das Mining",
+    "definition": [
+      "mining",
+      "Das Mining von Kryptowährungen verbraucht viel Energie. — The mining of cryptocurrencies consumes a lot of energy."
+    ],
+    "word_frequency": 14890
+  },
+  {
+    "word": "das Mitspracherecht",
+    "definition": [
+      "right to have a say;co-determination",
+      "Die Arbeitnehmer fordern mehr Mitspracherecht bei Unternehmensentscheidungen. — Employees demand more right to have a say in company decisions."
+    ],
+    "word_frequency": 20357
+  },
+  {
+    "word": "das Momentum",
+    "definition": [
+      "momentum",
+      "Das Projekt gewann an Momentum. — The project gained momentum."
+    ],
+    "word_frequency": 27132
+  },
+  {
+    "word": "das Morphium",
+    "definition": [
+      "morphine",
+      "Der Patient erhielt Morphium zur Schmerzlinderung. — The patient received morphine for pain relief."
+    ],
+    "word_frequency": 28462
+  },
+  {
+    "word": "das Nacktbild",
+    "definition": [
+      "nude picture",
+      "Das Nacktbild wurde ohne ihre Zustimmung veröffentlicht. — The nude picture was published without her consent."
+    ],
+    "word_frequency": 26337
+  },
+  {
+    "word": "das Nacktfoto",
+    "definition": [
+      "nude photo",
+      "Das Nacktfoto wurde ohne ihre Zustimmung veröffentlicht. — The nude photo was published without her consent."
+    ],
+    "word_frequency": 23467
+  },
+  {
+    "word": "das Natrium",
+    "definition": [
+      "sodium",
+      "Natrium ist ein chemisches Element. — Sodium is a chemical element."
+    ],
+    "word_frequency": 18788
+  },
+  {
+    "word": "das Naturgesetz",
+    "definition": [
+      "law of nature;natural law",
+      "Das ist ein Naturgesetz. — That is a law of nature."
+    ],
+    "word_frequency": 27998
+  },
+  {
+    "word": "das Niemandsland",
+    "definition": [
+      "no man's land",
+      "Das Gebiet zwischen den Fronten war Niemandsland. — The area between the fronts was no man's land."
+    ],
+    "word_frequency": 24675
+  },
+  {
+    "word": "das Novum",
+    "definition": [
+      "novelty;new phenomenon",
+      "Das war ein Novum in der Geschichte des Unternehmens. — That was a novelty in the company's history."
+    ],
+    "word_frequency": 15148
+  },
+  {
+    "word": "das Oberhaus",
+    "definition": [
+      "upper house (of parliament)",
+      "Das Oberhaus hat dem Gesetz zugestimmt. — The upper house approved the law."
+    ],
+    "word_frequency": 19415
+  },
+  {
+    "word": "das Oberkommando",
+    "definition": [
+      "high command",
+      "Das Oberkommando traf eine wichtige Entscheidung. — The high command made an important decision."
+    ],
+    "word_frequency": 27567
+  },
+  {
+    "word": "das Oberlandesgericht",
+    "definition": [
+      "Higher Regional Court",
+      "Das Oberlandesgericht hat die Berufung abgewiesen. — The Higher Regional Court rejected the appeal."
+    ],
+    "word_frequency": 10140
+  },
+  {
+    "word": "das Opium",
+    "definition": [
+      "opium",
+      "Opium ist eine stark wirkende Droge. — Opium is a potent drug."
+    ],
+    "word_frequency": 16470
+  },
+  {
+    "word": "das Optimum",
+    "definition": [
+      "optimum",
+      "Wir streben nach dem Optimum in unserer Leistung. — We strive for the optimum in our performance."
+    ],
+    "word_frequency": 19727
+  },
+  {
+    "word": "das Oratorium",
+    "definition": [
+      "oratorio",
+      "Händels \"Messiah\" ist ein berühmtes Oratorium. — Handel's \"Messiah\" is a famous oratorio."
+    ],
+    "word_frequency": 26716
+  },
+  {
+    "word": "das Outsourcing",
+    "definition": [
+      "outsourcing",
+      "Das Unternehmen plant, das Outsourcing zu reduzieren. — The company plans to reduce outsourcing."
+    ],
+    "word_frequency": 25513
+  },
+  {
+    "word": "das Palladium",
+    "definition": [
+      "palladium (chemical element)",
+      "Palladium ist ein seltenes Edelmetall. — Palladium is a rare precious metal."
+    ],
+    "word_frequency": 27158
+  },
+  {
+    "word": "das Paradigma",
+    "definition": [
+      "paradigm",
+      "Das neue Paradigma verändert die Art, wie wir denken. — The new paradigm changes the way we think."
+    ],
+    "word_frequency": 26354
+  },
+  {
+    "word": "das Paradoxon",
+    "definition": [
+      "paradox",
+      "Das ist ein interessantes Paradoxon. — That is an interesting paradox."
+    ],
+    "word_frequency": 21035
+  },
+  {
+    "word": "das Pathos",
+    "definition": [
+      "pathos",
+      "Die Rede war voller Pathos. — The speech was full of pathos."
+    ],
+    "word_frequency": 15969
+  },
+  {
+    "word": "das Patriarchat",
+    "definition": [
+      "patriarchy",
+      "Viele Gesellschaften sind vom Patriarchat geprägt. — Many societies are shaped by patriarchy."
+    ],
+    "word_frequency": 18181
+  },
+  {
+    "word": "das Pendant",
+    "definition": [
+      "counterpart;equivalent",
+      "Sie ist das Pendant zu ihrem Bruder. — She is the counterpart to her brother."
+    ],
+    "word_frequency": 10495
+  },
+  {
+    "word": "das Persönlichkeitsrecht",
+    "definition": [
+      "right of personality",
+      "Das Persönlichkeitsrecht schützt die Identität einer Person. — The right of personality protects a person's identity."
+    ],
+    "word_frequency": 25521
+  },
+  {
+    "word": "das Pflanzenschutzmittel",
+    "definition": [
+      "plant protection product",
+      "Der Einsatz von Pflanzenschutzmitteln wird streng reguliert. — The use of plant protection products is strictly regulated."
+    ],
+    "word_frequency": 26358
+  },
+  {
+    "word": "das Ph",
+    "definition": [
+      "pH",
+      "Der pH-Wert des Wassers ist neutral. — The pH value of the water is neutral."
+    ],
+    "word_frequency": 6678
+  },
+  {
+    "word": "das Pharmaunternehmen",
+    "definition": [
+      "pharmaceutical company",
+      "Das Pharmaunternehmen entwickelt neue Medikamente. — The pharmaceutical company develops new medicines."
+    ],
+    "word_frequency": 29910
+  },
+  {
+    "word": "das Phosphat",
+    "definition": [
+      "phosphate",
+      "Phosphat ist ein wichtiger Nährstoff für Pflanzen. — Phosphate is an important nutrient for plants."
+    ],
+    "word_frequency": 25949
+  },
+  {
+    "word": "das Placebo",
+    "definition": [
+      "placebo",
+      "Er erhielt ein Placebo anstelle des echten Medikaments. — He received a placebo instead of the real medication."
+    ],
+    "word_frequency": 17884
+  },
+  {
+    "word": "das Plasma",
+    "definition": [
+      "plasma",
+      "Blutplasma ist ein wichtiger Bestandteil des Blutes. — Blood plasma is an important component of blood."
+    ],
+    "word_frequency": 12869
+  },
+  {
+    "word": "das Plutonium",
+    "definition": [
+      "plutonium",
+      "Plutonium ist ein radioaktives Element. — Plutonium is a radioactive element."
+    ],
+    "word_frequency": 27167
+  },
+  {
+    "word": "das Plädoyer",
+    "definition": [
+      "plea;closing argument",
+      "Sein Plädoyer war sehr überzeugend. — His plea was very convincing."
+    ],
+    "word_frequency": 11764
+  },
+  {
+    "word": "das Polymer",
+    "definition": [
+      "polymer",
+      "Dieses Material besteht aus einem speziellen Polymer. — This material consists of a special polymer."
+    ],
+    "word_frequency": 29444
+  },
+  {
+    "word": "das Positionspapier",
+    "definition": [
+      "position paper",
+      "Die Partei veröffentlichte ein Positionspapier zur Bildungspolitik. — The party published a position paper on education policy."
+    ],
+    "word_frequency": 29916
+  },
+  {
+    "word": "das Printmedium",
+    "definition": [
+      "print medium",
+      "Zeitungen sind ein klassisches Printmedium. — Newspapers are a classic print medium."
+    ],
+    "word_frequency": 21358
+  },
+  {
+    "word": "das Privatrecht",
+    "definition": [
+      "private law",
+      "Das Privatrecht regelt die Beziehungen zwischen Bürgern. — Private law regulates the relationships between citizens."
+    ],
+    "word_frequency": 25529
+  },
+  {
+    "word": "das Proceeding",
+    "definition": [
+      "proceeding",
+      "Das Proceeding des Gerichts dauerte mehrere Stunden. — The court proceeding lasted several hours."
+    ],
+    "word_frequency": 27587
+  },
+  {
+    "word": "das Produktionsmittel",
+    "definition": [
+      "means of production",
+      "Die Produktionsmittel wurden verstaatlicht. — The means of production were nationalized."
+    ],
+    "word_frequency": 25530
+  },
+  {
+    "word": "das Proletariat",
+    "definition": [
+      "proletariat",
+      "Das Proletariat spielte eine wichtige Rolle in der Geschichte. — The proletariat played an important role in history."
+    ],
+    "word_frequency": 24701
+  },
+  {
+    "word": "das Prädikat",
+    "definition": [
+      "predicate",
+      "Das Prädikat ist ein wichtiger Teil des Satzes. — The predicate is an important part of the sentence."
+    ],
+    "word_frequency": 11021
+  },
+  {
+    "word": "das Präsidium",
+    "definition": [
+      "presidium;executive board",
+      "Das Präsidium hat die Entscheidung getroffen. — The presidium made the decision."
+    ],
+    "word_frequency": 9147
+  },
+  {
+    "word": "das Pseudonym",
+    "definition": [
+      "pseudonym",
+      "Der Autor veröffentlichte unter einem Pseudonym. — The author published under a pseudonym."
+    ],
+    "word_frequency": 12210
+  },
+  {
+    "word": "das Psychopharmakon",
+    "definition": [
+      "psychotropic drug",
+      "Das Psychopharmakon muss regelmäßig eingenommen werden. — The psychotropic drug must be taken regularly."
+    ],
+    "word_frequency": 27588
+  },
+  {
+    "word": "das Qi",
+    "definition": [
+      "Qi (life force)",
+      "Im Tai Chi geht es um die Harmonisierung des Qi. — Tai Chi is about harmonizing the Qi."
+    ],
+    "word_frequency": 20698
+  },
+  {
+    "word": "das Qualitätsmanagement",
+    "definition": [
+      "quality management",
+      "Gutes Qualitätsmanagement ist entscheidend für den Erfolg eines Unternehmens. — Good quality management is crucial for a company's success."
+    ],
+    "word_frequency": 19119
+  },
+  {
+    "word": "das Quantum",
+    "definition": [
+      "quantum;amount",
+      "Ein Quantum Trost war alles, was er brauchte. — A quantum of comfort was all he needed."
+    ],
+    "word_frequency": 15159
+  },
+  {
+    "word": "das Rauschgift",
+    "definition": [
+      "narcotic;illicit drug",
+      "Der Handel mit Rauschgift ist streng verboten. — Trading in narcotics is strictly forbidden."
+    ],
+    "word_frequency": 28510
+  },
+  {
+    "word": "das Rechtsmittel",
+    "definition": [
+      "legal remedy",
+      "Gegen das Urteil ist ein Rechtsmittel möglich. — An appeal against the judgment is possible."
+    ],
+    "word_frequency": 17611
+  },
+  {
+    "word": "das Referendariat",
+    "definition": [
+      "legal traineeship;teacher training (practical phase)",
+      "Sie beginnt ihr Referendariat im nächsten Monat. — She starts her traineeship next month."
+    ],
+    "word_frequency": 26751
+  },
+  {
+    "word": "das Referendum",
+    "definition": [
+      "referendum",
+      "Die Bürger stimmten in einem Referendum ab. — The citizens voted in a referendum."
+    ],
+    "word_frequency": 6575
+  },
+  {
+    "word": "das Regierungspräsidium",
+    "definition": [
+      "regional administrative authority",
+      "Das Regierungspräsidium ist für die Genehmigung zuständig. — The regional administrative authority is responsible for the approval."
+    ],
+    "word_frequency": 25116
+  },
+  {
+    "word": "das Regiment",
+    "definition": [
+      "regiment",
+      "Das Regiment marschierte durch die Stadt. — The regiment marched through the city."
+    ],
+    "word_frequency": 7071
+  },
+  {
+    "word": "das Reglement",
+    "definition": [
+      "regulation;rulebook",
+      "Das neue Reglement tritt nächste Woche in Kraft. — The new regulation comes into effect next week."
+    ],
+    "word_frequency": 16226
+  },
+  {
+    "word": "das Regularium",
+    "definition": [
+      "regulation",
+      "Das neue Regularium tritt nächste Woche in Kraft. — The new regulation comes into effect next week."
+    ],
+    "word_frequency": 23908
+  },
+  {
+    "word": "das Relief",
+    "definition": [
+      "relief",
+      "Das Relief an der Wand ist sehr alt. — The relief on the wall is very old."
+    ],
+    "word_frequency": 12666
+  },
+  {
+    "word": "das Relikt",
+    "definition": [
+      "relic;remnant",
+      "Das alte Gebäude ist ein Relikt aus vergangenen Zeiten. — The old building is a relic from past times."
+    ],
+    "word_frequency": 21371
+  },
+  {
+    "word": "das Repertoire",
+    "definition": [
+      "repertoire",
+      "Der Künstler hat ein breites Repertoire an Liedern. — The artist has a broad repertoire of songs."
+    ],
+    "word_frequency": 7185
+  },
+  {
+    "word": "das Repräsentantenhaus",
+    "definition": [
+      "House of Representatives",
+      "Das Gesetz wurde vom Repräsentantenhaus verabschiedet. — The law was passed by the House of Representatives."
+    ],
+    "word_frequency": 22798
+  },
+  {
+    "word": "das Requiem",
+    "definition": [
+      "requiem",
+      "Das Requiem wurde in der Kirche aufgeführt. — The requiem was performed in the church."
+    ],
+    "word_frequency": 18808
+  },
+  {
+    "word": "das Ressentiment",
+    "definition": [
+      "resentment",
+      "Er hegte ein tiefes Ressentiment gegen die Ungerechtigkeit. — He harbored a deep resentment against the injustice."
+    ],
+    "word_frequency": 20395
+  },
+  {
+    "word": "das Ried",
+    "definition": [
+      "reed bed;fen;marsh",
+      "Das Ried ist ein wichtiger Lebensraum für Vögel. — The reed bed is an important habitat for birds."
+    ],
+    "word_frequency": 10326
+  },
+  {
+    "word": "das Risikomanagement",
+    "definition": [
+      "risk management",
+      "Effektives Risikomanagement ist entscheidend für den Erfolg. — Effective risk management is crucial for success."
+    ],
+    "word_frequency": 23917
+  },
+  {
+    "word": "das Ross",
+    "definition": [
+      "steed;horse",
+      "Der Ritter bestieg sein treues Ross. — The knight mounted his loyal steed."
+    ],
+    "word_frequency": 4520
+  },
+  {
+    "word": "das Rückenmark",
+    "definition": [
+      "spinal cord",
+      "Eine Verletzung des Rückenmarks kann schwerwiegend sein. — An injury to the spinal cord can be severe."
+    ],
+    "word_frequency": 28533
+  },
+  {
+    "word": "das Sanatorium",
+    "definition": [
+      "sanatorium",
+      "Er verbrachte einige Zeit in einem Sanatorium. — He spent some time in a sanatorium."
+    ],
+    "word_frequency": 21057
+  },
+  {
+    "word": "das Schiedsgericht",
+    "definition": [
+      "arbitration court",
+      "Die Parteien einigten sich auf ein Schiedsgericht. — The parties agreed on an arbitration court."
+    ],
+    "word_frequency": 22809
+  },
+  {
+    "word": "das Schmerzensgeld",
+    "definition": [
+      "compensation for pain and suffering;damages",
+      "Er erhielt Schmerzensgeld nach dem Unfall. — He received compensation for pain and suffering after the accident."
+    ],
+    "word_frequency": 17916
+  },
+  {
+    "word": "das Schott",
+    "definition": [
+      "bulkhead;coaming (nautical)",
+      "Das Schott trennt die beiden Abteile des Schiffes. — The bulkhead separates the two compartments of the ship."
+    ],
+    "word_frequency": 11585
+  },
+  {
+    "word": "das Schwellenland",
+    "definition": [
+      "emerging country;developing country",
+      "Viele Schwellenländer erleben ein starkes Wachstum. — Many emerging countries are experiencing strong growth."
+    ],
+    "word_frequency": 28070
+  },
+  {
+    "word": "das Secret",
+    "definition": [
+      "secret",
+      "Das ist unser kleines Secret. — That's our little secret."
+    ],
+    "word_frequency": 7079
+  },
+  {
+    "word": "das Selbstbestimmungsrecht",
+    "definition": [
+      "right to self-determination",
+      "Das Selbstbestimmungsrecht der Völker ist ein wichtiges Prinzip. — The right to self-determination of peoples is an important principle."
+    ],
+    "word_frequency": 25997
+  },
+  {
+    "word": "das Selbstbild",
+    "definition": [
+      "self-image;self-concept",
+      "Ihr Selbstbild hat sich stark verbessert. — Her self-image has greatly improved."
+    ],
+    "word_frequency": 21070
+  },
+  {
+    "word": "das Selbstverständnis",
+    "definition": [
+      "self-conception;self-image",
+      "Sein Selbstverständnis als Künstler ist sehr stark. — His self-conception as an artist is very strong."
+    ],
+    "word_frequency": 10864
+  },
+  {
+    "word": "das Selbstwertgefühl",
+    "definition": [
+      "self-esteem;self-worth",
+      "Ein gesundes Selbstwertgefühl ist wichtig für das Wohlbefinden. — Healthy self-esteem is important for well-being."
+    ],
+    "word_frequency": 16508
+  },
+  {
+    "word": "das Self",
+    "definition": [
+      "self",
+      "Das Konzept des Self ist komplex. — The concept of the self is complex."
+    ],
+    "word_frequency": 8018
+  },
+  {
+    "word": "das Serum",
+    "definition": [
+      "serum",
+      "Das Serum wurde zur Analyse ins Labor geschickt. — The serum was sent to the lab for analysis."
+    ],
+    "word_frequency": 13568
+  },
+  {
+    "word": "das Silizium",
+    "definition": [
+      "silicon",
+      "Silizium ist ein wichtiges Element in der Elektronik. — Silicon is an important element in electronics."
+    ],
+    "word_frequency": 29960
+  },
+  {
+    "word": "das Sinnbild",
+    "definition": [
+      "symbol;emblem",
+      "Die Taube ist ein Sinnbild des Friedens. — The dove is a symbol of peace."
+    ],
+    "word_frequency": 16512
+  },
+  {
+    "word": "das Soma",
+    "definition": [
+      "soma (body)",
+      "Das Soma ist der Zellkörper eines Neurons. — The soma is the cell body of a neuron."
+    ],
+    "word_frequency": 26403
+  },
+  {
+    "word": "das Sozialgericht",
+    "definition": [
+      "social court",
+      "Er hat Klage beim Sozialgericht eingereicht. — He filed a lawsuit with the social court."
+    ],
+    "word_frequency": 28567
+  },
+  {
+    "word": "das Sozialrecht",
+    "definition": [
+      "social law",
+      "Sie studiert Sozialrecht an der Universität. — She studies social law at the university."
+    ],
+    "word_frequency": 29510
+  },
+  {
+    "word": "das Spannungsfeld",
+    "definition": [
+      "field of tension;area of conflict",
+      "Das Projekt befindet sich in einem Spannungsfeld zwischen Innovation und Tradition. — The project is in a field of tension between innovation and tradition."
+    ],
+    "word_frequency": 15188
+  },
+  {
+    "word": "das Spektrum",
+    "definition": [
+      "spectrum",
+      "Das Spektrum der Farben ist beeindruckend. — The spectrum of colors is impressive."
+    ],
+    "word_frequency": 3697
+  },
+  {
+    "word": "das Sperma",
+    "definition": [
+      "sperm",
+      "Die Forschung untersucht die Qualität von Sperma. — Research investigates the quality of sperm."
+    ],
+    "word_frequency": 6355
+  },
+  {
+    "word": "das Spermium",
+    "definition": [
+      "sperm cell",
+      "Ein Spermium ist eine männliche Keimzelle. — A sperm cell is a male germ cell."
+    ],
+    "word_frequency": 23549
+  },
+  {
+    "word": "das Sprachrohr",
+    "definition": [
+      "mouthpiece (figurative);speaking tube",
+      "Die Zeitung ist das Sprachrohr der Regierung. — The newspaper is the mouthpiece of the government."
+    ],
+    "word_frequency": 17330
+  },
+  {
+    "word": "das Spätmittelalter",
+    "definition": [
+      "Late Middle Ages",
+      "Viele wichtige Ereignisse fanden im Spätmittelalter statt. — Many important events took place in the Late Middle Ages."
+    ],
+    "word_frequency": 29972
+  },
+  {
+    "word": "das Staatsarchiv",
+    "definition": [
+      "state archive",
+      "Er forschte im Staatsarchiv nach alten Dokumenten. — He researched old documents in the state archive."
+    ],
+    "word_frequency": 16015
+  },
+  {
+    "word": "das Staatsexamen",
+    "definition": [
+      "state examination",
+      "Sie hat ihr Staatsexamen mit Auszeichnung bestanden. — She passed her state examination with distinction."
+    ],
+    "word_frequency": 16767
+  },
+  {
+    "word": "das Staatsgebiet",
+    "definition": [
+      "national territory;state territory",
+      "Das Schiff befand sich außerhalb des Staatsgebiets. — The ship was outside the national territory."
+    ],
+    "word_frequency": 19783
+  },
+  {
+    "word": "das Staatsministerium",
+    "definition": [
+      "State Ministry",
+      "Das Staatsministerium ist für die Landespolitik zuständig. — The State Ministry is responsible for state politics."
+    ],
+    "word_frequency": 19471
+  },
+  {
+    "word": "das Staatsoberhaupt",
+    "definition": [
+      "head of state",
+      "Das Staatsoberhaupt besuchte die Vereinten Nationen. — The head of state visited the United Nations."
+    ],
+    "word_frequency": 13350
+  },
+  {
+    "word": "das Standardwerk",
+    "definition": [
+      "standard work;definitive work",
+      "Dieses Buch gilt als Standardwerk in der Linguistik. — This book is considered a standard work in linguistics."
+    ],
+    "word_frequency": 24758
+  },
+  {
+    "word": "das Startloch",
+    "definition": [
+      "starting block;starting hole",
+      "Der Läufer positionierte sich im Startloch. — The runner positioned himself in the starting block."
+    ],
+    "word_frequency": 25587
+  },
+  {
+    "word": "das Statut",
+    "definition": [
+      "statute;regulation;bylaw",
+      "Die neuen Statuten wurden von der Versammlung genehmigt. — The new statutes were approved by the assembly."
+    ],
+    "word_frequency": 14947
+  },
+  {
+    "word": "das Stellwerk",
+    "definition": [
+      "signal box;interlocking tower",
+      "Der Zugverkehr wird vom Stellwerk aus gesteuert. — Train traffic is controlled from the signal box."
+    ],
+    "word_frequency": 21085
+  },
+  {
+    "word": "das Sterbebett",
+    "definition": [
+      "deathbed",
+      "Er lag auf seinem Sterbebett und verabschiedete sich von seiner Familie. — He lay on his deathbed, saying goodbye to his family."
+    ],
+    "word_frequency": 29978
+  },
+  {
+    "word": "das Steuerrecht",
+    "definition": [
+      "tax law",
+      "Er ist Experte für Steuerrecht. — He is an expert in tax law."
+    ],
+    "word_frequency": 15482
+  },
+  {
+    "word": "das Stillschweigen",
+    "definition": [
+      "silence;secrecy;non-disclosure",
+      "Er bewahrte Stillschweigen über die Angelegenheit. — He maintained silence about the matter."
+    ],
+    "word_frequency": 21412
+  },
+  {
+    "word": "das Stilmittel",
+    "definition": [
+      "stylistic device;figure of speech",
+      "Ironie ist ein häufig verwendetes Stilmittel. — Irony is a frequently used stylistic device."
+    ],
+    "word_frequency": 22453
+  },
+  {
+    "word": "das Strafgesetzbuch",
+    "definition": [
+      "criminal code",
+      "Das Strafgesetzbuch regelt die Straftaten und deren Strafen. — The criminal code regulates crimes and their penalties."
+    ],
+    "word_frequency": 18536
+  },
+  {
+    "word": "das Strafmass",
+    "definition": [
+      "penalty;sentence (measure of punishment)",
+      "Das Gericht legte ein angemessenes Strafmass fest. — The court determined an appropriate penalty."
+    ],
+    "word_frequency": 17646
+  },
+  {
+    "word": "das Strafrecht",
+    "definition": [
+      "criminal law",
+      "Er studiert Strafrecht an der Universität. — He studies criminal law at the university."
+    ],
+    "word_frequency": 8025
+  },
+  {
+    "word": "das Strafverfahren",
+    "definition": [
+      "criminal proceedings",
+      "Das Strafverfahren wurde eingestellt. — The criminal proceedings were discontinued."
+    ],
+    "word_frequency": 11053
+  },
+  {
+    "word": "das Streichquartett",
+    "definition": [
+      "string quartet",
+      "Das Streichquartett spielte ein Stück von Beethoven. — The string quartet played a piece by Beethoven."
+    ],
+    "word_frequency": 24375
+  },
+  {
+    "word": "das Sturmgewehr",
+    "definition": [
+      "assault rifle",
+      "Das Sturmgewehr ist eine automatische Waffe. — The assault rifle is an automatic weapon."
+    ],
+    "word_frequency": 22457
+  },
+  {
+    "word": "das Substrat",
+    "definition": [
+      "substrate",
+      "Das Substrat ist die Grundlage für das Wachstum der Pflanzen. — The substrate is the basis for plant growth."
+    ],
+    "word_frequency": 20121
+  },
+  {
+    "word": "das Suffix",
+    "definition": [
+      "suffix",
+      "Das Wort „Freundlichkeit“ hat das Suffix „-keit“. — The word \"Freundlichkeit\" has the suffix \"-keit\"."
+    ],
+    "word_frequency": 26028
+  },
+  {
+    "word": "das Sujet",
+    "definition": [
+      "subject",
+      "Das Sujet des Gemäldes war sehr komplex. — The subject of the painting was very complex."
+    ],
+    "word_frequency": 28106
+  },
+  {
+    "word": "das Symposium",
+    "definition": [
+      "symposium",
+      "Sie nahm an einem internationalen Symposium teil. — She participated in an international symposium."
+    ],
+    "word_frequency": 11246
+  },
+  {
+    "word": "das Syndikat",
+    "definition": [
+      "syndicate",
+      "Das Syndikat kontrolliert den illegalen Handel. — The syndicate controls the illegal trade."
+    ],
+    "word_frequency": 29048
+  },
+  {
+    "word": "das Syndrom",
+    "definition": [
+      "syndrome",
+      "Er leidet unter einem seltenen Syndrom. — He suffers from a rare syndrome."
+    ],
+    "word_frequency": 6241
+  },
+  {
+    "word": "das Tableau",
+    "definition": [
+      "tableau",
+      "Das Tableau zeigte alle wichtigen Informationen an. — The tableau displayed all important information."
+    ],
+    "word_frequency": 29994
+  },
+  {
+    "word": "das Terrain",
+    "definition": [
+      "terrain",
+      "Das schwierige Terrain machte den Aufstieg mühsam. — The difficult terrain made the ascent arduous."
+    ],
+    "word_frequency": 10175
+  },
+  {
+    "word": "das Testosteron",
+    "definition": [
+      "testosterone",
+      "Testosteron ist ein wichtiges Hormon. — Testosterone is an important hormone."
+    ],
+    "word_frequency": 16271
+  },
+  {
+    "word": "das Tochterunternehmen",
+    "definition": [
+      "subsidiary company",
+      "Das Unternehmen hat mehrere Tochterunternehmen weltweit. — The company has several subsidiary companies worldwide."
+    ],
+    "word_frequency": 18553
+  },
+  {
+    "word": "das Todesurteil",
+    "definition": [
+      "death sentence",
+      "Das Gericht fällte ein Todesurteil. — The court passed a death sentence."
+    ],
+    "word_frequency": 18235
+  },
+  {
+    "word": "das Trauma",
+    "definition": [
+      "trauma",
+      "Das Erlebnis war ein großes Trauma für ihn. — The experience was a great trauma for him."
+    ],
+    "word_frequency": 7459
+  },
+  {
+    "word": "das Tribunal",
+    "definition": [
+      "tribunal",
+      "Das internationale Tribunal hat eine Entscheidung getroffen. — The international tribunal has made a decision."
+    ],
+    "word_frequency": 20762
+  },
+  {
+    "word": "das Triple",
+    "definition": [
+      "triple",
+      "Das Team gewann das Triple in dieser Saison. — The team won the triple this season."
+    ],
+    "word_frequency": 9029
+  },
+  {
+    "word": "das Unding",
+    "definition": [
+      "absurdity;impossible thing",
+      "Das ist ein Unding, so etwas zu verlangen. — That's an absurdity to demand something like that."
+    ],
+    "word_frequency": 25613
+  },
+  {
+    "word": "das Ungleichgewicht",
+    "definition": [
+      "imbalance",
+      "Es gibt ein Ungleichgewicht zwischen Angebot und Nachfrage. — There is an imbalance between supply and demand."
+    ],
+    "word_frequency": 22858
+  },
+  {
+    "word": "das Universitätsklinikum",
+    "definition": [
+      "university hospital",
+      "Das Universitätsklinikum ist bekannt für seine Forschung. — The university hospital is known for its research."
+    ],
+    "word_frequency": 19500
+  },
+  {
+    "word": "das Unterfangen",
+    "definition": [
+      "undertaking;endeavor",
+      "Das Projekt war ein schwieriges Unterfangen. — The project was a difficult undertaking."
+    ],
+    "word_frequency": 13146
+  },
+  {
+    "word": "das Unterholz",
+    "definition": [
+      "undergrowth;brushwood",
+      "Das Unterholz war dicht und schwer zu durchdringen. — The undergrowth was dense and difficult to penetrate."
+    ],
+    "word_frequency": 26821
+  },
+  {
+    "word": "das Unvermögen",
+    "definition": [
+      "inability;incapacity",
+      "Sein Unvermögen, Entscheidungen zu treffen, war offensichtlich. — His inability to make decisions was obvious."
+    ],
+    "word_frequency": 23586
+  },
+  {
+    "word": "das Urgestein",
+    "definition": [
+      "bedrock;veteran",
+      "Er ist ein Urgestein des Vereins. — He is a veteran of the club."
+    ],
+    "word_frequency": 29564
+  },
+  {
+    "word": "das Urheberrecht",
+    "definition": [
+      "copyright",
+      "Das Urheberrecht schützt geistiges Eigentum. — Copyright protects intellectual property."
+    ],
+    "word_frequency": 8746
+  },
+  {
+    "word": "das Verantwortungsbewusstsein",
+    "definition": [
+      "sense of responsibility;responsibility awareness",
+      "Ein hohes Verantwortungsbewusstsein ist in dieser Position unerlässlich. — A high sense of responsibility is essential in this position."
+    ],
+    "word_frequency": 27678
+  },
+  {
+    "word": "das Verfassungsgericht",
+    "definition": [
+      "constitutional court",
+      "Das Verfassungsgericht hat die Klage abgewiesen. — The constitutional court dismissed the complaint."
+    ],
+    "word_frequency": 13150
+  },
+  {
+    "word": "das Verfassungsrecht",
+    "definition": [
+      "constitutional law",
+      "Er studiert Verfassungsrecht an der Universität. — He studies constitutional law at the university."
+    ],
+    "word_frequency": 26828
+  },
+  {
+    "word": "das Verhängnis",
+    "definition": [
+      "doom;fate;calamity",
+      "Das war ein Verhängnis für die ganze Stadt. — That was a calamity for the whole city."
+    ],
+    "word_frequency": 15759
+  },
+  {
+    "word": "das Verkehrsaufkommen",
+    "definition": [
+      "traffic volume",
+      "Das Verkehrsaufkommen war heute Morgen sehr hoch. — The traffic volume was very high this morning."
+    ],
+    "word_frequency": 18871
+  },
+  {
+    "word": "das Vermächtnis",
+    "definition": [
+      "legacy;bequest",
+      "Sein Vermächtnis wird lange in Erinnerung bleiben. — His legacy will be remembered for a long time."
+    ],
+    "word_frequency": 11816
+  },
+  {
+    "word": "das Verteidigungsministerium",
+    "definition": [
+      "Ministry of Defense",
+      "Das Verteidigungsministerium hat eine neue Strategie angekündigt. — The Ministry of Defense announced a new strategy."
+    ],
+    "word_frequency": 12486
+  },
+  {
+    "word": "das Verwaltungsrecht",
+    "definition": [
+      "administrative law",
+      "Er studiert Verwaltungsrecht an der Universität. — He studies administrative law at the university."
+    ],
+    "word_frequency": 23592
+  },
+  {
+    "word": "das Volksbegehren",
+    "definition": [
+      "popular initiative",
+      "Das Volksbegehren wurde von vielen Bürgern unterstützt. — The popular initiative was supported by many citizens."
+    ],
+    "word_frequency": 14741
+  },
+  {
+    "word": "das Vorhandensein",
+    "definition": [
+      "presence;existence",
+      "Das Vorhandensein von Wasser ist entscheidend. — The presence of water is crucial."
+    ],
+    "word_frequency": 14053
+  },
+  {
+    "word": "das Vorkommnis",
+    "definition": [
+      "incident;occurrence",
+      "Es gab ein seltsames Vorkommnis. — There was a strange incident."
+    ],
+    "word_frequency": 14054
+  },
+  {
+    "word": "das Vorstandsmitglied",
+    "definition": [
+      "board member;executive board member",
+      "Sie ist ein neues Vorstandsmitglied. — She is a new board member."
+    ],
+    "word_frequency": 7895
+  },
+  {
+    "word": "das Votum",
+    "definition": [
+      "vote",
+      "Das Votum des Parlaments war eindeutig. — The parliament's vote was clear."
+    ],
+    "word_frequency": 12267
+  },
+  {
+    "word": "das Völkerrecht",
+    "definition": [
+      "international law",
+      "Das Völkerrecht regelt die Beziehungen zwischen Staaten. — International law regulates relations between states."
+    ],
+    "word_frequency": 10365
+  },
+  {
+    "word": "das Waffengesetz",
+    "definition": [
+      "gun law;weapons act",
+      "Das Waffengesetz wurde verschärft. — The gun law was tightened."
+    ],
+    "word_frequency": 29110
+  },
+  {
+    "word": "das Wechselspiel",
+    "definition": [
+      "interplay;interaction",
+      "Es gibt ein komplexes Wechselspiel zwischen Angebot und Nachfrage. — There is a complex interplay between supply and demand."
+    ],
+    "word_frequency": 27307
+  },
+  {
+    "word": "das Weed",
+    "definition": [
+      "weed",
+      "Der Geruch von Weed lag in der Luft. — The smell of weed was in the air."
+    ],
+    "word_frequency": 18578
+  },
+  {
+    "word": "das Weib",
+    "definition": [
+      "woman;female (often archaic or derogatory)",
+      "Im Mittelalter wurde das Weib oft als schwächer angesehen. — In the Middle Ages, the woman was often seen as weaker."
+    ],
+    "word_frequency": 5137
+  },
+  {
+    "word": "das Wertpapier",
+    "definition": [
+      "security (financial)",
+      "Er investiert in Wertpapiere. — He invests in securities."
+    ],
+    "word_frequency": 13393
+  },
+  {
+    "word": "das Wirtschaftsrecht",
+    "definition": [
+      "commercial law",
+      "Er studiert Wirtschaftsrecht an der Universität. — He studies commercial law at the university."
+    ],
+    "word_frequency": 26085
+  },
+  {
+    "word": "das Wirtschaftswunder",
+    "definition": [
+      "economic miracle",
+      "Das deutsche Wirtschaftswunder begann nach dem Krieg. — The German economic miracle began after the war."
+    ],
+    "word_frequency": 27704
+  },
+  {
+    "word": "das Wohlwollen",
+    "definition": [
+      "goodwill;benevolence",
+      "Er begegnete ihr mit großem Wohlwollen. — He met her with great goodwill."
+    ],
+    "word_frequency": 19205
+  },
+  {
+    "word": "das Zentralkomitee",
+    "definition": [
+      "central committee",
+      "Das Zentralkomitee traf eine wichtige Entscheidung. — The central committee made an important decision."
+    ],
+    "word_frequency": 29134
+  },
+  {
+    "word": "das Zepter",
+    "definition": [
+      "scepter",
+      "Der König hielt das Zepter in seiner Hand. — The king held the scepter in his hand."
+    ],
+    "word_frequency": 19209
+  },
+  {
+    "word": "das Zivilrecht",
+    "definition": [
+      "civil law",
+      "Er studiert Zivilrecht an der Universität. — He studies civil law at the university."
+    ],
+    "word_frequency": 22518
+  },
+  {
+    "word": "das Zugeständnis",
+    "definition": [
+      "concession",
+      "Die Firma machte ein Zugeständnis an die Mitarbeiter. — The company made a concession to the employees."
+    ],
+    "word_frequency": 14753
+  },
+  {
+    "word": "das Zusammenspiel",
+    "definition": [
+      "interplay;interaction",
+      "Das Zusammenspiel der Musiker war perfekt. — The interplay of the musicians was perfect."
+    ],
+    "word_frequency": 8338
+  },
+  {
+    "word": "das Zustandekommen",
+    "definition": [
+      "realization;coming about;conclusion",
+      "Das Zustandekommen des Vertrages war schwierig. — The conclusion of the contract was difficult."
+    ],
+    "word_frequency": 16073
+  },
+  {
+    "word": "das Überbleibsel",
+    "definition": [
+      "remnant;leftover",
+      "Diese Ruinen sind die letzten Überbleibsel einer alten Zivilisation. — These ruins are the last remnants of an ancient civilization."
+    ],
+    "word_frequency": 20182
+  }
+]

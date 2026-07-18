@@ -1,191 +1,214 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Generate Tartarus word-list JSON files from the bundled source decks.
+"""Build small, selectable Tartarus datasets from the bundled source decks."""
 
-Source: https://github.com/vbvss199/Language-Learning-decks
-
-Supported source files (place in data/word_lists/):
-  german.json, english.json
-
-Usage
------
-  # Vocabulary mode (one file per CEFR level)
-  python3 utils/generate_tartarus_json.py --lang german  --user bahman
-  python3 utils/generate_tartarus_json.py --lang english --user bahman
-
-  # Sentence mode: word = native sentence, definition = English sentence
-  python3 utils/generate_tartarus_json.py --lang german --user bahman --sentences
-
-  # Single CEFR level
-  python3 utils/generate_tartarus_json.py --lang german --user bahman --cefr B1
-
-  # Flashcard-quality entries only (useful_for_flashcard = true)
-
-Output
-------
-  Vocabulary : data/word_lists/<user>_<lang>_<level>.json
-  Sentences  : data/word_lists/<user>_<lang>_sentences_<level>.json
-
-Vocabulary definition format
-----------------------------
-  German : line 1 = english_translation
-           line 2 = "native sentence — english sentence"
-           word   = "der/die/das Word" for nouns, bare word otherwise
-
-  English  : line 1 = english_translation (= definition for English deck)
-             line 2 = english example sentence (when available)
-             word   = English word as-is
-"""
-import os
-import sys
-import json
 import argparse
+import glob
+import json
+import os
+from collections import Counter
 
-_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-WORD_LISTS_DIR = os.path.join(_ROOT, 'data', 'word_lists')
 
-GENDER_ARTICLE = {
-    'masculine': 'der',
-    'feminine':  'die',
-    'neuter':    'das',
-}
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+SOURCE_DIR = os.path.join(ROOT, 'data', 'sources')
+OUTPUT_DIR = os.path.join(ROOT, 'data', 'word_lists')
+LEVELS = ('A1', 'A2', 'B1', 'B2', 'C1', 'C2')
 
-_POS_NORM = {
+GENDER_ARTICLE = {'masculine': 'der', 'feminine': 'die', 'neuter': 'das'}
+POS_NORMALIZATION = {
     'adj': 'adjective', 'adjektiv': 'adjective',
     'adv': 'adverb',
+    'n': 'noun',
     'num': 'numeral', 'number': 'numeral',
     'v': 'verb', 'v1': 'verb',
-    'n': 'noun',
-    'none': '', 'unclear': '', 'discard': '',
-    '[keep as-is]': '', '[as-is]': '', '[pos_edited]': '',
+    'none': 'other', 'unclear': 'other', 'discard': 'other',
+    '[keep as-is]': 'other', '[as-is]': 'other', '[pos_edited]': 'other',
+}
+POS_CATEGORIES = {'noun', 'verb', 'adjective', 'adverb', 'pronoun', 'numeral', 'conjunction', 'interjection'}
+POS_FILE_NAMES = {
+    'verb': 'verbs', 'adjective': 'adjectives', 'adverb': 'adverbs',
+    'pronoun': 'pronouns', 'numeral': 'numerals',
+    'conjunction': 'conjunctions', 'interjection': 'interjections',
+    'other': 'other',
+}
+NOUN_GENDER_GROUPS = {
+    'masculine': 'nouns_masculine',
+    'feminine': 'nouns_feminine',
+    'neuter': 'nouns_neuter',
+    'variable': 'nouns_variable',
+    'plural_only': 'nouns_plural',
 }
 
-VALID_CEFR = {'A1', 'A2', 'B1', 'B2', 'C1', 'C2'}
 
-def normalize_pos(raw):
-    return _POS_NORM.get(raw, raw).lower().strip()
+def normalize_pos(value):
+    raw = str(value or '').strip().lower()
+    return POS_NORMALIZATION.get(raw, raw if raw in POS_CATEGORIES else 'other')
 
 
-def build_vocab_entry(record, lang):
-    word = record.get('word', '').strip()
+def category(record, language):
+    pos = normalize_pos(record.get('pos'))
+    if pos == 'noun':
+        if language != 'german':
+            return 'nouns'
+        gender = str(record.get('gender') or '').strip().lower()
+        if gender in GENDER_ARTICLE:
+            return f'nouns_{gender}'
+        if gender in NOUN_GENDER_GROUPS:
+            return NOUN_GENDER_GROUPS[gender]
+        return 'nouns_unknown'
+    return POS_FILE_NAMES[pos]
+
+
+def frequency(record):
+    value = record.get('word_frequency')
+    try:
+        value = int(value)
+    except (TypeError, ValueError):
+        return None
+    return value if value >= 0 else None
+
+
+def definition_lines(record, language):
+    translation = str(record.get('english_translation') or '').strip()
+    native = str(record.get('example_sentence_native') or '').strip()
+    english = str(record.get('example_sentence_english') or '').strip()
+    lines = [translation] if translation else []
+    if native and english and language == 'german':
+        lines.append(f'{native} — {english}')
+    elif english:
+        lines.append(english)
+    return lines
+
+
+def vocab_entry(record, language):
+    word = str(record.get('word') or '').strip()
     if not word:
         return None
-
-    translation = record.get('english_translation', '').strip()
-    pos = normalize_pos(record.get('pos', ''))
-    gender = record.get('gender', '')
-    native_sent = record.get('example_sentence_native', '').strip()
-    english_sent = record.get('example_sentence_english', '').strip()
-
-    if lang == 'german' and pos == 'noun':
-        article = GENDER_ARTICLE.get(gender, '')
-        word_field = f'{article} {word}' if article else word
-    else:
-        word_field = word
-
-    definition = []
-    if translation:
-        definition.append(translation)
-
-    if native_sent and english_sent:
-        definition.append(f'{native_sent} — {english_sent}')
-    elif english_sent and lang != 'german':
-        definition.append(english_sent)
-
-    if not definition:
+    if language == 'german' and normalize_pos(record.get('pos')) == 'noun':
+        article = GENDER_ARTICLE.get(str(record.get('gender') or '').strip().lower())
+        if article:
+            word = f'{article} {word}'
+    lines = definition_lines(record, language)
+    if not lines:
         return None
+    entry = {'word': word, 'definition': lines if len(lines) > 1 else lines[0]}
+    freq = frequency(record)
+    if freq is not None:
+        entry['word_frequency'] = freq
+    return entry
 
-    return {
-        'word': word_field,
-        'definition': definition if len(definition) > 1 else definition[0],
-    }
 
-
-def build_sentence_entry(record):
-    native = record.get('example_sentence_native', '').strip()
-    english = record.get('example_sentence_english', '').strip()
+def sentence_entry(record):
+    native = str(record.get('example_sentence_native') or '').strip()
+    english = str(record.get('example_sentence_english') or '').strip()
     if not native or not english:
         return None
-    return {'word': native, 'definition': english}
+    entry = {'word': native, 'definition': english}
+    freq = frequency(record)
+    if freq is not None:
+        entry['word_frequency'] = freq
+    return entry
 
 
-def generate(lang, user, cefr_filter=None, sentences=False, flashcard_only=False):
-    source_path = os.path.join(WORD_LISTS_DIR, f'{lang}.json')
-    if not os.path.exists(source_path):
-        print(f'Source file not found: {source_path}', file=sys.stderr)
-        sys.exit(1)
+def merge_entry(existing, candidate):
+    """Merge exact duplicate identities without losing useful definitions."""
+    old_defs = existing['definition'] if isinstance(existing['definition'], list) else [existing['definition']]
+    new_defs = candidate['definition'] if isinstance(candidate['definition'], list) else [candidate['definition']]
+    definitions = list(dict.fromkeys([value for value in old_defs + new_defs if value]))
+    existing['definition'] = definitions if len(definitions) > 1 else definitions[0]
+    old_freq = existing.get('word_frequency')
+    new_freq = candidate.get('word_frequency')
+    if old_freq is None or (new_freq is not None and new_freq < old_freq):
+        if new_freq is not None:
+            existing['word_frequency'] = new_freq
+    return existing
 
-    with open(source_path, encoding='utf-8') as f:
-        records = json.load(f)
 
-    buckets = {}
-    skipped = 0
+def identity(record, language):
+    return (
+        str(record.get('word') or '').strip().casefold(),
+        normalize_pos(record.get('pos')),
+        str(record.get('gender') or '').strip().lower(),
+        str(record.get('cefr_level') or '').strip().upper(),
+    )
+
+
+def load_records(language):
+    path = os.path.join(SOURCE_DIR, f'{language}.json')
+    with open(path, encoding='utf-8') as source:
+        return json.load(source)
+
+
+def clean_generated_outputs(language):
+    for path in glob.glob(os.path.join(OUTPUT_DIR, f'{language}_*.json')):
+        if os.path.basename(path).startswith(f'{language}_goethe_'):
+            continue
+        os.remove(path)
+
+
+def generate(language):
+    clean_generated_outputs(language)
+    records = load_records(language)
+    vocab = {}
+    sentences = {}
+    skipped = Counter()
     for record in records:
-        if flashcard_only and not record.get('useful_for_flashcard'):
-            skipped += 1
+        level = str(record.get('cefr_level') or '').strip().upper()
+        if level not in LEVELS:
+            skipped['invalid_cefr'] += 1
             continue
-        level = record.get('cefr_level', '').strip().upper()
-        if level not in VALID_CEFR:
-            skipped += 1
-            continue
-        if cefr_filter and level != cefr_filter.upper():
-            continue
-        entry = build_sentence_entry(record) if sentences else build_vocab_entry(record, lang)
-        if entry is None:
-            skipped += 1
-            continue
-        buckets.setdefault(level, []).append(entry)
+        group = category(record, language)
+        key = identity(record, language)
+        vocab_entry_value = vocab_entry(record, language)
+        if vocab_entry_value is None:
+            skipped['missing_vocab_data'] += 1
+        else:
+            vocab.setdefault((group, level, key), vocab_entry_value)
+            if vocab[(group, level, key)] is not vocab_entry_value:
+                merge_entry(vocab[(group, level, key)], vocab_entry_value)
+        sentence_entry_value = sentence_entry(record)
+        if sentence_entry_value is not None:
+            sentence_key = (group, level, sentence_entry_value['word'].casefold())
+            sentences.setdefault(sentence_key, sentence_entry_value)
+            if sentences[sentence_key] is not sentence_entry_value:
+                merge_entry(sentences[sentence_key], sentence_entry_value)
+        else:
+            skipped['missing_sentence_data'] += 1
 
-    if not buckets:
-        print('No entries matched the given filters.')
-        return
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
+    generated = Counter()
+    for (group, level, _), entry in sorted(vocab.items()):
+        path = os.path.join(OUTPUT_DIR, f'{language}_{group}_{level.lower()}.json')
+        generated[path] += 1
+    for path in generated:
+        entries = [entry for (group, level, _), entry in sorted(vocab.items())
+                   if path.endswith(f'{language}_{group}_{level.lower()}.json')]
+        with open(path, 'w', encoding='utf-8') as output:
+            json.dump(entries, output, ensure_ascii=False, indent=2)
 
-    os.makedirs(WORD_LISTS_DIR, exist_ok=True)
-    for level in sorted(buckets):
-        entries = buckets[level]
-        kind = 'sentences_' if sentences else ''
-        # Output generic project files by default (no user prefix unless provided)
-        prefix = f'{user}_' if user else ''
-        out_name = f'{prefix}{lang}_{kind}{level.lower()}.json'
-        out_path = os.path.join(WORD_LISTS_DIR, out_name)
-        with open(out_path, 'w', encoding='utf-8') as f:
-            json.dump(entries, f, ensure_ascii=False, indent=2)
-        print(f'  {level}: {len(entries):>5} entries  →  {out_name}')
+    sentence_generated = Counter()
+    for (group, level, _), entry in sorted(sentences.items()):
+        path = os.path.join(OUTPUT_DIR, f'{language}_{group}_sentences_{level.lower()}.json')
+        sentence_generated[path] += 1
+    for path in sentence_generated:
+        entries = [entry for (group, level, _), entry in sorted(sentences.items())
+                   if path.endswith(f'{language}_{group}_sentences_{level.lower()}.json')]
+        with open(path, 'w', encoding='utf-8') as output:
+            json.dump(entries, output, ensure_ascii=False, indent=2)
 
+    print(f'{language}: {len(records)} source records, {len(vocab)} vocabulary records, '
+          f'{len(sentences)} sentence records')
+    print(f'  vocabulary files: {len(generated)}; sentence files: {len(sentence_generated)}')
     if skipped:
-        print(f'  (skipped {skipped} entries with missing/invalid CEFR or data)')
-
-    suffix = f'{lang}_sentences_a1' if sentences else f'{lang}_a1'
-    user_hint = f' --user <your_user>' if not user else f' --user {user}'
-    print(f'\nDone. Run: ./tartarus.sh practice{user_hint} --lang {suffix}')
+        print(f'  skipped/flagged: {dict(skipped)}')
 
 
 def main():
-    valid_langs = ['german', 'english']
-    parser = argparse.ArgumentParser(
-        description='Generate Tartarus JSON word lists from the bundled source decks.'
-    )
-    parser.add_argument('--lang', required=True, choices=valid_langs,
-                        help='Source deck language.')
-    parser.add_argument('--user', default='',
-                        help='Username prefix for output filenames (optional, for user-specific lists).')
-    parser.add_argument('--cefr', metavar='LEVEL',
-                        help='Only generate one CEFR level (A1/A2/B1/B2/C1/C2).')
-    parser.add_argument('--sentences', action='store_true',
-                        help='Sentence mode: word = native sentence, definition = English sentence.')
-    parser.add_argument('--flashcard-only', action='store_true',
-                        help='Only include entries marked useful_for_flashcard=true.')
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--lang', choices=('german', 'english'), default='german')
+    parser.add_argument('--all', action='store_true', help='Generate both German and English datasets.')
     args = parser.parse_args()
-
-    mode = 'sentence' if args.sentences else 'vocabulary'
-    user_desc = f' for user "{args.user}"' if args.user else ' (generic project files)'
-    print(f'Generating {args.lang.upper()} {mode} lists{user_desc}...')
-    if args.cefr:
-        print(f'Filtering to CEFR level: {args.cefr.upper()}')
-    if args.flashcard_only:
-        print('Flashcard-quality entries only.')
-    generate(args.lang, args.user, args.cefr, args.sentences, args.flashcard_only)
+    for language in ('german', 'english') if args.all else (args.lang,):
+        generate(language)
 
 
 if __name__ == '__main__':

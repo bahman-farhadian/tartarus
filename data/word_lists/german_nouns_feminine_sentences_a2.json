@@ -1,0 +1,2517 @@
+[
+  {
+    "word": "Achtung! Der Zug fährt ein.",
+    "definition": "Attention! The train is arriving.",
+    "word_frequency": 1765
+  },
+  {
+    "word": "Als Beilage gab es knusprige Bratkartoffeln.",
+    "definition": "As a side dish, there were crispy fried potatoes.",
+    "word_frequency": 26529
+  },
+  {
+    "word": "Als Vorspeise hatten wir einen kleinen Salat.",
+    "definition": "As a starter, we had a small salad.",
+    "word_frequency": 21453
+  },
+  {
+    "word": "Am Strand standen viele Palmen.",
+    "definition": "There were many palm trees on the beach.",
+    "word_frequency": 11391
+  },
+  {
+    "word": "An der Hauswand wächst Efeu.",
+    "definition": "Ivy grows on the house wall.",
+    "word_frequency": 22309
+  },
+  {
+    "word": "An der Wand hängt eine große Weltkarte.",
+    "definition": "A large world map hangs on the wall.",
+    "word_frequency": 26076
+  },
+  {
+    "word": "Atme tief die frische Luft ein.",
+    "definition": "Breathe in the fresh air deeply.",
+    "word_frequency": 597
+  },
+  {
+    "word": "Auf der Autobahn gibt es oft Stau.",
+    "definition": "There is often traffic jam on the highway.",
+    "word_frequency": 2148
+  },
+  {
+    "word": "Berlin ist die Hauptstadt von Deutschland.",
+    "definition": "Berlin is the capital city of Germany.",
+    "word_frequency": 1634
+  },
+  {
+    "word": "Besuchen Sie unsere Homepage für weitere Informationen.",
+    "definition": "Visit our homepage for more information.",
+    "word_frequency": 1535
+  },
+  {
+    "word": "Besuchen Sie unsere Website für weitere Informationen.",
+    "definition": "Visit our website for more information.",
+    "word_frequency": 883
+  },
+  {
+    "word": "Betreten Sie nicht die rote Zone.",
+    "definition": "Do not enter the red zone.",
+    "word_frequency": 2754
+  },
+  {
+    "word": "Bitte bewahren Sie die Quittung auf.",
+    "definition": "Please keep the receipt.",
+    "word_frequency": 13105
+  },
+  {
+    "word": "Bitte blockieren Sie nicht die Einfahrt.",
+    "definition": "Please do not block the driveway.",
+    "word_frequency": 8937
+  },
+  {
+    "word": "Bitte bring mir eine Dose Cola.",
+    "definition": "Please bring me a can of cola.",
+    "word_frequency": 5648
+  },
+  {
+    "word": "Bitte geben Sie Ihre Hausnummer an.",
+    "definition": "Please provide your house number.",
+    "word_frequency": 12594
+  },
+  {
+    "word": "Bitte geben Sie Ihre Kontonummer an.",
+    "definition": "Please provide your account number.",
+    "word_frequency": 24609
+  },
+  {
+    "word": "Bitte geben Sie Ihre Nationalität an.",
+    "definition": "Please state your nationality.",
+    "word_frequency": 8419
+  },
+  {
+    "word": "Bitte geben Sie Ihre Postleitzahl ein.",
+    "definition": "Please enter your postal code.",
+    "word_frequency": 21042
+  },
+  {
+    "word": "Bitte geben Sie Ihre Rufnummer an.",
+    "definition": "Please provide your phone number.",
+    "word_frequency": 13119
+  },
+  {
+    "word": "Bitte geben Sie Ihre vollständige Anschrift an.",
+    "definition": "Please provide your full address.",
+    "word_frequency": 12290
+  },
+  {
+    "word": "Bitte gehen Sie zur Kasse.",
+    "definition": "Please go to the cash register.",
+    "word_frequency": 2881
+  },
+  {
+    "word": "Bitte gib mir die Tube Zahnpasta.",
+    "definition": "Please give me the tube of toothpaste.",
+    "word_frequency": 10535
+  },
+  {
+    "word": "Bitte hängen Sie Ihren Mantel in der Garderobe auf.",
+    "definition": "Please hang your coat in the cloakroom.",
+    "word_frequency": 10963
+  },
+  {
+    "word": "Bitte keine Plastiktüte, ich habe eine Stofftasche dabei.",
+    "definition": "No plastic bag, please, I have a cloth bag with me.",
+    "word_frequency": 19110
+  },
+  {
+    "word": "Bitte legen Sie die Dokumente in die Mappe.",
+    "definition": "Please put the documents in the folder.",
+    "word_frequency": 17558
+  },
+  {
+    "word": "Bitte lesen Sie die nächste Zeile.",
+    "definition": "Please read the next line.",
+    "word_frequency": 4388
+  },
+  {
+    "word": "Bitte machen Sie eine Liste.",
+    "definition": "Please make a list.",
+    "word_frequency": 699
+  },
+  {
+    "word": "Bitte melden Sie sich an der Rezeption.",
+    "definition": "Please check in at the reception.",
+    "word_frequency": 5831
+  },
+  {
+    "word": "Bitte nehmen Sie eine Tablette vor dem Schlafengehen.",
+    "definition": "Please take a tablet before going to bed.",
+    "word_frequency": 5842
+  },
+  {
+    "word": "Bitte schauen Sie sich die Tabelle auf Seite fünf an.",
+    "definition": "Please look at the table on page five.",
+    "word_frequency": 2274
+  },
+  {
+    "word": "Bitte schließe die Haustür ab.",
+    "definition": "Please lock the front door.",
+    "word_frequency": 4904
+  },
+  {
+    "word": "Bitte schließe die Haustüre, wenn du gehst.",
+    "definition": "Please close the front door when you leave.",
+    "word_frequency": 19986
+  },
+  {
+    "word": "Bitte stellen Sie sich in einer Reihe auf.",
+    "definition": "Please stand in a row.",
+    "word_frequency": 600
+  },
+  {
+    "word": "Bitte wirf den Abfall in die Mülltonne.",
+    "definition": "Please throw the waste into the garbage can.",
+    "word_frequency": 15673
+  },
+  {
+    "word": "Bitte zeigen Sie Ihre Eintrittskarte am Eingang vor.",
+    "definition": "Please show your admission ticket at the entrance.",
+    "word_frequency": 14813
+  },
+  {
+    "word": "Bring deine Sachen in Ordnung.",
+    "definition": "Put your things in order.",
+    "word_frequency": 744
+  },
+  {
+    "word": "Das Baby braucht eine frische Windel.",
+    "definition": "The baby needs a fresh diaper.",
+    "word_frequency": 12270
+  },
+  {
+    "word": "Das Buch liegt in der Ecke des Zimmers.",
+    "definition": "The book is in the corner of the room.",
+    "word_frequency": 1293
+  },
+  {
+    "word": "Das Geschirr steht in der Spüle.",
+    "definition": "The dishes are in the sink.",
+    "word_frequency": 20422
+  },
+  {
+    "word": "Das Hotel liegt in der Stadtmitte.",
+    "definition": "The hotel is located in the city center.",
+    "word_frequency": 16519
+  },
+  {
+    "word": "Das ist die Regel.",
+    "definition": "That is the rule.",
+    "word_frequency": 649
+  },
+  {
+    "word": "Das ist eine Einbahnstrasse, du kannst hier nicht einfahren.",
+    "definition": "This is a one-way street, you cannot enter here.",
+    "word_frequency": 18062
+  },
+  {
+    "word": "Das ist eine komplizierte Sache.",
+    "definition": "That is a complicated matter.",
+    "word_frequency": 354
+  },
+  {
+    "word": "Das ist meine Meinung dazu.",
+    "definition": "That is my opinion on it.",
+    "word_frequency": 462
+  },
+  {
+    "word": "Das Kind spielt mit seiner neuen Spielsache.",
+    "definition": "The child is playing with its new toy.",
+    "word_frequency": 17637
+  },
+  {
+    "word": "Das war eine große Überraschung für mich.",
+    "definition": "That was a big surprise for me.",
+    "word_frequency": 2142
+  },
+  {
+    "word": "Das war eine wichtige Entscheidung.",
+    "definition": "That was an important decision.",
+    "word_frequency": 574
+  },
+  {
+    "word": "Der Hund gab mir seine Pfote.",
+    "definition": "The dog gave me its paw.",
+    "word_frequency": 11979
+  },
+  {
+    "word": "Der Lehrer schrieb an die Tafel.",
+    "definition": "The teacher wrote on the blackboard.",
+    "word_frequency": 3562
+  },
+  {
+    "word": "Der Müll kommt in die Tonne.",
+    "definition": "The trash goes into the bin.",
+    "word_frequency": 2404
+  },
+  {
+    "word": "Die Abfahrt des Zuges ist um 10 Uhr.",
+    "definition": "The train's departure is at 10 AM.",
+    "word_frequency": 4221
+  },
+  {
+    "word": "Die Abholung der Ware ist morgen möglich.",
+    "definition": "The collection of the goods is possible tomorrow.",
+    "word_frequency": 16566
+  },
+  {
+    "word": "Die Abreise ist für morgen früh geplant.",
+    "definition": "The departure is planned for tomorrow morning.",
+    "word_frequency": 7755
+  },
+  {
+    "word": "Die Addition von zwei und drei ist fünf.",
+    "definition": "The addition of two and three is five.",
+    "word_frequency": 17706
+  },
+  {
+    "word": "Die alte Burg steht auf einem Hügel.",
+    "definition": "The old castle stands on a hill.",
+    "word_frequency": 2380
+  },
+  {
+    "word": "Die alte Mauer ist sehr hoch.",
+    "definition": "The old wall is very high.",
+    "word_frequency": 2176
+  },
+  {
+    "word": "Die Ankunft des Zuges wurde verspätet.",
+    "definition": "The arrival of the train was delayed.",
+    "word_frequency": 3123
+  },
+  {
+    "word": "Die Anmeldung für den Kurs ist jetzt geöffnet.",
+    "definition": "The registration for the course is now open.",
+    "word_frequency": 3387
+  },
+  {
+    "word": "Die Arbeiterin war sehr fleißig.",
+    "definition": "The female worker was very diligent.",
+    "word_frequency": 18298
+  },
+  {
+    "word": "Die Arztpraxis ist heute geschlossen.",
+    "definition": "The doctor's office is closed today.",
+    "word_frequency": 20202
+  },
+  {
+    "word": "Die Assistentin hat mir geholfen.",
+    "definition": "The female assistant helped me.",
+    "word_frequency": 11101
+  },
+  {
+    "word": "Die Autofahrerin parkte ihr Auto am Straßenrand.",
+    "definition": "The female car driver parked her car at the roadside.",
+    "word_frequency": 26910
+  },
+  {
+    "word": "Die Autofahrt dauerte drei Stunden.",
+    "definition": "The car ride lasted three hours.",
+    "word_frequency": 18627
+  },
+  {
+    "word": "Die Autorin liest aus ihrem neuen Buch vor.",
+    "definition": "The author reads from her new book.",
+    "word_frequency": 14317
+  },
+  {
+    "word": "Die Badewanne ist voll mit Wasser.",
+    "definition": "The bathtub is full of water.",
+    "word_frequency": 8474
+  },
+  {
+    "word": "Die Batterie meines Handys ist leer.",
+    "definition": "My phone's battery is dead.",
+    "word_frequency": 5343
+  },
+  {
+    "word": "Die Bedienung im Restaurant war sehr freundlich.",
+    "definition": "The service in the restaurant was very friendly.",
+    "word_frequency": 7110
+  },
+  {
+    "word": "Die Blumen stehen in der Vase.",
+    "definition": "The flowers are in the vase.",
+    "word_frequency": 13596
+  },
+  {
+    "word": "Die Blüte des Baumes ist wunderschön.",
+    "definition": "The blossom of the tree is beautiful.",
+    "word_frequency": 4633
+  },
+  {
+    "word": "Die Box ist leer.",
+    "definition": "The box is empty.",
+    "word_frequency": 2564
+  },
+  {
+    "word": "Die Brücke ist sehr alt.",
+    "definition": "The bridge is very old.",
+    "word_frequency": 1469
+  },
+  {
+    "word": "Die Busfahrt zum Strand dauerte eine Stunde.",
+    "definition": "The bus ride to the beach took an hour.",
+    "word_frequency": 22939
+  },
+  {
+    "word": "Die Dame trug einen eleganten Hut.",
+    "definition": "The lady wore an elegant hat.",
+    "word_frequency": 1015
+  },
+  {
+    "word": "Die Direktorin hat eine wichtige Entscheidung getroffen.",
+    "definition": "The female director made an important decision.",
+    "word_frequency": 10587
+  },
+  {
+    "word": "Die Dokumente sind in der Schublade.",
+    "definition": "The documents are in the drawer.",
+    "word_frequency": 6023
+  },
+  {
+    "word": "Die Eingangstür war verschlossen.",
+    "definition": "The entrance door was locked.",
+    "word_frequency": 16616
+  },
+  {
+    "word": "Die Eisenbahn fährt pünktlich ab.",
+    "definition": "The train departs on time.",
+    "word_frequency": 4565
+  },
+  {
+    "word": "Die Ente schwamm auf dem Teich.",
+    "definition": "The duck swam on the pond.",
+    "word_frequency": 7129
+  },
+  {
+    "word": "Die Erde dreht sich um die Sonne.",
+    "definition": "The Earth revolves around the sun.",
+    "word_frequency": 787
+  },
+  {
+    "word": "Die Eule sitzt auf dem Baum.",
+    "definition": "The owl is sitting on the tree.",
+    "word_frequency": 11509
+  },
+  {
+    "word": "Die Fahrerin des Busses war sehr freundlich.",
+    "definition": "The driver of the bus was very friendly.",
+    "word_frequency": 18696
+  },
+  {
+    "word": "Die Fahrt zum Meer dauert zwei Stunden.",
+    "definition": "The journey to the sea takes two hours.",
+    "word_frequency": 1189
+  },
+  {
+    "word": "Die Fahrzeit zum Flughafen beträgt 30 Minuten.",
+    "definition": "The travel time to the airport is 30 minutes.",
+    "word_frequency": 16915
+  },
+  {
+    "word": "Die Familie lebt auf einer großen Farm.",
+    "definition": "The family lives on a large farm.",
+    "word_frequency": 6182
+  },
+  {
+    "word": "Die Feier war sehr schön.",
+    "definition": "The celebration was very nice.",
+    "word_frequency": 2430
+  },
+  {
+    "word": "Die Fensterscheibe war zerbrochen.",
+    "definition": "The window pane was broken.",
+    "word_frequency": 27425
+  },
+  {
+    "word": "Die Feuerwache ist gleich um die Ecke.",
+    "definition": "The fire station is just around the corner.",
+    "word_frequency": 23339
+  },
+  {
+    "word": "Die Feuerwehr war schnell am Unfallort.",
+    "definition": "The fire department was quickly at the scene of the accident.",
+    "word_frequency": 1888
+  },
+  {
+    "word": "Die Flagge wehte im Wind.",
+    "definition": "The flag waved in the wind.",
+    "word_frequency": 3268
+  },
+  {
+    "word": "Die Form des Tisches ist rund.",
+    "definition": "The form of the table is round.",
+    "word_frequency": 390
+  },
+  {
+    "word": "Die Fotografie ist ein schönes Hobby.",
+    "definition": "Photography is a beautiful hobby.",
+    "word_frequency": 3873
+  },
+  {
+    "word": "Die Fotografin machte schöne Bilder.",
+    "definition": "The photographer took beautiful pictures.",
+    "word_frequency": 13244
+  },
+  {
+    "word": "Die Gans schnatterte laut im Garten.",
+    "definition": "The goose honked loudly in the garden.",
+    "word_frequency": 11338
+  },
+  {
+    "word": "Die Gardinen sind zugezogen.",
+    "definition": "The curtains are drawn.",
+    "word_frequency": 21932
+  },
+  {
+    "word": "Die Giraffe hat einen sehr langen Hals.",
+    "definition": "The giraffe has a very long neck.",
+    "word_frequency": 19346
+  },
+  {
+    "word": "Die Glocke läutet jede Stunde.",
+    "definition": "The bell rings every hour.",
+    "word_frequency": 6080
+  },
+  {
+    "word": "Die Glühbirne im Wohnzimmer ist kaputt.",
+    "definition": "The light bulb in the living room is broken.",
+    "word_frequency": 20295
+  },
+  {
+    "word": "Die Grenze zwischen den Ländern ist lang.",
+    "definition": "The border between the countries is long.",
+    "word_frequency": 860
+  },
+  {
+    "word": "Die Gruppe trifft sich um acht Uhr.",
+    "definition": "The group meets at eight o'clock.",
+    "word_frequency": 336
+  },
+  {
+    "word": "Die gute Fee erfüllte ihr einen Wunsch.",
+    "definition": "The good fairy granted her a wish.",
+    "word_frequency": 9893
+  },
+  {
+    "word": "Die Halle war voller Menschen.",
+    "definition": "The hall was full of people.",
+    "word_frequency": 1063
+  },
+  {
+    "word": "Die Haut ist das größte Organ des Körpers.",
+    "definition": "The skin is the largest organ of the body.",
+    "word_frequency": 1000
+  },
+  {
+    "word": "Die Heimfahrt dauerte länger als erwartet.",
+    "definition": "The journey home took longer than expected.",
+    "word_frequency": 20952
+  },
+  {
+    "word": "Die Heizung ist kaputt.",
+    "definition": "The heating is broken.",
+    "word_frequency": 4730
+  },
+  {
+    "word": "Die Helferin unterstützte uns bei der Arbeit.",
+    "definition": "The female helper assisted us with the work.",
+    "word_frequency": 26247
+  },
+  {
+    "word": "Die Henne legt jeden Tag Eier.",
+    "definition": "The hen lays eggs every day.",
+    "word_frequency": 14152
+  },
+  {
+    "word": "Die Hitze war unerträglich.",
+    "definition": "The heat was unbearable.",
+    "word_frequency": 2635
+  },
+  {
+    "word": "Die Hochzeit war wunderschön.",
+    "definition": "The wedding was beautiful.",
+    "word_frequency": 1941
+  },
+  {
+    "word": "Die Hälfte des Kuchens ist noch da.",
+    "definition": "Half of the cake is still there.",
+    "word_frequency": 661
+  },
+  {
+    "word": "Die Hündin hat Welpen bekommen.",
+    "definition": "The female dog had puppies.",
+    "word_frequency": 11926
+  },
+  {
+    "word": "Die Innenstadt ist sehr belebt.",
+    "definition": "The city center is very lively.",
+    "word_frequency": 2390
+  },
+  {
+    "word": "Die Japanerin sprach fließend Deutsch.",
+    "definition": "The Japanese woman spoke fluent German.",
+    "word_frequency": 29819
+  },
+  {
+    "word": "Die Journalistin schrieb einen Artikel über das Ereignis.",
+    "definition": "The journalist wrote an article about the event.",
+    "word_frequency": 6778
+  },
+  {
+    "word": "Die Kaffeemaschine ist kaputt.",
+    "definition": "The coffee machine is broken.",
+    "word_frequency": 12821
+  },
+  {
+    "word": "Die Kamera ist neu.",
+    "definition": "The camera is new.",
+    "word_frequency": 1066
+  },
+  {
+    "word": "Die Kanne Tee ist leer.",
+    "definition": "The pot of tea is empty.",
+    "word_frequency": 14626
+  },
+  {
+    "word": "Die Kassiererin hat meine Einkäufe gescannt.",
+    "definition": "The cashier scanned my groceries.",
+    "word_frequency": 13721
+  },
+  {
+    "word": "Die Kekse sind in einer Schachtel.",
+    "definition": "The cookies are in a box.",
+    "word_frequency": 11415
+  },
+  {
+    "word": "Die Kinder spielen auf der Rutsche.",
+    "definition": "The children are playing on the slide.",
+    "word_frequency": 15996
+  },
+  {
+    "word": "Die Kinder spielen auf der Schaukel.",
+    "definition": "The children are playing on the swing.",
+    "word_frequency": 17915
+  },
+  {
+    "word": "Die Kinder spielen in der Turnhalle.",
+    "definition": "The children are playing in the gym hall.",
+    "word_frequency": 11248
+  },
+  {
+    "word": "Die Kirche ist sehr alt.",
+    "definition": "The church is very old.",
+    "word_frequency": 449
+  },
+  {
+    "word": "Die Klassenfahrt nach Berlin war sehr aufregend.",
+    "definition": "The school trip to Berlin was very exciting.",
+    "word_frequency": 20007
+  },
+  {
+    "word": "Die Kleidung liegt in der Kommode.",
+    "definition": "The clothes are in the chest of drawers.",
+    "word_frequency": 18758
+  },
+  {
+    "word": "Die Klingel läutet.",
+    "definition": "The bell rings.",
+    "word_frequency": 13954
+  },
+  {
+    "word": "Die Krabbe läuft seitwärts am Strand.",
+    "definition": "The crab walks sideways on the beach.",
+    "word_frequency": 26661
+  },
+  {
+    "word": "Die Krankenschwester kümmerte sich um den Patienten.",
+    "definition": "The nurse took care of the patient.",
+    "word_frequency": 6780
+  },
+  {
+    "word": "Die Kuh gibt Milch.",
+    "definition": "The cow gives milk.",
+    "word_frequency": 4499
+  },
+  {
+    "word": "Die Kundin war mit dem Service zufrieden.",
+    "definition": "The female customer was satisfied with the service.",
+    "word_frequency": 11943
+  },
+  {
+    "word": "Die Kunst ist eine Form des Ausdrucks.",
+    "definition": "Art is a form of expression.",
+    "word_frequency": 530
+  },
+  {
+    "word": "Die Köchin bereitet das Abendessen zu.",
+    "definition": "The female cook is preparing dinner.",
+    "word_frequency": 14638
+  },
+  {
+    "word": "Die Königin besuchte die Stadt.",
+    "definition": "The queen visited the city.",
+    "word_frequency": 2019
+  },
+  {
+    "word": "Die Kühe grasen auf der grünen Wiese.",
+    "definition": "The cows are grazing in the green meadow.",
+    "word_frequency": 3848
+  },
+  {
+    "word": "Die Landschaft hier ist wunderschön.",
+    "definition": "The landscape here is beautiful.",
+    "word_frequency": 2020
+  },
+  {
+    "word": "Die Laterne beleuchtet den Weg im Dunkeln.",
+    "definition": "The lantern illuminates the path in the dark.",
+    "word_frequency": 10469
+  },
+  {
+    "word": "Die Lehrerin schrieb mit Kreide an die Tafel.",
+    "definition": "The teacher wrote with chalk on the board.",
+    "word_frequency": 12620
+  },
+  {
+    "word": "Die Leuchte an der Decke ist sehr hell.",
+    "definition": "The lamp on the ceiling is very bright.",
+    "word_frequency": 16189
+  },
+  {
+    "word": "Die Liebe ist ein starkes Gefühl.",
+    "definition": "Love is a strong feeling.",
+    "word_frequency": 208
+  },
+  {
+    "word": "Die Lieferung kommt morgen an.",
+    "definition": "The delivery arrives tomorrow.",
+    "word_frequency": 3821
+  },
+  {
+    "word": "Die Länge des Tisches beträgt zwei Meter.",
+    "definition": "The length of the table is two meters.",
+    "word_frequency": 1382
+  },
+  {
+    "word": "Die Läuferin gewann das Rennen.",
+    "definition": "The runner won the race.",
+    "word_frequency": 26315
+  },
+  {
+    "word": "Die Malerin hat ein neues Bild fertiggestellt.",
+    "definition": "The painter has finished a new painting.",
+    "word_frequency": 18153
+  },
+  {
+    "word": "Die Maschine ist sehr alt.",
+    "definition": "The machine is very old.",
+    "word_frequency": 1709
+  },
+  {
+    "word": "Die Melodie ist wunderschön.",
+    "definition": "The melody is beautiful.",
+    "word_frequency": 4919
+  },
+  {
+    "word": "Die Miete für die Wohnung ist hoch.",
+    "definition": "The rent for the apartment is high.",
+    "word_frequency": 2542
+  },
+  {
+    "word": "Die Mittagszeit ist meine Lieblingszeit des Tages.",
+    "definition": "Lunchtime is my favorite time of the day.",
+    "word_frequency": 17282
+  },
+  {
+    "word": "Die Mitte des Raumes ist leer.",
+    "definition": "The middle of the room is empty.",
+    "word_frequency": 475
+  },
+  {
+    "word": "Die Nudeln mit Tomatensoße schmecken gut.",
+    "definition": "The pasta with tomato sauce tastes good.",
+    "word_frequency": 7712
+  },
+  {
+    "word": "Die nächste Bahnstation ist nur fünf Minuten entfernt.",
+    "definition": "The next train station is only five minutes away.",
+    "word_frequency": 27361
+  },
+  {
+    "word": "Die nächste Station ist der Hauptbahnhof.",
+    "definition": "The next station is the main train station.",
+    "word_frequency": 1987
+  },
+  {
+    "word": "Die Pappe ist sehr stabil.",
+    "definition": "The cardboard is very stable.",
+    "word_frequency": 13980
+  },
+  {
+    "word": "Die Patientin wartet auf den Arzt.",
+    "definition": "The female patient is waiting for the doctor.",
+    "word_frequency": 15688
+  },
+  {
+    "word": "Die Pfanne ist heiß.",
+    "definition": "The pan is hot.",
+    "word_frequency": 7065
+  },
+  {
+    "word": "Die Politikerin hielt eine Rede.",
+    "definition": "The female politician gave a speech.",
+    "word_frequency": 6925
+  },
+  {
+    "word": "Die Polizeistation ist um die Ecke.",
+    "definition": "The police station is around the corner.",
+    "word_frequency": 21701
+  },
+  {
+    "word": "Die Polizistin half dem Kind.",
+    "definition": "The policewoman helped the child.",
+    "word_frequency": 11019
+  },
+  {
+    "word": "Die Prinzessin lebte in einem Schloss.",
+    "definition": "The princess lived in a castle.",
+    "word_frequency": 2697
+  },
+  {
+    "word": "Die Reise war sehr schön.",
+    "definition": "The journey was very nice.",
+    "word_frequency": 797
+  },
+  {
+    "word": "Die Rolltreppe ist kaputt.",
+    "definition": "The escalator is broken.",
+    "word_frequency": 23520
+  },
+  {
+    "word": "Die Schale der Banane ist gelb.",
+    "definition": "The peel of the banana is yellow.",
+    "word_frequency": 5715
+  },
+  {
+    "word": "Die Schauspielerin spielte ihre Rolle sehr überzeugend.",
+    "definition": "The actress played her role very convincingly.",
+    "word_frequency": 19761
+  },
+  {
+    "word": "Die Schildkröte bewegt sich sehr langsam.",
+    "definition": "The turtle moves very slowly.",
+    "word_frequency": 13339
+  },
+  {
+    "word": "Die Schlange vor dem Kino war sehr lang.",
+    "definition": "The queue in front of the cinema was very long.",
+    "word_frequency": 3980
+  },
+  {
+    "word": "Die Sekretärin hat alle Termine organisiert.",
+    "definition": "The secretary organized all the appointments.",
+    "word_frequency": 9629
+  },
+  {
+    "word": "Die Situation ist kompliziert.",
+    "definition": "The situation is complicated.",
+    "word_frequency": 617
+  },
+  {
+    "word": "Die Sommerferie beginnt nächste Woche.",
+    "definition": "The summer holiday begins next week.",
+    "word_frequency": 7080
+  },
+  {
+    "word": "Die Spülmaschine ist kaputt.",
+    "definition": "The dishwasher is broken.",
+    "word_frequency": 16766
+  },
+  {
+    "word": "Die Stadt hat 1,5 Mio. Einwohner.",
+    "definition": "The city has 1.5 million inhabitants.",
+    "word_frequency": 1331
+  },
+  {
+    "word": "Die Straße hat eine scharfe Kurve.",
+    "definition": "The road has a sharp curve.",
+    "word_frequency": 4184
+  },
+  {
+    "word": "Die Stromkosten sind in diesem Monat stark gestiegen.",
+    "definition": "The electricity costs have risen sharply this month.",
+    "word_frequency": 21756
+  },
+  {
+    "word": "Die Suppe ist in der Schüssel.",
+    "definition": "The soup is in the bowl.",
+    "word_frequency": 6817
+  },
+  {
+    "word": "Die Sängerin hatte eine wunderschöne Stimme.",
+    "definition": "The singer had a beautiful voice.",
+    "word_frequency": 3912
+  },
+  {
+    "word": "Die Temperatur ist heute sehr hoch.",
+    "definition": "The temperature is very high today.",
+    "word_frequency": 1678
+  },
+  {
+    "word": "Die Tierärztin hat meinen Hund untersucht.",
+    "definition": "The female veterinarian examined my dog.",
+    "word_frequency": 23969
+  },
+  {
+    "word": "Die Trainerin hat uns viel beigebracht.",
+    "definition": "The female trainer taught us a lot.",
+    "word_frequency": 14267
+  },
+  {
+    "word": "Die Tram fährt direkt zum Stadtzentrum.",
+    "definition": "The tram goes directly to the city center.",
+    "word_frequency": 12472
+  },
+  {
+    "word": "Die Treppe führt in den ersten Stock.",
+    "definition": "The stairs lead to the first floor.",
+    "word_frequency": 3444
+  },
+  {
+    "word": "Die Tulpe ist eine schöne Blume.",
+    "definition": "The tulip is a beautiful flower.",
+    "word_frequency": 23185
+  },
+  {
+    "word": "Die Tänzerin bewegte sich elegant über die Bühne.",
+    "definition": "The dancer moved elegantly across the stage.",
+    "word_frequency": 10698
+  },
+  {
+    "word": "Die Umkleide war nach dem Spiel sehr voll.",
+    "definition": "The changing room was very full after the game.",
+    "word_frequency": 23575
+  },
+  {
+    "word": "Die Unterrichtsstunde begann pünktlich.",
+    "definition": "The lesson started on time.",
+    "word_frequency": 24393
+  },
+  {
+    "word": "Die Urlaubszeit beginnt nächste Woche.",
+    "definition": "The holiday season starts next week.",
+    "word_frequency": 27279
+  },
+  {
+    "word": "Die Versandkosten sind im Preis enthalten.",
+    "definition": "The shipping costs are included in the price.",
+    "word_frequency": 16544
+  },
+  {
+    "word": "Die Verspätung des Zuges betrug zehn Minuten.",
+    "definition": "The train's delay was ten minutes.",
+    "word_frequency": 5060
+  },
+  {
+    "word": "Die Wand ist weiß.",
+    "definition": "The wall is white.",
+    "word_frequency": 1283
+  },
+  {
+    "word": "Die Ware wird morgen geliefert.",
+    "definition": "The goods will be delivered tomorrow.",
+    "word_frequency": 2911
+  },
+  {
+    "word": "Die Waschmaschine ist kaputt.",
+    "definition": "The washing machine is broken.",
+    "word_frequency": 7472
+  },
+  {
+    "word": "Die Wassertemperatur ist heute sehr angenehm.",
+    "definition": "The water temperature is very pleasant today.",
+    "word_frequency": 26457
+  },
+  {
+    "word": "Die Webseite ist sehr informativ.",
+    "definition": "The website is very informative.",
+    "word_frequency": 1830
+  },
+  {
+    "word": "Die Weihnachtszeit ist meine Lieblingszeit des Jahres.",
+    "definition": "Christmas time is my favorite time of the year.",
+    "word_frequency": 10710
+  },
+  {
+    "word": "Die Welt ist groß.",
+    "definition": "The world is big.",
+    "word_frequency": 144
+  },
+  {
+    "word": "Die Wettervorhersage für morgen ist sonnig.",
+    "definition": "The weather forecast for tomorrow is sunny.",
+    "word_frequency": 19829
+  },
+  {
+    "word": "Die Wiederholung der Vokabeln ist wichtig.",
+    "definition": "The repetition of the vocabulary is important.",
+    "word_frequency": 4952
+  },
+  {
+    "word": "Die Zahlung ist fällig.",
+    "definition": "The payment is due.",
+    "word_frequency": 4085
+  },
+  {
+    "word": "Die Zeichnung ist sehr schön.",
+    "definition": "The drawing is very beautiful.",
+    "word_frequency": 4001
+  },
+  {
+    "word": "Die Ziege frisst Gras.",
+    "definition": "The goat eats grass.",
+    "word_frequency": 8899
+  },
+  {
+    "word": "Die Zugfahrt dauerte drei Stunden.",
+    "definition": "The train journey lasted three hours.",
+    "word_frequency": 22886
+  },
+  {
+    "word": "Die Öffnungszeiten sind von 9 bis 18 Uhr.",
+    "definition": "The opening hours are from 9 AM to 6 PM.",
+    "word_frequency": 6263
+  },
+  {
+    "word": "Diese Frucht ist sehr süß.",
+    "definition": "This fruit is very sweet.",
+    "word_frequency": 3601
+  },
+  {
+    "word": "Dieses T-Shirt ist aus reiner Baumwolle.",
+    "definition": "This T-shirt is made of pure cotton.",
+    "word_frequency": 8917
+  },
+  {
+    "word": "Drücken Sie die Taste, um zu starten.",
+    "definition": "Press the button to start.",
+    "word_frequency": 8321
+  },
+  {
+    "word": "Eine Ameise krabbelte über den Tisch.",
+    "definition": "An ant crawled across the table.",
+    "word_frequency": 10218
+  },
+  {
+    "word": "Eine Amsel sang auf dem Baum.",
+    "definition": "A blackbird sang on the tree.",
+    "word_frequency": 28212
+  },
+  {
+    "word": "Eine Biene summte um die Blumen.",
+    "definition": "A bee buzzed around the flowers.",
+    "word_frequency": 4796
+  },
+  {
+    "word": "Eine Currywurst ist ein beliebtes deutsches Gericht.",
+    "definition": "A curry sausage is a popular German dish.",
+    "word_frequency": 13891
+  },
+  {
+    "word": "Eine Fliege summte im Zimmer.",
+    "definition": "A fly buzzed in the room.",
+    "word_frequency": 6759
+  },
+  {
+    "word": "Eine große Menge Leute wartete.",
+    "definition": "A large crowd of people waited.",
+    "word_frequency": 546
+  },
+  {
+    "word": "Eine große Welle traf das Boot.",
+    "definition": "A big wave hit the boat.",
+    "word_frequency": 3011
+  },
+  {
+    "word": "Eine große Wolke verdeckte die Sonne.",
+    "definition": "A large cloud covered the sun.",
+    "word_frequency": 3574
+  },
+  {
+    "word": "Eine kleine Portion Eis, bitte.",
+    "definition": "A small portion of ice cream, please.",
+    "word_frequency": 6010
+  },
+  {
+    "word": "Eine Million Menschen leben in dieser Stadt.",
+    "definition": "A million people live in this city.",
+    "word_frequency": 340
+  },
+  {
+    "word": "Eine Mücke hat mich gestochen.",
+    "definition": "A mosquito bit me.",
+    "word_frequency": 12853
+  },
+  {
+    "word": "Eine Packung Milch, bitte.",
+    "definition": "A pack of milk, please.",
+    "word_frequency": 6103
+  },
+  {
+    "word": "Eine Ratte lief über den Hof.",
+    "definition": "A rat ran across the yard.",
+    "word_frequency": 6927
+  },
+  {
+    "word": "Eine Schnecke kroch langsam über den Weg.",
+    "definition": "A snail crawled slowly across the path.",
+    "word_frequency": 10862
+  },
+  {
+    "word": "Eine Wespe hat mich gestochen.",
+    "definition": "A wasp stung me.",
+    "word_frequency": 14976
+  },
+  {
+    "word": "Englisch ist meine erste Fremdsprache.",
+    "definition": "English is my first foreign language.",
+    "word_frequency": 9551
+  },
+  {
+    "word": "Er benutzte eine Säge, um das Holz zu schneiden.",
+    "definition": "He used a saw to cut the wood.",
+    "word_frequency": 14478
+  },
+  {
+    "word": "Er empfindet große Freude an seiner Arbeit.",
+    "definition": "He feels great joy in his work.",
+    "word_frequency": 841
+  },
+  {
+    "word": "Er grub ein Loch mit der Schaufel.",
+    "definition": "He dug a hole with the shovel.",
+    "word_frequency": 17057
+  },
+  {
+    "word": "Er hackte Holz mit einer Axt.",
+    "definition": "He chopped wood with an axe.",
+    "word_frequency": 7920
+  },
+  {
+    "word": "Er hat die Bücher in eine Kiste gepackt.",
+    "definition": "He packed the books into a box.",
+    "word_frequency": 5010
+  },
+  {
+    "word": "Er hat eine leere Bierflasche auf den Tisch gestellt.",
+    "definition": "He put an empty beer bottle on the table.",
+    "word_frequency": 27780
+  },
+  {
+    "word": "Er hat Schmerzen in der Brust.",
+    "definition": "He has pain in his chest.",
+    "word_frequency": 2289
+  },
+  {
+    "word": "Er hat seine Badehose vergessen.",
+    "definition": "He forgot his swimming trunks.",
+    "word_frequency": 19252
+  },
+  {
+    "word": "Er ignorierte die Warnung vor dem Sturm.",
+    "definition": "He ignored the warning about the storm.",
+    "word_frequency": 3847
+  },
+  {
+    "word": "Er leidet an einer seltenen Krankheit.",
+    "definition": "He suffers from a rare illness.",
+    "word_frequency": 1542
+  },
+  {
+    "word": "Er steckte seine Hände in die Hosentasche.",
+    "definition": "He put his hands in his trouser pocket.",
+    "word_frequency": 13493
+  },
+  {
+    "word": "Er steckte seine Schlüssel in die Jackentasche.",
+    "definition": "He put his keys in his jacket pocket.",
+    "word_frequency": 27928
+  },
+  {
+    "word": "Er trug eine rote Krawatte zu seinem Anzug.",
+    "definition": "He wore a red tie with his suit.",
+    "word_frequency": 10467
+  },
+  {
+    "word": "Er trägt eine neue Armbanduhr.",
+    "definition": "He is wearing a new wristwatch.",
+    "word_frequency": 20498
+  },
+  {
+    "word": "Er zog eine saubere Unterhose an.",
+    "definition": "He put on clean underpants.",
+    "word_frequency": 13802
+  },
+  {
+    "word": "Für das Brot braucht man Hefe.",
+    "definition": "You need yeast for the bread.",
+    "word_frequency": 12805
+  },
+  {
+    "word": "Gehen wir zur Eisdiele?",
+    "definition": "Shall we go to the ice cream parlor?",
+    "word_frequency": 23735
+  },
+  {
+    "word": "Guten Appetit bei Ihrer Mahlzeit!",
+    "definition": "Enjoy your meal!",
+    "word_frequency": 5582
+  },
+  {
+    "word": "Haben Sie eine Reservierung?",
+    "definition": "Do you have a reservation?",
+    "word_frequency": 14687
+  },
+  {
+    "word": "Hast du die Info bekommen?",
+    "definition": "Did you get the info?",
+    "word_frequency": 1637
+  },
+  {
+    "word": "Hast du die Mail schon gelesen?",
+    "definition": "Have you read the mail yet?",
+    "word_frequency": 1300
+  },
+  {
+    "word": "Hast du Lust auf einen Film?",
+    "definition": "Do you feel like watching a movie?",
+    "word_frequency": 875
+  },
+  {
+    "word": "Ich bestellte einen Kaffee an der Theke.",
+    "definition": "I ordered a coffee at the counter.",
+    "word_frequency": 10877
+  },
+  {
+    "word": "Ich bitte um Verzeihung.",
+    "definition": "I ask for forgiveness.",
+    "word_frequency": 11616
+  },
+  {
+    "word": "Ich brauche eine Briefmarke für diesen Brief.",
+    "definition": "I need a stamp for this letter.",
+    "word_frequency": 11303
+  },
+  {
+    "word": "Ich brauche eine Erklärung für diese Situation.",
+    "definition": "I need an explanation for this situation.",
+    "word_frequency": 1231
+  },
+  {
+    "word": "Ich brauche eine Fahrkarte nach Berlin.",
+    "definition": "I need a ticket to Berlin.",
+    "word_frequency": 14128
+  },
+  {
+    "word": "Ich brauche eine feuchtigkeitsspendende Creme für mein Gesicht.",
+    "definition": "I need a moisturizing cream for my face.",
+    "word_frequency": 8071
+  },
+  {
+    "word": "Ich brauche eine Kopie dieses Dokuments.",
+    "definition": "I need a copy of this document.",
+    "word_frequency": 4342
+  },
+  {
+    "word": "Ich brauche eine neue Matratze für mein Bett.",
+    "definition": "I need a new mattress for my bed.",
+    "word_frequency": 8990
+  },
+  {
+    "word": "Ich brauche eine rote Paprika für das Gericht.",
+    "definition": "I need a red bell pepper for the dish.",
+    "word_frequency": 9611
+  },
+  {
+    "word": "Ich brauche eine Schere, um das Papier zu schneiden.",
+    "definition": "I need scissors to cut the paper.",
+    "word_frequency": 7190
+  },
+  {
+    "word": "Ich brauche eine Taschenlampe, es ist dunkel.",
+    "definition": "I need a flashlight, it's dark.",
+    "word_frequency": 12918
+  },
+  {
+    "word": "Ich brauche eine Zwiebel für die Suppe.",
+    "definition": "I need an onion for the soup.",
+    "word_frequency": 6715
+  },
+  {
+    "word": "Ich brauche etwas Ruhe.",
+    "definition": "I need some quiet.",
+    "word_frequency": 818
+  },
+  {
+    "word": "Ich brauche frische Petersilie für das Gericht.",
+    "definition": "I need fresh parsley for the dish.",
+    "word_frequency": 20689
+  },
+  {
+    "word": "Ich brauche mehr Information.",
+    "definition": "I need more information.",
+    "word_frequency": 608
+  },
+  {
+    "word": "Ich brauche meine Brille zum Lesen.",
+    "definition": "I need my glasses for reading.",
+    "word_frequency": 3133
+  },
+  {
+    "word": "Ich brauche Seife, um meine Hände zu waschen.",
+    "definition": "I need soap to wash my hands.",
+    "word_frequency": 8723
+  },
+  {
+    "word": "Ich entspanne mich gerne in der Badewanne.",
+    "definition": "I like to relax in the bathtub.",
+    "word_frequency": 6502
+  },
+  {
+    "word": "Ich esse Brot mit Margarine.",
+    "definition": "I eat bread with margarine.",
+    "word_frequency": 22011
+  },
+  {
+    "word": "Ich esse gerne Ananas.",
+    "definition": "I like to eat pineapple.",
+    "word_frequency": 11645
+  },
+  {
+    "word": "Ich esse gerne Avocado zum Frühstück.",
+    "definition": "I like to eat avocado for breakfast.",
+    "word_frequency": 17729
+  },
+  {
+    "word": "Ich esse gerne Brot mit Erdnussbutter.",
+    "definition": "I like to eat bread with peanut butter.",
+    "word_frequency": 24123
+  },
+  {
+    "word": "Ich esse gerne Brot mit Leberwurst.",
+    "definition": "I like to eat bread with liver sausage.",
+    "word_frequency": 25054
+  },
+  {
+    "word": "Ich esse gerne Brot mit Marmelade zum Frühstück.",
+    "definition": "I like to eat bread with jam for breakfast.",
+    "word_frequency": 10304
+  },
+  {
+    "word": "Ich esse gerne Datteln.",
+    "definition": "I like to eat dates.",
+    "word_frequency": 17182
+  },
+  {
+    "word": "Ich esse gerne eine Brezel zum Frühstück.",
+    "definition": "I like to eat a pretzel for breakfast.",
+    "word_frequency": 23691
+  },
+  {
+    "word": "Ich esse gerne eine Kiwi zum Frühstück.",
+    "definition": "I like to eat a kiwi for breakfast.",
+    "word_frequency": 23825
+  },
+  {
+    "word": "Ich esse gerne eine Mango.",
+    "definition": "I like to eat a mango.",
+    "word_frequency": 14880
+  },
+  {
+    "word": "Ich esse gerne eine süße Pflaume.",
+    "definition": "I like to eat a sweet plum.",
+    "word_frequency": 22040
+  },
+  {
+    "word": "Ich esse gerne eine Traube zum Frühstück.",
+    "definition": "I like to eat a grape for breakfast.",
+    "word_frequency": 9817
+  },
+  {
+    "word": "Ich esse gerne Erdnüsse als Snack.",
+    "definition": "I like to eat peanuts as a snack.",
+    "word_frequency": 24940
+  },
+  {
+    "word": "Ich esse gerne frische Beeren.",
+    "definition": "I like to eat fresh berries.",
+    "word_frequency": 10574
+  },
+  {
+    "word": "Ich esse gerne frische Kirschen im Sommer.",
+    "definition": "I like to eat fresh cherries in summer.",
+    "word_frequency": 15118
+  },
+  {
+    "word": "Ich esse gerne grüne Bohnen.",
+    "definition": "I like to eat green beans.",
+    "word_frequency": 6162
+  },
+  {
+    "word": "Ich esse gerne Karotten.",
+    "definition": "I like to eat carrots.",
+    "word_frequency": 13281
+  },
+  {
+    "word": "Ich esse gerne Nüsse.",
+    "definition": "I like to eat nuts.",
+    "word_frequency": 8131
+  },
+  {
+    "word": "Ich esse gerne Salami auf Brot.",
+    "definition": "I like to eat salami on bread.",
+    "word_frequency": 14007
+  },
+  {
+    "word": "Ich esse gerne Wassermelone im Sommer.",
+    "definition": "I like to eat watermelon in summer.",
+    "word_frequency": 19704
+  },
+  {
+    "word": "Ich esse gerne Weintrauben.",
+    "definition": "I like to eat grapes.",
+    "word_frequency": 27309
+  },
+  {
+    "word": "Ich esse Haferflocken zum Frühstück.",
+    "definition": "I eat oat flakes for breakfast.",
+    "word_frequency": 19649
+  },
+  {
+    "word": "Ich gehe nächste Woche in die Fahrschule.",
+    "definition": "I'm going to driving school next week.",
+    "word_frequency": 12124
+  },
+  {
+    "word": "Ich gehe oft in die Buchhandlung.",
+    "definition": "I often go to the bookstore.",
+    "word_frequency": 6622
+  },
+  {
+    "word": "Ich gehe oft in die Stadtbücherei, um Bücher auszuleihen.",
+    "definition": "I often go to the public library to borrow books.",
+    "word_frequency": 18221
+  },
+  {
+    "word": "Ich habe die Grippe und muss im Bett bleiben.",
+    "definition": "I have the flu and have to stay in bed.",
+    "word_frequency": 7808
+  },
+  {
+    "word": "Ich habe dir eine Email geschickt.",
+    "definition": "I sent you an email.",
+    "word_frequency": 4723
+  },
+  {
+    "word": "Ich habe dir eine Message geschickt.",
+    "definition": "I sent you a message.",
+    "word_frequency": 10306
+  },
+  {
+    "word": "Ich habe eine Allergie gegen Nüsse.",
+    "definition": "I have an allergy to nuts.",
+    "word_frequency": 12511
+  },
+  {
+    "word": "Ich habe eine Bahncard 50 für meine Reisen.",
+    "definition": "I have a Bahncard 50 for my travels.",
+    "word_frequency": 22923
+  },
+  {
+    "word": "Ich habe eine Einladung zur Party bekommen.",
+    "definition": "I received an invitation to the party.",
+    "word_frequency": 2338
+  },
+  {
+    "word": "Ich habe eine Erkältung.",
+    "definition": "I have a cold.",
+    "word_frequency": 8510
+  },
+  {
+    "word": "Ich habe eine Münze gefunden.",
+    "definition": "I found a coin.",
+    "word_frequency": 4280
+  },
+  {
+    "word": "Ich habe eine neue App heruntergeladen.",
+    "definition": "I downloaded a new app.",
+    "word_frequency": 992
+  },
+  {
+    "word": "Ich habe eine neue Bestellung aufgegeben.",
+    "definition": "I have placed a new order.",
+    "word_frequency": 4169
+  },
+  {
+    "word": "Ich habe eine neue Playlist für meine Party erstellt.",
+    "definition": "I created a new playlist for my party.",
+    "word_frequency": 12425
+  },
+  {
+    "word": "Ich habe eine rote Rübe im Garten gepflanzt.",
+    "definition": "I planted a red beet in the garden.",
+    "word_frequency": 20719
+  },
+  {
+    "word": "Ich habe eine Verabredung um drei Uhr.",
+    "definition": "I have an appointment at three o'clock.",
+    "word_frequency": 18250
+  },
+  {
+    "word": "Ich habe eine wichtige Nachricht für dich.",
+    "definition": "I have an important message for you.",
+    "word_frequency": 629
+  },
+  {
+    "word": "Ich habe keine Ahnung.",
+    "definition": "I have no idea.",
+    "word_frequency": 676
+  },
+  {
+    "word": "Ich habe mein Gewicht auf der Waage überprüft.",
+    "definition": "I checked my weight on the scales.",
+    "word_frequency": 7345
+  },
+  {
+    "word": "Ich habe meine Brieftasche verloren.",
+    "definition": "I lost my wallet.",
+    "word_frequency": 18041
+  },
+  {
+    "word": "Ich habe meine Geldbörse verloren.",
+    "definition": "I lost my wallet.",
+    "word_frequency": 12797
+  },
+  {
+    "word": "Ich habe mir die Zehe gestoßen.",
+    "definition": "I stubbed my toe.",
+    "word_frequency": 29132
+  },
+  {
+    "word": "Ich habe morgen eine wichtige Prüfung.",
+    "definition": "I have an important exam tomorrow.",
+    "word_frequency": 1421
+  },
+  {
+    "word": "Ich habe noch alte Musikkassetten.",
+    "definition": "I still have old music cassettes.",
+    "word_frequency": 16429
+  },
+  {
+    "word": "Ich hätte gerne eine Scheibe Brot.",
+    "definition": "I would like a slice of bread.",
+    "word_frequency": 3636
+  },
+  {
+    "word": "Ich hätte gerne eine Tageskarte für den Bus.",
+    "definition": "I would like a day ticket for the bus.",
+    "word_frequency": 27642
+  },
+  {
+    "word": "Ich hätte gerne einen Latte Macchiato.",
+    "definition": "I would like a latte macchiato.",
+    "word_frequency": 6548
+  },
+  {
+    "word": "Ich hätte gerne Pommes mit Ketchup.",
+    "definition": "I would like fries with ketchup.",
+    "word_frequency": 6008
+  },
+  {
+    "word": "Ich hätte gerne zwei Semmeln zum Frühstück.",
+    "definition": "I would like two bread rolls for breakfast.",
+    "word_frequency": 27225
+  },
+  {
+    "word": "Ich kaufe frische Backwaren beim Bäcker.",
+    "definition": "I buy fresh baked goods at the bakery.",
+    "word_frequency": 22552
+  },
+  {
+    "word": "Ich kaufe mein Fleisch in der Metzgerei.",
+    "definition": "I buy my meat at the butcher shop.",
+    "word_frequency": 21666
+  },
+  {
+    "word": "Ich koche heute Spaghetti mit Bolognese.",
+    "definition": "Today I'm cooking spaghetti with Bolognese sauce.",
+    "word_frequency": 26527
+  },
+  {
+    "word": "Ich koche heute Spaghetti mit Tomatensoße.",
+    "definition": "Today I'm cooking spaghetti with tomato sauce.",
+    "word_frequency": 10167
+  },
+  {
+    "word": "Ich leihe Bücher in der Stadtbibliothek aus.",
+    "definition": "I borrow books from the city library.",
+    "word_frequency": 10873
+  },
+  {
+    "word": "Ich leihe mir Bücher in der Bücherei aus.",
+    "definition": "I borrow books from the library.",
+    "word_frequency": 9070
+  },
+  {
+    "word": "Ich lese gerne eine Zeitschrift am Wochenende.",
+    "definition": "I like to read a magazine on the weekend.",
+    "word_frequency": 1960
+  },
+  {
+    "word": "Ich lese gerne spannende Geschichten.",
+    "definition": "I like to read exciting stories.",
+    "word_frequency": 217
+  },
+  {
+    "word": "Ich liebe es, Lasagne zu essen.",
+    "definition": "I love to eat lasagna.",
+    "word_frequency": 18139
+  },
+  {
+    "word": "Ich liebe frische Himbeeren im Sommer.",
+    "definition": "I love fresh raspberries in summer.",
+    "word_frequency": 24187
+  },
+  {
+    "word": "Ich mache mir eine Notiz.",
+    "definition": "I'm making a note.",
+    "word_frequency": 6102
+  },
+  {
+    "word": "Ich mag Erbsen in meiner Suppe.",
+    "definition": "I like peas in my soup.",
+    "word_frequency": 12564
+  },
+  {
+    "word": "Ich mag grüne Oliven.",
+    "definition": "I like green olives.",
+    "word_frequency": 13531
+  },
+  {
+    "word": "Ich mag Gurken im Salat.",
+    "definition": "I like cucumbers in salad.",
+    "word_frequency": 10275
+  },
+  {
+    "word": "Ich mag Mayo auf meinen Pommes.",
+    "definition": "I like mayo on my fries.",
+    "word_frequency": 14203
+  },
+  {
+    "word": "Ich mag Nudeln mit Tomaten-Sauce.",
+    "definition": "I like pasta with tomato sauce.",
+    "word_frequency": 8014
+  },
+  {
+    "word": "Ich mag Pommes mit Mayonnaise.",
+    "definition": "I like fries with mayonnaise.",
+    "word_frequency": 25065
+  },
+  {
+    "word": "Ich mag Rosinen im Müsli.",
+    "definition": "I like raisins in my muesli.",
+    "word_frequency": 15993
+  },
+  {
+    "word": "Ich mag Schokolade mit ganzen Mandeln.",
+    "definition": "I like chocolate with whole almonds.",
+    "word_frequency": 13513
+  },
+  {
+    "word": "Ich mag Schokolade mit Haselnüssen.",
+    "definition": "I like chocolate with hazelnuts.",
+    "word_frequency": 28368
+  },
+  {
+    "word": "Ich mag Wasser mit einer Scheibe Lemon.",
+    "definition": "I like water with a slice of lemon.",
+    "word_frequency": 21305
+  },
+  {
+    "word": "Ich muss die Bettwäsche wechseln.",
+    "definition": "I need to change the bed linen.",
+    "word_frequency": 13645
+  },
+  {
+    "word": "Ich muss die Wäsche waschen.",
+    "definition": "I have to do the laundry.",
+    "word_frequency": 4537
+  },
+  {
+    "word": "Ich muss meine Kleidung zur Wäscherei bringen.",
+    "definition": "I need to take my clothes to the laundromat.",
+    "word_frequency": 28660
+  },
+  {
+    "word": "Ich muss noch meine Hausarbeit für die Universität schreiben.",
+    "definition": "I still have to write my term paper for the university.",
+    "word_frequency": 8962
+  },
+  {
+    "word": "Ich muss noch zur Tanke fahren.",
+    "definition": "I still need to drive to the gas station.",
+    "word_frequency": 21422
+  },
+  {
+    "word": "Ich muss zur Apotheke gehen, um Medikamente zu kaufen.",
+    "definition": "I have to go to the pharmacy to buy medicine.",
+    "word_frequency": 4393
+  },
+  {
+    "word": "Ich muss zur Drogerie gehen.",
+    "definition": "I have to go to the drugstore.",
+    "word_frequency": 17192
+  },
+  {
+    "word": "Ich möchte eine Waffel mit Sahne.",
+    "definition": "I would like a waffle with cream.",
+    "word_frequency": 12940
+  },
+  {
+    "word": "Ich sitze gerne auf der Couch und lese.",
+    "definition": "I like to sit on the couch and read.",
+    "word_frequency": 4476
+  },
+  {
+    "word": "Ich studiere an der Uni.",
+    "definition": "I study at the university.",
+    "word_frequency": 1680
+  },
+  {
+    "word": "Ich suche eine neue Stelle.",
+    "definition": "I am looking for a new job.",
+    "word_frequency": 377
+  },
+  {
+    "word": "Ich suchte eine Telefonzelle, um anzurufen.",
+    "definition": "I was looking for a telephone booth to make a call.",
+    "word_frequency": 26804
+  },
+  {
+    "word": "Ich trage am liebsten eine bequeme Jogginghose zu Hause.",
+    "definition": "I prefer to wear comfortable sweatpants at home.",
+    "word_frequency": 21272
+  },
+  {
+    "word": "Ich trage gerne blaue Jeans.",
+    "definition": "I like to wear blue jeans.",
+    "word_frequency": 4050
+  },
+  {
+    "word": "Ich warte schon eine Viertelstunde.",
+    "definition": "I've been waiting for a quarter of an hour.",
+    "word_frequency": 11262
+  },
+  {
+    "word": "Ich wärme mein Essen in der Mikrowelle auf.",
+    "definition": "I warm up my food in the microwave.",
+    "word_frequency": 11199
+  },
+  {
+    "word": "Ich zog die Bettdecke über mich.",
+    "definition": "I pulled the duvet over myself.",
+    "word_frequency": 20858
+  },
+  {
+    "word": "Ihre Augenfarbe ist blau.",
+    "definition": "Her eye color is blue.",
+    "word_frequency": 25698
+  },
+  {
+    "word": "Ihre Freundschaft ist sehr stark.",
+    "definition": "Their friendship is very strong.",
+    "word_frequency": 2098
+  },
+  {
+    "word": "Ihre Gesundheit ist sehr wichtig.",
+    "definition": "Her health is very important.",
+    "word_frequency": 1263
+  },
+  {
+    "word": "Ihre natürliche Haarfarbe ist blond.",
+    "definition": "Her natural hair color is blonde.",
+    "word_frequency": 18724
+  },
+  {
+    "word": "Ihre Stimme ist sehr schön.",
+    "definition": "Her voice is very beautiful.",
+    "word_frequency": 601
+  },
+  {
+    "word": "Im Herbst fallen die Kastanien von den Bäumen.",
+    "definition": "In autumn, the chestnuts fall from the trees.",
+    "word_frequency": 20627
+  },
+  {
+    "word": "Im Sommer ist eine Klimaanlage sehr angenehm.",
+    "definition": "In summer, air conditioning is very pleasant.",
+    "word_frequency": 7285
+  },
+  {
+    "word": "In der Adventszeit backen wir Plätzchen.",
+    "definition": "During the Advent season, we bake cookies.",
+    "word_frequency": 24039
+  },
+  {
+    "word": "In der Sommerzeit stellen wir die Uhren eine Stunde vor.",
+    "definition": "In summertime, we set the clocks forward one hour.",
+    "word_frequency": 11590
+  },
+  {
+    "word": "In welche Richtung müssen wir gehen?",
+    "definition": "In which direction do we have to go?",
+    "word_frequency": 365
+  },
+  {
+    "word": "Jede Schneeflocke ist einzigartig.",
+    "definition": "Every snowflake is unique.",
+    "word_frequency": 24348
+  },
+  {
+    "word": "Jede Teilnehmerin erhielt ein Zertifikat.",
+    "definition": "Every female participant received a certificate.",
+    "word_frequency": 12687
+  },
+  {
+    "word": "Kann ich bitte die Rechnung haben?",
+    "definition": "Can I have the bill, please?",
+    "word_frequency": 1487
+  },
+  {
+    "word": "Kann ich bitte eine Tüte haben?",
+    "definition": "Can I have a bag, please?",
+    "word_frequency": 6367
+  },
+  {
+    "word": "Kann ich mit Card bezahlen?",
+    "definition": "Can I pay by card?",
+    "word_frequency": 7934
+  },
+  {
+    "word": "Kann ich mit Kreditkarte bezahlen?",
+    "definition": "Can I pay with a credit card?",
+    "word_frequency": 5802
+  },
+  {
+    "word": "Kannst du mir bitte eine Serviette geben?",
+    "definition": "Can you please give me a napkin?",
+    "word_frequency": 28552
+  },
+  {
+    "word": "Kannst du mir deine Handynummer geben?",
+    "definition": "Can you give me your mobile number?",
+    "word_frequency": 15617
+  },
+  {
+    "word": "Kinder lieben Süssigkeiten.",
+    "definition": "Children love sweets.",
+    "word_frequency": 6125
+  },
+  {
+    "word": "Können Sie mir bitte Auskunft geben?",
+    "definition": "Can you please give me information?",
+    "word_frequency": 3254
+  },
+  {
+    "word": "Könnten Sie uns bitte die Speisekarte bringen?",
+    "definition": "Could you please bring us the menu?",
+    "word_frequency": 14257
+  },
+  {
+    "word": "Leg die Yogamatte auf den Boden.",
+    "definition": "Put the yoga mat on the floor.",
+    "word_frequency": 10122
+  },
+  {
+    "word": "Lesen ist meine liebste Freizeitaktivität.",
+    "definition": "Reading is my favorite leisure activity.",
+    "word_frequency": 28318
+  },
+  {
+    "word": "Mein Auto ist in der Werkstatt.",
+    "definition": "My car is in the workshop.",
+    "word_frequency": 3061
+  },
+  {
+    "word": "Meine Arbeitszeit ist von 9 bis 17 Uhr.",
+    "definition": "My working hours are from 9 AM to 5 PM.",
+    "word_frequency": 5156
+  },
+  {
+    "word": "Meine Cousine lebt in Berlin.",
+    "definition": "My cousin lives in Berlin.",
+    "word_frequency": 7503
+  },
+  {
+    "word": "Meine Ehefrau kommt aus Spanien.",
+    "definition": "My wife comes from Spain.",
+    "word_frequency": 2676
+  },
+  {
+    "word": "Meine Enkelin besucht mich oft.",
+    "definition": "My granddaughter visits me often.",
+    "word_frequency": 10597
+  },
+  {
+    "word": "Meine Firma hat ihren Sitz in Berlin.",
+    "definition": "My company is based in Berlin.",
+    "word_frequency": 624
+  },
+  {
+    "word": "Meine Großmutter ist eine glückliche Rentnerin.",
+    "definition": "My grandmother is a happy female pensioner.",
+    "word_frequency": 17902
+  },
+  {
+    "word": "Meine Großmutter liebt die Gartenarbeit.",
+    "definition": "My grandmother loves gardening.",
+    "word_frequency": 23013
+  },
+  {
+    "word": "Meine Kinder gehen in die Grundschule.",
+    "definition": "My children go to primary school.",
+    "word_frequency": 2934
+  },
+  {
+    "word": "Meine Kollegin hilft mir oft.",
+    "definition": "My female colleague often helps me.",
+    "word_frequency": 7423
+  },
+  {
+    "word": "Meine Lieblings-Fernsehserie läuft heute Abend.",
+    "definition": "My favorite TV series is on tonight.",
+    "word_frequency": 18698
+  },
+  {
+    "word": "Meine Lieblings-Rockband spielt heute Abend.",
+    "definition": "My favorite rock band is playing tonight.",
+    "word_frequency": 19128
+  },
+  {
+    "word": "Meine Lieblingsfussballmannschaft hat gestern gewonnen.",
+    "definition": "My favorite football team won yesterday.",
+    "word_frequency": 26592
+  },
+  {
+    "word": "Meine Lieblingsjahreszeit ist der Sommer.",
+    "definition": "My favorite season is summer.",
+    "word_frequency": 5002
+  },
+  {
+    "word": "Meine Lieblingssportart ist Schwimmen.",
+    "definition": "My favorite type of sport is swimming.",
+    "word_frequency": 7081
+  },
+  {
+    "word": "Meine Ma kommt bald nach Hause.",
+    "definition": "My Mom is coming home soon.",
+    "word_frequency": 1268
+  },
+  {
+    "word": "Meine Mum hat angerufen.",
+    "definition": "My mum called.",
+    "word_frequency": 7566
+  },
+  {
+    "word": "Meine Nana backt die besten Kuchen.",
+    "definition": "My grandma bakes the best cakes.",
+    "word_frequency": 15959
+  },
+  {
+    "word": "Meine Nichte besucht uns am Wochenende.",
+    "definition": "My niece is visiting us on the weekend.",
+    "word_frequency": 8292
+  },
+  {
+    "word": "Meine Omi backt den besten Kuchen.",
+    "definition": "My grandma bakes the best cake.",
+    "word_frequency": 15436
+  },
+  {
+    "word": "Meine Schwester ist eine talentierte Architektin.",
+    "definition": "My sister is a talented female architect.",
+    "word_frequency": 23659
+  },
+  {
+    "word": "Meine Schwester ist eine talentierte Musikerin.",
+    "definition": "My sister is a talented female musician.",
+    "word_frequency": 19086
+  },
+  {
+    "word": "Meine Schwiegermutter besucht uns nächste Woche.",
+    "definition": "My mother-in-law is visiting us next week.",
+    "word_frequency": 11788
+  },
+  {
+    "word": "Meine Sis kommt uns besuchen.",
+    "definition": "My sis is coming to visit us.",
+    "word_frequency": 24739
+  },
+  {
+    "word": "Meine Stiefmutter ist sehr nett.",
+    "definition": "My stepmother is very kind.",
+    "word_frequency": 18225
+  },
+  {
+    "word": "Meine Tastatur ist kaputt.",
+    "definition": "My keyboard is broken.",
+    "word_frequency": 5315
+  },
+  {
+    "word": "Meine Tochter geht in die Musikschule.",
+    "definition": "My daughter goes to music school.",
+    "word_frequency": 11007
+  },
+  {
+    "word": "Meine Tochter geht in die Vorschule.",
+    "definition": "My daughter goes to preschool.",
+    "word_frequency": 27300
+  },
+  {
+    "word": "Möchtest du ein Stück Schoko?",
+    "definition": "Do you want a piece of chocolate?",
+    "word_frequency": 12894
+  },
+  {
+    "word": "Möchtest du eine Limo trinken?",
+    "definition": "Do you want to drink a soda?",
+    "word_frequency": 18147
+  },
+  {
+    "word": "Möchtest du Sahne zum Kuchen?",
+    "definition": "Would you like cream with the cake?",
+    "word_frequency": 6111
+  },
+  {
+    "word": "Nach dem Regen gab es viele Pfützen auf der Straße.",
+    "definition": "After the rain, there were many puddles on the street.",
+    "word_frequency": 24305
+  },
+  {
+    "word": "Nach dem Sport gehen wir in die Sauna.",
+    "definition": "After sports, we go to the sauna.",
+    "word_frequency": 5308
+  },
+  {
+    "word": "Nehmen Sie die nächste Ausfahrt.",
+    "definition": "Take the next exit.",
+    "word_frequency": 8619
+  },
+  {
+    "word": "Sein Zimmer war in völliger Unordnung.",
+    "definition": "His room was in complete disorder.",
+    "word_frequency": 16796
+  },
+  {
+    "word": "Seine Begrüssung war sehr herzlich.",
+    "definition": "His greeting was very warm.",
+    "word_frequency": 7376
+  },
+  {
+    "word": "Sie achtet sehr auf ihre Fitness.",
+    "definition": "She pays a lot of attention to her fitness.",
+    "word_frequency": 3728
+  },
+  {
+    "word": "Sie aß eine köstliche Praline.",
+    "definition": "She ate a delicious praline.",
+    "word_frequency": 16487
+  },
+  {
+    "word": "Sie hat Angst vor Spinnen.",
+    "definition": "She has a fear of spiders.",
+    "word_frequency": 417
+  },
+  {
+    "word": "Sie hat die volle Kontrolle über die Situation.",
+    "definition": "She has full control over the situation.",
+    "word_frequency": 1003
+  },
+  {
+    "word": "Sie hat eine leckere Schokoladentorte gebacken.",
+    "definition": "She baked a delicious chocolate cake.",
+    "word_frequency": 8027
+  },
+  {
+    "word": "Sie hat eine neue Arbeitsstelle gefunden.",
+    "definition": "She found a new job.",
+    "word_frequency": 12292
+  },
+  {
+    "word": "Sie hat eine neue Frisur.",
+    "definition": "She has a new hairstyle.",
+    "word_frequency": 6413
+  },
+  {
+    "word": "Sie hat ihre Handtasche auf dem Tisch liegen lassen.",
+    "definition": "She left her handbag on the table.",
+    "word_frequency": 7143
+  },
+  {
+    "word": "Sie hat rote Lippen.",
+    "definition": "She has red lips.",
+    "word_frequency": 2942
+  },
+  {
+    "word": "Sie hat Schmerzen in der Schulter.",
+    "definition": "She has pain in her shoulder.",
+    "word_frequency": 2903
+  },
+  {
+    "word": "Sie hat viel Macht in der Firma.",
+    "definition": "She has a lot of power in the company.",
+    "word_frequency": 9782
+  },
+  {
+    "word": "Sie hört gerne Popmusik.",
+    "definition": "She likes to listen to pop music.",
+    "word_frequency": 14231
+  },
+  {
+    "word": "Sie hört gerne Rockmusik.",
+    "definition": "She likes to listen to rock music.",
+    "word_frequency": 15992
+  },
+  {
+    "word": "Sie interessiert sich sehr für Mode.",
+    "definition": "She is very interested in fashion.",
+    "word_frequency": 2352
+  },
+  {
+    "word": "Sie ist eine Französin.",
+    "definition": "She is a Frenchwoman.",
+    "word_frequency": 18090
+  },
+  {
+    "word": "Sie ist eine neue Mitarbeiterin.",
+    "definition": "She is a new female employee.",
+    "word_frequency": 9289
+  },
+  {
+    "word": "Sie ist eine Polin und lebt seit fünf Jahren in Berlin.",
+    "definition": "She is a Polish woman and has lived in Berlin for five years.",
+    "word_frequency": 29443
+  },
+  {
+    "word": "Sie ist eine Russin.",
+    "definition": "She is a Russian woman.",
+    "word_frequency": 19452
+  },
+  {
+    "word": "Sie ist eine talentierte Spielerin.",
+    "definition": "She is a talented player.",
+    "word_frequency": 11431
+  },
+  {
+    "word": "Sie kaufte neue Kleidung.",
+    "definition": "She bought new clothes.",
+    "word_frequency": 2018
+  },
+  {
+    "word": "Sie kaufte neue Unterwäsche.",
+    "definition": "She bought new underwear.",
+    "word_frequency": 7597
+  },
+  {
+    "word": "Sie klopfte an die Wohnungstür.",
+    "definition": "She knocked on the apartment door.",
+    "word_frequency": 18898
+  },
+  {
+    "word": "Sie lebt in einer ruhigen Kleinstadt.",
+    "definition": "She lives in a quiet small town.",
+    "word_frequency": 6541
+  },
+  {
+    "word": "Sie lernt in der Tanzschule Salsa.",
+    "definition": "She is learning salsa at the dance school.",
+    "word_frequency": 25591
+  },
+  {
+    "word": "Sie macht eine Diät, um abzunehmen.",
+    "definition": "She is on a diet to lose weight.",
+    "word_frequency": 5647
+  },
+  {
+    "word": "Sie musste in die Klinik gehen.",
+    "definition": "She had to go to the clinic.",
+    "word_frequency": 2113
+  },
+  {
+    "word": "Sie raucht eine Zigarette.",
+    "definition": "She is smoking a cigarette.",
+    "word_frequency": 4303
+  },
+  {
+    "word": "Sie spielt die Flöte.",
+    "definition": "She plays the flute.",
+    "word_frequency": 10775
+  },
+  {
+    "word": "Sie spielt die Trompete in einem Orchester.",
+    "definition": "She plays the trumpet in an orchestra.",
+    "word_frequency": 11062
+  },
+  {
+    "word": "Sie spielt seit fünf Jahren Geige.",
+    "definition": "She has been playing the violin for five years.",
+    "word_frequency": 10447
+  },
+  {
+    "word": "Sie spielt Violine in einem Orchester.",
+    "definition": "She plays violin in an orchestra.",
+    "word_frequency": 10545
+  },
+  {
+    "word": "Sie studiert an der Universität.",
+    "definition": "She studies at the university.",
+    "word_frequency": 802
+  },
+  {
+    "word": "Sie studiert Biologie an der Universität.",
+    "definition": "She studies biology at the university.",
+    "word_frequency": 5077
+  },
+  {
+    "word": "Sie trug bequeme Sandalen am Strand.",
+    "definition": "She wore comfortable sandals on the beach.",
+    "word_frequency": 13778
+  },
+  {
+    "word": "Sie trug eine goldene Kette um ihren Hals.",
+    "definition": "She wore a golden chain around her neck.",
+    "word_frequency": 2984
+  },
+  {
+    "word": "Sie trug eine Maske.",
+    "definition": "She wore a mask.",
+    "word_frequency": 3888
+  },
+  {
+    "word": "Sie trug eine rote Kappe.",
+    "definition": "She wore a red cap.",
+    "word_frequency": 10982
+  },
+  {
+    "word": "Sie trug eine schwarze Lederjacke.",
+    "definition": "She wore a black leather jacket.",
+    "word_frequency": 20647
+  },
+  {
+    "word": "Sie trug eine schöne Halskette.",
+    "definition": "She wore a beautiful necklace.",
+    "word_frequency": 17505
+  },
+  {
+    "word": "Sie trägt eine warme Weste.",
+    "definition": "She is wearing a warm vest.",
+    "word_frequency": 8598
+  },
+  {
+    "word": "Sie wischte sich den Schweiß von der Stirn.",
+    "definition": "She wiped the sweat from her forehead.",
+    "word_frequency": 4372
+  },
+  {
+    "word": "Sie wohnen in der Vorstadt.",
+    "definition": "They live in the suburb.",
+    "word_frequency": 12939
+  },
+  {
+    "word": "Sie wohnten in einer kleinen Hütte.",
+    "definition": "They lived in a small hut.",
+    "word_frequency": 3215
+  },
+  {
+    "word": "Speichern Sie die Datei auf dem Desktop.",
+    "definition": "Save the file on the desktop.",
+    "word_frequency": 4018
+  },
+  {
+    "word": "Um Mitternacht beginnt ein neuer Tag.",
+    "definition": "At midnight a new day begins.",
+    "word_frequency": 4138
+  },
+  {
+    "word": "Unsere Mannschaft hat gewonnen.",
+    "definition": "Our team has won.",
+    "word_frequency": 743
+  },
+  {
+    "word": "Unsere Schulklasse hat einen Ausflug gemacht.",
+    "definition": "Our school class went on a trip.",
+    "word_frequency": 16753
+  },
+  {
+    "word": "Vergiss deine Sonnenbrille nicht!",
+    "definition": "Don't forget your sunglasses!",
+    "word_frequency": 9632
+  },
+  {
+    "word": "Vergiss deine Sonnencreme nicht!",
+    "definition": "Don't forget your sunscreen!",
+    "word_frequency": 23164
+  },
+  {
+    "word": "Viele Menschen trinken Kuhmilch.",
+    "definition": "Many people drink cow's milk.",
+    "word_frequency": 27519
+  },
+  {
+    "word": "Vorsicht, hier ist eine Baustelle!",
+    "definition": "Caution, this is a construction site!",
+    "word_frequency": 4468
+  },
+  {
+    "word": "Wann beginnen die Schulferien in diesem Jahr?",
+    "definition": "When do the school holidays start this year?",
+    "word_frequency": 25990
+  },
+  {
+    "word": "Welche Art von Musik magst du?",
+    "definition": "What kind of music do you like?",
+    "word_frequency": 194
+  },
+  {
+    "word": "Welche Buslinie fährt zum Bahnhof?",
+    "definition": "Which bus route goes to the train station?",
+    "word_frequency": 22215
+  },
+  {
+    "word": "Wickeln Sie das Sandwich in Alufolie ein.",
+    "definition": "Wrap the sandwich in aluminum foil.",
+    "word_frequency": 22532
+  },
+  {
+    "word": "Wir besuchten die schöne Altstadt.",
+    "definition": "We visited the beautiful old town.",
+    "word_frequency": 3019
+  },
+  {
+    "word": "Wir brauchen eine Landkarte, um den Weg zu finden.",
+    "definition": "We need a map to find the way.",
+    "word_frequency": 12176
+  },
+  {
+    "word": "Wir brauchen eine Übernachtung in einem Hotel.",
+    "definition": "We need an overnight stay in a hotel.",
+    "word_frequency": 12717
+  },
+  {
+    "word": "Wir essen oft in der Cafeteria zu Mittag.",
+    "definition": "We often eat lunch in the cafeteria.",
+    "word_frequency": 15301
+  },
+  {
+    "word": "Wir essen oft in der Mensa zu Mittag.",
+    "definition": "We often eat lunch in the university cafeteria.",
+    "word_frequency": 10127
+  },
+  {
+    "word": "Wir fahren auf der Schnellstrasse nach Berlin.",
+    "definition": "We are driving on the expressway to Berlin.",
+    "word_frequency": 29947
+  },
+  {
+    "word": "Wir fahren auf eine schöne Insel.",
+    "definition": "We are going to a beautiful island.",
+    "word_frequency": 1042
+  },
+  {
+    "word": "Wir fahren im Sommer an die Nordsee.",
+    "definition": "We are going to the North Sea in summer.",
+    "word_frequency": 5589
+  },
+  {
+    "word": "Wir fahren mit der Metro.",
+    "definition": "We are going by subway.",
+    "word_frequency": 7162
+  },
+  {
+    "word": "Wir feiern seine Geburtstagsparty am Samstag.",
+    "definition": "We are celebrating his birthday party on Saturday.",
+    "word_frequency": 22285
+  },
+  {
+    "word": "Wir frühstücken auf der Terrasse.",
+    "definition": "We have breakfast on the terrace.",
+    "word_frequency": 5727
+  },
+  {
+    "word": "Wir gehen am Wochenende in die Mall.",
+    "definition": "We are going to the mall on the weekend.",
+    "word_frequency": 12843
+  },
+  {
+    "word": "Wir gehen auf der anderen Strassenseite.",
+    "definition": "We are walking on the other side of the street.",
+    "word_frequency": 11055
+  },
+  {
+    "word": "Wir gehen heute Abend auf eine Fete.",
+    "definition": "We are going to a party tonight.",
+    "word_frequency": 29744
+  },
+  {
+    "word": "Wir gehen heute Abend auf eine Party.",
+    "definition": "We are going to a party tonight.",
+    "word_frequency": 982
+  },
+  {
+    "word": "Wir gehen heute Abend in die Disco.",
+    "definition": "We are going to the disco tonight.",
+    "word_frequency": 6997
+  },
+  {
+    "word": "Wir gehen heute Abend in die Disko.",
+    "definition": "We are going to the disco tonight.",
+    "word_frequency": 21884
+  },
+  {
+    "word": "Wir gehen heute Abend in die Diskothek.",
+    "definition": "We are going to the discotheque tonight.",
+    "word_frequency": 23309
+  },
+  {
+    "word": "Wir gehen heute Abend in die Oper.",
+    "definition": "We are going to the opera tonight.",
+    "word_frequency": 3101
+  },
+  {
+    "word": "Wir gehen heute Abend in die Pizzeria.",
+    "definition": "We are going to the pizzeria tonight.",
+    "word_frequency": 14671
+  },
+  {
+    "word": "Wir gehen heute Abend zu einer Geburtstagsfeier.",
+    "definition": "We are going to a birthday party tonight.",
+    "word_frequency": 16638
+  },
+  {
+    "word": "Wir gehen zur Weihnachtsfeier der Firma.",
+    "definition": "We are going to the company's Christmas party.",
+    "word_frequency": 14508
+  },
+  {
+    "word": "Wir haben eine Ferienwohnung für den Sommer gemietet.",
+    "definition": "We rented a holiday apartment for the summer.",
+    "word_frequency": 12336
+  },
+  {
+    "word": "Wir haben eine interessante Stadtführung gemacht.",
+    "definition": "We did an interesting city tour.",
+    "word_frequency": 26788
+  },
+  {
+    "word": "Wir haben frische Zucchini aus dem Garten.",
+    "definition": "We have fresh zucchini from the garden.",
+    "word_frequency": 16071
+  },
+  {
+    "word": "Wir haben neue Tapete im Wohnzimmer.",
+    "definition": "We have new wallpaper in the living room.",
+    "word_frequency": 19791
+  },
+  {
+    "word": "Wir machen eine kurze Mittagspause.",
+    "definition": "We are taking a short lunch break.",
+    "word_frequency": 8123
+  },
+  {
+    "word": "Wir machen eine Tour durch die Stadt.",
+    "definition": "We are taking a tour through the city.",
+    "word_frequency": 1129
+  },
+  {
+    "word": "Wir machten eine lange Wanderung in den Bergen.",
+    "definition": "We took a long hike in the mountains.",
+    "word_frequency": 5942
+  },
+  {
+    "word": "Wir müssen an der Tankstelle tanken.",
+    "definition": "We have to refuel at the gas station.",
+    "word_frequency": 6126
+  },
+  {
+    "word": "Wir nahmen die Fähre zur Insel.",
+    "definition": "We took the ferry to the island.",
+    "word_frequency": 7139
+  },
+  {
+    "word": "Wir planen viele Aktivitäten für das Wochenende.",
+    "definition": "We are planning many activities for the weekend.",
+    "word_frequency": 2041
+  },
+  {
+    "word": "Wir sind gestern Achterbahn gefahren.",
+    "definition": "We rode a roller coaster yesterday.",
+    "word_frequency": 12961
+  },
+  {
+    "word": "Wir tanzen gerne Salsa.",
+    "definition": "We like to dance salsa.",
+    "word_frequency": 19134
+  },
+  {
+    "word": "Wir treffen uns heute Abend in der Kneipe.",
+    "definition": "We're meeting at the pub tonight.",
+    "word_frequency": 6542
+  },
+  {
+    "word": "Wir wohnen in der dritten Etage.",
+    "definition": "We live on the third floor.",
+    "word_frequency": 6755
+  },
+  {
+    "word": "Wir übernachten in einer Jugendherberge.",
+    "definition": "We are staying in a youth hostel.",
+    "word_frequency": 18749
+  },
+  {
+    "word": "Wo ist die Fernbedienung für den Fernseher?",
+    "definition": "Where is the remote control for the TV?",
+    "word_frequency": 10605
+  },
+  {
+    "word": "Wo ist die nächste Steckdose?",
+    "definition": "Where is the nearest power outlet?",
+    "word_frequency": 12017
+  },
+  {
+    "word": "Ziehen Sie eine gerade Linie.",
+    "definition": "Draw a straight line.",
+    "word_frequency": 726
+  },
+  {
+    "word": "Zu jeder Tageszeit ist hier viel los.",
+    "definition": "There's a lot going on here at any time of day.",
+    "word_frequency": 18850
+  },
+  {
+    "word": "Zünde bitte die Kerze an.",
+    "definition": "Please light the candle.",
+    "word_frequency": 5898
+  }
+]

@@ -1,0 +1,532 @@
+[
+  {
+    "word": "Bitte füllen Sie das Formular aus.",
+    "definition": "Please fill out the form.",
+    "word_frequency": 7648
+  },
+  {
+    "word": "Bitte gib mir das Salz.",
+    "definition": "Please give me the salt.",
+    "word_frequency": 2652
+  },
+  {
+    "word": "Bitte gib mir ein sauberes Handtuch.",
+    "definition": "Please give me a clean towel.",
+    "word_frequency": 7534
+  },
+  {
+    "word": "Bitte nimm dein Heft heraus.",
+    "definition": "Please take out your notebook.",
+    "word_frequency": 2633
+  },
+  {
+    "word": "Das Abendessen ist um sieben Uhr.",
+    "definition": "Dinner is at seven o'clock.",
+    "word_frequency": 3710
+  },
+  {
+    "word": "Das Baby schläft friedlich.",
+    "definition": "The baby is sleeping peacefully.",
+    "word_frequency": 1186
+  },
+  {
+    "word": "Das Bad ist im ersten Stock.",
+    "definition": "The bathroom is on the first floor.",
+    "word_frequency": 538
+  },
+  {
+    "word": "Das Badezimmer ist im ersten Stock.",
+    "definition": "The bathroom is on the first floor.",
+    "word_frequency": 5754
+  },
+  {
+    "word": "Das Bett ist sehr bequem.",
+    "definition": "The bed is very comfortable.",
+    "word_frequency": 720
+  },
+  {
+    "word": "Das Bild hängt an der Wand.",
+    "definition": "The picture hangs on the wall.",
+    "word_frequency": 236
+  },
+  {
+    "word": "Das Buch steht im Regal.",
+    "definition": "The book is on the shelf.",
+    "word_frequency": 6016
+  },
+  {
+    "word": "Das deutsche Alphabet hat 26 Buchstaben.",
+    "definition": "The German alphabet has 26 letters.",
+    "word_frequency": 10388
+  },
+  {
+    "word": "Das Dorf liegt in den Bergen.",
+    "definition": "The village is located in the mountains.",
+    "word_frequency": 1111
+  },
+  {
+    "word": "Das Ei ist gekocht.",
+    "definition": "The egg is cooked.",
+    "word_frequency": 1736
+  },
+  {
+    "word": "Das erste Kapitel des Buches ist sehr interessant.",
+    "definition": "The first chapter of the book is very interesting.",
+    "word_frequency": 2110
+  },
+  {
+    "word": "Das Fenster ist offen.",
+    "definition": "The window is open.",
+    "word_frequency": 824
+  },
+  {
+    "word": "Das Flugzeug landet in zehn Minuten.",
+    "definition": "The airplane lands in ten minutes.",
+    "word_frequency": 2008
+  },
+  {
+    "word": "Das Frühstück ist meine Lieblingsmahlzeit.",
+    "definition": "Breakfast is my favorite meal.",
+    "word_frequency": 1844
+  },
+  {
+    "word": "Das Glas ist voll.",
+    "definition": "The glass is full.",
+    "word_frequency": 1475
+  },
+  {
+    "word": "Das Haus hat einen großen Garten.",
+    "definition": "The house has a big garden.",
+    "word_frequency": 234
+  },
+  {
+    "word": "Das Hotelzimmer war sehr sauber.",
+    "definition": "The hotel room was very clean.",
+    "word_frequency": 8824
+  },
+  {
+    "word": "Das Huhn legt Eier.",
+    "definition": "The chicken lays eggs.",
+    "word_frequency": 6775
+  },
+  {
+    "word": "Das ist das Ende der Geschichte.",
+    "definition": "That is the end of the story.",
+    "word_frequency": 136
+  },
+  {
+    "word": "Das ist ein kleines Ding.",
+    "definition": "That is a small thing.",
+    "word_frequency": 370
+  },
+  {
+    "word": "Das ist ein sehr interessantes Buch.",
+    "definition": "That is a very interesting book.",
+    "word_frequency": 369
+  },
+  {
+    "word": "Das ist kein Problem.",
+    "definition": "That is no problem.",
+    "word_frequency": 257
+  },
+  {
+    "word": "Das Kind musste Pipi machen.",
+    "definition": "The child had to pee-pee.",
+    "word_frequency": 18188
+  },
+  {
+    "word": "Das Kind spielt im Garten.",
+    "definition": "The child is playing in the garden.",
+    "word_frequency": 158
+  },
+  {
+    "word": "Das Kind spielt mit seinem neuen Spielzeug.",
+    "definition": "The child is playing with their new toy.",
+    "word_frequency": 3840
+  },
+  {
+    "word": "Das Klassenzimmer ist groß und hell.",
+    "definition": "The classroom is big and bright.",
+    "word_frequency": 10811
+  },
+  {
+    "word": "Das kleine Mädchen spielt im Garten.",
+    "definition": "The little girl is playing in the garden.",
+    "word_frequency": 383
+  },
+  {
+    "word": "Das Konzert war fantastisch.",
+    "definition": "The concert was fantastic.",
+    "word_frequency": 1480
+  },
+  {
+    "word": "Das Krankenhaus ist groß und modern.",
+    "definition": "The hospital is large and modern.",
+    "word_frequency": 1090
+  },
+  {
+    "word": "Das Lied ist sehr schön.",
+    "definition": "The song is very beautiful.",
+    "word_frequency": 1150
+  },
+  {
+    "word": "Das Messer ist scharf.",
+    "definition": "The knife is sharp.",
+    "word_frequency": 1898
+  },
+  {
+    "word": "Das Pferd frisst Gras auf der Weide.",
+    "definition": "The horse eats grass in the pasture.",
+    "word_frequency": 2181
+  },
+  {
+    "word": "Das Schlafzimmer ist sehr gemütlich.",
+    "definition": "The bedroom is very cozy.",
+    "word_frequency": 3439
+  },
+  {
+    "word": "Das Spiel beginnt um acht Uhr.",
+    "definition": "The game starts at eight o'clock.",
+    "word_frequency": 204
+  },
+  {
+    "word": "Das Tier schläft.",
+    "definition": "The animal is sleeping.",
+    "word_frequency": 880
+  },
+  {
+    "word": "Das Wetter ist heute schön.",
+    "definition": "The weather is nice today.",
+    "word_frequency": 1075
+  },
+  {
+    "word": "Das Wochenende war sehr entspannend.",
+    "definition": "The weekend was very relaxing.",
+    "word_frequency": 702
+  },
+  {
+    "word": "Das Wohnzimmer ist sehr gemütlich.",
+    "definition": "The living room is very cozy.",
+    "word_frequency": 3380
+  },
+  {
+    "word": "Das Wort beginnt mit einem F.",
+    "definition": "The word starts with an F.",
+    "word_frequency": 505
+  },
+  {
+    "word": "Das Zimmer ist groß.",
+    "definition": "The room is big.",
+    "word_frequency": 690
+  },
+  {
+    "word": "Deutschland ist ein schönes Land.",
+    "definition": "Germany is a beautiful country.",
+    "word_frequency": 211
+  },
+  {
+    "word": "Dieses Wort ist schwer auszusprechen.",
+    "definition": "This word is difficult to pronounce.",
+    "word_frequency": 379
+  },
+  {
+    "word": "Ein Jahr hat zwölf Monate.",
+    "definition": "A year has twelve months.",
+    "word_frequency": 103
+  },
+  {
+    "word": "Er hat große Ohren.",
+    "definition": "He has big ears.",
+    "word_frequency": 1978
+  },
+  {
+    "word": "Er hat sich das Bein gebrochen.",
+    "definition": "He broke his leg.",
+    "word_frequency": 1567
+  },
+  {
+    "word": "Ich benutze ein Wörterbuch, um neue Wörter zu lernen.",
+    "definition": "I use a dictionary to learn new words.",
+    "word_frequency": 5858
+  },
+  {
+    "word": "Ich brauche 2 Kg Äpfel.",
+    "definition": "I need 2 kg of apples.",
+    "word_frequency": 1148
+  },
+  {
+    "word": "Ich brauche 200 Gramm Mehl.",
+    "definition": "I need 200 grams of flour.",
+    "word_frequency": 3877
+  },
+  {
+    "word": "Ich brauche ein Blatt Papier.",
+    "definition": "I need a sheet of paper.",
+    "word_frequency": 1550
+  },
+  {
+    "word": "Ich brauche ein Kilo Äpfel.",
+    "definition": "I need a kilo of apples.",
+    "word_frequency": 3279
+  },
+  {
+    "word": "Ich brauche ein Kilogramm Äpfel.",
+    "definition": "I need one kilogram of apples.",
+    "word_frequency": 5799
+  },
+  {
+    "word": "Ich brauche ein weiches Kissen.",
+    "definition": "I need a soft pillow.",
+    "word_frequency": 5285
+  },
+  {
+    "word": "Ich esse ein Brötchen zum Frühstück.",
+    "definition": "I eat a roll for breakfast.",
+    "word_frequency": 4711
+  },
+  {
+    "word": "Ich esse ein Sandwich zum Mittagessen.",
+    "definition": "I eat a sandwich for lunch.",
+    "word_frequency": 11580
+  },
+  {
+    "word": "Ich esse gerne Brot zum Frühstück.",
+    "definition": "I like to eat bread for breakfast.",
+    "word_frequency": 1838
+  },
+  {
+    "word": "Ich esse gerne frisches Gemüse.",
+    "definition": "I like to eat fresh vegetables.",
+    "word_frequency": 2629
+  },
+  {
+    "word": "Ich esse gerne frisches Obst.",
+    "definition": "I like to eat fresh fruit.",
+    "word_frequency": 3161
+  },
+  {
+    "word": "Ich esse gerne Würstchen mit Senf.",
+    "definition": "I like to eat sausages with mustard.",
+    "word_frequency": 8181
+  },
+  {
+    "word": "Ich esse kein Fleisch.",
+    "definition": "I don't eat meat.",
+    "word_frequency": 1323
+  },
+  {
+    "word": "Ich fahre mit dem Auto zur Arbeit.",
+    "definition": "I drive to work by car.",
+    "word_frequency": 297
+  },
+  {
+    "word": "Ich fahre mit dem Fahrrad zur Arbeit.",
+    "definition": "I ride my bicycle to work.",
+    "word_frequency": 1932
+  },
+  {
+    "word": "Ich gehe ins Büro.",
+    "definition": "I am going to the office.",
+    "word_frequency": 1137
+  },
+  {
+    "word": "Ich gehe ins Geschäft, um Brot zu kaufen.",
+    "definition": "I'm going to the shop to buy bread.",
+    "word_frequency": 1236
+  },
+  {
+    "word": "Ich habe ein schönes Foto gemacht.",
+    "definition": "I took a beautiful photo.",
+    "word_frequency": 591
+  },
+  {
+    "word": "Ich habe ein schönes Geschenk bekommen.",
+    "definition": "I received a nice gift.",
+    "word_frequency": 1663
+  },
+  {
+    "word": "Ich habe ein schönes Photo gemacht.",
+    "definition": "I took a beautiful photo.",
+    "word_frequency": 9298
+  },
+  {
+    "word": "Ich habe kein Geld.",
+    "definition": "I have no money.",
+    "word_frequency": 160
+  },
+  {
+    "word": "Ich hätte gerne ein Stück Kuchen.",
+    "definition": "I would like a piece of cake.",
+    "word_frequency": 515
+  },
+  {
+    "word": "Ich höre gerne Radio am Morgen.",
+    "definition": "I like listening to the radio in the morning.",
+    "word_frequency": 1273
+  },
+  {
+    "word": "Ich lerne Deutsch.",
+    "definition": "I am learning German.",
+    "word_frequency": 135
+  },
+  {
+    "word": "Ich möchte ein Eis essen.",
+    "definition": "I want to eat an ice cream.",
+    "word_frequency": 1529
+  },
+  {
+    "word": "Ich nehme ein Taxi zum Bahnhof.",
+    "definition": "I'll take a taxi to the station.",
+    "word_frequency": 3699
+  },
+  {
+    "word": "Ich spreche ein bisschen Spanisch.",
+    "definition": "I speak a little Spanish.",
+    "word_frequency": 3174
+  },
+  {
+    "word": "Ich trage ein blaues Hemd.",
+    "definition": "I am wearing a blue shirt.",
+    "word_frequency": 4571
+  },
+  {
+    "word": "Ich trage ein neues Shirt.",
+    "definition": "I am wearing a new shirt.",
+    "word_frequency": 2655
+  },
+  {
+    "word": "Ich trinke gerne ein kaltes Bier.",
+    "definition": "I like to drink a cold beer.",
+    "word_frequency": 927
+  },
+  {
+    "word": "Ich trinke gerne Wasser.",
+    "definition": "I like to drink water.",
+    "word_frequency": 287
+  },
+  {
+    "word": "Ich war schon viele Male dort.",
+    "definition": "I have been there many times.",
+    "word_frequency": 51
+  },
+  {
+    "word": "Ich wünsche dir viel Glück!",
+    "definition": "I wish you good luck!",
+    "word_frequency": 347
+  },
+  {
+    "word": "Kannst du das Telefon beantworten?",
+    "definition": "Can you answer the telephone?",
+    "word_frequency": 1071
+  },
+  {
+    "word": "Kinder lernen das Abc in der Schule.",
+    "definition": "Children learn the alphabet in school.",
+    "word_frequency": 6972
+  },
+  {
+    "word": "Mach bitte das Licht an.",
+    "definition": "Please turn on the light.",
+    "word_frequency": 643
+  },
+  {
+    "word": "Mein Handy klingelt.",
+    "definition": "My mobile phone is ringing.",
+    "word_frequency": 889
+  },
+  {
+    "word": "Mein Haustier ist eine Katze.",
+    "definition": "My pet is a cat.",
+    "word_frequency": 9260
+  },
+  {
+    "word": "Mein Hobby ist Lesen.",
+    "definition": "My hobby is reading.",
+    "word_frequency": 3042
+  },
+  {
+    "word": "Möchtest du ein kaltes Getränk?",
+    "definition": "Would you like a cold drink?",
+    "word_frequency": 4121
+  },
+  {
+    "word": "Möchtest du Ketchup zu deinen Pommes?",
+    "definition": "Do you want ketchup with your fries?",
+    "word_frequency": 11935
+  },
+  {
+    "word": "Sie hat blaue Augen.",
+    "definition": "She has blue eyes.",
+    "word_frequency": 333
+  },
+  {
+    "word": "Sie hat ein freundliches Gesicht.",
+    "definition": "She has a friendly face.",
+    "word_frequency": 567
+  },
+  {
+    "word": "Sie hat langes blondes Haar.",
+    "definition": "She has long blonde hair.",
+    "word_frequency": 1450
+  },
+  {
+    "word": "Sie trägt ein schönes Kleid.",
+    "definition": "She is wearing a beautiful dress.",
+    "word_frequency": 2784
+  },
+  {
+    "word": "Spielen wir heute Tennis?",
+    "definition": "Shall we play tennis today?",
+    "word_frequency": 3563
+  },
+  {
+    "word": "Sprichst du Französisch?",
+    "definition": "Do you speak French?",
+    "word_frequency": 1261
+  },
+  {
+    "word": "Was gibt es zum Mittagessen?",
+    "definition": "What's for lunch?",
+    "word_frequency": 3746
+  },
+  {
+    "word": "Welches Alter hat er?",
+    "definition": "What age is he?",
+    "word_frequency": 319
+  },
+  {
+    "word": "Wir besuchen das Museum am Wochenende.",
+    "definition": "We are visiting the museum on the weekend.",
+    "word_frequency": 1198
+  },
+  {
+    "word": "Wir essen heute Abend Hähnchen.",
+    "definition": "We are eating chicken tonight.",
+    "word_frequency": 13270
+  },
+  {
+    "word": "Wir essen um sieben Uhr Abendbrot.",
+    "definition": "We eat supper at seven o'clock.",
+    "word_frequency": 18004
+  },
+  {
+    "word": "Wir gehen heute Abend in ein Restaurant.",
+    "definition": "We are going to a restaurant tonight.",
+    "word_frequency": 1753
+  },
+  {
+    "word": "Wir gehen heute Abend ins Kino.",
+    "definition": "We are going to the cinema tonight.",
+    "word_frequency": 1413
+  },
+  {
+    "word": "Wir treffen uns im Café.",
+    "definition": "We meet at the cafe.",
+    "word_frequency": 3134
+  },
+  {
+    "word": "Wir übernachten in einem Hotel.",
+    "definition": "We are staying overnight in a hotel.",
+    "word_frequency": 778
+  }
+]
