@@ -780,47 +780,53 @@
 
   const KNOWN_BASE_LANGS = new Set(['german', 'english']);
 
-  // Populate a lang <select> for the currently chosen user.
-  function refreshLangSelect(userSelId, langSelId, { allLangsDefault = false } = {}) {
-    const user = document.getElementById(userSelId).value;
-    const langSel = document.getElementById(langSelId);
-    const prev = langSel.value;
-    langSel.innerHTML = allLangsDefault
-      ? '<option value="">All languages</option>'
-      : '<option value="">Select word list…</option>';
-    allWordLists
-      .filter((w) => w.user === user)
-      .forEach((w) => {
-        const opt = document.createElement('option');
-        opt.value = w.lang;
-        opt.textContent = w.lang;
-        if (w.lang === prev) opt.selected = true;
-        langSel.appendChild(opt);
+  // Generic cascade: populate a chain of selects based on filter functions
+  function createCascade(selectIds, getOptions) {
+    const selects = selectIds.map(id => document.getElementById(id));
+    selects.forEach((sel, i) => {
+      if (i === 0) return;
+      const prev = selects[i - 1];
+      prev.addEventListener('change', () => {
+        const vals = selects.slice(0, i).map(s => s.value);
+        populateSelect(sel, getOptions(...vals), prev.value);
       });
+    });
   }
 
-  // Populate a user <select> and rebuild the corresponding lang <select>.
-  function refreshUserSelect(userSelId, langSelId, opts = {}) {
-    const userSel = document.getElementById(userSelId);
-    if (!userSel) return;
-    const prev = userSel.value;
-    const users = [...new Set((allWordLists || []).map((w) => w.user))].sort();
-    userSel.innerHTML = '<option value="">Select user…</option>';
-    users.forEach((u) => {
-      const opt = document.createElement('option');
-      opt.value = u;
-      opt.textContent = u;
-      if (u === prev) opt.selected = true;
-      userSel.appendChild(opt);
+  function populateSelect(select, options, selectedValue = '') {
+    select.innerHTML = '<option value="">' + (select.dataset.placeholder || 'Select…') + '</option>';
+    options.forEach(opt => {
+      const o = document.createElement('option');
+      o.value = opt.value;
+      o.textContent = opt.label;
+      o.disabled = opt.disabled;
+      if (opt.value === selectedValue) o.selected = true;
+      select.appendChild(o);
     });
-    refreshLangSelect(userSelId, langSelId, opts);
   }
 
-  // Wire up user→lang cascade for a section (call once at init).
-  function setupCascade(userSelId, langSelId, opts = {}) {
-    document.getElementById(userSelId).addEventListener('change', () => {
-      refreshLangSelect(userSelId, langSelId, opts);
-    });
+  // Report cascade: user -> lang (simple)
+  function setupReportCascade() {
+    createCascade(
+      ['report-user', 'report-lang'],
+      (user) => {
+        if (!user) return [{value: '', label: 'All languages', disabled: true}];
+        const langs = [...new Set(allWordLists.filter(w => w.user === user).map(w => w.lang))].sort();
+        return [{value: '', label: 'All languages'}].concat(langs.map(l => ({value: l, label: l})));
+      }
+    );
+  }
+
+  // Editor cascade: user -> lang (simple)
+  function setupEditorCascade() {
+    createCascade(
+      ['editor-user', 'editor-lang'],
+      (user) => {
+        if (!user) return [{value: '', label: 'Select word list…'}];
+        const langs = [...new Set(allWordLists.filter(w => w.user === user).map(w => w.lang))].sort();
+        return [{value: '', label: 'Select word list…'}].concat(langs.map(l => ({value: l, label: l})));
+      }
+    );
   }
 
   // --- Progress widget ---
@@ -951,60 +957,59 @@
     ['german_sentences', 'German sentences'],
   ];
 
-  function refreshPracticeLanguage() {
-    const user = document.getElementById('practice-user').value;
-    const languageSel = document.getElementById('practice-lang');
-    const previous = languageSel.value;
-    languageSel.innerHTML = '<option value="">Select language…</option>';
-    PRACTICE_CATEGORIES.forEach(([value, label]) => {
-      const available = allWordLists.some((w) => w.user === user && w.category === value);
-      const opt = document.createElement('option');
-      opt.value = value;
-      opt.textContent = available ? label : `${label} (no files)`;
-      opt.disabled = !available;
-      if (value === previous && available) opt.selected = true;
-      languageSel.appendChild(opt);
-    });
-    refreshPracticeLevel();
-  }
-
-  function refreshPracticeLevel() {
-    const user = document.getElementById('practice-user').value;
-    const category = document.getElementById('practice-lang').value;
-    const levelSel = document.getElementById('practice-level');
-    const previous = levelSel.value;
-    const levels = ['a1', 'a2', 'b1', 'b2', 'c1', 'c2'];
-    levelSel.innerHTML = '<option value="">Select level…</option>';
-    levels.forEach((level) => {
-      const available = allWordLists.some((w) => w.user === user && w.category === category && w.level === level);
-      const opt = document.createElement('option');
-      opt.value = level;
-      opt.textContent = available ? level.toUpperCase() : `${level.toUpperCase()} (no files)`;
-      opt.disabled = !available;
-      if (level === previous && available) opt.selected = true;
-      levelSel.appendChild(opt);
-    });
-    refreshPracticeFile();
-  }
-
-  function refreshPracticeFile() {
-    const user = document.getElementById('practice-user').value;
-    const category = document.getElementById('practice-lang').value;
-    const level = document.getElementById('practice-level').value;
-    const fileSel = document.getElementById('practice-file');
-    const previous = fileSel.value;
-    fileSel.innerHTML = '<option value="">Select word list file…</option>';
-    allWordLists
-      .filter((w) => w.user === user && w.category === category && w.level === level)
-      .sort((a, b) => a.lang.localeCompare(b.lang))
-      .forEach((w) => {
-        const opt = document.createElement('option');
-        opt.value = w.lang;
-        opt.textContent = w.lang;
-        if (w.lang === previous) opt.selected = true;
-        fileSel.appendChild(opt);
+  // Generic cascade: given a chain of select IDs and a filter function,
+  // populate each select based on the previous one's value.
+  function createCascade(selectIds, getOptions) {
+    const selects = selectIds.map(id => document.getElementById(id));
+    selects.forEach((sel, i) => {
+      if (i === 0) return;
+      const prev = selects[i - 1];
+      prev.addEventListener('change', () => {
+        const vals = selects.slice(0, i).map(s => s.value);
+        populateSelect(sel, getOptions(...vals), prev.value);
       });
-    updatePracticeAudioLanguage();
+    });
+  }
+
+  function populateSelect(select, options, selectedValue = '') {
+    select.innerHTML = '<option value="">' + (select.dataset.placeholder || 'Select…') + '</option>';
+    options.forEach(opt => {
+      const o = document.createElement('option');
+      o.value = opt.value;
+      o.textContent = opt.label;
+      o.disabled = opt.disabled;
+      if (opt.value === selectedValue) o.selected = true;
+      select.appendChild(o);
+    });
+  }
+
+  // Practice cascade: user -> category -> level -> file
+  function setupPracticeCascade() {
+    createCascade(
+      ['practice-user', 'practice-lang', 'practice-level', 'practice-file'],
+      (user, category, level) => {
+        if (!user) return [{value: '', label: 'Select language…', disabled: true}];
+        if (category === undefined) {
+          return PRACTICE_CATEGORIES.map(([value, label]) => ({
+            value,
+            label: allWordLists.some(w => w.user === user && w.category === value) ? label : `${label} (no files)`,
+            disabled: !allWordLists.some(w => w.user === user && w.category === value),
+          }));
+        }
+        if (level === undefined) {
+          return ['a1','a2','b1','b2','c1','c2'].map(level => ({
+            value: level,
+            label: allWordLists.some(w => w.user === user && w.category === category && w.level === level)
+              ? level.toUpperCase() : `${level.toUpperCase()} (no files)`,
+            disabled: !allWordLists.some(w => w.user === user && w.category === category && w.level === level),
+          }));
+        }
+        return allWordLists
+          .filter(w => w.user === user && w.category === category && w.level === level)
+          .sort((a,b) => a.lang.localeCompare(b.lang))
+          .map(w => ({value: w.lang, label: w.lang}));
+      }
+    );
   }
 
   function updatePracticeAudioLanguage() {
@@ -1016,23 +1021,9 @@
     audioEl.value = KNOWN_BASE_LANGS.has(base) ? base : '';
   }
 
-  document.getElementById('practice-user').addEventListener('change', function () {
-    refreshPracticeLanguage();
-    loadSelectedProgress();
-  });
-  document.getElementById('practice-lang').addEventListener('change', () => {
-    refreshPracticeLevel();
-    loadSelectedProgress();
-  });
-  document.getElementById('practice-level').addEventListener('change', () => {
-    refreshPracticeFile();
-    loadSelectedProgress();
-  });
-  document.getElementById('practice-file').addEventListener('change', updatePracticeAudioLanguage);
-
-  setupCascade('report-user',   'report-lang',  { allLangsDefault: true });
-
-  setupCascade('editor-user',   'editor-lang');
+  setupReportCascade();
+  setupEditorCascade();
+  setupPracticeCascade();
 
   async function loadWordLists() {
     const listsBody = document.getElementById('lists-body');
@@ -1047,10 +1038,18 @@
     }
 
     // Always refresh dropdowns, even if API failed (will use cached/empty data).
-    refreshUserSelect('practice-user', 'practice-lang');
-    refreshPracticeLanguage();
-    refreshUserSelect('report-user', 'report-lang', { allLangsDefault: true });
-    refreshUserSelect('editor-user', 'editor-lang');
+    // Populate user dropdowns
+    const users = [...new Set(allWordLists.map(w => w.user))].sort();
+    ['practice-user', 'report-user', 'editor-user'].forEach(id => {
+      const sel = document.getElementById(id);
+      const prev = sel.value;
+      sel.innerHTML = '<option value="">Select user…</option>' + users.map(u => `<option value="${u}"${u === prev ? ' selected' : ''}>${u}</option>`).join('');
+    });
+    // Trigger practice cascade to populate category/level/file
+    setupPracticeCascade();
+    // Trigger report and editor cascades
+    document.getElementById('report-user').dispatchEvent(new Event('change'));
+    document.getElementById('editor-user').dispatchEvent(new Event('change'));
 
     // Render the Word Lists tab.
     if (!allWordLists.length) {
@@ -1073,7 +1072,7 @@
         const uSel = document.getElementById('editor-user');
         const lSel = document.getElementById('editor-lang');
         uSel.value = btn.dataset.user;
-        refreshLangSelect('editor-user', 'editor-lang');
+        uSel.dispatchEvent(new Event('change'));
         lSel.value = btn.dataset.lang;
         loadEditor();
       });
@@ -1107,10 +1106,30 @@
 
   // --- Dashboard card renderers (used inside loadReport) ---
 
+  // Generic card factory: creates a card with optional header and body
+  function createCard(className, title, bodyHtml, extraClass = '') {
+    const card = document.createElement('div');
+    card.className = `card ${className} ${extraClass}`.trim();
+    if (title) {
+      const h3 = document.createElement('h3');
+      h3.textContent = title;
+      card.appendChild(h3);
+    }
+    if (typeof bodyHtml === 'string') {
+      card.insertAdjacentHTML('beforeend', bodyHtml);
+    } else if (bodyHtml instanceof Node) {
+      card.appendChild(bodyHtml);
+    }
+    return card;
+  }
+
+  // Stat tile helper
+  function statTile(num, label, extraClass = '', unit = '') {
+    return `<div class="stat-tile ${extraClass}"><span class="stat-num">${num}${unit ? `<span class="stat-unit">${unit}</span>` : ''}</span><span class="stat-label">${label}</span></div>`;
+  }
+
   // Card 1 — Current Status (scoped to selected list)
   function renderDashCard1(overview) {
-    const card = document.createElement('div');
-    card.className = 'card dash-card-full dash-card-overview';
     const h = Math.floor(overview.total_seconds / 3600);
     const m = Math.floor((overview.total_seconds % 3600) / 60);
     const accuracy = overview.overall_accuracy;
@@ -1119,21 +1138,11 @@
     const arcColor = accuracy == null ? 'var(--surface1)'
       : accuracy >= 85 ? 'var(--green)' : accuracy >= 70 ? 'var(--yellow)' : 'var(--red)';
     const ringLabel = accuracy != null ? `${accuracy}%` : 'N/A';
-    card.innerHTML = `
-      <h3>Current Status</h3>
+    return createCard('dash-card-full dash-card-overview', 'Current Status', `
       <div class="stat-tiles">
-        <div class="stat-tile">
-          <span class="stat-num stat-due">${overview.due_today}</span>
-          <span class="stat-label">Due Today</span>
-        </div>
-        <div class="stat-tile">
-          <span class="stat-num">${overview.streak.current}<span class="stat-unit">day${overview.streak.current !== 1 ? 's' : ''}</span></span>
-          <span class="stat-label">Current Streak</span>
-        </div>
-        <div class="stat-tile">
-          <span class="stat-num">${h}h ${m}m</span>
-          <span class="stat-label">Total Practice Time</span>
-        </div>
+        ${statTile(overview.due_today, 'Due Today', 'stat-due')}
+        ${statTile(`${overview.streak.current}<span class="stat-unit">day${overview.streak.current !== 1 ? 's' : ''}</span>`, 'Current Streak')}
+        ${statTile(`${h}h ${m}m`, 'Total Practice Time')}
         <div class="stat-tile stat-ring-tile">
           <svg width="90" height="90" viewBox="0 0 90 90" class="accuracy-ring">
             <circle cx="45" cy="45" r="${r}" fill="none" stroke="var(--surface1)" stroke-width="9"/>
@@ -1145,21 +1154,17 @@
           </svg>
           <span class="stat-label">Overall Accuracy</span>
         </div>
-      </div>`;
-    return card;
+      </div>`);
   }
 
   // Card 2 — Mastery Funnel (per list)
   function renderDashCard2(mastery) {
-    const card = document.createElement('div');
-    card.className = 'card dash-card-mastery';
     const { learning, familiar, mastered, total } = mastery;
     const lPct = total ? Math.round(100 * learning / total) : 0;
     const fPct = total ? Math.round(100 * familiar / total) : 0;
     const mPct = 100 - lPct - fPct;
     const masteredPct = total ? Math.round(100 * mastered / total) : 0;
-    card.innerHTML = `
-      <h3>Mastery Funnel</h3>
+    return createCard('dash-card-mastery', 'Mastery Funnel', `
       <div class="stacked-bar">
         ${lPct > 0 ? `<div class="stacked-seg seg-learning" style="width:${lPct}%" title="Learning: ${learning}"></div>` : ''}
         ${fPct > 0 ? `<div class="stacked-seg seg-familiar" style="width:${fPct}%" title="Familiar: ${familiar}"></div>` : ''}
@@ -1173,30 +1178,23 @@
       <p class="muted insight-text">${mastered > 0
         ? `You&rsquo;ve pushed <strong>${masteredPct}%</strong> of your vocabulary into long-term memory.`
         : 'Keep practicing — mastered words will appear here.'
-      }</p>`;
-    return card;
+      }</p>`);
   }
 
   // Card 3 — Nemesis Words (per list)
   function renderDashCard3(nemesis, user, lang) {
-    const card = document.createElement('div');
-    card.className = 'card dash-card-nemesis';
     if (!nemesis.length) {
-      card.innerHTML = '<h3>Hardest Words</h3><p class="muted">No words with incorrect answers yet — great work!</p>';
-      return card;
+      return createCard('dash-card-nemesis', 'Hardest Words', '<p class="muted">No words with incorrect answers yet — great work!</p>');
     }
     let rows = nemesis.map((w) =>
       `<tr><td>${escapeHtml(w.word)}</td><td>${w.times_incorrect}</td><td>${w.times_correct}</td><td>${w.score.toFixed(1)}</td></tr>`
     ).join('');
-    card.innerHTML = `
-      <h3>Hardest Words</h3>
+    const card = createCard('dash-card-nemesis', 'Hardest Words', `
       <table class="nemesis-table">
         <thead><tr><th>Word</th><th>Wrong</th><th>Right</th><th>Score</th></tr></thead>
         <tbody>${rows}</tbody>
       </table>
-      <button type="button" class="secondary" id="btn-drill-nemesis" style="margin-top:0.75rem;">
-        Drill these words
-      </button>`;
+      <button type="button" class="secondary" id="btn-drill-nemesis" style="margin-top:0.75rem;">Drill these words</button>`);
     card.querySelector('#btn-drill-nemesis').addEventListener('click', () => {
       document.getElementById('practice-user').value = user;
       refreshPracticeLanguage();
