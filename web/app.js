@@ -238,6 +238,7 @@
     const fileInput = document.getElementById('practice-file');
     const user = userInput.value.trim();
     const language = languageInput.value.trim();
+    const level = document.getElementById('practice-level').value.trim();
     const lang = fileInput.value.trim();
     syncSentenceDrillOptions();
     const audioLang = (document.getElementById('practice-audio-lang')?.value ?? '').trim() || undefined;
@@ -252,10 +253,11 @@
       const parsed = parseInt(wpmInput.value, 10);
       if (!Number.isNaN(parsed) && parsed >= 30 && parsed <= 400) wpm = parsed;
     }
-    if (!user || !language || !lang) {
-      showError(practiceError, 'User, language, and word list file are required.');
+    if (!user || !language || !level || !lang) {
+      showError(practiceError, 'User, language, level, and word list file are required.');
       if (!user) userInput.focus();
       else if (!language) languageInput.focus();
+      else if (!level) document.getElementById('practice-level').focus();
       else fileInput.focus();
       return;
     }
@@ -945,17 +947,37 @@
       if (value === previous && available) opt.selected = true;
       languageSel.appendChild(opt);
     });
+    refreshPracticeLevel();
+  }
+
+  function refreshPracticeLevel() {
+    const user = document.getElementById('practice-user').value;
+    const category = document.getElementById('practice-lang').value;
+    const levelSel = document.getElementById('practice-level');
+    const previous = levelSel.value;
+    const levels = ['a1', 'a2', 'b1', 'b2', 'c1', 'c2'];
+    levelSel.innerHTML = '<option value="">Select level…</option>';
+    levels.forEach((level) => {
+      const available = allWordLists.some((w) => w.user === user && w.category === category && w.level === level);
+      const opt = document.createElement('option');
+      opt.value = level;
+      opt.textContent = available ? level.toUpperCase() : `${level.toUpperCase()} (no files)`;
+      opt.disabled = !available;
+      if (level === previous && available) opt.selected = true;
+      levelSel.appendChild(opt);
+    });
     refreshPracticeFile();
   }
 
   function refreshPracticeFile() {
     const user = document.getElementById('practice-user').value;
     const category = document.getElementById('practice-lang').value;
+    const level = document.getElementById('practice-level').value;
     const fileSel = document.getElementById('practice-file');
     const previous = fileSel.value;
     fileSel.innerHTML = '<option value="">Select word list file…</option>';
     allWordLists
-      .filter((w) => w.user === user && w.category === category)
+      .filter((w) => w.user === user && w.category === category && w.level === level)
       .sort((a, b) => a.lang.localeCompare(b.lang))
       .forEach((w) => {
         const opt = document.createElement('option');
@@ -980,7 +1002,8 @@
     refreshPracticeLanguage();
     loadUserProgress(this.value);
   });
-  document.getElementById('practice-lang').addEventListener('change', refreshPracticeFile);
+  document.getElementById('practice-lang').addEventListener('change', refreshPracticeLevel);
+  document.getElementById('practice-level').addEventListener('change', refreshPracticeFile);
   document.getElementById('practice-file').addEventListener('change', updatePracticeAudioLanguage);
 
   setupCascade('report-user',   'report-lang',  { allLangsDefault: true });
@@ -1156,6 +1179,8 @@
       const practiceList = allWordLists.find((item) => item.user === user && item.lang === lang);
       if (practiceList) {
         document.getElementById('practice-lang').value = practiceList.category;
+        refreshPracticeLevel();
+        document.getElementById('practice-level').value = practiceList.level;
         refreshPracticeFile();
         document.getElementById('practice-file').value = lang;
         updatePracticeAudioLanguage();

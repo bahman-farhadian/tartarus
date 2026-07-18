@@ -241,7 +241,7 @@ button:disabled {
 
 /* --- Practice view --- */
 .practice-select-row .field {
-  min-width: 220px;
+  min-width: 160px;
 }
 
 .practice-settings-row {
