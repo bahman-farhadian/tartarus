@@ -4,7 +4,7 @@ Tartarus web server: a localhost-only JSON API + static frontend that wraps
 the same SQLite-backed scoring logic as the tartarus.py CLI. Standard
 library only - no extra packages needed.
 
-Run via: ./tartarus_web.sh   (serves http://127.0.0.1:9999)
+Run via: make web   (serves http://127.0.0.1:9999)
 """
 import os
 import sys
@@ -22,7 +22,8 @@ import tartarus as ll
 HOST = '127.0.0.1'
 PORT = 9999
 
-WEB_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'web')
+PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+WEB_DIR = os.path.join(PROJECT_DIR, 'web')
 
 STATIC_FILES = {
     '/': ('index.html', 'text/html; charset=utf-8'),

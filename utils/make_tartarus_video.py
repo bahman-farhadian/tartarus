@@ -9,8 +9,8 @@ a dark background, with audio spoken several times in a row.
 Requires ffmpeg/ffprobe (e.g. `brew install ffmpeg-full`) and macOS 'say'.
 Standard library only - no pip install / virtualenv needed.
 
-Run directly, e.g.:
-    python3 make_tartarus_video.py --user bahman --lang german_home --audio-lang german --number 20
+Run through the project Makefile, e.g.:
+    make video opts="--user bahman --lang german_home --audio-lang german --number 20"
 """
 import argparse
 import json
@@ -19,8 +19,8 @@ import subprocess
 import sys
 import tempfile
 
-# Allow running from utils/ — find tartarus.py one level up
-sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
+# Import the sibling CLI module when this utility runs from the project root.
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import tartarus as ll
 
 FONT_FILE = "/System/Library/Fonts/Supplemental/Arial Unicode.ttf"

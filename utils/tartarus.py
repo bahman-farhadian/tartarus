@@ -11,7 +11,8 @@ import subprocess
 from datetime import date, datetime, timedelta
 
 # --- Configuration ---
-DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data')
+PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DATA_DIR = os.path.join(PROJECT_DIR, 'data')
 DATABASE_FILE = os.path.join(DATA_DIR, 'tartarus.db')
 WORD_LISTS_DIR = os.path.join(DATA_DIR, 'word_lists')
 NAME_PATTERN = re.compile(r'^[a-z0-9_]+$')
@@ -1481,16 +1482,16 @@ def build_parser():
         epilog="""
 Usage Examples:
   # First time setup for a user/language (creates word_lists/<user>_<lang>.json)
-  ./tartarus.sh init --user bahman --lang german
+  make init user=bahman list=german
 
   # Start a practice session (4 words, 16 questions); audio on by default on macOS
-  ./tartarus.sh practice --user bahman --lang german
+  make practice user=bahman list=german
 
   # Same, but without audio
-  ./tartarus.sh practice --user bahman --lang german --no-audio
+  make practice user=bahman list=german opts="--no-audio"
 
   # View progress report
-  ./tartarus.sh report --user bahman --lang german
+  make report user=bahman list=german
 
 How question types are chosen:
   Every word has a score from 1.0 (struggling) to 9.0 (mastered). Each

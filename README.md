@@ -373,23 +373,20 @@ make help
 The underlying CLI still provides detailed flag help when needed:
 
 ```bash
-./tartarus.sh practice --help
-./tartarus.sh report --help
-./tartarus.sh init --help
+python3 utils/tartarus.py practice --help
+python3 utils/tartarus.py report --help
+python3 utils/tartarus.py init --help
 ```
 
 ## Project structure
 
 ```
-tartarus.py               # main script (single file)
-tartarus.sh               # run through this wrapper, not python3 directly
-tartarus_web.py           # web server (JSON API + static frontend)
-tartarus_web.sh           # run through this wrapper, not python3 directly
+utils/tartarus.py          # main script (single file)
+utils/tartarus_web.py     # web server (JSON API + static frontend)
 Makefile                  # normal web and CLI entry points (`make help`)
 utils/
   make_tartarus_video.py         # standalone: generate a vocab-drill video
   generate_tartarus_json.py   # generate word lists from source decks
-make_tartarus_video.sh       # run through this wrapper
 web/
   index.html              # frontend markup
   style.css               # Catppuccin Mocha dark theme
@@ -547,19 +544,18 @@ review a list "Memrise-flashcard" style in a video player. It's independent
 of the CLI/web UI and doesn't touch the database.
 
 ```bash
-chmod +x make_tartarus_video.sh   # one-time, if not already executable
 
 # Simple list — output goes to videos/bahman_german.mp4
-./make_tartarus_video.sh --user bahman --lang german
+make video opts="--user bahman --lang german"
 
 # Sub-list with audio language override (same pattern as practice --audio-lang)
-./make_tartarus_video.sh --user bahman --lang german_home --audio-lang german
+make video opts="--user bahman --lang german_home --audio-lang german"
 
 # Quick test: first 5 words only
-./make_tartarus_video.sh --user bahman --lang german --number 5
+make video opts="--user bahman --lang german --number 5"
 
 # Custom output path
-./make_tartarus_video.sh --user bahman --lang german --output ~/Desktop/german_drill.mp4
+make video opts="--user bahman --lang german --output ~/Desktop/german_drill.mp4"
 ```
 
 Each word is repeated (default `4` times), with a 1-second hold between
