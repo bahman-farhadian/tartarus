@@ -3022,5 +3022,861 @@
   {
     "word": "das β-Hydroxyaldehyd, der β-Hydroxyaldehyd, die β-Hydroxyaldehyde",
     "definition": []
+  },
+  {
+    "word": "die Bus, der Bus, die Buses",
+    "definition": []
+  },
+  {
+    "word": "die Cola, das Cola, die Colas",
+    "definition": []
+  },
+  {
+    "word": "das Foto, die Foto, die Fotos",
+    "definition": []
+  },
+  {
+    "word": "der Joghurt, die Joghurt, das Joghurt, die Joghurts",
+    "definition": []
+  },
+  {
+    "word": "der Ketchup, das Ketchup, die Ketchups",
+    "definition": []
+  },
+  {
+    "word": "das Kilo, der Kilo, die Kilo, die Kilos",
+    "definition": []
+  },
+  {
+    "word": "der Kilometer, das Kilometer, die Kilometer",
+    "definition": []
+  },
+  {
+    "word": "der Liter, das Liter, die Liter",
+    "definition": []
+  },
+  {
+    "word": "der Meter, das Meter, die Meter",
+    "definition": []
+  },
+  {
+    "word": "der Monat, das Monat, die Monate",
+    "definition": []
+  },
+  {
+    "word": "das Radio, der Radio, die Radios",
+    "definition": []
+  },
+  {
+    "word": "das Sandwich, der Sandwich, die Sandwichs, die Sandwiches, die Sandwiche",
+    "definition": []
+  },
+  {
+    "word": "das Taxi, der Taxi, die Taxis",
+    "definition": []
+  },
+  {
+    "word": "der Teller, das Teller, die Teller",
+    "definition": []
+  },
+  {
+    "word": "die Vokabel, das Vokabel, die Vokabeln",
+    "definition": []
+  },
+  {
+    "word": "die App, das App, die Apps",
+    "definition": []
+  },
+  {
+    "word": "das Baguette, die Baguette, die Baguettes, die Baguetten",
+    "definition": []
+  },
+  {
+    "word": "das Bauer, der Bauer, die Bauer",
+    "definition": []
+  },
+  {
+    "word": "der Bikini, das Bikini, die Bikinis",
+    "definition": []
+  },
+  {
+    "word": "der Bonbon, das Bonbon, die Bonbons",
+    "definition": []
+  },
+  {
+    "word": "der Comic, das Comic, die Comics",
+    "definition": []
+  },
+  {
+    "word": "die Couch, der Couch, die Couchs, die Couches, die Couchen",
+    "definition": []
+  },
+  {
+    "word": "der Curry, das Curry, die Currys",
+    "definition": []
+  },
+  {
+    "word": "der Grad, das Grad, die Grade",
+    "definition": []
+  },
+  {
+    "word": "das Gulasch, der Gulasch, die Gulasche, die Gulaschs",
+    "definition": []
+  },
+  {
+    "word": "das Headset, der Headset, die Headsets",
+    "definition": []
+  },
+  {
+    "word": "der Kaugummi, das Kaugummi, die Kaugummis",
+    "definition": []
+  },
+  {
+    "word": "der Keks, das Keks, die Keks, die Kekse",
+    "definition": []
+  },
+  {
+    "word": "der Laptop, das Laptop, die Laptops",
+    "definition": []
+  },
+  {
+    "word": "der Latte, die Latte",
+    "definition": []
+  },
+  {
+    "word": "der Lift, das Lift, die Lifts",
+    "definition": []
+  },
+  {
+    "word": "die Limo, das Limo, die Limos",
+    "definition": []
+  },
+  {
+    "word": "die Mail, das Mail, die Mails",
+    "definition": []
+  },
+  {
+    "word": "der Millimeter, das Millimeter, die Millimeter",
+    "definition": []
+  },
+  {
+    "word": "der Mode, die Mode, die Moden",
+    "definition": []
+  },
+  {
+    "word": "das Movie, der Movie, die Movies",
+    "definition": []
+  },
+  {
+    "word": "der Paprika, die Paprika",
+    "definition": []
+  },
+  {
+    "word": "das Pfand, der Pfand, die Pfänder",
+    "definition": []
+  },
+  {
+    "word": "das Poster, der Poster, die Poster",
+    "definition": []
+  },
+  {
+    "word": "der Pyjama, das Pyjama, die Pyjamas",
+    "definition": []
+  },
+  {
+    "word": "die Salami, der Salami, die Salamis",
+    "definition": []
+  },
+  {
+    "word": "der Schnitzel, das Schnitzel, die Schnitzel",
+    "definition": []
+  },
+  {
+    "word": "der Sellerie, die Sellerie, die Selleries, die Sellerien",
+    "definition": []
+  },
+  {
+    "word": "der Service, das Service, die Services",
+    "definition": []
+  },
+  {
+    "word": "der Swimmingpool, das Swimmingpool, die Swimmingpools, die Swimmingpoole",
+    "definition": []
+  },
+  {
+    "word": "das Thermometer, der Thermometer, die Thermometer",
+    "definition": []
+  },
+  {
+    "word": "die Tram, das Tram, die Trams",
+    "definition": []
+  },
+  {
+    "word": "das Viertel, der Viertel, die Viertel",
+    "definition": []
+  },
+  {
+    "word": "der Zentimeter, das Zentimeter, die Zentimeter",
+    "definition": []
+  },
+  {
+    "word": "die Zucchini, der Zucchini, die Zucchinis",
+    "definition": []
+  },
+  {
+    "word": "die Zwiebel, der Zwiebel, die Zwiebeln",
+    "definition": []
+  },
+  {
+    "word": "der Account, das Account, die Accounts",
+    "definition": []
+  },
+  {
+    "word": "der Arbeitsbereich, das Arbeitsbereich, die Arbeitsbereiche",
+    "definition": []
+  },
+  {
+    "word": "das Backup, der Backup, die Backups",
+    "definition": []
+  },
+  {
+    "word": "das Bauteil, der Bauteil, die Bauteile",
+    "definition": []
+  },
+  {
+    "word": "der Bereich, das Bereich, die Bereiche",
+    "definition": []
+  },
+  {
+    "word": "der Bildungsbereich, das Bildungsbereich, die Bildungsbereiche",
+    "definition": []
+  },
+  {
+    "word": "das Blog, der Blog, die Blogs",
+    "definition": []
+  },
+  {
+    "word": "der Buggy, das Buggy, die Buggys",
+    "definition": []
+  },
+  {
+    "word": "das Cap, der Cap, die Cap, die Caps",
+    "definition": []
+  },
+  {
+    "word": "der Cartoon, das Cartoon, die Cartoons",
+    "definition": []
+  },
+  {
+    "word": "der Chor, das Chor, die Chöre, die Chore, die Choren",
+    "definition": []
+  },
+  {
+    "word": "das Crime, der Crime, die Crimes",
+    "definition": []
+  },
+  {
+    "word": "der Dekor, das Dekor, die Dekore, die Dekors",
+    "definition": []
+  },
+  {
+    "word": "der Download, das Download, die Downloads",
+    "definition": []
+  },
+  {
+    "word": "das Drittel, der Drittel, die Drittel",
+    "definition": []
+  },
+  {
+    "word": "der Drops, das Drops, die Drops, die Dropse",
+    "definition": []
+  },
+  {
+    "word": "der Dschungel, das Dschungel, die Dschungel, die Dschungeln, die Dschungels",
+    "definition": []
+  },
+  {
+    "word": "der Einzelteil, das Einzelteil, die Einzelteile",
+    "definition": []
+  },
+  {
+    "word": "der Elternteil, das Elternteil, die Elternteile",
+    "definition": []
+  },
+  {
+    "word": "die Ersparnis, das Ersparnis, die Ersparnisse",
+    "definition": []
+  },
+  {
+    "word": "das Event, der Event, die Events",
+    "definition": []
+  },
+  {
+    "word": "der Fakt, das Fakt, die Fakten, die Fakts",
+    "definition": []
+  },
+  {
+    "word": "das Fax, der Fax, die Faxe",
+    "definition": []
+  },
+  {
+    "word": "der Filter, das Filter, die Filter",
+    "definition": []
+  },
+  {
+    "word": "das Gehalt, der Gehalt, die Gehälter",
+    "definition": []
+  },
+  {
+    "word": "der Gummi, das Gummi, die Gummi, die Gummis",
+    "definition": []
+  },
+  {
+    "word": "das Hashtag, der Hashtag, die Hashtags",
+    "definition": []
+  },
+  {
+    "word": "das Hektar, der Hektar, die Hektare",
+    "definition": []
+  },
+  {
+    "word": "der Indigo, das Indigo, die Indigos",
+    "definition": []
+  },
+  {
+    "word": "das Kajak, der Kajak, die Kajaks",
+    "definition": []
+  },
+  {
+    "word": "der Kamin, das Kamin, die Kamine",
+    "definition": []
+  },
+  {
+    "word": "der Kiefer, das Kiefer, die Kiefer",
+    "definition": []
+  },
+  {
+    "word": "der Kundenservice, das Kundenservice, die Kundenservices",
+    "definition": []
+  },
+  {
+    "word": "die Laube, der Laube, die Lauben",
+    "definition": []
+  },
+  {
+    "word": "der Level, das Level, die Levels, die Level",
+    "definition": []
+  },
+  {
+    "word": "der Lieferservice, das Lieferservice, die Lieferservices",
+    "definition": []
+  },
+  {
+    "word": "das Logo, der Logo, die Logos",
+    "definition": []
+  },
+  {
+    "word": "das Manga, der Manga, die Manga, die Mangas",
+    "definition": []
+  },
+  {
+    "word": "das Match, der Match, die Matchs, die Matches, die Matche",
+    "definition": []
+  },
+  {
+    "word": "der Modem, das Modem, die Modems",
+    "definition": []
+  },
+  {
+    "word": "das Mosaik, die Mosaik, die Mosaiken, die Mosaike",
+    "definition": []
+  },
+  {
+    "word": "das Mus, der Mus, die Muse",
+    "definition": []
+  },
+  {
+    "word": "der Nougat, das Nougat, die Nougats",
+    "definition": []
+  },
+  {
+    "word": "das Oberteil, der Oberteil, die Oberteile",
+    "definition": []
+  },
+  {
+    "word": "der Pesto, das Pesto, die Pestos",
+    "definition": []
+  },
+  {
+    "word": "der Pfefferspray, das Pfefferspray, die Pfeffersprays",
+    "definition": []
+  },
+  {
+    "word": "der Podcast, das Podcast, die Podcasts",
+    "definition": []
+  },
+  {
+    "word": "das Podest, der Podest, die Podeste",
+    "definition": []
+  },
+  {
+    "word": "die Preview, der Preview, das Preview, die Previews",
+    "definition": []
+  },
+  {
+    "word": "der Prospekt, das Prospekt, die Prospekte",
+    "definition": []
+  },
+  {
+    "word": "das Pub, der Pub, die Pubs",
+    "definition": []
+  },
+  {
+    "word": "der Puder, das Puder, die Puder",
+    "definition": []
+  },
+  {
+    "word": "der Quadratmeter, das Quadratmeter, die Quadratmeter",
+    "definition": []
+  },
+  {
+    "word": "das Radler, der Radler, die Radler",
+    "definition": []
+  },
+  {
+    "word": "die Rallye, das Rallye, die Rallyes",
+    "definition": []
+  },
+  {
+    "word": "der Review, die Review, das Review, die Reviews",
+    "definition": []
+  },
+  {
+    "word": "die Robot, der Robot, die Roboten, die Robote",
+    "definition": []
+  },
+  {
+    "word": "der Rodeo, das Rodeo, die Rodeos",
+    "definition": []
+  },
+  {
+    "word": "das Rollo, die Rollo, die Rollos",
+    "definition": []
+  },
+  {
+    "word": "das Sakko, der Sakko, die Sakkos",
+    "definition": []
+  },
+  {
+    "word": "der Silo, das Silo, die Silos",
+    "definition": []
+  },
+  {
+    "word": "das Sixpack, der Sixpack, die Sixpacks",
+    "definition": []
+  },
+  {
+    "word": "der Smalltalk, das Smalltalk, die Smalltalks",
+    "definition": []
+  },
+  {
+    "word": "das Smiley, der Smiley, die Smileys",
+    "definition": []
+  },
+  {
+    "word": "das Snooker, der Snooker, die Snookers",
+    "definition": []
+  },
+  {
+    "word": "die Soja, das Soja, die Sojen",
+    "definition": []
+  },
+  {
+    "word": "das Spam, der Spam, die Spam, die Spams",
+    "definition": []
+  },
+  {
+    "word": "das Spital, der Spital, die Spitäler",
+    "definition": []
+  },
+  {
+    "word": "der Spray, das Spray, die Sprays",
+    "definition": []
+  },
+  {
+    "word": "der Stage, die Stage, die Stages",
+    "definition": []
+  },
+  {
+    "word": "der Tattoo, das Tattoo, die Tattoos",
+    "definition": []
+  },
+  {
+    "word": "der Triathlon, das Triathlon, die Triathlons",
+    "definition": []
+  },
+  {
+    "word": "der Trüffel, die Trüffel, die Trüffeln",
+    "definition": []
+  },
+  {
+    "word": "der Tsunami, die Tsunami, die Tsunamis",
+    "definition": []
+  },
+  {
+    "word": "der Tweet, das Tweet, die Tweets",
+    "definition": []
+  },
+  {
+    "word": "der Upload, das Upload, die Uploads",
+    "definition": []
+  },
+  {
+    "word": "das Vesper, die Vesper, die Vespern",
+    "definition": []
+  },
+  {
+    "word": "das Virus, der Virus, die Viren",
+    "definition": []
+  },
+  {
+    "word": "das Workout, der Workout, die Workouts",
+    "definition": []
+  },
+  {
+    "word": "das Zehntel, der Zehntel, die Zehntel",
+    "definition": []
+  },
+  {
+    "word": "der Zimt, das Zimt, die Zimte",
+    "definition": []
+  },
+  {
+    "word": "der Zoll, das Zoll, die Zoll",
+    "definition": []
+  },
+  {
+    "word": "das Zubehör, der Zubehör, die Zubehöre",
+    "definition": []
+  },
+  {
+    "word": "der Abstract, das Abstract, die Abstracts",
+    "definition": []
+  },
+  {
+    "word": "das Air, die Air, die Airs",
+    "definition": []
+  },
+  {
+    "word": "das Alias, der Alias, die Aliasse, die Alias",
+    "definition": []
+  },
+  {
+    "word": "das Audit, der Audit, die Audits",
+    "definition": []
+  },
+  {
+    "word": "das Barometer, der Barometer, die Barometer",
+    "definition": []
+  },
+  {
+    "word": "der Bit, das Bit, die Bits",
+    "definition": []
+  },
+  {
+    "word": "der Blackout, das Blackout, die Blackouts",
+    "definition": []
+  },
+  {
+    "word": "der Break, das Break, die Breaks",
+    "definition": []
+  },
+  {
+    "word": "der Cast, die Cast, die Casts",
+    "definition": []
+  },
+  {
+    "word": "der Chart, das Chart, die Charts",
+    "definition": []
+  },
+  {
+    "word": "der Charter, die Charter, die Charters",
+    "definition": []
+  },
+  {
+    "word": "der Claim, das Claim, die Claims",
+    "definition": []
+  },
+  {
+    "word": "die Draft, der Draft, die Drafts",
+    "definition": []
+  },
+  {
+    "word": "der Ersatzteil, das Ersatzteil, die Ersatzteile",
+    "definition": []
+  },
+  {
+    "word": "der Essay, das Essay, die Essays",
+    "definition": []
+  },
+  {
+    "word": "der Extrakt, das Extrakt, die Extrakte",
+    "definition": []
+  },
+  {
+    "word": "das Feature, die Feature, die Features",
+    "definition": []
+  },
+  {
+    "word": "die Firewall, der Firewall, die Firewalls",
+    "definition": []
+  },
+  {
+    "word": "der Frame, das Frame, die Frames",
+    "definition": []
+  },
+  {
+    "word": "der Fries, das Fries, die Friese",
+    "definition": []
+  },
+  {
+    "word": "die Geisel, der Geisel, die Geiseln",
+    "definition": []
+  },
+  {
+    "word": "der Gong, das Gong, die Gongs",
+    "definition": []
+  },
+  {
+    "word": "der Gospel, das Gospel, die Gospels",
+    "definition": []
+  },
+  {
+    "word": "das Item, der Item, die Items",
+    "definition": []
+  },
+  {
+    "word": "der Judoka, die Judoka, die Judokas",
+    "definition": []
+  },
+  {
+    "word": "der Juwel, das Juwel, die Juwelen",
+    "definition": []
+  },
+  {
+    "word": "der Kader, das Kader, die Kader",
+    "definition": []
+  },
+  {
+    "word": "das Kit, der Kit, die Kits",
+    "definition": []
+  },
+  {
+    "word": "das Komplott, der Komplott, die Komplotte",
+    "definition": []
+  },
+  {
+    "word": "der Kompromiss, das Kompromiss, die Kompromisse",
+    "definition": []
+  },
+  {
+    "word": "das Kondom, der Kondom, die Kondome",
+    "definition": []
+  },
+  {
+    "word": "die Kontur, der Kontur, die Konturen",
+    "definition": []
+  },
+  {
+    "word": "der Krake, die Krake, die Kraken",
+    "definition": []
+  },
+  {
+    "word": "der Launch, das Launch, die Launches, die Launchs",
+    "definition": []
+  },
+  {
+    "word": "der Lebensbereich, das Lebensbereich, die Lebensbereiche",
+    "definition": []
+  },
+  {
+    "word": "der Loft, das Loft, die Lofts",
+    "definition": []
+  },
+  {
+    "word": "die Machete, der Machete, die Macheten",
+    "definition": []
+  },
+  {
+    "word": "der Meteor, das Meteor, die Meteore",
+    "definition": []
+  },
+  {
+    "word": "die Mystery, das Mystery, die Mysterys",
+    "definition": []
+  },
+  {
+    "word": "der Patch, das Patch, die Patches, die Patchs",
+    "definition": []
+  },
+  {
+    "word": "der Pier, die Pier, die Piers",
+    "definition": []
+  },
+  {
+    "word": "der Plot, das Plot, die Plots",
+    "definition": []
+  },
+  {
+    "word": "das Polster, der Polster, die Polster, die Pölster",
+    "definition": []
+  },
+  {
+    "word": "der Porter, das Porter, die Porter",
+    "definition": []
+  },
+  {
+    "word": "das Prison, die Prison, die Prisons",
+    "definition": []
+  },
+  {
+    "word": "der Puff, das Puff, die Puffs",
+    "definition": []
+  },
+  {
+    "word": "der Range, die Range, die Rangen",
+    "definition": []
+  },
+  {
+    "word": "das Raster, der Raster, die Raster",
+    "definition": []
+  },
+  {
+    "word": "der Rave, das Rave, die Raves",
+    "definition": []
+  },
+  {
+    "word": "das Release, der Release, die Release, die Releases",
+    "definition": []
+  },
+  {
+    "word": "das Revers, der Revers, die Revers, die Reverse",
+    "definition": []
+  },
+  {
+    "word": "der Riff, das Riff, die Riffs",
+    "definition": []
+  },
+  {
+    "word": "der Schlamassel, das Schlamassel, die Schlamassel",
+    "definition": []
+  },
+  {
+    "word": "das Set, der Set, die Sets",
+    "definition": []
+  },
+  {
+    "word": "der Shuttle, das Shuttle, die Shuttles",
+    "definition": []
+  },
+  {
+    "word": "der Sims, das Sims, die Simse",
+    "definition": []
+  },
+  {
+    "word": "der Spagat, das Spagat, die Spagate",
+    "definition": []
+  },
+  {
+    "word": "die Sphinx, der Sphinx, die Sphinxe, die Sphingen",
+    "definition": []
+  },
+  {
+    "word": "der Staffel, die Staffel, die Staffeln",
+    "definition": []
+  },
+  {
+    "word": "der Teer, das Teer, die Teere",
+    "definition": []
+  },
+  {
+    "word": "der Terminal, das Terminal, die Terminals",
+    "definition": []
+  },
+  {
+    "word": "der Themenbereich, das Themenbereich, die Themenbereiche",
+    "definition": []
+  },
+  {
+    "word": "das Token, der Token, die Tokens, die Token",
+    "definition": []
+  },
+  {
+    "word": "die Trasse, das Trasse, die Trassen",
+    "definition": []
+  },
+  {
+    "word": "das Trumm, der Trumm, die Trümmer, die Trumme",
+    "definition": []
+  },
+  {
+    "word": "der Unterkiefer, das Unterkiefer, die Unterkiefer",
+    "definition": []
+  },
+  {
+    "word": "das Versäumnis, die Versäumnis, die Versäumnisse",
+    "definition": []
+  },
+  {
+    "word": "die Waise, der Waise, die Waisen",
+    "definition": []
+  },
+  {
+    "word": "der Zuständigkeitsbereich, das Zuständigkeitsbereich, die Zuständigkeitsbereiche",
+    "definition": []
+  },
+  {
+    "word": "die Bedrängnis, das Bedrängnis, die Bedrängnisse",
+    "definition": []
+  },
+  {
+    "word": "der Bias, das Bias, die Bias",
+    "definition": []
+  },
+  {
+    "word": "das Biotop, der Biotop, die Biotope",
+    "definition": []
+  },
+  {
+    "word": "der Embryo, das Embryo, die Embryonen, die Embryos",
+    "definition": []
+  },
+  {
+    "word": "der Genozid, das Genozid, die Genozide, die Genozidien",
+    "definition": []
+  },
+  {
+    "word": "der Gewahrsam, das Gewahrsam, die Gewahrsame",
+    "definition": []
+  },
+  {
+    "word": "das Kalkül, der Kalkül, die Kalküle",
+    "definition": []
+  },
+  {
+    "word": "der Patriarchat, das Patriarchat, die Patriarchate",
+    "definition": []
+  },
+  {
+    "word": "der Primat, das Primat, die Primate",
+    "definition": []
+  },
+  {
+    "word": "der Suizid, das Suizid, die Suizide",
+    "definition": []
+  },
+  {
+    "word": "das Zepter, der Zepter, die Zepter",
+    "definition": []
   }
 ]
