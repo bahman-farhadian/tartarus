@@ -126,9 +126,6 @@
     "word": "allein"
   },
   {
-    "word": "aller-"
-  },
-  {
     "word": "allerdings"
   },
   {
@@ -184,9 +181,6 @@
   },
   {
     "word": "das Angebot, das Angebote"
-  },
-  {
-    "word": "ander-"
   },
   {
     "word": "andererseits"
@@ -741,7 +735,7 @@
     "word": "bedienen"
   },
   {
-    "word": "die Bedienungs-"
+    "word": "die Bedienungsanleitung, die Bedienungsanleitungen"
   },
   {
     "word": "die Bedingung, die Bedingungen"
@@ -958,9 +952,6 @@
   },
   {
     "word": "besitzen"
-  },
-  {
-    "word": "besonder-"
   },
   {
     "word": "besonders"
@@ -1485,9 +1476,6 @@
     "word": "doppelt"
   },
   {
-    "word": "Doppel-"
-  },
-  {
     "word": "das Dorf, das Dörfer"
   },
   {
@@ -1570,9 +1558,6 @@
   },
   {
     "word": "eilig"
-  },
-  {
-    "word": "ein-"
   },
   {
     "word": "die Einbahnstraße, die Einbahnstraßen"
@@ -1662,9 +1647,6 @@
     "word": "das Ei, das Eier"
   },
   {
-    "word": "eigen-"
-  },
-  {
     "word": "eigentlich"
   },
   {
@@ -1672,9 +1654,6 @@
     "definition": [
       "(sich)"
     ]
-  },
-  {
-    "word": "einig-"
   },
   {
     "word": "einigen"
@@ -1755,13 +1734,7 @@
     "word": "einzeln"
   },
   {
-    "word": "Einzel-"
-  },
-  {
     "word": "die Einzelheit, die Einzelheiten"
-  },
-  {
-    "word": "einzig-"
   },
   {
     "word": "einziehen"
@@ -1834,9 +1807,6 @@
   },
   {
     "word": "die Enttäuschung, die Enttäuschungen"
-  },
-  {
-    "word": "Elektro-"
   },
   {
     "word": "elektronisch"
@@ -2484,7 +2454,7 @@
     "word": "die Gabel, die Gabeln"
   },
   {
-    "word": "der Gang, der Gäng-e"
+    "word": "der Gang, die Gänge"
   },
   {
     "word": "ganz"
@@ -2526,7 +2496,7 @@
     "word": "früh"
   },
   {
-    "word": "früher/früher-"
+    "word": "früher"
   },
   {
     "word": "frühstücken"
@@ -2580,7 +2550,7 @@
     "word": "gebrauchen"
   },
   {
-    "word": "die Gebrauchs-"
+    "word": "die Gebrauchsanweisung, die Gebrauchsanweisungen"
   },
   {
     "word": "die Gebühr, die Gebühren"
@@ -2652,16 +2622,13 @@
     "word": "das Gericht, das Gerichte"
   },
   {
-    "word": "die Gerichts-"
+    "word": "die Gerichtsverhandlung, die Gerichtsverhandlungen"
   },
   {
     "word": "gering"
   },
   {
     "word": "gern/gerne"
-  },
-  {
-    "word": "gesamt-/Gesamt"
   },
   {
     "word": "das Geschäft, das Geschäfte"
@@ -2694,7 +2661,7 @@
     "word": "die Geschwindigkeit, die Geschwindigkeiten"
   },
   {
-    "word": "die Geschwindigkeits-"
+    "word": "die Geschwindigkeitsbeschränkung, die Geschwindigkeitsbeschränkungen"
   },
   {
     "word": "die Geschwister (Pl.)"
@@ -2937,9 +2904,6 @@
     "word": "groß"
   },
   {
-    "word": "Groß-"
-  },
-  {
     "word": "die Großstadt, die Großstädte"
   },
   {
@@ -3031,9 +2995,6 @@
   },
   {
     "word": "häufig"
-  },
-  {
-    "word": "Haupt-"
   },
   {
     "word": "die Hauptstadt, die Hauptstädte"
@@ -3150,16 +3111,10 @@
     "word": "her"
   },
   {
-    "word": "heraus-"
-  },
-  {
     "word": "(he)rausfinden"
   },
   {
     "word": "der Herd, der Herde"
-  },
-  {
-    "word": "herein-"
   },
   {
     "word": "die Herkunft"
@@ -3175,9 +3130,6 @@
   },
   {
     "word": "der Hersteller"
-  },
-  {
-    "word": "herunter-"
   },
   {
     "word": "(he)runterladen"
@@ -3330,9 +3282,6 @@
     "word": "inzwischen"
   },
   {
-    "word": "irgend-"
-  },
-  {
     "word": "irgendein"
   },
   {
@@ -3364,9 +3313,6 @@
   },
   {
     "word": "die Innenstadt, die Innenstädte"
-  },
-  {
-    "word": "inner-"
   },
   {
     "word": "innerhalb"
@@ -3562,9 +3508,6 @@
   },
   {
     "word": "kaum"
-  },
-  {
-    "word": "kein-"
   },
   {
     "word": "der Keller"
@@ -3855,9 +3798,6 @@
     "word": "kriegen"
   },
   {
-    "word": "Kriminal-"
-  },
-  {
     "word": "die Kriminalpolizei"
   },
   {
@@ -3927,7 +3867,7 @@
     "word": "der Kurs, der Kurse"
   },
   {
-    "word": "der Kursleiter, -in"
+    "word": "der Kursleiter, die Kursleiterin"
   },
   {
     "word": "die Kurve, die Kurven"
@@ -4095,9 +4035,6 @@
     "word": "lesen"
   },
   {
-    "word": "letzt-"
-  },
-  {
     "word": "die Leute (Pl.)"
   },
   {
@@ -4111,9 +4048,6 @@
   },
   {
     "word": "die Liebe"
-  },
-  {
-    "word": "Lieblings-"
   },
   {
     "word": "das Lied, das Lieder"
@@ -4138,9 +4072,6 @@
   },
   {
     "word": "links"
-  },
-  {
-    "word": "link-"
   },
   {
     "word": "die Lippe, die Lippen"
@@ -4245,9 +4176,6 @@
     "word": "man"
   },
   {
-    "word": "manch-"
-  },
-  {
     "word": "manchmal"
   },
   {
@@ -4335,9 +4263,6 @@
     "word": "meinetwegen"
   },
   {
-    "word": "meist-"
-  },
-  {
     "word": "meistens (meist)"
   },
   {
@@ -4398,7 +4323,7 @@
     "word": "die Migration"
   },
   {
-    "word": "der Migrations-"
+    "word": "der Migrationshintergrund, der Migrationshintergründe"
   },
   {
     "word": "die Milch"
@@ -4447,9 +4372,6 @@
   },
   {
     "word": "mitten"
-  },
-  {
-    "word": "mittler-"
   },
   {
     "word": "das Möbel"
@@ -4594,9 +4516,6 @@
   },
   {
     "word": "die Nähe"
-  },
-  {
-    "word": "nächst-"
   },
   {
     "word": "nähen"
@@ -4788,9 +4707,6 @@
     "word": "oben"
   },
   {
-    "word": "ober-"
-  },
-  {
     "word": "das Obst"
   },
   {
@@ -4828,9 +4744,6 @@
   },
   {
     "word": "okay"
-  },
-  {
-    "word": "Öko- (ökologisch)"
   },
   {
     "word": "das Öl, das Öle"
@@ -5025,7 +4938,7 @@
     "word": "der Pfleger"
   },
   {
-    "word": "die Pflege-"
+    "word": "die Pflegeversicherung, die Pflegeversicherungen"
   },
   {
     "word": "die Pflicht, die Pflichten"
@@ -5299,9 +5212,6 @@
   },
   {
     "word": "rechts"
-  },
-  {
-    "word": "recht-"
   },
   {
     "word": "rechtzeitig"
@@ -5826,9 +5736,6 @@
     "word": "die Schwester, die Schwestern"
   },
   {
-    "word": "Schwieger-"
-  },
-  {
     "word": "schwierig"
   },
   {
@@ -6073,9 +5980,6 @@
   },
   {
     "word": "speichern"
-  },
-  {
-    "word": "Speise-/-speise"
   },
   {
     "word": "die Speisekarte, die Speisekarten"
@@ -6357,7 +6261,7 @@
     "word": "der Strumpf, der Strümpfe"
   },
   {
-    "word": "das Stück, das Stücke, -stück, -stücke"
+    "word": "das Stück, die Stücke"
   },
   {
     "word": "studieren"
@@ -6594,9 +6498,6 @@
     "word": "der Titel"
   },
   {
-    "word": "\""
-  },
-  {
     "word": "der Tod"
   },
   {
@@ -6676,9 +6577,6 @@
   },
   {
     "word": "der Traum, der Träume"
-  },
-  {
-    "word": "Traum-"
   },
   {
     "word": "traurig"
@@ -6919,9 +6817,6 @@
   },
   {
     "word": "unter"
-  },
-  {
-    "word": "unter-"
   },
   {
     "word": "unterbrechen"
@@ -7332,9 +7227,6 @@
     "word": "die Vorbereitung, die Vorbereitungen"
   },
   {
-    "word": "vorder-"
-  },
-  {
     "word": "die Vorfahrt"
   },
   {
@@ -7348,9 +7240,6 @@
   },
   {
     "word": "vorhin"
-  },
-  {
-    "word": "vorig-"
   },
   {
     "word": "vorkommen"
@@ -7476,7 +7365,7 @@
     "word": "was"
   },
   {
-    "word": "was für ein-"
+    "word": "was für ein"
   },
   {
     "word": "waschen"
@@ -7509,7 +7398,7 @@
     "word": "der Weg, der Wege"
   },
   {
-    "word": "weg/weg-"
+    "word": "weg"
   },
   {
     "word": "wegen"
@@ -7539,7 +7428,7 @@
     "word": "weit"
   },
   {
-    "word": "weiter/weiter-"
+    "word": "weiter"
   },
   {
     "word": "weiterbilden",
@@ -7549,9 +7438,6 @@
   },
   {
     "word": "die Weiterbildung"
-  },
-  {
-    "word": "welch-"
   },
   {
     "word": "die Welt"
@@ -7611,7 +7497,7 @@
     "word": "weshalb"
   },
   {
-    "word": "der Westen, der WestenWest, West-"
+    "word": "der Westen"
   },
   {
     "word": "westlich"
@@ -7635,7 +7521,7 @@
     "word": "wie"
   },
   {
-    "word": "wieder/wieder-"
+    "word": "wieder"
   },
   {
     "word": "wiederholen"
@@ -7836,7 +7722,7 @@
     "word": "der Zettel"
   },
   {
-    "word": "das Zeug, -zeug"
+    "word": "das Zeug"
   },
   {
     "word": "der Zeuge, der Zeugen"
@@ -7996,5 +7882,113 @@
   },
   {
     "word": "zwischen"
+  },
+  {
+    "word": "herein, rein"
+  },
+  {
+    "word": "herunter, runter"
+  },
+  {
+    "word": "die Tochter, die Töchter"
+  },
+  {
+    "word": "aller"
+  },
+  {
+    "word": "ander"
+  },
+  {
+    "word": "besonder"
+  },
+  {
+    "word": "Doppel"
+  },
+  {
+    "word": "ein"
+  },
+  {
+    "word": "eigen"
+  },
+  {
+    "word": "einig"
+  },
+  {
+    "word": "Einzel"
+  },
+  {
+    "word": "einzig"
+  },
+  {
+    "word": "Elektro"
+  },
+  {
+    "word": "gesamt"
+  },
+  {
+    "word": "Groß"
+  },
+  {
+    "word": "Haupt"
+  },
+  {
+    "word": "heraus"
+  },
+  {
+    "word": "irgend"
+  },
+  {
+    "word": "inner"
+  },
+  {
+    "word": "kein"
+  },
+  {
+    "word": "Kriminal"
+  },
+  {
+    "word": "letzt"
+  },
+  {
+    "word": "Lieblings"
+  },
+  {
+    "word": "link"
+  },
+  {
+    "word": "manch"
+  },
+  {
+    "word": "meist"
+  },
+  {
+    "word": "mittler"
+  },
+  {
+    "word": "nächst"
+  },
+  {
+    "word": "ober"
+  },
+  {
+    "word": "Schwieger"
+  },
+  {
+    "word": "Traum"
+  },
+  {
+    "word": "vorder"
+  },
+  {
+    "word": "vorig"
+  },
+  {
+    "word": "welch"
+  },
+  {
+    "word": "Öko"
+  },
+  {
+    "word": "Speise"
   }
 ]
