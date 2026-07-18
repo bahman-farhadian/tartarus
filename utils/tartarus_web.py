@@ -42,6 +42,29 @@ SESSIONS = {}
 
 MAX_QUESTIONS = ll.MAX_QUESTIONS
 DRILL_WORDS = ll.DRILL_WORDS
+DRILL_TARGET = 9
+
+
+def drill_definition_lines(current):
+    """Return the definition shown while a word is being drilled."""
+    prompt = (
+        current.get('drill_definition')
+        or current.get('prompt_definition')
+        or current.get('definition')
+        or ''
+    )
+    return prompt.split('\n') if prompt else []
+
+
+def gauge_dots(score):
+    """Return the compact score gauge used by word-list API responses."""
+    if score >= 9:
+        return '●●●'
+    if score >= 7:
+        return '●●○'
+    if score >= 4:
+        return '●○○'
+    return '○○○'
 
 
 # --- Session lifecycle ---
@@ -132,9 +155,15 @@ def next_question(session):
         entry['definition'], entry['score'], entry['leitner_box'],
         sentence_mode=session.get('sentence_mode', False),
         fast_mode=session.get('fast_mode', False),
-        drill_mode=session.get('drill_mode', False),
+        drill_mode=(session.get('drill_mode', False) or session.get('drill_all', False)),
         known_drill_mode=session.get('known_drill_mode', False),
     )
+    if session.get('known_drill_mode'):
+        # The known-drill prompt must not leak the answer through the API.
+        question['word'] = ''
+        question['word_unmasked'] = ''
+        if question.get('drill_start'):
+            question['drill_start']['word'] = ''
     session['current'] = {
         'word_id': entry['word_id'],
         'word_text': entry['word_text'],
@@ -262,11 +291,12 @@ def process_drill_answer(session, answer):
         correct = False
 
     drill['repetition'] += 1
+    show_word = not session.get('known_drill_mode')
     return {
         'result': 'drill_progress',
         'done': False,
         'drill': {
-            'word': cur['word_text'],
+            'word': cur['word_text'] if show_word else '',
             'definition': drill_definition_lines(cur),
             'repetition': drill['repetition'],
             'correct_in_a_row': drill['correct_in_a_row'],
@@ -347,7 +377,7 @@ def process_answer(session, answer):
             'result': 'drill_start',
             'done': False,
             'drill': {
-                'word': cur['word_text'],
+                'word': '',
                 'definition': drill_definition_lines(cur),
                 'repetition': 1,
                 'correct_in_a_row': 0,

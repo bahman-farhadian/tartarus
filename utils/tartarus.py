@@ -970,6 +970,26 @@ def get_words_for_practice(user, lang, num_words=MAX_QUESTIONS, drill_mode=False
     return rows
 
 
+def get_mastered_words_for_fast(user, lang):
+    """Return mastered words in Fast mode order, oldest review first."""
+    table = words_table_name(user, lang)
+    conn = get_connection()
+    ensure_fast_review_column(conn, user, lang)
+    rows = conn.execute(
+        f'''SELECT id, text, definition, score, leitner_box
+            FROM "{table}"
+            WHERE active = 1 AND score >= 9.0
+            ORDER BY
+              CASE WHEN last_fast_review_at IS NULL THEN 0 ELSE 1 END,
+              datetime(last_fast_review_at) ASC,
+              id ASC'''
+    ).fetchall()
+    conn.close()
+    if not rows:
+        raise ValueError("No mastered words are available for fast mode.")
+    return rows
+
+
 def show_definition(definition):
     """Prints each line of a (possibly multi-line) definition, indented and highlighted."""
     if not definition:
@@ -996,11 +1016,14 @@ def english_definition_only(definition):
     return ''
 
 
-def drill_word(user, lang, word_to_drill, word_id, definition, header_text, audio, audio_lang=None, update_score=True, wpm=128):
+def drill_word(user, lang, word_to_drill, word_id, definition, header_text, audio, audio_lang=None, update_score=True, wpm=128, show_word=True):
     """Initiates a strict 9-repetition drill with a consistent single-line UI."""
     clear_screen()
     print(header_text)
-    print(f"--- Drill Mode: '{get_gender_color(word_to_drill)}{word_to_drill}{Colors.ENDC}' ---")
+    if show_word:
+        print(f"--- Drill Mode: '{get_gender_color(word_to_drill)}{word_to_drill}{Colors.ENDC}' ---")
+    else:
+        print("--- Known Drill Mode ---")
     prompt_definition = english_definition_only(definition)
     if prompt_definition:
         show_definition(prompt_definition)
@@ -1235,6 +1258,70 @@ def ask_production(user, lang, word_id, word_text, definition, score, audio, hea
     return 'incorrect', f"Incorrect. The word was: {Colors.RED}{word_text}{Colors.ENDC}", answer
 
 
+def start_fast_practice_session(user, lang, audio, audio_lang=None, wpm=128):
+    """Run the CLI Fast mode without changing word scores or practice counters."""
+    sync_word_list(user, lang)
+    sentence_mode = is_sentence_list(lang)
+    rows = get_mastered_words_for_fast(user, lang)
+    start_time = time.time()
+    correct_count = 0
+    incorrect_list = []
+    queue = list(rows)
+
+    try:
+        for index, (word_id, word_text, definition, score, current_box) in enumerate(queue, 1):
+            clear_screen()
+            print(f"--- Fast Mode | Q{index}/{len(queue)} ---")
+            print("The word is shown. Type it from memory; mistakes retry the same word.")
+            print(f"  {word_text}")
+            prompt_definition = english_definition_only(definition)
+            if prompt_definition:
+                show_definition(prompt_definition)
+            if audio:
+                speak(word_text, audio_lang or lang, wpm=wpm)
+
+            while True:
+                answer = input("Answer: ").strip()
+                if answer == '!!':
+                    raise KeyboardInterrupt
+                if answer == '?':
+                    if prompt_definition:
+                        show_definition(prompt_definition)
+                    if audio:
+                        speak(word_text, audio_lang or lang, wpm=wpm)
+                    continue
+                if answer == '+':
+                    if audio:
+                        speak(word_text, audio_lang or lang, wpm=wpm)
+                    continue
+                if answer_matches(answer, word_text, sentence_mode=sentence_mode):
+                    record_fast_review(user, lang, word_id)
+                    correct_count += 1
+                    print("Correct.")
+                    break
+                incorrect_list.append((word_text, answer))
+                print("Incorrect. Try again.")
+    except KeyboardInterrupt:
+        print("\n\nFast session ended early. Saving progress...")
+
+    if correct_count == 0:
+        print("No words were completed. Nothing to save.")
+        return
+
+    elapsed_seconds = int(time.time() - start_time)
+    log_session(user, lang, elapsed_seconds, correct_count, correct_count,
+                len(incorrect_list), 0)
+    clear_screen()
+    attempts = correct_count + len(incorrect_list)
+    minutes, seconds = divmod(elapsed_seconds, 60)
+    print("\n--- Fast Session Summary ---")
+    print(f"Words completed:     {correct_count}")
+    print(f"Incorrect answers:   {len(incorrect_list)}")
+    print(f"Accuracy:            {100 * correct_count / attempts:.1f}%")
+    print(f"Session time:        {minutes} min {seconds} sec")
+    print("\nFast session finished. Progress saved.")
+
+
 def start_practice_session(user, lang, audio, audio_lang=None, drill_all=False, drill_mode=False, instant_drill=False, known_drill_mode=False, wpm=128):
     """
     Up to MAX_QUESTIONS unique words per session using Leitner spaced repetition.
@@ -1285,6 +1372,12 @@ def start_practice_session(user, lang, audio, audio_lang=None, drill_all=False, 
                 drill_word(user, lang, word_text, word_id, definition,
                            header_text(), audio, audio_lang=audio_lang,
                            update_score=False, wpm=wpm)
+                status, message, attempt = 'drilled', None, None
+            elif known_drill_mode:
+                drill_word(user, lang, word_text, word_id, definition,
+                           header_text(), audio, audio_lang=audio_lang,
+                           update_score=False, wpm=wpm, show_word=False)
+                record_as_drilled(user, lang, word_id, known_review=True)
                 status, message, attempt = 'drilled', None, None
             elif sentence_mode:
                 status, message, attempt = ask_learning(
@@ -1575,6 +1668,13 @@ def cmd_init(args):
 
 def cmd_practice(args):
     audio = sys.platform == 'darwin' and not args.no_audio
+    if args.fast:
+        if args.drill or args.drill_mode or args.instant_drill or args.known_drill_mode:
+            raise ValueError("Fast mode cannot be combined with drill modes.")
+        start_fast_practice_session(args.user, args.lang, audio,
+                                     audio_lang=args.audio_lang or None,
+                                     wpm=args.wpm)
+        return
     sync_word_list(args.user, args.lang)
     start_practice_session(args.user, args.lang, audio,
                            audio_lang=args.audio_lang or None,
@@ -1650,6 +1750,8 @@ Developed by Bahman Farhadian.
                                        "Useful when --lang is a sub-list name (e.g. 'german_home') that doesn't\n"
                                        "auto-detect as a language: pass --audio-lang german to still use the\n"
                                        "German 'say' voice. Accepts the same values as --lang (e.g. 'german', 'de').")
+    practice_parser.add_argument('--fast', action='store_true',
+                                  help="Fast mode: review mastered words in oldest-fast-review order; scores unchanged.")
     practice_parser.add_argument('--drill', action='store_true',
                                   help="Drill-mode: every word in the session is put through the 9-repetition\n"
                                        "drill automatically, regardless of its score band.")
