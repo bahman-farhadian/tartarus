@@ -1,0 +1,6202 @@
+[
+  {
+    "word": "There was a car accident on the highway.",
+    "definition": "an unfortunate incident",
+    "word_frequency": 1549
+  },
+  {
+    "word": "She had a dull ache in her back.",
+    "definition": "a continuous dull pain",
+    "word_frequency": 11308
+  },
+  {
+    "word": "We need to take action now.",
+    "definition": "something done",
+    "word_frequency": 464
+  },
+  {
+    "word": "Reading is a relaxing activity.",
+    "definition": "something that you do",
+    "word_frequency": 1046
+  },
+  {
+    "word": "The actor performed well in the play.",
+    "definition": "actor",
+    "word_frequency": 1721
+  },
+  {
+    "word": "She dreams of becoming a famous actress.",
+    "definition": "a female actor",
+    "word_frequency": 2447
+  },
+  {
+    "word": "Please write down your address.",
+    "definition": "the number of a house and name of the street",
+    "word_frequency": 1047
+  },
+  {
+    "word": "Going on a safari was a great adventure.",
+    "definition": "an exciting or unusual experience",
+    "word_frequency": 2403
+  },
+  {
+    "word": "The aeroplane took off smoothly from the runway.",
+    "definition": "a powered flying vehicle with fixed wings",
+    "word_frequency": 15814
+  },
+  {
+    "word": "Which airline are you flying with?",
+    "definition": "a company that provides air transport",
+    "word_frequency": 3748
+  },
+  {
+    "word": "Please walk down the aisle to your seat.",
+    "definition": "a passage between rows of seats or shelves",
+    "word_frequency": 7513
+  },
+  {
+    "word": "She bought the new album by her favorite band.",
+    "definition": "a collection of musical recordings or photographs",
+    "word_frequency": 825
+  },
+  {
+    "word": "We saw an alligator in the swamp.",
+    "definition": "a large reptile similar to a crocodile",
+    "word_frequency": 13129
+  },
+  {
+    "word": "I like to add almonds to my breakfast cereal.",
+    "definition": "an edible oval nut",
+    "word_frequency": 9858
+  },
+  {
+    "word": "The Hawaiian people greeted us with a warm 'Aloha'.",
+    "definition": "hello, goodbye, love (Hawaiian greeting)",
+    "word_frequency": 17776
+  },
+  {
+    "word": "An ambulance arrived quickly at the scene.",
+    "definition": "ambulance",
+    "word_frequency": 4596
+  },
+  {
+    "word": "A large amount of work is needed.",
+    "definition": "quantity, sum",
+    "word_frequency": 620
+  },
+  {
+    "word": "She twisted her ankle playing soccer.",
+    "definition": "the joint connecting the foot to the leg",
+    "word_frequency": 5244
+  },
+  {
+    "word": "An ant crawled across the picnic blanket.",
+    "definition": "a small insect",
+    "word_frequency": 6160
+  },
+  {
+    "word": "You can sit anyplace you like.",
+    "definition": "anywhere",
+    "word_frequency": 33286
+  },
+  {
+    "word": "He offered a sincere apology.",
+    "definition": "a regretful acknowledgment of an offense or failure",
+    "word_frequency": 4666
+  },
+  {
+    "word": "We ordered spring rolls as an appetizer.",
+    "definition": "a small dish eaten before the main course",
+    "word_frequency": 23899
+  },
+  {
+    "word": "She served pork chops with a side of applesauce.",
+    "definition": "A sauce made from cooked apples",
+    "word_frequency": 31634
+  },
+  {
+    "word": "We bought a new kitchen appliance, a toaster.",
+    "definition": "a device or piece of equipment",
+    "word_frequency": 7624
+  },
+  {
+    "word": "I have an appointment with the doctor at 3 PM.",
+    "definition": "a scheduled meeting",
+    "word_frequency": 2284
+  },
+  {
+    "word": "I love the sweet taste of fresh apricots.",
+    "definition": "a juicy, soft fruit, resembling a small peach",
+    "word_frequency": 20506
+  },
+  {
+    "word": "She put on her apron before baking the cake.",
+    "definition": "a protective garment",
+    "word_frequency": 12407
+  },
+  {
+    "word": "This is a quiet area.",
+    "definition": "area",
+    "word_frequency": 268
+  },
+  {
+    "word": "The captain wore a special armband to identify his role.",
+    "definition": "a band worn around the arm",
+    "word_frequency": 28969
+  },
+  {
+    "word": "He relaxed in his favorite armchair by the fireplace.",
+    "definition": "a comfortable padded chair with arms",
+    "word_frequency": 15205
+  },
+  {
+    "word": "Follow the arrow to the exit.",
+    "definition": "arrow",
+    "word_frequency": 4143
+  },
+  {
+    "word": "She loves visiting art galleries.",
+    "definition": "creative expression",
+    "word_frequency": 418
+  },
+  {
+    "word": "I read an interesting article online.",
+    "definition": "article",
+    "word_frequency": 688
+  },
+  {
+    "word": "Pablo Picasso was a famous artist.",
+    "definition": "a person who creates art",
+    "word_frequency": 1307
+  },
+  {
+    "word": "My assistant will call you back.",
+    "definition": "a person who helps",
+    "word_frequency": 1509
+  },
+  {
+    "word": "The astronaut orbited the Earth.",
+    "definition": "a person who is trained to travel in a spacecraft",
+    "word_frequency": 8940
+  },
+  {
+    "word": "The athlete trained hard for the Olympics.",
+    "definition": "a person who is proficient in sports and other forms of physical exercise",
+    "word_frequency": 4269
+  },
+  {
+    "word": "The athletes trained hard for the competition.",
+    "definition": "people who compete in sports",
+    "word_frequency": 2942
+  },
+  {
+    "word": "I need to find an ATM to withdraw cash.",
+    "definition": "Automated Teller Machine",
+    "word_frequency": 6250
+  },
+  {
+    "word": "We store old furniture in the attic.",
+    "definition": "a space or room directly under the roof of a house",
+    "word_frequency": 8569
+  },
+  {
+    "word": "My auntie always bakes the best cookies.",
+    "definition": "aunt (informal)",
+    "word_frequency": 13486
+  },
+  {
+    "word": "I like to add avocado to my salad for a creamy texture.",
+    "definition": "a green fruit with a large pit",
+    "word_frequency": 11011
+  },
+  {
+    "word": "We hired a babysitter for Saturday night.",
+    "definition": "a person who looks after children while their parents are out",
+    "word_frequency": 15209
+  },
+  {
+    "word": "She packed her books in her backpack.",
+    "definition": "a bag carried on the back",
+    "word_frequency": 6895
+  },
+  {
+    "word": "The children played in the backyard.",
+    "definition": "a yard at the back of a house",
+    "word_frequency": 6077
+  },
+  {
+    "word": "I love to eat bacon and eggs for breakfast.",
+    "definition": "cured meat from the back or sides of a pig",
+    "word_frequency": 4017
+  },
+  {
+    "word": "They played a game of badminton in the park.",
+    "definition": "a racket sport",
+    "word_frequency": 13854
+  },
+  {
+    "word": "I had a cream cheese bagel for breakfast.",
+    "definition": "a dense, chewy bread roll, typically shaped like a doughnut",
+    "word_frequency": 15821
+  },
+  {
+    "word": "Please collect your baggage from the carousel.",
+    "definition": "suitcases, bags, etc., used for travel",
+    "word_frequency": 7293
+  },
+  {
+    "word": "The baker makes fresh bread every morning.",
+    "definition": "a person who bakes bread and cakes",
+    "word_frequency": 3511
+  },
+  {
+    "word": "We enjoyed the view from the hotel balcony.",
+    "definition": "a platform projecting from the wall of a building",
+    "word_frequency": 6896
+  },
+  {
+    "word": "My favorite band is playing tonight.",
+    "definition": "a group of musicians; a strip of material",
+    "word_frequency": 1027
+  },
+  {
+    "word": "He wrapped a bandage around his sprained ankle.",
+    "definition": "a strip of material used to bind up a wound or to protect an injured part of the body",
+    "word_frequency": 14611
+  },
+  {
+    "word": "We met at the bar for a drink.",
+    "definition": "bar",
+    "word_frequency": 984
+  },
+  {
+    "word": "We're having a barbecue in the garden this Saturday.",
+    "definition": "a meal or party at which food is cooked outdoors on a grill",
+    "word_frequency": 8689
+  },
+  {
+    "word": "We're having a barbeque in the backyard this Saturday.",
+    "definition": "a meal or party at which food is cooked outdoors on a grill",
+    "word_frequency": 28978
+  },
+  {
+    "word": "I need to go to the barber for a haircut.",
+    "definition": "a person whose job is to cut men's hair and shave or trim beards",
+    "word_frequency": 6607
+  },
+  {
+    "word": "He went to the barbershop for a trim.",
+    "definition": "a shop where men or boys can get their hair cut",
+    "word_frequency": 20256
+  },
+  {
+    "word": "The farmer keeps his cows in the barn.",
+    "definition": "a large farm building for storing hay or housing animals",
+    "word_frequency": 5101
+  },
+  {
+    "word": "The bartender served us two cocktails.",
+    "definition": "a person who mixes and serves drinks at a bar",
+    "word_frequency": 10272
+  },
+  {
+    "word": "My favorite sport is baseball.",
+    "definition": "a bat-and-ball game",
+    "word_frequency": 2100
+  },
+  {
+    "word": "We store old boxes in the basement.",
+    "definition": "a floor of a building partly or entirely below ground level",
+    "word_frequency": 3822
+  },
+  {
+    "word": "A bat flew out of the cave.",
+    "definition": "bat (animal or sports equipment)",
+    "word_frequency": 3143
+  },
+  {
+    "word": "He put on his soft bathrobe after his shower.",
+    "definition": "a loose robe, typically made of terrycloth, worn before and after bathing",
+    "word_frequency": 29724
+  },
+  {
+    "word": "The children love to play with their toys in the bathtub.",
+    "definition": "a large tub for bathing",
+    "word_frequency": 11013
+  },
+  {
+    "word": "My phone battery is low.",
+    "definition": "a device that produces electricity to provide power for radios, cars, etc.",
+    "word_frequency": 2177
+  },
+  {
+    "word": "We're having a BBQ in the garden this weekend.",
+    "definition": "barbecue",
+    "word_frequency": 8207
+  },
+  {
+    "word": "The parrot used its strong beak to crack the nut.",
+    "definition": "a bird's mouth",
+    "word_frequency": 13490
+  },
+  {
+    "word": "My grandfather has a long white beard.",
+    "definition": "hair growing on the chin and cheeks of an adult man",
+    "word_frequency": 4529
+  },
+  {
+    "word": "The beauty of the sunset was breathtaking.",
+    "definition": "quality of being beautiful",
+    "word_frequency": 1427
+  },
+  {
+    "word": "The beaver built a dam across the river.",
+    "definition": "a large rodent known for building dams",
+    "word_frequency": 8813
+  },
+  {
+    "word": "She changed the bedding on the bed every week.",
+    "definition": "sheets, blankets, and other coverings for a bed",
+    "word_frequency": 11777
+  },
+  {
+    "word": "It's almost bedtime for the children.",
+    "definition": "the time when one usually goes to bed",
+    "word_frequency": 9442
+  },
+  {
+    "word": "A bee buzzed around the flowers.",
+    "definition": "a stinging winged insect that collects nectar and pollen",
+    "word_frequency": 4387
+  },
+  {
+    "word": "We had roast beef for dinner.",
+    "definition": "meat from a cow",
+    "word_frequency": 3190
+  },
+  {
+    "word": "Would you like a glass of beer?",
+    "definition": "alcoholic beverage",
+    "word_frequency": 1580
+  },
+  {
+    "word": "She added a sliced beet to her salad.",
+    "definition": "a root vegetable",
+    "word_frequency": 18240
+  },
+  {
+    "word": "A small beetle crawled across the leaf.",
+    "definition": "an insect with a hard, shell-like back",
+    "word_frequency": 9870
+  },
+  {
+    "word": "She added some roasted beetroot to her salad.",
+    "definition": "a dark red root vegetable",
+    "word_frequency": 27021
+  },
+  {
+    "word": "This class is perfect for absolute beginners.",
+    "definition": "a person just starting to learn something",
+    "word_frequency": 10003
+  },
+  {
+    "word": "This is just the beginning.",
+    "definition": "the start",
+    "word_frequency": 872
+  },
+  {
+    "word": "His behaviour at the party was unacceptable.",
+    "definition": "The way someone acts.",
+    "word_frequency": 12963
+  },
+  {
+    "word": "The baby lay on its belly.",
+    "definition": "the front part of the human body below the chest, containing the stomach and bowels",
+    "word_frequency": 4330
+  },
+  {
+    "word": "He tightened his belt after eating too much.",
+    "definition": "a strip of material worn around the waist",
+    "word_frequency": 2578
+  },
+  {
+    "word": "Strawberries are a type of berry.",
+    "definition": "a small, pulpy fruit",
+    "word_frequency": 5248
+  },
+  {
+    "word": "The baby wore a bib to protect its clothes from spills.",
+    "definition": "A piece of cloth or plastic fastened under a baby's chin to keep its clothes clean.",
+    "word_frequency": 20779
+  },
+  {
+    "word": "She wore a bright red bikini to the beach.",
+    "definition": "a two-piece swimsuit for women",
+    "word_frequency": 7757
+  },
+  {
+    "word": "Can I have the bill, please?",
+    "definition": "a statement of money owed for goods or services",
+    "word_frequency": 595
+  },
+  {
+    "word": "Please put the rubbish in the bin.",
+    "definition": "container for waste",
+    "word_frequency": 3581
+  },
+  {
+    "word": "Please put all the documents in the binder.",
+    "definition": "a cover for holding loose papers",
+    "word_frequency": 13143
+  },
+  {
+    "word": "She shouted \"Bingo!\" when she got five in a row.",
+    "definition": "a game of chance; an exclamation of success",
+    "word_frequency": 7628
+  },
+  {
+    "word": "The birth of her child changed her life.",
+    "definition": "birth",
+    "word_frequency": 1379
+  },
+  {
+    "word": "Can I have a bit of cake?",
+    "definition": "a small piece or amount",
+    "word_frequency": 346
+  },
+  {
+    "word": "The dog gave a playful bite.",
+    "definition": "an act of biting; a small amount of food",
+    "word_frequency": 3087
+  },
+  {
+    "word": "We picked wild blackberries in the forest.",
+    "definition": "A sweet, dark fruit.",
+    "word_frequency": 8324
+  },
+  {
+    "word": "A blackbird was singing loudly in the garden this morning.",
+    "definition": "a common European thrush, the male of which has black plumage and a yellow bill",
+    "word_frequency": 22451
+  },
+  {
+    "word": "The teacher wrote the new vocabulary words on the blackboard.",
+    "definition": "A large board with a smooth, dark surface, used for writing on with chalk.",
+    "word_frequency": 19528
+  },
+  {
+    "word": "She used the blender to make a smoothie.",
+    "definition": "an electric machine used for mixing soft food or liquids",
+    "word_frequency": 11325
+  },
+  {
+    "word": "The building is one block away.",
+    "definition": "solid piece, city street section",
+    "word_frequency": 1119
+  },
+  {
+    "word": "She wore a white silk blouse with a black skirt.",
+    "definition": "a woman's loose upper garment resembling a shirt",
+    "word_frequency": 12089
+  },
+  {
+    "word": "I love to eat blueberries with my yogurt.",
+    "definition": "a small, sweet, dark blue berry",
+    "word_frequency": 13494
+  },
+  {
+    "word": "A bluebird landed on the fence post, its feathers a vibrant color.",
+    "definition": "a small North American thrush, the male of which has blue plumage",
+    "word_frequency": 22453
+  },
+  {
+    "word": "Write it on the board.",
+    "definition": "flat piece of material",
+    "word_frequency": 470
+  },
+  {
+    "word": "I love bubble tea with extra boba.",
+    "definition": "chewy tapioca pearls, often found in bubble tea",
+    "word_frequency": 23324
+  },
+  {
+    "word": "The dog buried its bone in the garden.",
+    "definition": "a hard, rigid form of connective tissue constituting most of the skeleton of vertebrates",
+    "word_frequency": 2361
+  },
+  {
+    "word": "She arranged her books neatly on the new bookcase.",
+    "definition": "a piece of furniture with shelves for books",
+    "word_frequency": 26371
+  },
+  {
+    "word": "She arranged her favorite novels neatly on the bookshelf.",
+    "definition": "a shelf for holding books",
+    "word_frequency": 22153
+  },
+  {
+    "word": "I spent hours browsing in the old bookshop.",
+    "definition": "A shop where books are sold",
+    "word_frequency": 17288
+  },
+  {
+    "word": "I love spending hours browsing in a quiet bookstore.",
+    "definition": "a shop where books are sold",
+    "word_frequency": 11487
+  },
+  {
+    "word": "He put on his hiking boots.",
+    "definition": "a type of shoe covering the foot and ankle",
+    "word_frequency": 2977
+  },
+  {
+    "word": "We waited in the voting booth to cast our ballots.",
+    "definition": "a small temporary tent or structure at a market, fair, or exhibition",
+    "word_frequency": 4331
+  },
+  {
+    "word": "My boss gave me a new project.",
+    "definition": "manager, employer",
+    "word_frequency": 1411
+  },
+  {
+    "word": "The book fell to the bottom of the stairs.",
+    "definition": "the lowest part of something",
+    "word_frequency": 1207
+  },
+  {
+    "word": "She introduced me to her new boyfriend.",
+    "definition": "a person's regular male companion with whom they have a romantic or sexual relationship",
+    "word_frequency": 1906
+  },
+  {
+    "word": "She bought a new bra.",
+    "definition": "a woman's undergarment worn to support the breasts",
+    "word_frequency": 6255
+  },
+  {
+    "word": "She wore a beautiful silver bracelet on her wrist.",
+    "definition": "bracelet",
+    "word_frequency": 7760
+  },
+  {
+    "word": "He pressed the brake pedal.",
+    "definition": "a device used for slowing or stopping a vehicle",
+    "word_frequency": 5409
+  },
+  {
+    "word": "A bird was sitting on a branch of the tree.",
+    "definition": "a limb of a tree; a division of an organization",
+    "word_frequency": 1938
+  },
+  {
+    "word": "Let's take a short break.",
+    "definition": "a pause; a fracture",
+    "word_frequency": 553
+  },
+  {
+    "word": "Take a deep breath and relax.",
+    "definition": "the air that you take in and let out when you breathe",
+    "word_frequency": 2179
+  },
+  {
+    "word": "The house was built with red bricks.",
+    "definition": "a block of baked clay used for building",
+    "word_frequency": 3404
+  },
+  {
+    "word": "The bride looked beautiful in her white dress.",
+    "definition": "A woman on her wedding day.",
+    "word_frequency": 4454
+  },
+  {
+    "word": "We walked across the old stone bridge.",
+    "definition": "bridge",
+    "word_frequency": 1380
+  },
+  {
+    "word": "He carried his documents in a leather briefcase.",
+    "definition": "a flat, rectangular case, typically made of leather, used for carrying documents",
+    "word_frequency": 17805
+  },
+  {
+    "word": "I like to eat steamed broccoli with my dinner.",
+    "definition": "a green vegetable with a tree-like shape",
+    "word_frequency": 10281
+  },
+  {
+    "word": "She used a broom to sweep the dust off the floor.",
+    "definition": "a long-handled brush used for sweeping",
+    "word_frequency": 11490
+  },
+  {
+    "word": "She baked a batch of delicious chocolate brownies.",
+    "definition": "a small square of rich chocolate cake, typically containing nuts",
+    "word_frequency": 15222
+  },
+  {
+    "word": "I need a new brush for my hair.",
+    "definition": "an implement with bristles",
+    "word_frequency": 3515
+  },
+  {
+    "word": "She blew a big bubble with her bubblegum.",
+    "definition": "a type of chewing gum that can be blown into bubbles",
+    "word_frequency": 25401
+  },
+  {
+    "word": "He filled the bucket with water from the well.",
+    "definition": "a roughly cylindrical open container with a handle",
+    "word_frequency": 4532
+  },
+  {
+    "word": "He's my best buddy from college.",
+    "definition": "a close friend",
+    "word_frequency": 2669
+  },
+  {
+    "word": "The builder finished the new house last week.",
+    "definition": "a person who constructs or repairs buildings",
+    "word_frequency": 6259
+  },
+  {
+    "word": "The light bulb in the lamp needs to be replaced.",
+    "definition": "a round part of a plant or an electric light",
+    "word_frequency": 8211
+  },
+  {
+    "word": "The bull was in the field with the cows.",
+    "definition": "a male cow",
+    "word_frequency": 2944
+  },
+  {
+    "word": "A bumblebee buzzed around the flowers.",
+    "definition": "A large, hairy bee.",
+    "word_frequency": 22161
+  },
+  {
+    "word": "I hit a bump in the road.",
+    "definition": "a sudden, jarring blow; a protuberance",
+    "word_frequency": 5179
+  },
+  {
+    "word": "I had a hot dog in a bun for lunch.",
+    "definition": "a small, often sweet, bread roll",
+    "word_frequency": 9447
+  },
+  {
+    "word": "The little bunny hopped across the field.",
+    "definition": "bunny",
+    "word_frequency": 5996
+  },
+  {
+    "word": "He let out a loud burp after drinking the soda.",
+    "definition": "a release of gas from the stomach through the mouth",
+    "word_frequency": 25404
+  },
+  {
+    "word": "I had a delicious chicken burrito for lunch.",
+    "definition": "a Mexican dish consisting of a tortilla wrapped around a filling",
+    "word_frequency": 14208
+  },
+  {
+    "word": "There's a rose bush growing by the fence.",
+    "definition": "a shrub or small tree",
+    "word_frequency": 2287
+  },
+  {
+    "word": "She started her own business.",
+    "definition": "commercial activity",
+    "word_frequency": 206
+  },
+  {
+    "word": "My father is a businessman.",
+    "definition": "a man who works in business",
+    "word_frequency": 5410
+  },
+  {
+    "word": "She is a successful businesswoman who owns several companies.",
+    "definition": "a woman who works in business",
+    "word_frequency": 21314
+  },
+  {
+    "word": "I bought some fresh chicken from the butcher.",
+    "definition": "a person who sells meat",
+    "word_frequency": 7195
+  },
+  {
+    "word": "Children often hold a buttercup under their chin to see if they like butter.",
+    "definition": "yellow wild flower",
+    "word_frequency": 26024
+  },
+  {
+    "word": "A colorful butterfly landed gently on the flower.",
+    "definition": "an insect with large, often brightly colored wings",
+    "word_frequency": 5566
+  },
+  {
+    "word": "Press the buzzer to open the door.",
+    "definition": "an electrical device that makes a buzzing sound",
+    "word_frequency": 11785
+  },
+  {
+    "word": "Let's take a cab to the airport.",
+    "definition": "a taxi",
+    "word_frequency": 5411
+  },
+  {
+    "word": "She made a delicious soup with cabbage and carrots.",
+    "definition": "a leafy green or purple vegetable",
+    "word_frequency": 9584
+  },
+  {
+    "word": "The desert is home to many types of cactus.",
+    "definition": "a succulent plant with a thick, fleshy stem and typically no leaves, usually bearing spines",
+    "word_frequency": 11786
+  },
+  {
+    "word": "Let's meet at the cafe for coffee.",
+    "definition": "a small restaurant selling light meals and drinks",
+    "word_frequency": 4389
+  },
+  {
+    "word": "We usually eat lunch in the school cafeteria.",
+    "definition": "a restaurant in which customers serve themselves from a counter and pay before eating",
+    "word_frequency": 11166
+  },
+  {
+    "word": "The bird was in a cage.",
+    "definition": "cage",
+    "word_frequency": 4150
+  },
+  {
+    "word": "I used a calculator to check my math homework.",
+    "definition": "a device used for mathematical calculations",
+    "word_frequency": 9448
+  },
+  {
+    "word": "Check the calendar for the date.",
+    "definition": "calendar",
+    "word_frequency": 3145
+  },
+  {
+    "word": "The calf stayed close to its mother.",
+    "definition": "a young cow; the back part of the human leg",
+    "word_frequency": 7633
+  },
+  {
+    "word": "The caller hung up before I could answer.",
+    "definition": "a person who makes a phone call",
+    "word_frequency": 8817
+  },
+  {
+    "word": "Camels can survive for a long time without water.",
+    "definition": "a desert animal",
+    "word_frequency": 8456
+  },
+  {
+    "word": "We set up our camp near the river.",
+    "definition": "camp",
+    "word_frequency": 1331
+  },
+  {
+    "word": "We saw a group of campers setting up their tents by the lake.",
+    "definition": "a person who camps, or a vehicle designed for camping",
+    "word_frequency": 14210
+  },
+  {
+    "word": "We sat around the campfire, telling stories and roasting marshmallows.",
+    "definition": "an outdoor fire in a camp, used for cooking or warmth",
+    "word_frequency": 17514
+  },
+  {
+    "word": "We went camping in the mountains.",
+    "definition": "the activity of spending a holiday living in a tent",
+    "word_frequency": 5037
+  },
+  {
+    "word": "We found a perfect campsite by the river.",
+    "definition": "a place used for camping",
+    "word_frequency": 17811
+  },
+  {
+    "word": "We lit a candle when the power went out.",
+    "definition": "candle",
+    "word_frequency": 5997
+  },
+  {
+    "word": "She placed the candle in the silver candlestick.",
+    "definition": "holder for a candle",
+    "word_frequency": 26027
+  },
+  {
+    "word": "He wore a baseball cap.",
+    "definition": "a type of hat; a lid",
+    "word_frequency": 2215
+  },
+  {
+    "word": "I ordered a hot cappuccino with extra foam.",
+    "definition": "a coffee drink",
+    "word_frequency": 23640
+  },
+  {
+    "word": "She loves the taste of caramel in her coffee.",
+    "definition": "a type of candy or flavoring",
+    "word_frequency": 10604
+  },
+  {
+    "word": "Please put the cardboard boxes in the recycling bin.",
+    "definition": "stiff paper material",
+    "word_frequency": 8212
+  },
+  {
+    "word": "She put on a warm cardigan because it was chilly.",
+    "definition": "a knitted jacket, typically buttoning down the front",
+    "word_frequency": 15228
+  },
+  {
+    "word": "She wore a red carnation pinned to her lapel.",
+    "definition": "a type of flower, typically with a ruffled appearance",
+    "word_frequency": 28995
+  },
+  {
+    "word": "We left our car in the carpark near the station.",
+    "definition": "an area or building where cars may be parked",
+    "word_frequency": 33330
+  },
+  {
+    "word": "The carpenter built a new wooden fence.",
+    "definition": "a person who makes or repairs wooden objects and structures",
+    "word_frequency": 6613
+  },
+  {
+    "word": "The room had a soft carpet.",
+    "definition": "a floor covering",
+    "word_frequency": 3825
+  },
+  {
+    "word": "We loaded the groceries into the shopping cart.",
+    "definition": "a strong open vehicle with two or four wheels, typically used for transport",
+    "word_frequency": 5180
+  },
+  {
+    "word": "Please buy a carton of milk from the store.",
+    "definition": "a light box or container, typically made of cardboard or plastic.",
+    "word_frequency": 15628
+  },
+  {
+    "word": "My children love watching cartoons on Saturday mornings.",
+    "definition": "A motion picture using animation techniques.",
+    "word_frequency": 4458
+  },
+  {
+    "word": "Do you have any cash on you?",
+    "definition": "money in coins or notes",
+    "word_frequency": 1029
+  },
+  {
+    "word": "I like to snack on cashews.",
+    "definition": "a kidney-shaped edible nut",
+    "word_frequency": 27377
+  },
+  {
+    "word": "The cashier scanned all the items quickly.",
+    "definition": "cashier",
+    "word_frequency": 9311
+  },
+  {
+    "word": "We visited an old castle on our trip.",
+    "definition": "a large fortified building or set of buildings",
+    "word_frequency": 2454
+  },
+  {
+    "word": "A tiny caterpillar was slowly crawling on the leaf.",
+    "definition": "the larva of a butterfly or moth, having a segmented body with many legs",
+    "word_frequency": 12093
+  },
+  {
+    "word": "I like to roast cauliflower with olive oil.",
+    "definition": "a vegetable with a large white flower head",
+    "word_frequency": 15425
+  },
+  {
+    "word": "We explored the dark cave with flashlights.",
+    "definition": "a large natural underground chamber",
+    "word_frequency": 3706
+  },
+  {
+    "word": "I bought a new music CD.",
+    "definition": "compact disc",
+    "word_frequency": 2852
+  },
+  {
+    "word": "The ceiling needs a fresh coat of paint.",
+    "definition": "the upper interior surface of a room",
+    "word_frequency": 3826
+  },
+  {
+    "word": "She added chopped celery to the soup.",
+    "definition": "a vegetable with long, crisp stalks",
+    "word_frequency": 13153
+  },
+  {
+    "word": "The temperature today is 25 degrees Celsius.",
+    "definition": "a scale of temperature on which water freezes at 0° and boils at 100° under standard conditions",
+    "word_frequency": 13663
+  },
+  {
+    "word": "I only have a few cents left.",
+    "definition": "a monetary unit equal to one hundredth of a dollar, euro, or other decimal currency unit",
+    "word_frequency": 1229
+  },
+  {
+    "word": "The city center is very busy.",
+    "definition": "the middle point",
+    "word_frequency": 539
+  },
+  {
+    "word": "The ruler was marked in centimeters.",
+    "definition": "a unit of length, equal to one hundredth of a meter",
+    "word_frequency": 14626
+  },
+  {
+    "word": "The city centre is very busy.",
+    "definition": "the middle point or part",
+    "word_frequency": 956
+  },
+  {
+    "word": "The teacher wrote on the blackboard with chalk.",
+    "definition": "a soft white porous limestone",
+    "word_frequency": 7887
+  },
+  {
+    "word": "The teacher wrote the lesson on the chalkboard.",
+    "definition": "a board with a smooth, dark surface for writing on with chalk",
+    "word_frequency": 26713
+  },
+  {
+    "word": "Read the first chapter of the book.",
+    "definition": "chapter",
+    "word_frequency": 1725
+  },
+  {
+    "word": "I forgot my phone charger at home.",
+    "definition": "a device for charging a battery",
+    "word_frequency": 8093
+  },
+  {
+    "word": "The checkin desk is located on the ground floor.",
+    "definition": "The act of registering arrival at a hotel or airport.",
+    "word_frequency": 33771
+  },
+  {
+    "word": "Please proceed to the checkout to pay for your items.",
+    "definition": "place to pay in a store",
+    "word_frequency": 8459
+  },
+  {
+    "word": "I have an annual checkup scheduled for next month.",
+    "definition": "a general medical examination",
+    "word_frequency": 23340
+  },
+  {
+    "word": "Would you like some cheddar cheese with your crackers.",
+    "definition": "a firm, sharp-tasting cheese, originally made in Cheddar, Somerset, England",
+    "word_frequency": 13667
+  },
+  {
+    "word": "For dessert, I ordered a slice of strawberry cheesecake.",
+    "definition": "a dessert made with cheese",
+    "word_frequency": 15036
+  },
+  {
+    "word": "The cheetah is the fastest land animal.",
+    "definition": "a large spotted cat known for its speed",
+    "word_frequency": 15432
+  },
+  {
+    "word": "The chef prepared a delicious meal.",
+    "definition": "a professional cook",
+    "word_frequency": 3521
+  },
+  {
+    "word": "I paid for it by cheque.",
+    "definition": "a written order to a bank to pay money",
+    "word_frequency": 10436
+  },
+  {
+    "word": "I love eating fresh cherries in summer.",
+    "definition": "a small, round, red or black fruit",
+    "word_frequency": 3827
+  },
+  {
+    "word": "Do you want to play a game of chess?",
+    "definition": "a board game for two players",
+    "word_frequency": 5495
+  },
+  {
+    "word": "He felt a pain in his chest.",
+    "definition": "the upper front part of the body of humans and some animals, between the neck and the stomach",
+    "word_frequency": 2182
+  },
+  {
+    "word": "The hen had five fluffy chicks.",
+    "definition": "A young bird, especially one newly hatched.",
+    "word_frequency": 4459
+  },
+  {
+    "word": "She had a happy childhood.",
+    "definition": "the period of being a child",
+    "word_frequency": 2216
+  },
+  {
+    "word": "I like to add a little chili to my food for extra spice.",
+    "definition": "a small hot-tasting pod of a type of capsicum",
+    "word_frequency": 7418
+  },
+  {
+    "word": "This dish is very spicy because it has a lot of chilli.",
+    "definition": "a small, hot-tasting pod of a variety of capsicum, used in cooking",
+    "word_frequency": 13668
+  },
+  {
+    "word": "I dropped the plate and a chip broke off.",
+    "definition": "a small piece broken off; a thin slice of food; an electronic component",
+    "word_frequency": 3088
+  },
+  {
+    "word": "I chopped some fresh chives to sprinkle over the soup.",
+    "definition": "a small, onion-like plant used as a culinary herb",
+    "word_frequency": 32118
+  },
+  {
+    "word": "Do you want a choc biscuit?",
+    "definition": "short for chocolate",
+    "word_frequency": 31276
+  },
+  {
+    "word": "The kids love choco milk.",
+    "definition": "short for chocolate",
+    "word_frequency": 31277
+  },
+  {
+    "word": "You have to make a choice.",
+    "definition": "choice",
+    "word_frequency": 706
+  },
+  {
+    "word": "He learned to eat with chopsticks.",
+    "definition": "one of a pair of small, thin sticks used as eating utensils",
+    "word_frequency": 21858
+  },
+  {
+    "word": "They go to church every Sunday.",
+    "definition": "a building used for public Christian worship",
+    "word_frequency": 581
+  },
+  {
+    "word": "Let's go to the cinema tonight.",
+    "definition": "a movie theater",
+    "word_frequency": 3899
+  },
+  {
+    "word": "The children were excited to go to the circus.",
+    "definition": "a traveling company of acrobats, clowns, and other entertainers",
+    "word_frequency": 5181
+  },
+  {
+    "word": "We dug for clams on the beach at low tide.",
+    "definition": "a bivalve mollusk",
+    "word_frequency": 15039
+  },
+  {
+    "word": "My classmate helped me with my homework.",
+    "definition": "a person in the same class",
+    "word_frequency": 8461
+  },
+  {
+    "word": "The cleaner arrived to tidy the office.",
+    "definition": "a person or substance that cleans",
+    "word_frequency": 5827
+  },
+  {
+    "word": "I packed a clementine in my lunch for a healthy snack.",
+    "definition": "a small, easy-to-peel citrus fruit",
+    "word_frequency": 23084
+  },
+  {
+    "word": "The hotel clerk checked us in quickly.",
+    "definition": "a person who works in an office or shop and whose job is to keep records or accounts",
+    "word_frequency": 5043
+  },
+  {
+    "word": "They stood at the edge of the cliff, looking at the ocean.",
+    "definition": "a steep rock face, especially at the edge of the sea",
+    "word_frequency": 4337
+  },
+  {
+    "word": "I went to the clinic for a check-up.",
+    "definition": "medical facility",
+    "word_frequency": 3646
+  },
+  {
+    "word": "Her clothes are in the closet.",
+    "definition": "closet",
+    "word_frequency": 4153
+  },
+  {
+    "word": "She used a damp cloth to wipe the table.",
+    "definition": "woven fabric",
+    "word_frequency": 4817
+  },
+  {
+    "word": "The field was full of green clover.",
+    "definition": "a small plant with three-lobed leaves",
+    "word_frequency": 12427
+  },
+  {
+    "word": "The clown made all the children laugh with his silly tricks.",
+    "definition": "an entertainer who wears funny clothes and makeup",
+    "word_frequency": 5569
+  },
+  {
+    "word": "She joined a book club last year.",
+    "definition": "an organization; a heavy stick",
+    "word_frequency": 523
+  },
+  {
+    "word": "We spent our vacation on the coast.",
+    "definition": "the part of the land adjoining or near the sea",
+    "word_frequency": 1141
+  },
+  {
+    "word": "The cock crowed at dawn.",
+    "definition": "a male chicken",
+    "word_frequency": 3524
+  },
+  {
+    "word": "I like to drink hot cocoa on a cold day.",
+    "definition": "powder made from cacao beans, used to make chocolate",
+    "word_frequency": 8463
+  },
+  {
+    "word": "We drank fresh coconut water on the beach.",
+    "definition": "a large nut from a palm tree",
+    "word_frequency": 6001
+  },
+  {
+    "word": "We had coleslaw with our barbecue.",
+    "definition": "a salad of shredded raw cabbage, usually with a mayonnaise or vinaigrette dressing",
+    "word_frequency": 31284
+  },
+  {
+    "word": "He adjusted the collar of his shirt.",
+    "definition": "the part of a shirt around the neck",
+    "word_frequency": 4749
+  },
+  {
+    "word": "We watched a funny comedy last night.",
+    "definition": "a humorous play or film",
+    "word_frequency": 2218
+  },
+  {
+    "word": "Remember to use a comma before a coordinating conjunction.",
+    "definition": "a punctuation mark",
+    "word_frequency": 14026
+  },
+  {
+    "word": "She made a positive comment about his work.",
+    "definition": "a remark expressing an opinion or reaction",
+    "word_frequency": 1122
+  },
+  {
+    "word": "She works for a big company.",
+    "definition": "a business organization",
+    "word_frequency": 191
+  },
+  {
+    "word": "We went to a rock concert last night.",
+    "definition": "a musical performance",
+    "word_frequency": 2063
+  },
+  {
+    "word": "She applied conditioner to her hair after washing it.",
+    "definition": "a substance, typically a liquid, applied to hair after shampooing to improve its condition",
+    "word_frequency": 11939
+  },
+  {
+    "word": "The ice cream was served in a waffle cone.",
+    "definition": "a solid or hollow object with a round base and a tapering side to a point",
+    "word_frequency": 6420
+  },
+  {
+    "word": "She received a congratulation for her excellent work.",
+    "definition": "an expression of praise for an achievement or good wishes on a special occasion",
+    "word_frequency": 2674
+  },
+  {
+    "word": "Africa is the second-largest continent.",
+    "definition": "any of the world's main continuous expanses of land",
+    "word_frequency": 4537
+  },
+  {
+    "word": "We had a long conversation about our plans.",
+    "definition": "a talk between two or more people",
+    "word_frequency": 1431
+  },
+  {
+    "word": "She found a new recipe in her favorite cookbook.",
+    "definition": "a book of recipes",
+    "word_frequency": 12432
+  },
+  {
+    "word": "She bought a new slow cooker for her kitchen.",
+    "definition": "An appliance or device for cooking food.",
+    "word_frequency": 12777
+  },
+  {
+    "word": "We packed drinks in the cooler for the picnic.",
+    "definition": "A container for keeping food and drink cool.",
+    "word_frequency": 22192
+  },
+  {
+    "word": "The office copier is out of toner again.",
+    "definition": "A machine that makes copies of documents.",
+    "word_frequency": 30126
+  },
+  {
+    "word": "Can I have a copy of that document?",
+    "definition": "copy",
+    "word_frequency": 1383
+  },
+  {
+    "word": "He tied the package with a piece of cord.",
+    "definition": "a length of string, rope, or wire",
+    "word_frequency": 5188
+  },
+  {
+    "word": "We had corn on the cob for dinner.",
+    "definition": "a type of grain",
+    "word_frequency": 3764
+  },
+  {
+    "word": "What is the cost of this book?",
+    "definition": "price",
+    "word_frequency": 471
+  },
+  {
+    "word": "The baby slept soundly in its cot.",
+    "definition": "a small bed with high barred sides for a baby or young child; a light portable bed",
+    "word_frequency": 15239
+  },
+  {
+    "word": "They spent their holidays in a charming little cottage.",
+    "definition": "a small house, typically in the countryside",
+    "word_frequency": 5044
+  },
+  {
+    "word": "This shirt is made of cotton.",
+    "definition": "a soft white fibrous substance",
+    "word_frequency": 2897
+  },
+  {
+    "word": "We bought a new couch for the living room.",
+    "definition": "a long upholstered seat",
+    "word_frequency": 3903
+  },
+  {
+    "word": "Please place your order at the counter.",
+    "definition": "surface, register",
+    "word_frequency": 2020
+  },
+  {
+    "word": "We enjoyed a walk in the beautiful countryside.",
+    "definition": "the land outside of towns and cities",
+    "word_frequency": 5656
+  },
+  {
+    "word": "A young couple walked hand in hand.",
+    "definition": "two people or things",
+    "word_frequency": 541
+  },
+  {
+    "word": "I'm taking a history course.",
+    "definition": "path; subject of study",
+    "word_frequency": 284
+  },
+  {
+    "word": "My cousin is coming to visit next week.",
+    "definition": "a child of one's aunt or uncle",
+    "word_frequency": 2631
+  },
+  {
+    "word": "The book has a beautiful cover.",
+    "definition": "cover",
+    "word_frequency": 711
+  },
+  {
+    "word": "My coworker helped me finish the project on time.",
+    "definition": "a person with whom one works",
+    "word_frequency": 11175
+  },
+  {
+    "word": "We saw a crab scuttling sideways on the beach.",
+    "definition": "a marine crustacean with a broad carapace, stalked eyes, and five pairs of legs",
+    "word_frequency": 7106
+  },
+  {
+    "word": "I like to eat cheese and crackers as a snack.",
+    "definition": "a thin, crisp biscuit",
+    "word_frequency": 11034
+  },
+  {
+    "word": "We had cranberry sauce with our Thanksgiving turkey.",
+    "definition": "a small, red, tart berry",
+    "word_frequency": 16041
+  },
+  {
+    "word": "The child drew a picture with a red crayon.",
+    "definition": "a stick of colored wax used for drawing",
+    "word_frequency": 18785
+  },
+  {
+    "word": "Would you like cream in your coffee?",
+    "definition": "cream",
+    "word_frequency": 1816
+  },
+  {
+    "word": "The forest is home to many strange creatures.",
+    "definition": "living being, animal",
+    "word_frequency": 3651
+  },
+  {
+    "word": "We heard a cricket chirping outside.",
+    "definition": "an insect or a sport",
+    "word_frequency": 2726
+  },
+  {
+    "word": "A crocodile can be very dangerous.",
+    "definition": "large reptile",
+    "word_frequency": 10446
+  },
+  {
+    "word": "She enjoyed a warm croissant with her coffee.",
+    "definition": "a crescent-shaped pastry",
+    "word_frequency": 26392
+  },
+  {
+    "word": "He drew a cross on the paper.",
+    "definition": "a shape made of two lines intersecting",
+    "word_frequency": 879
+  },
+  {
+    "word": "Always look both ways before stepping into the crosswalk.",
+    "definition": "a pedestrian crossing",
+    "word_frequency": 31694
+  },
+  {
+    "word": "A crow landed on the fence post.",
+    "definition": "a large, black bird",
+    "word_frequency": 6707
+  },
+  {
+    "word": "A large crowd gathered in the square.",
+    "definition": "a large group of people",
+    "word_frequency": 1585
+  },
+  {
+    "word": "The queen wore a beautiful crown.",
+    "definition": "royal headwear, top part",
+    "word_frequency": 2022
+  },
+  {
+    "word": "The lioness protected her cub.",
+    "definition": "a young animal, especially a bear, lion, fox, etc.",
+    "word_frequency": 5926
+  },
+  {
+    "word": "She put an ice cube in her drink.",
+    "definition": "a solid three-dimensional figure",
+    "word_frequency": 6522
+  },
+  {
+    "word": "She added slices of cucumber to her salad.",
+    "definition": "a long, green-skinned fruit, eaten as a vegetable",
+    "word_frequency": 11644
+  },
+  {
+    "word": "The children decorated their cupcakes with sprinkles.",
+    "definition": "a small cake baked in a cup-shaped foil or paper container",
+    "word_frequency": 11645
+  },
+  {
+    "word": "I love to eat chicken curry with rice.",
+    "definition": "a dish of meat, fish, or vegetables cooked in a sauce with spices",
+    "word_frequency": 5331
+  },
+  {
+    "word": "Move the cursor to the top left corner of the screen.",
+    "definition": "a movable indicator on a computer screen",
+    "word_frequency": 17823
+  },
+  {
+    "word": "Please draw the curtains to block out the light.",
+    "definition": "a piece of material suspended to cover a window or opening",
+    "word_frequency": 6178
+  },
+  {
+    "word": "She plumped up the cushion on the sofa.",
+    "definition": "a bag of cloth stuffed with soft material, used for sitting or kneeling on or for resting one's head",
+    "word_frequency": 9212
+  },
+  {
+    "word": "She poured warm custard over the apple pie.",
+    "definition": "a dessert made with milk, eggs, and sugar",
+    "word_frequency": 16043
+  },
+  {
+    "word": "The customer bought a new phone.",
+    "definition": "customer",
+    "word_frequency": 1356
+  },
+  {
+    "word": "Please set the table with the clean cutlery.",
+    "definition": "knives, forks, and spoons used for eating",
+    "word_frequency": 19780
+  },
+  {
+    "word": "The DJ played a great mix of songs at the party.",
+    "definition": "disc jockey",
+    "word_frequency": 18276
+  },
+  {
+    "word": "Daffodils are one of the first flowers to bloom in spring, bringing a splash of yellow.",
+    "definition": "a yellow flower with a trumpet-shaped center",
+    "word_frequency": 28045
+  },
+  {
+    "word": "She avoids dairy products due to an allergy.",
+    "definition": "food made from milk",
+    "word_frequency": 4394
+  },
+  {
+    "word": "She picked a daisy from the field.",
+    "definition": "a small wild flower",
+    "word_frequency": 6909
+  },
+  {
+    "word": "The dancefloor was packed with people.",
+    "definition": "An area for dancing.",
+    "word_frequency": 29023
+  },
+  {
+    "word": "She is a talented ballet dancer.",
+    "definition": "a person who dances",
+    "word_frequency": 5110
+  },
+  {
+    "word": "My lawn is full of dandelions in the spring.",
+    "definition": "A widely distributed weed of the daisy family, with a rosette of leaves, bright yellow flowers followed by fluffy white seed heads.",
+    "word_frequency": 22773
+  },
+  {
+    "word": "You are in danger if you go there alone.",
+    "definition": "the possibility of suffering harm or injury",
+    "word_frequency": 1911
+  },
+  {
+    "word": "The room was filled with darkness.",
+    "definition": "darkness",
+    "word_frequency": 3150
+  },
+  {
+    "word": "What is today's date?",
+    "definition": "date",
+    "word_frequency": 501
+  },
+  {
+    "word": "We send our daughter to daycare while we work.",
+    "definition": "care provided during the day for children or elderly people",
+    "word_frequency": 13518
+  },
+  {
+    "word": "We need to finish before daylight fades.",
+    "definition": "the natural light of the day",
+    "word_frequency": 6344
+  },
+  {
+    "word": "It's much warmer during the daytime.",
+    "definition": "the period of time when there is light from the sun",
+    "word_frequency": 8222
+  },
+  {
+    "word": "That was a difficult decision.",
+    "definition": "decision",
+    "word_frequency": 694
+  },
+  {
+    "word": "The Christmas decorations are beautiful this year.",
+    "definition": "something used to make something look more attractive",
+    "word_frequency": 6524
+  },
+  {
+    "word": "We saw a deer in the forest.",
+    "definition": "a hoofed ruminant mammal",
+    "word_frequency": 4225
+  },
+  {
+    "word": "The bear returned to its den.",
+    "definition": "a wild animal's lair or a small, comfortable room",
+    "word_frequency": 4971
+  },
+  {
+    "word": "I have an appointment with the dentist tomorrow.",
+    "definition": "a person qualified to treat diseases and conditions of the teeth and gums",
+    "word_frequency": 6179
+  },
+  {
+    "word": "He applied deodorant before leaving for work.",
+    "definition": "a substance applied to the body to prevent odor",
+    "word_frequency": 17101
+  },
+  {
+    "word": "The Sahara is the largest hot desert in the world.",
+    "definition": "a very dry, empty area of land",
+    "word_frequency": 2682
+  },
+  {
+    "word": "For dessert, we had apple pie with ice cream.",
+    "definition": "the sweet course eaten at the end of a meal",
+    "word_frequency": 6425
+  },
+  {
+    "word": "We ran out of laundry detergent.",
+    "definition": "a cleaning substance",
+    "word_frequency": 15450
+  },
+  {
+    "word": "The baby needs a clean diaper.",
+    "definition": "baby's absorbent garment",
+    "word_frequency": 10448
+  },
+  {
+    "word": "She wrote her thoughts in her diary every night.",
+    "definition": "a book in which one keeps a daily record of events and experiences",
+    "word_frequency": 4398
+  },
+  {
+    "word": "Roll the dice to see how many spaces you move.",
+    "definition": "a small cube with each side having a different number of spots",
+    "word_frequency": 7113
+  },
+  {
+    "word": "I looked up the word in the dictionary.",
+    "definition": "a book of words and their meanings",
+    "word_frequency": 4898
+  },
+  {
+    "word": "What is the difference between these two shirts?",
+    "definition": "a way in which things are not the same",
+    "word_frequency": 856
+  },
+  {
+    "word": "She faced many difficulties in her new job.",
+    "definition": "the state or condition of being difficult",
+    "word_frequency": 2988
+  },
+  {
+    "word": "Many children are fascinated by dinosaurs.",
+    "definition": "a fossil reptile of the Mesozoic era",
+    "word_frequency": 7015
+  },
+  {
+    "word": "Which direction should we go?",
+    "definition": "the path that something takes; guidance",
+    "word_frequency": 1015
+  },
+  {
+    "word": "His shoes were covered in dirt from the garden.",
+    "definition": "dirt",
+    "word_frequency": 3464
+  },
+  {
+    "word": "Please load the dishwasher after dinner.",
+    "definition": "a machine for washing dishes",
+    "word_frequency": 13689
+  },
+  {
+    "word": "The distance to the city center is about 5 miles.",
+    "definition": "extent of space between two points",
+    "word_frequency": 1182
+  },
+  {
+    "word": "The DJ played some great music at the party.",
+    "definition": "disc jockey",
+    "word_frequency": 3531
+  },
+  {
+    "word": "I need to see the doc about my cough.",
+    "definition": "doctor (informal); document (informal)",
+    "word_frequency": 2860
+  },
+  {
+    "word": "The dog slept in its doghouse.",
+    "definition": "a small shelter for a dog",
+    "word_frequency": 34177
+  },
+  {
+    "word": "The little girl spent hours playing with her new dollhouse.",
+    "definition": "a miniature house for dolls",
+    "word_frequency": 25758
+  },
+  {
+    "word": "We saw a pod of dolphins swimming near the boat.",
+    "definition": "a marine mammal",
+    "word_frequency": 6009
+  },
+  {
+    "word": "The farmer used a donkey to carry the heavy load.",
+    "definition": "a domesticated hoofed mammal of the horse family",
+    "word_frequency": 8709
+  },
+  {
+    "word": "I heard the doorbell ring, so I went to open the door.",
+    "definition": "a bell on the outside of a door that a visitor presses to alert the occupants",
+    "word_frequency": 18805
+  },
+  {
+    "word": "She turned the doorknob and entered the room.",
+    "definition": "a handle for opening a door",
+    "word_frequency": 30900
+  },
+  {
+    "word": "The doorman greeted us as we entered the hotel.",
+    "definition": "a person employed to stand at the entrance of a building",
+    "word_frequency": 26068
+  },
+  {
+    "word": "He stood in the doorway, blocking the light.",
+    "definition": "An opening in a wall or partition for a door.",
+    "word_frequency": 10184
+  },
+  {
+    "word": "There's a small dot on the map indicating our location.",
+    "definition": "a small spot or mark",
+    "word_frequency": 4682
+  },
+  {
+    "word": "He bought a box of doughnuts for breakfast.",
+    "definition": "a small fried cake of sweetened dough",
+    "word_frequency": 16057
+  },
+  {
+    "word": "I keep my socks in the top drawer.",
+    "definition": "a box-like storage compartment",
+    "word_frequency": 6917
+  },
+  {
+    "word": "She showed me a beautiful drawing of a landscape.",
+    "definition": "a picture or diagram made with a pencil, pen, or crayon",
+    "word_frequency": 4756
+  },
+  {
+    "word": "I had a strange dream last night.",
+    "definition": "a series of thoughts, images, and sensations occurring in a person's mind during sleep",
+    "word_frequency": 1057
+  },
+  {
+    "word": "She put her folded clothes in the dresser.",
+    "definition": "A piece of furniture with drawers for clothes.",
+    "word_frequency": 12443
+  },
+  {
+    "word": "I prefer ranch dressing on my salad.",
+    "definition": "a sauce for salads; material applied to a wound",
+    "word_frequency": 21351
+  },
+  {
+    "word": "He's a heavy drinker.",
+    "definition": "A person who drinks (especially alcohol)",
+    "word_frequency": 15863
+  },
+  {
+    "word": "It's a long drive to the coast.",
+    "definition": "journey, motivation",
+    "word_frequency": 623
+  },
+  {
+    "word": "The bus driver was very friendly.",
+    "definition": "a person who drives",
+    "word_frequency": 1435
+  },
+  {
+    "word": "He parked his car in the driveway.",
+    "definition": "A short private road leading from a public road to a house or garage.",
+    "word_frequency": 8347
+  },
+  {
+    "word": "I need to go to the drugstore to pick up my prescription.",
+    "definition": "a shop where medicines are sold",
+    "word_frequency": 18290
+  },
+  {
+    "word": "He learned to play the drum at a young age.",
+    "definition": "a musical instrument played by hitting it",
+    "word_frequency": 4284
+  },
+  {
+    "word": "The band's new drummer is very talented.",
+    "definition": "a person who plays the drums",
+    "word_frequency": 8002
+  },
+  {
+    "word": "I put my wet clothes in the dryer.",
+    "definition": "a machine or device for drying something",
+    "word_frequency": 9749
+  },
+  {
+    "word": "A mother duck led her ducklings to the pond.",
+    "definition": "a young duck",
+    "word_frequency": 30491
+  },
+  {
+    "word": "The old books were covered in dust.",
+    "definition": "fine powder of earth or other matter",
+    "word_frequency": 2636
+  },
+  {
+    "word": "Please put the empty packaging in the dustbin.",
+    "definition": "A container for household rubbish; a trash can.",
+    "word_frequency": 34594
+  },
+  {
+    "word": "She used a feather duster to clean the shelves.",
+    "definition": "A cloth or brush for removing dust.",
+    "word_frequency": 26408
+  },
+  {
+    "word": "An eagle soared high above the mountains.",
+    "definition": "large bird of prey",
+    "word_frequency": 3599
+  },
+  {
+    "word": "She put in her earbuds to listen to music on the train.",
+    "definition": "a small earphone that fits inside the ear",
+    "word_frequency": 18543
+  },
+  {
+    "word": "He put on his earphones to listen to music on the bus.",
+    "definition": "a device that fits into or over the ear, used for listening to audio",
+    "word_frequency": 20569
+  },
+  {
+    "word": "She lost one of her favorite earrings.",
+    "definition": "a piece of jewelry worn on the lobe or edge of the ear",
+    "word_frequency": 8712
+  },
+  {
+    "word": "The Earth revolves around the sun.",
+    "definition": "planet, ground",
+    "word_frequency": 755
+  },
+  {
+    "word": "After the rain, many earthworms appeared on the sidewalk.",
+    "definition": "a burrowing annelid worm that lives in the soil",
+    "word_frequency": 35037
+  },
+  {
+    "word": "Education is important for everyone.",
+    "definition": "the process of learning",
+    "word_frequency": 434
+  },
+  {
+    "word": "The fisherman caught a slippery eel in his net.",
+    "definition": "a snake-like fish",
+    "word_frequency": 14867
+  },
+  {
+    "word": "She made a delicious dish with roasted eggplant and tomatoes.",
+    "definition": "a purple vegetable, also known as aubergine",
+    "word_frequency": 19796
+  },
+  {
+    "word": "He hit his elbow on the table.",
+    "definition": "the joint between the forearm and the upper arm",
+    "word_frequency": 6350
+  },
+  {
+    "word": "We called an electrician to fix the faulty wiring.",
+    "definition": "person who installs/repairs electrical wiring",
+    "word_frequency": 14243
+  },
+  {
+    "word": "The house lost electricity during the storm.",
+    "definition": "a form of energy",
+    "word_frequency": 2548
+  },
+  {
+    "word": "Let's take the elevator to the tenth floor.",
+    "definition": "a machine that carries people or goods up and down in buildings",
+    "word_frequency": 5427
+  },
+  {
+    "word": "I sent him an email this morning.",
+    "definition": "electronic mail",
+    "word_frequency": 1638
+  },
+  {
+    "word": "She sent a smiling emoji to show her happiness.",
+    "definition": "a small digital image or icon used to express an idea or emotion",
+    "word_frequency": 14870
+  },
+  {
+    "word": "Joy is a powerful emotion.",
+    "definition": "strong feeling",
+    "word_frequency": 2807
+  },
+  {
+    "word": "Every employee receives a bonus at the end of the year.",
+    "definition": "a person employed for wages or salary",
+    "word_frequency": 1288
+  },
+  {
+    "word": "My employer offers good benefits.",
+    "definition": "a person or organization that employs people",
+    "word_frequency": 3413
+  },
+  {
+    "word": "An emu is the second-largest living bird by height.",
+    "definition": "a large, flightless, fast-running Australian bird resembling an ostrich",
+    "word_frequency": 18810
+  },
+  {
+    "word": "The movie had a surprising ending.",
+    "definition": "the final part of something",
+    "word_frequency": 9753
+  },
+  {
+    "word": "The cruise ship hired a new entertainer for the evening shows.",
+    "definition": "a person whose job is to entertain others",
+    "word_frequency": 11050
+  },
+  {
+    "word": "The main entrance is on the left.",
+    "definition": "a door or gate by which you can enter a place",
+    "word_frequency": 2730
+  },
+  {
+    "word": "I put the letter in an envelope.",
+    "definition": "a flat, usually paper, container for a letter",
+    "word_frequency": 6183
+  },
+  {
+    "word": "We should protect our natural environment.",
+    "definition": "the surroundings or conditions in which a person, animal, or plant lives or operates",
+    "word_frequency": 1144
+  },
+  {
+    "word": "We need to buy new equipment for the gym.",
+    "definition": "the necessary items for a particular purpose",
+    "word_frequency": 1123
+  },
+  {
+    "word": "There was an error in the calculation.",
+    "definition": "a mistake",
+    "word_frequency": 2071
+  },
+  {
+    "word": "We took the escalator to the second floor of the department store.",
+    "definition": "a moving staircase",
+    "word_frequency": 19565
+  },
+  {
+    "word": "How many euros do you have?",
+    "definition": "European currency",
+    "word_frequency": 4401
+  },
+  {
+    "word": "The concert was a major event.",
+    "definition": "something that happens",
+    "word_frequency": 555
+  },
+  {
+    "word": "I have a math exam tomorrow.",
+    "definition": "a test of knowledge or ability",
+    "word_frequency": 3364
+  },
+  {
+    "word": "Can you give me an example?",
+    "definition": "instance, model",
+    "word_frequency": 448
+  },
+  {
+    "word": "The children were full of excitement on Christmas morning.",
+    "definition": "a feeling of great enthusiasm",
+    "word_frequency": 3772
+  },
+  {
+    "word": "Regular exercise is good for your health.",
+    "definition": "physical activity",
+    "word_frequency": 1639
+  },
+  {
+    "word": "Please use the emergency exit.",
+    "definition": "a way out",
+    "word_frequency": 2903
+  },
+  {
+    "word": "The doctor examined the patient's eyeball for any signs of injury.",
+    "definition": "the globe of the eye",
+    "word_frequency": 15261
+  },
+  {
+    "word": "She raised an eyebrow in surprise.",
+    "definition": "the strip of hair growing above each eye",
+    "word_frequency": 7212
+  },
+  {
+    "word": "She had long, dark eyelashes.",
+    "definition": "a short, curved hair growing from the edge of the eyelid",
+    "word_frequency": 17114
+  },
+  {
+    "word": "She gently closed her eyelids and fell asleep.",
+    "definition": "a fold of skin that covers and protects the eye",
+    "word_frequency": 16266
+  },
+  {
+    "word": "That's an interesting fact.",
+    "definition": "a piece of information known to be true",
+    "word_frequency": 306
+  },
+  {
+    "word": "The new car factory employs thousands of people.",
+    "definition": "a building where goods are manufactured",
+    "word_frequency": 2074
+  },
+  {
+    "word": "Children often believe in tooth fairies.",
+    "definition": "A small, imaginary being of human form, with magical powers.",
+    "word_frequency": 4475
+  },
+  {
+    "word": "The leaves change color in the fall.",
+    "definition": "autumn, descent",
+    "word_frequency": 625
+  },
+  {
+    "word": "He is a big fan of that band.",
+    "definition": "an admirer of a person or thing; a device for creating a current of air",
+    "word_frequency": 808
+  },
+  {
+    "word": "The farmer harvested the crops.",
+    "definition": "a person who owns or manages a farm",
+    "word_frequency": 2549
+  },
+  {
+    "word": "They decided to buy an old farmhouse in the countryside.",
+    "definition": "a house on a farm",
+    "word_frequency": 11526
+  },
+  {
+    "word": "The kitchen faucet is dripping.",
+    "definition": "a device for controlling the flow of water from a pipe",
+    "word_frequency": 18302
+  },
+  {
+    "word": "His greatest fear was losing his family.",
+    "definition": "fear",
+    "word_frequency": 960
+  },
+  {
+    "word": "The bird had a beautiful blue feather.",
+    "definition": "a soft, light covering of a bird",
+    "word_frequency": 6817
+  },
+  {
+    "word": "I have a strange feeling about this.",
+    "definition": "emotion, sensation",
+    "word_frequency": 1560
+  },
+  {
+    "word": "The dog jumped over the fence.",
+    "definition": "barrier, enclosure",
+    "word_frequency": 3663
+  },
+  {
+    "word": "We went to a music festival last weekend.",
+    "definition": "a day or period of celebration",
+    "word_frequency": 1518
+  },
+  {
+    "word": "She has a high fever and needs to rest.",
+    "definition": "an abnormally high body temperature",
+    "word_frequency": 3602
+  },
+  {
+    "word": "The cows are in the field.",
+    "definition": "area of land, area of study",
+    "word_frequency": 474
+  },
+  {
+    "word": "I love eating fresh figs in the summer.",
+    "definition": "a soft, sweet fruit with many small seeds, eaten fresh or dried",
+    "word_frequency": 4347
+  },
+  {
+    "word": "They had a big fight.",
+    "definition": "fight",
+    "word_frequency": 486
+  },
+  {
+    "word": "She painted her fingernails bright red.",
+    "definition": "the hard, flat, translucent covering on the end of a finger",
+    "word_frequency": 15468
+  },
+  {
+    "word": "The firefighter quickly put out the blaze.",
+    "definition": "a person who extinguishes fires",
+    "word_frequency": 8602
+  },
+  {
+    "word": "The firefighters returned to the firehouse after the call.",
+    "definition": "fire station",
+    "word_frequency": 23683
+  },
+  {
+    "word": "The brave fireman rescued the cat from the tree.",
+    "definition": "a person whose job is to extinguish fires",
+    "word_frequency": 15469
+  },
+  {
+    "word": "We lit a fire in the fireplace to keep warm.",
+    "definition": "a place for a fire in a house",
+    "word_frequency": 9755
+  },
+  {
+    "word": "We gathered firewood for the campfire.",
+    "definition": "wood cut for burning",
+    "word_frequency": 16271
+  },
+  {
+    "word": "The old fisherman cast his net into the sea.",
+    "definition": "A person who catches fish for a living or as a hobby.",
+    "word_frequency": 8355
+  },
+  {
+    "word": "He clenched his fist in anger.",
+    "definition": "a hand with the fingers curled into the palm and the thumb clenched tightly across the fingers",
+    "word_frequency": 5933
+  },
+  {
+    "word": "The flag was waving in the wind.",
+    "definition": "a piece of cloth with a distinctive design, used as a symbol",
+    "word_frequency": 1945
+  },
+  {
+    "word": "The flag was raised to the top of the flagpole.",
+    "definition": "a pole on which a flag is flown",
+    "word_frequency": 31348
+  },
+  {
+    "word": "I used a flashlight to find my way in the dark.",
+    "definition": "a portable battery-operated electric lamp",
+    "word_frequency": 10906
+  },
+  {
+    "word": "This ice cream has a delicious vanilla flavor.",
+    "definition": "the distinctive taste of a food or drink",
+    "word_frequency": 4762
+  },
+  {
+    "word": "This ice cream has a delicious vanilla flavour.",
+    "definition": "the distinctive taste of a food or drink",
+    "word_frequency": 7436
+  },
+  {
+    "word": "Our flight was delayed due to bad weather.",
+    "definition": "journey by air, act of flying",
+    "word_frequency": 1166
+  },
+  {
+    "word": "Don't forget to floss your teeth every day.",
+    "definition": "Dental floss; a type of thread",
+    "word_frequency": 15875
+  },
+  {
+    "word": "You need flour to bake a cake.",
+    "definition": "a powder made from grain, used for making bread, cakes, etc.",
+    "word_frequency": 5054
+  },
+  {
+    "word": "I caught the flu and had to stay home from work.",
+    "definition": "influenza, a common infectious disease",
+    "word_frequency": 5341
+  },
+  {
+    "word": "He plays the flute in the orchestra.",
+    "definition": "a musical wind instrument",
+    "word_frequency": 10049
+  },
+  {
+    "word": "The fog was so thick we couldn't see the road.",
+    "definition": "a thick cloud of tiny water droplets suspended in the atmosphere at or near the earth's surface that obscures or restricts visibility",
+    "word_frequency": 5842
+  },
+  {
+    "word": "Put the documents in the blue folder.",
+    "definition": "a folding cover or holder for loose papers",
+    "word_frequency": 7328
+  },
+  {
+    "word": "The young footballer dreamed of playing professionally.",
+    "definition": "a person who plays football",
+    "word_frequency": 7904
+  },
+  {
+    "word": "He wiped the sweat from his forehead.",
+    "definition": "the part of the face above the eyebrows and below the hairline",
+    "word_frequency": 6092
+  },
+  {
+    "word": "We went for a walk in the forest.",
+    "definition": "large area of trees",
+    "word_frequency": 1592
+  },
+  {
+    "word": "Please fill out this form completely.",
+    "definition": "shape, document",
+    "word_frequency": 403
+  },
+  {
+    "word": "A fox ran across the field.",
+    "definition": "a wild animal",
+    "word_frequency": 1695
+  },
+  {
+    "word": "Put the ice cream back in the freezer.",
+    "definition": "an appliance for freezing food",
+    "word_frequency": 8244
+  },
+  {
+    "word": "Please put the milk back in the fridge.",
+    "definition": "refrigerator (informal)",
+    "word_frequency": 4910
+  },
+  {
+    "word": "Their friendship lasted for many years.",
+    "definition": "the state of being friends",
+    "word_frequency": 2733
+  },
+  {
+    "word": "They spent the afternoon throwing a frisbee in the park.",
+    "definition": "a plastic disc thrown as a game or sport",
+    "word_frequency": 21107
+  },
+  {
+    "word": "She put pink frosting on the birthday cake.",
+    "definition": "a sweet, creamy glaze made of sugar, butter, and milk or water, used to cover or decorate cakes or cookies",
+    "word_frequency": 18826
+  },
+  {
+    "word": "My cat has very soft fur.",
+    "definition": "the short, fine, soft hair of certain animals",
+    "word_frequency": 4827
+  },
+  {
+    "word": "We need to buy new furniture for the living room.",
+    "definition": "movable articles that are used to make a room or building suitable for living or working",
+    "word_frequency": 3217
+  },
+  {
+    "word": "What will happen in the future?",
+    "definition": "the time yet to come",
+    "word_frequency": 381
+  },
+  {
+    "word": "I bought a gallon of milk from the store.",
+    "definition": "a unit of liquid capacity",
+    "word_frequency": 7218
+  },
+  {
+    "word": "I parked my car in the garage.",
+    "definition": "a building for parking a car",
+    "word_frequency": 3416
+  },
+  {
+    "word": "Please put the garbage out for collection.",
+    "definition": "waste, trash",
+    "word_frequency": 3845
+  },
+  {
+    "word": "The gardener planted new flowers.",
+    "definition": "person who tends a garden",
+    "word_frequency": 10468
+  },
+  {
+    "word": "She added some fresh garlic to the sauce.",
+    "definition": "a strong-smelling pungent-tasting bulb, used as a flavoring in cooking",
+    "word_frequency": 5669
+  },
+  {
+    "word": "I need to put gas in the car.",
+    "definition": "fuel for cars",
+    "word_frequency": 859
+  },
+  {
+    "word": "We need to stop for gasoline before the long drive.",
+    "definition": "a refined petroleum spirit used as fuel for internal combustion engines",
+    "word_frequency": 6278
+  },
+  {
+    "word": "Please close the gate when you leave.",
+    "definition": "a movable barrier in a fence or wall",
+    "word_frequency": 2378
+  },
+  {
+    "word": "We learned about the geography of South America.",
+    "definition": "the study of the physical features of the earth and its atmosphere",
+    "word_frequency": 5197
+  },
+  {
+    "word": "She received a beautiful gift for her birthday.",
+    "definition": "gift",
+    "word_frequency": 1362
+  },
+  {
+    "word": "She added fresh ginger to the stir-fry for extra flavor.",
+    "definition": "a spicy root used in cooking; a reddish-brown color",
+    "word_frequency": 5583
+  },
+  {
+    "word": "We saw a tall giraffe at the zoo.",
+    "definition": "a large African mammal with a very long neck and legs",
+    "word_frequency": 13191
+  },
+  {
+    "word": "He introduced me to his girlfriend.",
+    "definition": "a female romantic partner",
+    "word_frequency": 1642
+  },
+  {
+    "word": "He put on his warm gloves before going outside.",
+    "definition": "a covering for the hand",
+    "word_frequency": 4763
+  },
+  {
+    "word": "Can you pass me the glue? I need to fix this broken cup.",
+    "definition": "an adhesive substance used for sticking objects or materials together",
+    "word_frequency": 6725
+  },
+  {
+    "word": "A goat was grazing in the field.",
+    "definition": "a common farm animal",
+    "word_frequency": 4913
+  },
+  {
+    "word": "She wears a beautiful gold ring.",
+    "definition": "a precious yellow metallic element",
+    "word_frequency": 567
+  },
+  {
+    "word": "My sister has a goldfish in a bowl.",
+    "definition": "a small, typically orange or gold, freshwater fish, often kept as a pet",
+    "word_frequency": 13907
+  },
+  {
+    "word": "A flock of geese flew over the lake.",
+    "definition": "a large water bird with a long neck, short legs, webbed feet, and a short broad bill",
+    "word_frequency": 6357
+  },
+  {
+    "word": "We saw a large gorilla at the zoo.",
+    "definition": "a large ape",
+    "word_frequency": 8732
+  },
+  {
+    "word": "The government announced new policies to boost the economy.",
+    "definition": "the governing body of a state",
+    "word_frequency": 30531
+  },
+  {
+    "word": "He got a good grade on his math test.",
+    "definition": "a mark indicating the quality of a student's work",
+    "word_frequency": 1311
+  },
+  {
+    "word": "This recipe calls for 200 grams of flour.",
+    "definition": "a metric unit of mass",
+    "word_frequency": 6540
+  },
+  {
+    "word": "My grandad always tells the best stories.",
+    "definition": "grandfather (informal)",
+    "word_frequency": 20336
+  },
+  {
+    "word": "My grandmother loves spending time with her grandchild.",
+    "definition": "the child of one's son or daughter",
+    "word_frequency": 6822
+  },
+  {
+    "word": "My granddad always tells the best stories.",
+    "definition": "grandfather (informal)",
+    "word_frequency": 29816
+  },
+  {
+    "word": "My grandmother loves spending time with her granddaughter.",
+    "definition": "the daughter of one's son or daughter",
+    "word_frequency": 8993
+  },
+  {
+    "word": "My grandson loves to play with his toy cars.",
+    "definition": "the son of one's son or daughter",
+    "word_frequency": 6282
+  },
+  {
+    "word": "My granny always bakes the best cookies.",
+    "definition": "grandmother",
+    "word_frequency": 8847
+  },
+  {
+    "word": "I like to eat half a grapefruit for breakfast.",
+    "definition": "grapefruit",
+    "word_frequency": 16082
+  },
+  {
+    "word": "Please pass the gravy for the mashed potatoes.",
+    "definition": "a sauce made from meat juices",
+    "word_frequency": 10644
+  },
+  {
+    "word": "She gave a warm greeting to all the guests.",
+    "definition": "a polite word or sign of welcome or recognition",
+    "word_frequency": 8013
+  },
+  {
+    "word": "We cooked burgers on the grill.",
+    "definition": "a framework of metal bars used for cooking food over an open fire",
+    "word_frequency": 6358
+  },
+  {
+    "word": "The children were told to act like grown-ups.",
+    "definition": "an adult",
+    "word_frequency": 33423
+  },
+  {
+    "word": "Take a guess at how many candies are in the jar.",
+    "definition": "an estimate or conclusion formed by guessing",
+    "word_frequency": 568
+  },
+  {
+    "word": "We had a guest staying with us for the weekend.",
+    "definition": "a person who is invited to visit someone's home or attend a social occasion",
+    "word_frequency": 1947
+  },
+  {
+    "word": "The tour guide led us through the museum.",
+    "definition": "a person who shows the way",
+    "word_frequency": 1442
+  },
+  {
+    "word": "He loves to play the guitar.",
+    "definition": "a stringed musical instrument",
+    "word_frequency": 2332
+  },
+  {
+    "word": "The guitarist played an amazing solo.",
+    "definition": "a person who plays the guitar",
+    "word_frequency": 8611
+  },
+  {
+    "word": "Please don't chew gum in class.",
+    "definition": "a sticky substance, often chewed",
+    "word_frequency": 5507
+  },
+  {
+    "word": "He put a quarter into the machine and got a red gumball.",
+    "definition": "a small ball of chewing gum",
+    "word_frequency": 31371
+  },
+  {
+    "word": "That guy is really tall.",
+    "definition": "man",
+    "word_frequency": 307
+  },
+  {
+    "word": "I go to the gym three times a week.",
+    "definition": "a gymnasium",
+    "word_frequency": 2551
+  },
+  {
+    "word": "I need to get a haircut soon.",
+    "definition": "haircut",
+    "word_frequency": 7795
+  },
+  {
+    "word": "I have an appointment with my hairdresser tomorrow.",
+    "definition": "a person who cuts and styles hair",
+    "word_frequency": 16088
+  },
+  {
+    "word": "She changed her hairstyle for the party.",
+    "definition": "the way in which someone's hair is cut or arranged",
+    "word_frequency": 13012
+  },
+  {
+    "word": "The students waited in the hall before class.",
+    "definition": "a corridor in a building",
+    "word_frequency": 1146
+  },
+  {
+    "word": "The hallway was long and narrow.",
+    "definition": "a corridor or passage in a building",
+    "word_frequency": 7546
+  },
+  {
+    "word": "We had ham and eggs for breakfast.",
+    "definition": "meat from the upper part of a pig's leg",
+    "word_frequency": 4235
+  },
+  {
+    "word": "He used a hammer to fix the nail.",
+    "definition": "tool for hitting",
+    "word_frequency": 3971
+  },
+  {
+    "word": "My sister got a new hamster for her birthday.",
+    "definition": "a small, short-tailed rodent often kept as a pet",
+    "word_frequency": 13367
+  },
+  {
+    "word": "She put her keys and phone into her handbag.",
+    "definition": "a small bag carried by women",
+    "word_frequency": 11536
+  },
+  {
+    "word": "They sealed the deal with a firm handshake.",
+    "definition": "An act of clasping a person's hand, used as a greeting or to show agreement.",
+    "word_frequency": 12466
+  },
+  {
+    "word": "Her handwriting is very neat and easy to read.",
+    "definition": "the character or style of a person's writing",
+    "word_frequency": 9344
+  },
+  {
+    "word": "Please put your coat on a hanger.",
+    "definition": "a shaped piece of wood, plastic, or wire with a hook at the top, used for hanging clothes",
+    "word_frequency": 14674
+  },
+  {
+    "word": "Her happiness was evident in her smile.",
+    "definition": "happiness",
+    "word_frequency": 2507
+  },
+  {
+    "word": "The ships docked safely in the harbour.",
+    "definition": "a place on the coast where ships may find shelter",
+    "word_frequency": 21940
+  },
+  {
+    "word": "The farmer stored the hay in the barn.",
+    "definition": "grass that has been mown and dried",
+    "word_frequency": 5753
+  },
+  {
+    "word": "Her eyes were a beautiful hazel.",
+    "definition": "a light brown color; a tree that produces nuts",
+    "word_frequency": 9764
+  },
+  {
+    "word": "I have a terrible headache.",
+    "definition": "a pain in the head",
+    "word_frequency": 5272
+  },
+  {
+    "word": "She wore a colorful headband to keep her hair out of her eyes.",
+    "definition": "a band of material worn around the head",
+    "word_frequency": 20088
+  },
+  {
+    "word": "Please read the heading before you start the chapter.",
+    "definition": "a title at the head of a page or section",
+    "word_frequency": 21658
+  },
+  {
+    "word": "The car's headlight was broken after the accident.",
+    "definition": "a powerful light at the front of a motor vehicle",
+    "word_frequency": 13016
+  },
+  {
+    "word": "I always wear my headphones when I'm on the bus.",
+    "definition": "a device worn on the head to listen to audio",
+    "word_frequency": 6021
+  },
+  {
+    "word": "He put on his headset to join the online meeting.",
+    "definition": "a device worn on the head that has headphones and a microphone",
+    "word_frequency": 9765
+  },
+  {
+    "word": "Good health is important.",
+    "definition": "state of well-being",
+    "word_frequency": 285
+  },
+  {
+    "word": "The human heart beats about 70 times a minute.",
+    "definition": "organ that pumps blood",
+    "word_frequency": 405
+  },
+  {
+    "word": "The heat from the sun was intense.",
+    "definition": "warmth, high temperature",
+    "word_frequency": 1169
+  },
+  {
+    "word": "We turned on the heater because it was cold.",
+    "definition": "a device for heating something",
+    "word_frequency": 9617
+  },
+  {
+    "word": "She wore shoes with high heels.",
+    "definition": "the back part of the human foot",
+    "word_frequency": 4625
+  },
+  {
+    "word": "What is your height?",
+    "definition": "the measurement from base to top",
+    "word_frequency": 2147
+  },
+  {
+    "word": "A helicopter flew low over the city.",
+    "definition": "helicopter",
+    "word_frequency": 4168
+  },
+  {
+    "word": "My little brother was a great helper in the kitchen.",
+    "definition": "a person who helps someone else",
+    "word_frequency": 11675
+  },
+  {
+    "word": "Parsley is a common herb used in cooking.",
+    "definition": "any plant with leaves, seeds, or flowers used for flavoring, food, medicine, or perfume",
+    "word_frequency": 7026
+  },
+  {
+    "word": "I used a yellow highlighter to mark the important points in the textbook.",
+    "definition": "a marker pen used to emphasize text",
+    "word_frequency": 24890
+  },
+  {
+    "word": "She graduated from high school last year.",
+    "definition": "a secondary school for students typically between the ages of 14 and 18",
+    "word_frequency": 12133
+  },
+  {
+    "word": "The highway was busy with traffic.",
+    "definition": "a main road",
+    "word_frequency": 2301
+  },
+  {
+    "word": "The hiker enjoyed the scenic views from the mountain trail.",
+    "definition": "a person who goes on long walks in the countryside",
+    "word_frequency": 17353
+  },
+  {
+    "word": "We enjoy hiking in the mountains every summer.",
+    "definition": "the activity of going for long walks, especially in the country or woods",
+    "word_frequency": 6101
+  },
+  {
+    "word": "We walked up the hill.",
+    "definition": "a naturally raised area of land, smaller than a mountain.",
+    "word_frequency": 1266
+  },
+  {
+    "word": "She put her hands on her hips and smiled.",
+    "definition": "the part of the body between the waist and the top of the thigh",
+    "word_frequency": 2422
+  },
+  {
+    "word": "We saw a hippo swimming in the river at the zoo.",
+    "definition": "a large, thick-skinned African mammal",
+    "word_frequency": 16918
+  },
+  {
+    "word": "The hippopotamus spent most of its day submerged in the river.",
+    "definition": "a large, thick-skinned African mammal",
+    "word_frequency": 34668
+  },
+  {
+    "word": "I love studying history.",
+    "definition": "the study of past events",
+    "word_frequency": 327
+  },
+  {
+    "word": "My hobby is collecting stamps.",
+    "definition": "an activity done regularly in one's leisure time for pleasure",
+    "word_frequency": 5508
+  },
+  {
+    "word": "Ice hockey is very popular in Canada.",
+    "definition": "a team sport played on ice or a field",
+    "word_frequency": 2593
+  },
+  {
+    "word": "There's a hole in my sock.",
+    "definition": "an opening or gap",
+    "word_frequency": 1696
+  },
+  {
+    "word": "I set my favorite news site as my browser's homepage.",
+    "definition": "the introductory page of a website",
+    "word_frequency": 11069
+  },
+  {
+    "word": "He always visits his hometown during the holidays.",
+    "definition": "the town where one was born or grew up",
+    "word_frequency": 5755
+  },
+  {
+    "word": "Honesty is the best policy.",
+    "definition": "truthfulness",
+    "word_frequency": 5123
+  },
+  {
+    "word": "I like to put honey in my tea.",
+    "definition": "sweet food made by bees",
+    "word_frequency": 2813
+  },
+  {
+    "word": "A honeybee buzzed around the flowers in the garden.",
+    "definition": "a bee that produces honey",
+    "word_frequency": 34672
+  },
+  {
+    "word": "She put on her favorite hoodie because it was cold.",
+    "definition": "a hooded sweatshirt",
+    "word_frequency": 11825
+  },
+  {
+    "word": "He had to go to the hospital for an operation.",
+    "definition": "medical institution",
+    "word_frequency": 743
+  },
+  {
+    "word": "We bought a hotdog and a soda at the baseball game.",
+    "definition": "a sausage served in a long bun",
+    "word_frequency": 25802
+  },
+  {
+    "word": "She spends her mornings doing housework.",
+    "definition": "regular work done in cleaning and maintaining a house",
+    "word_frequency": 18084
+  },
+  {
+    "word": "I love to eat hummus with pita bread.",
+    "definition": "a thick paste made from ground chickpeas and sesame seeds, olive oil, lemon, and garlic",
+    "word_frequency": 20093
+  },
+  {
+    "word": "After the long hike, he felt extreme hunger.",
+    "definition": "a feeling of discomfort or weakness caused by lack of food",
+    "word_frequency": 4351
+  },
+  {
+    "word": "Her husband works as a doctor.",
+    "definition": "a married man",
+    "word_frequency": 886
+  },
+  {
+    "word": "They built a small hut by the river.",
+    "definition": "a small, simple dwelling",
+    "word_frequency": 6360
+  },
+  {
+    "word": "Can I see your i.d. please.",
+    "definition": "identification",
+    "word_frequency": 22843
+  },
+  {
+    "word": "Please put some ice in my drink.",
+    "definition": "frozen water",
+    "word_frequency": 887
+  },
+  {
+    "word": "She put pink icing on the birthday cake.",
+    "definition": "A sweet glaze for cakes.",
+    "word_frequency": 10482
+  },
+  {
+    "word": "Can I see your ID, please?",
+    "definition": "identification document",
+    "word_frequency": 1862
+  },
+  {
+    "word": "The children built a small igloo in the backyard after the heavy snowfall.",
+    "definition": "a dome-shaped Eskimo house, typically built from blocks of solid snow",
+    "word_frequency": 31395
+  },
+  {
+    "word": "I have fifty unread emails in my inbox.",
+    "definition": "A folder in an email program or other digital messaging system where new incoming messages are stored.",
+    "word_frequency": 10199
+  },
+  {
+    "word": "The snail moved an inch at a time.",
+    "definition": "a unit of length (2.54 cm)",
+    "word_frequency": 2305
+  },
+  {
+    "word": "The infant slept peacefully in its crib.",
+    "definition": "baby",
+    "word_frequency": 5125
+  },
+  {
+    "word": "I need more information.",
+    "definition": "facts or details",
+    "word_frequency": 294
+  },
+  {
+    "word": "The printer is running low on ink.",
+    "definition": "a colored fluid used for writing, drawing, or printing",
+    "word_frequency": 4551
+  },
+  {
+    "word": "An insect crawled across the table.",
+    "definition": "a small arthropod animal that has six legs and generally one or two pairs of wings",
+    "word_frequency": 4920
+  },
+  {
+    "word": "The inside of the box was empty.",
+    "definition": "the inner part",
+    "word_frequency": 545
+  },
+  {
+    "word": "He has a strong interest in history.",
+    "definition": "the feeling of wanting to know or learn about something",
+    "word_frequency": 569
+  },
+  {
+    "word": "Thomas Edison was a famous inventor.",
+    "definition": "A person who invents something.",
+    "word_frequency": 9121
+  },
+  {
+    "word": "She received an invitation to the party.",
+    "definition": "a request to attend an event",
+    "word_frequency": 4100
+  },
+  {
+    "word": "The bridge was made of iron.",
+    "definition": "a strong, hard magnetic silvery-grey metal",
+    "word_frequency": 1470
+  },
+  {
+    "word": "We visited a beautiful island.",
+    "definition": "a piece of land surrounded by water",
+    "word_frequency": 860
+  },
+  {
+    "word": "Please check each item on the list.",
+    "definition": "item",
+    "word_frequency": 1366
+  },
+  {
+    "word": "The jaguar is a powerful predator.",
+    "definition": "a large spotted cat native to Central and South America",
+    "word_frequency": 10207
+  },
+  {
+    "word": "I like toast with strawberry jam.",
+    "definition": "a sweet spread made from fruit and sugar",
+    "word_frequency": 3916
+  },
+  {
+    "word": "The janitor cleaned the school hallways every evening.",
+    "definition": "A person employed to look after a building.",
+    "word_frequency": 15493
+  },
+  {
+    "word": "She filled the jar with homemade jam.",
+    "definition": "a cylindrical container, typically made of glass",
+    "word_frequency": 5592
+  },
+  {
+    "word": "I like to spread strawberry jelly on my toast.",
+    "definition": "a sweet, clear, semisolid fruit product made by boiling fruit juice with sugar",
+    "word_frequency": 7034
+  },
+  {
+    "word": "She wore beautiful jewellery to the party.",
+    "definition": "personal ornaments, such as necklaces, rings, or bracelets",
+    "word_frequency": 7338
+  },
+  {
+    "word": "She loves wearing antique jewelry.",
+    "definition": "personal ornaments, such as necklaces, rings, or bracelets",
+    "word_frequency": 4238
+  },
+  {
+    "word": "The park was full of joggers enjoying the morning air.",
+    "definition": "a person who jogs, especially regularly",
+    "word_frequency": 30214
+  },
+  {
+    "word": "He told a funny joke.",
+    "definition": "something said or done to cause laughter",
+    "word_frequency": 1645
+  },
+  {
+    "word": "The children shouted with joy.",
+    "definition": "a feeling of great pleasure and happiness",
+    "word_frequency": 2076
+  },
+  {
+    "word": "Please fill the jug with water.",
+    "definition": "a container with a handle and a lip, for holding and pouring liquids",
+    "word_frequency": 13558
+  },
+  {
+    "word": "It's cold, so I'll wear a warm jumper.",
+    "definition": "a sweater (UK); a person who jumps",
+    "word_frequency": 7805
+  },
+  {
+    "word": "Kangaroos are native to Australia.",
+    "definition": "a large Australian marsupial",
+    "word_frequency": 10335
+  },
+  {
+    "word": "We went to a karaoke bar last night and sang our favorite songs.",
+    "definition": "a form of entertainment in which amateur singers sing along to recorded music",
+    "word_frequency": 11387
+  },
+  {
+    "word": "He practices karate twice a week.",
+    "definition": "a martial art",
+    "word_frequency": 9629
+  },
+  {
+    "word": "She put the kettle on to make some tea.",
+    "definition": "a container for boiling water, typically with a lid, spout, and handle",
+    "word_frequency": 9781
+  },
+  {
+    "word": "He keeps his house keys on a small keychain.",
+    "definition": "A chain for holding keys",
+    "word_frequency": 27154
+  },
+  {
+    "word": "She entered the code on the keypad to unlock the door.",
+    "definition": "A small panel of keys or buttons for operating a computer or other electronic device.",
+    "word_frequency": 24611
+  },
+  {
+    "word": "I need two kilos of apples.",
+    "definition": "kilogram (unit of mass)",
+    "word_frequency": 14499
+  },
+  {
+    "word": "The package weighed five kilograms.",
+    "definition": "a unit of mass equal to 1,000 grams",
+    "word_frequency": 14690
+  },
+  {
+    "word": "We drove for ten kilometers before reaching the town.",
+    "definition": "a unit of length, equal to 1,000 meters",
+    "word_frequency": 6551
+  },
+  {
+    "word": "The nearest town is ten kilometres away.",
+    "definition": "a unit of length, equal to 1,000 meters",
+    "word_frequency": 7038
+  },
+  {
+    "word": "My daughter started kindergarten this year.",
+    "definition": "a preschool for young children",
+    "word_frequency": 6839
+  },
+  {
+    "word": "She showed great kindness to the new student.",
+    "definition": "the quality of being friendly, generous, and considerate",
+    "word_frequency": 5067
+  },
+  {
+    "word": "The king ruled his kingdom wisely.",
+    "definition": "the male ruler of an independent state",
+    "word_frequency": 571
+  },
+  {
+    "word": "The little kitty was playing with a ball of yarn.",
+    "definition": "a young cat; a fund of money",
+    "word_frequency": 5208
+  },
+  {
+    "word": "I like to eat kiwi fruit for breakfast.",
+    "definition": "a small, oval fruit with a brown, hairy skin and green flesh; a flightless bird native to New Zealand",
+    "word_frequency": 13032
+  },
+  {
+    "word": "The distance was 10 km.",
+    "definition": "kilometer",
+    "word_frequency": 2820
+  },
+  {
+    "word": "Be careful with that sharp knife.",
+    "definition": "a cutting tool",
+    "word_frequency": 2642
+  },
+  {
+    "word": "She enjoys knitting in the evenings.",
+    "definition": "the activity of making fabric by interlocking loops of yarn",
+    "word_frequency": 11082
+  },
+  {
+    "word": "Turn the knob to open the door.",
+    "definition": "A rounded handle or control.",
+    "word_frequency": 10489
+  },
+  {
+    "word": "I heard a knock at the door.",
+    "definition": "a sharp blow or rap, especially with the knuckles on a door",
+    "word_frequency": 2913
+  },
+  {
+    "word": "The koala was sleeping in the eucalyptus tree.",
+    "definition": "an Australian marsupial",
+    "word_frequency": 19094
+  },
+  {
+    "word": "We conducted the experiment in the science lab.",
+    "definition": "laboratory",
+    "word_frequency": 2600
+  },
+  {
+    "word": "He used a ladder to reach the top shelf.",
+    "definition": "a structure for climbing up or down",
+    "word_frequency": 4838
+  },
+  {
+    "word": "A kind lady helped me find my way.",
+    "definition": "lady",
+    "word_frequency": 969
+  },
+  {
+    "word": "A ladybug landed on my hand in the garden.",
+    "definition": "a small, round beetle with a red or orange back with black spots",
+    "word_frequency": 30227
+  },
+  {
+    "word": "We went swimming in the lake.",
+    "definition": "a large body of water surrounded by land",
+    "word_frequency": 1236
+  },
+  {
+    "word": "The shepherd carried a tiny lamb.",
+    "definition": "a young sheep",
+    "word_frequency": 4925
+  },
+  {
+    "word": "They bought a piece of land.",
+    "definition": "land",
+    "word_frequency": 503
+  },
+  {
+    "word": "We had lasagna for dinner last night.",
+    "definition": "a dish made with layers of pasta, sauce, and cheese",
+    "word_frequency": 17157
+  },
+  {
+    "word": "I ordered a hot latte this morning.",
+    "definition": "A coffee drink made with espresso and steamed milk.",
+    "word_frequency": 13563
+  },
+  {
+    "word": "Her laughter filled the room with joy.",
+    "definition": "the action or sound of laughing",
+    "word_frequency": 4358
+  },
+  {
+    "word": "I need to do the laundry this weekend.",
+    "definition": "clothes and linens that need to be washed",
+    "word_frequency": 4634
+  },
+  {
+    "word": "The children were playing on the lawn.",
+    "definition": "an area of short grass in a garden",
+    "word_frequency": 5210
+  },
+  {
+    "word": "My dad spent all morning fixing the lawnmower.",
+    "definition": "A machine used for cutting grass.",
+    "word_frequency": 29130
+  },
+  {
+    "word": "A single leaf fell from the tree.",
+    "definition": "leaf",
+    "word_frequency": 1342
+  },
+  {
+    "word": "She is a fast learner.",
+    "definition": "a person who is learning",
+    "word_frequency": 10661
+  },
+  {
+    "word": "She bought a new leather jacket.",
+    "definition": "a material made from the skin of an animal",
+    "word_frequency": 2914
+  },
+  {
+    "word": "She added chopped leek to the soup for extra flavor.",
+    "definition": "a long, white and green vegetable with a mild onion flavor",
+    "word_frequency": 23752
+  },
+  {
+    "word": "The leopard is known for its speed.",
+    "definition": "A large wild cat with a spotted coat.",
+    "word_frequency": 9128
+  },
+  {
+    "word": "I like to put fresh lettuce in my salad.",
+    "definition": "a leafy green vegetable",
+    "word_frequency": 9490
+  },
+  {
+    "word": "What level are you on?",
+    "definition": "a position on a scale",
+    "word_frequency": 310
+  },
+  {
+    "word": "The librarian helped me find a book.",
+    "definition": "A person who works in a library.",
+    "word_frequency": 9129
+  },
+  {
+    "word": "Please put the lid back on the pot.",
+    "definition": "cover",
+    "word_frequency": 6640
+  },
+  {
+    "word": "The lightbulb in the lamp needs to be replaced.",
+    "definition": "an electric light",
+    "word_frequency": 28776
+  },
+  {
+    "word": "He used a lighter to ignite the campfire.",
+    "definition": "A device used for lighting cigarettes or fires",
+    "word_frequency": 24327
+  },
+  {
+    "word": "She picked a beautiful lily from the garden.",
+    "definition": "a type of flower",
+    "word_frequency": 5446
+  },
+  {
+    "word": "I like to add a slice of lime to my drink.",
+    "definition": "a small green citrus fruit",
+    "word_frequency": 6202
+  },
+  {
+    "word": "Please stand in line.",
+    "definition": "line",
+    "word_frequency": 253
+  },
+  {
+    "word": "The lioness protected her cubs fiercely.",
+    "definition": "a female lion",
+    "word_frequency": 27482
+  },
+  {
+    "word": "She bit her lip nervously.",
+    "definition": "either of the two fleshy folds surrounding the mouth",
+    "word_frequency": 2915
+  },
+  {
+    "word": "She applied a bright red lipstick before leaving.",
+    "definition": "cosmetic for coloring the lips",
+    "word_frequency": 7924
+  },
+  {
+    "word": "I made a shopping list.",
+    "definition": "a series of items",
+    "word_frequency": 439
+  },
+  {
+    "word": "The bottle contains one liter of water.",
+    "definition": "a metric unit of volume equal to 1,000 cubic centimeters",
+    "word_frequency": 10937
+  },
+  {
+    "word": "Please buy a litre of milk.",
+    "definition": "a unit of volume",
+    "word_frequency": 10345
+  },
+  {
+    "word": "A small lizard scurried across the rock.",
+    "definition": "a reptile with a long body and tail, typically four legs, and a movable eyelid",
+    "word_frequency": 8630
+  },
+  {
+    "word": "She bought a fresh loaf of bread.",
+    "definition": "A quantity of bread baked in one piece.",
+    "word_frequency": 10496
+  },
+  {
+    "word": "What is the exact location of the meeting?",
+    "definition": "place, position",
+    "word_frequency": 1173
+  },
+  {
+    "word": "He put his books in his locker.",
+    "definition": "a small lockable cupboard",
+    "word_frequency": 5447
+  },
+  {
+    "word": "Please enter your login details.",
+    "definition": "The act of entering a system or website.",
+    "word_frequency": 10497
+  },
+  {
+    "word": "The child happily licked his strawberry lollipop.",
+    "definition": "a flat, rounded candy on a stick",
+    "word_frequency": 16529
+  },
+  {
+    "word": "The lorry delivered the goods to the warehouse.",
+    "definition": "a large vehicle for transporting goods by road (British English)",
+    "word_frequency": 15303
+  },
+  {
+    "word": "She applied sunscreen lotion before going to the beach.",
+    "definition": "a thick, smooth liquid preparation for the skin",
+    "word_frequency": 11089
+  },
+  {
+    "word": "Good luck with your exam!",
+    "definition": "success or failure apparently brought by chance",
+    "word_frequency": 1064
+  },
+  {
+    "word": "Please put your luggage in the overhead compartment.",
+    "definition": "suitcases or other bags for a traveler's belongings",
+    "word_frequency": 6733
+  },
+  {
+    "word": "She packed her sandwich in her lunchbox.",
+    "definition": "a container for carrying a packed lunch",
+    "word_frequency": 28462
+  },
+  {
+    "word": "My favorite dish is macaroni and cheese.",
+    "definition": "A type of pasta in the shape of small tubes",
+    "word_frequency": 17375
+  },
+  {
+    "word": "The washing machine broke down.",
+    "definition": "device, apparatus",
+    "word_frequency": 1090
+  },
+  {
+    "word": "I read an interesting article in a magazine.",
+    "definition": "a periodical publication containing articles and illustrations",
+    "word_frequency": 1473
+  },
+  {
+    "word": "The magician performed a trick with real magic.",
+    "definition": "supernatural power",
+    "word_frequency": 1417
+  },
+  {
+    "word": "The magician pulled a rabbit out of his hat.",
+    "definition": "a person who performs magic tricks",
+    "word_frequency": 9921
+  },
+  {
+    "word": "I checked the mailbox for letters.",
+    "definition": "a private box for mail, or a public box for posting letters",
+    "word_frequency": 13386
+  },
+  {
+    "word": "The mailman delivers letters every weekday.",
+    "definition": "mailman (a person who delivers mail)",
+    "word_frequency": 23462
+  },
+  {
+    "word": "She put on some makeup before going out.",
+    "definition": "cosmetics applied to the face to improve or change the appearance",
+    "word_frequency": 2739
+  },
+  {
+    "word": "We went to the mall to buy new clothes.",
+    "definition": "a large enclosed shopping area",
+    "word_frequency": 3226
+  },
+  {
+    "word": "\"Can I help you, mam?\" the shop assistant asked.",
+    "definition": "mother (informal); madam (Irish/Scottish)",
+    "word_frequency": 14915
+  },
+  {
+    "word": "I love the sweet taste of a ripe mango.",
+    "definition": "a tropical fruit",
+    "word_frequency": 9497
+  },
+  {
+    "word": "She spread margarine on her toast instead of butter.",
+    "definition": "a butter substitute made from vegetable oils",
+    "word_frequency": 24939
+  },
+  {
+    "word": "There's a strange mark on the wall.",
+    "definition": "a visible impression or stain",
+    "word_frequency": 777
+  },
+  {
+    "word": "Please use a permanent marker to write on the board.",
+    "definition": "an object used to indicate a position, place, or route",
+    "word_frequency": 6105
+  },
+  {
+    "word": "Let's go to the market to buy fresh vegetables.",
+    "definition": "place for buying and selling",
+    "word_frequency": 423
+  },
+  {
+    "word": "I like to spread marmalade on my toast in the morning.",
+    "definition": "A preserve made from citrus fruit, especially oranges.",
+    "word_frequency": 23177
+  },
+  {
+    "word": "We roasted marshmallows over the campfire.",
+    "definition": "a soft, spongy confection",
+    "word_frequency": 16533
+  },
+  {
+    "word": "He wore a mask to the costume party.",
+    "definition": "a covering for the face",
+    "word_frequency": 3115
+  },
+  {
+    "word": "We watched a football match.",
+    "definition": "game, pair",
+    "word_frequency": 631
+  },
+  {
+    "word": "He lit the candle with a match from the matchbox.",
+    "definition": "Small box for matches",
+    "word_frequency": 30245
+  },
+  {
+    "word": "My favorite subject in school is math.",
+    "definition": "the study of numbers, shapes, and quantities",
+    "word_frequency": 2473
+  },
+  {
+    "word": "What's the matter?",
+    "definition": "a subject or situation",
+    "word_frequency": 342
+  },
+  {
+    "word": "I need a new mattress for my bed.",
+    "definition": "A fabric case filled with soft material, used for sleeping on.",
+    "word_frequency": 8139
+  },
+  {
+    "word": "Would you like some mayonnaise with your fries?",
+    "definition": "a thick, creamy dressing consisting of egg yolks, oil, vinegar, and seasonings",
+    "word_frequency": 14704
+  },
+  {
+    "word": "What is the meaning of this word?",
+    "definition": "what is meant by a word, text, concept, or action",
+    "word_frequency": 1148
+  },
+  {
+    "word": "She served spaghetti with large meatballs for dinner.",
+    "definition": "A ball of ground meat, often mixed with breadcrumbs and seasonings.",
+    "word_frequency": 15510
+  },
+  {
+    "word": "My grandmother makes the best meatloaf.",
+    "definition": "A dish of ground meat mixed with other ingredients and formed into a loaf.",
+    "word_frequency": 24634
+  },
+  {
+    "word": "The mechanic fixed my car's engine.",
+    "definition": "mechanic",
+    "word_frequency": 4178
+  },
+  {
+    "word": "He won a gold medal in the Olympics.",
+    "definition": "a metal disk given as an award",
+    "word_frequency": 2740
+  },
+  {
+    "word": "You should take your medicine.",
+    "definition": "the science of treating illness",
+    "word_frequency": 1495
+  },
+  {
+    "word": "We have a meeting at 10 AM.",
+    "definition": "gathering, assembly",
+    "word_frequency": 600
+  },
+  {
+    "word": "I bought a sweet cantaloupe melon at the market.",
+    "definition": "a large, round fruit with sweet, juicy flesh",
+    "word_frequency": 13225
+  },
+  {
+    "word": "He is a member of the club.",
+    "definition": "a person belonging to a group",
+    "word_frequency": 364
+  },
+  {
+    "word": "I have a good memory for faces.",
+    "definition": "the faculty by which the mind stores and remembers information",
+    "word_frequency": 1295
+  },
+  {
+    "word": "I received a message from my friend.",
+    "definition": "a communication sent or delivered",
+    "word_frequency": 892
+  },
+  {
+    "word": "The bridge is made of metal.",
+    "definition": "a solid material that is typically hard, shiny, malleable, fusible, and ductile, with good electrical and thermal conductivity.",
+    "word_frequency": 1269
+  },
+  {
+    "word": "The room is three meters wide.",
+    "definition": "unit of length; measuring device",
+    "word_frequency": 3677
+  },
+  {
+    "word": "The swimming pool is 25 metres long.",
+    "definition": "the fundamental unit of length in the metric system, equal to 100 centimeters",
+    "word_frequency": 3926
+  },
+  {
+    "word": "Heat the leftovers in the microwave.",
+    "definition": "an oven that heats food using microwave radiation",
+    "word_frequency": 6741
+  },
+  {
+    "word": "We usually have lunch around midday.",
+    "definition": "the middle of the day; noon",
+    "word_frequency": 12332
+  },
+  {
+    "word": "The clock struck midnight.",
+    "definition": "12 o'clock at night",
+    "word_frequency": 3117
+  },
+  {
+    "word": "The store is about a mile from here.",
+    "definition": "a unit of distance (approx. 1.6 km)",
+    "word_frequency": 893
+  },
+  {
+    "word": "I ordered a chocolate milkshake with my burger.",
+    "definition": "a cold drink made of milk, ice cream, and flavoring",
+    "word_frequency": 19380
+  },
+  {
+    "word": "They bought a minivan for their growing family.",
+    "definition": "a small van, typically for passengers",
+    "word_frequency": 18631
+  },
+  {
+    "word": "She looked at herself in the mirror.",
+    "definition": "a reflective surface, typically glass coated with a metallic amalgam",
+    "word_frequency": 2390
+  },
+  {
+    "word": "I made a mistake on the test.",
+    "definition": "an error or wrong action",
+    "word_frequency": 1672
+  },
+  {
+    "word": "She wore warm mittens to keep her hands from freezing.",
+    "definition": "mitten (a type of glove that covers the four fingers together and the thumb separately)",
+    "word_frequency": 23476
+  },
+  {
+    "word": "She used an electric mixer to beat the eggs.",
+    "definition": "a device for mixing; a social gathering",
+    "word_frequency": 10357
+  },
+  {
+    "word": "Just a moment, please.",
+    "definition": "a very brief period of time",
+    "word_frequency": 478
+  },
+  {
+    "word": "I bought a new computer monitor.",
+    "definition": "screen; supervisor",
+    "word_frequency": 2825
+  },
+  {
+    "word": "The monkey swung from tree to tree in the jungle.",
+    "definition": "a primate typically having a long tail and living in trees",
+    "word_frequency": 4559
+  },
+  {
+    "word": "The child was afraid of the monster under his bed.",
+    "definition": "a large, frightening creature",
+    "word_frequency": 2311
+  },
+  {
+    "word": "He's in a good mood today.",
+    "definition": "mood",
+    "word_frequency": 2518
+  },
+  {
+    "word": "The moon was full and bright last night.",
+    "definition": "Earth's natural satellite",
+    "word_frequency": 1597
+  },
+  {
+    "word": "The garden was bathed in soft moonlight.",
+    "definition": "the light of the moon",
+    "word_frequency": 8868
+  },
+  {
+    "word": "Please use the mop to clean up the spill.",
+    "definition": "an implement for cleaning floors",
+    "word_frequency": 12012
+  },
+  {
+    "word": "A mosquito bit me on the arm, and now it's itchy.",
+    "definition": "a small flying insect that bites",
+    "word_frequency": 8870
+  },
+  {
+    "word": "We stayed at a small motel on our road trip.",
+    "definition": "a roadside hotel designed for motorists",
+    "word_frequency": 8871
+  },
+  {
+    "word": "A moth flew into the light.",
+    "definition": "moth",
+    "word_frequency": 10360
+  },
+  {
+    "word": "He rode his motorbike through the winding country roads.",
+    "definition": "A two-wheeled motor vehicle.",
+    "word_frequency": 15719
+  },
+  {
+    "word": "He rides a powerful motorcycle.",
+    "definition": "motorcycle",
+    "word_frequency": 4561
+  },
+  {
+    "word": "He decided to grow a moustache for Movember.",
+    "definition": "a strip of hair left to grow above the upper lip",
+    "word_frequency": 14716
+  },
+  {
+    "word": "The lawn mower broke down.",
+    "definition": "a machine for cutting grass",
+    "word_frequency": 17644
+  },
+  {
+    "word": "I love pizza with extra mozzarella.",
+    "definition": "a type of Italian cheese",
+    "word_frequency": 17645
+  },
+  {
+    "word": "The children played in the mud after the rain.",
+    "definition": "mud",
+    "word_frequency": 4181
+  },
+  {
+    "word": "I had a blueberry muffin for breakfast.",
+    "definition": "a small, sweet, quick bread",
+    "word_frequency": 12669
+  },
+  {
+    "word": "I like to drink my coffee from a big mug.",
+    "definition": "a large cup",
+    "word_frequency": 7689
+  },
+  {
+    "word": "We visited the natural history museum yesterday.",
+    "definition": "place for exhibiting artifacts",
+    "word_frequency": 1566
+  },
+  {
+    "word": "We picked some wild mushrooms in the forest.",
+    "definition": "a type of fungus",
+    "word_frequency": 7691
+  },
+  {
+    "word": "My brother is a professional musician.",
+    "definition": "a person who plays a musical instrument",
+    "word_frequency": 4419
+  },
+  {
+    "word": "He decided to grow a mustache for Movember.",
+    "definition": "a strip of hair growing above the upper lip",
+    "word_frequency": 11707
+  },
+  {
+    "word": "Would you like some mustard with your hot dog?",
+    "definition": "a pungent yellow or brown paste made from mustard seeds, used as a condiment",
+    "word_frequency": 7937
+  },
+  {
+    "word": "We ordered chicken curry with a side of naan bread.",
+    "definition": "leavened flatbread",
+    "word_frequency": 33938
+  },
+  {
+    "word": "She painted her fingernails red.",
+    "definition": "hard covering on finger/toe; metal fastener",
+    "word_frequency": 3678
+  },
+  {
+    "word": "My nana always bakes the best cookies.",
+    "definition": "grandmother (informal)",
+    "word_frequency": 9799
+  },
+  {
+    "word": "The nanny took the children to the park.",
+    "definition": "A person, typically a woman, employed to look after a child in its own home.",
+    "word_frequency": 9140
+  },
+  {
+    "word": "I like to take a nap after lunch.",
+    "definition": "a short sleep",
+    "word_frequency": 6561
+  },
+  {
+    "word": "Please put a napkin on your lap before you eat.",
+    "definition": "a piece of cloth or paper used at meals",
+    "word_frequency": 16329
+  },
+  {
+    "word": "The nation celebrated its independence day.",
+    "definition": "a large body of people united by common descent, history, culture, or language, inhabiting a particular country or territory",
+    "word_frequency": 1126
+  },
+  {
+    "word": "We love spending time in nature.",
+    "definition": "the phenomena of the physical world collectively",
+    "word_frequency": 919
+  },
+  {
+    "word": "He wore a scarf around his neck.",
+    "definition": "neck",
+    "word_frequency": 1803
+  },
+  {
+    "word": "She wore a beautiful pearl necklace.",
+    "definition": "an ornament worn around the neck",
+    "word_frequency": 6296
+  },
+  {
+    "word": "My neighbor helped me with my garden.",
+    "definition": "a person living next door",
+    "word_frequency": 3485
+  },
+  {
+    "word": "Our neighborhood is very quiet.",
+    "definition": "a district, especially one forming a community within a town or city",
+    "word_frequency": 2267
+  },
+  {
+    "word": "Our neighbourhood is very quiet.",
+    "definition": "the area where one lives",
+    "word_frequency": 5520
+  },
+  {
+    "word": "My nephew is visiting next week.",
+    "definition": "a son of one's brother or sister",
+    "word_frequency": 4993
+  },
+  {
+    "word": "The bird built a nest in the tree.",
+    "definition": "nest",
+    "word_frequency": 4563
+  },
+  {
+    "word": "I bought a magazine from the newsstand at the station.",
+    "definition": "stall selling newspapers and magazines",
+    "word_frequency": 33946
+  },
+  {
+    "word": "I found a nickel on the sidewalk.",
+    "definition": "a five-cent coin",
+    "word_frequency": 6562
+  },
+  {
+    "word": "His nickname is \"Speedy\" because he runs so fast.",
+    "definition": "a familiar or humorous name given to a person or thing instead of or as well as the real name",
+    "word_frequency": 5772
+  },
+  {
+    "word": "My niece is coming to visit next week.",
+    "definition": "the daughter of one's brother or sister",
+    "word_frequency": 6563
+  },
+  {
+    "word": "It's much colder during the nighttime.",
+    "definition": "the time between evening and morning",
+    "word_frequency": 14119
+  },
+  {
+    "word": "I love to eat chicken noodle soup.",
+    "definition": "a strip of pasta or similar dough",
+    "word_frequency": 7815
+  },
+  {
+    "word": "The city is located to the north.",
+    "definition": "one of the four main points of the compass",
+    "word_frequency": 376
+  },
+  {
+    "word": "The storm is moving towards the northeast.",
+    "definition": "the direction between north and east",
+    "word_frequency": 4639
+  },
+  {
+    "word": "I left a note on the fridge.",
+    "definition": "a short written message",
+    "word_frequency": 796
+  },
+  {
+    "word": "I always carry a small notepad and pen with me.",
+    "definition": "a pad of paper for writing notes; a simple text editor",
+    "word_frequency": 24079
+  },
+  {
+    "word": "I like to eat nuts as a healthy snack.",
+    "definition": "a fruit with a hard shell",
+    "word_frequency": 3164
+  },
+  {
+    "word": "Oats are a healthy breakfast choice.",
+    "definition": "a cereal plant cultivated for its edible grain",
+    "word_frequency": 11851
+  },
+  {
+    "word": "I like to eat oatmeal for breakfast.",
+    "definition": "a type of porridge made from oats",
+    "word_frequency": 12342
+  },
+  {
+    "word": "The Pacific Ocean is the largest ocean.",
+    "definition": "very large sea",
+    "word_frequency": 1598
+  },
+  {
+    "word": "An octopus can change its color to blend in with its surroundings.",
+    "definition": "a marine mollusk with eight arms",
+    "word_frequency": 10952
+  },
+  {
+    "word": "We need to change the oil in the car.",
+    "definition": "oil",
+    "word_frequency": 683
+  },
+  {
+    "word": "Would you like some OJ with your breakfast?",
+    "definition": "orange juice (informal)",
+    "word_frequency": 14935
+  },
+  {
+    "word": "I like olives in my salad.",
+    "definition": "a small oval fruit; a greenish-brown color",
+    "word_frequency": 4420
+  },
+  {
+    "word": "He cooked a cheese omelet for breakfast.",
+    "definition": "A dish made from beaten eggs cooked in a pan.",
+    "word_frequency": 31886
+  },
+  {
+    "word": "She made a delicious cheese omelette for breakfast.",
+    "definition": "A dish of beaten eggs cooked in a pan",
+    "word_frequency": 24357
+  },
+  {
+    "word": "I added some fresh oregano to the pasta sauce.",
+    "definition": "a fragrant herb used in cooking",
+    "word_frequency": 25871
+  },
+  {
+    "word": "Let's go play outside.",
+    "definition": "the exterior part",
+    "word_frequency": 467
+  },
+  {
+    "word": "She baked a cake in the oven.",
+    "definition": "an enclosed compartment for cooking and heating food",
+    "word_frequency": 4710
+  },
+  {
+    "word": "An owl hooted in the distance.",
+    "definition": "a nocturnal bird of prey",
+    "word_frequency": 6121
+  },
+  {
+    "word": "The dog ran to its owner.",
+    "definition": "a person who owns something.",
+    "word_frequency": 1241
+  },
+  {
+    "word": "The farmer used an ox to pull the plow.",
+    "definition": "a castrated bull, used as a draft animal",
+    "word_frequency": 10820
+  },
+  {
+    "word": "He bought a pack of cards.",
+    "definition": "a group of things or animals",
+    "word_frequency": 1709
+  },
+  {
+    "word": "I received a package in the mail today.",
+    "definition": "an object or set of objects wrapped or packed in a container",
+    "word_frequency": 2429
+  },
+  {
+    "word": "The child carried a small pail to the sandbox.",
+    "definition": "a bucket",
+    "word_frequency": 26202
+  },
+  {
+    "word": "I felt a sharp pain in my leg.",
+    "definition": "physical suffering or discomfort",
+    "word_frequency": 813
+  },
+  {
+    "word": "She dipped her paintbrush into the blue paint and began to color the canvas.",
+    "definition": "a brush used for applying paint",
+    "word_frequency": 32305
+  },
+  {
+    "word": "The painter used bright colors in his landscape.",
+    "definition": "an artist who paints pictures",
+    "word_frequency": 5609
+  },
+  {
+    "word": "She bought a beautiful painting for her living room.",
+    "definition": "a picture made with paint",
+    "word_frequency": 1888
+  },
+  {
+    "word": "I need a new pair of shoes.",
+    "definition": "two of something",
+    "word_frequency": 1530
+  },
+  {
+    "word": "He changed into his pajamas before going to bed.",
+    "definition": "loose-fitting garments worn for sleeping",
+    "word_frequency": 13407
+  },
+  {
+    "word": "The Queen lives in a beautiful palace.",
+    "definition": "the official residence of a sovereign, archbishop, bishop, or other exalted person",
+    "word_frequency": 2475
+  },
+  {
+    "word": "She held the small bird in the palm of her hand.",
+    "definition": "the inner surface of the hand",
+    "word_frequency": 3551
+  },
+  {
+    "word": "Heat the oil in a frying pan.",
+    "definition": "a metal container used for cooking",
+    "word_frequency": 2747
+  },
+  {
+    "word": "The panda is a symbol of wildlife conservation.",
+    "definition": "a large bear-like mammal native to China",
+    "word_frequency": 8408
+  },
+  {
+    "word": "The pant leg was torn.",
+    "definition": "a single leg covering (usually plural 'pants')",
+    "word_frequency": 2341
+  },
+  {
+    "word": "I added a pinch of paprika to the goulash for color and flavor.",
+    "definition": "A red spice made from dried peppers.",
+    "word_frequency": 21188
+  },
+  {
+    "word": "Please read the first paragraph of the article.",
+    "definition": "section of text",
+    "word_frequency": 4849
+  },
+  {
+    "word": "The postman delivered a large parcel this morning.",
+    "definition": "An object or collection of objects wrapped in paper in order to be carried or sent by mail.",
+    "word_frequency": 8153
+  },
+  {
+    "word": "The parrot can imitate human speech.",
+    "definition": "a tropical bird",
+    "word_frequency": 10521
+  },
+  {
+    "word": "This is an important part of the project.",
+    "definition": "a piece or segment of something",
+    "word_frequency": 136
+  },
+  {
+    "word": "We are going to a party tonight.",
+    "definition": "party",
+    "word_frequency": 255
+  },
+  {
+    "word": "Please enter your passcode to unlock the phone.",
+    "definition": "a sequence of numbers or characters used to gain access",
+    "word_frequency": 29190
+  },
+  {
+    "word": "The bus was full of passengers.",
+    "definition": "traveler, rider",
+    "word_frequency": 2787
+  },
+  {
+    "word": "You need a passport to travel internationally.",
+    "definition": "an official document issued by a government, certifying the holder's identity and citizenship",
+    "word_frequency": 4712
+  },
+  {
+    "word": "Learn from the past.",
+    "definition": "the time that has gone by",
+    "word_frequency": 357
+  },
+  {
+    "word": "Please copy and paste the text into the document.",
+    "definition": "a thick, soft, moist substance; a computer command to insert copied data",
+    "word_frequency": 5778
+  },
+  {
+    "word": "She bought a delicious pastry from the bakery.",
+    "definition": "a baked food made from dough",
+    "word_frequency": 9934
+  },
+  {
+    "word": "Follow the path through the forest.",
+    "definition": "narrow way, route",
+    "word_frequency": 1567
+  },
+  {
+    "word": "You need a lot of patience to teach young children.",
+    "definition": "the ability to wait calmly",
+    "word_frequency": 3731
+  },
+  {
+    "word": "We had dinner on the patio last night.",
+    "definition": "a paved outdoor area adjoining a house",
+    "word_frequency": 11238
+  },
+  {
+    "word": "The wallpaper had a floral pattern.",
+    "definition": "a repeated decorative design",
+    "word_frequency": 2042
+  },
+  {
+    "word": "There was a brief pause before she continued speaking.",
+    "definition": "a temporary stop in action or speech",
+    "word_frequency": 5077
+  },
+  {
+    "word": "We walked along the pavement to the shop.",
+    "definition": "a paved surface, especially a sidewalk",
+    "word_frequency": 8881
+  },
+  {
+    "word": "The dog lifted its paw to shake hands.",
+    "definition": "an animal's foot",
+    "word_frequency": 10678
+  },
+  {
+    "word": "I bought a new PC for gaming.",
+    "definition": "personal computer",
+    "word_frequency": 2155
+  },
+  {
+    "word": "I love eating a fresh peach in the summer.",
+    "definition": "a round stone fruit with juicy yellow flesh and downy skin",
+    "word_frequency": 7061
+  },
+  {
+    "word": "Some people are allergic to peanuts.",
+    "definition": "a leguminous plant of tropical America that bears pods underground, containing edible seeds",
+    "word_frequency": 5869
+  },
+  {
+    "word": "This item costs fifty pence.",
+    "definition": "plural of penny (British currency)",
+    "word_frequency": 8275
+  },
+  {
+    "word": "Penguins are excellent swimmers.",
+    "definition": "a large flightless seabird of the southern hemisphere",
+    "word_frequency": 6949
+  },
+  {
+    "word": "I found a shiny penny on the sidewalk.",
+    "definition": "penny",
+    "word_frequency": 4572
+  },
+  {
+    "word": "Please pass the salt and pepper.",
+    "definition": "a pungent spice or a type of vegetable",
+    "word_frequency": 4119
+  },
+  {
+    "word": "I'd like a pizza with extra pepperoni, please.",
+    "definition": "a spicy Italian sausage, often used on pizza",
+    "word_frequency": 19894
+  },
+  {
+    "word": "She sprayed some perfume on her wrist.",
+    "definition": "a fragrant liquid",
+    "word_frequency": 7250
+  },
+  {
+    "word": "The rose had soft, velvety petals.",
+    "definition": "each of the segments of the corolla of a flower, which are typically colored",
+    "word_frequency": 10958
+  },
+  {
+    "word": "I need to pick up my prescription from the pharmacy.",
+    "definition": "a shop where medicines are prepared and sold",
+    "word_frequency": 6123
+  },
+  {
+    "word": "I need to make a photocopy of this document.",
+    "definition": "a photographic copy of a document",
+    "word_frequency": 29193
+  },
+  {
+    "word": "She showed me an old photograph of her grandparents.",
+    "definition": "a picture taken with a camera",
+    "word_frequency": 2960
+  },
+  {
+    "word": "The photographer captured the beautiful sunset.",
+    "definition": "person who takes photos",
+    "word_frequency": 3284
+  },
+  {
+    "word": "You can have your pick of any dessert.",
+    "definition": "choice, selection",
+    "word_frequency": 723
+  },
+  {
+    "word": "We're going for a picnic in the park this afternoon.",
+    "definition": "an outing where a meal is eaten outdoors",
+    "word_frequency": 6752
+  },
+  {
+    "word": "Can I have a piece of cake?",
+    "definition": "a part of something",
+    "word_frequency": 798
+  },
+  {
+    "word": "The little piggy went to market.",
+    "definition": "A small pig (often used by children).",
+    "word_frequency": 13588
+  },
+  {
+    "word": "He takes a pill every morning for his allergies.",
+    "definition": "a small round mass of solid medicine for swallowing whole",
+    "word_frequency": 4714
+  },
+  {
+    "word": "I rest my head on a soft pillow.",
+    "definition": "a soft support for the head",
+    "word_frequency": 5361
+  },
+  {
+    "word": "The pilot announced that we were about to land.",
+    "definition": "a person who operates the flying controls of an aircraft",
+    "word_frequency": 2197
+  },
+  {
+    "word": "She used a pin to attach the note to the board.",
+    "definition": "small, thin piece of metal with a sharp point",
+    "word_frequency": 3285
+  },
+  {
+    "word": "I love the sweet taste of fresh pineapple.",
+    "definition": "a large tropical fruit",
+    "word_frequency": 9261
+  },
+  {
+    "word": "I'll have a pint of milk, please.",
+    "definition": "a unit of liquid or dry capacity, equal to one half of a quart",
+    "word_frequency": 8279
+  },
+  {
+    "word": "The water pipe burst during the winter.",
+    "definition": "a tube used to convey water, gas, oil, etc.",
+    "word_frequency": 3430
+  },
+  {
+    "word": "We ate hummus with warm pita bread.",
+    "definition": "a type of flatbread",
+    "word_frequency": 20157
+  },
+  {
+    "word": "We decided to go to the new pizzeria for dinner.",
+    "definition": "a pizza restaurant",
+    "word_frequency": 23803
+  },
+  {
+    "word": "He changed into his PJs before bed.",
+    "definition": "pajamas (informal)",
+    "word_frequency": 14946
+  },
+  {
+    "word": "What's your plan for the weekend?",
+    "definition": "a detailed proposal",
+    "word_frequency": 426
+  },
+  {
+    "word": "Earth is a beautiful planet.",
+    "definition": "a large celestial body orbiting a star",
+    "word_frequency": 1648
+  },
+  {
+    "word": "This bottle is made of plastic.",
+    "definition": "a synthetic material",
+    "word_frequency": 2236
+  },
+  {
+    "word": "He is a key player on the team.",
+    "definition": "someone who plays",
+    "word_frequency": 417
+  },
+  {
+    "word": "The children ran to the playground after school.",
+    "definition": "an outdoor area provided for children to play on",
+    "word_frequency": 6853
+  },
+  {
+    "word": "The children always look forward to playtime.",
+    "definition": "a period of time for playing",
+    "word_frequency": 20158
+  },
+  {
+    "word": "We met in the main plaza of the city.",
+    "definition": "a public square or open space in a city or town",
+    "word_frequency": 5781
+  },
+  {
+    "word": "She picked a ripe plum from the tree.",
+    "definition": "a sweet, fleshy, oval fruit with a single large seed",
+    "word_frequency": 9661
+  },
+  {
+    "word": "We called a plumber to fix the leaky faucet.",
+    "definition": "A person who installs and repairs pipes and fittings for water, gas, or sanitation",
+    "word_frequency": 12515
+  },
+  {
+    "word": "He put his keys in his pocket.",
+    "definition": "a small bag sewn into clothing",
+    "word_frequency": 2344
+  },
+  {
+    "word": "What's the point of this discussion?",
+    "definition": "specific position or idea",
+    "word_frequency": 223
+  },
+  {
+    "word": "Call the police if you see anything suspicious.",
+    "definition": "the civil force of a state, responsible for the prevention and detection of crime",
+    "word_frequency": 386
+  },
+  {
+    "word": "Ducks were swimming on the pond.",
+    "definition": "a small body of still water",
+    "word_frequency": 5221
+  },
+  {
+    "word": "My little sister loves riding her pony.",
+    "definition": "a small horse",
+    "word_frequency": 6654
+  },
+  {
+    "word": "The dog did a poo in the garden.",
+    "definition": "feces",
+    "word_frequency": 9808
+  },
+  {
+    "word": "My aunt has a small white poodle.",
+    "definition": "a breed of dog with a curly coat",
+    "word_frequency": 19661
+  },
+  {
+    "word": "Let's go for a swim in the pool.",
+    "definition": "a small body of still water; a swimming pool",
+    "word_frequency": 1676
+  },
+  {
+    "word": "The dog left a poop on the sidewalk.",
+    "definition": "feces; excrement",
+    "word_frequency": 8281
+  },
+  {
+    "word": "We ate popcorn while watching the movie.",
+    "definition": "popcorn",
+    "word_frequency": 7471
+  },
+  {
+    "word": "My poppa always tells the best stories before bedtime.",
+    "definition": "father (informal)",
+    "word_frequency": 34803
+  },
+  {
+    "word": "We sat on the porch and watched the sunset.",
+    "definition": "a covered shelter projecting in front of the entrance of a building",
+    "word_frequency": 6304
+  },
+  {
+    "word": "We had roast pork for dinner.",
+    "definition": "meat from a pig",
+    "word_frequency": 4853
+  },
+  {
+    "word": "I like to eat hot porridge for breakfast on cold mornings.",
+    "definition": "a dish made from oats boiled in water or milk",
+    "word_frequency": 17409
+  },
+  {
+    "word": "She sent me a beautiful postcard from Paris.",
+    "definition": "A card for sending messages by post without an envelope",
+    "word_frequency": 11242
+  },
+  {
+    "word": "Please write your full address, including the postcode.",
+    "definition": "a code of letters and digits added to a postal address to aid the sorting of mail",
+    "word_frequency": 20163
+  },
+  {
+    "word": "She hung a poster of her favorite band on the wall.",
+    "definition": "a large printed picture or notice",
+    "word_frequency": 3790
+  },
+  {
+    "word": "The postman delivered a letter to our door this morning.",
+    "definition": "A person who delivers mail.",
+    "word_frequency": 17686
+  },
+  {
+    "word": "She cooked the soup in a large pot.",
+    "definition": "a round container",
+    "word_frequency": 2701
+  },
+  {
+    "word": "The baby weighs ten pounds.",
+    "definition": "a unit of weight or currency",
+    "word_frequency": 2158
+  },
+  {
+    "word": "She put some face powder on her nose.",
+    "definition": "fine dry particles of a substance",
+    "word_frequency": 3433
+  },
+  {
+    "word": "Regular practice is essential to learn a new language.",
+    "definition": "repeated exercise to improve skill",
+    "word_frequency": 763
+  },
+  {
+    "word": "She pushed the baby in the pram through the park.",
+    "definition": "baby carriage",
+    "word_frequency": 26888
+  },
+  {
+    "word": "I ordered a delicious prawn curry for dinner.",
+    "definition": "A marine crustacean, similar to a large shrimp.",
+    "word_frequency": 21198
+  },
+  {
+    "word": "My daughter started preschool last month.",
+    "definition": "a school for children who are too young to attend kindergarten",
+    "word_frequency": 10232
+  },
+  {
+    "word": "I bought a warm pretzel from the street vendor.",
+    "definition": "a type of baked snack",
+    "word_frequency": 20683
+  },
+  {
+    "word": "What is the price of this book?",
+    "definition": "price",
+    "word_frequency": 490
+  },
+  {
+    "word": "The princess wore a beautiful gown.",
+    "definition": "a daughter of a monarch",
+    "word_frequency": 2159
+  },
+  {
+    "word": "My printer ran out of ink.",
+    "definition": "a machine that prints text or images",
+    "word_frequency": 5613
+  },
+  {
+    "word": "She won the first prize in the competition.",
+    "definition": "award; reward",
+    "word_frequency": 1923
+  },
+  {
+    "word": "The teacher used a projector to display the presentation slides.",
+    "definition": "a device that projects an image onto a screen",
+    "word_frequency": 11724
+  },
+  {
+    "word": "Let's go to the pub for a drink.",
+    "definition": "a public house; bar",
+    "word_frequency": 3554
+  },
+  {
+    "word": "For dessert, we had chocolate pudding.",
+    "definition": "a sweet dessert",
+    "word_frequency": 8895
+  },
+  {
+    "word": "The children jumped in the puddles after the rain.",
+    "definition": "a small pool of liquid, especially rain",
+    "word_frequency": 14336
+  },
+  {
+    "word": "What is the purpose of this meeting?",
+    "definition": "the reason for which something is done or created or for which something exists",
+    "word_frequency": 1130
+  },
+  {
+    "word": "She keeps her keys in her purse.",
+    "definition": "a small bag for money or personal items",
+    "word_frequency": 5458
+  },
+  {
+    "word": "She does twenty pushups every morning as part of her fitness routine.",
+    "definition": "an exercise performed by lying face down and pushing up with the arms",
+    "word_frequency": 34813
+  },
+  {
+    "word": "I enjoy solving crossword puzzles.",
+    "definition": "a game or problem",
+    "word_frequency": 5365
+  },
+  {
+    "word": "I'll meet you in a quarter of an hour.",
+    "definition": "one fourth",
+    "word_frequency": 1535
+  },
+  {
+    "word": "The queen waved to the crowd.",
+    "definition": "female monarch",
+    "word_frequency": 1176
+  },
+  {
+    "word": "We have a math quiz tomorrow.",
+    "definition": "a short test",
+    "word_frequency": 6571
+  },
+  {
+    "word": "The horse won the race by a nose.",
+    "definition": "competition of speed",
+    "word_frequency": 724
+  },
+  {
+    "word": "The racecar sped around the track.",
+    "definition": "a car designed for racing",
+    "word_frequency": 33984
+  },
+  {
+    "word": "She added sliced radishes to her salad.",
+    "definition": "a small, spicy root vegetable",
+    "word_frequency": 26569
+  },
+  {
+    "word": "After the rain, a beautiful rainbow appeared.",
+    "definition": "rainbow",
+    "word_frequency": 4577
+  },
+  {
+    "word": "Don't forget your raincoat; it's going to rain.",
+    "definition": "a waterproof coat.",
+    "word_frequency": 29946
+  },
+  {
+    "word": "A single raindrop fell on my nose.",
+    "definition": "a single drop of rain",
+    "word_frequency": 27563
+  },
+  {
+    "word": "A sudden rainstorm caught us by surprise.",
+    "definition": "a storm with heavy rain",
+    "word_frequency": 32327
+  },
+  {
+    "word": "I like to add raisins to my oatmeal.",
+    "definition": "a dried grape",
+    "word_frequency": 16798
+  },
+  {
+    "word": "He used a rake to clear the leaves from the lawn.",
+    "definition": "a tool with a long handle and a row of teeth at the head, used for gathering leaves or smoothing soil",
+    "word_frequency": 12183
+  },
+  {
+    "word": "The building has a ramp for wheelchair access.",
+    "definition": "a sloping surface",
+    "word_frequency": 6473
+  },
+  {
+    "word": "I picked some fresh raspberries from the garden.",
+    "definition": "raspberry",
+    "word_frequency": 10385
+  },
+  {
+    "word": "A rat scurried across the floor.",
+    "definition": "a rodent larger than a mouse, typically having a pointed snout and a long, sparsely haired tail",
+    "word_frequency": 3931
+  },
+  {
+    "word": "For dinner, we had ravioli with tomato sauce.",
+    "definition": "Small pasta envelopes containing minced meat, cheese, or vegetables.",
+    "word_frequency": 24110
+  },
+  {
+    "word": "She is an avid reader of fantasy novels.",
+    "definition": "a person who reads",
+    "word_frequency": 2650
+  },
+  {
+    "word": "What was the reason for your decision?",
+    "definition": "a cause, explanation, or justification",
+    "word_frequency": 393
+  },
+  {
+    "word": "Please keep your receipt in case you need to return the item.",
+    "definition": "a written acknowledgment of payment",
+    "word_frequency": 5699
+  },
+  {
+    "word": "The receptionist greeted us with a smile.",
+    "definition": "a person who greets and assists visitors",
+    "word_frequency": 14340
+  },
+  {
+    "word": "Do you have a good recipe for chocolate cake?",
+    "definition": "a set of instructions for preparing food",
+    "word_frequency": 3558
+  },
+  {
+    "word": "A book usually has the shape of a rectangle.",
+    "definition": "A four-sided shape",
+    "word_frequency": 14745
+  },
+  {
+    "word": "Santa's sleigh is pulled by magical reindeer.",
+    "definition": "a large deer with long antlers, found in arctic regions",
+    "word_frequency": 13260
+  },
+  {
+    "word": "I set a reminder on my phone for the meeting.",
+    "definition": "something that makes you remember something",
+    "word_frequency": 4251
+  },
+  {
+    "word": "The repairman fixed our washing machine.",
+    "definition": "a person whose job is to repair things",
+    "word_frequency": 33565
+  },
+  {
+    "word": "The reporter asked many questions about the incident.",
+    "definition": "journalist",
+    "word_frequency": 2925
+  },
+  {
+    "word": "I need some rest after work.",
+    "definition": "rest, remainder",
+    "word_frequency": 492
+  },
+  {
+    "word": "Excuse me, where is the nearest restroom?",
+    "definition": "a public toilet",
+    "word_frequency": 12039
+  },
+  {
+    "word": "We are looking forward to his return.",
+    "definition": "the act of coming back",
+    "word_frequency": 548
+  },
+  {
+    "word": "She tied a ribbon in her hair.",
+    "definition": "a long, narrow strip of fabric",
+    "word_frequency": 6665
+  },
+  {
+    "word": "Do you want to go for a bike ride?",
+    "definition": "a journey on a horse, bicycle, or in a vehicle",
+    "word_frequency": 1192
+  },
+  {
+    "word": "She wears a beautiful diamond ring on her finger.",
+    "definition": "a circular band, typically of metal",
+    "word_frequency": 1297
+  },
+  {
+    "word": "I changed my ringtone to my favorite song.",
+    "definition": "the sound made by a mobile phone when an incoming call is received",
+    "word_frequency": 20439
+  },
+  {
+    "word": "We went ice skating at the local rink.",
+    "definition": "an area of ice or a floor for skating",
+    "word_frequency": 11734
+  },
+  {
+    "word": "We enjoyed a picnic on the riverbank.",
+    "definition": "the bank of a river",
+    "word_frequency": 26907
+  },
+  {
+    "word": "The police caught the robber after a chase.",
+    "definition": "a person who robs",
+    "word_frequency": 11736
+  },
+  {
+    "word": "A robin built a nest in our garden.",
+    "definition": "a small European or North American bird",
+    "word_frequency": 3017
+  },
+  {
+    "word": "The factory uses robots for assembly.",
+    "definition": "a machine designed to do tasks",
+    "word_frequency": 3493
+  },
+  {
+    "word": "I prefer romaine lettuce in my Caesar salad.",
+    "definition": "a type of lettuce",
+    "word_frequency": 31527
+  },
+  {
+    "word": "The roof needs to be repaired.",
+    "definition": "the top covering of a building",
+    "word_frequency": 2094
+  },
+  {
+    "word": "The rooster crowed loudly at dawn.",
+    "definition": "a male chicken",
+    "word_frequency": 13426
+  },
+  {
+    "word": "He tied the boat with a thick rope.",
+    "definition": "a length of strong cord",
+    "word_frequency": 4649
+  },
+  {
+    "word": "She gave him a red rose.",
+    "definition": "a prickly bush or shrub that typically bears fragrant red, pink, yellow, or white flowers.",
+    "word_frequency": 1275
+  },
+  {
+    "word": "Please stand in a straight row.",
+    "definition": "a line of people or things",
+    "word_frequency": 1891
+  },
+  {
+    "word": "There was a soft rug in front of the fireplace.",
+    "definition": "A floor covering of thick woven material or animal skin, typically not extending over the entire floor.",
+    "word_frequency": 7588
+  },
+  {
+    "word": "You must follow the rules of the game.",
+    "definition": "a regulation or principle",
+    "word_frequency": 764
+  },
+  {
+    "word": "She is a fast runner.",
+    "definition": "a person who runs",
+    "word_frequency": 3869
+  },
+  {
+    "word": "He carried the potatoes in a large sack.",
+    "definition": "a large bag made of a strong material; the dismissal of an employee",
+    "word_frequency": 5791
+  },
+  {
+    "word": "A wave of sadness washed over her.",
+    "definition": "the state of being sad",
+    "word_frequency": 6054
+  },
+  {
+    "word": "They spent the afternoon sailing on their new sailboat.",
+    "definition": "a boat propelled by sails",
+    "word_frequency": 21476
+  },
+  {
+    "word": "The sailor steered the ship through the storm.",
+    "definition": "a person who works on a boat or ship",
+    "word_frequency": 6963
+  },
+  {
+    "word": "She made a sandwich with salami and cheese.",
+    "definition": "a type of cured sausage",
+    "word_frequency": 23544
+  },
+  {
+    "word": "The store is having a big sale.",
+    "definition": "the exchange of a commodity for money; a period when goods are sold at reduced prices",
+    "word_frequency": 839
+  },
+  {
+    "word": "The salesperson helped me find the right size shoes.",
+    "definition": "a person whose job is to sell things",
+    "word_frequency": 24702
+  },
+  {
+    "word": "I had grilled salmon for dinner.",
+    "definition": "a large, edible fish",
+    "word_frequency": 5003
+  },
+  {
+    "word": "We ate chips with a delicious tomato salsa.",
+    "definition": "a spicy sauce; a type of Latin American dance music",
+    "word_frequency": 9954
+  },
+  {
+    "word": "The children played in the sand.",
+    "definition": "a loose granular substance",
+    "word_frequency": 2527
+  },
+  {
+    "word": "She wore sandals to the beach.",
+    "definition": "a light shoe consisting of a sole held to the foot by straps",
+    "word_frequency": 10972
+  },
+  {
+    "word": "Always carry hand sanitizer when you're out.",
+    "definition": "a substance or preparation for killing germs",
+    "word_frequency": 29234
+  },
+  {
+    "word": "This pasta needs more tomato sauce.",
+    "definition": "a liquid served with food",
+    "word_frequency": 3173
+  },
+  {
+    "word": "She heated the soup in a small saucepan.",
+    "definition": "A deep cooking pan with a handle",
+    "word_frequency": 19928
+  },
+  {
+    "word": "He placed the teacup carefully on its saucer.",
+    "definition": "a shallow dish, typically with a slight indentation in the center, on which a cup stands.",
+    "word_frequency": 18680
+  },
+  {
+    "word": "I had sausages for breakfast.",
+    "definition": "minced meat in a casing",
+    "word_frequency": 6768
+  },
+  {
+    "word": "She learned to play the saxophone in high school.",
+    "definition": "a member of a family of brass wind instruments",
+    "word_frequency": 16598
+  },
+  {
+    "word": "She wore a warm scarf to protect her neck from the cold.",
+    "definition": "a piece of fabric worn around the neck, head, or shoulders for warmth, fashion, or religious reasons",
+    "word_frequency": 8048
+  },
+  {
+    "word": "The schoolboy carried a heavy backpack.",
+    "definition": "a boy attending school",
+    "word_frequency": 15351
+  },
+  {
+    "word": "The schoolgirl carried a heavy backpack full of books.",
+    "definition": "A girl attending school.",
+    "word_frequency": 17708
+  },
+  {
+    "word": "My mother was a schoolteacher for thirty years.",
+    "definition": "a person who teaches in a school",
+    "word_frequency": 20707
+  },
+  {
+    "word": "I need to finish my schoolwork before I can play.",
+    "definition": "academic tasks or studies done by a student",
+    "word_frequency": 27584
+  },
+  {
+    "word": "The children played soccer in the schoolyard.",
+    "definition": "an outdoor area next to a school",
+    "word_frequency": 31539
+  },
+  {
+    "word": "I enjoy studying science.",
+    "definition": "the study of the natural and physical world",
+    "word_frequency": 648
+  },
+  {
+    "word": "The tailor used a large scissor to cut the fabric.",
+    "definition": "a cutting tool",
+    "word_frequency": 22655
+  },
+  {
+    "word": "Please pass me the scissors to cut this paper.",
+    "definition": "a tool for cutting",
+    "word_frequency": 9272
+  },
+  {
+    "word": "He rode his scooter to the park.",
+    "definition": "two-wheeled vehicle",
+    "word_frequency": 9399
+  },
+  {
+    "word": "What's the final score?",
+    "definition": "the number of points, goals, etc. achieved in a game or competition.",
+    "word_frequency": 1246
+  },
+  {
+    "word": "The movie was shown on a large screen.",
+    "definition": "flat surface on which images are displayed",
+    "word_frequency": 1195
+  },
+  {
+    "word": "He used a screwdriver to tighten the loose screw.",
+    "definition": "a tool for turning screws",
+    "word_frequency": 17000
+  },
+  {
+    "word": "We had fresh seafood for dinner.",
+    "definition": "fish and shellfish from the sea used for food",
+    "word_frequency": 8423
+  },
+  {
+    "word": "Seagulls often gather near the coast, looking for food.",
+    "definition": "a large, common seabird with long wings and typically white and grey plumage",
+    "word_frequency": 19674
+  },
+  {
+    "word": "My favorite season is summer.",
+    "definition": "season",
+    "word_frequency": 261
+  },
+  {
+    "word": "Add some seasoning to the soup for more flavor.",
+    "definition": "salt, pepper, herbs, or spices added to food",
+    "word_frequency": 13967
+  },
+  {
+    "word": "Always wear your seatbelt when driving.",
+    "definition": "A strap or harness designed to hold a person securely in a seat, especially in a car or aircraft.",
+    "word_frequency": 18422
+  },
+  {
+    "word": "Plant the seeds in fertile soil.",
+    "definition": "part of a plant from which a new plant grows",
+    "word_frequency": 2838
+  },
+  {
+    "word": "She posted a selfie on social media.",
+    "definition": "a photograph taken of oneself",
+    "word_frequency": 7262
+  },
+  {
+    "word": "The seller offered a good price.",
+    "definition": "a person who sells something",
+    "word_frequency": 5004
+  },
+  {
+    "word": "The package did not have a return address for the sender.",
+    "definition": "a person who sends something",
+    "word_frequency": 15355
+  },
+  {
+    "word": "\"Excuse me, Senor,\" she said, trying to get his attention.",
+    "definition": "a Spanish title of respect for a man, equivalent to Mr.",
+    "word_frequency": 32782
+  },
+  {
+    "word": "Please write a complete sentence.",
+    "definition": "a set of words that is complete in itself",
+    "word_frequency": 1964
+  },
+  {
+    "word": "This recipe makes four servings.",
+    "definition": "a portion of food or drink",
+    "word_frequency": 17966
+  },
+  {
+    "word": "\"Excuse me, Señor,\" she said, trying to get his attention.",
+    "definition": "a Spanish title or form of address for a man, corresponding to Mr. or sir",
+    "word_frequency": 28217
+  },
+  {
+    "word": "We sat in the shade of the tree to escape the sun.",
+    "definition": "an area of darkness produced by an object blocking light",
+    "word_frequency": 4003
+  },
+  {
+    "word": "The tree cast a long shadow.",
+    "definition": "a dark area or shape produced by an object blocking light",
+    "word_frequency": 2530
+  },
+  {
+    "word": "I need to buy a new bottle of shampoo.",
+    "definition": "a liquid preparation for washing the hair",
+    "word_frequency": 9275
+  },
+  {
+    "word": "The table is in the shape of a circle.",
+    "definition": "the external form or appearance",
+    "word_frequency": 1539
+  },
+  {
+    "word": "A shark was spotted near the beach.",
+    "definition": "a large predatory marine fish",
+    "word_frequency": 4379
+  },
+  {
+    "word": "He finished his morning shaving quickly.",
+    "definition": "the act of removing hair with a razor; a thin slice or strip",
+    "word_frequency": 30705
+  },
+  {
+    "word": "The sheep were grazing in the field.",
+    "definition": "a farm animal",
+    "word_frequency": 3801
+  },
+  {
+    "word": "Please put clean sheets on the bed.",
+    "definition": "a large piece of thin material",
+    "word_frequency": 2706
+  },
+  {
+    "word": "She placed the book on the top shelf.",
+    "definition": "a flat length of wood or other rigid material, attached to a wall or forming part of a unit, used for storing or displaying objects",
+    "word_frequency": 4944
+  },
+  {
+    "word": "We found a beautiful shell on the beach.",
+    "definition": "the hard protective outer case of a mollusk or crustacean",
+    "word_frequency": 2755
+  },
+  {
+    "word": "The ship sailed across the ocean.",
+    "definition": "a large boat for transporting people or goods",
+    "word_frequency": 1020
+  },
+  {
+    "word": "My shoelace came undone, and I almost tripped.",
+    "definition": "a string or cord used to tie shoes",
+    "word_frequency": 34852
+  },
+  {
+    "word": "The friendly shopkeeper always greeted customers with a smile.",
+    "definition": "a person who owns or manages a shop",
+    "word_frequency": 23550
+  },
+  {
+    "word": "The mall was full of shoppers looking for deals.",
+    "definition": "a person who buys things",
+    "word_frequency": 9682
+  },
+  {
+    "word": "We walked along the shore at sunset.",
+    "definition": "the land along the edge of a sea, lake, or wide river",
+    "word_frequency": 3021
+  },
+  {
+    "word": "He carried the bag on his shoulder.",
+    "definition": "the joint connecting the arm or forelimb to the trunk",
+    "word_frequency": 2276
+  },
+  {
+    "word": "We heard a shout from the crowd.",
+    "definition": "a loud cry",
+    "word_frequency": 4650
+  },
+  {
+    "word": "He used a shovel to dig the hole.",
+    "definition": "shovel",
+    "word_frequency": 10398
+  },
+  {
+    "word": "I'm going to take a shower.",
+    "definition": "a brief fall of rain; an act of washing oneself in a shower",
+    "word_frequency": 2277
+  },
+  {
+    "word": "I ordered shrimp pasta for dinner.",
+    "definition": "a small edible crustacean",
+    "word_frequency": 6869
+  },
+  {
+    "word": "I have one sibling, an older brother.",
+    "definition": "brother or sister",
+    "word_frequency": 4720
+  },
+  {
+    "word": "She was absent due to sickness.",
+    "definition": "illness",
+    "word_frequency": 6485
+  },
+  {
+    "word": "Look on the other side of the street.",
+    "definition": "side",
+    "word_frequency": 246
+  },
+  {
+    "word": "Please walk on the sidewalk to stay safe from traffic.",
+    "definition": "a paved path for pedestrians at the side of a road",
+    "word_frequency": 8051
+  },
+  {
+    "word": "We spent the day sightseeing in the city.",
+    "definition": "the activity of visiting places of interest in a particular location",
+    "word_frequency": 16813
+  },
+  {
+    "word": "The road sign warned of a sharp bend.",
+    "definition": "indication, symbol",
+    "word_frequency": 726
+  },
+  {
+    "word": "There was a moment of silence before the announcement.",
+    "definition": "complete absence of sound",
+    "word_frequency": 2437
+  },
+  {
+    "word": "She wore a beautiful silk scarf.",
+    "definition": "a fine, strong, soft, lustrous fiber produced by silkworms",
+    "word_frequency": 4321
+  },
+  {
+    "word": "She bought a necklace made of silver.",
+    "definition": "a precious white metallic element",
+    "word_frequency": 1299
+  },
+  {
+    "word": "Please set the table with the silverware.",
+    "definition": "eating utensils, especially those made of or coated with silver",
+    "word_frequency": 18177
+  },
+  {
+    "word": "My sis and I are going to the movies.",
+    "definition": "sister (informal)",
+    "word_frequency": 8656
+  },
+  {
+    "word": "We hired a new sitter for the kids.",
+    "definition": "a person who sits for a specific purpose, e.g., babysitter",
+    "word_frequency": 15963
+  },
+  {
+    "word": "It's a difficult situation.",
+    "definition": "situation",
+    "word_frequency": 702
+  },
+  {
+    "word": "He rode his skateboard down the street.",
+    "definition": "a board with wheels for riding",
+    "word_frequency": 15360
+  },
+  {
+    "word": "The ice skater performed a beautiful routine.",
+    "definition": "a person who skates, especially on ice or roller skates",
+    "word_frequency": 13275
+  },
+  {
+    "word": "Learning a new language requires a lot of skill.",
+    "definition": "ability",
+    "word_frequency": 1401
+  },
+  {
+    "word": "She has very sensitive skin.",
+    "definition": "the outer covering of the body",
+    "word_frequency": 1070
+  },
+  {
+    "word": "She wore a long blue skirt.",
+    "definition": "a garment worn by women",
+    "word_frequency": 5372
+  },
+  {
+    "word": "The children rode their sled down the snowy hill.",
+    "definition": "a vehicle for traveling over snow or ice",
+    "word_frequency": 14980
+  },
+  {
+    "word": "My daughter is having a sleepover with her friends this weekend.",
+    "definition": "a party or occasion when a group of children or young people spend the night at a friend's house",
+    "word_frequency": 21492
+  },
+  {
+    "word": "He rolled up his sleeves.",
+    "definition": "the part of a garment that covers the arm",
+    "word_frequency": 5626
+  },
+  {
+    "word": "Santa Claus rides in a sleigh pulled by reindeer.",
+    "definition": "a vehicle on runners, used for traveling over snow or ice",
+    "word_frequency": 20454
+  },
+  {
+    "word": "Would you like another slice of cake?",
+    "definition": "a thin, flat piece cut from something",
+    "word_frequency": 5088
+  },
+  {
+    "word": "She put on her warm slippers after a long day.",
+    "definition": "a soft, comfortable shoe for wearing indoors",
+    "word_frequency": 12372
+  },
+  {
+    "word": "I use my smartphone for everything.",
+    "definition": "a mobile phone that performs many of the functions of a computer",
+    "word_frequency": 4652
+  },
+  {
+    "word": "There was a lot of smoke from the fire.",
+    "definition": "visible vapor from burning",
+    "word_frequency": 1683
+  },
+  {
+    "word": "I like to drink a fruit smoothie for breakfast.",
+    "definition": "A thick, smooth drink made of fresh fruit pureed with milk, yogurt, or ice cream.",
+    "word_frequency": 14559
+  },
+  {
+    "word": "I sent her an SMS to confirm the meeting.",
+    "definition": "Short Message Service; a text message",
+    "word_frequency": 8294
+  },
+  {
+    "word": "I usually have a snack in the afternoon.",
+    "definition": "a small amount of food eaten between meals",
+    "word_frequency": 5890
+  },
+  {
+    "word": "A snail left a silvery trail across the path.",
+    "definition": "a slow-moving mollusc with a shell",
+    "word_frequency": 8176
+  },
+  {
+    "word": "Be careful, there might be a snake in the grass.",
+    "definition": "reptile",
+    "word_frequency": 3563
+  },
+  {
+    "word": "She bought a new pair of sneakers for running.",
+    "definition": "athletic shoe",
+    "word_frequency": 9961
+  },
+  {
+    "word": "The children had a snowball fight in the park.",
+    "definition": "a ball of snow pressed together",
+    "word_frequency": 15968
+  },
+  {
+    "word": "He bought a new snowboard for the winter season.",
+    "definition": "A board used for gliding over snow",
+    "word_frequency": 19942
+  },
+  {
+    "word": "We had a heavy snowfall last night.",
+    "definition": "the amount of snow that falls",
+    "word_frequency": 15164
+  },
+  {
+    "word": "Each snowflake has a unique pattern.",
+    "definition": "a single crystal of snow",
+    "word_frequency": 14561
+  },
+  {
+    "word": "The children built a snowman in the garden.",
+    "definition": "a figure made of snow",
+    "word_frequency": 16372
+  },
+  {
+    "word": "The soldier wore a green uniform.",
+    "definition": "a person who serves in an army",
+    "word_frequency": 1602
+  },
+  {
+    "word": "I heard a strange sound.",
+    "definition": "noise, auditory sensation",
+    "word_frequency": 605
+  },
+  {
+    "word": "The storm is moving towards the southeast.",
+    "definition": "the direction between south and east",
+    "word_frequency": 4053
+  },
+  {
+    "word": "I bought a souvenir T-shirt from Paris.",
+    "definition": "a thing that is kept as a reminder of a person, place, or event",
+    "word_frequency": 12532
+  },
+  {
+    "word": "There isn't much space in this room.",
+    "definition": "space",
+    "word_frequency": 494
+  },
+  {
+    "word": "Astronauts travel in a spaceship.",
+    "definition": "a vehicle used for travel in outer space",
+    "word_frequency": 12533
+  },
+  {
+    "word": "A little sparrow landed on the window sill.",
+    "definition": "a small, common bird",
+    "word_frequency": 10707
+  },
+  {
+    "word": "Use a spatula to flip the pancakes.",
+    "definition": "a utensil with a broad, flat, flexible blade",
+    "word_frequency": 24130
+  },
+  {
+    "word": "The speaker gave an interesting presentation.",
+    "definition": "a person who speaks; a device that produces sound",
+    "word_frequency": 2321
+  },
+  {
+    "word": "Her spelling has improved a lot this year.",
+    "definition": "the act of forming words with letters",
+    "word_frequency": 5089
+  },
+  {
+    "word": "Add a little spice to the soup.",
+    "definition": "an aromatic or pungent vegetable substance used to flavor food",
+    "word_frequency": 5541
+  },
+  {
+    "word": "A spider built a web in the corner of the window.",
+    "definition": "spider",
+    "word_frequency": 3441
+  },
+  {
+    "word": "Popeye loves to eat spinach for strength.",
+    "definition": "a leafy green vegetable",
+    "word_frequency": 10709
+  },
+  {
+    "word": "Please wipe the counter with a sponge.",
+    "definition": "a soft, porous material used for washing",
+    "word_frequency": 9167
+  },
+  {
+    "word": "Add a spoonful of sugar to your tea.",
+    "definition": "the amount a spoon can hold",
+    "word_frequency": 23846
+  },
+  {
+    "word": "Flowers bloom in the spring.",
+    "definition": "the season after winter",
+    "word_frequency": 1043
+  },
+  {
+    "word": "In springtime, the flowers begin to bloom.",
+    "definition": "the season of spring",
+    "word_frequency": 18931
+  },
+  {
+    "word": "A squirrel ran up the tree.",
+    "definition": "a small bushy-tailed rodent",
+    "word_frequency": 7968
+  },
+  {
+    "word": "The actors walked onto the stage.",
+    "definition": "stage",
+    "word_frequency": 686
+  },
+  {
+    "word": "He walked up the last stair to the second floor.",
+    "definition": "stair",
+    "word_frequency": 4126
+  },
+  {
+    "word": "The old house had a grand stairway.",
+    "definition": "A set of stairs",
+    "word_frequency": 16615
+  },
+  {
+    "word": "Don't forget to put a stamp on the envelope.",
+    "definition": "a small adhesive piece of paper affixed to a letter or parcel to show that postage has been paid",
+    "word_frequency": 4322
+  },
+  {
+    "word": "The sky was full of bright stars.",
+    "definition": "a celestial body; a famous person",
+    "word_frequency": 550
+  },
+  {
+    "word": "There is a large statue in the park.",
+    "definition": "a carved or cast figure of a person or animal",
+    "word_frequency": 4432
+  },
+  {
+    "word": "I ordered a medium-rare steak.",
+    "definition": "a slice of meat",
+    "word_frequency": 5298
+  },
+  {
+    "word": "Take one step at a time.",
+    "definition": "pace, stage",
+    "word_frequency": 636
+  },
+  {
+    "word": "My stepdad taught me how to ride a bike.",
+    "definition": "a stepfather",
+    "word_frequency": 24132
+  },
+  {
+    "word": "Her stepfather was very kind to her.",
+    "definition": "mother's husband (not biological father)",
+    "word_frequency": 14773
+  },
+  {
+    "word": "My stepmom is very kind to me.",
+    "definition": "a stepmother",
+    "word_frequency": 28882
+  },
+  {
+    "word": "Her stepmother was very kind to her.",
+    "definition": "a woman who is married to one's father but is not one's biological mother",
+    "word_frequency": 16380
+  },
+  {
+    "word": "My grandmother makes a delicious beef stew.",
+    "definition": "a dish of meat and vegetables cooked slowly in liquid in a closed dish or pan",
+    "word_frequency": 10711
+  },
+  {
+    "word": "My daughter loves collecting stickers.",
+    "definition": "an adhesive label or decal",
+    "word_frequency": 7725
+  },
+  {
+    "word": "She hung her Christmas stocking by the fireplace.",
+    "definition": "a long, close-fitting garment covering the foot and leg",
+    "word_frequency": 10552
+  },
+  {
+    "word": "My stomach hurts after eating too much.",
+    "definition": "organ for digestion",
+    "word_frequency": 2617
+  },
+  {
+    "word": "He threw a stone into the water.",
+    "definition": "stone",
+    "word_frequency": 1322
+  },
+  {
+    "word": "He used a stopwatch to time the runners.",
+    "definition": "device for measuring time",
+    "word_frequency": 33619
+  },
+  {
+    "word": "The building has three storeys.",
+    "definition": "a floor or level of a building",
+    "word_frequency": 8914
+  },
+  {
+    "word": "A stork built its nest on top of the chimney.",
+    "definition": "a large wading bird with long legs and a long bill",
+    "word_frequency": 23557
+  },
+  {
+    "word": "A big storm is coming.",
+    "definition": "a violent disturbance of the atmosphere",
+    "word_frequency": 1714
+  },
+  {
+    "word": "She put the kettle on the stove to boil water.",
+    "definition": "an apparatus for cooking or heating",
+    "word_frequency": 7726
+  },
+  {
+    "word": "Don't talk to strangers.",
+    "definition": "a person you do not know",
+    "word_frequency": 3295
+  },
+  {
+    "word": "The farmer used straw to bed the animals.",
+    "definition": "dried stalks of grain; a thin tube for drinking",
+    "word_frequency": 5164
+  },
+  {
+    "word": "He tied the package with a piece of string.",
+    "definition": "thin cord",
+    "word_frequency": 2709
+  },
+  {
+    "word": "The zebra has black and white stripes.",
+    "definition": "a long narrow band or strip",
+    "word_frequency": 7165
+  },
+  {
+    "word": "She pushed the baby in a stroller through the park.",
+    "definition": "a pushchair or pram for a baby or young child",
+    "word_frequency": 18188
+  },
+  {
+    "word": "I have a lot of study to do tonight.",
+    "definition": "act of learning, research",
+    "word_frequency": 461
+  },
+  {
+    "word": "Learning subtraction is a basic math skill.",
+    "definition": "the process of taking one number or quantity away from another",
+    "word_frequency": 22672
+  },
+  {
+    "word": "We took the subway to get downtown.",
+    "definition": "underground train system",
+    "word_frequency": 4728
+  },
+  {
+    "word": "He wore a dark suit to the meeting.",
+    "definition": "a set of clothes",
+    "word_frequency": 1603
+  },
+  {
+    "word": "I packed my clothes in a large suitcase.",
+    "definition": "a case for carrying clothes",
+    "word_frequency": 9688
+  },
+  {
+    "word": "Please calculate the sum of these numbers.",
+    "definition": "a total amount",
+    "word_frequency": 2966
+  },
+  {
+    "word": "We love going to the beach in the summertime.",
+    "definition": "the period of summer",
+    "word_frequency": 14570
+  },
+  {
+    "word": "I got a terrible sunburn after spending all day at the beach.",
+    "definition": "inflammation of the skin caused by overexposure to ultraviolet radiation from the sun",
+    "word_frequency": 21505
+  },
+  {
+    "word": "I ordered a chocolate fudge sundae for dessert.",
+    "definition": "a dish of ice cream with fruit, nuts, syrup, etc.",
+    "word_frequency": 27294
+  },
+  {
+    "word": "The sunflower turned its head towards the sun.",
+    "definition": "a tall North American plant of the daisy family, with very large golden-rayed flowers",
+    "word_frequency": 12540
+  },
+  {
+    "word": "Plants need sunlight to grow.",
+    "definition": "the light from the sun",
+    "word_frequency": 6233
+  },
+  {
+    "word": "We woke up early to watch the sunrise.",
+    "definition": "the time in the morning when the sun appears",
+    "word_frequency": 6580
+  },
+  {
+    "word": "Don't forget to apply sunscreen before going to the beach.",
+    "definition": "a cream or lotion rubbed on the skin to protect it from the sun",
+    "word_frequency": 13809
+  },
+  {
+    "word": "We watched the beautiful sunset over the ocean.",
+    "definition": "the time in the evening when the sun disappears or daylight fades",
+    "word_frequency": 4799
+  },
+  {
+    "word": "We usually have supper around 7 PM.",
+    "definition": "an evening meal",
+    "word_frequency": 7380
+  },
+  {
+    "word": "What is your surname?",
+    "definition": "family name",
+    "word_frequency": 10402
+  },
+  {
+    "word": "Her sudden visit was a pleasant surprise.",
+    "definition": "an unexpected or astonishing event, fact, or thing",
+    "word_frequency": 1450
+  },
+  {
+    "word": "We went to a Japanese restaurant and ordered some sushi.",
+    "definition": "a Japanese dish consisting of small balls or rolls of vinegar-flavored cold rice",
+    "word_frequency": 8061
+  },
+  {
+    "word": "A beautiful white swan swam on the lake.",
+    "definition": "a large water bird",
+    "word_frequency": 6390
+  },
+  {
+    "word": "She wore a comfortable sweatshirt to the gym.",
+    "definition": "a loose, long-sleeved, collarless pullover",
+    "word_frequency": 15778
+  },
+  {
+    "word": "She is a strong swimmer and competes regularly.",
+    "definition": "a person who swims",
+    "word_frequency": 10555
+  },
+  {
+    "word": "Don't forget your swimsuit if you want to go to the beach.",
+    "definition": "a garment worn for swimming",
+    "word_frequency": 13978
+  },
+  {
+    "word": "Don't forget to pack your swimwear for the beach.",
+    "definition": "Garments worn for swimming",
+    "word_frequency": 19953
+  },
+  {
+    "word": "Flip the switch to turn on the light.",
+    "definition": "a device for making and breaking the connection in an electric circuit",
+    "word_frequency": 1896
+  },
+  {
+    "word": "I like to pour maple syrup on my pancakes.",
+    "definition": "a thick, sweet liquid",
+    "word_frequency": 7169
+  },
+  {
+    "word": "She put a clean tablecloth on the dining table.",
+    "definition": "a cloth spread over a table",
+    "word_frequency": 29651
+  },
+  {
+    "word": "Add two tablespoons of sugar to the mixture.",
+    "definition": "a large spoon, used for serving or measuring",
+    "word_frequency": 15972
+  },
+  {
+    "word": "I read books on my tablet.",
+    "definition": "a flat, portable computer",
+    "word_frequency": 4731
+  },
+  {
+    "word": "She placed the vase on the tabletop.",
+    "definition": "the flat top surface of a table",
+    "word_frequency": 17737
+  },
+  {
+    "word": "We had tacos for dinner last night.",
+    "definition": "a Mexican dish",
+    "word_frequency": 7971
+  },
+  {
+    "word": "The dog wagged its tail excitedly.",
+    "definition": "the rear part of an animal's body",
+    "word_frequency": 2968
+  },
+  {
+    "word": "The child shook the tambourine to the rhythm of the music.",
+    "definition": "a musical instrument",
+    "word_frequency": 31569
+  },
+  {
+    "word": "She got a nice tan on her vacation.",
+    "definition": "a yellowish-brown color; a darker skin color from sun exposure",
+    "word_frequency": 5011
+  },
+  {
+    "word": "She peeled a tangerine for a snack.",
+    "definition": "a small citrus fruit",
+    "word_frequency": 21782
+  },
+  {
+    "word": "The fish tank needs cleaning.",
+    "definition": "container, military vehicle",
+    "word_frequency": 2005
+  },
+  {
+    "word": "Please turn off the tap when you're done.",
+    "definition": "a device that controls the flow of water from a pipe",
+    "word_frequency": 3296
+  },
+  {
+    "word": "Please pass me the sticky tape.",
+    "definition": "a narrow strip of material",
+    "word_frequency": 2532
+  },
+  {
+    "word": "Completing this task will take time.",
+    "definition": "task",
+    "word_frequency": 1744
+  },
+  {
+    "word": "This soup has a delicious taste.",
+    "definition": "the sensation of flavor",
+    "word_frequency": 1505
+  },
+  {
+    "word": "We took a taxicab to the airport.",
+    "definition": "a car for hire with a driver",
+    "word_frequency": 33206
+  },
+  {
+    "word": "Add 2 tbsp of sugar to the mixture.",
+    "definition": "Tablespoon (a unit of measurement, or a large spoon).",
+    "word_frequency": 18439
+  },
+  {
+    "word": "She finds teaching very rewarding.",
+    "definition": "the profession of a teacher",
+    "word_frequency": 7171
+  },
+  {
+    "word": "She poured the tea into a delicate teacup.",
+    "definition": "a cup from which tea is drunk",
+    "word_frequency": 28901
+  },
+  {
+    "word": "Our team won the game.",
+    "definition": "a group of people working together",
+    "word_frequency": 171
+  },
+  {
+    "word": "She poured hot water into the teapot.",
+    "definition": "a pot with a handle, spout, and lid, in which tea is brewed and served",
+    "word_frequency": 22678
+  },
+  {
+    "word": "Add one teaspoon of sugar to your coffee.",
+    "definition": "a small spoon used for stirring tea or coffee",
+    "word_frequency": 13621
+  },
+  {
+    "word": "The child hugged his teddy tightly.",
+    "definition": "a teddy bear",
+    "word_frequency": 6062
+  },
+  {
+    "word": "Many teens enjoy playing video games.",
+    "definition": "a person aged between 13 and 19 years",
+    "word_frequency": 3024
+  },
+  {
+    "word": "My cousin is a teenager.",
+    "definition": "a person aged between 13 and 19 years",
+    "word_frequency": 4436
+  },
+  {
+    "word": "Let's watch some telly tonight.",
+    "definition": "television (informal)",
+    "word_frequency": 15569
+  },
+  {
+    "word": "The temperature dropped suddenly this evening.",
+    "definition": "the degree or intensity of heat present",
+    "word_frequency": 1777
+  },
+  {
+    "word": "We set up our tent by the lake.",
+    "definition": "a portable shelter",
+    "word_frequency": 4732
+  },
+  {
+    "word": "Please read the text carefully.",
+    "definition": "written words",
+    "word_frequency": 868
+  },
+  {
+    "word": "We are going to the theater tonight to see a play.",
+    "definition": "a building for plays or movies",
+    "word_frequency": 2935
+  },
+  {
+    "word": "We went to the theatre to see a play.",
+    "definition": "a building where plays are performed",
+    "word_frequency": 2209
+  },
+  {
+    "word": "She used a thermometer to check her temperature.",
+    "definition": "an instrument for measuring temperature",
+    "word_frequency": 15176
+  },
+  {
+    "word": "The police caught the thief.",
+    "definition": "a person who steals",
+    "word_frequency": 6065
+  },
+  {
+    "word": "He quenched his thirst with a glass of water.",
+    "definition": "the feeling of needing to drink",
+    "word_frequency": 8552
+  },
+  {
+    "word": "There are a thousand stars in the night sky.",
+    "definition": "1,000",
+    "word_frequency": 1403
+  },
+  {
+    "word": "My throat is sore from shouting.",
+    "definition": "the front part of the neck",
+    "word_frequency": 3181
+  },
+  {
+    "word": "We heard the thunder after the lightning.",
+    "definition": "thunder",
+    "word_frequency": 4133
+  },
+  {
+    "word": "We took shelter when the thunderstorm began.",
+    "definition": "a storm with thunder and lightning",
+    "word_frequency": 13101
+  },
+  {
+    "word": "She set the kitchen timer for 20 minutes to bake the cookies.",
+    "definition": "a device that measures and indicates time, especially one that can be set to ring an alarm at a particular time",
+    "word_frequency": 8066
+  },
+  {
+    "word": "Check the train timetable for departure times.",
+    "definition": "a schedule of times",
+    "word_frequency": 11288
+  },
+  {
+    "word": "He felt a deep tiredness after the long journey.",
+    "definition": "The state of being tired; fatigue",
+    "word_frequency": 22392
+  },
+  {
+    "word": "What is the title of this book?",
+    "definition": "title",
+    "word_frequency": 687
+  },
+  {
+    "word": "A toad hopped across the garden path.",
+    "definition": "a tailless amphibian, similar to a frog",
+    "word_frequency": 12927
+  },
+  {
+    "word": "The toddler is learning to walk.",
+    "definition": "a young child who is just beginning to walk",
+    "word_frequency": 6494
+  },
+  {
+    "word": "I have a long list of todos for today.",
+    "definition": "a task that needs to be done",
+    "word_frequency": 21249
+  },
+  {
+    "word": "She painted her toenails red.",
+    "definition": "A nail of a toe",
+    "word_frequency": 25638
+  },
+  {
+    "word": "She enjoyed a piece of sticky toffee after dinner.",
+    "definition": "a hard, chewy candy made by boiling sugar and butter",
+    "word_frequency": 23262
+  },
+  {
+    "word": "Where is the toilet?",
+    "definition": "toilet",
+    "word_frequency": 3136
+  },
+  {
+    "word": "He bit his tongue accidentally.",
+    "definition": "the movable muscular organ in the mouth",
+    "word_frequency": 2844
+  },
+  {
+    "word": "He used a special tool to fix the engine.",
+    "definition": "an implement used to carry out a particular function",
+    "word_frequency": 1931
+  },
+  {
+    "word": "He keeps all his essential tools neatly organized in his toolbox.",
+    "definition": "a box for holding tools",
+    "word_frequency": 20473
+  },
+  {
+    "word": "I have a terrible toothache and need to see a dentist.",
+    "definition": "pain in a tooth or teeth",
+    "word_frequency": 27301
+  },
+  {
+    "word": "Don't forget to put the cap back on the toothpaste.",
+    "definition": "a paste used for cleaning teeth",
+    "word_frequency": 12379
+  },
+  {
+    "word": "He reached the top of the mountain.",
+    "definition": "highest part",
+    "word_frequency": 204
+  },
+  {
+    "word": "We discussed many interesting topics.",
+    "definition": "a subject of discussion",
+    "word_frequency": 2324
+  },
+  {
+    "word": "She added extra cheese as a topping for her pizza.",
+    "definition": "A layer of food placed on top of other food",
+    "word_frequency": 19958
+  },
+  {
+    "word": "I made tacos using corn tortillas.",
+    "definition": "a thin, flat, round cake made from corn or wheat flour, eaten hot with savory fillings.",
+    "word_frequency": 18707
+  },
+  {
+    "word": "The tortoise slowly made its way across the garden.",
+    "definition": "a slow-moving reptile",
+    "word_frequency": 14372
+  },
+  {
+    "word": "My new phone has a very responsive touchscreen.",
+    "definition": "a display screen that responds to touch",
+    "word_frequency": 17748
+  },
+  {
+    "word": "We went on a guided tour of the city.",
+    "definition": "a journey for pleasure or education",
+    "word_frequency": 911
+  },
+  {
+    "word": "Many tourists visit Paris every year.",
+    "definition": "a person who travels for pleasure",
+    "word_frequency": 3741
+  },
+  {
+    "word": "The Eiffel Tower is in Paris.",
+    "definition": "a tall, narrow building or part of a building",
+    "word_frequency": 2279
+  },
+  {
+    "word": "He put on his tracksuit before going for a run.",
+    "definition": "a loose two-piece suit worn for exercise or casual wear",
+    "word_frequency": 29262
+  },
+  {
+    "word": "The farmer used a tractor to plow the field.",
+    "definition": "a powerful motor vehicle used for pulling farm machinery",
+    "word_frequency": 6973
+  },
+  {
+    "word": "She is undergoing intensive training for the marathon.",
+    "definition": "the action of teaching a person or animal a particular skill or type of behavior",
+    "word_frequency": 28568
+  },
+  {
+    "word": "Please take out the trash.",
+    "definition": "rubbish, waste",
+    "word_frequency": 2619
+  },
+  {
+    "word": "Air travel can be expensive.",
+    "definition": "the action of going from one place to another",
+    "word_frequency": 902
+  },
+  {
+    "word": "The traveler explored many new countries.",
+    "definition": "a person who travels",
+    "word_frequency": 6395
+  },
+  {
+    "word": "The experienced traveller knew how to pack light for long trips.",
+    "definition": "a person who travels or is traveling",
+    "word_frequency": 8067
+  },
+  {
+    "word": "She carried the drinks on a tray.",
+    "definition": "a flat, shallow container",
+    "word_frequency": 7274
+  },
+  {
+    "word": "The children loved playing in their treehouse.",
+    "definition": "a small house built in a tree",
+    "word_frequency": 22681
+  },
+  {
+    "word": "A triangle has three sides.",
+    "definition": "a plane figure with three straight sides and three angles",
+    "word_frequency": 5636
+  },
+  {
+    "word": "The toddler learned to ride his new tricycle in the park.",
+    "definition": "a three-wheeled vehicle",
+    "word_frequency": 26293
+  },
+  {
+    "word": "We went on a short trip to the mountains.",
+    "definition": "journey, excursion",
+    "word_frequency": 1095
+  },
+  {
+    "word": "She pushed the shopping trolley down the aisle.",
+    "definition": "a small cart with wheels",
+    "word_frequency": 11291
+  },
+  {
+    "word": "He bought a new pair of trousers for the event.",
+    "definition": "a garment covering the body from the waist to the ankles, with a separate part for each leg",
+    "word_frequency": 7857
+  },
+  {
+    "word": "He plays the trumpet in the school band.",
+    "definition": "trumpet",
+    "word_frequency": 9287
+  },
+  {
+    "word": "We put the suitcases in the car trunk.",
+    "definition": "main stem of a tree or car storage",
+    "word_frequency": 4871
+  },
+  {
+    "word": "She filled the tub with warm water for a bath.",
+    "definition": "a wide, open, deep, usually round container",
+    "word_frequency": 6322
+  },
+  {
+    "word": "The garden was full of colorful tulips.",
+    "definition": "a spring-flowering plant of the lily family, with large, cup-shaped flowers",
+    "word_frequency": 15984
+  },
+  {
+    "word": "My tummy hurts after eating too much.",
+    "definition": "stomach (informal)",
+    "word_frequency": 11453
+  },
+  {
+    "word": "I made a tuna sandwich for lunch.",
+    "definition": "a large edible marine fish",
+    "word_frequency": 8554
+  },
+  {
+    "word": "We usually have roast turkey for Thanksgiving dinner.",
+    "definition": "a large North American bird",
+    "word_frequency": 2052
+  },
+  {
+    "word": "She added chopped turnip to the vegetable stew.",
+    "definition": "a round, white or yellow root vegetable",
+    "word_frequency": 24747
+  },
+  {
+    "word": "The turtle slowly walked across the road.",
+    "definition": "a reptile with a shell",
+    "word_frequency": 5802
+  },
+  {
+    "word": "My aunt has twin daughters.",
+    "definition": "one of two children born at the same birth",
+    "word_frequency": 2969
+  },
+  {
+    "word": "What type of music do you like?",
+    "definition": "kind, sort",
+    "word_frequency": 454
+  },
+  {
+    "word": "He had to change a flat tyre on the side of the road.",
+    "definition": "a rubber covering, typically inflated or surrounding a wheel rim",
+    "word_frequency": 10125
+  },
+  {
+    "word": "Don't forget your umbrella, it's raining.",
+    "definition": "umbrella",
+    "word_frequency": 5983
+  },
+  {
+    "word": "She bought new underwear.",
+    "definition": "clothes worn next to the skin",
+    "word_frequency": 5393
+  },
+  {
+    "word": "She wants to go to university next year.",
+    "definition": "a high-level educational institution",
+    "word_frequency": 334
+  },
+  {
+    "word": "Please enter your username and password.",
+    "definition": "a name used to identify a user",
+    "word_frequency": 7178
+  },
+  {
+    "word": "We are planning a vacation to the beach.",
+    "definition": "a holiday",
+    "word_frequency": 2713
+  },
+  {
+    "word": "He sent her a beautiful valentine.",
+    "definition": "a card or gift given on Valentine's Day",
+    "word_frequency": 6978
+  },
+  {
+    "word": "They loaded the furniture into the van.",
+    "definition": "van",
+    "word_frequency": 1376
+  },
+  {
+    "word": "I'd like a scoop of vanilla ice cream.",
+    "definition": "a flavoring extract from vanilla beans",
+    "word_frequency": 6399
+  },
+  {
+    "word": "She placed the fresh flowers in a beautiful vase.",
+    "definition": "an ornamental container for flowers",
+    "word_frequency": 9845
+  },
+  {
+    "word": "Make sure you eat your greens and other veg.",
+    "definition": "vegetable (informal)",
+    "word_frequency": 13631
+  },
+  {
+    "word": "My sister is a vegetarian and eats only vegetables.",
+    "definition": "a person who does not eat meat",
+    "word_frequency": 6980
+  },
+  {
+    "word": "In the sentence \"She sings beautifully,\" \"sings\" is the verb.",
+    "definition": "a word that describes an action, state, or occurrence",
+    "word_frequency": 7611
+  },
+  {
+    "word": "He wore a warm vest under his jacket.",
+    "definition": "a sleeveless garment worn on the upper body",
+    "word_frequency": 7504
+  },
+  {
+    "word": "We took our dog to the vet.",
+    "definition": "a person qualified to treat diseased or injured animals; a veterinarian",
+    "word_frequency": 5908
+  },
+  {
+    "word": "Let's watch a video.",
+    "definition": "moving images",
+    "word_frequency": 299
+  },
+  {
+    "word": "My brother spends hours playing videogames.",
+    "definition": "an electronic game played on a screen",
+    "word_frequency": 19485
+  },
+  {
+    "word": "The view from the mountain was amazing.",
+    "definition": "a sight; an opinion",
+    "word_frequency": 552
+  },
+  {
+    "word": "The small village was surrounded by green fields.",
+    "definition": "a small community",
+    "word_frequency": 1280
+  },
+  {
+    "word": "She wore a dress of a beautiful violet color.",
+    "definition": "violet (color/flower)",
+    "word_frequency": 6403
+  },
+  {
+    "word": "She plays the violin beautifully.",
+    "definition": "a stringed musical instrument",
+    "word_frequency": 7395
+  },
+  {
+    "word": "We had a visitor come to our house today.",
+    "definition": "a person visiting a place or person",
+    "word_frequency": 2328
+  },
+  {
+    "word": "Oranges are a good source of Vitamin C.",
+    "definition": "any of a group of organic compounds that are essential for normal growth and nutrition",
+    "word_frequency": 5019
+  },
+  {
+    "word": "She has a beautiful singing voice.",
+    "definition": "sound from mouth",
+    "word_frequency": 751
+  },
+  {
+    "word": "The volcano erupted, sending ash into the sky.",
+    "definition": "a mountain with a crater",
+    "word_frequency": 7180
+  },
+  {
+    "word": "They played volleyball on the beach.",
+    "definition": "a team sport in which two teams hit a ball over a net",
+    "word_frequency": 6329
+  },
+  {
+    "word": "The English alphabet has five main vowels: a, e, i, o, u.",
+    "definition": "a speech sound produced with an open vocal tract",
+    "word_frequency": 13116
+  },
+  {
+    "word": "I had a delicious waffle with syrup for breakfast.",
+    "definition": "a flat, crisp cake made from batter cooked in a waffle iron",
+    "word_frequency": 13634
+  },
+  {
+    "word": "The farmer loaded hay onto the wagon.",
+    "definition": "a vehicle, especially a four-wheeled one, for transporting heavy goods",
+    "word_frequency": 5910
+  },
+  {
+    "word": "She tied a belt around her waist.",
+    "definition": "the part of the body between the ribs and hips",
+    "word_frequency": 5396
+  },
+  {
+    "word": "The waitress took our order quickly.",
+    "definition": "a woman whose job is to serve customers in a restaurant",
+    "word_frequency": 9552
+  },
+  {
+    "word": "I keep my money and cards in my wallet.",
+    "definition": "a small case for money and cards",
+    "word_frequency": 4065
+  },
+  {
+    "word": "We decided to put up new wallpaper in the living room.",
+    "definition": "decorative paper for walls",
+    "word_frequency": 7979
+  },
+  {
+    "word": "She added chopped walnuts to the salad.",
+    "definition": "an edible nut with a hard, wrinkled shell; the tree it grows on",
+    "word_frequency": 9553
+  },
+  {
+    "word": "I need a new wardrobe for my bedroom.",
+    "definition": "a large cupboard for clothes",
+    "word_frequency": 6788
+  },
+  {
+    "word": "The washer broke down.",
+    "definition": "a machine for washing clothes or dishes",
+    "word_frequency": 12939
+  },
+  {
+    "word": "Excuse me, where is the nearest washroom?",
+    "definition": "a room with facilities for washing, typically a public toilet",
+    "word_frequency": 25964
+  },
+  {
+    "word": "The sound of the waterfall was very relaxing.",
+    "definition": "a cascade of water",
+    "word_frequency": 9849
+  },
+  {
+    "word": "We had watermelon for dessert.",
+    "definition": "a large, round fruit with sweet, juicy red pulp and a green rind",
+    "word_frequency": 12732
+  },
+  {
+    "word": "The children played in the waves at the beach.",
+    "definition": "a moving ridge of water; a gesture with the hand",
+    "word_frequency": 1847
+  },
+  {
+    "word": "Could you tell me where the WC is?",
+    "definition": "water closet; toilet",
+    "word_frequency": 11755
+  },
+  {
+    "word": "You can find more information on our webpage.",
+    "definition": "a document connected to the World Wide Web and viewable with a web browser",
+    "word_frequency": 12557
+  },
+  {
+    "word": "You can find more information on our website.",
+    "definition": "website",
+    "word_frequency": 704
+  },
+  {
+    "word": "They are planning their wedding.",
+    "definition": "a marriage ceremony.",
+    "word_frequency": 1254
+  },
+  {
+    "word": "We usually have a quiet dinner on a weeknight.",
+    "definition": "a night of a weekday",
+    "word_frequency": 32417
+  },
+  {
+    "word": "What is the weight of this box?",
+    "definition": "how heavy something is",
+    "word_frequency": 845
+  },
+  {
+    "word": "The sun sets in the west.",
+    "definition": "one of the four main compass points",
+    "word_frequency": 430
+  },
+  {
+    "word": "The whale surfaced near our boat.",
+    "definition": "a very large marine mammal",
+    "word_frequency": 5239
+  },
+  {
+    "word": "The car has four wheels.",
+    "definition": "circular part that turns",
+    "word_frequency": 2282
+  },
+  {
+    "word": "The hospital provides wheelchairs for patients.",
+    "definition": "a chair with wheels, used by people who cannot walk",
+    "word_frequency": 6243
+  },
+  {
+    "word": "The referee blew his whistle.",
+    "definition": "a high-pitched sound or device",
+    "word_frequency": 6069
+  },
+  {
+    "word": "Please write your ideas on the whiteboard.",
+    "definition": "A glossy white surface for writing on with marker pens.",
+    "word_frequency": 24164
+  },
+  {
+    "word": "Is there free Wi-Fi here?",
+    "definition": "a facility allowing computers, smartphones, or other devices to connect to the Internet or communicate with one another wirelessly within a particular area",
+    "word_frequency": 5554
+  },
+  {
+    "word": "The wind was blowing strongly.",
+    "definition": "the perceptible natural movement of the air",
+    "word_frequency": 1224
+  },
+  {
+    "word": "The rain was so heavy I could barely see through the windshield.",
+    "definition": "the front window of a car",
+    "word_frequency": 11757
+  },
+  {
+    "word": "Would you like a glass of red wine?",
+    "definition": "an alcoholic drink made from grapes",
+    "word_frequency": 1482
+  },
+  {
+    "word": "The bird spread its wings and flew away.",
+    "definition": "a limb or appendage of a bird, bat, or insect, enabling flight",
+    "word_frequency": 1875
+  },
+  {
+    "word": "The winner of the race received a medal.",
+    "definition": "winner",
+    "word_frequency": 1327
+  },
+  {
+    "word": "My biggest wish is for peace.",
+    "definition": "a desire or hope",
+    "word_frequency": 561
+  },
+  {
+    "word": "She stir-fried the vegetables in a hot wok.",
+    "definition": "a large, bowl-shaped frying pan",
+    "word_frequency": 26322
+  },
+  {
+    "word": "A wolf howled at the moon in the forest.",
+    "definition": "a wild animal similar to a dog",
+    "word_frequency": 2938
+  },
+  {
+    "word": "This sweater is made of soft wool.",
+    "definition": "fabric from sheep",
+    "word_frequency": 5806
+  },
+  {
+    "word": "Please complete the exercises in your workbook.",
+    "definition": "A book with exercises for students.",
+    "word_frequency": 24468
+  },
+  {
+    "word": "My workday usually starts at 9 AM.",
+    "definition": "a day on which work is done",
+    "word_frequency": 21815
+  },
+  {
+    "word": "The factory workers are on strike.",
+    "definition": "worker",
+    "word_frequency": 981
+  },
+  {
+    "word": "The teacher handed out a math worksheet to the class.",
+    "definition": "a sheet of paper with questions or exercises for a student",
+    "word_frequency": 22124
+  },
+  {
+    "word": "The bird pulled a worm out of the ground.",
+    "definition": "a long, soft-bodied invertebrate animal",
+    "word_frequency": 6985
+  },
+  {
+    "word": "Please throw the candy wrapper in the bin.",
+    "definition": "a covering or outer layer",
+    "word_frequency": 16411
+  },
+  {
+    "word": "He checked the time on his new wristwatch.",
+    "definition": "a watch worn on the wrist",
+    "word_frequency": 29295
+  },
+  {
+    "word": "My favorite writer published a new book.",
+    "definition": "a person who writes books, articles, etc.",
+    "word_frequency": 1630
+  },
+  {
+    "word": "He needed an XXL shirt because of his broad shoulders.",
+    "definition": "XXL (extra extra large)",
+    "word_frequency": 25669
+  },
+  {
+    "word": "Sweet potatoes are often confused with yams.",
+    "definition": "a starchy root vegetable",
+    "word_frequency": 19219
+  },
+  {
+    "word": "She practices yoga every morning.",
+    "definition": "a system of exercises for physical and mental health",
+    "word_frequency": 3747
+  },
+  {
+    "word": "I like to eat yoghurt with fruit for breakfast.",
+    "definition": "a semi-liquid food made from fermented milk",
+    "word_frequency": 19988
+  },
+  {
+    "word": "The egg yolk is rich in vitamins.",
+    "definition": "the yellow part of an egg",
+    "word_frequency": 19220
+  },
+  {
+    "word": "He learned to do tricks with his new yoyo.",
+    "definition": "a toy consisting of a pair of discs joined by an axle",
+    "word_frequency": 33695
+  },
+  {
+    "word": "My jacket zipper is broken.",
+    "definition": "a device consisting of two flexible strips of metal or plastic with interlocking projections, used for fastening or closing openings",
+    "word_frequency": 13645
+  },
+  {
+    "word": "She added sliced zucchini to the stir-fry.",
+    "definition": "a long, green-skinned squash, typically eaten as a vegetable",
+    "word_frequency": 21273
+  }
+]

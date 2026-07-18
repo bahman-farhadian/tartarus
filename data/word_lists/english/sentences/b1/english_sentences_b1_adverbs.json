@@ -1,0 +1,997 @@
+[
+  {
+    "word": "All passengers are now aboard the flight.",
+    "definition": "on or into a ship, aircraft, or train",
+    "word_frequency": 4069
+  },
+  {
+    "word": "She decided to study abroad for a year.",
+    "definition": "in or to a foreign country",
+    "word_frequency": 2714
+  },
+  {
+    "word": "I absolutely agree with you.",
+    "definition": "completely; totally",
+    "word_frequency": 913
+  },
+  {
+    "word": "I accidentally spilled coffee on my shirt.",
+    "definition": "by chance, unintentionally",
+    "word_frequency": 3574
+  },
+  {
+    "word": "She actively participates in class discussions.",
+    "definition": "in an active way",
+    "word_frequency": 3508
+  },
+  {
+    "word": "I actually forgot my keys.",
+    "definition": "actually",
+    "word_frequency": 250
+  },
+  {
+    "word": "Additionally, we need to consider the environmental impact.",
+    "definition": "in addition; also",
+    "word_frequency": 3700
+  },
+  {
+    "word": "He decided to go to the party after all.",
+    "definition": "in spite of everything; despite what has been said or expected",
+    "word_frequency": 33274
+  },
+  {
+    "word": "We went to the cinema and afterward we had dinner.",
+    "definition": "at a later or subsequent time",
+    "word_frequency": 6407
+  },
+  {
+    "word": "We went to the cinema and afterwards we had dinner.",
+    "definition": "at a later time; subsequently",
+    "word_frequency": 2571
+  },
+  {
+    "word": "Please arrange the names alphabetically.",
+    "definition": "in alphabetical order",
+    "word_frequency": 19226
+  },
+  {
+    "word": "It was an altogether different experience than I expected.",
+    "definition": "completely; in total",
+    "word_frequency": 4522
+  },
+  {
+    "word": "He shouted angrily at the driver.",
+    "definition": "in an angry manner",
+    "word_frequency": 12750
+  },
+  {
+    "word": "The alarm clock kept ringing annoyingly every five minutes.",
+    "definition": "in a way that causes annoyance",
+    "word_frequency": 29330
+  },
+  {
+    "word": "The company publishes its financial report annually.",
+    "definition": "once every year; yearly",
+    "word_frequency": 3953
+  },
+  {
+    "word": "It started to rain, but we went out anyhow.",
+    "definition": "in any case; anyway",
+    "word_frequency": 10586
+  },
+  {
+    "word": "I don't live there anymore.",
+    "definition": "anymore",
+    "word_frequency": 983
+  },
+  {
+    "word": "It was raining, but we went out anyway.",
+    "definition": "in any case; regardless",
+    "word_frequency": 1049
+  },
+  {
+    "word": "The apples cost fifty cents apiece.",
+    "definition": "for each one; to or for each person or thing",
+    "word_frequency": 14607
+  },
+  {
+    "word": "The boat drifted ashore during the storm.",
+    "definition": "onto or to the shore",
+    "word_frequency": 9999
+  },
+  {
+    "word": "The door opens automatically when you approach it.",
+    "definition": "without human intervention; by itself",
+    "word_frequency": 2176
+  },
+  {
+    "word": "Please wait awhile, I'll be right back.",
+    "definition": "for a short time",
+    "word_frequency": 5916
+  },
+  {
+    "word": "The actors waited backstage before the show.",
+    "definition": "in or to the area behind the stage in a theater",
+    "word_frequency": 8945
+  },
+  {
+    "word": "She could barely hear him over the noise.",
+    "definition": "almost not, hardly",
+    "word_frequency": 2285
+  },
+  {
+    "word": "Basically, the plan is to save money.",
+    "definition": "in the most essential respects; fundamentally",
+    "word_frequency": 1782
+  },
+  {
+    "word": "Please prepare all the documents beforehand.",
+    "definition": "in advance; in anticipation",
+    "word_frequency": 8690
+  },
+  {
+    "word": "He walked blindly into the dark room.",
+    "definition": "without seeing or without thought/reason",
+    "word_frequency": 13144
+  },
+  {
+    "word": "He spoke briefly about his plans.",
+    "definition": "for a short time",
+    "word_frequency": 3584
+  },
+  {
+    "word": "The bees were busily collecting nectar from the flowers.",
+    "definition": "In a busy manner; actively.",
+    "word_frequency": 34134
+  },
+  {
+    "word": "She calmly explained the situation to the police.",
+    "definition": "in a quiet and peaceful manner",
+    "word_frequency": 9449
+  },
+  {
+    "word": "He carelessly left his keys on the table.",
+    "definition": "in a way that shows a lack of care or attention",
+    "word_frequency": 22754
+  },
+  {
+    "word": "He casually walked into the room as if nothing had happened.",
+    "definition": "in a relaxed or informal way",
+    "word_frequency": 8213
+  },
+  {
+    "word": "He opened the door cautiously.",
+    "definition": "in a careful and hesitant way",
+    "word_frequency": 13151
+  },
+  {
+    "word": "She cleverly solved the puzzle.",
+    "definition": "In a clever way",
+    "word_frequency": 15847
+  },
+  {
+    "word": "Turn the knob clockwise to open it.",
+    "definition": "in the direction of the movement of the hands of a clock",
+    "word_frequency": 15435
+  },
+  {
+    "word": "They worked closely together on the project.",
+    "definition": "in a close manner; with little space or time between",
+    "word_frequency": 2138
+  },
+  {
+    "word": "He clumsily dropped the stack of plates.",
+    "definition": "in an awkward or careless way",
+    "word_frequency": 32936
+  },
+  {
+    "word": "I completely forgot about the meeting.",
+    "definition": "totally",
+    "word_frequency": 876
+  },
+  {
+    "word": "He is constantly checking his phone.",
+    "definition": "all the time; continuously",
+    "word_frequency": 2139
+  },
+  {
+    "word": "The team worked cooperatively to finish the project on time.",
+    "definition": "In a way that involves cooperation",
+    "word_frequency": 32515
+  },
+  {
+    "word": "Turn the knob counterclockwise to open it.",
+    "definition": "in the opposite direction to the movement of the hands of a clock",
+    "word_frequency": 32128
+  },
+  {
+    "word": "She approached the problem creatively.",
+    "definition": "in a way that involves the use of imagination or original ideas",
+    "word_frequency": 17537
+  },
+  {
+    "word": "He is currently working on a new project.",
+    "definition": "currently",
+    "word_frequency": 712
+  },
+  {
+    "word": "She loved her grandmother dearly.",
+    "definition": "with deep affection; at great cost",
+    "word_frequency": 10619
+  },
+  {
+    "word": "She was deeply moved by the story.",
+    "definition": "deeply",
+    "word_frequency": 2501
+  },
+  {
+    "word": "I will definitely be there.",
+    "definition": "without any doubt",
+    "word_frequency": 945
+  },
+  {
+    "word": "He delicately placed the fragile vase on the shelf.",
+    "definition": "in a careful or gentle way",
+    "word_frequency": 18797
+  },
+  {
+    "word": "She walked diagonally across the park.",
+    "definition": "at an angle; in a diagonal direction",
+    "word_frequency": 21614
+  },
+  {
+    "word": "Please send the email directly to him.",
+    "definition": "in a direct manner; without delay or interruption",
+    "word_frequency": 1079
+  },
+  {
+    "word": "The path goes downhill from here.",
+    "definition": "towards the bottom of a slope",
+    "word_frequency": 8235
+  },
+  {
+    "word": "The stock market moved downward today.",
+    "definition": "towards a lower place or level",
+    "word_frequency": 7654
+  },
+  {
+    "word": "She eagerly awaited the results.",
+    "definition": "with great interest",
+    "word_frequency": 10455
+  },
+  {
+    "word": "The ship sailed eastward.",
+    "definition": "towards the east",
+    "word_frequency": 14647
+  },
+  {
+    "word": "They traveled eastwards along the coast.",
+    "definition": "towards the east",
+    "word_frequency": 29772
+  },
+  {
+    "word": "She completed the task quickly and efficiently.",
+    "definition": "in an efficient manner",
+    "word_frequency": 6811
+  },
+  {
+    "word": "He decided to look for work elsewhere.",
+    "definition": "in, at, or to some other place",
+    "word_frequency": 2417
+  },
+  {
+    "word": "It was an embarrassing mistake.",
+    "definition": "causing embarrassment; awkward",
+    "word_frequency": 26756
+  },
+  {
+    "word": "He energetically tackled the new project.",
+    "definition": "in an energetic manner; with energy",
+    "word_frequency": 27077
+  },
+  {
+    "word": "I like all fruits, especially apples.",
+    "definition": "especially",
+    "word_frequency": 512
+  },
+  {
+    "word": "He didn't even say goodbye.",
+    "definition": "surprisingly",
+    "word_frequency": 95
+  },
+  {
+    "word": "Eventually, he found the keys he was looking for.",
+    "definition": "in the end, especially after a long delay",
+    "word_frequency": 1124
+  },
+  {
+    "word": "The weather was extremely cold.",
+    "definition": "extremely",
+    "word_frequency": 1337
+  },
+  {
+    "word": "She sings fairly well.",
+    "definition": "to a moderate extent; justly",
+    "word_frequency": 2256
+  },
+  {
+    "word": "I will love you forever.",
+    "definition": "for all time; for always",
+    "word_frequency": 1467
+  },
+  {
+    "word": "Please step forward.",
+    "definition": "towards the front",
+    "word_frequency": 640
+  },
+  {
+    "word": "Frankly, I don't think that's a good idea.",
+    "definition": "in an open, honest, and direct manner",
+    "word_frequency": 4689
+  },
+  {
+    "word": "You can speak freely about your concerns.",
+    "definition": "without restriction or impediment",
+    "word_frequency": 4545
+  },
+  {
+    "word": "The bread was freshly baked this morning.",
+    "definition": "recently, newly",
+    "word_frequency": 8843
+  },
+  {
+    "word": "I fully understand your point.",
+    "definition": "completely, entirely",
+    "word_frequency": 1103
+  },
+  {
+    "word": "He worked furiously to meet the deadline.",
+    "definition": "in a way that shows great anger; with great energy or speed",
+    "word_frequency": 15674
+  },
+  {
+    "word": "We need to discuss this further.",
+    "definition": "more, additionally",
+    "word_frequency": 404
+  },
+  {
+    "word": "Generally, I prefer to work in the morning.",
+    "definition": "generally",
+    "word_frequency": 962
+  },
+  {
+    "word": "She gently closed the door.",
+    "definition": "in a gentle manner",
+    "word_frequency": 4480
+  },
+  {
+    "word": "I would gladly help you with that.",
+    "definition": "with pleasure; willingly",
+    "word_frequency": 8113
+  },
+  {
+    "word": "The weather gradually got warmer.",
+    "definition": "slowly, little by little",
+    "word_frequency": 3667
+  },
+  {
+    "word": "She gratefully accepted the help offered by her friends.",
+    "definition": "with gratitude",
+    "word_frequency": 29070
+  },
+  {
+    "word": "Her efforts contributed greatly to the project's success.",
+    "definition": "to a great extent",
+    "word_frequency": 2998
+  },
+  {
+    "word": "We stopped halfway through the journey for a break.",
+    "definition": "at the midpoint between two points",
+    "word_frequency": 4624
+  },
+  {
+    "word": "I could hardly hear what he was saying.",
+    "definition": "almost not; barely",
+    "word_frequency": 2145
+  },
+  {
+    "word": "She eats healthily and exercises regularly.",
+    "definition": "in a way that promotes good health",
+    "word_frequency": 33865
+  },
+  {
+    "word": "It was raining heavily.",
+    "definition": "to a great degree; with great weight",
+    "word_frequency": 2115
+  },
+  {
+    "word": "After a long journey, they finally turned homeward.",
+    "definition": "towards home",
+    "word_frequency": 29091
+  },
+  {
+    "word": "Honestly, I don't know the answer.",
+    "definition": "in an honest way",
+    "word_frequency": 1615
+  },
+  {
+    "word": "Hopefully, the weather will be good tomorrow.",
+    "definition": "with hope",
+    "word_frequency": 2035
+  },
+  {
+    "word": "The line was drawn horizontally across the page.",
+    "definition": "in a horizontal direction or position",
+    "word_frequency": 13550
+  },
+  {
+    "word": "He sang horribly.",
+    "definition": "in a terrible way",
+    "word_frequency": 10479
+  },
+  {
+    "word": "The bus runs hourly from the station.",
+    "definition": "every hour",
+    "word_frequency": 7666
+  },
+  {
+    "word": "It was raining; however, we still went for a walk.",
+    "definition": "in whatever way; nevertheless",
+    "word_frequency": 199
+  },
+  {
+    "word": "Please come here immediately.",
+    "definition": "at once; instantly",
+    "word_frequency": 918
+  },
+  {
+    "word": "More importantly, we need to finish this project on time.",
+    "definition": "in an important manner",
+    "word_frequency": 4408
+  },
+  {
+    "word": "He answered the question incorrectly.",
+    "definition": "in a way that is not correct or true",
+    "word_frequency": 9354
+  },
+  {
+    "word": "The cost of living is increasing rapidly.",
+    "definition": "growing, becoming more",
+    "word_frequency": 2778
+  },
+  {
+    "word": "We decided to meet informally for coffee.",
+    "definition": "in a relaxed or unofficial way",
+    "word_frequency": 17145
+  },
+  {
+    "word": "She smiled innocently, pretending she knew nothing about the broken vase.",
+    "definition": "in an innocent manner",
+    "word_frequency": 23433
+  },
+  {
+    "word": "She recognized him instantly.",
+    "definition": "immediately",
+    "word_frequency": 3540
+  },
+  {
+    "word": "I don't want coffee, I'll have tea instead.",
+    "definition": "as an alternative",
+    "word_frequency": 476
+  },
+  {
+    "word": "She responded to the complex question intelligently.",
+    "definition": "in an intelligent manner",
+    "word_frequency": 18850
+  },
+  {
+    "word": "Interestingly, the experiment yielded unexpected results.",
+    "definition": "in an interesting way",
+    "word_frequency": 9003
+  },
+  {
+    "word": "Lastly, I would like to thank everyone for their hard work.",
+    "definition": "finally; in the last place",
+    "word_frequency": 7923
+  },
+  {
+    "word": "She touched his arm lightly to get his attention.",
+    "definition": "with little weight or force",
+    "word_frequency": 5349
+  },
+  {
+    "word": "It's likely to rain later today.",
+    "definition": "probably",
+    "word_frequency": 529
+  },
+  {
+    "word": "\"I enjoyed meeting you.\" \"Likewise.\"",
+    "definition": "in the same way; also",
+    "word_frequency": 4773
+  },
+  {
+    "word": "We try to buy our produce locally to support farmers.",
+    "definition": "in or to a particular area or neighborhood",
+    "word_frequency": 4300
+  },
+  {
+    "word": "The rope was tied loosely.",
+    "definition": "not tightly or firmly",
+    "word_frequency": 8743
+  },
+  {
+    "word": "The rabbit magically disappeared from the hat.",
+    "definition": "In a way that seems to involve magic",
+    "word_frequency": 12491
+  },
+  {
+    "word": "The audience was mainly composed of students.",
+    "definition": "mostly; chiefly",
+    "word_frequency": 1885
+  },
+  {
+    "word": "He had to manually enter all the data.",
+    "definition": "by hand; not automatically",
+    "word_frequency": 7809
+  },
+  {
+    "word": "The train was delayed; meanwhile, we waited at the station.",
+    "definition": "at the same time",
+    "word_frequency": 2338
+  },
+  {
+    "word": "He was mentally prepared for the challenge.",
+    "definition": "in the mind",
+    "word_frequency": 3728
+  },
+  {
+    "word": "The children skipped merrily down the path.",
+    "definition": "In a cheerful or lively way.",
+    "word_frequency": 24638
+  },
+  {
+    "word": "They stopped midway through their journey for a break.",
+    "definition": "in the middle of the way or distance",
+    "word_frequency": 7931
+  },
+  {
+    "word": "He was mistakenly identified as the culprit.",
+    "definition": "incorrectly; by error (as in 'mistakenly')",
+    "word_frequency": 11096
+  },
+  {
+    "word": "The weather was mostly sunny today.",
+    "definition": "for the most part; mainly",
+    "word_frequency": 1239
+  },
+  {
+    "word": "She naturally excels at sports.",
+    "definition": "in a natural way; as expected",
+    "word_frequency": 2339
+  },
+  {
+    "word": "It's nearly midnight.",
+    "definition": "almost",
+    "word_frequency": 894
+  },
+  {
+    "word": "She folded her clothes neatly.",
+    "definition": "In a tidy or orderly way.",
+    "word_frequency": 10512
+  },
+  {
+    "word": "The news affected him negatively.",
+    "definition": "in a negative way; unfavorably",
+    "word_frequency": 7938
+  },
+  {
+    "word": "She reads a book nightly before bed.",
+    "definition": "every night",
+    "word_frequency": 10667
+  },
+  {
+    "word": "I normally wake up at 7 AM.",
+    "definition": "usually; in normal circumstances",
+    "word_frequency": 1993
+  },
+  {
+    "word": "The birds flew northward for the winter.",
+    "definition": "towards the north",
+    "word_frequency": 15131
+  },
+  {
+    "word": "The birds flew northwards for the winter.",
+    "definition": "toward the north",
+    "word_frequency": 29181
+  },
+  {
+    "word": "Nowadays, most people use smartphones.",
+    "definition": "at the present time; in contrast with the past",
+    "word_frequency": 4305
+  },
+  {
+    "word": "We searched everywhere, but the keys were nowhere to be found.",
+    "definition": "not anywhere",
+    "word_frequency": 2694
+  },
+  {
+    "word": "Obviously, you need to study more for the exam.",
+    "definition": "in a way that is easily perceived or understood; clearly",
+    "word_frequency": 1317
+  },
+  {
+    "word": "We enjoy an occasional walk in the park.",
+    "definition": "happening or appearing sometimes but not often",
+    "word_frequency": 2746
+  },
+  {
+    "word": "He behaved rather oddly at the party, avoiding everyone.",
+    "definition": "in a strange or unusual way",
+    "word_frequency": 9507
+  },
+  {
+    "word": "You can still read the articles offline.",
+    "definition": "not connected to a computer network",
+    "word_frequency": 7354
+  },
+  {
+    "word": "All passengers are now onboard the flight.",
+    "definition": "on a ship, aircraft, or other vehicle",
+    "word_frequency": 9653
+  },
+  {
+    "word": "The actor walked onstage to thunderous applause.",
+    "definition": "on or onto the stage",
+    "word_frequency": 10818
+  },
+  {
+    "word": "They marched onward despite the difficult terrain.",
+    "definition": "in a continuing forward direction",
+    "word_frequency": 10953
+  },
+  {
+    "word": "She spoke openly about her struggles.",
+    "definition": "without concealment; frankly",
+    "word_frequency": 4306
+  },
+  {
+    "word": "You should study hard; otherwise, you might fail the exam.",
+    "definition": "in circumstances different from those present or implied",
+    "word_frequency": 1127
+  },
+  {
+    "word": "The package arrived overnight.",
+    "definition": "during the night",
+    "word_frequency": 3787
+  },
+  {
+    "word": "Many students choose to study overseas.",
+    "definition": "in or to a foreign country, across the sea",
+    "word_frequency": 3228
+  },
+  {
+    "word": "The success of the project was partly due to her efforts.",
+    "definition": "to some extent",
+    "word_frequency": 3166
+  },
+  {
+    "word": "She waited patiently for her turn.",
+    "definition": "in a way that shows tolerance and understanding",
+    "word_frequency": 10676
+  },
+  {
+    "word": "The plan worked perfectly.",
+    "definition": "in a perfect manner; completely",
+    "word_frequency": 1866
+  },
+  {
+    "word": "Perhaps we should go home now.",
+    "definition": "perhaps",
+    "word_frequency": 699
+  },
+  {
+    "word": "Personally, I think it's a great idea.",
+    "definition": "in a personal capacity; by way of personal involvement or opinion",
+    "word_frequency": 1997
+  },
+  {
+    "word": "He was physically exhausted after the long run.",
+    "definition": "in a physical way",
+    "word_frequency": 3169
+  },
+  {
+    "word": "The weather was pleasantly warm.",
+    "definition": "in a pleasant manner",
+    "word_frequency": 12687
+  },
+  {
+    "word": "He performed poorly on the exam.",
+    "definition": "in a bad or inferior way",
+    "word_frequency": 4370
+  },
+  {
+    "word": "It's possibly the best movie I've ever seen.",
+    "definition": "possibly",
+    "word_frequency": 1397
+  },
+  {
+    "word": "She had previously worked as a teacher.",
+    "definition": "at a previous time; before now.",
+    "word_frequency": 1242
+  },
+  {
+    "word": "Make sure you close the door properly.",
+    "definition": "correctly or appropriately",
+    "word_frequency": 1767
+  },
+  {
+    "word": "She proudly displayed her award.",
+    "definition": "in a proud manner",
+    "word_frequency": 7705
+  },
+  {
+    "word": "He apologized publicly for his mistake.",
+    "definition": "in a way that involves the public",
+    "word_frequency": 3288
+  },
+  {
+    "word": "The reports are published quarterly.",
+    "definition": "every three months",
+    "word_frequency": 5149
+  },
+  {
+    "word": "It's quite cold outside today.",
+    "definition": "fairly, completely",
+    "word_frequency": 428
+  },
+  {
+    "word": "The technology is developing rapidly.",
+    "definition": "very quickly",
+    "word_frequency": 2964
+  },
+  {
+    "word": "It's rather cold today.",
+    "definition": "to a certain extent; somewhat",
+    "word_frequency": 392
+  },
+  {
+    "word": "I recently visited Paris.",
+    "definition": "not long ago",
+    "word_frequency": 837
+  },
+  {
+    "word": "He repeatedly asked the same question.",
+    "definition": "again and again",
+    "word_frequency": 3688
+  },
+  {
+    "word": "Please drive responsibly.",
+    "definition": "In a responsible manner",
+    "word_frequency": 14751
+  },
+  {
+    "word": "Please drive safely and arrive home soon.",
+    "definition": "in a safe manner; without danger",
+    "word_frequency": 3625
+  },
+  {
+    "word": "They decided to work separately.",
+    "definition": "apart from others",
+    "word_frequency": 4507
+  },
+  {
+    "word": "He took the criticism seriously.",
+    "definition": "in a serious manner; very much",
+    "word_frequency": 1003
+  },
+  {
+    "word": "The train will arrive shortly.",
+    "definition": "in a short time; soon",
+    "word_frequency": 2396
+  },
+  {
+    "word": "He looked at me sideways.",
+    "definition": "to or from the side",
+    "word_frequency": 9829
+  },
+  {
+    "word": "He gave a sincere apology.",
+    "definition": "sincere",
+    "word_frequency": 5974
+  },
+  {
+    "word": "She was slightly taller than her brother.",
+    "definition": "to a small degree; a little",
+    "word_frequency": 1448
+  },
+  {
+    "word": "He dressed smartly for the job interview.",
+    "definition": "in a smart or intelligent way; in a stylish way",
+    "word_frequency": 22074
+  },
+  {
+    "word": "The car drove smoothly along the newly paved road.",
+    "definition": "in a way that is even and regular, without sudden movements or changes",
+    "word_frequency": 8055
+  },
+  {
+    "word": "He is very active socially.",
+    "definition": "in a social manner",
+    "word_frequency": 5373
+  },
+  {
+    "word": "We'll manage to finish the project somehow.",
+    "definition": "in a way that is not known or specified; by some means",
+    "word_frequency": 2168
+  },
+  {
+    "word": "Let's meet for coffee sometime next week.",
+    "definition": "at an unspecified or unknown time",
+    "word_frequency": 4006
+  },
+  {
+    "word": "The train is southbound to Miami.",
+    "definition": "traveling or leading towards the south",
+    "word_frequency": 15165
+  },
+  {
+    "word": "The birds flew southward for the winter.",
+    "definition": "Towards the south.",
+    "word_frequency": 18431
+  },
+  {
+    "word": "She strongly believes in equal rights for everyone.",
+    "definition": "with great physical power or force; in a strong manner",
+    "word_frequency": 2397
+  },
+  {
+    "word": "She successfully completed the difficult task.",
+    "definition": "successfully",
+    "word_frequency": 2485
+  },
+  {
+    "word": "Surely you're not going out in this rain?",
+    "definition": "certainly; without doubt",
+    "word_frequency": 2097
+  },
+  {
+    "word": "Surprisingly, the weather was good today.",
+    "definition": "in an unexpected way",
+    "word_frequency": 4433
+  },
+  {
+    "word": "The bird sang sweetly from the branch.",
+    "definition": "In a sweet manner; pleasantly",
+    "word_frequency": 19952
+  },
+  {
+    "word": "The bird flew swiftly across the sky.",
+    "definition": "at high speed; quickly",
+    "word_frequency": 9836
+  },
+  {
+    "word": "The office is temporarily closed.",
+    "definition": "for a limited period of time",
+    "word_frequency": 4659
+  },
+  {
+    "word": "Thankfully, no one was hurt in the accident.",
+    "definition": "fortunately",
+    "word_frequency": 6775
+  },
+  {
+    "word": "He was tired; therefore, he went to bed early.",
+    "definition": "for that reason; consequently",
+    "word_frequency": 1156
+  },
+  {
+    "word": "The fog lay thickly over the valley, making driving difficult.",
+    "definition": "with a large distance between opposite sides or surfaces; densely",
+    "word_frequency": 31988
+  },
+  {
+    "word": "Firstly, we need a plan; secondly, we need resources; and thirdly, we need dedication.",
+    "definition": "in the third place; as the third point.",
+    "word_frequency": 18706
+  },
+  {
+    "word": "I totally agree with you.",
+    "definition": "completely; absolutely.",
+    "word_frequency": 1252
+  },
+  {
+    "word": "Traditionally, we have turkey for Christmas.",
+    "definition": "according to tradition",
+    "word_frequency": 4661
+  },
+  {
+    "word": "I truly appreciate your help.",
+    "definition": "in a truthful way; genuinely",
+    "word_frequency": 1158
+  },
+  {
+    "word": "She typically arrives at work around 9 AM.",
+    "definition": "usually; in a typical way",
+    "word_frequency": 1842
+  },
+  {
+    "word": "The cat was hiding underneath the bed.",
+    "definition": "directly below",
+    "word_frequency": 4515
+  },
+  {
+    "word": "The rain started unexpectedly.",
+    "definition": "in a way that was not expected or foreseen",
+    "word_frequency": 7737
+  },
+  {
+    "word": "He felt he was treated unfairly.",
+    "definition": "in a way that is not fair or just",
+    "word_frequency": 12552
+  },
+  {
+    "word": "Unfortunately, we ran out of tickets.",
+    "definition": "sadly; regrettably",
+    "word_frequency": 1844
+  },
+  {
+    "word": "The road goes uphill for two miles.",
+    "definition": "towards a higher place",
+    "word_frequency": 12207
+  },
+  {
+    "word": "The salmon swim upriver to spawn.",
+    "definition": "further upstream",
+    "word_frequency": 31591
+  },
+  {
+    "word": "He looked upward at the sky.",
+    "definition": "towards a higher place or level",
+    "word_frequency": 7279
+  },
+  {
+    "word": "He spent his time usefully studying for the exam.",
+    "definition": "in a way that is helpful or beneficial",
+    "word_frequency": 34059
+  },
+  {
+    "word": "The storm raged violently through the night.",
+    "definition": "in a way that involves or is characterized by physical force intended to hurt, damage, or kill",
+    "word_frequency": 8798
+  },
+  {
+    "word": "The cat stared at me weirdly from under the bed.",
+    "definition": "in a strange or unusual way",
+    "word_frequency": 18728
+  },
+  {
+    "word": "They traveled westward across the plains.",
+    "definition": "towards the west",
+    "word_frequency": 12734
+  },
+  {
+    "word": "You can sit wherever you like.",
+    "definition": "in or to whatever place",
+    "word_frequency": 3343
+  },
+  {
+    "word": "The news was widely reported.",
+    "definition": "by a large number of people or in many places",
+    "word_frequency": 2130
+  },
+  {
+    "word": "The crowd cheered wildly.",
+    "definition": "in an uncontrolled or unrestrained manner",
+    "word_frequency": 7744
+  },
+  {
+    "word": "The concert was wonderfully performed.",
+    "definition": "in a wonderful manner",
+    "word_frequency": 9701
+  },
+  {
+    "word": "The product is sold worldwide.",
+    "definition": "throughout the world",
+    "word_frequency": 2131
+  }
+]

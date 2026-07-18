@@ -224,37 +224,30 @@ Entries without a valid CEFR level (A1–C2) are skipped by the generator; the r
 | C1 | 4 857 |
 | C2 | 307 |
 
-Regenerate any of these with `utils/generate_tartarus_json.py` — see
-[Generating word lists from the source decks](#generating-word-lists-from-the-source-decks) below.
+These categorized files are committed to the repository and are selected
+through the Practice page by language/type and then by concrete file.
 
-All sub-list names (`german_a1`, `english_b1`, etc.) don't auto-detect as a
-language for audio. Always pass `--audio-lang` (CLI) or fill **Audio language**
-(web UI):
-
-```bash
-make practice user=bahman list=german_nouns_masculine_a1 opts="--audio-lang german"
-```
-
-## Generating word lists from the source decks
-
-Raw source files in `data/sources/` come from
-[github.com/vbvss199/Language-Learning-decks](https://github.com/vbvss199/Language-Learning-decks).
-The Goethe PDFs are stored in `data/sources/goethe/`. Replace a source file and
-re-run `utils/generate_tartarus_json.py` when the source data changes.
-
-Supported source files: `data/sources/german.json`, `data/sources/english.json`.
+The web UI first filters by language/type, then exposes the concrete file
+(for example `german_a1_nouns_masculine`). The CLI accepts that same file
+identifier:
 
 ```bash
-python3 utils/generate_tartarus_json.py --all
+make practice user=bahman list=german_a1_nouns_masculine opts="--audio-lang german"
 ```
 
-The generator creates category and CEFR files directly in `data/word_lists/`.
-German files include matching sentence files, for example:
+## Dataset sources
 
-- `german_nouns_masculine_a1.json`
-- `german_nouns_masculine_sentences_a1.json`
-- `german_verbs_b1.json`
-- `german_verbs_sentences_b1.json`
+Raw source files in `data/sources/` are kept separately from the categorized
+practice files. The Goethe PDFs remain in `data/sources/goethe/`; the supported
+JSON source decks are `data/sources/german.json` and
+`data/sources/english.json`.
+
+Categorized files are organized by language and practice type:
+
+- `data/word_lists/german/vocabulary/a1/german_a1_nouns_masculine.json`
+- `data/word_lists/german/sentences/a1/german_sentences_a1_nouns_masculine.json`
+- `data/word_lists/german/vocabulary/b1/german_b1_verbs.json`
+- `data/word_lists/german/sentences/b1/german_sentences_b1_verbs.json`
 
 Each generated record may include `word_frequency`. Lower frequency ranks are
 more common, and the practice backend uses them to prioritize common words.
@@ -386,7 +379,6 @@ utils/tartarus_web.py     # web server (JSON API + static frontend)
 Makefile                  # normal web and CLI entry points (`make help`)
 utils/
   make_tartarus_video.py         # standalone: generate a vocab-drill video
-  generate_tartarus_json.py   # generate word lists from source decks
 web/
   index.html              # frontend markup
   style.css               # Catppuccin Mocha dark theme
@@ -398,9 +390,10 @@ data/
     english.json          # raw English source deck
     goethe/               # authoritative Goethe PDFs
   word_lists/
-    german_<category>_<level>.json
-    german_<category>_sentences_<level>.json
-    english_<category>_<level>.json
+    english/vocabulary/<level>/english_<level>_<category>.json
+    english/sentences/<level>/english_sentences_<level>_<category>.json
+    german/vocabulary/<level>/german_<level>_<category>.json
+    german/sentences/<level>/german_sentences_<level>_<category>.json
     <user>_<lang>.json    # generated / hand-curated word lists
 ```
 

@@ -116,7 +116,7 @@
     return String(lang || '').toLowerCase().includes('sentences');
   }
   function syncSentenceDrillOptions() {
-    const sentenceList = isSentenceListName(document.getElementById('practice-lang')?.value);
+    const sentenceList = isSentenceListName(document.getElementById('practice-file')?.value);
     [drillAllInput, drillModeInput, knownDrillModeInput, instantDrillInput].forEach((input) => {
       if (!input) return;
       input.disabled = sentenceList;
@@ -234,9 +234,11 @@
   async function startSession() {
     showError(practiceError, '');
     const userInput = document.getElementById('practice-user');
-    const langInput = document.getElementById('practice-lang');
+    const languageInput = document.getElementById('practice-lang');
+    const fileInput = document.getElementById('practice-file');
     const user = userInput.value.trim();
-    const lang = langInput.value.trim();
+    const language = languageInput.value.trim();
+    const lang = fileInput.value.trim();
     syncSentenceDrillOptions();
     const audioLang = (document.getElementById('practice-audio-lang')?.value ?? '').trim() || undefined;
     const drillMode = drillModeInput?.checked ?? false;
@@ -250,9 +252,11 @@
       const parsed = parseInt(wpmInput.value, 10);
       if (!Number.isNaN(parsed) && parsed >= 30 && parsed <= 400) wpm = parsed;
     }
-    if (!user || !lang) {
-      showError(practiceError, 'User and language are required.');
-      (user ? langInput : userInput).focus();
+    if (!user || !language || !lang) {
+      showError(practiceError, 'User, language, and word list file are required.');
+      if (!user) userInput.focus();
+      else if (!language) languageInput.focus();
+      else fileInput.focus();
       return;
     }
     try {
@@ -920,21 +924,65 @@
     return card;
   }
 
-  document.getElementById('practice-user').addEventListener('change', function () {
-    loadUserProgress(this.value);
-  });
+  const PRACTICE_CATEGORIES = [
+    ['english_vocabulary', 'English vocabulary'],
+    ['english_sentences', 'English sentences'],
+    ['german_vocabulary', 'German vocabulary'],
+    ['german_sentences', 'German sentences'],
+  ];
 
-  // Auto-fill practice audio-lang when the word list changes.
-  document.getElementById('practice-lang').addEventListener('change', function () {
-    const lang = this.value;
+  function refreshPracticeLanguage() {
+    const user = document.getElementById('practice-user').value;
+    const languageSel = document.getElementById('practice-lang');
+    const previous = languageSel.value;
+    languageSel.innerHTML = '<option value="">Select language…</option>';
+    PRACTICE_CATEGORIES.forEach(([value, label]) => {
+      const available = allWordLists.some((w) => w.user === user && w.category === value);
+      const opt = document.createElement('option');
+      opt.value = value;
+      opt.textContent = available ? label : `${label} (no files)`;
+      opt.disabled = !available;
+      if (value === previous && available) opt.selected = true;
+      languageSel.appendChild(opt);
+    });
+    refreshPracticeFile();
+  }
+
+  function refreshPracticeFile() {
+    const user = document.getElementById('practice-user').value;
+    const category = document.getElementById('practice-lang').value;
+    const fileSel = document.getElementById('practice-file');
+    const previous = fileSel.value;
+    fileSel.innerHTML = '<option value="">Select word list file…</option>';
+    allWordLists
+      .filter((w) => w.user === user && w.category === category)
+      .sort((a, b) => a.lang.localeCompare(b.lang))
+      .forEach((w) => {
+        const opt = document.createElement('option');
+        opt.value = w.lang;
+        opt.textContent = w.lang;
+        if (w.lang === previous) opt.selected = true;
+        fileSel.appendChild(opt);
+      });
+    updatePracticeAudioLanguage();
+  }
+
+  function updatePracticeAudioLanguage() {
+    const lang = document.getElementById('practice-file').value;
     const audioEl = document.getElementById('practice-audio-lang');
     syncSentenceDrillOptions();
     if (!lang) { audioEl.value = ''; return; }
     const base = lang.split('_')[0].toLowerCase();
-    audioEl.value = (lang.includes('_') && KNOWN_BASE_LANGS.has(base)) ? base : '';
-  });
+    audioEl.value = KNOWN_BASE_LANGS.has(base) ? base : '';
+  }
 
-  setupCascade('practice-user', 'practice-lang');
+  document.getElementById('practice-user').addEventListener('change', function () {
+    refreshPracticeLanguage();
+    loadUserProgress(this.value);
+  });
+  document.getElementById('practice-lang').addEventListener('change', refreshPracticeFile);
+  document.getElementById('practice-file').addEventListener('change', updatePracticeAudioLanguage);
+
   setupCascade('report-user',   'report-lang',  { allLangsDefault: true });
 
   setupCascade('editor-user',   'editor-lang');
@@ -953,6 +1001,7 @@
 
     // Always refresh dropdowns, even if API failed (will use cached/empty data).
     refreshUserSelect('practice-user', 'practice-lang');
+    refreshPracticeLanguage();
     refreshUserSelect('report-user', 'report-lang', { allLangsDefault: true });
     refreshUserSelect('editor-user', 'editor-lang');
 
@@ -963,9 +1012,12 @@
     }
     let html = '<ul class="summary-list">';
     allWordLists.forEach((wl) => {
+      const sourcePath = wl.shared
+        ? `data/word_lists/${wl.language}/${wl.kind}/${wl.level}/${wl.lang}.json`
+        : `data/word_lists/${wl.user}_${wl.lang}.json`;
       html += `<li><button class="link-btn" data-user="${escapeHtml(wl.user)}" data-lang="${escapeHtml(wl.lang)}">`
         + `<strong>${escapeHtml(wl.user)}</strong> / ${escapeHtml(wl.lang)}</button> `
-        + `&mdash; <code>data/word_lists/${escapeHtml(wl.user)}_${escapeHtml(wl.lang)}.json</code></li>`;
+        + `&mdash; <code>${escapeHtml(sourcePath)}</code></li>`;
     });
     html += '</ul>';
     listsBody.innerHTML = html;
@@ -1100,8 +1152,14 @@
       </button>`;
     card.querySelector('#btn-drill-nemesis').addEventListener('click', () => {
       document.getElementById('practice-user').value = user;
-      refreshLangSelect('practice-user', 'practice-lang');
-      document.getElementById('practice-lang').value = lang;
+      refreshPracticeLanguage();
+      const practiceList = allWordLists.find((item) => item.user === user && item.lang === lang);
+      if (practiceList) {
+        document.getElementById('practice-lang').value = practiceList.category;
+        refreshPracticeFile();
+        document.getElementById('practice-file').value = lang;
+        updatePracticeAudioLanguage();
+      }
       selectDrillMode(document.getElementById('practice-drill-mode'));
       switchView('practice');
     });

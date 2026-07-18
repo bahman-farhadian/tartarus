@@ -336,18 +336,29 @@ def ensure_sessions_table(conn, user):
 
 # --- Word List Sync ---
 def word_list_path(user, lang):
-    """
-    Returns the path to the word list JSON file.
-    First checks for user-specific file: {user}_{lang}.json
-    Then falls back to generic/shared file: {lang}.json
+    """Resolve a user's list, then the categorized shared list.
+
+    Shared lists live under ``data/word_lists/<language>/<kind>/`` while
+    user-created lists remain at the word-list root for compatibility.
     """
     user = sanitize_name(user, 'user')
     lang = sanitize_name(lang, 'language')
     user_specific = os.path.join(WORD_LISTS_DIR, f"{user}_{lang}.json")
-    generic = os.path.join(WORD_LISTS_DIR, f"{lang}.json")
     if os.path.isfile(user_specific):
         return user_specific
-    return generic
+
+    legacy = os.path.join(WORD_LISTS_DIR, f"{lang}.json")
+    if os.path.isfile(legacy):
+        return legacy
+
+    base_language = lang.split('_', 1)[0]
+    kind = 'sentences' if is_sentence_list(lang) else 'vocabulary'
+    parts = lang.split('_')
+    level_index = 2 if kind == 'sentences' else 1
+    level = parts[level_index] if len(parts) > level_index else ''
+    if level in {'a1', 'a2', 'b1', 'b2', 'c1', 'c2'}:
+        return os.path.join(WORD_LISTS_DIR, base_language, kind, level, f"{lang}.json")
+    return os.path.join(WORD_LISTS_DIR, base_language, kind, f"{lang}.json")
 
 
 def word_list_path_user_specific(user, lang):
@@ -748,8 +759,9 @@ def get_words_for_practice(user, lang, num_words=MAX_QUESTIONS, drill_mode=False
     """
     Normal mode — daily practice is capped per file:
       Priority 0: In-progress words (score < 9) that are new, practiced today,
-                  or Leitner-due — ordered by score DESC. These are the words
-                  the user is actively learning today. Once a word hits 9 it
+                  or Leitner-due — ordered by frequency rank first, then score.
+                  Lower frequency ranks are more common, so common words are
+                  introduced before less frequent words. Once a word hits 9 it
                   leaves this group for the day (it was mastered today and
                   last_practiced = today, so it won't match here again).
       Priority 1: Mastered words (score 9) whose Leitner interval has elapsed
@@ -815,10 +827,10 @@ def get_words_for_practice(user, lang, num_words=MAX_QUESTIONS, drill_mode=False
                   ))
                 )
                 ORDER BY
-                  CASE WHEN score < 9 THEN 0 ELSE 1 END,
-                  score DESC,
                   CASE WHEN word_frequency IS NULL THEN 1 ELSE 0 END,
                   word_frequency ASC,
+                  CASE WHEN score < 9 THEN 0 ELSE 1 END,
+                  score DESC,
                   last_practiced ASC
                 LIMIT ?''',
             (num_words,)

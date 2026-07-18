@@ -240,6 +240,18 @@ button:disabled {
 }
 
 /* --- Practice view --- */
+.practice-select-row .field {
+  min-width: 220px;
+}
+
+.practice-settings-row {
+  max-width: 52rem;
+}
+
+.practice-settings-row .field {
+  flex: 0 1 240px;
+}
+
 .practice-options {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -375,7 +387,7 @@ button:disabled {
 
 .check-option-audio,
 .check-option-fast {
-  width: 9rem;
+  width: 100%;
   flex-shrink: 0;
 }
 

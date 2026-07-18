@@ -1,0 +1,4067 @@
+[
+  {
+    "word": "She was absent from school due to illness.",
+    "definition": "not present in a place, at an occasion, or in a thing",
+    "word_frequency": 5173
+  },
+  {
+    "word": "Paper towels are very absorbent.",
+    "definition": "able to soak up liquid easily",
+    "word_frequency": 25361
+  },
+  {
+    "word": "The quality of the work was acceptable.",
+    "definition": "able to be agreed on or approved of",
+    "word_frequency": 3301
+  },
+  {
+    "word": "It was an accidental discovery.",
+    "definition": "happening by chance or unexpectedly",
+    "word_frequency": 6502
+  },
+  {
+    "word": "Please provide accurate information.",
+    "definition": "correct in all details",
+    "word_frequency": 1969
+  },
+  {
+    "word": "The actual cost was higher than we expected.",
+    "definition": "real, true",
+    "word_frequency": 1178
+  },
+  {
+    "word": "Do you need any additional information?",
+    "definition": "added, extra, or supplementary",
+    "word_frequency": 914
+  },
+  {
+    "word": "The chair has an adjustable height.",
+    "definition": "able to be changed to suit particular needs",
+    "word_frequency": 8936
+  },
+  {
+    "word": "She met her adoptive parents when she was a baby.",
+    "definition": "relating to adoption",
+    "word_frequency": 15017
+  },
+  {
+    "word": "The puppy was absolutely adorable.",
+    "definition": "adorable",
+    "word_frequency": 4594
+  },
+  {
+    "word": "He has an adventurous spirit.",
+    "definition": "willing to take risks or try new things",
+    "word_frequency": 10577
+  },
+  {
+    "word": "He was an affectionate child, always hugging his parents.",
+    "definition": "showing love or warmth",
+    "word_frequency": 12565
+  },
+  {
+    "word": "We are looking for an affordable apartment.",
+    "definition": "reasonably priced",
+    "word_frequency": 3575
+  },
+  {
+    "word": "He bought a beautiful Afghan rug.",
+    "definition": "relating to Afghanistan or its people",
+    "word_frequency": 6406
+  },
+  {
+    "word": "The boat remained afloat despite the storm.",
+    "definition": "floating in water; out of debt or difficulty",
+    "word_frequency": 12953
+  },
+  {
+    "word": "The dog's aggressive behavior worried its owner.",
+    "definition": "ready or likely to attack or confront; characterized by aggression",
+    "word_frequency": 3030
+  },
+  {
+    "word": "We spent an agreeable afternoon by the lake.",
+    "definition": "pleasant or pleasing.",
+    "word_frequency": 15604
+  },
+  {
+    "word": "Store the cookies in an airtight container to keep them fresh.",
+    "definition": "sealed so that air cannot get in or out",
+    "word_frequency": 21286
+  },
+  {
+    "word": "The room was light and airy, with large windows.",
+    "definition": "spacious and well-ventilated",
+    "word_frequency": 15399
+  },
+  {
+    "word": "The door was left ajar.",
+    "definition": "slightly open",
+    "word_frequency": 34085
+  },
+  {
+    "word": "We saw an Alaskan brown bear.",
+    "definition": "relating to Alaska",
+    "word_frequency": 15401
+  },
+  {
+    "word": "The drink was non-alcoholic, suitable for everyone.",
+    "definition": "containing alcohol; related to alcohol addiction",
+    "word_frequency": 5723
+  },
+  {
+    "word": "The guard remained alert throughout the night.",
+    "definition": "watchful and ready",
+    "word_frequency": 2972
+  },
+  {
+    "word": "The two sisters look very much alike.",
+    "definition": "alike",
+    "word_frequency": 4141
+  },
+  {
+    "word": "I am allergic to peanuts.",
+    "definition": "having an allergy",
+    "word_frequency": 6890
+  },
+  {
+    "word": "We visited an ancient castle.",
+    "definition": "very old",
+    "word_frequency": 1632
+  },
+  {
+    "word": "She felt anxious about her upcoming exam.",
+    "definition": "feeling or showing worry, nervousness, or unease",
+    "word_frequency": 4386
+  },
+  {
+    "word": "He was very apologetic about being late.",
+    "definition": "expressing regret",
+    "word_frequency": 20242
+  },
+  {
+    "word": "The aroma of the freshly baked bread was very appetizing.",
+    "definition": "stimulating the appetite; appealing",
+    "word_frequency": 33288
+  },
+  {
+    "word": "The approximate cost of the repairs is $500.",
+    "definition": "close to the actual, rough",
+    "word_frequency": 8447
+  },
+  {
+    "word": "The Arabian desert is vast and beautiful.",
+    "definition": "relating to Arabia or Arabs",
+    "word_frequency": 9862
+  },
+  {
+    "word": "He is learning to speak Arabic.",
+    "definition": "relating to Arabia or its language",
+    "word_frequency": 4809
+  },
+  {
+    "word": "The Arctic region is home to polar bears.",
+    "definition": "relating to the North Pole region",
+    "word_frequency": 4810
+  },
+  {
+    "word": "She loves Argentinian tango music.",
+    "definition": "relating to Argentina or its people",
+    "word_frequency": 17489
+  },
+  {
+    "word": "The kitchen was filled with an aromatic smell of spices.",
+    "definition": "having a pleasant and distinctive smell",
+    "word_frequency": 13133
+  },
+  {
+    "word": "She has a very artistic talent.",
+    "definition": "having or showing creative skill",
+    "word_frequency": 3893
+  },
+  {
+    "word": "She felt ashamed of her behavior.",
+    "definition": "ashamed",
+    "word_frequency": 4598
+  },
+  {
+    "word": "She enjoys Asian cuisine.",
+    "definition": "relating to Asia",
+    "word_frequency": 1605
+  },
+  {
+    "word": "The Asiatic lion is an endangered species.",
+    "definition": "relating to Asia or its peoples",
+    "word_frequency": 17785
+  },
+  {
+    "word": "He has a very athletic build.",
+    "definition": "physically strong and active",
+    "word_frequency": 4213
+  },
+  {
+    "word": "The students were very attentive during the lecture.",
+    "definition": "paying close attention",
+    "word_frequency": 13485
+  },
+  {
+    "word": "The classroom is equipped with modern audiovisual aids.",
+    "definition": "relating to both sound and vision",
+    "word_frequency": 21839
+  },
+  {
+    "word": "The car has an automatic transmission.",
+    "definition": "working by itself with little or no direct human control",
+    "word_frequency": 2851
+  },
+  {
+    "word": "The book is available in the library.",
+    "definition": "obtainable, ready for use",
+    "word_frequency": 432
+  },
+  {
+    "word": "The average temperature today is 20 degrees Celsius.",
+    "definition": "typical or normal",
+    "word_frequency": 578
+  },
+  {
+    "word": "Are you aware of the risks?",
+    "definition": "aware",
+    "word_frequency": 1354
+  },
+  {
+    "word": "That concert was awesome!",
+    "definition": "extremely impressive or daunting; excellent",
+    "word_frequency": 1026
+  },
+  {
+    "word": "There was an awkward silence after his comment.",
+    "definition": "clumsy or uncomfortable",
+    "word_frequency": 3188
+  },
+  {
+    "word": "He was wearing a baggy t-shirt.",
+    "definition": "loose-fitting",
+    "word_frequency": 16218
+  },
+  {
+    "word": "My uncle started to go bald in his thirties.",
+    "definition": "having little or no hair on the scalp",
+    "word_frequency": 6411
+  },
+  {
+    "word": "His arm was heavily bandaged after the accident.",
+    "definition": "covered with a bandage",
+    "word_frequency": 28630
+  },
+  {
+    "word": "He walked across the bare floor.",
+    "definition": "not clothed or covered",
+    "word_frequency": 3821
+  },
+  {
+    "word": "She walked barefoot on the sand, enjoying the warm beach.",
+    "definition": "without shoes or socks",
+    "word_frequency": 11923
+  },
+  {
+    "word": "He enjoyed the traditional Bavarian cuisine.",
+    "definition": "relating to Bavaria, a state in Germany",
+    "word_frequency": 17066
+  },
+  {
+    "word": "His excuse was not very believable.",
+    "definition": "able to be believed; credible",
+    "word_frequency": 13654
+  },
+  {
+    "word": "She is bilingual in English and Spanish.",
+    "definition": "speaking two languages fluently",
+    "word_frequency": 10005
+  },
+  {
+    "word": "The coffee was very bitter without sugar.",
+    "definition": "sharp, unpleasant taste; resentful",
+    "word_frequency": 3643
+  },
+  {
+    "word": "The food was bland and lacked seasoning.",
+    "definition": "lacking strong features or characteristics",
+    "word_frequency": 10275
+  },
+  {
+    "word": "He has been blind since birth.",
+    "definition": "unable to see",
+    "word_frequency": 2178
+  },
+  {
+    "word": "The sky had a bluish tint before the storm.",
+    "definition": "somewhat blue",
+    "word_frequency": 23323
+  },
+  {
+    "word": "The knife was blunt.",
+    "definition": "not sharp; direct in speech",
+    "word_frequency": 5816
+  },
+  {
+    "word": "The photo was blurry because my hand shook.",
+    "definition": "unclear or indistinct",
+    "word_frequency": 14017
+  },
+  {
+    "word": "It was a bold decision to quit her job and start her own business.",
+    "definition": "showing a willingness to take risks; strong in appearance",
+    "word_frequency": 3351
+  },
+  {
+    "word": "She enjoyed the traditional Bolivian music.",
+    "definition": "relating to Bolivia",
+    "word_frequency": 19251
+  },
+  {
+    "word": "I prefer boneless chicken breasts for dinner.",
+    "definition": "without bones",
+    "word_frequency": 27368
+  },
+  {
+    "word": "My older sister was always very bossy when we were children.",
+    "definition": "Fond of telling people what to do; domineering.",
+    "word_frequency": 20784
+  },
+  {
+    "word": "The constant noise from the construction site was bothersome.",
+    "definition": "causing annoyance, trouble, or worry",
+    "word_frequency": 29734
+  },
+  {
+    "word": "The children loved playing with the bouncy ball.",
+    "definition": "able to bounce well; lively and cheerful",
+    "word_frequency": 16017
+  },
+  {
+    "word": "The old car had a very boxy design compared to modern vehicles.",
+    "definition": "Having a shape like a box; square and plain.",
+    "word_frequency": 30848
+  },
+  {
+    "word": "He still had a boyish charm despite his age.",
+    "definition": "like a boy",
+    "word_frequency": 26016
+  },
+  {
+    "word": "She's a very brainy student and always gets top grades.",
+    "definition": "intelligent or intellectual",
+    "word_frequency": 32099
+  },
+  {
+    "word": "We had a brief discussion about the project.",
+    "definition": "lasting only a short time; concise",
+    "word_frequency": 2180
+  },
+  {
+    "word": "That was a brilliant idea!",
+    "definition": "very bright or radiant; exceptionally clever or talented",
+    "word_frequency": 2059
+  },
+  {
+    "word": "We took a brisk walk in the morning air.",
+    "definition": "quick and active; cool and refreshing",
+    "word_frequency": 15417
+  },
+  {
+    "word": "The river is very broad at this point.",
+    "definition": "wide; general",
+    "word_frequency": 2135
+  },
+  {
+    "word": "They shared a strong brotherly bond.",
+    "definition": "like a brother; characteristic of a brother",
+    "word_frequency": 22159
+  },
+  {
+    "word": "The old photograph had a yellowish-brownish tint.",
+    "definition": "somewhat brown in color",
+    "word_frequency": 16869
+  },
+  {
+    "word": "She has a very bubbly personality.",
+    "definition": "full of bubbles; cheerful and lively",
+    "word_frequency": 15418
+  },
+  {
+    "word": "The new software update is quite buggy.",
+    "definition": "full of bugs; having errors (informal)",
+    "word_frequency": 13146
+  },
+  {
+    "word": "The package was too bulky to carry alone.",
+    "definition": "large and unwieldy",
+    "word_frequency": 13501
+  },
+  {
+    "word": "The car ride was very bumpy on the unpaved road.",
+    "definition": "having a rough surface with many bumps; characterized by many difficulties",
+    "word_frequency": 15837
+  },
+  {
+    "word": "He had a bushy beard and thick eyebrows.",
+    "definition": "thick and shaggy",
+    "word_frequency": 20534
+  },
+  {
+    "word": "The croissant was light, flaky, and wonderfully buttery.",
+    "definition": "tasting or smelling like butter; soft and smooth like butter",
+    "word_frequency": 22457
+  },
+  {
+    "word": "She made candied pecans for the holiday dessert.",
+    "definition": "preserved in or coated with sugar",
+    "word_frequency": 32110
+  },
+  {
+    "word": "She is a very capable student.",
+    "definition": "having the ability or quality necessary to do something",
+    "word_frequency": 1852
+  },
+  {
+    "word": "It was careless of him to leave the door unlocked.",
+    "definition": "not paying enough attention or not thinking about what you are doing",
+    "word_frequency": 8960
+  },
+  {
+    "word": "He prefers casual clothes for work.",
+    "definition": "relaxed and informal",
+    "word_frequency": 3518
+  },
+  {
+    "word": "That song has a really catchy tune.",
+    "definition": "easy to remember and appealing",
+    "word_frequency": 10432
+  },
+  {
+    "word": "Be cautious when crossing the road.",
+    "definition": "careful",
+    "word_frequency": 6799
+  },
+  {
+    "word": "The central idea of the book is freedom.",
+    "definition": "main, middle",
+    "word_frequency": 638
+  },
+  {
+    "word": "The weather in spring is very changeable.",
+    "definition": "liable to change",
+    "word_frequency": 27382
+  },
+  {
+    "word": "The old village was very charming with its narrow streets.",
+    "definition": "pleasant or attractive",
+    "word_frequency": 4534
+  },
+  {
+    "word": "She was in a very chatty mood after her coffee.",
+    "definition": "Fond of chatting; talkative.",
+    "word_frequency": 22175
+  },
+  {
+    "word": "She always has a cheery disposition, even on Mondays.",
+    "definition": "happy and optimistic",
+    "word_frequency": 19768
+  },
+  {
+    "word": "These cookies are deliciously soft and chewy.",
+    "definition": "(of food) requiring much chewing",
+    "word_frequency": 21592
+  },
+  {
+    "word": "His childish behavior annoyed everyone at the meeting.",
+    "definition": "like a child in a bad sense; silly and immature",
+    "word_frequency": 7417
+  },
+  {
+    "word": "The couple remained childless throughout their lives.",
+    "definition": "without children",
+    "word_frequency": 18512
+  },
+  {
+    "word": "She enjoyed the Chilean wine with her dinner.",
+    "definition": "relating to Chile or its people",
+    "word_frequency": 11171
+  },
+  {
+    "word": "The boat struggled in the choppy waters of the bay.",
+    "definition": "(of a sea or river) having many small waves; (of a voice or sound) broken and irregular",
+    "word_frequency": 22468
+  },
+  {
+    "word": "The church choir performed a beautiful choral piece.",
+    "definition": "relating to or sung by a choir or chorus",
+    "word_frequency": 15037
+  },
+  {
+    "word": "Many Christian holidays are celebrated in December.",
+    "definition": "relating to Christianity or its adherents",
+    "word_frequency": 1121
+  },
+  {
+    "word": "The baby had chubby cheeks.",
+    "definition": "plump and rounded",
+    "word_frequency": 11339
+  },
+  {
+    "word": "She wore a chunky knit sweater.",
+    "definition": "thick, solid, or lumpy",
+    "word_frequency": 13330
+  },
+  {
+    "word": "There was a citywide celebration after the team won the championship.",
+    "definition": "extending throughout a city",
+    "word_frequency": 25418
+  },
+  {
+    "word": "This is a classic example of his work.",
+    "definition": "judged over a period of time to be of the highest quality",
+    "word_frequency": 1512
+  },
+  {
+    "word": "He's a bit clumsy and often trips over his own feet.",
+    "definition": "awkward in movement or handling things",
+    "word_frequency": 11172
+  },
+  {
+    "word": "We bought a collapsible table for camping.",
+    "definition": "Able to be folded flat or into a smaller shape.",
+    "word_frequency": 30122
+  },
+  {
+    "word": "Water is a colorless and odorless liquid.",
+    "definition": "Without color; lacking distinctive character or interest.",
+    "word_frequency": 19542
+  },
+  {
+    "word": "The market was filled with colourful fruits and vegetables.",
+    "definition": "having many colours; full of variety",
+    "word_frequency": 9589
+  },
+  {
+    "word": "This sofa is really comfy.",
+    "definition": "comfortable",
+    "word_frequency": 8580
+  },
+  {
+    "word": "The clown's antics were truly comical.",
+    "definition": "funny or amusing",
+    "word_frequency": 14843
+  },
+  {
+    "word": "The area is zoned for commercial use.",
+    "definition": "relating to commerce; intended to make a profit",
+    "word_frequency": 1031
+  },
+  {
+    "word": "The puzzle is now complete.",
+    "definition": "having all the necessary parts",
+    "word_frequency": 674
+  },
+  {
+    "word": "He felt confident about passing the exam.",
+    "definition": "feeling or showing confidence in oneself or one's abilities",
+    "word_frequency": 2543
+  },
+  {
+    "word": "She enjoyed the vibrant Congolese music.",
+    "definition": "relating to Congo",
+    "word_frequency": 19274
+  },
+  {
+    "word": "It was very considerate of you to offer help.",
+    "definition": "careful not to inconvenience or harm others",
+    "word_frequency": 13513
+  },
+  {
+    "word": "I prefer to use contactless payment methods.",
+    "definition": "not requiring physical contact",
+    "word_frequency": 28035
+  },
+  {
+    "word": "The flu is a highly contagious illness.",
+    "definition": "(of a disease) spread from one person or organism to another by direct or indirect contact",
+    "word_frequency": 9210
+  },
+  {
+    "word": "The store is very convenient, just a short walk from my house.",
+    "definition": "fitting in well with a person's needs, activities, and plans",
+    "word_frequency": 4026
+  },
+  {
+    "word": "The students were very cooperative during the group project.",
+    "definition": "involving cooperation",
+    "word_frequency": 6172
+  },
+  {
+    "word": "She bought a new cordless vacuum cleaner.",
+    "definition": "having no cord; operating without a cord",
+    "word_frequency": 28038
+  },
+  {
+    "word": "The delay proved to be a costly mistake for the company.",
+    "definition": "expensive; resulting in loss",
+    "word_frequency": 5571
+  },
+  {
+    "word": "The small cottage felt very cosy.",
+    "definition": "giving a feeling of comfort, warmth, and relaxation",
+    "word_frequency": 13337
+  },
+  {
+    "word": "He was too cowardly to admit his mistake.",
+    "definition": "lacking courage",
+    "word_frequency": 11504
+  },
+  {
+    "word": "The small cottage felt very cozy in winter.",
+    "definition": "comfortable and warm",
+    "word_frequency": 8469
+  },
+  {
+    "word": "The baby was cranky because he hadn't had his nap.",
+    "definition": "easily annoyed or irritated; bad-tempered",
+    "word_frequency": 16462
+  },
+  {
+    "word": "The soup had a rich, creamy texture.",
+    "definition": "resembling cream in consistency or color",
+    "word_frequency": 11346
+  },
+  {
+    "word": "She is a very creative artist.",
+    "definition": "relating to or involving the use of the imagination or original ideas",
+    "word_frequency": 1877
+  },
+  {
+    "word": "That old abandoned house looks really creepy.",
+    "definition": "causing an unpleasant feeling of fear or unease",
+    "word_frequency": 4753
+  },
+  {
+    "word": "The autumn air was crisp and cool.",
+    "definition": "crisp",
+    "word_frequency": 7775
+  },
+  {
+    "word": "The picture on the wall was crooked.",
+    "definition": "bent or twisted out of shape or out of place",
+    "word_frequency": 8585
+  },
+  {
+    "word": "It was cruel to leave the dog alone in the rain.",
+    "definition": "willfully causing pain or suffering to others",
+    "word_frequency": 4222
+  },
+  {
+    "word": "I love crunchy apples.",
+    "definition": "making a crisp sound when bitten",
+    "word_frequency": 15049
+  },
+  {
+    "word": "She enjoyed listening to Cuban music.",
+    "definition": "relating to Cuba",
+    "word_frequency": 5572
+  },
+  {
+    "word": "The puppy was very soft and cuddly.",
+    "definition": "inviting hugs or snuggling",
+    "word_frequency": 16696
+  },
+  {
+    "word": "Many diseases are now curable with modern medicine.",
+    "definition": "able to be cured",
+    "word_frequency": 30470
+  },
+  {
+    "word": "What is your current address?",
+    "definition": "happening now",
+    "word_frequency": 447
+  },
+  {
+    "word": "Many schools no longer teach cursive writing.",
+    "definition": "Written with the characters joined.",
+    "word_frequency": 22771
+  },
+  {
+    "word": "The road was very curvy as it wound through the mountains.",
+    "definition": "having curves; shapely",
+    "word_frequency": 16464
+  },
+  {
+    "word": "She is learning the Czech language.",
+    "definition": "relating to the Czech Republic or its language",
+    "word_frequency": 5421
+  },
+  {
+    "word": "The clothes are still a bit damp, so don't put them away yet.",
+    "definition": "slightly wet",
+    "word_frequency": 8701
+  },
+  {
+    "word": "He enjoys Danish pastries for breakfast.",
+    "definition": "relating to Denmark",
+    "word_frequency": 5739
+  },
+  {
+    "word": "The snake's venom was deadly.",
+    "definition": "causing death",
+    "word_frequency": 3963
+  },
+  {
+    "word": "My grandfather is partially deaf.",
+    "definition": "unable to hear",
+    "word_frequency": 5111
+  },
+  {
+    "word": "He's a decent person, always willing to help.",
+    "definition": "of an acceptable standard; satisfactory",
+    "word_frequency": 2679
+  },
+  {
+    "word": "The vase is purely decorative and not meant for holding water.",
+    "definition": "serving to make something look more attractive; ornamental",
+    "word_frequency": 6710
+  },
+  {
+    "word": "We need a definite answer by tomorrow.",
+    "definition": "clearly stated or decided; not vague or doubtful",
+    "word_frequency": 6910
+  },
+  {
+    "word": "The butterfly has delicate wings.",
+    "definition": "easily broken or damaged",
+    "word_frequency": 4970
+  },
+  {
+    "word": "We had a delightful evening with our friends.",
+    "definition": "causing delight; charming",
+    "word_frequency": 7012
+  },
+  {
+    "word": "She has a dental appointment next week.",
+    "definition": "relating to teeth or dentistry",
+    "word_frequency": 4282
+  },
+  {
+    "word": "Children are dependent on their parents.",
+    "definition": "reliant on someone or something else",
+    "word_frequency": 3258
+  },
+  {
+    "word": "Japan is considered a highly developed country.",
+    "definition": "advanced or mature in terms of economy, technology, or culture; having grown or progressed",
+    "word_frequency": 20476
+  },
+  {
+    "word": "She follows a strict diabetic diet.",
+    "definition": "relating to diabetes; a person with diabetes",
+    "word_frequency": 11041
+  },
+  {
+    "word": "We live in a digital age.",
+    "definition": "relating to or using computer technology",
+    "word_frequency": 1233
+  },
+  {
+    "word": "The light in the room was very dim.",
+    "definition": "not brightly lit",
+    "word_frequency": 8707
+  },
+  {
+    "word": "Take the direct route to the city center.",
+    "definition": "going straight from one place to another",
+    "word_frequency": 1056
+  },
+  {
+    "word": "He has a very disagreeable personality, which makes him difficult to work with.",
+    "definition": "unpleasant or offensive",
+    "word_frequency": 28056
+  },
+  {
+    "word": "That smell is absolutely disgusting.",
+    "definition": "causing a strong feeling of dislike",
+    "word_frequency": 3530
+  },
+  {
+    "word": "It was dishonest of him to lie about what happened.",
+    "definition": "not truthful or trustworthy",
+    "word_frequency": 10030
+  },
+  {
+    "word": "The disobedient child refused to go to bed.",
+    "definition": "Refusing to obey rules or someone in authority.",
+    "word_frequency": 30140
+  },
+  {
+    "word": "His desk is always so disorganized.",
+    "definition": "not well-organized",
+    "word_frequency": 20049
+  },
+  {
+    "word": "We use disposable plates for picnics to make cleanup easier.",
+    "definition": "designed to be thrown away after use",
+    "word_frequency": 9324
+  },
+  {
+    "word": "His comments were very disrespectful to the elderly.",
+    "definition": "showing a lack of respect",
+    "word_frequency": 8473
+  },
+  {
+    "word": "Many customers were dissatisfied with the service.",
+    "definition": "not content or happy with something",
+    "word_frequency": 13344
+  },
+  {
+    "word": "We could see a distant light in the darkness.",
+    "definition": "far away",
+    "word_frequency": 3768
+  },
+  {
+    "word": "I felt dizzy after spinning around too fast.",
+    "definition": "having a sensation of spinning and a tendency to fall",
+    "word_frequency": 11353
+  },
+  {
+    "word": "The task seems difficult, but it's definitely doable.",
+    "definition": "possible to do; feasible",
+    "word_frequency": 18804
+  },
+  {
+    "word": "He felt a bit dopey after taking the cold medicine.",
+    "definition": "silly or foolish; sluggish or drowsy",
+    "word_frequency": 29767
+  },
+  {
+    "word": "He wore a dorky hat to the party.",
+    "definition": "unfashionable and socially awkward",
+    "word_frequency": 28371
+  },
+  {
+    "word": "It's doubtful that he will arrive on time.",
+    "definition": "feeling uncertain about something",
+    "word_frequency": 10032
+  },
+  {
+    "word": "The software update is now downloadable from our website.",
+    "definition": "able to be downloaded",
+    "word_frequency": 16254
+  },
+  {
+    "word": "The weather was dreadful all weekend.",
+    "definition": "extremely bad or unpleasant",
+    "word_frequency": 8236
+  },
+  {
+    "word": "She had a dreamy look in her eyes as she gazed at the stars.",
+    "definition": "like a dream; vague or ethereal",
+    "word_frequency": 14860
+  },
+  {
+    "word": "The water from the tap is drinkable in most cities.",
+    "definition": "safe or suitable for drinking",
+    "word_frequency": 33375
+  },
+  {
+    "word": "The medication made her feel very drowsy.",
+    "definition": "sleepy and lethargic; half asleep",
+    "word_frequency": 25132
+  },
+  {
+    "word": "He was too drunk to drive home safely.",
+    "definition": "affected by alcohol to the extent of losing control of one's faculties or behavior",
+    "word_frequency": 1858
+  },
+  {
+    "word": "Everything's just ducky, thanks for asking.",
+    "definition": "fine; excellent; pleasant (informal, somewhat dated)",
+    "word_frequency": 29769
+  },
+  {
+    "word": "The train is due to arrive at 3 PM.",
+    "definition": "expected, owed",
+    "word_frequency": 361
+  },
+  {
+    "word": "The movie was quite dull.",
+    "definition": "not interesting or exciting; not sharp",
+    "word_frequency": 5502
+  },
+  {
+    "word": "That was a dumb mistake.",
+    "definition": "stupid; unable to speak",
+    "word_frequency": 2110
+  },
+  {
+    "word": "This material is very durable and will last a long time.",
+    "definition": "able to withstand wear, pressure, or damage",
+    "word_frequency": 8003
+  },
+  {
+    "word": "She was eager to start her new job.",
+    "definition": "keen or enthusiastic",
+    "word_frequency": 4823
+  },
+  {
+    "word": "The eastbound train was delayed by an hour.",
+    "definition": "traveling or leading towards the east",
+    "word_frequency": 18808
+  },
+  {
+    "word": "An easterly wind brought colder air.",
+    "definition": "in or towards the east; (of a wind) blowing from the east",
+    "word_frequency": 21353
+  },
+  {
+    "word": "The sun rises in the eastern sky.",
+    "definition": "eastern",
+    "word_frequency": 1359
+  },
+  {
+    "word": "He has a very easygoing personality.",
+    "definition": "relaxed and tolerant in attitude or manner",
+    "word_frequency": 30904
+  },
+  {
+    "word": "She enjoyed the Ecuadorian cuisine.",
+    "definition": "relating to Ecuador or its people",
+    "word_frequency": 23967
+  },
+  {
+    "word": "Are these mushrooms edible?",
+    "definition": "fit or suitable to be eaten",
+    "word_frequency": 8594
+  },
+  {
+    "word": "We visited the Egyptian museum.",
+    "definition": "relating to Egypt",
+    "word_frequency": 3659
+  },
+  {
+    "word": "The waistband of these trousers is very elastic.",
+    "definition": "able to return to its original shape or size after being stretched or squeezed",
+    "word_frequency": 9098
+  },
+  {
+    "word": "My elder sister is a doctor.",
+    "definition": "of a greater age",
+    "word_frequency": 4617
+  },
+  {
+    "word": "The elderly couple enjoyed their quiet life.",
+    "definition": "old or aging",
+    "word_frequency": 4030
+  },
+  {
+    "word": "He's training to be an electrical engineer.",
+    "definition": "relating to or operated by electricity",
+    "word_frequency": 2588
+  },
+  {
+    "word": "I bought a new electronic device.",
+    "definition": "relating to electronics",
+    "word_frequency": 2070
+  },
+  {
+    "word": "She wore an elegant dress.",
+    "definition": "graceful and stylish in appearance or manner",
+    "word_frequency": 5426
+  },
+  {
+    "word": "He has an elementary understanding of physics.",
+    "definition": "relating to the most basic principles of a subject",
+    "word_frequency": 2989
+  },
+  {
+    "word": "The children had endless energy to play all day.",
+    "definition": "without end",
+    "word_frequency": 3842
+  },
+  {
+    "word": "The children were very energetic after their nap.",
+    "definition": "showing or involving great activity or vitality",
+    "word_frequency": 7658
+  },
+  {
+    "word": "The elephant was an enormous animal.",
+    "definition": "very large",
+    "word_frequency": 3414
+  },
+  {
+    "word": "She was very enthusiastic about the new project.",
+    "definition": "having or showing intense and eager enjoyment, interest, or approval",
+    "word_frequency": 6351
+  },
+  {
+    "word": "He ate the entire cake.",
+    "definition": "entire",
+    "word_frequency": 696
+  },
+  {
+    "word": "All people should be treated as equal.",
+    "definition": "equal",
+    "word_frequency": 1730
+  },
+  {
+    "word": "Water is essential for life.",
+    "definition": "absolutely necessary or important",
+    "word_frequency": 1859
+  },
+  {
+    "word": "She is learning Estonian to communicate with her relatives.",
+    "definition": "relating to Estonia, its people, or its language",
+    "word_frequency": 17559
+  },
+  {
+    "word": "It was an eventful day, full of surprises.",
+    "definition": "full of events or incidents",
+    "word_frequency": 19567
+  },
+  {
+    "word": "Brushing your teeth is an everyday activity.",
+    "definition": "ordinary, usual, or happening every day",
+    "word_frequency": 2374
+  },
+  {
+    "word": "I need the exact measurements.",
+    "definition": "precise; accurate",
+    "word_frequency": 2226
+  },
+  {
+    "word": "They went to extreme lengths to finish the project.",
+    "definition": "very great or severe",
+    "word_frequency": 1882
+  },
+  {
+    "word": "That dress looks absolutely fab on you!",
+    "definition": "Fabulous; excellent.",
+    "word_frequency": 11962
+  },
+  {
+    "word": "You look absolutely fabulous in that outfit!",
+    "definition": "Extraordinary, especially in being very good or impressive.",
+    "word_frequency": 4474
+  },
+  {
+    "word": "She received a facial massage at the spa.",
+    "definition": "of or relating to the face",
+    "word_frequency": 4344
+  },
+  {
+    "word": "We heard a faint sound in the distance.",
+    "definition": "barely perceptible; lacking strength or vigor",
+    "word_frequency": 6923
+  },
+  {
+    "word": "That was a fair decision.",
+    "definition": "just or appropriate in the circumstances",
+    "word_frequency": 905
+  },
+  {
+    "word": "The dog was a faithful companion.",
+    "definition": "loyal, true, and constant",
+    "word_frequency": 4345
+  },
+  {
+    "word": "That's a fake designer bag.",
+    "definition": "fake",
+    "word_frequency": 1731
+  },
+  {
+    "word": "Her face looked familiar, but I couldn't remember her name.",
+    "definition": "well known or recognized",
+    "word_frequency": 1860
+  },
+  {
+    "word": "They went to a fancy restaurant.",
+    "definition": "elaborate in structure or decoration; expensive",
+    "word_frequency": 2905
+  },
+  {
+    "word": "We had a fantastic time at the party.",
+    "definition": "extraordinarily good or attractive",
+    "word_frequency": 1559
+  },
+  {
+    "word": "She dreamed of traveling to faraway lands.",
+    "definition": "distant in space or time",
+    "word_frequency": 20314
+  },
+  {
+    "word": "She always wears fashionable clothes.",
+    "definition": "Conforming to the current fashion.",
+    "word_frequency": 8353
+  },
+  {
+    "word": "He offered some fatherly advice to the young man.",
+    "definition": "like a father; characteristic of a father",
+    "word_frequency": 32979
+  },
+  {
+    "word": "Avoid eating too many fatty foods.",
+    "definition": "containing a lot of fat",
+    "word_frequency": 6719
+  },
+  {
+    "word": "The child was fearful of the dark.",
+    "definition": "feeling or showing fear or anxiety",
+    "word_frequency": 9227
+  },
+  {
+    "word": "The bird had beautiful feathered wings.",
+    "definition": "having feathers",
+    "word_frequency": 18819
+  },
+  {
+    "word": "The female lion protects her cubs.",
+    "definition": "relating to the sex that can bear offspring",
+    "word_frequency": 882
+  },
+  {
+    "word": "The town was decorated with festive lights for the holidays.",
+    "definition": "relating to a festival, especially Christmas",
+    "word_frequency": 9228
+  },
+  {
+    "word": "The child felt feverish and had to stay home from school.",
+    "definition": "having or showing the symptoms of a fever; characterized by intense emotion or activity",
+    "word_frequency": 25149
+  },
+  {
+    "word": "I prefer fizzy drinks over still water.",
+    "definition": "(of a drink) effervescent; bubbling",
+    "word_frequency": 25153
+  },
+  {
+    "word": "The pastry was deliciously flaky.",
+    "definition": "tending to break into small, thin pieces; unreliable",
+    "word_frequency": 23685
+  },
+  {
+    "word": "Gasoline is a highly flammable liquid.",
+    "definition": "easily set on fire",
+    "word_frequency": 16074
+  },
+  {
+    "word": "The bird had small, flappy wings.",
+    "definition": "loose and flapping",
+    "word_frequency": 24558
+  },
+  {
+    "word": "This soup is very flavorful.",
+    "definition": "full of flavor; tasty",
+    "word_frequency": 30170
+  },
+  {
+    "word": "He speaks Flemish fluently.",
+    "definition": "relating to Flanders, its people, or their language",
+    "word_frequency": 17847
+  },
+  {
+    "word": "Yoga helps you become more flexible.",
+    "definition": "flexible",
+    "word_frequency": 4164
+  },
+  {
+    "word": "The dog's ears were long and floppy.",
+    "definition": "limp or not stiff",
+    "word_frequency": 14457
+  },
+  {
+    "word": "She chose a dress with a beautiful floral pattern.",
+    "definition": "of or relating to flowers",
+    "word_frequency": 7022
+  },
+  {
+    "word": "She is fluent in three languages.",
+    "definition": "able to speak or write a language easily",
+    "word_frequency": 10048
+  },
+  {
+    "word": "It was a foggy morning, making driving difficult.",
+    "definition": "full of fog; unclear",
+    "word_frequency": 15670
+  },
+  {
+    "word": "I bought a new foldable chair for camping.",
+    "definition": "able to be folded",
+    "word_frequency": 32172
+  },
+  {
+    "word": "I am very fond of my grandmother.",
+    "definition": "having a strong liking or affection for someone or something",
+    "word_frequency": 5934
+  },
+  {
+    "word": "It was a foolish mistake to make.",
+    "definition": "lacking good sense or judgment; silly",
+    "word_frequency": 5935
+  },
+  {
+    "word": "She speaks several foreign languages.",
+    "definition": "foreign",
+    "word_frequency": 718
+  },
+  {
+    "word": "He's become very forgetful in his old age.",
+    "definition": "apt to forget",
+    "word_frequency": 23690
+  },
+  {
+    "word": "The movie was so forgettable, I can't even remember the plot.",
+    "definition": "easily forgotten; not memorable",
+    "word_frequency": 23691
+  },
+  {
+    "word": "You need to wear formal clothes for the interview.",
+    "definition": "done in accordance with rules of convention or etiquette; suitable for an official or important occasion",
+    "word_frequency": 2463
+  },
+  {
+    "word": "The former president gave a speech.",
+    "definition": "previous, earlier",
+    "word_frequency": 436
+  },
+  {
+    "word": "We were fortunate to find a parking spot so quickly.",
+    "definition": "favored by or involving good luck",
+    "word_frequency": 5262
+  },
+  {
+    "word": "Handle with care, as the vase is very fragile.",
+    "definition": "easily broken or damaged",
+    "word_frequency": 6188
+  },
+  {
+    "word": "The garden was filled with fragrant roses.",
+    "definition": "having a pleasant or sweet smell",
+    "word_frequency": 15267
+  },
+  {
+    "word": "He is a frequent visitor to the library.",
+    "definition": "happening often",
+    "word_frequency": 3316
+  },
+  {
+    "word": "This lake is home to many freshwater fish.",
+    "definition": "relating to water that is not salty",
+    "word_frequency": 10054
+  },
+  {
+    "word": "After the rain, her hair became very frizzy.",
+    "definition": "in small, tight curls",
+    "word_frequency": 32986
+  },
+  {
+    "word": "It was a frosty morning, and the grass was white.",
+    "definition": "very cold, with a thin layer of ice",
+    "word_frequency": 15474
+  },
+  {
+    "word": "This wine has a lovely fruity aroma.",
+    "definition": "tasting or smelling of fruit",
+    "word_frequency": 14259
+  },
+  {
+    "word": "He was furious when he found out about the lie.",
+    "definition": "extremely angry",
+    "word_frequency": 5195
+  },
+  {
+    "word": "The cat has soft, furry paws.",
+    "definition": "covered with fur",
+    "word_frequency": 9476
+  },
+  {
+    "word": "He's very fussy about his food and won't eat anything green.",
+    "definition": "hard to please; overly concerned with minor details",
+    "word_frequency": 19046
+  },
+  {
+    "word": "She is learning Scottish Gaelic.",
+    "definition": "relating to the Goidelic languages or their speakers",
+    "word_frequency": 14661
+  },
+  {
+    "word": "The parade celebrated gay pride.",
+    "definition": "homosexual",
+    "word_frequency": 1087
+  },
+  {
+    "word": "This is a general rule.",
+    "definition": "general",
+    "word_frequency": 266
+  },
+  {
+    "word": "She is very generous with her time.",
+    "definition": "giving freely",
+    "word_frequency": 3720
+  },
+  {
+    "word": "They saw a giant tree in the forest.",
+    "definition": "giant",
+    "word_frequency": 1823
+  },
+  {
+    "word": "They built a gigantic statue in the city center.",
+    "definition": "extremely large",
+    "word_frequency": 8608
+  },
+  {
+    "word": "She loves wearing girly dresses with ruffles and bows.",
+    "definition": "characteristic of or appropriate to a girl",
+    "word_frequency": 14879
+  },
+  {
+    "word": "The children loved the glittery decorations.",
+    "definition": "sparkling with small, bright flashes of light",
+    "word_frequency": 29437
+  },
+  {
+    "word": "The weather was gloomy all weekend.",
+    "definition": "Dark or depressing; sad.",
+    "word_frequency": 11968
+  },
+  {
+    "word": "The magazine had a glossy cover.",
+    "definition": "smooth and shiny",
+    "word_frequency": 11369
+  },
+  {
+    "word": "The football match ended in a goalless draw.",
+    "definition": "without a goal being scored",
+    "word_frequency": 28407
+  },
+  {
+    "word": "She wore a beautiful golden necklace.",
+    "definition": "made of gold; bright yellow",
+    "word_frequency": 1667
+  },
+  {
+    "word": "He has a goofy sense of humor.",
+    "definition": "silly; ridiculous",
+    "word_frequency": 9341
+  },
+  {
+    "word": "She looked gorgeous in her new dress.",
+    "definition": "beautiful; very attractive",
+    "word_frequency": 2906
+  },
+  {
+    "word": "There has been a gradual improvement in his health.",
+    "definition": "taking place or progressing slowly or by degrees",
+    "word_frequency": 8115
+  },
+  {
+    "word": "The old photograph looked grainy and faded.",
+    "definition": "having a rough or granular texture",
+    "word_frequency": 24571
+  },
+  {
+    "word": "We sat down on the grassy hill.",
+    "definition": "covered with grass",
+    "word_frequency": 14671
+  },
+  {
+    "word": "I am grateful for your help.",
+    "definition": "feeling or showing appreciation for something received or done",
+    "word_frequency": 2907
+  },
+  {
+    "word": "The sky had a grayish tint before the storm.",
+    "definition": "somewhat gray",
+    "word_frequency": 32188
+  },
+  {
+    "word": "The greedy child wanted all the candy for himself.",
+    "definition": "having an excessive desire for something, especially wealth",
+    "word_frequency": 7223
+  },
+  {
+    "word": "The water had a greenish tint.",
+    "definition": "somewhat green",
+    "word_frequency": 19823
+  },
+  {
+    "word": "The sky had a dull, greyish color.",
+    "definition": "somewhat grey",
+    "word_frequency": 30946
+  },
+  {
+    "word": "He's always a bit grouchy before his first cup of coffee.",
+    "definition": "irritable and bad-tempered",
+    "word_frequency": 33422
+  },
+  {
+    "word": "He's always grumpy before his first cup of coffee.",
+    "definition": "bad-tempered and irritable",
+    "word_frequency": 10783
+  },
+  {
+    "word": "She enjoyed the traditional Guatemalan coffee.",
+    "definition": "relating to Guatemala",
+    "word_frequency": 22262
+  },
+  {
+    "word": "He felt guilty for breaking the vase.",
+    "definition": "culpable of or responsible for a specified wrongdoing",
+    "word_frequency": 1861
+  },
+  {
+    "word": "The Guinean delegation arrived for the summit.",
+    "definition": "relating to Guinea or its people",
+    "word_frequency": 32587
+  },
+  {
+    "word": "It was a cold and gusty day, perfect for flying a kite.",
+    "definition": "characterized by gusts of wind",
+    "word_frequency": 33425
+  },
+  {
+    "word": "The cat was completely hairless.",
+    "definition": "without hair",
+    "word_frequency": 22832
+  },
+  {
+    "word": "The dog has very hairy legs. That was a hairy situation.",
+    "definition": "covered with hair; difficult or dangerous",
+    "word_frequency": 6727
+  },
+  {
+    "word": "He bought a new handheld gaming device.",
+    "definition": "Designed to be held in the hand.",
+    "word_frequency": 12465
+  },
+  {
+    "word": "The building has ramps for handicapped access.",
+    "definition": "having a physical or mental disability",
+    "word_frequency": 11537
+  },
+  {
+    "word": "She sells beautiful handmade jewelry.",
+    "definition": "made by hand, not by machine",
+    "word_frequency": 8490
+  },
+  {
+    "word": "The letter was handwritten and difficult to read.",
+    "definition": "written by hand rather than typed or printed",
+    "word_frequency": 13013
+  },
+  {
+    "word": "It's handy to have a map with you.",
+    "definition": "useful or convenient",
+    "word_frequency": 5269
+  },
+  {
+    "word": "She is a very hardworking student.",
+    "definition": "diligent and industrious",
+    "word_frequency": 13711
+  },
+  {
+    "word": "Smoking is harmful to your health.",
+    "definition": "causing or likely to cause harm",
+    "word_frequency": 5271
+  },
+  {
+    "word": "Don't worry, the snake is completely harmless.",
+    "definition": "not causing harm",
+    "word_frequency": 6824
+  },
+  {
+    "word": "The cake tasted heavenly.",
+    "definition": "of heaven; delightful",
+    "word_frequency": 7128
+  },
+  {
+    "word": "It was a hectic day at work with many meetings.",
+    "definition": "full of intense and frantic activity",
+    "word_frequency": 13018
+  },
+  {
+    "word": "He felt helpless watching the situation unfold.",
+    "definition": "unable to defend oneself or to act without help",
+    "word_frequency": 7909
+  },
+  {
+    "word": "She prefers herbal tea to coffee.",
+    "definition": "Relating to or made from herbs.",
+    "word_frequency": 12470
+  },
+  {
+    "word": "The beehive cells have a hexagonal shape.",
+    "definition": "having six sides or angles",
+    "word_frequency": 21119
+  },
+  {
+    "word": "The movie was absolutely hilarious.",
+    "definition": "extremely funny",
+    "word_frequency": 3318
+  },
+  {
+    "word": "The countryside around here is very hilly.",
+    "definition": "having many hills",
+    "word_frequency": 16094
+  },
+  {
+    "word": "The city has many historic buildings.",
+    "definition": "famous or important in history",
+    "word_frequency": 2302
+  },
+  {
+    "word": "The city has many historical buildings.",
+    "definition": "relating to history",
+    "word_frequency": 1614
+  },
+  {
+    "word": "After shouting at the concert, her voice was hoarse.",
+    "definition": "rough or husky in voice",
+    "word_frequency": 30547
+  },
+  {
+    "word": "Many people become homeless due to economic hardship.",
+    "definition": "without a home",
+    "word_frequency": 3371
+  },
+  {
+    "word": "She felt homesick after a month away from her family.",
+    "definition": "feeling a longing for one's home",
+    "word_frequency": 21947
+  },
+  {
+    "word": "The small cottage had a very homey atmosphere.",
+    "definition": "Comfortable and cozy, like home.",
+    "word_frequency": 27451
+  },
+  {
+    "word": "She enjoyed the Honduran coffee.",
+    "definition": "relating to Honduras or its people",
+    "word_frequency": 24012
+  },
+  {
+    "word": "She was hopeful about her chances of getting the job.",
+    "definition": "feeling or inspiring hope",
+    "word_frequency": 6826
+  },
+  {
+    "word": "The situation seemed hopeless, but they kept trying.",
+    "definition": "feeling or causing despair about something",
+    "word_frequency": 7665
+  },
+  {
+    "word": "Draw a horizontal line across the page.",
+    "definition": "parallel to the plane of the horizon; at right angles to the vertical",
+    "word_frequency": 5851
+  },
+  {
+    "word": "The weather was absolutely horrible yesterday.",
+    "definition": "horrible",
+    "word_frequency": 2509
+  },
+  {
+    "word": "It's a basic human right.",
+    "definition": "relating to people",
+    "word_frequency": 363
+  },
+  {
+    "word": "The air was very humid before the storm.",
+    "definition": "hot and damp",
+    "word_frequency": 10325
+  },
+  {
+    "word": "He told a very humorous story.",
+    "definition": "causing laughter and amusement; funny",
+    "word_frequency": 8999
+  },
+  {
+    "word": "She is learning Hungarian to communicate with her relatives.",
+    "definition": "relating to Hungary or its people/language",
+    "word_frequency": 6828
+  },
+  {
+    "word": "Her words were very hurtful.",
+    "definition": "causing emotional pain or distress",
+    "word_frequency": 13552
+  },
+  {
+    "word": "She is studying Icelandic history and culture.",
+    "definition": "relating to Iceland",
+    "word_frequency": 14279
+  },
+  {
+    "word": "The slime felt icky to the touch.",
+    "definition": "Unpleasant or sticky",
+    "word_frequency": 27127
+  },
+  {
+    "word": "The roads were icy after the overnight freeze.",
+    "definition": "covered with or consisting of ice; very cold",
+    "word_frequency": 9771
+  },
+  {
+    "word": "He spent the whole day idle, doing nothing.",
+    "definition": "not working; lazy",
+    "word_frequency": 7801
+  },
+  {
+    "word": "It is illegal to drive without a license.",
+    "definition": "against the law",
+    "word_frequency": 1644
+  },
+  {
+    "word": "She had an imaginary friend when she was a child.",
+    "definition": "existing only in the imagination",
+    "word_frequency": 6831
+  },
+  {
+    "word": "His immature behavior annoyed everyone.",
+    "definition": "not fully developed; childish",
+    "word_frequency": 8250
+  },
+  {
+    "word": "We need an immediate response.",
+    "definition": "happening or done without delay; closest in relationship or space",
+    "word_frequency": 2192
+  },
+  {
+    "word": "She grew impatient waiting for the bus.",
+    "definition": "having or showing a tendency to be quickly irritated or provoked",
+    "word_frequency": 9622
+  },
+  {
+    "word": "Every human being is imperfect in some way.",
+    "definition": "not perfect; flawed",
+    "word_frequency": 11074
+  },
+  {
+    "word": "It's impolite to interrupt someone while they are speaking.",
+    "definition": "not polite; rude",
+    "word_frequency": 32218
+  },
+  {
+    "word": "Her performance was truly impressive.",
+    "definition": "evoking admiration through size, quality, or skill",
+    "word_frequency": 2383
+  },
+  {
+    "word": "The volcano has been inactive for centuries.",
+    "definition": "not active; not doing anything",
+    "word_frequency": 8621
+  },
+  {
+    "word": "His comments were completely inappropriate for the meeting.",
+    "definition": "unsuitable",
+    "word_frequency": 5124
+  },
+  {
+    "word": "Please check for any incoming messages.",
+    "definition": "arriving; approaching",
+    "word_frequency": 5590
+  },
+  {
+    "word": "The report is still incomplete.",
+    "definition": "not finished or complete",
+    "word_frequency": 6284
+  },
+  {
+    "word": "It was inconvenient to travel during rush hour.",
+    "definition": "causing trouble, difficulties, or discomfort",
+    "word_frequency": 10790
+  },
+  {
+    "word": "The view from the mountain top was incredible.",
+    "definition": "impossible to believe; amazing",
+    "word_frequency": 1797
+  },
+  {
+    "word": "He's very indecisive and struggles to choose what to eat.",
+    "definition": "not able to make decisions quickly and effectively",
+    "word_frequency": 24906
+  },
+  {
+    "word": "She is a very independent person.",
+    "definition": "not dependent on others; self-governing",
+    "word_frequency": 1016
+  },
+  {
+    "word": "She enjoys Indian food.",
+    "definition": "relating to India or its people",
+    "word_frequency": 1061
+  },
+  {
+    "word": "We took an indirect route to avoid traffic.",
+    "definition": "not direct in course or connection; roundabout",
+    "word_frequency": 5060
+  },
+  {
+    "word": "She is learning Indonesian culture.",
+    "definition": "relating to Indonesia, its people, or its language",
+    "word_frequency": 5946
+  },
+  {
+    "word": "We found an inexpensive restaurant for dinner.",
+    "definition": "not costing a lot of money; cheap",
+    "word_frequency": 9357
+  },
+  {
+    "word": "They bought an inflatable swimming pool for the garden.",
+    "definition": "able to be filled with air or gas",
+    "word_frequency": 14485
+  },
+  {
+    "word": "We had an informal meeting to discuss the plans.",
+    "definition": "having a relaxed, friendly, or unofficial style or manner",
+    "word_frequency": 6104
+  },
+  {
+    "word": "Snowfall is infrequent in this tropical climate.",
+    "definition": "not occurring often; rare",
+    "word_frequency": 20351
+  },
+  {
+    "word": "The initial plan was to leave early.",
+    "definition": "first",
+    "word_frequency": 1524
+  },
+  {
+    "word": "They traveled to the inland regions of the country.",
+    "definition": "away from the coast",
+    "word_frequency": 6442
+  },
+  {
+    "word": "She felt an inner peace.",
+    "definition": "situated inside or further in",
+    "word_frequency": 2263
+  },
+  {
+    "word": "The jury found the defendant innocent.",
+    "definition": "not guilty of a crime or offense",
+    "word_frequency": 2469
+  },
+  {
+    "word": "She felt insecure about her appearance.",
+    "definition": "not confident or certain; not firmly fixed",
+    "word_frequency": 7555
+  },
+  {
+    "word": "The two friends were inseparable.",
+    "definition": "unable to be separated or treated separately",
+    "word_frequency": 16927
+  },
+  {
+    "word": "I need an instant reply to my email.",
+    "definition": "immediate",
+    "word_frequency": 2954
+  },
+  {
+    "word": "She is a very intelligent student.",
+    "definition": "having or showing intelligence, especially of a high level",
+    "word_frequency": 3219
+  },
+  {
+    "word": "The museum has many interactive exhibits.",
+    "definition": "allowing a two-way flow of information",
+    "word_frequency": 4632
+  },
+  {
+    "word": "This course is for intermediate learners.",
+    "definition": "coming between two things in time, place, order, character, etc.",
+    "word_frequency": 4768
+  },
+  {
+    "word": "This is an international airport.",
+    "definition": "existing or occurring between nations",
+    "word_frequency": 356
+  },
+  {
+    "word": "They drove along the interstate highway.",
+    "definition": "between states",
+    "word_frequency": 5131
+  },
+  {
+    "word": "This is an introductory course to computer science.",
+    "definition": "serving as an introduction; preliminary",
+    "word_frequency": 10205
+  },
+  {
+    "word": "The tiny particles were invisible to the naked eye.",
+    "definition": "unable to be seen",
+    "word_frequency": 4411
+  },
+  {
+    "word": "The shape of the table was irregular.",
+    "definition": "not regular or even",
+    "word_frequency": 7803
+  },
+  {
+    "word": "It was irresponsible of him to leave the door unlocked.",
+    "definition": "Not showing a proper sense of responsibility.",
+    "word_frequency": 8128
+  },
+  {
+    "word": "She found an itty-bitty spider crawling on her hand.",
+    "definition": "tiny; very small",
+    "word_frequency": 33884
+  },
+  {
+    "word": "She loves Jamaican music.",
+    "definition": "from Jamaica",
+    "word_frequency": 9362
+  },
+  {
+    "word": "He felt jealous when his friend won the award.",
+    "definition": "jealous",
+    "word_frequency": 3476
+  },
+  {
+    "word": "The old car made a jerky stop.",
+    "definition": "sudden and uneven",
+    "word_frequency": 17608
+  },
+  {
+    "word": "They celebrate many Jewish holidays throughout the year.",
+    "definition": "relating to or characteristic of the Jews or Judaism",
+    "word_frequency": 1863
+  },
+  {
+    "word": "The government is trying to reduce the number of jobless people.",
+    "definition": "Without a job; unemployed",
+    "word_frequency": 16751
+  },
+  {
+    "word": "They made a joint decision to buy the house.",
+    "definition": "shared, common",
+    "word_frequency": 1564
+  },
+  {
+    "word": "He was a jolly old man who always told jokes.",
+    "definition": "happy and cheerful",
+    "word_frequency": 9364
+  },
+  {
+    "word": "She met a Jordanian student at the university.",
+    "definition": "relating to Jordan or its people",
+    "word_frequency": 16110
+  },
+  {
+    "word": "The children's faces were joyful as they opened their presents.",
+    "definition": "feeling, expressing, or causing great pleasure and happiness",
+    "word_frequency": 11829
+  },
+  {
+    "word": "It was a joyous occasion when they finally reunited.",
+    "definition": "full of joy or happiness",
+    "word_frequency": 13031
+  },
+  {
+    "word": "The orange was very juicy and sweet.",
+    "definition": "full of juice; interesting",
+    "word_frequency": 7804
+  },
+  {
+    "word": "We ordered a jumbo pizza for the party.",
+    "definition": "very large",
+    "word_frequency": 12153
+  },
+  {
+    "word": "She felt jumpy after watching the horror movie.",
+    "definition": "nervous and easily startled",
+    "word_frequency": 30215
+  },
+  {
+    "word": "He is a junior member of the team.",
+    "definition": "younger, lower in rank",
+    "word_frequency": 2307
+  },
+  {
+    "word": "She met a Kenyan runner at the marathon.",
+    "definition": "from Kenya",
+    "word_frequency": 9368
+  },
+  {
+    "word": "She is studying the Kurdish language.",
+    "definition": "Relating to the Kurds or their language.",
+    "word_frequency": 9127
+  },
+  {
+    "word": "She wore a beautiful lacy dress.",
+    "definition": "made of or resembling lace",
+    "word_frequency": 14902
+  },
+  {
+    "word": "She is learning the Latvian language.",
+    "definition": "Relating to Latvia, its people, or its language",
+    "word_frequency": 17368
+  },
+  {
+    "word": "The leafy trees provided much-needed shade.",
+    "definition": "having many leaves; covered with leaves.",
+    "word_frequency": 13564
+  },
+  {
+    "word": "The leaky faucet dripped all night.",
+    "definition": "having a leak",
+    "word_frequency": 18607
+  },
+  {
+    "word": "It's important to get legal advice before signing the contract.",
+    "definition": "lawful",
+    "word_frequency": 721
+  },
+  {
+    "word": "He has a very likable personality.",
+    "definition": "pleasant, friendly, and easy to like",
+    "word_frequency": 21144
+  },
+  {
+    "word": "He was a very likeable person, always smiling.",
+    "definition": "pleasant, friendly, and easy to like",
+    "word_frequency": 19623
+  },
+  {
+    "word": "Water is a clear liquid.",
+    "definition": "having a consistency like that of water or oil",
+    "word_frequency": 2738
+  },
+  {
+    "word": "I prefer the diet soda, it's a lite version.",
+    "definition": "light or reduced in calories, fat, etc.",
+    "word_frequency": 9917
+  },
+  {
+    "word": "The party was very lively with music and dancing.",
+    "definition": "full of life and energy",
+    "word_frequency": 6203
+  },
+  {
+    "word": "We visited a local market.",
+    "definition": "relating to a particular area",
+    "word_frequency": 295
+  },
+  {
+    "word": "A lone wolf howled at the moon.",
+    "definition": "solitary or single",
+    "word_frequency": 5765
+  },
+  {
+    "word": "He felt lonesome after his friends left.",
+    "definition": "Solitary or lonely.",
+    "word_frequency": 17897
+  },
+  {
+    "word": "We need a long-term solution to this problem.",
+    "definition": "lasting over a long period of time",
+    "word_frequency": 27485
+  },
+  {
+    "word": "The button on my shirt is loose.",
+    "definition": "not firmly or tightly fixed in place",
+    "word_frequency": 2425
+  },
+  {
+    "word": "The puppy was so lovable, everyone wanted to pet it.",
+    "definition": "inspiring love or affection",
+    "word_frequency": 14909
+  },
+  {
+    "word": "The puppy was so lovable that everyone wanted to pet it.",
+    "definition": "inspiring or deserving love or affection",
+    "word_frequency": 27486
+  },
+  {
+    "word": "Please write your name in lowercase letters.",
+    "definition": "(of a letter) not a capital letter",
+    "word_frequency": 25831
+  },
+  {
+    "word": "He is a loyal friend.",
+    "definition": "faithful",
+    "word_frequency": 3725
+  },
+  {
+    "word": "The mashed potatoes were a bit lumpy.",
+    "definition": "Full of or covered with lumps.",
+    "word_frequency": 24625
+  },
+  {
+    "word": "The children believed in the magical powers of the fairy.",
+    "definition": "relating to or using magic; enchanting",
+    "word_frequency": 3613
+  },
+  {
+    "word": "This is a major problem.",
+    "definition": "important, significant",
+    "word_frequency": 414
+  },
+  {
+    "word": "She enjoys Malaysian food.",
+    "definition": "relating to Malaysia",
+    "word_frequency": 6366
+  },
+  {
+    "word": "The task was difficult but manageable.",
+    "definition": "able to be managed or controlled",
+    "word_frequency": 12164
+  },
+  {
+    "word": "The lake is a manmade reservoir.",
+    "definition": "made or caused by human beings, not by nature",
+    "word_frequency": 28467
+  },
+  {
+    "word": "The car has a manual transmission.",
+    "definition": "relating to or done with the hands",
+    "word_frequency": 3057
+  },
+  {
+    "word": "She wore a beautiful maroon dress to the party.",
+    "definition": "a dark brownish-red color",
+    "word_frequency": 12658
+  },
+  {
+    "word": "She had a marvelous time at the party.",
+    "definition": "extremely good or wonderful",
+    "word_frequency": 9926
+  },
+  {
+    "word": "He has a very masculine voice.",
+    "definition": "relating to men; strong",
+    "word_frequency": 7687
+  },
+  {
+    "word": "She bought a matching hat and scarf.",
+    "definition": "corresponding in color, pattern, or style",
+    "word_frequency": 4362
+  },
+  {
+    "word": "She painted her room a soft mauve shade.",
+    "definition": "a pale purple color",
+    "word_frequency": 28786
+  },
+  {
+    "word": "She wore a beautiful maxi skirt to the party.",
+    "definition": "long, reaching to the ankle or floor",
+    "word_frequency": 14305
+  },
+  {
+    "word": "The maximum speed limit here is 60 miles per hour.",
+    "definition": "the greatest possible amount or degree",
+    "word_frequency": 1886
+  },
+  {
+    "word": "The stew was full of meaty chunks of beef.",
+    "definition": "full of meat; substantial",
+    "word_frequency": 19863
+  },
+  {
+    "word": "She is studying to become a medical doctor.",
+    "definition": "relating to the science or practice of medicine",
+    "word_frequency": 584
+  },
+  {
+    "word": "It was a truly memorable experience.",
+    "definition": "easy to remember",
+    "word_frequency": 5281
+  },
+  {
+    "word": "The robot had a shiny metallic surface.",
+    "definition": "relating to or resembling metal",
+    "word_frequency": 6557
+  },
+  {
+    "word": "The metric system is used in most countries.",
+    "definition": "relating to the metric system of measurement",
+    "word_frequency": 6039
+  },
+  {
+    "word": "We met in mid-August.",
+    "definition": "situated in the middle of a range, series, or group.",
+    "word_frequency": 1270
+  },
+  {
+    "word": "The weather was mild for this time of year.",
+    "definition": "not severe, harsh, or extreme",
+    "word_frequency": 4301
+  },
+  {
+    "word": "The tea had a milky color after adding cream.",
+    "definition": "resembling milk in color or consistency",
+    "word_frequency": 10356
+  },
+  {
+    "word": "He was the millionth customer to enter the store.",
+    "definition": "The last in a series of a million; one part of a million",
+    "word_frequency": 25238
+  },
+  {
+    "word": "She bought a mini skirt.",
+    "definition": "mini",
+    "word_frequency": 2517
+  },
+  {
+    "word": "The chewing gum had a strong, minty flavor.",
+    "definition": "having a fresh, cool taste or smell like mint",
+    "word_frequency": 29529
+  },
+  {
+    "word": "I felt miserable after catching the flu.",
+    "definition": "wretchedly unhappy or uncomfortable",
+    "word_frequency": 4557
+  },
+  {
+    "word": "The morning was cold and misty.",
+    "definition": "full of or characterized by mist",
+    "word_frequency": 12009
+  },
+  {
+    "word": "She works from her mobile office.",
+    "definition": "able to move or be moved freely",
+    "word_frequency": 1186
+  },
+  {
+    "word": "The cake was deliciously moist.",
+    "definition": "slightly wet",
+    "word_frequency": 7932
+  },
+  {
+    "word": "We had to throw out the moldy bread.",
+    "definition": "covered with mold",
+    "word_frequency": 29531
+  },
+  {
+    "word": "She is studying Mongolian history.",
+    "definition": "Relating to Mongolia, its people, or its language.",
+    "word_frequency": 17914
+  },
+  {
+    "word": "We have a monthly meeting.",
+    "definition": "done, produced, or occurring once a month",
+    "word_frequency": 2266
+  },
+  {
+    "word": "He can be quite moody sometimes, happy one minute, sad the next.",
+    "definition": "often changing moods; gloomy",
+    "word_frequency": 7813
+  },
+  {
+    "word": "They walked along the moonlit path.",
+    "definition": "lit by the moon",
+    "word_frequency": 31857
+  },
+  {
+    "word": "She enjoyed the Moroccan tea.",
+    "definition": "relating to Morocco or its people",
+    "word_frequency": 10812
+  },
+  {
+    "word": "The old stone wall was covered in a thick, mossy growth.",
+    "definition": "covered with moss",
+    "word_frequency": 31459
+  },
+  {
+    "word": "She had a very kind and motherly demeanor.",
+    "definition": "characteristic of a mother, especially in being caring, protective, or nurturing",
+    "word_frequency": 28476
+  },
+  {
+    "word": "The cat sat motionless, watching the bird.",
+    "definition": "not moving; still",
+    "word_frequency": 20924
+  },
+  {
+    "word": "The region is very mountainous and difficult to travel through.",
+    "definition": "having many mountains",
+    "word_frequency": 12174
+  },
+  {
+    "word": "The furniture was easily movable.",
+    "definition": "able to be moved",
+    "word_frequency": 16546
+  },
+  {
+    "word": "The parrot had beautiful multicolored feathers.",
+    "definition": "having many colors",
+    "word_frequency": 32694
+  },
+  {
+    "word": "The problem has multiple solutions.",
+    "definition": "consisting of or involving many individuals or elements",
+    "word_frequency": 1037
+  },
+  {
+    "word": "The athlete had a very muscular physique.",
+    "definition": "Having well-developed muscles.",
+    "word_frequency": 8145
+  },
+  {
+    "word": "The overripe bananas were quite mushy.",
+    "definition": "Soft and pulpy; excessively sentimental.",
+    "word_frequency": 21711
+  },
+  {
+    "word": "She has a great musical talent.",
+    "definition": "relating to music",
+    "word_frequency": 2232
+  },
+  {
+    "word": "He is a Muslim scholar.",
+    "definition": "relating to the religion of Islam",
+    "word_frequency": 1674
+  },
+  {
+    "word": "She received a mysterious package in the mail.",
+    "definition": "difficult or impossible to understand, explain, or identify",
+    "word_frequency": 3927
+  },
+  {
+    "word": "The baby needs a nappy change.",
+    "definition": "(British English) A baby's diaper; (of hair) tightly curled and frizzy.",
+    "word_frequency": 23485
+  },
+  {
+    "word": "The road was very narrow.",
+    "definition": "of small width in relation to length",
+    "word_frequency": 2743
+  },
+  {
+    "word": "He spoke with a distinct nasal voice.",
+    "definition": "Relating to the nose.",
+    "word_frequency": 10510
+  },
+  {
+    "word": "That was a nasty comment to make.",
+    "definition": "unpleasant or unkind",
+    "word_frequency": 3615
+  },
+  {
+    "word": "The national anthem was played.",
+    "definition": "national",
+    "word_frequency": 241
+  },
+  {
+    "word": "She is a native speaker of French.",
+    "definition": "belonging to a particular place by birth",
+    "word_frequency": 1621
+  },
+  {
+    "word": "This park has beautiful natural scenery.",
+    "definition": "existing in or derived from nature",
+    "word_frequency": 663
+  },
+  {
+    "word": "The smell of the food made me feel nauseous.",
+    "definition": "feeling as if you are about to vomit",
+    "word_frequency": 18374
+  },
+  {
+    "word": "It is necessary to study for the test.",
+    "definition": "needed to be done or achieved",
+    "word_frequency": 1066
+  },
+  {
+    "word": "Try to avoid negative thoughts.",
+    "definition": "negative",
+    "word_frequency": 1343
+  },
+  {
+    "word": "Our neighboring town has a great market.",
+    "definition": "(of a place or person) next to or very near another",
+    "word_frequency": 6117
+  },
+  {
+    "word": "She is learning Nepali.",
+    "definition": "relating to Nepal or its people/language",
+    "word_frequency": 20140
+  },
+  {
+    "word": "She felt nervous before her presentation.",
+    "definition": "anxious, uneasy",
+    "word_frequency": 2605
+  },
+  {
+    "word": "It's important to remain neutral in an argument.",
+    "definition": "not supporting either side",
+    "word_frequency": 3487
+  },
+  {
+    "word": "The hospital nursery was full of newborn babies.",
+    "definition": "recently born",
+    "word_frequency": 6941
+  },
+  {
+    "word": "The train made a nonstop journey to the capital.",
+    "definition": "without stopping; continuous",
+    "word_frequency": 12340
+  },
+  {
+    "word": "The northbound train was delayed due to heavy snow.",
+    "definition": "heading north",
+    "word_frequency": 15522
+  },
+  {
+    "word": "The storm is moving towards the northeastern states.",
+    "definition": "situated in or relating to the northeast",
+    "word_frequency": 8518
+  },
+  {
+    "word": "My neighbor is very nosy and always asks about my business.",
+    "definition": "Excessively interested in other people's affairs",
+    "word_frequency": 24351
+  },
+  {
+    "word": "There was a noticeable change in his attitude.",
+    "definition": "easily seen or observed",
+    "word_frequency": 7244
+  },
+  {
+    "word": "The artist painted a nude figure.",
+    "definition": "without clothes; naked",
+    "word_frequency": 5074
+  },
+  {
+    "word": "My fingers went numb from the cold.",
+    "definition": "deprived of feeling or responsiveness",
+    "word_frequency": 9932
+  },
+  {
+    "word": "Please enter the numeric code.",
+    "definition": "relating to or expressed as a number or numbers",
+    "word_frequency": 19876
+  },
+  {
+    "word": "The data is presented in numerical order.",
+    "definition": "relating to numbers",
+    "word_frequency": 8405
+  },
+  {
+    "word": "Eating nutritious food is essential for good health.",
+    "definition": "providing nourishment; healthy",
+    "word_frequency": 15935
+  },
+  {
+    "word": "The dog was very obedient and followed all commands.",
+    "definition": "complying or willing to comply with an order or request",
+    "word_frequency": 15725
+  },
+  {
+    "word": "The table had an oblong top.",
+    "definition": "having an elongated shape, typically rectangular or oval",
+    "word_frequency": 22010
+  },
+  {
+    "word": "It was obvious that he was lying.",
+    "definition": "obvious",
+    "word_frequency": 1805
+  },
+  {
+    "word": "The table had an octagonal shape.",
+    "definition": "having eight sides",
+    "word_frequency": 31056
+  },
+  {
+    "word": "This is the official document.",
+    "definition": "authorized, formal",
+    "word_frequency": 610
+  },
+  {
+    "word": "The fried food left an oily residue on the plate.",
+    "definition": "covered in or containing oil",
+    "word_frequency": 12676
+  },
+  {
+    "word": "She had to swerve to avoid the oncoming car.",
+    "definition": "approaching; coming nearer",
+    "word_frequency": 18385
+  },
+  {
+    "word": "Her desk was always very orderly.",
+    "definition": "neatly and systematically arranged",
+    "word_frequency": 11233
+  },
+  {
+    "word": "It was just an ordinary day.",
+    "definition": "normal, common",
+    "word_frequency": 2608
+  },
+  {
+    "word": "This is the original version of the song.",
+    "definition": "existing from the beginning; the first or earliest",
+    "word_frequency": 586
+  },
+  {
+    "word": "This software is outdated and needs to be updated.",
+    "definition": "old-fashioned or obsolete",
+    "word_frequency": 8272
+  },
+  {
+    "word": "The outer layer of the onion was dry.",
+    "definition": "on the outside",
+    "word_frequency": 3428
+  },
+  {
+    "word": "She has a very outgoing personality.",
+    "definition": "Friendly and sociable; leaving a place.",
+    "word_frequency": 9146
+  },
+  {
+    "word": "Her outward appearance was calm, but inside she was nervous.",
+    "definition": "directed toward the outside",
+    "word_frequency": 10091
+  },
+  {
+    "word": "The table had an oval top.",
+    "definition": "having a rounded shape like an egg",
+    "word_frequency": 5219
+  },
+  {
+    "word": "The sky was overcast, threatening rain.",
+    "definition": "covered with clouds",
+    "word_frequency": 18893
+  },
+  {
+    "word": "The library book is overdue.",
+    "definition": "overdue",
+    "word_frequency": 10370
+  },
+  {
+    "word": "She wore an oversized sweater that looked very comfortable.",
+    "definition": "larger than normal size",
+    "word_frequency": 11856
+  },
+  {
+    "word": "The doctor advised him that he was overweight.",
+    "definition": "above a weight considered normal or healthy",
+    "word_frequency": 7355
+  },
+  {
+    "word": "The dentist assured me the procedure would be painless.",
+    "definition": "without pain",
+    "word_frequency": 16338
+  },
+  {
+    "word": "She looked pale after the long flight.",
+    "definition": "light in color or shade; (of a person's face) having less color than usual",
+    "word_frequency": 4499
+  },
+  {
+    "word": "Children need parental guidance as they grow up.",
+    "definition": "of or relating to a parent or parents",
+    "word_frequency": 6946
+  },
+  {
+    "word": "The lake was very peaceful at dawn.",
+    "definition": "calm, quiet, without war",
+    "word_frequency": 3282
+  },
+  {
+    "word": "The weather was perfect for a picnic.",
+    "definition": "flawless; ideal",
+    "word_frequency": 531
+  },
+  {
+    "word": "She has a beautiful Persian rug.",
+    "definition": "relating to Persia/Iran",
+    "word_frequency": 6470
+  },
+  {
+    "word": "Regular exercise improves your physical health.",
+    "definition": "relating to the body or material things",
+    "word_frequency": 1000
+  },
+  {
+    "word": "My brother is very picky about what he eats.",
+    "definition": "fussy; hard to please",
+    "word_frequency": 12884
+  },
+  {
+    "word": "The sky turned a beautiful pinkish hue at sunset.",
+    "definition": "somewhat pink in color",
+    "word_frequency": 28500
+  },
+  {
+    "word": "She prefers plain clothes without any patterns.",
+    "definition": "simple; clear; not decorated",
+    "word_frequency": 2563
+  },
+  {
+    "word": "The puppy was very playful and loved to chase its tail.",
+    "definition": "fond of fun and games; lighthearted",
+    "word_frequency": 9940
+  },
+  {
+    "word": "The baby had plump cheeks and rosy skin.",
+    "definition": "having a full, rounded shape",
+    "word_frequency": 15736
+  },
+  {
+    "word": "The word 'cats' is the plural form of 'cat'.",
+    "definition": "more than one in number",
+    "word_frequency": 9662
+  },
+  {
+    "word": "Arguing with him is pointless.",
+    "definition": "having no purpose or meaning",
+    "word_frequency": 6049
+  },
+  {
+    "word": "The witch wore a tall, pointy hat.",
+    "definition": "having a sharp or tapered end",
+    "word_frequency": 17406
+  },
+  {
+    "word": "Some mushrooms are poisonous and should not be eaten.",
+    "definition": "producing poison",
+    "word_frequency": 9389
+  },
+  {
+    "word": "They discussed the current political situation.",
+    "definition": "relating to government or public affairs",
+    "word_frequency": 427
+  },
+  {
+    "word": "This laptop is very portable.",
+    "definition": "easy to carry",
+    "word_frequency": 5287
+  },
+  {
+    "word": "We received positive feedback on our project.",
+    "definition": "constructive, optimistic, or confident",
+    "word_frequency": 909
+  },
+  {
+    "word": "Please check the postal address carefully.",
+    "definition": "relating to the post office or mail",
+    "word_frequency": 5526
+  },
+  {
+    "word": "The snow was light and powdery, perfect for skiing.",
+    "definition": "consisting of or resembling powder",
+    "word_frequency": 26886
+  },
+  {
+    "word": "The storm was very powerful.",
+    "definition": "having great power or strength",
+    "word_frequency": 1188
+  },
+  {
+    "word": "It's a practical solution to the problem.",
+    "definition": "relating to actual experience or use",
+    "word_frequency": 2345
+  },
+  {
+    "word": "Time is a precious commodity.",
+    "definition": "of great value; not to be wasted or treated carelessly",
+    "word_frequency": 3008
+  },
+  {
+    "word": "A quiet environment is preferable for studying.",
+    "definition": "More desirable or suitable",
+    "word_frequency": 11246
+  },
+  {
+    "word": "She announced that she was pregnant with her first child.",
+    "definition": "carrying a fetus or young in the womb",
+    "word_frequency": 2045
+  },
+  {
+    "word": "I bought a prepaid phone card.",
+    "definition": "Paid for in advance.",
+    "word_frequency": 13593
+  },
+  {
+    "word": "We discussed this in the previous meeting.",
+    "definition": "existing or occurring before in time or order",
+    "word_frequency": 896
+  },
+  {
+    "word": "The rose bush has prickly stems.",
+    "definition": "Covered with prickles or thorns; irritable.",
+    "word_frequency": 19411
+  },
+  {
+    "word": "Her primary goal is to finish her degree.",
+    "definition": "of chief importance; principal",
+    "word_frequency": 1129
+  },
+  {
+    "word": "The document is available in a printable format.",
+    "definition": "suitable for printing",
+    "word_frequency": 22342
+  },
+  {
+    "word": "This is a private conversation.",
+    "definition": "personal; not public",
+    "word_frequency": 547
+  },
+  {
+    "word": "It's probable that it will rain tomorrow.",
+    "definition": "likely to happen or be true",
+    "word_frequency": 6857
+  },
+  {
+    "word": "Make sure you use the proper tools for the job.",
+    "definition": "suitable or correct",
+    "word_frequency": 1534
+  },
+  {
+    "word": "Her eyes were puffy from crying all night.",
+    "definition": "swollen, soft, and rounded",
+    "word_frequency": 16977
+  },
+  {
+    "word": "It's important to be punctual for meetings.",
+    "definition": "arriving or doing something at the agreed or proper time",
+    "word_frequency": 24992
+  },
+  {
+    "word": "We drank pure water from the mountain spring.",
+    "definition": "not mixed with anything else; clean",
+    "word_frequency": 1768
+  },
+  {
+    "word": "The river had a rapid current.",
+    "definition": "fast, quick",
+    "word_frequency": 2792
+  },
+  {
+    "word": "It's rare to see such a beautiful bird.",
+    "definition": "rare",
+    "word_frequency": 1399
+  },
+  {
+    "word": "Be careful when handling raw meat.",
+    "definition": "not cooked",
+    "word_frequency": 2161
+  },
+  {
+    "word": "Make sure the emergency exit is easily reachable.",
+    "definition": "able to be reached",
+    "word_frequency": 28846
+  },
+  {
+    "word": "He checked his rearview mirror before changing lanes.",
+    "definition": "relating to a view of what is behind",
+    "word_frequency": 28523
+  },
+  {
+    "word": "That's a very reasonable price for such a good car.",
+    "definition": "fair; sensible",
+    "word_frequency": 1924
+  },
+  {
+    "word": "I read a recent article about climate change.",
+    "definition": "happening or starting a short time ago",
+    "word_frequency": 800
+  },
+  {
+    "word": "These batteries are rechargeable, which saves money.",
+    "definition": "able to be recharged",
+    "word_frequency": 22351
+  },
+  {
+    "word": "Her voice was instantly recognisable.",
+    "definition": "able to be recognized or identified",
+    "word_frequency": 20956
+  },
+  {
+    "word": "They offer many recreational activities at the resort.",
+    "definition": "relating to or denoting activity done for enjoyment when one is not working",
+    "word_frequency": 5785
+  },
+  {
+    "word": "This packaging is fully recyclable.",
+    "definition": "Able to be recycled.",
+    "word_frequency": 30293
+  },
+  {
+    "word": "The sky had a reddish glow at sunset.",
+    "definition": "having a tinge of red",
+    "word_frequency": 12036
+  },
+  {
+    "word": "The ticket is refundable if you cancel within 24 hours.",
+    "definition": "able to be returned for a refund",
+    "word_frequency": 27571
+  },
+  {
+    "word": "He has a regular exercise routine.",
+    "definition": "regular",
+    "word_frequency": 977
+  },
+  {
+    "word": "She has strong religious beliefs.",
+    "definition": "relating to or believing in a religion",
+    "word_frequency": 1191
+  },
+  {
+    "word": "They live in a remote village in the mountains.",
+    "definition": "far away from other places, people, or things",
+    "word_frequency": 2651
+  },
+  {
+    "word": "The cover is easily removable for cleaning.",
+    "definition": "able to be taken away or off",
+    "word_frequency": 13794
+  },
+  {
+    "word": "Solar power is a renewable energy source.",
+    "definition": "(of a natural resource or source of energy) not depleted when used",
+    "word_frequency": 5787
+  },
+  {
+    "word": "The work was very repetitive and boring.",
+    "definition": "containing repetition, especially when tedious or uninteresting",
+    "word_frequency": 9525
+  },
+  {
+    "word": "All parts of the machine are easily replaceable.",
+    "definition": "able to be replaced",
+    "word_frequency": 22356
+  },
+  {
+    "word": "Please be respectful to your elders.",
+    "definition": "showing respect",
+    "word_frequency": 7710
+  },
+  {
+    "word": "You are responsible for your own actions.",
+    "definition": "having an obligation to do something, or having control over or care for someone or something",
+    "word_frequency": 1131
+  },
+  {
+    "word": "The quiet countryside was very restful.",
+    "definition": "providing rest and relaxation",
+    "word_frequency": 27575
+  },
+  {
+    "word": "The children became restless during the long car journey.",
+    "definition": "unable to rest or relax as a result of anxiety or boredom",
+    "word_frequency": 9038
+  },
+  {
+    "word": "Please bring your reusable bags to the grocery store.",
+    "definition": "able to be used again",
+    "word_frequency": 15345
+  },
+  {
+    "word": "The jacket is reversible, with a different color on each side.",
+    "definition": "able to be turned the other way around or inside out",
+    "word_frequency": 13264
+  },
+  {
+    "word": "That was a very risky decision.",
+    "definition": "full of the possibility of danger, failure, or loss",
+    "word_frequency": 5533
+  },
+  {
+    "word": "His movements were stiff and robotic.",
+    "definition": "relating to or resembling a robot",
+    "word_frequency": 9818
+  },
+  {
+    "word": "The path was rocky and difficult to climb.",
+    "definition": "full of rocks; unstable",
+    "word_frequency": 4000
+  },
+  {
+    "word": "They had a very romantic dinner by candlelight.",
+    "definition": "relating to love or romance",
+    "word_frequency": 2565
+  },
+  {
+    "word": "The new car is very roomy inside.",
+    "definition": "Having plenty of room; spacious.",
+    "word_frequency": 30304
+  },
+  {
+    "word": "She had a rosy complexion after her walk.",
+    "definition": "pinkish; optimistic",
+    "word_frequency": 13964
+  },
+  {
+    "word": "The apple was rotten inside.",
+    "definition": "suffering from decay",
+    "word_frequency": 6669
+  },
+  {
+    "word": "The road was rough and bumpy.",
+    "definition": "not smooth or gentle",
+    "word_frequency": 2317
+  },
+  {
+    "word": "The royal family lives in the palace.",
+    "definition": "relating to a king or queen",
+    "word_frequency": 1194
+  },
+  {
+    "word": "They live in a small rural village.",
+    "definition": "relating to the countryside",
+    "word_frequency": 1927
+  },
+  {
+    "word": "My French is a bit rusty.",
+    "definition": "covered with rust; out of practice",
+    "word_frequency": 8906
+  },
+  {
+    "word": "We walked along the sandy beach.",
+    "definition": "covered with sand",
+    "word_frequency": 3799
+  },
+  {
+    "word": "It's important to maintain sanitary conditions in the kitchen.",
+    "definition": "hygienic; clean",
+    "word_frequency": 12364
+  },
+  {
+    "word": "The results of the experiment were satisfactory.",
+    "definition": "acceptable or adequate",
+    "word_frequency": 9398
+  },
+  {
+    "word": "She enjoys Scandinavian design and furniture.",
+    "definition": "relating to Scandinavia",
+    "word_frequency": 10540
+  },
+  {
+    "word": "We drove along a scenic route through the mountains.",
+    "definition": "having beautiful natural scenery",
+    "word_frequency": 8174
+  },
+  {
+    "word": "She lit a scented candle to relax.",
+    "definition": "having a pleasant smell",
+    "word_frequency": 13606
+  },
+  {
+    "word": "The first half of the game remained scoreless.",
+    "definition": "Without a score; having no points.",
+    "word_frequency": 17215
+  },
+  {
+    "word": "He has a Scottish accent.",
+    "definition": "relating to Scotland",
+    "word_frequency": 1894
+  },
+  {
+    "word": "This wool sweater feels very scratchy.",
+    "definition": "rough, causing an itching sensation",
+    "word_frequency": 26248
+  },
+  {
+    "word": "Strawberries are a seasonal fruit.",
+    "definition": "relating to or characteristic of a particular season",
+    "word_frequency": 5230
+  },
+  {
+    "word": "The secondary effects of the drug are still being studied.",
+    "definition": "less important than something else; not primary",
+    "word_frequency": 2166
+  },
+  {
+    "word": "She bought a secondhand car that was still in good condition.",
+    "definition": "used; not new",
+    "word_frequency": 18922
+  },
+  {
+    "word": "The building is very secure with multiple cameras.",
+    "definition": "safe or protected",
+    "word_frequency": 1773
+  },
+  {
+    "word": "It was selfish of him to take the last piece of cake.",
+    "definition": "lacking consideration for others; concerned chiefly with one's own personal profit or pleasure",
+    "word_frequency": 4319
+  },
+  {
+    "word": "The table had a semicircular shape.",
+    "definition": "having the form of a half circle",
+    "word_frequency": 34417
+  },
+  {
+    "word": "The Senegalese team played well in the football match.",
+    "definition": "relating to Senegal or its people",
+    "word_frequency": 28538
+  },
+  {
+    "word": "She is a senior manager in the company.",
+    "definition": "older or higher in rank",
+    "word_frequency": 1042
+  },
+  {
+    "word": "It was a sensible decision to save money.",
+    "definition": "practical and reasonable",
+    "word_frequency": 5231
+  },
+  {
+    "word": "She is very sensitive to criticism.",
+    "definition": "quick to detect or respond to slight changes, signals, or influences",
+    "word_frequency": 2434
+  },
+  {
+    "word": "We have separate rooms.",
+    "definition": "forming a unit apart; not together.",
+    "word_frequency": 1247
+  },
+  {
+    "word": "The storm caused severe damage to the coast.",
+    "definition": "very great; intense",
+    "word_frequency": 2050
+  },
+  {
+    "word": "She wore a very sexy dress.",
+    "definition": "sexually attractive",
+    "word_frequency": 2614
+  },
+  {
+    "word": "He wore a shabby old coat.",
+    "definition": "in poor condition through long use or lack of care",
+    "word_frequency": 13968
+  },
+  {
+    "word": "His voice was shaky with emotion.",
+    "definition": "Trembling or unstable",
+    "word_frequency": 11126
+  },
+  {
+    "word": "The water in the pool is very shallow at this end.",
+    "definition": "of little depth",
+    "word_frequency": 4791
+  },
+  {
+    "word": "He walked around the beach shirtless.",
+    "definition": "not wearing a shirt",
+    "word_frequency": 17431
+  },
+  {
+    "word": "The news was absolutely shocking.",
+    "definition": "causing a sudden, disturbing feeling of surprise or horror",
+    "word_frequency": 4380
+  },
+  {
+    "word": "Her hair felt wonderfully silky.",
+    "definition": "smooth, soft, and lustrous, like silk",
+    "word_frequency": 14354
+  },
+  {
+    "word": "The moon cast a silvery glow over the lake.",
+    "definition": "resembling silver in color or luster",
+    "word_frequency": 20190
+  },
+  {
+    "word": "These two cars are very similar.",
+    "definition": "similar",
+    "word_frequency": 519
+  },
+  {
+    "word": "I bought a single ticket.",
+    "definition": "one only",
+    "word_frequency": 313
+  },
+  {
+    "word": "She is a very skilful painter.",
+    "definition": "having or showing skill",
+    "word_frequency": 22663
+  },
+  {
+    "word": "She is a highly skilled worker.",
+    "definition": "having special abilities or training",
+    "word_frequency": 4202
+  },
+  {
+    "word": "She is a very skillful painter.",
+    "definition": "having or showing skill",
+    "word_frequency": 17006
+  },
+  {
+    "word": "She spent a sleepless night worrying about the exam.",
+    "definition": "without sleep; unable to sleep",
+    "word_frequency": 15966
+  },
+  {
+    "word": "She wore a sleeveless dress to the summer party.",
+    "definition": "Without sleeves.",
+    "word_frequency": 23238
+  },
+  {
+    "word": "She had a slender figure.",
+    "definition": "gracefully thin",
+    "word_frequency": 9162
+  },
+  {
+    "word": "She has a very slim figure.",
+    "definition": "thin, slender",
+    "word_frequency": 4721
+  },
+  {
+    "word": "The slug left a slimy trail on the pavement.",
+    "definition": "covered in or resembling slime; unpleasantly thick and slippery",
+    "word_frequency": 18179
+  },
+  {
+    "word": "She is learning the Slovenian language.",
+    "definition": "Relating to Slovenia, its people, or its language",
+    "word_frequency": 22376
+  },
+  {
+    "word": "They installed a new smokeless fireplace in the living room.",
+    "definition": "producing little or no smoke",
+    "word_frequency": 31962
+  },
+  {
+    "word": "The bar was very smoky, so we left.",
+    "definition": "full of smoke; tasting or smelling of smoke",
+    "word_frequency": 13093
+  },
+  {
+    "word": "The stone felt smooth to the touch.",
+    "definition": "having an even surface",
+    "word_frequency": 2707
+  },
+  {
+    "word": "The cat found a snug spot by the fireplace.",
+    "definition": "cozy, comfortable",
+    "word_frequency": 17721
+  },
+  {
+    "word": "The water felt soapy after I added the bath bomb.",
+    "definition": "resembling or containing soap",
+    "word_frequency": 27602
+  },
+  {
+    "word": "She's a very sociable person and loves meeting new people.",
+    "definition": "willing to talk and engage in activities with other people; friendly",
+    "word_frequency": 20983
+  },
+  {
+    "word": "Humans are social creatures.",
+    "definition": "relating to society",
+    "word_frequency": 302
+  },
+  {
+    "word": "The rain made the ground soggy and muddy.",
+    "definition": "wet and soft, typically unpleasantly so",
+    "word_frequency": 16815
+  },
+  {
+    "word": "The ice is now solid.",
+    "definition": "firm and stable in shape",
+    "word_frequency": 1502
+  },
+  {
+    "word": "She decided to take a solo trip around the world.",
+    "definition": "done by one person alone; unaccompanied",
+    "word_frequency": 1871
+  },
+  {
+    "word": "The southeastern region of the country is known for its warm climate.",
+    "definition": "situated in or directed toward the southeast",
+    "word_frequency": 8297
+  },
+  {
+    "word": "They live in the southern part of the country.",
+    "definition": "situated in or facing the south",
+    "word_frequency": 1218
+  },
+  {
+    "word": "They live in the southwestern part of the country.",
+    "definition": "relating to the southwest",
+    "word_frequency": 8544
+  },
+  {
+    "word": "The new apartment has a very spacious living room.",
+    "definition": "having ample space",
+    "word_frequency": 11742
+  },
+  {
+    "word": "Do you have a spare key?",
+    "definition": "extra, not needed for ordinary use",
+    "word_frequency": 3293
+  },
+  {
+    "word": "She wore a sparkly dress to the party.",
+    "definition": "Shining with many small flashes of light.",
+    "word_frequency": 18432
+  },
+  {
+    "word": "She was speechless with shock.",
+    "definition": "unable to speak",
+    "word_frequency": 14362
+  },
+  {
+    "word": "The hedgehog had spiky quills.",
+    "definition": "having sharp points",
+    "word_frequency": 27606
+  },
+  {
+    "word": "The old abandoned house looked really spooky at night.",
+    "definition": "eerie, frightening",
+    "word_frequency": 9963
+  },
+  {
+    "word": "She likes to wear sporty clothes when she goes hiking.",
+    "definition": "athletic, stylishly casual",
+    "word_frequency": 17725
+  },
+  {
+    "word": "The kitchen was absolutely spotless after she cleaned it.",
+    "definition": "Absolutely clean or pure.",
+    "word_frequency": 17228
+  },
+  {
+    "word": "The internet connection has been spotty all day.",
+    "definition": "uneven or inconsistent",
+    "word_frequency": 21774
+  },
+  {
+    "word": "The old door had a squeaky hinge.",
+    "definition": "Making a short, high-pitched sound or series of sounds.",
+    "word_frequency": 18434
+  },
+  {
+    "word": "The mud was very squishy after the heavy rain.",
+    "definition": "squishy (soft, wet, and easily compressible)",
+    "word_frequency": 19181
+  },
+  {
+    "word": "The bread was stale after sitting out all night.",
+    "definition": "no longer fresh; unoriginal",
+    "word_frequency": 11442
+  },
+  {
+    "word": "We gazed up at the starry night sky.",
+    "definition": "Full of or lit by stars",
+    "word_frequency": 16616
+  },
+  {
+    "word": "The car remained stationary at the red light.",
+    "definition": "not moving; fixed",
+    "word_frequency": 8660
+  },
+  {
+    "word": "Keep the camera steady.",
+    "definition": "steady",
+    "word_frequency": 3133
+  },
+  {
+    "word": "The bathroom was steamy after her hot shower.",
+    "definition": "full of or producing steam; hot and humid",
+    "word_frequency": 17972
+  },
+  {
+    "word": "The path was very steep, making the climb difficult.",
+    "definition": "rising or falling sharply",
+    "word_frequency": 5162
+  },
+  {
+    "word": "My neck feels stiff after sleeping awkwardly.",
+    "definition": "not easily bent or changed in shape; rigid",
+    "word_frequency": 5894
+  },
+  {
+    "word": "The garbage can was very stinky.",
+    "definition": "Having a strong, unpleasant smell.",
+    "word_frequency": 17230
+  },
+  {
+    "word": "She wore a beautiful strapless dress to the party.",
+    "definition": "having no straps, especially to support a garment",
+    "word_frequency": 28549
+  },
+  {
+    "word": "Moving to a new city can be very stressful.",
+    "definition": "causing mental or emotional stress",
+    "word_frequency": 6061
+  },
+  {
+    "word": "These new jeans are really stretchy and comfortable.",
+    "definition": "able to stretch or be stretched easily",
+    "word_frequency": 27290
+  },
+  {
+    "word": "My parents were very strict about bedtime.",
+    "definition": "firm, rigid",
+    "word_frequency": 3565
+  },
+  {
+    "word": "He was too stubborn to admit he was wrong.",
+    "definition": "unwilling to change one's mind",
+    "word_frequency": 7166
+  },
+  {
+    "word": "The sturdy table could hold a lot of weight.",
+    "definition": "strong and robust",
+    "word_frequency": 11284
+  },
+  {
+    "word": "She always wears very stylish clothes.",
+    "definition": "fashionable and elegant",
+    "word_frequency": 7851
+  },
+  {
+    "word": "They live in a quiet suburban neighborhood.",
+    "definition": "relating to a suburb",
+    "word_frequency": 5796
+  },
+  {
+    "word": "The event was very successful.",
+    "definition": "achieving a desired aim or result",
+    "word_frequency": 1006
+  },
+  {
+    "word": "There was a sudden change in the weather.",
+    "definition": "happening quickly and unexpectedly",
+    "word_frequency": 2710
+  },
+  {
+    "word": "The drink was too sugary for my taste.",
+    "definition": "containing or tasting like sugar",
+    "word_frequency": 17014
+  },
+  {
+    "word": "This dress is suitable for the party.",
+    "definition": "appropriate, fitting",
+    "word_frequency": 2795
+  },
+  {
+    "word": "We need a superfast internet connection for streaming.",
+    "definition": "extremely fast",
+    "word_frequency": 29646
+  },
+  {
+    "word": "My family has always been very supportive of my decisions.",
+    "definition": "providing encouragement or help",
+    "word_frequency": 4729
+  },
+  {
+    "word": "The ground was very swampy after the heavy rain.",
+    "definition": "consisting of or resembling a swamp; boggy",
+    "word_frequency": 27298
+  },
+  {
+    "word": "After the run, I felt hot and sweaty.",
+    "definition": "covered in sweat or causing sweat",
+    "word_frequency": 9542
+  },
+  {
+    "word": "The gazelle is a swift runner.",
+    "definition": "fast; quick",
+    "word_frequency": 4056
+  },
+  {
+    "word": "Her ankle was swollen after the fall.",
+    "definition": "enlarged by swelling",
+    "word_frequency": 9407
+  },
+  {
+    "word": "She enjoys Taiwanese food.",
+    "definition": "relating to Taiwan or its people",
+    "word_frequency": 12924
+  },
+  {
+    "word": "She is a very talented musician.",
+    "definition": "having a natural aptitude",
+    "word_frequency": 3180
+  },
+  {
+    "word": "My little sister is very talkative, she never stops chatting.",
+    "definition": "fond of talking; loquacious",
+    "word_frequency": 20990
+  },
+  {
+    "word": "The zoo has many tame animals that you can pet.",
+    "definition": "(of an animal) not wild or shy, especially because of long association with humans",
+    "word_frequency": 9543
+  },
+  {
+    "word": "The lemon pie had a delicious tangy flavor.",
+    "definition": "having a strong, sharp taste or smell",
+    "word_frequency": 31570
+  },
+  {
+    "word": "She enjoyed listening to traditional Tanzanian music.",
+    "definition": "relating to Tanzania or its people",
+    "word_frequency": 28558
+  },
+  {
+    "word": "The lemon juice was very tart.",
+    "definition": "having a sharp or sour taste",
+    "word_frequency": 12377
+  },
+  {
+    "word": "The soup was bland and tasteless.",
+    "definition": "lacking flavor; offensive",
+    "word_frequency": 19458
+  },
+  {
+    "word": "She gave a tearful goodbye to her family at the airport.",
+    "definition": "full of or accompanied by tears",
+    "word_frequency": 20470
+  },
+  {
+    "word": "She had a teary look in her eyes after watching the sad movie.",
+    "definition": "full of or accompanied by tears",
+    "word_frequency": 24741
+  },
+  {
+    "word": "He has two teenage children.",
+    "definition": "teenage",
+    "word_frequency": 4132
+  },
+  {
+    "word": "She found a teeny tiny spider on the wall.",
+    "definition": "tiny; very small",
+    "word_frequency": 18940
+  },
+  {
+    "word": "This is just a temporary solution.",
+    "definition": "lasting for only a limited period of time",
+    "word_frequency": 2358
+  },
+  {
+    "word": "The meat was very tender.",
+    "definition": "soft or easily chewed; gentle and loving",
+    "word_frequency": 4437
+  },
+  {
+    "word": "The atmosphere in the room was very tense.",
+    "definition": "stretched tight; feeling nervous",
+    "word_frequency": 5477
+  },
+  {
+    "word": "We had a terrific time at the party.",
+    "definition": "excellent; great",
+    "word_frequency": 5898
+  },
+  {
+    "word": "The book has a thick cover.",
+    "definition": "having a large distance between two sides",
+    "word_frequency": 2440
+  },
+  {
+    "word": "It was very thoughtful of you to send flowers.",
+    "definition": "showing consideration for others",
+    "word_frequency": 6492
+  },
+  {
+    "word": "Tibetan monks are known for their spiritual practices.",
+    "definition": "relating to Tibet or its people",
+    "word_frequency": 10252
+  },
+  {
+    "word": "Please keep your room tidy.",
+    "definition": "neat and orderly",
+    "word_frequency": 9977
+  },
+  {
+    "word": "The timid child hid behind her mother.",
+    "definition": "showing a lack of courage or confidence",
+    "word_frequency": 14579
+  },
+  {
+    "word": "The fire made the room feel wonderfully toasty.",
+    "definition": "comfortably warm",
+    "word_frequency": 28565
+  },
+  {
+    "word": "She is very tolerant of other people's opinions.",
+    "definition": "tolerant",
+    "word_frequency": 9285
+  },
+  {
+    "word": "The old dog was completely toothless.",
+    "definition": "having no teeth",
+    "word_frequency": 21250
+  },
+  {
+    "word": "The total cost of the trip was higher than expected.",
+    "definition": "complete; sum",
+    "word_frequency": 520
+  },
+  {
+    "word": "It was a tough decision to make.",
+    "definition": "difficult, strong",
+    "word_frequency": 1404
+  },
+  {
+    "word": "They celebrated with a traditional dance.",
+    "definition": "existing in or as part of a tradition; long-established",
+    "word_frequency": 1222
+  },
+  {
+    "word": "The road sign had a triangular shape.",
+    "definition": "having the shape of a triangle",
+    "word_frequency": 11599
+  },
+  {
+    "word": "This puzzle is quite tricky.",
+    "definition": "difficult or complicated",
+    "word_frequency": 5390
+  },
+  {
+    "word": "They ordered a triple cheeseburger.",
+    "definition": "triple",
+    "word_frequency": 3138
+  },
+  {
+    "word": "Brazil has a tropical climate.",
+    "definition": "relating to or situated in the tropics",
+    "word_frequency": 3880
+  },
+  {
+    "word": "She gave a truthful account of what happened.",
+    "definition": "telling or expressing the truth; honest",
+    "word_frequency": 11601
+  },
+  {
+    "word": "He enjoyed the Tunisian cuisine.",
+    "definition": "relating to Tunisia",
+    "word_frequency": 15576
+  },
+  {
+    "word": "It was a typical English summer day, cloudy and cool.",
+    "definition": "representative of a kind; characteristic",
+    "word_frequency": 1932
+  },
+  {
+    "word": "The Ugandan coffee is very strong.",
+    "definition": "relating to Uganda",
+    "word_frequency": 15577
+  },
+  {
+    "word": "His behavior was completely unacceptable.",
+    "definition": "not satisfactory or allowable",
+    "word_frequency": 6143
+  },
+  {
+    "word": "She was unafraid to speak her mind.",
+    "definition": "feeling no fear",
+    "word_frequency": 28917
+  },
+  {
+    "word": "Never leave your luggage unattended.",
+    "definition": "not supervised or looked after",
+    "word_frequency": 15988
+  },
+  {
+    "word": "The old building was quite unattractive.",
+    "definition": "not pleasing or appealing to the eye or mind",
+    "word_frequency": 12548
+  },
+  {
+    "word": "The product is currently unavailable.",
+    "definition": "not able to be used or obtained; not at hand",
+    "word_frequency": 8669
+  },
+  {
+    "word": "She was unaware of the danger.",
+    "definition": "having no knowledge of a situation or fact",
+    "word_frequency": 6144
+  },
+  {
+    "word": "The story was absolutely unbelievable.",
+    "definition": "not able to be believed; astonishing",
+    "word_frequency": 4514
+  },
+  {
+    "word": "His uncaring attitude upset everyone.",
+    "definition": "not showing sympathy or concern",
+    "word_frequency": 34054
+  },
+  {
+    "word": "The future of the project remains uncertain.",
+    "definition": "not known or definite",
+    "word_frequency": 5166
+  },
+  {
+    "word": "The situation remained unchanged despite our efforts.",
+    "definition": "not changed",
+    "word_frequency": 7389
+  },
+  {
+    "word": "The water was unclean and unsafe to drink.",
+    "definition": "not clean; dirty; morally or ritually impure.",
+    "word_frequency": 18717
+  },
+  {
+    "word": "The instructions were unclear.",
+    "definition": "not clear or easy to understand",
+    "word_frequency": 5637
+  },
+  {
+    "word": "I felt uncomfortable in the tight shoes.",
+    "definition": "not feeling physically or mentally at ease",
+    "word_frequency": 3811
+  },
+  {
+    "word": "It's uncommon to see snow here in May.",
+    "definition": "not common; rare",
+    "word_frequency": 6145
+  },
+  {
+    "word": "The instructions were clear and uncomplicated.",
+    "definition": "easy to understand or do",
+    "word_frequency": 25060
+  },
+  {
+    "word": "Wearing socks with sandals used to be considered uncool.",
+    "definition": "not fashionable or impressive",
+    "word_frequency": 26300
+  },
+  {
+    "word": "Despite the accident, the car remained largely undamaged.",
+    "definition": "not damaged or harmed",
+    "word_frequency": 25953
+  },
+  {
+    "word": "The old letter was undated, making it hard to place in time.",
+    "definition": "without a date",
+    "word_frequency": 19204
+  },
+  {
+    "word": "She was undecided about which university to choose.",
+    "definition": "not having made a decision",
+    "word_frequency": 15579
+  },
+  {
+    "word": "The team remained undefeated throughout the season.",
+    "definition": "not defeated; having won every game or contest",
+    "word_frequency": 8792
+  },
+  {
+    "word": "The chicken was a bit undercooked.",
+    "definition": "not cooked enough",
+    "word_frequency": 34057
+  },
+  {
+    "word": "The underground train system is very efficient.",
+    "definition": "situated or operating beneath the surface of the ground",
+    "word_frequency": 3076
+  },
+  {
+    "word": "Her reasons for leaving were completely understandable.",
+    "definition": "able to be understood",
+    "word_frequency": 7390
+  },
+  {
+    "word": "Divers explored the beautiful underwater world.",
+    "definition": "situated or occurring beneath the surface of water",
+    "word_frequency": 5712
+  },
+  {
+    "word": "He has been unemployed for six months.",
+    "definition": "(of a person) without a job but available to work",
+    "word_frequency": 5904
+  },
+  {
+    "word": "The two sides of the equation were unequal.",
+    "definition": "not equal in quantity, size, or value",
+    "word_frequency": 13627
+  },
+  {
+    "word": "The road was uneven and bumpy.",
+    "definition": "not level or smooth",
+    "word_frequency": 9695
+  },
+  {
+    "word": "The sudden rain was completely unexpected.",
+    "definition": "not anticipated",
+    "word_frequency": 3571
+  },
+  {
+    "word": "There was an unexplained noise coming from the attic.",
+    "definition": "not accounted for or understood",
+    "word_frequency": 13987
+  },
+  {
+    "word": "It was unfair to blame him for the mistake.",
+    "definition": "not based on or behaving according to the principles of equality and justice",
+    "word_frequency": 3949
+  },
+  {
+    "word": "The painting was still unfinished when the exhibition opened.",
+    "definition": "not completed",
+    "word_frequency": 7604
+  },
+  {
+    "word": "He was declared medically unfit for military service.",
+    "definition": "not suitable or good enough; not in good physical condition",
+    "word_frequency": 10127
+  },
+  {
+    "word": "It was an unforgettable experience.",
+    "definition": "impossible to forget",
+    "word_frequency": 10564
+  },
+  {
+    "word": "It was an unfortunate accident, but no one was seriously hurt.",
+    "definition": "having bad luck; regrettable or inappropriate",
+    "word_frequency": 4260
+  },
+  {
+    "word": "His jokes were completely unfunny.",
+    "definition": "not amusing; dull",
+    "word_frequency": 31585
+  },
+  {
+    "word": "It's ungrateful to complain after receiving such a generous gift.",
+    "definition": "not feeling or showing gratitude",
+    "word_frequency": 13110
+  },
+  {
+    "word": "The uniformed officers stood guard.",
+    "definition": "wearing a uniform",
+    "word_frequency": 15991
+  },
+  {
+    "word": "Despite the accident, she was miraculously uninjured.",
+    "definition": "not hurt or harmed",
+    "word_frequency": 31174
+  },
+  {
+    "word": "He seemed completely uninterested in the conversation.",
+    "definition": "not interested",
+    "word_frequency": 19713
+  },
+  {
+    "word": "The lecture was quite uninteresting, and I almost fell asleep.",
+    "definition": "not interesting; dull",
+    "word_frequency": 23872
+  },
+  {
+    "word": "An uninvited guest showed up at the party.",
+    "definition": "Not invited.",
+    "word_frequency": 24448
+  },
+  {
+    "word": "The salon offers unisex haircuts.",
+    "definition": "Designed for both sexes.",
+    "word_frequency": 20223
+  },
+  {
+    "word": "The cause of the fire is still unknown.",
+    "definition": "not known or familiar",
+    "word_frequency": 2173
+  },
+  {
+    "word": "The two brothers are very unlike each other.",
+    "definition": "dissimilar, different from",
+    "word_frequency": 2010
+  },
+  {
+    "word": "The plan offers unlimited calls and data.",
+    "definition": "not limited or restricted",
+    "word_frequency": 4385
+  },
+  {
+    "word": "She has an unlisted phone number.",
+    "definition": "not included in a list or directory",
+    "word_frequency": 27943
+  },
+  {
+    "word": "She remained unmarried her whole life.",
+    "definition": "not married",
+    "word_frequency": 10853
+  },
+  {
+    "word": "It's unnecessary to bring a coat; it's warm outside.",
+    "definition": "not needed",
+    "word_frequency": 3882
+  },
+  {
+    "word": "All the extra paperwork was unneeded.",
+    "definition": "not required or necessary",
+    "word_frequency": 31588
+  },
+  {
+    "word": "He slipped out of the room unnoticed.",
+    "definition": "not observed or detected",
+    "word_frequency": 11605
+  },
+  {
+    "word": "The house has been unoccupied for several months.",
+    "definition": "not occupied; empty",
+    "word_frequency": 22106
+  },
+  {
+    "word": "There was an unopened letter on the table.",
+    "definition": "not yet opened",
+    "word_frequency": 21795
+  },
+  {
+    "word": "He has a lot of unpaid bills.",
+    "definition": "not yet paid",
+    "word_frequency": 7501
+  },
+  {
+    "word": "We had an unplanned stop due to a flat tire.",
+    "definition": "not planned or arranged in advance",
+    "word_frequency": 16837
+  },
+  {
+    "word": "The smell was very unpleasant.",
+    "definition": "not pleasant",
+    "word_frequency": 6780
+  },
+  {
+    "word": "The new policy proved to be very unpopular with the public.",
+    "definition": "not liked by many people",
+    "word_frequency": 7607
+  },
+  {
+    "word": "She felt completely unprepared for the difficult exam.",
+    "definition": "not ready or equipped",
+    "word_frequency": 14179
+  },
+  {
+    "word": "The building was left unprotected after the storm.",
+    "definition": "not protected from harm or danger",
+    "word_frequency": 13825
+  },
+  {
+    "word": "The old manuscript was almost unreadable.",
+    "definition": "difficult or impossible to read",
+    "word_frequency": 32405
+  },
+  {
+    "word": "The old bridge was declared unsafe for vehicles.",
+    "definition": "not safe; dangerous",
+    "word_frequency": 8189
+  },
+  {
+    "word": "His performance at work was deemed unsatisfactory.",
+    "definition": "not good enough; failing to satisfy",
+    "word_frequency": 18948
+  },
+  {
+    "word": "The unseen forces were at work behind the scenes.",
+    "definition": "not seen or noticed",
+    "word_frequency": 8925
+  },
+  {
+    "word": "The factory hired many unskilled laborers.",
+    "definition": "not having or requiring special skill or training",
+    "word_frequency": 18949
+  },
+  {
+    "word": "The mystery remained unsolved for decades.",
+    "definition": "not solved or explained",
+    "word_frequency": 13991
+  },
+  {
+    "word": "He felt unsteady on his feet after the long illness.",
+    "definition": "not firm or stable; liable to fall or shake",
+    "word_frequency": 28256
+  },
+  {
+    "word": "Their attempt to climb the mountain was unsuccessful.",
+    "definition": "not achieving the desired aim or result",
+    "word_frequency": 7502
+  },
+  {
+    "word": "The content was deemed unsuitable for young children.",
+    "definition": "not appropriate or fitting",
+    "word_frequency": 14181
+  },
+  {
+    "word": "I'm unsure about the best way to proceed.",
+    "definition": "not certain or confident",
+    "word_frequency": 7278
+  },
+  {
+    "word": "It was unsurprising that he won the competition.",
+    "definition": "not causing surprise",
+    "word_frequency": 29672
+  },
+  {
+    "word": "Her room was always untidy.",
+    "definition": "not neat or orderly",
+    "word_frequency": 32833
+  },
+  {
+    "word": "The food on her plate remained untouched.",
+    "definition": "not handled, used, or eaten",
+    "word_frequency": 11606
+  },
+  {
+    "word": "The rumors circulating about him were completely untrue.",
+    "definition": "not true or false",
+    "word_frequency": 11753
+  },
+  {
+    "word": "The old computer was completely unusable.",
+    "definition": "not able to be used",
+    "word_frequency": 21002
+  },
+  {
+    "word": "The old bicycle sat unused in the garage.",
+    "definition": "not used",
+    "word_frequency": 8555
+  },
+  {
+    "word": "It's unusual to see snow in April.",
+    "definition": "unusual",
+    "word_frequency": 2489
+  },
+  {
+    "word": "She received a lot of unwanted advice.",
+    "definition": "not desired or wished for",
+    "word_frequency": 6977
+  },
+  {
+    "word": "Please put the unwashed clothes in the laundry basket.",
+    "definition": "not having been washed",
+    "word_frequency": 28581
+  },
+  {
+    "word": "His presence at the party was unwelcome.",
+    "definition": "not wanted or welcome",
+    "word_frequency": 16839
+  },
+  {
+    "word": "She felt unwell after eating too much.",
+    "definition": "not well; ill",
+    "word_frequency": 16840
+  },
+  {
+    "word": "She was unwilling to accept the compromise.",
+    "definition": "not ready, eager, or prepared to do something",
+    "word_frequency": 7858
+  },
+  {
+    "word": "It would be unwise to invest all your money in one stock.",
+    "definition": "foolish or imprudent",
+    "word_frequency": 17992
+  },
+  {
+    "word": "We are preparing for the upcoming exams.",
+    "definition": "happening soon",
+    "word_frequency": 2970
+  },
+  {
+    "word": "He lives on the upper floor of the building.",
+    "definition": "situated above another",
+    "word_frequency": 1544
+  },
+  {
+    "word": "She was very upset about the news.",
+    "definition": "unhappy, disappointed, or worried",
+    "word_frequency": 1874
+  },
+  {
+    "word": "Life in an urban area can be busy.",
+    "definition": "urban",
+    "word_frequency": 1747
+  },
+  {
+    "word": "This is an urgent matter that needs our attention.",
+    "definition": "requiring immediate action",
+    "word_frequency": 4061
+  },
+  {
+    "word": "Is this old equipment still usable?",
+    "definition": "able to be used",
+    "word_frequency": 9982
+  },
+  {
+    "word": "The old computer is still useable.",
+    "definition": "able to be used",
+    "word_frequency": 32835
+  },
+  {
+    "word": "This broken tool is completely useless.",
+    "definition": "serving no purpose; without use",
+    "word_frequency": 3636
+  },
+  {
+    "word": "This old book is very valuable.",
+    "definition": "worth a great deal of money; very useful or important",
+    "word_frequency": 2245
+  },
+  {
+    "word": "There are various options available.",
+    "definition": "different",
+    "word_frequency": 652
+  },
+  {
+    "word": "She gave a verbal agreement.",
+    "definition": "relating to words or speech",
+    "word_frequency": 5804
+  },
+  {
+    "word": "The cliff face was almost perfectly vertical.",
+    "definition": "upright; perpendicular to the horizontal",
+    "word_frequency": 4063
+  },
+  {
+    "word": "She is learning Vietnamese cuisine.",
+    "definition": "relating to Vietnam, its people, or its language",
+    "word_frequency": 6328
+  },
+  {
+    "word": "The storm was very violent, with strong winds and heavy rain.",
+    "definition": "using or involving physical force intended to hurt, damage, or kill someone or something",
+    "word_frequency": 2443
+  },
+  {
+    "word": "The moon was clearly visible tonight.",
+    "definition": "able to be seen",
+    "word_frequency": 2759
+  },
+  {
+    "word": "The artist created a stunning visual display.",
+    "definition": "relating to sight",
+    "word_frequency": 2281
+  },
+  {
+    "word": "The island has a volcanic origin.",
+    "definition": "relating to or produced by a volcano",
+    "word_frequency": 7742
+  },
+  {
+    "word": "This fabric is washable, so it's easy to care for.",
+    "definition": "able to be washed",
+    "word_frequency": 32842
+  },
+  {
+    "word": "It's wasteful to leave the lights on when no one is in the room.",
+    "definition": "using or expending something carelessly",
+    "word_frequency": 14187
+  },
+  {
+    "word": "I need a waterproof jacket for the rain.",
+    "definition": "impervious to water",
+    "word_frequency": 9699
+  },
+  {
+    "word": "The soup was thin and watery, lacking flavor.",
+    "definition": "containing too much water; weak",
+    "word_frequency": 15799
+  },
+  {
+    "word": "She has beautiful wavy hair.",
+    "definition": "having a series of curves.",
+    "word_frequency": 14805
+  },
+  {
+    "word": "He became a wealthy businessman.",
+    "definition": "having a great deal of money, resources, or assets",
+    "word_frequency": 3699
+  },
+  {
+    "word": "This dress is very comfortable and wearable.",
+    "definition": "suitable or practical for wearing",
+    "word_frequency": 13833
+  },
+  {
+    "word": "Just a wee bit more sugar, please.",
+    "definition": "little; small",
+    "word_frequency": 6151
+  },
+  {
+    "word": "That was a really weird dream I had last night.",
+    "definition": "suggesting something supernatural; strange or unusual",
+    "word_frequency": 1304
+  },
+  {
+    "word": "The westbound train was delayed by an hour.",
+    "definition": "traveling or leading towards the west",
+    "word_frequency": 19211
+  },
+  {
+    "word": "A strong westerly wind blew across the plains.",
+    "definition": "towards or from the west",
+    "word_frequency": 19212
+  },
+  {
+    "word": "Western countries have different customs.",
+    "definition": "relating to the west",
+    "word_frequency": 870
+  },
+  {
+    "word": "I ate the whole cake.",
+    "definition": "whole",
+    "word_frequency": 275
+  },
+  {
+    "word": "The wicked witch cast a spell.",
+    "definition": "evil or morally wrong; excellent (informal)",
+    "word_frequency": 5171
+  },
+  {
+    "word": "Don't be so wimpy; stand up for yourself!",
+    "definition": "weak; cowardly",
+    "word_frequency": 27330
+  },
+  {
+    "word": "I bought a new wireless mouse.",
+    "definition": "using radio waves rather than wires",
+    "word_frequency": 3744
+  },
+  {
+    "word": "It was a wise decision to save money.",
+    "definition": "having or showing experience, knowledge, and good judgment",
+    "word_frequency": 2247
+  },
+  {
+    "word": "The table was a bit wobbly, so we put a book under one leg.",
+    "definition": "tending to wobble; unsteady",
+    "word_frequency": 19493
+  },
+  {
+    "word": "The house is surrounded by a wooded area.",
+    "definition": "covered with trees",
+    "word_frequency": 12211
+  },
+  {
+    "word": "She wore a warm woolen scarf in the cold weather.",
+    "definition": "made of wool",
+    "word_frequency": 29293
+  },
+  {
+    "word": "She wore a warm woollen scarf.",
+    "definition": "made of wool",
+    "word_frequency": 27961
+  },
+  {
+    "word": "She wore a warm, woolly hat.",
+    "definition": "made of wool; unclear or confused",
+    "word_frequency": 18962
+  },
+  {
+    "word": "She gave a wordless nod of agreement.",
+    "definition": "without words; silent",
+    "word_frequency": 34490
+  },
+  {
+    "word": "The painting is worth a lot of money.",
+    "definition": "having a specified value",
+    "word_frequency": 594
+  },
+  {
+    "word": "The old paper had a yellowish tint.",
+    "definition": "somewhat yellow",
+    "word_frequency": 15393
+  },
+  {
+    "word": "Despite her age, she has a very youthful appearance.",
+    "definition": "youthful",
+    "word_frequency": 9291
+  },
+  {
+    "word": "She met a Zambian student at the conference.",
+    "definition": "Relating to Zambia or its people.",
+    "word_frequency": 24173
+  },
+  {
+    "word": "The Zimbabwean team played well in the tournament.",
+    "definition": "Relating to Zimbabwe or its people.",
+    "word_frequency": 24175
+  }
+]

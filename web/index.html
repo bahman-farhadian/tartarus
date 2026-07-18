@@ -25,7 +25,7 @@
       <div id="practice-setup" class="card">
         <h2>Start a practice session</h2>
         <div id="practice-error"></div>
-        <div class="field-row">
+        <div class="field-row practice-select-row">
           <div class="field">
             <label for="practice-user">User</label>
             <select id="practice-user">
@@ -33,11 +33,23 @@
             </select>
           </div>
           <div class="field">
-            <label for="practice-lang">Word list</label>
+            <label for="practice-lang">Language</label>
             <select id="practice-lang">
-              <option value="">Select word list…</option>
+              <option value="">Select language…</option>
+              <option value="english_vocabulary">English vocabulary</option>
+              <option value="english_sentences">English sentences</option>
+              <option value="german_vocabulary">German vocabulary</option>
+              <option value="german_sentences">German sentences</option>
             </select>
           </div>
+          <div class="field">
+            <label for="practice-file">Word list file</label>
+            <select id="practice-file">
+              <option value="">Select word list file…</option>
+            </select>
+          </div>
+        </div>
+        <div class="field-row practice-settings-row">
           <div class="field">
             <label for="practice-audio-lang">Audio language <span class="muted" style="font-weight:400;">(optional)</span></label>
             <input id="practice-audio-lang" type="text" placeholder="e.g. german" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
@@ -48,6 +60,16 @@
           </div>
         </div>
         <div class="practice-options">
+          <label class="check-option check-option-audio" title="Play audio during practice">
+            <input id="practice-audio" type="checkbox" checked>
+            <span class="switch-control"></span>
+            <span class="check-copy"><span class="check-title">Play audio</span></span>
+          </label>
+          <label class="check-option check-option-fast" title="Review mastered words once without changing progress">
+            <input id="practice-fast-mode" type="checkbox">
+            <span class="switch-control"></span>
+            <span class="check-copy"><span class="check-title">Fast mode</span></span>
+          </label>
           <label class="check-option">
             <input id="practice-instant-drill" type="checkbox">
             <span class="switch-control"></span>
@@ -79,16 +101,6 @@
         </div>
         <div class="start-row">
           <button id="start-session" class="primary" type="button">Start session</button>
-          <label class="check-option check-option-audio" title="Play audio during practice">
-            <input id="practice-audio" type="checkbox" checked>
-            <span class="switch-control"></span>
-            <span class="check-copy"><span class="check-title">Play audio</span></span>
-          </label>
-          <label class="check-option check-option-fast" title="Review mastered words once without changing progress">
-            <input id="practice-fast-mode" type="checkbox">
-            <span class="switch-control"></span>
-            <span class="check-copy"><span class="check-title">Fast mode</span></span>
-          </label>
         </div>
       </div>
 

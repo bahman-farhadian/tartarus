@@ -15,6 +15,7 @@ import random
 import urllib.parse
 import http.server
 import uuid
+from pathlib import Path
 
 from datetime import date, timedelta
 import tartarus as ll
@@ -531,60 +532,57 @@ def process_answer(session, answer):
 
 # --- Word lists / report ---
 def list_word_lists():
-    """List word lists for all users.
-    
-    Returns:
-    - User-specific lists (<user>_<lang>.json) for users who have sessions
-    - Generic/shared lists (<lang>.json, <lang>_<level>.json) available as fallback for all users
+    """Return shared lists grouped by language/type for cascading selectors.
+
+    Each entry keeps ``lang`` as the database/list identifier, while
+    ``category`` is one of ``english_vocabulary``, ``english_sentences``,
+    ``german_vocabulary``, or ``german_sentences``.
     """
     if not os.path.isdir(ll.WORD_LISTS_DIR):
         return []
-    result = []
-    # Get users who have session tables in the DB
+
     conn = ll.get_connection()
-    user_tables = conn.execute("SELECT name FROM sqlite_master WHERE type='table' AND name LIKE 'sessions_%'").fetchall()
-    known_users = {t[0].replace('sessions_', '') for t in user_tables}
+    user_tables = conn.execute(
+        "SELECT name FROM sqlite_master WHERE type='table' AND name LIKE 'sessions_%'"
+    ).fetchall()
     conn.close()
-    
-    # Language codes that indicate a generic/shared file (first part is a language, not user)
-    # These are languages that have generic project files
-    generic_languages = {'german', 'english'}
-    
-    for fname in sorted(os.listdir(ll.WORD_LISTS_DIR)):
-        if not fname.endswith('.json'):
-            continue
-        stem = fname[:-len('.json')]
-        
-        # Generic language file (no underscore): german.json, english.json
-        if '_' not in stem:
+    known_users = {table[0].removeprefix('sessions_') for table in user_tables}
+    result = []
+
+    word_lists_dir = Path(ll.WORD_LISTS_DIR)
+    for path in sorted(word_lists_dir.rglob('*.json')):
+        relative = path.relative_to(word_lists_dir)
+        parts = relative.parts
+        if len(parts) >= 3 and parts[0] in ('english', 'german') and parts[1] in ('vocabulary', 'sentences'):
+            language, kind, level = parts[0], parts[1], parts[2]
+            if level not in ('a1', 'a2', 'b1', 'b2', 'c1', 'c2'):
+                continue
+            lang = path.stem
+            category = f'{language}_{kind}'
             for user in known_users:
-                result.append({'user': user, 'lang': stem, 'shared': True})
+                result.append({
+                    'user': user, 'lang': lang, 'language': language,
+                    'kind': kind, 'level': level, 'category': category, 'shared': True,
+                })
             continue
-        
-        first_part, rest = stem.split('_', 1)
-        
-        # Generic/shared level file (language_level): german_a1, english_b2, german_sentences_a1
-        if first_part in generic_languages:
-            for user in known_users:
-                result.append({'user': user, 'lang': stem, 'shared': True})
-            continue
-        
-        # User-specific file: first part is a username
-        if first_part in known_users:
-            result.append({'user': first_part, 'lang': rest, 'shared': False})
-            continue
-        
-        # User-specific for user without sessions yet - still show it
-        result.append({'user': first_part, 'lang': rest, 'shared': False})
-    
-    # A personal list shadows a shared fallback with the same user/language.
+
+        # Keep user-created root files visible for editing and compatibility.
+        if len(parts) == 1 and '_' in path.stem:
+            first, rest = path.stem.split('_', 1)
+            if first in known_users:
+                result.append({
+                    'user': first, 'lang': rest, 'language': rest.split('_', 1)[0],
+                    'kind': 'sentences' if ll.is_sentence_list(rest) else 'vocabulary',
+                    'category': f"{rest.split('_', 1)[0]}_{'sentences' if ll.is_sentence_list(rest) else 'vocabulary'}",
+                    'shared': False,
+                })
+
     unique = {}
     for item in result:
         key = (item['user'], item['lang'])
         if key not in unique or not item['shared']:
             unique[key] = item
     return [unique[key] for key in sorted(unique)]
-
 
 def report_data(user, lang=None):
     user_s = ll.sanitize_name(user, 'user')
