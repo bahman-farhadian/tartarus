@@ -473,15 +473,15 @@
     }
 
     if (data.result === 'drilled' && data.drill) {
-      showDrill(data.drill);
+      showDrill(data.drill, false);
       answering = true;
       setAnswerInputEnabled(false);
-      setTimeout(() => {
+      speak(data.word || currentQuestion.word_unmasked || currentQuestion.word).then(() => setTimeout(() => {
         if (data.done) { showSummary(data.session); return; }
         answering = false;
         setActionButtons(true);
         renderQuestion(data.question, data.progress);
-      }, 700);
+      }, 700));
       return;
     }
 
@@ -539,7 +539,7 @@
     }
   }
 
-  function showDrill(drill) {
+  function showDrill(drill, playAudio = true) {
     drillActive = true;
     setAnswerInputEnabled(true);
     drillBlock.style.display = 'block';
@@ -573,7 +573,7 @@
 
     answerInput.value = '';
     answerInput.focus();
-    speak(currentQuestion.word_unmasked || currentQuestion.word);
+    if (playAudio) speak(currentQuestion.word_unmasked || currentQuestion.word);
   }
 
   function showSummary(session) {
