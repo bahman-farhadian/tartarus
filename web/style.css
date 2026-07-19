@@ -417,6 +417,10 @@ button:disabled {
   justify-content: flex-start;
 }
 
+.start-row button {
+  min-width: 150px;
+}
+
 .check-option-audio,
 .check-option-fast {
   width: 100%;

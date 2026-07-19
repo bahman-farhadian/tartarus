@@ -106,7 +106,8 @@
     known_review: 'Known review',
   };
 
-  document.getElementById('start-session').addEventListener('click', startSession);
+  document.getElementById('start-session').addEventListener('click', () => startSession(false));
+  document.getElementById('start-level-session').addEventListener('click', () => startSession(true));
   const drillAllInput = document.getElementById('practice-drill-all');
   const drillModeInput = document.getElementById('practice-drill-mode');
   const knownDrillModeInput = document.getElementById('practice-known-drill-mode');
@@ -116,7 +117,9 @@
     return String(lang || '').toLowerCase().includes('sentences');
   }
   function syncSentenceDrillOptions() {
-    const sentenceList = isSentenceListName(document.getElementById('practice-file')?.value);
+    const category = document.getElementById('practice-lang')?.value;
+    const sentenceList = isSentenceListName(document.getElementById('practice-file')?.value)
+      || String(category || '').endsWith('_sentences');
     [drillAllInput, drillModeInput, knownDrillModeInput, instantDrillInput].forEach((input) => {
       if (!input) return;
       input.disabled = sentenceList;
@@ -231,7 +234,7 @@
     e.preventDefault();
   });
 
-  async function startSession() {
+  async function startSession(levelMode = false) {
     showError(practiceError, '');
     const userInput = document.getElementById('practice-user');
     const languageInput = document.getElementById('practice-lang');
@@ -253,22 +256,43 @@
       const parsed = parseInt(wpmInput.value, 10);
       if (!Number.isNaN(parsed) && parsed >= 30 && parsed <= 400) wpm = parsed;
     }
-    if (!user || !language || !level || !lang) {
-      showError(practiceError, 'User, language, level, and word list file are required.');
+    const missingFile = !levelMode && !lang;
+    if (!user || !language || !level || missingFile) {
+      showError(practiceError, levelMode
+        ? 'User, language, and level are required.'
+        : (missingFile
+          ? 'Select a word list file before starting a practice session.'
+          : 'User, language, and level are required.'));
       if (!user) userInput.focus();
       else if (!language) languageInput.focus();
       else if (!level) document.getElementById('practice-level').focus();
-      else fileInput.focus();
+      else if (!levelMode && !lang) fileInput.focus();
+      else if (!levelMode) fileInput.focus();
+      return;
+    }
+    if (levelMode && lang) {
+      showError(practiceError, 'Clear the selected word list file before practicing the whole level.');
       return;
     }
     try {
-      const body = { user, lang, wpm };
+      const body = levelMode
+        ? {
+          user, lang, category: language, level, level_mode: true, wpm,
+          drill_all: drillAll,
+          drill_mode: drillMode,
+          known_drill_mode: knownDrillMode,
+          instant_drill: instantDrill,
+          fast_mode: fastMode,
+        }
+        : { user, lang, wpm };
       if (audioLang) body.audio_lang = audioLang;
-      if (drillAll) body.drill_all = true;
-      if (drillMode) body.drill_mode = true;
-      if (knownDrillMode) body.known_drill_mode = true;
-      if (instantDrill) body.instant_drill = true;
-      if (fastMode) body.fast_mode = true;
+      if (!levelMode) {
+        if (drillAll) body.drill_all = true;
+        if (drillMode) body.drill_mode = true;
+        if (knownDrillMode) body.known_drill_mode = true;
+        if (instantDrill) body.instant_drill = true;
+        if (fastMode) body.fast_mode = true;
+      }
       const data = await api('/api/practice/start', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -300,7 +324,7 @@
     if (question.drill_start) {
       const q = progress.questions ?? 0;
       const maxQ = progress.max_questions ?? '?';
-      sessionProgress.textContent = `Drilled ${progress.drilled ?? 0}/${progress.total} · Q${q}/${maxQ}`;
+      sessionProgress.textContent = `Drilled ${progress.drilled ?? 0}/${progress.total} · Q${Math.min(q + 1, maxQ)}/${maxQ}`;
       sessionGauge.textContent = `${question.gauge} (score: ${formatScore(question)})`;
       sessionGauge.className = `gauge band-${question.band}`;
       sessionType.textContent = 'Drill';
@@ -314,13 +338,15 @@
 
     const q = progress.questions ?? 0;
     const maxQ = progress.max_questions ?? '?';
-    sessionProgress.textContent = `Correct ${progress.correct ?? 0}/${progress.total} · Q${q}/${maxQ}`;
+    sessionProgress.textContent = `Correct ${progress.correct ?? 0}/${progress.total} · Q${Math.min(q + 1, maxQ)}/${maxQ}`;
     sessionGauge.textContent = `${question.gauge} (score: ${formatScore(question)})`;
     sessionGauge.className = `gauge band-${question.band}`;
     sessionType.textContent = TYPE_LABELS[question.type] || question.type;
 
     if (question.fast_mode) {
-      sessionProgress.textContent = `Fast mode · ${progress.questions ?? 0}/${progress.max_questions ?? progress.total} · Correct ${progress.correct ?? 0}`;
+      const fastQuestion = progress.questions ?? 0;
+      const fastTotal = progress.max_questions ?? progress.total;
+      sessionProgress.textContent = `Fast mode · ${Math.min(fastQuestion + 1, fastTotal)}/${fastTotal} · Correct ${progress.correct ?? 0}`;
       sessionGauge.textContent = 'Mastered';
       sessionGauge.className = 'gauge';
       sessionType.textContent = 'Fast mode';
@@ -443,6 +469,19 @@
     if (data.result === 'drill_start' || data.result === 'drill_progress') {
       answering = false;
       showDrill(data.drill);
+      return;
+    }
+
+    if (data.result === 'drilled' && data.drill) {
+      showDrill(data.drill);
+      answering = true;
+      setAnswerInputEnabled(false);
+      setTimeout(() => {
+        if (data.done) { showSummary(data.session); return; }
+        answering = false;
+        setActionButtons(true);
+        renderQuestion(data.question, data.progress);
+      }, 700);
       return;
     }
 
@@ -788,7 +827,7 @@
       const prev = selects[i - 1];
       prev.addEventListener('change', () => {
         const vals = selects.slice(0, i).map(s => s.value);
-        populateSelect(sel, getOptions(...vals), prev.value);
+        populateSelect(sel, getOptions(...vals), sel.value);
       });
     });
   }
@@ -979,7 +1018,7 @@
       const prev = selects[i - 1];
       prev.addEventListener('change', () => {
         const vals = selects.slice(0, i).map(s => s.value);
-        populateSelect(sel, getOptions(...vals), prev.value);
+        populateSelect(sel, getOptions(...vals), sel.value);
       });
     });
   }

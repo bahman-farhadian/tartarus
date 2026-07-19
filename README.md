@@ -193,6 +193,18 @@ The web UI presents these as switches. The equivalent CLI flags are:
 | Instant drill | `--instant-drill` | An incorrect vocabulary answer immediately starts that word's drill. |
 | Drill all | `--drill` | Put every selected vocabulary word through drill. |
 
+### Whole-level practice
+
+The web UI also provides **Practice level** beside **Start session**. After a
+user, language type, and CEFR level are selected, it treats that level as one
+practice pool and chooses the next due entries across all files in the level.
+Each entry keeps its original file identity, so its score and Leitner state
+are updated in the correct database table. Higher-frequency entries still
+take priority within the combined pool.
+
+Whole-level practice uses standard scoring and Leitner review. Select a
+specific file when Fast mode or a drill mode is needed.
+
 Only one drill mode can be active at a time. Fast mode cannot be combined with
 a drill mode. Sentence files disable drill switches automatically.
 
@@ -252,6 +264,9 @@ The Practice page uses this setup flow:
 The Report page uses the same compact cascade. Selecting only a user loads the
 full user report. Selecting a language, level, and file loads focused history,
 analytics, word statistics, and Leitner data for that file.
+
+Practice level follows the same cascade but does not require a file selection;
+it manages all files below the selected language type and CEFR level.
 
 The Word Lists page shows discovered files and their paths. The About page
 contains the application overview. All pages use the same local API and

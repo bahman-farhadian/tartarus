@@ -78,9 +78,12 @@ def mastered_words(user, lang):
         ).fetchone()
         if not exists:
             return []
+        columns = {row[1] for row in conn.execute(f'PRAGMA table_info("{table}")')}
+        frequency_column = 'word_frequency' if 'word_frequency' in columns else 'NULL'
         conn.commit()
         return conn.execute(
-            f'''SELECT id, text, definition, score, leitner_box
+            f'''SELECT id, text, definition, score, leitner_box, {frequency_column},
+                       last_fast_review_at
                 FROM "{table}"
                 WHERE active = 1 AND score >= 9
                 ORDER BY CASE WHEN last_fast_review_at IS NULL THEN 0 ELSE 1 END,
@@ -91,12 +94,81 @@ def mastered_words(user, lang):
         conn.close()
 
 
-def start_session(user, lang, audio_lang=None, drill_all=False, drill_mode=False, known_drill_mode=False, instant_drill=False, fast_mode=False, wpm=128):
+def level_words(user, category, level, drill_mode=False, known_drill_mode=False,
+                fast_mode=False):
+    """Return mode-appropriate candidates across all files in a CEFR level."""
+    files = [item for item in list_word_lists()
+             if item['user'] == user and item['category'] == category and item['level'] == level]
+    candidates = []
+    for item in files:
+        ll.sync_word_list(user, item['lang'])
+        try:
+            if fast_mode:
+                rows = mastered_words(user, item['lang'])
+            else:
+                rows = ll.get_words_for_practice(
+                    user, item['lang'],
+                    DRILL_WORDS if drill_mode else MAX_QUESTIONS,
+                    drill_mode=drill_mode,
+                    known_drill_mode=known_drill_mode,
+                )
+        except ValueError:
+            continue
+        candidates.extend(
+            {'lang': item['lang'], 'word_id': row[0], 'word_text': row[1],
+             'definition': row[2], 'score': row[3], 'leitner_box': row[4],
+             'word_frequency': row[5],
+             'fast_review_at': row[6] if fast_mode else None,
+             'random_order': random.random()}
+            for row in rows
+        )
+    if fast_mode:
+        candidates.sort(key=lambda item: (
+            item['fast_review_at'] is not None,
+            item['fast_review_at'] or '',
+            item['random_order'],
+        ))
+    elif drill_mode or known_drill_mode:
+        # Each source list already applies its mode-specific priority. Keep
+        # that order rather than replacing mistake/known-review ordering.
+        pass
+    else:
+        candidates.sort(key=lambda item: (
+            item['word_frequency'] is None,
+            -(item['word_frequency'] or 0),
+            item['random_order'] if item['word_frequency'] is None else 0,
+            item['score'] >= 9,
+            -item['score'],
+        ))
+    limit = DRILL_WORDS if (drill_mode or known_drill_mode) else MAX_QUESTIONS
+    return candidates[:limit]
+
+
+def start_session(user, lang, audio_lang=None, drill_all=False, drill_mode=False, known_drill_mode=False, instant_drill=False, fast_mode=False, wpm=128, level_mode=False, category=None, level=None):
     sentence_mode = ll.is_sentence_list(lang)
     selected_drill_modes = sum(bool(value) for value in (drill_all, drill_mode, known_drill_mode, instant_drill))
     if selected_drill_modes > 1:
         raise ValueError("Choose only one drill mode per session.")
-    if fast_mode:
+    if level_mode:
+        if not category or not level:
+            raise ValueError("A language and level are required for level practice.")
+        if lang:
+            raise ValueError("Clear the word list file selection before practicing the whole level.")
+        if category.endswith('_sentences') and selected_drill_modes:
+            raise ValueError("Sentence lists do not support drill modes.")
+        words = level_words(
+            user, category, level,
+            drill_mode=drill_mode or drill_all,
+            known_drill_mode=known_drill_mode,
+            fast_mode=fast_mode,
+        )
+        if not words:
+            raise ValueError("No words are available for this language and level.")
+        lang = f'{category}_{level}'
+        sentence_mode = category.endswith('_sentences')
+    elif not lang:
+        raise ValueError("Select a word list file before starting a practice session.")
+    elif fast_mode:
         if selected_drill_modes:
             raise ValueError("Fast mode cannot be combined with drill modes.")
         words = mastered_words(user, lang)
@@ -114,8 +186,9 @@ def start_session(user, lang, audio_lang=None, drill_all=False, drill_mode=False
         raise ValueError("Sentence lists do not support drill modes.")
     voice_lang = audio_lang or lang
 
-    queue = [
-        {'word_id': r[0], 'word_text': r[1], 'definition': r[2], 'score': r[3], 'leitner_box': r[4]}
+    queue = words if level_mode else [
+        {'lang': lang, 'word_id': r[0], 'word_text': r[1], 'definition': r[2],
+         'score': r[3], 'leitner_box': r[4]}
         for r in words
     ]
 
@@ -128,16 +201,18 @@ def start_session(user, lang, audio_lang=None, drill_all=False, drill_mode=False
         'queue': queue,
         'total': len(queue),
         'practiced': 0,
-        'max_questions': len(queue) if fast_mode else (DRILL_WORDS if (drill_mode or drill_all) else MAX_QUESTIONS),
+        'max_questions': len(queue) if (fast_mode or level_mode) else (DRILL_WORDS if (drill_mode or drill_all) else MAX_QUESTIONS),
         'drill_mode': drill_mode,
         'known_drill_mode': known_drill_mode,
         'instant_drill': instant_drill,
         'fast_mode': fast_mode,
         'drill_all': drill_all,
         'sentence_mode': sentence_mode,
+        'level_mode': level_mode,
         'correct': 0,
         'drilled': 0,
         'incorrect': [],
+        'file_stats': {},
         'start_time': time.time(),
         'current': None,
     }
@@ -165,6 +240,7 @@ def next_question(session):
         if question.get('drill_start'):
             question['drill_start']['word'] = ''
     session['current'] = {
+        'lang': entry.get('lang', session['lang']),
         'word_id': entry['word_id'],
         'word_text': entry['word_text'],
         'definition': entry['definition'],
@@ -174,13 +250,66 @@ def next_question(session):
         'leitner_box': entry['leitner_box'],
         'type': question['type'],
         'drill': drill,
+        'started_at': time.time(),
     }
     return question
 
 
+def record_current_time(session):
+    """Assign the current word's elapsed time to its source file."""
+    current = session.get('current')
+    if not current:
+        return
+    now = time.time()
+    started_at = current.get('started_at', now)
+    elapsed = max(0.0, now - started_at)
+    lang = current.get('lang', session['lang'])
+    stats = session['file_stats'].setdefault(lang, {
+        'seconds': 0.0, 'practiced': 0, 'correct': 0,
+        'incorrect': 0, 'drilled': 0,
+    })
+    stats['seconds'] += elapsed
+    current['started_at'] = now
+
+
+def record_file_result(session, status, lang=None):
+    """Record a completed result against the word's source file."""
+    lang = lang or session['current'].get('lang', session['lang'])
+    stats = session['file_stats'].setdefault(lang, {
+        'seconds': 0.0, 'practiced': 0, 'correct': 0,
+        'incorrect': 0, 'drilled': 0,
+    })
+    stats['practiced'] += 1
+    if status == 'correct':
+        stats['correct'] += 1
+    elif status == 'incorrect':
+        stats['incorrect'] += 1
+    elif status == 'drilled':
+        stats['drilled'] += 1
+
+
+def record_file_incorrect(session, lang=None):
+    """Record a wrong attempt without marking the word completed."""
+    lang = lang or session['current'].get('lang', session['lang'])
+    stats = session['file_stats'].setdefault(lang, {
+        'seconds': 0.0, 'practiced': 0, 'correct': 0,
+        'incorrect': 0, 'drilled': 0,
+    })
+    stats['incorrect'] += 1
+
+
 def finalize_session(session, ended_early=False):
+    record_current_time(session)
     elapsed = int(time.time() - session['start_time'])
-    if session['practiced'] > 0:
+    if session.get('level_mode'):
+        for lang, stats in session['file_stats'].items():
+            if stats['practiced'] > 0:
+                ll.log_session(
+                    session['user'], lang, round(stats['seconds']),
+                    stats['practiced'], stats['correct'], stats['incorrect'],
+                    stats['drilled']
+                )
+    elif session['practiced'] > 0:
         ll.log_session(
             session['user'], session['lang'], elapsed, session['practiced'],
             session['correct'], len(session['incorrect']), session['drilled']
@@ -205,6 +334,7 @@ def advance_fast(session, correct, attempt):
     word_text = cur['word_text']
     if not correct:
         session['incorrect'].append({'word': word_text, 'attempt': attempt})
+        record_file_incorrect(session)
         return {
             'result': 'incorrect',
             'message': f"Incorrect. Try again. Mistakes: {len(session['incorrect'])}",
@@ -217,6 +347,7 @@ def advance_fast(session, correct, attempt):
 
     session['practiced'] += 1
     session['correct'] += 1
+    record_file_result(session, 'correct')
     status = 'correct'
     message = 'Correct.'
 
@@ -247,6 +378,7 @@ def advance(session, status, message, attempt=None):
         session['incorrect'].append({'word': word_text, 'attempt': attempt})
     elif status == 'drilled':
         session['drilled'] += 1
+    record_file_result(session, status)
 
     result = {'result': status, 'message': message, 'word': word_text}
     limit_reached = session['practiced'] >= session['max_questions']
@@ -269,6 +401,7 @@ def advance(session, status, message, attempt=None):
 
 def process_drill_answer(session, answer):
     cur = session['current']
+    lang = cur.get('lang', session['lang'])
     drill = cur['drill']
     if answer == '!!':
         return {'done': True, 'result': 'end', 'session': finalize_session(session, ended_early=True)}
@@ -279,12 +412,32 @@ def process_drill_answer(session, answer):
             cur['drill'] = None
             if session.get('drill_mode') or session.get('known_drill_mode') or drill.get('instant'):
                 ll.record_as_drilled(
-                    session['user'], session['lang'], cur['word_id'],
+                    session['user'], lang, cur['word_id'],
                     known_review=session.get('known_drill_mode', False)
                 )
-                return advance(session, 'drilled', "Drill complete.")
-            ll.update_word_score(session['user'], session['lang'], cur['word_id'], 'drilled')
-            return advance(session, 'drilled', "Drill complete. Score set to 5.0.")
+                result = advance(session, 'drilled', "Drill complete.")
+                result['drill'] = {
+                    'word': cur['word_text'] if not session.get('known_drill_mode') else '',
+                    'definition': drill_definition_lines(cur),
+                    'repetition': DRILL_TARGET,
+                    'correct_in_a_row': DRILL_TARGET,
+                    'target': DRILL_TARGET,
+                    'correct': True,
+                    'show_word': not session.get('known_drill_mode'),
+                }
+                return result
+            ll.update_word_score(session['user'], lang, cur['word_id'], 'drilled')
+            result = advance(session, 'drilled', "Drill complete. Score set to 5.0.")
+            result['drill'] = {
+                'word': cur['word_text'],
+                'definition': drill_definition_lines(cur),
+                'repetition': DRILL_TARGET,
+                'correct_in_a_row': DRILL_TARGET,
+                'target': DRILL_TARGET,
+                'correct': True,
+                'show_word': True,
+            }
+            return result
         correct = True
     else:
         drill['correct_in_a_row'] = 0
@@ -310,7 +463,9 @@ def process_drill_answer(session, answer):
 def process_answer(session, answer):
     answer = (answer or '').strip()
     cur = session['current']
+    lang = cur.get('lang', session['lang'])
     sentence_mode = session.get('sentence_mode', False)
+    record_current_time(session)
 
     # Session-level commands are always honoured, even mid-drill.
     if answer == '!!':
@@ -319,21 +474,21 @@ def process_answer(session, answer):
     if session.get('fast_mode'):
         correct = ll.answer_matches(answer, cur['word_text'], sentence_mode=sentence_mode)
         if correct:
-            ll.record_fast_review(session['user'], session['lang'], cur['word_id'])
+            ll.record_fast_review(session['user'], lang, cur['word_id'])
         return advance_fast(session, correct, answer)
 
     if answer.startswith('@'):
         if not (session.get('drill_mode') or session.get('known_drill_mode')):
-            ll.update_word_score(session['user'], session['lang'], cur['word_id'], 'mastered')
+            ll.update_word_score(session['user'], lang, cur['word_id'], 'mastered')
         elif session.get('known_drill_mode'):
-            ll.record_known_review_seen(session['user'], session['lang'], cur['word_id'])
+            ll.record_known_review_seen(session['user'], lang, cur['word_id'])
         return advance(session, 'mastered', f"Marked '{cur['word_text']}' as known.")
 
     if answer.startswith('!'):
         if not (session.get('drill_mode') or session.get('known_drill_mode')):
-            ll.update_word_score(session['user'], session['lang'], cur['word_id'], 'flagged')
+            ll.update_word_score(session['user'], lang, cur['word_id'], 'flagged')
         elif session.get('known_drill_mode'):
-            ll.record_known_review_seen(session['user'], session['lang'], cur['word_id'])
+            ll.record_known_review_seen(session['user'], lang, cur['word_id'])
         return advance(session, 'flagged', f"Flagged '{cur['word_text']}' for more practice.")
 
     if cur['drill'] is not None:
@@ -342,9 +497,10 @@ def process_answer(session, answer):
     if answer.startswith('$'):
         # Drill is disabled for sentence practice (sentences are too long to drill).
         if sentence_mode:
-            ll.update_sentence_score(session['user'], session['lang'], cur['word_id'],
+            ll.update_sentence_score(session['user'], lang, cur['word_id'],
                                      False, cur['score'], cur['leitner_box'])
             session['incorrect'].append({'word': cur['word_text'], 'attempt': answer})
+            record_file_incorrect(session)
             return {
                 'result': 'sentence_retry',
                 'done': False,
@@ -368,10 +524,11 @@ def process_answer(session, answer):
     correct = ll.answer_matches(answer, cur['word_text'], sentence_mode=sentence_mode)
 
     if session.get('known_drill_mode'):
-        ll.record_review_result(session['user'], session['lang'], cur['word_id'], correct)
+        ll.record_review_result(session['user'], lang, cur['word_id'], correct)
         if correct:
             return advance(session, 'correct', None, attempt=answer)
         session['incorrect'].append({'word': cur['word_text'], 'attempt': answer})
+        record_file_incorrect(session)
         cur['drill'] = {'correct_in_a_row': 0, 'repetition': 1}
         return {
             'result': 'drill_start',
@@ -388,7 +545,7 @@ def process_answer(session, answer):
         }
 
     if sentence_mode:
-        ll.update_sentence_score(session['user'], session['lang'], cur['word_id'],
+        ll.update_sentence_score(session['user'], lang, cur['word_id'],
                                  correct, cur['score'], cur['leitner_box'])
         if correct:
             return advance(session, 'correct', None, attempt=answer)
@@ -401,14 +558,15 @@ def process_answer(session, answer):
         }
 
     if correct:
-        ll.update_word_score(session['user'], session['lang'], cur['word_id'],
+        ll.update_word_score(session['user'], lang, cur['word_id'],
                              'correct', cur['score'], cur['leitner_box'])
         return advance(session, 'correct', None, attempt=answer)
 
-    ll.update_word_score(session['user'], session['lang'], cur['word_id'],
+    ll.update_word_score(session['user'], lang, cur['word_id'],
                          'incorrect', cur['score'], cur['leitner_box'])
     if session.get('instant_drill'):
         session['incorrect'].append({'word': cur['word_text'], 'attempt': answer})
+        record_file_incorrect(session)
         cur['drill'] = {'correct_in_a_row': 0, 'repetition': 1, 'instant': True}
         return {
             'result': 'drill_start',
@@ -1225,6 +1383,9 @@ class Handler(http.server.BaseHTTPRequestHandler):
         if parsed.path == '/api/practice/start':
             user = str(payload.get('user', '')).strip()
             lang = str(payload.get('lang', '')).strip()
+            category = str(payload.get('category', '')).strip() or None
+            level = str(payload.get('level', '')).strip() or None
+            level_mode = bool(payload.get('level_mode', False))
             audio_lang = str(payload.get('audio_lang', '')).strip() or None
             drill_all = bool(payload.get('drill_all', False))
             drill_mode = bool(payload.get('drill_mode', False))
@@ -1245,6 +1406,9 @@ class Handler(http.server.BaseHTTPRequestHandler):
                     instant_drill=instant_drill,
                     fast_mode=fast_mode,
                     wpm=wpm,
+                    level_mode=level_mode,
+                    category=category,
+                    level=level,
                 )
             except (ValueError, FileNotFoundError) as e:
                 return self._send_json({'error': str(e)}, 400)
