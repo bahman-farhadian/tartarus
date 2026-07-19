@@ -865,7 +865,7 @@ def get_words_for_practice(user, lang, num_words=MAX_QUESTIONS, drill_mode=False
     Normal mode — daily practice is capped per file:
       Priority 0: In-progress words (score < 9) that are new, practiced today,
                   or Leitner-due — ordered by frequency rank first, then score.
-                  Lower frequency ranks are more common, so common words are
+                  Higher frequency counts are more common, so common words are
                   introduced before less frequent words. Once a word hits 9 it
                   leaves this group for the day (it was mastered today and
                   last_practiced = today, so it won't match here again).
@@ -933,7 +933,7 @@ def get_words_for_practice(user, lang, num_words=MAX_QUESTIONS, drill_mode=False
                 )
                 ORDER BY
                   CASE WHEN word_frequency IS NULL THEN 1 ELSE 0 END,
-                  word_frequency ASC,
+                  word_frequency DESC,
                   CASE WHEN score < 9 THEN 0 ELSE 1 END,
                   score DESC,
                   last_practiced ASC

@@ -45,7 +45,7 @@
             </select>
           </div>
           <div class="field">
-            <select id="practice-level" aria-label="Level">
+            <select id="practice-level" aria-label="Level" data-placeholder="Select level…">
               <option value="">Select level…</option>
             </select>
           </div>
@@ -155,25 +155,30 @@
       <div class="card">
         <h2>Progress report</h2>
         <div id="report-error"></div>
-        <div class="field-row">
+        <div class="field-row report-select-row">
           <div class="field">
-            <label for="report-user">User</label>
-            <select id="report-user">
+            <select id="report-user" aria-label="User">
               <option value="">Select user…</option>
             </select>
           </div>
           <div class="field">
-            <label for="report-lang">Language <span class="muted" style="font-weight:400;">(optional)</span></label>
-            <select id="report-lang">
-              <option value="">All languages</option>
+            <select id="report-lang" aria-label="Language">
+              <option value="">Select language…</option>
+            </select>
+          </div>
+          <div class="field">
+            <select id="report-level" aria-label="Level" data-placeholder="Select level…">
+              <option value="">Select level…</option>
+            </select>
+          </div>
+          <div class="field">
+            <select id="report-file" aria-label="Word list file">
+              <option value="">Select word list file…</option>
             </select>
           </div>
         </div>
         <button id="load-report" type="button" class="primary">Load report</button>
-        <p class="muted" style="margin-top: 0.75rem;">
-          Add a language to also see that word list's words, scores, and
-          practice stats below.
-        </p>
+        <p class="muted report-help">Select only a user for the full report, or choose a language, level, and file for focused results.</p>
       </div>
       <div id="report-results"></div>
     </section>
