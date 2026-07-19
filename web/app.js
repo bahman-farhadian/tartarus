@@ -592,12 +592,21 @@
     showError(reportError, '');
     resultsEl.innerHTML = '';
     const userInput = document.getElementById('report-user');
-    const langInput = document.getElementById('report-lang');
+    const categoryInput = document.getElementById('report-lang');
+    const levelInput = document.getElementById('report-level');
+    const langInput = document.getElementById('report-file');
     const user = userInput.value.trim();
+    const category = categoryInput.value.trim();
+    const level = levelInput.value.trim();
     const lang = langInput.value.trim();
     if (!user) {
-      showError(reportError, 'User is required.');
+      showError(reportError, 'Select a user.');
       userInput.focus();
+      return;
+    }
+    if (!lang && (category || level)) {
+      showError(reportError, 'Select a word list file, or clear the filters for the full report.');
+      (level ? langInput : levelInput).focus();
       return;
     }
     try {
@@ -606,16 +615,7 @@
 
       if (!lang) {
         const summaryData = await api(`/api/report/summary?user=${encodeURIComponent(user)}`);
-        if (summaryData.summary) {
-          resultsEl.appendChild(renderUserSummaryCard(summaryData.summary));
-        }
-        // Progress overview: per-list bars with due-today counts
-        try {
-          const progressData = await api(`/api/user/progress?user=${encodeURIComponent(user)}`);
-          if (progressData.lists && progressData.lists.length) {
-            resultsEl.appendChild(renderProgressOverview(progressData.lists));
-          }
-        } catch (_) {}
+        if (summaryData.summary) resultsEl.appendChild(renderUserSummaryCard(summaryData.summary));
       }
 
       const data = await api(`/api/report?${params.toString()}`);
@@ -629,25 +629,25 @@
       if (lang) {
         // Dashboard analytics cards (before the word-by-word stats table)
         try {
-          const dParams = new URLSearchParams({ user, lang });
-          const dash = await api(`/api/dashboard?${dParams}`);
-          const secHeader = document.createElement('div');
-          secHeader.className = 'dash-section-header';
-          secHeader.innerHTML = '<h2>Analytics</h2>';
-          resultsEl.appendChild(secHeader);
-          resultsEl.appendChild(renderDashCard1(dash.overview));
-          const g1 = document.createElement('div');
-          g1.className = 'dashboard-grid';
-          g1.appendChild(renderDashCard4(dash.velocity, user, lang));
-          if (dash.mastery) g1.appendChild(renderDashCard2(dash.mastery));
-          resultsEl.appendChild(g1);
-          if (dash.nemesis !== null && dash.prediction !== null) {
-            const g2 = document.createElement('div');
-            g2.className = 'dashboard-grid';
-            g2.appendChild(renderDashCard3(dash.nemesis, user, lang));
-            g2.appendChild(renderDashCard5(dash.prediction, lang));
-            resultsEl.appendChild(g2);
-          }
+        const dParams = new URLSearchParams({ user, lang });
+        const dash = await api(`/api/dashboard?${dParams}`);
+        const secHeader = document.createElement('div');
+        secHeader.className = 'dash-section-header';
+        secHeader.innerHTML = '<h2>Analytics</h2>';
+        resultsEl.appendChild(secHeader);
+        resultsEl.appendChild(renderDashCard1(dash.overview));
+        const g1 = document.createElement('div');
+        g1.className = 'dashboard-grid';
+        g1.appendChild(renderDashCard4(dash.velocity, user, lang));
+        if (dash.mastery) g1.appendChild(renderDashCard2(dash.mastery));
+        resultsEl.appendChild(g1);
+        if (dash.nemesis !== null && dash.prediction !== null) {
+          const g2 = document.createElement('div');
+          g2.className = 'dashboard-grid';
+          g2.appendChild(renderDashCard3(dash.nemesis, user, lang));
+          g2.appendChild(renderDashCard5(dash.prediction, lang));
+          resultsEl.appendChild(g2);
+        }
         } catch (_) {}
         await loadWordListStats(user, lang, resultsEl);
       }
@@ -805,14 +805,27 @@
     });
   }
 
-  // Report cascade: user -> lang (simple)
+  // Report cascade: user -> category -> level -> file
   function setupReportCascade() {
     createCascade(
-      ['report-user', 'report-lang'],
-      (user) => {
-        if (!user) return [{value: '', label: 'All languages', disabled: true}];
-        const langs = [...new Set(allWordLists.filter(w => w.user === user).map(w => w.lang))].sort();
-        return [{value: '', label: 'All languages'}].concat(langs.map(l => ({value: l, label: l})));
+      ['report-user', 'report-lang', 'report-level', 'report-file'],
+      (user, category, level) => {
+        if (!user) return [{value: '', label: 'Select language…', disabled: true}];
+        if (category === undefined) {
+          return [{value: '', label: 'All languages'}].concat(
+            PRACTICE_CATEGORIES.map(([value, label]) => ({value, label}))
+          );
+        }
+        if (level === undefined) {
+          const levels = [...new Set(allWordLists
+            .filter(w => w.user === user && w.category === category)
+            .map(w => w.level))].sort();
+          return levels.map(value => ({value, label: value.toUpperCase()}));
+        }
+        return allWordLists
+          .filter(w => w.user === user && w.category === category && w.level === level)
+          .sort((a, b) => a.lang.localeCompare(b.lang))
+          .map(w => ({value: w.lang, label: `(${w.word_count}) ${w.lang}`}));
       }
     );
   }
@@ -1007,7 +1020,7 @@
         return allWordLists
           .filter(w => w.user === user && w.category === category && w.level === level)
           .sort((a,b) => a.lang.localeCompare(b.lang))
-          .map(w => ({value: w.lang, label: w.lang}));
+          .map(w => ({value: w.lang, label: `(${w.word_count}) ${w.lang}`}));
       }
     );
   }

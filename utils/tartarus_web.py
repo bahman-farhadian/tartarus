@@ -447,6 +447,12 @@ def list_word_lists():
 
     word_lists_dir = Path(ll.WORD_LISTS_DIR)
     for path in sorted(word_lists_dir.rglob('*.json')):
+        try:
+            with path.open(encoding='utf-8') as source:
+                data = json.load(source)
+            word_count = len(data) if isinstance(data, list) else len(data.get('words', []))
+        except (OSError, TypeError, ValueError):
+            word_count = 0
         relative = path.relative_to(word_lists_dir)
         parts = relative.parts
         if len(parts) >= 3 and parts[0] in ('english', 'german') and parts[1] in ('vocabulary', 'sentences'):
@@ -458,7 +464,8 @@ def list_word_lists():
             for user in known_users:
                 result.append({
                     'user': user, 'lang': lang, 'language': language,
-                    'kind': kind, 'level': level, 'category': category, 'shared': True,
+                    'kind': kind, 'level': level, 'category': category,
+                    'word_count': word_count, 'shared': True,
                 })
             continue
 
@@ -470,6 +477,7 @@ def list_word_lists():
                     'user': first, 'lang': rest, 'language': rest.split('_', 1)[0],
                     'kind': 'sentences' if ll.is_sentence_list(rest) else 'vocabulary',
                     'category': f"{rest.split('_', 1)[0]}_{'sentences' if ll.is_sentence_list(rest) else 'vocabulary'}",
+                    'word_count': word_count,
                     'shared': False,
                 })
 
@@ -481,47 +489,248 @@ def list_word_lists():
     return [unique[key] for key in sorted(unique)]
 
 def report_data(user, lang=None):
-    data = ll.get_session_totals(user, lang)
-    if not data:
+    user_s = ll.sanitize_name(user, 'user')
+    table = f"sessions_{user_s}"
+    conn = ll.get_connection()
+    cursor = conn.execute("SELECT name FROM sqlite_master WHERE type='table' AND name = ?", (table,))
+    if cursor.fetchone() is None:
+        conn.close()
         return []
-    # get_session_totals returns data for a specific lang; we need to format it
+
     if lang:
-        # Single language - just wrap the data
-        return [{
-            'language': lang,
-            'days': data['days'],
-            'total': data['total'],
-        }]
+        languages = [ll.sanitize_name(lang, 'language')]
     else:
-        # All languages - need to query per language
-        user_s = ll.sanitize_name(user, 'user')
-        table = f"sessions_{user_s}"
-        conn = ll.get_connection()
         cursor = conn.execute(f'SELECT DISTINCT language FROM "{table}" ORDER BY language')
         languages = [row[0] for row in cursor.fetchall()]
-        conn.close()
-        reports = []
-        for language in languages:
-            ld = ll.get_session_totals(user, language)
-            if ld:
-                reports.append({
-                    'language': language,
-                    'days': ld['days'],
-                    'total': ld['total'],
-                })
-        return reports
+
+    reports = []
+    for language in languages:
+        where_clause, params = "WHERE language = ?", [language]
+        query = (
+            f'SELECT session_date, COUNT(id), SUM(duration_seconds), SUM(words_practiced), '
+            f'SUM(correct_count), SUM(incorrect_count), SUM(drilled_count) '
+            f'FROM "{table}" {where_clause} GROUP BY session_date ORDER BY session_date DESC'
+        )
+        rows = conn.execute(query, params).fetchall()
+        if not rows:
+            continue
+
+        days = []
+        for s_date, sessions, seconds, practiced, correct, incorrect, drilled in rows:
+            days.append({
+                'date': s_date, 'sessions': sessions, 'seconds': seconds,
+                'practiced': practiced, 'correct': correct,
+                'incorrect': incorrect or 0, 'drilled': drilled or 0,
+                'avg_time': round(seconds / practiced, 1) if practiced else None,
+            })
+
+        total_query = (
+            f'SELECT COUNT(id), SUM(duration_seconds), SUM(words_practiced), '
+            f'SUM(correct_count), SUM(incorrect_count), SUM(drilled_count) '
+            f'FROM "{table}" {where_clause}'
+        )
+        t_sessions, t_seconds, t_practiced, t_correct, t_incorrect, t_drilled = conn.execute(total_query, params).fetchone()
+        reports.append({
+            'language': language,
+            'days': days,
+            'total': {
+                'sessions': t_sessions, 'seconds': t_seconds, 'practiced': t_practiced,
+                'correct': t_correct, 'incorrect': t_incorrect or 0, 'drilled': t_drilled or 0,
+                'avg_time': round(t_seconds / t_practiced, 1) if t_practiced else None,
+            },
+        })
+    conn.close()
+    return reports
 
 
 def user_summary_data(user):
-    return ll.get_user_summary_data(user)
+    """Return aggregate daily stats across all languages for the user."""
+    user_s = ll.sanitize_name(user, 'user')
+    table = f"sessions_{user_s}"
+    conn = ll.get_connection()
+    cursor = conn.execute("SELECT name FROM sqlite_master WHERE type='table' AND name = ?", (table,))
+    if cursor.fetchone() is None:
+        conn.close()
+        return None
+
+    rows = conn.execute(
+        f'SELECT session_date, COUNT(id), COUNT(DISTINCT language), '
+        f'SUM(duration_seconds), SUM(words_practiced), SUM(correct_count), SUM(incorrect_count) '
+        f'FROM "{table}" GROUP BY session_date ORDER BY session_date DESC'
+    ).fetchall()
+
+    all_dates = [r[0] for r in conn.execute(f'SELECT session_date FROM "{table}"').fetchall()]
+    current_streak, best_streak = ll.compute_streak(all_dates)
+
+    totals = conn.execute(
+        f'SELECT COUNT(id), COUNT(DISTINCT language), SUM(duration_seconds), '
+        f'SUM(words_practiced), SUM(correct_count), SUM(incorrect_count) '
+        f'FROM "{table}"'
+    ).fetchone()
+    conn.close()
+
+    days = []
+    for s_date, sessions, langs, seconds, practiced, correct, incorrect in rows:
+        total_ans = (correct or 0) + (incorrect or 0)
+        days.append({
+            'date': s_date,
+            'sessions': sessions,
+            'languages': langs,
+            'seconds': seconds or 0,
+            'practiced': practiced or 0,
+            'correct': correct or 0,
+            'incorrect': incorrect or 0,
+            'accuracy': round(100 * correct / total_ans, 1) if total_ans > 0 else None,
+            'avg_time': round(seconds / practiced, 1) if practiced else None,
+        })
+
+    t_sessions, t_langs, t_seconds, t_practiced, t_correct, t_incorrect = totals
+    t_total_ans = (t_correct or 0) + (t_incorrect or 0)
+    return {
+        'user': user_s,
+        'streak': {'current': current_streak, 'best': best_streak},
+        'days': days,
+        'total': {
+            'sessions': t_sessions,
+            'languages': t_langs,
+            'seconds': t_seconds or 0,
+            'practiced': t_practiced or 0,
+            'correct': t_correct or 0,
+            'incorrect': t_incorrect or 0,
+            'accuracy': round(100 * t_correct / t_total_ans, 1) if t_total_ans > 0 else None,
+            'avg_time': round(t_seconds / t_practiced, 1) if t_practiced else None,
+        },
+    }
 
 
 def user_progress_data(user, category=None, level=None):
-    return ll.get_user_progress_data(user, category, level)
+    """Return progress for selectable lists, optionally filtered by category and level."""
+    user_s = ll.sanitize_name(user, 'user')
+    prefix = f"words_{user_s}_"
+    conn = ll.get_connection()
+    tables = conn.execute(
+        "SELECT name FROM sqlite_master WHERE type='table' AND name LIKE ? ORDER BY name",
+        (f"{prefix}%",)
+    ).fetchall()
+    selectable_langs = {
+        item['lang'] for item in list_word_lists()
+        if item['user'] == user_s
+        and (not category or item.get('category') == category)
+        and (not level or item.get('level') == level)
+    }
+    lists = []
+    for (table_name,) in tables:
+        lang = table_name[len(prefix):]
+        if lang not in selectable_langs:
+            continue
+        sentence_mode = ll.is_sentence_list(lang)
+        has_leitner = 'leitner_box' in {
+            r[1] for r in conn.execute(f'PRAGMA table_info("{table_name}")').fetchall()
+        }
+        if has_leitner:
+            to_drill_expr = '0' if sentence_mode else 'SUM(CASE WHEN times_incorrect > 0 THEN 1 ELSE 0 END)'
+            row = conn.execute(
+                f'SELECT COUNT(*), '
+                f'SUM(CASE WHEN score >= 9.0 THEN 1 ELSE 0 END), '
+                f'{to_drill_expr}, '
+                f'SUM(CASE WHEN last_practiced IS NULL OR '
+                f'julianday(\'now\', \'localtime\') - julianday(last_practiced) >= '
+                f'CASE leitner_box WHEN 1 THEN 1 WHEN 2 THEN 2 WHEN 3 THEN 4 WHEN 4 THEN 9 ELSE 14 END '
+                f'THEN 1 ELSE 0 END) '
+                f'FROM "{table_name}" WHERE active = 1'
+            ).fetchone()
+            total, learned, to_drill, due_today = row
+        else:
+            to_drill_expr = '0' if sentence_mode else 'SUM(CASE WHEN times_incorrect > 0 THEN 1 ELSE 0 END)'
+            row = conn.execute(
+                f'SELECT COUNT(*), '
+                f'SUM(CASE WHEN score >= 9.0 THEN 1 ELSE 0 END), '
+                f'{to_drill_expr} '
+                f'FROM "{table_name}" WHERE active = 1'
+            ).fetchone()
+            total, learned, to_drill = row
+            due_today = 0
+        total = total or 0
+        learned = learned or 0
+        to_drill = to_drill or 0
+        due_today = due_today or 0
+        lists.append({
+            'lang': lang,
+            'total': total,
+            'learned': learned,
+            'to_drill': to_drill,
+            'due_today': due_today,
+            'progress': round(100 * learned / total, 1) if total > 0 else 0.0,
+        })
+    conn.close()
+    return lists
 
 
 def leitner_stats_data(user, lang):
-    return ll.get_leitner_distribution(user, lang)
+    """Per-box word counts and due-today totals for one word list."""
+    table = ll.words_table_name(user, lang)
+    conn = ll.get_connection()
+    cursor = conn.execute("SELECT name FROM sqlite_master WHERE type='table' AND name = ?", (table,))
+    if cursor.fetchone() is None:
+        conn.close()
+        return None
+
+    rows = conn.execute(f'''
+        SELECT leitner_box, COUNT(*) AS total,
+            SUM(CASE WHEN score >= 9.0 THEN 1 ELSE 0 END) AS learned,
+            SUM(CASE WHEN last_practiced IS NULL OR
+                julianday('now', 'localtime') - julianday(last_practiced) >=
+                CASE leitner_box WHEN 1 THEN 1 WHEN 2 THEN 2
+                                 WHEN 3 THEN 4 WHEN 4 THEN 9 ELSE 14 END
+                THEN 1 ELSE 0 END) AS due
+        FROM "{table}" WHERE active = 1
+        GROUP BY leitner_box ORDER BY leitner_box
+    ''').fetchall()
+
+    summary = conn.execute(f'''
+        SELECT COUNT(*),
+            SUM(CASE WHEN score >= 9.0 THEN 1 ELSE 0 END),
+            SUM(CASE WHEN last_practiced IS NULL THEN 1 ELSE 0 END),
+            SUM(CASE WHEN last_practiced IS NULL OR
+                julianday('now', 'localtime') - julianday(last_practiced) >=
+                CASE leitner_box WHEN 1 THEN 1 WHEN 2 THEN 2
+                                 WHEN 3 THEN 4 WHEN 4 THEN 9 ELSE 14 END
+                THEN 1 ELSE 0 END)
+        FROM "{table}" WHERE active = 1
+    ''').fetchone()
+    conn.close()
+
+    INTERVALS = {1: '1 day', 2: '2 days', 3: '4 days', 4: '9 days', 5: '14 days'}
+    boxes = [
+        {'box': b, 'total': t or 0, 'learned': l or 0, 'due': d or 0, 'interval': INTERVALS.get(b, '?')}
+        for b, t, l, d in rows
+    ]
+    total, learned, never_practiced, due_today = summary
+    return {
+        'total': total or 0,
+        'learned': learned or 0,
+        'never_practiced': never_practiced or 0,
+        'due_today': due_today or 0,
+        'boxes': boxes,
+    }
+
+
+def _corrects_to_mastery(score, sentence_mode=False):
+    """Number of correct answers needed to bring score from current value to 9.0.
+
+    Word mode: +1 in band 1 (score 1-3), +2 in band 2 (4-6), +3 in band 3 (7-9).
+    Sentence mode: +1 per correct, so a new sentence needs 9 correct typings.
+    """
+    s, count = float(score), 0
+    if sentence_mode:
+        while s < 9.0:
+            s = min(9.0, s + ll.SENTENCE_CORRECT_DELTA)
+            count += 1
+        return count
+    while s < 9.0:
+        s = min(9.0, s + (3.0 if s >= 7 else 2.0 if s >= 4 else 1.0))
+        count += 1
+    return count
 
 
 def dashboard_data(user, lang=None):
@@ -709,6 +918,7 @@ def dashboard_data(user, lang=None):
                 for score, box in word_rows:
                     b = int(box) if box else 1
                     corrects = ll.corrects_to_mastery(score, sentence_mode=sentence_mode)
+                    grind_days = corrects * avg_seconds_per_word / avg_secs_per_day
                     # After reaching score 9, words advance through remaining Leitner boxes
                     leitner_days = sum(
                         ll.LEITNER_INTERVALS.get(bb, 14) for bb in range(b, 5)
