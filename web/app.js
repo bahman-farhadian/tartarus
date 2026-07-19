@@ -823,11 +823,12 @@
   function createCascade(selectIds, getOptions) {
     const selects = selectIds.map(id => document.getElementById(id));
     selects.forEach((sel, i) => {
-      if (i === 0) return;
-      const prev = selects[i - 1];
-      prev.addEventListener('change', () => {
-        const vals = selects.slice(0, i).map(s => s.value);
-        populateSelect(sel, getOptions(...vals), sel.value);
+      if (i === selects.length - 1) return;
+      sel.addEventListener('change', () => {
+        for (let child = i + 1; child < selects.length; child += 1) {
+          const vals = selects.slice(0, child).map(s => s.value);
+          populateSelect(selects[child], getOptions(...vals), '');
+        }
       });
     });
   }
@@ -1014,11 +1015,12 @@
   function createCascade(selectIds, getOptions) {
     const selects = selectIds.map(id => document.getElementById(id));
     selects.forEach((sel, i) => {
-      if (i === 0) return;
-      const prev = selects[i - 1];
-      prev.addEventListener('change', () => {
-        const vals = selects.slice(0, i).map(s => s.value);
-        populateSelect(sel, getOptions(...vals), sel.value);
+      if (i === selects.length - 1) return;
+      sel.addEventListener('change', () => {
+        for (let child = i + 1; child < selects.length; child += 1) {
+          const vals = selects.slice(0, child).map(s => s.value);
+          populateSelect(selects[child], getOptions(...vals), '');
+        }
       });
     });
   }
@@ -1097,9 +1099,8 @@
       const prev = sel.value;
       sel.innerHTML = '<option value="">Select user…</option>' + users.map(u => `<option value="${u}"${u === prev ? ' selected' : ''}>${u}</option>`).join('');
     });
-    // Trigger practice cascade to populate category/level/file
-    setupPracticeCascade();
-    // Trigger report and editor cascades
+    // Populate all dependent selects after the word-list data is available.
+    document.getElementById('practice-user').dispatchEvent(new Event('change'));
     document.getElementById('report-user').dispatchEvent(new Event('change'));
     document.getElementById('editor-user').dispatchEvent(new Event('change'));
 

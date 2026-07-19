@@ -864,7 +864,8 @@ def get_words_for_practice(user, lang, num_words=MAX_QUESTIONS, drill_mode=False
     """
     Normal mode — daily practice is capped per file:
       Priority 0: In-progress words (score < 9) that are new, practiced today,
-                  or Leitner-due — ordered by frequency rank first, then score.
+                  or Leitner-due. The candidate pool is selected by frequency,
+                  then ordered for the session by score band and frequency.
                   Higher frequency counts are more common, so common words are
                   introduced before less frequent words. Once a word hits 9 it
                   leaves this group for the day (it was mastered today and
@@ -917,27 +918,31 @@ def get_words_for_practice(user, lang, num_words=MAX_QUESTIONS, drill_mode=False
         # This caps daily practice per file and pushes the user to other files
         # or drill modes once today's words are done.
         cursor = conn.execute(
-            f'''SELECT id, text, definition, score, leitner_box, word_frequency FROM "{table}"
-                WHERE active = 1 AND (
-                  score < 9
-                  OR
-                  (score >= 9 AND (
-                    last_practiced IS NULL
-                    OR date(last_practiced) < date('now', 'localtime')
-                  ) AND (
-                    last_practiced IS NULL
-                    OR julianday('now', 'localtime') - julianday(last_practiced) >=
-                       CASE leitner_box WHEN 1 THEN 1 WHEN 2 THEN 2
-                                        WHEN 3 THEN 4 WHEN 4 THEN 9 ELSE 14 END
-                  ))
+            f'''WITH candidates AS (
+                  SELECT id, text, definition, score, leitner_box, word_frequency
+                  FROM "{table}"
+                  WHERE active = 1 AND (
+                    score < 9
+                    OR
+                    (score >= 9 AND (
+                      last_practiced IS NULL
+                      OR date(last_practiced) < date('now', 'localtime')
+                    ) AND (
+                      last_practiced IS NULL
+                      OR julianday('now', 'localtime') - julianday(last_practiced) >=
+                         CASE leitner_box WHEN 1 THEN 1 WHEN 2 THEN 2
+                                          WHEN 3 THEN 4 WHEN 4 THEN 9 ELSE 14 END
+                    ))
+                  )
+                  ORDER BY CASE WHEN word_frequency IS NULL THEN 1 ELSE 0 END,
+                           word_frequency DESC, random()
+                  LIMIT ?
                 )
-                ORDER BY
-                  CASE WHEN word_frequency IS NULL THEN 1 ELSE 0 END,
-                  word_frequency DESC,
-                  CASE WHEN score < 9 THEN 0 ELSE 1 END,
-                  score DESC,
-                  last_practiced ASC
-                LIMIT ?''',
+                SELECT id, text, definition, score, leitner_box, word_frequency
+                FROM candidates
+                ORDER BY score ASC,
+                         CASE WHEN word_frequency IS NULL THEN 1 ELSE 0 END,
+                         word_frequency DESC, random()''',
             (num_words,)
         )
     rows = cursor.fetchall()

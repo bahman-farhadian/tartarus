@@ -134,11 +134,10 @@ def level_words(user, category, level, drill_mode=False, known_drill_mode=False,
         pass
     else:
         candidates.sort(key=lambda item: (
+            item['score'],
             item['word_frequency'] is None,
             -(item['word_frequency'] or 0),
             item['random_order'] if item['word_frequency'] is None else 0,
-            item['score'] >= 9,
-            -item['score'],
         ))
     limit = DRILL_WORDS if (drill_mode or known_drill_mode) else MAX_QUESTIONS
     return candidates[:limit]
@@ -1232,6 +1231,9 @@ class Handler(http.server.BaseHTTPRequestHandler):
         self.send_response(status)
         self.send_header('Content-Type', 'application/json; charset=utf-8')
         self.send_header('Content-Length', str(len(body)))
+        self.send_header('Cache-Control', 'no-store, max-age=0')
+        self.send_header('Pragma', 'no-cache')
+        self.send_header('Expires', '0')
         self.end_headers()
         self.wfile.write(body)
 
@@ -1247,6 +1249,8 @@ class Handler(http.server.BaseHTTPRequestHandler):
         self.send_header('Content-Type', content_type)
         self.send_header('Content-Length', str(len(body)))
         self.send_header('Cache-Control', 'no-store, max-age=0')
+        self.send_header('Pragma', 'no-cache')
+        self.send_header('Expires', '0')
         self.end_headers()
         self.wfile.write(body)
 
