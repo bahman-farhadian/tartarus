@@ -434,7 +434,7 @@
     ]
   },
   {
-    "word": "Auto!",
+    "word": "das Auto, die Autos",
     "definition": [
       "Car!"
     ]
@@ -800,12 +800,6 @@
     ]
   },
   {
-    "word": "chhauer",
-    "definition": [
-      "chhauer"
-    ]
-  },
-  {
     "word": "dabei",
     "definition": [
       "included"
@@ -890,7 +884,7 @@
     ]
   },
   {
-    "word": "das Asyl",
+    "word": "das Asyl, die Asyle",
     "definition": [
       "the asylum"
     ]
@@ -902,19 +896,19 @@
     ]
   },
   {
-    "word": "das Bargeld",
+    "word": "das Bargeld (Sg.)",
     "definition": [
       "the cash"
     ]
   },
   {
-    "word": "das Benutzen",
+    "word": "das Benutzen (Sg.)",
     "definition": [
       "the use"
     ]
   },
   {
-    "word": "das Benzin",
+    "word": "das Benzin, die Benzine",
     "definition": [
       "the gasoline"
     ]
@@ -926,7 +920,7 @@
     ]
   },
   {
-    "word": "das Blut",
+    "word": "das Blut, die Blute",
     "definition": [
       "the blood"
     ]
@@ -938,7 +932,7 @@
     ]
   },
   {
-    "word": "das Brötli",
+    "word": "das Brötli, die Brötli",
     "definition": [
       "the bread roll"
     ]
@@ -998,19 +992,19 @@
     ]
   },
   {
-    "word": "das Einkommen",
+    "word": "das Einkommen, die Einkommen",
     "definition": [
       "the income"
     ]
   },
   {
-    "word": "das Einschreiben",
+    "word": "das Einschreiben, die Einschreiben",
     "definition": [
       "the registered letter"
     ]
   },
   {
-    "word": "das Eis",
+    "word": "das Eis, die Eis",
     "definition": [
       "the ice cream"
     ]
@@ -1034,7 +1028,7 @@
     ]
   },
   {
-    "word": "das Faschierte",
+    "word": "das Faschierte (Sg.)",
     "definition": [
       "the minced"
     ]
@@ -1046,13 +1040,13 @@
     ]
   },
   {
-    "word": "das Fernsehen",
+    "word": "das Fernsehen (Sg.)",
     "definition": [
       "the television"
     ]
   },
   {
-    "word": "das Fett",
+    "word": "das Fett, die Fette",
     "definition": [
       "the fat"
     ]
@@ -1076,7 +1070,7 @@
     ]
   },
   {
-    "word": "das Gas",
+    "word": "das Gas, die Gase",
     "definition": [
       "the gas"
     ]
@@ -1094,19 +1088,19 @@
     ]
   },
   {
-    "word": "das Gebirge",
+    "word": "das Gebirge, die Gebirge",
     "definition": [
       "the mountains"
     ]
   },
   {
-    "word": "das Gebäck",
+    "word": "das Gebäck, die Gebäcke",
     "definition": [
       "the pastry"
     ]
   },
   {
-    "word": "das Gebäude",
+    "word": "das Gebäude, die Gebäude",
     "definition": [
       "the building"
     ]
@@ -1136,7 +1130,7 @@
     ]
   },
   {
-    "word": "das Geschirr",
+    "word": "das Geschirr, die Geschirre",
     "definition": [
       "the dishes"
     ]
@@ -1154,7 +1148,7 @@
     ]
   },
   {
-    "word": "das Gewissen",
+    "word": "das Gewissen, die Gewissen",
     "definition": [
       "the conscience"
     ]
@@ -1172,19 +1166,19 @@
     ]
   },
   {
-    "word": "das Girokonto, die Girokontoen",
+    "word": "das Girokonto, die Girokonten",
     "definition": [
       "the checking account, the checking accounts"
     ]
   },
   {
-    "word": "das Gold",
+    "word": "das Gold (Sg.)",
     "definition": [
       "the gold"
     ]
   },
   {
-    "word": "das Gras",
+    "word": "das Gras, die Gräser",
     "definition": [
       "the grass"
     ]
@@ -1196,7 +1190,7 @@
     ]
   },
   {
-    "word": "das Hackfleisch",
+    "word": "das Hackfleisch (Sg.)",
     "definition": [
       "the minced meat"
     ]
@@ -1208,7 +1202,7 @@
     ]
   },
   {
-    "word": "das Haus.",
+    "word": "das Haus, die Häuser",
     "definition": [
       "the house."
     ]
@@ -1226,7 +1220,7 @@
     ]
   },
   {
-    "word": "das Heimweh",
+    "word": "das Heimweh (Sg.)",
     "definition": [
       "the homesickness"
     ]
@@ -1238,7 +1232,7 @@
     ]
   },
   {
-    "word": "das Holz",
+    "word": "das Holz, die Hölzer",
     "definition": [
       "the wood"
     ]
@@ -1256,7 +1250,7 @@
     ]
   },
   {
-    "word": "das Kabel",
+    "word": "das Kabel, die Kabel",
     "definition": [
       "the cable"
     ]
@@ -1268,31 +1262,31 @@
     ]
   },
   {
-    "word": "das Kapitel",
+    "word": "das Kapitel, die Kapitel",
     "definition": [
       "the chapter"
     ]
   },
   {
-    "word": "das Kennzeichen",
+    "word": "das Kennzeichen, die Kennzeichen",
     "definition": [
       "the license plate"
     ]
   },
   {
-    "word": "das Kissen",
+    "word": "das Kissen, die Kissen",
     "definition": [
       "the pillow"
     ]
   },
   {
-    "word": "das Klima",
+    "word": "das Klima, die Klimas, die Klimata, die Klimate",
     "definition": [
       "the climate"
     ]
   },
   {
-    "word": "das Knie",
+    "word": "das Knie, die Knie",
     "definition": [
       "the knee"
     ]
@@ -1334,7 +1328,7 @@
     ]
   },
   {
-    "word": "das Lager",
+    "word": "das Lager, die Lager, die Läger",
     "definition": [
       "the warehouse"
     ]
@@ -1346,7 +1340,7 @@
     ]
   },
   {
-    "word": "das Leder",
+    "word": "das Leder, die Leder",
     "definition": [
       "the leather"
     ]
@@ -1376,13 +1370,13 @@
     ]
   },
   {
-    "word": "das Material",
+    "word": "das Material, die Materialien",
     "definition": [
       "the material"
     ]
   },
   {
-    "word": "das Mehl",
+    "word": "das Mehl, die Mehle",
     "definition": [
       "the flour"
     ]
@@ -1400,7 +1394,7 @@
     ]
   },
   {
-    "word": "das Mineralwasser",
+    "word": "das Mineralwasser, die Mineralwasser, die Mineralwässer",
     "definition": [
       "the mineral water"
     ]
@@ -1424,31 +1418,31 @@
     ]
   },
   {
-    "word": "das Museum.",
+    "word": "das Museum, die Museen",
     "definition": [
       "the museum."
     ]
   },
   {
-    "word": "das Märchen",
+    "word": "das Märchen, die Märchen",
     "definition": [
       "the fairy tale"
     ]
   },
   {
-    "word": "das Möbel",
+    "word": "das Möbel, die Möbel, die Möbeln",
     "definition": [
       "the furniture"
     ]
   },
   {
-    "word": "das Müesli, das Müsli",
+    "word": "das Müesli, die Müesli, die Müeslis",
     "definition": [
       "the muesli, the muesli"
     ]
   },
   {
-    "word": "das Nahrungsmittel",
+    "word": "das Nahrungsmittel, die Nahrungsmittel",
     "definition": [
       "the food"
     ]
@@ -1466,13 +1460,13 @@
     ]
   },
   {
-    "word": "das Opfer",
+    "word": "das Opfer, die Opfer",
     "definition": [
       "the victim"
     ]
   },
   {
-    "word": "das Orchester",
+    "word": "das Orchester, die Orchester",
     "definition": [
       "the orchestra"
     ]
@@ -1484,19 +1478,19 @@
     ]
   },
   {
-    "word": "das Pech",
+    "word": "das Pech, die Peche",
     "definition": [
       "the bad luck"
     ]
   },
   {
-    "word": "das Personal",
+    "word": "das Personal (Sg.)",
     "definition": [
       "the staff"
     ]
   },
   {
-    "word": "das Pflaster",
+    "word": "das Pflaster, die Pflaster",
     "definition": [
       "the pavement"
     ]
@@ -1508,7 +1502,7 @@
     ]
   },
   {
-    "word": "das Plastik",
+    "word": "das Plastik, die Plastiken",
     "definition": [
       "the plastic"
     ]
@@ -1520,7 +1514,7 @@
     ]
   },
   {
-    "word": "das Publikum",
+    "word": "das Publikum, die Publika",
     "definition": [
       "the audience"
     ]
@@ -1532,7 +1526,7 @@
     ]
   },
   {
-    "word": "das Quiz",
+    "word": "das Quiz, die Quiz, die Quizze",
     "definition": [
       "the quiz"
     ]
@@ -1568,31 +1562,31 @@
     ]
   },
   {
-    "word": "das Rüebli",
+    "word": "das Rüebli, die Rüebli",
     "definition": [
       "the carrot"
     ]
   },
   {
-    "word": "das Schaufenster",
+    "word": "das Schaufenster, die Schaufenster",
     "definition": [
       "the shop window"
     ]
   },
   {
-    "word": "das Schmerzmittel",
+    "word": "das Schmerzmittel, die Schmerzmittel",
     "definition": [
       "the painkiller"
     ]
   },
   {
-    "word": "das Schnitzel",
+    "word": "das Schnitzel, die Schnitzel",
     "definition": [
       "the schnitzel"
     ]
   },
   {
-    "word": "das Schreiben",
+    "word": "das Schreiben, die Schreiben",
     "definition": [
       "the writing"
     ]
@@ -1604,7 +1598,7 @@
     ]
   },
   {
-    "word": "das Semester",
+    "word": "das Semester, die Semester",
     "definition": [
       "the semester"
     ]
@@ -1658,7 +1652,7 @@
     ]
   },
   {
-    "word": "das Suchtmittel",
+    "word": "das Suchtmittel, die Suchtmittel",
     "definition": [
       "the addictive substance"
     ]
@@ -1694,13 +1688,13 @@
     ]
   },
   {
-    "word": "das Tempo",
+    "word": "das Tempo, die Tempi, die Tempos",
     "definition": [
       "the pace"
     ]
   },
   {
-    "word": "das Tennis",
+    "word": "das Tennis (Sg.)",
     "definition": [
       "the tennis"
     ]
@@ -1742,7 +1736,7 @@
     ]
   },
   {
-    "word": "das Ufer",
+    "word": "das Ufer, die Ufer",
     "definition": [
       "the shore"
     ]
@@ -1772,13 +1766,13 @@
     ]
   },
   {
-    "word": "das Vergnügen",
+    "word": "das Vergnügen, die Vergnügen",
     "definition": [
       "the pleasure"
     ]
   },
   {
-    "word": "das Verhalten",
+    "word": "das Verhalten, die Verhalten",
     "definition": [
       "the behavior"
     ]
@@ -1790,19 +1784,19 @@
     ]
   },
   {
-    "word": "das Verkehrszeichen",
+    "word": "das Verkehrszeichen, die Verkehrszeichen",
     "definition": [
       "the traffic sign"
     ]
   },
   {
-    "word": "das Verständnis",
+    "word": "das Verständnis, die Verständnisse",
     "definition": [
       "the understanding"
     ]
   },
   {
-    "word": "das Vertrauen",
+    "word": "das Vertrauen (Sg.)",
     "definition": [
       "the trust"
     ]
@@ -1814,7 +1808,7 @@
     ]
   },
   {
-    "word": "das Viertel",
+    "word": "das Viertel, die Viertel",
     "definition": [
       "the quarter"
     ]
@@ -1832,19 +1826,19 @@
     ]
   },
   {
-    "word": "das Vorstellungsgespräch",
+    "word": "das Vorstellungsgespräch, die Vorstellungsgespräche",
     "definition": [
       "the interview"
     ]
   },
   {
-    "word": "das Waschmittel",
+    "word": "das Waschmittel, die Waschmittel",
     "definition": [
       "the detergent"
     ]
   },
   {
-    "word": "das Wasser",
+    "word": "das Wasser, die Wasser, die Wässer",
     "definition": [
       "the water"
     ]
@@ -1862,13 +1856,13 @@
     ]
   },
   {
-    "word": "das Wissen",
+    "word": "das Wissen (Sg.)",
     "definition": [
       "the knowledge"
     ]
   },
   {
-    "word": "das Wunder",
+    "word": "das Wunder, die Wunder",
     "definition": [
       "the miracle"
     ]
@@ -1880,7 +1874,7 @@
     ]
   },
   {
-    "word": "das Zeichen",
+    "word": "das Zeichen, die Zeichen",
     "definition": [
       "the sign"
     ]
@@ -1892,13 +1886,13 @@
     ]
   },
   {
-    "word": "das Zeug",
+    "word": "das Zeug, die Zeuge",
     "definition": [
       "the stuff"
     ]
   },
   {
-    "word": "das Zuhause",
+    "word": "das Zuhause (Sg.)",
     "definition": [
       "the home"
     ]
@@ -1940,19 +1934,19 @@
     ]
   },
   {
-    "word": "der Alkohol",
+    "word": "der Alkohol, die Alkohole",
     "definition": [
       "the alcohol"
     ]
   },
   {
-    "word": "der Alltag",
+    "word": "der Alltag, die Alltage",
     "definition": [
       "the everyday"
     ]
   },
   {
-    "word": "der Anbieter",
+    "word": "der Anbieter, die Anbieter",
     "definition": [
       "the provider"
     ]
@@ -1970,7 +1964,7 @@
     ]
   },
   {
-    "word": "der Anrufbeantworter",
+    "word": "der Anrufbeantworter, die Anrufbeantworter",
     "definition": [
       "the answering machine"
     ]
@@ -2000,13 +1994,13 @@
     ]
   },
   {
-    "word": "der Arbeit.",
+    "word": "der Arbeit, die Arbeiten",
     "definition": [
       "of work."
     ]
   },
   {
-    "word": "der Arbeiter",
+    "word": "der Arbeiter, die Arbeiter",
     "definition": [
       "the worker"
     ]
@@ -2018,7 +2012,7 @@
     ]
   },
   {
-    "word": "der Atem",
+    "word": "der Atem (Sg.)",
     "definition": [
       "the breath"
     ]
@@ -2060,7 +2054,7 @@
     ]
   },
   {
-    "word": "der Bancomat, der Bankomat",
+    "word": "der Bancomat, die Bancomaten",
     "definition": [
       "the ATM, the ATM"
     ]
@@ -2090,13 +2084,13 @@
     ]
   },
   {
-    "word": "der Bedarf",
+    "word": "der Bedarf, die Bedarfe",
     "definition": [
       "the need"
     ]
   },
   {
-    "word": "der Beginn",
+    "word": "der Beginn, die Beginne",
     "definition": [
       "the beginning"
     ]
@@ -2138,7 +2132,7 @@
     ]
   },
   {
-    "word": "der Betreuer",
+    "word": "der Betreuer, die Betreuer",
     "definition": [
       "the supervisor"
     ]
@@ -2162,7 +2156,7 @@
     ]
   },
   {
-    "word": "der Bewohner",
+    "word": "der Bewohner, die Bewohner",
     "definition": [
       "the resident"
     ]
@@ -2186,7 +2180,7 @@
     ]
   },
   {
-    "word": "der Braten",
+    "word": "der Braten, die Braten",
     "definition": [
       "the roast"
     ]
@@ -2198,7 +2192,7 @@
     ]
   },
   {
-    "word": "der Briefträger",
+    "word": "der Briefträger, die Briefträger",
     "definition": [
       "the postman"
     ]
@@ -2216,7 +2210,7 @@
     ]
   },
   {
-    "word": "der Bürger",
+    "word": "der Bürger, die Bürger",
     "definition": [
       "the citizen"
     ]
@@ -2252,7 +2246,7 @@
     ]
   },
   {
-    "word": "der Dienst",
+    "word": "der Dienst, die Dienste",
     "definition": [
       "the service"
     ]
@@ -2264,25 +2258,25 @@
     ]
   },
   {
-    "word": "der Donau.",
+    "word": "die Donau (Sg.)",
     "definition": [
       "the Danube."
     ]
   },
   {
-    "word": "der Donner",
+    "word": "der Donner, die Donner",
     "definition": [
       "the thunder"
     ]
   },
   {
-    "word": "der Dreck",
+    "word": "der Dreck (Sg.)",
     "definition": [
       "the dirt"
     ]
   },
   {
-    "word": "der Druck",
+    "word": "der Druck, die Drücke, die Drucke, die Drucks",
     "definition": [
       "the pressure"
     ]
@@ -2294,7 +2288,7 @@
     ]
   },
   {
-    "word": "der Einbrecher",
+    "word": "der Einbrecher, die Einbrecher",
     "definition": [
       "the burglar"
     ]
@@ -2330,7 +2324,7 @@
     ]
   },
   {
-    "word": "der Einwohner",
+    "word": "der Einwohner, die Einwohner",
     "definition": [
       "the residents"
     ]
@@ -2342,7 +2336,7 @@
     ]
   },
   {
-    "word": "der Enkel",
+    "word": "der Enkel, die Enkel",
     "definition": [
       "the grandson"
     ]
@@ -2360,13 +2354,13 @@
     ]
   },
   {
-    "word": "der Ersatz",
+    "word": "der Ersatz, die Ersätze",
     "definition": [
       "the replacement"
     ]
   },
   {
-    "word": "der Essig",
+    "word": "der Essig, die Essige",
     "definition": [
       "the vinegar"
     ]
@@ -2384,7 +2378,7 @@
     ]
   },
   {
-    "word": "der Fachmann",
+    "word": "der Fachmann, die Fachmänner, die Fachleute",
     "definition": [
       "the expert"
     ]
@@ -2402,7 +2396,7 @@
     ]
   },
   {
-    "word": "der Fasching",
+    "word": "der Fasching, die Faschings, die Faschinge",
     "definition": [
       "the carnival"
     ]
@@ -2414,7 +2408,7 @@
     ]
   },
   {
-    "word": "der Feierabend",
+    "word": "der Feierabend, die Feierabende",
     "definition": [
       "the end of the day"
     ]
@@ -2426,7 +2420,7 @@
     ]
   },
   {
-    "word": "der Finger",
+    "word": "der Finger, die Finger",
     "definition": [
       "the finger"
     ]
@@ -2438,7 +2432,7 @@
     ]
   },
   {
-    "word": "der Fleischhauer",
+    "word": "der Fleischhauer, die Fleischhauer",
     "definition": [
       "the butcher"
     ]
@@ -2474,7 +2468,7 @@
     ]
   },
   {
-    "word": "der Fußgänger",
+    "word": "der Fußgänger, die Fußgänger",
     "definition": [
       "the pedestrian"
     ]
@@ -2510,13 +2504,13 @@
     ]
   },
   {
-    "word": "der Gegner",
+    "word": "der Gegner, die Gegner",
     "definition": [
       "the opponent"
     ]
   },
   {
-    "word": "der Gehsteig",
+    "word": "der Gehsteig, die Gehsteige",
     "definition": [
       "the sidewalk"
     ]
@@ -2528,7 +2522,7 @@
     ]
   },
   {
-    "word": "der Geschmack",
+    "word": "der Geschmack, die Geschmäcke, die Geschmäcker",
     "definition": [
       "the taste"
     ]
@@ -2546,7 +2540,7 @@
     ]
   },
   {
-    "word": "der Grill",
+    "word": "der Grill, die Grills",
     "definition": [
       "the grill"
     ]
@@ -2564,7 +2558,7 @@
     ]
   },
   {
-    "word": "der Halt",
+    "word": "der Halt, die Halte, die Halts",
     "definition": [
       "the stop"
     ]
@@ -2576,13 +2570,13 @@
     ]
   },
   {
-    "word": "der Handel",
+    "word": "der Handel, die Händel",
     "definition": [
       "the trade"
     ]
   },
   {
-    "word": "der Handwerker",
+    "word": "der Handwerker, die Handwerker",
     "definition": [
       "the craftsman"
     ]
@@ -2594,7 +2588,7 @@
     ]
   },
   {
-    "word": "der Hausmeister",
+    "word": "der Hausmeister, die Hausmeister",
     "definition": [
       "the caretaker"
     ]
@@ -2606,13 +2600,13 @@
     ]
   },
   {
-    "word": "der Hersteller",
+    "word": "der Hersteller, die Hersteller",
     "definition": [
       "the manufacturer"
     ]
   },
   {
-    "word": "der Himmel",
+    "word": "der Himmel, die Himmel",
     "definition": [
       "the sky"
     ]
@@ -2630,19 +2624,19 @@
     ]
   },
   {
-    "word": "der Honig",
+    "word": "der Honig, die Honige",
     "definition": [
       "the honey"
     ]
   },
   {
-    "word": "der Humor",
+    "word": "der Humor, die Humore, die Humores",
     "definition": [
       "the humor"
     ]
   },
   {
-    "word": "der Husten",
+    "word": "der Husten, die Husten",
     "definition": [
       "the cough"
     ]
@@ -2654,19 +2648,19 @@
     ]
   },
   {
-    "word": "der Händler",
+    "word": "der Händler, die Händler",
     "definition": [
       "the dealer"
     ]
   },
   {
-    "word": "der Hörer",
+    "word": "der Hörer, die Hörer",
     "definition": [
       "the listener"
     ]
   },
   {
-    "word": "der Hügel",
+    "word": "der Hügel, die Hügel",
     "definition": [
       "the hill"
     ]
@@ -2750,19 +2744,19 @@
     ]
   },
   {
-    "word": "der Kauf",
+    "word": "der Kauf, die Käufe",
     "definition": [
       "the purchase"
     ]
   },
   {
-    "word": "der Kellner",
+    "word": "der Kellner, die Kellner",
     "definition": [
       "the waiter"
     ]
   },
   {
-    "word": "der Klick",
+    "word": "der Klick, die Klicks",
     "definition": [
       "the click"
     ]
@@ -2774,7 +2768,7 @@
     ]
   },
   {
-    "word": "der Knochen",
+    "word": "der Knochen, die Knochen",
     "definition": [
       "the bone"
     ]
@@ -2786,7 +2780,7 @@
     ]
   },
   {
-    "word": "der Knödel",
+    "word": "der Knödel, die Knödel",
     "definition": [
       "the dumpling"
     ]
@@ -2810,19 +2804,19 @@
     ]
   },
   {
-    "word": "der Konkurrenz",
+    "word": "der Konkurrenz, die Konkurrenzen",
     "definition": [
       "the competition"
     ]
   },
   {
-    "word": "der Konsum",
+    "word": "der Konsum (Sg.)",
     "definition": [
       "the consumption"
     ]
   },
   {
-    "word": "der Kopierer",
+    "word": "der Kopierer, die Kopierer",
     "definition": [
       "the copier"
     ]
@@ -2840,13 +2834,13 @@
     ]
   },
   {
-    "word": "der Krankenpfleger",
+    "word": "der Krankenpfleger, die Krankenpfleger",
     "definition": [
       "the nurse"
     ]
   },
   {
-    "word": "der Krankenwagen",
+    "word": "der Krankenwagen, die Krankenwagen, die Krankenwägen",
     "definition": [
       "the ambulance"
     ]
@@ -2876,7 +2870,7 @@
     ]
   },
   {
-    "word": "der Kursleiter",
+    "word": "der Kursleiter, die Kursleiter",
     "definition": [
       "the course leader"
     ]
@@ -2888,13 +2882,13 @@
     ]
   },
   {
-    "word": "der Käse",
+    "word": "der Käse, die Käse",
     "definition": [
       "the cheese"
     ]
   },
   {
-    "word": "der Käufer",
+    "word": "der Käufer, die Käufer",
     "definition": [
       "the buyer"
     ]
@@ -2906,19 +2900,19 @@
     ]
   },
   {
-    "word": "der Künstler",
+    "word": "der Künstler, die Künstler",
     "definition": [
       "the artist"
     ]
   },
   {
-    "word": "der Laster",
+    "word": "der Laster, die Laster",
     "definition": [
       "the vice"
     ]
   },
   {
-    "word": "der Lautsprecher",
+    "word": "der Lautsprecher, die Lautsprecher",
     "definition": [
       "the speaker"
     ]
@@ -2936,19 +2930,19 @@
     ]
   },
   {
-    "word": "der Leiter",
+    "word": "der Leiter, die Leiter, die Leitern",
     "definition": [
       "the leader"
     ]
   },
   {
-    "word": "der Lerner",
+    "word": "der Lerner, die Lerner",
     "definition": [
       "the learner"
     ]
   },
   {
-    "word": "der Leser",
+    "word": "der Leser, die Leser",
     "definition": [
       "the reader"
     ]
@@ -2966,13 +2960,13 @@
     ]
   },
   {
-    "word": "der Lärm",
+    "word": "der Lärm (Sg.)",
     "definition": [
       "the noise"
     ]
   },
   {
-    "word": "der Maler",
+    "word": "der Maler, die Maler",
     "definition": [
       "the painter"
     ]
@@ -2984,25 +2978,25 @@
     ]
   },
   {
-    "word": "der Mechaniker",
+    "word": "der Mechaniker, die Mechaniker",
     "definition": [
       "the mechanic"
     ]
   },
   {
-    "word": "der Meister",
+    "word": "der Meister, die Meister",
     "definition": [
       "the master"
     ]
   },
   {
-    "word": "der Metzger",
+    "word": "der Metzger, die Metzger",
     "definition": [
       "the butcher"
     ]
   },
   {
-    "word": "der Mieter",
+    "word": "der Mieter, die Mieter",
     "definition": [
       "the tenant"
     ]
@@ -3026,7 +3020,7 @@
     ]
   },
   {
-    "word": "der Musiker",
+    "word": "der Musiker, die Musiker",
     "definition": [
       "the musician"
     ]
@@ -3038,13 +3032,13 @@
     ]
   },
   {
-    "word": "der Mut",
+    "word": "der Mut (Sg.)",
     "definition": [
       "the courage"
     ]
   },
   {
-    "word": "der Müll",
+    "word": "der Müll (Sg.)",
     "definition": [
       "the garbage"
     ]
@@ -3056,7 +3050,7 @@
     ]
   },
   {
-    "word": "der Nachwuchs",
+    "word": "der Nachwuchs (Sg.)",
     "definition": [
       "the offspring"
     ]
@@ -3068,7 +3062,7 @@
     ]
   },
   {
-    "word": "der Nebel",
+    "word": "der Nebel, die Nebel",
     "definition": [
       "the fog"
     ]
@@ -3086,7 +3080,7 @@
     ]
   },
   {
-    "word": "der Nichtraucher",
+    "word": "der Nichtraucher, die Nichtraucher",
     "definition": [
       "the non-smoker"
     ]
@@ -3104,25 +3098,25 @@
     ]
   },
   {
-    "word": "der Notruf",
+    "word": "der Notruf, die Notrufe",
     "definition": [
       "the emergency call"
     ]
   },
   {
-    "word": "der Ober",
+    "word": "der Ober, die Ober",
     "definition": [
       "the waiter"
     ]
   },
   {
-    "word": "der Onkel",
+    "word": "der Onkel, die Onkel",
     "definition": [
       "the uncle"
     ]
   },
   {
-    "word": "der Ordner",
+    "word": "der Ordner, die Ordner",
     "definition": [
       "the folder"
     ]
@@ -3134,7 +3128,13 @@
     ]
   },
   {
-    "word": "der Paradeiser",
+    "word": "der Paradeiser, die Paradeiser",
+    "definition": [
+      "the tomato"
+    ]
+  },
+  {
+    "word": "die Tomate, die Tomaten",
     "definition": [
       "the tomato"
     ]
@@ -3164,19 +3164,19 @@
     ]
   },
   {
-    "word": "der Personenstand",
+    "word": "der Personenstand (Sg.)",
     "definition": [
       "the civil status"
     ]
   },
   {
-    "word": "der Pfeffer",
+    "word": "der Pfeffer, die Pfeffer",
     "definition": [
       "the pepper"
     ]
   },
   {
-    "word": "der Pfleger",
+    "word": "der Pfleger, die Pfleger",
     "definition": [
       "the nurse"
     ]
@@ -3188,7 +3188,7 @@
     ]
   },
   {
-    "word": "der Politiker",
+    "word": "der Politiker, die Politiker",
     "definition": [
       "the politician"
     ]
@@ -3200,15 +3200,9 @@
     ]
   },
   {
-    "word": "der Post",
+    "word": "der Post, die Posten, die Posts",
     "definition": [
       "the post office"
-    ]
-  },
-  {
-    "word": "der Post.",
-    "definition": [
-      "the post office."
     ]
   },
   {
@@ -3230,7 +3224,7 @@
     ]
   },
   {
-    "word": "der Profisportler",
+    "word": "der Profisportler, die Profisportler",
     "definition": [
       "the professional athlete"
     ]
@@ -3254,7 +3248,7 @@
     ]
   },
   {
-    "word": "der Pöstler",
+    "word": "der Pöstler, die Pöstler",
     "definition": [
       "the postman"
     ]
@@ -3266,7 +3260,7 @@
     ]
   },
   {
-    "word": "der Radfahrer",
+    "word": "der Radfahrer, die Radfahrer",
     "definition": [
       "the cyclist"
     ]
@@ -3278,25 +3272,25 @@
     ]
   },
   {
-    "word": "der Rasen",
+    "word": "der Rasen, die Rasen",
     "definition": [
       "the lawn"
     ]
   },
   {
-    "word": "der Rat",
+    "word": "der Rat, die Räte",
     "definition": [
       "the council"
     ]
   },
   {
-    "word": "der Raucher",
+    "word": "der Raucher, die Raucher",
     "definition": [
       "the smoker"
     ]
   },
   {
-    "word": "der Rechner",
+    "word": "der Rechner, die Rechner",
     "definition": [
       "the computer"
     ]
@@ -3308,25 +3302,31 @@
     ]
   },
   {
-    "word": "der Rentner",
+    "word": "die Rezeption, die Rezeptionen",
+    "definition": [
+      "the reception desk"
+    ]
+  },
+  {
+    "word": "der Rentner, die Rentner",
     "definition": [
       "the pensioner"
     ]
   },
   {
-    "word": "der Reporter",
+    "word": "der Reporter, die Reporter",
     "definition": [
       "the reporter"
     ]
   },
   {
-    "word": "der Respekt",
+    "word": "der Respekt (Sg.)",
     "definition": [
       "the respect"
     ]
   },
   {
-    "word": "der Richter",
+    "word": "der Richter, die Richter",
     "definition": [
       "the judge"
     ]
@@ -3356,7 +3356,7 @@
     ]
   },
   {
-    "word": "der Sand",
+    "word": "der Sand, die Sande, die Sände",
     "definition": [
       "the sand"
     ]
@@ -3368,13 +3368,13 @@
     ]
   },
   {
-    "word": "der Schatten",
+    "word": "der Schatten, die Schatten",
     "definition": [
       "the shadow"
     ]
   },
   {
-    "word": "der Schauspieler",
+    "word": "der Schauspieler, die Schauspieler",
     "definition": [
       "the actor"
     ]
@@ -3386,43 +3386,43 @@
     ]
   },
   {
-    "word": "der Schlaf",
+    "word": "der Schlaf (Sg.)",
     "definition": [
       "the sleep"
     ]
   },
   {
-    "word": "der Schmuck",
+    "word": "der Schmuck, die Schmucke",
     "definition": [
       "the jewelry"
     ]
   },
   {
-    "word": "der Schmutz",
+    "word": "der Schmutz (Sg.)",
     "definition": [
       "the dirt"
     ]
   },
   {
-    "word": "der Schnee",
+    "word": "der Schnee (Sg.)",
     "definition": [
       "the snow"
     ]
   },
   {
-    "word": "der Schnupfen",
+    "word": "der Schnupfen, die Schnupfen",
     "definition": [
       "the cold"
     ]
   },
   {
-    "word": "der Schreck, der Schrecken",
+    "word": "der Schreck, die Schrecke",
     "definition": [
       "the shock, the horror"
     ]
   },
   {
-    "word": "der Schriftsteller",
+    "word": "der Schriftsteller, die Schriftsteller",
     "definition": [
       "the writer"
     ]
@@ -3434,7 +3434,7 @@
     ]
   },
   {
-    "word": "der Schutz",
+    "word": "der Schutz, die Schutze",
     "definition": [
       "the protection"
     ]
@@ -3446,13 +3446,13 @@
     ]
   },
   {
-    "word": "der Sender",
+    "word": "der Sender, die Sender",
     "definition": [
       "the transmitter"
     ]
   },
   {
-    "word": "der Service",
+    "word": "der Service, die Services, die Service",
     "definition": [
       "the service"
     ]
@@ -3464,7 +3464,7 @@
     ]
   },
   {
-    "word": "der Sessel",
+    "word": "der Sessel, die Sessel",
     "definition": [
       "the armchair"
     ]
@@ -3476,13 +3476,13 @@
     ]
   },
   {
-    "word": "der Sieger",
+    "word": "der Sieger, die Sieger",
     "definition": [
       "the winner"
     ]
   },
   {
-    "word": "der Sinn",
+    "word": "der Sinn, die Sinne",
     "definition": [
       "the meaning"
     ]
@@ -3494,19 +3494,19 @@
     ]
   },
   {
-    "word": "der Sozialarbeiter",
+    "word": "der Sozialarbeiter, die Sozialarbeiter",
     "definition": [
       "the social worker"
     ]
   },
   {
-    "word": "der Spaß",
+    "word": "der Spaß, die Späße",
     "definition": [
       "the fun"
     ]
   },
   {
-    "word": "der Speisewagen",
+    "word": "der Speisewagen, die Speisewagen, die Speisewägen",
     "definition": [
       "the dining car"
     ]
@@ -3518,13 +3518,13 @@
     ]
   },
   {
-    "word": "der Spiegel",
+    "word": "der Spiegel, die Spiegel",
     "definition": [
       "the mirror"
     ]
   },
   {
-    "word": "der Spieler",
+    "word": "der Spieler, die Spieler",
     "definition": [
       "the player"
     ]
@@ -3536,13 +3536,13 @@
     ]
   },
   {
-    "word": "der Sportler",
+    "word": "der Sportler, die Sportler",
     "definition": [
       "the athlete"
     ]
   },
   {
-    "word": "der Stadt.",
+    "word": "der Stadt, die Städte",
     "definition": [
       "the city."
     ]
@@ -3566,13 +3566,13 @@
     ]
   },
   {
-    "word": "der Staub",
+    "word": "der Staub, die Stäube, die Staube",
     "definition": [
       "the dust"
     ]
   },
   {
-    "word": "der Stecker",
+    "word": "der Stecker, die Stecker",
     "definition": [
       "the plug"
     ]
@@ -3584,7 +3584,7 @@
     ]
   },
   {
-    "word": "der Stempel",
+    "word": "der Stempel, die Stempel",
     "definition": [
       "the stamp"
     ]
@@ -3614,7 +3614,7 @@
     ]
   },
   {
-    "word": "der Strafzettel",
+    "word": "der Strafzettel, die Strafzettel",
     "definition": [
       "the traffic ticket"
     ]
@@ -3626,19 +3626,19 @@
     ]
   },
   {
-    "word": "der Streit",
+    "word": "der Streit, die Streite",
     "definition": [
       "the dispute"
     ]
   },
   {
-    "word": "der Stress",
+    "word": "der Stress, die Stresse",
     "definition": [
       "the stress"
     ]
   },
   {
-    "word": "der Strom",
+    "word": "der Strom, die Ströme",
     "definition": [
       "the stream"
     ]
@@ -3662,7 +3662,7 @@
     ]
   },
   {
-    "word": "der Sänger",
+    "word": "der Sänger, die Sänger",
     "definition": [
       "the singer"
     ]
@@ -3680,7 +3680,7 @@
     ]
   },
   {
-    "word": "der Teilnehmer",
+    "word": "der Teilnehmer, die Teilnehmer",
     "definition": [
       "the participant"
     ]
@@ -3692,7 +3692,7 @@
     ]
   },
   {
-    "word": "der Terminkalender",
+    "word": "der Terminkalender, die Terminkalender",
     "definition": [
       "the appointment calendar"
     ]
@@ -3704,7 +3704,7 @@
     ]
   },
   {
-    "word": "der Tod",
+    "word": "der Tod, die Tode",
     "definition": [
       "the death"
     ]
@@ -3716,13 +3716,13 @@
     ]
   },
   {
-    "word": "der Tourismus",
+    "word": "der Tourismus (Sg.)",
     "definition": [
       "tourism"
     ]
   },
   {
-    "word": "der Trainer",
+    "word": "der Trainer, die Trainer",
     "definition": [
       "the coach"
     ]
@@ -3752,7 +3752,7 @@
     ]
   },
   {
-    "word": "der Täter",
+    "word": "der Täter, die Täter",
     "definition": [
       "the perpetrator"
     ]
@@ -3764,31 +3764,31 @@
     ]
   },
   {
-    "word": "der Umweltschutz",
+    "word": "der Umweltschutz (Sg.)",
     "definition": [
       "the environmental protection"
     ]
   },
   {
-    "word": "der Universität.",
+    "word": "der Universität, die Universitäten",
     "definition": [
       "the university."
     ]
   },
   {
-    "word": "der Unternehmer",
+    "word": "der Unternehmer, die Unternehmer",
     "definition": [
       "the entrepreneur"
     ]
   },
   {
-    "word": "der Verbrecher",
+    "word": "der Verbrecher, die Verbrecher",
     "definition": [
       "the criminal"
     ]
   },
   {
-    "word": "der Verdacht",
+    "word": "der Verdacht, die Verdachte, die Verdächte",
     "definition": [
       "the suspicion"
     ]
@@ -3800,7 +3800,7 @@
     ]
   },
   {
-    "word": "der Verkehr",
+    "word": "der Verkehr, die Verkehre",
     "definition": [
       "the traffic"
     ]
@@ -3812,7 +3812,7 @@
     ]
   },
   {
-    "word": "der Verlierer",
+    "word": "der Verlierer, die Verlierer",
     "definition": [
       "the loser"
     ]
@@ -3824,7 +3824,7 @@
     ]
   },
   {
-    "word": "der Vermittlung",
+    "word": "der Vermittlung, die Vermittlungen",
     "definition": [
       "the mediation"
     ]
@@ -3836,7 +3836,7 @@
     ]
   },
   {
-    "word": "der Vertreter",
+    "word": "der Vertreter, die Vertreter",
     "definition": [
       "the representative"
     ]
@@ -3872,7 +3872,7 @@
     ]
   },
   {
-    "word": "der Wecker",
+    "word": "der Wecker, die Wecker",
     "definition": [
       "the alarm clock"
     ]
@@ -3896,13 +3896,13 @@
     ]
   },
   {
-    "word": "der Wissenschaftler",
+    "word": "der Wissenschaftler, die Wissenschaftler",
     "definition": [
       "the scientist"
     ]
   },
   {
-    "word": "der Woche.",
+    "word": "der Woche, die Wochen",
     "definition": [
       "of the week."
     ]
@@ -3920,7 +3920,7 @@
     ]
   },
   {
-    "word": "der Zeitpunkt",
+    "word": "der Zeitpunkt, die Zeitpunkte",
     "definition": [
       "the timing"
     ]
@@ -3932,13 +3932,13 @@
     ]
   },
   {
-    "word": "der Zivilstand",
+    "word": "der Zivilstand, die Zivilstände",
     "definition": [
       "the marital status"
     ]
   },
   {
-    "word": "der Zucker",
+    "word": "der Zucker, die Zucker",
     "definition": [
       "the sugar"
     ]
@@ -3956,7 +3956,7 @@
     ]
   },
   {
-    "word": "der Zuhörer",
+    "word": "der Zuhörer, die Zuhörer",
     "definition": [
       "the listener"
     ]
@@ -3968,7 +3968,7 @@
     ]
   },
   {
-    "word": "der Zuschauer",
+    "word": "der Zuschauer, die Zuschauer",
     "definition": [
       "the spectator"
     ]
@@ -3992,19 +3992,19 @@
     ]
   },
   {
-    "word": "der Zweifel",
+    "word": "der Zweifel, die Zweifel",
     "definition": [
       "the doubt"
     ]
   },
   {
-    "word": "der Ärger",
+    "word": "der Ärger (Sg.)",
     "definition": [
       "the anger"
     ]
   },
   {
-    "word": "der Übersetzer",
+    "word": "der Übersetzer, die Übersetzer",
     "definition": [
       "the translator"
     ]
@@ -4016,9 +4016,9 @@
     ]
   },
   {
-    "word": "det",
+    "word": "enden",
     "definition": [
-      "det"
+      "to end"
     ]
   },
   {
@@ -4106,13 +4106,13 @@
     ]
   },
   {
-    "word": "die Arbeitserlaubnis",
+    "word": "die Arbeitserlaubnis, die Arbeitserlaubnisse",
     "definition": [
       "the work permit"
     ]
   },
   {
-    "word": "die Arbeitslosigkeit",
+    "word": "die Arbeitslosigkeit (Sg.)",
     "definition": [
       "the unemployment"
     ]
@@ -4184,7 +4184,7 @@
     ]
   },
   {
-    "word": "die Aussprache",
+    "word": "die Aussprache, die Aussprachen",
     "definition": [
       "the pronunciation"
     ]
@@ -4244,7 +4244,7 @@
     ]
   },
   {
-    "word": "die Bedienungsanleitung",
+    "word": "die Bedienungsanleitung, die Bedienungsanleitungen",
     "definition": [
       "the operating instructions"
     ]
@@ -4268,7 +4268,7 @@
     ]
   },
   {
-    "word": "die Beratung",
+    "word": "die Beratung, die Beratungen",
     "definition": [
       "the advice"
     ]
@@ -4280,7 +4280,7 @@
     ]
   },
   {
-    "word": "die Beschäftigung",
+    "word": "die Beschäftigung, die Beschäftigungen",
     "definition": [
       "the employment"
     ]
@@ -4292,7 +4292,7 @@
     ]
   },
   {
-    "word": "die Besserung",
+    "word": "die Besserung, die Besserungen",
     "definition": [
       "the improvement"
     ]
@@ -4310,7 +4310,7 @@
     ]
   },
   {
-    "word": "die Betreuung",
+    "word": "die Betreuung, die Betreuungen",
     "definition": [
       "the care"
     ]
@@ -4322,7 +4322,7 @@
     ]
   },
   {
-    "word": "die Bevölkerung",
+    "word": "die Bevölkerung, die Bevölkerungen",
     "definition": [
       "the population"
     ]
@@ -4346,7 +4346,7 @@
     ]
   },
   {
-    "word": "die Biologie",
+    "word": "die Biologie (Sg.)",
     "definition": [
       "the biology"
     ]
@@ -4382,7 +4382,7 @@
     ]
   },
   {
-    "word": "die Brust",
+    "word": "die Brust, die Brüste",
     "definition": [
       "the chest"
     ]
@@ -4460,13 +4460,13 @@
     ]
   },
   {
-    "word": "die Daten",
+    "word": "die Daten, die Daten",
     "definition": [
       "the data"
     ]
   },
   {
-    "word": "die Dauer",
+    "word": "die Dauer, die Dauern",
     "definition": [
       "the duration"
     ]
@@ -4502,7 +4502,7 @@
     ]
   },
   {
-    "word": "die Diät",
+    "word": "die Diät, die Diäten",
     "definition": [
       "the diet"
     ]
@@ -4544,7 +4544,7 @@
     ]
   },
   {
-    "word": "die Eile",
+    "word": "die Eile (Sg.)",
     "definition": [
       "the rush"
     ]
@@ -4556,7 +4556,7 @@
     ]
   },
   {
-    "word": "die Einbrecher",
+    "word": "die Einbrecher, die Einbrecher",
     "definition": [
       "the burglars"
     ]
@@ -4616,7 +4616,7 @@
     ]
   },
   {
-    "word": "die Eltern",
+    "word": "die Eltern, die Eltern",
     "definition": [
       "the parents"
     ]
@@ -4670,7 +4670,7 @@
     ]
   },
   {
-    "word": "die Erde",
+    "word": "die Erde, die Erden",
     "definition": [
       "the earth"
     ]
@@ -4712,7 +4712,7 @@
     ]
   },
   {
-    "word": "die Erlaubnis",
+    "word": "die Erlaubnis, die Erlaubnisse",
     "definition": [
       "the permission"
     ]
@@ -4724,13 +4724,13 @@
     ]
   },
   {
-    "word": "die Ernährung",
+    "word": "die Ernährung, die Ernährungen",
     "definition": [
       "the diet"
     ]
   },
   {
-    "word": "die Erziehung",
+    "word": "die Erziehung (Sg.)",
     "definition": [
       "the education"
     ]
@@ -4766,7 +4766,7 @@
     ]
   },
   {
-    "word": "die Fachleute",
+    "word": "die Fachleute, die Fachleute",
     "definition": [
       "the professionals"
     ]
@@ -4778,7 +4778,7 @@
     ]
   },
   {
-    "word": "die Fahrt",
+    "word": "die Fahrt, die Fahrten",
     "definition": [
       "the ride"
     ]
@@ -4790,19 +4790,19 @@
     ]
   },
   {
-    "word": "die Fasnacht",
+    "word": "die Fasnacht (Sg.)",
     "definition": [
       "the carnival"
     ]
   },
   {
-    "word": "die Fenster",
+    "word": "die Fenster, die Fenster",
     "definition": [
       "the windows"
     ]
   },
   {
-    "word": "die Ferien",
+    "word": "die Ferien, die Ferien",
     "definition": [
       "the holidays"
     ]
@@ -4838,7 +4838,7 @@
     ]
   },
   {
-    "word": "die Flucht",
+    "word": "die Flucht, die Fluchten",
     "definition": [
       "the escape"
     ]
@@ -4904,7 +4904,7 @@
     ]
   },
   {
-    "word": "die Freiheit",
+    "word": "die Freiheit, die Freiheiten",
     "definition": [
       "the freedom"
     ]
@@ -4916,7 +4916,7 @@
     ]
   },
   {
-    "word": "die Freude",
+    "word": "die Freude, die Freuden",
     "definition": [
       "the joy"
     ]
@@ -4988,7 +4988,7 @@
     ]
   },
   {
-    "word": "die Garantie",
+    "word": "die Garantie, die Garantien",
     "definition": [
       "the guarantee"
     ]
@@ -5006,7 +5006,7 @@
     ]
   },
   {
-    "word": "die Gebrauchsanweisung",
+    "word": "die Gebrauchsanweisung, die Gebrauchsanweisungen",
     "definition": [
       "the instructions for use"
     ]
@@ -5024,7 +5024,7 @@
     ]
   },
   {
-    "word": "die Geduld",
+    "word": "die Geduld (Sg.)",
     "definition": [
       "the patience"
     ]
@@ -5066,7 +5066,7 @@
     ]
   },
   {
-    "word": "die Geschwister",
+    "word": "die Geschwister, die Geschwister",
     "definition": [
       "the siblings"
     ]
@@ -5114,13 +5114,13 @@
     ]
   },
   {
-    "word": "die Grippe",
+    "word": "die Grippe, die Grippen",
     "definition": [
       "the flu"
     ]
   },
   {
-    "word": "die Gymnastik",
+    "word": "die Gymnastik (Sg.)",
     "definition": [
       "the gymnastics"
     ]
@@ -5138,7 +5138,7 @@
     ]
   },
   {
-    "word": "die Haut",
+    "word": "die Haut, die Häute",
     "definition": [
       "the skin"
     ]
@@ -5156,13 +5156,13 @@
     ]
   },
   {
-    "word": "die Herkunft",
+    "word": "die Herkunft, die Herkünfte",
     "definition": [
       "the origin"
     ]
   },
   {
-    "word": "die Hitze",
+    "word": "die Hitze, die Hitzen",
     "definition": [
       "the heat"
     ]
@@ -5180,19 +5180,13 @@
     ]
   },
   {
-    "word": "die Hälfte.",
-    "definition": [
-      "the half."
-    ]
-  },
-  {
     "word": "die Händlerin, die Händlerinnen",
     "definition": [
       "the dealer, the dealers"
     ]
   },
   {
-    "word": "die Höhe",
+    "word": "die Höhe, die Höhen",
     "definition": [
       "the height"
     ]
@@ -5228,7 +5222,7 @@
     ]
   },
   {
-    "word": "die Intelligenz",
+    "word": "die Intelligenz, die Intelligenzen",
     "definition": [
       "the intelligence"
     ]
@@ -5240,7 +5234,7 @@
     ]
   },
   {
-    "word": "die Jeans",
+    "word": "die Jeans, die Jeans",
     "definition": [
       "the jeans"
     ]
@@ -5252,7 +5246,7 @@
     ]
   },
   {
-    "word": "die Jugend",
+    "word": "die Jugend (Sg.)",
     "definition": [
       "the youth"
     ]
@@ -5312,7 +5306,7 @@
     ]
   },
   {
-    "word": "die Kenntnisse",
+    "word": "die Kenntnis, die Kenntnisse",
     "definition": [
       "the knowledge"
     ]
@@ -5324,7 +5318,7 @@
     ]
   },
   {
-    "word": "die Kindheit",
+    "word": "die Kindheit (Sg.)",
     "definition": [
       "childhood"
     ]
@@ -5342,7 +5336,7 @@
     ]
   },
   {
-    "word": "die Kleidung",
+    "word": "die Kleidung, die Kleidungen",
     "definition": [
       "the clothing"
     ]
@@ -5372,7 +5366,7 @@
     ]
   },
   {
-    "word": "die Kommunikation",
+    "word": "die Kommunikation, die Kommunikationen",
     "definition": [
       "the communication"
     ]
@@ -5390,7 +5384,7 @@
     ]
   },
   {
-    "word": "die Konkurrenz",
+    "word": "die Konkurrenz, die Konkurrenzen",
     "definition": [
       "the competition"
     ]
@@ -5408,13 +5402,7 @@
     ]
   },
   {
-    "word": "die Kopie.",
-    "definition": [
-      "the copy."
-    ]
-  },
-  {
-    "word": "die Kosten",
+    "word": "die Kosten, die Kosten",
     "definition": [
       "the costs"
     ]
@@ -5438,7 +5426,7 @@
     ]
   },
   {
-    "word": "die Kriminalpolizei",
+    "word": "die Kriminalpolizei, die Kriminalpolizeien",
     "definition": [
       "the criminal police"
     ]
@@ -5468,7 +5456,7 @@
     ]
   },
   {
-    "word": "die Kälte",
+    "word": "die Kälte (Sg.)",
     "definition": [
       "the cold"
     ]
@@ -5504,7 +5492,7 @@
     ]
   },
   {
-    "word": "die Lage",
+    "word": "die Lage, die Lagen",
     "definition": [
       "the location"
     ]
@@ -5516,13 +5504,13 @@
     ]
   },
   {
-    "word": "die Landwirtschaft",
+    "word": "die Landwirtschaft, die Landwirtschaften",
     "definition": [
       "agriculture"
     ]
   },
   {
-    "word": "die Langeweile",
+    "word": "die Langeweile (Sg.)",
     "definition": [
       "the boredom"
     ]
@@ -5534,7 +5522,7 @@
     ]
   },
   {
-    "word": "die Lehre",
+    "word": "die Lehre, die Lehren",
     "definition": [
       "the teaching"
     ]
@@ -5588,13 +5576,13 @@
     ]
   },
   {
-    "word": "die Leute",
+    "word": "die Leute, die Leute",
     "definition": [
       "the people"
     ]
   },
   {
-    "word": "die Liebe",
+    "word": "die Liebe, die Lieben",
     "definition": [
       "love"
     ]
@@ -5630,25 +5618,25 @@
     ]
   },
   {
-    "word": "die Literatur",
+    "word": "die Literatur, die Literaturen",
     "definition": [
       "the literature"
     ]
   },
   {
-    "word": "die Luft",
+    "word": "die Luft, die Lüfte",
     "definition": [
       "the air"
     ]
   },
   {
-    "word": "die Lust",
+    "word": "die Lust, die Lüste",
     "definition": [
       "the lust"
     ]
   },
   {
-    "word": "die Länge",
+    "word": "die Länge, die Längen",
     "definition": [
       "the length"
     ]
@@ -5678,7 +5666,7 @@
     ]
   },
   {
-    "word": "die Margarine",
+    "word": "die Margarine, die Margarinen",
     "definition": [
       "the margarine"
     ]
@@ -5702,7 +5690,7 @@
     ]
   },
   {
-    "word": "die Matura",
+    "word": "die Matura, die Maturen",
     "definition": [
       "the Matura"
     ]
@@ -5720,13 +5708,13 @@
     ]
   },
   {
-    "word": "die Medien",
+    "word": "das Medium, die Medien",
     "definition": [
       "the media"
     ]
   },
   {
-    "word": "die Medizin",
+    "word": "die Medizin, die Medizinen",
     "definition": [
       "the medicine"
     ]
@@ -5738,7 +5726,7 @@
     ]
   },
   {
-    "word": "die Mehrwertsteuer",
+    "word": "die Mehrwertsteuer, die Mehrwertsteuern",
     "definition": [
       "the VAT"
     ]
@@ -5780,7 +5768,7 @@
     ]
   },
   {
-    "word": "die Migration",
+    "word": "die Migration, die Migrationen",
     "definition": [
       "the migration"
     ]
@@ -5810,7 +5798,7 @@
     ]
   },
   {
-    "word": "die Musik",
+    "word": "die Musik, die Musiken",
     "definition": [
       "the music"
     ]
@@ -5840,13 +5828,13 @@
     ]
   },
   {
-    "word": "die Mühe",
+    "word": "die Mühe, die Mühen",
     "definition": [
       "the effort"
     ]
   },
   {
-    "word": "die Müllabfuhr",
+    "word": "die Müllabfuhr, die Müllabfuhren",
     "definition": [
       "the garbage disposal"
     ]
@@ -5894,7 +5882,7 @@
     ]
   },
   {
-    "word": "die Natur",
+    "word": "die Natur, die Naturen",
     "definition": [
       "the nature"
     ]
@@ -5918,7 +5906,7 @@
     ]
   },
   {
-    "word": "die Nordsee, die Ostsee",
+    "word": "die Nordsee (Sg.)",
     "definition": [
       "the North Sea, the Baltic Sea"
     ]
@@ -5930,7 +5918,7 @@
     ]
   },
   {
-    "word": "die Nähe",
+    "word": "die Nähe (Sg.)",
     "definition": [
       "the nearness"
     ]
@@ -5984,7 +5972,7 @@
     ]
   },
   {
-    "word": "die Personalien",
+    "word": "die Personalie, die Personalien",
     "definition": [
       "the personal details"
     ]
@@ -6026,7 +6014,7 @@
     ]
   },
   {
-    "word": "die Politik",
+    "word": "die Politik, die Politiken",
     "definition": [
       "the politics"
     ]
@@ -6044,7 +6032,7 @@
     ]
   },
   {
-    "word": "die Post",
+    "word": "die Post, die Posten, die Posts",
     "definition": [
       "the post"
     ]
@@ -6056,13 +6044,13 @@
     ]
   },
   {
-    "word": "die Presse",
+    "word": "die Presse, die Pressen",
     "definition": [
       "the press"
     ]
   },
   {
-    "word": "die Produktion",
+    "word": "die Produktion, die Produktionen",
     "definition": [
       "the production"
     ]
@@ -6224,7 +6212,7 @@
     ]
   },
   {
-    "word": "die Ruhe",
+    "word": "die Ruhe (Sg.)",
     "definition": [
       "the calm"
     ]
@@ -6248,7 +6236,7 @@
     ]
   },
   {
-    "word": "die Rückkehr",
+    "word": "die Rückkehr (Sg.)",
     "definition": [
       "the return"
     ]
@@ -6320,13 +6308,13 @@
     ]
   },
   {
-    "word": "die Schuld",
+    "word": "die Schuld, die Schulden",
     "definition": [
       "the blame"
     ]
   },
   {
-    "word": "die Schulden",
+    "word": "die Schulden, die Schulden",
     "definition": [
       "the debts"
     ]
@@ -6356,7 +6344,7 @@
     ]
   },
   {
-    "word": "die See",
+    "word": "die See, die Seen",
     "definition": [
       "the sea"
     ]
@@ -6374,7 +6362,7 @@
     ]
   },
   {
-    "word": "die Senioren",
+    "word": "der Senior, die Senioren",
     "definition": [
       "the seniors"
     ]
@@ -6566,7 +6554,7 @@
     ]
   },
   {
-    "word": "die Tafel.",
+    "word": "die Tafel, die Tafeln",
     "definition": [
       "the whiteboard."
     ]
@@ -6632,7 +6620,7 @@
     ]
   },
   {
-    "word": "die Teilzeit",
+    "word": "die Teilzeit, die Teilzeiten",
     "definition": [
       "the part time"
     ]
@@ -6680,7 +6668,7 @@
     ]
   },
   {
-    "word": "die Tropfen",
+    "word": "die Tropfen, die Tropfen",
     "definition": [
       "the drops"
     ]
@@ -6734,7 +6722,7 @@
     ]
   },
   {
-    "word": "die Umwelt",
+    "word": "die Umwelt, die Umwelten",
     "definition": [
       "the environment"
     ]
@@ -6752,7 +6740,7 @@
     ]
   },
   {
-    "word": "die Unterlagen",
+    "word": "die Unterlage, die Unterlagen",
     "definition": [
       "the documents"
     ]
@@ -6800,7 +6788,7 @@
     ]
   },
   {
-    "word": "die Verantwortung",
+    "word": "die Verantwortung, die Verantwortungen",
     "definition": [
       "the responsibility"
     ]
@@ -6818,7 +6806,7 @@
     ]
   },
   {
-    "word": "die Vergangenheit",
+    "word": "die Vergangenheit, die Vergangenheiten",
     "definition": [
       "the past"
     ]
@@ -6896,7 +6884,7 @@
     ]
   },
   {
-    "word": "die Vollzeit",
+    "word": "die Vollzeit (Sg.)",
     "definition": [
       "the full time"
     ]
@@ -6914,7 +6902,7 @@
     ]
   },
   {
-    "word": "die Vorfahrt",
+    "word": "die Vorfahrt, die Vorfahrten",
     "definition": [
       "the right of way"
     ]
@@ -6992,7 +6980,7 @@
     ]
   },
   {
-    "word": "die Wirklichkeit",
+    "word": "die Wirklichkeit, die Wirklichkeiten",
     "definition": [
       "the reality"
     ]
@@ -7010,7 +6998,7 @@
     ]
   },
   {
-    "word": "die Wirtschaft",
+    "word": "die Wirtschaft, die Wirtschaften",
     "definition": [
       "the economy"
     ]
@@ -7028,7 +7016,7 @@
     ]
   },
   {
-    "word": "die Wolle",
+    "word": "die Wolle, die Wollen",
     "definition": [
       "the wool"
     ]
@@ -7040,7 +7028,7 @@
     ]
   },
   {
-    "word": "die Wärme",
+    "word": "die Wärme (Sg.)",
     "definition": [
       "the warmth"
     ]
@@ -7088,7 +7076,7 @@
     ]
   },
   {
-    "word": "die Zinsen",
+    "word": "der Zins, die Zinsen",
     "definition": [
       "the interest"
     ]
@@ -7106,13 +7094,13 @@
     ]
   },
   {
-    "word": "die Zukunft",
+    "word": "die Zukunft, die Zukünfte",
     "definition": [
       "the future"
     ]
   },
   {
-    "word": "die Zusammenarbeit",
+    "word": "die Zusammenarbeit (Sg.)",
     "definition": [
       "the collaboration"
     ]
@@ -7130,7 +7118,7 @@
     ]
   },
   {
-    "word": "die Zutaten",
+    "word": "die Zutat, die Zutaten",
     "definition": [
       "the ingredients"
     ]
@@ -7148,7 +7136,7 @@
     ]
   },
   {
-    "word": "die Zünder",
+    "word": "die Zünder, die Zünder",
     "definition": [
       "the detonators"
     ]
@@ -7166,7 +7154,7 @@
     ]
   },
   {
-    "word": "die Öffentlichkeit",
+    "word": "die Öffentlichkeit, die Öffentlichkeiten",
     "definition": [
       "the public"
     ]
@@ -7202,7 +7190,7 @@
     ]
   },
   {
-    "word": "die Überweisung",
+    "word": "die Überweisung, die Überweisungen",
     "definition": [
       "the transfer"
     ]
@@ -7250,12 +7238,6 @@
     ]
   },
   {
-    "word": "Dreck!",
-    "definition": [
-      "Dirt!"
-    ]
-  },
-  {
     "word": "drehen",
     "definition": [
       "turn"
@@ -7268,7 +7250,7 @@
     ]
   },
   {
-    "word": "Durchsage!",
+    "word": "die Durchsage, die Durchsagen",
     "definition": [
       "Announcement!"
     ]
@@ -7475,12 +7457,6 @@
     "word": "empfangen",
     "definition": [
       "received"
-    ]
-  },
-  {
-    "word": "en",
-    "definition": [
-      "en"
     ]
   },
   {
@@ -7694,7 +7670,7 @@
     ]
   },
   {
-    "word": "Essen!",
+    "word": "essen",
     "definition": [
       "Eat!"
     ]
@@ -7742,7 +7718,7 @@
     ]
   },
   {
-    "word": "Fahrkarten!",
+    "word": "die Fahrkarte, die Fahrkarten",
     "definition": [
       "Tickets!"
     ]
@@ -7946,7 +7922,7 @@
     ]
   },
   {
-    "word": "Geburtstag!",
+    "word": "der Geburtstag, die Geburtstage",
     "definition": [
       "Birthday!"
     ]
@@ -7982,7 +7958,7 @@
     ]
   },
   {
-    "word": "Gegenteil!",
+    "word": "das Gegenteil, die Gegenteile",
     "definition": [
       "Opposite!"
     ]
@@ -8198,7 +8174,7 @@
     ]
   },
   {
-    "word": "Glas!",
+    "word": "das Glas, die Gläser",
     "definition": [
       "Glass!"
     ]
@@ -8564,12 +8540,6 @@
     ]
   },
   {
-    "word": "Kindes!",
-    "definition": [
-      "child!"
-    ]
-  },
-  {
     "word": "klagen",
     "definition": [
       "complain"
@@ -8690,12 +8660,6 @@
     ]
   },
   {
-    "word": "Kurve!",
-    "definition": [
-      "Curve!"
-    ]
-  },
-  {
     "word": "kämpfen",
     "definition": [
       "battle"
@@ -8756,9 +8720,9 @@
     ]
   },
   {
-    "word": "lienstand",
+    "word": "der Familienstand (Sg.)",
     "definition": [
-      "lienstand"
+      "marital status"
     ]
   },
   {
@@ -8819,12 +8783,6 @@
     "word": "markieren",
     "definition": [
       "mark"
-    ]
-  },
-  {
-    "word": "mate",
-    "definition": [
-      "mate"
     ]
   },
   {
@@ -9140,7 +9098,7 @@
     ]
   },
   {
-    "word": "Party!",
+    "word": "die Party, die Partys",
     "definition": [
       "Party!"
     ]
@@ -9281,12 +9239,6 @@
     "word": "quer",
     "definition": [
       "across"
-    ]
-  },
-  {
-    "word": "radeiser",
-    "definition": [
-      "radeiser"
     ]
   },
   {
@@ -9872,7 +9824,7 @@
     ]
   },
   {
-    "word": "Super!",
+    "word": "super",
     "definition": [
       "Super!"
     ]
@@ -9938,7 +9890,7 @@
     ]
   },
   {
-    "word": "Tisch!",
+    "word": "der Tisch, die Tische",
     "definition": [
       "Table!"
     ]
@@ -10310,12 +10262,6 @@
     ]
   },
   {
-    "word": "vert",
-    "definition": [
-      "vert"
-    ]
-  },
-  {
     "word": "verteilen",
     "definition": [
       "distribute"
@@ -10646,7 +10592,7 @@
     ]
   },
   {
-    "word": "Zimmer!",
+    "word": "das Zimmer (Sg.)",
     "definition": [
       "Room!"
     ]
@@ -10715,12 +10661,6 @@
     "word": "zusagen",
     "definition": [
       "promise"
-    ]
-  },
-  {
-    "word": "Zusammenarbeit!",
-    "definition": [
-      "Cooperation!"
     ]
   },
   {

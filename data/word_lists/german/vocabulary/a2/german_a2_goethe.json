@@ -125,7 +125,7 @@
     ]
   },
   {
-    "word": "Achtung!",
+    "word": "Achtung",
     "definition": [
       "Danger!"
     ]
@@ -197,7 +197,7 @@
     ]
   },
   {
-    "word": "aus!",
+    "word": "aus",
     "definition": [
       "out of!"
     ]
@@ -641,7 +641,7 @@
     ]
   },
   {
-    "word": "das Fenster",
+    "word": "das Fenster, die Fenster",
     "definition": [
       "the window"
     ]
@@ -689,7 +689,7 @@
     ]
   },
   {
-    "word": "das Gewitter",
+    "word": "das Gewitter, die Gewitter",
     "definition": [
       "the thunderstorm"
     ]
@@ -767,19 +767,19 @@
     ]
   },
   {
-    "word": "das Messer",
+    "word": "das Messer, die Messer",
     "definition": [
       "the knife"
     ]
   },
   {
-    "word": "das Mittagessen",
+    "word": "das Mittagessen, die Mittagessen",
     "definition": [
       "the lunch"
     ]
   },
   {
-    "word": "das Mittel",
+    "word": "das Mittel, die Mittel",
     "definition": [
       "the means"
     ]
@@ -839,7 +839,7 @@
     ]
   },
   {
-    "word": "das Poster",
+    "word": "das Poster, die Poster, die Posters",
     "definition": [
       "the poster"
     ]
@@ -881,13 +881,13 @@
     ]
   },
   {
-    "word": "das Rind",
+    "word": "das Rind, die Rinder",
     "definition": [
       "the beef"
     ]
   },
   {
-    "word": "das Rätsel",
+    "word": "das Rätsel, die Rätsel",
     "definition": [
       "the puzzle"
     ]
@@ -899,7 +899,7 @@
     ]
   },
   {
-    "word": "das Schlafzimmer",
+    "word": "das Schlafzimmer, die Schlafzimmer",
     "definition": [
       "the bedroom"
     ]
@@ -953,7 +953,7 @@
     ]
   },
   {
-    "word": "das Taschengeld",
+    "word": "das Taschengeld, die Taschengelder",
     "definition": [
       "the pocket money"
     ]
@@ -965,7 +965,7 @@
     ]
   },
   {
-    "word": "das Theater",
+    "word": "das Theater, die Theater",
     "definition": [
       "the theater"
     ]
@@ -983,13 +983,13 @@
     ]
   },
   {
-    "word": "das Verkehrsmittel",
+    "word": "das Verkehrsmittel, die Verkehrsmittel",
     "definition": [
       "the means of transport"
     ]
   },
   {
-    "word": "das Wohnzimmer",
+    "word": "das Wohnzimmer, die Wohnzimmer",
     "definition": [
       "the living room"
     ]
@@ -1001,7 +1001,7 @@
     ]
   },
   {
-    "word": "das Zentrum, die Zentrumen",
+    "word": "das Zentrum, die Zentren",
     "definition": [
       "the center, the centers"
     ]
@@ -1025,21 +1025,9 @@
     ]
   },
   {
-    "word": "de",
-    "definition": [
-      "de"
-    ]
-  },
-  {
     "word": "deinem",
     "definition": [
       "yours"
-    ]
-  },
-  {
-    "word": "dem",
-    "definition": [
-      "dem"
     ]
   },
   {
@@ -1055,13 +1043,13 @@
     ]
   },
   {
-    "word": "der Artikel",
+    "word": "der Artikel, die Artikel",
     "definition": [
       "the article"
     ]
   },
   {
-    "word": "der Babysitter",
+    "word": "der Babysitter, die Babysitter",
     "definition": [
       "the babysitter"
     ]
@@ -1085,7 +1073,7 @@
     ]
   },
   {
-    "word": "der Bescheid",
+    "word": "der Bescheid, die Bescheide",
     "definition": [
       "the notice"
     ]
@@ -1121,7 +1109,7 @@
     ]
   },
   {
-    "word": "der Fernseher",
+    "word": "der Fernseher, die Fernseher",
     "definition": [
       "the TV"
     ]
@@ -1163,7 +1151,7 @@
     ]
   },
   {
-    "word": "der Hamburger",
+    "word": "der Hamburger, die Hamburger",
     "definition": [
       "the hamburger"
     ]
@@ -1175,13 +1163,13 @@
     ]
   },
   {
-    "word": "der Kalender",
+    "word": "der Kalender, die Kalender",
     "definition": [
       "the calendar"
     ]
   },
   {
-    "word": "der Keller",
+    "word": "der Keller, die Keller",
     "definition": [
       "the cellar"
     ]
@@ -1205,7 +1193,7 @@
     ]
   },
   {
-    "word": "der Körper",
+    "word": "der Körper, die Körper",
     "definition": [
       "the body"
     ]
@@ -1223,7 +1211,7 @@
     ]
   },
   {
-    "word": "der Löffel",
+    "word": "der Löffel, die Löffel",
     "definition": [
       "the spoon"
     ]
@@ -1247,7 +1235,7 @@
     ]
   },
   {
-    "word": "der Mitarbeiter",
+    "word": "der Mitarbeiter, die Mitarbeiter",
     "definition": [
       "the employee"
     ]
@@ -1259,7 +1247,7 @@
     ]
   },
   {
-    "word": "der Motorroller",
+    "word": "der Motorroller, die Motorroller",
     "definition": [
       "the scooter"
     ]
@@ -1277,19 +1265,19 @@
     ]
   },
   {
-    "word": "der Partner",
+    "word": "der Partner, die Partner",
     "definition": [
       "the partner"
     ]
   },
   {
-    "word": "der Pullover",
+    "word": "der Pullover, die Pullover",
     "definition": [
       "the sweater"
     ]
   },
   {
-    "word": "der Reifen",
+    "word": "der Reifen, die Reifen",
     "definition": [
       "the tire"
     ]
@@ -1325,7 +1313,7 @@
     ]
   },
   {
-    "word": "der Rücken",
+    "word": "der Rücken, die Rücken",
     "definition": [
       "the back"
     ]
@@ -1337,7 +1325,7 @@
     ]
   },
   {
-    "word": "der Schirm",
+    "word": "der Schirm, die Schirme",
     "definition": [
       "the umbrella"
     ]
@@ -1385,7 +1373,7 @@
     ]
   },
   {
-    "word": "der Stiefel",
+    "word": "der Stiefel, die Stiefel",
     "definition": [
       "the boot"
     ]
@@ -1415,7 +1403,7 @@
     ]
   },
   {
-    "word": "der Teller",
+    "word": "der Teller, die Teller",
     "definition": [
       "the dish"
     ]
@@ -1427,7 +1415,7 @@
     ]
   },
   {
-    "word": "der Titel",
+    "word": "der Titel, die Titel",
     "definition": [
       "the title"
     ]
@@ -1493,7 +1481,7 @@
     ]
   },
   {
-    "word": "der Wagen",
+    "word": "der Wagen, die Wagen, die Wägen",
     "definition": [
       "the car"
     ]
@@ -1541,7 +1529,7 @@
     ]
   },
   {
-    "word": "der Zettel",
+    "word": "der Zettel, die Zettel",
     "definition": [
       "the note"
     ]
@@ -1709,7 +1697,7 @@
     ]
   },
   {
-    "word": "die Fundsachen",
+    "word": "die Fundsachen (Pl.)",
     "definition": [
       "the lost property"
     ]
@@ -1739,7 +1727,7 @@
     ]
   },
   {
-    "word": "die Gesundheit",
+    "word": "die Gesundheit (Sg.)",
     "definition": [
       "the health"
     ]
@@ -1871,7 +1859,7 @@
     ]
   },
   {
-    "word": "die Lebensmittel",
+    "word": "die Lebensmittel, die Lebensmittel",
     "definition": [
       "the food"
     ]
@@ -1979,7 +1967,7 @@
     ]
   },
   {
-    "word": "die Pommes",
+    "word": "die Pommes, die Pommes",
     "definition": [
       "the fries"
     ]
@@ -2039,7 +2027,7 @@
     ]
   },
   {
-    "word": "die Schokolade",
+    "word": "die Schokolade, die Schokoladen",
     "definition": [
       "the chocolate"
     ]
@@ -2099,7 +2087,7 @@
     ]
   },
   {
-    "word": "die Süßigkeiten",
+    "word": "die Süßigkeit, die Süßigkeiten",
     "definition": [
       "the sweets"
     ]
@@ -2909,7 +2897,7 @@
     ]
   },
   {
-    "word": "lesen!",
+    "word": "lesen",
     "definition": [
       "read!"
     ]
