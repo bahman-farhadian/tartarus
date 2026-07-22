@@ -68,6 +68,8 @@
   let sessionLang = '';
   let sessionWpm = 128;
   let sessionFastMode = false;
+  let sessionReviewMode = false;
+  let reviewAudioPromise = Promise.resolve();
   let currentQuestion = null;
   let drillActive = false;
   let answering = false;
@@ -90,6 +92,7 @@
   const drillStreak = document.getElementById('drill-streak');
   const drillDots = document.getElementById('drill-dots');
   const feedback = document.getElementById('feedback');
+  const reviewKeyHint = document.getElementById('review-key-hint');
 
   const btnReplay = document.getElementById('btn-replay');
   const btnReveal = document.getElementById('btn-reveal');
@@ -107,7 +110,7 @@
   };
 
   document.getElementById('start-session').addEventListener('click', () => startSession(false));
-  document.getElementById('start-level-session').addEventListener('click', () => startSession(true));
+  document.getElementById('start-level-session').addEventListener('click', () => startSession(false, true));
   const drillAllInput = document.getElementById('practice-drill-all');
   const drillModeInput = document.getElementById('practice-drill-mode');
   const knownDrillModeInput = document.getElementById('practice-known-drill-mode');
@@ -173,6 +176,18 @@
   });
   answerInput.addEventListener('paste', (e) => e.preventDefault());
 
+  document.addEventListener('keydown', (e) => {
+    if (!sessionId) return;
+    if (e.key === 'Escape') {
+      e.preventDefault();
+      if (!answering) sendAnswer('!!');
+      return;
+    }
+    if (!sessionReviewMode || !['ArrowLeft', 'ArrowRight'].includes(e.key)) return;
+    e.preventDefault();
+    sendReviewMove(e.key);
+  });
+
   function setAnswerInputEnabled(enabled) {
     answerInput.disabled = !enabled;
     submitAnswerButton.disabled = !enabled;
@@ -234,7 +249,7 @@
     e.preventDefault();
   });
 
-  async function startSession(levelMode = false) {
+  async function startSession(levelMode = false, reviewMode = false) {
     showError(practiceError, '');
     const userInput = document.getElementById('practice-user');
     const languageInput = document.getElementById('practice-lang');
@@ -275,7 +290,9 @@
       return;
     }
     try {
-      const body = levelMode
+      const body = reviewMode
+        ? { user, lang, wpm, review_mode: true }
+        : levelMode
         ? {
           user, lang, category: language, level, level_mode: true, wpm,
           drill_all: drillAll,
@@ -293,6 +310,7 @@
         if (instantDrill) body.instant_drill = true;
         if (fastMode) body.fast_mode = true;
       }
+      if (reviewMode) body.review_mode = true;
       const data = await api('/api/practice/start', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -302,6 +320,7 @@
       sessionLang = data.lang || '';
       sessionWpm = wpm;
       sessionFastMode = !!data.fast_mode;
+      sessionReviewMode = !!data.review_mode;
       setupCard.style.display = 'none';
       summaryCard.style.display = 'none';
       sessionCard.style.display = 'block';
@@ -319,6 +338,25 @@
     feedback.textContent = '';
     feedback.className = 'feedback';
     drillBlock.style.display = 'none';
+
+    if (question.review_mode) {
+      const q = progress.questions ?? 0;
+      const maxQ = progress.max_questions ?? progress.total ?? '?';
+      sessionProgress.textContent = `Review · ${Math.min(q + 1, maxQ)}/${maxQ}`;
+      sessionGauge.textContent = 'Due today';
+      sessionGauge.className = 'gauge';
+      sessionType.textContent = 'Review';
+      wordDisplay.textContent = question.word_unmasked || question.word;
+      wordDisplay.className = `word-display ${question.gender}`;
+      definitionLines.innerHTML = '';
+      answerBlock.style.display = 'none';
+      reviewKeyHint.style.display = 'block';
+      setActionButtons(false);
+      reviewAudioPromise = speak(question.word_unmasked || question.word);
+      return;
+    }
+
+    reviewKeyHint.style.display = 'none';
 
     // Full drill mode: auto-enter drill UI immediately.
     if (question.drill_start) {
@@ -424,11 +462,11 @@
   }
 
   function setActionButtons(enabled) {
-    btnFlag.disabled = !enabled || sessionFastMode;
-    btnMaster.disabled = !enabled || sessionFastMode;
+    btnFlag.disabled = !enabled || sessionFastMode || sessionReviewMode;
+    btnMaster.disabled = !enabled || sessionFastMode || sessionReviewMode;
     // Drill is disabled for sentence practice (sentences are too long to drill).
-    btnDrill.disabled = !enabled || sessionFastMode || (currentQuestion && currentQuestion.sentence_mode);
-    btnReveal.disabled = !enabled || sessionFastMode;
+    btnDrill.disabled = !enabled || sessionFastMode || sessionReviewMode || (currentQuestion && currentQuestion.sentence_mode);
+    btnReveal.disabled = !enabled || sessionFastMode || sessionReviewMode;
   }
 
   function formatScore(question) {
@@ -462,6 +500,28 @@
       setAnswerInputEnabled(true);
       setActionButtons(true);
       showError(practiceError, err.message);
+    }
+  }
+
+  async function sendReviewMove(direction) {
+    if (!sessionId || answering || !sessionReviewMode) return;
+    answering = true;
+    try {
+      const data = await api('/api/practice/answer', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ session_id: sessionId, answer: direction }),
+      });
+      if (data.done) {
+        showSummary(data.session);
+        return;
+      }
+      await reviewAudioPromise;
+      renderQuestion(data.question, data.progress);
+    } catch (err) {
+      showError(practiceError, err.message);
+    } finally {
+      answering = false;
     }
   }
 
@@ -582,6 +642,19 @@
     summaryCard.style.display = 'block';
     sessionId = null;
     currentQuestion = null;
+
+    if (session.review_mode) {
+      sessionReviewMode = false;
+      reviewKeyHint.style.display = 'none';
+      const minutes = Math.floor(session.elapsed_seconds / 60);
+      const seconds = session.elapsed_seconds % 60;
+      document.getElementById('summary-body').innerHTML = '<ul class="summary-list">'
+        + `<li>Words reviewed: <strong>${session.practiced}</strong></li>`
+        + `<li>Review time: <strong>${minutes}m ${seconds}s</strong></li>`
+        + '<li>Scores changed: <strong>No</strong></li></ul>';
+      loadSelectedProgress();
+      return;
+    }
 
     if (session.fast_mode) {
       sessionFastMode = false;

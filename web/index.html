@@ -97,7 +97,7 @@
         </div>
         <div class="start-row">
           <button id="start-session" class="primary" type="button">Start session</button>
-          <button id="start-level-session" class="primary" type="button">Practice level</button>
+          <button id="start-level-session" class="primary" type="button" title="Review due words in the selected file">Review</button>
         </div>
       </div>
 
@@ -138,7 +138,10 @@
         </div>
         <div class="shortcut-hint">
           Tip: type <code>+</code>/<code>?</code>/<code>!</code>/<code>@</code>/<code>$</code>/<code>!!</code>
-          as your answer too &mdash; same as the CLI.
+          as your answer too &mdash; same as the CLI. Press <kbd>Esc</kbd> to end the session.
+        </div>
+        <div id="review-key-hint" class="review-key-hint" style="display: none;">
+          Review: <kbd>&larr;</kbd> previous word &middot; <kbd>&rarr;</kbd> next word &middot; <kbd>Esc</kbd> end session
         </div>
       </div>
 

@@ -424,7 +424,7 @@ def apply_decay(conn, table):
                 )
 
 
-def sync_word_list(user, lang):
+def sync_word_list(user, lang, apply_score_decay=True):
     """
     Renews a user's word table from their word list JSON file:
     - new words are added (score 1.0, active)
@@ -444,7 +444,7 @@ def sync_word_list(user, lang):
     table = ensure_word_table(conn, user, lang)
     ensure_sessions_table(conn, user)
     sentence_mode = is_sentence_list(lang)
-    if not sentence_mode:
+    if not sentence_mode and apply_score_decay:
         apply_decay(conn, table)
 
     seen_words = set()

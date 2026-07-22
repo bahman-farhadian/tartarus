@@ -143,12 +143,21 @@ def level_words(user, category, level, drill_mode=False, known_drill_mode=False,
     return candidates[:limit]
 
 
-def start_session(user, lang, audio_lang=None, drill_all=False, drill_mode=False, known_drill_mode=False, instant_drill=False, fast_mode=False, wpm=128, level_mode=False, category=None, level=None):
+def start_session(user, lang, audio_lang=None, drill_all=False, drill_mode=False, known_drill_mode=False, instant_drill=False, fast_mode=False, wpm=128, level_mode=False, category=None, level=None, review_mode=False):
     sentence_mode = ll.is_sentence_list(lang)
     selected_drill_modes = sum(bool(value) for value in (drill_all, drill_mode, known_drill_mode, instant_drill))
     if selected_drill_modes > 1:
         raise ValueError("Choose only one drill mode per session.")
-    if level_mode:
+    if review_mode:
+        if level_mode or fast_mode or selected_drill_modes:
+            raise ValueError("Review mode cannot be combined with practice modes.")
+        if not lang:
+            raise ValueError("Select a word list file before starting a review.")
+        ll.sync_word_list(user, lang, apply_score_decay=False)
+        words = ll.get_words_for_practice(user, lang, MAX_QUESTIONS)
+        if not words:
+            raise ValueError("No due words are available for review in this file.")
+    elif level_mode:
         if not category or not level:
             raise ValueError("A language and level are required for level practice.")
         if lang:
@@ -205,6 +214,7 @@ def start_session(user, lang, audio_lang=None, drill_all=False, drill_mode=False
         'known_drill_mode': known_drill_mode,
         'instant_drill': instant_drill,
         'fast_mode': fast_mode,
+        'review_mode': review_mode,
         'drill_all': drill_all,
         'sentence_mode': sentence_mode,
         'level_mode': level_mode,
@@ -214,6 +224,8 @@ def start_session(user, lang, audio_lang=None, drill_all=False, drill_mode=False
         'file_stats': {},
         'start_time': time.time(),
         'current': None,
+        'review_index': 0,
+        'reviewed_ids': set(),
     }
     SESSIONS[session_id] = session
     return session_id, session
@@ -223,15 +235,36 @@ def next_question(session):
     queue = session['queue']
     if not queue:
         return None
-    entry = queue.pop(0)
-    question, drill = ll.build_question_data(
-        entry['word_id'], entry['word_text'],
-        entry['definition'], entry['score'], entry['leitner_box'],
-        sentence_mode=session.get('sentence_mode', False),
-        fast_mode=session.get('fast_mode', False),
-        drill_mode=(session.get('drill_mode', False) or session.get('drill_all', False)),
-        known_drill_mode=session.get('known_drill_mode', False),
-    )
+    if session.get('review_mode'):
+        index = session.get('review_index', 0)
+        if index >= len(queue):
+            return None
+        entry = queue[index]
+        question = {
+            'word_id': entry['word_id'],
+            'word': entry['word_text'],
+            'word_unmasked': entry['word_text'],
+            'definition': [],
+            'score': round(entry['score'], 1),
+            'gauge': 'Review',
+            'band': ll.score_band(entry['score']),
+            'gender': ll.get_gender_style(entry['word_text'])[1],
+            'type': 'review',
+            'sentence_mode': session.get('sentence_mode', False),
+            'review_mode': True,
+        }
+        session['reviewed_ids'].add(entry['word_id'])
+        session['practiced'] = len(session['reviewed_ids'])
+    else:
+        entry = queue.pop(0)
+    if session.get('review_mode'):
+        drill = None
+    else:
+        question, drill = ll.build_question_data(
+            entry['word_id'], entry['word_text'], entry['definition'], entry['score'], entry['leitner_box'],
+            sentence_mode=session.get('sentence_mode', False), fast_mode=session.get('fast_mode', False),
+            drill_mode=(session.get('drill_mode', False) or session.get('drill_all', False)),
+            known_drill_mode=session.get('known_drill_mode', False))
     if session.get('known_drill_mode'):
         # The known-drill prompt must not leak the answer through the API.
         question['word'] = ''
@@ -252,6 +285,35 @@ def next_question(session):
         'started_at': time.time(),
     }
     return question
+
+
+def advance_review(session, direction):
+    """Move through a read-only due-word review without changing word state."""
+    if direction not in {'ArrowLeft', 'ArrowRight'}:
+        return {'result': 'review_wait', 'done': False}
+
+    index = session.get('review_index', 0)
+    if direction == 'ArrowRight':
+        if index >= len(session['queue']) - 1:
+            return {'result': 'review_complete', 'done': True, 'session': finalize_session(session)}
+        session['review_index'] = index + 1
+    elif index > 0:
+        session['review_index'] = index - 1
+
+    question = next_question(session)
+    return {
+        'result': 'review_move',
+        'done': False,
+        'boundary': direction == 'ArrowLeft' and index == 0,
+        'question': question,
+        'progress': {
+            'correct': 0,
+            'drilled': 0,
+            'total': session['total'],
+            'questions': session['review_index'],
+            'max_questions': session['max_questions'],
+        },
+    }
 
 
 def record_current_time(session):
@@ -323,6 +385,7 @@ def finalize_session(session, ended_early=False):
         'elapsed_seconds': elapsed,
         'ended_early': ended_early,
         'fast_mode': session.get('fast_mode', False),
+        'review_mode': session.get('review_mode', False),
         'accuracy': round(100 * session['correct'] / attempts, 1) if attempts else None,
         'avg_seconds_per_item': round(elapsed / practiced, 1) if practiced else None,
     }
@@ -469,6 +532,9 @@ def process_answer(session, answer):
     # Session-level commands are always honoured, even mid-drill.
     if answer == '!!':
         return {'done': True, 'result': 'end', 'session': finalize_session(session, ended_early=True)}
+
+    if session.get('review_mode'):
+        return advance_review(session, answer)
 
     if session.get('fast_mode'):
         correct = ll.answer_matches(answer, cur['word_text'], sentence_mode=sentence_mode)
@@ -1396,6 +1462,7 @@ class Handler(http.server.BaseHTTPRequestHandler):
             known_drill_mode = bool(payload.get('known_drill_mode', False))
             instant_drill = bool(payload.get('instant_drill', False))
             fast_mode = bool(payload.get('fast_mode', False))
+            review_mode = bool(payload.get('review_mode', False))
             try:
                 wpm = int(payload.get('wpm', 128))
             except (TypeError, ValueError):
@@ -1413,6 +1480,7 @@ class Handler(http.server.BaseHTTPRequestHandler):
                     level_mode=level_mode,
                     category=category,
                     level=level,
+                    review_mode=review_mode,
                 )
             except (ValueError, FileNotFoundError) as e:
                 return self._send_json({'error': str(e)}, 400)
@@ -1421,6 +1489,7 @@ class Handler(http.server.BaseHTTPRequestHandler):
                 'session_id': session_id,
                 'lang': session['lang'],
                 'fast_mode': session['fast_mode'],
+                'review_mode': session['review_mode'],
                 'progress': {
                     'correct': 0,
                     'drilled': 0,

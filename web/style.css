@@ -582,6 +582,23 @@ button.shortcut:hover {
   font-size: 0.78rem;
 }
 
+.review-key-hint {
+  margin-top: 0.45rem;
+  text-align: center;
+  font-size: 0.78rem;
+  color: var(--overlay1);
+}
+
+.shortcut-hint kbd,
+.review-key-hint kbd {
+  background: var(--surface0);
+  border: 1px solid var(--surface1);
+  border-radius: 0.3rem;
+  color: var(--subtext1);
+  font: inherit;
+  padding: 0.05rem 0.35rem;
+}
+
 .drill-box {
   text-align: center;
 }
