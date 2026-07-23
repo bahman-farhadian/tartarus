@@ -942,6 +942,7 @@ def get_words_for_practice(user, lang, num_words=MAX_QUESTIONS, drill_mode=False
                     ))
                   )
                   ORDER BY CASE WHEN word_frequency IS NULL THEN 1 ELSE 0 END,
+                           CASE WHEN word_frequency IS NULL THEN length(text) ELSE 0 END,
                            word_frequency DESC, selection_order ASC, id ASC
                   LIMIT ?
                 )
@@ -949,6 +950,7 @@ def get_words_for_practice(user, lang, num_words=MAX_QUESTIONS, drill_mode=False
                 FROM candidates
                 ORDER BY score DESC,
                          CASE WHEN word_frequency IS NULL THEN 1 ELSE 0 END,
+                         CASE WHEN word_frequency IS NULL THEN length(text) ELSE 0 END,
                          word_frequency DESC, selection_order ASC, id ASC''',
             (num_words,)
         )

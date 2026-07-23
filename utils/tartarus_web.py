@@ -11,7 +11,6 @@ import sys
 import errno
 import json
 import time
-import random
 import urllib.parse
 import http.server
 import uuid
@@ -136,6 +135,7 @@ def level_words(user, category, level, drill_mode=False, known_drill_mode=False,
         candidates.sort(key=lambda item: (
             -item['score'],
             item['word_frequency'] is None,
+            len(item['word_text']) if item['word_frequency'] is None else 0,
             -(item['word_frequency'] or 0),
             item['random_order'] if item['word_frequency'] is None else 0,
         ))
