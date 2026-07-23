@@ -940,7 +940,7 @@ def get_words_for_practice(user, lang, num_words=MAX_QUESTIONS, drill_mode=False
                 )
                 SELECT id, text, definition, score, leitner_box, word_frequency
                 FROM candidates
-                ORDER BY score ASC,
+                ORDER BY score DESC,
                          CASE WHEN word_frequency IS NULL THEN 1 ELSE 0 END,
                          word_frequency DESC, random()''',
             (num_words,)

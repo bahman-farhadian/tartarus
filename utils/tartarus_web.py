@@ -134,7 +134,7 @@ def level_words(user, category, level, drill_mode=False, known_drill_mode=False,
         pass
     else:
         candidates.sort(key=lambda item: (
-            item['score'],
+            -item['score'],
             item['word_frequency'] is None,
             -(item['word_frequency'] or 0),
             item['random_order'] if item['word_frequency'] is None else 0,
@@ -148,6 +148,8 @@ def start_session(user, lang, audio_lang=None, drill_all=False, drill_mode=False
     selected_drill_modes = sum(bool(value) for value in (drill_all, drill_mode, known_drill_mode, instant_drill))
     if selected_drill_modes > 1:
         raise ValueError("Choose only one drill mode per session.")
+    if sentence_mode and selected_drill_modes:
+        raise ValueError("Sentence lists do not support drill modes.")
     if review_mode:
         if level_mode or fast_mode or selected_drill_modes:
             raise ValueError("Review mode cannot be combined with practice modes.")
@@ -162,8 +164,6 @@ def start_session(user, lang, audio_lang=None, drill_all=False, drill_mode=False
             raise ValueError("A language and level are required for level practice.")
         if lang:
             raise ValueError("Clear the word list file selection before practicing the whole level.")
-        if category.endswith('_sentences') and selected_drill_modes:
-            raise ValueError("Sentence lists do not support drill modes.")
         words = level_words(
             user, category, level,
             drill_mode=drill_mode or drill_all,
@@ -190,8 +190,6 @@ def start_session(user, lang, audio_lang=None, drill_all=False, drill_mode=False
             drill_mode=drill_mode,
             known_drill_mode=known_drill_mode,
         )
-    if sentence_mode and (drill_all or drill_mode or known_drill_mode or instant_drill):
-        raise ValueError("Sentence lists do not support drill modes.")
     voice_lang = audio_lang or lang
 
     queue = words if level_mode else [
