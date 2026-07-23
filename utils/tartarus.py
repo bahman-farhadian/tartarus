@@ -243,7 +243,8 @@ def ensure_word_table(conn, user, lang):
             times_incorrect INTEGER NOT NULL DEFAULT 0,
             times_drilled INTEGER NOT NULL DEFAULT 0,
             times_mastered INTEGER NOT NULL DEFAULT 0,
-            last_fast_review_at TEXT
+            last_fast_review_at TEXT,
+            selection_order REAL
         )
     ''')
     columns = [row[1] for row in conn.execute(f'PRAGMA table_info("{table}")').fetchall()]
@@ -257,6 +258,12 @@ def ensure_word_table(conn, user, lang):
         conn.execute(f'ALTER TABLE "{table}" ADD COLUMN last_fast_review_at TEXT')
     if 'word_frequency' not in columns:
         conn.execute(f'ALTER TABLE "{table}" ADD COLUMN word_frequency INTEGER')
+    if 'selection_order' not in columns:
+        conn.execute(f'ALTER TABLE "{table}" ADD COLUMN selection_order REAL')
+    conn.execute(
+        f'UPDATE "{table}" SET selection_order = random() / 9223372036854775807.0 '
+        'WHERE selection_order IS NULL'
+    )
     if sentence_table:
         score_column = next((row for row in conn.execute(f'PRAGMA table_info("{table}")') if row[1] == 'score'), None)
         if score_column and score_column[2].upper() != 'INTEGER':
@@ -459,8 +466,8 @@ def sync_word_list(user, lang, apply_score_decay=True):
         row = cursor.fetchone()
         if row is None:
             conn.execute(
-                f'INSERT INTO "{table}" (text, definition, word_frequency, score, active) VALUES (?, ?, ?, ?, 1)',
-                (word, definition, word_frequency, SENTENCE_MIN_SCORE if sentence_mode else 1.0)
+                f'INSERT INTO "{table}" (text, definition, word_frequency, score, active, selection_order) VALUES (?, ?, ?, ?, 1, ?)',
+                (word, definition, word_frequency, SENTENCE_MIN_SCORE if sentence_mode else 1.0, random.random())
             )
         else:
             conn.execute(
@@ -919,7 +926,7 @@ def get_words_for_practice(user, lang, num_words=MAX_QUESTIONS, drill_mode=False
         # or drill modes once today's words are done.
         cursor = conn.execute(
             f'''WITH candidates AS (
-                  SELECT id, text, definition, score, leitner_box, word_frequency
+                  SELECT id, text, definition, score, leitner_box, word_frequency, selection_order
                   FROM "{table}"
                   WHERE active = 1 AND (
                     score < 9
@@ -935,14 +942,14 @@ def get_words_for_practice(user, lang, num_words=MAX_QUESTIONS, drill_mode=False
                     ))
                   )
                   ORDER BY CASE WHEN word_frequency IS NULL THEN 1 ELSE 0 END,
-                           word_frequency DESC, random()
+                           word_frequency DESC, selection_order ASC, id ASC
                   LIMIT ?
                 )
                 SELECT id, text, definition, score, leitner_box, word_frequency
                 FROM candidates
                 ORDER BY score DESC,
                          CASE WHEN word_frequency IS NULL THEN 1 ELSE 0 END,
-                         word_frequency DESC, random()''',
+                         word_frequency DESC, selection_order ASC, id ASC''',
             (num_words,)
         )
     rows = cursor.fetchall()

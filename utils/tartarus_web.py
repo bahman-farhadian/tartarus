@@ -119,7 +119,7 @@ def level_words(user, category, level, drill_mode=False, known_drill_mode=False,
              'definition': row[2], 'score': row[3], 'leitner_box': row[4],
              'word_frequency': row[5],
              'fast_review_at': row[6] if fast_mode else None,
-             'random_order': random.random()}
+             'random_order': row[0]}
             for row in rows
         )
     if fast_mode:
