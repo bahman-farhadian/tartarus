@@ -8,14 +8,15 @@
   <title>Tartarus</title>
   <link rel="icon" href="/favicon.png?v=1" type="image/png">
   <link rel="apple-touch-icon" href="/favicon.png?v=1">
-  <link rel="stylesheet" href="/style.css?v=20">
-  <script src="/app.js?v=22" defer></script>
+  <link rel="stylesheet" href="/style.css?v=21">
+  <script src="/app.js?v=23" defer></script>
 </head>
 <body>
   <header>
     <h1>Tartarus</h1>
     <nav>
       <button type="button" data-view="practice" class="active">Practice</button>
+      <button type="button" data-view="today">Today's Practice</button>
       <button type="button" data-view="lists">Word Lists</button>
       <button type="button" data-view="about">About</button>
     </nav>
@@ -160,6 +161,22 @@
         <h2>Session summary</h2>
         <div id="summary-body"></div>
         <button id="summary-restart" type="button" class="primary">Back to setup</button>
+      </div>
+    </section>
+
+    <!-- Today: per-file, per-mode breakdown of what a user practiced today -->
+    <section id="view-today" class="view">
+      <div class="card">
+        <h2>Today's practice</h2>
+        <div class="field-row cascade-row">
+          <div class="field">
+            <select id="today-user" aria-label="User">
+              <option value="">Select user…</option>
+            </select>
+          </div>
+        </div>
+        <div id="today-error"></div>
+        <div id="today-results"></div>
       </div>
     </section>
 

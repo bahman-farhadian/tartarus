@@ -11,6 +11,8 @@
     document.getElementById(`view-${view}`).classList.add('active');
     if (view === 'lists') {
       loadWordLists();
+    } else if (view === 'today') {
+      refreshTodayOverview();
     }
   }
 
@@ -1200,6 +1202,77 @@
     }
   }
 
+  // --- Today tab: per-file, per-mode breakdown of what a user practiced today ---
+  let todayRequestToken = 0;
+
+  async function refreshTodayOverview() {
+    const myToken = ++todayRequestToken;
+    const stale = () => myToken !== todayRequestToken;
+    const errorEl = document.getElementById('today-error');
+    const resultsEl = document.getElementById('today-results');
+    showError(errorEl, '');
+    resultsEl.innerHTML = '';
+    const user = document.getElementById('today-user').value.trim();
+    if (!user) return;
+    try {
+      const data = await api(`/api/report/today?user=${encodeURIComponent(user)}`);
+      if (stale()) return;
+      resultsEl.appendChild(renderTodayTable(user, data.entries || []));
+    } catch (err) {
+      if (!stale()) showError(errorEl, err.message);
+    }
+  }
+
+  function renderTodayTable(user, entries) {
+    if (!entries.length) {
+      const card = document.createElement('div');
+      card.className = 'card muted';
+      card.textContent = 'No practice recorded today for this user yet.';
+      return card;
+    }
+    const card = document.createElement('div');
+    card.className = 'card';
+    let html = '<table><thead><tr><th>File</th><th>Mode</th><th>Practiced</th>'
+      + '<th>Correct</th><th>Wrong</th><th>Drilled</th><th>Time</th><th></th></tr></thead><tbody>';
+    entries.forEach((entry, index) => {
+      const minutes = Math.floor(entry.seconds / 60);
+      const seconds = entry.seconds % 60;
+      html += `<tr><td>${escapeHtml(entry.language)}</td><td>${escapeHtml(entry.mode_name)}</td>`
+        + `<td>${entry.practiced}</td><td>${entry.correct}</td><td>${entry.incorrect}</td>`
+        + `<td>${entry.drilled}</td><td>${minutes}m ${seconds}s</td>`
+        + `<td><button type="button" class="secondary today-jump-btn" data-index="${index}">Practice &rarr;</button></td></tr>`;
+    });
+    html += '</tbody></table>';
+    card.innerHTML = html;
+    card.querySelectorAll('.today-jump-btn').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        jumpToPractice(user, entries[Number(btn.dataset.index)].language);
+      });
+    });
+    return card;
+  }
+
+  function jumpToPractice(user, language) {
+    const meta = allWordLists.find((w) => w.user === user && w.lang === language);
+    if (!meta) {
+      switchView('practice');
+      return;
+    }
+    const steps = [
+      ['practice-user', user],
+      ['practice-lang', meta.category],
+      ['practice-level', meta.cefr_level],
+      ['practice-pos', meta.pos],
+      ['practice-file', meta.lang],
+    ];
+    steps.forEach(([id, value]) => {
+      const sel = document.getElementById(id);
+      sel.value = value;
+      sel.dispatchEvent(new Event('change'));
+    });
+    switchView('practice');
+  }
+
   function renderDailyChart(days) {
     if (!days || days.length === 0) return '';
     // Oldest-to-newest for left→right, cap at 60 days
@@ -1606,6 +1679,7 @@
   ['practice-user', 'practice-lang', 'practice-level', 'practice-pos', 'practice-file'].forEach((id) => {
     document.getElementById(id).addEventListener('change', refreshPracticeReport);
   });
+  document.getElementById('today-user').addEventListener('change', refreshTodayOverview);
 
 
   async function loadWordLists() {
@@ -1622,7 +1696,7 @@
     // Always refresh dropdowns, even if API failed (will use cached/empty data).
     // Populate user dropdowns
     const users = apiUsers.length ? apiUsers : [...new Set(allWordLists.map(w => w.user))].sort();
-    ['practice-user', 'editor-user'].forEach(id => {
+    ['practice-user', 'editor-user', 'today-user'].forEach(id => {
       const sel = document.getElementById(id);
       if (sel) {
         let prev = sel.value;
@@ -1634,6 +1708,7 @@
     // Populate all dependent selects after the word-list data is available.
     document.getElementById('practice-user')?.dispatchEvent(new Event('change'));
     document.getElementById('editor-user')?.dispatchEvent(new Event('change'));
+    document.getElementById('today-user')?.dispatchEvent(new Event('change'));
   }
 
   // Load word lists immediately so dropdowns are populated on first page load.

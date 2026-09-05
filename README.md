@@ -123,6 +123,8 @@ At scores `8.0–8.5`, the item moves to production-style recall: the target is 
 
 The purpose is gradual cue removal: recognition support is strongest when material is new and weakest near mastery.
 
+Once this masking becomes active (`score > 0`), the definition's example-sentence line is withheld -- it always embeds the literal target word, so showing it next to a partially masked word would give the answer away. At `score == 0` the target is still shown in full, so both definition lines show as usual.
+
 ---
 
 ## Answer contract
@@ -205,11 +207,24 @@ through Automaticity.
 | Stage | Day(s) | Recall presentation | Prompt audio | Timer |
 | --- | ---: | --- | --- | ---: |
 | **Encoding** | 0 | score-driven progressive learning/production | automatic | none |
-| **Cued Recall** | 1–2 | target shown with vowels masked; full definition visible | automatic | none |
-| **Effortful Retrieval** | 3–4 | target hidden; full definition visible; 2 consecutive correct repetitions | automatic | none |
-| **Free Recall** | 5–6 | target hidden; definition visible | automatic | 0.75 s / character |
-| **Reconsolidation** | 7–8 | target hidden; definition visible | automatic | 0.5 s / character |
-| **Automaticity** | 9–10 | target hidden; definition visible | automatic | 0.5 s / character |
+| **Cued Recall** | 1–2 | target shown with vowels masked; primary definition visible | automatic | none |
+| **Effortful Retrieval** | 3–4 | target hidden; primary definition visible; 2 consecutive correct repetitions | automatic | none |
+| **Free Recall** | 5–6 | target hidden; primary definition visible | automatic | 0.75 s / character |
+| **Reconsolidation** | 7–8 | target hidden; primary definition visible | automatic | 0.5 s / character |
+| **Automaticity** | 9–10 | target hidden; primary definition visible | automatic | 0.5 s / character |
+
+Bundled definitions always carry the primary meaning as their first line and
+an example sentence as their second (see
+[data/DATASET_SCHEMA_GUIDE.md](data/DATASET_SCHEMA_GUIDE.md)), and that
+example sentence always embeds the literal target word. So whenever the
+target itself is masked or hidden -- Encoding once its own progressive
+masking is active (`score > 0`), every stage above, and Spaced Maintenance --
+the example-sentence line is withheld and only the primary meaning line is
+shown; otherwise the answer would just be sitting in plain text one line
+below the masked/hidden word. The one exception is a corrective drill that
+has actually revealed the word (`show_word: true`, after a genuine mistake):
+at that point the answer is already fully shown, so the full definition
+(example sentence included) is restored there, since it can only help.
 
 Free Recall/Reconsolidation/Automaticity's response timer scales with the target's own length
 rather than a fixed guess -- 0.75s per character for Free Recall, 0.5s per
@@ -269,6 +284,8 @@ For a mastered item:
 - Box 10 remains the terminal maintenance box and continues using the 10-day interval.
 
 Practice setup shows this as a horizontal square-box roadmap beside the 10-Day Consolidation Track roadmap, both in the live report.
+
+A due maintenance review hides the target the same way Effortful Retrieval onward does, so it shows only the primary definition line too -- the example sentence, which always embeds the literal target word, is withheld for the same reason.
 
 When more items are due than fit in one 16-item session, `maintenance_ready_words()` always works from the lowest box up -- Box 1 (least stable, most urgent) before Box 2, and so on through whichever box is due last -- regardless of where those items sit in the file. Box number is the only priority signal; file order only breaks ties within the same box.
 
@@ -356,7 +373,7 @@ Then open:
 http://127.0.0.1:9999/
 ```
 
-The Web UI has four views.
+The Web UI has five views.
 
 ### Practice
 
@@ -422,6 +439,10 @@ Practicing today is always a no-op regardless of outstanding work — the record
 It stays safe to click repeatedly because the shift is defined by the distance to today rather than a fixed step: once the records are current, the next click finds no gap and does nothing.
 
 Because this mutates real history, it's deliberately layered with more caution than any other button in this app. The shift distance is measured from the latest date held in *any* column being moved — not from `last_practiced` — so, since every shifted value is by definition no later than that maximum, adding the distance to today cannot leave any single value dated beyond today; "never produce a future-dated record" is therefore a property of the arithmetic itself rather than something the caller has to get right. On top of that: existing data is validated against SQLite's own date parser first (a value it can't parse would otherwise be silently wiped rather than shifted, so this refuses instead); the whole decision is recomputed a second time immediately after acquiring the write lock, so two overlapping calls for the same user — two tabs, a double-click — can never double-apply a shift, and because each call recomputes its own distance from the state it actually observes, two racing shifts can never sum to more than the distance to today; and the actual result is checked against today one more time right before committing, independent of everything else, refusing and rolling back the whole transaction if it would ever produce a future-dated record. A verified backup is taken automatically whenever it does shift something. This is a deliberate, explicit, confirmed action confined to Practice setup.
+
+### Today's Practice
+
+A per-user overview of what was practiced today, separate from Practice setup's cascade-driven report. Pick a user; every `(file, mode)` combination practiced today lists its own row -- file, mode/day (e.g. "Cued Recall · Day 2"), words practiced, correct/wrong/drilled, and time spent -- sourced from the same per-session history (`sessions_<user>`) the Report view reads, grouped by file and mode instead of by calendar day. Each row's **Practice →** button jumps straight to that file on Practice setup with the cascade already resolved.
 
 ### Word Lists
 
@@ -681,6 +702,7 @@ The unified suite covers the current release contracts, including:
 - restart-from-scratch progress reset, preserving session history;
 - corpus-wide list-id uniqueness and stable-id invariants across the whole bundled dataset;
 - request/response and client-reported-error logging;
+- the example-sentence line withheld wherever the target is masked or hidden (Encoding once masked, every daily stage, Spaced Maintenance), restored once a corrective drill actually reveals the word;
 - the single-test-file policy.
 
 On macOS the browser contract defaults to Safari WebDriver when `safaridriver` is available. Set `TARTARUS_BROWSER=chromium` to use the headless Chromium/CDP fallback, which requires a Chromium/Chrome executable and the Python `websocket-client` module. Browser-specific tests skip only when their selected runtime is unavailable.

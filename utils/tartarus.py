@@ -2125,7 +2125,12 @@ def build_question_data(word_id, word_text, definition, score):
     full_lines=definition.split('\n') if definition else []
     primary=english_definition_only(definition)
     prompt=[primary] if primary else []
-    lines=full_lines if question_type=='learning' else prompt
+    # The example-sentence line always embeds the literal target word (see
+    # DATASET_SCHEMA_GUIDE.md's two-line definition convention), so once
+    # mask_sentence() starts hiding that word's own letters (score > 0), the
+    # example line would just spell out what the mask is hiding. At score 0
+    # the word itself is still shown in full, so there's nothing to protect.
+    lines=full_lines if (question_type=='learning' and score<=0) else prompt
     return {
         'word_id':word_id,'word':mask_sentence(word_text,score),'word_unmasked':word_text,
         'definition':lines,'score':round(score,1),'gauge':score_gauge(score,ansi=False),

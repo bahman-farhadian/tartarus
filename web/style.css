@@ -51,10 +51,9 @@ header {
   background: var(--mantle);
   padding: 1.1rem 2rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 1rem;
+  gap: 0.75rem;
 }
 
 header h1 {
@@ -67,6 +66,8 @@ header h1 {
 
 nav {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 0.35rem;
   background: var(--crust);
   padding: 0.3rem;

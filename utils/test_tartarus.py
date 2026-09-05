@@ -215,6 +215,23 @@ class CoreContractTest(unittest.TestCase):
         with mock.patch.object(ll.random, 'sample', return_value=[]):
             self.assertEqual(ll.mask_sentence('a, b!', 4.0), '_, _!')
 
+    def test_encoding_withholds_example_sentence_once_the_word_is_masked(self):
+        # Anti-cheat: bundled definitions always embed the literal target
+        # word in their second (example-sentence) line -- once
+        # mask_sentence() starts hiding that word's own letters (score > 0),
+        # showing the example line right next to it would spell out exactly
+        # what the mask is hiding.
+        definition = 'heavy; difficult\nDie Aufgabe ist sehr schwer.'
+        masked = ll.build_question_data('id-00', 'schwer', definition, 6.5)
+        self.assertEqual(masked['definition'], ['heavy; difficult'])
+        # At score 0 the word itself is shown in full (nothing masked yet),
+        # so there is nothing to protect -- both lines still show.
+        untouched = ll.build_question_data('id-00', 'schwer', definition, 0.0)
+        self.assertEqual(untouched['definition'], ['heavy; difficult', 'Die Aufgabe ist sehr schwer.'])
+        # band >= 8 ('production') already only ever showed the primary line.
+        production = ll.build_question_data('id-00', 'schwer', definition, 8.0)
+        self.assertEqual(production['definition'], ['heavy; difficult'])
+
     def test_material_loader_preserves_target_string_exactly(self):
         path = self.lists / 'raw.json'
         write_material(path, [{'id':'x','word':'  Exact target  ','definition':'x','word_frequency':0}])
@@ -1638,6 +1655,77 @@ class HttpContractTest(ServerHarness):
         row = conn.execute(f'SELECT score,leitner_box,last_tartarus_completed,times_incorrect,times_drilled FROM "{table}"').fetchone(); conn.close()
         self.assertEqual(row, (9.0,1,today.isoformat(),1,1))
         self.assertEqual(len(result['session']['incorrect']), 1)
+
+    def _land_on_stage(self, completed_day, *, box=None, leitner_last_reviewed=None):
+        """Master a single custom item ('schwer') and set it up so the next
+        session lands on a specific Consolidation Track day, or (with
+        completed_day=10 and a due box) on Spaced Maintenance."""
+        self.create(items=[{
+            'id': 'id-00', 'word': 'schwer', 'word_frequency': 0,
+            'definition': 'heavy; difficult\nDie Aufgabe ist sehr schwer.',
+        }])
+        table = ll.words_table_name('alice', 'focus')
+        conn = sqlite3.connect(self.db)
+        word_id = conn.execute(f'SELECT id FROM "{table}"').fetchone()[0]
+        conn.execute(
+            f'UPDATE "{table}" SET score=9.0,leitner_box=?,leitner_last_reviewed=?,'
+            f'last_tartarus_completed=NULL,consolidation_step=? WHERE id=?',
+            (box or 1, leitner_last_reviewed or date.today().isoformat(), completed_day, word_id),
+        )
+        conn.execute(
+            'INSERT INTO mastery_events(user,lang,word_id,event_type,mastered_date) VALUES(?,?,?,?,?)',
+            ('alice', 'focus', word_id, 'mastered', date.today().isoformat()),
+        )
+        conn.commit(); conn.close()
+        return table
+
+    def test_cued_recall_withholds_example_sentence(self):
+        self._land_on_stage(0)
+        question = self.start()['question']
+        self.assertEqual(question['consolidation']['mode'], 'cued_recall')
+        self.assertEqual(question['definition'], ['heavy; difficult'])
+
+    def test_free_recall_withholds_example_sentence(self):
+        self._land_on_stage(4)
+        question = self.start()['question']
+        self.assertEqual(question['consolidation']['mode'], 'free_recall')
+        self.assertEqual(question['definition'], ['heavy; difficult'])
+
+    def test_reconsolidation_withholds_example_sentence(self):
+        self._land_on_stage(6)
+        question = self.start()['question']
+        self.assertEqual(question['consolidation']['mode'], 'reconsolidation')
+        self.assertEqual(question['definition'], ['heavy; difficult'])
+
+    def test_automaticity_withholds_example_sentence(self):
+        self._land_on_stage(8)
+        question = self.start()['question']
+        self.assertEqual(question['consolidation']['mode'], 'automaticity')
+        self.assertEqual(question['definition'], ['heavy; difficult'])
+
+    def test_spaced_maintenance_withholds_example_sentence(self):
+        # completed_day=10 takes the item out of daily reinforcement
+        # entirely, so an overdue Leitner box is the only due pool left.
+        yesterday = (date.today() - timedelta(days=2)).isoformat()
+        self._land_on_stage(10, box=1, leitner_last_reviewed=yesterday)
+        question = self.start()['question']
+        self.assertEqual(question['consolidation']['mode'], 'spaced_maintenance')
+        self.assertEqual(question['definition'], ['heavy; difficult'])
+
+    def test_effortful_retrieval_drill_reveal_restores_full_definition(self):
+        # The unescalated question withholds the example sentence (the word
+        # isn't shown yet), but once a mistake escalates to the real
+        # corrective drill, show_word reveals the raw word anyway -- there
+        # is no cheat risk left at that point, so the full definition
+        # (including the example sentence) is restored there.
+        table = self._land_on_stage(2)
+        started = self.start(); question = started['question']
+        self.assertEqual(question['consolidation']['mode'], 'effortful_retrieval')
+        self.assertEqual(question['definition'], ['heavy; difficult'])
+        result = self.answer(started, 'wrong', 'wrong', question=question)
+        self.assertEqual(result['result'], 'drill_progress')
+        self.assertTrue(result['drill']['show_word'])
+        self.assertEqual(result['drill']['definition'], ['heavy; difficult', 'Die Aufgabe ist sehr schwer.'])
 
     def test_abandoned_practice_options_are_rejected(self):
         self.create()

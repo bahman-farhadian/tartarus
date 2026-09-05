@@ -449,6 +449,11 @@ def next_question(session):
         entry['definition'],
         entry['score'],
     )
+    full_lines = (
+        entry['definition'].split('\n')
+        if isinstance(entry['definition'], str)
+        else (entry['definition'] or [])
+    )
     mode = entry['mode']
     resume = session.pop('_resume_drill', None)
     drill = None
@@ -491,11 +496,11 @@ def next_question(session):
     if mode in ('cued_recall', 'effortful_retrieval', 'free_recall', 'reconsolidation', 'automaticity'):
         question['type'] = mode
         question['word_unmasked'] = entry['word_text']
-        question['definition'] = (
-            entry['definition'].split('\n')
-            if isinstance(entry['definition'], str)
-            else entry['definition']
-        )
+        # The word is masked or fully hidden in every one of these stages, so
+        # the example-sentence line (which always embeds the literal target
+        # word) is withheld -- only the primary meaning line is shown.
+        primary = ll.english_definition_only('\n'.join(full_lines))
+        question['definition'] = [primary] if primary else []
         if mode == 'cued_recall':
             vowels = 'aeiouAEIOUäöüÄÖÜ'
             question['word'] = ''.join(
@@ -508,11 +513,10 @@ def next_question(session):
         question['type'] = 'spaced_maintenance'
         question['word'] = ''
         question['word_unmasked'] = entry['word_text']
-        question['definition'] = (
-            entry['definition'].split('\n')
-            if isinstance(entry['definition'], str)
-            else entry['definition']
-        )
+        # Same anti-cheat rule as the daily stages above: word is hidden, so
+        # withhold the example-sentence line.
+        primary = ll.english_definition_only('\n'.join(full_lines))
+        question['definition'] = [primary] if primary else []
     if drill is not None:
         question['drill_start'].update({
             'word': entry['word_text'],
@@ -530,7 +534,11 @@ def next_question(session):
         'word_text': entry['word_text'],
         'definition': entry['definition'],
         'prompt_definition': '\n'.join(question.get('definition', [])),
-        'drill_definition': '\n'.join(question.get('definition', [])),
+        # Deliberately the full definition, not the (possibly trimmed)
+        # question['definition'] -- once a mistake escalates to the
+        # corrective drill, show_word reveals the raw word anyway, so there
+        # is no cheat risk left, and the example sentence is helpful there.
+        'drill_definition': '\n'.join(full_lines),
         'score': entry['score'],
         'leitner_box': entry['leitner_box'],
         'type': question['type'],
@@ -819,6 +827,43 @@ def report_data(user, lang=None):
         })
     conn.close()
     return reports
+
+
+def today_practice_overview(user, today=None):
+    """Per (file, mode) breakdown of what a user practiced today."""
+    today = today or date.today().isoformat()
+    user_s = ll.sanitize_name(user, 'user')
+    table = f"sessions_{user_s}"
+    conn = ll.get_connection()
+    cursor = conn.execute("SELECT name FROM sqlite_master WHERE type='table' AND name = ?", (table,))
+    if cursor.fetchone() is None:
+        conn.close()
+        return []
+    rows = conn.execute(
+        f'SELECT language, mode, stage, COUNT(id), SUM(duration_seconds), '
+        f'SUM(words_practiced), SUM(correct_count), SUM(incorrect_count), SUM(drilled_count) '
+        f'FROM "{table}" WHERE session_date = ? '
+        f'GROUP BY language, mode, stage ORDER BY language, MIN(id)',
+        (today,),
+    ).fetchall()
+    conn.close()
+
+    mode_names = {mode_key: name for _, _, _, name, mode_key in ll.CONSOLIDATION_STAGE_MAP}
+    mode_names.update(PRACTICE_TRACK_NAMES)
+    mode_names['spaced_maintenance'] = 'Spaced Maintenance'
+    daily_stages = ('encoding', 'cued_recall', 'effortful_retrieval', 'free_recall', 'reconsolidation', 'automaticity')
+
+    entries = []
+    for language, mode, stage, sessions, seconds, practiced, correct, incorrect, drilled in rows:
+        label = mode_names.get(mode, mode or 'Practice')
+        if stage is not None and mode in daily_stages:
+            label = f'{label} · Day {stage}'
+        entries.append({
+            'language': language, 'mode': mode, 'mode_name': label,
+            'sessions': sessions, 'seconds': seconds or 0, 'practiced': practiced or 0,
+            'correct': correct or 0, 'incorrect': incorrect or 0, 'drilled': drilled or 0,
+        })
+    return entries
 
 
 def user_summary_data(user):
@@ -1266,6 +1311,16 @@ class Handler(http.server.BaseHTTPRequestHandler):
                 if summary is None:
                     return self._send_json({'summary': None})
                 return self._send_json({'summary': summary})
+            except ValueError as e:
+                return self._send_json({'error': str(e)}, 400)
+
+        if parsed.path == '/api/report/today':
+            qs = urllib.parse.parse_qs(parsed.query)
+            user = qs.get('user', [''])[0]
+            if not user:
+                return self._send_json({'error': "'user' is required"}, 400)
+            try:
+                return self._send_json({'entries': today_practice_overview(user)})
             except ValueError as e:
                 return self._send_json({'error': str(e)}, 400)
 
