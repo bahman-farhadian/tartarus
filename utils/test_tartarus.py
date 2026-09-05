@@ -713,6 +713,38 @@ class CoreContractTest(unittest.TestCase):
         with self.assertRaises(ValueError):
             ll.reset_word_list_progress('alice', 'doesnotexist')
 
+    def test_today_practice_overview_reports_completed_and_first_attempt_accuracy(self):
+        self.make(material_items(1))
+        # Cued Recall: a normal stage where correct/incorrect drive completion directly.
+        ll.log_session('alice', 'focus', 60, 16, 15, 1, 0, mode='cued_recall', stage=1)
+        # Effortful Retrieval: every clean completion routes through the drill
+        # counter, not 'correct' -- correct/incorrect can legitimately both be
+        # zero even though every item completed cleanly (README: the 2-in-a-row
+        # check-in is the recall task itself, not a corrective drill).
+        ll.log_session('alice', 'focus', 30, 8, 0, 0, 8, mode='effortful_retrieval', stage=3)
+        entries = web.today_practice_overview('alice')
+        self.assertEqual(len(entries), 2)
+        cued = next(e for e in entries if e['mode'] == 'cued_recall')
+        self.assertEqual(
+            (cued['language'], cued['mode_name'], cued['practiced'], cued['accuracy']),
+            ('focus', 'Cued Recall · Day 1', 16, 93.8),
+        )
+        effortful = next(e for e in entries if e['mode'] == 'effortful_retrieval')
+        # 'Completed' (practiced) reflects every finished item regardless of
+        # path; accuracy is None (not 0%) when there's no correct/incorrect
+        # basis to compute it from -- a mistake-free stage must never read
+        # as a failing percentage.
+        self.assertEqual(
+            (effortful['mode_name'], effortful['practiced'], effortful['drilled'], effortful['accuracy']),
+            ('Effortful Retrieval · Day 3', 8, 8, None),
+        )
+
+    def test_today_practice_overview_is_scoped_to_the_given_date(self):
+        self.make(material_items(1))
+        ll.log_session('alice', 'focus', 60, 16, 16, 0, 0, mode='cued_recall', stage=1)
+        self.assertEqual(len(web.today_practice_overview('alice', today='2000-01-01')), 0)
+        self.assertEqual(len(web.today_practice_overview('alice')), 1)
+
     def _insert_session_row(self, session_date, user='alice', lang='focus', **fields):
         """Direct insert, bypassing log_session()'s hardcoded date.today()
         so tests can control session_date precisely."""

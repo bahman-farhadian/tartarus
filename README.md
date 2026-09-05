@@ -442,7 +442,9 @@ Because this mutates real history, it's deliberately layered with more caution t
 
 ### Today's Practice
 
-A per-user overview of what was practiced today, separate from Practice setup's cascade-driven report. Pick a user; every `(file, mode)` combination practiced today lists its own row -- file, mode/day (e.g. "Cued Recall · Day 2"), words practiced, correct/wrong/drilled, and time spent -- sourced from the same per-session history (`sessions_<user>`) the Report view reads, grouped by file and mode instead of by calendar day. Each row's **Practice →** button jumps straight to that file on Practice setup with the cascade already resolved.
+A per-user overview of what was practiced today, separate from Practice setup's cascade-driven report. Pick a user; every `(file, mode)` combination practiced today lists its own row -- file, mode/day (e.g. "Cued Recall · Day 2"), words completed, accuracy, and time spent -- sourced from the same per-session history (`sessions_<user>`) the Report view reads, grouped by file and mode instead of by calendar day. Each row's **Practice →** button jumps straight to that file on Practice setup with the cascade already resolved.
+
+Accuracy is first-attempt accuracy (`correct / (correct + incorrect)`), the same formula the Report/Dashboard views already use — deliberately not a fraction of words completed, since a stage like Effortful Retrieval routes every clean completion through its own drill counter rather than "correct," which would otherwise make a mistake-free row misleadingly read as 0%.
 
 ### Word Lists
 

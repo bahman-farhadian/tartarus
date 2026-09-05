@@ -1232,14 +1232,14 @@
     }
     const card = document.createElement('div');
     card.className = 'card';
-    let html = '<table><thead><tr><th>File</th><th>Mode</th><th>Practiced</th>'
-      + '<th>Correct</th><th>Wrong</th><th>Drilled</th><th>Time</th><th></th></tr></thead><tbody>';
+    let html = '<table><thead><tr><th>File</th><th>Mode</th><th>Completed</th>'
+      + '<th>Accuracy</th><th>Time</th><th></th></tr></thead><tbody>';
     entries.forEach((entry, index) => {
       const minutes = Math.floor(entry.seconds / 60);
       const seconds = entry.seconds % 60;
+      const accuracy = entry.accuracy != null ? `${entry.accuracy}%` : 'N/A';
       html += `<tr><td>${escapeHtml(entry.language)}</td><td>${escapeHtml(entry.mode_name)}</td>`
-        + `<td>${entry.practiced}</td><td>${entry.correct}</td><td>${entry.incorrect}</td>`
-        + `<td>${entry.drilled}</td><td>${minutes}m ${seconds}s</td>`
+        + `<td>${entry.practiced}</td><td>${accuracy}</td><td>${minutes}m ${seconds}s</td>`
         + `<td><button type="button" class="secondary today-jump-btn" data-index="${index}">Practice &rarr;</button></td></tr>`;
     });
     html += '</tbody></table>';

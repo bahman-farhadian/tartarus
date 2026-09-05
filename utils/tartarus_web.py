@@ -858,10 +858,22 @@ def today_practice_overview(user, today=None):
         label = mode_names.get(mode, mode or 'Practice')
         if stage is not None and mode in daily_stages:
             label = f'{label} · Day {stage}'
+        correct = correct or 0
+        incorrect = incorrect or 0
+        total_answers = correct + incorrect
+        # First-attempt accuracy, the same formula used everywhere else in
+        # the app (report/dashboard) -- correct / (correct + incorrect).
+        # Deliberately not a fraction of 'practiced': some stages (e.g.
+        # Effortful Retrieval's own 2-in-a-row check-in) route every clean
+        # completion through the drill counter rather than 'correct', so
+        # correct/practiced would misleadingly read as 0% even when nothing
+        # ever went wrong.
+        accuracy = round(100 * correct / total_answers, 1) if total_answers > 0 else None
         entries.append({
             'language': language, 'mode': mode, 'mode_name': label,
             'sessions': sessions, 'seconds': seconds or 0, 'practiced': practiced or 0,
-            'correct': correct or 0, 'incorrect': incorrect or 0, 'drilled': drilled or 0,
+            'correct': correct, 'incorrect': incorrect, 'drilled': drilled or 0,
+            'accuracy': accuracy,
         })
     return entries
 
