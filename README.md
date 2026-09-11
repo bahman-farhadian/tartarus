@@ -440,7 +440,7 @@ It stays safe to click repeatedly because the shift is defined by the distance t
 
 Because this mutates real history, it's deliberately layered with more caution than any other button in this app. The shift distance is measured from the latest date held in *any* column being moved — not from `last_practiced` — so, since every shifted value is by definition no later than that maximum, adding the distance to today cannot leave any single value dated beyond today; "never produce a future-dated record" is therefore a property of the arithmetic itself rather than something the caller has to get right. On top of that: existing data is validated against SQLite's own date parser first (a value it can't parse would otherwise be silently wiped rather than shifted, so this refuses instead); the whole decision is recomputed a second time immediately after acquiring the write lock, so two overlapping calls for the same user — two tabs, a double-click — can never double-apply a shift, and because each call recomputes its own distance from the state it actually observes, two racing shifts can never sum to more than the distance to today; and the actual result is checked against today one more time right before committing, independent of everything else, refusing and rolling back the whole transaction if it would ever produce a future-dated record. A verified backup is taken automatically whenever it does shift something. This is a deliberate, explicit, confirmed action confined to Practice setup.
 
-### Today's Practice
+### Today's Overview
 
 A per-user overview of the day's practice, separate from Practice setup's cascade-driven report, split into two cards.
 
