@@ -164,11 +164,12 @@
       </div>
     </section>
 
-    <!-- Today: per-file, per-mode breakdown of what a user practiced today -->
+    <!-- Today: per-file due-today plan, plus a per-file, per-mode breakdown
+         of what a user actually practiced today. -->
     <section id="view-today" class="view">
       <div class="card">
-        <h2>Today's practice</h2>
-        <div class="field-row cascade-row">
+        <h2>Today's Practice</h2>
+        <div class="field-row today-user-row">
           <div class="field">
             <select id="today-user" aria-label="User">
               <option value="">Select user…</option>
@@ -176,6 +177,13 @@
           </div>
         </div>
         <div id="today-error"></div>
+      </div>
+      <div class="card">
+        <h2>Due today</h2>
+        <div id="today-due-results"></div>
+      </div>
+      <div class="card">
+        <h2>Practiced today</h2>
         <div id="today-results"></div>
       </div>
     </section>

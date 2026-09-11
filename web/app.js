@@ -1209,29 +1209,70 @@
     const myToken = ++todayRequestToken;
     const stale = () => myToken !== todayRequestToken;
     const errorEl = document.getElementById('today-error');
+    const dueEl = document.getElementById('today-due-results');
     const resultsEl = document.getElementById('today-results');
     showError(errorEl, '');
+    dueEl.innerHTML = '';
     resultsEl.innerHTML = '';
     const user = document.getElementById('today-user').value.trim();
     if (!user) return;
     try {
-      const data = await api(`/api/report/today?user=${encodeURIComponent(user)}`);
+      const [practiced, progress] = await Promise.all([
+        api(`/api/report/today?user=${encodeURIComponent(user)}`),
+        api(`/api/user/progress?user=${encodeURIComponent(user)}`),
+      ]);
       if (stale()) return;
-      resultsEl.appendChild(renderTodayTable(user, data.entries || []));
+      dueEl.appendChild(renderDueTodayTable(user, progress.lists || []));
+      resultsEl.appendChild(renderTodayTable(user, practiced.entries || []));
     } catch (err) {
       if (!stale()) showError(errorEl, err.message);
     }
   }
 
+  // Every file the user has, regardless of whether it's been touched today
+  // -- this is the forward-looking plan, not a log of what already
+  // happened. Files with something due or available sort first; a fully
+  // caught-up file still lists with plain zeros rather than being hidden,
+  // since a zero is itself a clear, factual answer.
+  function renderDueTodayTable(user, lists) {
+    if (!lists.length) {
+      const empty = document.createElement('p');
+      empty.className = 'muted';
+      empty.textContent = 'No word lists found for this user.';
+      return empty;
+    }
+    const sorted = [...lists].sort((a, b) => {
+      const dueA = a.consolidation.due_reinforcement + a.consolidation.due_maintenance + a.consolidation.encoding;
+      const dueB = b.consolidation.due_reinforcement + b.consolidation.due_maintenance + b.consolidation.encoding;
+      return dueB - dueA || a.lang.localeCompare(b.lang);
+    });
+    const wrap = document.createElement('div');
+    let html = '<table><thead><tr><th>File</th><th>Reinforcement Due</th>'
+      + '<th>Maintenance Due</th><th>Encoding Available</th><th></th></tr></thead><tbody>';
+    sorted.forEach((item, index) => {
+      const c = item.consolidation;
+      html += `<tr><td>${escapeHtml(item.lang)}</td><td>${c.due_reinforcement}</td>`
+        + `<td>${c.due_maintenance}</td><td>${c.encoding}</td>`
+        + `<td><button type="button" class="secondary today-jump-btn" data-index="${index}">Practice &rarr;</button></td></tr>`;
+    });
+    html += '</tbody></table>';
+    wrap.innerHTML = html;
+    wrap.querySelectorAll('.today-jump-btn').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        jumpToPractice(user, sorted[Number(btn.dataset.index)].lang);
+      });
+    });
+    return wrap;
+  }
+
   function renderTodayTable(user, entries) {
     if (!entries.length) {
-      const card = document.createElement('div');
-      card.className = 'card muted';
-      card.textContent = 'No practice recorded today for this user yet.';
-      return card;
+      const empty = document.createElement('p');
+      empty.className = 'muted';
+      empty.textContent = 'No practice recorded today for this user yet.';
+      return empty;
     }
-    const card = document.createElement('div');
-    card.className = 'card';
+    const wrap = document.createElement('div');
     let html = '<table><thead><tr><th>File</th><th>Mode</th><th>Completed</th>'
       + '<th>Accuracy</th><th>Time</th><th></th></tr></thead><tbody>';
     entries.forEach((entry, index) => {
@@ -1243,13 +1284,13 @@
         + `<td><button type="button" class="secondary today-jump-btn" data-index="${index}">Practice &rarr;</button></td></tr>`;
     });
     html += '</tbody></table>';
-    card.innerHTML = html;
-    card.querySelectorAll('.today-jump-btn').forEach((btn) => {
+    wrap.innerHTML = html;
+    wrap.querySelectorAll('.today-jump-btn').forEach((btn) => {
       btn.addEventListener('click', () => {
         jumpToPractice(user, entries[Number(btn.dataset.index)].language);
       });
     });
-    return card;
+    return wrap;
   }
 
   function jumpToPractice(user, language) {
