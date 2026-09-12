@@ -281,9 +281,21 @@ For a mastered item:
 - a wrong first answer keeps the box unchanged until the mandatory nine-correct drill is completed, then advances it by one;
 - a same-day repeat does not repeatedly advance the Leitner box;
 - a completed due review always advances exactly once unless the item is already in Box 10;
-- Box 10 remains the terminal maintenance box and continues using the 10-day interval.
+- Box 10 remains the terminal maintenance box; its base interval is 10 days, though a demonstrated history of successful Box 10 reviews can extend it (below).
 
 Practice setup shows this as a horizontal square-box roadmap beside the 10-Day Consolidation Track roadmap, both in the live report.
+
+### Extended Box 10 intervals for demonstrated retention
+
+A large, long-lived vocabulary can leave hundreds of items sitting in Box 10, each needing review every 10 days indefinitely, even after dozens of consecutive correct recalls -- diminishing-returns maintenance that crowds out time better spent on weaker or newer material. `leitner_maintenance_streak` counts consecutive successful reviews *while already at Box 10* (arriving at Box 10 for the first time does not itself count) and progressively extends that item's own interval, capped at 30 days:
+
+| Box 10 streak | Review interval |
+| ---: | ---: |
+| 0 - 2 | 10 days |
+| 3 - 4 | 20 days |
+| 5+ | 30 days (ceiling) |
+
+This never regresses on a mistake, matching the engine's core invariant that a wrong answer costs a bounded corrective drill rather than lost progress: a wrong first answer freezes the streak exactly where it is (same as the box itself) and starts the standard corrective drill; completing that drill grants the streak its deferred `+1`, precisely mirroring how a completed drill already grants the same box advancement a correct first answer would have. There is no reset or decrease path -- only Boxes 1-9's own fixed intervals and a freshly-arrived Box 10 item (streak 0) ever use the plain 10-day cadence by default.
 
 A due maintenance review hides the target the same way Effortful Retrieval onward does, so it shows only the primary definition line too -- the example sentence, which always embeds the literal target word, is withheld for the same reason.
 
@@ -548,9 +560,10 @@ times_mastered
 leitner_box
 leitner_last_reviewed
 consolidation_step
+leitner_maintenance_streak
 ```
 
-The current schema version is `6`.
+The current schema version is `8`.
 
 The migration path removes obsolete review-era fields such as `drill_pending`, `times_flagged`, `last_decay_at`, and `stage_reached` while preserving legitimate progress. Schema changes are always additive and migrated on a verified copy before ever touching the live database.
 
@@ -711,6 +724,7 @@ The unified suite covers the current release contracts, including:
 - corpus-wide list-id uniqueness and stable-id invariants across the whole bundled dataset;
 - request/response and client-reported-error logging;
 - the example-sentence line withheld wherever the target is masked or hidden (Encoding once masked, every daily stage, Spaced Maintenance), restored once a corrective drill actually reveals the word;
+- extended Box 10 maintenance intervals from a demonstrated streak of successful reviews, frozen (never reset) on a miss and only ever granted via a correct answer or a completed drill;
 - the single-test-file policy.
 
 On macOS the browser contract defaults to Safari WebDriver when `safaridriver` is available. Set `TARTARUS_BROWSER=chromium` to use the headless Chromium/CDP fallback, which requires a Chromium/Chrome executable and the Python `websocket-client` module. Browser-specific tests skip only when their selected runtime is unavailable.

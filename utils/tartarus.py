@@ -439,7 +439,14 @@ def record_mastery_event(conn, user, lang, word_id, event_type, event_date):
         (sanitize_name(user, 'user'), sanitize_name(lang, 'language'), int(word_id), event_type, str(event_date)[:10]),
     )
 
-SCHEMA_VERSION = 7
+SCHEMA_VERSION = 8
+
+# v7 -> v8: adds leitner_maintenance_streak, tracking consecutive successful
+# reviews *while already at Box 10* so a demonstrated history of reliable
+# recall can extend that item's review interval beyond the normal 10 days
+# (see BOX10_STREAK_INTERVALS/leitner_interval_days). Existing rows default
+# to 0, which is always safe -- it only ever falls back to the normal
+# 10-day cadence, never the other way around.
 
 # v6 -> v7 rename: the Consolidation Track (formerly "Gauntlet") stage/mode
 # vocabulary was renamed to neuroplasticity terminology, in code and in any
@@ -461,7 +468,7 @@ WORD_TABLE_COLUMNS = [
     'id', 'content_id', 'score', 'last_practiced', 'last_tartarus_completed',
     'active', 'times_practiced', 'times_correct', 'times_incorrect',
     'times_drilled', 'times_mastered', 'leitner_box', 'leitner_last_reviewed',
-    'consolidation_step',
+    'consolidation_step', 'leitner_maintenance_streak',
 ]
 
 
@@ -487,7 +494,8 @@ def word_table_schema(table):
             times_mastered INTEGER NOT NULL DEFAULT 0,
             leitner_box INTEGER,
             leitner_last_reviewed TEXT,
-            consolidation_step INTEGER NOT NULL DEFAULT 0
+            consolidation_step INTEGER NOT NULL DEFAULT 0,
+            leitner_maintenance_streak INTEGER NOT NULL DEFAULT 0
         )
     """
 
@@ -539,6 +547,7 @@ def _copy_word_table_to_v4(conn, source, target):
         # this rebuild (see migrate_database); this copy just carries
         # forward whatever a table already has, or 0 for a brand-new column.
         consolidation_step_expr,
+        col('leitner_maintenance_streak', '0'),
     ]
     quoted = ', '.join(f'"{c}"' for c in WORD_TABLE_COLUMNS)
     conn.execute(
@@ -1151,15 +1160,15 @@ def maintenance_ready_words(user, lang, num_words=None, today=None):
         if not table_exists(conn, table):
             return []
         rows = conn.execute(
-            f'SELECT id,content_id,score,leitner_box,leitner_last_reviewed FROM "{table}" '
+            f'SELECT id,content_id,score,leitner_box,leitner_last_reviewed,leitner_maintenance_streak FROM "{table}" '
             f'WHERE active=1 AND score >= 9.0 AND leitner_box IS NOT NULL ORDER BY id'
         ).fetchall()
     finally:
         conn.close()
     ready = []
-    for row_id, content_id, score, box, last_reviewed in rows:
+    for row_id, content_id, score, box, last_reviewed, streak in rows:
         box = int(box or 1)
-        interval = LEITNER_INTERVALS.get(box, 10)
+        interval = leitner_interval_days(box, streak)
         is_ready = last_reviewed is None
         if last_reviewed:
             reviewed = date.fromisoformat(str(last_reviewed)[:10])
@@ -1179,12 +1188,12 @@ def maintenance_ready_words(user, lang, num_words=None, today=None):
     return ready[:num_words]
 
 
-def maintenance_next_date(leitner_box, leitner_last_reviewed):
+def maintenance_next_date(leitner_box, leitner_last_reviewed, maintenance_streak=0):
     if not leitner_box or not leitner_last_reviewed:
         return None
     reviewed = date.fromisoformat(str(leitner_last_reviewed)[:10])
     return (
-        reviewed + timedelta(days=LEITNER_INTERVALS.get(int(leitner_box), 10))
+        reviewed + timedelta(days=leitner_interval_days(leitner_box, maintenance_streak))
     ).isoformat()
 
 
@@ -1204,12 +1213,12 @@ def _maintenance_due_since(conn, user, lang, today):
         return None
     today_date = date.fromisoformat(str(today)[:10])
     rows = conn.execute(
-        f'SELECT leitner_box, leitner_last_reviewed FROM "{table}" '
+        f'SELECT leitner_box, leitner_last_reviewed, leitner_maintenance_streak FROM "{table}" '
         'WHERE active=1 AND score>=9.0 AND leitner_box IS NOT NULL'
     ).fetchall()
     earliest = None
-    for box, last_reviewed in rows:
-        interval = LEITNER_INTERVALS.get(int(box or 1), 10)
+    for box, last_reviewed, streak in rows:
+        interval = leitner_interval_days(box, streak)
         if last_reviewed is None:
             due_since = today_date
         else:
@@ -2045,6 +2054,33 @@ MAX_QUESTIONS = 16   # unique words per session (each asked exactly once)
 
 LEITNER_INTERVALS = {box: box for box in range(1, 11)}  # box -> days until review
 
+# Box 10 only: consecutive successful reviews *while already at Box 10*
+# extend the interval beyond the normal 10-day cadence. Capped at 30 days --
+# does not extend further past streak 5. Boxes 1-9 are unaffected. A missed
+# review never regresses this -- see record_maintenance_answer/
+# complete_maintenance_drill, which freeze it on a miss and grant the same
+# deferred +1 a correct answer would have once the corrective drill
+# completes, mirroring how Leitner box advancement itself already works.
+BOX10_STREAK_INTERVALS = [(0, 10), (3, 20), (5, 30)]
+
+
+def leitner_interval_days(box, maintenance_streak=0):
+    """Days between Spaced Maintenance reviews for a given box/streak.
+
+    Boxes 1-9 always use their fixed LEITNER_INTERVALS day-count. Box 10 is
+    the only box whose interval can extend beyond its base 10 days, as a
+    function of BOX10_STREAK_INTERVALS.
+    """
+    box = int(box or 1)
+    if box != 10:
+        return LEITNER_INTERVALS.get(box, 10)
+    interval = LEITNER_INTERVALS[10]
+    for threshold, days in BOX10_STREAK_INTERVALS:
+        if int(maintenance_streak or 0) >= threshold:
+            interval = days
+    return interval
+
+
 SCORE_DELTA = 0.5
 
 def score_band(score):
@@ -2141,7 +2177,8 @@ def build_question_data(word_id, word_text, definition, score):
 
 def _load_progress_row(conn, table, word_id):
     row=conn.execute(
-        f'SELECT score,leitner_box,last_tartarus_completed,leitner_last_reviewed FROM "{table}" WHERE id=?',
+        f'SELECT score,leitner_box,last_tartarus_completed,leitner_last_reviewed,leitner_maintenance_streak '
+        f'FROM "{table}" WHERE id=?',
         (word_id,),
     ).fetchone()
     if row is None:
@@ -2152,7 +2189,7 @@ def _load_progress_row(conn, table, word_id):
 def record_consolidation_answer(user, lang, word_id, correct, today=None):
     today=today or date.today().isoformat(); table=words_table_name(user,lang); conn=get_connection()
     try:
-        score,box,last_completed,leitner_last=_load_progress_row(conn,table,word_id); score=float(score or 0)
+        score,box,last_completed,leitner_last,_=_load_progress_row(conn,table,word_id); score=float(score or 0)
         if correct:
             new_score=min(9.0,score+SCORE_DELTA) if score<9 else 9.0
             new_box=box
@@ -2197,7 +2234,7 @@ def record_consolidation_answer(user, lang, word_id, correct, today=None):
 def complete_consolidation_drill(user, lang, word_id, today=None):
     today=today or date.today().isoformat(); table=words_table_name(user,lang); conn=get_connection()
     try:
-        score,box,last_completed,leitner_last=_load_progress_row(conn,table,word_id); score=float(score or 0)
+        score,box,last_completed,leitner_last,_=_load_progress_row(conn,table,word_id); score=float(score or 0)
         new_score=min(9.0,score+SCORE_DELTA) if score<9 else 9.0
         new_box=box; new_leitner_last=leitner_last
         if score < 9 <= new_score and box is None:
@@ -2223,20 +2260,33 @@ def complete_consolidation_drill(user, lang, word_id, today=None):
 def record_maintenance_answer(user, lang, word_id, correct, today=None):
     today=today or date.today().isoformat(); table=words_table_name(user,lang); conn=get_connection()
     try:
-        score,box,_,_= _load_progress_row(conn,table,word_id)
+        score,box,_,_,streak= _load_progress_row(conn,table,word_id)
         if float(score or 0) < 9:
             raise ValueError('Only score-9 items may enter Spaced Maintenance.')
+        box=int(box or 1)
         if correct:
-            new_box=min(int(box or 1)+1,10)
+            new_box=min(box+1,10)
+            # A review that happens *while already at Box 10* extends the
+            # streak; first arriving at Box 10 this review has not yet
+            # demonstrated a Box 10 review, so it starts at 0 like any
+            # other new Box 10 item.
+            new_streak=int(streak or 0)+1 if box==10 else int(streak or 0)
             conn.execute(
-                f'UPDATE "{table}" SET leitner_box=?,leitner_last_reviewed=?,last_practiced=?, '
+                f'UPDATE "{table}" SET leitner_box=?,leitner_last_reviewed=?,last_practiced=?,leitner_maintenance_streak=?, '
                 'times_practiced=times_practiced+1,times_correct=times_correct+1 WHERE id=?',
-                (new_box,today,today,word_id),
+                (new_box,today,today,new_streak,word_id),
             )
-            if int(box or 1) < 10 <= new_box:
+            if box < 10 <= new_box:
                 record_mastery_event(conn, user, lang, word_id, 'box10', today)
         else:
-            new_box=int(box or 1)
+            new_box=box
+            # leitner_maintenance_streak is deliberately left untouched: a
+            # miss costs the standard corrective drill, not the demonstrated
+            # history already earned (P-invariant: nothing regresses on a
+            # mistake). complete_maintenance_drill() grants the same
+            # deferred +1 a correct answer would have, once the drill
+            # completes -- mirroring how box advancement itself already
+            # works after a missed-then-drilled review.
             conn.execute(
                 f'UPDATE "{table}" SET last_practiced=?,times_practiced=times_practiced+1,times_incorrect=times_incorrect+1 WHERE id=?',
                 (today,word_id),
@@ -2250,14 +2300,19 @@ def record_maintenance_answer(user, lang, word_id, correct, today=None):
 def complete_maintenance_drill(user, lang, word_id, today=None):
     today=today or date.today().isoformat(); table=words_table_name(user,lang); conn=get_connection()
     try:
-        score,box,_,_=_load_progress_row(conn,table,word_id)
+        score,box,_,_,streak=_load_progress_row(conn,table,word_id)
         if float(score or 0) < 9: raise ValueError('Maintenance drill requires a score-9 item.')
-        new_box=min(int(box or 1)+1,10)
+        box=int(box or 1)
+        new_box=min(box+1,10)
+        # Completing the drill grants exactly the transition a correct first
+        # answer would have granted -- including the Box 10 streak.
+        new_streak=int(streak or 0)+1 if box==10 else int(streak or 0)
         conn.execute(
-            f'UPDATE "{table}" SET leitner_box=?,leitner_last_reviewed=?,last_practiced=?,times_practiced=times_practiced+1,times_drilled=times_drilled+1 WHERE id=?',
-            (new_box,today,today,word_id),
+            f'UPDATE "{table}" SET leitner_box=?,leitner_last_reviewed=?,last_practiced=?,leitner_maintenance_streak=?,'
+            'times_practiced=times_practiced+1,times_drilled=times_drilled+1 WHERE id=?',
+            (new_box,today,today,new_streak,word_id),
         )
-        if int(box or 1) < 10 <= new_box:
+        if box < 10 <= new_box:
             record_mastery_event(conn, user, lang, word_id, 'box10', today)
         conn.commit()
     finally: conn.close()
@@ -2404,6 +2459,11 @@ def import_user_data(user, data):
                         # 'gauntlet_completed_day' is the pre-rename field name --
                         # accept backups exported before this rename too.
                         'consolidation_step':raw.get('consolidation_step',raw.get('gauntlet_completed_day',0)),
+                        # Same conservative default as the else-branch comment
+                        # below: no v1 backup ever recorded this, so it
+                        # restarts at 0 (the normal 10-day cadence) rather
+                        # than rejecting the import.
+                        'leitner_maintenance_streak':raw.get('leitner_maintenance_streak',0),
                     })
                 else:
                     # Every backup version older than this field's introduction
@@ -2418,6 +2478,10 @@ def import_user_data(user, data):
                     if 'consolidation_step' not in row and 'gauntlet_completed_day' in row:
                         row['consolidation_step']=row.pop('gauntlet_completed_day')
                     row.setdefault('consolidation_step',0)
+                    # Same reasoning: any backup exported before Box 10
+                    # streak tracking existed restarts at 0 -- the normal
+                    # 10-day cadence, never a data loss.
+                    row.setdefault('leitner_maintenance_streak',0)
                     converted.append(row)
             prepared[table]=_validate_backup_rows(converted,WORD_TABLE_COLUMNS,f'word_progress.{lang_s}')
         prefix=f'words_{user_s}_'

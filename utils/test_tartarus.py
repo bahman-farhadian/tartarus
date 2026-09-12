@@ -409,6 +409,59 @@ class CoreContractTest(unittest.TestCase):
         conn.close()
         self.assertEqual(events,[('box10','2026-08-10')])
 
+    def test_leitner_interval_days_extends_only_at_box_ten(self):
+        for streak in (0, 1, 2):
+            self.assertEqual(ll.leitner_interval_days(10, streak), 10)
+        for streak in (3, 4):
+            self.assertEqual(ll.leitner_interval_days(10, streak), 20)
+        for streak in (5, 9, 100):
+            self.assertEqual(ll.leitner_interval_days(10, streak), 30)
+        # Boxes 1-9 are never affected by the streak, at any value.
+        for box in range(1, 10):
+            for streak in (0, 5, 100):
+                self.assertEqual(ll.leitner_interval_days(box, streak), box)
+
+    def test_box_ten_streak_only_advances_on_a_review_already_at_box_ten(self):
+        self.make(material_items(1)); self.update(score=9.0, leitner_box=9, leitner_last_reviewed='2026-08-01')
+        word_id = self.row()['id']
+        # This review moves box 9 -> 10 -- it has not yet demonstrated a
+        # review *at* Box 10, so the streak stays 0.
+        ll.record_maintenance_answer('alice', 'focus', word_id, True, today='2026-08-10')
+        self.assertEqual((self.row()['leitner_box'], self.row()['leitner_maintenance_streak']), (10, 0))
+        # Now already at Box 10 -- each further correct review increments it.
+        ll.record_maintenance_answer('alice', 'focus', word_id, True, today='2026-08-20')
+        self.assertEqual(self.row()['leitner_maintenance_streak'], 1)
+        ll.record_maintenance_answer('alice', 'focus', word_id, True, today='2026-09-09')
+        self.assertEqual(self.row()['leitner_maintenance_streak'], 2)
+
+    def test_box_ten_streak_freezes_on_a_miss_and_advances_via_the_drill_instead(self):
+        # Core invariant: nothing regresses on a mistake. A miss costs the
+        # standard corrective drill, not the demonstrated history already
+        # earned -- the streak stays exactly where it was through the miss,
+        # then gets the same deferred +1 a correct answer would have once
+        # the drill completes, mirroring how Leitner box advancement itself
+        # already works after a missed-then-drilled review.
+        self.make(material_items(1))
+        self.update(score=9.0, leitner_box=10, leitner_last_reviewed='2026-08-01', leitner_maintenance_streak=5)
+        word_id = self.row()['id']
+        ll.record_maintenance_answer('alice', 'focus', word_id, False, today='2026-08-11')
+        self.assertEqual((self.row()['leitner_box'], self.row()['leitner_maintenance_streak']), (10, 5))
+        ll.complete_maintenance_drill('alice', 'focus', word_id, today='2026-08-11')
+        self.assertEqual((self.row()['leitner_box'], self.row()['leitner_maintenance_streak']), (10, 6))
+
+    def test_maintenance_ready_words_respects_the_extended_box_ten_interval(self):
+        # Two otherwise-identical Box 10 items, both last reviewed 20 days
+        # ago: a streak of 5 (30-day interval) is not yet due, while a
+        # streak of 0 (still the normal 10-day interval) is overdue.
+        self.make(material_items(2))
+        self.update('id-00', score=9.0, leitner_box=10, leitner_last_reviewed='2026-08-01', leitner_maintenance_streak=5)
+        self.update('id-01', score=9.0, leitner_box=10, leitner_last_reviewed='2026-08-01', leitner_maintenance_streak=0)
+        ready = ll.maintenance_ready_words('alice', 'focus', today='2026-08-21')
+        self.assertEqual([row[1] for row in ready], ['w01'])
+        # 30 days out, the high-streak item becomes due too.
+        ready = ll.maintenance_ready_words('alice', 'focus', today='2026-08-31')
+        self.assertEqual(sorted(row[1] for row in ready), ['w00', 'w01'])
+
     def test_consolidation_next_day_derives_from_completed_steps_not_calendar_time(self):
         self.assertEqual(ll.consolidation_next_day(0), 1)
         self.assertEqual(ll.consolidation_next_day(1), 2)
@@ -1368,6 +1421,10 @@ class MigrationContractTest(unittest.TestCase):
         self.assertEqual([row[1] for row in conn.execute(f'PRAGMA table_info("{table}")')], ll.WORD_TABLE_COLUMNS)
         row = conn.execute(f'SELECT content_id,score,last_practiced,last_tartarus_completed,times_practiced,times_correct,times_incorrect,times_drilled,times_mastered,leitner_box,leitner_last_reviewed FROM "{table}"').fetchone()
         self.assertEqual(row, ('id-0',9.0,'2026-08-07','2026-08-07',7,5,2,1,3,4,'2026-08-07'))
+        # A pre-existing Box 10 item from a database that predates Box 10
+        # streak tracking restarts at 0 -- the normal 10-day cadence, never
+        # a data loss, and never an unearned head start on a longer one.
+        self.assertEqual(conn.execute(f'SELECT leitner_maintenance_streak FROM "{table}"').fetchone()[0], 0)
         self.assertFalse(ll.table_exists(conn, 'dataset_progress'))
         self.assertEqual(conn.execute('PRAGMA user_version').fetchone()[0], ll.SCHEMA_VERSION)
         self.assertEqual(conn.execute('PRAGMA integrity_check').fetchone()[0], 'ok')
