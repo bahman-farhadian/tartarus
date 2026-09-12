@@ -1229,13 +1229,16 @@
     }
   }
 
-  // The forward-looking plan, not a log of what already happened -- but
-  // only for files that actually have something to do. A file with
-  // nothing due and nothing left in Encoding is fully caught up right now,
-  // so it's excluded rather than padding the list with an all-zero row.
+  // The forward-looking plan, not a log of what already happened -- and
+  // only for genuinely calendar-due work (Consolidation Track reinforcement,
+  // Spaced Maintenance). Encoding is deliberately excluded, both as a
+  // filter and as a column: it has no due date of its own, just "available
+  // whenever, no cap" (README), so a brand-new, never-started file with
+  // nothing but untouched Encoding material is not "due" and never appears
+  // here.
   function renderDueTodayTable(user, lists) {
     const withDue = lists.filter((item) => (
-      item.consolidation.due_reinforcement + item.consolidation.due_maintenance + item.consolidation.encoding > 0
+      item.consolidation.due_reinforcement + item.consolidation.due_maintenance > 0
     ));
     if (!withDue.length) {
       const empty = document.createElement('p');
@@ -1244,17 +1247,17 @@
       return empty;
     }
     const sorted = [...withDue].sort((a, b) => {
-      const dueA = a.consolidation.due_reinforcement + a.consolidation.due_maintenance + a.consolidation.encoding;
-      const dueB = b.consolidation.due_reinforcement + b.consolidation.due_maintenance + b.consolidation.encoding;
+      const dueA = a.consolidation.due_reinforcement + a.consolidation.due_maintenance;
+      const dueB = b.consolidation.due_reinforcement + b.consolidation.due_maintenance;
       return dueB - dueA || a.lang.localeCompare(b.lang);
     });
     const wrap = document.createElement('div');
     let html = '<table><thead><tr><th>File</th><th>Reinforcement Due</th>'
-      + '<th>Maintenance Due</th><th>Encoding Available</th><th></th></tr></thead><tbody>';
+      + '<th>Maintenance Due</th><th></th></tr></thead><tbody>';
     sorted.forEach((item, index) => {
       const c = item.consolidation;
       html += `<tr><td>${escapeHtml(item.lang)}</td><td>${c.due_reinforcement}</td>`
-        + `<td>${c.due_maintenance}</td><td>${c.encoding}</td>`
+        + `<td>${c.due_maintenance}</td>`
         + `<td><button type="button" class="secondary today-jump-btn" data-index="${index}">Practice &rarr;</button></td></tr>`;
     });
     html += '</tbody></table>';
