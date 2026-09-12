@@ -780,7 +780,7 @@ class CoreContractTest(unittest.TestCase):
         cued = next(e for e in entries if e['mode'] == 'cued_recall')
         self.assertEqual(
             (cued['language'], cued['mode_name'], cued['practiced'], cued['accuracy']),
-            ('focus', 'Cued Recall · Day 1', 16, 93.8),
+            ('focus', 'Cued Recall', 16, 93.8),
         )
         effortful = next(e for e in entries if e['mode'] == 'effortful_retrieval')
         # 'Completed' (practiced) reflects every finished item regardless of
@@ -789,7 +789,7 @@ class CoreContractTest(unittest.TestCase):
         # as a failing percentage.
         self.assertEqual(
             (effortful['mode_name'], effortful['practiced'], effortful['drilled'], effortful['accuracy']),
-            ('Effortful Retrieval · Day 3', 8, 8, None),
+            ('Effortful Retrieval', 8, 8, None),
         )
 
     def test_today_practice_overview_is_scoped_to_the_given_date(self):
@@ -797,6 +797,23 @@ class CoreContractTest(unittest.TestCase):
         ll.log_session('alice', 'focus', 60, 16, 16, 0, 0, mode='cued_recall', stage=1)
         self.assertEqual(len(web.today_practice_overview('alice', today='2000-01-01')), 0)
         self.assertEqual(len(web.today_practice_overview('alice')), 1)
+
+    def test_today_practice_overview_merges_same_mode_across_sessions_with_no_day_label(self):
+        # sessions_<user>.stage is the Consolidation Track *stage index*
+        # (1-5), not a calendar day -- Automaticity is always stage 5 even
+        # though its real days are 9-10. Two separate Automaticity sessions
+        # today (however their stage column happens to be recorded) must
+        # merge into one row, and the label must never claim a "day" the
+        # stage index doesn't actually represent.
+        self.make(material_items(1))
+        ll.log_session('alice', 'focus', 60, 12, 12, 0, 0, mode='automaticity', stage=5)
+        ll.log_session('alice', 'focus', 90, 63, 58, 0, 5, mode='automaticity', stage=5)
+        entries = web.today_practice_overview('alice')
+        self.assertEqual(len(entries), 1)
+        entry = entries[0]
+        self.assertEqual(entry['mode_name'], 'Automaticity')
+        self.assertNotIn('Day', entry['mode_name'])
+        self.assertEqual((entry['practiced'], entry['correct'], entry['drilled']), (75, 70, 5))
 
     def _insert_session_row(self, session_date, user='alice', lang='focus', **fields):
         """Direct insert, bypassing log_session()'s hardcoded date.today()

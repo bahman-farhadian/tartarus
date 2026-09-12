@@ -458,7 +458,7 @@ A per-user overview of the day's practice, separate from Practice setup's cascad
 
 **Due today** is forward-looking: every word list with a reinforcement due count, a Spaced Maintenance due count, or remaining Encoding material greater than zero lists its own row -- the same per-file `consolidation_state_breakdown()` counts the Practice roadmap already computes, reused here as a one-user cross-file view instead of one-file-at-a-time. A file that's fully caught up (nothing due, nothing left in Encoding) is excluded rather than padding the list with an all-zero row, and the remaining rows sort with the most outstanding work first.
 
-**Practiced today** is a historical record: every `(file, mode)` combination actually practiced today lists its own row -- file, mode/day (e.g. "Cued Recall · Day 2"), words completed, accuracy, and time spent -- sourced from the same per-session history (`sessions_<user>`) the Report view reads, grouped by file and mode instead of by calendar day.
+**Practiced today** is a historical record: every `(file, mode)` combination actually practiced today lists its own row -- file, mode (e.g. "Cued Recall"), words completed, accuracy, and time spent -- sourced from the same per-session history (`sessions_<user>`) the Report view reads, grouped by file and mode instead of by calendar day. Sessions are grouped by mode alone, not by the session log's `stage` column -- that column is the Consolidation Track *stage index* (1-5), a 1:1 redundant function of mode, not a calendar day, so it's never shown as one.
 
 Each row on either card has a **Practice →** button that jumps straight to that file on Practice setup with the cascade already resolved.
 

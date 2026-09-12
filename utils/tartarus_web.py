@@ -839,11 +839,16 @@ def today_practice_overview(user, today=None):
     if cursor.fetchone() is None:
         conn.close()
         return []
+    # Grouped by mode alone, not (mode, stage): sessions_<user>.stage is the
+    # Consolidation Track *stage index* (1-5, e.g. Automaticity is always
+    # stage 5), not a calendar day -- it's a 1:1 redundant function of mode
+    # already, never meaningfully distinct within the same mode, and not
+    # something worth (mis)labeling as a "day" in the UI.
     rows = conn.execute(
-        f'SELECT language, mode, stage, COUNT(id), SUM(duration_seconds), '
+        f'SELECT language, mode, COUNT(id), SUM(duration_seconds), '
         f'SUM(words_practiced), SUM(correct_count), SUM(incorrect_count), SUM(drilled_count) '
         f'FROM "{table}" WHERE session_date = ? '
-        f'GROUP BY language, mode, stage ORDER BY language, MIN(id)',
+        f'GROUP BY language, mode ORDER BY language, MIN(id)',
         (today,),
     ).fetchall()
     conn.close()
@@ -851,13 +856,10 @@ def today_practice_overview(user, today=None):
     mode_names = {mode_key: name for _, _, _, name, mode_key in ll.CONSOLIDATION_STAGE_MAP}
     mode_names.update(PRACTICE_TRACK_NAMES)
     mode_names['spaced_maintenance'] = 'Spaced Maintenance'
-    daily_stages = ('encoding', 'cued_recall', 'effortful_retrieval', 'free_recall', 'reconsolidation', 'automaticity')
 
     entries = []
-    for language, mode, stage, sessions, seconds, practiced, correct, incorrect, drilled in rows:
+    for language, mode, sessions, seconds, practiced, correct, incorrect, drilled in rows:
         label = mode_names.get(mode, mode or 'Practice')
-        if stage is not None and mode in daily_stages:
-            label = f'{label} · Day {stage}'
         correct = correct or 0
         incorrect = incorrect or 0
         total_answers = correct + incorrect
