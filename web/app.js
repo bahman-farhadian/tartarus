@@ -1229,19 +1229,21 @@
     }
   }
 
-  // Every file the user has, regardless of whether it's been touched today
-  // -- this is the forward-looking plan, not a log of what already
-  // happened. Files with something due or available sort first; a fully
-  // caught-up file still lists with plain zeros rather than being hidden,
-  // since a zero is itself a clear, factual answer.
+  // The forward-looking plan, not a log of what already happened -- but
+  // only for files that actually have something to do. A file with
+  // nothing due and nothing left in Encoding is fully caught up right now,
+  // so it's excluded rather than padding the list with an all-zero row.
   function renderDueTodayTable(user, lists) {
-    if (!lists.length) {
+    const withDue = lists.filter((item) => (
+      item.consolidation.due_reinforcement + item.consolidation.due_maintenance + item.consolidation.encoding > 0
+    ));
+    if (!withDue.length) {
       const empty = document.createElement('p');
       empty.className = 'muted';
-      empty.textContent = 'No word lists found for this user.';
+      empty.textContent = 'Nothing due today -- every file is caught up.';
       return empty;
     }
-    const sorted = [...lists].sort((a, b) => {
+    const sorted = [...withDue].sort((a, b) => {
       const dueA = a.consolidation.due_reinforcement + a.consolidation.due_maintenance + a.consolidation.encoding;
       const dueB = b.consolidation.due_reinforcement + b.consolidation.due_maintenance + b.consolidation.encoding;
       return dueB - dueA || a.lang.localeCompare(b.lang);

@@ -444,7 +444,7 @@ Because this mutates real history, it's deliberately layered with more caution t
 
 A per-user overview of the day's practice, separate from Practice setup's cascade-driven report, split into two cards.
 
-**Due today** is forward-looking: every word list the user has, regardless of whether it's been touched yet today, with its Consolidation Track reinforcement due count, Spaced Maintenance due count, and remaining Encoding material -- the same per-file `consolidation_state_breakdown()` counts the Practice roadmap already computes, reused here as a one-user cross-file view instead of one-file-at-a-time. A file with nothing due or available still lists with plain zeros rather than being hidden, since a zero is itself a clear, factual answer, and rows sort with the most outstanding work first.
+**Due today** is forward-looking: every word list with a reinforcement due count, a Spaced Maintenance due count, or remaining Encoding material greater than zero lists its own row -- the same per-file `consolidation_state_breakdown()` counts the Practice roadmap already computes, reused here as a one-user cross-file view instead of one-file-at-a-time. A file that's fully caught up (nothing due, nothing left in Encoding) is excluded rather than padding the list with an all-zero row, and the remaining rows sort with the most outstanding work first.
 
 **Practiced today** is a historical record: every `(file, mode)` combination actually practiced today lists its own row -- file, mode/day (e.g. "Cued Recall · Day 2"), words completed, accuracy, and time spent -- sourced from the same per-session history (`sessions_<user>`) the Report view reads, grouped by file and mode instead of by calendar day.
 
