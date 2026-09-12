@@ -2477,6 +2477,39 @@ class BrowserContractTest(unittest.TestCase):
         self.wait("return __api.answers===1")
         self.assertEqual(self.browser.script("return __api.lastBody.answer"),'w00')
 
+    def test_correct_answer_auto_submits_without_enter(self):
+        # Tartarus is a trusted-local-client app -- the browser already
+        # holds the real answer even while it's masked on screen -- so once
+        # the input is exactly filled with the correct answer, it should
+        # submit immediately rather than making the learner press Enter for
+        # an answer that's already exactly right.
+        self.browser.script("document.getElementById('start-session').click();return true;")
+        self.wait("return document.getElementById('word-display').classList.contains('can-submit')",timeout=3)
+        self.browser.script(
+            "const i=document.getElementById('answer-input');i.value='w00';"
+            "i.dispatchEvent(new Event('input',{bubbles:true}));return true;"
+        )
+        self.wait("return __api.answers===1",timeout=3)
+        self.assertEqual(self.browser.script("return __api.lastBody.answer"),'w00')
+
+    def test_filled_but_wrong_answer_waits_for_enter_or_a_correction(self):
+        self.browser.script("document.getElementById('start-session').click();return true;")
+        self.wait("return document.getElementById('word-display').classList.contains('can-submit')",timeout=3)
+        # Same length as the target ('w00') but wrong -- must not auto-submit.
+        self.browser.script(
+            "const i=document.getElementById('answer-input');i.value='w01';"
+            "i.dispatchEvent(new Event('input',{bubbles:true}));return true;"
+        )
+        time.sleep(.1)
+        self.assertEqual(self.browser.script("return __api.answers"),0)
+        # Correcting it to the right answer submits immediately on that edit.
+        self.browser.script(
+            "const i=document.getElementById('answer-input');i.value='w00';"
+            "i.dispatchEvent(new Event('input',{bubbles:true}));return true;"
+        )
+        self.wait("return __api.answers===1",timeout=3)
+        self.assertEqual(self.browser.script("return __api.lastBody.answer"),'w00')
+
     def test_definition_is_centered(self):
         self.browser.script("document.getElementById('start-session').click();return true;");self.wait("return getComputedStyle(document.getElementById('practice-session')).display!=='none'")
         geom=self.browser.script("const b=document.getElementById('word-block').getBoundingClientRect(),d=document.getElementById('definition-lines').getBoundingClientRect();return {delta:Math.abs((b.left+b.width/2)-(d.left+d.width/2)),align:getComputedStyle(document.getElementById('definition-lines')).textAlign};")

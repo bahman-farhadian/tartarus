@@ -360,6 +360,10 @@ The typed text remains in the input when speech finishes, then normal submission
 
 After an answer is submitted, the UI remains interaction-locked while the answer request, any feedback speech, and the card transition complete.
 
+### Auto-submit on a correct answer
+
+Tartarus is a trusted-local-client app: the browser already holds the real answer (`word_unmasked`) as part of the local practice payload even while the target is masked or hidden on screen. The answer field's `maxlength` is always exactly the target's length, so once it's fully typed, the input compares it to the real answer immediately and submits on its own the moment it's exactly correct -- there's no need to press Enter for an answer that's already right. A filled-but-wrong answer does nothing automatically: it waits for either an explicit Enter (submitting it as a wrong answer, same as before) or a correction, which is checked again the same way as soon as the field is refilled. This follows the same interaction-lock rules as manual submission -- it never fires during prompt speech or while an answer/drill transition is already in flight.
+
 ### Audio is never muted
 
 Every stage -- Encoding through Automaticity -- plays its prompt automatically
@@ -725,6 +729,7 @@ The unified suite covers the current release contracts, including:
 - request/response and client-reported-error logging;
 - the example-sentence line withheld wherever the target is masked or hidden (Encoding once masked, every daily stage, Spaced Maintenance), restored once a corrective drill actually reveals the word;
 - extended Box 10 maintenance intervals from a demonstrated streak of successful reviews, frozen (never reset) on a miss and only ever granted via a correct answer or a completed drill;
+- auto-submit firing on an exact correct answer without Enter, and staying silent on a same-length wrong answer until Enter or a correction;
 - the single-test-file policy.
 
 On macOS the browser contract defaults to Safari WebDriver when `safaridriver` is available. Set `TARTARUS_BROWSER=chromium` to use the headless Chromium/CDP fallback, which requires a Chromium/Chrome executable and the Python `websocket-client` module. Browser-specific tests skip only when their selected runtime is unavailable.

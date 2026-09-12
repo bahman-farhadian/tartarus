@@ -503,7 +503,10 @@
     // Keep the learner's visual focus on the inline answer surface.
     if (e.key === 'Tab') { e.preventDefault(); }
   });
-  answerInput.addEventListener('input', renderAnswerSurface);
+  answerInput.addEventListener('input', () => {
+    renderAnswerSurface();
+    maybeAutoSubmit();
+  });
   window.addEventListener('resize', () => { if (answerTarget) requestAnimationFrame(renderAnswerSurface); });
   answerInput.addEventListener('focus', () => wordDisplay.classList.add('is-focused'));
   answerInput.addEventListener('blur', () => wordDisplay.classList.remove('is-focused'));
@@ -842,6 +845,21 @@
     // "too short" side.
     if (Array.from(answerInput.value).length !== Array.from(answerTarget).length) return;
     sendAnswer(answerInput.value);
+  }
+
+  // Tartarus is a trusted-local-client app -- the browser already holds the
+  // real answer (answerTarget) even while it's masked on screen, so once
+  // the input is fully filled (same length as the target -- maxLength keeps
+  // it from ever running longer), check it immediately instead of making
+  // the learner press Enter for an answer that's already exactly right.
+  // Filled-but-wrong deliberately does nothing here: the learner either
+  // presses Enter to submit it as-is (today's behavior, unchanged) or keeps
+  // editing, and every further edit re-runs this same check once refilled.
+  function maybeAutoSubmit() {
+    if (!answerSubmitReady || answerInteractionLocked()) return;
+    if (Array.from(answerInput.value).length !== Array.from(answerTarget).length) return;
+    if (answerInput.value.normalize('NFC') !== answerTarget.normalize('NFC')) return;
+    submitTextAnswer();
   }
 
 
