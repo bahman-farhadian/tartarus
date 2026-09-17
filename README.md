@@ -20,8 +20,8 @@ The core idea is simple: keep a small set of material in focus long enough to pu
 These are the guarantees the engine is built to hold — each one is exercised by the test suite, not just described here.
 
 - **There is no "which file" decision.** Pick a language, a level, and a part of speech; the exact word list resolves automatically. If more than one file could ever match, it's resolved the same deterministic way every time — there is nothing left for you to click.
-- **Nothing you earn is ever lost, and nothing ever regresses.** A word's score only ever moves up, in fixed `0.5` steps from `0.0` to `9.0`, or stays exactly where it was. A wrong answer never lowers a score, never demotes a Leitner box, and never resets a Consolidation Track day. Its only cost is a bounded corrective drill — nine consecutive correct repetitions — before that item's forward progress resumes exactly where it left off.
-- **Progress carries across days untouched.** A word that reaches band 5 today resumes at band 5 tomorrow, not band 0. When it crosses band 9, its own mastery date starts its independent 10-day reinforcement track and it enters Leitner Box 1 in the same atomic database update.
+- **Nothing you earn is ever lost, and nothing ever regresses.** A word's score only ever moves up, in fixed `0.5` steps from `0.0` to `9.0`, or stays exactly where it was. A wrong answer never lowers a score, never demotes a Leitner box, and never resets a Consolidation Track step. Its only cost is a bounded corrective drill — nine consecutive correct repetitions — before that item's forward progress resumes exactly where it left off.
+- **Progress carries across days untouched.** A word that reaches band 5 today resumes at band 5 tomorrow, not band 0. When it crosses band 9, it enters Leitner Box 1 and starts its own 10-day reinforcement track in the same atomic database update. From that point the track advances only by completed steps (`consolidation_step`), never by elapsed calendar time; `mastery_events.mastered_date` is an append-only audit record, not the scheduler.
 - **Finishing Encoding is deterministic, not a matter of luck.** The Encoding pool contains every active word below band 9. It remains available until every word reaches band 9, with no daily session cap. A mastered word leaves Encoding immediately and begins its own reinforcement schedule; it does not wait for the rest of the file.
 - **A word's Consolidation Track stage comes only from completed reinforcement steps, never elapsed calendar time.** Each word carries its own `consolidation_step` (0–10), incremented by exactly one on a genuine reinforcement completion. Missing any number of calendar days never skips a step or drops the word from the track early — it simply waits at its last completed step until the learner returns.
 - **A session never mixes question modes.** Cued Recall, Effortful Retrieval, Free Recall, Reconsolidation, Automaticity, Spaced Maintenance, and Encoding each present differently (masking, audio, timer); a session draws from exactly one of them, even if that means ending with fewer than 16 questions. Different cohorts can sit at different stages in the same file, but never inside the same session.
@@ -61,7 +61,7 @@ flowchart LR
     DRILL -->|"complete: +0.5 once"| SCORE
     SCORE --> MASTER
     MASTER --> DAILY
-    DAILY -->|"elapsed mastery date exceeds day 10"| DAY11
+    DAILY -->|"tenth completed reinforcement step"| DAY11
     MASTER --> BOX1
     BOX1 --> DUE
     DUE -->|"correct first answer"| NEXT
@@ -71,7 +71,7 @@ flowchart LR
 
 ### Why the focus pool works this way
 
-Normal Tartarus practice uses **at most 16 unique items per session**. Selection and presentation are deliberately separate operations.
+A Consolidation Track session uses **at most 16 unique items**. Supplementary sessions have no such cap. Selection and presentation are deliberately separate operations.
 
 #### 1. Select the focus pool
 
@@ -123,13 +123,13 @@ At scores `8.0–8.5`, the item moves to production-style recall: the target is 
 
 The purpose is gradual cue removal: recognition support is strongest when material is new and weakest near mastery.
 
-Once this masking becomes active (`score > 0`), the definition's example-sentence line is withheld -- it always embeds the literal target word, so showing it next to a partially masked word would give the answer away. At `score == 0` the target is still shown in full, so both definition lines show as usual.
+Once this masking becomes active (`score > 0`), only the primary prompt line is shown -- later lines (the example sentence, and for German sentences the English translation) embed or give away the target. At `score == 0` the target is still shown in full, so the full authored definition is shown as usual.
 
 ---
 
 ## Answer contract
 
-Tartarus uses exact, case-sensitive answer matching.
+Tartarus uses exact, case-sensitive answer matching. The only softening is Unicode NFC normalization: a precomposed character and the equivalent combining-character sequence (for example `ü` vs `u` + combining diaeresis) are the same letter, not a spelling difference. Every other difference — case, whitespace, articles, punctuation, form order — still fails.
 
 ### Vocabulary entries with multiple forms
 
@@ -213,18 +213,16 @@ through Automaticity.
 | **Reconsolidation** | 7–8 | target hidden; primary definition visible | automatic | 0.5 s / character |
 | **Automaticity** | 9–10 | target hidden; primary definition visible | automatic | 0.5 s / character |
 
-Bundled definitions always carry the primary meaning as their first line and
-an example sentence as their second (see
-[data/DATASET_SCHEMA_GUIDE.md](data/DATASET_SCHEMA_GUIDE.md)), and that
-example sentence always embeds the literal target word. So whenever the
-target itself is masked or hidden -- Encoding once its own progressive
-masking is active (`score > 0`), every stage above, and Spaced Maintenance --
-the example-sentence line is withheld and only the primary meaning line is
-shown; otherwise the answer would just be sitting in plain text one line
-below the masked/hidden word. The one exception is a corrective drill that
-has actually revealed the word (`show_word: true`, after a genuine mistake):
-at that point the answer is already fully shown, so the full definition
-(example sentence included) is restored there, since it can only help.
+Whenever the target itself is masked or hidden -- Encoding once its own
+progressive masking is active (`score > 0`), every stage above, and Spaced
+Maintenance -- only the primary prompt line (the first definition line) is
+shown. Bundled vocabulary puts an example sentence on the second line that
+embeds the literal target word; German sentences carry extra lines after the
+lemma. Either would sit in plain text below a masked or hidden target, so
+they are withheld. The one exception is a corrective drill that has actually
+revealed the word (`show_word: true`, after a genuine mistake): at that point
+the answer is already fully shown, so the full authored definition is restored
+there, since it can only help.
 
 Free Recall/Reconsolidation/Automaticity's response timer scales with the target's own length
 rather than a fixed guess -- 0.75s per character for Free Recall, 0.5s per
@@ -246,7 +244,7 @@ Words mastered on different dates remain separate cohorts, each tracked independ
 
 ### Session completion
 
-A normal Web session contains up to 16 unique questions. One correct answer does **not** end a 16-question session; the session advances question by question until the current queue is complete or the learner ends it early.
+A Consolidation Track session contains up to 16 unique questions. One correct answer does **not** end that session; it advances question by question until the current queue is complete or the learner ends it early. Supplementary sessions have no 16-question cap.
 
 An early-ended session keeps every item transition already recorded. Unanswered queue entries remain due; there is no session-wide advancement state to grant or void.
 
@@ -273,7 +271,7 @@ Tartarus uses ten boxes:
 
 A mastered item is due when the number of days since `leitner_last_reviewed` reaches the interval for its current box.
 
-Due Leitner material is serviced through the **same Enter the Consolidation Track flow**: starting a session is the only decision a learner makes. Due per-word reinforcement is served first (it's a scaffolded warm-up before Leitner's unscaffolded pure recall), due Spaced Maintenance next, and only once neither has anything due does the same entry point continue with new Encoding material — there is no separate Web "Review due" workflow, and no way to skip ahead of either due track by choosing to practice something else. This holds regardless of how much Encoding work remains, so review of already-mastered material is never starved by a large list still being learned.
+Due Leitner material is serviced through the **same Enter the Consolidation Track flow**: starting a session is the only decision a learner makes. `select_practice_words()` picks whichever due pool has been waiting longest — one Consolidation Track stage, or Spaced Maintenance. Ties favor an earlier reinforcement stage over Leitner. Encoding starts only once nothing is due. There is no separate Web "Review due" workflow, and no way to skip ahead of either due track by choosing to practice something else. This holds regardless of how much Encoding work remains, so review of already-mastered material is never starved by a large list still being learned.
 
 For a mastered item:
 
@@ -297,7 +295,7 @@ A large, long-lived vocabulary can leave hundreds of items sitting in Box 10, ea
 
 This never regresses on a mistake, matching the engine's core invariant that a wrong answer costs a bounded corrective drill rather than lost progress: a wrong first answer freezes the streak exactly where it is (same as the box itself) and starts the standard corrective drill; completing that drill grants the streak its deferred `+1`, precisely mirroring how a completed drill already grants the same box advancement a correct first answer would have. There is no reset or decrease path -- only Boxes 1-9's own fixed intervals and a freshly-arrived Box 10 item (streak 0) ever use the plain 10-day cadence by default.
 
-A due maintenance review hides the target the same way Effortful Retrieval onward does, so it shows only the primary definition line too -- the example sentence, which always embeds the literal target word, is withheld for the same reason.
+A due maintenance review hides the target the same way Effortful Retrieval onward does, so it shows only the primary prompt line too -- later definition lines are withheld for the same reason.
 
 When more items are due than fit in one 16-item session, `maintenance_ready_words()` always works from the lowest box up -- Box 1 (least stable, most urgent) before Box 2, and so on through whichever box is due last -- regardless of where those items sit in the file. Box number is the only priority signal; file order only breaks ties within the same box.
 
@@ -322,13 +320,15 @@ Any scoring or session change must preserve these contracts:
 
 Three additional, per-file practice tracks live in their own **Supplementary practice (optional)** card on Practice setup, visually separate from the required Consolidation Track flow above it -- these are extra repetition, not part of the graded path, and never touch score, Leitner box, or `consolidation_step`:
 
-- **Encoding Practice** -- targets items still below band 9 (falling back to the whole file, in file order, once none are). The word is always shown in full, dim like the main Encoding stage but never masked -- this is a typing/copying exercise for initial encoding, not a recall test. Both definition lines are shown.
+- **Encoding Practice** -- targets items still below band 9 (falling back to the whole file, in file order, once none are). The word is always shown in full, dim like the main Encoding stage but never masked -- this is a typing/copying exercise for initial encoding, not a recall test. The full definition (every authored line) is shown.
 - **Reading Retrieval** -- targets mastered (band 9) items only. Shows just the primary definition; the target is fully masked, same as normal recall. Audio stays silent while the question is shown -- there's a definition to read -- and plays after every answer is submitted, right or wrong.
 - **Listening Retrieval** -- targets mastered (band 9) items only. No text or definition is shown at all; audio is the only stimulus, so unlike Reading Retrieval it plays automatically the moment the question is shown, same as every other stage.
 
-All three share one mechanic on a wrong answer: no corrective drill, ever -- the same question just repeats with unlimited retries until it's typed correctly. These are optional practice, not the mandatory Consolidation Track, so there's no drill debt to work off. On Reading/Listening Retrieval specifically, the *first* miss also reveals the word immediately -- full Encoding-style presentation, unmasked with both definition lines -- rather than leaving the learner to keep guessing blind; a blind guess after a miss isn't productive, so every attempt after that is a guaranteed-achievable copy instead of more guesswork. A second miss on the same item doesn't reveal again (already revealed); Encoding Practice never reveals at all, since it's already fully visible from the start.
+All three share one mechanic on a wrong answer: no corrective drill, ever -- the same question just repeats with unlimited retries until it's typed correctly. These are optional practice, not the mandatory Consolidation Track, so there's no drill debt to work off. On Reading/Listening Retrieval specifically, the *first* miss also reveals the word immediately -- full Encoding-style presentation, unmasked with the full definition -- rather than leaving the learner to keep guessing blind; a blind guess after a miss isn't productive, so every attempt after that is a guaranteed-achievable copy instead of more guesswork. A second miss on the same item doesn't reveal again (already revealed); Encoding Practice never reveals at all, since it's already fully visible from the start.
 
-Each of the three is bucket-backed, not calendar-due-backed: a persisted "bag of tiles" (`practice_bucket`) draws items without replacement until every eligible item for that track has been served once, then refills and starts a new cycle. This makes each track endless -- a session ends at 16 questions (or the file's full eligible count, if smaller), and a learner can start another session in the same track immediately, indefinitely. A session can be cancelled at any time -- with no drill to protect, there's nothing that can ever block it. Practiced/correct/incorrect counts and session time are all recorded normally and count toward the file's totals in reporting, just tagged with the track's own name instead of a Consolidation Track stage.
+These tracks are not calendar-due-backed. The Web UI starts each session with `select_bucket_words()`'s default (uncapped) path: every currently-eligible item is drawn, freshly shuffled, and the session runs until that set is exhausted or the learner cancels. There is no 16-question cap. Encoding Practice's all-mastered fallback is the one exception to shuffling — it stays in file order. A learner can start another session in the same track immediately, indefinitely. A session can be cancelled at any time; with no drill to protect, nothing can block it. Practiced/correct/incorrect counts and session time are recorded normally and count toward the file's totals in reporting, tagged with the track's own name instead of a Consolidation Track stage.
+
+The persisted `practice_bucket` table still exists for an explicit bounded "bag of tiles" draw (`num_words` set): items are taken without replacement until the eligible set is exhausted, then the bucket refills. The Web UI never passes `num_words`; that path is kept for callers that want a bounded, non-repeating draw across repeated calls.
 
 ---
 
@@ -366,10 +366,12 @@ Tartarus is a trusted-local-client app: the browser already holds the real answe
 
 ### Audio is never muted
 
-Every stage -- Encoding through Automaticity -- plays its prompt automatically
-and Replay is always available. Audio is never disabled based on which
-stage a question is in. Where result feedback speech is enabled, the
-current target is spoken before the next card advances.
+Every Consolidation Track stage -- Encoding through Automaticity -- plays its
+prompt automatically, and Replay is always available. Audio is never disabled
+based on which stage a question is in. The one exception is Reading Retrieval,
+which stays silent while the definition is on screen and speaks after the
+answer is submitted (right or wrong). Where result feedback speech is enabled,
+the current target is spoken before the next card advances.
 
 Bundled-content audio is unaffected by the host OS. For personal/custom lists on systems without macOS `say`, the application remains usable; `/api/tts` reports speech as unsupported and the browser continues without audio for that content.
 
@@ -389,7 +391,7 @@ Then open:
 http://127.0.0.1:9999/
 ```
 
-The Web UI has five views.
+The Web UI has four views: **Practice**, **Today's Overview**, **Word Lists**, and **About**. There is no separate Report view — the live report is part of Practice setup.
 
 ### Practice
 
@@ -424,9 +426,9 @@ The global Enter shortcut is also part of the flow:
 1. after a session summary, Enter returns to setup;
 2. Enter again starts the next selected session.
 
-### Report
+#### Live report
 
-There is no separate Report page. The same cascade that starts a session --
+The same cascade that starts a session --
 `User → Language → Level → Part of speech` -- also drives a live report
 rendered directly on Practice setup, below the start buttons: selecting only
 a user shows the full cross-list report; adding language/level/part-of-speech
@@ -462,11 +464,11 @@ A per-user overview of the day's practice, separate from Practice setup's cascad
 
 **Due today** is forward-looking, and scoped to genuinely calendar-due work: every word list with a reinforcement due count or a Spaced Maintenance due count greater than zero lists its own row -- the same per-file `consolidation_state_breakdown()` counts the Practice roadmap already computes, reused here as a one-user cross-file view instead of one-file-at-a-time. Encoding availability is deliberately not a reason to appear here: Encoding has no due date of its own, only "available whenever, no session cap," so a file that's never been started -- however much untouched Encoding material it has -- is not "due" and is excluded, same as a file that's fully caught up on reinforcement and maintenance. The remaining rows sort with the most outstanding work first.
 
-**Practiced today** is a historical record: every `(file, mode)` combination actually practiced today lists its own row -- file, mode (e.g. "Cued Recall"), words completed, accuracy, and time spent -- sourced from the same per-session history (`sessions_<user>`) the Report view reads, grouped by file and mode instead of by calendar day. Sessions are grouped by mode alone, not by the session log's `stage` column -- that column is the Consolidation Track *stage index* (1-5), a 1:1 redundant function of mode, not a calendar day, so it's never shown as one.
+**Practiced today** is a historical record: every `(file, mode)` combination actually practiced today lists its own row -- file, mode (e.g. "Cued Recall"), words completed, accuracy, and time spent -- sourced from the same per-session history (`sessions_<user>`) the live Practice report reads, grouped by file and mode instead of by calendar day. Sessions are grouped by mode alone, not by the session log's `stage` column -- that column is the Consolidation Track *stage index* (1-5), a 1:1 redundant function of mode, not a calendar day, so it's never shown as one.
 
 Each row on either card has a **Practice →** button that jumps straight to that file on Practice setup with the cascade already resolved.
 
-Accuracy is first-attempt accuracy (`correct / (correct + incorrect)`), the same formula the Report/Dashboard views already use — deliberately not a fraction of words completed, since a stage like Effortful Retrieval routes every clean completion through its own drill counter rather than "correct," which would otherwise make a mistake-free row misleadingly read as 0%.
+Accuracy is first-attempt accuracy (`correct / (correct + incorrect)`), the same formula the live Practice report already uses — deliberately not a fraction of words completed, since a stage like Effortful Retrieval routes every clean completion through its own drill counter rather than "correct," which would otherwise make a mistake-free row misleadingly read as 0%.
 
 ### Word Lists
 
@@ -576,7 +578,8 @@ Additional SQLite state includes:
 - `users`;
 - `sessions_<user>` practice history;
 - `mastery_events` for append-only score-9 and Box-10 milestone dates used by trend reporting;
-- `pending_drills` for durable mandatory-drill state.
+- `pending_drills` for durable mandatory-drill state;
+- `practice_bucket` for the optional bounded supplementary-track draw (the Web UI's default sessions shuffle the full eligible set instead and clear any leftover bucket rows).
 
 Material removed from a JSON file is marked inactive in progress instead of silently reassigning that progress to a different item.
 
@@ -709,14 +712,17 @@ The unified suite covers the current release contracts, including:
 - Consolidation Track + Leitner dual-track roadmap;
 - no-Sisyphus guarantees across acquisition, all ten daily Consolidation Track stages, and maintenance;
 - Effortful Retrieval escalation from its two-production task to a nine-answer drill after a mistake;
-- atomic schema-v5 migration with a verified backup and obsolete state removal;
+- atomic schema migration with a verified backup and obsolete state removal;
 - stable generated material IDs;
 - lossless personal editor saves;
 - per-user sample retirement;
 - transactional backup restore;
 - append-only mastery/Box-10 events, mixed per-word mastery cohorts, cumulative trend API, and inline SVG charts;
 - JSON parse-cache invalidation and set-based word-list synchronization;
-- calendar-derived per-word reinforcement boundaries without mutable day advancement;
+- per-word reinforcement day from completed steps, never elapsed calendar time;
+- NFC-equivalent answers match, and nothing else about exact matching is softened;
+- durable pending drills that resume across refresh, restart, and crash;
+- staleness-based fairness across due pools, with Encoding last;
 - request idempotency and bounded HTTP failures;
 - one-answer-does-not-end-session regression;
 - Web speech interaction locking and Enter navigation;
@@ -727,9 +733,12 @@ The unified suite covers the current release contracts, including:
 - restart-from-scratch progress reset, preserving session history;
 - corpus-wide list-id uniqueness and stable-id invariants across the whole bundled dataset;
 - request/response and client-reported-error logging;
-- the example-sentence line withheld wherever the target is masked or hidden (Encoding once masked, every daily stage, Spaced Maintenance), restored once a corrective drill actually reveals the word;
+- later definition lines withheld wherever the target is masked or hidden (Encoding once masked, every daily stage, Spaced Maintenance), restored once a corrective drill actually reveals the word;
 - extended Box 10 maintenance intervals from a demonstrated streak of successful reviews, frozen (never reset) on a miss and only ever granted via a correct answer or a completed drill;
 - auto-submit firing on an exact correct answer without Enter, and staying silent on a same-length wrong answer until Enter or a correction;
+- supplementary tracks: uncapped freshly-shuffled sessions, unlimited retry, no drill, and no mutation of score/Leitner/`consolidation_step`;
+- Today's Overview Due Today listing only calendar-due reinforcement or maintenance;
+- Fill Practice Gap shifting a user's dates forward without overshooting today;
 - the single-test-file policy.
 
 On macOS the browser contract defaults to Safari WebDriver when `safaridriver` is available. Set `TARTARUS_BROWSER=chromium` to use the headless Chromium/CDP fallback, which requires a Chromium/Chrome executable and the Python `websocket-client` module. Browser-specific tests skip only when their selected runtime is unavailable.
