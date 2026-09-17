@@ -393,6 +393,8 @@ http://127.0.0.1:9999/
 
 The Web UI has four views: **Practice**, **Today's Overview**, **Word Lists**, and **About**. There is no separate Report view — the live report is part of Practice setup.
 
+The palette is [Gruvbox dark](https://github.com/morhetz/gruvbox). The favicon is the character `T` as an SVG, not a bitmap. Every HTTP response — HTML, CSS, JS, JSON, icons, and pronunciation audio — is sent with `Cache-Control: no-store`, so a new tab always refetches the current files and data.
+
 ### Practice
 
 The practice selector follows:
@@ -677,8 +679,9 @@ utils/
   test_tartarus.py                unified test suite
 web/
   index.html                      UI structure
-  style.css                       UI styling
+  style.css                       UI styling (Gruvbox dark)
   app.js                          browser state, practice/report/editor behavior
+  favicon.svg                     character favicon (`T`)
 ```
 
 ---
@@ -739,6 +742,8 @@ The unified suite covers the current release contracts, including:
 - supplementary tracks: uncapped freshly-shuffled sessions, unlimited retry, no drill, and no mutation of score/Leitner/`consolidation_step`;
 - Today's Overview Due Today listing only calendar-due reinforcement or maintenance;
 - Fill Practice Gap shifting a user's dates forward without overshooting today;
+- HTTP no-store on HTML, CSS, JS, icons, JSON, and pronunciation audio;
+- the character SVG favicon, with no bitmap favicon;
 - the single-test-file policy.
 
 On macOS the browser contract defaults to Safari WebDriver when `safaridriver` is available. Set `TARTARUS_BROWSER=chromium` to use the headless Chromium/CDP fallback, which requires a Chromium/Chrome executable and the Python `websocket-client` module. Browser-specific tests skip only when their selected runtime is unavailable.

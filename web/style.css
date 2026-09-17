@@ -1,28 +1,35 @@
-/* Catppuccin Mocha palette: https://catppuccin.com/palette/ */
+/* Gruvbox dark: https://github.com/morhetz/gruvbox
+   Variable names keep their existing roles (accent, glow, gauges) so layout
+   and lighting stay the same; only the hex values change. */
 :root {
   color-scheme: dark;
-  --base: #1e1e2e;
-  --mantle: #181825;
-  --crust: #11111b;
-  --surface0: #313244;
-  --surface1: #45475a;
-  --surface2: #585b70;
-  --overlay0: #6c7086;
-  --overlay1: #7f849c;
-  --text: #cdd6f4;
-  --subtext0: #a6adc8;
-  --subtext1: #bac2de;
-  --rosewater: #f5e0dc;
-  --blue: #89b4fa;
-  --sapphire: #74c7ec;
-  --lavender: #b4befe;
-  --green: #a6e3a1;
-  --yellow: #f9e2af;
-  --peach: #fab387;
-  --maroon: #eba0ac;
-  --red: #f38ba8;
-  --mauve: #cba6f7;
-  --teal: #94e2d5;
+  --base: #282828;
+  --mantle: #1d2021;
+  --crust: #1d2021;
+  --surface0: #3c3836;
+  --surface1: #504945;
+  --surface2: #665c54;
+  --overlay0: #7c6f64;
+  --overlay1: #928374;
+  --text: #ebdbb2;
+  --subtext0: #a89984;
+  --subtext1: #bdae93;
+  --rosewater: #fe8019;
+  --blue: #83a598;
+  --sapphire: #83a598;
+  --lavender: #d3869b;
+  --green: #b8bb26;
+  --yellow: #fabd2f;
+  --peach: #fe8019;
+  --maroon: #fb4934;
+  --red: #fb4934;
+  --mauve: #d3869b;
+  --teal: #8ec07c;
+  --mauve-rgb: 211, 134, 155;
+  --blue-rgb: 131, 165, 152;
+  --red-rgb: 251, 73, 52;
+  --green-rgb: 184, 187, 38;
+  --surface2-rgb: 102, 92, 84;
 }
 
 * {
@@ -120,9 +127,9 @@ main {
 
 .card {
   background-color: var(--mantle);
-  background-image: linear-gradient(135deg, rgba(203, 166, 247, 0.05), rgba(137, 180, 250, 0.05));
-  border: 1px solid rgba(203, 166, 247, 0.3);
-  box-shadow: 0 0 15px rgba(203, 166, 247, 0.1);
+  background-image: linear-gradient(135deg, rgba(var(--mauve-rgb), 0.05), rgba(var(--blue-rgb), 0.05));
+  border: 1px solid rgba(var(--mauve-rgb), 0.3);
+  box-shadow: 0 0 15px rgba(var(--mauve-rgb), 0.1);
   border-radius: 1rem;
   padding: 2rem;
   margin-bottom: 1.5rem;
@@ -176,7 +183,7 @@ input:focus, select:focus {
 select {
   appearance: none;
   -webkit-appearance: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23cdd6f4' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23ebdbb2' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 0.75rem center;
   padding-right: 2.5rem;
@@ -235,7 +242,7 @@ input:disabled, input:read-only {
 
 .error {
   color: var(--red);
-  background: rgba(243, 139, 168, 0.1);
+  background: rgba(var(--red-rgb), 0.1);
   border: 1px solid var(--red);
   border-radius: 0.5rem;
   padding: 0.6rem 0.9rem;
@@ -246,7 +253,7 @@ input:disabled, input:read-only {
 
 .success {
   color: var(--green);
-  background: rgba(166, 227, 161, 0.1);
+  background: rgba(var(--green-rgb), 0.1);
   border: 1px solid var(--green);
   border-radius: 0.5rem;
   padding: 0.6rem 0.9rem;
@@ -325,7 +332,7 @@ input:disabled, input:read-only {
 
 .check-option:has(input:checked) {
   border-color: var(--mauve);
-  background: rgba(203, 166, 247, 0.13);
+  background: rgba(var(--mauve-rgb), 0.13);
 }
 
 .check-option input {
@@ -370,7 +377,7 @@ input:disabled, input:read-only {
 
 .check-option:focus-within {
   border-color: var(--mauve);
-  box-shadow: 0 0 0 2px rgba(203, 166, 247, 0.22);
+  box-shadow: 0 0 0 2px rgba(var(--mauve-rgb), 0.22);
 }
 
 .check-copy {
@@ -459,17 +466,17 @@ input:disabled, input:read-only {
   background: linear-gradient(135deg, var(--mauve), var(--blue));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 15px rgba(203, 166, 247, 0.4);
+  text-shadow: 0 0 15px rgba(var(--mauve-rgb), 0.4);
 }
 
 .roadmap-stage-progress-wrap {
   margin-top: 2rem;
   padding: 1.5rem;
   background-color: var(--surface0);
-  background-image: linear-gradient(135deg, rgba(203, 166, 247, 0.05), rgba(137, 180, 250, 0.05));
+  background-image: linear-gradient(135deg, rgba(var(--mauve-rgb), 0.05), rgba(var(--blue-rgb), 0.05));
   border-radius: 8px;
-  border: 1px solid rgba(203, 166, 247, 0.3);
-  box-shadow: 0 0 15px rgba(203, 166, 247, 0.1);
+  border: 1px solid rgba(var(--mauve-rgb), 0.3);
+  box-shadow: 0 0 15px rgba(var(--mauve-rgb), 0.1);
 }
 
 .stage-progress-header {
@@ -734,7 +741,7 @@ input:disabled, input:read-only {
   width: 2px;
   border-radius: 999px;
   background: var(--mauve);
-  box-shadow: 0 0 8px rgba(203, 166, 247, 0.75);
+  box-shadow: 0 0 8px rgba(var(--mauve-rgb), 0.75);
   animation: answer-caret-blink 1s steps(1, end) infinite;
   pointer-events: none;
 }
@@ -805,8 +812,8 @@ input:disabled, input:read-only {
 }
 
 .definition-lines.has-content {
-  border-top-color: rgba(88, 91, 112, 0.42);
-  border-bottom-color: rgba(88, 91, 112, 0.42);
+  border-top-color: rgba(var(--surface2-rgb), 0.42);
+  border-bottom-color: rgba(var(--surface2-rgb), 0.42);
 }
 
 .definition-primary {
@@ -855,7 +862,7 @@ input:disabled, input:read-only {
 
 .option-btn.selected {
   border-color: var(--mauve);
-  background: rgba(203, 166, 247, 0.15);
+  background: rgba(var(--mauve-rgb), 0.15);
 }
 
 .option-letter {
@@ -1489,13 +1496,13 @@ tr.total-row td {
 .consolidation-label {
   font-weight: 700;
   font-size: 1rem;
-  color: var(--mauve, #cba6f7);
+  color: var(--mauve, #d3869b);
   letter-spacing: 0.02em;
 }
 
 .consolidation-day {
   font-size: 0.85rem;
-  color: var(--subtext0, #a6adc8);
+  color: var(--subtext0, #a89984);
 }
 
 .consolidation-sessions {
@@ -1503,19 +1510,19 @@ tr.total-row td {
   gap: 1rem;
   align-items: center;
   font-size: 0.85rem;
-  color: var(--text, #cdd6f4);
+  color: var(--text, #ebdbb2);
 }
 
 
 .consolidation-track-info {
   font-size: 0.8rem;
-  color: var(--subtext1, #bac2de);
+  color: var(--subtext1, #bdae93);
   font-style: italic;
 }
 
 .consolidation-mode-descriptions {
   font-size: 0.78rem;
-  color: var(--overlay1, #6c7086);
+  color: var(--overlay1, #928374);
   margin-top: 0.2rem;
 }
 
@@ -1585,7 +1592,7 @@ tr.total-row td {
 .timeline-node.active .node-circle {
   background: linear-gradient(135deg, var(--mauve), var(--blue));
   color: var(--base);
-  box-shadow: 0 0 15px rgba(203, 166, 247, 0.4);
+  box-shadow: 0 0 15px rgba(var(--mauve-rgb), 0.4);
 }
 
 .node-info {
@@ -1639,16 +1646,16 @@ tr.total-row td {
 
 .leitner-box.has-words {
   background-color: var(--surface1);
-  background-image: linear-gradient(135deg, rgba(203, 166, 247, 0.1), rgba(137, 180, 250, 0.1));
+  background-image: linear-gradient(135deg, rgba(var(--mauve-rgb), 0.1), rgba(var(--blue-rgb), 0.1));
   border: 1px solid var(--mauve);
-  box-shadow: 0 0 10px rgba(203, 166, 247, 0.2);
+  box-shadow: 0 0 10px rgba(var(--mauve-rgb), 0.2);
 }
 
 .leitner-box.has-words .box-count {
   background: linear-gradient(135deg, var(--mauve), var(--blue));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 10px rgba(203, 166, 247, 0.4);
+  text-shadow: 0 0 10px rgba(var(--mauve-rgb), 0.4);
 }
 
 
@@ -1735,7 +1742,7 @@ tr.total-row td {
 .leitner-roadmap-node.has-words .leitner-roadmap-square {
   background: linear-gradient(135deg, var(--mauve), var(--blue));
   color: var(--base);
-  box-shadow: 0 0 15px rgba(203, 166, 247, 0.35);
+  box-shadow: 0 0 15px rgba(var(--mauve-rgb), 0.35);
 }
 
 
