@@ -1343,7 +1343,7 @@ class CoreContractTest(unittest.TestCase):
         # Blind guessing after a miss on a recall test isn't productive --
         # the first wrong answer on Reading/Listening Retrieval must
         # immediately reveal the word (full Encoding-style presentation:
-        # unmasked, both definition lines), not just repeat the same
+        # unmasked, full authored definition), not just repeat the same
         # hidden question. A second miss after that doesn't re-reveal
         # (already revealed) or mutate anything.
         items = material_items(1)

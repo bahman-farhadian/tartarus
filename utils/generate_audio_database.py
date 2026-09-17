@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """Idempotent generator: pre-render `say` pronunciation audio for every
-bundled item into small, per-source-file SQLite databases, per
-TASK_AUDIO_DATABASE.md.
+bundled item into small, per-source-file SQLite databases.
 
 Meant to be re-run whenever the dataset changes, not just once. Each source
 JSON file gets one independent output database (mirroring its relative path

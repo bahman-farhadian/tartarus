@@ -64,7 +64,10 @@ MAX_REQUEST_BYTES = positive_environment_int('TARTARUS_MAX_REQUEST_BYTES', 1_000
 
 
 def cleanup_sessions(now=None):
-    """Drop expired ephemeral sessions. Corrective drills are session-local only."""
+    """Drop expired ephemeral in-memory sessions.
+
+    Durable drill obligations live in ``pending_drills`` and are not affected.
+    """
     now = time.time() if now is None else now
     with SESSIONS_LOCK:
         expired = [session_id for session_id, session in SESSIONS.items()
@@ -278,9 +281,8 @@ def bucket_start_session(user, lang, track, audio_lang=None):
     """Build a session for one supplementary, non-scoring practice track.
 
     Unlike consolidation_start_session, this never resumes a durable
-    pending_drills obligation -- these tracks never create one; any wrong
-    answer on Reading/Listening Retrieval starts a drill held only in this
-    in-memory session, and Encoding Practice never drills at all."""
+    pending_drills obligation -- these tracks never create one. A wrong
+    answer retries the same question with unlimited attempts and no drill."""
     user = ll.sanitize_name(user, 'user')
     lang = ll.sanitize_name(lang, 'language')
     ll.sync_word_list(user, lang)
@@ -362,12 +364,12 @@ def next_bucket_question(session):
     question['type'] = track
     question['word_unmasked'] = entry['word_text']
     if track == 'encoding_practice':
-        # Always both definition lines, exactly like Encoding's own
-        # presentation, regardless of band -- unlike build_question_data's
-        # band<8 cutoff, which doesn't apply here. The word itself is
-        # always fully visible (dim styling, not score-based masking) --
-        # this track is a typing/copying exercise for initial encoding,
-        # not a recall test, so there is nothing to guess.
+        # Always the full authored definition (every line), regardless of
+        # band -- unlike build_question_data's band<8 cutoff, which doesn't
+        # apply here. The word itself is always fully visible (dim styling,
+        # not score-based masking) -- this track is a typing/copying
+        # exercise for initial encoding, not a recall test, so there is
+        # nothing to guess.
         question['word'] = entry['word_text']
         question['definition'] = full_lines
     elif track == 'retrieval_reading':
@@ -413,8 +415,8 @@ def process_bucket_answer(session, answer, *, timed_out=False):
     there just means "try typing it again." Reading/Listening Retrieval
     start hidden (that's the recall test); a blind guess after a miss
     isn't productive, so the first miss on either immediately reveals the
-    word (full Encoding-style presentation: unmasked, both definition
-    lines) instead of leaving the learner to keep guessing blind --
+    word (full Encoding-style presentation: unmasked, full authored
+    definition) instead of leaving the learner to keep guessing blind --
     further attempts are then a guaranteed-achievable copy, not more
     guesswork."""
     cur = session['current']; answer = '' if answer is None else str(answer)
@@ -497,8 +499,8 @@ def next_question(session):
         question['type'] = mode
         question['word_unmasked'] = entry['word_text']
         # The word is masked or fully hidden in every one of these stages, so
-        # the example-sentence line (which always embeds the literal target
-        # word) is withheld -- only the primary meaning line is shown.
+        # later definition lines are withheld -- only the primary prompt line
+        # is shown.
         primary = ll.english_definition_only('\n'.join(full_lines))
         question['definition'] = [primary] if primary else []
         if mode == 'cued_recall':
@@ -514,7 +516,7 @@ def next_question(session):
         question['word'] = ''
         question['word_unmasked'] = entry['word_text']
         # Same anti-cheat rule as the daily stages above: word is hidden, so
-        # withhold the example-sentence line.
+        # withhold later definition lines.
         primary = ll.english_definition_only('\n'.join(full_lines))
         question['definition'] = [primary] if primary else []
     if drill is not None:
@@ -612,7 +614,7 @@ def finalize_session(session, ended_early=False):
         ll.log_session(session['user'],session['lang'],elapsed,session['practiced'],session['correct'],len(session['incorrect']),session['drilled'],mode=mode,stage=session.get('session_stage'))
     practiced=session['practiced']
     # First-attempt accuracy: correct / (correct + incorrect). The same
-    # formula used everywhere else (user report, dashboard) -- a completed
+    # formula used everywhere else (live Practice report) -- a completed
     # drill counts toward "practiced" but is deliberately excluded here
     # since it wasn't a first-attempt correct answer.
     attempted=session['correct']+len(session['incorrect'])
@@ -864,7 +866,7 @@ def today_practice_overview(user, today=None):
         incorrect = incorrect or 0
         total_answers = correct + incorrect
         # First-attempt accuracy, the same formula used everywhere else in
-        # the app (report/dashboard) -- correct / (correct + incorrect).
+        # the app (live Practice report) -- correct / (correct + incorrect).
         # Deliberately not a fraction of 'practiced': some stages (e.g.
         # Effortful Retrieval's own 2-in-a-row check-in) route every clean
         # completion through the drill counter rather than 'correct', so

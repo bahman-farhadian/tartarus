@@ -349,15 +349,15 @@ def ensure_pending_drills_table(conn):
 
 
 def ensure_practice_bucket_table(conn):
-    """Create the anti-repeat "bag of tiles" table for the supplementary,
-    non-scoring practice tracks (Encoding Practice, Reading/Listening
-    Retrieval).
+    """Create the bounded-draw table for supplementary practice tracks.
 
-    A row's presence means "not yet served this cycle" for that
-    (user, lang, track). Selection draws from and removes rows here; when
-    empty, it's refilled from the track's current eligible set. This is
-    deliberately separate from pending_drills, which is reserved for the
-    single durable, cross-restart scoring-drill obligation."""
+    Used only when ``select_bucket_words`` is called with an explicit
+    ``num_words``: a row means "not yet served this cycle" for that
+    (user, lang, track). The Web UI's default sessions pass ``num_words=None``,
+    shuffle the full eligible set, and delete any leftover rows instead of
+    consulting them. This is deliberately separate from pending_drills, which
+    is reserved for the single durable, cross-restart scoring-drill obligation.
+    """
     conn.execute('''CREATE TABLE IF NOT EXISTS practice_bucket (
         user TEXT NOT NULL,
         lang TEXT NOT NULL,
@@ -1598,8 +1598,9 @@ def sync_word_list(user, lang):
 def reset_word_list_progress(user, lang):
     """Restart one list while preserving factual session history.
 
-    Scores, completion markers, Leitner state, Consolidation Track step counts, and
-    milestone events are cleared.
+    The UPDATE clears score, practice counters, completion dates,
+    leitner_box, leitner_last_reviewed, and consolidation_step, and deletes
+    this list's mastery_events. Session history is kept.
     """
     table = words_table_name(user, lang)
     conn = get_connection()
@@ -2050,7 +2051,7 @@ def load_practice_items(path):
 
 # --- Practice / Scoring Logic ---
 # The lower an item's score, the more of its answer remains visible.
-MAX_QUESTIONS = 16   # unique words per session (each asked exactly once)
+MAX_QUESTIONS = 16   # unique words per Consolidation Track session (each asked once)
 
 LEITNER_INTERVALS = {box: box for box in range(1, 11)}  # box -> days until review
 
@@ -2137,10 +2138,12 @@ EFFORTFUL_RETRIEVAL_DRILL_TARGET = 2
 
 
 def english_definition_only(definition):
-    """
-    Returns the primary English prompt line, excluding sample sentences.
-    Generated vocabulary lists store the core definition first and examples
-    later; lines with " — " keep only the English side.
+    """Return the primary prompt line: the first non-empty definition line.
+
+    Bundled material puts the prompt first (English meaning for vocabulary,
+    lemma/focus word for sentences) and example/translation lines after.
+    A legacy generated-list format that puts English after " — " on that
+    line keeps only the English side; the bundled corpus does not use it.
     """
     if not definition:
         return ''
@@ -2161,11 +2164,10 @@ def build_question_data(word_id, word_text, definition, score):
     full_lines=definition.split('\n') if definition else []
     primary=english_definition_only(definition)
     prompt=[primary] if primary else []
-    # The example-sentence line always embeds the literal target word (see
-    # DATASET_SCHEMA_GUIDE.md's two-line definition convention), so once
-    # mask_sentence() starts hiding that word's own letters (score > 0), the
-    # example line would just spell out what the mask is hiding. At score 0
-    # the word itself is still shown in full, so there's nothing to protect.
+    # Later definition lines (example sentence on bundled vocabulary; extra
+    # lines on German sentences) would give the target away once
+    # mask_sentence() starts hiding letters (score > 0). At score 0 the word
+    # itself is still shown in full, so the full authored definition is kept.
     lines=full_lines if (question_type=='learning' and score<=0) else prompt
     return {
         'word_id':word_id,'word':mask_sentence(word_text,score),'word_unmasked':word_text,
