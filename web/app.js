@@ -318,72 +318,89 @@
     });
   }
 
+  function answerCharSpec(targetChar, index, typed, prompt) {
+    const isSpace = /\s/u.test(targetChar);
+    const maskable = isMaskableCharacter(targetChar);
+    const classes = ['answer-char'];
+    if (isSpace) classes.push('space');
+    else if (!maskable) classes.push('punctuation');
+    let text;
+    if (index < typed.length) {
+      text = typed[index];
+      classes.push('typed');
+    } else if (!maskable) {
+      text = targetChar;
+      classes.push('prompt');
+    } else {
+      const ch = prompt[index] ?? '_';
+      text = ch;
+      classes.push(ch === '_' ? 'masked' : 'prompt');
+    }
+    if (!answering && typed.length === index) classes.push('caret-before');
+    if (!answering && typed.length === target.length && index === target.length - 1) {
+      classes.push('caret-after');
+    }
+    return { text, className: classes.join(' ') };
+  }
+
+  function syncCharSpan(span, spec) {
+    if (span.textContent !== spec.text) span.textContent = spec.text;
+    if (span.className !== spec.className) span.className = spec.className;
+  }
+
   function renderAnswerSurface() {
     if (!wordDisplay) return;
     const target = Array.from(answerTarget);
     const prompt = Array.from(answerPrompt);
     const typed = Array.from(answerInput?.value || '');
-    const sequence = document.createElement('span');
-    sequence.className = 'answer-sequence';
 
-    // The learning surface deliberately uses one immutable character cell per
-    // target character.  The cell geometry never depends on the glyph, mask,
-    // glow, or typed value, so the learner's focal point cannot shift while
-    // spelling.  A monospace stack makes the visual advance deterministic too.
-    target.forEach((targetChar, index) => {
-      const span = document.createElement('span');
-      span.className = 'answer-char';
-
-      const isSpace = /\s/u.test(targetChar);
-      const maskable = isMaskableCharacter(targetChar);
-      if (isSpace) span.classList.add('space');
-      else if (!maskable) span.classList.add('punctuation');
-
-      if (index < typed.length) {
-        // Render exactly what the learner typed. Spaces remain real spaces and
-        // punctuation remains punctuation; neither is converted to a fake gap.
-        span.textContent = typed[index];
-        span.classList.add('typed');
-      } else if (!maskable) {
-        // Preserve the target's text structure at every masking level. A comma,
-        // period, apostrophe, hyphen, or whitespace character is always drawn
-        // literally (dim until reached, bright once typed). Only letters/digits
-        // may become underscore fill slots.
-        span.textContent = targetChar;
-        span.classList.add('prompt');
-      } else {
-        const ch = prompt[index] ?? '_';
-        span.textContent = ch;
-        span.classList.add(ch === '_' ? 'masked' : 'prompt');
-      }
-
-      if (!answering && typed.length === index) span.classList.add('caret-before');
-      if (!answering && typed.length === target.length && index === target.length - 1) {
-        span.classList.add('caret-after');
-      }
-      sequence.appendChild(span);
-    });
-
-    // Keep over-typing visible without letting it change or escape the target
-    // grid.  The correction tail is a separate bounded row below the target,
-    // so the target stays centered and immutable while long accidental input
-    // remains visible and backspaceable before submission.
-    const overflow = typed.slice(target.length);
-    const children = [sequence];
-    if (overflow.length) {
-      const tail = document.createElement('span');
-      tail.className = 'answer-extra-tail';
-      overflow.forEach((character, index) => {
+    // One immutable cell per target character. Rebuild the grid only when
+    // the target length changes (a new question); while typing, mutate
+    // class/text in place so the surface does not flicker.
+    let sequence = wordDisplay.querySelector(':scope > .answer-sequence');
+    if (!sequence || Number(sequence.dataset.len) !== target.length) {
+      sequence = document.createElement('span');
+      sequence.className = 'answer-sequence';
+      sequence.dataset.len = String(target.length);
+      const frag = document.createDocumentFragment();
+      for (let index = 0; index < target.length; index++) {
         const span = document.createElement('span');
-        span.className = 'answer-char typed extra';
-        span.textContent = character;
-        if (!answering && index === overflow.length - 1) span.classList.add('caret-after');
-        tail.appendChild(span);
-      });
-      children.push(tail);
+        syncCharSpan(span, answerCharSpec(target[index], index, typed, prompt));
+        frag.appendChild(span);
+      }
+      sequence.appendChild(frag);
+      const leftover = [...wordDisplay.querySelectorAll(':scope > .answer-extra-tail')];
+      wordDisplay.replaceChildren(sequence, ...leftover);
+    } else {
+      const spans = sequence.children;
+      for (let index = 0; index < target.length; index++) {
+        syncCharSpan(spans[index], answerCharSpec(target[index], index, typed, prompt));
+      }
     }
 
-    wordDisplay.replaceChildren(...children);
+    const overflow = typed.slice(target.length);
+    let tail = wordDisplay.querySelector(':scope > .answer-extra-tail');
+    if (overflow.length) {
+      if (!tail) {
+        tail = document.createElement('span');
+        tail.className = 'answer-extra-tail';
+        wordDisplay.appendChild(tail);
+      }
+      while (tail.childElementCount > overflow.length) tail.lastElementChild.remove();
+      overflow.forEach((character, index) => {
+        let span = tail.children[index];
+        if (!span) {
+          span = document.createElement('span');
+          tail.appendChild(span);
+        }
+        const classes = ['answer-char', 'typed', 'extra'];
+        if (!answering && index === overflow.length - 1) classes.push('caret-after');
+        syncCharSpan(span, { text: character, className: classes.join(' ') });
+      });
+    } else if (tail) {
+      tail.remove();
+    }
+
     const maskableIndexes = target.map((ch, index) => isMaskableCharacter(ch) ? index : -1).filter((index) => index >= 0);
     wordDisplay.classList.toggle(
       'fully-masked',
@@ -788,14 +805,13 @@
     if (!answerTimerWrap || !answerTimerBar) return;
     answerTimerWrap.classList.add('is-active');
     answerTimerBar.style.transition = 'none';
-    answerTimerBar.style.width = '100%';
+    answerTimerBar.style.transform = 'scaleX(1)';
     answerTimerBar.style.opacity = '1';
-    void answerTimerBar.offsetWidth; // force reflow so the animation below actually starts from 100%
-    // Width shrinks to show elapsed-time-as-percentage; opacity fades to a
-    // dim value on the same clock, matching this app's existing dim/bright
-    // language (e.g. .masked/.prompt) instead of an alarm-style color swap.
-    answerTimerBar.style.transition = `width ${ms}ms linear, opacity ${ms}ms linear`;
-    answerTimerBar.style.width = '0%';
+    void answerTimerBar.offsetWidth; // force reflow so the animation below actually starts from full
+    // scaleX is compositor-only; animating width was a layout thrash every frame.
+    // Opacity still fades to the same dim value on the same clock.
+    answerTimerBar.style.transition = `transform ${ms}ms linear, opacity ${ms}ms linear`;
+    answerTimerBar.style.transform = 'scaleX(0)';
     answerTimerBar.style.opacity = String(TIMER_DIM_OPACITY);
     window.consolidationTimerDeadline = Date.now() + ms;
     window.consolidationTimerDuration = ms;
@@ -823,7 +839,7 @@
     const ms = window.consolidationTimerDuration;
     const percent = timerPercentFor(ms);
     answerTimerBar.style.transition = 'none';
-    answerTimerBar.style.width = `${percent}%`;
+    answerTimerBar.style.transform = `scaleX(${percent / 100})`;
     answerTimerBar.style.opacity = String(TIMER_DIM_OPACITY + (1 - TIMER_DIM_OPACITY) * (percent / 100));
     if (answerTimerLabel) answerTimerLabel.textContent = `${percent}%`;
   }
@@ -837,6 +853,11 @@
     }
     if (!answerTimerWrap) return;
     answerTimerWrap.classList.remove('is-active');
+    if (answerTimerBar) {
+      answerTimerBar.style.transition = 'none';
+      answerTimerBar.style.transform = 'scaleX(1)';
+      answerTimerBar.style.opacity = '1';
+    }
     if (answerTimerLabel) answerTimerLabel.textContent = '';
   }
 

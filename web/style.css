@@ -43,6 +43,12 @@ html, body {
   overflow-x: hidden;
 }
 
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
@@ -212,7 +218,7 @@ button.primary {
 }
 
 button.primary:hover {
-  filter: brightness(1.1);
+  background: color-mix(in srgb, var(--mauve) 82%, var(--text));
 }
 
 button.secondary {
@@ -621,13 +627,19 @@ input:disabled, input:read-only {
   width: 100%;
   border-radius: 999px;
   background: var(--mauve);
-  box-shadow: 0 0 10px color-mix(in srgb, var(--mauve) 60%, transparent);
+  box-shadow: 0 0 8px rgba(var(--mauve-rgb), calc(0.45 * var(--glow)));
   opacity: 1;
+  transform: scaleX(1);
+  transform-origin: left center;
+}
+
+.answer-timer-wrap.is-active .answer-timer-bar {
+  will-change: transform, opacity;
 }
 
 .word-display {
   --answer-accent: var(--green);
-  font-size: clamp(1.2rem, 2.35vw, 2.1rem);
+  font-size: 2rem;
   font-weight: 700;
   text-align: center;
   margin: 1.9rem auto 1.3rem;
@@ -650,11 +662,17 @@ input:disabled, input:read-only {
 }
 
 .word-display.long-target {
-  font-size: clamp(1.02rem, 1.85vw, 1.55rem);
+  font-size: 1.5rem;
 }
 
 .word-display.very-long-target {
-  font-size: clamp(0.9rem, 1.55vw, 1.3rem);
+  font-size: 1.25rem;
+}
+
+@media (max-width: 800px) {
+  .word-display { font-size: 1.5rem; }
+  .word-display.long-target { font-size: 1.25rem; }
+  .word-display.very-long-target { font-size: 1.1rem; }
 }
 
 .answer-sequence {
@@ -688,7 +706,6 @@ input:disabled, input:read-only {
   line-height: 1.2;
   white-space: pre;
   color: var(--answer-accent);
-  transition: color 80ms linear, opacity 80ms linear, text-shadow 80ms linear;
 }
 
 .answer-char.prompt {
@@ -707,7 +724,6 @@ input:disabled, input:read-only {
 .answer-char.typed {
   opacity: 1;
   color: var(--answer-accent);
-  text-shadow: 0 0 8px color-mix(in srgb, var(--answer-accent) 36%, transparent);
 }
 
 .answer-extra-tail {
@@ -730,7 +746,6 @@ input:disabled, input:read-only {
 
 .answer-char.extra {
   color: var(--red);
-  text-shadow: 0 0 8px color-mix(in srgb, var(--red) 42%, transparent);
 }
 
 .answer-char.caret-before::before,
