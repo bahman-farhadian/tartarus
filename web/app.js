@@ -165,8 +165,9 @@
     focusCurrentAnswer();
   }
 
-  // Audio must never be muted during practice, in any stage -- every
-  // question plays its prompt automatically, and Replay always works.
+  // Audio is never muted as a stage policy: Replay always works, and prompt
+  // speech is automatic except Reading Retrieval, which is skipped at the
+  // call site so the definition can be read first (it speaks after the answer).
   function automaticAudioAllowed(_type) {
     return true;
   }
@@ -435,16 +436,23 @@
           consolidationSessionsLabel.textContent = p.complete
             ? 'The Consolidation Track is complete for this material; no Spaced Maintenance review is due today.'
             : 'Nothing left to practice here today — pick different material.';
-        } else if (p.due_reinforcement) {
-          consolidationSessionsLabel.textContent = `${p.due_reinforcement} reinforcement item${p.due_reinforcement === 1 ? '' : 's'} ready first`;
-        } else if (maintenanceReady) {
-          consolidationSessionsLabel.textContent = `${maintenanceReady} Spaced Maintenance review item${maintenanceReady === 1 ? '' : 's'} ready now`;
         } else {
-          consolidationSessionsLabel.textContent = `${p.encoding || 0} item${p.encoding === 1 ? '' : 's'} left to master`;
+          const dueReinforcement = Number(p.due_reinforcement || 0);
+          const dueMaintenance = Number(p.due_maintenance != null ? p.due_maintenance : maintenanceReady);
+          const bits = [];
+          if (dueReinforcement) {
+            bits.push(`${dueReinforcement} reinforcement item${dueReinforcement === 1 ? '' : 's'} due`);
+          }
+          if (dueMaintenance) {
+            bits.push(`${dueMaintenance} Spaced Maintenance item${dueMaintenance === 1 ? '' : 's'} due`);
+          }
+          consolidationSessionsLabel.textContent = bits.length
+            ? bits.join(' · ')
+            : `${p.encoding || 0} item${p.encoding === 1 ? '' : 's'} left to master`;
         }
       }
       if (consolidationModeLabel) {
-        consolidationModeLabel.textContent = 'Each mastered word follows its own 10-day clock; due review always comes first.';
+        consolidationModeLabel.textContent = 'Each mastered word advances by completed steps, not calendar time. The longest-waiting due pool is next.';
       }
     } catch (err) {
       if (practiceOverview) practiceOverview.style.display = 'none';
@@ -729,7 +737,7 @@
       : undefined;
     const timerSeconds = timerMs / 1000;
     const timerLabel = Number.isInteger(timerSeconds) ? String(timerSeconds) : timerSeconds.toFixed(2).replace(/0+$/, '').replace(/\.$/, '');
-    answerInput.setAttribute('aria-label', timerMs ? `Type the full answer; ${timerLabel} second timer; press Enter to submit` : 'Type the full answer and press Enter to submit');
+    answerInput.setAttribute('aria-label', timerMs ? `Type the full answer; ${timerLabel} second timer; an exact match submits` : 'Type the full answer; an exact match submits, or press Enter');
     if (timerMs) {
       // Starts the moment the question is shown, not after the prompt
       // audio finishes -- the response clock runs independently of
@@ -936,7 +944,7 @@
       // Reading/Listening Retrieval's first miss reveals the word (see
       // process_bucket_answer): blind guessing after a miss isn't
       // productive, so switch this question to the same fully-visible,
-      // both-definitions presentation Encoding Practice already uses --
+      // full-definition presentation Encoding Practice already uses --
       // any further attempt is then a guaranteed-achievable copy.
       if (data.reveal && currentQuestion) {
         currentQuestion.word = data.reveal.word;
@@ -1519,7 +1527,7 @@
 
     let consolidationHtml = `<div class="roadmap-section">
       <h3>The per-word 10-Day Consolidation Track</h3>
-      <p class="muted">Each mastered word advances by its own mastery date; cohorts can occupy several stages at once.</p>
+      <p class="muted">Each mastered word advances by completed reinforcement steps, not elapsed calendar time. Different cohorts can occupy several stages in the same file; a session never mixes them.</p>
       <div class="roadmap-timeline">`;
 
     stages.forEach((stage) => {
@@ -1562,7 +1570,7 @@
     }
     const leitnerHtml = `<div class="roadmap-section leitner-section">
       <h3>Lifetime Spaced Maintenance</h3>
-      <p class="muted">The maintenance distribution of score-9 items (Box 1 = 1 day, Box 10 = 10 days). ${roadmap.maintenance_ready || 0} ready now.</p>
+      <p class="muted">The maintenance distribution of score-9 items (Box 1 = 1 day through Box 9 = 9 days; Box 10 starts at 10 days and can extend to 20 or 30). ${roadmap.maintenance_ready || 0} ready now.</p>
       ${renderLeitnerRoadmap(leitnerBoxes)}
     </div>`;
 
@@ -1583,7 +1591,7 @@
           <div class="leitner-roadmap-info">
             <div class="leitner-roadmap-name">Box ${b}</div>
             <div class="leitner-roadmap-count">${total} word${total === 1 ? '' : 's'}</div>
-            ${showIntervals ? `<div class="leitner-roadmap-interval">${b} day${b === 1 ? '' : 's'}</div>` : ''}
+            ${showIntervals ? `<div class="leitner-roadmap-interval">${b === 10 ? '10–30 days' : `${b} day${b === 1 ? '' : 's'}`}</div>` : ''}
           </div>
         </div>`;
     }

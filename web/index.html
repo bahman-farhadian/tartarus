@@ -9,7 +9,7 @@
   <link rel="icon" href="/favicon.png?v=1" type="image/png">
   <link rel="apple-touch-icon" href="/favicon.png?v=1">
   <link rel="stylesheet" href="/style.css?v=21">
-  <script src="/app.js?v=24" defer></script>
+  <script src="/app.js?v=25" defer></script>
 </head>
 <body>
   <header>
@@ -87,8 +87,8 @@
         <p class="muted practice-track-help">
           Extra, ungraded practice &mdash; never affects score, Leitner box, or the Consolidation Track above.
           Encoding Practice targets items still below band 9 (or the whole list once none are); Reading and
-          Listening Retrieval target mastered (band 9) items only. Each is endless: start another session
-          any time.
+          Listening Retrieval target mastered (band 9) items only. Each session runs every currently-eligible
+          item, with no 16-question cap; start another session any time.
         </p>
       </div>
 
@@ -134,7 +134,7 @@
 
         <div id="word-block" class="word-block">
           <div id="word-display" class="word-display answer-entry" aria-label="Answer entry"></div>
-          <input id="answer-input" class="answer-capture" type="text" aria-label="Type the full answer and press Enter to submit" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+          <input id="answer-input" class="answer-capture" type="text" aria-label="Type the full answer; an exact match submits, or press Enter" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
           <div id="definition-lines" class="definition-lines"></div>
         </div>
         <div id="drill-block" class="drill-box">
@@ -152,7 +152,7 @@
           <button id="btn-end" type="button" class="secondary session-control">End session</button>
         </div>
         <div class="session-control-hint shortcut-hint">
-          Type directly into the word &middot; <kbd>Enter</kbd> Submit &middot; <kbd>Shift</kbd>+<kbd>Enter</kbd> Replay &middot; <kbd>Esc</kbd> End session
+          Type directly into the word &middot; exact match submits &middot; <kbd>Enter</kbd> Submit &middot; <kbd>Shift</kbd>+<kbd>Enter</kbd> Replay &middot; <kbd>Esc</kbd> End session
           <span class="session-control-note">Mandatory corrective drills must be completed before the session can end.</span>
         </div>
       </div>
@@ -275,22 +275,22 @@
         <h2>About Tartarus</h2>
         <p>
           Tartarus is a local-first active-recall language trainer. Learning material remains in JSON files;
-          SQLite stores learner progress, session history, Leitner state, and append-only mastery milestones that anchor each word's Consolidation Track schedule. The Web UI binds only to the local machine.
+          SQLite stores learner progress, session history, Leitner state, per-word consolidation steps, and
+          append-only mastery milestones used by trend charts. The Web UI binds only to the local machine.
         </p>
 
         <h3>One guided path</h3>
         <p>
-          Practice has one entry point. Tartarus chooses the work from the learner state instead of exposing
+          Practice has one graded entry point. Tartarus chooses the work from the learner state instead of exposing
           optional learning modes or mastery shortcuts. Two tracks feed that one entry point: the
           <strong>10-Day Consolidation Track</strong> (acquisition and retrieval practice) and
-          <strong>Spaced Maintenance</strong> (spaced review of what's already mastered). Whatever is due from
-          previous days always comes first &mdash; starting a session is the only decision a learner makes, and
-          due review is served before any new or continuing Consolidation Track material, every time. Only once
-          nothing is due does the same entry point continue the Consolidation Track. Every due per-word
-          reinforcement cohort comes first (a scaffolded warm-up), then due Spaced Maintenance (unscaffolded
-          pure recall), then Encoding. When the selected material has no work ready, the entry button is
-          disabled and setup directs the learner to choose other material instead of reopening completed
-          same-day work.
+          <strong>Spaced Maintenance</strong> (spaced review of what's already mastered). Starting a session is
+          the only decision a learner makes. Due work always comes before new work: every due pool &mdash; each
+          Consolidation Track stage, and Spaced Maintenance &mdash; is compared by how long it has been waiting,
+          and the longest-waiting pool is served next. Ties favor reinforcement's scaffolded presentation over
+          Leitner's unscaffolded pure recall, then the earlier stage. Encoding starts only once nothing is due.
+          When the selected material has no work ready, the entry button is disabled instead of reopening
+          completed same-day work.
         </p>
         <p>
           Setup itself is decision-free: pick a language, a level, and a part of speech, and the exact word
@@ -298,14 +298,16 @@
           ever lost or undone: a score only ever moves up in fixed steps or holds still, a wrong answer costs a
           bounded corrective drill rather than a setback, and progress made today resumes from exactly where it
           was left, tomorrow or any day after. A word that reaches band 5 today is still at band 5 tomorrow; if
-          it crosses band 9, its own mastery date starts its 10-day track and it enters Leitner Box 1
-          in the same step. It does not wait for the rest of the file. Finishing the remaining Encoding pool is
-          a question of how much you practice, not chance &mdash; there's no cap on sessions in one sitting.
+          it crosses band 9, it enters Leitner Box 1 and starts its own 10-day track in the same step. The
+          track then advances only by completed reinforcement steps, never by elapsed calendar time. It does
+          not wait for the rest of the file. Finishing the remaining Encoding pool is a question of how much
+          you practice, not chance &mdash; there's no cap on sessions in one sitting.
         </p>
         <p>
-          Days 1&ndash;10 are derived independently for every mastered word from its append-only mastery
-          date. Different cohorts can occupy different stages in the same file and session. Extra practice
-          cannot move a word into tomorrow's stage, and after Day 10 that word remains in Spaced Maintenance.
+          Days 1&ndash;10 are derived independently for every mastered word from the last reinforcement step it
+          actually completed. Missing calendar days never skip a step. Different cohorts can occupy different
+          stages in the same file; a session never mixes stages. Extra practice cannot move a word into
+          tomorrow's stage, and after Day 10 that word remains in Spaced Maintenance.
         </p>
         <p class="muted">
           The stage sequence follows how memory actually consolidates: initial <strong>encoding</strong>, then
@@ -316,15 +318,16 @@
         </p>
         <ul>
           <li><strong>Day 0 &mdash; Encoding:</strong> focused score acquisition until every active item reaches 9.0.</li>
-          <li><strong>Days 1&ndash;2 &mdash; Cued Recall:</strong> heavily masked prompts with automatic speech.</li>
+          <li><strong>Days 1&ndash;2 &mdash; Cued Recall:</strong> target shown with vowels masked; automatic speech.</li>
           <li><strong>Days 3&ndash;4 &mdash; Effortful Retrieval:</strong> fully masked prompt with automatic speech and two consecutive correct productions.</li>
           <li><strong>Days 5&ndash;6 &mdash; Free Recall:</strong> definition recall, automatic speech, response timer at 0.75s per character.</li>
           <li><strong>Days 7&ndash;8 &mdash; Reconsolidation:</strong> reverse production, automatic speech, response timer at 0.5s per character.</li>
           <li><strong>Days 9&ndash;10 &mdash; Automaticity:</strong> reverse production, automatic speech, response timer at 0.5s per character.</li>
         </ul>
         <p>
-          Every mastered word follows Days 1&ndash;10 from its own mastery date; corrected mistakes add drill
-          work but never reset that clock. Spaced Maintenance continues through Box 10 on its own schedule.
+          Every mastered word follows Days 1&ndash;10 from its own completed steps; corrected mistakes add drill
+          work but never reset that count. Spaced Maintenance continues through Box 10 on its own schedule
+          (a demonstrated streak of successful Box 10 reviews can extend that item's interval, never shorten it).
           The stronger learning-complete milestone requires every active item to have left Encoding and the
           ten-day track and to have reached Leitner Box 10.
         </p>
@@ -333,38 +336,53 @@
         <p>
           Answers are compared with the dataset target exactly. Case, punctuation, spaces, articles, commas,
           and form order all matter. For example, if the target is
-          <code>das Buch, die B&uuml;cher</code>, that complete string is required.
+          <code>das Buch, die B&uuml;cher</code>, that complete string is required. The one exception is Unicode
+          NFC normalization: a precomposed character and the equivalent combining sequence are the same letter.
         </p>
 
         <h3>Mistakes and corrective drills</h3>
         <p>
           A wrong answer records the mistake once and requires nine consecutive correct repetitions before
-          progress resumes. Only the temporary drill streak can reset: score, mastery date, and Leitner box never
+          progress resumes. Only the temporary drill streak can reset: score, consolidation step, and Leitner box never
           move backward. Completing the drill grants the same single forward transition as a correct first answer.
           Effortful Retrieval normally requires two productions, but any mistake escalates that item to the full nine-answer
-          drill. The drill is session-local, creates no future mistake debt, and cannot be skipped through normal
-          application controls.
+          drill. The obligation is durable: a browser refresh, server restart, or crash resumes the same word at
+          the same streak. Historical mistakes are reporting data, not a queue of unfinished punishment, and
+          the drill cannot be skipped through normal application controls.
         </p>
 
         <h3>Audio and interaction</h3>
         <p>
           The prompt itself is the writing surface: visible prompt letters stay dim, masked positions remain
           as gaps, and the characters you type illuminate or fill those positions in place. There is no separate
-          answer box and no live correctness hint; <code>Enter</code> submits the exact string for evaluation.
-          Speech uses the local macOS <code>say</code> command. Audio is never muted: every stage plays its prompt
-          automatically and Replay always works. While speech is running, typing into the word remains available
-          and is preserved, but Enter, Replay, End session, navigation, and card changes remain blocked until
-          speech completes.
+          answer box and no per-character correctness hint. Once the input is filled to the target's length and
+          matches exactly, it submits on its own; a filled-but-wrong answer waits for <code>Enter</code> or a
+          correction. Bundled lists play pre-generated pronunciation from a local audio database; personal lists
+          fall back to the macOS <code>say</code> command when available. Audio is never muted: every stage plays
+          its prompt automatically and Replay always works. While speech is running, typing into the word remains
+          available and is preserved, but Enter, Replay, End session, navigation, and card changes remain blocked
+          until speech completes.
+        </p>
+
+        <h3>Supplementary practice</h3>
+        <p>
+          Practice setup also has an optional card for extra, ungraded repetition: Encoding Practice,
+          Reading Retrieval, and Listening Retrieval. None of them change score, Leitner box, or consolidation
+          step. A wrong answer retries the same question with no drill; a session can be ended at any time.
+          Each session draws every currently-eligible item, freshly shuffled (Encoding Practice stays in file
+          order once nothing is below band 9), with no 16-question cap.
         </p>
 
         <h3>Progress and reports</h3>
         <p>
-          Reports show factual history: session time, answers, drills, Consolidation Track score progress,
+          The live report on Practice setup shows factual history: session time, answers, drills, Consolidation Track score progress,
           Consolidation Track state, Leitner box distribution, maintenance readiness, historical incorrect-answer counts, and cumulative
           mastery and Box-10 milestone charts. The charts use append-only database events. Material mastered
           before event tracking may begin later on the chart because older dates are included only when the
           original milestone date is still reliable; Tartarus never fabricates a historical date. Historical
           mistakes are not pending drills, and score 9 alone is not presented as complete learning.
+          <strong>Today's Overview</strong> is a separate view: calendar-due reinforcement and maintenance
+          across files, plus what was actually practiced today.
         </p>
 
         <h3>Word lists</h3>
@@ -380,7 +398,8 @@
 
         <h3>Keyboard-friendly</h3>
         <p>
-          <code>Enter</code> submits an answer and also activates the main setup/summary flow when appropriate.
+          An exact, full-length match submits immediately. <code>Enter</code> submits a filled-but-wrong answer
+          and also activates the main setup/summary flow when appropriate.
           <code>Esc</code> ends an ordinary active session, but is deliberately unavailable while a mandatory
           corrective drill is active.
         </p>
