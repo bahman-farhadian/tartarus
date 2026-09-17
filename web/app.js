@@ -318,7 +318,7 @@
     });
   }
 
-  function answerCharSpec(targetChar, index, typed, prompt) {
+  function answerCharSpec(targetChar, index, typed, prompt, targetLen) {
     const isSpace = /\s/u.test(targetChar);
     const maskable = isMaskableCharacter(targetChar);
     const classes = ['answer-char'];
@@ -337,7 +337,7 @@
       classes.push(ch === '_' ? 'masked' : 'prompt');
     }
     if (!answering && typed.length === index) classes.push('caret-before');
-    if (!answering && typed.length === target.length && index === target.length - 1) {
+    if (!answering && typed.length === targetLen && index === targetLen - 1) {
       classes.push('caret-after');
     }
     return { text, className: classes.join(' ') };
@@ -365,7 +365,7 @@
       const frag = document.createDocumentFragment();
       for (let index = 0; index < target.length; index++) {
         const span = document.createElement('span');
-        syncCharSpan(span, answerCharSpec(target[index], index, typed, prompt));
+        syncCharSpan(span, answerCharSpec(target[index], index, typed, prompt, target.length));
         frag.appendChild(span);
       }
       sequence.appendChild(frag);
@@ -374,7 +374,7 @@
     } else {
       const spans = sequence.children;
       for (let index = 0; index < target.length; index++) {
-        syncCharSpan(spans[index], answerCharSpec(target[index], index, typed, prompt));
+        syncCharSpan(spans[index], answerCharSpec(target[index], index, typed, prompt, target.length));
       }
     }
 
