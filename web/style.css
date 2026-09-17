@@ -3,7 +3,7 @@
    0 is none. Default is reduced. */
 :root {
   color-scheme: dark;
-  --glow: 0.45;
+  --glow: 0.5;
   --base: #282828;
   --mantle: #1d2021;
   --crust: #1d2021;
