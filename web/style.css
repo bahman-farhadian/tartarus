@@ -1,10 +1,11 @@
 /* Gruvbox dark: https://github.com/morhetz/gruvbox
-   Page uses dark0_hard; cards use dark0 (neutral grey) so large surfaces
-   stay clean. Brown greys are for controls and edges, not card fills. */
+   --glow is the only knob for halo strength. 1 is the previous amount,
+   0 is none. Default is reduced. */
 :root {
   color-scheme: dark;
+  --glow: 0.45;
   --base: #282828;
-  --mantle: #282828;
+  --mantle: #1d2021;
   --crust: #1d2021;
   --surface0: #3c3836;
   --surface1: #504945;
@@ -127,9 +128,9 @@ main {
 
 .card {
   background-color: var(--mantle);
-  background-image: none;
-  border: 1px solid var(--surface1);
-  box-shadow: 0 0 18px rgba(var(--mauve-rgb), 0.18);
+  background-image: linear-gradient(135deg, rgba(var(--mauve-rgb), calc(0.05 * var(--glow))), rgba(var(--blue-rgb), calc(0.05 * var(--glow))));
+  border: 1px solid rgba(var(--mauve-rgb), calc(0.3 * var(--glow)));
+  box-shadow: 0 0 15px rgba(var(--mauve-rgb), calc(0.1 * var(--glow)));
   border-radius: 1rem;
   padding: 2rem;
   margin-bottom: 1.5rem;
@@ -466,17 +467,17 @@ input:disabled, input:read-only {
   background: linear-gradient(135deg, var(--mauve), var(--blue));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 15px rgba(var(--mauve-rgb), 0.4);
+  text-shadow: 0 0 15px rgba(var(--mauve-rgb), calc(0.4 * var(--glow)));
 }
 
 .roadmap-stage-progress-wrap {
   margin-top: 2rem;
   padding: 1.5rem;
   background-color: var(--surface0);
-  background-image: none;
+  background-image: linear-gradient(135deg, rgba(var(--mauve-rgb), calc(0.05 * var(--glow))), rgba(var(--blue-rgb), calc(0.05 * var(--glow))));
   border-radius: 8px;
-  border: 1px solid var(--surface1);
-  box-shadow: 0 0 12px rgba(var(--mauve-rgb), 0.16);
+  border: 1px solid rgba(var(--mauve-rgb), calc(0.3 * var(--glow)));
+  box-shadow: 0 0 15px rgba(var(--mauve-rgb), calc(0.1 * var(--glow)));
 }
 
 .stage-progress-header {
@@ -741,7 +742,7 @@ input:disabled, input:read-only {
   width: 2px;
   border-radius: 999px;
   background: var(--mauve);
-  box-shadow: 0 0 8px rgba(var(--mauve-rgb), 0.75);
+  box-shadow: 0 0 8px rgba(var(--mauve-rgb), calc(0.75 * var(--glow)));
   animation: answer-caret-blink 1s steps(1, end) infinite;
   pointer-events: none;
 }
@@ -1592,7 +1593,7 @@ tr.total-row td {
 .timeline-node.active .node-circle {
   background: linear-gradient(135deg, var(--mauve), var(--blue));
   color: var(--base);
-  box-shadow: 0 0 15px rgba(var(--mauve-rgb), 0.4);
+  box-shadow: 0 0 15px rgba(var(--mauve-rgb), calc(0.4 * var(--glow)));
 }
 
 .node-info {
@@ -1645,17 +1646,17 @@ tr.total-row td {
 }
 
 .leitner-box.has-words {
-  background-color: var(--surface0);
-  background-image: none;
+  background-color: var(--surface1);
+  background-image: linear-gradient(135deg, rgba(var(--mauve-rgb), calc(0.1 * var(--glow))), rgba(var(--blue-rgb), calc(0.1 * var(--glow))));
   border: 1px solid var(--mauve);
-  box-shadow: 0 0 12px rgba(var(--mauve-rgb), 0.28);
+  box-shadow: 0 0 10px rgba(var(--mauve-rgb), calc(0.2 * var(--glow)));
 }
 
 .leitner-box.has-words .box-count {
   background: linear-gradient(135deg, var(--mauve), var(--blue));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 10px rgba(var(--mauve-rgb), 0.4);
+  text-shadow: 0 0 10px rgba(var(--mauve-rgb), calc(0.4 * var(--glow)));
 }
 
 
@@ -1742,7 +1743,7 @@ tr.total-row td {
 .leitner-roadmap-node.has-words .leitner-roadmap-square {
   background: linear-gradient(135deg, var(--mauve), var(--blue));
   color: var(--base);
-  box-shadow: 0 0 15px rgba(var(--mauve-rgb), 0.35);
+  box-shadow: 0 0 15px rgba(var(--mauve-rgb), calc(0.35 * var(--glow)));
 }
 
 
