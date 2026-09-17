@@ -32,15 +32,19 @@ STATIC_FILES = {
     '/index.html': ('index.html', 'text/html; charset=utf-8'),
     '/style.css': ('style.css', 'text/css; charset=utf-8'),
     '/app.js': ('app.js', 'application/javascript; charset=utf-8'),
-    '/favicon.png': ('favicon.png', 'image/png'),
+    '/favicon.svg': ('favicon.svg', 'image/svg+xml'),
 }
 
 # Browsers request these automatically on every site regardless of whether a
-# <link rel="icon"> is present. Serve the same favicon for all of them
-# (browsers accept a PNG here despite the .ico extension) instead of letting
-# them 404 -- that was showing up as noise in the log for a request every
-# browser makes unconditionally, not an actual error.
-ICON_PROBE_PATHS = {'/favicon.ico', '/apple-touch-icon.png', '/apple-touch-icon-precomposed.png'}
+# <link rel="icon"> is present. Serve the same character SVG for all of them
+# instead of letting them 404 -- that was showing up as noise in the log for
+# a request every browser makes unconditionally, not an actual error.
+ICON_PROBE_PATHS = {
+    '/favicon.ico',
+    '/favicon.png',
+    '/apple-touch-icon.png',
+    '/apple-touch-icon-precomposed.png',
+}
 
 
 # In-memory practice sessions, keyed by a random session id. Lost on
@@ -1221,14 +1225,18 @@ class Handler(http.server.BaseHTTPRequestHandler):
     def log_message(self, fmt, *args):
         pass
 
+    def _apply_no_store(self):
+        # A new tab must always refetch HTML, CSS, JS, JSON, icons, and audio.
+        self.send_header('Cache-Control', 'no-store, no-cache, must-revalidate, max-age=0')
+        self.send_header('Pragma', 'no-cache')
+        self.send_header('Expires', '0')
+
     def _send_json(self, data, status=200):
         body = json.dumps(data).encode('utf-8')
         self.send_response(status)
         self.send_header('Content-Type', 'application/json; charset=utf-8')
         self.send_header('Content-Length', str(len(body)))
-        self.send_header('Cache-Control', 'no-store, no-cache, must-revalidate, max-age=0')
-        self.send_header('Pragma', 'no-cache')
-        self.send_header('Expires', '0')
+        self._apply_no_store()
         self.end_headers()
         self.wfile.write(body)
         if status >= 400:
@@ -1244,25 +1252,15 @@ class Handler(http.server.BaseHTTPRequestHandler):
         self.send_response(200)
         self.send_header('Content-Type', content_type)
         self.send_header('Content-Length', str(len(body)))
-        self.send_header('Cache-Control', 'no-store, no-cache, must-revalidate, max-age=0')
-        self.send_header('Pragma', 'no-cache')
-        self.send_header('Expires', '0')
+        self._apply_no_store()
         self.end_headers()
         self.wfile.write(body)
 
-    def _send_binary(self, body, content_type, *, cache_seconds=None):
+    def _send_binary(self, body, content_type):
         self.send_response(200)
         self.send_header('Content-Type', content_type)
         self.send_header('Content-Length', str(len(body)))
-        if cache_seconds:
-            # Deliberately cacheable, unlike the rest of this API: a given
-            # (list, text)'s pre-generated audio is stable once generated,
-            # and the same words get replayed constantly during practice.
-            self.send_header('Cache-Control', f'public, max-age={cache_seconds}')
-        else:
-            self.send_header('Cache-Control', 'no-store, no-cache, must-revalidate, max-age=0')
-            self.send_header('Pragma', 'no-cache')
-            self.send_header('Expires', '0')
+        self._apply_no_store()
         self.end_headers()
         self.wfile.write(body)
 
@@ -1289,7 +1287,7 @@ class Handler(http.server.BaseHTTPRequestHandler):
     def do_GET(self):
         parsed = urllib.parse.urlparse(self.path)
         if parsed.path in ICON_PROBE_PATHS:
-            return self._send_static('favicon.png', 'image/png')
+            return self._send_static('favicon.svg', 'image/svg+xml')
         if not parsed.path.endswith(('.css', '.js', '.ico')):
             ll.log_event("HTTP_GET", path=parsed.path, query=parsed.query)
         if parsed.path in STATIC_FILES:
@@ -1430,7 +1428,7 @@ class Handler(http.server.BaseHTTPRequestHandler):
             if result is None:
                 return self._send_json({'error': 'not found'}, 404)
             audio_bytes, content_type = result
-            return self._send_binary(audio_bytes, content_type, cache_seconds=604800)
+            return self._send_binary(audio_bytes, content_type)
 
         if parsed.path == '/api/consolidation/progress':
             qs=urllib.parse.parse_qs(parsed.query); user=qs.get('user',[''])[0]; lang=qs.get('lang',[''])[0]

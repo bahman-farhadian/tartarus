@@ -1990,7 +1990,7 @@ class HttpContractTest(ServerHarness):
         for path in paths:self.raw(path)
         self.assertEqual(logical_db_dump(self.db),before)
 
-    def test_pregenerated_audio_is_served_with_content_type_and_is_cacheable(self):
+    def test_pregenerated_audio_is_served_with_content_type_and_is_never_cached(self):
         stem=self.bundled_list('bundled_focus',['w00','w01'])
         self.bundled_audio(stem,{'w00':b'FAKE-M4A-BYTES'})
         status,body=self.raw('/api/audio?user=alice&lang=bundled_focus&text=w00')
@@ -1998,8 +1998,31 @@ class HttpContractTest(ServerHarness):
         req=urllib.request.Request(self.base+'/api/audio?user=alice&lang=bundled_focus&text=w00')
         with urllib.request.urlopen(req,timeout=10) as resp:
             self.assertEqual(resp.headers.get('Content-Type'),'audio/mp4')
-            self.assertIn('max-age',resp.headers.get('Cache-Control',''))
-            self.assertNotIn('no-store',resp.headers.get('Cache-Control',''))
+            cache=resp.headers.get('Cache-Control','')
+            self.assertIn('no-store',cache)
+            self.assertNotIn('max-age=',cache.replace('max-age=0',''))
+
+    def test_html_css_js_icon_and_json_are_never_cached(self):
+        for path in ('/', '/style.css', '/app.js', '/favicon.svg', '/favicon.ico', '/api/wordlists'):
+            req=urllib.request.Request(self.base+path)
+            with urllib.request.urlopen(req,timeout=10) as resp:
+                cache=resp.headers.get('Cache-Control','')
+                self.assertIn('no-store',cache,path)
+                self.assertEqual(resp.headers.get('Pragma'),'no-cache')
+                self.assertEqual(resp.headers.get('Expires'),'0')
+
+    def test_character_favicon_is_svg_not_a_bitmap(self):
+        req=urllib.request.Request(self.base+'/favicon.svg')
+        with urllib.request.urlopen(req,timeout=10) as resp:
+            body=resp.read()
+            self.assertEqual(resp.headers.get('Content-Type'),'image/svg+xml')
+            self.assertIn(b'<text', body)
+            self.assertIn(b'>T</text>', body)
+            self.assertNotIn(b'PNG', body[:16])
+        probe=urllib.request.Request(self.base+'/favicon.ico')
+        with urllib.request.urlopen(probe,timeout=10) as resp:
+            self.assertEqual(resp.headers.get('Content-Type'),'image/svg+xml')
+            self.assertIn(b'>T</text>', resp.read())
 
     def test_pregenerated_audio_404s_for_unknown_text_and_personal_lists(self):
         stem=self.bundled_list('bundled_focus2',['w00'])

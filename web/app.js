@@ -104,7 +104,7 @@
     const params = new URLSearchParams({ user, lang, text });
     let response;
     try {
-      response = await fetch(`/api/audio?${params.toString()}`);
+      response = await fetch(`/api/audio?${params.toString()}`, { cache: 'no-store' });
     } catch (err) {
       return false;
     }
