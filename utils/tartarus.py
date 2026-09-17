@@ -1283,7 +1283,7 @@ def select_practice_words(user, lang, today=None):
 PRACTICE_BUCKET_TRACKS = (
     'encoding_practice', 'retrieval_reading', 'retrieval_listening', 'speed_mock',
 )
-SPEED_MOCK_MS_PER_CHAR = 200
+SPEED_MOCK_MS_PER_CHAR = 400
 
 
 def _bucket_eligible_items(conn, user, lang, track):

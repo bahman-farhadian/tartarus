@@ -733,10 +733,10 @@
     // Response time scales with how much there is to type: 0.75s/character
     // normally, half that for the harder silent-recall stages (Reconsolidation,
     // Automaticity) that already ask for more from memory. Speed Mock is
-    // 0.2s/character on the first attempt; a miss retries with no timer.
+    // 0.4s/character on the first attempt; a miss retries with no timer.
     const msPerChar = question.timer === false
       ? undefined
-      : (question.timer_ms_per_char || { free_recall: 750, reconsolidation: 500, automaticity: 500, speed_mock: 200 }[question.type]);
+      : (question.timer_ms_per_char || { free_recall: 750, reconsolidation: 500, automaticity: 500, speed_mock: 400 }[question.type]);
     const timerMs = msPerChar
       ? Math.round(Array.from(question.word_unmasked || '').length * msPerChar)
       : undefined;

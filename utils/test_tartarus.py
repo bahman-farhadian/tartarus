@@ -1755,7 +1755,7 @@ class HttpContractTest(ServerHarness):
         q = started['question']
         self.assertEqual(q['type'], 'speed_mock')
         self.assertEqual(q['word'], q['word_unmasked'])
-        self.assertEqual(q['timer_ms_per_char'], 200)
+        self.assertEqual(q['timer_ms_per_char'], 400)
         self.assertTrue(q['timer'])
         timed_out = self.api('/api/practice/timeout', {
             'session_id': started['session_id'],
@@ -2831,8 +2831,8 @@ class BrowserContractTest(unittest.TestCase):
         self.assertEqual(mid_speech['ttsCalls'], 1)
         self.assertFalse(mid_speech['canSubmit'])
 
-        # Speed Mock is the same contract: 0.2s/character, clock armed on
-        # render, not after speech. A 10-character word is a 2s timer.
+        # Speed Mock is the same contract: 0.4s/character, clock armed on
+        # render, not after speech. A 10-character word is a 4s timer.
         self.browser.script(
             "document.getElementById('summary-restart').click();"
             "__api.startType='speed_mock';__api.startWord=arguments[0];"
@@ -2849,7 +2849,7 @@ class BrowserContractTest(unittest.TestCase):
         };""")
         self.assertEqual(speed_mid['ttsCalls'], 1)
         self.assertFalse(speed_mid['canSubmit'])
-        self.assertIn('2 second timer', speed_mid['ariaLabel'])
+        self.assertIn('4 second timer', speed_mid['ariaLabel'])
 
     def test_corrective_drill_end_button_and_escape_show_required_prompt(self):
         self.browser.script("__api.ttsDelay=0;__api.forceWrong=true;document.getElementById('start-session').click();return true;")
