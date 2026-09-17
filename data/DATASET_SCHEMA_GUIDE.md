@@ -2,7 +2,7 @@
 
 This document defines the learning-material contract implemented by the current Tartarus codebase.
 
-Tartarus keeps learning material in JSON and learner progress in SQLite. A dataset file therefore describes **what should be learned**; it does not contain score, Leitner, session, or Gauntlet state.
+Tartarus keeps learning material in JSON and learner progress in SQLite. A dataset file therefore describes **what should be learned**; it does not contain score, Leitner, session, Consolidation Track, or Spaced Maintenance state.
 
 ---
 
@@ -33,7 +33,7 @@ Current repository snapshot:
 
 ```text
 84 JSON files
-81,404 learning items
+81,216 learning items
 42 vocabulary files
 42 sentence files
 ```
@@ -365,30 +365,27 @@ Canonical German noun example:
 }
 ```
 
-The learner must enter all forms.
+The learner must type that complete literal target exactly. The comma does not split the entry into interchangeable answers.
 
 Accepted:
 
 ```text
 das Buch, die Bücher
-die Bücher, das Buch
 ```
 
-Rejected:
+Rejected — including reordered forms, partial forms, extra whitespace, and case changes:
 
 ```text
+die Bücher, das Buch
+das Buch,die Bücher
 das Buch
 die Bücher
 Buch
+das Buch, die Bücher<space>
+das buch, die bücher
 ```
 
-Matching rules:
-
-- outer whitespace is trimmed;
-- whitespace around comma separators is ignored;
-- form order is ignored;
-- spelling is exact;
-- case is exact.
+Matching is the same contract as practice answers (`answer_matches()` in `utils/tartarus.py`): exact equality after Unicode NFC normalization, and nothing else. Outer whitespace is not trimmed. Form order is not ignored. Case, spelling, punctuation, spaces, articles, and commas all matter.
 
 This is the complete noun contract. German nouns are ordinary vocabulary items; Tartarus does not store or generate nominative/accusative/dative/genitive records.
 
@@ -809,6 +806,7 @@ These belong to SQLite, not JSON:
 ```text
 score
 last_practiced
+last_tartarus_completed
 active
 times_practiced
 times_correct
@@ -816,8 +814,13 @@ times_incorrect
 times_drilled
 times_mastered
 leitner_box
-last_known_review_at
-Gauntlet day/stage/session state
+leitner_last_reviewed
+consolidation_step
+leitner_maintenance_streak
+pending_drills
+practice_bucket
+mastery_events
+session history
 ```
 
 Do not add the removed review-era concepts as material requirements:
