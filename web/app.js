@@ -743,25 +743,18 @@
     const timerSeconds = timerMs / 1000;
     const timerLabel = Number.isInteger(timerSeconds) ? String(timerSeconds) : timerSeconds.toFixed(2).replace(/0+$/, '').replace(/\.$/, '');
     answerInput.setAttribute('aria-label', timerMs ? `Type the full answer; ${timerLabel} second timer; an exact match submits` : 'Type the full answer; an exact match submits, or press Enter');
-    const armTimer = () => {
-      if (!timerMs) return;
+    if (timerMs) {
+      // Starts the moment the question is shown, not after the prompt
+      // audio finishes -- the response clock runs independently of
+      // speech, not after it. Timeout still fires if speech is in flight.
       window.consolidationTimer = setTimeout(() => {
-        if (currentQuestion === question && !answerInteractionLocked()) sendTimeout();
+        if (currentQuestion === question && !answering) sendTimeout();
       }, timerMs);
       startAnswerCountdown(timerMs);
-    };
+    }
     const ready = () => {
       restoreInteractionAfterSpeech();
-      // 0.2s/character is unusable while prompt speech still blocks submit,
-      // so Speed Mock's clock starts when typing can actually be sent.
-      if (question.type === 'speed_mock') armTimer();
     };
-    if (question.type !== 'speed_mock' && timerMs) {
-      // Other timed stages start the moment the question is shown, not
-      // after the prompt audio finishes -- the response clock runs
-      // independently of speech, not after it.
-      armTimer();
-    }
     // Reading Retrieval deliberately stays silent while the question is
     // shown -- it has a definition to read, and the prompt audio plays
     // only after the learner submits an answer (see handleAnswerResult),
@@ -888,7 +881,7 @@
   }
 
   async function sendTimeout() {
-    if (!sessionId || answering || speechPending > 0) return;
+    if (!sessionId || answering) return;
     answering = true;
     if (window.consolidationTimer) { clearTimeout(window.consolidationTimer); window.consolidationTimer = null; }
     freezeAnswerCountdown();

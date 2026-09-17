@@ -2831,6 +2831,26 @@ class BrowserContractTest(unittest.TestCase):
         self.assertEqual(mid_speech['ttsCalls'], 1)
         self.assertFalse(mid_speech['canSubmit'])
 
+        # Speed Mock is the same contract: 0.2s/character, clock armed on
+        # render, not after speech. A 10-character word is a 2s timer.
+        self.browser.script(
+            "document.getElementById('summary-restart').click();"
+            "__api.startType='speed_mock';__api.startWord=arguments[0];"
+            "__api.startPrompt=arguments[0];__api.ttsDelay=400;__api.ttsCalls=0;return true;",
+            ten_char_word,
+        )
+        self.browser.script("document.getElementById('start-session').click();return true;")
+        self.wait("return getComputedStyle(document.getElementById('practice-session')).display!=='none'")
+        self.wait("return document.getElementById('answer-timer-wrap').classList.contains('is-active')", timeout=1)
+        speed_mid=self.browser.script(r"""return {
+          ttsCalls:__api.ttsCalls,
+          canSubmit:document.getElementById('word-display').classList.contains('can-submit'),
+          ariaLabel:document.getElementById('answer-input').getAttribute('aria-label'),
+        };""")
+        self.assertEqual(speed_mid['ttsCalls'], 1)
+        self.assertFalse(speed_mid['canSubmit'])
+        self.assertIn('2 second timer', speed_mid['ariaLabel'])
+
     def test_corrective_drill_end_button_and_escape_show_required_prompt(self):
         self.browser.script("__api.ttsDelay=0;__api.forceWrong=true;document.getElementById('start-session').click();return true;")
         self.wait("return document.getElementById('word-display').classList.contains('can-submit')")
