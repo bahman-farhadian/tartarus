@@ -1280,7 +1280,10 @@ def select_practice_words(user, lang, today=None):
     return [], 'consolidation', 'complete', 5, 'Complete', CONSOLIDATION_COMPLETE_DAY, state
 
 
-PRACTICE_BUCKET_TRACKS = ('encoding_practice', 'retrieval_reading', 'retrieval_listening')
+PRACTICE_BUCKET_TRACKS = (
+    'encoding_practice', 'retrieval_reading', 'retrieval_listening', 'speed_mock',
+)
+SPEED_MOCK_MS_PER_CHAR = 200
 
 
 def _bucket_eligible_items(conn, user, lang, track):
@@ -1288,7 +1291,7 @@ def _bucket_eligible_items(conn, user, lang, track):
     track, joined with its material record. Encoding Practice draws from
     score<9 items, falling back to every active item when none are below
     band 9 (per the confirmed selection rule); Reading/Listening Retrieval
-    draw from score>=9 (mastered) items only."""
+    and Speed Mock draw from score>=9 (mastered) items only."""
     table = words_table_name(user, lang)
     if not table_exists(conn, table):
         return []
@@ -1322,7 +1325,7 @@ def _bucket_eligible_items(conn, user, lang, track):
 
 def select_bucket_words(user, lang, track, num_words=None):
     """Select items for one supplementary, non-scoring practice track
-    (Encoding Practice, Reading Retrieval, Listening Retrieval).
+    (Encoding Practice, Reading Retrieval, Listening Retrieval, Speed Mock).
 
     With ``num_words`` left at its default (``None``) -- the case for every
     real session start -- there is no cap: every currently-eligible item is

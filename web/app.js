@@ -244,6 +244,7 @@
     encoding_practice: 'Encoding Practice',
     retrieval_reading: 'Reading Retrieval',
     retrieval_listening: 'Listening Retrieval',
+    speed_mock: 'Speed Mock',
   };
 
   function isMaskableCharacter(ch) {
@@ -468,6 +469,7 @@
     'start-encoding-practice': 'encoding_practice',
     'start-retrieval-reading': 'retrieval_reading',
     'start-retrieval-listening': 'retrieval_listening',
+    'start-speed-mock': 'speed_mock',
   };
   Object.entries(practiceTrackButtons).forEach(([id, track]) => {
     const btn = document.getElementById(id);
@@ -730,26 +732,36 @@
 
     // Response time scales with how much there is to type: 0.75s/character
     // normally, half that for the harder silent-recall stages (Reconsolidation,
-    // Automaticity) that already ask for more from memory.
-    const msPerChar = { free_recall: 750, reconsolidation: 500, automaticity: 500 }[question.type];
+    // Automaticity) that already ask for more from memory. Speed Mock is
+    // 0.2s/character on the first attempt; a miss retries with no timer.
+    const msPerChar = question.timer === false
+      ? undefined
+      : (question.timer_ms_per_char || { free_recall: 750, reconsolidation: 500, automaticity: 500, speed_mock: 200 }[question.type]);
     const timerMs = msPerChar
       ? Math.round(Array.from(question.word_unmasked || '').length * msPerChar)
       : undefined;
     const timerSeconds = timerMs / 1000;
     const timerLabel = Number.isInteger(timerSeconds) ? String(timerSeconds) : timerSeconds.toFixed(2).replace(/0+$/, '').replace(/\.$/, '');
     answerInput.setAttribute('aria-label', timerMs ? `Type the full answer; ${timerLabel} second timer; an exact match submits` : 'Type the full answer; an exact match submits, or press Enter');
-    if (timerMs) {
-      // Starts the moment the question is shown, not after the prompt
-      // audio finishes -- the response clock runs independently of
-      // speech, not after it.
+    const armTimer = () => {
+      if (!timerMs) return;
       window.consolidationTimer = setTimeout(() => {
         if (currentQuestion === question && !answerInteractionLocked()) sendTimeout();
       }, timerMs);
       startAnswerCountdown(timerMs);
-    }
+    };
     const ready = () => {
       restoreInteractionAfterSpeech();
+      // 0.2s/character is unusable while prompt speech still blocks submit,
+      // so Speed Mock's clock starts when typing can actually be sent.
+      if (question.type === 'speed_mock') armTimer();
     };
+    if (question.type !== 'speed_mock' && timerMs) {
+      // Other timed stages start the moment the question is shown, not
+      // after the prompt audio finishes -- the response clock runs
+      // independently of speech, not after it.
+      armTimer();
+    }
     // Reading Retrieval deliberately stays silent while the question is
     // shown -- it has a definition to read, and the prompt audio plays
     // only after the learner submits an answer (see handleAnswerResult),
@@ -765,7 +777,7 @@
     }
   }
 
-  const SUPPLEMENTARY_PRACTICE_TYPES = ['encoding_practice', 'retrieval_reading', 'retrieval_listening'];
+  const SUPPLEMENTARY_PRACTICE_TYPES = ['encoding_practice', 'retrieval_reading', 'retrieval_listening', 'speed_mock'];
   const RETRIEVAL_DEFERRED_AUDIO_TYPES = ['retrieval_reading'];
 
   const TIMER_DIM_OPACITY = 0.32;
@@ -961,6 +973,14 @@
       } else {
         renderAnswerSurface();
       }
+      if (data.timer === false && currentQuestion) {
+        currentQuestion.timer = false;
+        if (window.consolidationTimer) {
+          clearTimeout(window.consolidationTimer);
+          window.consolidationTimer = null;
+        }
+        resetAnswerCountdown();
+      }
       const afterRetryFeedback = () => {
         answering = false;
         restoreInteractionAfterSpeech();
@@ -1120,6 +1140,9 @@
     html += `<li>Incorrect answers: <strong>${(session.incorrect || []).length}</strong></li>`;
     html += `<li>Words drilled: <strong>${session.drilled || 0}</strong></li>`;
     html += `<li>Session time: <strong>${minutes}m ${seconds}s</strong></li>`;
+    if (session.wpm != null) {
+      html += `<li>Speed: <strong>${session.wpm} WPM</strong> (timed first attempts only)</li>`;
+    }
     html += '</ul>';
     if ((session.incorrect || []).length) {
       html += '<h3>Incorrect answers</h3><ul class="summary-list">';

@@ -264,7 +264,7 @@ def consolidation_start_session(user, lang, audio_lang=None):
 
 # ---------------------------------------------------------------------------
 # Supplementary practice tracks (Encoding Practice, Reading/Listening
-# Retrieval): independent of Consolidation Track / Spaced Maintenance,
+# Retrieval, Speed Mock): independent of Consolidation Track / Spaced Maintenance,
 # never mutate score, leitner_box, or consolidation_step. Selection is
 # bucket-backed (ll.select_bucket_words) instead of due-date-driven, so
 # these tracks are "endless" in two senses: each session itself has no
@@ -278,6 +278,7 @@ PRACTICE_TRACK_NAMES = {
     'encoding_practice': 'Encoding Practice',
     'retrieval_reading': 'Reading Retrieval',
     'retrieval_listening': 'Listening Retrieval',
+    'speed_mock': 'Speed Mock',
 }
 
 
@@ -338,6 +339,8 @@ def bucket_start_session(user, lang, track, audio_lang=None):
         'question_sequence': 0,
         'answer_results': {},
         '_resume_drill': None,
+        'speed_chars': 0,
+        'speed_seconds': 0.0,
     }
     register_session(sid, session)
     meta = {
@@ -376,6 +379,14 @@ def next_bucket_question(session):
         # nothing to guess.
         question['word'] = entry['word_text']
         question['definition'] = full_lines
+    elif track == 'speed_mock':
+        # Dim full word, no definition: the mock is the visible target.
+        # First attempt is timed at SPEED_MOCK_MS_PER_CHAR; a miss retries
+        # the same item with timer off.
+        question['word'] = entry['word_text']
+        question['definition'] = []
+        question['timer_ms_per_char'] = ll.SPEED_MOCK_MS_PER_CHAR
+        question['timer'] = True
     elif track == 'retrieval_reading':
         question['word'] = ''
         question['definition'] = [primary] if primary else []
@@ -399,6 +410,7 @@ def next_bucket_question(session):
         'track': track,
         'drill': None,
         'revealed': False,
+        'untimed': False,
         'started_at': time.time(),
     }
     session['question_sequence'] += 1
@@ -411,26 +423,38 @@ def next_bucket_question(session):
 
 
 def process_bucket_answer(session, answer, *, timed_out=False):
-    """All three supplementary tracks share one mechanic: correct advances,
+    """All supplementary tracks share one mechanic: correct advances,
     wrong repeats the same question -- no drill, ever, since they're
     optional practice, not the mandatory track.
 
     Encoding Practice is already fully visible from the start, so a miss
-    there just means "try typing it again." Reading/Listening Retrieval
-    start hidden (that's the recall test); a blind guess after a miss
-    isn't productive, so the first miss on either immediately reveals the
-    word (full Encoding-style presentation: unmasked, full authored
-    definition) instead of leaving the learner to keep guessing blind --
-    further attempts are then a guaranteed-achievable copy, not more
-    guesswork."""
+    there just means "try typing it again." Speed Mock is also fully
+    visible; a miss (wrong answer or timeout) retries the same item with
+    the timer off. Reading/Listening Retrieval start hidden (that's the
+    recall test); a blind guess after a miss isn't productive, so the
+    first miss on either immediately reveals the word (full Encoding-style
+    presentation: unmasked, full authored definition) instead of leaving
+    the learner to keep guessing blind -- further attempts are then a
+    guaranteed-achievable copy, not more guesswork."""
     cur = session['current']; answer = '' if answer is None else str(answer)
+    now = time.time()
+    elapsed = max(0.0, now - cur.get('started_at', now))
     record_current_time(session)
     correct = False if timed_out else ll.answer_matches(answer, cur['word_text'])
     if correct:
+        if session.get('track') == 'speed_mock' and not cur.get('untimed'):
+            session['speed_chars'] = session.get('speed_chars', 0) + len(cur['word_text'])
+            session['speed_seconds'] = session.get('speed_seconds', 0.0) + elapsed
         return advance(session, 'correct', None, attempt=answer)
     session['incorrect'].append({'word': cur['word_text'], 'attempt': answer})
     record_file_incorrect(session)
     cur['started_at'] = time.time()
+    if session['track'] == 'speed_mock':
+        cur['untimed'] = True
+        return {
+            'result': 'retry', 'done': False, 'timer': False,
+            'message': "Time's up. Type it without the clock." if timed_out else 'Not quite. Try again.',
+        }
     if session['track'] == 'encoding_practice' or cur.get('revealed'):
         return {'result': 'retry', 'done': False, 'message': 'Not quite. Try again.'}
     cur['revealed'] = True
@@ -622,10 +646,16 @@ def finalize_session(session, ended_early=False):
     # drill counts toward "practiced" but is deliberately excluded here
     # since it wasn't a first-attempt correct answer.
     attempted=session['correct']+len(session['incorrect'])
+    chars=session.get('speed_chars') or 0
+    speed_seconds=session.get('speed_seconds') or 0.0
+    # Standard typing WPM, timed first-attempt successes only. Failed
+    # attempts and untimed retries are excluded from both chars and time.
+    wpm=round((chars/5.0)/(speed_seconds/60.0),1) if chars>0 and speed_seconds>0 else None
     return {
         'practiced':practiced,'correct':session['correct'],'incorrect':session['incorrect'],'drilled':session['drilled'],
         'elapsed_seconds':elapsed,'ended_early':ended_early,'accuracy':round(100*session['correct']/attempted,1) if attempted else None,
         'avg_seconds_per_item':round(elapsed/practiced,1) if practiced else None,
+        'wpm':wpm,
         'consolidation':{'modes':modes,'voided':ended_early},
     }
 

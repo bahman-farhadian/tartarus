@@ -1208,7 +1208,7 @@ class CoreContractTest(unittest.TestCase):
         self.make(material_items(3))
         self.update('id-00', score=8.5)
         self.master('id-01', '2026-08-01', box=1, last_reviewed='2026-08-01', completed_day=3)
-        for track in ('retrieval_reading', 'retrieval_listening'):
+        for track in ('retrieval_reading', 'retrieval_listening', 'speed_mock'):
             words = ll.select_bucket_words('alice', 'focus', track)
             self.assertEqual([row[1] for row in words], ['w01'])
 
@@ -1388,6 +1388,62 @@ class CoreContractTest(unittest.TestCase):
         self.assertEqual(question['definition'], [])
         self.assertEqual(question['word'], '')
         self.assertTrue(question['text_hidden'])
+
+    def test_speed_mock_requires_mastered_items_and_shows_the_dim_word(self):
+        self.make(material_items(2))
+        self.update('id-00', score=8.5)
+        with self.assertRaises(ValueError) as raised:
+            web.bucket_start_session('alice', 'focus', 'speed_mock')
+        self.assertIn('Speed Mock', str(raised.exception))
+        self.master('id-01', '2026-08-01', box=1, last_reviewed='2026-08-01', completed_day=3)
+        sid, session, meta = web.bucket_start_session('alice', 'focus', 'speed_mock')
+        self.addCleanup(lambda: web.SESSIONS.pop(sid, None))
+        self.assertEqual(meta['track'], 'speed_mock')
+        question = web.next_question(session)
+        self.assertEqual(question['type'], 'speed_mock')
+        self.assertEqual(question['word'], 'w01')
+        self.assertEqual(question['word_unmasked'], 'w01')
+        self.assertEqual(question['definition'], [])
+        self.assertEqual(question['timer_ms_per_char'], ll.SPEED_MOCK_MS_PER_CHAR)
+        self.assertTrue(question['timer'])
+        before = self.row('id-01')
+        web.process_answer(session, 'w01')
+        self.assertEqual(self.row('id-01'), before)
+
+    def test_speed_mock_timeout_retries_untimed_and_excludes_fails_from_wpm(self):
+        items = material_items(1)
+        items[0]['word'] = 'abcdefghij'
+        self.make(items)
+        self.master('id-00', '2026-08-01', box=1, last_reviewed='2026-08-01', completed_day=10)
+        sid, session, meta = web.bucket_start_session('alice', 'focus', 'speed_mock')
+        self.addCleanup(lambda: web.SESSIONS.pop(sid, None))
+        question = web.next_question(session)
+        session['current']['started_at'] = time.time() - 2.0
+        missed = web.process_answer(session, None, timed_out=True)
+        self.assertEqual(missed['result'], 'retry')
+        self.assertFalse(missed['timer'])
+        self.assertNotIn('drill', missed)
+        self.assertTrue(session['current']['untimed'])
+        recovered = web.process_answer(session, 'abcdefghij')
+        self.assertEqual(recovered['result'], 'correct')
+        self.assertTrue(recovered['done'])
+        self.assertIsNone(recovered['session']['wpm'])
+        self.assertEqual(self.row('id-00')['score'], 9.0)
+
+    def test_speed_mock_timed_success_reports_standard_wpm(self):
+        items = material_items(1)
+        items[0]['word'] = 'abcdefghij'
+        self.make(items)
+        self.master('id-00', '2026-08-01', box=1, last_reviewed='2026-08-01', completed_day=10)
+        sid, session, meta = web.bucket_start_session('alice', 'focus', 'speed_mock')
+        self.addCleanup(lambda: web.SESSIONS.pop(sid, None))
+        web.next_question(session)
+        session['current']['started_at'] = time.time() - 2.0
+        result = web.process_answer(session, 'abcdefghij')
+        self.assertEqual(result['result'], 'correct')
+        self.assertTrue(result['done'])
+        # 10 chars / 5 = 2 standard words in 2 seconds -> 60 WPM.
+        self.assertEqual(result['session']['wpm'], 60.0)
 
     def test_bucket_session_time_counts_toward_file_totals(self):
         self.make(material_items(1))
@@ -1687,6 +1743,35 @@ class HttpContractTest(ServerHarness):
         self.assertEqual(q['definition'], [])
         self.assertEqual(q['word'], '')
         self.assertTrue(q['text_hidden'])
+
+    def test_speed_mock_track_via_http_times_then_retries_untimed(self):
+        self.create(items=material_items(1))
+        conn = sqlite3.connect(self.db); table = ll.words_table_name('alice', 'focus')
+        word_id = conn.execute(f'SELECT id FROM "{table}"').fetchone()[0]
+        conn.execute(f'UPDATE "{table}" SET score=9.0,leitner_box=1,leitner_last_reviewed=?', (date.today().isoformat(),))
+        conn.execute("INSERT INTO mastery_events(user,lang,word_id,event_type,mastered_date) VALUES(?,?,?,?,?)", ('alice', 'focus', word_id, 'mastered', date.today().isoformat()))
+        conn.commit(); conn.close()
+        started = self.start(track='speed_mock')
+        q = started['question']
+        self.assertEqual(q['type'], 'speed_mock')
+        self.assertEqual(q['word'], q['word_unmasked'])
+        self.assertEqual(q['timer_ms_per_char'], 200)
+        self.assertTrue(q['timer'])
+        timed_out = self.api('/api/practice/timeout', {
+            'session_id': started['session_id'],
+            'question_id': q['question_id'],
+            'sequence': q['sequence'],
+            'attempt_id': 't1',
+        })
+        self.assertEqual(timed_out['result'], 'retry')
+        self.assertFalse(timed_out['timer'])
+        recovered = self.answer(started, q['word_unmasked'], 't2', question=q)
+        self.assertEqual(recovered['result'], 'correct')
+        self.assertTrue(recovered['done'])
+        self.assertIsNone(recovered['session']['wpm'])
+        conn = sqlite3.connect(self.db)
+        self.assertEqual(conn.execute(f'SELECT score,leitner_box FROM "{table}" WHERE id=?', (word_id,)).fetchone(), (9.0, 1))
+        conn.close()
 
     def test_bucket_session_cancel_is_always_allowed_no_drill_ever(self):
         # Encoding Practice/Reading/Listening Retrieval are optional
@@ -2548,7 +2633,7 @@ class BrowserContractTest(unittest.TestCase):
         immediate_audio_types = (
             'encoding', 'cued_recall', 'effortful_retrieval', 'free_recall',
             'reconsolidation', 'automaticity', 'spaced_maintenance',
-            'encoding_practice', 'retrieval_listening',
+            'encoding_practice', 'retrieval_listening', 'speed_mock',
         )
         for stage in immediate_audio_types:
             self.browser.script(
