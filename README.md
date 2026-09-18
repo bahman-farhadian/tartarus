@@ -357,13 +357,13 @@ Until speech finishes:
 - navigation between Web views is blocked;
 - the card does not change.
 
-The typed text remains in the input when speech finishes, then normal submission/actions are restored.
+The typed text remains in the input when speech finishes, then normal submission/actions are restored. If the field is already an exact NFC match for the target, auto-submit fires at that moment -- the learner does not have to press Enter or type another character for an answer that was already correct while audio played.
 
 After an answer is submitted, the UI remains interaction-locked while the answer request, any feedback speech, and the card transition complete.
 
 ### Auto-submit on a correct answer
 
-Tartarus is a trusted-local-client app: the browser already holds the real answer (`word_unmasked`) as part of the local practice payload even while the target is masked or hidden on screen. The answer field's `maxlength` is always exactly the target's length, so once it's fully typed, the input compares it to the real answer immediately and submits on its own the moment it's exactly correct -- there's no need to press Enter for an answer that's already right. A filled-but-wrong answer does nothing automatically: it waits for either an explicit Enter (submitting it as a wrong answer, same as before) or a correction, which is checked again the same way as soon as the field is refilled. This follows the same interaction-lock rules as manual submission -- it never fires during prompt speech or while an answer/drill transition is already in flight.
+Tartarus is a trusted-local-client app: the browser already holds the real answer (`word_unmasked`) as part of the local practice payload even while the target is masked or hidden on screen. The answer field's `maxlength` is always exactly the target's length, so once it's fully typed, the input compares it to the real answer immediately and submits on its own the moment it's exactly correct -- there's no need to press Enter for an answer that's already right. A filled-but-wrong answer does nothing automatically: it waits for either an explicit Enter (submitting it as a wrong answer, same as before) or a correction, which is checked again the same way as soon as the field is refilled. This follows the same interaction-lock rules as manual submission -- it never fires during prompt speech or while an answer/drill transition is already in flight. When prompt speech ends, the same exact-match check runs again against whatever is already in the field.
 
 ### Audio is never muted
 
@@ -739,7 +739,7 @@ The unified suite covers the current release contracts, including:
 - request/response and client-reported-error logging;
 - later definition lines withheld wherever the target is masked or hidden (Encoding once masked, every daily stage, Spaced Maintenance), restored once a corrective drill actually reveals the word;
 - extended Box 10 maintenance intervals from a demonstrated streak of successful reviews, frozen (never reset) on a miss and only ever granted via a correct answer or a completed drill;
-- auto-submit firing on an exact correct answer without Enter, and staying silent on a same-length wrong answer until Enter or a correction;
+- auto-submit firing on an exact correct answer without Enter, staying silent on a same-length wrong answer until Enter or a correction, and re-checking the field when prompt speech ends so a correct answer typed during audio still submits;
 - supplementary tracks: uncapped freshly-shuffled sessions, unlimited retry, no drill, and no mutation of score/Leitner/`consolidation_step`;
 - Speed Mock: band-9 items only, 0.4s/character from question-show (not after audio), untimed retry, WPM from timed successes only;
 - Today's Overview Due Today listing only calendar-due reinforcement or maintenance;

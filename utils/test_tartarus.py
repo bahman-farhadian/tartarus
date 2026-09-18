@@ -10,6 +10,7 @@ from __future__ import annotations
 import contextlib
 import hashlib
 import http.client
+import http.server
 import io
 import json
 import os
@@ -19,6 +20,7 @@ import sqlite3
 import subprocess
 import sys
 import tempfile
+import threading
 import time
 import unittest
 import urllib.error
@@ -2290,14 +2292,7 @@ class ChromiumCDP:
         with contextlib.suppress(Exception):self.tmp.cleanup()
 
 
-class BrowserContractTest(unittest.TestCase):
-    def setUp(self):
-        self.browser=make_browser_driver(); self.addCleanup(self.browser.close); self.browser.viewport(1280,900)
-        import re
-        index=(ROOT/'web/index.html').read_text(encoding='utf-8'); css=(ROOT/'web/style.css').read_text(encoding='utf-8'); app=(ROOT/'web/app.js').read_text(encoding='utf-8')
-        index=re.sub(r'<link\s+rel="stylesheet"[^>]*>',f'<style>{css}</style>',index,count=1); index=re.sub(r'<script\s+src="/app\.js[^>]*></script>','',index,count=1)
-        self.browser.script("document.open();document.write(arguments[0]);document.close();return true;",index)
-        self.browser.script(r"""
+BROWSER_CONTRACT_FETCH_MOCK = r"""
           window.__errors=[];addEventListener('error',e=>__errors.push(String(e.error||e.message)));addEventListener('unhandledrejection',e=>__errors.push(String(e.reason)));
           const q=(id,seq,type='learning',word='w00',prompt=null)=>({question_id:id,sequence:seq,word:prompt!==null?prompt:(type==='learning'?word:''),word_unmasked:word,audio_text:word,definition:['definition'],score:type==='production'?8:0,gauge:'○○○',gender:'none',type,consolidation:{mode:type==='learning'?'encoding':type,stage:0,stage_name:'Encoding',day:0,sessions_done:0}});
           const state=window.__api={ttsDelay:500,ttsCalls:0,answers:0,current:q('q0',1),lastBody:null,startType:'learning',startWord:'w00',startPrompt:null,finishOnAnswer:false,forceWrong:false,forceRetry:false,forceReveal:false,drill:false,drillComplete:false,startCount:0,progressUrls:[]};
@@ -2315,8 +2310,18 @@ class BrowserContractTest(unittest.TestCase):
             if(url==='/api/practice/answer'){state.answers++;state.lastBody=JSON.parse(init.body||'{}');if(state.drill){if(state.drillComplete){state.drill=false;const next=q('q1',2,state.startType,'w01');state.current=next;return Promise.resolve(jr({result:'drilled',done:false,drill:{word:'w00',definition:['definition'],repetition:9,correct_in_a_row:9,target:9,correct:true,show_word:true},question:next,progress:{correct:0,drilled:1,total:16,questions:1,max_questions:16}}));}return Promise.resolve(jr({result:'drill_progress',done:false,drill:{word:state.current.word_unmasked,definition:['definition'],repetition:2,correct_in_a_row:0,target:9,correct:false,show_word:true}}));}if(state.forceWrong){state.drill=true;return Promise.resolve(jr({result:'drill_start',done:false,message:'Incorrect. Complete the mandatory drill before continuing.',drill:{word:state.current.word_unmasked,definition:['definition'],repetition:1,correct_in_a_row:0,target:9,correct:false,show_word:true}}));}if(state.forceRetry){return Promise.resolve(jr({result:'retry',done:false,message:'Not quite. Try again.'}));}if(state.forceReveal){return Promise.resolve(jr({result:'retry',done:false,message:'Not quite -- here it is. Type it once to lock it in.',reveal:{word:state.current.word_unmasked,definition:['Primary meaning.','Secondary context sentence.']}}));}if(state.finishOnAnswer){return Promise.resolve(jr({result:'correct',word:state.current.word_unmasked,done:true,session:{practiced:1,correct:1,incorrect:[],drilled:0,elapsed_seconds:1,ended_early:false}}));}const next=q('q1',2,state.startType,'w01');state.current=next;return Promise.resolve(jr({result:'correct',word:state.lastBody.answer,done:false,question:next,progress:{correct:1,drilled:0,total:16,questions:1,max_questions:16}}));}
             if(url==='/api/practice/cancel'){if(state.drill)return Promise.resolve(jr({error:'Complete the mandatory drill before ending the session.'},409));return Promise.resolve(jr({cancelled:true,session:{practiced:0,correct:0,incorrect:[],drilled:0,elapsed_seconds:0,ended_early:true}}));}
             if(url==='/api/tts'){state.ttsCalls++;return new Promise(r=>setTimeout(()=>r(jr({supported:true,spoken:true,simulated:true})),state.ttsDelay));}
-            return Promise.resolve(jr({error:'not found'},404));};return true;
-        """)
+            return Promise.resolve(jr({error:'not found'},404));};
+"""
+
+
+class BrowserContractTest(unittest.TestCase):
+    def setUp(self):
+        self.browser=make_browser_driver(); self.addCleanup(self.browser.close); self.browser.viewport(1280,900)
+        import re
+        index=(ROOT/'web/index.html').read_text(encoding='utf-8'); css=(ROOT/'web/style.css').read_text(encoding='utf-8'); app=(ROOT/'web/app.js').read_text(encoding='utf-8')
+        index=re.sub(r'<link\s+rel="stylesheet"[^>]*>',f'<style>{css}</style>',index,count=1); index=re.sub(r'<script\s+src="/app\.js[^>]*></script>','',index,count=1)
+        self.browser.script("document.open();document.write(arguments[0]);document.close();return true;",index)
+        self.browser.script(BROWSER_CONTRACT_FETCH_MOCK + 'return true;')
         self.browser.script('eval(arguments[0]);return true;',app)
         self.wait("return document.querySelectorAll('#practice-user option').length>1")
         for eid,val in [('practice-user','alice'),('practice-lang','german_vocabulary'),('practice-level','a1'),('practice-pos','noun'),('practice-file','focus')]:self.select(eid,val)
@@ -2618,6 +2623,39 @@ class BrowserContractTest(unittest.TestCase):
         self.wait("return __api.answers===1",timeout=3)
         self.assertEqual(self.browser.script("return __api.lastBody.answer"),'w00')
 
+    def test_correct_answer_typed_during_prompt_audio_submits_when_speech_ends(self):
+        # Typing is allowed during prompt speech, but auto-submit is locked
+        # until the audio finishes. A field that already holds an exact
+        # match must pass on its own at that moment -- no extra keystroke.
+        self.browser.script("__api.ttsDelay=1500;document.getElementById('start-session').click();return true;")
+        self.wait("return getComputedStyle(document.getElementById('practice-session')).display!=='none'")
+        self.wait("return !document.getElementById('answer-input').disabled && !document.getElementById('word-display').classList.contains('can-submit')")
+        self.browser.script(
+            "const i=document.getElementById('answer-input');i.value='w00';"
+            "i.dispatchEvent(new Event('input',{bubbles:true}));return true;"
+        )
+        time.sleep(.1)
+        mid=self.browser.script("return {answers:__api.answers,value:document.getElementById('answer-input').value,ready:document.getElementById('word-display').classList.contains('can-submit')};")
+        self.assertEqual(mid['answers'],0)
+        self.assertEqual(mid['value'],'w00')
+        self.assertFalse(mid['ready'])
+        self.wait("return __api.answers===1",timeout=3)
+        self.assertEqual(self.browser.script("return __api.lastBody.answer"),'w00')
+
+    def test_wrong_answer_typed_during_prompt_audio_does_not_submit_when_speech_ends(self):
+        # Same length as the target, but wrong -- speech ending must not
+        # treat a filled field as a pass. Enter or a correction still required.
+        self.browser.script("__api.ttsDelay=1500;document.getElementById('start-session').click();return true;")
+        self.wait("return getComputedStyle(document.getElementById('practice-session')).display!=='none'")
+        self.wait("return !document.getElementById('answer-input').disabled && !document.getElementById('word-display').classList.contains('can-submit')")
+        self.browser.script(
+            "const i=document.getElementById('answer-input');i.value='w01';"
+            "i.dispatchEvent(new Event('input',{bubbles:true}));return true;"
+        )
+        self.wait("return document.getElementById('word-display').classList.contains('can-submit')",timeout=3)
+        self.assertEqual(self.browser.script("return __api.answers"),0)
+        self.assertEqual(self.browser.script("return document.getElementById('answer-input').value"),'w01')
+
     def test_definition_is_centered(self):
         self.browser.script("document.getElementById('start-session').click();return true;");self.wait("return getComputedStyle(document.getElementById('practice-session')).display!=='none'")
         geom=self.browser.script("const b=document.getElementById('word-block').getBoundingClientRect(),d=document.getElementById('definition-lines').getBoundingClientRect();return {delta:Math.abs((b.left+b.width/2)-(d.left+d.width/2)),align:getComputedStyle(document.getElementById('definition-lines')).textAlign};")
@@ -2900,6 +2938,181 @@ class BrowserContractTest(unittest.TestCase):
         self.assertLessEqual(overflow,1,(overflow,offenders))
 
 
+class FirefoxSpeechSubmitTest(unittest.TestCase):
+    """Behavioral check for post-audio auto-submit when Chromium/CDP is absent.
+
+    Uses a temp progress-free page: fetch is mocked, the live tartarus.db is
+    never opened. Results come back over XHR so the mocked window.fetch is
+    not involved.
+    """
+
+    def test_correct_answer_typed_during_prompt_audio_submits_when_speech_ends(self):
+        if not shutil.which('firefox'):
+            self.skipTest('firefox unavailable')
+        result = self._run_page(self._runner_js())
+        self.assertTrue(result.get('ok'), result)
+        self.assertEqual(result.get('errors'), [])
+        self.assertEqual(result['correctCase']['answers'], 1)
+        self.assertEqual(result['correctCase']['answer'], 'w00')
+        self.assertEqual(result['wrongCase']['answers'], 0)
+        self.assertEqual(result['wrongCase']['value'], 'w01')
+
+    def _runner_js(self):
+        return r"""
+        (async () => {
+          const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+          const wait = async (fn, timeout) => {
+            const end = Date.now() + timeout;
+            while (Date.now() < end) {
+              try { if (await fn()) return; } catch (e) {}
+              await sleep(30);
+            }
+            throw new Error('wait timeout');
+          };
+          const post = (payload) => new Promise((resolve, reject) => {
+            const xhr = new XMLHttpRequest();
+            xhr.open('POST', '/result');
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            xhr.onload = () => resolve();
+            xhr.onerror = () => reject(new Error('result post failed'));
+            xhr.send(JSON.stringify(payload));
+          });
+          const select = (id, val) => {
+            const e = document.getElementById(id);
+            e.value = val;
+            e.dispatchEvent(new Event('change', {bubbles: true}));
+          };
+          try {
+            await wait(() => document.querySelectorAll('#practice-user option').length > 1, 6000);
+            for (const [id, val] of [
+              ['practice-user', 'alice'],
+              ['practice-lang', 'german_vocabulary'],
+              ['practice-level', 'a1'],
+              ['practice-pos', 'noun'],
+              ['practice-file', 'focus'],
+            ]) select(id, val);
+
+            __api.ttsDelay = 1500;
+            __api.finishOnAnswer = true;
+            document.getElementById('start-session').click();
+            await wait(() => getComputedStyle(document.getElementById('practice-session')).display !== 'none', 4000);
+            await wait(() => !document.getElementById('answer-input').disabled && !document.getElementById('word-display').classList.contains('can-submit'), 4000);
+            const typed = document.getElementById('answer-input');
+            typed.value = 'w00';
+            typed.dispatchEvent(new Event('input', {bubbles: true}));
+            await sleep(100);
+            const mid = {
+              answers: __api.answers,
+              value: typed.value,
+              ready: document.getElementById('word-display').classList.contains('can-submit'),
+            };
+            if (mid.answers !== 0) throw new Error('submitted during audio: ' + JSON.stringify(mid));
+            if (mid.value !== 'w00') throw new Error('typed value lost during audio');
+            if (mid.ready) throw new Error('submit unlocked during audio');
+            await wait(() => __api.answers === 1, 4000);
+            if (__api.lastBody.answer !== 'w00') throw new Error('wrong submitted answer');
+            const correctCase = {answers: __api.answers, answer: __api.lastBody.answer};
+
+            await wait(() => getComputedStyle(document.getElementById('practice-summary')).display !== 'none', 6000);
+            document.getElementById('summary-restart').click();
+
+            __api.ttsDelay = 1500;
+            __api.finishOnAnswer = false;
+            __api.answers = 0;
+            __api.lastBody = null;
+            document.getElementById('start-session').click();
+            await wait(() => getComputedStyle(document.getElementById('practice-session')).display !== 'none', 4000);
+            await wait(() => !document.getElementById('answer-input').disabled && !document.getElementById('word-display').classList.contains('can-submit'), 4000);
+            const wrong = document.getElementById('answer-input');
+            wrong.value = 'w01';
+            wrong.dispatchEvent(new Event('input', {bubbles: true}));
+            await wait(() => document.getElementById('word-display').classList.contains('can-submit'), 4000);
+            const wrongCase = {answers: __api.answers, value: wrong.value};
+            if (wrongCase.answers !== 0) throw new Error('wrong answer auto-submitted after audio');
+            if (wrongCase.value !== 'w01') throw new Error('wrong value lost');
+            await post({ok: true, correctCase, wrongCase, errors: window.__errors || []});
+          } catch (e) {
+            await post({
+              ok: false,
+              error: String(e && e.message || e),
+              stack: String(e && e.stack || ''),
+              errors: window.__errors || [],
+            });
+          }
+        })();
+        """
+
+    def _run_page(self, runner_js):
+        import re
+        index = (ROOT / 'web/index.html').read_text(encoding='utf-8')
+        css = (ROOT / 'web/style.css').read_text(encoding='utf-8')
+        app = (ROOT / 'web/app.js').read_text(encoding='utf-8')
+        index = re.sub(r'<link\s+rel="stylesheet"[^>]*>', f'<style>{css}</style>', index, count=1)
+        index = re.sub(r'<script\s+src="/app\.js[^>]*></script>', '', index, count=1)
+        page = (
+            index.replace('</body>', '', 1)
+            + '<script>' + BROWSER_CONTRACT_FETCH_MOCK + '</script>'
+            + '<script>' + app + '</script>'
+            + '<script>' + runner_js + '</script></body></html>'
+        )
+        result = {}
+        done = threading.Event()
+
+        class Handler(http.server.BaseHTTPRequestHandler):
+            def do_GET(self):
+                body = page.encode('utf-8')
+                self.send_response(200)
+                self.send_header('Content-Type', 'text/html; charset=utf-8')
+                self.send_header('Content-Length', str(len(body)))
+                self.send_header('Cache-Control', 'no-store')
+                self.end_headers()
+                self.wfile.write(body)
+
+            def do_POST(self):
+                raw = self.rfile.read(int(self.headers.get('Content-Length', '0') or 0))
+                try:
+                    result.update(json.loads(raw.decode('utf-8')))
+                except Exception as exc:
+                    result.update({'ok': False, 'error': f'bad result payload: {exc}'})
+                done.set()
+                ack = b'ok'
+                self.send_response(200)
+                self.send_header('Content-Type', 'text/plain')
+                self.send_header('Content-Length', str(len(ack)))
+                self.end_headers()
+                self.wfile.write(ack)
+
+            def log_message(self, *_args):
+                return
+
+        server = http.server.ThreadingHTTPServer(('127.0.0.1', 0), Handler)
+        port = server.server_address[1]
+        thread = threading.Thread(target=server.serve_forever, daemon=True)
+        thread.start()
+        profile = tempfile.mkdtemp(prefix='tartarus-ff-speech-')
+        proc = None
+        try:
+            proc = subprocess.Popen(
+                ['firefox', '--headless', '--profile', profile, f'http://127.0.0.1:{port}/'],
+                stdout=subprocess.DEVNULL,
+                stderr=subprocess.DEVNULL,
+            )
+            if not done.wait(25):
+                self.fail('firefox speech-submit page did not report a result')
+        finally:
+            if proc is not None and proc.poll() is None:
+                proc.terminate()
+                try:
+                    proc.wait(5)
+                except subprocess.TimeoutExpired:
+                    proc.kill()
+                    proc.wait(5)
+            server.shutdown()
+            server.server_close()
+            shutil.rmtree(profile, ignore_errors=True)
+        return result
+
+
 class StaticReleaseContractTest(unittest.TestCase):
     def test_one_test_file_and_no_abandoned_runtime_tokens(self):
         tests=[p.name for p in UTILS.glob('*test*.py')]
@@ -2912,6 +3125,14 @@ class StaticReleaseContractTest(unittest.TestCase):
         runtime='\n'.join((ROOT/p).read_text(encoding='utf-8') for p in ['utils/tartarus_web.py','web/app.js'])
         self.assertNotIn('!!TIMEOUT!!',runtime)
         self.assertIn('/api/practice/timeout',runtime)
+
+    def test_prompt_speech_end_rechecks_autosubmit(self):
+        source = (ROOT / 'web/app.js').read_text(encoding='utf-8')
+        start = source.index('function restoreInteractionAfterSpeech()')
+        end = source.index('\n  function ', start + 1)
+        body = source[start:end]
+        self.assertIn('maybeAutoSubmit()', body)
+        self.assertIn('setAnswerInputEnabled(true)', body)
 
     def test_web_answer_field_has_no_symbol_command_parser(self):
         source=(ROOT/'web/app.js').read_text(encoding='utf-8')

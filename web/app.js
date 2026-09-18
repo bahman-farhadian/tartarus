@@ -163,6 +163,10 @@
     setAnswerInputEnabled(true);
     setActionButtons(true);
     focusCurrentAnswer();
+    // Typing is allowed during prompt speech; submit is not. Re-check the
+    // field now that it is unlocked so an exact match typed while audio
+    // played still passes without another keystroke.
+    maybeAutoSubmit();
   }
 
   // Audio is never muted as a stage policy: Replay always works, and prompt
@@ -889,6 +893,8 @@
   // Filled-but-wrong deliberately does nothing here: the learner either
   // presses Enter to submit it as-is (today's behavior, unchanged) or keeps
   // editing, and every further edit re-runs this same check once refilled.
+  // The same check runs again when prompt speech ends, because auto-submit
+  // is locked while audio plays (the input event during speech is a no-op).
   function maybeAutoSubmit() {
     if (!answerSubmitReady || answerInteractionLocked()) return;
     if (Array.from(answerInput.value).length !== Array.from(answerTarget).length) return;
