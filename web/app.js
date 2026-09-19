@@ -125,7 +125,7 @@
           resolve();
         };
         // If ended never fires (zero-length blob, stalled decode), the
-        // speech lock would leave Replay/End/nav looking dead. Cap wait
+        // speech lock would leave Replay/End looking dead. Cap wait
         // to duration plus a short pad, with a 20s ceiling.
         const armWatchdog = (ms) => {
           if (settled) return;
@@ -173,21 +173,16 @@
       } catch (err) { /* best-effort, matches the previous swallow-errors behavior */ }
     };
     speechPending += 1;
-    // During speech only prompt typing may remain available. All buttons and
-    // submit/navigation actions are locked until the queued speech finishes.
+    // During speech, typing is allowed. Submit, Replay, and End stay locked
+    // and look disabled. Header nav stays visually live; its click handlers
+    // still no-op until speech ends, so the whole chrome does not fade.
     answerSubmitReady = false;
     wordDisplay.classList.remove('can-submit');
     setActionButtons(false);
-    setNavigationEnabled(false);
     const queued = speechTail.then(request, request);
     speechTail = queued.finally(() => {
       speechPending = Math.max(0, speechPending - 1);
-      if (speechPending === 0) {
-        // Unlock nav even when restore bails (answer in flight, summary).
-        // Otherwise the disabled attribute would stick after the last card.
-        setNavigationEnabled(true);
-        restoreInteractionAfterSpeech();
-      }
+      if (speechPending === 0) restoreInteractionAfterSpeech();
     });
     return speechTail;
   }
@@ -911,11 +906,6 @@
       answerTimerBar.style.opacity = '1';
     }
     if (answerTimerLabel) answerTimerLabel.textContent = '';
-  }
-
-  function setNavigationEnabled(enabled) {
-    navButtons.forEach((b) => { b.disabled = !enabled; });
-    document.querySelectorAll('[data-view-link]').forEach((b) => { b.disabled = !enabled; });
   }
 
   function setActionButtons(enabled) {

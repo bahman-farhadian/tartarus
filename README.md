@@ -352,12 +352,12 @@ The learner may **type into the answer field while the prompt is being spoken**.
 Until speech finishes:
 
 - Submit/Enter does not submit the answer;
-- Replay, End, and the header nav are actually `disabled` (they fade and do not hover), not merely ignoring the click;
+- Replay and End are actually `disabled` (they fade and do not hover), not merely ignoring the click;
 - replay and end actions are blocked;
-- navigation between Web views is blocked;
+- navigation between Web views is blocked by the click handler, but the header buttons stay visually live so the whole chrome does not grey out;
 - the card does not change.
 
-Prompt audio cannot leave that lock stuck: playback is bounded by the clip duration (20s ceiling), so a missing `ended` event still restores the buttons.
+Prompt audio cannot leave that lock stuck: playback is bounded by the clip duration (20s ceiling), so a missing `ended` event still restores Replay and End.
 
 The typed text remains in the input when speech finishes, then normal submission/actions are restored. If the field is already an exact NFC match for the target, auto-submit fires at that moment -- the learner does not have to press Enter or type another character for an answer that was already correct while audio played.
 
@@ -424,7 +424,7 @@ The selected list shows:
 
 During a session, Replay is always available, and End is available only outside a mandatory drill. There are no reveal, flag, mastery, or manual-drill shortcuts.
 
-When the selected list has no due maintenance, due reinforcement, or Encoding work, **Enter the Consolidation Track** is disabled and looks disabled (the optional supplementary buttons stay available). Completed same-day reinforcement is not reopened, and no mutable day counter can be advanced early. The setup-page Enter shortcut does not start a session while that button is disabled.
+When the selected list has no due maintenance, due reinforcement, or Encoding work, **Enter the Consolidation Track** is disabled and looks disabled (the optional supplementary buttons stay available). A list that has never been practiced still counts its JSON items as Encoding, so Start stays available until that pool is actually empty. Completed same-day reinforcement is not reopened, and no mutable day counter can be advanced early. The setup-page Enter shortcut does not start a session while that button is disabled.
 
 The global Enter shortcut is also part of the flow:
 
@@ -731,7 +731,7 @@ The unified suite covers the current release contracts, including:
 - staleness-based fairness across due pools, with Encoding last;
 - request idempotency and bounded HTTP failures;
 - one-answer-does-not-end-session regression;
-- Web speech interaction locking and Enter navigation, including disabled Replay/End/nav looking disabled and unlocking after audio even if `ended` never fires;
+- Web speech interaction locking and Enter navigation, including disabled Replay/End looking disabled, header nav staying visually live, unlocking after audio even if `ended` never fires, and never-started lists remaining startable;
 - centered responsive practice layout;
 - original six-stage roadmap presence;
 - horizontal square Leitner roadmap in the live Practice report;

@@ -533,6 +533,23 @@ class CoreContractTest(unittest.TestCase):
         # because it isn't due_reinforcement or encoding.
         self.assertEqual((state['due_maintenance'], state['available_tasks']), (1, 1))
 
+    def test_never_synced_list_counts_json_as_encoding_and_starts(self):
+        write_material(self.lists / 'alice_focus.json', material_items(7))
+        conn = ll.get_connection()
+        self.assertFalse(ll.table_exists(conn, self.table()))
+        conn.close()
+        state = ll.consolidation_state_breakdown('alice', 'focus')
+        self.assertEqual(
+            (state['total_tasks'], state['encoding'], state['available_tasks'], state['complete']),
+            (7, 7, 7, False),
+        )
+        sid, session, meta = web.consolidation_start_session('alice', 'focus')
+        self.addCleanup(lambda: web.SESSIONS.pop(sid, None))
+        self.assertEqual(meta['mode'], 'encoding')
+        self.assertEqual(
+            sorted(entry['word_text'] for entry in session['queue']),
+            ['w00', 'w01', 'w02', 'w03', 'w04', 'w05', 'w06'],
+        )
 
 
 
@@ -2012,6 +2029,25 @@ class HttpContractTest(ServerHarness):
         self.assertFalse(ll.table_exists(conn, 'dataset_progress')); conn.close()
         self.assertEqual(row, (0.0,0,None)); self.assertEqual(events, 0)
 
+    def test_never_synced_bundled_list_is_startable_without_pretending_it_is_missing(self):
+        self.api('/api/user/create', {'user': 'alice'})
+        self.bundled_list('focus', ['alpha', 'bravo', 'charlie'])
+        progress = self.api('/api/consolidation/progress?user=alice&lang=focus')
+        self.assertEqual(progress['progress']['encoding'], 3)
+        self.assertEqual(progress['progress']['available_tasks'], 3)
+        self.assertFalse(progress['progress']['complete'])
+        leitner = self.api('/api/wordlist/leitner?user=alice&lang=focus')
+        self.assertEqual(leitner['leitner']['ready'], 0)
+        stats = self.api('/api/wordlist/stats?user=alice&lang=focus')
+        self.assertEqual(stats['words'], [])
+        report = self.api('/api/report?user=alice&lang=focus')
+        self.assertEqual(report['roadmap']['consolidation']['encoding'], 3)
+        started = self.start()
+        self.assertEqual(started['consolidation']['mode'], 'encoding')
+        self.assertIn(started['question']['word_unmasked'], {'alpha', 'bravo', 'charlie'})
+        self.assertEqual(self.raw('/api/wordlist/leitner?user=alice&lang=doesnotexist')[0], 404)
+        self.assertEqual(self.raw('/api/wordlist/stats?user=alice&lang=doesnotexist')[0], 404)
+
     def test_wordlist_restart_endpoint_rejects_unknown_list(self):
         self.create()
         data=self.api('/api/wordlist/restart',{'user':'alice','lang':'doesnotexist'},expected=400)
@@ -2582,7 +2618,7 @@ class BrowserContractTest(unittest.TestCase):
         self.wait("return getComputedStyle(document.getElementById('practice-session')).display!=='none'")
         self.wait("return !document.getElementById('answer-input').disabled && document.getElementById('btn-end').disabled && !document.getElementById('word-display').classList.contains('can-submit')")
         locked=self.browser.script("const end=document.getElementById('btn-end'),nav=document.querySelector('nav button[data-view=\"lists\"]');return {end:end.disabled,replay:document.getElementById('btn-replay').disabled,nav:nav.disabled,endOpacity:Number(getComputedStyle(end).opacity)};")
-        self.assertTrue(locked['end']); self.assertTrue(locked['replay']); self.assertTrue(locked['nav']); self.assertLessEqual(locked['endOpacity'],0.6)
+        self.assertTrue(locked['end']); self.assertTrue(locked['replay']); self.assertFalse(locked['nav']); self.assertLessEqual(locked['endOpacity'],0.6)
         self.browser.script("const i=document.getElementById('answer-input');i.value='typed';i.dispatchEvent(new Event('input',{bubbles:true}));i.dispatchEvent(new KeyboardEvent('keydown',{key:'Enter',bubbles:true,cancelable:true}));document.getElementById('btn-end').click();document.querySelector('nav button[data-view=\"lists\"]').click();return true;")
         time.sleep(.1)
         state=self.browser.script("return {value:document.getElementById('answer-input').value,answers:__api.answers,active:document.getElementById('view-practice').classList.contains('active'),visible:document.getElementById('word-display').textContent,ready:document.getElementById('word-display').classList.contains('can-submit')};")
@@ -2961,7 +2997,7 @@ class FirefoxSpeechSubmitTest(unittest.TestCase):
         self.assertEqual(result['wrongCase']['answers'], 0)
         self.assertEqual(result['wrongCase']['value'], 'w01')
         self.assertTrue(result['wrongCase']['duringSpeech']['end'])
-        self.assertTrue(result['wrongCase']['duringSpeech']['nav'])
+        self.assertFalse(result['wrongCase']['duringSpeech']['nav'])
         self.assertLessEqual(result['wrongCase']['duringSpeech']['endOpacity'], 0.6)
         self.assertFalse(result['wrongCase']['afterSpeech']['end'])
         self.assertFalse(result['wrongCase']['afterSpeech']['nav'])
@@ -3027,8 +3063,11 @@ class FirefoxSpeechSubmitTest(unittest.TestCase):
               };
             };
             const duringSpeech = snapshotLock();
-            if (!duringSpeech.end || !duringSpeech.replay || !duringSpeech.nav) {
-              throw new Error('controls not locked during audio: ' + JSON.stringify(duringSpeech));
+            if (!duringSpeech.end || !duringSpeech.replay) {
+              throw new Error('session controls not locked during audio: ' + JSON.stringify(duringSpeech));
+            }
+            if (duringSpeech.nav) {
+              throw new Error('header nav was greyed during audio: ' + JSON.stringify(duringSpeech));
             }
             if (!(duringSpeech.endOpacity <= 0.6)) {
               throw new Error('disabled end still looks live: ' + duringSpeech.endOpacity);
@@ -3211,11 +3250,11 @@ class StaticReleaseContractTest(unittest.TestCase):
         self.assertIn('button.primary:hover:not(:disabled)', css)
         self.assertIn('button.secondary:hover:not(:disabled)', css)
         self.assertIn('nav button:hover:not(:disabled)', css)
-        self.assertIn('setNavigationEnabled(false)', js)
-        self.assertIn('setNavigationEnabled(true)', js)
+        self.assertNotIn('setNavigationEnabled(', js)
         self.assertIn('armWatchdog', js)
         self.assertIn('startButton.disabled', js)
         self.assertIn('controller.abort()', js)
+        self.assertIn('if (speechPending > 0) return;', js)
 
     def test_web_answer_field_has_no_symbol_command_parser(self):
         source=(ROOT/'web/app.js').read_text(encoding='utf-8')

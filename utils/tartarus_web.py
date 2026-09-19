@@ -999,10 +999,22 @@ def user_progress_data(user, category=None, level=None, lang=None):
 
 
 
+def _word_list_file_exists(user, lang):
+    try:
+        ll.word_list_path(user, lang)
+        return True
+    except (FileNotFoundError, ValueError):
+        return False
+
+
 def leitner_stats_data(user, lang):
     user_s=ll.sanitize_name(user,'user'); lang_s=ll.sanitize_name(lang,'language'); table=ll.words_table_name(user_s,lang_s); conn=ll.get_connection()
     try:
-        if not ll.table_exists(conn,table): return None
+        if not ll.table_exists(conn,table):
+            if not _word_list_file_exists(user_s, lang_s):
+                return None
+            distribution={str(i):0 for i in range(1,11)}
+            return {'distribution':distribution,'ready':0,'box10':0}
         distribution={str(i):0 for i in range(1,11)}
         for box,count in conn.execute(f'SELECT leitner_box,COUNT(*) FROM "{table}" WHERE active=1 AND score>=9 AND leitner_box IS NOT NULL GROUP BY leitner_box'):
             distribution[str(box)]=count
@@ -1063,6 +1075,10 @@ def dashboard_data(user, lang=None):
                     distribution[str(box)]=count
                 consolidation_roadmap=_consolidation_roadmap_payload(state)
                 result['roadmap']={'consolidation':consolidation_roadmap,'leitner_distribution':distribution,'maintenance_ready':len(ll.maintenance_ready_words(user_s,lang_s))}
+            elif _word_list_file_exists(user_s, lang_s):
+                state=ll.consolidation_state_breakdown(user_s,lang_s,conn=conn)
+                result['tracks']={'total':state['total_tasks'],'consolidation_score9':0,'leitner_box10':0,'consolidation_track_complete':False,'learning_complete':False,'consolidation':state}
+                result['roadmap']={'consolidation':_consolidation_roadmap_payload(state),'leitner_distribution':{str(i):0 for i in range(1,11)},'maintenance_ready':0}
         return result
     finally: conn.close()
 
@@ -1076,7 +1092,9 @@ def word_list_stats(user, lang):
     conn = ll.get_connection()
     try:
         if not ll.table_exists(conn, table):
-            return None
+            if not _word_list_file_exists(user_s, lang_s):
+                return None
+            return []
         material = {item['content_id']: item for item in ll.load_practice_items(ll.word_list_path(user_s, lang_s))}
         ready_ids = {row[0] for row in ll.maintenance_ready_words(user_s, lang_s, num_words=10**9)}
         reinforcement = {

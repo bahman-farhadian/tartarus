@@ -1079,6 +1079,14 @@ def _next_practice_pool(conn, user, lang, today):
     return winner, due_rows, stage_counts, due_maintenance
 
 
+def _json_item_count(user, lang):
+    """Read-only JSON item count. Never creates a progress table."""
+    try:
+        return len(load_practice_items(word_list_path(user, lang)))
+    except (FileNotFoundError, ValueError, OSError, json.JSONDecodeError):
+        return 0
+
+
 def consolidation_state_breakdown(user, lang, today=None, conn=None):
     """Return cohort counts without creating or advancing mutable state."""
     today = str(today or date.today().isoformat())[:10]
@@ -1088,7 +1096,11 @@ def consolidation_state_breakdown(user, lang, today=None, conn=None):
     try:
         table = words_table_name(user, lang)
         if not table_exists(conn, table):
-            total = encoding = mastered = 0
+            # Never-started lists have no SQLite rows yet. The JSON file is
+            # the Encoding pool; reporting 0 here disables Consolidation
+            # Start as if the day were already finished.
+            total = encoding = _json_item_count(user, lang)
+            mastered = 0
         else:
             total, encoding, mastered = conn.execute(
                 f'SELECT COUNT(*),'
