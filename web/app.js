@@ -466,14 +466,14 @@
   async function fetchConsolidationStatus(user, lang) {
     if (!user || !lang) {
       if (practiceOverview) practiceOverview.style.display = 'none';
-      const startButton = document.getElementById('start-session');
-      if (startButton) startButton.disabled = false;
       return;
     }
     try {
       // Just the compact "what's next" status line here -- the full
       // roadmap/dashboard/word-stats detail lives in the merged live
       // report below (refreshPracticeReport), not duplicated here too.
+      // Start stays enabled: if nothing is due, /api/practice/start
+      // returns the error and showError surfaces it.
       const data = await api(`/api/consolidation/progress?user=${encodeURIComponent(user)}&lang=${encodeURIComponent(lang)}`);
       const p = data.progress;
       if (!p) return;
@@ -485,8 +485,6 @@
 
       const maintenanceReady = data.roadmap ? Number(data.roadmap.maintenance_ready || 0) : 0;
       const nothingAvailable = Number(p.available_tasks || 0) === 0 && maintenanceReady === 0;
-      const startButton = document.getElementById('start-session');
-      if (startButton) startButton.disabled = nothingAvailable;
 
       if (consolidationSessionsLabel) {
         if (nothingAvailable) {
@@ -523,8 +521,6 @@
     } catch (err) {
       if (practiceOverview) practiceOverview.style.display = 'none';
       showError(practiceError, `Could not load Consolidation Track status: ${err.message}`);
-      const startButton = document.getElementById('start-session');
-      if (startButton) startButton.disabled = false;
     }
   }
 
@@ -681,8 +677,6 @@
       const tag = document.activeElement?.tagName;
       if (tag !== 'SELECT' && tag !== 'TEXTAREA') {
         e.preventDefault();
-        const startButton = document.getElementById('start-session');
-        if (startButton && startButton.disabled) return;
         startSession();
       }
     }
@@ -712,12 +706,6 @@
       if (!user) userInput.focus();
       else if (!lang) posInput.focus();
       return;
-    }
-    // Supplementary track buttons stay clickable when the Consolidation
-    // Track has nothing due; only the main CTA is disabled in that case.
-    if (!track) {
-      const startButton = document.getElementById('start-session');
-      if (startButton && startButton.disabled) return;
     }
 
     try {

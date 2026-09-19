@@ -396,7 +396,7 @@ http://127.0.0.1:9999/
 
 The Web UI has four views: **Practice**, **Today's Overview**, **Word Lists**, and **About**. There is no separate Report view — the live report is part of Practice setup.
 
-The palette is [Gruvbox dark](https://github.com/morhetz/gruvbox). The favicon is the character `T` as an SVG, not a bitmap. Every HTTP response — HTML, CSS, JS, JSON, icons, and pronunciation audio — is sent with `Cache-Control: no-store`, so a new tab always refetches the current files and data.
+The palette is [Gruvbox dark](https://github.com/morhetz/gruvbox). The favicon is the character `T` as an SVG, not a bitmap. Every HTTP response — HTML, CSS, JS, JSON, icons, and pronunciation audio — is sent with `Cache-Control: no-store`, and the browser `fetch` calls use `cache: 'no-store'`. The page links `/style.css` and `/app.js` with no query-string cache-buster; `no-store` is the contract that a new tab always refetches the current files.
 
 ### Practice
 
@@ -424,7 +424,7 @@ The selected list shows:
 
 During a session, Replay is always available, and End is available only outside a mandatory drill. There are no reveal, flag, mastery, or manual-drill shortcuts.
 
-When the selected list has no due maintenance, due reinforcement, or Encoding work, **Enter the Consolidation Track** is disabled and looks disabled (the optional supplementary buttons stay available). A list that has never been practiced still counts its JSON items as Encoding, so Start stays available until that pool is actually empty. If Encoding is empty and items remain in the 10-day track but none are due today (`locked_today`), the overview says today's Tartarus work is complete for that list and how many items are waiting for a later day — the same class of end-of-work copy as a finished track, not “pick different material.” Completed same-day reinforcement is not reopened, and no mutable day counter can be advanced early. The setup-page Enter shortcut does not start a session while that button is disabled.
+**Enter the Consolidation Track** stays enabled. If the selected list has no due maintenance, due reinforcement, or Encoding work, `/api/practice/start` returns an error (`Today's Tartarus work is complete…` or the track-complete variant) and the Practice page shows it. A list that has never been practiced still counts its JSON items as Encoding, so start succeeds until that pool is actually empty. Completed same-day reinforcement is not reopened, and no mutable day counter can be advanced early.
 
 The global Enter shortcut is also part of the flow:
 
@@ -731,7 +731,7 @@ The unified suite covers the current release contracts, including:
 - staleness-based fairness across due pools, with Encoding last;
 - request idempotency and bounded HTTP failures;
 - one-answer-does-not-end-session regression;
-- Web speech interaction locking and Enter navigation, including disabled Replay/End looking disabled, header nav staying visually live, unlocking after audio even if `ended` never fires, and never-started lists remaining startable;
+- Web speech interaction locking and Enter navigation, including disabled Replay/End looking disabled, header nav staying visually live, unlocking after audio even if `ended` never fires, never-started lists remaining startable, Consolidation Start staying enabled, and `/api/practice/start` returning an error when nothing is due;
 - centered responsive practice layout;
 - original six-stage roadmap presence;
 - horizontal square Leitner roadmap in the live Practice report;

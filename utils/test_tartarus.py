@@ -551,6 +551,21 @@ class CoreContractTest(unittest.TestCase):
             ['w00', 'w01', 'w02', 'w03', 'w04', 'w05', 'w06'],
         )
 
+    def test_start_returns_todays_work_complete_when_nothing_is_due(self):
+        self.make(material_items(1))
+        today = date.today().isoformat()
+        self.master(
+            'id-00', today, box=1,
+            last_completed=today, last_reviewed=today,
+        )
+        state = ll.consolidation_state_breakdown('alice', 'focus', today=today)
+        self.assertEqual(state['encoding'], 0)
+        self.assertEqual(state['available_tasks'], 0)
+        self.assertTrue(state['locked_today'])
+        with self.assertRaises(ValueError) as ctx:
+            web.consolidation_start_session('alice', 'focus')
+        self.assertIn("Today's Tartarus work is complete", str(ctx.exception))
+
 
 
 
@@ -2048,6 +2063,21 @@ class HttpContractTest(ServerHarness):
         self.assertEqual(self.raw('/api/wordlist/leitner?user=alice&lang=doesnotexist')[0], 404)
         self.assertEqual(self.raw('/api/wordlist/stats?user=alice&lang=doesnotexist')[0], 404)
 
+    def test_practice_start_returns_error_when_nothing_is_due(self):
+        self.create(items=material_items(1))
+        today = date.today().isoformat()
+        conn = sqlite3.connect(self.db)
+        table = ll.words_table_name('alice', 'focus')
+        conn.execute(
+            f'UPDATE "{table}" SET score=9.0, leitner_box=1, consolidation_step=0, '
+            'last_tartarus_completed=?, leitner_last_reviewed=? WHERE content_id=?',
+            (today, today, 'id-00'),
+        )
+        conn.commit()
+        conn.close()
+        data = self.api('/api/practice/start', {'user': 'alice', 'lang': 'focus'}, expected=400)
+        self.assertIn("Today's Tartarus work is complete", data['error'])
+
     def test_wordlist_restart_endpoint_rejects_unknown_list(self):
         self.create()
         data=self.api('/api/wordlist/restart',{'user':'alice','lang':'doesnotexist'},expected=400)
@@ -3004,7 +3034,7 @@ class FirefoxSpeechSubmitTest(unittest.TestCase):
         self.assertFalse(result['wrongCase']['navOnSummary'])
         self.assertTrue(result['wrongCase']['replayWorked'])
         self.assertTrue(result['wrongCase']['encodingStarted'])
-        self.assertLessEqual(result['wrongCase']['disabledStartOpacity'], 0.6)
+        self.assertFalse(result['wrongCase']['startDisabledAfterLoad'])
 
     def _runner_js(self):
         return r"""
@@ -3042,10 +3072,8 @@ class FirefoxSpeechSubmitTest(unittest.TestCase):
             ]) select(id, val);
 
             const start = document.getElementById('start-session');
-            start.disabled = true;
-            const disabledStartOpacity = Number(getComputedStyle(start).opacity);
-            start.disabled = false;
-            if (!(disabledStartOpacity <= 0.6)) throw new Error('disabled start still looks live: ' + disabledStartOpacity);
+            const startDisabledAfterLoad = start.disabled;
+            if (startDisabledAfterLoad) throw new Error('consolidation start was disabled after load');
 
             __api.ttsDelay = 1500;
             __api.finishOnAnswer = true;
@@ -3129,7 +3157,7 @@ class FirefoxSpeechSubmitTest(unittest.TestCase):
               navOnSummary,
               replayWorked: __api.ttsCalls > ttsBeforeReplay,
               encodingStarted: __api.startCount > startsBefore,
-              disabledStartOpacity,
+              startDisabledAfterLoad,
             };
             if (wrongCase.answers !== 0) throw new Error('wrong answer auto-submitted after audio');
             if (wrongCase.value !== 'w01') throw new Error('wrong value lost');
@@ -3252,11 +3280,16 @@ class StaticReleaseContractTest(unittest.TestCase):
         self.assertIn('nav button:hover:not(:disabled)', css)
         self.assertNotIn('setNavigationEnabled(', js)
         self.assertIn('armWatchdog', js)
-        self.assertIn('startButton.disabled', js)
+        self.assertNotIn('startButton.disabled', js)
         self.assertIn('p.locked_today', js)
         self.assertIn("Today's Tartarus work is complete for this list.", js)
         self.assertIn('controller.abort()', js)
         self.assertIn('if (speechPending > 0) return;', js)
+        html = (ROOT / 'web/index.html').read_text(encoding='utf-8')
+        self.assertIn('href="/style.css"', html)
+        self.assertIn('src="/app.js"', html)
+        self.assertNotIn('style.css?v=', html)
+        self.assertNotIn('app.js?v=', html)
 
     def test_web_answer_field_has_no_symbol_command_parser(self):
         source=(ROOT/'web/app.js').read_text(encoding='utf-8')
