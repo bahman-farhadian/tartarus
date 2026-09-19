@@ -2581,11 +2581,15 @@ class BrowserContractTest(unittest.TestCase):
         self.browser.script("__api.ttsDelay=1500;document.getElementById('start-session').click();return true;")
         self.wait("return getComputedStyle(document.getElementById('practice-session')).display!=='none'")
         self.wait("return !document.getElementById('answer-input').disabled && document.getElementById('btn-end').disabled && !document.getElementById('word-display').classList.contains('can-submit')")
+        locked=self.browser.script("const end=document.getElementById('btn-end'),nav=document.querySelector('nav button[data-view=\"lists\"]');return {end:end.disabled,replay:document.getElementById('btn-replay').disabled,nav:nav.disabled,endOpacity:Number(getComputedStyle(end).opacity)};")
+        self.assertTrue(locked['end']); self.assertTrue(locked['replay']); self.assertTrue(locked['nav']); self.assertLessEqual(locked['endOpacity'],0.6)
         self.browser.script("const i=document.getElementById('answer-input');i.value='typed';i.dispatchEvent(new Event('input',{bubbles:true}));i.dispatchEvent(new KeyboardEvent('keydown',{key:'Enter',bubbles:true,cancelable:true}));document.getElementById('btn-end').click();document.querySelector('nav button[data-view=\"lists\"]').click();return true;")
         time.sleep(.1)
         state=self.browser.script("return {value:document.getElementById('answer-input').value,answers:__api.answers,active:document.getElementById('view-practice').classList.contains('active'),visible:document.getElementById('word-display').textContent,ready:document.getElementById('word-display').classList.contains('can-submit')};")
         self.assertEqual(state['value'],'typed');self.assertEqual(state['answers'],0);self.assertTrue(state['active']);self.assertEqual(state['visible'],'typed');self.assertFalse(state['ready'])
         self.wait("return document.getElementById('word-display').classList.contains('can-submit')",timeout=3)
+        unlocked=self.browser.script("const end=document.getElementById('btn-end'),nav=document.querySelector('nav button[data-view=\"lists\"]');return {end:end.disabled,replay:document.getElementById('btn-replay').disabled,nav:nav.disabled};")
+        self.assertFalse(unlocked['end']); self.assertFalse(unlocked['replay']); self.assertFalse(unlocked['nav'])
         self.browser.script("const i=document.getElementById('answer-input');i.value='w00';i.dispatchEvent(new KeyboardEvent('keydown',{key:'Enter',bubbles:true,cancelable:true}));return true;")
         self.wait("return __api.answers===1")
         self.assertEqual(self.browser.script("return __api.lastBody.answer"),'w00')
@@ -2956,6 +2960,15 @@ class FirefoxSpeechSubmitTest(unittest.TestCase):
         self.assertEqual(result['correctCase']['answer'], 'w00')
         self.assertEqual(result['wrongCase']['answers'], 0)
         self.assertEqual(result['wrongCase']['value'], 'w01')
+        self.assertTrue(result['wrongCase']['duringSpeech']['end'])
+        self.assertTrue(result['wrongCase']['duringSpeech']['nav'])
+        self.assertLessEqual(result['wrongCase']['duringSpeech']['endOpacity'], 0.6)
+        self.assertFalse(result['wrongCase']['afterSpeech']['end'])
+        self.assertFalse(result['wrongCase']['afterSpeech']['nav'])
+        self.assertFalse(result['wrongCase']['navOnSummary'])
+        self.assertTrue(result['wrongCase']['replayWorked'])
+        self.assertTrue(result['wrongCase']['encodingStarted'])
+        self.assertLessEqual(result['wrongCase']['disabledStartOpacity'], 0.6)
 
     def _runner_js(self):
         return r"""
@@ -2992,11 +3005,34 @@ class FirefoxSpeechSubmitTest(unittest.TestCase):
               ['practice-file', 'focus'],
             ]) select(id, val);
 
+            const start = document.getElementById('start-session');
+            start.disabled = true;
+            const disabledStartOpacity = Number(getComputedStyle(start).opacity);
+            start.disabled = false;
+            if (!(disabledStartOpacity <= 0.6)) throw new Error('disabled start still looks live: ' + disabledStartOpacity);
+
             __api.ttsDelay = 1500;
             __api.finishOnAnswer = true;
             document.getElementById('start-session').click();
             await wait(() => getComputedStyle(document.getElementById('practice-session')).display !== 'none', 4000);
             await wait(() => !document.getElementById('answer-input').disabled && !document.getElementById('word-display').classList.contains('can-submit'), 4000);
+            const snapshotLock = () => {
+              const end = document.getElementById('btn-end');
+              const nav = document.querySelector('nav button[data-view="lists"]');
+              return {
+                end: end.disabled,
+                replay: document.getElementById('btn-replay').disabled,
+                nav: nav.disabled,
+                endOpacity: Number(getComputedStyle(end).opacity),
+              };
+            };
+            const duringSpeech = snapshotLock();
+            if (!duringSpeech.end || !duringSpeech.replay || !duringSpeech.nav) {
+              throw new Error('controls not locked during audio: ' + JSON.stringify(duringSpeech));
+            }
+            if (!(duringSpeech.endOpacity <= 0.6)) {
+              throw new Error('disabled end still looks live: ' + duringSpeech.endOpacity);
+            }
             const typed = document.getElementById('answer-input');
             typed.value = 'w00';
             typed.dispatchEvent(new Event('input', {bubbles: true}));
@@ -3014,6 +3050,7 @@ class FirefoxSpeechSubmitTest(unittest.TestCase):
             const correctCase = {answers: __api.answers, answer: __api.lastBody.answer};
 
             await wait(() => getComputedStyle(document.getElementById('practice-summary')).display !== 'none', 6000);
+            const navOnSummary = document.querySelector('nav button[data-view="lists"]').disabled;
             document.getElementById('summary-restart').click();
 
             __api.ttsDelay = 1500;
@@ -3027,9 +3064,39 @@ class FirefoxSpeechSubmitTest(unittest.TestCase):
             wrong.value = 'w01';
             wrong.dispatchEvent(new Event('input', {bubbles: true}));
             await wait(() => document.getElementById('word-display').classList.contains('can-submit'), 4000);
-            const wrongCase = {answers: __api.answers, value: wrong.value};
+            const wrongValue = wrong.value;
+            const answersAfterSpeech = __api.answers;
+            const afterSpeech = snapshotLock();
+            if (afterSpeech.end || afterSpeech.replay || afterSpeech.nav) {
+              throw new Error('controls still locked after audio: ' + JSON.stringify(afterSpeech));
+            }
+            const ttsBeforeReplay = __api.ttsCalls;
+            __api.ttsDelay = 0;
+            document.getElementById('btn-replay').click();
+            await wait(() => __api.ttsCalls > ttsBeforeReplay, 4000);
+            await wait(() => !document.getElementById('btn-replay').disabled, 4000);
+            document.getElementById('btn-end').click();
+            await wait(() => getComputedStyle(document.getElementById('practice-summary')).display !== 'none', 4000);
+            document.getElementById('summary-restart').click();
+            await wait(() => getComputedStyle(document.getElementById('practice-setup')).display !== 'none', 4000);
+            const startsBefore = __api.startCount;
+            document.getElementById('start-encoding-practice').click();
+            await wait(() => __api.startCount > startsBefore, 4000);
+            const wrongCase = {
+              answers: answersAfterSpeech,
+              value: wrongValue,
+              duringSpeech,
+              afterSpeech,
+              navOnSummary,
+              replayWorked: __api.ttsCalls > ttsBeforeReplay,
+              encodingStarted: __api.startCount > startsBefore,
+              disabledStartOpacity,
+            };
             if (wrongCase.answers !== 0) throw new Error('wrong answer auto-submitted after audio');
             if (wrongCase.value !== 'w01') throw new Error('wrong value lost');
+            if (wrongCase.navOnSummary) throw new Error('nav stayed disabled on summary');
+            if (!wrongCase.replayWorked) throw new Error('replay did not fire after audio');
+            if (!wrongCase.encodingStarted) throw new Error('encoding practice button did not start');
             await post({ok: true, correctCase, wrongCase, errors: window.__errors || []});
           } catch (e) {
             await post({
@@ -3097,7 +3164,7 @@ class FirefoxSpeechSubmitTest(unittest.TestCase):
                 stdout=subprocess.DEVNULL,
                 stderr=subprocess.DEVNULL,
             )
-            if not done.wait(25):
+            if not done.wait(40):
                 self.fail('firefox speech-submit page did not report a result')
         finally:
             if proc is not None and proc.poll() is None:
@@ -3133,6 +3200,22 @@ class StaticReleaseContractTest(unittest.TestCase):
         body = source[start:end]
         self.assertIn('maybeAutoSubmit()', body)
         self.assertIn('setAnswerInputEnabled(true)', body)
+
+    def test_disabled_buttons_look_disabled_and_speech_cannot_stick(self):
+        css = (ROOT / 'web/style.css').read_text(encoding='utf-8')
+        js = (ROOT / 'web/app.js').read_text(encoding='utf-8')
+        disabled = css.split('button:disabled {', 1)[1].split('}', 1)[0]
+        self.assertIn('opacity: 0.5', disabled)
+        self.assertIn('cursor: not-allowed', disabled)
+        self.assertNotIn('opacity: 0.95', disabled)
+        self.assertIn('button.primary:hover:not(:disabled)', css)
+        self.assertIn('button.secondary:hover:not(:disabled)', css)
+        self.assertIn('nav button:hover:not(:disabled)', css)
+        self.assertIn('setNavigationEnabled(false)', js)
+        self.assertIn('setNavigationEnabled(true)', js)
+        self.assertIn('armWatchdog', js)
+        self.assertIn('startButton.disabled', js)
+        self.assertIn('controller.abort()', js)
 
     def test_web_answer_field_has_no_symbol_command_parser(self):
         source=(ROOT/'web/app.js').read_text(encoding='utf-8')

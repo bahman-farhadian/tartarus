@@ -102,7 +102,7 @@ nav button {
   font-size: 0.95rem;
 }
 
-nav button:hover {
+nav button:hover:not(:disabled) {
   color: var(--text);
 }
 
@@ -221,7 +221,7 @@ button.primary {
   cursor: pointer;
 }
 
-button.primary:hover {
+button.primary:hover:not(:disabled) {
   background: color-mix(in srgb, var(--mauve) 82%, var(--text));
 }
 
@@ -235,13 +235,16 @@ button.secondary {
   font-size: 0.9rem;
 }
 
-button.secondary:hover {
+button.secondary:hover:not(:disabled) {
   background: var(--surface1);
 }
 
+/* Disabled must look inert: 0.95 plus hover made locked Replay/End/Start
+   appear clickable while the click was ignored. Inputs stay full-opacity
+   because the capture field is already visually hidden. */
 button:disabled {
-  opacity: 0.95;
-  cursor: default;
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 input:disabled, input:read-only {
@@ -927,7 +930,7 @@ button.shortcut {
   cursor: pointer;
 }
 
-button.shortcut:hover {
+button.shortcut:hover:not(:disabled) {
   background: var(--surface1);
   color: var(--mauve);
 }

@@ -114,9 +114,35 @@
     try {
       await new Promise((resolve) => {
         const audio = new Audio(url);
-        audio.addEventListener('ended', resolve, { once: true });
-        audio.addEventListener('error', resolve, { once: true });
-        audio.play().catch(resolve);
+        let settled = false;
+        let watchdog = null;
+        const done = () => {
+          if (settled) return;
+          settled = true;
+          if (watchdog != null) clearTimeout(watchdog);
+          audio.removeEventListener('ended', done);
+          audio.removeEventListener('error', done);
+          resolve();
+        };
+        // If ended never fires (zero-length blob, stalled decode), the
+        // speech lock would leave Replay/End/nav looking dead. Cap wait
+        // to duration plus a short pad, with a 20s ceiling.
+        const armWatchdog = (ms) => {
+          if (settled) return;
+          if (watchdog != null) clearTimeout(watchdog);
+          watchdog = setTimeout(done, ms);
+        };
+        armWatchdog(20000);
+        audio.addEventListener('ended', done);
+        audio.addEventListener('error', done);
+        audio.addEventListener('loadedmetadata', () => {
+          if (!Number.isFinite(audio.duration) || audio.duration <= 0) {
+            done();
+            return;
+          }
+          armWatchdog(Math.min(20000, Math.ceil(audio.duration * 1000) + 1500));
+        }, { once: true });
+        audio.play().catch(done);
       });
     } finally {
       URL.revokeObjectURL(url);
@@ -131,11 +157,19 @@
       const played = await playPreGeneratedAudio(sessionUser, sessionListId, text);
       if (played) return;
       try {
-        await fetch('/api/tts', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ text, lang: sessionLang }),
-        });
+        const controller = new AbortController();
+        const timer = setTimeout(() => controller.abort(), 20000);
+        try {
+          await fetch('/api/tts', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ text, lang: sessionLang }),
+            cache: 'no-store',
+            signal: controller.signal,
+          });
+        } finally {
+          clearTimeout(timer);
+        }
       } catch (err) { /* best-effort, matches the previous swallow-errors behavior */ }
     };
     speechPending += 1;
@@ -144,10 +178,16 @@
     answerSubmitReady = false;
     wordDisplay.classList.remove('can-submit');
     setActionButtons(false);
+    setNavigationEnabled(false);
     const queued = speechTail.then(request, request);
     speechTail = queued.finally(() => {
       speechPending = Math.max(0, speechPending - 1);
-      if (speechPending === 0) restoreInteractionAfterSpeech();
+      if (speechPending === 0) {
+        // Unlock nav even when restore bails (answer in flight, summary).
+        // Otherwise the disabled attribute would stick after the last card.
+        setNavigationEnabled(true);
+        restoreInteractionAfterSpeech();
+      }
     });
     return speechTail;
   }
@@ -637,6 +677,8 @@
       const tag = document.activeElement?.tagName;
       if (tag !== 'SELECT' && tag !== 'TEXTAREA') {
         e.preventDefault();
+        const startButton = document.getElementById('start-session');
+        if (startButton && startButton.disabled) return;
         startSession();
       }
     }
@@ -666,6 +708,12 @@
       if (!user) userInput.focus();
       else if (!lang) posInput.focus();
       return;
+    }
+    // Supplementary track buttons stay clickable when the Consolidation
+    // Track has nothing due; only the main CTA is disabled in that case.
+    if (!track) {
+      const startButton = document.getElementById('start-session');
+      if (startButton && startButton.disabled) return;
     }
 
     try {
@@ -863,6 +911,11 @@
       answerTimerBar.style.opacity = '1';
     }
     if (answerTimerLabel) answerTimerLabel.textContent = '';
+  }
+
+  function setNavigationEnabled(enabled) {
+    navButtons.forEach((b) => { b.disabled = !enabled; });
+    document.querySelectorAll('[data-view-link]').forEach((b) => { b.disabled = !enabled; });
   }
 
   function setActionButtons(enabled) {
