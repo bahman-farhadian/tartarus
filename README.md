@@ -424,7 +424,7 @@ The selected list shows:
 
 During a session, Replay is always available, and End is available only outside a mandatory drill. There are no reveal, flag, mastery, or manual-drill shortcuts.
 
-When the selected list has no due maintenance, due reinforcement, or Encoding work, **Enter the Consolidation Track** is disabled and looks disabled (the optional supplementary buttons stay available). A list that has never been practiced still counts its JSON items as Encoding, so Start stays available until that pool is actually empty. Completed same-day reinforcement is not reopened, and no mutable day counter can be advanced early. The setup-page Enter shortcut does not start a session while that button is disabled.
+When the selected list has no due maintenance, due reinforcement, or Encoding work, **Enter the Consolidation Track** is disabled and looks disabled (the optional supplementary buttons stay available). A list that has never been practiced still counts its JSON items as Encoding, so Start stays available until that pool is actually empty. If Encoding is empty and items remain in the 10-day track but none are due today (`locked_today`), the overview says today's Tartarus work is complete for that list and how many items are waiting for a later day — the same class of end-of-work copy as a finished track, not “pick different material.” Completed same-day reinforcement is not reopened, and no mutable day counter can be advanced early. The setup-page Enter shortcut does not start a session while that button is disabled.
 
 The global Enter shortcut is also part of the flow:
 

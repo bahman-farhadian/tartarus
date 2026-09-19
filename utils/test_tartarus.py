@@ -3253,6 +3253,8 @@ class StaticReleaseContractTest(unittest.TestCase):
         self.assertNotIn('setNavigationEnabled(', js)
         self.assertIn('armWatchdog', js)
         self.assertIn('startButton.disabled', js)
+        self.assertIn('p.locked_today', js)
+        self.assertIn("Today's Tartarus work is complete for this list.", js)
         self.assertIn('controller.abort()', js)
         self.assertIn('if (speechPending > 0) return;', js)
 

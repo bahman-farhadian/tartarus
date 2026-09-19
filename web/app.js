@@ -490,9 +490,18 @@
 
       if (consolidationSessionsLabel) {
         if (nothingAvailable) {
-          consolidationSessionsLabel.textContent = p.complete
-            ? 'The Consolidation Track is complete for this material; no Spaced Maintenance review is due today.'
-            : 'Nothing left to practice here today — pick different material.';
+          const waiting = Number(p.reinforcement_total || 0);
+          if (p.complete) {
+            consolidationSessionsLabel.textContent =
+              'The Consolidation Track is complete for this material; no Spaced Maintenance review is due today.';
+          } else if (p.locked_today) {
+            consolidationSessionsLabel.textContent = waiting === 1
+              ? "Today's Tartarus work is complete for this list. 1 item remains in the 10-day track and is not due until a later day."
+              : `Today's Tartarus work is complete for this list. ${waiting} items remain in the 10-day track and are not due until a later day.`;
+          } else {
+            consolidationSessionsLabel.textContent =
+              'Nothing left to practice here today — pick different material.';
+          }
         } else {
           const dueReinforcement = Number(p.due_reinforcement || 0);
           const dueMaintenance = Number(p.due_maintenance != null ? p.due_maintenance : maintenanceReady);
