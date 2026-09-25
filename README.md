@@ -297,7 +297,7 @@ This never regresses on a mistake, matching the engine's core invariant that a w
 
 A due maintenance review hides the target the same way Effortful Retrieval onward does, so it shows only the primary prompt line too -- later definition lines are withheld for the same reason.
 
-When more items are due than fit in one 16-item session, `maintenance_ready_words()` always works from the lowest box up -- Box 1 (least stable, most urgent) before Box 2, and so on through whichever box is due last -- regardless of where those items sit in the file. Box number is the only priority signal; file order only breaks ties within the same box.
+Due counts (`due_maintenance`, `maintenance_ready`) are the full ready pool, not the 16-item sitting. When more items are due than fit in one 16-item session, `maintenance_ready_words()` always works from the lowest box up -- Box 1 (least stable, most urgent) before Box 2, and so on through whichever box is due last -- regardless of where those items sit in the file. Box number is the only priority signal; file order only breaks ties within the same box. The session still draws at most 16.
 
 ### Engine invariants
 
@@ -732,6 +732,7 @@ The unified suite covers the current release contracts, including:
 - request idempotency and bounded HTTP failures;
 - one-answer-does-not-end-session regression;
 - Web speech interaction locking and Enter navigation, including disabled Replay/End looking disabled, header nav staying visually live, unlocking after audio even if `ended` never fires, never-started lists remaining startable, Consolidation Start staying enabled, and `/api/practice/start` returning an error when nothing is due;
+- Spaced Maintenance due counts reporting the full ready pool rather than the 16-item session cap;
 - centered responsive practice layout;
 - original six-stage roadmap presence;
 - horizontal square Leitner roadmap in the live Practice report;

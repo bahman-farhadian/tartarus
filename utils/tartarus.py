@@ -1129,10 +1129,10 @@ def consolidation_state_breakdown(user, lang, today=None, conn=None):
             })
         reinforcement = len(track_rows)
         long_term = max(0, mastered - reinforcement)
-        # available_tasks always equals the size of whichever pool
-        # select_practice_words() would actually serve next -- the due
-        # Consolidation Track stage that's waited longest, or due Spaced Maintenance,
-        # or Encoding once nothing is due (P7).
+        # available_tasks is the full size of whichever pool
+        # select_practice_words() would serve next (P7). The sitting is
+        # still sliced to MAX_QUESTIONS at session build; the count must
+        # not inherit that cap, or Spaced Maintenance due always reads 16.
         if winner == 6:
             available = due_maintenance
         elif winner is not None:
@@ -1161,8 +1161,12 @@ def consolidation_state_breakdown(user, lang, today=None, conn=None):
 
 
 def maintenance_ready_words(user, lang, num_words=None, today=None):
-    """Return score-9 items ready for Spaced Maintenance, without mutation."""
-    num_words = MAX_QUESTIONS if num_words is None else num_words
+    """Return score-9 items ready for Spaced Maintenance, without mutation.
+
+    ``num_words=None`` returns the full ready pool so due counts and
+    reports are not silently capped at one sitting. Session construction
+    passes ``MAX_QUESTIONS``.
+    """
     today_date = date.fromisoformat(today or date.today().isoformat())
     wpath = word_list_path(user, lang)
     material = {item['content_id']: item for item in load_practice_items(wpath)}
@@ -1197,6 +1201,8 @@ def maintenance_ready_words(user, lang, num_words=None, today=None):
     # happen to sit in. Stable sort keeps file order as the tiebreaker
     # within the same box.
     ready.sort(key=lambda row: row[4])
+    if num_words is None:
+        return ready
     return ready[:num_words]
 
 
@@ -1270,7 +1276,9 @@ def select_practice_words(user, lang, today=None):
 
     if winner is not None:
         if winner == 6:
-            words = maintenance_ready_words(user, lang, today=today)
+            words = maintenance_ready_words(
+                user, lang, today=today, num_words=MAX_QUESTIONS,
+            )
             words = _with_stage(words, 'spaced_maintenance', 5, 'Spaced Maintenance', 0)
             return (
                 words, 'spaced_maintenance', 'spaced_maintenance', 5,

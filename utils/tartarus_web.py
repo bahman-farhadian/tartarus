@@ -1096,7 +1096,7 @@ def word_list_stats(user, lang):
                 return None
             return []
         material = {item['content_id']: item for item in ll.load_practice_items(ll.word_list_path(user_s, lang_s))}
-        ready_ids = {row[0] for row in ll.maintenance_ready_words(user_s, lang_s, num_words=10**9)}
+        ready_ids = {row[0] for row in ll.maintenance_ready_words(user_s, lang_s)}
         reinforcement = {
             row['id']: row
             for row in ll._reinforcement_rows(

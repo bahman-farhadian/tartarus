@@ -726,6 +726,33 @@ class CoreContractTest(unittest.TestCase):
         ready=ll.maintenance_ready_words('alice','focus',today='2026-08-08')
         self.assertEqual([r[1] for r in ready],['w02','w01','w00'])
 
+    def test_maintenance_due_count_is_not_capped_at_session_size(self):
+        self.make(material_items(20))
+        for index in range(20):
+            self.master(
+                f'id-{index:02d}', '2026-07-01', box=1,
+                last_reviewed='2026-07-01', completed_day=10,
+            )
+        state = ll.consolidation_state_breakdown('alice', 'focus', today='2026-08-08')
+        self.assertEqual(state['due_maintenance'], 20)
+        self.assertEqual(state['available_tasks'], 20)
+        self.assertEqual(
+            len(ll.maintenance_ready_words('alice', 'focus', today='2026-08-08')),
+            20,
+        )
+        self.assertEqual(
+            len(ll.maintenance_ready_words(
+                'alice', 'focus', today='2026-08-08', num_words=ll.MAX_QUESTIONS,
+            )),
+            16,
+        )
+        words, context, mode, *_ = ll.select_practice_words(
+            'alice', 'focus', today='2026-08-08',
+        )
+        self.assertEqual(context, 'spaced_maintenance')
+        self.assertEqual(mode, 'spaced_maintenance')
+        self.assertEqual(len(words), 16)
+
     def test_progress_payload_has_factual_track_metrics_only(self):
         self.make(material_items(2))
         recent = (date.today() - timedelta(days=1)).isoformat()
@@ -2077,6 +2104,30 @@ class HttpContractTest(ServerHarness):
         conn.close()
         data = self.api('/api/practice/start', {'user': 'alice', 'lang': 'focus'}, expected=400)
         self.assertIn("Today's Tartarus work is complete", data['error'])
+
+    def test_maintenance_due_reports_full_pool_and_session_still_caps_at_sixteen(self):
+        self.create(items=material_items(20))
+        past = (date.today() - timedelta(days=2)).isoformat()
+        conn = sqlite3.connect(self.db)
+        table = ll.words_table_name('alice', 'focus')
+        conn.execute(
+            f'UPDATE "{table}" SET score=9.0, leitner_box=1, consolidation_step=10, '
+            'last_tartarus_completed=?, leitner_last_reviewed=?',
+            (past, past),
+        )
+        conn.commit()
+        conn.close()
+        progress = self.api('/api/consolidation/progress?user=alice&lang=focus')
+        self.assertEqual(progress['progress']['due_maintenance'], 20)
+        self.assertEqual(progress['progress']['available_tasks'], 20)
+        self.assertEqual(progress['roadmap']['maintenance_ready'], 20)
+        leitner = self.api('/api/wordlist/leitner?user=alice&lang=focus')
+        self.assertEqual(leitner['leitner']['ready'], 20)
+        started = self.start()
+        self.assertEqual(started['consolidation']['mode'], 'spaced_maintenance')
+        self.assertEqual(started['progress']['max_questions'], 16)
+        self.assertEqual(started['progress']['total'], 16)
+        self.assertEqual(started['consolidation']['remaining_tasks'], 20)
 
     def test_wordlist_restart_endpoint_rejects_unknown_list(self):
         self.create()
