@@ -1363,13 +1363,20 @@
     const wrap = document.createElement('div');
     let html = '<table><thead><tr><th>File</th><th>Reinforcement Due</th>'
       + '<th>Maintenance Due</th><th></th></tr></thead><tbody>';
+    let totalReinforcement = 0;
+    let totalMaintenance = 0;
     sorted.forEach((item, index) => {
       const c = item.consolidation;
-      html += `<tr><td>${escapeHtml(item.lang)}</td><td>${c.due_reinforcement}</td>`
-        + `<td>${c.due_maintenance}</td>`
+      const reinforcement = Number(c.due_reinforcement || 0);
+      const maintenance = Number(c.due_maintenance || 0);
+      totalReinforcement += reinforcement;
+      totalMaintenance += maintenance;
+      html += `<tr><td>${escapeHtml(item.lang)}</td><td>${reinforcement}</td>`
+        + `<td>${maintenance}</td>`
         + `<td><button type="button" class="secondary today-jump-btn" data-index="${index}">Practice &rarr;</button></td></tr>`;
     });
-    html += '</tbody></table>';
+    html += '</tbody><tfoot><tr><th>Total</th><td>' + totalReinforcement + '</td><td>'
+      + totalMaintenance + '</td><td></td></tr></tfoot></table>';
     wrap.innerHTML = html;
     wrap.querySelectorAll('.today-jump-btn').forEach((btn) => {
       btn.addEventListener('click', () => {

@@ -1376,6 +1376,11 @@ thead th {
   font-weight: 600;
 }
 
+tfoot th, tfoot td {
+  font-weight: 600;
+  border-bottom: none;
+}
+
 tr.total-row td {
   font-weight: 700;
   color: var(--lavender);

@@ -3342,6 +3342,16 @@ class StaticReleaseContractTest(unittest.TestCase):
         self.assertNotIn('style.css?v=', html)
         self.assertNotIn('app.js?v=', html)
 
+    def test_due_today_table_includes_a_cross_file_total(self):
+        source = (ROOT / 'web/app.js').read_text(encoding='utf-8')
+        start = source.index('function renderDueTodayTable')
+        end = source.index('\n  function ', start + 1)
+        body = source[start:end]
+        self.assertIn('<tfoot>', body)
+        self.assertIn('Total', body)
+        self.assertIn('totalReinforcement', body)
+        self.assertIn('totalMaintenance', body)
+
     def test_web_answer_field_has_no_symbol_command_parser(self):
         source=(ROOT/'web/app.js').read_text(encoding='utf-8')
         for fragment in ("answer === '@'","answer === '$'","answer === '?'","answer === '!'","answer === '+'","answer === '!!'"):
