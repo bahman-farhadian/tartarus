@@ -2180,18 +2180,38 @@ def english_definition_only(definition):
     return ''
 
 
+def prompt_definition_lines(definition):
+    """Lines shown while the target is masked or hidden.
+
+    The primary prompt line is always included. Bundled German sentences
+    are lemma / gloss / English translation (three lines). That last line
+    is the meaning of the whole sentence -- the point of sentence practice
+    -- so it stays visible. Vocabulary example sentences (the second line)
+    still withhold because they embed the target.
+    """
+    if not definition:
+        return []
+    nonempty = [line.strip() for line in str(definition).split('\n') if line.strip()]
+    primary = english_definition_only(definition)
+    shown = [primary] if primary else []
+    if len(nonempty) >= 3:
+        translation = nonempty[-1]
+        if translation and translation not in shown:
+            shown.append(translation)
+    return shown
+
+
 def build_question_data(word_id, word_text, definition, score):
     """Build the ordinary question payload. Stage-specific presentation is added by Web."""
     band=score_band(score)
     question_type='learning' if band < 8 else 'production'
     full_lines=definition.split('\n') if definition else []
-    primary=english_definition_only(definition)
-    prompt=[primary] if primary else []
-    # Later definition lines (example sentence on bundled vocabulary; extra
-    # lines on German sentences) would give the target away once
-    # mask_sentence() starts hiding letters (score > 0). At score 0 the word
-    # itself is still shown in full, so the full authored definition is kept.
-    lines=full_lines if (question_type=='learning' and score<=0) else prompt
+    # Later vocabulary lines (the example sentence) would give the target
+    # away once mask_sentence() starts hiding letters (score > 0). Sentence
+    # English translations do not embed the target and stay visible.
+    # At score 0 the word itself is still shown in full, so the full
+    # authored definition is kept.
+    lines=full_lines if (question_type=='learning' and score<=0) else prompt_definition_lines(definition)
     return {
         'word_id':word_id,'word':mask_sentence(word_text,score),'word_unmasked':word_text,
         'definition':lines,'score':round(score,1),'gauge':score_gauge(score,ansi=False),

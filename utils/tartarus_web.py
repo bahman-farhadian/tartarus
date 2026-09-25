@@ -367,7 +367,6 @@ def next_bucket_question(session):
         entry['word_id'], entry['word_text'], entry['definition'], entry['score'],
     )
     full_lines = entry['definition'].split('\n') if entry['definition'] else []
-    primary = ll.english_definition_only(entry['definition'])
     question['type'] = track
     question['word_unmasked'] = entry['word_text']
     if track == 'encoding_practice':
@@ -389,7 +388,7 @@ def next_bucket_question(session):
         question['timer'] = True
     elif track == 'retrieval_reading':
         question['word'] = ''
-        question['definition'] = [primary] if primary else []
+        question['definition'] = ll.prompt_definition_lines(entry['definition'])
     else:  # retrieval_listening: audio only, no text or definition at all.
         question['word'] = ''
         question['definition'] = []
@@ -527,10 +526,9 @@ def next_question(session):
         question['type'] = mode
         question['word_unmasked'] = entry['word_text']
         # The word is masked or fully hidden in every one of these stages, so
-        # later definition lines are withheld -- only the primary prompt line
-        # is shown.
-        primary = ll.english_definition_only('\n'.join(full_lines))
-        question['definition'] = [primary] if primary else []
+        # vocabulary example sentences are withheld. Sentence English
+        # translations stay visible -- that is the meaning being practiced.
+        question['definition'] = ll.prompt_definition_lines('\n'.join(full_lines))
         if mode == 'cued_recall':
             vowels = 'aeiouAEIOUäöüÄÖÜ'
             question['word'] = ''.join(
@@ -544,9 +542,8 @@ def next_question(session):
         question['word'] = ''
         question['word_unmasked'] = entry['word_text']
         # Same anti-cheat rule as the daily stages above: word is hidden, so
-        # withhold later definition lines.
-        primary = ll.english_definition_only('\n'.join(full_lines))
-        question['definition'] = [primary] if primary else []
+        # vocabulary example sentences are withheld. Sentence translations stay.
+        question['definition'] = ll.prompt_definition_lines('\n'.join(full_lines))
     if drill is not None:
         question['drill_start'].update({
             'word': entry['word_text'],

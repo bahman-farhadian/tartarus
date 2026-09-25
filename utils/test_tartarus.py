@@ -234,6 +234,22 @@ class CoreContractTest(unittest.TestCase):
         production = ll.build_question_data('id-00', 'schwer', definition, 8.0)
         self.assertEqual(production['definition'], ['heavy; difficult'])
 
+    def test_sentence_practice_always_shows_english_translation(self):
+        definition = 'mehr\nmore\nI would like more water.'
+        target = 'Ich möchte mehr Wasser.'
+        for score in (6.5, 8.0, 9.0):
+            question = ll.build_question_data('id-00', target, definition, score)
+            self.assertEqual(
+                question['definition'],
+                ['mehr', 'I would like more water.'],
+                score,
+            )
+        untouched = ll.build_question_data('id-00', target, definition, 0.0)
+        self.assertEqual(
+            untouched['definition'],
+            ['mehr', 'more', 'I would like more water.'],
+        )
+
     def test_material_loader_preserves_target_string_exactly(self):
         path = self.lists / 'raw.json'
         write_material(path, [{'id':'x','word':'  Exact target  ','definition':'x','word_frequency':0}])
@@ -1908,11 +1924,11 @@ class HttpContractTest(ServerHarness):
         self.assertEqual(row, (9.0,1,today.isoformat(),1,1))
         self.assertEqual(len(result['session']['incorrect']), 1)
 
-    def _land_on_stage(self, completed_day, *, box=None, leitner_last_reviewed=None):
+    def _land_on_stage(self, completed_day, *, box=None, leitner_last_reviewed=None, items=None):
         """Master a single custom item ('schwer') and set it up so the next
         session lands on a specific Consolidation Track day, or (with
         completed_day=10 and a due box) on Spaced Maintenance."""
-        self.create(items=[{
+        self.create(items=items or [{
             'id': 'id-00', 'word': 'schwer', 'word_frequency': 0,
             'definition': 'heavy; difficult\nDie Aufgabe ist sehr schwer.',
         }])
@@ -1963,6 +1979,22 @@ class HttpContractTest(ServerHarness):
         question = self.start()['question']
         self.assertEqual(question['consolidation']['mode'], 'spaced_maintenance')
         self.assertEqual(question['definition'], ['heavy; difficult'])
+
+    def test_sentence_stages_keep_english_translation_visible(self):
+        items = [{
+            'id': 'id-00', 'word': 'Ich möchte mehr Wasser.', 'word_frequency': 0,
+            'definition': 'mehr\nmore\nI would like more water.',
+        }]
+        expected = ['mehr', 'I would like more water.']
+        self._land_on_stage(0, items=items)
+        started = self.start()
+        self.assertEqual(started['question']['consolidation']['mode'], 'cued_recall')
+        self.assertEqual(started['question']['definition'], expected)
+        self.api('/api/practice/cancel', {'session_id': started['session_id']})
+        reading = self.api('/api/practice/start', {
+            'user': 'alice', 'lang': 'focus', 'track': 'retrieval_reading',
+        })
+        self.assertEqual(reading['question']['definition'], expected)
 
     def test_effortful_retrieval_drill_reveal_restores_full_definition(self):
         # The unescalated question withholds the example sentence (the word

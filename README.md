@@ -123,7 +123,7 @@ At scores `8.0–8.5`, the item moves to production-style recall: the target is 
 
 The purpose is gradual cue removal: recognition support is strongest when material is new and weakest near mastery.
 
-Once this masking becomes active (`score > 0`), only the primary prompt line is shown -- later lines (the example sentence, and for German sentences the English translation) embed or give away the target. At `score == 0` the target is still shown in full, so the full authored definition is shown as usual.
+Once this masking becomes active (`score > 0`), vocabulary example sentences (the second definition line) are withheld -- they embed the target. Sentence lists keep the English translation of the whole sentence visible in every stage: that translation is the meaning being practiced. At `score == 0` the target is still shown in full, so the full authored definition is shown as usual.
 
 ---
 
@@ -215,14 +215,16 @@ through Automaticity.
 
 Whenever the target itself is masked or hidden -- Encoding once its own
 progressive masking is active (`score > 0`), every stage above, and Spaced
-Maintenance -- only the primary prompt line (the first definition line) is
-shown. Bundled vocabulary puts an example sentence on the second line that
-embeds the literal target word; German sentences carry extra lines after the
-lemma. Either would sit in plain text below a masked or hidden target, so
-they are withheld. The one exception is a corrective drill that has actually
-revealed the word (`show_word: true`, after a genuine mistake): at that point
-the answer is already fully shown, so the full authored definition is restored
-there, since it can only help.
+Maintenance -- vocabulary shows only the primary prompt line (the first
+definition line). Bundled vocabulary puts an example sentence on the second
+line that embeds the literal target word, so that line is withheld. Sentence
+lists always keep the English translation of the sentence (the last authored
+line) visible: the point of sentence practice is to produce the target from
+that meaning. The lemma/gloss lines still follow the same primary-prompt
+rule. The one exception for vocabulary is a corrective drill that has
+actually revealed the word (`show_word: true`, after a genuine mistake): at
+that point the answer is already fully shown, so the full authored definition
+is restored there, since it can only help.
 
 Free Recall/Reconsolidation/Automaticity's response timer scales with the target's own length
 rather than a fixed guess -- 0.75s per character for Free Recall, 0.5s per
@@ -295,7 +297,7 @@ A large, long-lived vocabulary can leave hundreds of items sitting in Box 10, ea
 
 This never regresses on a mistake, matching the engine's core invariant that a wrong answer costs a bounded corrective drill rather than lost progress: a wrong first answer freezes the streak exactly where it is (same as the box itself) and starts the standard corrective drill; completing that drill grants the streak its deferred `+1`, precisely mirroring how a completed drill already grants the same box advancement a correct first answer would have. There is no reset or decrease path -- only Boxes 1-9's own fixed intervals and a freshly-arrived Box 10 item (streak 0) ever use the plain 10-day cadence by default.
 
-A due maintenance review hides the target the same way Effortful Retrieval onward does, so it shows only the primary prompt line too -- later definition lines are withheld for the same reason.
+A due maintenance review hides the target the same way Effortful Retrieval onward does, so vocabulary shows only the primary prompt line too -- example-sentence lines are withheld for the same reason. Sentence English translations stay visible.
 
 Due counts (`due_maintenance`, `maintenance_ready`) are the full ready pool, not the 16-item sitting. When more items are due than fit in one 16-item session, `maintenance_ready_words()` always works from the lowest box up -- Box 1 (least stable, most urgent) before Box 2, and so on through whichever box is due last -- regardless of where those items sit in the file. Box number is the only priority signal; file order only breaks ties within the same box. The session still draws at most 16.
 
@@ -740,7 +742,7 @@ The unified suite covers the current release contracts, including:
 - restart-from-scratch progress reset, preserving session history;
 - corpus-wide list-id uniqueness and stable-id invariants across the whole bundled dataset;
 - request/response and client-reported-error logging;
-- later definition lines withheld wherever the target is masked or hidden (Encoding once masked, every daily stage, Spaced Maintenance), restored once a corrective drill actually reveals the word;
+- later vocabulary example-sentence lines withheld wherever the target is masked or hidden (Encoding once masked, every daily stage, Spaced Maintenance), restored once a corrective drill actually reveals the word; sentence English translations always visible;
 - extended Box 10 maintenance intervals from a demonstrated streak of successful reviews, frozen (never reset) on a miss and only ever granted via a correct answer or a completed drill;
 - auto-submit firing on an exact correct answer without Enter, staying silent on a same-length wrong answer until Enter or a correction, and re-checking the field when prompt speech ends so a correct answer typed during audio still submits;
 - supplementary tracks: uncapped freshly-shuffled sessions, unlimited retry, no drill, and no mutation of score/Leitner/`consolidation_step`;
