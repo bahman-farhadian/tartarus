@@ -1700,12 +1700,9 @@ def _user_max_shifted_date(conn, user_s, word_tables, sessions_table):
             latest = value
 
     for table in word_tables:
-        row = conn.execute(
-            f'SELECT MAX(last_practiced), MAX(last_tartarus_completed), '
-            f'MAX(leitner_last_reviewed) FROM "{table}"'
-        ).fetchone()
-        for value in row:
-            consider(value)
+        # last_tartarus_completed and leitner_last_reviewed decide remaining
+        # due work and are not shifted, so they must not pull the distance.
+        consider(conn.execute(f'SELECT MAX(last_practiced) FROM "{table}"').fetchone()[0])
     if table_exists(conn, 'mastery_events'):
         consider(conn.execute(
             'SELECT MAX(mastered_date) FROM mastery_events WHERE user=?', (user_s,),
@@ -1753,8 +1750,9 @@ def _shift_decision(conn, user_s, word_tables, sessions_table, today_date):
 
     Returns (should_shift, last_practiced, gap_days, shift_days, reason).
 
-    A gap exists -- and is closed in a single call, landing every date on
-    today -- when either of these holds:
+    A gap exists -- and is closed in a single call, landing streak
+    bookkeeping on today without consuming remaining due work -- when
+    either of these holds:
 
     1. ``missed_day``: at least one whole calendar day passed with no
        practice at all (gap_days >= 2, i.e. the most recent practice is
@@ -1801,11 +1799,12 @@ def shift_user_dates_forward(user, *, today=None, database_file=None):
     """Idempotently bring one user's practice records up to today.
 
     Detects whether this user has a gap, and if so closes it completely in
-    a single call: every practice-record date for this user moves forward
-    by the same number of days, landing the most recent one exactly on
-    ``today``. See _shift_decision for the two situations that count as a
-    gap -- a whole calendar day missed, or work left unfinished since
-    yesterday -- and for why practising today is always a no-op.
+    a single call: streak-bookkeeping dates move forward by the same
+    number of days, landing the most recent one exactly on ``today``.
+    Remaining due work is left due. See _shift_decision for the two
+    situations that count as a gap -- a whole calendar day missed, or work
+    left unfinished since yesterday -- and for why practising today is
+    always a no-op.
 
     Closing the whole gap at once (rather than one day per call) is what
     lets a single click restore a streak that a multi-day absence broke,
@@ -1820,17 +1819,14 @@ def shift_user_dates_forward(user, *, today=None, database_file=None):
     produce a future-dated record" a property of the arithmetic itself
     rather than something the caller has to get right.
 
-    Due-ness everywhere in this app is date arithmetic (consolidation_step
-    is step-based, but last_tartarus_completed/leitner_last_reviewed/
-    mastered_date/session_date are all calendar dates); shifting every one of
-    them together by the same amount moves the learner's whole history
-    forward as a block, so the day that's covered reads exactly like a day
-    that really was practiced through, rather than a gap.
-
-    Touches, for this user only: each word list's last_practiced,
-    last_tartarus_completed, and leitner_last_reviewed; mastery_events'
-    mastered_date; the session log's session_date; and any pending drill's
-    created_at. The user account's own created_at (when the account was
+    This is a streak repair, not a due-work skip. last_tartarus_completed
+    and leitner_last_reviewed decide what is still due, so they stay put:
+    Encoding, due reinforcement, and due maintenance remain available after
+    the click. Scores, consolidation_step, and Leitner box are never
+    touched. The columns that move are last_practiced, mastery_events'
+    mastered_date, the session log's session_date, and any pending drill's
+    created_at -- enough for compute_streak() to see a consecutive run
+    ending today. The user account's own created_at (when the account was
     made, not a practice date) is left untouched.
 
     Returns {'shifted': bool, 'last_practiced': str or None,
@@ -1903,7 +1899,9 @@ def shift_user_dates_forward(user, *, today=None, database_file=None):
                 'shift_days': 0, 'reason': reason, 'tables': {},
             }
 
-        word_date_columns = ['last_practiced', 'last_tartarus_completed', 'leitner_last_reviewed']
+        # Due-ness columns (last_tartarus_completed, leitner_last_reviewed)
+        # stay put so remaining practice is not consumed.
+        word_date_columns = ['last_practiced']
         unparseable = {}
         for table in word_tables:
             bad = _unparseable_date_columns(conn, table, word_date_columns)
@@ -1957,11 +1955,8 @@ def shift_user_dates_forward(user, *, today=None, database_file=None):
 
         for table in word_tables:
             cur = conn.execute(
-                f'UPDATE "{table}" SET '
-                'last_practiced = date(last_practiced, ?), '
-                'last_tartarus_completed = date(last_tartarus_completed, ?), '
-                'leitner_last_reviewed = date(leitner_last_reviewed, ?)',
-                (offset, offset, offset),
+                f'UPDATE "{table}" SET last_practiced = date(last_practiced, ?)',
+                (offset,),
             )
             touched[table] = cur.rowcount
 
@@ -1996,7 +1991,7 @@ def shift_user_dates_forward(user, *, today=None, database_file=None):
         future_violations = {}
         for table in word_tables:
             row = conn.execute(
-                f'SELECT MAX(last_practiced), MAX(last_tartarus_completed), MAX(leitner_last_reviewed) FROM "{table}"'
+                f'SELECT MAX(last_practiced) FROM "{table}"'
             ).fetchone()
             bad_cols = [col for col, value in zip(word_date_columns, row) if value and value > today_iso]
             if bad_cols:

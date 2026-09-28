@@ -926,42 +926,37 @@ class CoreContractTest(unittest.TestCase):
         # (2026-08-09) that a shift is expected to trigger.
         result = ll.shift_user_dates_forward('alice', today='2026-08-13')
 
-        # The latest date in ANY shifted column is leitner_last_reviewed
-        # (2026-08-11), which is ahead of last_practiced (2026-08-09). The
-        # shift is measured from that maximum, so it moves 2 days -- landing
-        # that column exactly on today and nothing past it -- rather than
-        # the 4 days the practice gap alone would have suggested.
+        # Due-ness columns are not shifted, so the latest date among the
+        # columns that *do* move is last_practiced / session_date
+        # (2026-08-09). The shift is 4 days, landing those on today.
         self.assertEqual(
             (result['shifted'], result['last_practiced'], result['gap_days'], result['shift_days']),
-            (True, '2026-08-09', 4, 2),
+            (True, '2026-08-09', 4, 4),
         )
 
         after_00 = self.row('id-00')
-        # Every date column moved forward by the same two days...
-        self.assertEqual(after_00['last_tartarus_completed'], '2026-08-12')
-        self.assertEqual(after_00['leitner_last_reviewed'], '2026-08-13')  # exactly today
-        # ...and nothing else about the row changed.
+        # Remaining due work stays due: these two columns never move.
+        self.assertEqual(after_00['last_tartarus_completed'], '2026-08-10')
+        self.assertEqual(after_00['leitner_last_reviewed'], '2026-08-11')
         for key in ll.WORD_TABLE_COLUMNS:
-            if key in ('last_tartarus_completed', 'leitner_last_reviewed'):
-                continue
             self.assertEqual(after_00[key], before_00[key], key)
 
         after_01 = self.row('id-01')
-        self.assertEqual(after_01['last_practiced'], '2026-08-11')
+        self.assertEqual(after_01['last_practiced'], '2026-08-13')
         self.assertEqual(after_01['score'], 4.5)
 
         conn = ll.get_connection()
         self.assertEqual(
             conn.execute("SELECT mastered_date FROM mastery_events WHERE user='alice' AND lang='focus'").fetchone()[0],
-            '2026-08-03',
+            '2026-08-05',
         )
         self.assertEqual(
             conn.execute('SELECT session_date, mode, stage FROM sessions_alice').fetchone(),
-            ('2026-08-11', 'free_recall', 3),
+            ('2026-08-13', 'free_recall', 3),
         )
         self.assertEqual(
             conn.execute("SELECT created_at FROM pending_drills WHERE user='alice'").fetchone()[0],
-            '2026-08-11',
+            '2026-08-13',
         )
         conn.close()
 
@@ -1012,17 +1007,19 @@ class CoreContractTest(unittest.TestCase):
         # The shift distance is measured from the LATEST date in any
         # shifted column, not from last_practiced -- so a column that is
         # ahead of last_practiced still cannot be pushed past today.
+        # leitner_last_reviewed is not shifted (it decides remaining due
+        # work), so a session_date ahead of last_practiced is the signal.
         self.make(material_items(1))
-        self.update(
-            'id-00', last_practiced='2026-08-01',
-            leitner_last_reviewed='2026-08-03',  # ahead of last_practiced
-        )
+        self.update('id-00', last_practiced='2026-08-01')
+        self._insert_session_row('2026-08-03')
         result = ll.shift_user_dates_forward('alice', today='2026-08-06')
         self.assertTrue(result['shifted'])
         self.assertEqual(result['shift_days'], 3)  # 06 - 03, not 06 - 01
-        row = self.row('id-00')
-        self.assertEqual(row['leitner_last_reviewed'], '2026-08-06')  # exactly today
-        self.assertEqual(row['last_practiced'], '2026-08-04')         # still behind, never ahead
+        self.assertEqual(self.row('id-00')['last_practiced'], '2026-08-04')  # still behind, never ahead
+        conn = ll.get_connection()
+        session_date = conn.execute('SELECT session_date FROM sessions_alice').fetchone()[0]
+        conn.close()
+        self.assertEqual(session_date, '2026-08-06')  # exactly today
 
     def test_shift_user_dates_forward_is_a_no_op_when_practiced_today(self):
         # Practising today is always a no-op, outstanding work or not:
@@ -1075,37 +1072,76 @@ class CoreContractTest(unittest.TestCase):
         )
         self.assertEqual(self.row('id-00')['last_practiced'], '2026-08-10')
 
+    def test_shift_user_dates_forward_keeps_remaining_due_practice(self):
+        # Fill Practice Gap restores the calendar streak. It must not
+        # consume Encoding, due reinforcement, or due maintenance -- those
+        # are remaining practice, and the whole point of filling the gap
+        # is to keep the streak while still being able to do that work.
+        self.make(material_items(3))
+        self.update('id-00', score=1.0, last_practiced='2026-08-01')
+        self.master(
+            'id-01', '2026-07-20', box=1, last_reviewed='2026-08-01',
+            last_completed='2026-08-01', completed_day=2,
+        )
+        self.master(
+            'id-02', '2026-07-20', box=1, last_reviewed='2026-08-01',
+            last_completed='2026-08-01', completed_day=10,
+        )
+        self.update('id-01', last_practiced='2026-08-01')
+        self.update('id-02', last_practiced='2026-08-01')
+        self._insert_session_row('2026-08-01')
+
+        before = ll.consolidation_state_breakdown('alice', 'focus', today='2026-08-06')
+        self.assertGreater(before['encoding'], 0)
+        self.assertGreater(before['due_reinforcement'], 0)
+        self.assertGreater(before['due_maintenance'], 0)
+
+        result = ll.shift_user_dates_forward('alice', today='2026-08-06')
+        self.assertEqual(
+            (result['shifted'], result['reason'], result['shift_days']),
+            (True, 'missed_day', 5),
+        )
+
+        after = ll.consolidation_state_breakdown('alice', 'focus', today='2026-08-06')
+        self.assertEqual(after['encoding'], before['encoding'])
+        self.assertEqual(after['due_reinforcement'], before['due_reinforcement'])
+        self.assertEqual(after['due_maintenance'], before['due_maintenance'])
+        self.assertEqual(self.row('id-01')['last_tartarus_completed'], '2026-08-01')
+        self.assertEqual(self.row('id-02')['leitner_last_reviewed'], '2026-08-01')
+        self.assertEqual(self.row('id-00')['last_practiced'], '2026-08-06')
+        conn = ll.get_connection()
+        session_date = conn.execute('SELECT session_date FROM sessions_alice').fetchone()[0]
+        conn.close()
+        self.assertEqual(session_date, '2026-08-06')
+
     def test_shift_user_dates_forward_moves_every_date_by_the_same_amount(self):
-        # The learning schedule is entirely date arithmetic, so the RELATIVE
-        # spacing between dates is the thing that must survive a shift. Every
-        # date moves by one identical offset; if any date moved by a
-        # different amount, the shift would silently re-time the learner's
-        # schedule rather than translate it.
+        # Streak-bookkeeping dates move by one identical offset; due-ness
+        # columns stay put so remaining practice is not consumed.
         self.make(material_items(3))
         self.update('id-00', score=1.0, last_practiced='2026-08-01')
         self.update('id-01', score=2.0, last_practiced='2026-08-03',
                     last_tartarus_completed='2026-08-02')
         self.master('id-02', '2026-07-20', box=2, last_reviewed='2026-08-04', completed_day=3)
 
-        columns = ('last_practiced', 'last_tartarus_completed', 'leitner_last_reviewed')
         before = {cid: self.row(cid) for cid in ('id-00', 'id-01', 'id-02')}
 
         result = ll.shift_user_dates_forward('alice', today='2026-08-09')
         self.assertTrue(result['shifted'])
-        # Latest date anywhere is 2026-08-04, so everything moves 5 days.
-        self.assertEqual(result['shift_days'], 5)
+        # Latest shifted date is last_practiced 2026-08-03 (leitner_last_reviewed
+        # is ahead but not shifted), so streak bookkeeping moves 6 days.
+        self.assertEqual(result['shift_days'], 6)
 
         deltas = set()
         for cid, old_row in before.items():
             new_row = self.row(cid)
-            for column in columns:
-                old_value, new_value = old_row[column], new_row[column]
-                # A NULL must stay NULL -- never become a date.
-                self.assertEqual(old_value is None, new_value is None, f'{cid}.{column}')
-                if old_value is None:
-                    continue
-                deltas.add((date.fromisoformat(new_value) - date.fromisoformat(old_value)).days)
-        self.assertEqual(deltas, {5}, f'dates moved by differing amounts: {deltas}')
+            self.assertEqual(new_row['last_tartarus_completed'], old_row['last_tartarus_completed'], cid)
+            self.assertEqual(new_row['leitner_last_reviewed'], old_row['leitner_last_reviewed'], cid)
+            old_value, new_value = old_row['last_practiced'], new_row['last_practiced']
+            self.assertEqual(old_value is None, new_value is None, f'{cid}.last_practiced')
+            if old_value is None:
+                continue
+            deltas.add((date.fromisoformat(new_value) - date.fromisoformat(old_value)).days)
+        self.assertEqual(deltas, {6}, f'dates moved by differing amounts: {deltas}')
 
     def test_shift_user_dates_forward_is_a_no_op_yesterday_with_nothing_outstanding(self):
         # The mirror of the test above: practised yesterday with NOTHING
@@ -1141,9 +1177,10 @@ class CoreContractTest(unittest.TestCase):
 
         ll.shift_user_dates_forward('alice', today='2026-08-09')
 
-        # alice's whole gap is closed at once (latest date 2026-08-05 lands
-        # on today); bob is untouched, which is the point of this test.
-        self.assertEqual(self.row('id-00', user='alice')['last_tartarus_completed'], '2026-08-09')
+        # alice's streak bookkeeping lands on today; bob is untouched.
+        # Due-ness columns stay put for both users.
+        self.assertEqual(self.row('id-00', user='alice')['last_practiced'], '2026-08-09')
+        self.assertEqual(self.row('id-00', user='alice')['last_tartarus_completed'], '2026-08-05')
         self.assertEqual(self.row('id-00', user='bob')['last_tartarus_completed'], '2026-08-05')
 
     def test_shift_user_dates_forward_rejects_unknown_user(self):
@@ -1167,7 +1204,7 @@ class CoreContractTest(unittest.TestCase):
         conn = sqlite3.connect(after[0])
         self.assertEqual(conn.execute('PRAGMA integrity_check').fetchone()[0], 'ok')
         # The backup is the pre-shift state: still the original date.
-        row = conn.execute(f'SELECT last_tartarus_completed FROM "{self.table()}" WHERE content_id=?', ('id-00',)).fetchone()
+        row = conn.execute(f'SELECT last_practiced FROM "{self.table()}" WHERE content_id=?', ('id-00',)).fetchone()
         conn.close()
         self.assertEqual(row[0], '2026-08-01')
 
@@ -1177,16 +1214,30 @@ class CoreContractTest(unittest.TestCase):
         # A value SQLite's date() can't parse -- date() would silently
         # return NULL for this rather than erroring, wiping it out instead
         # of shifting it. Simulates data from outside this app's own
-        # writers (all of which only ever write clean ISO dates).
-        self.update('id-00', last_tartarus_completed='not-a-date')
+        # writers (all of which only ever write clean ISO dates). Put it
+        # on a column that is actually shifted (mastered_date); due-ness
+        # columns are no longer in that set, and last_practiced has to stay
+        # a real ISO date so the gap check itself can run.
+        conn = ll.get_connection()
+        ll.ensure_mastery_events_table(conn)
+        conn.execute(
+            'INSERT INTO mastery_events(user,lang,word_id,event_type,mastered_date) VALUES(?,?,?,?,?)',
+            ('alice', 'focus', self.row('id-00')['id'], 'mastered', 'not-a-date'),
+        )
+        conn.commit(); conn.close()
 
         with self.assertRaises(ValueError):
             ll.shift_user_dates_forward('alice', today='2026-08-05')
 
         # Nothing was touched -- not this row, and no backup was created
         # for a call that aborted before ever reaching the transaction.
-        row = self.row('id-00')
-        self.assertEqual((row['last_practiced'], row['last_tartarus_completed']), ('2026-08-01', 'not-a-date'))
+        self.assertEqual(self.row('id-00')['last_practiced'], '2026-08-01')
+        conn = ll.get_connection()
+        mastered = conn.execute(
+            "SELECT mastered_date FROM mastery_events WHERE user='alice'"
+        ).fetchone()[0]
+        conn.close()
+        self.assertEqual(mastered, 'not-a-date')
         self.assertEqual(sorted(self.root.glob('progress.db.pre-date-shift.*.sqlite')), [])
 
     def test_shift_user_dates_forward_recheck_under_lock_prevents_a_race_double_shift(self):
@@ -1996,6 +2047,36 @@ class HttpContractTest(ServerHarness):
         })
         self.assertEqual(reading['question']['definition'], expected)
 
+    def test_effortful_retrieval_second_production_withholds_example_sentence(self):
+        # Both of Effortful Retrieval's native 2-in-a-row productions are
+        # the recall task. The second one must not leak the sample sentence
+        # that embeds the target -- that line is only restored after a
+        # genuine miss escalates to the nine-answer corrective drill.
+        self._land_on_stage(2)
+        started = self.start(); question = started['question']
+        self.assertEqual(question['consolidation']['mode'], 'effortful_retrieval')
+        self.assertEqual(question['definition'], ['heavy; difficult'])
+        self.assertEqual(question['drill_start']['definition'], ['heavy; difficult'])
+        result = self.answer(started, question['word_unmasked'], 'first', question=question)
+        self.assertEqual(result['result'], 'drill_progress')
+        self.assertEqual(result['drill']['correct_in_a_row'], 1)
+        self.assertFalse(result['drill']['show_word'])
+        self.assertEqual(result['drill']['definition'], ['heavy; difficult'])
+
+    def test_effortful_retrieval_second_production_keeps_sentence_translation(self):
+        items = [{
+            'id': 'id-00', 'word': 'Ich möchte mehr Wasser.', 'word_frequency': 0,
+            'definition': 'mehr\nmore\nI would like more water.',
+        }]
+        expected = ['mehr', 'I would like more water.']
+        self._land_on_stage(2, items=items)
+        started = self.start(); question = started['question']
+        self.assertEqual(question['definition'], expected)
+        result = self.answer(started, question['word_unmasked'], 'first', question=question)
+        self.assertEqual(result['result'], 'drill_progress')
+        self.assertFalse(result['drill']['show_word'])
+        self.assertEqual(result['drill']['definition'], expected)
+
     def test_effortful_retrieval_drill_reveal_restores_full_definition(self):
         # The unescalated question withholds the example sentence (the word
         # isn't shown yet), but once a mistake escalates to the real
@@ -2184,15 +2265,18 @@ class HttpContractTest(ServerHarness):
         self.assertTrue(data['shifted'])
         self.assertGreaterEqual(data['rows_updated'], 1)
 
-        # The whole 5-day gap closes in this single call: every date lands
-        # on today, not one day closer to it.
+        # The whole 5-day gap closes in this single call for streak
+        # bookkeeping. Due-ness columns stay on the original date so
+        # remaining practice is not consumed.
         self.assertEqual(data['shift_days'], 5)
         self.assertEqual(data['reason'], 'missed_day')
         expected = date.today().isoformat()
         conn = sqlite3.connect(self.db)
         row = conn.execute(f'SELECT leitner_last_reviewed,last_tartarus_completed,last_practiced FROM "{table}" WHERE content_id=?', ('id-00',)).fetchone()
         conn.close()
-        self.assertEqual(row, (expected, expected, expected))
+        self.assertEqual(row, (stale, stale, expected))
+        progress = self.api('/api/consolidation/progress?user=alice&lang=focus')
+        self.assertGreater(progress['progress']['due_maintenance'], 0)
 
         # Calling it again immediately must now be a no-op: the records are
         # current, so there is no gap left to close. This is the idempotency

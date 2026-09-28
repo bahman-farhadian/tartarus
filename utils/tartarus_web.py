@@ -95,8 +95,21 @@ MAX_QUESTIONS = ll.MAX_QUESTIONS
 DRILL_TARGET = ll.DRILL_TARGET
 
 
-def drill_definition_lines(current):
-    """Return the definition shown while a word is being drilled."""
+def drill_definition_lines(current, *, show_word=True):
+    """Return the definition shown while a word is being drilled.
+
+    Effortful Retrieval's native 2-in-a-row check-in keeps the word hidden
+    (`show_word` is false). That is the recall task itself, so it uses the
+    same prompt lines as the first production: vocabulary example sentences
+    stay withheld, sentence English translations stay visible. After a
+    genuine miss the corrective drill reveals the word, and the full
+    authored definition is restored.
+    """
+    if not show_word:
+        prompt = current.get('prompt_definition') or ''
+        if prompt:
+            return [line for line in prompt.split('\n') if line.strip()]
+        return ll.prompt_definition_lines(current.get('definition') or '')
     prompt = (
         current.get('drill_definition')
         or current.get('prompt_definition')
@@ -699,11 +712,12 @@ def process_drill_answer(session, answer):
         conn.commit()
     finally: conn.close()
     # Still on Effortful Retrieval's own native check-in (target hasn't escalated past
-    # EFFORTFUL_RETRIEVAL_DRILL_TARGET) -- that's the recall task itself, stays hidden.
+    # EFFORTFUL_RETRIEVAL_DRILL_TARGET) -- that's the recall task itself, stays hidden,
+    # and the prompt stays the same as the first production (no sample sentence).
     # Any other target value only exists because a real mistake escalated
     # it, which is corrective punishment and must stay visible.
     show_word = target != ll.EFFORTFUL_RETRIEVAL_DRILL_TARGET
-    return {'result':'drill_progress','done':False,'drill':{'word':cur['word_text'],'definition':drill_definition_lines(cur),'repetition':drill['repetition'],'correct_in_a_row':drill['correct_in_a_row'],'target':target,'correct':correct,'show_word':show_word}}
+    return {'result':'drill_progress','done':False,'drill':{'word':cur['word_text'],'definition':drill_definition_lines(cur, show_word=show_word),'repetition':drill['repetition'],'correct_in_a_row':drill['correct_in_a_row'],'target':target,'correct':correct,'show_word':show_word}}
 
 
 

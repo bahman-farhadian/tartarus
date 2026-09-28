@@ -2249,9 +2249,10 @@
       showError(reportError, '');
       if (!user) { showError(reportError, 'Select a user before shifting dates.'); return; }
       if (!confirm(
-        `Bring practice records up to today for '${user}'? `
-        + 'If there is a gap -- a whole day missed, or work left unfinished since yesterday -- every '
-        + 'practice-record date moves forward together so the most recent one lands on today. '
+        `Restore the practice streak for '${user}' up to today? `
+        + 'If there is a gap -- a whole day missed, or work left unfinished since yesterday -- '
+        + 'session dates move forward so the most recent one lands on today. '
+        + 'Due reinforcement, due maintenance, and Encoding work stay due. '
         + 'If the records are already current (practiced today), this does nothing.'
       )) return;
       // The backend is race-safe on its own (a second overlapping call
@@ -2268,8 +2269,8 @@
         // success: nothing moved and the learner should know why.
         const days = result.shift_days === 1 ? '1 day' : `${result.shift_days} days`;
         const outcome = {
-          missed_day: `<div class="success">Practice dates moved forward ${days} to cover a missed day -- everything is now current as of today.</div>`,
-          unfinished_learning: `<div class="success">Practice dates moved forward ${days} to cover work left unfinished -- everything is now current as of today.</div>`,
+          missed_day: `<div class="success">Practice streak restored -- dates moved forward ${days} to cover a missed day. Remaining due work is still available.</div>`,
+          unfinished_learning: `<div class="success">Practice streak restored -- dates moved forward ${days} to cover work left unfinished. Remaining due work is still available.</div>`,
           current: '<div class="success">No gap to fill -- practice dates are already current.</div>',
           never_practiced: '<div class="success">Nothing to shift -- this user has not practiced yet.</div>',
           no_room: '<div class="success">Nothing to shift -- a record is already dated today, so there is no room to move without dating something in the future.</div>',

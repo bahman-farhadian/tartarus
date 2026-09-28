@@ -217,14 +217,17 @@ Whenever the target itself is masked or hidden -- Encoding once its own
 progressive masking is active (`score > 0`), every stage above, and Spaced
 Maintenance -- vocabulary shows only the primary prompt line (the first
 definition line). Bundled vocabulary puts an example sentence on the second
-line that embeds the literal target word, so that line is withheld. Sentence
-lists always keep the English translation of the sentence (the last authored
-line) visible: the point of sentence practice is to produce the target from
-that meaning. The lemma/gloss lines still follow the same primary-prompt
-rule. The one exception for vocabulary is a corrective drill that has
-actually revealed the word (`show_word: true`, after a genuine mistake): at
-that point the answer is already fully shown, so the full authored definition
-is restored there, since it can only help.
+line that embeds the literal target word, so that line is withheld. That
+includes Effortful Retrieval's own two consecutive productions: the second
+production is still the recall task (`show_word: false`), so the example
+stays hidden there too. Sentence lists always keep the English translation
+of the sentence (the last authored line) visible: the point of sentence
+practice is to produce the target from that meaning. The lemma/gloss lines
+still follow the same primary-prompt rule. The one exception for vocabulary
+is a corrective drill that has actually revealed the word (`show_word:
+true`, after a genuine mistake): at that point the answer is already fully
+shown, so the full authored definition is restored there, since it can
+only help.
 
 Free Recall/Reconsolidation/Automaticity's response timer scales with the target's own length
 rather than a fixed guess -- 0.75s per character for Free Recall, 0.5s per
@@ -452,12 +455,12 @@ Box-10 milestone charts backed by append-only database events. Material
 mastered before milestone tracking may begin later on a chart because
 Tartarus never invents missing historical dates.
 
-**Fill Practice Gap** brings a user's practice records up to today, so an absence or an unfinished day doesn't leave permanent overdue debt behind. It first decides whether there is a gap at all. A gap is either of two situations:
+**Fill Practice Gap** restores a user's calendar streak after an absence without consuming remaining practice. It first decides whether there is a gap at all. A gap is either of two situations:
 
 - **a missed day** — at least one whole calendar day passed with no practice (the most recent practice is older than yesterday); or
 - **unfinished learning** — the learner practiced as recently as yesterday but still has outstanding work: material below mastery in Encoding, a due Consolidation Track step, or a due Spaced Maintenance review.
 
-If either holds, one click closes the gap completely: every one of that user's practice-record dates moves forward together by the same number of days — each word list's `last_practiced`/`last_tartarus_completed`/`leitner_last_reviewed`, mastery milestone dates, session-log dates, and any pending drill's date — landing the most recent one exactly on today. Nothing about *what* was practiced or *how much* progress was made changes, and the spacing between dates is preserved exactly; the whole history shifts forward as a block, so the covered days read like days that were practiced through rather than a gap.
+If either holds, one click closes the gap completely for streak bookkeeping: `last_practiced`, mastery milestone dates, session-log dates, and any pending drill's date all move forward together by the same number of days, landing the most recent one exactly on today. `last_tartarus_completed` and `leitner_last_reviewed` stay put — those two columns decide what is still due — so Encoding, due reinforcement, and due maintenance remain available after the click. Scores, consolidation steps, and Leitner boxes never change. Nothing about *what* was practiced or *how much* progress was made is rewritten.
 
 Practicing today is always a no-op regardless of outstanding work — the records are already current, so there is nothing a shift could usefully do. A user who has never practiced is a no-op too. In those cases nothing happens at all: no backup, no transaction, no changes.
 
@@ -742,13 +745,13 @@ The unified suite covers the current release contracts, including:
 - restart-from-scratch progress reset, preserving session history;
 - corpus-wide list-id uniqueness and stable-id invariants across the whole bundled dataset;
 - request/response and client-reported-error logging;
-- later vocabulary example-sentence lines withheld wherever the target is masked or hidden (Encoding once masked, every daily stage, Spaced Maintenance), restored once a corrective drill actually reveals the word; sentence English translations always visible;
+- later vocabulary example-sentence lines withheld wherever the target is masked or hidden (Encoding once masked, every daily stage including Effortful Retrieval's second production, Spaced Maintenance), restored once a corrective drill actually reveals the word; sentence English translations always visible;
 - extended Box 10 maintenance intervals from a demonstrated streak of successful reviews, frozen (never reset) on a miss and only ever granted via a correct answer or a completed drill;
 - auto-submit firing on an exact correct answer without Enter, staying silent on a same-length wrong answer until Enter or a correction, and re-checking the field when prompt speech ends so a correct answer typed during audio still submits;
 - supplementary tracks: uncapped freshly-shuffled sessions, unlimited retry, no drill, and no mutation of score/Leitner/`consolidation_step`;
 - Speed Mock: band-9 items only, 0.4s/character from question-show (not after audio), untimed retry, WPM from timed successes only;
 - Today's Overview Due Today listing only calendar-due reinforcement or maintenance, with a cross-file Total row;
-- Fill Practice Gap shifting a user's dates forward without overshooting today;
+- Fill Practice Gap restoring the session-date streak without consuming remaining due work or overshooting today;
 - HTTP no-store on HTML, CSS, JS, icons, JSON, and pronunciation audio;
 - the character SVG favicon, with no bitmap favicon;
 - the single-test-file policy.
